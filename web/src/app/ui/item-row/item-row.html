@@ -2,7 +2,8 @@
 @let l = lang.lang();
 @let label = view.placeholder(chapter(), it);
 <label class="check">
-  <input type="checkbox" [checked]="done()" (change)="progress.toggle(it.id)" [attr.aria-labelledby]="'name-' + it.id" />
+  <input type="checkbox" class="checkbox" [checked]="done()" (change)="progress.toggle(it.id)"
+    [attr.aria-labelledby]="'name-' + it.id" />
 </label>
 <div class="body">
   <span class="name" [id]="'name-' + it.id">
@@ -10,19 +11,24 @@
       {{ it.name | localize: l }}
     </app-spoiler-reveal>
   </span>
-  @if (view.showLocation(it)) {
-    <span class="meta">{{ it.location | localize: l }}</span>
-  }
-  <span class="meta deadline">
-    @if (deadline(); as cp) {
-      {{ 'checklist.until' | transloco: { checkpoint: cp.neutralDescription | localize: l } }}
-    } @else {
-      {{ 'checklist.noDeadline' | transloco }}
+  <span class="meta">
+    @if (view.showLocation(it)) {
+      <span class="meta-line"><app-icon name="map-pin" />{{ it.location | localize: l }}</span>
     }
+    <span class="meta-line deadline">
+      <app-icon name="flag" />
+      @if (deadline(); as cp) {
+        {{ 'checklist.until' | transloco: { checkpoint: cp.neutralDescription | localize: l } }}
+      } @else {
+        {{ 'checklist.noDeadline' | transloco }}
+      }
+    </span>
   </span>
   @if (view.showHint(it)) {
-    <span class="hint">{{ it.hint | localize: l }}</span>
+    <p class="hint">{{ it.hint | localize: l }}</p>
   }
 </div>
 <a class="details" [routerLink]="['/sc/items', it.id]"
-  [attr.aria-label]="'item.detailsFor' | transloco: { name: view.showLocation(it) ? (it.name | localize: l) : label }">›</a>
+  [attr.aria-label]="'item.detailsFor' | transloco: { name: view.showLocation(it) ? (it.name | localize: l) : label }">
+  <app-icon name="chevron-right" />
+</a>

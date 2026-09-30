@@ -1,33 +1,53 @@
 @let current = access.current();
 @let game = content.manifest()?.game;
-<section class="stack">
+@let l = lang.lang();
+<section class="intro rise">
   <p class="eyebrow">{{ 'home.companionFor' | transloco }}</p>
   @if (game) {
-    <h1>{{ game.name | localize: lang.lang() }}</h1>
+    <h1>{{ game.name | localize: l }}</h1>
   }
-  <p class="muted">{{ 'home.promise' | transloco }}</p>
-
-  @if (current) {
-    <a class="button primary" [routerLink]="['/sc/chapters', current.id]">
-      {{ 'home.continue' | transloco: { chapter: current.neutralLabel | localize: lang.lang() } }}
-    </a>
-  }
-  <a class="button" routerLink="/sc/chapters">{{ 'home.whereAmI' | transloco }}</a>
+  <p class="muted lead">{{ 'home.promise' | transloco }}</p>
 </section>
 
-<section class="transfer stack-sm" aria-labelledby="transfer-title">
+@if (current) {
+  @let sum = summary();
+  <section class="card journey rise" aria-labelledby="journey-title">
+    <p class="eyebrow">{{ 'home.youAreIn' | transloco }}</p>
+    <h2 id="journey-title">{{ current.neutralLabel | localize: l }}</h2>
+    @if (sum) {
+      <div class="progress" role="progressbar" [attr.aria-valuenow]="sum.done" aria-valuemin="0" [attr.aria-valuemax]="sum.total"
+        [attr.aria-label]="'checklist.progress' | transloco: { done: sum.done, total: sum.total }">
+        <span [style.width.%]="sum.percent"></span>
+      </div>
+      <p class="muted small">{{ 'checklist.progress' | transloco: { done: sum.done, total: sum.total } }}</p>
+      @if (sum.alert; as a) {
+        <p class="next">
+          <app-icon name="triangle-alert" />
+          {{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}
+        </p>
+      }
+    }
+    <a class="button primary block" [routerLink]="['/sc/chapters', current.id]">
+      {{ 'home.continue' | transloco: { chapter: current.neutralLabel | localize: l } }}
+      <app-icon name="chevron-right" />
+    </a>
+    <a class="button block" routerLink="/sc/chapters"><app-icon name="compass" /> {{ 'home.whereAmI' | transloco }}</a>
+  </section>
+}
+
+<section class="card transfer" aria-labelledby="transfer-title">
   <h2 id="transfer-title">{{ 'transfer.title' | transloco }}</h2>
-  <p class="muted">{{ 'transfer.intro' | transloco }}</p>
+  <p class="muted small">{{ 'transfer.intro' | transloco }}</p>
   <div class="actions">
-    <button type="button" class="button" (click)="exportProgress()">{{ 'transfer.export' | transloco }}</button>
+    <button type="button" class="button" (click)="exportProgress()"><app-icon name="download" /> {{ 'transfer.export' | transloco }}</button>
     <label class="button">
-      {{ 'transfer.import' | transloco }}
+      <app-icon name="upload" /> {{ 'transfer.import' | transloco }}
       <input type="file" accept="application/json,.json" class="visually-hidden" (change)="pickFile($event)" />
     </label>
   </div>
 
   @if (pendingImport() !== null) {
-    <div class="card confirm" role="alertdialog" aria-labelledby="import-confirm">
+    <div class="confirm" role="alertdialog" aria-labelledby="import-confirm">
       <p id="import-confirm">{{ 'transfer.confirm' | transloco }}</p>
       <div class="actions">
         <button type="button" class="button primary" (click)="confirmImport()">{{ 'transfer.replace' | transloco }}</button>
@@ -35,7 +55,7 @@
       </div>
     </div>
   }
-  <p role="status" [class.error]="status()?.kind === 'error'">
+  <p role="status" class="small" [class.error]="status()?.kind === 'error'">
     @if (status(); as s) {
       {{ s.key | transloco }}
     }

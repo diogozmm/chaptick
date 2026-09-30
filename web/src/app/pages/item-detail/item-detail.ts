@@ -8,11 +8,13 @@ import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { ChapterAccess, chapterIdOfItem } from '../../core/spoiler/chapter-access';
 import { ItemView } from '../../core/spoiler/item-view';
+import { Icon } from '../../ui/icon/icon';
+import { TYPE_ICON } from '../../ui/item-type';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
 
 @Component({
   selector: 'app-item-detail',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './item-detail.html',
   styleUrl: './item-detail.scss',
@@ -23,6 +25,7 @@ export class ItemDetail {
   protected readonly progress = inject(ProgressStore);
   protected readonly view = inject(ItemView);
   protected readonly lang = inject(LangService);
+  protected readonly typeIcon = TYPE_ICON;
 
   /** Bound from the route; the route guard already checked its chapter is unlocked. */
   readonly itemId = input.required<string>();

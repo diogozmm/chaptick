@@ -9,6 +9,7 @@ import { ProgressStore } from '../../core/progress/progress.store';
 import { AnalyticsService } from '../../core/analytics.service';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { isUnlocked, newlyLeftBehind } from '../../core/spoiler/spoiler';
+import { Icon } from '../../ui/icon/icon';
 import { ItemRow } from '../../ui/item-row/item-row';
 
 interface PendingAdvance {
@@ -19,7 +20,7 @@ interface PendingAdvance {
 /** "Where am I": pick the current chapter. Moving forward is always explicit and confirmed. */
 @Component({
   selector: 'app-where',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './where.html',
   styleUrl: './where.scss',

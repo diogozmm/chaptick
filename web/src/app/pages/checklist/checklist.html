@@ -2,26 +2,41 @@
 @if (chapter.hasValue()) {
   @let ch = chapter.value();
   @let s = stats();
-  <header class="stack-sm">
-    <a routerLink="/sc/chapters" class="link back">‹ {{ 'where.title' | transloco }}</a>
-    <h1>{{ ch.neutralLabel | localize: l }}</h1>
+  <a routerLink="/sc/chapters" class="link back"><app-icon name="chevron-left" /> {{ 'where.title' | transloco }}</a>
+
+  <header class="hero card rise">
+    <div class="hero-top">
+      <div>
+        <p class="eyebrow">{{ 'checklist.eyebrow' | transloco }}</p>
+        <h1>{{ ch.neutralLabel | localize: l }}</h1>
+      </div>
+      <p class="percent" aria-hidden="true">{{ percent() }}<small>%</small></p>
+    </div>
     <div class="progress" role="progressbar" [attr.aria-valuenow]="s.done" aria-valuemin="0" [attr.aria-valuemax]="s.total"
       [attr.aria-label]="'checklist.progress' | transloco: { done: s.done, total: s.total }">
-      <span class="bar" [style.width.%]="s.total ? (s.done / s.total) * 100 : 0"></span>
+      <span [style.width.%]="percent()"></span>
     </div>
     <p class="muted small">{{ 'checklist.progress' | transloco: { done: s.done, total: s.total } }}</p>
   </header>
 
   @if (alert(); as a) {
-    <aside class="alert" role="status">
-      <strong>{{ 'checklist.alertTitle' | transloco }}</strong>
-      {{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}
+    <aside class="alert rise" role="status">
+      <app-icon name="triangle-alert" />
+      <div>
+        <strong>{{ 'checklist.alertTitle' | transloco }}</strong>
+        <p>{{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}</p>
+      </div>
+    </aside>
+  } @else if (s.total > 0) {
+    <aside class="alert clear rise" role="status">
+      <app-icon name="circle-check" />
+      <p>{{ 'checklist.allClear' | transloco }}</p>
     </aside>
   }
 
   @if (leftBehind().length > 0) {
     <details class="left-behind">
-      <summary>{{ 'checklist.leftBehind' | transloco: { count: leftBehind().length } }}</summary>
+      <summary><app-icon name="hourglass" /> {{ 'checklist.leftBehind' | transloco: { count: leftBehind().length } }}</summary>
       <p class="muted small">{{ 'checklist.leftBehindHint' | transloco }}</p>
       <ul class="items">
         @for (entry of leftBehind(); track entry.item.id) {
@@ -33,18 +48,25 @@
 
   <div class="toolbar" role="group" [attr.aria-label]="'checklist.filters' | transloco">
     @for (type of availableTypes(); track type) {
-      <button type="button" class="chip" [attr.aria-pressed]="isFilterOn(type)" (click)="toggleFilter(type)">
+      <button type="button" class="chip" [attr.data-type]="type" [attr.aria-pressed]="isFilterOn(type)" (click)="toggleFilter(type)">
+        <app-icon [name]="typeIcon[type]" />
         {{ 'type.many.' + type | transloco }}
       </button>
     }
     <button type="button" class="chip" [attr.aria-pressed]="progress.preferences().hideDone" (click)="toggleHideDone()">
+      <app-icon name="check" />
       {{ 'checklist.hideDone' | transloco }}
     </button>
   </div>
 
   @for (group of groups(); track group.type) {
-    <section>
-      <h2>{{ 'type.many.' + group.type | transloco }}</h2>
+    @let gs = typeStats().get(group.type);
+    <section class="group" [attr.data-type]="group.type">
+      <h2>
+        <span class="type-icon"><app-icon [name]="typeIcon[group.type]" /></span>
+        {{ 'type.many.' + group.type | transloco }}
+        <span class="group-count">{{ gs?.done }}/{{ gs?.total }}</span>
+      </h2>
       <ul class="items">
         @for (item of group.items; track item.id) {
           <li><app-item-row [chapter]="ch" [item]="item" /></li>
@@ -52,7 +74,7 @@
       </ul>
     </section>
   } @empty {
-    <p class="muted">{{ (s.total ? 'checklist.allHidden' : 'checklist.empty') | transloco }}</p>
+    <p class="empty card">{{ (s.total ? 'checklist.allHidden' : 'checklist.empty') | transloco }}</p>
   }
 } @else if (chapter.error()) {
   <p role="alert">{{ 'common.loadError' | transloco }}</p>

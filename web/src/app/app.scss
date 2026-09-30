@@ -1,8 +1,30 @@
 :host { display: flex; flex-direction: column; min-height: 100dvh; }
-.topbar { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 1rem; border-bottom: 1px solid var(--border); }
-.brand { font-weight: 700; letter-spacing: 0.02em; color: var(--text); text-decoration: none; min-height: 2.75rem; display: inline-flex; align-items: center; }
-.page { flex: 1; width: 100%; max-width: 40rem; margin: 0 auto; padding: 1rem 1rem 3rem; box-sizing: border-box; }
-.footer { padding: 1rem; font-size: 0.8rem; color: var(--text-muted); text-align: center; border-top: 1px solid var(--border); }
-.update { display: flex; justify-content: center; align-items: center; gap: 1rem; padding: 0 1rem; background: var(--surface-2); font-size: 0.9rem; }
+
+.topbar {
+  position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center;
+  padding: 0.25rem 1rem; padding-top: max(0.25rem, env(safe-area-inset-top));
+  background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: blur(12px);
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 0.6rem; min-height: 3rem;
+  font: 600 1.15rem/1 var(--font-display); color: var(--text); text-decoration: none; letter-spacing: -0.01em;
+}
+.brand img { border-radius: 0.45rem; }
+.lang {
+  display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2.75rem; padding: 0 0.85rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 600 0.8rem/1 var(--font-body);
+  letter-spacing: 0.06em; cursor: pointer;
+}
+.update {
+  display: flex; justify-content: center; align-items: center; gap: 0.6rem; padding: 0 1rem;
+  background: var(--accent-soft); border-bottom: 1px solid var(--border); font-size: 0.9rem;
+}
+.page { flex: 1; width: 100%; max-width: 40rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+.footer {
+  padding: 1.25rem 1rem calc(1.25rem + env(safe-area-inset-bottom)); font-size: 0.8rem; color: var(--text-muted);
+  text-align: center; border-top: 1px solid var(--border);
+}
 .footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 0 1.25rem; }
-.footer nav a { min-height: 2.75rem; display: inline-flex; align-items: center; }
+.footer nav a { min-height: 2.75rem; display: inline-flex; align-items: center; gap: 0.3rem; }
+.footer p { max-width: 32rem; margin: 0.25rem auto 0; }

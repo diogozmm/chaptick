@@ -17,7 +17,8 @@
     "companionFor": "Spoiler-free companion for",
     "promise": "Tell us which chapter you're in and see only what you can't miss up to there.",
     "continue": "Continue: {{chapter}}",
-    "whereAmI": "Where am I?"
+    "whereAmI": "Where am I?",
+    "youAreIn": "You are in"
   },
   "where": {
     "title": "Where am I?",
@@ -29,7 +30,8 @@
     "confirmAdvance": "Move to {{chapter}}? Its items will be shown.",
     "confirmYes": "Yes, I'm here",
     "leftBehind": "You will leave {{count}} item(s) behind",
-    "leftBehindHint": "Their deadline ends before that chapter. Tick off any you already did."
+    "leftBehindHint": "Their deadline ends before that chapter. Tick off any you already did.",
+    "eyebrow": "Your journey"
   },
   "checklist": {
     "progress": "{{done}} of {{total}} done",
@@ -42,7 +44,9 @@
     "empty": "Nothing to track in this chapter yet.",
     "allHidden": "Nothing left to show with these filters.",
     "leftBehind": "You left {{count}} item(s) behind",
-    "leftBehindHint": "Their deadline has passed. If you did them anyway, tick them off."
+    "leftBehindHint": "Their deadline has passed. If you did them anyway, tick them off.",
+    "eyebrow": "Chapter checklist",
+    "allClear": "No point of no return with pending items. All caught up!"
   },
   "spoiler": {
     "tapToReveal": "tap to reveal",
@@ -72,7 +76,8 @@
     "markDone": "Mark as done",
     "markUndone": "Mark as not done",
     "notFound": "This item does not exist (anymore).",
-    "detailsFor": "Details: {{name}}"
+    "detailsFor": "Details: {{name}}",
+    "done": "Done"
   },
   "transfer": {
     "title": "Move your progress",

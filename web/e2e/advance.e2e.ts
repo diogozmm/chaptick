@@ -12,7 +12,8 @@ test('advancing warns about what is left behind without naming it first', async 
   await expect(warning.getByText('Safe Quest')).toBeHidden();
 
   await warning.locator('summary').click();
-  await row(page, 'Safe Quest').getByRole('checkbox').check();
+  // Ticked items leave this list by design, so click and assert the new count instead of check().
+  await row(page, 'Safe Quest').getByRole('checkbox').click();
   await expect(page.getByText('You will leave 2 item(s) behind')).toBeVisible();
   expect(fetched.some((url) => url.endsWith('ch-1.json'))).toBe(false);
 

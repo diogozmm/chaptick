@@ -1,12 +1,32 @@
-:host { display: grid; gap: 0.75rem; }
-.back { font-size: 0.9rem; }
-.eyebrow { margin: 0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; color: var(--accent); }
-h1 { margin: 0; }
-h2 { font-size: 1rem; margin: 0.5rem 0 0; }
-.facts { display: grid; gap: 0.25rem; margin: 0.5rem 0; }
-.facts dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-top: 0.5rem; }
-.facts dd { margin: 0; }
-.deadline { color: var(--warn-text); }
-figure { margin: 0; }
-blockquote { margin: 0 0 0.5rem; }
-.button { width: 100%; margin-top: 0.5rem; }
+:host { display: grid; gap: 1rem; }
+.back { font-size: 0.9rem; justify-self: start; margin: -0.5rem 0 -0.5rem -0.1rem; text-decoration: none; }
+
+.hero { --type-color: var(--type-quest); display: grid; gap: 0.6rem; border-top: 3px solid var(--type-color); }
+.hero[data-type='hidden_quest'] { --type-color: var(--type-hidden_quest); }
+.hero[data-type='missable'] { --type-color: var(--type-missable); }
+.hero[data-type='collectible'] { --type-color: var(--type-collectible); }
+.type {
+  display: inline-flex; align-items: center; gap: 0.4rem; justify-self: start; padding: 0.3rem 0.7rem; border-radius: 999px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--type-color); background: color-mix(in srgb, var(--type-color) 14%, transparent);
+}
+.type app-icon { width: 0.95rem; height: 0.95rem; }
+.done-badge { justify-self: start; }
+.done-badge app-icon { width: 0.9rem; height: 0.9rem; }
+
+.facts { display: grid; gap: 0.6rem; margin: 0; }
+.fact { padding: 0.875rem 1rem; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); }
+.fact dt {
+  display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.3rem;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted);
+}
+.fact dt app-icon { width: 0.95rem; height: 0.95rem; }
+.fact dd { margin: 0; }
+.fact dd.hidden { color: var(--text-muted); font-style: italic; }
+.deadline dd { color: var(--warn-text); font-weight: 500; }
+
+h2 { display: flex; align-items: center; gap: 0.5rem; }
+h2 app-icon { color: var(--accent); }
+.quote { margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+blockquote { margin: 0 0 0.4rem; font: italic 400 1.05rem/1.5 var(--font-display); }
+figcaption { font-size: 0.8125rem; }

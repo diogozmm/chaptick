@@ -1,45 +1,64 @@
-<h1>{{ 'where.title' | transloco }}</h1>
-<p class="muted">{{ 'where.intro' | transloco }}</p>
+<header class="stack-sm">
+  <p class="eyebrow">{{ 'where.eyebrow' | transloco }}</p>
+  <h1>{{ 'where.title' | transloco }}</h1>
+  <p class="muted">{{ 'where.intro' | transloco }}</p>
+</header>
 
-<ol class="chapters">
+<ol class="trail">
   @for (chapter of access.chapters(); track chapter.id) {
     @let label = chapter.neutralLabel | localize: lang.lang();
     @let current = chapter.id === access.current()?.id;
-    <li class="card" [class.current]="current" [class.locked]="!isUnlocked(chapter)">
-      @if (isUnlocked(chapter)) {
-        <a class="title" [routerLink]="['/sc/chapters', chapter.id]">{{ label }}</a>
-        <span class="muted">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
+    @let unlocked = isUnlocked(chapter);
+    <li class="stop" [class.current]="current" [class.past]="unlocked && !current" [class.locked]="!unlocked">
+      <span class="node" aria-hidden="true">
         @if (current) {
-          <span class="badge">{{ 'where.current' | transloco }}</span>
+          <app-icon name="compass" />
+        } @else if (unlocked) {
+          <app-icon name="check" />
         } @else {
-          <button type="button" class="link" (click)="choose(chapter)">{{ 'where.imHere' | transloco }}</button>
+          <app-icon name="lock" />
         }
-      } @else {
-        <span class="title">{{ 'where.locked' | transloco: { chapter: label } }}</span>
-        <span class="muted">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
-        @if (pending()?.target?.id === chapter.id) {
-          <div class="confirm">
-            <p>{{ 'where.confirmAdvance' | transloco: { chapter: label } }}</p>
-            @if (leftBehind().length > 0) {
-              <details class="left-behind">
-                <summary>{{ 'where.leftBehind' | transloco: { count: leftBehind().length } }}</summary>
-                <p class="muted">{{ 'where.leftBehindHint' | transloco }}</p>
-                <ul class="items">
-                  @for (entry of leftBehind(); track entry.item.id) {
-                    <li><app-item-row [chapter]="entry.chapter" [item]="entry.item" /></li>
-                  }
-                </ul>
-              </details>
-            }
-            <div class="actions">
-              <button type="button" class="button primary" (click)="choose(chapter)">{{ 'where.confirmYes' | transloco }}</button>
-              <button type="button" class="button" (click)="pending.set(null)">{{ 'common.cancel' | transloco }}</button>
+      </span>
+      <div class="card stop-card">
+        <div class="stop-head">
+          @if (unlocked) {
+            <a class="title" [routerLink]="['/sc/chapters', chapter.id]">{{ label }}</a>
+          } @else {
+            <span class="title">{{ 'where.locked' | transloco: { chapter: label } }}</span>
+          }
+          @if (current) {
+            <span class="badge">{{ 'where.current' | transloco }}</span>
+          }
+        </div>
+        <span class="muted small">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
+
+        @if (!current) {
+          @if (!unlocked && pending()?.target?.id === chapter.id) {
+            <div class="confirm">
+              <p>{{ 'where.confirmAdvance' | transloco: { chapter: label } }}</p>
+              @if (leftBehind().length > 0) {
+                <details class="left-behind">
+                  <summary><app-icon name="hourglass" /> {{ 'where.leftBehind' | transloco: { count: leftBehind().length } }}</summary>
+                  <p class="muted small">{{ 'where.leftBehindHint' | transloco }}</p>
+                  <ul class="items">
+                    @for (entry of leftBehind(); track entry.item.id) {
+                      <li><app-item-row [chapter]="entry.chapter" [item]="entry.item" /></li>
+                    }
+                  </ul>
+                </details>
+              }
+              <div class="actions">
+                <button type="button" class="button primary" (click)="choose(chapter)">{{ 'where.confirmYes' | transloco }}</button>
+                <button type="button" class="button" (click)="pending.set(null)">{{ 'common.cancel' | transloco }}</button>
+              </div>
             </div>
-          </div>
-        } @else {
-          <button type="button" class="link" (click)="askToAdvance(chapter)">{{ 'where.imHere' | transloco }}</button>
+          } @else {
+            <button type="button" class="link here" (click)="unlocked ? choose(chapter) : askToAdvance(chapter)">
+              <app-icon name="map-pin" /> {{ 'where.imHere' | transloco }}
+            </button>
+          }
         }
-      }
+      </div>
     </li>
   }
 </ol>

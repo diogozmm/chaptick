@@ -6,20 +6,50 @@
       "name": "app",
       "installMode": "prefetch",
       "resources": {
-        "files": ["/index.html", "/manifest.webmanifest", "/*.css", "/*.js", "/i18n/*.json", "/icons/**"]
+        "files": [
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js",
+          "/i18n/*.json",
+          "/icons/**"
+        ]
+      }
+    },
+    {
+      "name": "fonts",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/media/**"
+        ]
       }
     }
   ],
   "dataGroups": [
     {
       "name": "content-manifest",
-      "urls": ["/content/*/manifest.json"],
-      "cacheConfig": { "strategy": "freshness", "maxSize": 5, "maxAge": "365d", "timeout": "3s" }
+      "urls": [
+        "/content/*/manifest.json"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 5,
+        "maxAge": "365d",
+        "timeout": "3s"
+      }
     },
     {
       "name": "content-chapters",
-      "urls": ["/content/**"],
-      "cacheConfig": { "strategy": "performance", "maxSize": 100, "maxAge": "365d" }
+      "urls": [
+        "/content/**"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 100,
+        "maxAge": "365d"
+      }
     }
   ]
 }

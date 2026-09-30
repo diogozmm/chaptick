@@ -2,28 +2,44 @@
 @let e = entry();
 @if (e) {
   @let done = progress.done().has(e.item.id);
-  <a class="link back" [routerLink]="['/sc/chapters', e.chapter.id]">‹ {{ e.chapter.neutralLabel | localize: l }}</a>
-  <p class="eyebrow">{{ 'type.many.' + e.item.type | transloco }}</p>
-  <h1>
-    <app-spoiler-reveal [itemId]="e.item.id" [level]="e.item.spoilerLevel" [placeholder]="view.placeholder(e.chapter, e.item)">
-      {{ e.item.name | localize: l }}
-    </app-spoiler-reveal>
-  </h1>
+  <a class="link back" [routerLink]="['/sc/chapters', e.chapter.id]"><app-icon name="chevron-left" /> {{ e.chapter.neutralLabel | localize: l }}</a>
+
+  <header class="hero card rise" [attr.data-type]="e.item.type">
+    <span class="type"><app-icon [name]="typeIcon[e.item.type]" /> {{ 'type.many.' + e.item.type | transloco }}</span>
+    <h1>
+      <app-spoiler-reveal [itemId]="e.item.id" [level]="e.item.spoilerLevel" [placeholder]="view.placeholder(e.chapter, e.item)">
+        {{ e.item.name | localize: l }}
+      </app-spoiler-reveal>
+    </h1>
+    @if (done) {
+      <span class="badge done-badge"><app-icon name="check" /> {{ 'item.done' | transloco }}</span>
+    }
+  </header>
 
   <dl class="facts">
-    <dt>{{ 'item.location' | transloco }}</dt>
-    <dd>{{ view.showLocation(e.item) ? (e.item.location | localize: l) : ('item.hidden' | transloco) }}</dd>
-    <dt>{{ 'item.deadline' | transloco }}</dt>
-    <dd class="deadline">{{ e.deadline ? (e.deadline.neutralDescription | localize: l) : ('checklist.noDeadline' | transloco) }}</dd>
-    <dt>{{ 'item.hint' | transloco }}</dt>
-    <dd>{{ view.showHint(e.item) ? (e.item.hint | localize: l) : ('item.hidden' | transloco) }}</dd>
+    <div class="fact">
+      <dt><app-icon name="map-pin" /> {{ 'item.location' | transloco }}</dt>
+      <dd [class.hidden]="!view.showLocation(e.item)">
+        {{ view.showLocation(e.item) ? (e.item.location | localize: l) : ('item.hidden' | transloco) }}
+      </dd>
+    </div>
+    <div class="fact deadline">
+      <dt><app-icon name="flag" /> {{ 'item.deadline' | transloco }}</dt>
+      <dd>{{ e.deadline ? (e.deadline.neutralDescription | localize: l) : ('checklist.noDeadline' | transloco) }}</dd>
+    </div>
+    <div class="fact">
+      <dt><app-icon name="sparkles" /> {{ 'item.hint' | transloco }}</dt>
+      <dd [class.hidden]="!view.showHint(e.item)">
+        {{ view.showHint(e.item) ? (e.item.hint | localize: l) : ('item.hidden' | transloco) }}
+      </dd>
+    </div>
   </dl>
 
   @if (e.texts.length > 0 && view.showHint(e.item)) {
     <section class="stack-sm">
-      <h2>{{ 'item.community' | transloco }}</h2>
+      <h2><app-icon name="book-open" /> {{ 'item.community' | transloco }}</h2>
       @for (text of e.texts; track $index) {
-        <figure class="card">
+        <figure class="quote">
           <blockquote>{{ text.text | localize: l }}</blockquote>
           <figcaption class="muted">— {{ text.author }} · CC BY-SA 4.0</figcaption>
         </figure>
@@ -31,7 +47,8 @@
     </section>
   }
 
-  <button type="button" class="button" [class.primary]="!done" [attr.aria-pressed]="done" (click)="progress.toggle(e.item.id)">
+  <button type="button" class="button block" [class.primary]="!done" [attr.aria-pressed]="done" (click)="progress.toggle(e.item.id)">
+    <app-icon name="check" />
     {{ (done ? 'item.markUndone' : 'item.markDone') | transloco }}
   </button>
 } @else if (e === null) {

@@ -1,12 +1,17 @@
 <header class="topbar">
-  <a routerLink="/" class="brand">Bracer Notes</a>
-  <button type="button" class="link" (click)="toggleLang()" [attr.aria-label]="'app.switchLanguage' | transloco">
+  <a routerLink="/" class="brand">
+    <img src="icons/mark.svg" alt="" width="28" height="28" />
+    <span>Bracer Notes</span>
+  </a>
+  <button type="button" class="lang" (click)="toggleLang()" [attr.aria-label]="'app.switchLanguage' | transloco">
+    <app-icon name="languages" />
     {{ lang.lang() === 'pt' ? 'EN' : 'PT' }}
   </button>
 </header>
 
 @if (update.updateReady()) {
   <div class="update" role="status">
+    <app-icon name="sparkles" />
     <span>{{ 'app.updateReady' | transloco }}</span>
     <button type="button" class="link" (click)="update.reload()">{{ 'app.reload' | transloco }}</button>
   </div>
@@ -19,7 +24,7 @@
 <footer class="footer">
   <nav [attr.aria-label]="'app.footerNav' | transloco">
     <a routerLink="/credits">{{ 'credits.title' | transloco }}</a>
-    <a routerLink="/credits" fragment="support">{{ 'app.support' | transloco }}</a>
+    <a routerLink="/credits" fragment="support"><app-icon name="heart" /> {{ 'app.support' | transloco }}</a>
     <a routerLink="/privacy">{{ 'privacy.title' | transloco }}</a>
   </nav>
   <p>{{ 'app.disclaimer' | transloco }}</p>

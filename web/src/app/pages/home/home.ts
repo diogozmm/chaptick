@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, resource, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -8,12 +8,14 @@ import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressImportError, ProgressStore } from '../../core/progress/progress.store';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
+import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
+import { Icon } from '../../ui/icon/icon';
 
 type TransferStatus = { kind: 'ok' | 'error'; key: string } | null;
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.html',
   styleUrl: './home.scss',
@@ -23,7 +25,24 @@ export class Home {
   protected readonly access = inject(ChapterAccess);
   protected readonly lang = inject(LangService);
   private readonly progress = inject(ProgressStore);
+  private readonly contentService = inject(ContentService);
   private readonly analytics = inject(AnalyticsService);
+
+  /** The current chapter is always unlocked, so loading it here never leaks anything. */
+  private readonly currentChapter = resource({
+    params: () => this.access.current(),
+    loader: ({ params }) => this.contentService.loadChapter(params),
+  });
+  protected readonly summary = computed(() => {
+    if (!this.currentChapter.hasValue()) return null;
+    const chapter = this.currentChapter.value();
+    const stats = chapterProgress(chapter, this.progress.done());
+    return {
+      ...stats,
+      percent: stats.total ? Math.round((stats.done / stats.total) * 100) : 0,
+      alert: nextCheckpointAlert(chapter, this.progress.done()),
+    };
+  });
 
   /** File contents waiting for "replace my progress?" confirmation. */
   protected readonly pendingImport = signal<string | null>(null);

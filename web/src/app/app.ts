@@ -4,10 +4,11 @@ import { TranslocoPipe } from '@jsverse/transloco';
 
 import { LangService } from './core/i18n/lang.service';
 import { AppUpdateService } from './core/pwa/app-update.service';
+import { Icon } from './ui/icon/icon';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, TranslocoPipe],
+  imports: [RouterOutlet, RouterLink, TranslocoPipe, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.html',
   styleUrl: './app.scss',

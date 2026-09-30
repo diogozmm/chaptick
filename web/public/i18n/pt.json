@@ -17,7 +17,8 @@
     "companionFor": "Companion sem spoiler para",
     "promise": "Diga em que capítulo você está e veja só o que você não pode perder até ali.",
     "continue": "Continuar: {{chapter}}",
-    "whereAmI": "Onde estou?"
+    "whereAmI": "Onde estou?",
+    "youAreIn": "Você está em"
   },
   "where": {
     "title": "Onde estou?",
@@ -29,7 +30,8 @@
     "confirmAdvance": "Ir para {{chapter}}? Os itens dele vão aparecer.",
     "confirmYes": "Sim, estou aqui",
     "leftBehind": "Você vai deixar {{count}} item(ns) para trás",
-    "leftBehindHint": "O prazo deles acaba antes desse capítulo. Marque os que você já fez."
+    "leftBehindHint": "O prazo deles acaba antes desse capítulo. Marque os que você já fez.",
+    "eyebrow": "Sua jornada"
   },
   "checklist": {
     "progress": "{{done}} de {{total}} feitos",
@@ -42,7 +44,9 @@
     "empty": "Ainda não há nada para acompanhar neste capítulo.",
     "allHidden": "Nada para mostrar com esses filtros.",
     "leftBehind": "Você deixou {{count}} item(ns) para trás",
-    "leftBehindHint": "O prazo deles já passou. Se você fez mesmo assim, marque aqui."
+    "leftBehindHint": "O prazo deles já passou. Se você fez mesmo assim, marque aqui.",
+    "eyebrow": "Checklist do capítulo",
+    "allClear": "Nenhum ponto sem volta com itens pendentes. Tudo em dia!"
   },
   "spoiler": {
     "tapToReveal": "toque para ver",
@@ -72,7 +76,8 @@
     "markDone": "Marcar como feito",
     "markUndone": "Desmarcar",
     "notFound": "Este item não existe (mais).",
-    "detailsFor": "Detalhes: {{name}}"
+    "detailsFor": "Detalhes: {{name}}",
+    "done": "Feito"
   },
   "transfer": {
     "title": "Levar seu progresso",

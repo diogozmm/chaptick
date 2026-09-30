@@ -7,16 +7,17 @@ import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { ItemView } from '../../core/spoiler/item-view';
+import { Icon } from '../icon/icon';
 import { SpoilerReveal } from '../spoiler-reveal/spoiler-reveal';
 
 /** One checklist entry: checkbox, masked name, deadline, hint and a link to the details. */
 @Component({
   selector: 'app-item-row',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './item-row.html',
   styleUrl: './item-row.scss',
-  host: { '[class.done]': 'done()' },
+  host: { '[class.done]': 'done()', '[attr.data-type]': 'item().type' },
 })
 export class ItemRow {
   protected readonly progress = inject(ProgressStore);

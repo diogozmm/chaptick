@@ -9,11 +9,13 @@ import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { chapterProgress, expiredItems, groupByType, nextCheckpointAlert } from '../../core/spoiler/spoiler';
+import { Icon } from '../../ui/icon/icon';
 import { ItemRow } from '../../ui/item-row/item-row';
+import { TYPE_ICON } from '../../ui/item-type';
 
 @Component({
   selector: 'app-checklist',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './checklist.html',
   styleUrl: './checklist.scss',
@@ -55,7 +57,23 @@ export class Checklist {
     const lost = new Set(expiredItems(chapters, this.progress.done(), this.access.currentOrder()).map((i) => i.id));
     return chapters.flatMap((chapter) => chapter.items.filter((i) => lost.has(i.id)).map((item) => ({ chapter, item })));
   });
-  protected readonly availableTypes = computed(() => ITEM_TYPES.filter((t) => this.loaded()?.items.some((i) => i.type === t)));
+  protected readonly typeIcon = TYPE_ICON;
+  protected readonly percent = computed(() => {
+    const { done, total } = this.stats();
+    return total ? Math.round((done / total) * 100) : 0;
+  });
+  /** Done/total per type over the whole chapter, ignoring filters. */
+  protected readonly typeStats = computed(() => {
+    const items = this.loaded()?.items ?? [];
+    const done = this.progress.done();
+    return new Map(
+      ITEM_TYPES.map((type) => {
+        const ofType = items.filter((i) => i.type === type);
+        return [type, { done: ofType.filter((i) => done.has(i.id)).length, total: ofType.length }] as const;
+      }),
+    );
+  });
+  protected readonly availableTypes = computed(() => ITEM_TYPES.filter((t) => (this.typeStats().get(t)?.total ?? 0) > 0));
   protected readonly groups = computed(() => {
     const chapter = this.loaded();
     if (!chapter) return [];

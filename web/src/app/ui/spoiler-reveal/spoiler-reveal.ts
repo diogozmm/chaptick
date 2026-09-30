@@ -24,15 +24,23 @@ import { isMasked, needsConfirmation } from '../../core/spoiler/spoiler';
       </span>
     } @else {
       <button type="button" class="masked" (click)="tap()">
-        {{ placeholder() }} <span class="cue">· {{ 'spoiler.tapToReveal' | transloco }}</span>
+        <span class="label">{{ placeholder() }}</span>
+        <span class="cue">{{ 'spoiler.tapToReveal' | transloco }}</span>
       </button>
     }
   `,
   styles: `
-    .masked { all: unset; cursor: pointer; font: inherit; color: var(--text-muted); border-bottom: 1px dashed currentColor; }
-    .masked:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-    .cue { font-size: 0.85em; }
-    .confirm { display: inline-flex; flex-wrap: wrap; gap: 0.75rem; align-items: baseline; }
+    .masked {
+      all: unset; cursor: pointer; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem;
+      font: inherit; color: var(--text);
+    }
+    .masked:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+    .label { text-decoration: underline dashed var(--text-muted); text-underline-offset: 4px; }
+    .cue {
+      font: 600 0.6875rem/1 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.3rem 0.5rem; border-radius: 999px; color: var(--accent); background: var(--accent-soft);
+    }
+    .confirm { display: inline-flex; flex-wrap: wrap; gap: 0 0.75rem; align-items: center; font-size: 0.9375rem; font-weight: 500; }
   `,
 })
 export class SpoilerReveal {
