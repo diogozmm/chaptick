@@ -1,7 +1,11 @@
 {
   "app": {
     "switchLanguage": "Switch to English",
-    "disclaimer": "Projeto de fã, não oficial e sem vínculo com Nihon Falcom ou suas editoras. Todas as marcas pertencem aos seus donos."
+    "disclaimer": "Projeto de fã, não oficial e sem vínculo com Nihon Falcom ou suas editoras. Todas as marcas pertencem aos seus donos.",
+    "updateReady": "Uma nova versão está pronta.",
+    "reload": "Recarregar",
+    "footerNav": "Site",
+    "support": "Apoie o projeto"
   },
   "common": {
     "cancel": "Cancelar",
@@ -18,7 +22,7 @@
   "where": {
     "title": "Onde estou?",
     "intro": "Os capítulos depois do seu ficam bloqueados, então nada à frente aparece.",
-    "items": "{{count}} itens",
+    "items": "{{count}} item(ns)",
     "current": "Você está aqui",
     "imHere": "Estou aqui",
     "locked": "{{chapter}} — bloqueado",
@@ -85,5 +89,24 @@
       "wrong-game": "Esse arquivo é de outro jogo.",
       "newer-version": "Esse arquivo vem de uma versão mais nova do app. Recarregue e tente de novo."
     }
+  },
+  "credits": {
+    "title": "Créditos",
+    "sources": "Fontes",
+    "sourcesIntro": "Os fatos foram conferidos nestes guias e reescritos com nossas palavras. Obrigado aos autores.",
+    "contributors": "Contribuidores da comunidade",
+    "support": "Apoio",
+    "supportIntro": "Este projeto é gratuito e de código aberto, mantido só por doações. Nada fica preso atrás delas.",
+    "thanks": "Obrigado:",
+    "licenses": "Licenças",
+    "licensesText": "Código sob MIT. Dados do jogo e textos da comunidade sob CC BY-SA 4.0.",
+    "repo": "Código-fonte"
+  },
+  "privacy": {
+    "title": "Privacidade",
+    "progress": "Seu progresso fica só neste navegador. Nós nunca o recebemos.",
+    "analytics": "As métricas não usam cookies e são agregadas (visitas e alguns eventos anônimos). Sem IDs de itens e sem dados pessoais.",
+    "suggestions": "Quando as sugestões forem ativadas, guardaremos só o texto enviado, um apelido opcional e um hash irreversível do seu IP para limitar spam.",
+    "contact": "Dúvidas ou pedidos de remoção:"
   }
 }

@@ -5,10 +5,22 @@
   </button>
 </header>
 
+@if (update.updateReady()) {
+  <div class="update" role="status">
+    <span>{{ 'app.updateReady' | transloco }}</span>
+    <button type="button" class="link" (click)="update.reload()">{{ 'app.reload' | transloco }}</button>
+  </div>
+}
+
 <main class="page">
   <router-outlet />
 </main>
 
 <footer class="footer">
+  <nav [attr.aria-label]="'app.footerNav' | transloco">
+    <a routerLink="/credits">{{ 'credits.title' | transloco }}</a>
+    <a routerLink="/credits" fragment="support">{{ 'app.support' | transloco }}</a>
+    <a routerLink="/privacy">{{ 'privacy.title' | transloco }}</a>
+  </nav>
   <p>{{ 'app.disclaimer' | transloco }}</p>
 </footer>

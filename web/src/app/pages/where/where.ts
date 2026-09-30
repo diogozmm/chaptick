@@ -6,6 +6,7 @@ import { Chapter, ChapterSummary } from '../../core/content/content.models';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
+import { AnalyticsService } from '../../core/analytics.service';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { isUnlocked, newlyLeftBehind } from '../../core/spoiler/spoiler';
 import { ItemRow } from '../../ui/item-row/item-row';
@@ -28,6 +29,7 @@ export class Where {
   protected readonly lang = inject(LangService);
   private readonly progress = inject(ProgressStore);
   private readonly router = inject(Router);
+  private readonly analytics = inject(AnalyticsService);
 
   protected readonly pending = signal<PendingAdvance | null>(null);
 
@@ -49,6 +51,7 @@ export class Where {
   }
 
   protected async choose(chapter: ChapterSummary): Promise<void> {
+    if (chapter.order > this.access.currentOrder()) this.analytics.track('chapter_advanced', { order: chapter.order });
     await this.progress.setChapter(chapter.id);
     this.pending.set(null);
     await this.router.navigate(['/sc/chapters', chapter.id]);

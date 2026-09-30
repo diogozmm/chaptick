@@ -1,0 +1,9 @@
+{
+  "id": "sc-ch1", "gameId": "sc", "order": 1, "neutralLabel": { "en": "Chapter 1", "pt": "Capítulo 1" },
+  "checkpoints": [{ "id": "sc-ch1-cp-01", "order": 1, "neutralDescription": { "en": "FUTURE CHECKPOINT 1" } }],
+  "items": [
+    { "id": "sc-ch1-q-01", "type": "quest", "name": { "en": "FUTURE QUEST 1" }, "location": { "en": "FUTURE PLACE" },
+      "availableUntil": "sc-ch1-cp-01", "hint": { "en": "FUTURE HINT" }, "spoilerLevel": 0, "sources": ["e2e"] }
+  ],
+  "itemTexts": []
+}

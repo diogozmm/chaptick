@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#12141a"/>
+  <!-- Notebook with a check mark: "notes you tick off". -->
+  <rect x="136" y="104" width="240" height="304" rx="28" fill="none" stroke="#e8b04a" stroke-width="28"/>
+  <line x1="136" y1="104" x2="136" y2="408" stroke="#e8b04a" stroke-width="44" stroke-linecap="round"/>
+  <path d="M200 262 l44 44 l84 -104" fill="none" stroke="#e8b04a" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

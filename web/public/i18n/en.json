@@ -1,7 +1,11 @@
 {
   "app": {
     "switchLanguage": "Mudar para português",
-    "disclaimer": "Unofficial fan project, not affiliated with Nihon Falcom or its publishers. All trademarks belong to their owners."
+    "disclaimer": "Unofficial fan project, not affiliated with Nihon Falcom or its publishers. All trademarks belong to their owners.",
+    "updateReady": "A new version is ready.",
+    "reload": "Reload",
+    "footerNav": "Site",
+    "support": "Support the project"
   },
   "common": {
     "cancel": "Cancel",
@@ -18,7 +22,7 @@
   "where": {
     "title": "Where am I?",
     "intro": "Chapters after yours stay locked, so nothing ahead is shown.",
-    "items": "{{count}} items",
+    "items": "{{count}} item(s)",
     "current": "You are here",
     "imHere": "I'm here",
     "locked": "{{chapter}} — locked",
@@ -85,5 +89,24 @@
       "wrong-game": "That file is for another game.",
       "newer-version": "That file comes from a newer version of the app. Reload and try again."
     }
+  },
+  "credits": {
+    "title": "Credits",
+    "sources": "Sources",
+    "sourcesIntro": "Facts were checked against these guides and rewritten in our own words. Thank you to their authors.",
+    "contributors": "Community contributors",
+    "support": "Support",
+    "supportIntro": "This project is free and open source, funded only by donations. Nothing is locked behind them.",
+    "thanks": "Thank you:",
+    "licenses": "Licenses",
+    "licensesText": "Code under MIT. Game data and community texts under CC BY-SA 4.0.",
+    "repo": "Source code"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "progress": "Your progress is stored only in this browser. We never receive it.",
+    "analytics": "Analytics are cookieless and aggregate (page views and a few anonymous events). No item ids and no personal data.",
+    "suggestions": "When suggestions are enabled, we will keep only the text you send, an optional nickname and a one-way hash of your IP address to limit spam.",
+    "contact": "Questions or removal requests:"
   }
 }

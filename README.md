@@ -28,7 +28,10 @@ cd web
 npm install
 npx ng serve               # http://localhost:4200
 npx ng test --watch=false
+npx playwright test        # e2e on a production build with fixture content
 ```
+
+Deploy: see [docs/deploy.md](docs/deploy.md).
 
 ## Contributing
 

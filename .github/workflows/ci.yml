@@ -41,3 +41,13 @@ jobs:
         working-directory: web
       - run: npx ng build
         working-directory: web
+      - run: npx playwright install --with-deps chromium
+        working-directory: web
+      # Runs against a production build with fixture content (see web/playwright.config.ts).
+      - run: npx playwright test
+        working-directory: web
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: web/test-results/

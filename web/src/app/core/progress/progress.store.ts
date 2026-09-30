@@ -1,5 +1,6 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 
+import { AnalyticsService } from '../analytics.service';
 import { GAME_ID } from '../content/content.service';
 import { DEFAULT_PREFERENCES, PROGRESS_SCHEMA_VERSION, Preferences, SavedProgress } from './progress.models';
 import { ProgressRepository } from './progress.repository';
@@ -15,6 +16,7 @@ export class ProgressImportError extends Error {
 @Injectable({ providedIn: 'root' })
 export class ProgressStore {
   private readonly repository = inject(ProgressRepository);
+  private readonly analytics = inject(AnalyticsService);
   private readonly state = signal<SavedProgress | null>(null);
   private saving: Promise<void> = Promise.resolve();
 
@@ -30,6 +32,7 @@ export class ProgressStore {
   }
 
   toggle(itemId: string): Promise<void> {
+    this.analytics.track('item_toggled', { state: this.done().has(itemId) ? 'undone' : 'done' });
     return this.update((p) => ({
       doneItems: p.doneItems.includes(itemId) ? p.doneItems.filter((id) => id !== itemId) : [...p.doneItems, itemId],
     }));

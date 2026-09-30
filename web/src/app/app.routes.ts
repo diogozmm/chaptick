@@ -15,5 +15,7 @@ export const routes: Routes = [
     canActivate: [unlockedChapterGuard],
     loadComponent: () => import('./pages/item-detail/item-detail').then((m) => m.ItemDetail),
   },
+  { path: 'credits', loadComponent: () => import('./pages/credits/credits').then((m) => m.Credits) },
+  { path: 'privacy', loadComponent: () => import('./pages/privacy/privacy').then((m) => m.Privacy) },
   { path: '**', redirectTo: '' },
 ];

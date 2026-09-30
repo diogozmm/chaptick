@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/cor
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
+import { AnalyticsService } from '../../core/analytics.service';
 import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
@@ -22,6 +23,7 @@ export class Home {
   protected readonly access = inject(ChapterAccess);
   protected readonly lang = inject(LangService);
   private readonly progress = inject(ProgressStore);
+  private readonly analytics = inject(AnalyticsService);
 
   /** File contents waiting for "replace my progress?" confirmation. */
   protected readonly pendingImport = signal<string | null>(null);
@@ -35,6 +37,7 @@ export class Home {
     link.click();
     URL.revokeObjectURL(link.href);
     this.status.set({ kind: 'ok', key: 'transfer.exported' });
+    this.analytics.track('progress_exported');
   }
 
   protected async pickFile(event: Event): Promise<void> {
