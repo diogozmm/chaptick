@@ -43,7 +43,7 @@ export class ItemDetail {
     return {
       chapter,
       item,
-      deadline: chapter.checkpoints.find((c) => c.id === item.availableUntil),
+      deadline: this.view.deadline(chapter, item),
       texts: chapter.itemTexts.filter((t) => t.itemId === item.id),
     };
   });

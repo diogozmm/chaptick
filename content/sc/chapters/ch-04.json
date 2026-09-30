@@ -1,0 +1,397 @@
+{
+  "id": "sc-ch4",
+  "gameId": "sc",
+  "order": 4,
+  "neutralLabel": {
+    "en": "Chapter 4",
+    "pt": "Capítulo 4"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch4-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Crossing the plank at the top of the first area",
+        "pt": "Atravessar a prancha no topo da primeira área"
+      }
+    },
+    {
+      "id": "sc-ch4-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Returning to Rolent from Esmelas Tower (night falls)",
+        "pt": "Voltar para Rolent vindo da Esmelas Tower (a noite cai)"
+      }
+    },
+    {
+      "id": "sc-ch4-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Ending the night in Rolent",
+        "pt": "Encerrar a noite em Rolent"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch4-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Betrothal Band Bandit"
+      },
+      "location": {
+        "en": "Rolent Chapel"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "+4 BP. Talk to Armand and Ellie. The ring is on the rooftop of Esmelas Tower, by the broken pillar on the left.",
+        "pt": "+4 BP. Fale com Armand e Ellie. O anel está no terraço da Esmelas Tower, junto ao pilar quebrado à esquerda."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Fishing Spot Scout"
+      },
+      "location": {
+        "en": "Elize Highway — talk to Pecheur",
+        "pt": "Elize Highway — fale com o Pecheur"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "+2 bonus BP for catching a fish at each of Rolent's 7 fishing spots. One spot only opens at the start of Chapter 5, so the bonus cannot be finished yet.",
+        "pt": "+2 BP de bônus por pescar um peixe em cada um dos 7 pesqueiros de Rolent. Um deles só abre no início do Capítulo 5, então o bônus ainda não pode ser concluído."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Elize Hwy Monster"
+      },
+      "location": {
+        "en": "Elize Highway — near Gurune Gate",
+        "pt": "Elize Highway — perto do Gurune Gate"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "+4 BP. Petrify, delay and stat-down attacks: equip protection and use arts reflect.",
+        "pt": "+4 BP. Ataques de Petrify, atraso e redução de atributos: equipe proteção e use reflexo de arts."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Milch Monster"
+      },
+      "location": {
+        "en": "Milch Main Road — west end",
+        "pt": "Milch Main Road — extremo oeste"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "+4 BP. It buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.",
+        "pt": "+4 BP. Ele se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve proteção contra Freeze."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Find That Feline"
+      },
+      "location": {
+        "en": "Rolent — Hotel Rolent, 1F",
+        "pt": "Rolent — Hotel Rolent, 1º andar"
+      },
+      "availableUntil": "sc-ch4-cp-03",
+      "hint": {
+        "en": "+4 BP. Only during the night. Skyler by the landing port warehouse → Captain Petrov in Abend Bar → Quint in the orbal factory → Zosimov by the tree at the port entrance → Fabree on the deck → bottom level of the airliner.",
+        "pt": "+4 BP. Só durante a noite. Skyler no depósito do porto → Captain Petrov no Abend Bar → Quint na fábrica orbal → Zosimov na árvore da entrada do porto → Fabree no deck → nível mais baixo do airliner."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: Aina's two questions",
+        "pt": "BP bônus: as duas perguntas da Aina"
+      },
+      "location": {
+        "en": "Rolent — Bracer Guild"
+      },
+      "availableUntil": "sc-ch4-cp-03",
+      "hint": {
+        "en": "+6 BP. When you report the night investigation, pick the 2nd option, then the 3rd.",
+        "pt": "+6 BP. Ao relatar a investigação da noite, escolha a 2ª opção e depois a 3ª."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Stronghold treasure chests (13)",
+        "pt": "Baús da fortaleza (13)"
+      },
+      "location": {
+        "en": "First area of the chapter",
+        "pt": "Primeira área do capítulo"
+      },
+      "availableUntil": "sc-ch4-cp-01",
+      "hint": {
+        "en": "One-time visit. Check the first room on the left on 2F and circle the 3F before going up.",
+        "pt": "Visita única. Olhe a primeira sala à esquerda no 2F e dê a volta no 3F antes de subir."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Sky Pirate Stronghold"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Battle Notes: stronghold (5)",
+        "pt": "Battle Notes: fortaleza (5)"
+      },
+      "location": {
+        "en": "First area of the chapter",
+        "pt": "Primeira área do capítulo"
+      },
+      "availableUntil": "sc-ch4-cp-01",
+      "hint": {
+        "en": "Fight every enemy type you meet on the way up; you cannot come back.",
+        "pt": "Enfrente todos os tipos de inimigo no caminho para cima; não dá para voltar."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Sky Pirate Stronghold"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 6"
+      },
+      "location": {
+        "en": "Rolent — Rinon's General Goods"
+      },
+      "availableUntil": "sc-ch4-cp-03",
+      "hint": {
+        "en": "Sold at the general store.",
+        "pt": "Vendido no armazém."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 6"
+      },
+      "location": {
+        "en": "Rolent — apartment next to Abend Bar, 2F",
+        "pt": "Rolent — apartamento ao lado do Abend Bar, 2º andar"
+      },
+      "availableUntil": "sc-ch4-cp-03",
+      "hint": {
+        "en": "Talk to Serra.",
+        "pt": "Fale com a Serra."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Abend Bar (4)",
+        "pt": "Receitas: Abend Bar (4)"
+      },
+      "location": {
+        "en": "Rolent — Abend Bar"
+      },
+      "availableUntil": "sc-ch4-cp-03",
+      "hint": {
+        "en": "Silken Soup, Spring Spiral Noodles, Strawberry Supreme Crepe and Three-Egg Rice Porridge.",
+        "pt": "Silken Soup, Spring Spiral Noodles, Strawberry Supreme Crepe e Three-Egg Rice Porridge."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Bear Medal"
+      },
+      "location": {
+        "en": "Rolent — Rinon's General Goods"
+      },
+      "availableUntil": "sc-ch4-cp-03",
+      "hint": {
+        "en": "4th of the 5 animal medals.",
+        "pt": "4ª das 5 medalhas de animais."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Rolent Sewers treasure chests (2)",
+        "pt": "Baús do Rolent Sewers (2)"
+      },
+      "location": {
+        "en": "Rolent Sewers"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "Enter through the grate behind the chapel.",
+        "pt": "Entre pela grade atrás da capela."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Elize Highway treasure chests (5)",
+        "pt": "Baús da Elize Highway (5)"
+      },
+      "location": {
+        "en": "Elize Highway"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "Spread along the highway south of Rolent.",
+        "pt": "Espalhados pela estrada ao sul de Rolent."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Mistwald treasure chests (7)",
+        "pt": "Baús de Mistwald (7)"
+      },
+      "location": {
+        "en": "Mistwald"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "Includes a monster chest with Death Speculars and Picorns.",
+        "pt": "Inclui um baú de monstros com Death Speculars e Picorns."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Milch Main Road treasure chests (8)",
+        "pt": "Baús da Milch Main Road (8)"
+      },
+      "location": {
+        "en": "Milch Main Road"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "Large open map with few landmarks; includes a monster chest with rhino beetles.",
+        "pt": "Mapa grande e aberto, com poucos pontos de referência; inclui um baú de monstros com besouros-rinoceronte."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Malga Trail treasure chests (8)",
+        "pt": "Baús da Malga Trail (8)"
+      },
+      "location": {
+        "en": "Malga Trail"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "Visit both Esmelas Tower (west) and Malga Mine (north) to unlock fast travel. A breakable wall on the way to the tower hides a cave.",
+        "pt": "Visite a Esmelas Tower (oeste) e a Malga Mine (norte) para liberar a viagem rápida. Uma parede quebrável a caminho da torre esconde uma caverna."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Esmelas Tower treasure chests (11)",
+        "pt": "Baús da Esmelas Tower (11)"
+      },
+      "location": {
+        "en": "Esmelas Tower"
+      },
+      "availableUntil": "sc-ch4-cp-02",
+      "hint": {
+        "en": "Includes Maelstrom Soup (eat it for the recipe) and a monster chest with Wind Trappers.",
+        "pt": "Inclui Maelstrom Soup (coma para ganhar a receita) e um baú de monstros com Wind Trappers."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    }
+  ],
+  "itemTexts": []
+}

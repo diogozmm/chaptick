@@ -22,14 +22,26 @@ export interface CheckpointAlert {
   pending: number;
 }
 
+/** Ids embed their chapter: `sc-ch3-cp-01` belongs to the chapter with order 3. */
+export function chapterOrderOf(id: string): number | undefined {
+  const match = id.match(/-ch(\d+)(?:-|$)/);
+  return match ? Number(match[1]) : undefined;
+}
+
 /**
  * The earliest point of no return in the chapter that still has pending items.
- * Powers "Before X, 3 items are still missing".
+ * Powers "Before X, 3 items are still missing". `carried` adds items from earlier
+ * chapters whose deadline falls in this one.
  */
-export function nextCheckpointAlert(chapter: Chapter, done: ReadonlySet<string>): CheckpointAlert | null {
+export function nextCheckpointAlert(
+  chapter: Chapter,
+  done: ReadonlySet<string>,
+  carried: readonly Item[] = [],
+): CheckpointAlert | null {
   const checkpoints = [...chapter.checkpoints].sort((a, b) => a.order - b.order);
+  const items = [...chapter.items, ...carried];
   for (const checkpoint of checkpoints) {
-    const pending = chapter.items.filter((i) => i.availableUntil === checkpoint.id && !done.has(i.id)).length;
+    const pending = items.filter((i) => i.availableUntil === checkpoint.id && !done.has(i.id)).length;
     if (pending > 0) return { checkpoint, pending };
   }
   return null;
@@ -76,4 +88,19 @@ export function newlyLeftBehind(
 ): Item[] {
   const alreadyLost = new Set(expiredItems(chapters, done, fromOrder).map((i) => i.id));
   return expiredItems(chapters, done, toOrder).filter((i) => !alreadyLost.has(i.id));
+}
+
+/**
+ * Pending items from earlier chapters that can still be done: their deadline is in the current
+ * chapter or later. Shown on the current chapter so they are not forgotten.
+ */
+export function carriedOver(chapters: readonly Chapter[], done: ReadonlySet<string>, currentOrder: number): Item[] {
+  return chapters
+    .filter((c) => c.order < currentOrder)
+    .flatMap((c) => c.items)
+    .filter((item) => {
+      if (done.has(item.id) || item.availableUntil === null) return false;
+      const order = chapterOrderOf(item.availableUntil);
+      return order !== undefined && order >= currentOrder;
+    });
 }

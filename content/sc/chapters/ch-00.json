@@ -60,14 +60,15 @@
         "en": "Rolent",
         "pt": "Rolent"
       },
-      "availableUntil": "sc-ch0-cp-01",
+      "availableUntil": null,
       "hint": {
-        "en": "Guild balcony, balcony of the southwest house, and the tree by the Mayor's house.",
-        "pt": "Sacada da guilda, sacada da casa a sudoeste e a árvore perto da casa do prefeito."
+        "en": "Guild balcony, balcony of the southwest house, and the tree by the Mayor's house. If you miss them, they can still be picked up later in the game.",
+        "pt": "Sacada da guilda, sacada da casa a sudoeste e a árvore perto da casa do prefeito. Se perder, dá para pegá-los mais tarde no jogo."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+        "guide: Neoseeker SC walkthrough, Prologue Part 1",
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
       ]
     },
     {

@@ -25,7 +25,13 @@
     </div>
     <div class="fact deadline">
       <dt><app-icon name="flag" /> {{ 'item.deadline' | transloco }}</dt>
-      <dd>{{ e.deadline ? (e.deadline.neutralDescription | localize: l) : ('checklist.noDeadline' | transloco) }}</dd>
+      <dd>
+        @switch (e.deadline.kind) {
+          @case ('checkpoint') { {{ e.deadline.description | localize: l }} }
+          @case ('chapter') { {{ 'item.laterIn' | transloco: { chapter: e.deadline.label | localize: l } }} }
+          @default { {{ 'checklist.noDeadline' | transloco }} }
+        }
+      </dd>
     </div>
     <div class="fact">
       <dt><app-icon name="sparkles" /> {{ 'item.hint' | transloco }}</dt>

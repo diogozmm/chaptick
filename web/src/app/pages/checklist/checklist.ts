@@ -8,7 +8,7 @@ import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
-import { chapterProgress, expiredItems, groupByType, nextCheckpointAlert } from '../../core/spoiler/spoiler';
+import { carriedOver, chapterProgress, expiredItems, groupByType, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { Icon } from '../../ui/icon/icon';
 import { ItemRow } from '../../ui/item-row/item-row';
 import { TYPE_ICON } from '../../ui/item-type';
@@ -50,7 +50,14 @@ export class Checklist {
   });
   protected readonly alert = computed(() => {
     const chapter = this.loaded();
-    return chapter ? nextCheckpointAlert(chapter, this.progress.done()) : null;
+    const carried = this.carried().map((e) => e.item);
+    return chapter ? nextCheckpointAlert(chapter, this.progress.done(), carried) : null;
+  });
+  /** Earlier items whose deadline is still ahead: easy to forget once the chapter changes. */
+  protected readonly carried = computed<{ chapter: Chapter; item: Item }[]>(() => {
+    const chapters = this.earlier.hasValue() ? this.earlier.value() : [];
+    const open = new Set(carriedOver(chapters, this.progress.done(), this.access.currentOrder()).map((i) => i.id));
+    return chapters.flatMap((chapter) => chapter.items.filter((i) => open.has(i.id)).map((item) => ({ chapter, item })));
   });
   protected readonly leftBehind = computed<{ chapter: Chapter; item: Item }[]>(() => {
     const chapters = this.earlier.hasValue() ? this.earlier.value() : [];

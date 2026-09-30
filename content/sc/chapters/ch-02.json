@@ -1,0 +1,564 @@
+{
+  "id": "sc-ch2",
+  "gameId": "sc",
+  "order": 2,
+  "neutralLabel": {
+    "en": "Chapter 2",
+    "pt": "Capítulo 2"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch2-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Boarding the airliner out of Ruan",
+        "pt": "Embarcar no airliner saindo de Ruan"
+      }
+    },
+    {
+      "id": "sc-ch2-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Going near the fort at the east end of Tratt Plains Road (red story marker)",
+        "pt": "Chegar perto do forte no extremo leste da Tratt Plains Road (marcador vermelho)"
+      }
+    },
+    {
+      "id": "sc-ch2-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Entering the cave behind the wooden gate north of Elmo Village",
+        "pt": "Entrar na caverna atrás do portão de madeira ao norte de Elmo Village"
+      }
+    },
+    {
+      "id": "sc-ch2-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 2",
+        "pt": "O último marcador de evento do Capítulo 2"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch2-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Election Office Outrage"
+      },
+      "location": {
+        "en": "Ruan — Hotel Blanche"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "+5 BP. Starts after talking to Nial and Dorothy downstairs; you stay inside the hotel until it ends. Ask everything until no new topics appear. Final answers: 6th, 2nd, 2nd, 2nd.",
+        "pt": "+5 BP. Começa depois de falar com Nial e Dorothy no andar de baixo; você fica preso no hotel até terminar. Pergunte tudo até não surgirem assuntos novos. Respostas finais: 6ª, 2ª, 2ª, 2ª."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Winners Wanted"
+      },
+      "location": {
+        "en": "Ruan — Lavantar Bar & Casino"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "+4 BP. A wrong pick fails it. With Scherazard: Estelle 1st, 1st; Olivier 1st, 2nd; Scherazard 2nd. With Agate: Agate 1st, 1st; Olivier 1st, 2nd; Estelle 2nd.",
+        "pt": "+4 BP. Uma escolha errada faz falhar. Com Scherazard: Estelle 1ª, 1ª; Olivier 1ª, 2ª; Scherazard 2ª. Com Agate: Agate 1ª, 1ª; Olivier 1ª, 2ª; Estelle 2ª."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Stolen Sign"
+      },
+      "location": {
+        "en": "Zeiss"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "+4 BP. Ask Kilika about it. Cards: back of the clock tower in the plaza; the terminal in the factory 5F (Central Factory → All Orbal Technology → Bracer Guild Sign); under the three chimneys behind Forgel Bar; then talk to Fey by the conveyor on B1F.",
+        "pt": "+4 BP. Pergunte à Kilika. Cartões: atrás da torre do relógio na praça; o terminal no 5F da fábrica (Central Factory → All Orbal Technology → Bracer Guild Sign); sob as três chaminés atrás do Forgel Bar; depois fale com a Fey na esteira do B1F."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Firearm Field Test"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — 3F",
+        "pt": "Zeiss Central Factory — 3º andar"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "3 +2 BP. Karl gives Olivier a gun. Win 15 Command Battles on Tratt Plains Road with it equipped (10 is the minimum) before reporting back.",
+        "pt": "3 +2 BP. O Karl dá uma arma ao Olivier. Vença 15 Command Battles na Tratt Plains Road com ela equipada (o mínimo é 10) antes de voltar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss",
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Drill Duty"
+      },
+      "location": {
+        "en": "Leiston Fortress — end of Soldat Army Road",
+        "pt": "Leiston Fortress — fim da Soldat Army Road"
+      },
+      "availableUntil": "sc-ch2-cp-02",
+      "hint": {
+        "en": "3 +2 BP. Three rounds with no healing in between; you must win the last one for the bonus.",
+        "pt": "3 +2 BP. Três rodadas sem cura entre elas; é preciso vencer a última para ganhar o bônus."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Kaldia Tunnel Monster"
+      },
+      "location": {
+        "en": "Kaldia Tunnel"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "+3 BP. Whale frogs swallow allies: hit the frog three times to free them.",
+        "pt": "+3 BP. Os sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Tratt Plains Monster"
+      },
+      "location": {
+        "en": "Tratt Plains Road — east, before the fort path",
+        "pt": "Tratt Plains Road — leste, antes do caminho do forte"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "+3 BP. Lots of ailments: debuff immunity makes it manageable. Do not wander into the fort by accident.",
+        "pt": "+3 BP. Muitos efeitos negativos: imunidade a debuffs deixa a luta administrável. Cuidado para não entrar no forte sem querer."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-08",
+      "type": "quest",
+      "name": {
+        "en": "Probe for Parts"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — ground floor",
+        "pt": "Zeiss Central Factory — térreo"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "3 +2 BP. Find all 8 parts: 3 in the 3F Workshop, 4 in the 4F Laboratory and 1 by the cat in the 4F Clinic.",
+        "pt": "3 +2 BP. Encontre as 8 peças: 3 na oficina do 3F, 4 no laboratório do 4F e 1 perto do gato na clínica do 4F."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-09",
+      "type": "quest",
+      "name": {
+        "en": "Vanquish the Voyeurs"
+      },
+      "location": {
+        "en": "Elmo Village — Maple Leaf Inn"
+      },
+      "availableUntil": "sc-ch2-cp-03",
+      "hint": {
+        "en": "+4 BP. Equip Confuse and Sleep protection before talking to Mao.",
+        "pt": "+4 BP. Equipe proteção contra Confuse e Sleep antes de falar com a Mao."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-10",
+      "type": "quest",
+      "name": {
+        "en": "Tratt Plains Monster 2"
+      },
+      "location": {
+        "en": "Tratt Plains Road — southwest cliff fishing spot",
+        "pt": "Tratt Plains Road — pesqueiro no penhasco a sudoeste"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "+3 BP. A swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.",
+        "pt": "+3 BP. Um enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem rápido."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    },
+    {
+      "id": "sc-ch2-q-11",
+      "type": "quest",
+      "name": {
+        "en": "Army Road Monster"
+      },
+      "location": {
+        "en": "Soldat Army Road — near Leiston Fortress",
+        "pt": "Soldat Army Road — perto da Leiston Fortress"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "+3 BP. Hits very hard: stack HP and keep buffs up.",
+        "pt": "+3 BP. Bate muito forte: aumente o HP e mantenha os buffs."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    },
+    {
+      "id": "sc-ch2-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: talk to Rudi in Kaldia Tunnel",
+        "pt": "BP bônus: falar com o Rudi no Kaldia Tunnel"
+      },
+      "location": {
+        "en": "Kaldia Tunnel — near the factory exit",
+        "pt": "Kaldia Tunnel — perto da saída da fábrica"
+      },
+      "availableUntil": "sc-ch2-cp-02",
+      "hint": {
+        "en": "+3 BP just for talking to him.",
+        "pt": "+3 BP só por conversar com ele."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: question in the storeroom",
+        "pt": "BP bônus: pergunta no depósito"
+      },
+      "location": {
+        "en": "Sanktheim Gate"
+      },
+      "availableUntil": "sc-ch2-cp-03",
+      "hint": {
+        "en": "+3 BP. In the scene with Warrant Officer Talbot, pick the 3rd option.",
+        "pt": "+3 BP. Na cena com o Warrant Officer Talbot, escolha a 3ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    },
+    {
+      "id": "sc-ch2-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: question in the professor's office",
+        "pt": "BP bônus: pergunta na sala do professor"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — 5F",
+        "pt": "Zeiss Central Factory — 5º andar"
+      },
+      "availableUntil": "sc-ch2-cp-03",
+      "hint": {
+        "en": "+2 BP. When asked where to go, pick the 3rd option.",
+        "pt": "+2 BP. Quando perguntarem para onde ir, escolha a 3ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 3"
+      },
+      "location": {
+        "en": "Airliner to Zeiss",
+        "pt": "Airliner para Zeiss"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Talk to Olivier a second time after his scene on board. If you miss it, Bell Station in Zeiss sells a copy in Chapter 3.",
+        "pt": "Fale com o Olivier uma segunda vez depois da cena dele a bordo. Se perder, a Bell Station em Zeiss vende uma cópia no Capítulo 3."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan",
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 3"
+      },
+      "location": {
+        "en": "Zeiss — Bell Station"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Sold at Bell Station.",
+        "pt": "Vendido na Bell Station."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Zeiss (4)",
+        "pt": "Receitas: Zeiss (4)"
+      },
+      "location": {
+        "en": "Zeiss"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Magma Wings, Acerbic Tomato Sandwich (Ben also gives one) and Fruit Kingdom at Forgel Bar; Mysterious Paste at Priam's Drink Shop outside the factory.",
+        "pt": "Magma Wings, Acerbic Tomato Sandwich (o Ben também dá um) e Fruit Kingdom no Forgel Bar; Mysterious Paste na Priam's Drink Shop, do lado de fora da fábrica."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Recipe: Golden Risotto",
+        "pt": "Receita: Golden Risotto"
+      },
+      "location": {
+        "en": "Sanktheim Gate — cafeteria"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Take the northeast branch of Ritter Roadway.",
+        "pt": "Siga pelo ramo nordeste da Ritter Roadway."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Elmo Village (3)",
+        "pt": "Receitas: Elmo Village (3)"
+      },
+      "location": {
+        "en": "Elmo Village — Maple Leaf Inn"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Continental Eggs, Passionate Egg Roll and Top-Rated Shake.",
+        "pt": "Continental Eggs, Passionate Egg Roll e Top-Rated Shake."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Bunny Medal"
+      },
+      "location": {
+        "en": "Elmo Village — Autumn Souvenirs"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "2nd of the 5 animal medals.",
+        "pt": "2ª das 5 medalhas de animais."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Ritter Roadway treasure chests (3)",
+        "pt": "Baús da Ritter Roadway (3)"
+      },
+      "location": {
+        "en": "Ritter Roadway"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Along both branches of the road.",
+        "pt": "Ao longo dos dois ramos da estrada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Soldat Army Road treasure chests (4)",
+        "pt": "Baús da Soldat Army Road (4)"
+      },
+      "location": {
+        "en": "Soldat Army Road"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Includes a monster chest with grasshoppers. Break the wall midway along the road to open a hidden water cave.",
+        "pt": "Inclui um baú de monstros com gafanhotos. Quebre a parede no meio da estrada para abrir uma caverna com água escondida."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Kaldia Tunnel treasure chests (6)",
+        "pt": "Baús do Kaldia Tunnel (6)"
+      },
+      "location": {
+        "en": "Kaldia Tunnel"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Reached from the basement of Zeiss Central Factory.",
+        "pt": "Acesso pelo subsolo da Zeiss Central Factory."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Tratt Plains Road treasure chests (13)",
+        "pt": "Baús da Tratt Plains Road (13)"
+      },
+      "location": {
+        "en": "Tratt Plains Road"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "One holds the Pisces Heart fishing rod (east side). Includes a monster chest with sheep and mantises.",
+        "pt": "Um guarda a vara de pesca Pisces Heart (lado leste). Inclui um baú de monstros com ovelhas e louva-a-deus."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Tower treasure chests (15)",
+        "pt": "Baús da Carnelia Tower (15)"
+      },
+      "location": {
+        "en": "Carnelia Tower"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Optional tower northeast of Tratt Plains Road. The top-floor monster chest has five Fire Trappers: water arts, and keep away when they explode.",
+        "pt": "Torre opcional a nordeste da Tratt Plains Road. O baú de monstros do último andar tem cinco Fire Trappers: use arts de água e se afaste quando explodirem."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Hot spring cave treasure chests (9)",
+        "pt": "Baús da caverna das fontes termais (9)"
+      },
+      "location": {
+        "en": "Cave north of Elmo Village",
+        "pt": "Caverna ao norte de Elmo Village"
+      },
+      "availableUntil": "sc-ch2-cp-04",
+      "hint": {
+        "en": "Includes Septium Jelly Beans (eat it for the recipe) and a monster chest. The last two chests are down the side branch near the end, not the path to the healing device.",
+        "pt": "Inclui Septium Jelly Beans (coma para ganhar a receita) e um baú de monstros. Os dois últimos baús ficam no desvio perto do fim, não no caminho do dispositivo de cura."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    }
+  ],
+  "itemTexts": []
+}

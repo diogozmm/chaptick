@@ -46,7 +46,10 @@
     "leftBehind": "You left {{count}} item(s) behind",
     "leftBehindHint": "Their deadline has passed. If you did them anyway, tick them off.",
     "eyebrow": "Chapter checklist",
-    "allClear": "No point of no return with pending items. All caught up!"
+    "allClear": "No point of no return with pending items. All caught up!",
+    "untilChapter": "Until: some point in {{chapter}}",
+    "carried": "Still doable: {{count}} item(s) from earlier chapters",
+    "carriedHint": "Their deadline is in this chapter or later."
   },
   "spoiler": {
     "tapToReveal": "tap to reveal",
@@ -77,7 +80,8 @@
     "markUndone": "Mark as not done",
     "notFound": "This item does not exist (anymore).",
     "detailsFor": "Details: {{name}}",
-    "done": "Done"
+    "done": "Done",
+    "laterIn": "Some point in {{chapter}}"
   },
   "transfer": {
     "title": "Move your progress",

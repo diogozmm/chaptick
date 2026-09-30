@@ -29,8 +29,5 @@ export class ItemRow {
   readonly item = input.required<Item>();
 
   protected readonly done = computed(() => this.progress.done().has(this.item().id));
-  protected readonly deadline = computed(() => {
-    const id = this.item().availableUntil;
-    return id ? this.chapter().checkpoints.find((c) => c.id === id) : undefined;
-  });
+  protected readonly deadline = computed(() => this.view.deadline(this.chapter(), this.item()));
 }

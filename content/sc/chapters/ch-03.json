@@ -1,0 +1,497 @@
+{
+  "id": "sc-ch3",
+  "gameId": "sc",
+  "order": 3,
+  "neutralLabel": {
+    "en": "Chapter 3",
+    "pt": "Capítulo 3"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch3-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Boarding the airliner from Zeiss to Grancel",
+        "pt": "Embarcar no airliner de Zeiss para Grancel"
+      }
+    },
+    {
+      "id": "sc-ch3-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Finishing the round of visits in the capital (the time of day changes)",
+        "pt": "Terminar a rodada de visitas na capital (o horário do dia muda)"
+      }
+    },
+    {
+      "id": "sc-ch3-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Boarding the airliner at the end of Chapter 3",
+        "pt": "Embarcar no airliner no fim do Capítulo 3"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch3-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Guest Gone Missing"
+      },
+      "location": {
+        "en": "Zeiss — Zahnrad Hotel"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "+5 BP. Leads into Kaldia Limestone Cave, off Kaldia Tunnel. Bring Confuse and Seal protection, and keep the person you escort alive in the final fight.",
+        "pt": "+5 BP. Leva à Kaldia Limestone Cave, a partir do Kaldia Tunnel. Leve proteção contra Confuse e Seal, e mantenha vivo quem você escolta na luta final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch3-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Sewer Monster"
+      },
+      "location": {
+        "en": "Grancel Sewers — W. Block, far end",
+        "pt": "Grancel Sewers — W. Block, no fim"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "+4 BP. Trees that cripple stats and heal from damage: shields and debuff immunity; fire arts on the small ones first.",
+        "pt": "+4 BP. Árvores que derrubam atributos e se curam causando dano: escudos e imunidade a debuffs; arts de fogo nas menores primeiro."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Erbe Scenic Route Monster"
+      },
+      "location": {
+        "en": "Erbe Scenic Route — middle intersection",
+        "pt": "Erbe Scenic Route — cruzamento central"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "+4 BP. Blocks the way to the villa. Straightforward: buff up and burst when stunned.",
+        "pt": "+4 BP. Bloqueia o caminho para a mansão. Direto ao ponto: faça buffs e ataque forte quando atordoar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Exhibit Enigma"
+      },
+      "location": {
+        "en": "Grancel — History Museum, 2F",
+        "pt": "Grancel — History Museum, 2º andar"
+      },
+      "availableUntil": "sc-ch3-cp-02",
+      "hint": {
+        "en": "+4 BP. Cards: grandfather clock upstairs in General Morgan's house (next to the cathedral); the South Block fountain; Calvard Embassy, right room, The Doll Knight vol. 15; then the Grand Arena through the southern waiting room. Bring Freeze protection for the fight.",
+        "pt": "+4 BP. Cartões: relógio de pêndulo no andar de cima da casa do General Morgan (ao lado da catedral); a fonte do South Block; embaixada de Calvard, sala à direita, The Doll Knight vol. 15; por fim, a Grand Arena pela sala de espera sul. Leve proteção contra Freeze para a luta."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "sc-ch3-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Sewer Monster 2"
+      },
+      "location": {
+        "en": "Grancel Sewers — E. and N. Blocks",
+        "pt": "Grancel Sewers — E. e N. Blocks"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "+4 BP. The North Block entrance is a breakable wall at the end of the East Block.",
+        "pt": "+4 BP. A entrada do North Block é uma parede quebrável no fim do East Block."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "sc-ch3-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Piscine Pilferer"
+      },
+      "location": {
+        "en": "Grancel Castle — entrance hall",
+        "pt": "Grancel Castle — saguão de entrada"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "+4 BP. Needs Kloe in the party; talk to Hilda. You stay in the sewers until it ends, so prepare first.",
+        "pt": "+4 BP. Precisa da Kloe na equipe; fale com a Hilda. Você fica nos esgotos até terminar, então se prepare antes."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ]
+    },
+    {
+      "id": "sc-ch3-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Kirsche Avenue Monster"
+      },
+      "location": {
+        "en": "Kirsche Avenue"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "+4 BP. A big bird with Seal and all-stat-down attacks: debuff immunity plus arts reflect is ideal.",
+        "pt": "+4 BP. Uma ave grande com ataques de Seal e redução de todos os atributos: imunidade a debuffs com reflexo de arts é o ideal."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ]
+    },
+    {
+      "id": "sc-ch3-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the search at the villa",
+        "pt": "BP bônus: a busca na mansão"
+      },
+      "location": {
+        "en": "Erbe Royal Villa"
+      },
+      "availableUntil": "sc-ch3-cp-02",
+      "hint": {
+        "en": "+3 BP. Do not give up and ask the butler for help. After checking every marker, examine the counter next to him in the Lounge.",
+        "pt": "+3 BP. Não desista nem peça ajuda ao mordomo. Depois de checar todos os marcadores, examine o balcão ao lado dele no Lounge."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "sc-ch3-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: question at the guild",
+        "pt": "BP bônus: pergunta na guilda"
+      },
+      "location": {
+        "en": "Grancel — Bracer Guild"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "+2 BP. In the scene at the guild after visiting the Liberl News, pick the 2nd option.",
+        "pt": "+2 BP. Na cena da guilda depois de visitar o Liberl News, escolha a 2ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "sc-ch3-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: question on the southern wall",
+        "pt": "BP bônus: pergunta na muralha sul"
+      },
+      "location": {
+        "en": "Gurune Gate"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "+3 BP. At the end of the southern wall, pick the 2nd option.",
+        "pt": "+3 BP. No fim da muralha sul, escolha a 2ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 4"
+      },
+      "location": {
+        "en": "Grancel — Edel Department Store, E. Block",
+        "pt": "Grancel — Edel Department Store, E. Block"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "General goods counter.",
+        "pt": "Balcão de artigos gerais."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 5"
+      },
+      "location": {
+        "en": "Grancel — Edel Department Store, E. Block",
+        "pt": "Grancel — Edel Department Store, E. Block"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "Appears later in the chapter at the same counter.",
+        "pt": "Aparece mais tarde no capítulo, no mesmo balcão."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 4"
+      },
+      "location": {
+        "en": "Grancel — embassy library, E. Block",
+        "pt": "Grancel — biblioteca da embaixada, E. Block"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Talk to Nathan in the library after the meeting upstairs. If missed, Edel Department Store sells it at the end of the chapter.",
+        "pt": "Fale com o Nathan na biblioteca depois da reunião no andar de cima. Se perder, a Edel Department Store vende no fim do capítulo."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa",
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 5"
+      },
+      "location": {
+        "en": "Grancel — Baral Coffee House, W. Block"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Talk to Connor. If missed, Edel Department Store sells it at the end of the chapter.",
+        "pt": "Fale com o Connor. Se perder, a Edel Department Store vende no fim do capítulo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa",
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Fishing rod: Bamboo Fishing Rod",
+        "pt": "Vara de pesca: Bamboo Fishing Rod"
+      },
+      "location": {
+        "en": "Grancel — Helmut's Home, N. Block"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "Talk to Noche upstairs.",
+        "pt": "Fale com a Noche no andar de cima."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Grancel shops (9)",
+        "pt": "Receitas: lojas de Grancel (9)"
+      },
+      "location": {
+        "en": "Grancel"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "Nonna's Crepe Shop (2) and Gaspard's Popcorn (1) in South Block; Sunnybell Inn (2) in South Block; Sorbet's Ice Cream (2) in East Block; Baral Coffee House (2) in West Block.",
+        "pt": "Nonna's Crepe Shop (2) e Gaspard's Popcorn (1) no South Block; Sunnybell Inn (2) no South Block; Sorbet's Ice Cream (2) no East Block; Baral Coffee House (2) no West Block."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Recipe: Dual-Layer Tempura",
+        "pt": "Receita: Dual-Layer Tempura"
+      },
+      "location": {
+        "en": "Gurune Gate — cafeteria"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "Reached from the east exit of Kirsche Avenue.",
+        "pt": "Acesso pela saída leste da Kirsche Avenue."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Deer Medal"
+      },
+      "location": {
+        "en": "Grancel — Edel Department Store accessories",
+        "pt": "Grancel — acessórios da Edel Department Store"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "3rd of the 5 animal medals.",
+        "pt": "3ª das 5 medalhas de animais."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Kaldia Limestone Cave treasure chests (9)",
+        "pt": "Baús da Kaldia Limestone Cave (9)"
+      },
+      "location": {
+        "en": "Kaldia Limestone Cave"
+      },
+      "availableUntil": "sc-ch3-cp-01",
+      "hint": {
+        "en": "Includes one Kaldia Tunnel chest that only opens now.",
+        "pt": "Inclui um baú do Kaldia Tunnel que só abre agora."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Grancel Sewers W. Block treasure chests (6)",
+        "pt": "Baús do Grancel Sewers W. Block (6)"
+      },
+      "location": {
+        "en": "Grancel Sewers — W. Block"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "Southeast corner monster chest: sheep that reflect; dispel with Anti-Sept All. Two out-of-reach chests belong to a later block.",
+        "pt": "Baú de monstros no canto sudeste: ovelhas que refletem; remova com Anti-Sept All. Dois baús fora de alcance pertencem a outro bloco, mais tarde."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Kirsche Avenue treasure chests (4)",
+        "pt": "Baús da Kirsche Avenue (4)"
+      },
+      "location": {
+        "en": "Kirsche Avenue"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "West and east paths. A breakable wall near the Erbe exit opens a water cave.",
+        "pt": "Caminhos oeste e leste. Uma parede quebrável perto da saída para Erbe abre uma caverna com água."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Erbe Scenic Route treasure chests (6)",
+        "pt": "Baús da Erbe Scenic Route (6)"
+      },
+      "location": {
+        "en": "Erbe Scenic Route"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "Monster chest near the Earth Monument: burst the bone fish before they rage. A hidden sepith cave sits behind bushes at the Water Monument.",
+        "pt": "Baú de monstros perto do Earth Monument: derrube os peixes-esqueleto antes que entrem em fúria. Uma caverna de sepith escondida fica atrás de arbustos no Water Monument."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Grancel Sewers E. & N. Blocks treasure chests (9)",
+        "pt": "Baús do Grancel Sewers E. e N. Blocks (9)"
+      },
+      "location": {
+        "en": "Grancel Sewers — E. and N. Blocks"
+      },
+      "availableUntil": "sc-ch3-cp-03",
+      "hint": {
+        "en": "Includes Bone-In Meat (eat it for the recipe). The North Block monster chest (four moles) is the hardest fight of the chapter; it can wait until the end.",
+        "pt": "Inclui Bone-In Meat (coma para ganhar a receita). O baú de monstros do North Block (quatro toupeiras) é a luta mais difícil do capítulo; dá para deixar para o fim."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    }
+  ],
+  "itemTexts": []
+}

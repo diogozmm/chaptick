@@ -34,6 +34,18 @@
     </aside>
   }
 
+  @if (carried().length > 0) {
+    <details class="carried" open>
+      <summary><app-icon name="flag" /> {{ 'checklist.carried' | transloco: { count: carried().length } }}</summary>
+      <p class="muted small">{{ 'checklist.carriedHint' | transloco }}</p>
+      <ul class="items">
+        @for (entry of carried(); track entry.item.id) {
+          <li><app-item-row [chapter]="entry.chapter" [item]="entry.item" /></li>
+        }
+      </ul>
+    </details>
+  }
+
   @if (leftBehind().length > 0) {
     <details class="left-behind">
       <summary><app-icon name="hourglass" /> {{ 'checklist.leftBehind' | transloco: { count: leftBehind().length } }}</summary>

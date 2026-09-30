@@ -46,7 +46,10 @@
     "leftBehind": "Você deixou {{count}} item(ns) para trás",
     "leftBehindHint": "O prazo deles já passou. Se você fez mesmo assim, marque aqui.",
     "eyebrow": "Checklist do capítulo",
-    "allClear": "Nenhum ponto sem volta com itens pendentes. Tudo em dia!"
+    "allClear": "Nenhum ponto sem volta com itens pendentes. Tudo em dia!",
+    "untilChapter": "Até: algum ponto do {{chapter}}",
+    "carried": "Ainda dá tempo: {{count}} item(ns) de capítulos anteriores",
+    "carriedHint": "O prazo deles é neste capítulo ou depois."
   },
   "spoiler": {
     "tapToReveal": "toque para ver",
@@ -77,7 +80,8 @@
     "markUndone": "Desmarcar",
     "notFound": "Este item não existe (mais).",
     "detailsFor": "Detalhes: {{name}}",
-    "done": "Feito"
+    "done": "Feito",
+    "laterIn": "Algum ponto do {{chapter}}"
   },
   "transfer": {
     "title": "Levar seu progresso",

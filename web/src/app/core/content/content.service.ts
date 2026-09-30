@@ -17,8 +17,11 @@ export class ContentService {
   private readonly http = inject(HttpClient);
   private readonly chapters = new Map<string, Promise<Chapter>>();
   private readonly manifestSignal = signal<Manifest | null>(null);
+  private readonly loadedSignal = signal<ReadonlyMap<string, Chapter>>(new Map());
 
   readonly manifest = this.manifestSignal.asReadonly();
+  /** Chapters already fetched. Only unlocked chapters are ever fetched, so everything here is safe to show. */
+  readonly loaded = this.loadedSignal.asReadonly();
 
   async loadManifest(): Promise<Manifest> {
     const manifest = await firstValueFrom(this.http.get<Manifest>(`${BASE}/manifest.json`));
@@ -37,7 +40,10 @@ export class ContentService {
       // The data version busts the offline cache whenever a correction is published.
       const url = `${BASE}/${summary.file}?v=${this.manifest()?.game.dataVersion ?? 0}`;
       pending = firstValueFrom(this.http.get<Chapter>(url));
-      pending.catch(() => this.chapters.delete(summary.id));
+      pending.then(
+        (chapter) => this.loadedSignal.update((map) => new Map(map).set(chapter.id, chapter)),
+        () => this.chapters.delete(summary.id),
+      );
       this.chapters.set(summary.id, pending);
     }
     return pending;

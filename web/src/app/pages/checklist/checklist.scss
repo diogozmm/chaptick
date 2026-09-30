@@ -45,3 +45,7 @@
 
 .items { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
 .empty { text-align: center; color: var(--text-muted); }
+.carried { padding: 0.25rem 1rem 0.75rem; border-radius: var(--radius); border: 1px solid var(--border-strong); background: var(--accent-soft); }
+.carried summary { display: flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; cursor: pointer; font-weight: 600; }
+.carried summary app-icon { color: var(--accent); }
+.carried .items { margin-top: 0.5rem; }

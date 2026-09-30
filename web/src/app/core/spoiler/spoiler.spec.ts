@@ -1,5 +1,7 @@
 import { Chapter, Item, ITEM_TYPES } from '../content/content.models';
 import {
+  carriedOver,
+  chapterOrderOf,
   chapterProgress,
   expiredItems,
   groupByType,
@@ -92,5 +94,23 @@ describe('spoiler rules', () => {
 
   it('leaves nothing behind when moving backwards', () => {
     expect(newlyLeftBehind([ch0, ch1], new Set(), 1, 0)).toEqual([]);
+  });
+
+  it('reads the chapter order from any id', () => {
+    expect(chapterOrderOf('sc-ch12-cp-01')).toBe(12);
+    expect(chapterOrderOf('sc-ch0')).toBe(0);
+    expect(chapterOrderOf('nope')).toBeUndefined();
+  });
+
+  it('carries over earlier items whose deadline is still ahead', () => {
+    // t-ch0-mi-01 expires in chapter 1: still doable while in chapter 1, lost in chapter 2.
+    expect(carriedOver([ch0, ch1], new Set(), 1).map((i) => i.id)).toEqual(['t-ch0-mi-01']);
+    expect(carriedOver([ch0, ch1], new Set(['t-ch0-mi-01']), 1)).toEqual([]);
+    expect(carriedOver([ch0, ch1], new Set(), 2)).toEqual([]);
+  });
+
+  it('counts carried items in the current chapter alert', () => {
+    const carried = carriedOver([ch0, ch1], new Set(), 1);
+    expect(nextCheckpointAlert(ch1, new Set(), carried)).toEqual({ checkpoint: ch1.checkpoints[0], pending: 2 });
   });
 });

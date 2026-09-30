@@ -1,0 +1,538 @@
+{
+  "id": "sc-ch1",
+  "gameId": "sc",
+  "order": 1,
+  "neutralLabel": {
+    "en": "Chapter 1",
+    "pt": "Capítulo 1"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch1-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Boarding the airship in Grancel at the start of the chapter",
+        "pt": "Embarcar no airship em Grancel, no início do capítulo"
+      }
+    },
+    {
+      "id": "sc-ch1-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Passing through the gate at the end of Vista Forest Road",
+        "pt": "Atravessar o portão no fim da Vista Forest Road"
+      }
+    },
+    {
+      "id": "sc-ch1-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 1",
+        "pt": "O último marcador de evento do Capítulo 1"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch1-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Seaside Way Monster"
+      },
+      "location": {
+        "en": "Gull Seaside Way — north beach"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "+3 BP. The monster waits at the entrance of the north beach, by the wall. Easier once a third party member joins; fire arts work well.",
+        "pt": "+3 BP. O monstro fica na entrada da praia norte, junto ao muro. Fica mais fácil com um terceiro membro na equipe; arts de fogo funcionam bem."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Ingredient Inquiry"
+      },
+      "location": {
+        "en": "Manoria Village — The White Magnolia, upstairs",
+        "pt": "Manoria Village — The White Magnolia, andar de cima"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "2 +2 BP. Bring all 6 ingredients missing from his list for the bonus: Monster Bird Egg and Monster Tender (Roadrun), Monster Bone (Tatuunon), Monster Fang (Gourd Boar), Monster Horn (Flying Shrimp), Monster Roe (Mars Gel or Sharkagator).",
+        "pt": "2 +2 BP. Entregue os 6 ingredientes que faltam na lista dele para ganhar o bônus: Monster Bird Egg e Monster Tender (Roadrun), Monster Bone (Tatuunon), Monster Fang (Gourd Boar), Monster Horn (Flying Shrimp), Monster Roe (Mars Gel ou Sharkagator)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Vista Forest Rd Monster"
+      },
+      "location": {
+        "en": "Vista Forest Road — east end",
+        "pt": "Vista Forest Road — extremo leste"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "+3 BP. Nasty status effects: bring Confuse protection and take out the two smaller foes first.",
+        "pt": "+3 BP. Muitos efeitos negativos: leve proteção contra Confuse e derrube os dois inimigos menores primeiro."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Sapphirl Snapshot"
+      },
+      "location": {
+        "en": "Sapphirl Tower — rooftop",
+        "pt": "Sapphirl Tower — terraço"
+      },
+      "availableUntil": "sc-ch1-cp-02",
+      "hint": {
+        "en": "2 +2 BP. Take it from Santos at Hotel Blanche. On the rooftop, step a little forward and try the camera until Estelle says the spot might be perfect, then shoot.",
+        "pt": "2 +2 BP. Pegue com o Santos no Hotel Blanche. No terraço, avance um pouco e teste a câmera até a Estelle dizer que o lugar pode ser perfeito; então tire a foto."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Sunday Scholar"
+      },
+      "location": {
+        "en": "Ruan Chapel"
+      },
+      "availableUntil": "sc-ch1-cp-02",
+      "hint": {
+        "en": "3 +2 BP. Answer every question right for the bonus. Answers in order: 2nd, 1st, 3rd, 3rd, 2nd, 2nd, 3rd, 2nd, 2nd, 3rd.",
+        "pt": "3 +2 BP. Acerte todas as perguntas para ganhar o bônus. Respostas em ordem: 2ª, 1ª, 3ª, 3ª, 2ª, 2ª, 3ª, 2ª, 2ª, 3ª."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Drawbridge Defect"
+      },
+      "location": {
+        "en": "Ruan — Aqua Rossa Bar, 2F",
+        "pt": "Ruan — Aqua Rossa Bar, 2º andar"
+      },
+      "availableUntil": "sc-ch1-cp-02",
+      "hint": {
+        "en": "2 +1 BP. After talking to every tourist by the drawbridge, pick the 2nd option in the scene that follows. Ends with a tough fight.",
+        "pt": "2 +1 BP. Depois de falar com todos os turistas perto da ponte levadiça, escolha a 2ª opção na cena seguinte. Termina com uma luta difícil."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Krone Pass Monster"
+      },
+      "location": {
+        "en": "Krone Trail area",
+        "pt": "Região da Krone Trail"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "+3 BP. Poison-heavy fight: shields and speed buffs keep it simple.",
+        "pt": "+3 BP. Luta cheia de veneno: escudos e buffs de velocidade simplificam."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-q-08",
+      "type": "quest",
+      "name": {
+        "en": "Aina Cswy Monster"
+      },
+      "location": {
+        "en": "Aina Causeway"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "+3 BP. Three wolves that power up when one falls: try to finish them together.",
+        "pt": "+3 BP. Três lobos que ficam mais fortes quando um cai: tente derrotá-los juntos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-hq-01",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Lighthouse Learning"
+      },
+      "location": {
+        "en": "Varenne Lighthouse — top floor",
+        "pt": "Varenne Lighthouse — último andar"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "2 +1 BP. Not on the board. Talk to Vogt and pick the 1st option. Order: both dials LOW, power ON, pressure MID, stabilizer MID, pressure HIGH, stabilizer HIGH, then the machine on the far left. Before finishing, pick the 2nd option for the bonus.",
+        "pt": "2 +1 BP. Não aparece no quadro. Fale com o Vogt e escolha a 1ª opção. Ordem: os dois controles em LOW, energia ON, pressão MID, estabilizador MID, pressão HIGH, estabilizador HIGH e, por fim, a máquina mais à esquerda. Antes de concluir, escolha a 2ª opção para o bônus."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: question at the bridge",
+        "pt": "BP bônus: pergunta na ponte"
+      },
+      "location": {
+        "en": "Ruan — Langland Bridge"
+      },
+      "availableUntil": "sc-ch1-cp-02",
+      "hint": {
+        "en": "+3 BP. When asked during the scene at the bridge, pick the 2nd option.",
+        "pt": "+3 BP. Quando perguntarem durante a cena na ponte, escolha a 2ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 2"
+      },
+      "location": {
+        "en": "Grancel — Landing Port Waiting Room",
+        "pt": "Grancel — sala de espera do porto"
+      },
+      "availableUntil": "sc-ch1-cp-01",
+      "hint": {
+        "en": "Buy it from Filder before boarding. You cannot explore Grancel at this point.",
+        "pt": "Compre com o Filder antes de embarcar. Não dá para explorar Grancel neste momento."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 2"
+      },
+      "location": {
+        "en": "Ruan — Lavantar Bar & Casino, 2F",
+        "pt": "Ruan — Lavantar Bar & Casino, 2º andar"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Exchange 200 medals. You can buy medals with mira if the games are not going well.",
+        "pt": "Troque por 200 medalhas. Dá para comprar medalhas com mira se os jogos não estiverem ajudando."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Fishing rod: Marine Star",
+        "pt": "Vara de pesca: Marine Star"
+      },
+      "location": {
+        "en": "Ruan — Lavantar Bar & Casino, 2F",
+        "pt": "Ruan — Lavantar Bar & Casino, 2º andar"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Exchange 100 medals.",
+        "pt": "Troque por 100 medalhas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Ruan (3)",
+        "pt": "Receitas: Ruan (3)"
+      },
+      "location": {
+        "en": "Ruan"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Azelia Kiss at Lavantar Bar & Casino; Roasted Fish Belly and Sea Breeze Soup at Aqua Rossa Bar. Eat each dish to learn it.",
+        "pt": "Azelia Kiss no Lavantar Bar & Casino; Roasted Fish Belly e Sea Breeze Soup no Aqua Rossa Bar. Coma cada prato para aprender."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Manoria Village (2)",
+        "pt": "Receitas: Manoria Village (2)"
+      },
+      "location": {
+        "en": "Manoria Village — The White Magnolia"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Ocean Froth and Seaside Paradise, sold by Rex.",
+        "pt": "Ocean Froth e Seaside Paradise, vendidos pelo Rex."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Recipe: Minnow's Keep",
+        "pt": "Receita: Minnow's Keep"
+      },
+      "location": {
+        "en": "Air-Letten — cafeteria",
+        "pt": "Air-Letten — cafeteria"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Buy it when the story takes you to Air-Letten.",
+        "pt": "Compre quando a história levar você a Air-Letten."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: academy cafeteria (3)",
+        "pt": "Receitas: cafeteria da academia (3)"
+      },
+      "location": {
+        "en": "Jenis Royal Academy"
+      },
+      "availableUntil": "sc-ch1-cp-03",
+      "hint": {
+        "en": "Toasty Potato Wedges, Royal Gelato and Young Lady Platter, downstairs.",
+        "pt": "Toasty Potato Wedges, Royal Gelato e Young Lady Platter, no andar de baixo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Squirrel Medal"
+      },
+      "location": {
+        "en": "Manoria Village — Fiore's General Goods"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "1st of 5 animal medals that can later be traded together for a Beast Medal.",
+        "pt": "1ª de 5 medalhas de animais que depois podem ser trocadas juntas por uma Beast Medal."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Gull Seaside Way treasure chests (11)",
+        "pt": "Baús da Gull Seaside Way (11)"
+      },
+      "location": {
+        "en": "Gull Seaside Way"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Includes a monster chest with crabs, an ammonite and a panda. Red-highlighted rocks and boxes hide extra loot.",
+        "pt": "Inclui um baú de monstros com caranguejos, uma amonite e um panda. Pedras e caixas destacadas em vermelho escondem itens extras."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Manoria Byroad treasure chests (5)",
+        "pt": "Baús da Manoria Byroad (5)"
+      },
+      "location": {
+        "en": "Manoria Byroad"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Both branches of the fork have chests.",
+        "pt": "Os dois lados da bifurcação têm baús."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Krone Trail treasure chests (3)",
+        "pt": "Baús da Krone Trail (3)"
+      },
+      "location": {
+        "en": "Krone Trail"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Break the boulder near the bushes below the ladders to open a hidden cave. Also touch Krone Pass to unlock fast travel.",
+        "pt": "Quebre a rocha perto dos arbustos abaixo das escadas para abrir uma caverna escondida. Passe também pela Krone Pass para liberar a viagem rápida."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Vista Forest Road treasure chests (4)",
+        "pt": "Baús da Vista Forest Road (4)"
+      },
+      "location": {
+        "en": "Vista Forest Road"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "One is a hard monster chest (a big Jabba with three instant-KO birds). Consider waiting for a full party.",
+        "pt": "Um é um baú de monstros difícil (um Jabba grande com três aves de KO instantâneo). Vale esperar a equipe completa."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Aina Causeway treasure chests (3)",
+        "pt": "Baús da Aina Causeway (3)"
+      },
+      "location": {
+        "en": "Aina Causeway"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "The hidden cave before Air-Letten has sepith veins, not chests.",
+        "pt": "A caverna escondida antes de Air-Letten tem veios de sepith, não baús."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Sapphirl Tower treasure chests (10)",
+        "pt": "Baús da Sapphirl Tower (10)"
+      },
+      "location": {
+        "en": "Sapphirl Tower"
+      },
+      "availableUntil": "sc-ch2-cp-01",
+      "hint": {
+        "en": "Includes Rotund Meatballs (eat it for the recipe) and a brutal monster chest with five Aqua Trappers on 3F: earth arts help. Helm Cancers reflect physical hits; use arts.",
+        "pt": "Inclui Rotund Meatballs (coma para ganhar a receita) e um baú de monstros brutal com cinco Aqua Trappers no 3F: arts de terra ajudam. Helm Cancers refletem golpes físicos; use arts."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-co-15",
+      "type": "collectible",
+      "name": {
+        "en": "Underground ruins treasure chests (19)",
+        "pt": "Baús das ruínas subterrâneas (19)"
+      },
+      "location": {
+        "en": "Jenis Royal Academy — beneath the old schoolhouse",
+        "pt": "Jenis Royal Academy — sob a escola antiga"
+      },
+      "availableUntil": "sc-ch1-cp-03",
+      "hint": {
+        "en": "Includes a monster chest with three Puppet Flagger+. Collect everything before the last healing station.",
+        "pt": "Inclui um baú de monstros com três Puppet Flagger+. Pegue tudo antes da última estação de cura."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    }
+  ],
+  "itemTexts": []
+}

@@ -17,10 +17,17 @@
     }
     <span class="meta-line deadline">
       <app-icon name="flag" />
-      @if (deadline(); as cp) {
-        {{ 'checklist.until' | transloco: { checkpoint: cp.neutralDescription | localize: l } }}
-      } @else {
-        {{ 'checklist.noDeadline' | transloco }}
+      @let d = deadline();
+      @switch (d.kind) {
+        @case ('checkpoint') {
+          {{ 'checklist.until' | transloco: { checkpoint: d.description | localize: l } }}
+        }
+        @case ('chapter') {
+          {{ 'checklist.untilChapter' | transloco: { chapter: d.label | localize: l } }}
+        }
+        @default {
+          {{ 'checklist.noDeadline' | transloco }}
+        }
       }
     </span>
   </span>
