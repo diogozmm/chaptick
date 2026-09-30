@@ -1,0 +1,20 @@
+{
+  "id": "demo-ch0",
+  "gameId": "demo",
+  "order": 0,
+  "neutralLabel": { "en": "Prologue" },
+  "checkpoints": [{ "id": "demo-ch0-cp-01", "order": 1, "neutralDescription": { "en": "Leaving the first town" } }],
+  "items": [
+    {
+      "id": "demo-ch0-q-01", "type": "quest", "name": { "en": "Example quest" }, "location": { "en": "Town" },
+      "availableUntil": "demo-ch0-cp-01", "hint": { "en": "Talk to the guard." }, "spoilerLevel": 0, "sources": ["fixture"]
+    },
+    {
+      "id": "demo-ch0-mi-01", "type": "missable", "name": { "en": "Example missable" }, "location": { "en": "Town" },
+      "availableUntil": "demo-ch1-cp-01", "hint": { "en": "Check the chest." }, "spoilerLevel": 1, "sources": ["fixture"]
+    }
+  ],
+  "itemTexts": [
+    { "itemId": "demo-ch0-q-01", "text": { "en": "A short text." }, "author": "tester", "license": "CC-BY-SA-4.0", "approvedAt": "2026-09-30" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bracer-notes/schema/game.schema.json",
+  "type": "object",
+  "required": ["id", "name", "platforms", "dataVersion"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+$" },
+    "name": { "$ref": "common.schema.json#/$defs/localized" },
+    "platforms": { "type": "array", "items": { "type": "string" } },
+    "dataVersion": {
+      "description": "Bump on every published correction; it busts the offline cache.",
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false
+}

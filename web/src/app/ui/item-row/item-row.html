@@ -1,0 +1,28 @@
+@let it = item();
+@let l = lang.lang();
+@let label = view.placeholder(chapter(), it);
+<label class="check">
+  <input type="checkbox" [checked]="done()" (change)="progress.toggle(it.id)" [attr.aria-labelledby]="'name-' + it.id" />
+</label>
+<div class="body">
+  <span class="name" [id]="'name-' + it.id">
+    <app-spoiler-reveal [itemId]="it.id" [level]="it.spoilerLevel" [placeholder]="label">
+      {{ it.name | localize: l }}
+    </app-spoiler-reveal>
+  </span>
+  @if (view.showLocation(it)) {
+    <span class="meta">{{ it.location | localize: l }}</span>
+  }
+  <span class="meta deadline">
+    @if (deadline(); as cp) {
+      {{ 'checklist.until' | transloco: { checkpoint: cp.neutralDescription | localize: l } }}
+    } @else {
+      {{ 'checklist.noDeadline' | transloco }}
+    }
+  </span>
+  @if (view.showHint(it)) {
+    <span class="hint">{{ it.hint | localize: l }}</span>
+  }
+</div>
+<a class="details" [routerLink]="['/sc/items', it.id]"
+  [attr.aria-label]="'item.detailsFor' | transloco: { name: view.showLocation(it) ? (it.name | localize: l) : label }">›</a>

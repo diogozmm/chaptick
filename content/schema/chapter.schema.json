@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bracer-notes/schema/chapter.schema.json",
+  "description": "One chapter per file, so the app only ever downloads unlocked chapters.",
+  "type": "object",
+  "required": ["id", "gameId", "order", "neutralLabel", "checkpoints", "items", "itemTexts"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+-ch\\d+$" },
+    "gameId": { "type": "string" },
+    "order": { "type": "integer", "minimum": 0 },
+    "neutralLabel": {
+      "description": "\"Prologue\", \"Chapter 1\"... never the real chapter title.",
+      "$ref": "common.schema.json#/$defs/localized"
+    },
+    "checkpoints": { "type": "array", "items": { "$ref": "#/$defs/checkpoint" } },
+    "items": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    "itemTexts": { "type": "array", "items": { "$ref": "#/$defs/itemText" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "checkpoint": {
+      "type": "object",
+      "required": ["id", "order", "neutralDescription"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+-ch\\d+-cp-\\d{2}$" },
+        "order": { "type": "integer", "minimum": 1 },
+        "neutralDescription": { "$ref": "common.schema.json#/$defs/localized" }
+      },
+      "additionalProperties": false
+    },
+    "item": {
+      "type": "object",
+      "required": ["id", "type", "name", "location", "availableUntil", "hint", "spoilerLevel", "sources"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+-ch\\d+-(q|hq|mi|co)-\\d{2}$" },
+        "type": { "enum": ["quest", "hidden_quest", "missable", "collectible"] },
+        "name": { "$ref": "common.schema.json#/$defs/localized" },
+        "location": { "$ref": "common.schema.json#/$defs/localized" },
+        "availableUntil": {
+          "description": "Checkpoint id after which the item is lost, or null when it never expires.",
+          "type": ["string", "null"]
+        },
+        "hint": { "$ref": "common.schema.json#/$defs/localized" },
+        "spoilerLevel": { "enum": [0, 1, 2] },
+        "sources": {
+          "description": "Internal provenance: \"wiki\", \"guide X\", \"verified in game\".",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "itemText": {
+      "type": "object",
+      "required": ["itemId", "text", "author", "license", "approvedAt"],
+      "properties": {
+        "itemId": { "type": "string" },
+        "text": { "$ref": "common.schema.json#/$defs/localized" },
+        "author": { "type": "string", "minLength": 1 },
+        "license": { "const": "CC-BY-SA-4.0" },
+        "approvedAt": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

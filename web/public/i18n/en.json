@@ -1,0 +1,89 @@
+{
+  "app": {
+    "switchLanguage": "Mudar para português",
+    "disclaimer": "Unofficial fan project, not affiliated with Nihon Falcom or its publishers. All trademarks belong to their owners."
+  },
+  "common": {
+    "cancel": "Cancel",
+    "loading": "Loading…",
+    "loadError": "Couldn't load this chapter. Check your connection.",
+    "retry": "Try again"
+  },
+  "home": {
+    "companionFor": "Spoiler-free companion for",
+    "promise": "Tell us which chapter you're in and see only what you can't miss up to there.",
+    "continue": "Continue: {{chapter}}",
+    "whereAmI": "Where am I?"
+  },
+  "where": {
+    "title": "Where am I?",
+    "intro": "Chapters after yours stay locked, so nothing ahead is shown.",
+    "items": "{{count}} items",
+    "current": "You are here",
+    "imHere": "I'm here",
+    "locked": "{{chapter}} — locked",
+    "confirmAdvance": "Move to {{chapter}}? Its items will be shown.",
+    "confirmYes": "Yes, I'm here",
+    "leftBehind": "You will leave {{count}} item(s) behind",
+    "leftBehindHint": "Their deadline ends before that chapter. Tick off any you already did."
+  },
+  "checklist": {
+    "progress": "{{done}} of {{total}} done",
+    "alertTitle": "Point of no return ahead",
+    "alert": "Before \"{{checkpoint}}\", {{count}} item(s) are still missing.",
+    "filters": "Filter by type",
+    "hideDone": "Hide done",
+    "until": "Until: {{checkpoint}}",
+    "noDeadline": "No deadline",
+    "empty": "Nothing to track in this chapter yet.",
+    "allHidden": "Nothing left to show with these filters.",
+    "leftBehind": "You left {{count}} item(s) behind",
+    "leftBehindHint": "Their deadline has passed. If you did them anyway, tick them off."
+  },
+  "spoiler": {
+    "tapToReveal": "tap to reveal",
+    "confirm": "May contain spoilers. Show it?",
+    "show": "Show"
+  },
+  "type": {
+    "one": {
+      "quest": "Quest #{{n}}",
+      "hidden_quest": "Hidden quest #{{n}}",
+      "missable": "Missable #{{n}}",
+      "collectible": "Collectible #{{n}}"
+    },
+    "many": {
+      "quest": "Quests",
+      "hidden_quest": "Hidden quests",
+      "missable": "Missables",
+      "collectible": "Collectibles"
+    }
+  },
+  "item": {
+    "location": "Location",
+    "deadline": "Available until",
+    "hint": "Hint",
+    "hidden": "Hidden until you reveal the name",
+    "community": "From the community",
+    "markDone": "Mark as done",
+    "markUndone": "Mark as not done",
+    "notFound": "This item does not exist (anymore).",
+    "detailsFor": "Details: {{name}}"
+  },
+  "transfer": {
+    "title": "Move your progress",
+    "intro": "Progress lives only on this device. Export a file to back it up or open it on another phone.",
+    "export": "Export",
+    "import": "Import",
+    "confirm": "Replace the progress on this device with the file?",
+    "replace": "Replace",
+    "exported": "Progress exported.",
+    "imported": "Progress imported.",
+    "error": {
+      "invalid-json": "That file isn't valid JSON.",
+      "wrong-format": "That file isn't an exported progress file.",
+      "wrong-game": "That file is for another game.",
+      "newer-version": "That file comes from a newer version of the app. Reload and try again."
+    }
+  }
+}

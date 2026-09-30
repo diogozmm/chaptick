@@ -1,0 +1,89 @@
+{
+  "app": {
+    "switchLanguage": "Switch to English",
+    "disclaimer": "Projeto de fã, não oficial e sem vínculo com Nihon Falcom ou suas editoras. Todas as marcas pertencem aos seus donos."
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "loading": "Carregando…",
+    "loadError": "Não foi possível carregar este capítulo. Verifique sua conexão.",
+    "retry": "Tentar de novo"
+  },
+  "home": {
+    "companionFor": "Companion sem spoiler para",
+    "promise": "Diga em que capítulo você está e veja só o que você não pode perder até ali.",
+    "continue": "Continuar: {{chapter}}",
+    "whereAmI": "Onde estou?"
+  },
+  "where": {
+    "title": "Onde estou?",
+    "intro": "Os capítulos depois do seu ficam bloqueados, então nada à frente aparece.",
+    "items": "{{count}} itens",
+    "current": "Você está aqui",
+    "imHere": "Estou aqui",
+    "locked": "{{chapter}} — bloqueado",
+    "confirmAdvance": "Ir para {{chapter}}? Os itens dele vão aparecer.",
+    "confirmYes": "Sim, estou aqui",
+    "leftBehind": "Você vai deixar {{count}} item(ns) para trás",
+    "leftBehindHint": "O prazo deles acaba antes desse capítulo. Marque os que você já fez."
+  },
+  "checklist": {
+    "progress": "{{done}} de {{total}} feitos",
+    "alertTitle": "Ponto sem volta à frente",
+    "alert": "Antes de \"{{checkpoint}}\", ainda faltam {{count}} item(ns).",
+    "filters": "Filtrar por tipo",
+    "hideDone": "Esconder feitos",
+    "until": "Até: {{checkpoint}}",
+    "noDeadline": "Sem prazo",
+    "empty": "Ainda não há nada para acompanhar neste capítulo.",
+    "allHidden": "Nada para mostrar com esses filtros.",
+    "leftBehind": "Você deixou {{count}} item(ns) para trás",
+    "leftBehindHint": "O prazo deles já passou. Se você fez mesmo assim, marque aqui."
+  },
+  "spoiler": {
+    "tapToReveal": "toque para ver",
+    "confirm": "Pode conter spoiler. Mostrar?",
+    "show": "Mostrar"
+  },
+  "type": {
+    "one": {
+      "quest": "Quest #{{n}}",
+      "hidden_quest": "Quest escondida #{{n}}",
+      "missable": "Missable #{{n}}",
+      "collectible": "Colecionável #{{n}}"
+    },
+    "many": {
+      "quest": "Quests",
+      "hidden_quest": "Quests escondidas",
+      "missable": "Missables",
+      "collectible": "Colecionáveis"
+    }
+  },
+  "item": {
+    "location": "Local",
+    "deadline": "Disponível até",
+    "hint": "Dica",
+    "hidden": "Escondido até você revelar o nome",
+    "community": "Da comunidade",
+    "markDone": "Marcar como feito",
+    "markUndone": "Desmarcar",
+    "notFound": "Este item não existe (mais).",
+    "detailsFor": "Detalhes: {{name}}"
+  },
+  "transfer": {
+    "title": "Levar seu progresso",
+    "intro": "O progresso fica só neste aparelho. Exporte um arquivo para ter um backup ou abrir em outro celular.",
+    "export": "Exportar",
+    "import": "Importar",
+    "confirm": "Substituir o progresso deste aparelho pelo do arquivo?",
+    "replace": "Substituir",
+    "exported": "Progresso exportado.",
+    "imported": "Progresso importado.",
+    "error": {
+      "invalid-json": "Esse arquivo não é um JSON válido.",
+      "wrong-format": "Esse arquivo não é um progresso exportado.",
+      "wrong-game": "Esse arquivo é de outro jogo.",
+      "newer-version": "Esse arquivo vem de uma versão mais nova do app. Recarregue e tente de novo."
+    }
+  }
+}

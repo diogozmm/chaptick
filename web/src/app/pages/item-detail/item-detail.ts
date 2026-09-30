@@ -1,0 +1,47 @@
+import { ChangeDetectionStrategy, Component, computed, inject, input, resource } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { TranslocoPipe } from '@jsverse/transloco';
+
+import { ContentService } from '../../core/content/content.service';
+import { LangService } from '../../core/i18n/lang.service';
+import { LocalizePipe } from '../../core/i18n/localize.pipe';
+import { ProgressStore } from '../../core/progress/progress.store';
+import { ChapterAccess, chapterIdOfItem } from '../../core/spoiler/chapter-access';
+import { ItemView } from '../../core/spoiler/item-view';
+import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
+
+@Component({
+  selector: 'app-item-detail',
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './item-detail.html',
+  styleUrl: './item-detail.scss',
+})
+export class ItemDetail {
+  private readonly content = inject(ContentService);
+  private readonly access = inject(ChapterAccess);
+  protected readonly progress = inject(ProgressStore);
+  protected readonly view = inject(ItemView);
+  protected readonly lang = inject(LangService);
+
+  /** Bound from the route; the route guard already checked its chapter is unlocked. */
+  readonly itemId = input.required<string>();
+
+  protected readonly chapter = resource({
+    params: () => this.access.unlockedChapter(chapterIdOfItem(this.itemId())),
+    loader: ({ params }) => this.content.loadChapter(params),
+  });
+
+  protected readonly entry = computed(() => {
+    if (!this.chapter.hasValue()) return undefined;
+    const chapter = this.chapter.value();
+    const item = chapter.items.find((i) => i.id === this.itemId());
+    if (!item) return null;
+    return {
+      chapter,
+      item,
+      deadline: chapter.checkpoints.find((c) => c.id === item.availableUntil),
+      texts: chapter.itemTexts.filter((t) => t.itemId === item.id),
+    };
+  });
+}

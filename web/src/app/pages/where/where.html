@@ -1,0 +1,45 @@
+<h1>{{ 'where.title' | transloco }}</h1>
+<p class="muted">{{ 'where.intro' | transloco }}</p>
+
+<ol class="chapters">
+  @for (chapter of access.chapters(); track chapter.id) {
+    @let label = chapter.neutralLabel | localize: lang.lang();
+    @let current = chapter.id === access.current()?.id;
+    <li class="card" [class.current]="current" [class.locked]="!isUnlocked(chapter)">
+      @if (isUnlocked(chapter)) {
+        <a class="title" [routerLink]="['/sc/chapters', chapter.id]">{{ label }}</a>
+        <span class="muted">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
+        @if (current) {
+          <span class="badge">{{ 'where.current' | transloco }}</span>
+        } @else {
+          <button type="button" class="link" (click)="choose(chapter)">{{ 'where.imHere' | transloco }}</button>
+        }
+      } @else {
+        <span class="title">{{ 'where.locked' | transloco: { chapter: label } }}</span>
+        <span class="muted">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
+        @if (pending()?.target?.id === chapter.id) {
+          <div class="confirm">
+            <p>{{ 'where.confirmAdvance' | transloco: { chapter: label } }}</p>
+            @if (leftBehind().length > 0) {
+              <details class="left-behind">
+                <summary>{{ 'where.leftBehind' | transloco: { count: leftBehind().length } }}</summary>
+                <p class="muted">{{ 'where.leftBehindHint' | transloco }}</p>
+                <ul class="items">
+                  @for (entry of leftBehind(); track entry.item.id) {
+                    <li><app-item-row [chapter]="entry.chapter" [item]="entry.item" /></li>
+                  }
+                </ul>
+              </details>
+            }
+            <div class="actions">
+              <button type="button" class="button primary" (click)="choose(chapter)">{{ 'where.confirmYes' | transloco }}</button>
+              <button type="button" class="button" (click)="pending.set(null)">{{ 'common.cancel' | transloco }}</button>
+            </div>
+          </div>
+        } @else {
+          <button type="button" class="link" (click)="askToAdvance(chapter)">{{ 'where.imHere' | transloco }}</button>
+        }
+      }
+    </li>
+  }
+</ol>

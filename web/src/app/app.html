@@ -1,0 +1,14 @@
+<header class="topbar">
+  <a routerLink="/" class="brand">Bracer Notes</a>
+  <button type="button" class="link" (click)="toggleLang()" [attr.aria-label]="'app.switchLanguage' | transloco">
+    {{ lang.lang() === 'pt' ? 'EN' : 'PT' }}
+  </button>
+</header>
+
+<main class="page">
+  <router-outlet />
+</main>
+
+<footer class="footer">
+  <p>{{ 'app.disclaimer' | transloco }}</p>
+</footer>

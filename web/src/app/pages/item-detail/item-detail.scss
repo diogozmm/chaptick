@@ -1,0 +1,12 @@
+:host { display: grid; gap: 0.75rem; }
+.back { font-size: 0.9rem; }
+.eyebrow { margin: 0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; color: var(--accent); }
+h1 { margin: 0; }
+h2 { font-size: 1rem; margin: 0.5rem 0 0; }
+.facts { display: grid; gap: 0.25rem; margin: 0.5rem 0; }
+.facts dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-top: 0.5rem; }
+.facts dd { margin: 0; }
+.deadline { color: var(--warn-text); }
+figure { margin: 0; }
+blockquote { margin: 0 0 0.5rem; }
+.button { width: 100%; margin-top: 0.5rem; }

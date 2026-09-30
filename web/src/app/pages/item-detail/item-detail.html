@@ -1,0 +1,45 @@
+@let l = lang.lang();
+@let e = entry();
+@if (e) {
+  @let done = progress.done().has(e.item.id);
+  <a class="link back" [routerLink]="['/sc/chapters', e.chapter.id]">‹ {{ e.chapter.neutralLabel | localize: l }}</a>
+  <p class="eyebrow">{{ 'type.many.' + e.item.type | transloco }}</p>
+  <h1>
+    <app-spoiler-reveal [itemId]="e.item.id" [level]="e.item.spoilerLevel" [placeholder]="view.placeholder(e.chapter, e.item)">
+      {{ e.item.name | localize: l }}
+    </app-spoiler-reveal>
+  </h1>
+
+  <dl class="facts">
+    <dt>{{ 'item.location' | transloco }}</dt>
+    <dd>{{ view.showLocation(e.item) ? (e.item.location | localize: l) : ('item.hidden' | transloco) }}</dd>
+    <dt>{{ 'item.deadline' | transloco }}</dt>
+    <dd class="deadline">{{ e.deadline ? (e.deadline.neutralDescription | localize: l) : ('checklist.noDeadline' | transloco) }}</dd>
+    <dt>{{ 'item.hint' | transloco }}</dt>
+    <dd>{{ view.showHint(e.item) ? (e.item.hint | localize: l) : ('item.hidden' | transloco) }}</dd>
+  </dl>
+
+  @if (e.texts.length > 0 && view.showHint(e.item)) {
+    <section class="stack-sm">
+      <h2>{{ 'item.community' | transloco }}</h2>
+      @for (text of e.texts; track $index) {
+        <figure class="card">
+          <blockquote>{{ text.text | localize: l }}</blockquote>
+          <figcaption class="muted">— {{ text.author }} · CC BY-SA 4.0</figcaption>
+        </figure>
+      }
+    </section>
+  }
+
+  <button type="button" class="button" [class.primary]="!done" [attr.aria-pressed]="done" (click)="progress.toggle(e.item.id)">
+    {{ (done ? 'item.markUndone' : 'item.markDone') | transloco }}
+  </button>
+} @else if (e === null) {
+  <p role="alert">{{ 'item.notFound' | transloco }}</p>
+  <a class="button" routerLink="/sc/chapters">{{ 'where.title' | transloco }}</a>
+} @else if (chapter.error()) {
+  <p role="alert">{{ 'common.loadError' | transloco }}</p>
+  <button type="button" class="button" (click)="chapter.reload()">{{ 'common.retry' | transloco }}</button>
+} @else {
+  <p class="muted" aria-busy="true">{{ 'common.loading' | transloco }}</p>
+}

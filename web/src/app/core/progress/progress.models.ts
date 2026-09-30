@@ -1,0 +1,21 @@
+import { ItemType } from '../content/content.models';
+
+export const PROGRESS_SCHEMA_VERSION = 1;
+
+export interface Preferences {
+  hideDone: boolean;
+  /** Item types to show; empty means all. */
+  filters: ItemType[];
+}
+
+/** Saved on the device only. Exported as-is, so changes need a schemaVersion bump and a migration. */
+export interface SavedProgress {
+  schemaVersion: number;
+  gameId: string;
+  currentChapter: string;
+  doneItems: string[];
+  preferences: Preferences;
+  updatedAt: string;
+}
+
+export const DEFAULT_PREFERENCES: Preferences = { hideDone: false, filters: [] };

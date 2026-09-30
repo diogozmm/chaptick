@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # the validator reads origin/main's id-registry.json
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run test:content
+      - run: npm run content:validate
+      - run: npm run content:build
+
+  web:
+    runs-on: ubuntu-latest
+    needs: content
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            web/package-lock.json
+      - run: npm ci
+      - run: npm run content:build
+      - run: npm ci
+        working-directory: web
+      - run: npx ng test --watch=false
+        working-directory: web
+      - run: npx ng build
+        working-directory: web

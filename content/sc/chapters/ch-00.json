@@ -1,0 +1,411 @@
+{
+  "id": "sc-ch0",
+  "gameId": "sc",
+  "order": 0,
+  "neutralLabel": {
+    "en": "Prologue",
+    "pt": "Prólogo"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch0-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Heading to the Bright family home",
+        "pt": "Ir para a casa da família Bright"
+      }
+    },
+    {
+      "id": "sc-ch0-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "The red marker at the end of Balstar Channel",
+        "pt": "O marcador vermelho no fim do Balstar Channel"
+      }
+    },
+    {
+      "id": "sc-ch0-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Going to bed on the first night at the lodge",
+        "pt": "Ir dormir na primeira noite na hospedaria"
+      }
+    },
+    {
+      "id": "sc-ch0-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "Leaving the lodge for the next destination",
+        "pt": "Sair da hospedaria rumo ao próximo destino"
+      }
+    },
+    {
+      "id": "sc-ch0-cp-05",
+      "order": 5,
+      "neutralDescription": {
+        "en": "The final event marker of the Prologue",
+        "pt": "O último marcador de evento do Prólogo"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch0-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Rolent field items (3)",
+        "pt": "Itens de campo em Rolent (3)"
+      },
+      "location": {
+        "en": "Rolent",
+        "pt": "Rolent"
+      },
+      "availableUntil": "sc-ch0-cp-01",
+      "hint": {
+        "en": "Guild balcony, balcony of the southwest house, and the tree by the Mayor's house.",
+        "pt": "Sacada da guilda, sacada da casa a sudoeste e a árvore perto da casa do prefeito."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 1",
+        "pt": "Liberl News Issue 1"
+      },
+      "location": {
+        "en": "Le Locle — lodge kitchen",
+        "pt": "Le Locle — cozinha da hospedaria"
+      },
+      "availableUntil": "sc-ch0-cp-03",
+      "hint": {
+        "en": "Buy it from the kitchen counter in the lodge. The shop is not available again this chapter.",
+        "pt": "Compre no balcão da cozinha da hospedaria. A loja não volta a abrir neste capítulo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Recipe: Herb Sandwich",
+        "pt": "Receita: Herb Sandwich"
+      },
+      "location": {
+        "en": "Le Locle — lodge kitchen",
+        "pt": "Le Locle — cozinha da hospedaria"
+      },
+      "availableUntil": "sc-ch0-cp-03",
+      "hint": {
+        "en": "Buy one at the lodge kitchen and eat it later to learn the recipe.",
+        "pt": "Compre um na cozinha da hospedaria e coma depois para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Balstar Channel treasure chests (14)",
+        "pt": "Baús do Balstar Channel (14)"
+      },
+      "location": {
+        "en": "Balstar Channel",
+        "pt": "Balstar Channel"
+      },
+      "availableUntil": "sc-ch0-cp-02",
+      "hint": {
+        "en": "Includes a Jam Cookie (eat it for the recipe) and a monster chest with frogs and a slug in the drained lower area. The minimap legend shows a chest icon while any remain.",
+        "pt": "Inclui um Jam Cookie (coma para ganhar a receita) e um baú de monstros com sapos e uma lesma na parte baixa, depois de drenar a água. A legenda do minimapa mostra o ícone de baú enquanto faltar algum."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Battle Notes: Balstar Channel (5)",
+        "pt": "Battle Notes: Balstar Channel (5)"
+      },
+      "location": {
+        "en": "Balstar Channel",
+        "pt": "Balstar Channel"
+      },
+      "availableUntil": "sc-ch0-cp-02",
+      "hint": {
+        "en": "Fight every enemy variant: Mini Slug, Sticky Slug, Sticky Slug+, Ripple Frog and Ripple Frog+.",
+        "pt": "Enfrente todas as variantes: Mini Slug, Sticky Slug, Sticky Slug+, Ripple Frog e Ripple Frog+."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Droplet of Life (training grounds)",
+        "pt": "Droplet of Life (campo de treino)"
+      },
+      "location": {
+        "en": "Le Locle — training grounds",
+        "pt": "Le Locle — campo de treino"
+      },
+      "availableUntil": "sc-ch0-cp-03",
+      "hint": {
+        "en": "At night, on the north ledge of the training grounds, before talking to Robert.",
+        "pt": "À noite, na borda norte do campo de treino, antes de falar com o Robert."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Saint-Croix Forest treasure chests (9)",
+        "pt": "Baús da Saint-Croix Forest (9)"
+      },
+      "location": {
+        "en": "Saint-Croix Forest",
+        "pt": "Saint-Croix Forest"
+      },
+      "availableUntil": "sc-ch0-cp-04",
+      "hint": {
+        "en": "Your armor and shoes are in these chests. One is a monster chest at the west end of the first three-way split. The last one is down the southern passage near the Orbment Station.",
+        "pt": "Sua armadura e seus sapatos estão nesses baús. Um é baú de monstros, no extremo oeste da primeira bifurcação tripla. O último fica na passagem ao sul, perto da Orbment Station."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Battle Notes: Saint-Croix Forest (5)",
+        "pt": "Battle Notes: Saint-Croix Forest (5)"
+      },
+      "location": {
+        "en": "Saint-Croix Forest",
+        "pt": "Saint-Croix Forest"
+      },
+      "availableUntil": "sc-ch0-cp-04",
+      "hint": {
+        "en": "Rude Cosmos, Rolling Thorn, Bush Lancer, Bush Lancer+ and Shining Pom. Poms flee fast; the southern passage near the Orbment Station is a good spot.",
+        "pt": "Rude Cosmos, Rolling Thorn, Bush Lancer, Bush Lancer+ e Shining Pom. Os Poms fogem rápido; a passagem ao sul, perto da Orbment Station, é um bom lugar."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 1",
+        "pt": "Gambler Jack — Vol. 1"
+      },
+      "location": {
+        "en": "Le Locle — lodge, upstairs",
+        "pt": "Le Locle — hospedaria, andar de cima"
+      },
+      "availableUntil": "sc-ch0-cp-04",
+      "hint": {
+        "en": "After returning to the lodge, check the bedrooms upstairs; it is on a bed. The window to grab it is very short.",
+        "pt": "Ao voltar para a hospedaria, olhe os quartos do andar de cima; está em cima de uma cama. A janela para pegar é bem curta."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Grimsel Fortress treasure chests (6)",
+        "pt": "Baús da Grimsel Fortress (6)"
+      },
+      "location": {
+        "en": "Grimsel Fortress",
+        "pt": "Grimsel Fortress"
+      },
+      "availableUntil": "sc-ch0-cp-05",
+      "hint": {
+        "en": "Two on 1F to the left of the start, a monster chest in the east room of 1F, goggles for the dark room and a quartz on 2F, and a key item on 3F.",
+        "pt": "Dois no 1F à esquerda do início, um baú de monstros na sala leste do 1F, óculos para a sala escura e um quartz no 2F, e um item-chave no 3F."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Grimsel Fortress droplets (4)",
+        "pt": "Droplets da Grimsel Fortress (4)"
+      },
+      "location": {
+        "en": "Grimsel Fortress",
+        "pt": "Grimsel Fortress"
+      },
+      "availableUntil": "sc-ch0-cp-05",
+      "hint": {
+        "en": "After opening the last gate with the key item, examine the four energy pillars in that room.",
+        "pt": "Depois de abrir o último portão com o item-chave, examine os quatro pilares de energia daquela sala."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Battle Notes: Grimsel Fortress (5)",
+        "pt": "Battle Notes: Grimsel Fortress (5)"
+      },
+      "location": {
+        "en": "Grimsel Fortress",
+        "pt": "Grimsel Fortress"
+      },
+      "availableUntil": "sc-ch0-cp-05",
+      "hint": {
+        "en": "Mini Egger, Pain Beetle, Crybaby, Crybaby+ and Huge Frog.",
+        "pt": "Mini Egger, Pain Beetle, Crybaby, Crybaby+ e Huge Frog."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: first choice of the night",
+        "pt": "BP bônus: primeira escolha da noite"
+      },
+      "location": {
+        "en": "Le Locle — lodge",
+        "pt": "Le Locle — hospedaria"
+      },
+      "availableUntil": "sc-ch0-cp-04",
+      "hint": {
+        "en": "+2 BP. When the scene after going to bed offers a choice, pick the 1st option.",
+        "pt": "+2 BP. Quando a cena depois de ir dormir oferecer uma escolha, fique com a 1ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: win the fight that night",
+        "pt": "BP bônus: vencer a luta daquela noite"
+      },
+      "location": {
+        "en": "Le Locle — lodge",
+        "pt": "Le Locle — hospedaria"
+      },
+      "availableUntil": "sc-ch0-cp-04",
+      "hint": {
+        "en": "+2 BP. Losing does not end the game, but you lose the bonus. Save before going downstairs and keep your S-Crafts for when the enemy is under half HP.",
+        "pt": "+2 BP. Perder não encerra o jogo, mas você perde o bônus. Salve antes de descer e guarde os S-Crafts para quando o inimigo estiver com menos da metade do HP."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: choice at the forest camp",
+        "pt": "BP bônus: escolha no acampamento da floresta"
+      },
+      "location": {
+        "en": "Saint-Croix Forest",
+        "pt": "Saint-Croix Forest"
+      },
+      "availableUntil": "sc-ch0-cp-04",
+      "hint": {
+        "en": "+2 BP. In the opening scene, pick the 2nd option.",
+        "pt": "+2 BP. Na cena de abertura, fique com a 2ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-mi-04",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: choice after the lodge investigation",
+        "pt": "BP bônus: escolha depois da investigação na hospedaria"
+      },
+      "location": {
+        "en": "Le Locle — lodge",
+        "pt": "Le Locle — hospedaria"
+      },
+      "availableUntil": "sc-ch0-cp-04",
+      "hint": {
+        "en": "+3 BP. Examine all six spots in the lobby; in the scene that follows, pick the 3rd option.",
+        "pt": "+3 BP. Examine os seis pontos do saguão; na cena seguinte, fique com a 3ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-mi-05",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: choice before the last fight",
+        "pt": "BP bônus: escolha antes da última luta"
+      },
+      "location": {
+        "en": "Grimsel Fortress",
+        "pt": "Grimsel Fortress"
+      },
+      "availableUntil": "sc-ch0-cp-05",
+      "hint": {
+        "en": "+2 BP. In the scene at the final marker, pick the 2nd option.",
+        "pt": "+2 BP. Na cena do último marcador, fique com a 2ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+      ]
+    }
+  ],
+  "itemTexts": []
+}

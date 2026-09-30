@@ -1,0 +1,18 @@
+name: Item correction
+description: Wrong location, deadline or missing item
+title: "fix <item-id>"
+body:
+  - type: markdown
+    attributes:
+      value: "**Use only the item id in the title** (e.g. `fix sc-ch3-hq-02`). Never the item or character name."
+  - type: input
+    id: item
+    attributes: { label: Item id (or chapter, for a missing item), placeholder: sc-ch3-hq-02 }
+    validations: { required: true }
+  - type: textarea
+    id: problem
+    attributes: { label: What is wrong, description: May contain spoilers up to that chapter }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Source, placeholder: "verified in game / wiki page / guide" }

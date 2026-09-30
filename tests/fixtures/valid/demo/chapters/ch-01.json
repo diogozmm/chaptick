@@ -1,0 +1,14 @@
+{
+  "id": "demo-ch1",
+  "gameId": "demo",
+  "order": 1,
+  "neutralLabel": { "en": "Chapter 1" },
+  "checkpoints": [{ "id": "demo-ch1-cp-01", "order": 1, "neutralDescription": { "en": "Boarding the ship" } }],
+  "items": [
+    {
+      "id": "demo-ch1-hq-01", "type": "hidden_quest", "name": { "en": "Example hidden quest" }, "location": { "en": "Port" },
+      "availableUntil": null, "hint": { "en": "Visit at night." }, "spoilerLevel": 2, "sources": ["fixture"]
+    }
+  ],
+  "itemTexts": []
+}

@@ -1,0 +1,13 @@
+h1 { margin: 0; }
+.back { font-size: 0.9rem; }
+.progress { height: 0.5rem; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.bar { display: block; height: 100%; background: var(--accent); transition: width 0.2s; }
+.small { font-size: 0.85rem; margin: 0; }
+.alert { margin: 1rem 0; padding: 0.75rem 1rem; border-radius: var(--radius); background: var(--warn-bg); color: var(--warn-text); border: 1px solid var(--warn-border); }
+.alert strong { display: block; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 1.5rem 0 0.5rem; }
+.items { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+.left-behind { margin: 1rem 0; padding: 0.5rem 1rem; border-radius: var(--radius); border: 1px dashed var(--border); }
+.left-behind summary { min-height: 2.75rem; display: flex; align-items: center; cursor: pointer; font-weight: 600; }
+.left-behind .items { margin-bottom: 0.5rem; }
