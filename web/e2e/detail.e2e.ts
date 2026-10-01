@@ -23,8 +23,9 @@ test('ticking an item keeps the arrows in place, and type filters narrow them', 
   await page.goto('/sc/chapters/sc-ch0');
   await page.getByRole('button', { name: 'Hide done' }).click();
   await page.getByRole('button', { name: 'Quests', exact: true }).click();
-
-  await page.goto('/sc/items/sc-ch0-q-01');
+  // Navigate inside the app: a full reload could race the filter's write to IndexedDB.
+  await page.getByRole('link', { name: /Safe Quest/ }).click();
+  await expect(page).toHaveURL('/sc/items/sc-ch0-q-01');
   await page.getByRole('button', { name: 'Mark as done' }).click();
   await expect(page.getByText('Done', { exact: true })).toBeVisible();
   // Only quests pass the filter, so there is nothing after this one.
