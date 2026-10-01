@@ -20,6 +20,7 @@
 .meta-line { display: inline-flex; align-items: flex-start; gap: 0.3rem; }
 .meta-line app-icon { width: 0.95rem; height: 0.95rem; margin-top: 0.12rem; }
 .deadline { color: var(--warn-text); }
+.trophy { color: var(--accent); font-weight: 600; }
 .hint { font-size: 0.9rem; line-height: 1.5; }
 .details {
   flex: none; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; margin-top: 0.1rem;

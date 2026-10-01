@@ -24,15 +24,26 @@
 </header>
 
 <div class="tabs" role="tablist" [attr.aria-label]="'collections.title' | transloco">
-  <button type="button" role="tab" id="tab-fish" aria-controls="panel-fish" [attr.aria-selected]="tab() === 'fish'" (click)="tab.set('fish')">
-    <app-icon name="fish" /> {{ 'collections.fish' | transloco }}
-    <span class="tab-count">{{ fishStats().caught }}/{{ fishStats().known }}</span>
-  </button>
-  <button type="button" role="tab" id="tab-recipes" aria-controls="panel-recipes" [attr.aria-selected]="tab() === 'recipes'" (click)="tab.set('recipes')">
-    <app-icon name="utensils-crossed" /> {{ 'collections.recipes' | transloco }}
-    <span class="tab-count">{{ recipeStats().learned }}/{{ recipeStats().total }}</span>
-  </button>
+  @if (hasFish()) {
+    <button type="button" role="tab" id="tab-fish" aria-controls="panel-fish" [attr.aria-selected]="tab() === 'fish'" (click)="tab.set('fish')">
+      <app-icon name="fish" /> {{ 'collections.fish' | transloco }}
+      <span class="tab-count">{{ fishStats().caught }}/{{ fishStats().known }}</span>
+    </button>
+  }
+  @if (hasRecipes()) {
+    <button type="button" role="tab" id="tab-recipes" aria-controls="panel-recipes" [attr.aria-selected]="tab() === 'recipes'" (click)="tab.set('recipes')">
+      <app-icon name="utensils-crossed" /> {{ 'collections.recipes' | transloco }}
+      <span class="tab-count">{{ recipeStats().learned }}/{{ recipeStats().total }}</span>
+    </button>
+  }
 </div>
+
+@for (t of trophies(); track t.id) {
+  <p class="trophy-note">
+    <app-icon name="trophy" />
+    <span><strong>{{ t.name }}</strong> · {{ t.description | localize: l }}</span>
+  </p>
+}
 
 <div class="toolbar">
   <p class="muted small hint">

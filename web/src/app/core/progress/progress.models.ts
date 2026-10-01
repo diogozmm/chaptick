@@ -6,6 +6,8 @@ export interface Preferences {
   hideDone: boolean;
   /** Item types to show; empty means all. */
   filters: ItemType[];
+  /** Only items that count toward a trophy. Optional, so older saves and exports stay valid. */
+  trophiesOnly?: boolean;
 }
 
 /** Saved on the device only. Exported as-is, so changes need a schemaVersion bump and a migration. */

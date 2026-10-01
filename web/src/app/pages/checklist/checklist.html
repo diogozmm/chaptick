@@ -66,6 +66,12 @@
         {{ 'type.many.' + type | transloco }}
       </button>
     }
+    @if (hasTrophies()) {
+      <button type="button" class="chip trophy-chip" [attr.aria-pressed]="!!progress.preferences().trophiesOnly" (click)="toggleTrophiesOnly()">
+        <app-icon name="trophy" />
+        {{ 'trophy.filter' | transloco }}
+      </button>
+    }
     <button type="button" class="chip" [attr.aria-pressed]="progress.preferences().hideDone" (click)="toggleHideDone()">
       <app-icon name="check" />
       {{ 'checklist.hideDone' | transloco }}

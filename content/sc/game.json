@@ -11,5 +11,57 @@
     "subtitle": "2nd Chapter"
   },
   "platforms": [],
-  "dataVersion": 1
+  "dataVersion": 2,
+  "trophies": [
+    {
+      "id": "quest-master",
+      "name": "Quest Master",
+      "description": {
+        "en": "Complete and report every quest, hidden ones included. Quests expire when the chapter moves on.",
+        "pt": "Conclua e relate todas as quests, inclusive as escondidas. Elas expiram quando o capítulo avança."
+      }
+    },
+    {
+      "id": "a-rank-bracer",
+      "name": "A-Rank Bracer",
+      "description": {
+        "en": "Reach Senior Bracer A-Rank. Rank comes from BP: quests and the bonus BP moments all add up.",
+        "pt": "Chegue ao rank A de Senior Bracer. O rank vem dos BP: quests e os momentos de BP bônus somam."
+      }
+    },
+    {
+      "id": "book-master",
+      "name": "Book Master",
+      "description": {
+        "en": "Fill in every book page: every Liberl News issue and every Gambler Jack volume.",
+        "pt": "Preencha todas as páginas de livros: todas as edições do Liberl News e todos os volumes de Gambler Jack."
+      }
+    },
+    {
+      "id": "treasure-hunter",
+      "name": "Treasure Hunter",
+      "description": {
+        "en": "Open 566 treasure chests over the game.",
+        "pt": "Abra 566 baús ao longo do jogo."
+      }
+    },
+    {
+      "id": "three-star-chef",
+      "name": "Three-Star Chef",
+      "description": {
+        "en": "Cook every dish successfully, so every recipe has to be found first.",
+        "pt": "Cozinhe todos os pratos com sucesso; para isso, cada receita precisa ser encontrada antes."
+      },
+      "collection": "recipes"
+    },
+    {
+      "id": "master-angler",
+      "name": "Master Angler",
+      "description": {
+        "en": "Catch every kind of fish.",
+        "pt": "Pesque todos os tipos de peixe."
+      },
+      "collection": "fish"
+    }
+  ]
 }

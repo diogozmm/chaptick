@@ -12,6 +12,15 @@ export const ITEM_TYPES = ['quest', 'hidden_quest', 'missable', 'collectible'] a
 export type ItemType = (typeof ITEM_TYPES)[number];
 export type SpoilerLevel = 0 | 1 | 2;
 
+export interface Trophy {
+  id: string;
+  /** Official English name. */
+  name: string;
+  description: Localized;
+  /** Tied to a whole collection screen instead of checklist items. */
+  collection?: 'fish' | 'recipes';
+}
+
 export interface Game {
   id: string;
   franchise: string;
@@ -19,6 +28,8 @@ export interface Game {
   name: Localized;
   platforms: string[];
   dataVersion: number;
+  /** Trophies tied to what the app tracks; see content/schema/game.schema.json. */
+  trophies?: Trophy[];
 }
 
 /** A game as listed in the library: counts only, nothing that could spoil. */
@@ -55,6 +66,8 @@ export interface ChapterSummary {
 
 export interface Manifest {
   game: Game;
+  /** How many fish and recipes the whole game has (counts only); missing in older builds. */
+  collections?: { fish: number; recipes: number };
   chapters: ChapterSummary[];
 }
 
@@ -77,6 +90,8 @@ export interface Item {
   hint: Localized;
   spoilerLevel: SpoilerLevel;
   sources: string[];
+  /** Ids of the game's trophies this item counts toward. */
+  trophies?: string[];
   /** Route through the area; each stop can be ticked on its own. */
   steps?: RouteStep[];
 }

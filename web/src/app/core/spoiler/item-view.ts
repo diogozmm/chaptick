@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
 
-import { Chapter, Item, Localized } from '../content/content.models';
+import { Chapter, Item, Localized, Trophy } from '../content/content.models';
 import { ContentService } from '../content/content.service';
 import { ActiveGame } from '../game/active-game';
 import { RevealService } from './reveal.service';
@@ -37,6 +37,13 @@ export class ItemView {
    */
   showHint(item: Item): boolean {
     return item.spoilerLevel !== 1 || this.reveals.isRevealed(item.id);
+  }
+
+  /** Trophies the item counts toward. Hint-level information, so it follows the hint's mask. */
+  trophies(item: Item): Trophy[] {
+    if (!item.trophies?.length || !this.showHint(item)) return [];
+    const all = this.active.manifest()?.game.trophies ?? [];
+    return all.filter((t) => item.trophies!.includes(t.id));
   }
 
   deadline(chapter: Chapter, item: Item): Deadline {

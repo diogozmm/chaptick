@@ -73,13 +73,15 @@ class Chapter:
         self.data['checkpoints'].append({'id': cid, 'order': order or n, 'neutralDescription': t(en, pt)})
         return cid
 
-    def item(self, type_, name, location, until, hint, level=0, sources=(), steps=None):
+    def item(self, type_, name, location, until, hint, level=0, sources=(), steps=None, trophies=None):
         code = {'quest': 'q', 'hidden_quest': 'hq', 'missable': 'mi', 'collectible': 'co'}[type_]
         iid = self._next(code)
         item = {'id': iid, 'type': type_, 'name': name, 'location': location, 'availableUntil': until,
                 'hint': hint, 'spoilerLevel': level, 'sources': list(sources)}
         if steps:
             item['steps'] = [{'text': s} for s in steps]
+        if trophies:
+            item['trophies'] = list(trophies)
         self.data['items'].append(item)
         return iid
 
@@ -91,6 +93,8 @@ class Chapter:
             item['sources'].append(source)
 
     def write(self):
+        from trophies import apply as tag_trophies
+        tag_trophies(self.game, self.data)
         path = ROOT / self.game / 'chapters' / f'ch-{self.order:02d}.json'
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2) + '\n')

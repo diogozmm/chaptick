@@ -26,5 +26,20 @@
       ]
     }
   ],
-  "itemTexts": []
+  "itemTexts": [],
+  "recipes": [
+    {
+      "id": "zz-ch0-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Second Stew"
+      },
+      "source": {
+        "en": "Second inn"
+      },
+      "sources": [
+        "e2e"
+      ]
+    }
+  ]
 }

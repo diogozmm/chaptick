@@ -55,6 +55,39 @@
       "description": "Bump on every published correction; it busts the offline cache.",
       "type": "integer",
       "minimum": 1
+    },
+    "trophies": {
+      "description": "Trophies/achievements tied to what the app tracks (quests, notes, chests, fish, recipes). Names are the official English ones; descriptions in our own words.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "description"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "collection": {
+            "description": "Tied to a whole collection screen instead of checklist items.",
+            "enum": [
+              "fish",
+              "recipes"
+            ]
+          }
+        }
+      }
     }
   },
   "additionalProperties": false

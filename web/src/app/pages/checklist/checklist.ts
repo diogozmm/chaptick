@@ -88,10 +88,13 @@ export class Checklist {
   protected readonly groups = computed(() => {
     const chapter = this.loaded();
     if (!chapter) return [];
-    const { hideDone, filters } = this.progress.preferences();
+    const { hideDone, filters, trophiesOnly } = this.progress.preferences();
     const done = this.progress.done();
     const visible = chapter.items.filter(
-      (i) => (filters.length === 0 || filters.includes(i.type)) && !(hideDone && done.has(i.id)),
+      (i) =>
+        (filters.length === 0 || filters.includes(i.type)) &&
+        !(hideDone && done.has(i.id)) &&
+        !(trophiesOnly && this.hasTrophies() && !i.trophies?.length),
     );
     return groupByType(visible, ITEM_TYPES);
   });
@@ -131,6 +134,13 @@ export class Checklist {
     void this.progress.setPreferences({
       filters: filters.includes(type) ? filters.filter((t) => t !== type) : [...filters, type],
     });
+  }
+
+  /** The "Trophies" filter only exists for games whose trophies are mapped. */
+  protected readonly hasTrophies = computed(() => (this.game.manifest()?.game.trophies?.length ?? 0) > 0);
+
+  protected toggleTrophiesOnly(): void {
+    void this.progress.setPreferences({ trophiesOnly: !this.progress.preferences().trophiesOnly });
   }
 
   protected toggleHideDone(): void {

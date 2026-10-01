@@ -47,6 +47,11 @@ for (const { game, chapters } of games) {
   const sorted = chapters.map((c) => c.data).sort((a, b) => a.order - b.order);
   const manifest = {
     game,
+    // Totals only (no names), so screens can hide a collection a game doesn't have.
+    collections: {
+      fish: sorted.reduce((sum, c) => sum + (c.fish ?? []).length, 0),
+      recipes: sorted.reduce((sum, c) => sum + (c.recipes ?? []).length, 0),
+    },
     chapters: sorted.map(({ id, order, neutralLabel, items }) => ({
       id,
       order,

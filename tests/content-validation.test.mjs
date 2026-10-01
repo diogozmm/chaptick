@@ -94,3 +94,12 @@ test('rejects a game from an unknown franchise', () => {
 test('rejects duplicate franchises', () => {
   expectError(validateWith('franchises.json', (f) => [...f, f[0]]), 'duplicate franchise');
 });
+
+test('rejects an item counting toward an unknown trophy', () => {
+  expectError(validateWith(CH0, (d) => void (d.items[0].trophies = ['nope'])), 'counts toward unknown trophy "nope"');
+});
+
+test('rejects duplicate trophies in a game', () => {
+  const trophy = { id: 'all', name: 'All', description: { en: 'Everything.' } };
+  expectError(validateWith('demo/game.json', (d) => void (d.trophies = [trophy, trophy])), 'duplicate trophy "all"');
+});

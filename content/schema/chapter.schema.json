@@ -172,6 +172,16 @@
             },
             "additionalProperties": false
           }
+        },
+        "trophies": {
+          "description": "Ids of the game's trophies this item counts toward (game.json `trophies`).",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          }
         }
       },
       "additionalProperties": false

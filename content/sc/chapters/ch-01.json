@@ -50,6 +50,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -71,6 +75,10 @@
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -91,6 +99,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -111,6 +123,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -130,6 +146,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -150,6 +170,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -170,6 +194,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -189,6 +217,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -209,6 +241,10 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
       ]
     },
     {
@@ -229,6 +265,9 @@
       "spoilerLevel": 1,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "trophies": [
+        "a-rank-bracer"
       ]
     },
     {
@@ -249,6 +288,9 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "book-master"
       ]
     },
     {
@@ -269,6 +311,9 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "book-master"
       ]
     },
     {
@@ -310,6 +355,9 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "three-star-chef"
       ]
     },
     {
@@ -330,6 +378,9 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "trophies": [
+        "three-star-chef"
       ]
     },
     {
@@ -351,6 +402,9 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "trophies": [
+        "three-star-chef"
       ]
     },
     {
@@ -371,6 +425,9 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "trophies": [
+        "three-star-chef"
       ]
     },
     {
@@ -473,6 +530,9 @@
             "pt": "Mais um All Sepith ×50 na estrada ao norte rumo a Manoria (os guias divergem sobre em qual mapa ele fica)"
           }
         }
+      ],
+      "trophies": [
+        "treasure-hunter"
       ]
     },
     {
@@ -526,6 +586,9 @@
             "pt": "Dentro do Varenne Lighthouse — All Sepith ×50"
           }
         }
+      ],
+      "trophies": [
+        "treasure-hunter"
       ]
     },
     {
@@ -567,6 +630,9 @@
             "pt": "Mais a leste — Earthworm ×5"
           }
         }
+      ],
+      "trophies": [
+        "treasure-hunter"
       ]
     },
     {
@@ -614,6 +680,9 @@
             "pt": "De volta para baixo, ao norte do marcador da quest — Curia Balm ×2"
           }
         }
+      ],
+      "trophies": [
+        "treasure-hunter"
       ]
     },
     {
@@ -655,6 +724,9 @@
             "pt": "Mais ao sul — Blind"
           }
         }
+      ],
+      "trophies": [
+        "treasure-hunter"
       ]
     },
     {
@@ -732,6 +804,9 @@
             "pt": "Sala central — Droplet of Life"
           }
         }
+      ],
+      "trophies": [
+        "treasure-hunter"
       ]
     },
     {
@@ -846,6 +921,9 @@
             "pt": "Último caminho, em frente na bifurcação — Skull Pendant"
           }
         }
+      ],
+      "trophies": [
+        "treasure-hunter"
       ]
     }
   ],

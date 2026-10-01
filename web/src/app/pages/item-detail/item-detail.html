@@ -46,6 +46,17 @@
     </section>
   }
 
+  @for (trophy of view.trophies(e.item); track trophy.id) {
+    <section class="trophy card">
+      <app-icon name="trophy" />
+      <div>
+        <p class="eyebrow">{{ 'trophy.countsToward' | transloco }}</p>
+        <p class="trophy-name">{{ trophy.name }}</p>
+        <p class="muted small">{{ trophy.description | localize: l }}</p>
+      </div>
+    </section>
+  }
+
   @if (e.route && e.showHint) {
     <section class="section">
       <h2>

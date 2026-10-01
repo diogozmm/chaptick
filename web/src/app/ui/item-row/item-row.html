@@ -30,6 +30,9 @@
         }
       }
     </span>
+    @for (trophy of view.trophies(it); track trophy.id) {
+      <span class="meta-line trophy"><app-icon name="trophy" />{{ trophy.name }}</span>
+    }
   </span>
   @if (view.showHint(it)) {
     <p class="hint">{{ it.hint | localize: l }}</p>

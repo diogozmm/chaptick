@@ -71,6 +71,24 @@ const entityIds = (chapter) =>
   [chapter.items, chapter.bosses, chapter.fish, chapter.recipes].flatMap((list) => (list ?? []).map((e) => e.id));
 
 /** References that may point to the same chapter or an earlier one, never a later one. */
+/** Trophy ids are unique per game, and items only point to trophies their game declares. */
+function trophyErrors(game, chapters, dir) {
+  const errors = [];
+  const ids = new Set();
+  for (const { id } of game.trophies ?? []) {
+    if (ids.has(id)) errors.push(`${dir}/game.json: duplicate trophy "${id}"`);
+    ids.add(id);
+  }
+  for (const { file, data } of chapters) {
+    for (const item of data.items) {
+      for (const trophy of item.trophies ?? []) {
+        if (!ids.has(trophy)) errors.push(`${file}: "${item.id}" counts toward unknown trophy "${trophy}"`);
+      }
+    }
+  }
+  return errors;
+}
+
 function backReferenceErrors(chapters) {
   const errors = [];
   const orderOf = new Map();
@@ -158,6 +176,7 @@ export function validateContent(root, { baseRegistry } = {}) {
       return found.length === 0;
     });
     for (const { file, data } of valid) errors.push(...chapterErrors(data, file, game.id));
+    errors.push(...trophyErrors(game, valid, dir));
 
     const cross = crossChapterErrors(valid);
     errors.push(...cross.errors, ...backReferenceErrors(valid));

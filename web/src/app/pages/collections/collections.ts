@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, resource, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, linkedSignal, resource } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -27,9 +27,16 @@ export class Collections {
   protected readonly progress = inject(ProgressStore);
   protected readonly lang = inject(LangService);
 
-  protected readonly tab = signal<Tab>('fish');
+  /** A game without fishing (or recipes) hides that tab; older manifests without totals show both. */
+  protected readonly hasFish = computed(() => (this.game.manifest()?.collections?.fish ?? 1) > 0);
+  protected readonly hasRecipes = computed(() => (this.game.manifest()?.collections?.recipes ?? 1) > 0);
+  protected readonly tab = linkedSignal<Tab>(() => (this.hasFish() ? 'fish' : 'recipes'));
   protected readonly rankAKey = rankAKey;
   protected readonly current = this.access.current;
+  /** Trophies for the open tab's whole collection, when the game's trophies are mapped. */
+  protected readonly trophies = computed(() =>
+    (this.game.manifest()?.game.trophies ?? []).filter((t) => t.collection === this.tab()),
+  );
 
   private readonly chapters = resource({
     params: () => this.access.currentOrder(),

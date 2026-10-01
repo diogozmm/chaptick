@@ -8,7 +8,7 @@
 .percent { font: 600 2.25rem/1 var(--font-display); color: var(--accent); font-variant-numeric: tabular-nums; }
 .percent small { font-size: 1rem; margin-left: 0.1rem; }
 
-.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; padding: 0.25rem; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); }
+.tabs { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0.25rem; padding: 0.25rem; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); }
 .tabs button {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 2.75rem; border: 0; border-radius: 999px;
   background: transparent; color: var(--text-muted); font: 600 0.95rem/1 var(--font-body); cursor: pointer; transition: background-color 0.2s, color 0.2s;
@@ -61,3 +61,7 @@
 
 .all-done { padding: 0.25rem 0.25rem; }
 .empty { text-align: center; color: var(--text-muted); }
+
+.trophy-note { display: flex; gap: 0.5rem; align-items: flex-start; margin: 0; font-size: 0.875rem; color: var(--text-muted); }
+.trophy-note app-icon { flex: none; width: 1.1rem; height: 1.1rem; color: var(--accent); margin-top: 0.1rem; }
+.trophy-note strong { color: var(--text); }

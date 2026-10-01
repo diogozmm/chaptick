@@ -4,7 +4,7 @@
   "order": 0,
   "neutralLabel": {
     "en": "Prologue",
-    "pt": "Pr\u00f3logo"
+    "pt": "Prólogo"
   },
   "checkpoints": [
     {
@@ -39,6 +39,9 @@
       "spoilerLevel": 0,
       "sources": [
         "e2e"
+      ],
+      "trophies": [
+        "questmaster"
       ]
     },
     {
@@ -57,6 +60,9 @@
       "spoilerLevel": 1,
       "sources": [
         "e2e"
+      ],
+      "trophies": [
+        "questmaster"
       ]
     },
     {

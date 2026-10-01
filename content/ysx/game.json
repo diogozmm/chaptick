@@ -11,5 +11,57 @@
     "subtitle": "Proud Nordics"
   },
   "platforms": [],
-  "dataVersion": 1
+  "dataVersion": 2,
+  "trophies": [
+    {
+      "id": "go-to-guy-and-gal",
+      "name": "Go-To Guy & Gal",
+      "description": {
+        "en": "Complete every quest. Quests have deadlines, so one that expires is lost for the whole playthrough.",
+        "pt": "Complete todas as quests. Elas têm prazo, então uma que expira fica perdida na jogada inteira."
+      }
+    },
+    {
+      "id": "seashell-networker",
+      "name": "Seashell Networker",
+      "description": {
+        "en": "Fill every People entry in the journal. A few character notes are only available for a short time.",
+        "pt": "Preencha todas as entradas de pessoas do diário. Algumas notas de personagem só ficam disponíveis por pouco tempo."
+      }
+    },
+    {
+      "id": "no-hewnstone-unturned",
+      "name": "No Hewnstone Unturned",
+      "description": {
+        "en": "Reach a 100% discovery rate; every treasure chest counts. All areas stay reachable until the final battle.",
+        "pt": "Chegue a 100% de exploração; todo baú conta. Todas as áreas continuam acessíveis até a batalha final."
+      }
+    },
+    {
+      "id": "all-decked-out",
+      "name": "All Decked Out",
+      "description": {
+        "en": "Carry out every refit and training for the Sandras.",
+        "pt": "Faça todas as reformas e treinos do Sandras."
+      }
+    },
+    {
+      "id": "a-fish-ionado",
+      "name": "A-fish-ionado",
+      "description": {
+        "en": "Log every fish in the journal.",
+        "pt": "Registre todos os peixes no diário."
+      },
+      "collection": "fish"
+    },
+    {
+      "id": "all-la-carte",
+      "name": "All la Carte",
+      "description": {
+        "en": "Log all 24 recipes in the journal: cook or eat each dish once.",
+        "pt": "Registre as 24 receitas no diário: cozinhe ou coma cada prato uma vez."
+      },
+      "collection": "recipes"
+    }
+  ]
 }

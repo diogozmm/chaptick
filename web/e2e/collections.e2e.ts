@@ -71,3 +71,10 @@ test('a pasted link to a locked boss redirects', async ({ page }) => {
   await page.goto('/sc/bosses/sc-ch1-bs-01');
   await expect(page).toHaveURL('/sc/chapters');
 });
+
+test('a game without fishing only shows its recipes', async ({ page }) => {
+  await page.goto('/zz/collections');
+  await expect(page.getByRole('tab', { name: /Recipes/ })).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByRole('tab', { name: /Fish/ })).toHaveCount(0);
+  await expect(page.getByText('Second Stew')).toBeVisible();
+});
