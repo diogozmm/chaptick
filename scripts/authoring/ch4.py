@@ -101,6 +101,74 @@ c.item('collectible', t('Chest in the maze (Breeze)', 'Baú no labirinto (Breeze
          'Onde duas saídas têm flores, vá na direção do ícone de baú no minimapa.'),
        1, [GF2])
 
+# ---------------------------------------------------------------- routes (append-only once published)
+c.set_steps('sc-ch4-co-01', [
+    t('Lowest floor: up, then left to the end — Droplet of Strength', 'Andar mais baixo: suba e vá à esquerda até o fim — Droplet of Strength'),
+    t('Next floor up: first optional door, back room — S-Tablet ×3', 'Andar seguinte: primeira porta opcional, sala dos fundos — S-Tablet ×3'),
+    t('Same floor: north, room on the right — Droplet of Spirit', 'Mesmo andar: norte, sala à direita — Droplet of Spirit'),
+    t('Same floor: all the way west — Curia Balm ×3', 'Mesmo andar: todo o caminho a oeste — Curia Balm ×3'),
+    t('Same floor: south, next door on the right — Droplet of Magic', 'Mesmo andar: sul, próxima porta à direita — Droplet of Magic'),
+    t('Same floor: room at the south end — Zeram Powder', 'Mesmo andar: sala no extremo sul — Zeram Powder'),
+    t('Top floor: first door on the left — EP Charge III', 'Último andar: primeira porta à esquerda — EP Charge III'),
+    t('West, then south, room on the right — Droplet of Defense', 'Oeste, depois sul, sala à direita — Droplet of Defense'),
+    t('Back on the main hallway, first door on the left — Tearal Balm', 'De volta ao corredor principal, primeira porta à esquerda — Tearal Balm'),
+    t('North then east, first room on the left — Droplet of Life', 'Norte e depois leste, primeira sala à esquerda — Droplet of Life'),
+    t('Third door — Athelas Balm ×2', 'Terceira porta — Athelas Balm ×2'),
+    t('Fourth door — EP Charge II ×2', 'Quarta porta — EP Charge II ×2'),
+    t('Turn south, door on the left — Teara Balm ×2 (save before the stairs)', 'Vire ao sul, porta à esquerda — Teara Balm ×2 (salve antes da escada)'),
+], source=GF_OPEN)
+c.set_steps('sc-ch4-co-07', [
+    t('First chest past the entrance — Droplet of Spirit', 'Primeiro baú depois da entrada — Droplet of Spirit'),
+    t('Chest at the end of the tunnel — Mist Buckle', 'Baú no fim do túnel — Mist Buckle'),
+], source=GF1)
+c.set_steps('sc-ch4-co-08', [
+    t('Near the red marker event — EP Charge II ×3', 'Perto do evento do marcador vermelho — EP Charge II ×3'),
+    t('In the water, south of the bridge — Droplet of Strength', 'Na água, ao sul da ponte — Droplet of Strength'),
+    t('Southwest — Mind 4', 'Sudoeste — Mind 4'),
+    t('Past the cave, along the south wall — U-Material ×3', 'Depois da caverna, junto à parede sul — U-Material ×3'),
+    t('Further west — Athelas Balm ×2', 'Mais a oeste — Athelas Balm ×2'),
+], source=GF1)
+c.set_steps('sc-ch4-co-09', [
+    t('South fork — Athelas Balm ×2', 'Bifurcação sul — Athelas Balm ×2'),
+    t('North path, north bridge — Wolf\'s Maw', 'Caminho norte, ponte norte — Wolf\'s Maw'),
+    t('Across the south bridge, against the east wall — Droplet of Life', 'Depois da ponte sul, junto à parede leste — Droplet of Life'),
+    t('South clearing, left chest — Ice Fan (useful for the next one)', 'Clareira ao sul, baú da esquerda — Ice Fan (útil para o próximo)'),
+    t('Same clearing, north — monster chest: EP 4 (bring Confuse protection)', 'Mesma clareira, ao norte — baú de monstros: EP 4 (leve proteção contra Confuse)'),
+    t('Same clearing, east end — Survivalist Vest', 'Mesma clareira, extremo leste — Survivalist Vest'),
+    t('Back north, then north again — Haken Trekkers', 'Volte ao norte e siga ao norte de novo — Haken Trekkers'),
+], source=GF1)
+c.set_steps('sc-ch4-co-10', [
+    t('Southwest of the main road — Droplet of Life', 'A sudoeste da estrada principal — Droplet of Life'),
+    t('North wall, past the Lily Movers — All Sepith ×250', 'Parede norte, depois dos Lily Movers — All Sepith ×250'),
+    t('North wall, after the red marker — Thunderclap', 'Parede norte, depois do marcador vermelho — Thunderclap'),
+    t('Further west along the north wall — U-Material ×2', 'Mais a oeste pela parede norte — U-Material ×2'),
+    t('South of the quest monster, west side — monster chest: Action 4', 'Ao sul do monstro da quest, lado oeste — baú de monstros: Action 4'),
+    t('Same spot, east side — Teara Balm ×3', 'Mesmo lugar, lado leste — Teara Balm ×3'),
+    t('South of there — Defense 4', 'Ao sul dali — Defense 4'),
+    t('Continue south — Droplet of Defense', 'Continue ao sul — Droplet of Defense'),
+], source=GF1)
+c.set_steps('sc-ch4-co-11', [
+    t('Two slopes up, then southeast — Teara Balm ×3', 'Duas subidas e depois sudeste — Teara Balm ×3'),
+    t('Up again, following the right wall — All Sepith ×250', 'Suba de novo, seguindo a parede direita — All Sepith ×250'),
+    t('At the fork go north; the path turns east — U-Material ×3', 'Na bifurcação vá ao norte; o caminho vira a leste — U-Material ×3'),
+    t('North uphill, east, then loop south — Droplet of Magic', 'Suba ao norte, vá a leste e contorne ao sul — Droplet of Magic'),
+    t('Back at the fork, west, then north — Attack 4', 'De volta à bifurcação, oeste e depois norte — Attack 4'),
+    t('From the very first fork, west to the dead end — EP Charge II ×3', 'Da primeira bifurcação, oeste até o beco — EP Charge II ×3'),
+    t('Past the water cave, continue west — Athelas Balm ×2', 'Depois da caverna com água, siga a oeste — Athelas Balm ×2'),
+    t('Left side of the Esmelas Tower entrance — U-Material ×2', 'Lado esquerdo da entrada da Esmelas Tower — U-Material ×2'),
+], source=GF1)
+c.set_steps('sc-ch4-co-12', [
+    t('2F, right at the top of the stairs (2 chests) — All Sepith ×250, Teara Balm ×3', '2F, logo no alto da escada (2 baús) — All Sepith ×250, Teara Balm ×3'),
+    t('2F, center room — Nomadic Queen', '2F, sala central — Nomadic Queen'),
+    t('3F, south end — U-Material ×2', '3F, extremo sul — U-Material ×2'),
+    t('3F, north then the west path — Maelstrom Soup', '3F, norte e depois o caminho oeste — Maelstrom Soup'),
+    t('4F, all the way south — EP Charge II ×3', '4F, todo o caminho ao sul — EP Charge II ×3'),
+    t('4F, south path then east — monster chest: EP Cut 4 (resist Blind and Seal)', '4F, caminho sul e depois leste — baú de monstros: EP Cut 4 (resista a Blind e Seal)'),
+    t('Nearby stairs up to a dead end — Diamond Staff', 'Escada próxima até um beco — Diamond Staff'),
+    t('5F, end of the outside path (2 chests) — Duende Shoes, Shield 4', '5F, fim do caminho externo (2 baús) — Duende Shoes, Shield 4'),
+    t('5F, center room — Zeram Powder', '5F, sala central — Zeram Powder'),
+], source=GF1)
+
 # ---------------------------------------------------------------- bosses
 c.boss(t('Stronghold commander', 'Comandante da fortaleza'), t('First area of the chapter — top', 'Primeira área do capítulo — topo'),
        t('A gentle fight. Open with Earth Guard and Sylphen Wing, heal as needed and steal his AT bonuses with an Orbal Bomb. In Rage Boost he removes your buffs and S-Breaks: reapply the shield and keep going.',

@@ -2,7 +2,7 @@
 @let l = lang.lang();
 @let label = view.placeholder(chapter(), it);
 <label class="check">
-  <input type="checkbox" class="checkbox" [checked]="done()" (change)="progress.toggle(it.id)"
+  <input type="checkbox" class="checkbox" [checked]="done()" (change)="toggle()"
     [attr.aria-labelledby]="'name-' + it.id" />
 </label>
 <div class="body">
@@ -33,6 +33,9 @@
   </span>
   @if (view.showHint(it)) {
     <p class="hint">{{ it.hint | localize: l }}</p>
+    @if (it.steps) {
+      <app-route-steps [item]="it" />
+    }
   }
 </div>
 <a class="details" [routerLink]="['/sc/items', it.id]"

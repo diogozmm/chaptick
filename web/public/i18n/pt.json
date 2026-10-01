@@ -146,5 +146,8 @@
     "recipesHint": "Coma o prato (ou cozinhe) para aprender a receita.",
     "standardTitle": "Livro de receitas",
     "customizedTitle": "Pratos personalizados"
+  },
+  "route": {
+    "title": "Rota"
   }
 }

@@ -37,6 +37,10 @@ export interface Checkpoint {
   neutralDescription: Localized;
 }
 
+export interface RouteStep {
+  text: Localized;
+}
+
 export interface Item {
   id: string;
   type: ItemType;
@@ -46,6 +50,8 @@ export interface Item {
   hint: Localized;
   spoilerLevel: SpoilerLevel;
   sources: string[];
+  /** Route through the area; each stop can be ticked on its own. */
+  steps?: RouteStep[];
 }
 
 export interface ItemText {

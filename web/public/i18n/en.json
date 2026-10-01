@@ -146,5 +146,8 @@
     "recipesHint": "Eat a dish (or cook it) to learn the recipe.",
     "standardTitle": "Recipe book",
     "customizedTitle": "Customized dishes"
+  },
+  "route": {
+    "title": "Route"
   }
 }

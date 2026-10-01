@@ -316,6 +316,32 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Follow the south wall from the start — Zeram Powder",
+            "pt": "Siga a parede sul desde o início — Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "Uphill, across the bridge to the east, then south — Phantom II",
+            "pt": "Suba, cruze a ponte a leste e vá ao sul — Phantom II"
+          }
+        },
+        {
+          "text": {
+            "en": "At the fork, south wall (Shining Poms nearby) — Tearal Balm",
+            "pt": "Na bifurcação, parede sul (Shining Poms por perto) — Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "West past the cave entrance — Droplet of Defense",
+            "pt": "A oeste, depois da entrada da caverna — Droplet of Defense"
+          }
+        }
       ]
     },
     {
@@ -336,6 +362,38 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "At the end of the scorpion stretch — Impede 4",
+            "pt": "No fim do trecho dos escorpiões — Impede 4"
+          }
+        },
+        {
+          "text": {
+            "en": "Back on the main road — U-Material+",
+            "pt": "De volta à estrada principal — U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "Next chest — monster chest: General's Mantle (a Hapilsag with scorpions)",
+            "pt": "Próximo baú — baú de monstros: General's Mantle (um Hapilsag com escorpiões)"
+          }
+        },
+        {
+          "text": {
+            "en": "Drop down the ladders east of it; at the bottom — Droplet of Life",
+            "pt": "Desça pelas escadas a leste dele; lá embaixo — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "Back on the main road, next chest — All Sepith ×250",
+            "pt": "De volta à estrada principal, próximo baú — All Sepith ×250"
+          }
+        }
       ]
     },
     {
@@ -356,14 +414,52 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Along the east wall — EP Charge III",
+            "pt": "Junto à parede leste — EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Next chest — U-Material ×3",
+            "pt": "Próximo baú — U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Next chest — HP 4",
+            "pt": "Próximo baú — HP 4"
+          }
+        },
+        {
+          "text": {
+            "en": "West fork toward Amberl Tower, north wall — Droplet of Magic",
+            "pt": "Bifurcação oeste rumo à Amberl Tower, parede norte — Droplet of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "Next chest — Athelas Balm ×2",
+            "pt": "Próximo baú — Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Right outside Amberl Tower — Droplet of Spirit",
+            "pt": "Logo na frente da Amberl Tower — Droplet of Spirit"
+          }
+        }
       ]
     },
     {
       "id": "sc-ch5-co-09",
       "type": "collectible",
       "name": {
-        "en": "Amberl Tower treasure chests (20)",
-        "pt": "Baús da Amberl Tower (20)"
+        "en": "Amberl Tower treasure chests (22)",
+        "pt": "Baús da Amberl Tower (22)"
       },
       "location": {
         "en": "Amberl Tower"
@@ -376,6 +472,74 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "1F, by the stairs (2 chests) — Droplet of Defense, Buster Gear",
+            "pt": "1F, junto à escada (2 baús) — Droplet of Defense, Buster Gear"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, southeast to the end — All Sepith ×250",
+            "pt": "2F, sudeste até o fim — All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, top of the stairs (2 chests) — U-Material+, Tearal Balm",
+            "pt": "3F, no alto da escada (2 baús) — U-Material+, Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, past the center room at the foot of the stairs (2 chests) — Zeram Powder, Athelas Balm ×2",
+            "pt": "3F, depois da sala central, ao pé da escada (2 baús) — Zeram Powder, Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, end of the stairs toward 4F (3 chests) — EP Charge III, All Sepith ×250, Athelas Balm ×2",
+            "pt": "3F, fim da escada rumo ao 4F (3 baús) — EP Charge III, All Sepith ×250, Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Outer loop, south path (2 chests) — Break 4, EP Charge III",
+            "pt": "Anel externo, caminho sul (2 baús) — Break 4, EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Outer loop toward the north stairs (2 chests) — Tearal Balm, Droplet of Life",
+            "pt": "Anel externo rumo à escada norte (2 baús) — Tearal Balm, Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "4F (2 chests) — Droplet of Strength, Tearal Balm",
+            "pt": "4F (2 baús) — Droplet of Strength, Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Up to 5F, around the outside and down the south stairs (2 chests) — Droplet of Magic, U-Material ×3",
+            "pt": "Suba ao 5F, contorne por fora e desça a escada sul (2 baús) — Droplet of Magic, U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "5F, center room (3 chests) — EP Charge III, Droplet of Spirit, Ebony Shoes",
+            "pt": "5F, sala central (3 baús) — EP Charge III, Droplet of Spirit, Ebony Shoes"
+          }
+        },
+        {
+          "text": {
+            "en": "5F, southwest — monster chest: Ingenuity (wind arts; they explode)",
+            "pt": "5F, sudoeste — baú de monstros: Ingenuity (arts de vento; eles explodem)"
+          }
+        }
       ]
     },
     {
@@ -396,6 +560,38 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Eisen Road, along the west wall — Droplet of Strength",
+            "pt": "Eisen Road, junto à parede oeste — Droplet of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "Eisen Road, next chest — Ebony Suit",
+            "pt": "Eisen Road, próximo baú — Ebony Suit"
+          }
+        },
+        {
+          "text": {
+            "en": "East Bose Highway, south wall going uphill east — monster chest: Heal",
+            "pt": "East Bose Highway, parede sul subindo a leste — baú de monstros: Heal"
+          }
+        },
+        {
+          "text": {
+            "en": "The chest icon below the hill (reach it from underneath) — U-Material+",
+            "pt": "O ícone de baú abaixo da colina (chegue por baixo) — U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "Further east — Strike 4",
+            "pt": "Mais a leste — Strike 4"
+          }
+        }
       ]
     },
     {
@@ -416,6 +612,26 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Where the path splits, left across the bridge — Droplet of Spirit",
+            "pt": "Onde o caminho se divide, à esquerda depois da ponte — Droplet of Spirit"
+          }
+        },
+        {
+          "text": {
+            "en": "Right path — Misty Veil",
+            "pt": "Caminho da direita — Misty Veil"
+          }
+        },
+        {
+          "text": {
+            "en": "Last stretch, just before the old stronghold — Arondight",
+            "pt": "Último trecho, logo antes da antiga fortaleza — Arondight"
+          }
+        }
       ]
     },
     {
@@ -436,6 +652,56 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Before the slope, near the start — U-Material+",
+            "pt": "Antes da subida, perto do início — U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "Past the village: right path, then southeast — Baihu Claws",
+            "pt": "Depois da vila: caminho da direita e depois sudeste — Baihu Claws"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast — All Sepith ×250",
+            "pt": "Nordeste — All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "Around the bend to the north (2 chests) — Tearal Balm, Droplet of Life",
+            "pt": "Depois da curva, ao norte (2 baús) — Tearal Balm, Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "Back at the start, left path, first north fork — EP Charge III",
+            "pt": "De volta ao início, caminho da esquerda, primeira bifurcação ao norte — EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "West, then south — Droplet of Magic",
+            "pt": "Oeste e depois sul — Droplet of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest of the Fate Spinner — U-Material ×3",
+            "pt": "A sudoeste do Fate Spinner — U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest — Athelas Balm ×2",
+            "pt": "Noroeste — Athelas Balm ×2"
+          }
+        }
       ]
     },
     {
@@ -457,6 +723,32 @@
       "spoilerLevel": 1,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Right at the start, north fork, behind breakables — Tearal Balm",
+            "pt": "À direita no início, bifurcação norte, atrás de objetos quebráveis — Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "South fork right after the red marker — Evade 4",
+            "pt": "Bifurcação sul logo depois do marcador vermelho — Evade 4"
+          }
+        },
+        {
+          "text": {
+            "en": "West fork off the main path (2 chests) — U-Material+, U-Material ×3",
+            "pt": "Bifurcação oeste da trilha principal (2 baús) — U-Material+, U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Next fork, north — Droplet of Life",
+            "pt": "Próxima bifurcação, ao norte — Droplet of Life"
+          }
+        }
       ]
     },
     {
@@ -478,6 +770,50 @@
       "spoilerLevel": 1,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "First fork, north (2 chests) — Tearal Balm, U-Material+",
+            "pt": "Primeira bifurcação, ao norte (2 baús) — Tearal Balm, U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "Outside, the cave entrance on the left (2 chests) — Zeram Capsule, Droplet of Defense",
+            "pt": "Do lado de fora, a entrada da caverna à esquerda (2 baús) — Zeram Capsule, Droplet of Defense"
+          }
+        },
+        {
+          "text": {
+            "en": "Back inside, east fork with the Shining Poms (2 chests) — Cast 4, EP Charge III",
+            "pt": "De volta para dentro, bifurcação leste com os Shining Poms (2 baús) — Cast 4, EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "West along the north wall — Droplet of Life",
+            "pt": "Oeste pela parede norte — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "After the red marker, east fork then north — All Sepith ×250",
+            "pt": "Depois do marcador vermelho, bifurcação leste e depois norte — All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "West of the healing device, dead end (2 chests) — Droplet of Strength, Athelas Balm ×2",
+            "pt": "A oeste do dispositivo de cura, beco (2 baús) — Droplet of Strength, Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Same dead end, east — monster chest: Holy Bottle",
+            "pt": "Mesmo beco, a leste — baú de monstros: Holy Bottle"
+          }
+        }
       ]
     }
   ],

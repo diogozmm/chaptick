@@ -180,7 +180,88 @@
       },
       "spoilerLevel": 1,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Sky Pirate Stronghold"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Sky Pirate Stronghold",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Opening Act"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Lowest floor: up, then left to the end — Droplet of Strength",
+            "pt": "Andar mais baixo: suba e vá à esquerda até o fim — Droplet of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "Next floor up: first optional door, back room — S-Tablet ×3",
+            "pt": "Andar seguinte: primeira porta opcional, sala dos fundos — S-Tablet ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Same floor: north, room on the right — Droplet of Spirit",
+            "pt": "Mesmo andar: norte, sala à direita — Droplet of Spirit"
+          }
+        },
+        {
+          "text": {
+            "en": "Same floor: all the way west — Curia Balm ×3",
+            "pt": "Mesmo andar: todo o caminho a oeste — Curia Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Same floor: south, next door on the right — Droplet of Magic",
+            "pt": "Mesmo andar: sul, próxima porta à direita — Droplet of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "Same floor: room at the south end — Zeram Powder",
+            "pt": "Mesmo andar: sala no extremo sul — Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "Top floor: first door on the left — EP Charge III",
+            "pt": "Último andar: primeira porta à esquerda — EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "West, then south, room on the right — Droplet of Defense",
+            "pt": "Oeste, depois sul, sala à direita — Droplet of Defense"
+          }
+        },
+        {
+          "text": {
+            "en": "Back on the main hallway, first door on the left — Tearal Balm",
+            "pt": "De volta ao corredor principal, primeira porta à esquerda — Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "North then east, first room on the left — Droplet of Life",
+            "pt": "Norte e depois leste, primeira sala à esquerda — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "Third door — Athelas Balm ×2",
+            "pt": "Terceira porta — Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Fourth door — EP Charge II ×2",
+            "pt": "Quarta porta — EP Charge II ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Turn south, door on the left — Teara Balm ×2 (save before the stairs)",
+            "pt": "Vire ao sul, porta à esquerda — Teara Balm ×2 (salve antes da escada)"
+          }
+        }
       ]
     },
     {
@@ -300,7 +381,22 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "First chest past the entrance — Droplet of Spirit",
+            "pt": "Primeiro baú depois da entrada — Droplet of Spirit"
+          }
+        },
+        {
+          "text": {
+            "en": "Chest at the end of the tunnel — Mist Buckle",
+            "pt": "Baú no fim do túnel — Mist Buckle"
+          }
+        }
       ]
     },
     {
@@ -320,7 +416,40 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Near the red marker event — EP Charge II ×3",
+            "pt": "Perto do evento do marcador vermelho — EP Charge II ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "In the water, south of the bridge — Droplet of Strength",
+            "pt": "Na água, ao sul da ponte — Droplet of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest — Mind 4",
+            "pt": "Sudoeste — Mind 4"
+          }
+        },
+        {
+          "text": {
+            "en": "Past the cave, along the south wall — U-Material ×3",
+            "pt": "Depois da caverna, junto à parede sul — U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Further west — Athelas Balm ×2",
+            "pt": "Mais a oeste — Athelas Balm ×2"
+          }
+        }
       ]
     },
     {
@@ -340,7 +469,52 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "South fork — Athelas Balm ×2",
+            "pt": "Bifurcação sul — Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "North path, north bridge — Wolf's Maw",
+            "pt": "Caminho norte, ponte norte — Wolf's Maw"
+          }
+        },
+        {
+          "text": {
+            "en": "Across the south bridge, against the east wall — Droplet of Life",
+            "pt": "Depois da ponte sul, junto à parede leste — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "South clearing, left chest — Ice Fan (useful for the next one)",
+            "pt": "Clareira ao sul, baú da esquerda — Ice Fan (útil para o próximo)"
+          }
+        },
+        {
+          "text": {
+            "en": "Same clearing, north — monster chest: EP 4 (bring Confuse protection)",
+            "pt": "Mesma clareira, ao norte — baú de monstros: EP 4 (leve proteção contra Confuse)"
+          }
+        },
+        {
+          "text": {
+            "en": "Same clearing, east end — Survivalist Vest",
+            "pt": "Mesma clareira, extremo leste — Survivalist Vest"
+          }
+        },
+        {
+          "text": {
+            "en": "Back north, then north again — Haken Trekkers",
+            "pt": "Volte ao norte e siga ao norte de novo — Haken Trekkers"
+          }
+        }
       ]
     },
     {
@@ -360,7 +534,58 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Southwest of the main road — Droplet of Life",
+            "pt": "A sudoeste da estrada principal — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "North wall, past the Lily Movers — All Sepith ×250",
+            "pt": "Parede norte, depois dos Lily Movers — All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "North wall, after the red marker — Thunderclap",
+            "pt": "Parede norte, depois do marcador vermelho — Thunderclap"
+          }
+        },
+        {
+          "text": {
+            "en": "Further west along the north wall — U-Material ×2",
+            "pt": "Mais a oeste pela parede norte — U-Material ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "South of the quest monster, west side — monster chest: Action 4",
+            "pt": "Ao sul do monstro da quest, lado oeste — baú de monstros: Action 4"
+          }
+        },
+        {
+          "text": {
+            "en": "Same spot, east side — Teara Balm ×3",
+            "pt": "Mesmo lugar, lado leste — Teara Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "South of there — Defense 4",
+            "pt": "Ao sul dali — Defense 4"
+          }
+        },
+        {
+          "text": {
+            "en": "Continue south — Droplet of Defense",
+            "pt": "Continue ao sul — Droplet of Defense"
+          }
+        }
       ]
     },
     {
@@ -380,7 +605,58 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Two slopes up, then southeast — Teara Balm ×3",
+            "pt": "Duas subidas e depois sudeste — Teara Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Up again, following the right wall — All Sepith ×250",
+            "pt": "Suba de novo, seguindo a parede direita — All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "At the fork go north; the path turns east — U-Material ×3",
+            "pt": "Na bifurcação vá ao norte; o caminho vira a leste — U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "North uphill, east, then loop south — Droplet of Magic",
+            "pt": "Suba ao norte, vá a leste e contorne ao sul — Droplet of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "Back at the fork, west, then north — Attack 4",
+            "pt": "De volta à bifurcação, oeste e depois norte — Attack 4"
+          }
+        },
+        {
+          "text": {
+            "en": "From the very first fork, west to the dead end — EP Charge II ×3",
+            "pt": "Da primeira bifurcação, oeste até o beco — EP Charge II ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Past the water cave, continue west — Athelas Balm ×2",
+            "pt": "Depois da caverna com água, siga a oeste — Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Left side of the Esmelas Tower entrance — U-Material ×2",
+            "pt": "Lado esquerdo da entrada da Esmelas Tower — U-Material ×2"
+          }
+        }
       ]
     },
     {
@@ -400,7 +676,64 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "2F, right at the top of the stairs (2 chests) — All Sepith ×250, Teara Balm ×3",
+            "pt": "2F, logo no alto da escada (2 baús) — All Sepith ×250, Teara Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, center room — Nomadic Queen",
+            "pt": "2F, sala central — Nomadic Queen"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, south end — U-Material ×2",
+            "pt": "3F, extremo sul — U-Material ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, north then the west path — Maelstrom Soup",
+            "pt": "3F, norte e depois o caminho oeste — Maelstrom Soup"
+          }
+        },
+        {
+          "text": {
+            "en": "4F, all the way south — EP Charge II ×3",
+            "pt": "4F, todo o caminho ao sul — EP Charge II ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "4F, south path then east — monster chest: EP Cut 4 (resist Blind and Seal)",
+            "pt": "4F, caminho sul e depois leste — baú de monstros: EP Cut 4 (resista a Blind e Seal)"
+          }
+        },
+        {
+          "text": {
+            "en": "Nearby stairs up to a dead end — Diamond Staff",
+            "pt": "Escada próxima até um beco — Diamond Staff"
+          }
+        },
+        {
+          "text": {
+            "en": "5F, end of the outside path (2 chests) — Duende Shoes, Shield 4",
+            "pt": "5F, fim do caminho externo (2 baús) — Duende Shoes, Shield 4"
+          }
+        },
+        {
+          "text": {
+            "en": "5F, center room — Zeram Powder",
+            "pt": "5F, sala central — Zeram Powder"
+          }
+        }
       ]
     },
     {

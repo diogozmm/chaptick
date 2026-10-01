@@ -131,7 +131,58 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Prologue Part 1"
+        "guide: Neoseeker SC walkthrough, Prologue Part 1",
+        "guide: Neoseeker SC walkthrough, Prologue - Part 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "East room: lower the water, then take the uncovered path north — Silver Earrings",
+            "pt": "Sala leste: baixe a água e siga o caminho descoberto ao norte — Silver Earrings"
+          }
+        },
+        {
+          "text": {
+            "en": "End of that passage (3 chests) — Thelas Balm ×2, Curia Balm ×2, Tear Balm ×3",
+            "pt": "Fim dessa passagem (3 baús) — Thelas Balm ×2, Curia Balm ×2, Tear Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Back at the start, the center switch turns the bridge west; south end (3 chests) — Evade 1, Tear Balm ×2, EP Charge I ×2",
+            "pt": "De volta ao início, a alavanca central vira a ponte para oeste; extremo sul (3 baús) — Evade 1, Tear Balm ×2, EP Charge I ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Second half: switch to the east, then the east path — Strike 1",
+            "pt": "Segunda metade: alavanca a leste, depois o caminho leste — Strike 1"
+          }
+        },
+        {
+          "text": {
+            "en": "Center, buried among the boxes — Pearl Earrings",
+            "pt": "Centro, escondido entre as caixas — Pearl Earrings"
+          }
+        },
+        {
+          "text": {
+            "en": "Drain the center, far northwest of the lower area — monster chest: EP Cut 1",
+            "pt": "Drene o centro; no extremo noroeste da parte baixa — baú de monstros: EP Cut 1"
+          }
+        },
+        {
+          "text": {
+            "en": "Steps south of the lower area (3 chests) — EP Charge I ×3, Jam Cookie, Thelas Balm ×3",
+            "pt": "Degraus ao sul da parte baixa (3 baús) — EP Charge I ×3, Jam Cookie, Thelas Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast passage, northwest path — Curia Balm ×3",
+            "pt": "Passagem nordeste, caminho noroeste — Curia Balm ×3"
+          }
+        }
       ]
     },
     {
@@ -194,7 +245,58 @@
       },
       "spoilerLevel": 1,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+        "guide: Neoseeker SC walkthrough, Prologue Part 2",
+        "guide: Neoseeker SC walkthrough, Prologue - Part 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "First split, northeast — Reinforced Leather",
+            "pt": "Primeira bifurcação, nordeste — Reinforced Leather"
+          }
+        },
+        {
+          "text": {
+            "en": "Three-way split, northeast — Enhanced Boots",
+            "pt": "Bifurcação tripla, nordeste — Enhanced Boots"
+          }
+        },
+        {
+          "text": {
+            "en": "Same split, west end — monster chest: Breeze",
+            "pt": "Mesma bifurcação, extremo oeste — baú de monstros: Breeze"
+          }
+        },
+        {
+          "text": {
+            "en": "Second three-way split, northeast path (2 chests) — Thelas Balm ×3, Enhanced Boots",
+            "pt": "Segunda bifurcação tripla, caminho nordeste (2 baús) — Thelas Balm ×3, Enhanced Boots"
+          }
+        },
+        {
+          "text": {
+            "en": "Middle path north — Reinforced Leather",
+            "pt": "Caminho do meio, ao norte — Reinforced Leather"
+          }
+        },
+        {
+          "text": {
+            "en": "On the river, northwest side — EP Charge I ×3",
+            "pt": "No rio, lado noroeste — EP Charge I ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Across the river, in the middle — Tear Balm ×3",
+            "pt": "Depois do rio, no meio — Tear Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Passage south of the Orbment Station — Flame Zippo",
+            "pt": "Passagem ao sul da Orbment Station — Flame Zippo"
+          }
+        }
       ]
     },
     {
@@ -257,7 +359,40 @@
       },
       "spoilerLevel": 1,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+        "guide: Neoseeker SC walkthrough, Prologue Part 2",
+        "guide: Neoseeker SC walkthrough, Prologue - Part 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "1F, the two rooms left of the start — S-Tablet ×5, Droplet of Life",
+            "pt": "1F, as duas salas à esquerda do início — S-Tablet ×5, Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "1F, east room off the hallway — monster chest: Glam Choker",
+            "pt": "1F, sala leste do corredor — baú de monstros: Glam Choker"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, room on the west side of the dark room — Night-Vision Goggles (equip them)",
+            "pt": "2F, sala no lado oeste da sala escura — Night-Vision Goggles (equipe)"
+          }
+        },
+        {
+          "text": {
+            "en": "2F dark room, east, then right at the split — EP 1",
+            "pt": "2F, sala escura, leste e depois à direita na bifurcação — EP 1"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, the chest marked as a story marker — ID Unit",
+            "pt": "3F, o baú marcado como evento da história — ID Unit"
+          }
+        }
       ]
     },
     {

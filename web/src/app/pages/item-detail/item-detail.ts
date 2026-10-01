@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject, input, resource }
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
+import { Item } from '../../core/content/content.models';
 import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
@@ -10,11 +11,13 @@ import { ChapterAccess, chapterIdOfItem } from '../../core/spoiler/chapter-acces
 import { ItemView } from '../../core/spoiler/item-view';
 import { Icon } from '../../ui/icon/icon';
 import { TYPE_ICON } from '../../ui/item-type';
+import { itemChange } from '../../core/route/route';
+import { RouteSteps } from '../../ui/route-steps/route-steps';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
 
 @Component({
   selector: 'app-item-detail',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal, Icon],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal, Icon, RouteSteps],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './item-detail.html',
   styleUrl: './item-detail.scss',
@@ -34,6 +37,11 @@ export class ItemDetail {
     params: () => this.access.unlockedChapter(chapterIdOfItem(this.itemId())),
     loader: ({ params }) => this.content.loadChapter(params),
   });
+
+  protected toggle(item: Item): void {
+    const change = itemChange(item, this.progress.done());
+    void this.progress.setDone(change.ids, change.done);
+  }
 
   protected readonly entry = computed(() => {
     if (!this.chapter.hasValue()) return undefined;

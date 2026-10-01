@@ -41,6 +41,12 @@
     </div>
   </dl>
 
+  @if (e.item.steps && view.showHint(e.item)) {
+    <section class="fact">
+      <app-route-steps [item]="e.item" [expanded]="true" />
+    </section>
+  }
+
   @if (e.texts.length > 0 && view.showHint(e.item)) {
     <section class="stack-sm">
       <h2><app-icon name="book-open" /> {{ 'item.community' | transloco }}</h2>
@@ -53,7 +59,7 @@
     </section>
   }
 
-  <button type="button" class="button block" [class.primary]="!done" [attr.aria-pressed]="done" (click)="progress.toggle(e.item.id)">
+  <button type="button" class="button block" [class.primary]="!done" [attr.aria-pressed]="done" (click)="toggle(e.item)">
     <app-icon name="check" />
     {{ (done ? 'item.markUndone' : 'item.markDone') | transloco }}
   </button>

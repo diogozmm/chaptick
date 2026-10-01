@@ -72,7 +72,7 @@ c.item('collectible', t('Krone Trail treasure chests (5)', 'Baús da Krone Trail
        0, [D1])
 c.item('collectible', t('New Ansel Path treasure chests (6)', 'Baús da New Ansel Path (6)'), t('New Ansel Path'), END,
        t('The last one sits right outside Amberl Tower.', 'O último fica logo na frente da Amberl Tower.'), 0, [D1])
-c.item('collectible', t('Amberl Tower treasure chests (20)', 'Baús da Amberl Tower (20)'), t('Amberl Tower'), END,
+c.item('collectible', t('Amberl Tower treasure chests (22)', 'Baús da Amberl Tower (22)'), t('Amberl Tower'), END,
        t('Spread across all five floors; the 3F and 4F outer loops hide several. The 5F monster chest has three Ground Trappers: wind arts, and they explode when defeated.',
          'Espalhados pelos cinco andares; os anéis externos do 3F e do 4F escondem vários. O baú de monstros do 5F tem três Ground Trappers: use arts de vento, e eles explodem quando caem.'),
        0, [D1])
@@ -93,6 +93,79 @@ c.item('collectible', t('Dragon lair treasure chests (11)', 'Baús do covil do d
        t('A side cave on the left holds two, and a dead end near the last healing device has three, including a monster chest (Master Cryon and its Cryons).',
          'Uma caverna lateral à esquerda guarda dois, e um beco perto do último dispositivo de cura tem três, incluindo um baú de monstros (Master Cryon e seus Cryons).'),
        1, [D2])
+
+# ---------------------------------------------------------------- routes (append-only once published)
+c.set_steps('sc-ch5-co-06', [
+    t('Follow the south wall from the start — Zeram Powder', 'Siga a parede sul desde o início — Zeram Powder'),
+    t('Uphill, across the bridge to the east, then south — Phantom II', 'Suba, cruze a ponte a leste e vá ao sul — Phantom II'),
+    t('At the fork, south wall (Shining Poms nearby) — Tearal Balm', 'Na bifurcação, parede sul (Shining Poms por perto) — Tearal Balm'),
+    t('West past the cave entrance — Droplet of Defense', 'A oeste, depois da entrada da caverna — Droplet of Defense'),
+], source=D1)
+c.set_steps('sc-ch5-co-07', [
+    t('At the end of the scorpion stretch — Impede 4', 'No fim do trecho dos escorpiões — Impede 4'),
+    t('Back on the main road — U-Material+', 'De volta à estrada principal — U-Material+'),
+    t('Next chest — monster chest: General\'s Mantle (a Hapilsag with scorpions)', 'Próximo baú — baú de monstros: General\'s Mantle (um Hapilsag com escorpiões)'),
+    t('Drop down the ladders east of it; at the bottom — Droplet of Life', 'Desça pelas escadas a leste dele; lá embaixo — Droplet of Life'),
+    t('Back on the main road, next chest — All Sepith ×250', 'De volta à estrada principal, próximo baú — All Sepith ×250'),
+], source=D1)
+c.set_steps('sc-ch5-co-08', [
+    t('Along the east wall — EP Charge III', 'Junto à parede leste — EP Charge III'),
+    t('Next chest — U-Material ×3', 'Próximo baú — U-Material ×3'),
+    t('Next chest — HP 4', 'Próximo baú — HP 4'),
+    t('West fork toward Amberl Tower, north wall — Droplet of Magic', 'Bifurcação oeste rumo à Amberl Tower, parede norte — Droplet of Magic'),
+    t('Next chest — Athelas Balm ×2', 'Próximo baú — Athelas Balm ×2'),
+    t('Right outside Amberl Tower — Droplet of Spirit', 'Logo na frente da Amberl Tower — Droplet of Spirit'),
+], source=D1)
+c.set_steps('sc-ch5-co-09', [
+    t('1F, by the stairs (2 chests) — Droplet of Defense, Buster Gear', '1F, junto à escada (2 baús) — Droplet of Defense, Buster Gear'),
+    t('2F, southeast to the end — All Sepith ×250', '2F, sudeste até o fim — All Sepith ×250'),
+    t('3F, top of the stairs (2 chests) — U-Material+, Tearal Balm', '3F, no alto da escada (2 baús) — U-Material+, Tearal Balm'),
+    t('3F, past the center room at the foot of the stairs (2 chests) — Zeram Powder, Athelas Balm ×2', '3F, depois da sala central, ao pé da escada (2 baús) — Zeram Powder, Athelas Balm ×2'),
+    t('3F, end of the stairs toward 4F (3 chests) — EP Charge III, All Sepith ×250, Athelas Balm ×2', '3F, fim da escada rumo ao 4F (3 baús) — EP Charge III, All Sepith ×250, Athelas Balm ×2'),
+    t('Outer loop, south path (2 chests) — Break 4, EP Charge III', 'Anel externo, caminho sul (2 baús) — Break 4, EP Charge III'),
+    t('Outer loop toward the north stairs (2 chests) — Tearal Balm, Droplet of Life', 'Anel externo rumo à escada norte (2 baús) — Tearal Balm, Droplet of Life'),
+    t('4F (2 chests) — Droplet of Strength, Tearal Balm', '4F (2 baús) — Droplet of Strength, Tearal Balm'),
+    t('Up to 5F, around the outside and down the south stairs (2 chests) — Droplet of Magic, U-Material ×3', 'Suba ao 5F, contorne por fora e desça a escada sul (2 baús) — Droplet of Magic, U-Material ×3'),
+    t('5F, center room (3 chests) — EP Charge III, Droplet of Spirit, Ebony Shoes', '5F, sala central (3 baús) — EP Charge III, Droplet of Spirit, Ebony Shoes'),
+    t('5F, southwest — monster chest: Ingenuity (wind arts; they explode)', '5F, sudoeste — baú de monstros: Ingenuity (arts de vento; eles explodem)'),
+], source=D1)
+c.set_steps('sc-ch5-co-10', [
+    t('Eisen Road, along the west wall — Droplet of Strength', 'Eisen Road, junto à parede oeste — Droplet of Strength'),
+    t('Eisen Road, next chest — Ebony Suit', 'Eisen Road, próximo baú — Ebony Suit'),
+    t('East Bose Highway, south wall going uphill east — monster chest: Heal', 'East Bose Highway, parede sul subindo a leste — baú de monstros: Heal'),
+    t('The chest icon below the hill (reach it from underneath) — U-Material+', 'O ícone de baú abaixo da colina (chegue por baixo) — U-Material+'),
+    t('Further east — Strike 4', 'Mais a leste — Strike 4'),
+], source=D1)
+c.set_steps('sc-ch5-co-11', [
+    t('Where the path splits, left across the bridge — Droplet of Spirit', 'Onde o caminho se divide, à esquerda depois da ponte — Droplet of Spirit'),
+    t('Right path — Misty Veil', 'Caminho da direita — Misty Veil'),
+    t('Last stretch, just before the old stronghold — Arondight', 'Último trecho, logo antes da antiga fortaleza — Arondight'),
+], source=D1)
+c.set_steps('sc-ch5-co-12', [
+    t('Before the slope, near the start — U-Material+', 'Antes da subida, perto do início — U-Material+'),
+    t('Past the village: right path, then southeast — Baihu Claws', 'Depois da vila: caminho da direita e depois sudeste — Baihu Claws'),
+    t('Northeast — All Sepith ×250', 'Nordeste — All Sepith ×250'),
+    t('Around the bend to the north (2 chests) — Tearal Balm, Droplet of Life', 'Depois da curva, ao norte (2 baús) — Tearal Balm, Droplet of Life'),
+    t('Back at the start, left path, first north fork — EP Charge III', 'De volta ao início, caminho da esquerda, primeira bifurcação ao norte — EP Charge III'),
+    t('West, then south — Droplet of Magic', 'Oeste e depois sul — Droplet of Magic'),
+    t('Southwest of the Fate Spinner — U-Material ×3', 'A sudoeste do Fate Spinner — U-Material ×3'),
+    t('Northwest — Athelas Balm ×2', 'Noroeste — Athelas Balm ×2'),
+], source=D1)
+c.set_steps('sc-ch5-co-13', [
+    t('Right at the start, north fork, behind breakables — Tearal Balm', 'À direita no início, bifurcação norte, atrás de objetos quebráveis — Tearal Balm'),
+    t('South fork right after the red marker — Evade 4', 'Bifurcação sul logo depois do marcador vermelho — Evade 4'),
+    t('West fork off the main path (2 chests) — U-Material+, U-Material ×3', 'Bifurcação oeste da trilha principal (2 baús) — U-Material+, U-Material ×3'),
+    t('Next fork, north — Droplet of Life', 'Próxima bifurcação, ao norte — Droplet of Life'),
+], source=D1)
+c.set_steps('sc-ch5-co-14', [
+    t('First fork, north (2 chests) — Tearal Balm, U-Material+', 'Primeira bifurcação, ao norte (2 baús) — Tearal Balm, U-Material+'),
+    t('Outside, the cave entrance on the left (2 chests) — Zeram Capsule, Droplet of Defense', 'Do lado de fora, a entrada da caverna à esquerda (2 baús) — Zeram Capsule, Droplet of Defense'),
+    t('Back inside, east fork with the Shining Poms (2 chests) — Cast 4, EP Charge III', 'De volta para dentro, bifurcação leste com os Shining Poms (2 baús) — Cast 4, EP Charge III'),
+    t('West along the north wall — Droplet of Life', 'Oeste pela parede norte — Droplet of Life'),
+    t('After the red marker, east fork then north — All Sepith ×250', 'Depois do marcador vermelho, bifurcação leste e depois norte — All Sepith ×250'),
+    t('West of the healing device, dead end (2 chests) — Droplet of Strength, Athelas Balm ×2', 'A oeste do dispositivo de cura, beco (2 baús) — Droplet of Strength, Athelas Balm ×2'),
+    t('Same dead end, east — monster chest: Holy Bottle', 'Mesmo beco, a leste — baú de monstros: Holy Bottle'),
+], source=D2)
 
 # ---------------------------------------------------------------- bosses
 c.boss(t('Blade Fang ×2'), t('Krone Trail'),

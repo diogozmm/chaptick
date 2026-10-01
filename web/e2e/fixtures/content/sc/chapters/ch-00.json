@@ -93,6 +93,18 @@
       "spoilerLevel": 0,
       "sources": [
         "e2e"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Left shelf"
+          }
+        },
+        {
+          "text": {
+            "en": "Right shelf"
+          }
+        }
       ]
     }
   ],

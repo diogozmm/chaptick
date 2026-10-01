@@ -66,13 +66,22 @@ class Chapter:
         self.data['checkpoints'].append({'id': cid, 'order': order or n, 'neutralDescription': t(en, pt)})
         return cid
 
-    def item(self, type_, name, location, until, hint, level=0, sources=()):
+    def item(self, type_, name, location, until, hint, level=0, sources=(), steps=None):
         code = {'quest': 'q', 'hidden_quest': 'hq', 'missable': 'mi', 'collectible': 'co'}[type_]
         iid = self._next(code)
-        self.data['items'].append({'id': iid, 'type': type_, 'name': name, 'location': location,
-                                   'availableUntil': until, 'hint': hint, 'spoilerLevel': level,
-                                   'sources': list(sources)})
+        item = {'id': iid, 'type': type_, 'name': name, 'location': location, 'availableUntil': until,
+                'hint': hint, 'spoilerLevel': level, 'sources': list(sources)}
+        if steps:
+            item['steps'] = [{'text': s} for s in steps]
+        self.data['items'].append(item)
         return iid
+
+    def set_steps(self, item_id, steps, source=None):
+        """Adds a route to an existing item (used for hand-written chapters). Append-only once published."""
+        item = next(i for i in self.data['items'] if i['id'] == item_id)
+        item['steps'] = [{'text': s} for s in steps]
+        if source and source not in item['sources']:
+            item['sources'].append(source)
 
     def write(self):
         path = ROOT / 'sc' / 'chapters' / f'ch-{self.order:02d}.json'
