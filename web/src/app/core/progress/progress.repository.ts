@@ -13,7 +13,7 @@ export class ProgressRepository {
   private db?: Promise<IDBPDatabase<ProgressDb>>;
 
   private open(): Promise<IDBPDatabase<ProgressDb>> {
-    this.db ??= openDB<ProgressDb>('bracer-notes', 1, {
+    this.db ??= openDB<ProgressDb>('chaptick', 1, {
       upgrade: (db) => db.createObjectStore('progress', { keyPath: 'gameId' }),
     });
     return this.db;

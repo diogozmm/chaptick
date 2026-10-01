@@ -52,7 +52,7 @@ export class Home {
     const blob = new Blob([this.progress.exportJson()], { type: 'application/json' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = `bracer-notes-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    link.download = `chaptick-progress-${new Date().toISOString().slice(0, 10)}.json`;
     link.click();
     URL.revokeObjectURL(link.href);
     this.status.set({ kind: 'ok', key: 'transfer.exported' });

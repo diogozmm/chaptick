@@ -4,7 +4,7 @@ import { firstValueFrom } from 'rxjs';
 
 import { Lang } from '../content/content.models';
 
-const STORAGE_KEY = 'bracer-notes.lang';
+const STORAGE_KEY = 'chaptick.lang';
 
 /** UI and content language. The choice is a per-device convenience, so storage failures are ignored. */
 @Injectable({ providedIn: 'root' })

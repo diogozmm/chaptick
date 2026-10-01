@@ -3,8 +3,8 @@
  * Empty values hide the matching UI, so the app works before they are filled in.
  */
 export const SITE = {
-  repoUrl: '', // TODO: GitHub repository URL
-  contactEmail: '', // TODO: shown on the privacy page for removal requests
+  repoUrl: 'https://github.com/diogozmm/chaptick',
+  contactEmail: 'diogo.zmm@outlook.com',
   donations: [] as { label: string; url: string }[], // e.g. GitHub Sponsors, Ko-fi, Pix/Apoia.se
   /** Cookieless Umami. Null disables analytics entirely. */
   analytics: null as { scriptUrl: string; websiteId: string } | null,

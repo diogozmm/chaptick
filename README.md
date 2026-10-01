@@ -1,4 +1,4 @@
-# bracer-notes
+# Chaptick
 
 > Working title. Unofficial, spoiler-safe companion for **Trails in the Sky 2nd Chapter**.
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bracer-notes/schema/common.schema.json",
+  "$id": "https://chaptick/schema/common.schema.json",
   "$defs": {
     "localized": {
       "description": "User-facing text. English is required; other languages fall back to it.",

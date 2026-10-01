@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bracer-notes/schema/game.schema.json",
+  "$id": "https://chaptick/schema/game.schema.json",
   "type": "object",
   "required": ["id", "name", "platforms", "dataVersion"],
   "properties": {

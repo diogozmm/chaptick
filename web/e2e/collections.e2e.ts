@@ -47,7 +47,7 @@ test('a Rank A catch also counts as caught and survives a reload', async ({ page
       page.evaluate(
         () =>
           new Promise<string[]>((resolve) => {
-            const open = indexedDB.open('bracer-notes');
+            const open = indexedDB.open('chaptick');
             open.onsuccess = () => {
               const get = open.result.transaction('progress').objectStore('progress').get('sc');
               get.onsuccess = () => resolve(get.result?.doneItems ?? []);

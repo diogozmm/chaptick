@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bracer-notes/schema/chapter.schema.json",
+  "$id": "https://chaptick/schema/chapter.schema.json",
   "description": "One chapter per file, so the app only ever downloads unlocked chapters.",
   "type": "object",
   "required": [

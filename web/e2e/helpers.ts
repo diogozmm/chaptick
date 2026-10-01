@@ -17,7 +17,7 @@ export async function expectSaved(page: Page, itemId: string, saved = true): Pro
       page.evaluate(
         (id) =>
           new Promise<boolean>((resolve) => {
-            const open = indexedDB.open('bracer-notes');
+            const open = indexedDB.open('chaptick');
             open.onsuccess = () => {
               const get = open.result.transaction('progress').objectStore('progress').get('sc');
               get.onsuccess = () => resolve(Boolean(get.result?.doneItems.includes(id)));
