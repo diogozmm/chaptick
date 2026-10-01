@@ -214,5 +214,17 @@
     "laterIn": "Some point in {{chapter}}",
     "from": "From {{chapter}}",
     "link": "What can I still miss"
+  },
+  "search": {
+    "title": "Search",
+    "label": "Search the chapters you have reached",
+    "placeholder": "A chest, a quest, a place…",
+    "hint": "Only chapters you have reached, and only what is already revealed.",
+    "count": "{{count}} result(s)",
+    "field": {
+      "location": "Place:",
+      "step": "Route:",
+      "hint": "Hint:"
+    }
   }
 }

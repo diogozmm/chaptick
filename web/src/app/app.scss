@@ -17,6 +17,12 @@
   border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 600 0.8rem/1 var(--font-body);
   letter-spacing: 0.06em; cursor: pointer;
 }
+.icon-only { padding: 0; width: 2.75rem; justify-content: center; }
+/* Narrow phones: the top bar keeps icons only, so the language switch never gets pushed off screen. */
+@media (max-width: 26rem) {
+  .wide-only { display: none; }
+  .top-actions .lang:has(.wide-only) { padding: 0; width: 2.75rem; justify-content: center; }
+}
 .update {
   display: flex; justify-content: center; align-items: center; gap: 0.6rem; padding: 0 1rem;
   background: var(--accent-soft); border-bottom: 1px solid var(--border); font-size: 0.9rem;

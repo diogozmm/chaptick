@@ -29,6 +29,7 @@ export const routes: Routes = [
         canActivate: [unlockedChapterGuard],
         loadComponent: () => import('./pages/boss-detail/boss-detail').then((m) => m.BossDetail),
       },
+      { path: 'search', loadComponent: () => import('./pages/search/search').then((m) => m.Search) },
       { path: 'deadlines', loadComponent: () => import('./pages/deadlines/deadlines').then((m) => m.Deadlines) },
       { path: 'collections', loadComponent: () => import('./pages/collections/collections').then((m) => m.Collections) },
     ],

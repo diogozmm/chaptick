@@ -1,0 +1,44 @@
+@let l = lang.lang();
+<header class="stack-sm">
+  @if (game.game(); as g) {
+    <p class="eyebrow">{{ g.name | localize: l }}</p>
+  }
+  <h1>{{ 'search.title' | transloco }}</h1>
+</header>
+
+<div class="field">
+  <app-icon name="search" />
+  <input type="search" [value]="query()" (input)="setQuery($any($event.target).value)" autofocus enterkeyhint="search"
+    [attr.aria-label]="'search.label' | transloco" [placeholder]="'search.placeholder' | transloco" />
+</div>
+<p class="muted small">{{ 'search.hint' | transloco }}</p>
+
+@if (searching()) {
+  <p class="muted small" role="status">{{ 'search.count' | transloco: { count: hits().length } }}</p>
+  <ul class="results">
+    @for (hit of hits(); track hit.item.id) {
+      @let p = parts(hit);
+      <li>
+        <a class="result" [routerLink]="game.link('items', hit.item.id)" [attr.data-type]="hit.item.type">
+          <span class="title">
+            @if (hit.field === 'name') {
+              {{ p[0] }}<mark>{{ p[1] }}</mark>{{ p[2] }}
+            } @else {
+              {{ view.showLocation(hit.item) ? (hit.item.name | localize: l) : view.placeholder(hit.chapter, hit.item) }}
+            }
+          </span>
+          <span class="meta">
+            <app-icon [name]="typeIcon[hit.item.type]" />
+            {{ 'type.label.' + hit.item.type | transloco }} · {{ hit.chapter.neutralLabel | localize: l }}
+          </span>
+          @if (hit.field !== 'name') {
+            <span class="snippet">
+              <span class="label">{{ 'search.field.' + hit.field | transloco }}</span>
+              {{ p[0] }}<mark>{{ p[1] }}</mark>{{ p[2] }}
+            </span>
+          }
+        </a>
+      </li>
+    }
+  </ul>
+}

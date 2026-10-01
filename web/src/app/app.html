@@ -5,9 +5,12 @@
   </a>
  <nav class="top-actions" [attr.aria-label]="'app.mainNav' | transloco">
   @if (game.id()) {
-    <a [routerLink]="game.link('collections')" routerLinkActive="active" class="lang">
+    <a [routerLink]="game.link('search')" routerLinkActive="active" class="lang icon-only" [attr.aria-label]="'search.title' | transloco">
+      <app-icon name="search" />
+    </a>
+    <a [routerLink]="game.link('collections')" routerLinkActive="active" class="lang" [attr.aria-label]="'collections.short' | transloco">
       <app-icon name="book-open" />
-      <span>{{ 'collections.short' | transloco }}</span>
+      <span class="wide-only">{{ 'collections.short' | transloco }}</span>
     </a>
   }
   <button type="button" class="lang" (click)="toggleLang()" [attr.aria-label]="'app.switchLanguage' | transloco">

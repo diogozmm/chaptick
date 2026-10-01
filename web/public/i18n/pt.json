@@ -214,5 +214,17 @@
     "laterIn": "Algum ponto do {{chapter}}",
     "from": "Do {{chapter}}",
     "link": "O que ainda posso perder"
+  },
+  "search": {
+    "title": "Buscar",
+    "label": "Buscar nos capítulos que você alcançou",
+    "placeholder": "Um baú, uma quest, um lugar…",
+    "hint": "Só nos capítulos que você alcançou, e só o que já está revelado.",
+    "count": "{{count}} resultado(s)",
+    "field": {
+      "location": "Local:",
+      "step": "Rota:",
+      "hint": "Dica:"
+    }
   }
 }
