@@ -43,10 +43,16 @@ No screenshots, art, icons or music.
 Chaptick is organised as franchises → games → chapters.
 
 1. Franchise: add an entry to `content/franchises.json` (`id`, `name`, optional `description`). A franchise
-   with no games yet shows in the library as "on the way".
+   with no games yet shows in the library as "on the way". Its optional `cover` picks the library art: a
+   `motif` drawn by the app (`orbits`, `waves` or `stripes`), three colors (`from`, `to`, `accent`) and an optional
+   title `font` (`cinzel` or `uncial-antiqua`; a new one needs an OFL font from Fontsource added to the app). Covers are
+   original art only: never use game screenshots, logos or artwork.
 2. Game: create `content/<gameId>/game.json` with `franchise` set to that id, plus `chapters/ch-00.json` and so on.
+   Its optional `cover` sets the name drawn on the library cover, split so it reads at a glance
+   (`{ "title": "Trails in the Sky", "subtitle": "2nd Chapter" }`); without it the name is split at the colon.
    The game id prefixes every id in it (`<gameId>-ch3-hq-02`), so pick a short, unique one; it also becomes the URL
    (`/<gameId>/chapters`).
 3. Register every new id at the end of `content/id-registry.json` and run `npm run content:validate`.
 
-Nothing else is needed: `npm run content:build` adds the game to `catalog.json`, and the app picks it up.
+Nothing else is needed: `npm run content:build` adds the game to `catalog.json`, and the app picks it up. To show
+the new cover in the link preview too, list the game in `web/scripts/render-share-image.mjs` and run it.

@@ -1,7 +1,7 @@
 {
   "name": "Chaptick",
   "short_name": "Chaptick",
-  "description": "Unofficial, spoiler-free checklist for Trails in the Sky 2nd Chapter.",
+  "description": "Unofficial, spoiler-free checklists of quests, missables and collectibles, chapter by chapter.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
