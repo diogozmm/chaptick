@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 
-import { Catalog, CatalogGame, Chapter, ChapterSummary, Manifest } from './content.models';
+import { Catalog, CatalogGame, Chapter, ChapterSummary, Franchise, Manifest } from './content.models';
 
 const BASE = '/content';
 
@@ -32,6 +32,10 @@ export class ContentService {
 
   game(gameId: string): CatalogGame | undefined {
     return this.catalog()?.franchises.flatMap((f) => f.games).find((g) => g.id === gameId);
+  }
+
+  franchiseOf(gameId: string): Franchise | undefined {
+    return this.catalog()?.franchises.find((f) => f.games.some((g) => g.id === gameId));
   }
 
   manifestOf(gameId: string | null): Manifest | undefined {

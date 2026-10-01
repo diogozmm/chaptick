@@ -8,6 +8,13 @@
     "description": {
       "en": "The Legend of Heroes: Trails, by Nihon Falcom.",
       "pt": "The Legend of Heroes: Trails, da Nihon Falcom."
+    },
+    "cover": {
+      "motif": "orbits",
+      "from": "#16305e",
+      "to": "#4f72b8",
+      "accent": "#f0c35a",
+      "font": "cinzel"
     }
   },
   {
@@ -19,6 +26,13 @@
     "description": {
       "en": "Adol Christin's adventures, by Nihon Falcom.",
       "pt": "As aventuras de Adol Christin, da Nihon Falcom."
+    },
+    "cover": {
+      "motif": "waves",
+      "from": "#0d3a47",
+      "to": "#2a8a95",
+      "accent": "#f06a4d",
+      "font": "uncial-antiqua"
     }
   }
 ]

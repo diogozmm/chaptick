@@ -11,13 +11,16 @@ import { ProgressImportError, ProgressStore } from '../../core/progress/progress
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { SITE } from '../../site.config';
 import { Icon } from '../../ui/icon/icon';
+import { GameCover } from '../../ui/game-cover/game-cover';
+import { fallbackCoverText } from '../../core/cover/cover-art';
+import { localize } from '../../core/content/content.models';
 
 type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number } | null;
 
 /** The library: continue the last game, browse franchises and games, move progress between devices. */
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, GameCover],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.html',
   styleUrl: './home.scss',
@@ -59,6 +62,15 @@ export class Home {
   /** Ticked items of a saved game (route steps and Rank A marks are not counted twice). */
   protected doneCount(gameId: string): number {
     return this.savedByGame().get(gameId)?.doneItems.filter((id) => !id.includes('#')).length ?? 0;
+  }
+
+  /** Cover colors come from the franchise; the text from the game, or its name. */
+  protected cover(gameId: string) {
+    const game = this.content.game(gameId);
+    return {
+      style: this.content.franchiseOf(gameId)?.cover,
+      text: game?.cover ?? fallbackCoverText(game ? localize(game.name, 'en') : gameId),
+    };
   }
 
   protected started(gameId: string): boolean {

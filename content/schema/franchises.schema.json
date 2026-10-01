@@ -5,11 +5,60 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "name"],
+    "required": [
+      "id",
+      "name"
+    ],
     "properties": {
-      "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-      "name": { "$ref": "common.schema.json#/$defs/localized" },
-      "description": { "$ref": "common.schema.json#/$defs/localized" }
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "name": {
+        "$ref": "common.schema.json#/$defs/localized"
+      },
+      "description": {
+        "$ref": "common.schema.json#/$defs/localized"
+      },
+      "cover": {
+        "description": "Original cover art for the library: a motif drawn by the app and its colors. Never game assets.",
+        "type": "object",
+        "required": [
+          "motif",
+          "from",
+          "to",
+          "accent"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "motif": {
+            "enum": [
+              "orbits",
+              "waves",
+              "stripes"
+            ]
+          },
+          "from": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "to": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "accent": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "font": {
+            "description": "Title font drawn by the app (OFL, self-hosted).",
+            "enum": [
+              "cinzel",
+              "uncial-antiqua"
+            ]
+          }
+        }
+      }
     },
     "additionalProperties": false
   }

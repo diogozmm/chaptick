@@ -5,6 +5,9 @@
  */
 @use '@fontsource-variable/fraunces/opsz.css';
 @use '@fontsource-variable/inter/index.css';
+// Library cover titles only (see core/cover/cover-art.ts). Downloaded only where a cover is shown.
+@use '@fontsource/cinzel/latin-700.css';
+@use '@fontsource/uncial-antiqua/latin-400.css';
 
 :root {
   color-scheme: dark;

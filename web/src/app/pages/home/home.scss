@@ -19,13 +19,22 @@
 label.button:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
 .secondary { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .secondary .button { flex: 1 1 9rem; }
-.chapter { margin-top: -0.5rem; font-weight: 600; }
+.chapter { margin-top: -0.25rem; font: 600 1.35rem/1.25 var(--font-display); color: var(--text); }
 .library { display: grid; gap: 1rem; }
 .library > h2 { font-size: 1.4rem; }
 .franchise { display: grid; gap: 0.6rem; }
 .franchise h3 { font-size: 1.1rem; }
-.games { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
-.game { display: flex; align-items: center; justify-content: space-between; gap: 1rem; text-decoration: none; color: var(--text); }
+.games { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 0.75rem; }
+.game {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0.75rem 1rem; padding-top: 0; overflow: hidden;
+  text-decoration: none; color: var(--text); transition: border-color 0.2s, transform 0.2s var(--ease);
+}
+.game:hover { transform: translateY(-2px); }
+/* Covers bleed to the card edges: the card's padding is undone on the image only. */
+.cover { margin: 0 -1.125rem; }
+.game .cover { grid-column: 1 / -1; }
+.journey { overflow: hidden; padding-top: 0; }
+.journey .cover { margin: 0 -1.25rem 0.25rem; }
 .game:hover { border-color: var(--accent); }
 .game-body { display: grid; gap: 0.3rem; }
 .game-name { font: 600 1.05rem/1.3 var(--font-display); }

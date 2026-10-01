@@ -31,6 +31,7 @@ const catalog = {
       .map(({ game, chapters }) => ({
         id: game.id,
         name: game.name,
+        cover: game.cover,
         platforms: game.platforms,
         chapterCount: chapters.length,
         itemCount: chapters.reduce((sum, c) => sum + c.data.items.length, 0),

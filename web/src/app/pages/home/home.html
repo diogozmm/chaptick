@@ -7,9 +7,11 @@
 
 @if (recent.hasValue()) {
   @let r = recent.value();
+  @let rc = cover(r.gameId);
   <section class="card journey rise" aria-labelledby="journey-title">
+    <app-game-cover class="cover" [cover]="rc.style" [text]="rc.text" />
     <p class="eyebrow">{{ 'home.continueFrom' | transloco }}</p>
-    <h2 id="journey-title">{{ r.game.name | localize: l }}</h2>
+    <h2 id="journey-title" class="visually-hidden">{{ r.game.name | localize: l }}</h2>
     <p class="muted chapter">{{ r.summary.neutralLabel | localize: l }}</p>
     <div class="progress" role="progressbar" [attr.aria-valuenow]="r.stats.done" aria-valuemin="0" [attr.aria-valuemax]="r.stats.total"
       [attr.aria-label]="'checklist.progress' | transloco: { done: r.stats.done, total: r.stats.total }">
@@ -46,9 +48,11 @@
       <ul class="games">
         @for (g of franchise.games; track g.id) {
           <li>
+            @let gc = cover(g.id);
             <a class="card game" [routerLink]="gameLink(g.id)">
+              <app-game-cover class="cover" [cover]="gc.style" [text]="gc.text" />
               <span class="game-body">
-                <span class="game-name">{{ g.name | localize: l }}</span>
+                <span class="game-name visually-hidden">{{ g.name | localize: l }}</span>
                 <span class="muted small">{{ 'home.counts' | transloco: { chapters: g.chapterCount, items: g.itemCount } }}</span>
                 @if (started(g.id)) {
                   <span class="badge">{{ 'home.inProgress' | transloco: { count: doneCount(g.id) } }}</span>

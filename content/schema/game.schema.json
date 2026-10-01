@@ -25,6 +25,26 @@
     "name": {
       "$ref": "common.schema.json#/$defs/localized"
     },
+    "cover": {
+      "description": "Text drawn on the library cover: the game's name split so it reads at a glance. Plain text, never a logo.",
+      "type": "object",
+      "required": [
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 22
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30
+        }
+      }
+    },
     "platforms": {
       "type": "array",
       "items": {

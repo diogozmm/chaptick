@@ -1,3 +1,5 @@
+import { CoverStyle, CoverText } from '../cover/cover-art';
+
 /** Mirrors content/schema/*.schema.json. Keep both in sync. */
 export type Lang = 'en' | 'pt';
 
@@ -23,6 +25,8 @@ export interface Game {
 export interface CatalogGame {
   id: string;
   name: Localized;
+  /** Text drawn on the library cover; derived from the name when missing. */
+  cover?: CoverText;
   platforms: string[];
   chapterCount: number;
   itemCount: number;
@@ -33,6 +37,7 @@ export interface Franchise {
   name: Localized;
   description?: Localized;
   games: CatalogGame[];
+  cover?: CoverStyle;
 }
 
 export interface Catalog {
