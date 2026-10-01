@@ -1,0 +1,1427 @@
+{
+  "id": "ysx-ch5",
+  "gameId": "ysx",
+  "order": 5,
+  "neutralLabel": {
+    "en": "Chapter 5",
+    "pt": "Capítulo 5"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch5-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Talking to Chief Isaac in Ilmer Village",
+        "pt": "Falar com o Chief Isaac em Ilmer Village"
+      }
+    },
+    {
+      "id": "ysx-ch5-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Approaching the event marker after the fight on Moonview Isle",
+        "pt": "Aproximar-se do marcador de evento depois da luta em Moonview Isle"
+      }
+    },
+    {
+      "id": "ysx-ch5-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 5",
+        "pt": "O último marcador de evento do Capítulo 5"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch5-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Momina's character note #1",
+        "pt": "Nota de personagem da Momina #1"
+      },
+      "location": {
+        "en": "Sandras — lower deck",
+        "pt": "Sandras — convés inferior"
+      },
+      "availableUntil": "ysx-ch5-cp-01",
+      "hint": {
+        "en": "One of only three time-limited character notes. After the fight in Ilmer Village, before talking to the village elder, go back to the ship and talk to Momina and Rafe on the lower deck. Missing it blocks the all-notes trophy.",
+        "pt": "Uma das três únicas notas de personagem com tempo limitado. Depois da luta em Ilmer Village, antes de falar com o ancião da vila, volte ao navio e fale com a Momina e o Rafe no convés inferior. Perder impede o troféu de todas as notas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ]
+    },
+    {
+      "id": "ysx-ch5-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Hugill's character note #1",
+        "pt": "Nota de personagem do Hugill #1"
+      },
+      "location": {
+        "en": "Raufos Island — next to the Hewnstone",
+        "pt": "Raufos Island — ao lado da Hewnstone"
+      },
+      "availableUntil": "ysx-ch7-cp-03",
+      "hint": {
+        "en": "Time-limited character note. Right after arriving on Raufos Island, talk to Hugill standing beside the Hewnstone with a bag. If you miss it, there is one more chance in Chapter 7: talk to him at the Dvergr Coast camp after the Falaise Runestone.",
+        "pt": "Nota de personagem com tempo limitado. Logo ao chegar a Raufos Island, fale com o Hugill, parado ao lado da Hewnstone com uma bolsa. Se perder, há mais uma chance no Capítulo 7: fale com ele no acampamento da Dvergr Coast depois da Runestone de Falaise."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Raufos Island",
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Falaise Peninsula"
+      ]
+    },
+    {
+      "id": "ysx-ch5-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Barrels of Unfun"
+      },
+      "location": {
+        "en": "Anchor Island — Ivalde in Mynorca Village",
+        "pt": "Anchor Island — Ivalde em Mynorca Village"
+      },
+      "availableUntil": "ysx-ch5-cp-01",
+      "hint": {
+        "en": "Long deadline. Sail to every green marker at sea and destroy the explosive barrels, then report to Ivalde. Rewards a Pirate's Necklace, plus an Axe Star+ and a Vitality Elixir.",
+        "pt": "Prazo longo. Navegue até cada marcador verde no mar e destrua os barris explosivos, depois fale com a Ivalde. Dá um Pirate's Necklace, além de um Axe Star+ e um Vitality Elixir."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Sandras",
+        "guide: GameFAQs Ys X walkthrough, Chapter 5: Beacon of Reprisal"
+      ]
+    },
+    {
+      "id": "ysx-ch5-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Peerless Practice"
+      },
+      "location": {
+        "en": "The Norgest — northeast of the Ozmid Expanse",
+        "pt": "O Norgest — nordeste de Ozmid Expanse"
+      },
+      "availableUntil": "ysx-ch5-cp-01",
+      "hint": {
+        "en": "Long deadline. From Gunnar's letter. Pick the first option on his ship and win the duel. Rewards the Brave General's Belt.",
+        "pt": "Prazo longo. Vem da carta do Gunnar. Escolha a primeira opção no navio dele e vença o duelo. Dá o Brave General's Belt."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Sandras",
+        "guide: GameFAQs Ys X walkthrough, Chapter 5: Beacon of Reprisal"
+      ]
+    },
+    {
+      "id": "ysx-ch5-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Cull the Griegr: Lecto"
+      },
+      "location": {
+        "en": "Lecto Island — Cavern Depths",
+        "pt": "Lecto Island — Cavern Depths"
+      },
+      "availableUntil": "ysx-ch5-cp-01",
+      "hint": {
+        "en": "Long deadline. Added automatically. Fast travel to the Cavern Depths and beat the two knight-type Griegrs. Rewards the Martial Formula.",
+        "pt": "Prazo longo. Entra sozinha no diário. Viaje até a Cavern Depths e derrote os dois Griegrs do tipo cavaleiro. Dá a Martial Formula."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Sandras",
+        "guide: GameFAQs Ys X walkthrough, Chapter 5: Beacon of Reprisal"
+      ]
+    },
+    {
+      "id": "ysx-ch5-q-04",
+      "type": "quest",
+      "name": {
+        "en": "EX: Öland Island Investigation (Proud)",
+        "pt": "EX: Öland Island Investigation (Proud)"
+      },
+      "location": {
+        "en": "Öland Island — north of the center of Carnac Waters",
+        "pt": "Öland Island — ao norte do centro de Carnac Waters"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Proud Nordics only. Read Hugill's letter \"EX: Suspicious Ship\", sail to the blue point north of the center of Carnac Waters and clear Blindman's Darkroad. Rewards Abiding Love and an Almighty Star. The guide gives no deadline: do it in this chapter to be safe.",
+        "pt": "Só no Proud Nordics. Leia a carta do Hugill \"EX: Suspicious Ship\", navegue até o ponto azul ao norte do centro de Carnac Waters e termine o Blindman's Darkroad. Dá Abiding Love e um Almighty Star. O guia não informa prazo: faça neste capítulo por segurança."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)",
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Buried Treasure"
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Astrid's character note #1 (Proud)",
+        "pt": "Nota de personagem da Astrid #1 (Proud)"
+      },
+      "location": {
+        "en": "Öland Island — coliseum",
+        "pt": "Öland Island — coliseu"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Proud Nordics only. After the Darkroad, talk to Astrid at the coliseum; this also opens the coliseum challenges. Character notes count for the all-notes trophy.",
+        "pt": "Só no Proud Nordics. Depois do Darkroad, fale com a Astrid no coliseu; isso também libera os desafios do coliseu. As notas de personagem contam para o troféu de todas as notas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)"
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Öland coliseum — unique rewards (Proud)",
+        "pt": "Coliseu de Öland — recompensas únicas (Proud)"
+      },
+      "location": {
+        "en": "Öland Island — coliseum",
+        "pt": "Öland Island — coliseu"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Proud Nordics only. Three sets (duo, Adol alone, Karja alone) against Solid Boar, Brugand, Ras-Gublins and Gilveros. Most rewards are materials, Elding Fragments and Sparkling Whitesand; these are the one-offs.",
+        "pt": "Só no Proud Nordics. Três séries (dupla, só o Adol, só a Karja) contra Solid Boar, Brugand, Ras-Gublins e Gilveros. A maioria das recompensas são materiais, Elding Fragments e Sparkling Whitesand; estas são as únicas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Duo — Solid Boar: Chibi Pikkard",
+            "pt": "Dupla — Solid Boar: Chibi Pikkard"
+          }
+        },
+        {
+          "text": {
+            "en": "Adol — Solid Boar: Ancient Trove Chart 1",
+            "pt": "Adol — Solid Boar: Ancient Trove Chart 1"
+          }
+        },
+        {
+          "text": {
+            "en": "Adol — Gilveros: Ancient Trove Chart 4",
+            "pt": "Adol — Gilveros: Ancient Trove Chart 4"
+          }
+        },
+        {
+          "text": {
+            "en": "Karja — Solid Boar: Phylleia Noggin",
+            "pt": "Karja — Solid Boar: Phylleia Noggin"
+          }
+        },
+        {
+          "text": {
+            "en": "Karja — Gilveros: Chibi Hugill 2",
+            "pt": "Karja — Gilveros: Chibi Hugill 2"
+          }
+        },
+        {
+          "text": {
+            "en": "Brugand (any set): Fleeting Hope",
+            "pt": "Brugand (qualquer série): Fleeting Hope"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Buried treasures in Carnac Waters (18)",
+        "pt": "Tesouros enterrados em Carnac Waters (18)"
+      },
+      "location": {
+        "en": "Carnac Waters",
+        "pt": "Carnac Waters"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "First chance: they all need Mana Sense, learned at the end of Chapter 4. Equip the Eagle Eye Doubloon to see them on the map. On Termina Island, a Silver Pikkard hides in a muddy puddle (visible with Mana Sense).",
+        "pt": "Primeira chance: todos precisam do Mana Sense, aprendido no fim do Capítulo 4. Equipe o Eagle Eye Doubloon para vê-los no mapa. Em Termina Island, um Silver Pikkard se esconde numa poça de lama (visível com o Mana Sense)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Buried Treasure",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Fishscale Island — southwest of the Red Drop chest, by the central rocks — Dark Lump ×3 (buried)",
+            "pt": "Fishscale Island — sudoeste do baú do Red Drop, nas rochas centrais — Dark Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fishscale Island — northwest corner — Shell Rock ×3 (buried)",
+            "pt": "Fishscale Island — canto noroeste — Shell Rock ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lecto Island — 650 Gold (buried)",
+            "pt": "Lecto Island — 650 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lecto Island — Rainbow Drop ×3 (buried)",
+            "pt": "Lecto Island — Rainbow Drop ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lecto Island — Cavern of Rite — Shield Star (buried)",
+            "pt": "Lecto Island — Cavern of Rite — Shield Star (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lecto Island — Cavern of Rite — Black Strong-Arm (buried)",
+            "pt": "Lecto Island — Cavern of Rite — Black Strong-Arm (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Termina Island — up the first hill, under a tree by the wall ruins — 800 Gold (buried)",
+            "pt": "Termina Island — no alto da primeira colina, embaixo de uma árvore junto às ruínas — 800 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Termina Island — north of it, also under a tree — Dark Drop ×5 (buried)",
+            "pt": "Termina Island — ao norte dele, também embaixo de uma árvore — Dark Drop ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Termina Island — cave, near the end before going outside — Rainbow Drop ×5 (buried)",
+            "pt": "Termina Island — caverna, perto do fim antes de sair — Rainbow Drop ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Termina Island — rear side, behind the Basic Craft Stock chest — Axe Star (buried)",
+            "pt": "Termina Island — lado de trás, atrás do baú do Basic Craft Stock — Axe Star (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Termina Island — end of the mana ride, tree to the right — Empty Lunch Box (buried)",
+            "pt": "Termina Island — fim do mana ride, árvore à direita — Empty Lunch Box (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Termina Island — after the second cave, by the wall ruins — Lyre Star (buried)",
+            "pt": "Termina Island — depois da segunda caverna, junto às ruínas — Lyre Star (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Termina Island — last part, between the two chests — Fishing Bait S ×5 (buried)",
+            "pt": "Termina Island — última parte, entre os dois baús — Fishing Bait S ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Inlet Isle — Tough Leather ×3 (buried)",
+            "pt": "Inlet Isle — Tough Leather ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Inlet Isle — Blue Drop ×10 (buried)",
+            "pt": "Inlet Isle — Blue Drop ×10 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dieback Isle — Aged Wood ×5 (buried)",
+            "pt": "Dieback Isle — Aged Wood ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dieback Isle — Red Drop ×10 (buried)",
+            "pt": "Dieback Isle — Red Drop ×10 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dieback Isle — Fishing Bait ×3 (buried)",
+            "pt": "Dieback Isle — Fishing Bait ×3 (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Buried treasures in the Ozmid Expanse (7)",
+        "pt": "Tesouros enterrados em Ozmid Expanse (7)"
+      },
+      "location": {
+        "en": "Ozmid Expanse",
+        "pt": "Ozmid Expanse"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "First chance: they need Mana Sense, learned at the end of Chapter 4.",
+        "pt": "Primeira chance: precisam do Mana Sense, aprendido no fim do Capítulo 4."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Buried Treasure"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Great Tidal Reef — Fishing Bait S ×3 (buried)",
+            "pt": "Great Tidal Reef — Fishing Bait S ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Great Tidal Reef — Chalice Star (buried)",
+            "pt": "Great Tidal Reef — Chalice Star (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Breezy Isle — Yellow Drop ×10 (buried)",
+            "pt": "Breezy Isle — Yellow Drop ×10 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Breezy Isle — Strength Elixir (buried)",
+            "pt": "Breezy Isle — Strength Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Anchor Island — Village Outskirts — Dark Drop ×5 (buried)",
+            "pt": "Anchor Island — Village Outskirts — Dark Drop ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Anchor Island — Village Outskirts — 1250 Gold (buried)",
+            "pt": "Anchor Island — Village Outskirts — 1250 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Anchor Island — Village Outskirts — Punishment Seal+ (buried)",
+            "pt": "Anchor Island — Village Outskirts — Punishment Seal+ (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Hidden Isle treasure chests (9)",
+        "pt": "Baús de Hidden Isle (9)"
+      },
+      "location": {
+        "en": "Hidden Isle",
+        "pt": "Hidden Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Reached with the Mana Barrier: southeast blue marker of the Ozmid Expanse. A Speedy Pikkard runs around the island.",
+        "pt": "Acessada com a Mana Barrier: marcador azul a sudeste de Ozmid Expanse. Um Speedy Pikkard corre pela ilha."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Sandras"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Hill to the northwest — Fishing Bait G ×3",
+            "pt": "Colina a noroeste — Fishing Bait G ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "To the right of it — Basic Beast Parts ×50 (buried)",
+            "pt": "À direita dele — Basic Beast Parts ×50 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast past the puddle, by a tree — Steely Bone ×3 (buried)",
+            "pt": "Nordeste depois da poça, junto a uma árvore — Steely Bone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Further north: climb the ledge and swing with Mana String — Defroster ×3",
+            "pt": "Mais ao norte: suba a borda e balance com o Mana String — Defroster ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "By the tree to the north — 2000 Gold (buried)",
+            "pt": "Junto à árvore ao norte — 2000 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest on the ledge left of the big pond — Mayura Charm",
+            "pt": "Baú azul na borda à esquerda do lago grande — Mayura Charm"
+          }
+        },
+        {
+          "text": {
+            "en": "Ledge to the southeast — Bitter Remedy (buried)",
+            "pt": "Borda a sudeste — Bitter Remedy (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast, by the cliff edge — Repair Kit ×3 (buried)",
+            "pt": "Sudeste, na beira do penhasco — Repair Kit ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "West, up another ledge — Luck Elixir (buried)",
+            "pt": "Oeste, subindo outra borda — Luck Elixir (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Öland Island (Proud) treasure chests (7)",
+        "pt": "Baús de Öland Island (Proud) (7)"
+      },
+      "location": {
+        "en": "Öland Island (Proud)",
+        "pt": "Öland Island (Proud)"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Proud Nordics only. You get one Red Crest here: spend it on the coliseum storage room (Luck Elixir) or on the red door in Blindman's Darkroad (Sin Star+); the other one waits for a later visit. Another storeroom has chests that cannot be opened yet. Cutting the glowing flowers gives Sparkling Whitesand.",
+        "pt": "Só no Proud Nordics. Você ganha um Red Crest aqui: gaste no depósito do coliseu (Luck Elixir) ou na porta vermelha do Blindman's Darkroad (Sin Star+); a outra fica para uma visita futura. Outro depósito tem baús que ainda não abrem. Cortar as flores brilhantes dá Sparkling Whitesand."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Below the cliff after the first mana stream — Basic Beast Parts ×35 (buried)",
+            "pt": "Embaixo do penhasco depois do primeiro fluxo de mana — Basic Beast Parts ×35 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Left side, a little higher up — Sword Star",
+            "pt": "Lado esquerdo, um pouco mais acima — Sword Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Right side — Shell Rock ×3",
+            "pt": "Lado direito — Shell Rock ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Outer edge of the coliseum — Red Crest",
+            "pt": "Borda externa do coliseu — Red Crest"
+          }
+        },
+        {
+          "text": {
+            "en": "Outer edge of the coliseum — Crystal Shard ×500",
+            "pt": "Borda externa do coliseu — Crystal Shard ×500"
+          }
+        },
+        {
+          "text": {
+            "en": "Storage room near the coliseum (spends the Red Crest) — Luck Elixir",
+            "pt": "Depósito perto do coliseu (gasta o Red Crest) — Luck Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "Storage house next to the coliseum (Small Steel Key from the Darkroad) — Dominative Star",
+            "pt": "Casa de depósito ao lado do coliseu (Small Steel Key do Darkroad) — Dominative Star"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Blindman's Darkroad (Proud) treasure chests (12)",
+        "pt": "Baús de Blindman's Darkroad (Proud) (12)"
+      },
+      "location": {
+        "en": "Blindman's Darkroad (Proud)",
+        "pt": "Blindman's Darkroad (Proud)"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Proud Nordics only. Open the tower gate on Öland Island with the Obsidian Key from the coliseum fight.",
+        "pt": "Só no Proud Nordics. Abra o portão da torre em Öland Island com a Obsidian Key da luta no coliseu."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Second room, by the water near the vines — 1500 Gold",
+            "pt": "Segunda sala, junto à água perto das vinhas — 1500 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Red-crest door in the next room — Sin Star+",
+            "pt": "Porta do brasão vermelho na sala seguinte — Sin Star+"
+          }
+        },
+        {
+          "text": {
+            "en": "Next to that door — Basic Ingredients ×50",
+            "pt": "Ao lado dessa porta — Basic Ingredients ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "South split, west room up the steps — Armor Star",
+            "pt": "Divisão ao sul, sala oeste subindo os degraus — Armor Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Dark east room, at the top (light the lanterns with Adol's Mana Burst) — Elding Fragment ×10",
+            "pt": "Sala escura a leste, no alto (acenda as lanternas com o Mana Burst do Adol) — Elding Fragment ×10"
+          }
+        },
+        {
+          "text": {
+            "en": "Next area, around the middle — Yellow Lump ×3 (buried)",
+            "pt": "Área seguinte, perto do meio — Yellow Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Following hallway — Basic Craft Stock ×50 (buried)",
+            "pt": "Corredor seguinte — Basic Craft Stock ×50 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest up the climb — Small Steel Key",
+            "pt": "Baú vermelho no alto da subida — Small Steel Key"
+          }
+        },
+        {
+          "text": {
+            "en": "Next room — Super Relaxant ×2",
+            "pt": "Sala seguinte — Super Relaxant ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Room to the right — Sparkling Whitesand ×20",
+            "pt": "Sala à direita — Sparkling Whitesand ×20"
+          }
+        },
+        {
+          "text": {
+            "en": "Corner of the following area — Rainbow Drop ×5 (buried)",
+            "pt": "Canto da área seguinte — Rainbow Drop ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pitch-black room, around the middle — Basic Reagents ×40 (buried)",
+            "pt": "Sala totalmente escura, perto do meio — Basic Reagents ×40 (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Falun Island treasure chests (5)",
+        "pt": "Baús de Falun Island (5)"
+      },
+      "location": {
+        "en": "Falun Island",
+        "pt": "Falun Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The Scoundrel Gloves chest is meant for a later ability, but the midair Mana Burst trick reaches it now.",
+        "pt": "O baú das Scoundrel Gloves é pensado para uma habilidade futura, mas o truque do Mana Burst no ar já alcança agora."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "North end of the shore — Sword Star+ (buried)",
+            "pt": "Extremo norte da margem — Sword Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "South, detour east to the cliffs — Melg Flower ×3",
+            "pt": "Sul, desvio a leste até os penhascos — Melg Flower ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest corner — Rainbow Drop ×3 (buried)",
+            "pt": "Canto sudoeste — Rainbow Drop ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Across the river logs to the northeast: jump to the last log and burn the vines with Adol in midair — Scoundrel Gloves",
+            "pt": "Do outro lado dos troncos no rio, a nordeste: pule até o último tronco e queime as vinhas com o Adol no ar — Scoundrel Gloves"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest end before the village exit (gift for Rosalind) — Green Turban Ear Clips",
+            "pt": "Extremo noroeste antes da saída para a vila (presente para a Rosalind) — Green Turban Ear Clips"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Viewpoint Isle — south treasure chests (8)",
+        "pt": "Baús de Viewpoint Isle — sul (8)"
+      },
+      "location": {
+        "en": "Viewpoint Isle — south",
+        "pt": "Viewpoint Isle — sul"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Opens after the stone tablet in the cave, with Enhanced Mana Sense (hold the button).",
+        "pt": "Abre depois da tábua de pedra na caverna, com o Enhanced Mana Sense (segure o botão)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "By the Hewnstone — Crystal Shard ×750 (buried)",
+            "pt": "Junto à Hewnstone — Crystal Shard ×750 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Center, before the stream — Bitter Remedy ×3",
+            "pt": "Centro, antes do riacho — Bitter Remedy ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "East section, upper spot — Fishing Bait G ×3 (buried)",
+            "pt": "Seção leste, ponto de cima — Fishing Bait G ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "East section, lower spot — Break Elixir (buried)",
+            "pt": "Seção leste, ponto de baixo — Break Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "East section, on top of the middle pillars — Fishing Bait L ×3",
+            "pt": "Seção leste, em cima dos pilares do meio — Fishing Bait L ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Far east end — Defense Elixir",
+            "pt": "Extremo leste — Defense Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "West of the stream, halfway — Hermit's Remedy",
+            "pt": "A oeste do riacho, no meio do caminho — Hermit's Remedy"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest — Shield Star+ (buried)",
+            "pt": "Sudoeste — Shield Star+ (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Kalon Island treasure chests (13)",
+        "pt": "Baús de Kalon Island (13)"
+      },
+      "location": {
+        "en": "Kalon Island",
+        "pt": "Kalon Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Rune Tablet Part Two (red chest, northeast) is needed to move on, so it is not listed.",
+        "pt": "A Rune Tablet Part Two (baú vermelho, nordeste) é necessária para avançar, por isso não está na lista."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Below the cliffs near the start — Basic Beast Parts ×50 (buried)",
+            "pt": "Embaixo dos penhascos perto do início — Basic Beast Parts ×50 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest at the south end of the river — Fighter Helmet",
+            "pt": "Baú azul no extremo sul do rio — Fighter Helmet"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest corner — Armor Star+ (buried)",
+            "pt": "Canto noroeste — Armor Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest corner — Relaxant ×3",
+            "pt": "Canto noroeste — Relaxant ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Northern corner — Blue Lump ×3 (buried)",
+            "pt": "Canto norte — Blue Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ledge to the southwest, before the drawbridge — 2500 Gold",
+            "pt": "Borda a sudoeste, antes da ponte levadiça — 2500 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: grass patch — 2000 Gold (buried)",
+            "pt": "Segunda área: trecho de grama — 2000 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: crystal path to the left — Mason Medal",
+            "pt": "Segunda área: caminho de cristais à esquerda — Mason Medal"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: lower water path, midway — Vitality Elixir (buried)",
+            "pt": "Segunda área: caminho de água de baixo, no meio — Vitality Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: red chest at the end of the lower path — Blessed Paper Scrap",
+            "pt": "Segunda área: baú vermelho no fim do caminho de baixo — Blessed Paper Scrap"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: lower ground past the bridge — Fishing Bait M ×5",
+            "pt": "Segunda área: parte baixa depois da ponte — Fishing Bait M ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Third area: by a tree after the fight — Chalice Star+ (buried)",
+            "pt": "Terceira área: junto a uma árvore depois da luta — Chalice Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Third area: south path at the split — Holy Formula II",
+            "pt": "Terceira área: caminho sul na divisão — Holy Formula II"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Odd Rock Isle treasure chests (6)",
+        "pt": "Baús de Odd Rock Isle (6)"
+      },
+      "location": {
+        "en": "Odd Rock Isle",
+        "pt": "Odd Rock Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Not marked on the map: northwest of Falun Island. The guides come here at the start of Chapter 6, but the Sonnelia Basin can already be explored late in Chapter 5, once Ilmer Village is freed.",
+        "pt": "Não aparece no mapa: a noroeste de Falun Island. Os guias vêm aqui no começo do Capítulo 6, mas a Sonnelia Basin já pode ser explorada no fim do Capítulo 5, depois que Ilmer Village é libertada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "North, before climbing the ledges — Relaxant ×3 (buried)",
+            "pt": "Norte, antes de subir as bordas — Relaxant ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast end — Extinguisher ×3",
+            "pt": "Extremo nordeste — Extinguisher ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest, on the higher rocks — Fishing Bait M ×3 (buried)",
+            "pt": "Noroeste, nas rochas mais altas — Fishing Bait M ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Further northwest, past a Mana String gap — Basic Craft Stock ×50 (buried)",
+            "pt": "Mais a noroeste, depois de um vão com Mana String — Basic Craft Stock ×50 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest corner — 1850 Gold",
+            "pt": "Canto sudoeste — 1850 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "South: beat the challenge enemy Volgadyne R first — Axe Star+",
+            "pt": "Sul: derrote antes o inimigo desafio Volgadyne R — Axe Star+"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Outcast Isle treasure chests (2)",
+        "pt": "Baús de Outcast Isle (2)"
+      },
+      "location": {
+        "en": "Outcast Isle",
+        "pt": "Outcast Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Southeast of the merchant ship Thrúd's Barge in the Sonnelia Basin. Same timing note as Odd Rock Isle.",
+        "pt": "A sudeste do navio mercante Thrúd's Barge na Sonnelia Basin. Mesma observação de tempo de Odd Rock Isle."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Right side of the map — Fishing Bait ×5 (buried)",
+            "pt": "Lado direito do mapa — Fishing Bait ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Right side of the map — Raiju Charm",
+            "pt": "Lado direito do mapa — Raiju Charm"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Moonview Isle treasure chests (3)",
+        "pt": "Baús de Moonview Isle (3)"
+      },
+      "location": {
+        "en": "Moonview Isle",
+        "pt": "Moonview Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Grab them before walking to the event marker: it moves the story on and you can only come back next chapter.",
+        "pt": "Pegue antes de ir ao marcador de evento: ele avança a história e você só volta no próximo capítulo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Raufos Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Around the boss arena — Battle-Tested Talisman",
+            "pt": "Ao redor da arena do chefe — Battle-Tested Talisman"
+          }
+        },
+        {
+          "text": {
+            "en": "Around the boss arena — Empty Bottle (buried)",
+            "pt": "Ao redor da arena do chefe — Empty Bottle (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Around the boss arena — Fishing Bait EX ×3 (buried)",
+            "pt": "Ao redor da arena do chefe — Fishing Bait EX ×3 (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch5-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Raufos Island treasure chests (15)",
+        "pt": "Baús de Raufos Island (15)"
+      },
+      "location": {
+        "en": "Raufos Island",
+        "pt": "Raufos Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Talk to Hugill by the first Hewnstone here for his time-limited character note.",
+        "pt": "Fale com o Hugill junto à primeira Hewnstone daqui para a nota de personagem com tempo limitado."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Raufos Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "On the ledge at the start — Break Elixir (buried)",
+            "pt": "Na borda do início — Break Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest behind the Hewnstone — Gwyllgi Charm",
+            "pt": "Baú azul atrás da Hewnstone — Gwyllgi Charm"
+          }
+        },
+        {
+          "text": {
+            "en": "To the right, before the wooden ledge — Extinguisher ×3 (buried)",
+            "pt": "À direita, antes da borda de madeira — Extinguisher ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Detour south before the fort — Basic Craft Stock ×75",
+            "pt": "Desvio ao sul antes do forte — Basic Craft Stock ×75"
+          }
+        },
+        {
+          "text": {
+            "en": "Fort: red chest at the bottom of the stairs, guarded by a spear mini-boss — Heal Potion III",
+            "pt": "Forte: baú vermelho no pé da escada, guardado por um mini-chefe de lança — Heal Potion III"
+          }
+        },
+        {
+          "text": {
+            "en": "Outer yard: blue chest to the right — Warrior's Glove",
+            "pt": "Pátio externo: baú azul à direita — Warrior's Glove"
+          }
+        },
+        {
+          "text": {
+            "en": "Outer yard — 3000 Gold (buried)",
+            "pt": "Pátio externo — 3000 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Outer yard — Lyre Star+ (buried)",
+            "pt": "Pátio externo — Lyre Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "By the gate — Spirit Charm",
+            "pt": "Junto ao portão — Spirit Charm"
+          }
+        },
+        {
+          "text": {
+            "en": "West side — Dark Drop ×5 (buried)",
+            "pt": "Lado oeste — Dark Drop ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast, via the gondola — Sin Seal+",
+            "pt": "Nordeste, pela gôndola — Sin Seal+"
+          }
+        },
+        {
+          "text": {
+            "en": "South end (pull the crate with Mana String) — Repair Kit ×5",
+            "pt": "Extremo sul (puxe o caixote com o Mana String) — Repair Kit ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Second half of the fort, to the left — Fishing Bait G ×3",
+            "pt": "Segunda metade do forte, à esquerda — Fishing Bait G ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest at the south end (gift for Karja) — Peculiar Hárr Woodcarving",
+            "pt": "Baú vermelho no extremo sul (presente para a Karja) — Peculiar Hárr Woodcarving"
+          }
+        },
+        {
+          "text": {
+            "en": "Outside, under the wooden bridge before the roof — Barriermancy Text",
+            "pt": "Lado de fora, embaixo da ponte de madeira antes do telhado — Barriermancy Text"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch5-bs-01",
+      "name": {
+        "en": "Gunnar"
+      },
+      "location": {
+        "en": "The Norgest — northeast of the Ozmid Expanse",
+        "pt": "O Norgest — nordeste de Ozmid Expanse"
+      },
+      "strategy": {
+        "en": "Wide spear sweeps, a charged thrust and a charged ground slam. After half HP he leaps and dives with his spear: dodge away when he jumps.",
+        "pt": "Golpes amplos de lança, uma estocada carregada e uma pancada no chão carregada. Depois da metade do HP, ele salta e mergulha com a lança: afaste-se quando ele pular."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Sandras",
+        "guide: GameFAQs Ys X walkthrough, Chapter 5: Beacon of Reprisal"
+      ],
+      "relatedItem": "ysx-ch5-q-02"
+    },
+    {
+      "id": "ysx-ch5-bs-02",
+      "name": {
+        "en": "Blindman's Darkroad boss (Proud)",
+        "pt": "Chefe do Blindman's Darkroad (Proud)"
+      },
+      "location": {
+        "en": "Öland Island — end of the Darkroad",
+        "pt": "Öland Island — fim do Darkroad"
+      },
+      "strategy": {
+        "en": "Proud Nordics only. Level 36 with about 93,000 HP, far more than the other bosses of this chapter: stock up at the Hewnstone right before it and bring plenty of healing.",
+        "pt": "Só no Proud Nordics. Nível 36 com cerca de 93.000 de HP, bem mais que os outros chefes do capítulo: abasteça na Hewnstone logo antes e leve bastante cura."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)"
+      ],
+      "relatedItem": "ysx-ch5-q-04"
+    },
+    {
+      "id": "ysx-ch5-bs-03",
+      "name": {
+        "en": "Volgadyne R"
+      },
+      "location": {
+        "en": "Odd Rock Isle (optional challenge)",
+        "pt": "Odd Rock Isle (desafio opcional)"
+      },
+      "strategy": {
+        "en": "Level 72 but slow: dash behind it and keep hitting until the Revenge Gauge is ready. Rewards a Veteran Seal and opens the last chest of the island.",
+        "pt": "Nível 72, mas lento: passe por trás com o dash e continue batendo até o Revenge Gauge ficar pronto. Dá um Veteran Seal e libera o último baú da ilha."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch5-bs-04",
+      "name": {
+        "en": "Gang"
+      },
+      "location": {
+        "en": "Kalon Island — third area",
+        "pt": "Kalon Island — terceira área"
+      },
+      "strategy": {
+        "en": "A bigger cousin of Iði: watch for the crouch before its jump attack, and its war cry only knocks you back. Guard its overhead punch.",
+        "pt": "Um primo maior do Iði: observe o agachamento antes do ataque com salto; o grito de guerra só empurra você. Defenda o soco de cima para baixo."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ]
+    },
+    {
+      "id": "ysx-ch5-bs-05",
+      "name": {
+        "en": "Blob Jurion"
+      },
+      "location": {
+        "en": "Moonview Isle"
+      },
+      "strategy": {
+        "en": "Poison gas below it, electric orbs and tentacle slams; Duo Guard its leaping slam. Breaking its durability exposes faster pincers, and it burrows to strike from below. At the end it splits into small laser jellyfish: a few combos clear them.",
+        "pt": "Gás venenoso embaixo dele, orbes elétricos e golpes de tentáculo; use a Duo Guard contra a pancada com salto. Quebrar a resistência expõe pinças mais rápidas, e ele se enterra para atacar por baixo. No fim, ele se divide em águas-vivas pequenas que soltam laser: alguns combos resolvem."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Raufos Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 5: Beacon of Reprisal"
+      ]
+    },
+    {
+      "id": "ysx-ch5-bs-06",
+      "name": {
+        "en": "Jörð"
+      },
+      "location": {
+        "en": "Raufos Island — the fort roof",
+        "pt": "Raufos Island — telhado do forte"
+      },
+      "strategy": {
+        "en": "Duo guard her red sword combo. After her durability breaks she gets faster: in her four-slash red frenzy guard every hit for a counter, and retreat when she charges blue. She also throws claw missiles.",
+        "pt": "Use a defesa em dupla contra o combo da espada vermelha. Quando a resistência quebra, ela fica mais rápida: no frenesi vermelho de quatro golpes, defenda cada um para contra-atacar, e recue quando ela carregar em azul. Ela também lança garras como projéteis."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Raufos Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 5: Beacon of Reprisal"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch5-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Stimulative Box Lunch"
+      },
+      "source": {
+        "en": "Order one at The Seagull's Shanty, Ilmer Village",
+        "pt": "Peça um na The Seagull's Shanty, Ilmer Village"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch5-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Sedating Box Lunch"
+      },
+      "source": {
+        "en": "Order one at The Seagull's Shanty, Ilmer Village",
+        "pt": "Peça um na The Seagull's Shanty, Ilmer Village"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch5-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Antidotal Box Lunch"
+      },
+      "source": {
+        "en": "Order one at The Seagull's Shanty, Ilmer Village",
+        "pt": "Peça um na The Seagull's Shanty, Ilmer Village"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch5-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Relaxative Box Lunch"
+      },
+      "source": {
+        "en": "Order one at The Seagull's Shanty, Ilmer Village",
+        "pt": "Peça um na The Seagull's Shanty, Ilmer Village"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch5-fi-01",
+      "name": {
+        "en": "Blue Saddie"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ]
+    },
+    {
+      "id": "ysx-ch5-fi-02",
+      "name": {
+        "en": "Glass Corp"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ]
+    },
+    {
+      "id": "ysx-ch5-fi-03",
+      "name": {
+        "en": "Mercenary Crab"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ]
+    },
+    {
+      "id": "ysx-ch5-fi-04",
+      "name": {
+        "en": "Sunny Saman"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Falun Island"
+      ]
+    },
+    {
+      "id": "ysx-ch5-fi-05",
+      "name": {
+        "en": "Kily (Proud)"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)"
+      ]
+    },
+    {
+      "id": "ysx-ch5-fi-06",
+      "name": {
+        "en": "Hermia (Proud)"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch5-fi-01",
+      "where": {
+        "en": "Falun Island — shore and river",
+        "pt": "Falun Island — margem e rio"
+      },
+      "bait": "Fishing Bait S"
+    },
+    {
+      "fishId": "ysx-ch5-fi-02",
+      "where": {
+        "en": "Falun Island — river",
+        "pt": "Falun Island — rio"
+      },
+      "bait": "Fishing Bait M"
+    },
+    {
+      "fishId": "ysx-ch5-fi-03",
+      "where": {
+        "en": "Viewpoint Isle — by the Hewnstone; Ilmer Village — dock",
+        "pt": "Viewpoint Isle — junto à Hewnstone; Ilmer Village — doca"
+      },
+      "bait": "Fishing Bait M"
+    },
+    {
+      "fishId": "ysx-ch5-fi-04",
+      "where": {
+        "en": "Ilmer Village — dock",
+        "pt": "Ilmer Village — doca"
+      },
+      "bait": "Fishing Bait L"
+    },
+    {
+      "fishId": "ysx-ch5-fi-05",
+      "where": {
+        "en": "Öland Island — west river",
+        "pt": "Öland Island — rio a oeste"
+      },
+      "bait": "Fishing Bait S"
+    },
+    {
+      "fishId": "ysx-ch5-fi-06",
+      "where": {
+        "en": "Öland Island — Blindman's Darkroad, pitch-black room",
+        "pt": "Öland Island — Blindman's Darkroad, sala escura"
+      },
+      "bait": "Fishing Bait"
+    }
+  ]
+}

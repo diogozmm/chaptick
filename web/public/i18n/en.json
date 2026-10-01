@@ -140,22 +140,21 @@
   },
   "collections": {
     "short": "Collections",
-    "eyebrow": "Your notebooks",
     "title": "Collections",
-    "intro": "Only what the chapters you have reached reveal. Spots and dishes from later regions appear as you advance.",
-    "fish": "Fishing",
+    "fish": "Fish",
     "recipes": "Recipes",
-    "caught": "caught",
-    "rankA": "Rank A",
-    "bestRank": "Best rank so far: {{rank}}",
+    "fishProgress": "{{done}} of {{total}} fish caught",
+    "recipeProgress": "{{done}} of {{total}} recipes learned",
+    "fishHint": "Tick a fish once it is in your fishing log. Fish from later chapters appear as you advance.",
+    "rankHint": "Rank A catches: {{done}} of {{total}}.",
+    "recipesHint": "Tick a dish once it is in your recipe book. Dishes from later chapters appear as you advance.",
+    "upToRank": "Up to Rank {{rank}}",
     "gotRankA": "Caught at Rank A",
-    "fishHint": "Best spots first. The rank shown is the best one known so far.",
+    "customized": "Customized",
+    "now": "You are here",
+    "groupDone": "All done in this chapter.",
     "noFish": "No fishing yet in the chapters you have reached.",
-    "learned": "recipes",
-    "customized": "customized",
-    "recipesHint": "Eat a dish (or cook it) to learn the recipe.",
-    "standardTitle": "Recipe book",
-    "customizedTitle": "Customized dishes"
+    "noRecipes": "No recipes yet in the chapters you have reached."
   },
   "route": {
     "title": "Route"

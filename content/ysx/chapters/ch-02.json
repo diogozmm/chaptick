@@ -1,0 +1,202 @@
+{
+  "id": "ysx-ch2",
+  "gameId": "ysx",
+  "order": 2,
+  "neutralLabel": {
+    "en": "Chapter 2",
+    "pt": "Capítulo 2"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "ysx-ch2-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Lecto Island treasure chests (3)",
+        "pt": "Baús de Lecto Island (3)"
+      },
+      "location": {
+        "en": "Lecto Island",
+        "pt": "Lecto Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Two buried treasures marked \"???\" open in Chapter 5, once you have Mana Sense.",
+        "pt": "Dois tesouros enterrados marcados com \"???\" abrem no Capítulo 5, quando você tiver o Mana Sense."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Beach area, before the cave at the top — Basic Ingredients ×10",
+            "pt": "Área da praia, antes da caverna no alto — Basic Ingredients ×10"
+          }
+        },
+        {
+          "text": {
+            "en": "Beach area — Stimulant ×2",
+            "pt": "Área da praia — Stimulant ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Beach area — Arion Charm",
+            "pt": "Área da praia — Arion Charm"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch2-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Cavern of Rite treasure chests (5)",
+        "pt": "Baús de Cavern of Rite (5)"
+      },
+      "location": {
+        "en": "Cavern of Rite",
+        "pt": "Cavern of Rite"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Use Karja's ice pillar to reach the higher platforms. Two buried treasures open in Chapter 5.",
+        "pt": "Use o pilar de gelo da Karja para alcançar as plataformas altas. Dois tesouros enterrados abrem no Capítulo 5."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Room after the arrow trap — Armor Seal",
+            "pt": "Sala depois da armadilha de flechas — Armor Seal"
+          }
+        },
+        {
+          "text": {
+            "en": "Room on the right behind vines (burn them with Adol) — Warrior Bandana",
+            "pt": "Sala à direita atrás de vinhas (queime com o Adol) — Warrior Bandana"
+          }
+        },
+        {
+          "text": {
+            "en": "Opposite side of the same room — Breath Formula",
+            "pt": "Lado oposto da mesma sala — Breath Formula"
+          }
+        },
+        {
+          "text": {
+            "en": "Pendulum room, right corner — Cure Leaf ×3",
+            "pt": "Sala do pêndulo, canto direito — Cure Leaf ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Pendulum room, left corner — Axe Seal",
+            "pt": "Sala do pêndulo, canto esquerdo — Axe Seal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch2-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Mysterious Island treasure chests (3)",
+        "pt": "Baús de Mysterious Island (3)"
+      },
+      "location": {
+        "en": "Mysterious Island",
+        "pt": "Mysterious Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The Blessed Paper Scrap unlocks an accessory slot. The three locked gray chests in the cave open later with story keys.",
+        "pt": "O Blessed Paper Scrap libera um espaço de acessório. Os três baús cinza trancados na caverna abrem mais tarde com chaves da história."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "North past the vines: drop to the center of the big open area — Lyre Seal",
+            "pt": "Ao norte, depois das vinhas: desça ao centro da grande área aberta — Lyre Seal"
+          }
+        },
+        {
+          "text": {
+            "en": "End of the southeast passage (Mana String on the trees), by the cave — Red Strong-Arm",
+            "pt": "Fim da passagem sudeste (Mana String nas árvores), junto à caverna — Red Strong-Arm"
+          }
+        },
+        {
+          "text": {
+            "en": "Inside the cave (burn the vines) — Blessed Paper Scrap",
+            "pt": "Dentro da caverna (queime as vinhas) — Blessed Paper Scrap"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch2-bs-01",
+      "name": {
+        "en": "Ziomander"
+      },
+      "location": {
+        "en": "Cavern of Rite",
+        "pt": "Cavern of Rite"
+      },
+      "strategy": {
+        "en": "Burn its vine shield with Adol's Mana Burst. Dash, not guard, through its blue speed attacks and the circling water laser. Near death it spams lightning: step away from the faint glow on the ground.",
+        "pt": "Queime o escudo de vinhas com o Mana Burst do Adol. Use o dash, não a defesa, contra os ataques rápidos azuis e o laser de água giratório. Perto de morrer ele solta raios sem parar: saia do brilho fraco no chão."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 2",
+        "guide: GameFAQs Ys X walkthrough, Chapter 2: Shield Brethren"
+      ]
+    },
+    {
+      "id": "ysx-ch2-bs-02",
+      "name": {
+        "en": "Iði"
+      },
+      "location": {
+        "en": "Cavern of Rite — Runestone",
+        "pt": "Cavern of Rite — Runestone"
+      },
+      "strategy": {
+        "en": "The Double Smasher duo skill is your best tool. Duo guard his charged ground slam to fill the Revenge Gauge; his arm sweep hits up to four times with a shockwave at the end. When he jumps back, a speed attack is coming: dash instead of guarding.",
+        "pt": "A habilidade em dupla Double Smasher é sua melhor arma. Use a defesa em dupla contra o golpe no chão carregado para encher o Revenge Gauge; a varrida de braço acerta até quatro vezes, com uma onda de choque no fim. Quando ele pula para trás, vem um ataque rápido: use o dash em vez de defender."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 2",
+        "guide: GameFAQs Ys X walkthrough, Chapter 2: Shield Brethren"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch2-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Plain Box Lunch"
+      },
+      "source": {
+        "en": "Given by Karja on Lecto Island",
+        "pt": "Dada pela Karja em Lecto Island"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ]
+}

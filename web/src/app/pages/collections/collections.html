@@ -1,94 +1,153 @@
 @let l = lang.lang();
 @let done = progress.done();
-<header class="stack-sm">
-  <p class="eyebrow">{{ 'collections.eyebrow' | transloco }}</p>
-  <h1>{{ 'collections.title' | transloco }}</h1>
-  <p class="muted">{{ 'collections.intro' | transloco }}</p>
+@let s = summary();
+@let here = current();
+@if (here) {
+  <a [routerLink]="game.link('chapters', here.id)" class="link back"><app-icon name="chevron-left" /> {{ here.neutralLabel | localize: l }}</a>
+}
+
+<header class="hero card rise">
+  <div class="hero-top">
+    <div>
+      @if (game.game(); as g) {
+        <p class="eyebrow">{{ g.name | localize: l }}</p>
+      }
+      <h1>{{ 'collections.title' | transloco }}</h1>
+    </div>
+    <p class="percent" aria-hidden="true">{{ s.percent }}<small>%</small></p>
+  </div>
+  <div class="progress" role="progressbar" [attr.aria-valuenow]="s.done" aria-valuemin="0" [attr.aria-valuemax]="s.total"
+    [attr.aria-label]="(tab() === 'fish' ? 'collections.fishProgress' : 'collections.recipeProgress') | transloco: { done: s.done, total: s.total }">
+    <span [style.width.%]="s.percent"></span>
+  </div>
+  <p class="muted small">{{ (tab() === 'fish' ? 'collections.fishProgress' : 'collections.recipeProgress') | transloco: { done: s.done, total: s.total } }}</p>
 </header>
 
 <div class="tabs" role="tablist" [attr.aria-label]="'collections.title' | transloco">
   <button type="button" role="tab" id="tab-fish" aria-controls="panel-fish" [attr.aria-selected]="tab() === 'fish'" (click)="tab.set('fish')">
     <app-icon name="fish" /> {{ 'collections.fish' | transloco }}
+    <span class="tab-count">{{ fishStats().caught }}/{{ fishStats().known }}</span>
   </button>
   <button type="button" role="tab" id="tab-recipes" aria-controls="panel-recipes" [attr.aria-selected]="tab() === 'recipes'" (click)="tab.set('recipes')">
     <app-icon name="utensils-crossed" /> {{ 'collections.recipes' | transloco }}
+    <span class="tab-count">{{ recipeStats().learned }}/{{ recipeStats().total }}</span>
+  </button>
+</div>
+
+<div class="toolbar">
+  <p class="muted small hint">
+    {{ (tab() === 'fish' ? 'collections.fishHint' : 'collections.recipesHint') | transloco }}
+    @if (tab() === 'fish' && fishStats().rankAKnown > 0) {
+      {{ 'collections.rankHint' | transloco: { done: fishStats().rankA, total: fishStats().rankAKnown } }}
+    }
+  </p>
+  <button type="button" class="chip" [attr.aria-pressed]="progress.preferences().hideDone" (click)="toggleHideDone()">
+    <app-icon name="check" /> {{ 'checklist.hideDone' | transloco }}
   </button>
 </div>
 
 @if (tab() === 'fish') {
-  @let s = fishStats();
-  <section id="panel-fish" role="tabpanel" aria-labelledby="tab-fish" class="panel">
-    <div class="stats card">
-      <p><strong>{{ s.caught }}</strong>/{{ s.known }} <span class="muted">{{ 'collections.caught' | transloco }}</span></p>
-      <p><strong>{{ s.rankA }}</strong>/{{ s.rankAKnown }} <span class="muted">{{ 'collections.rankA' | transloco }}</span></p>
-    </div>
-    <p class="muted small">{{ 'collections.fishHint' | transloco }}</p>
-    <ul class="list">
-      @for (entry of fish(); track entry.fish.id) {
-        @let caught = done.has(entry.fish.id);
-        @let isA = done.has(rankAKey(entry.fish.id));
-        <li class="row" [class.done]="caught">
-          <label class="check">
-            <input type="checkbox" class="checkbox" [checked]="caught" (change)="toggleCaught(entry)" [attr.aria-labelledby]="'fish-' + entry.fish.id" />
-          </label>
-          <div class="body">
-            <div class="title-line">
-              <span class="name" [id]="'fish-' + entry.fish.id">{{ entry.fish.name | localize: l }}</span>
-              <span class="rank" [attr.data-rank]="entry.bestRank" [attr.aria-label]="'collections.bestRank' | transloco: { rank: entry.bestRank }">{{ entry.bestRank }}</span>
-            </div>
-            <ul class="spots">
-              @for (spot of entry.spots; track $index) {
-                <li><span class="spot-rank" [attr.data-rank]="spot.rank">{{ spot.rank }}</span> {{ spot.where | localize: l }}</li>
-              }
-            </ul>
-            @if (entry.bestRank === 'A') {
-              <button type="button" class="chip" [attr.aria-pressed]="isA" (click)="toggleRankA(entry)">
-                <app-icon name="sparkles" /> {{ 'collections.gotRankA' | transloco }}
-              </button>
-            }
-          </div>
-        </li>
-      } @empty {
-        <li class="empty card">{{ 'collections.noFish' | transloco }}</li>
+  <div id="panel-fish" role="tabpanel" aria-labelledby="tab-fish" class="panel">
+    @for (group of fishGroups(); track group.chapter.id) {
+      <section class="group">
+        <h2>
+          {{ group.chapter.neutralLabel | localize: l }}
+          @if (group.chapter.id === here?.id) {
+            <span class="now">{{ 'collections.now' | transloco }}</span>
+          }
+          <span class="group-count">{{ group.done }}/{{ group.total }}</span>
+        </h2>
+        <ul class="list">
+          @for (entry of group.visible; track entry.fish.id) {
+            @let caught = done.has(entry.fish.id);
+            @let shared = sharedRank(entry);
+            <li class="row" [class.done]="caught">
+              <label class="check">
+                <input type="checkbox" class="checkbox" [checked]="caught" (change)="toggleCaught(entry)" [attr.aria-labelledby]="'fish-' + entry.fish.id" />
+              </label>
+              <div class="body">
+                <span class="name">
+                  <span [id]="'fish-' + entry.fish.id">{{ entry.fish.name | localize: l }}</span>
+                  @if (shared) {
+                    <span class="tag" [attr.data-rank]="shared">{{ 'collections.upToRank' | transloco: { rank: shared } }}</span>
+                  }
+                </span>
+                <ul class="spots">
+                  @for (spot of entry.spots; track $index) {
+                    <li>
+                      <app-icon name="map-pin" />
+                      <span class="where">
+                        {{ spot.where | localize: l }}
+                        @if ((spot.rank && !shared) || spot.bait) {
+                          <span class="tags">
+                            @if (spot.rank && !shared) {
+                              <span class="tag" [attr.data-rank]="spot.rank">{{ 'collections.upToRank' | transloco: { rank: spot.rank } }}</span>
+                            }
+                            @if (spot.bait) {
+                              <span class="tag">{{ spot.bait }}</span>
+                            }
+                          </span>
+                        }
+                      </span>
+                    </li>
+                  }
+                </ul>
+                @if (entry.bestRank === 'A') {
+                  <label class="rank-a">
+                    <input type="checkbox" class="checkbox" [checked]="done.has(rankAKey(entry.fish.id))" (change)="toggleRankA(entry)" />
+                    <app-icon name="sparkles" /> {{ 'collections.gotRankA' | transloco }}
+                  </label>
+                }
+              </div>
+            </li>
+          } @empty {
+            <li class="all-done muted small">{{ 'collections.groupDone' | transloco }}</li>
+          }
+        </ul>
+      </section>
+    } @empty {
+      @if (ready()) {
+        <p class="empty card">{{ 'collections.noFish' | transloco }}</p>
       }
-    </ul>
-  </section>
-} @else {
-  @let s = recipeStats();
-  @let book = recipes();
-  <section id="panel-recipes" role="tabpanel" aria-labelledby="tab-recipes" class="panel">
-    <div class="stats card">
-      <p><strong>{{ s.standard }}</strong>/{{ s.standardTotal }} <span class="muted">{{ 'collections.learned' | transloco }}</span></p>
-      <p><strong>{{ s.customized }}</strong>/{{ s.customizedTotal }} <span class="muted">{{ 'collections.customized' | transloco }}</span></p>
-    </div>
-    <p class="muted small">{{ 'collections.recipesHint' | transloco }}</p>
-    <h2>{{ 'collections.standardTitle' | transloco }}</h2>
-    <ul class="list">
-      @for (entry of book.standard; track entry.recipe.id) {
-        <ng-container *ngTemplateOutlet="recipeRow; context: { $implicit: entry }" />
-      }
-    </ul>
-    @if (book.customized.length > 0) {
-      <h2>{{ 'collections.customizedTitle' | transloco }}</h2>
-      <ul class="list">
-        @for (entry of book.customized; track entry.recipe.id) {
-          <ng-container *ngTemplateOutlet="recipeRow; context: { $implicit: entry }" />
-        }
-      </ul>
     }
-  </section>
+  </div>
+} @else {
+  <div id="panel-recipes" role="tabpanel" aria-labelledby="tab-recipes" class="panel">
+    @for (group of recipeGroups(); track group.chapter.id) {
+      <section class="group">
+        <h2>
+          {{ group.chapter.neutralLabel | localize: l }}
+          @if (group.chapter.id === here?.id) {
+            <span class="now">{{ 'collections.now' | transloco }}</span>
+          }
+          <span class="group-count">{{ group.done }}/{{ group.total }}</span>
+        </h2>
+        <ul class="list">
+          @for (entry of group.visible; track entry.recipe.id) {
+            @let learned = done.has(entry.recipe.id);
+            <li class="row" [class.done]="learned">
+              <label class="check">
+                <input type="checkbox" class="checkbox" [checked]="learned" (change)="progress.toggle(entry.recipe.id)" [attr.aria-labelledby]="'recipe-' + entry.recipe.id" />
+              </label>
+              <div class="body">
+                <span class="name" [id]="'recipe-' + entry.recipe.id">
+                  {{ entry.recipe.name | localize: l }}
+                  @if (entry.recipe.kind === 'customized') {
+                    <span class="tag">{{ 'collections.customized' | transloco }}</span>
+                  }
+                </span>
+                <span class="how"><app-icon name="map-pin" /> {{ entry.recipe.source | localize: l }}</span>
+              </div>
+            </li>
+          } @empty {
+            <li class="all-done muted small">{{ 'collections.groupDone' | transloco }}</li>
+          }
+        </ul>
+      </section>
+    } @empty {
+      @if (ready()) {
+        <p class="empty card">{{ 'collections.noRecipes' | transloco }}</p>
+      }
+    }
+  </div>
 }
-
-<ng-template #recipeRow let-entry>
-  @let learned = done.has(entry.recipe.id);
-  <li class="row" [class.done]="learned">
-    <label class="check">
-      <input type="checkbox" class="checkbox" [checked]="learned" (change)="progress.toggle(entry.recipe.id)" [attr.aria-labelledby]="'recipe-' + entry.recipe.id" />
-    </label>
-    <div class="body">
-      <span class="name" [id]="'recipe-' + entry.recipe.id">{{ entry.recipe.name | localize: l }}</span>
-      <span class="meta">{{ entry.recipe.source | localize: l }}</span>
-      <span class="meta chapter">{{ entry.chapter.neutralLabel | localize: l }}</span>
-    </div>
-  </li>
-</ng-template>

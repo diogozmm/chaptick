@@ -1,5 +1,5 @@
 import { Chapter } from '../content/content.models';
-import { fishBook, fishStats, rankAKey, recipeBook } from './collections';
+import { byChapter, fishBook, fishStats, rankAKey, recipeBook } from './collections';
 
 const chapter = (order: number, extra: Partial<Chapter>): Chapter => ({
   id: `t-ch${order}`,
@@ -47,9 +47,26 @@ describe('collections', () => {
     expect(fishStats(book, done)).toEqual({ caught: 2, known: 2, rankA: 1, rankAKnown: 1 });
   });
 
-  it('splits standard and customized recipes in chapter order', () => {
-    const book = recipeBook([ch2, ch1]);
-    expect(book.standard.map((e) => e.recipe.id)).toEqual(['t-ch1-re-01']);
-    expect(book.customized.map((e) => e.recipe.id)).toEqual(['t-ch2-re-01']);
+  it('works for games without ranks, keeping the bait', () => {
+    const unranked = chapter(1, {
+      fish: [{ id: 't-ch1-fi-01', name: { en: 'Herring' }, sources: ['t'] }],
+      fishSpots: [{ fishId: 't-ch1-fi-01', where: { en: 'Docks' }, bait: 'Fishing Bait S' }],
+    });
+    const [entry] = fishBook([unranked]);
+    expect(entry.bestRank).toBeNull();
+    expect(entry.spots[0].bait).toBe('Fishing Bait S');
+    expect(fishStats([entry], new Set()).rankAKnown).toBe(0);
+  });
+
+  it('lists every recipe in chapter order', () => {
+    expect(recipeBook([ch2, ch1]).map((e) => e.recipe.id)).toEqual(['t-ch1-re-01', 't-ch2-re-01']);
+  });
+
+  it('groups entries by the chapter that reveals them', () => {
+    const groups = byChapter(fishBook([ch2, ch1]));
+    expect(groups.map((g) => [g.chapter.id, g.entries.map((e) => e.fish.id)])).toEqual([
+      ['t-ch1', ['t-ch1-fi-01']],
+      ['t-ch2', ['t-ch2-fi-01']],
+    ]);
   });
 });

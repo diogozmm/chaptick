@@ -1,0 +1,611 @@
+{
+  "id": "ysx-ch7",
+  "gameId": "ysx",
+  "order": 7,
+  "neutralLabel": {
+    "en": "Chapter 7",
+    "pt": "Capítulo 7"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch7-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Heading to the red marker after Grotto Isle",
+        "pt": "Seguir para o marcador vermelho depois de Grotto Isle"
+      }
+    },
+    {
+      "id": "ysx-ch7-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Talking to Grenn and Grimson to begin the attack",
+        "pt": "Falar com o Grenn e o Grimson para começar o ataque"
+      }
+    },
+    {
+      "id": "ysx-ch7-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 7",
+        "pt": "O último marcador de evento do Capítulo 7"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch7-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Lux's character note #1",
+        "pt": "Nota de personagem do Lux #1"
+      },
+      "location": {
+        "en": "Sandras — lower deck",
+        "pt": "Sandras — convés inferior"
+      },
+      "availableUntil": "ysx-ch7-cp-02",
+      "hint": {
+        "en": "The third time-limited character note. While you are stationed on Grimson's ship, go back to the Sandras and talk to Lux twice on the lower deck, before talking to Grenn.",
+        "pt": "A terceira nota de personagem com tempo limitado. Enquanto estiver no navio do Grimson, volte ao Sandras e fale duas vezes com o Lux no convés inferior, antes de falar com o Grenn."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Dvergr Coast"
+      ]
+    },
+    {
+      "id": "ysx-ch7-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Old Haunts"
+      },
+      "location": {
+        "en": "Anchor Island — Magni on the Mynorca Village shore",
+        "pt": "Anchor Island — Magni na praia de Mynorca Village"
+      },
+      "availableUntil": "ysx-ch7-cp-01",
+      "hint": {
+        "en": "Medium deadline. Head to the green marker near Krangal Island, beat the ships in the fog and the jellyfish boss on the ghost ship. Rewards the Shield Cannons.",
+        "pt": "Prazo médio. Vá ao marcador verde perto de Krangal Island, derrote os navios na névoa e o chefe água-viva no navio fantasma. Dá os Shield Cannons."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ]
+    },
+    {
+      "id": "ysx-ch7-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Breakout Performance"
+      },
+      "location": {
+        "en": "Grotto Isle (from a Hugill letter)",
+        "pt": "Grotto Isle (de uma carta do Hugill)"
+      },
+      "availableUntil": "ysx-ch7-cp-01",
+      "hint": {
+        "en": "Medium deadline. Read Hugill's letter near the blue marker south of Gregorio's Curio, talk to him on the mast, and clear Grotto Isle. Rewards 5,000 Gold and frees the last Carnac townsperson.",
+        "pt": "Prazo médio. Leia a carta do Hugill perto do marcador azul ao sul do Gregorio's Curio, fale com ele no mastro e explore Grotto Isle até o fim. Dá 5.000 Gold e liberta o último morador de Carnac."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ]
+    },
+    {
+      "id": "ysx-ch7-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Treasure Trawl D"
+      },
+      "location": {
+        "en": "Specular Bay — near the Northern Citadel",
+        "pt": "Specular Bay — perto da Northern Citadel"
+      },
+      "availableUntil": "ysx-ch7-cp-01",
+      "hint": {
+        "en": "Long deadline. Hidden Treasure Chart D is sold at Gregorio's Curio in the Flumen Strait. Rewards Fleeting Hope+.",
+        "pt": "Prazo longo. O Hidden Treasure Chart D é vendido no Gregorio's Curio, em Flumen Strait. Dá Fleeting Hope+."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ]
+    },
+    {
+      "id": "ysx-ch7-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Cull the Griegr: Orlen"
+      },
+      "location": {
+        "en": "Orlen Islands — West Side, far southwest",
+        "pt": "Orlen Islands — West Side, extremo sudoeste"
+      },
+      "availableUntil": "ysx-ch7-cp-02",
+      "hint": {
+        "en": "Long deadline. From the Norman soldier on the Norgest. A bird-like humanoid Griegr with small flying Watz that keep shooting. Rewards a Blessed Paper Scrap.",
+        "pt": "Prazo longo. Vem do soldado normando no Norgest. Um Griegr humanoide parecido com pássaro, com pequenos Watz voadores que não param de atirar. Dá um Blessed Paper Scrap."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Dvergr Coast",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ]
+    },
+    {
+      "id": "ysx-ch7-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Nest of Kin"
+      },
+      "location": {
+        "en": "Sandras — Ashley on the deck",
+        "pt": "Sandras — Ashley no convés"
+      },
+      "availableUntil": "ysx-ch7-cp-02",
+      "hint": {
+        "en": "Long deadline. From Gregorio's Curio, sail west and spot the nest with the spyglass; follow the new markers (the one near the merchant ship, then the southeast one).",
+        "pt": "Prazo longo. Saindo do Gregorio's Curio, navegue a oeste e ache o ninho com a luneta; siga os marcadores novos (o perto do navio mercante e depois o do sudeste)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Dvergr Coast",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ]
+    },
+    {
+      "id": "ysx-ch7-q-06",
+      "type": "quest",
+      "name": {
+        "en": "EX: Smooth Sailing? (Proud)",
+        "pt": "EX: Smooth Sailing? (Proud)"
+      },
+      "location": {
+        "en": "Sandras — Hugill's letters",
+        "pt": "Sandras — cartas do Hugill"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Proud Nordics only. Added by the Hugill letter \"EX: Smooth Sailing?\" at the start of the chapter. The guide gives no steps or deadline: do it in this chapter to be safe.",
+        "pt": "Só no Proud Nordics. Entra com a carta do Hugill \"EX: Smooth Sailing?\" no começo do capítulo. O guia não dá passos nem prazo: faça neste capítulo por segurança."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait"
+      ]
+    },
+    {
+      "id": "ysx-ch7-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Grotto Isle treasure chests (8)",
+        "pt": "Baús de Grotto Isle (8)"
+      },
+      "location": {
+        "en": "Grotto Isle",
+        "pt": "Grotto Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Opened by the Breakout Performance quest.",
+        "pt": "Aberta pela quest Breakout Performance."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "South, behind the rock pillar — Super Repair Kit ×3 (buried)",
+            "pt": "Sul, atrás do pilar de rocha — Super Repair Kit ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Far southeast corner — Green Crystal Water ×2",
+            "pt": "Extremo sudeste — Green Crystal Water ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest at the west corner — Sin Star+",
+            "pt": "Baú azul no canto oeste — Sin Star+"
+          }
+        },
+        {
+          "text": {
+            "en": "North, by a tree — Dark Lump ×5 (buried)",
+            "pt": "Norte, junto a uma árvore — Dark Lump ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Underground: first wide area, after clearing the monsters — Basic Craft Stock ×100",
+            "pt": "Subterrâneo: primeira área ampla, depois de limpar os monstros — Basic Craft Stock ×100"
+          }
+        },
+        {
+          "text": {
+            "en": "Underground: next open room — Punishment Star+ (buried)",
+            "pt": "Subterrâneo: sala aberta seguinte — Punishment Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Underground: red chest in the same room — Rage Formula",
+            "pt": "Subterrâneo: baú vermelho na mesma sala — Rage Formula"
+          }
+        },
+        {
+          "text": {
+            "en": "Underground: hallway after it — Yellow Seastone ×3 (buried)",
+            "pt": "Subterrâneo: corredor seguinte — Yellow Seastone ×3 (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch7-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Falaise Peninsula — Fortress Entrance treasure chests (10)",
+        "pt": "Baús de Falaise Peninsula — Fortress Entrance (10)"
+      },
+      "location": {
+        "en": "Falaise Peninsula — Fortress Entrance",
+        "pt": "Falaise Peninsula — Fortress Entrance"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "North of the Dvergr Coast camp. Breath Water II adds one more potion to your stock.",
+        "pt": "Ao norte do acampamento da Dvergr Coast. A Breath Water II adiciona mais uma poção ao estoque."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Dvergr Coast",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Left, by the trees — Blue Lump ×6 (buried)",
+            "pt": "Esquerda, junto às árvores — Blue Lump ×6 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Right, behind a pillar — Basic Reagents ×100",
+            "pt": "Direita, atrás de um pilar — Basic Reagents ×100"
+          }
+        },
+        {
+          "text": {
+            "en": "North route, where the vines were — Basic Craft Stock ×100 (buried)",
+            "pt": "Rota norte, onde estavam as vinhas — Basic Craft Stock ×100 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "North dead end — Fishing Bait G ×3",
+            "pt": "Beco sem saída ao norte — Fishing Bait G ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "South route, by trees near the ruins — Golden Potato ×3 (buried)",
+            "pt": "Rota sul, junto às árvores perto das ruínas — Golden Potato ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest past the burnt vines to the south — Breath Water II",
+            "pt": "Baú vermelho depois das vinhas queimadas ao sul — Breath Water II"
+          }
+        },
+        {
+          "text": {
+            "en": "Near the spring — Sin Star+ (buried)",
+            "pt": "Perto da nascente — Sin Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest at the western end — Axe Soul",
+            "pt": "Baú azul no extremo oeste — Axe Soul"
+          }
+        },
+        {
+          "text": {
+            "en": "Fortress side, near the scouting marker — Fishing Bait M ×5 (buried)",
+            "pt": "Lado da fortaleza, perto do marcador de reconhecimento — Fishing Bait M ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fortress side, same spot — Basic Craft Stock ×100",
+            "pt": "Lado da fortaleza, no mesmo ponto — Basic Craft Stock ×100"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch7-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Falaise Peninsula — Side Road treasure chests (8)",
+        "pt": "Baús de Falaise Peninsula — Side Road (8)"
+      },
+      "location": {
+        "en": "Falaise Peninsula — Side Road",
+        "pt": "Falaise Peninsula — Side Road"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Opens after the attack begins (talking to Grenn and Grimson on the Norgest): take the south exit of the Dvergr Coast.",
+        "pt": "Abre depois que o ataque começa (falar com o Grenn e o Grimson no Norgest): pegue a saída sul da Dvergr Coast."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Falaise Peninsula",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "South, behind vines near the small cave — Basic Ingredients ×100",
+            "pt": "Sul, atrás de vinhas perto da caverna pequena — Basic Ingredients ×100"
+          }
+        },
+        {
+          "text": {
+            "en": "West, by a tree — Red Lump ×6 (buried)",
+            "pt": "Oeste, junto a uma árvore — Red Lump ×6 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southern part, by the debris — Dark Lump ×6 (buried)",
+            "pt": "Parte sul, junto aos destroços — Dark Lump ×6 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest end — Yellow Lump ×6",
+            "pt": "Extremo sudoeste — Yellow Lump ×6"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest, by a tree — Strength Elixir (buried)",
+            "pt": "Noroeste, junto a uma árvore — Strength Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest above it, behind vines — Warrior's Earrings",
+            "pt": "Baú azul acima, atrás de vinhas — Warrior's Earrings"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast corner — Armor Soul",
+            "pt": "Canto nordeste — Armor Soul"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest left of the event marker — Colorful Dessert Box Lunch",
+            "pt": "Baú vermelho à esquerda do marcador de evento — Colorful Dessert Box Lunch"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch7-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Grugal Fortress treasure chests (11)",
+        "pt": "Baús de Grugal Fortress (11)"
+      },
+      "location": {
+        "en": "Grugal Fortress",
+        "pt": "Grugal Fortress"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "After an event in the second interior you cannot go back to the earlier sections until Chapter 9, when the main entrance also opens.",
+        "pt": "Depois de um evento no segundo interior, não dá para voltar às seções anteriores até o Capítulo 9, quando a entrada principal também abre."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Falaise Peninsula",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Below the fortress, far southwest — 4000 Gold (buried)",
+            "pt": "Embaixo da fortaleza, extremo sudoeste — 4000 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "East, before a tree — Yellow Lump ×6 (buried)",
+            "pt": "Leste, antes de uma árvore — Yellow Lump ×6 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest under the northwest side of the fortress — Inferno Bracelet",
+            "pt": "Baú azul embaixo do lado noroeste da fortaleza — Inferno Bracelet"
+          }
+        },
+        {
+          "text": {
+            "en": "Interior: pull the crate under it with Mana String — Everlasting Leather ×3",
+            "pt": "Interior: puxe o caixote para baixo dele com o Mana String — Everlasting Leather ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Outside, to the left — Fishing Bait L ×5",
+            "pt": "Do lado de fora, à esquerda — Fishing Bait L ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Second interior: end of the path past the drawbridge — Sword Soul",
+            "pt": "Segundo interior: fim do caminho depois da ponte levadiça — Sword Soul"
+          }
+        },
+        {
+          "text": {
+            "en": "Second interior: northeast corner, after the Draculea — Shield Soul (buried)",
+            "pt": "Segundo interior: canto nordeste, depois do Draculea — Shield Soul (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Next section: left of the Hewnstone — Red Lump ×6",
+            "pt": "Seção seguinte: à esquerda da Hewnstone — Red Lump ×6"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest in the middle, via the wooden pallet and Mana String — True Barriermancy Text",
+            "pt": "Baú vermelho no meio, pelo palete de madeira e o Mana String — True Barriermancy Text"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest past the harpy — Suzhen Amulet",
+            "pt": "Baú azul depois da harpia — Suzhen Amulet"
+          }
+        },
+        {
+          "text": {
+            "en": "Last part: east corner — Golden Potato ×3",
+            "pt": "Última parte: canto leste — Golden Potato ×3"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch7-bs-01",
+      "name": {
+        "en": "Blob Weiser"
+      },
+      "location": {
+        "en": "The ghost ship near Krangal Island",
+        "pt": "O navio fantasma perto de Krangal Island"
+      },
+      "strategy": {
+        "en": "Lure it out from between the stairs for a better camera. Most spins break Duo Guard; it spits Slow globs, poison gas and can curse. When it dies it releases skull enemies.",
+        "pt": "Atraia-o para fora da escada para a câmera ajudar. A maioria dos giros quebra a Duo Guard; ele cospe bolas que deixam lento, gás venenoso e pode amaldiçoar. Ao morrer, libera inimigos-caveira."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ],
+      "relatedItem": "ysx-ch7-q-01"
+    },
+    {
+      "id": "ysx-ch7-bs-02",
+      "name": {
+        "en": "Óðr and the Naglfar Core",
+        "pt": "Óðr e o Naglfar Core"
+      },
+      "location": {
+        "en": "Ironclad Warship Naglfar"
+      },
+      "strategy": {
+        "en": "Óðr cannot be killed: the target is the Naglfar Core, which vanishes and drops in elsewhere. Blocking his red power attack stuns him for a while, so you can focus the core; keep the guard held. Destroying the core ends the fight.",
+        "pt": "O Óðr não pode ser derrotado: o alvo é o Naglfar Core, que some e reaparece em outro ponto. Bloquear o ataque poderoso vermelho dele o atordoa por um tempo, para você focar o núcleo; mantenha a defesa. Destruir o núcleo encerra a luta."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Falaise Peninsula",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ]
+    },
+    {
+      "id": "ysx-ch7-bs-03",
+      "name": {
+        "en": "Thelx Sirène"
+      },
+      "location": {
+        "en": "Ironclad Warship Naglfar — deck",
+        "pt": "Ironclad Warship Naglfar — convés"
+      },
+      "strategy": {
+        "en": "Duo guard her leaping slam. Her lower mouth bites and breathes poison, and she can curse. After her durability breaks she summons small newts and dives; she homes in when she surfaces, so keep guarding and attacking.",
+        "pt": "Use a defesa em dupla contra a pancada com salto. A boca de baixo morde e solta veneno, e ela pode amaldiçoar. Quando a resistência quebra, ela invoca salamandras pequenas e mergulha; ela persegue você ao emergir, então continue defendendo e atacando."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Falaise Peninsula",
+        "guide: GameFAQs Ys X walkthrough, Chapter 7: The Battle of Flumen Strait"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch7-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Lucky Potato Pie Box Lunch"
+      },
+      "source": {
+        "en": "Flumen Strait — Abandoned Mine recapture, rank S",
+        "pt": "Retomada da Abandoned Mine em Flumen Strait, rank S"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch7-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Colorful Dessert Box Lunch"
+      },
+      "source": {
+        "en": "Treasure on the Falaise Peninsula side road, or buy at Gregorio's Curio",
+        "pt": "Baú na estrada lateral da Falaise Peninsula, ou compre no Gregorio's Curio"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch7-fi-01",
+      "name": {
+        "en": "Ponffer"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait",
+        "guide: Neoseeker Ys X walkthrough, Chapter 7 - Dvergr Coast"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch7-fi-01",
+      "where": {
+        "en": "Grotto Isle — shore; Dvergr Coast",
+        "pt": "Grotto Isle — margem; Dvergr Coast"
+      },
+      "bait": "Fishing Bait M"
+    }
+  ]
+}

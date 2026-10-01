@@ -1,0 +1,791 @@
+{
+  "id": "ysx-ch9",
+  "gameId": "ysx",
+  "order": 9,
+  "neutralLabel": {
+    "en": "Chapter 9",
+    "pt": "Capítulo 9"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch9-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Approaching the Vortex Path red marker in Raoul Darksea",
+        "pt": "Aproximar-se do marcador vermelho do Vortex Path em Raoul Darksea"
+      }
+    },
+    {
+      "id": "ysx-ch9-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 9",
+        "pt": "O último marcador de evento do Capítulo 9"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch9-q-01",
+      "type": "quest",
+      "name": {
+        "en": "No Good Deed…"
+      },
+      "location": {
+        "en": "Krangal Island — the mine",
+        "pt": "Krangal Island — a mina"
+      },
+      "availableUntil": "ysx-ch9-cp-01",
+      "hint": {
+        "en": "Long deadline. From the Hugill letter \"ST OP ME\". Land on the island for an event, then beat the Armed Biter in the mine. Rewards a Luminous Bangle.",
+        "pt": "Prazo longo. Vem da carta do Hugill \"ST OP ME\". Desembarque na ilha para um evento e derrote o Armed Biter na mina. Dá um Luminous Bangle."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Optional Activities",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    },
+    {
+      "id": "ysx-ch9-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Riddle Me Timbers"
+      },
+      "location": {
+        "en": "Sandras — Ezer",
+        "pt": "Sandras — Ezer"
+      },
+      "availableUntil": "ysx-ch9-cp-01",
+      "hint": {
+        "en": "Medium deadline. Green marker in the middle of Moonview Isle, then the event marker on Fishscale Island (naval battle), then the event marker on the Orlen Islands' West Side (boss).",
+        "pt": "Prazo médio. Marcador verde no meio de Moonview Isle, depois o marcador de evento em Fishscale Island (batalha naval) e por fim o marcador de evento no West Side de Orlen Islands (chefe)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Optional Activities",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    },
+    {
+      "id": "ysx-ch9-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Specular Synthesis"
+      },
+      "location": {
+        "en": "Sandras — Dr. Flair on the lower deck",
+        "pt": "Sandras — Dr. Flair no convés inferior"
+      },
+      "availableUntil": "ysx-ch9-cp-01",
+      "hint": {
+        "en": "Medium deadline. Fight the Griegrs at the green marker of Grugal Fortress — Entrance, then reach the event marker on Redsand Isle (south end of Raoul Darksea) and report back. Rewards the Full-Heal Formula.",
+        "pt": "Prazo médio. Enfrente os Griegrs no marcador verde de Grugal Fortress — Entrance, depois chegue ao marcador de evento em Redsand Isle (extremo sul de Raoul Darksea) e volte para relatar. Dá a Full-Heal Formula."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    },
+    {
+      "id": "ysx-ch9-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Slay the Beasts: Haze"
+      },
+      "location": {
+        "en": "Haze Island — back half",
+        "pt": "Haze Island — metade de trás"
+      },
+      "availableUntil": "ysx-ch9-cp-01",
+      "hint": {
+        "en": "Long deadline. From Lila. Haze Island is northwest of Serenes Island; fast travel to the back half. The targets are fragile but hit very hard; stay out of the slowing water. Rewards the Panacea Formula III.",
+        "pt": "Prazo longo. Vem da Lila. Haze Island fica a noroeste de Serenes Island; viaje até a metade de trás. Os alvos são frágeis, mas batem muito forte; fique fora da água que deixa lento. Dá a Panacea Formula III."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Optional Activities",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    },
+    {
+      "id": "ysx-ch9-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Treasure Trawl E"
+      },
+      "location": {
+        "en": "Raoul Darksea — north, near the entrance",
+        "pt": "Raoul Darksea — norte, perto da entrada"
+      },
+      "availableUntil": "ysx-ch9-cp-01",
+      "hint": {
+        "en": "Long deadline. Hidden Treasure Chart E comes from the Eastern Fortress recapture at rank S. Rewards the Cycloid Crown. With every Treasure Trawl done, Mandy has one more treasure (northwest of Termina Island) that unlocks his character note.",
+        "pt": "Prazo longo. O Hidden Treasure Chart E vem da retomada da Eastern Fortress com rank S. Dá a Cycloid Crown. Com todos os Treasure Trawls feitos, o Mandy tem mais um tesouro (a noroeste de Termina Island) que libera a nota de personagem dele."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    },
+    {
+      "id": "ysx-ch9-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Revisits: chests that open now (3)",
+        "pt": "Revisitas: baús que abrem agora (3)"
+      },
+      "location": {
+        "en": "Grugal Fortress; Haze Island",
+        "pt": "Grugal Fortress; Haze Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Chests that only open now in areas from earlier chapters.",
+        "pt": "Baús que só abrem agora em áreas de capítulos anteriores."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Optional Activities"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Grugal Fortress — northwest corner (the main entrance is open now) — Rainbow Seastone ×2 (buried)",
+            "pt": "Grugal Fortress — canto noroeste (a entrada principal está aberta agora) — Rainbow Seastone ×2 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Grugal Fortress — at the gate behind the mini-boss — Ascetic's Arcanum",
+            "pt": "Grugal Fortress — no portão atrás do mini-chefe — Ascetic's Arcanum"
+          }
+        },
+        {
+          "text": {
+            "en": "Haze Island back half — the red chest that was out of reach (Slay the Beasts: Haze) — Luck Elixir",
+            "pt": "Metade de trás de Haze Island — o baú vermelho que estava fora de alcance (Slay the Beasts: Haze) — Luck Elixir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch9-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Gigantavis Isle treasure chests (6)",
+        "pt": "Baús de Gigantavis Isle (6)"
+      },
+      "location": {
+        "en": "Gigantavis Isle",
+        "pt": "Gigantavis Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Last blue marker of the Marine Triangle. The Ebon Mindgem on the eastern summit gives Guila's character note later.",
+        "pt": "O último marcador azul do Marine Triangle. A Ebon Mindgem no topo leste dá a nota de personagem da Guila depois."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Marine Triangle"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Northwest, up the ledges — Dark Seastone ×5",
+            "pt": "Noroeste, subindo as bordas — Dark Seastone ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Top of the southern ledge — Blue Seastone ×3 (buried)",
+            "pt": "Alto da borda sul — Blue Seastone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Eastern dead end, by trees — Panacea II ×3 (buried)",
+            "pt": "Beco sem saída a leste, junto às árvores — Panacea II ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast corner — Sin Soul+",
+            "pt": "Canto sudeste — Sin Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Ledges south of the middle part — Fishing Bait L ×3 (buried)",
+            "pt": "Bordas ao sul da parte do meio — Fishing Bait L ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Near the Hewnstone, by the vine-covered sword — 7000 Gold",
+            "pt": "Perto da Hewnstone, junto à espada coberta de vinhas — 7000 Gold"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch9-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Redsand Isle treasure chests (2)",
+        "pt": "Baús de Redsand Isle (2)"
+      },
+      "location": {
+        "en": "Redsand Isle",
+        "pt": "Redsand Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "South end of Raoul Darksea, during Specular Synthesis.",
+        "pt": "Extremo sul de Raoul Darksea, durante a Specular Synthesis."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "East side, behind two monsters — Red Seastone ×3 (buried)",
+            "pt": "Lado leste, atrás de dois monstros — Red Seastone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest at the south end, after pushing the log — Luncheon Recipe: Sweets",
+            "pt": "Baú vermelho no extremo sul, depois de empurrar o tronco — Luncheon Recipe: Sweets"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch9-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Seabed Temple of Ægir — front half treasure chests (22)",
+        "pt": "Baús de Seabed Temple of Ægir — metade da frente (22)"
+      },
+      "location": {
+        "en": "Seabed Temple of Ægir — front half",
+        "pt": "Seabed Temple of Ægir — metade da frente"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Northwest corner of Raoul Darksea, through the Vortex Path. Karja's Mana Burst freezes water to reach higher ledges.",
+        "pt": "Canto noroeste de Raoul Darksea, pelo Vortex Path. O Mana Burst da Karja congela a água para alcançar bordas mais altas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Before the temple: patch of land to the left — Panacea II ×3 (buried)",
+            "pt": "Antes do templo: trecho de terra à esquerda — Panacea II ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "West, in a collapsed floor — Sin Soul (buried)",
+            "pt": "Oeste, num piso desabado — Sin Soul (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "West, by another collapsed floor — Yellow Seastone ×4",
+            "pt": "Oeste, junto a outro piso desabado — Yellow Seastone ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "Upper level, northeast — Venom Gloves",
+            "pt": "Nível de cima, nordeste — Venom Gloves"
+          }
+        },
+        {
+          "text": {
+            "en": "West passage, before the debris — Vitality Elixir (buried)",
+            "pt": "Passagem oeste, antes dos destroços — Vitality Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Top floor — 6500 Gold",
+            "pt": "Último andar — 6500 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: drop below instead of riding the stream — Super Relaxant ×3 (buried)",
+            "pt": "Segundo salão: desça em vez de seguir o fluxo — Super Relaxant ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: red chest in the north center (Adol's weapon) — Pyrope Sword",
+            "pt": "Segundo salão: baú vermelho no centro-norte (arma do Adol) — Pyrope Sword"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: east of it — Sorcerer's Medal",
+            "pt": "Segundo salão: a leste dele — Sorcerer's Medal"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: west room — 7500 Gold (buried)",
+            "pt": "Segundo salão: sala oeste — 7500 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: west room — Basic Beast Parts ×175",
+            "pt": "Segundo salão: sala oeste — Basic Beast Parts ×175"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: south center — Sword Soul+",
+            "pt": "Segundo salão: centro-sul — Sword Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: southwest room, by the switch — Soul Timber ×3",
+            "pt": "Segundo salão: sala sudoeste, junto ao interruptor — Soul Timber ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Second hall: southeast corner once the gate opens — R Potion",
+            "pt": "Segundo salão: canto sudeste quando o portão abre — R Potion"
+          }
+        },
+        {
+          "text": {
+            "en": "Third hall: eastern corner — Dryad Tear ×3 (buried)",
+            "pt": "Terceiro salão: canto leste — Dryad Tear ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Third hall: patch of land to the north — Defense Elixir (buried)",
+            "pt": "Terceiro salão: trecho de terra ao norte — Defense Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Third hall: same patch — Punishment Soul",
+            "pt": "Terceiro salão: mesmo trecho — Punishment Soul"
+          }
+        },
+        {
+          "text": {
+            "en": "Third hall: past the Mana String poles — Dark Seastone ×3",
+            "pt": "Terceiro salão: depois dos postes do Mana String — Dark Seastone ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Third hall: same stretch — Red Seastone ×4",
+            "pt": "Terceiro salão: mesmo trecho — Red Seastone ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "Third hall: red chest behind the mini-boss (Karja's weapon) — Haüyne Axe",
+            "pt": "Terceiro salão: baú vermelho atrás do mini-chefe (arma da Karja) — Haüyne Axe"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest after the Gunnar and Phylleia fight — Raiju Guardstone",
+            "pt": "Baú azul depois da luta contra o Gunnar e a Phylleia — Raiju Guardstone"
+          }
+        },
+        {
+          "text": {
+            "en": "Next to it — Defroster ×5 (buried)",
+            "pt": "Ao lado dele — Defroster ×5 (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch9-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Seabed Temple of Ægir — back half treasure chests (18)",
+        "pt": "Baús de Seabed Temple of Ægir — metade de trás (18)"
+      },
+      "location": {
+        "en": "Seabed Temple of Ægir — back half",
+        "pt": "Seabed Temple of Ægir — metade de trás"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The spellbook is a blueprint for the Sandras.",
+        "pt": "O spellbook é um projeto para o Sandras."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Beside the hole at the start — Extinguisher ×5 (buried)",
+            "pt": "Ao lado do buraco do início — Extinguisher ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "East corner — Super Repair Kit ×3",
+            "pt": "Canto leste — Super Repair Kit ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Upper platform: blue chest behind the monsters on the east side — Armor Soul+",
+            "pt": "Plataforma de cima: baú azul atrás dos monstros no lado leste — Armor Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "East end of the water path — Blue Seastone ×4",
+            "pt": "Extremo leste do caminho de água — Blue Seastone ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: blue chest in the north center — Shield Soul+",
+            "pt": "Segunda parte: baú azul no centro-norte — Shield Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: right as you enter the large area — Panacea ×3 (buried)",
+            "pt": "Segunda parte: logo ao entrar na área grande — Panacea ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: southeast corner, in the water — Basic Craft Stock ×200 (buried)",
+            "pt": "Segunda parte: canto sudeste, na água — Basic Craft Stock ×200 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: blue chest past the gate opened by the switch — Chalice Soul+",
+            "pt": "Segunda parte: baú azul depois do portão aberto pelo interruptor — Chalice Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: red chest on the east side after the swing — Sea God's Incense",
+            "pt": "Segunda parte: baú vermelho no lado leste depois do balanço — Sea God's Incense"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: third section — Luck Elixir",
+            "pt": "Segunda parte: terceira seção — Luck Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: north corner, by the Empress Saman fishing spot — Blue Crystal Water ×2",
+            "pt": "Segunda parte: canto norte, junto ao pesqueiro do Empress Saman — Blue Crystal Water ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: south end after the stairs — Ultimate Beast Meat ×3",
+            "pt": "Segunda parte: extremo sul depois da escada — Ultimate Beast Meat ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Third part: to the right of the start — Dark Seastone ×3 (buried)",
+            "pt": "Terceira parte: à direita do início — Dark Seastone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Third part: northeast patch of land — 8000 Gold (buried)",
+            "pt": "Terceira parte: trecho de terra a nordeste — 8000 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Third part: east side after the chandeliers — Green Crystal Water ×2",
+            "pt": "Terceira parte: lado leste depois dos lustres — Green Crystal Water ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Third part: blue chest at the south end — Martialist's Gauntlets",
+            "pt": "Terceira parte: baú azul no extremo sul — Martialist's Gauntlets"
+          }
+        },
+        {
+          "text": {
+            "en": "Third part: red chest south of the Hewnstone — Defense Elixir",
+            "pt": "Terceira parte: baú vermelho ao sul da Hewnstone — Defense Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "Sanctum: after the boss — Spellbook: Nixie's Blessing",
+            "pt": "Santuário: depois do chefe — Spellbook: Nixie's Blessing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch9-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Viewpoint Isle treasure chests (9)",
+        "pt": "Baús de Viewpoint Isle (9)"
+      },
+      "location": {
+        "en": "Viewpoint Isle",
+        "pt": "Viewpoint Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The northeast is confusing because the map ignores height: use Mana Sense often. Reaching the old man ends the chapter, but you can come back in Chapter 10.",
+        "pt": "O nordeste confunde porque o mapa ignora a altura: use o Mana Sense com frequência. Chegar ao velho encerra o capítulo, mas dá para voltar no Capítulo 10."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Areas visited before — Vitality Elixir (buried)",
+            "pt": "Áreas já visitadas — Vitality Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Areas visited before — Crystal Shard ×300 (buried)",
+            "pt": "Áreas já visitadas — Crystal Shard ×300 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Areas visited before — Fishing Bait S ×3 (buried)",
+            "pt": "Áreas já visitadas — Fishing Bait S ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast quadrant (ride up the water path) — Crystal Shard ×2500 (buried)",
+            "pt": "Quadrante nordeste (suba pelo caminho de água) — Crystal Shard ×2500 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast quadrant — Mega Ulti-Meat Box Lunch",
+            "pt": "Quadrante nordeste — Mega Ulti-Meat Box Lunch"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast quadrant — Defense Elixir (buried)",
+            "pt": "Quadrante nordeste — Defense Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast quadrant — Axe Soul+",
+            "pt": "Quadrante nordeste — Axe Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast quadrant — Vitality Elixir",
+            "pt": "Quadrante nordeste — Vitality Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast quadrant — Rainbow Lump ×3 (buried)",
+            "pt": "Quadrante nordeste — Rainbow Lump ×3 (enterrado)"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch9-bs-01",
+      "name": {
+        "en": "Gigas Wing"
+      },
+      "location": {
+        "en": "Gigantavis Isle (optional challenge)",
+        "pt": "Gigantavis Isle (desafio opcional)"
+      },
+      "strategy": {
+        "en": "Level 85 with no durability meter. Use Mana String to catch up when it runs, and watch for poison and lightning. Rewards the last Blessed Paper Scrap.",
+        "pt": "Nível 85, sem medidor de resistência. Use o Mana String para alcançá-lo quando fugir, e cuidado com veneno e raios. Dá o último Blessed Paper Scrap."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Marine Triangle",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    },
+    {
+      "id": "ysx-ch9-bs-02",
+      "name": {
+        "en": "Gunnar and Phylleia",
+        "pt": "Gunnar e Phylleia"
+      },
+      "location": {
+        "en": "Seabed Temple of Ægir"
+      },
+      "strategy": {
+        "en": "Shared HP bar. Focus Phylleia: her projectiles and fast combos land just as Gunnar attacks. Her dash is a speed attack: dodge it on time for a QTE counter.",
+        "pt": "Barra de HP compartilhada. Foque a Phylleia: os projéteis e combos rápidos dela chegam junto com os ataques do Gunnar. A investida dela é um ataque rápido: desvie na hora para um contra-ataque com QTE."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    },
+    {
+      "id": "ysx-ch9-bs-03",
+      "name": {
+        "en": "Óðr"
+      },
+      "location": {
+        "en": "Seabed Temple of Ægir — sanctum",
+        "pt": "Seabed Temple of Ægir — santuário"
+      },
+      "strategy": {
+        "en": "As his durability drops he adds a tornado that pulls you in and water pillars that fire from several directions (dodging them can open a counter). He is much stronger in Proud Nordics.",
+        "pt": "Conforme a resistência cai, ele adiciona um tornado que puxa você e pilares de água que disparam de várias direções (desviar deles pode abrir um contra-ataque). Ele é bem mais forte no Proud Nordics."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 9: The Waters of Creation"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch9-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Luxury Steak-Stravaganza"
+      },
+      "source": {
+        "en": "Reward for Riddle Me Timbers",
+        "pt": "Recompensa da Riddle Me Timbers"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch9-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Sweet Treat Rondo"
+      },
+      "source": {
+        "en": "Treasure chest on Redsand Isle",
+        "pt": "Baú em Redsand Isle"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch9-fi-01",
+      "name": {
+        "en": "General Crab"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ]
+    },
+    {
+      "id": "ysx-ch9-fi-02",
+      "name": {
+        "en": "Gold Borsas"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ]
+    },
+    {
+      "id": "ysx-ch9-fi-03",
+      "name": {
+        "en": "Cobalt Corp"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ]
+    },
+    {
+      "id": "ysx-ch9-fi-04",
+      "name": {
+        "en": "Empress Saman"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 9 - Raoul Darksea"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch9-fi-01",
+      "where": {
+        "en": "Redsand Isle — shore",
+        "pt": "Redsand Isle — margem"
+      },
+      "bait": "Fishing Bait L"
+    },
+    {
+      "fishId": "ysx-ch9-fi-02",
+      "where": {
+        "en": "Redsand Isle — shore",
+        "pt": "Redsand Isle — margem"
+      },
+      "bait": "Fishing Bait EX"
+    },
+    {
+      "fishId": "ysx-ch9-fi-03",
+      "where": {
+        "en": "Seabed Temple of Ægir — bridge",
+        "pt": "Seabed Temple of Ægir — ponte"
+      },
+      "bait": "Fishing Bait EX"
+    },
+    {
+      "fishId": "ysx-ch9-fi-04",
+      "where": {
+        "en": "Seabed Temple of Ægir — sunken pillar, back half",
+        "pt": "Seabed Temple of Ægir — pilar submerso, metade de trás"
+      },
+      "bait": "Fishing Bait L"
+    }
+  ]
+}

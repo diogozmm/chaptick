@@ -1,0 +1,387 @@
+{
+  "id": "ysx-ch3",
+  "gameId": "ysx",
+  "order": 3,
+  "neutralLabel": {
+    "en": "Chapter 3",
+    "pt": "Capítulo 3"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch3-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 3 (the rescue in Carnac)",
+        "pt": "O último marcador de evento do Capítulo 3 (o resgate em Carnac)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch3-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Cargo A-Go-Go"
+      },
+      "location": {
+        "en": "Sandras — talk to Grenn on the lower deck",
+        "pt": "Sandras — fale com o Grenn no convés inferior"
+      },
+      "availableUntil": "ysx-ch3-cp-01",
+      "hint": {
+        "en": "Long deadline. Pick up the three supply boxes at the green markers: behind Balta Island, between Carnac and Balta Island, and far southwest of Carnac near Tyrant Hills (blast the pillars with the cannon first).",
+        "pt": "Prazo longo. Recolha as três caixas de suprimentos nos marcadores verdes: atrás de Balta Island, entre Carnac e Balta Island, e bem a sudoeste de Carnac, perto de Tyrant Hills (destrua os pilares com o canhão antes)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Balta Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ]
+    },
+    {
+      "id": "ysx-ch3-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Fishscale Island treasure chests (1)",
+        "pt": "Baús de Fishscale Island (1)"
+      },
+      "location": {
+        "en": "Fishscale Island",
+        "pt": "Fishscale Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Two buried treasures open in Chapter 5, once you have Mana Sense.",
+        "pt": "Dois tesouros enterrados abrem no Capítulo 5, quando você tiver o Mana Sense."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Fishscale Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Northeast corner — Red Drop ×3",
+            "pt": "Canto nordeste — Red Drop ×3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch3-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Termina Island treasure chests (15)",
+        "pt": "Baús de Termina Island (15)"
+      },
+      "location": {
+        "en": "Termina Island",
+        "pt": "Termina Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Celadon Clay counts for the Sandras Spruce-Up quest in Chapter 4. Seven buried treasures here open in Chapter 5.",
+        "pt": "A Celadon Clay conta para a quest Sandras Spruce-Up no Capítulo 4. Sete tesouros enterrados aqui abrem no Capítulo 5."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Beach: center north, at the top of the hill — Fishing Bait ×3",
+            "pt": "Praia: centro-norte, no alto da colina — Fishing Bait ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "East side, across the muddy water with Mana Ride (after Viewpoint Isle) — Gale Boots",
+            "pt": "Lado leste, atravessando a água lamacenta com Mana Ride (depois de Viewpoint Isle) — Gale Boots"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: left corner by the shallow water — Antidote ×2",
+            "pt": "Caverna: canto esquerdo junto à água rasa — Antidote ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: north path at the fork, dead end — Sword Seal+",
+            "pt": "Caverna: caminho norte na bifurcação, beco sem saída — Sword Seal+"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: Mana String spot to the left, halfway along the mana stream — Sea God's Incense",
+            "pt": "Caverna: ponto de Mana String à esquerda, no meio do fluxo de mana — Sea God's Incense"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: just before the exit — Sparkling Whitesand ×15 (Proud)",
+            "pt": "Caverna: logo antes da saída — Sparkling Whitesand ×15 (Proud)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rear side: jump off the mana stream halfway — Basic Craft Stock ×25",
+            "pt": "Lado de trás: pule do fluxo de mana no meio do caminho — Basic Craft Stock ×25"
+          }
+        },
+        {
+          "text": {
+            "en": "Rear side: mana stream to the northeast — Mead",
+            "pt": "Lado de trás: fluxo de mana a nordeste — Mead"
+          }
+        },
+        {
+          "text": {
+            "en": "Rear side: high spot reached on the way back to the cave — Fishing Bait S ×3",
+            "pt": "Lado de trás: ponto alto alcançado na volta para a caverna — Fishing Bait S ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Second cave: left at the fork, across the puddle — Chalice Seal+",
+            "pt": "Segunda caverna: à esquerda na bifurcação, depois da poça — Chalice Seal+"
+          }
+        },
+        {
+          "text": {
+            "en": "Second cave: end of the stream at the highest point — Celadon Clay",
+            "pt": "Segunda caverna: fim do fluxo no ponto mais alto — Celadon Clay"
+          }
+        },
+        {
+          "text": {
+            "en": "Second cave: blue chest on the stream to the east — Shield Seal+",
+            "pt": "Segunda caverna: baú azul no fluxo para o leste — Shield Seal+"
+          }
+        },
+        {
+          "text": {
+            "en": "Second cave: red chest behind a gate; press the switch panel by the northwest exit — Armament Blueprint: Fireball",
+            "pt": "Segunda caverna: baú vermelho atrás de um portão; pise no painel perto da saída noroeste — Armament Blueprint: Fireball"
+          }
+        },
+        {
+          "text": {
+            "en": "Last part: small passage left of the mana stream — Heartfire Tome",
+            "pt": "Última parte: passagem pequena à esquerda do fluxo de mana — Heartfire Tome"
+          }
+        },
+        {
+          "text": {
+            "en": "Last part: below the next ruins — 1000 Gold",
+            "pt": "Última parte: abaixo das ruínas seguintes — 1000 Gold"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch3-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Viewpoint Isle treasure chests (3)",
+        "pt": "Baús de Viewpoint Isle (3)"
+      },
+      "location": {
+        "en": "Viewpoint Isle",
+        "pt": "Viewpoint Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Cross the marsh with Mana Ride; falling into the water sends you back.",
+        "pt": "Atravesse o pântano com o Mana Ride; cair na água leva você de volta."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Marsh: north side, behind a tree — Luck Elixir",
+            "pt": "Pântano: lado norte, atrás de uma árvore — Luck Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "South corner, past the ledge to the west side — Sweet Remedy ×5",
+            "pt": "Canto sul, depois da borda para o lado oeste — Sweet Remedy ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest midway on the way north to the old man — Yellow Strong-Arm+",
+            "pt": "Baú azul no meio do caminho ao norte até o velho — Yellow Strong-Arm+"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch3-bs-01",
+      "name": {
+        "en": "Magna Diga"
+      },
+      "location": {
+        "en": "Termina Island"
+      },
+      "strategy": {
+        "en": "Proud Nordics reworked this fight: ride the Mana Board (Mana Ride) to reach it fast, which also keeps you safe from the quicksand ailments. It burrows to reposition. Below half HP it adds body slams and bite combos: guard to build the Revenge Gauge, then unleash Cross Edge.",
+        "pt": "O Proud Nordics refez esta luta: use a Mana Board (Mana Ride) para chegar rápido, o que também evita os efeitos da areia movediça. Ele se enterra para mudar de lugar. Abaixo da metade do HP, ele adiciona pancadas com o corpo e combos de mordida: defenda para encher o Revenge Gauge e solte o Cross Edge."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch3-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Meunière Meetup"
+      },
+      "source": {
+        "en": "Automatic once the Sandras has a kitchen",
+        "pt": "Automática quando o Sandras ganha cozinha"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch3-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Steak Kickoff Rally"
+      },
+      "source": {
+        "en": "Buy from the merchant ship Baudin & Co.",
+        "pt": "Compre no navio mercante Baudin & Co."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch3-fi-01",
+      "name": {
+        "en": "Sadina"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ]
+    },
+    {
+      "id": "ysx-ch3-fi-02",
+      "name": {
+        "en": "Soldier Crab"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ]
+    },
+    {
+      "id": "ysx-ch3-fi-03",
+      "name": {
+        "en": "Saman"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ]
+    },
+    {
+      "id": "ysx-ch3-fi-04",
+      "name": {
+        "en": "Marine Amana"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ]
+    },
+    {
+      "id": "ysx-ch3-fi-05",
+      "name": {
+        "en": "Ryunga"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ]
+    },
+    {
+      "id": "ysx-ch3-fi-06",
+      "name": {
+        "en": "Obelia Herring"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 3 - Termina Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 3: Where the Light Leads"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch3-fi-01",
+      "where": {
+        "en": "Termina Island — entrance",
+        "pt": "Termina Island — entrada"
+      }
+    },
+    {
+      "fishId": "ysx-ch3-fi-02",
+      "where": {
+        "en": "Termina Island — entrance and eastern ledge",
+        "pt": "Termina Island — entrada e borda leste"
+      },
+      "bait": "Fishing Bait S"
+    },
+    {
+      "fishId": "ysx-ch3-fi-03",
+      "where": {
+        "en": "Termina Island — eastern ledge; Viewpoint Isle — pond",
+        "pt": "Termina Island — borda leste; Viewpoint Isle — lago"
+      },
+      "bait": "Fishing Bait M"
+    },
+    {
+      "fishId": "ysx-ch3-fi-04",
+      "where": {
+        "en": "Viewpoint Isle — by the old man; Inlet Isle — beach",
+        "pt": "Viewpoint Isle — perto do velho; Inlet Isle — praia"
+      },
+      "bait": "Fishing Bait S"
+    },
+    {
+      "fishId": "ysx-ch3-fi-05",
+      "where": {
+        "en": "Termina Island — cave; Haze Island — hill",
+        "pt": "Termina Island — caverna; Haze Island — colina"
+      },
+      "bait": "Fishing Bait M"
+    },
+    {
+      "fishId": "ysx-ch3-fi-06",
+      "where": {
+        "en": "Carnac; Balta Island — port",
+        "pt": "Carnac; Balta Island — porto"
+      },
+      "bait": "Fishing Bait S"
+    }
+  ]
+}

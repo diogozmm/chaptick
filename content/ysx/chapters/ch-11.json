@@ -1,0 +1,81 @@
+{
+  "id": "ysx-ch11",
+  "gameId": "ysx",
+  "order": 11,
+  "neutralLabel": {
+    "en": "Epilogue",
+    "pt": "Epílogo"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch11-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Departing from the Carnac docks",
+        "pt": "Partir das docas de Carnac"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch11-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Last character notes in Carnac (6)",
+        "pt": "Últimas notas de personagem em Carnac (6)"
+      },
+      "location": {
+        "en": "Carnac"
+      },
+      "availableUntil": "ysx-ch11-cp-01",
+      "hint": {
+        "en": "Talk to these six before talking to Karja at the pier, or the all-notes trophy is lost. A bonus Runestone scene waits in the Lighthouse depths, by the west wall.",
+        "pt": "Fale com estes seis antes de falar com a Karja no píer, ou o troféu de todas as notas se perde. Uma cena bônus de Runestone espera no fundo do farol, junto à parede oeste."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Epilogue",
+        "guide: GameFAQs Ys X walkthrough, Epilogue"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Gunnar — near the Lighthouse entrance (Haagen Highway)",
+            "pt": "Gunnar — perto da entrada do farol (Haagen Highway)"
+          }
+        },
+        {
+          "text": {
+            "en": "Sache — town square",
+            "pt": "Sache — praça da cidade"
+          }
+        },
+        {
+          "text": {
+            "en": "Mayor Clement — by the Vigilante Corps Office",
+            "pt": "Prefeito Clement — junto ao escritório do Vigilante Corps"
+          }
+        },
+        {
+          "text": {
+            "en": "Cohen — north of Grenn",
+            "pt": "Cohen — ao norte do Grenn"
+          }
+        },
+        {
+          "text": {
+            "en": "Corinne — outside the Rusveri Inn",
+            "pt": "Corinne — em frente à Rusveri Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Momina — southeast side of town",
+            "pt": "Momina — lado sudeste da cidade"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": []
+}

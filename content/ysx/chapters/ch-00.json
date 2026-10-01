@@ -1,0 +1,32 @@
+{
+  "id": "ysx-ch0",
+  "gameId": "ysx",
+  "order": 0,
+  "neutralLabel": {
+    "en": "Prologue",
+    "pt": "Prólogo"
+  },
+  "checkpoints": [],
+  "items": [],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch0-bs-01",
+      "name": {
+        "en": "Masked Woman",
+        "pt": "Mulher mascarada"
+      },
+      "location": {
+        "en": "Passenger liner Adamas",
+        "pt": "Navio de passageiros Adamas"
+      },
+      "strategy": {
+        "en": "A tutorial fight that still hits hard: guard or dodge her swings and practise the timed guard, which blocks all damage and opens a counterattack.",
+        "pt": "Uma luta tutorial que ainda bate forte: defenda ou desvie dos golpes e treine a defesa no tempo certo, que bloqueia todo o dano e abre um contra-ataque."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Prologue"
+      ]
+    }
+  ]
+}

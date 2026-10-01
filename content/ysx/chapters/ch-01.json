@@ -1,0 +1,68 @@
+{
+  "id": "ysx-ch1",
+  "gameId": "ysx",
+  "order": 1,
+  "neutralLabel": {
+    "en": "Chapter 1",
+    "pt": "Capítulo 1"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "ysx-ch1-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Chapter 1 treasure chests (2)",
+        "pt": "Baús do Capítulo 1 (2)"
+      },
+      "location": {
+        "en": "Haagen Highway lighthouse; Mysterious Island",
+        "pt": "Farol da Haagen Highway; Mysterious Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Breath Water permanently adds one more potion to your stock: grab it on this visit.",
+        "pt": "A Breath Water adiciona para sempre mais uma poção ao seu estoque: pegue nesta visita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Lighthouse — first area, after the wolf pack — 150 Gold",
+            "pt": "Farol — primeira área, depois da matilha de lobos — 150 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Mysterious Island — short detour southwest before the red marker — Breath Water",
+            "pt": "Mysterious Island — pequeno desvio a sudoeste antes do marcador vermelho — Breath Water"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch1-bs-01",
+      "name": {
+        "en": "Armed Biter"
+      },
+      "location": {
+        "en": "Haagen Highway lighthouse",
+        "pt": "Farol da Haagen Highway"
+      },
+      "strategy": {
+        "en": "Equip the Double Smash duo skill before the fight. When it glows red and leaps, hold the duo guard at the peak of the jump to counter; after its armor breaks it gets faster, so keep the guard ready.",
+        "pt": "Equipe a habilidade em dupla Double Smash antes da luta. Quando ele brilhar em vermelho e saltar, segure a defesa em dupla no ápice do salto para contra-atacar; depois que a armadura quebra ele fica mais rápido, então mantenha a defesa pronta."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 1",
+        "guide: GameFAQs Ys X walkthrough, Chapter 1: Carnac"
+      ]
+    }
+  ]
+}

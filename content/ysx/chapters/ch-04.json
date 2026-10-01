@@ -1,0 +1,851 @@
+{
+  "id": "ysx-ch4",
+  "gameId": "ysx",
+  "order": 4,
+  "neutralLabel": {
+    "en": "Chapter 4",
+    "pt": "Capítulo 4"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch4-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Following the red marker into the white fog",
+        "pt": "Seguir o marcador vermelho até a névoa branca"
+      }
+    },
+    {
+      "id": "ysx-ch4-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 4",
+        "pt": "O último marcador de evento do Capítulo 4"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch4-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Sandras Spruce-Up"
+      },
+      "location": {
+        "en": "Sandras — Mirabel on the lower deck",
+        "pt": "Sandras — Mirabel no convés inferior"
+      },
+      "availableUntil": "ysx-ch4-cp-01",
+      "hint": {
+        "en": "Long deadline. Hand over Basic Craft Stock ×50, Celadon Clay ×3 and Aged Wood ×3. Afterwards, rest in the Captain's Quarters for an event.",
+        "pt": "Prazo longo. Entregue Basic Craft Stock ×50, Celadon Clay ×3 e Aged Wood ×3. Depois, descanse no Captain's Quarters para um evento."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Balta Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Invaluable Memory"
+      },
+      "location": {
+        "en": "Sandras — Momina; ship southeast of the recaptured island",
+        "pt": "Sandras — Momina; navio a sudeste da ilha retomada"
+      },
+      "availableUntil": "ysx-ch4-cp-01",
+      "hint": {
+        "en": "Long deadline. Go to the green marker southeast of the island you recaptured in the Ozmid Expanse and beat the Griegrs on the missing ship. Rewards a Plain Box Lunch (XL) and new stock in her store.",
+        "pt": "Prazo longo. Vá ao marcador verde a sudeste da ilha retomada em Ozmid Expanse e derrote os Griegrs no navio desaparecido. Dá um Plain Box Lunch (XL) e itens novos na loja dela."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Ozmid Expanse",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Many Mappy Returns"
+      },
+      "location": {
+        "en": "Sandras — Dogi at the helm; Great Tidal Reef",
+        "pt": "Sandras — Dogi no timão; Great Tidal Reef"
+      },
+      "availableUntil": "ysx-ch4-cp-01",
+      "hint": {
+        "en": "Long deadline. Sail to the far south (Great Tidal Reef), go to the quest marker in the northeast corner, beat the enemies, then report to Dogi.",
+        "pt": "Prazo longo. Navegue até o extremo sul (Great Tidal Reef), vá ao marcador da quest no canto nordeste, derrote os inimigos e fale com o Dogi."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Ozmid Expanse",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Clicking Together"
+      },
+      "location": {
+        "en": "Sandras — Ashley on the deck",
+        "pt": "Sandras — Ashley no convés"
+      },
+      "availableUntil": "ysx-ch4-cp-01",
+      "hint": {
+        "en": "Long deadline. Watch the dolphins with the spyglass near the island where Ashley was rescued, then repeat at each new marker. Rewards a Blessed Paper Scrap.",
+        "pt": "Prazo longo. Observe os golfinhos com a luneta perto da ilha onde a Ashley foi resgatada e repita em cada marcador novo. Dá um Blessed Paper Scrap."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Ozmid Expanse",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Treasure Trawl A"
+      },
+      "location": {
+        "en": "Sea chart — orange circle",
+        "pt": "Mapa marítimo — círculo laranja"
+      },
+      "availableUntil": "ysx-ch4-cp-01",
+      "hint": {
+        "en": "Long deadline. Starts with Hidden Treasure Chart A (a chest on Anchor Island). Hold the button at the glowing spot in the orange circle. Rewards 3,000 Gold. All six Treasure Trawls lead to a character note later.",
+        "pt": "Prazo longo. Começa com o Hidden Treasure Chart A (um baú em Anchor Island). Segure o botão no ponto brilhante do círculo laranja. Dá 3.000 Gold. Os seis Treasure Trawls levam a uma nota de personagem mais tarde."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Anchor Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Inlet Isle treasure chests (3)",
+        "pt": "Baús de Inlet Isle (3)"
+      },
+      "location": {
+        "en": "Inlet Isle",
+        "pt": "Inlet Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The optional event with Lux and Sache sends you back to the ship: return for the southeast chest. Two buried treasures open in Chapter 5.",
+        "pt": "O evento opcional com o Lux e a Sache leva você de volta ao navio: volte para pegar o baú do sudeste. Dois tesouros enterrados abrem no Capítulo 5."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Carnac Waters (Optional Content)"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Southwest, next to a Runestone — Xiphoid Bone ×3",
+            "pt": "Sudoeste, ao lado de uma Runestone — Xiphoid Bone ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Around the open field — 800 Gold",
+            "pt": "Pelo campo aberto — 800 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast corner — Yellow Drop ×3",
+            "pt": "Canto sudeste — Yellow Drop ×3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Dieback Isle treasure chests (3)",
+        "pt": "Baús de Dieback Isle (3)"
+      },
+      "location": {
+        "en": "Dieback Isle",
+        "pt": "Dieback Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Gilveros can wait until you are stronger. Three buried treasures open in Chapter 5.",
+        "pt": "O Gilveros pode esperar até você ficar mais forte. Três tesouros enterrados abrem no Capítulo 5."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Carnac Waters (Optional Content)"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "East side — Supple Leather ×5",
+            "pt": "Lado leste — Supple Leather ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "West cliff, across the muddy water — Blue Drop ×3",
+            "pt": "Penhasco oeste, depois da água lamacenta — Blue Drop ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest behind Gilveros (optional level 47 challenge) — Defense Elixir",
+            "pt": "Baú vermelho atrás do Gilveros (desafio opcional de nível 47) — Defense Elixir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Great Tidal Reef treasure chests (2)",
+        "pt": "Baús de Great Tidal Reef (2)"
+      },
+      "location": {
+        "en": "Great Tidal Reef",
+        "pt": "Great Tidal Reef"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Far south of the Ozmid Expanse (Many Mappy Returns). Two buried treasures open in Chapter 5.",
+        "pt": "No extremo sul de Ozmid Expanse (Many Mappy Returns). Dois tesouros enterrados abrem no Capítulo 5."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Ozmid Expanse"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "On the way to the quest marker in the northeast — Suzhen Charm",
+            "pt": "No caminho até o marcador da quest, no nordeste — Suzhen Charm"
+          }
+        },
+        {
+          "text": {
+            "en": "On the way to the quest marker in the northeast — Repair Kit ×3",
+            "pt": "No caminho até o marcador da quest, no nordeste — Repair Kit ×3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Breezy Isle treasure chests (2)",
+        "pt": "Baús de Breezy Isle (2)"
+      },
+      "location": {
+        "en": "Breezy Isle",
+        "pt": "Breezy Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Westernmost blue marker of the Ozmid Expanse. Two buried treasures open in Chapter 5.",
+        "pt": "O marcador azul mais a oeste de Ozmid Expanse. Dois tesouros enterrados abrem no Capítulo 5."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Ozmid Expanse"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Around the island — Shield Star",
+            "pt": "Pela ilha — Shield Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Near the shut-in's tent (gift for Cruz) — Dvergr's Hammer",
+            "pt": "Perto da barraca do recluso (presente para o Cruz) — Dvergr's Hammer"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Krangal Island treasure chests (3)",
+        "pt": "Baús de Krangal Island (3)"
+      },
+      "location": {
+        "en": "Krangal Island",
+        "pt": "Krangal Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Not on the map: sail due west from Breezy Isle.",
+        "pt": "Não aparece no mapa: navegue direto para oeste a partir de Breezy Isle."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Ozmid Expanse"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Around the island — Extinguisher ×3",
+            "pt": "Pela ilha — Extinguisher ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Around the island — Sword Star",
+            "pt": "Pela ilha — Sword Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Inside the mine — 1000 Gold",
+            "pt": "Dentro da mina — 1000 Gold"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Anchor Island — Village Outskirts treasure chests (4)",
+        "pt": "Baús de Anchor Island — Village Outskirts (4)"
+      },
+      "location": {
+        "en": "Anchor Island — Village Outskirts",
+        "pt": "Anchor Island — Village Outskirts"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The chart starts Treasure Trawl A. Three buried treasures open in Chapter 5.",
+        "pt": "O mapa começa a Treasure Trawl A. Três tesouros enterrados abrem no Capítulo 5."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Anchor Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Detour to the northwest corner — Sword Star",
+            "pt": "Desvio até o canto noroeste — Sword Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Clifftop in the middle: Mana Ride from the opposite side — Jester Cloak",
+            "pt": "Topo do penhasco no meio: Mana Ride a partir do lado oposto — Jester Cloak"
+          }
+        },
+        {
+          "text": {
+            "en": "Drop off the cliff before the Mana String spot, by the barrels — Repair Kit ×3",
+            "pt": "Desça do penhasco antes do ponto de Mana String, junto aos barris — Repair Kit ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "On the water before the event marker: freeze it with Karja, burn the vines with Adol — Hidden Treasure Chart A",
+            "pt": "Sobre a água antes do marcador de evento: congele com a Karja e queime as vinhas com o Adol — Hidden Treasure Chart A"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Haze Island treasure chests (16)",
+        "pt": "Baús de Haze Island (16)"
+      },
+      "location": {
+        "en": "Haze Island",
+        "pt": "Haze Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Buried treasures open with Mana Sense, which you learn on Viewpoint Isle partway through the island. One red chest in the back half only opens in Chapter 9.",
+        "pt": "Os tesouros enterrados abrem com o Mana Sense, que você aprende em Viewpoint Isle no meio da ilha. Um baú vermelho na metade de trás só abre no Capítulo 9."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "End of the first path, by a fishing spot — Fishing Bait EX ×3",
+            "pt": "Fim do primeiro caminho, junto a um pesqueiro — Fishing Bait EX ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast where the path splits — Misericorde",
+            "pt": "Sudeste, onde o caminho se divide — Misericorde"
+          }
+        },
+        {
+          "text": {
+            "en": "Behind the Druid's Monocle chest — Dark Drop ×3 (buried)",
+            "pt": "Atrás do baú do Druid's Monocle — Dark Drop ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Near the first fishing spot — Red Lump ×3 (buried)",
+            "pt": "Perto do primeiro pesqueiro — Red Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Along the hill — Armor Seal+ (buried)",
+            "pt": "Ao longo da colina — Armor Seal+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Along the hill — Sin Seal (buried)",
+            "pt": "Ao longo da colina — Sin Seal (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Just past the gate (open it with Mana Sense) — 1500 Gold (buried)",
+            "pt": "Logo depois do portão (abra com o Mana Sense) — 1500 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest at the top of the Mana String spot (Karja's weapon) — Beastwing Battle-Axe",
+            "pt": "Baú azul no alto do ponto de Mana String (arma da Karja) — Beastwing Battle-Axe"
+          }
+        },
+        {
+          "text": {
+            "en": "Appears after the boss — Blue Lump ×3 (buried)",
+            "pt": "Aparece depois do chefe — Blue Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Back half: first dead end — Punishment Seal (buried)",
+            "pt": "Metade de trás: primeiro beco sem saída — Punishment Seal (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Back half: behind the nearest breakable boulder — Armor Star",
+            "pt": "Metade de trás: atrás da rocha quebrável mais próxima — Armor Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Back half: past the next boulder — Lyre Seal+ (buried)",
+            "pt": "Metade de trás: depois da rocha seguinte — Lyre Seal+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Back half: boulder to the southwest — Sedative ×3",
+            "pt": "Metade de trás: rocha a sudoeste — Sedative ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Back half: boulder to the northwest, in a corner — Aurora Cloak",
+            "pt": "Metade de trás: rocha a noroeste, num canto — Aurora Cloak"
+          }
+        },
+        {
+          "text": {
+            "en": "Back half: boulder to the southeast — Luncheon Recipe: Chowder",
+            "pt": "Metade de trás: rocha a sudeste — Luncheon Recipe: Chowder"
+          }
+        },
+        {
+          "text": {
+            "en": "Back half: open area to the north — Strength Elixir (buried)",
+            "pt": "Metade de trás: área aberta ao norte — Strength Elixir (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch4-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Viewpoint Isle — the cave treasure chests (8)",
+        "pt": "Baús de Viewpoint Isle — a caverna (8)"
+      },
+      "location": {
+        "en": "Viewpoint Isle — the cave",
+        "pt": "Viewpoint Isle — a caverna"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Equip the Eagle Eye Doubloon (Report Adventures) so buried treasures show on the map while Mana Sense lasts. Use Mana Sense on the eye engravings to reveal the platforms.",
+        "pt": "Equipe o Eagle Eye Doubloon (Report Adventures) para os tesouros enterrados aparecerem no mapa enquanto o Mana Sense durar. Use o Mana Sense nos entalhes de olho para revelar as plataformas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Under the tree — Crystal Shard ×500 (buried)",
+            "pt": "Embaixo da árvore — Crystal Shard ×500 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest, across the invisible platforms — Tactician's Earrings",
+            "pt": "Sudoeste, depois das plataformas invisíveis — Tactician's Earrings"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest, same spot — Yellow Lump ×3 (buried)",
+            "pt": "Sudoeste, no mesmo ponto — Yellow Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "North platforms, left branch — Ascetic's Arcanum",
+            "pt": "Plataformas ao norte, ramo da esquerda — Ascetic's Arcanum"
+          }
+        },
+        {
+          "text": {
+            "en": "North platforms, right branch — Sweet Remedy ×5",
+            "pt": "Plataformas ao norte, ramo da direita — Sweet Remedy ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast section — Fishing Bait M ×5 (buried)",
+            "pt": "Seção nordeste — Fishing Bait M ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast, a little further — Chalice Star",
+            "pt": "Nordeste, um pouco adiante — Chalice Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Northernmost point — Break Elixir (buried)",
+            "pt": "Ponto mais ao norte — Break Elixir (enterrado)"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch4-bs-01",
+      "name": {
+        "en": "Gilveros"
+      },
+      "location": {
+        "en": "Dieback Isle (optional challenge)",
+        "pt": "Dieback Isle (desafio opcional)"
+      },
+      "strategy": {
+        "en": "Level 47 challenge: fine to come back later. Its black gas curses you; keep moving around it and punish its snapping lunges. Rewards a Veteran Necklace.",
+        "pt": "Desafio de nível 47: dá para voltar depois. O gás negro amaldiçoa; continue se movendo ao redor e castigue as investidas de mordida. Dá um Veteran Necklace."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Carnac Waters (Optional Content)",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-bs-02",
+      "name": {
+        "en": "Olcypete"
+      },
+      "location": {
+        "en": "Haze Island"
+      },
+      "strategy": {
+        "en": "Three harpies with one HP bar. Focus one at a time and use Mana String to keep up when they fly over the mud. When all three gather in the center they unleash a howling storm: back away.",
+        "pt": "Três harpias com uma barra de HP. Foque uma de cada vez e use o Mana String para acompanhar quando voarem sobre a lama. Quando as três se juntam no centro, soltam uma tempestade de uivos: afaste-se."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-bs-03",
+      "name": {
+        "en": "Belladonna"
+      },
+      "location": {
+        "en": "Haze Island — the foggy Carnac, Rusveri Inn",
+        "pt": "Haze Island — a Carnac na névoa, Rusveri Inn"
+      },
+      "strategy": {
+        "en": "She teleports constantly: use Mana Sense to spot her and dash through her chasing blue fireballs. As her HP drops she adds an unguardable grab that can wipe a character: keep your distance while she teleports.",
+        "pt": "Ela se teleporta o tempo todo: use o Mana Sense para achá-la e use o dash contra as bolas de fogo azuis que perseguem você. Com o HP baixo, ela ganha um agarrão que não pode ser defendido e pode derrubar um personagem: mantenha distância enquanto ela se teleporta."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch4-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Plain Box Lunch XL"
+      },
+      "source": {
+        "en": "Reward for Invaluable Memory, or buy the recipe at Momina's store",
+        "pt": "Recompensa da Invaluable Memory, ou compre a receita na loja da Momina"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch4-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Fish Fry Box Lunch"
+      },
+      "source": {
+        "en": "Report Fishing to Joel after catching 6 kinds of fish",
+        "pt": "Relate a pesca ao Joel depois de pegar 6 tipos de peixe"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch4-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Gamey Box Lunch"
+      },
+      "source": {
+        "en": "Ozmid Expanse — first island recapture, rank A",
+        "pt": "Primeira retomada de ilha em Ozmid Expanse, rank A"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch4-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Shellfish Paella Box Lunch"
+      },
+      "source": {
+        "en": "Buy at Old Lady Amone's stall, Anchor Island",
+        "pt": "Compre na barraca da velha Amone, Anchor Island"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch4-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Clam Chowder Banquet"
+      },
+      "source": {
+        "en": "Treasure chest on Haze Island",
+        "pt": "Baú em Haze Island"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch4-fi-01",
+      "name": {
+        "en": "Salmon"
+      },
+      "sources": [
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-02",
+      "name": {
+        "en": "Onyx Tuna"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Ozmid Expanse",
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-03",
+      "name": {
+        "en": "Robushu"
+      },
+      "sources": [
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade",
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Sandras"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-04",
+      "name": {
+        "en": "Boleh"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-05",
+      "name": {
+        "en": "North Tuna"
+      },
+      "sources": [
+        "guide: GameFAQs Ys X walkthrough, Chapter 4: The Whiteshade",
+        "guide: Neoseeker Ys X walkthrough, Chapter 5 - Sandras"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-06",
+      "name": {
+        "en": "Mud Wells"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-07",
+      "name": {
+        "en": "Purch"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-08",
+      "name": {
+        "en": "Jumpi"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island"
+      ]
+    },
+    {
+      "id": "ysx-ch4-fi-09",
+      "name": {
+        "en": "Rowana"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 4 - Haze Island"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch4-fi-01",
+      "where": {
+        "en": "Balta Island"
+      },
+      "bait": "Fishing Bait"
+    },
+    {
+      "fishId": "ysx-ch4-fi-02",
+      "where": {
+        "en": "Open sea — southeast of the recaptured island in Ozmid Expanse",
+        "pt": "Mar aberto — sudeste da ilha retomada em Ozmid Expanse"
+      },
+      "bait": "Fishing Bait G"
+    },
+    {
+      "fishId": "ysx-ch4-fi-03",
+      "where": {
+        "en": "Great Tidal Reef; Hidden Isle",
+        "pt": "Great Tidal Reef; Hidden Isle"
+      },
+      "bait": "Fishing Bait S"
+    },
+    {
+      "fishId": "ysx-ch4-fi-04",
+      "where": {
+        "en": "Haze Island — entrance and hill",
+        "pt": "Haze Island — entrada e colina"
+      },
+      "bait": "Fishing Bait S"
+    },
+    {
+      "fishId": "ysx-ch4-fi-05",
+      "where": {
+        "en": "Breezy Isle; Hidden Isle",
+        "pt": "Breezy Isle; Hidden Isle"
+      },
+      "bait": "Fishing Bait L"
+    },
+    {
+      "fishId": "ysx-ch4-fi-06",
+      "where": {
+        "en": "Haze Island — entrance",
+        "pt": "Haze Island — entrada"
+      },
+      "bait": "Fishing Bait M"
+    },
+    {
+      "fishId": "ysx-ch4-fi-07",
+      "where": {
+        "en": "Haze Island — entrance",
+        "pt": "Haze Island — entrada"
+      },
+      "bait": "Fishing Bait M"
+    },
+    {
+      "fishId": "ysx-ch4-fi-08",
+      "where": {
+        "en": "Haze Island — entrance",
+        "pt": "Haze Island — entrada"
+      },
+      "bait": "Fishing Bait EX"
+    },
+    {
+      "fishId": "ysx-ch4-fi-09",
+      "where": {
+        "en": "Haze Island — hill",
+        "pt": "Haze Island — colina"
+      },
+      "bait": "Fishing Bait M"
+    }
+  ]
+}

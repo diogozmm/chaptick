@@ -21,6 +21,16 @@ export const SITE = {
       authors: 'shockinblue',
       url: 'https://gamefaqs.gamespot.com/ps5/605493-trails-in-the-sky-2nd-chapter/faqs/82698',
     },
+    {
+      name: 'Neoseeker — Ys X: Nordics and Proud Nordics Walkthrough',
+      authors: 'Neoseeker guide team',
+      url: 'https://www.neoseeker.com/ys-x-nordics/walkthrough',
+    },
+    {
+      name: 'GameFAQs — Ys X: Nordics Guide and Walkthrough',
+      authors: 'shockinblue',
+      url: 'https://gamefaqs.gamespot.com/ps5/390326-ys-x-nordics/faqs/80939',
+    },
   ],
   /** Nicknames of approved community contributors. */
   contributors: [] as string[],

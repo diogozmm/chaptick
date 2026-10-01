@@ -140,22 +140,21 @@
   },
   "collections": {
     "short": "Coleções",
-    "eyebrow": "Seus cadernos",
     "title": "Coleções",
-    "intro": "Só o que os capítulos que você alcançou revelam. Pesqueiros e pratos de regiões futuras aparecem conforme você avança.",
-    "fish": "Pesca",
+    "fish": "Peixes",
     "recipes": "Receitas",
-    "caught": "pescados",
-    "rankA": "Rank A",
-    "bestRank": "Melhor rank até agora: {{rank}}",
+    "fishProgress": "{{done}} de {{total}} peixes pescados",
+    "recipeProgress": "{{done}} de {{total}} receitas aprendidas",
+    "fishHint": "Marque o peixe quando ele estiver no seu registro de pesca. Peixes de capítulos futuros aparecem conforme você avança.",
+    "rankHint": "Pescas no Rank A: {{done}} de {{total}}.",
+    "recipesHint": "Marque o prato quando ele estiver no seu livro de receitas. Pratos de capítulos futuros aparecem conforme você avança.",
+    "upToRank": "Até Rank {{rank}}",
     "gotRankA": "Pesquei no Rank A",
-    "fishHint": "Melhores pesqueiros primeiro. O rank mostrado é o melhor conhecido até agora.",
+    "customized": "Personalizado",
+    "now": "Você está aqui",
+    "groupDone": "Tudo feito neste capítulo.",
     "noFish": "Ainda não há pesca nos capítulos que você alcançou.",
-    "learned": "receitas",
-    "customized": "personalizados",
-    "recipesHint": "Coma o prato (ou cozinhe) para aprender a receita.",
-    "standardTitle": "Livro de receitas",
-    "customizedTitle": "Pratos personalizados"
+    "noRecipes": "Ainda não há receitas nos capítulos que você alcançou."
   },
   "route": {
     "title": "Rota"

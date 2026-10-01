@@ -274,7 +274,6 @@
       "type": "object",
       "required": [
         "fishId",
-        "rank",
         "where"
       ],
       "properties": {
@@ -286,10 +285,16 @@
             "A",
             "B",
             "C"
-          ]
+          ],
+          "description": "Best size rank at this spot, for games that grade catches."
         },
         "where": {
           "$ref": "common.schema.json#/$defs/localized"
+        },
+        "bait": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Bait needed here, for games where bait decides the catch (official item name)."
         }
       },
       "additionalProperties": false

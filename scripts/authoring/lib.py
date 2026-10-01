@@ -18,19 +18,20 @@ def gf(page):
 
 
 class Chapter:
-    def __init__(self, order, en, pt):
+    def __init__(self, order, en, pt, game='sc'):
         self.order = order
-        self.id = f'sc-ch{order}'
-        self.data = {'id': self.id, 'gameId': 'sc', 'order': order, 'neutralLabel': t(en, pt),
+        self.game = game
+        self.id = f'{game}-ch{order}'
+        self.data = {'id': self.id, 'gameId': game, 'order': order, 'neutralLabel': t(en, pt),
                      'checkpoints': [], 'items': [], 'itemTexts': []}
         self.counters = {}
 
     @classmethod
-    def load(cls, order):
+    def load(cls, order, game='sc'):
         """Extends a chapter file written by hand, keeping its existing ids untouched."""
         c = cls.__new__(cls)
-        c.order, c.id = order, f'sc-ch{order}'
-        c.data = json.loads((ROOT / 'sc' / 'chapters' / f'ch-{order:02d}.json').read_text())
+        c.order, c.game, c.id = order, game, f'{game}-ch{order}'
+        c.data = json.loads((ROOT / game / 'chapters' / f'ch-{order:02d}.json').read_text())
         for key in ('bosses', 'fish', 'fishSpots', 'recipes'):
             c.data[key] = []
         c.counters = {}
@@ -51,8 +52,14 @@ class Chapter:
         self.data.setdefault('fish', []).append({'id': fid, 'name': t(name), 'sources': list(sources)})
         return fid
 
-    def spot(self, fish_id, rank, where):
-        self.data.setdefault('fishSpots', []).append({'fishId': fish_id, 'rank': rank, 'where': where})
+    def spot(self, fish_id, rank, where, bait=None):
+        spot = {'fishId': fish_id}
+        if rank:
+            spot['rank'] = rank
+        spot['where'] = where
+        if bait:
+            spot['bait'] = bait
+        self.data.setdefault('fishSpots', []).append(spot)
 
     def recipe(self, name, source, kind='standard', sources=()):
         self.data.setdefault('recipes', []).append(
@@ -84,12 +91,13 @@ class Chapter:
             item['sources'].append(source)
 
     def write(self):
-        path = ROOT / 'sc' / 'chapters' / f'ch-{self.order:02d}.json'
+        path = ROOT / self.game / 'chapters' / f'ch-{self.order:02d}.json'
+        path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2) + '\n')
         registry_path = ROOT / 'id-registry.json'
         registry = json.loads(registry_path.read_text())
         extra = [e['id'] for key in ('bosses', 'fish', 'recipes') for e in self.data.get(key, [])]
-        ids = [self.id] + [c['id'] for c in self.data['checkpoints']] + [i['id'] for i in self.data['items']] + extra
+        ids = [self.game, self.id] + [c['id'] for c in self.data['checkpoints']] + [i['id'] for i in self.data['items']] + extra
         registry += [i for i in ids if i not in registry]
         registry_path.write_text(json.dumps(registry, indent=2) + '\n')
         d = self.data

@@ -1,0 +1,814 @@
+{
+  "id": "ysx-ch6",
+  "gameId": "ysx",
+  "order": 6,
+  "neutralLabel": {
+    "en": "Chapter 6",
+    "pt": "Capítulo 6"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch6-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Sailing into Specular Bay at the red marker past Fuling Island",
+        "pt": "Entrar em Specular Bay pelo marcador vermelho depois de Fuling Island"
+      }
+    },
+    {
+      "id": "ysx-ch6-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 6",
+        "pt": "O último marcador de evento do Capítulo 6"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch6-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Fellowship with Flavor"
+      },
+      "location": {
+        "en": "Sandras — Rosalind on the mast",
+        "pt": "Sandras — Rosalind no mastro"
+      },
+      "availableUntil": "ysx-ch6-cp-01",
+      "hint": {
+        "en": "SHORT deadline and easy to miss. It appears once Cohen, Father Cuthbert and Milette are rescued (Milette comes from the Southern Fort recapture), so it can show up already late in Chapter 5. Get the item from Magni on Balta Island's shore and bring it to Rosalind before the story moves on.",
+        "pt": "Prazo CURTO e fácil de perder. Aparece quando o Cohen, o Father Cuthbert e a Milette estão resgatados (a Milette vem da retomada do Southern Fort), então pode surgir já no fim do Capítulo 5. Pegue o item com o Magni na praia de Balta Island e leve à Rosalind antes de a história avançar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Foraging Ahead"
+      },
+      "location": {
+        "en": "Balta Island — Gunhilda in Balta Village",
+        "pt": "Balta Island — Gunhilda em Balta Village"
+      },
+      "availableUntil": "ysx-ch6-cp-01",
+      "hint": {
+        "en": "Medium deadline. Collect Fly Agarics (Anchor Island — Village Outskirts, bottom center), Henbane Blossoms (Lecto Island beach, northeast corner) and Bellflowers (Kalon Island mountain peak, near the start).",
+        "pt": "Prazo médio. Colete Fly Agarics (Anchor Island — Village Outskirts, centro de baixo), Henbane Blossoms (praia de Lecto Island, canto nordeste) e Bellflowers (pico de Kalon Island, perto do início)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Slay the Beasts: Kalon"
+      },
+      "location": {
+        "en": "Kalon Island — second area, before the drawbridge",
+        "pt": "Kalon Island — segunda área, antes da ponte levadiça"
+      },
+      "availableUntil": "ysx-ch6-cp-01",
+      "hint": {
+        "en": "Long deadline. Added automatically. Several waves of beasts; dash through their speed attacks or Duo Guard their power attacks for big counters. Rewards a Gwyllgi Amulet.",
+        "pt": "Prazo longo. Entra sozinha no diário. Várias ondas de feras; use o dash contra os ataques rápidos ou a Duo Guard contra os poderosos para grandes contra-ataques. Dá um Gwyllgi Amulet."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Fun in the Sunfish"
+      },
+      "location": {
+        "en": "Sandras — Ashley on the deck",
+        "pt": "Sandras — Ashley no convés"
+      },
+      "availableUntil": "ysx-ch6-cp-01",
+      "hint": {
+        "en": "Long deadline. Use the spyglass at both green markers in the Sonnelia Basin, talk to Ashley, then visit the northernmost of the three new markers.",
+        "pt": "Prazo longo. Use a luneta nos dois marcadores verdes da Sonnelia Basin, fale com a Ashley e depois visite o mais ao norte dos três marcadores novos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Treasure Trawl B"
+      },
+      "location": {
+        "en": "Sea chart — chart from Gregorio's Curio",
+        "pt": "Mapa marítimo — mapa do Gregorio's Curio"
+      },
+      "availableUntil": "ysx-ch6-cp-01",
+      "hint": {
+        "en": "Long deadline. Buy Hidden Treasure Chart B from Gregorio's Curio and salvage the glowing spot. Rewards the Foreign Gauntlet (gift for Dogi).",
+        "pt": "Prazo longo. Compre o Hidden Treasure Chart B no Gregorio's Curio e resgate o ponto brilhante. Dá a Foreign Gauntlet (presente para o Dogi)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Going for Gold"
+      },
+      "location": {
+        "en": "Fuling Island — the cave at night",
+        "pt": "Fuling Island — a caverna à noite"
+      },
+      "availableUntil": "ysx-ch6-cp-01",
+      "hint": {
+        "en": "Long deadline. Appears when you return to Fuling Island after its event. Accepting turns it to night; several mini-bosses wait at the far end of the cave. Rewards a Holy Potion II.",
+        "pt": "Prazo longo. Aparece quando você volta a Fuling Island depois do evento dela. Aceitar faz anoitecer; vários mini-chefes esperam no fundo da caverna. Dá uma Holy Potion II."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Pikkard Coral"
+      },
+      "location": {
+        "en": "Sprout Atoll"
+      },
+      "availableUntil": "ysx-ch6-cp-02",
+      "hint": {
+        "en": "Long deadline. The mysterious old man asks you to catch his scattered pikkards at the green markers; for the one near the water, mana ride toward it and jump at the right moment. Rewards a Pickaback Pikkard (White).",
+        "pt": "Prazo longo. O velho misterioso pede para você pegar os pikkards espalhados nos marcadores verdes; para o que está perto da água, deslize até ele e pule na hora certa. Dá um Pickaback Pikkard (White)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Specular Bay",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-08",
+      "type": "quest",
+      "name": {
+        "en": "Treasure Trawl C"
+      },
+      "location": {
+        "en": "Sonnelia Basin — south, orange circle",
+        "pt": "Sonnelia Basin — sul, círculo laranja"
+      },
+      "availableUntil": "ysx-ch6-cp-02",
+      "hint": {
+        "en": "Long deadline. Hidden Treasure Chart C comes from the Southern Castle recapture at rank C or better. Avoid the invulnerable Blade Shark. Rewards the Dancer's Shawl.",
+        "pt": "Prazo longo. O Hidden Treasure Chart C vem da retomada do Southern Castle com rank C ou melhor. Evite o Blade Shark, que é invulnerável. Dá o Dancer's Shawl."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Specular Bay",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-q-09",
+      "type": "quest",
+      "name": {
+        "en": "Turtle-Tale"
+      },
+      "location": {
+        "en": "Sandras — Ashley on the mast",
+        "pt": "Sandras — Ashley no mastro"
+      },
+      "availableUntil": "ysx-ch6-cp-02",
+      "hint": {
+        "en": "Long deadline. Watch the sea turtles at both green markers in Specular Bay, use the quest button after shopping at Anika's Goods, then camp until night at the Orlen Islands' East Beach.",
+        "pt": "Prazo longo. Observe as tartarugas nos dois marcadores verdes de Specular Bay, use o botão de quest depois de comprar na Anika's Goods e acampe até a noite na East Beach de Orlen Islands."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Specular Bay",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    },
+    {
+      "id": "ysx-ch6-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Fuling Island treasure chests (12)",
+        "pt": "Baús de Fuling Island (12)"
+      },
+      "location": {
+        "en": "Fuling Island",
+        "pt": "Fuling Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Needs the Mana Barrier, southeast of Raufos Island. The island opens fully after the first event with Nanna. To clear the boulder near the lake, talk to the two green-marked people first, then call Dogi.",
+        "pt": "Precisa da Mana Barrier, a sudeste de Raufos Island. A ilha abre por completo depois do primeiro evento com a Nanna. Para tirar a rocha perto do lago, fale antes com as duas pessoas marcadas em verde e depois chame o Dogi."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Sonnelia Basin"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Ledge to the southwest — Bitter Remedy",
+            "pt": "Borda a sudoeste — Bitter Remedy"
+          }
+        },
+        {
+          "text": {
+            "en": "Further south — Defroster ×3",
+            "pt": "Mais ao sul — Defroster ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Tree near the mini-boss — Super Repair Kit ×3 (buried)",
+            "pt": "Árvore perto do mini-chefe — Super Repair Kit ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest after pushing the large log — Armor Star+",
+            "pt": "Baú azul depois de empurrar o tronco grande — Armor Star+"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast point — Chalice Star+ (buried)",
+            "pt": "Ponto nordeste — Chalice Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Around the waterfall, once the boulder is gone — Dark Lump ×3 (buried)",
+            "pt": "Perto da cachoeira, depois que a rocha sai — Dark Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: red chest outside the north exit — Vitality Elixir",
+            "pt": "Caverna: baú vermelho do lado de fora da saída norte — Vitality Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: blue chest in the center — Arion Amulet",
+            "pt": "Caverna: baú azul no centro — Arion Amulet"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: by the water in the center — Lyre Star+ (buried)",
+            "pt": "Caverna: junto à água no centro — Lyre Star+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: corner before the log bridge — Panacea ×3",
+            "pt": "Caverna: canto antes da ponte de tronco — Panacea ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave: end of the log bridge — Super Stimulant ×2 (buried)",
+            "pt": "Caverna: fim da ponte de tronco — Super Stimulant ×2 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Outside the southeast exit of the cave — Silver Cheese ×3",
+            "pt": "Do lado de fora da saída sudeste da caverna — Silver Cheese ×3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch6-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Orlen Islands treasure chests (15)",
+        "pt": "Baús de Orlen Islands (15)"
+      },
+      "location": {
+        "en": "Orlen Islands",
+        "pt": "Orlen Islands"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Specular Bay blocks the way back until you finish here, but the islands stay open afterwards.",
+        "pt": "Specular Bay bloqueia a volta até você terminar aqui, mas as ilhas continuam abertas depois."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Specular Bay"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "East Beach: down to the southeast — Red Lump ×3 (buried)",
+            "pt": "East Beach: descendo a sudeste — Red Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Behind the house past the event marker — Glare Bangle",
+            "pt": "Atrás da casa depois do marcador de evento — Glare Bangle"
+          }
+        },
+        {
+          "text": {
+            "en": "Debris near the house — 4500 Gold (buried)",
+            "pt": "Destroços perto da casa — 4500 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast corner — Sin Star (buried)",
+            "pt": "Canto sudeste — Sin Star (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest corner of the shore — Red Herb ×3",
+            "pt": "Canto noroeste da margem — Red Herb ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Just before the south exit — Fishing Bait L ×3",
+            "pt": "Logo antes da saída sul — Fishing Bait L ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Next area: beside the house — Punishment Star",
+            "pt": "Área seguinte: ao lado da casa — Punishment Star"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast corner — Basic Craft Stock ×75 (buried)",
+            "pt": "Canto sudeste — Basic Craft Stock ×75 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "West path — 3000 Gold",
+            "pt": "Caminho oeste — 3000 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest on a high ledge by the pond (Mana Ride from higher ground) — Full Potion",
+            "pt": "Baú vermelho numa borda alta junto ao lago (Mana Ride a partir de um ponto mais alto) — Full Potion"
+          }
+        },
+        {
+          "text": {
+            "en": "Northwest corner, by a tree — Defense Elixir (buried)",
+            "pt": "Canto noroeste, junto a uma árvore — Defense Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast corner — Angler's Headband",
+            "pt": "Canto sudeste — Angler's Headband"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast corner — Repair Kit ×3 (buried)",
+            "pt": "Canto sudeste — Repair Kit ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Just before the top, near the event marker — Rainbow Lump ×3 (buried)",
+            "pt": "Logo antes do topo, perto do marcador de evento — Rainbow Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest next to the Specular Grass — Blessed Paper Scrap",
+            "pt": "Baú vermelho ao lado da Specular Grass — Blessed Paper Scrap"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch6-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Sprout Atoll treasure chests (4)",
+        "pt": "Baús de Sprout Atoll (4)"
+      },
+      "location": {
+        "en": "Sprout Atoll",
+        "pt": "Sprout Atoll"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Southwest edge of Specular Bay, after the Northern Citadel recapture (Pikkard Coral).",
+        "pt": "Borda sudoeste de Specular Bay, depois da retomada da Northern Citadel (Pikkard Coral)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Specular Bay"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Blue Crystal Water ×2 (buried)",
+            "pt": "Blue Crystal Water ×2 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blacksilver Sand ×3",
+            "pt": "Blacksilver Sand ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Basic Beast Parts ×75",
+            "pt": "Basic Beast Parts ×75"
+          }
+        },
+        {
+          "text": {
+            "en": "3300 Gold (buried)",
+            "pt": "3300 Gold (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch6-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Eversummer Isle treasure chests (2)",
+        "pt": "Baús de Eversummer Isle (2)"
+      },
+      "location": {
+        "en": "Eversummer Isle",
+        "pt": "Eversummer Isle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "East of the Southern Castle recapture, where Guila joins.",
+        "pt": "A leste da retomada do Southern Castle, onde a Guila entra."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Specular Bay"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Around the island — Blessed Paper Scrap",
+            "pt": "Pela ilha — Blessed Paper Scrap"
+          }
+        },
+        {
+          "text": {
+            "en": "Around the island — Rainbow Drop ×6 (buried)",
+            "pt": "Pela ilha — Rainbow Drop ×6 (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch6-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Ruined Capital of Ribe treasure chests (28)",
+        "pt": "Baús de Ruined Capital of Ribe (28)"
+      },
+      "location": {
+        "en": "Ruined Capital of Ribe",
+        "pt": "Ruined Capital of Ribe"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The Raven Boundstones split Adol and Karja: one stands on a switch while the other moves on.",
+        "pt": "As Raven Boundstones separam o Adol e a Karja: um fica no interruptor enquanto o outro avança."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Ruined Capital of Ribe"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "City: under a puddle after the merman enemies — Defroster ×3 (buried)",
+            "pt": "Cidade: embaixo de uma poça depois dos inimigos tritões — Defroster ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "City: west, corner by the concrete wall — Yellow Lump ×3 (buried)",
+            "pt": "Cidade: oeste, canto junto ao muro de concreto — Yellow Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "City, west route: wall corner — Blacksilver Sand ×3 (buried)",
+            "pt": "Cidade, rota oeste: canto do muro — Blacksilver Sand ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "City, west route: behind a house — Basic Ingredients ×75",
+            "pt": "Cidade, rota oeste: atrás de uma casa — Basic Ingredients ×75"
+          }
+        },
+        {
+          "text": {
+            "en": "City, west route: rooftop and Mana Ride — Blue Lump ×3",
+            "pt": "Cidade, rota oeste: telhado e Mana Ride — Blue Lump ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "City: northeast of the water area — Empty Bottle (buried)",
+            "pt": "Cidade: nordeste da área com água — Empty Bottle (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "City: behind a house a little further west — Yellow Lump ×3",
+            "pt": "Cidade: atrás de uma casa um pouco mais a oeste — Yellow Lump ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "City: southern section (Mana Ride from the roof) — Rainbow Lump ×3 (buried)",
+            "pt": "Cidade: seção sul (Mana Ride a partir do telhado) — Rainbow Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "City: eastern corner of the wall — Super Sedative ×3",
+            "pt": "Cidade: canto leste do muro — Super Sedative ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "City: blue chest on high ground (rooftop jump) — Hunter's Bracelet",
+            "pt": "Cidade: baú azul no alto (salto do telhado) — Hunter's Bracelet"
+          }
+        },
+        {
+          "text": {
+            "en": "Sunken city: north corner by the wall — Basic Craft Stock ×100 (buried)",
+            "pt": "Cidade submersa: canto norte junto ao muro — Basic Craft Stock ×100 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Sunken city: red chest opposite (timed Mana Ride jump; gift for Mirabel) — Pink Pearl Ring",
+            "pt": "Cidade submersa: baú vermelho do lado oposto (salto com Mana Ride; presente para a Mirabel) — Pink Pearl Ring"
+          }
+        },
+        {
+          "text": {
+            "en": "Sunken city: northwest across the water, by a fishing spot — Red Herb ×3",
+            "pt": "Cidade submersa: noroeste, do outro lado da água, junto a um pesqueiro — Red Herb ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate entrance: under a tree — Fishing Bait M ×3 (buried)",
+            "pt": "Entrada da comporta: embaixo de uma árvore — Fishing Bait M ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate entrance: below the collapsed bridge — Dark Lump ×3 (buried)",
+            "pt": "Entrada da comporta: embaixo da ponte desabada — Dark Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate entrance: across the broken bridge — Silver Cheese ×3",
+            "pt": "Entrada da comporta: do outro lado da ponte quebrada — Silver Cheese ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate entrance: right next to you after the event — Basic Beast Parts ×100 (buried)",
+            "pt": "Entrada da comporta: bem ao seu lado depois do evento — Basic Beast Parts ×100 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate (split party): blue chest along the first route — Punishment Star+",
+            "pt": "Comporta (dupla separada): baú azul na primeira rota — Punishment Star+"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate: blue chest past the lowered bridge — Chevalier Shield",
+            "pt": "Comporta: baú azul depois da ponte abaixada — Chevalier Shield"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate: chest hanging above the Griegr room — 3500 Gold",
+            "pt": "Comporta: baú suspenso acima da sala dos Griegrs — 3500 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate: right of the drawbridge — Fishing Bait G ×3",
+            "pt": "Comporta: à direita da ponte levadiça — Fishing Bait G ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Floodgate: red chest by the Runestone — Luncheon Recipe: Pizza",
+            "pt": "Comporta: baú vermelho junto à Runestone — Luncheon Recipe: Pizza"
+          }
+        },
+        {
+          "text": {
+            "en": "Interior: past the flying enemies — Super Repair Kit ×3 (buried)",
+            "pt": "Interior: depois dos inimigos voadores — Super Repair Kit ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Interior: top of the stairs, right — Red Lump ×3",
+            "pt": "Interior: alto da escada, à direita — Red Lump ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Interior: room with the switch — Mayura Amulet",
+            "pt": "Interior: sala do interruptor — Mayura Amulet"
+          }
+        },
+        {
+          "text": {
+            "en": "Interior: northwest corner before the gate — Blue Lump ×6 (buried)",
+            "pt": "Interior: canto noroeste antes do portão — Blue Lump ×6 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Interior: right corner past the gate — 4000 Gold (buried)",
+            "pt": "Interior: canto direito depois do portão — 4000 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Final room, after the boss — Taurus Ring",
+            "pt": "Sala final, depois do chefe — Taurus Ring"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch6-bs-01",
+      "name": {
+        "en": "Lǫgr"
+      },
+      "location": {
+        "en": "Ruined Capital of Ribe — interior",
+        "pt": "Ruined Capital of Ribe — interior"
+      },
+      "strategy": {
+        "en": "Dash through his homing orbs and the beam barrage (both are speed attacks), then time a Duo Guard on the giant red sword that ends it for a big counter. After his durability breaks he summons clones: kill them fast. At low HP he fires orbs while still attacking.",
+        "pt": "Use o dash contra os orbes teleguiados e a rajada de feixes (ambos são ataques rápidos) e acerte a Duo Guard na espada vermelha gigante do final para um grande contra-ataque. Quando a resistência quebra, ele invoca clones: derrube rápido. Com pouco HP, ele dispara orbes enquanto ataca."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Ruined Capital of Ribe",
+        "guide: GameFAQs Ys X walkthrough, Chapter 6: Heaven's Mirror"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch6-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Mushroom Sauté Box Lunch"
+      },
+      "source": {
+        "en": "Reward for Foraging Ahead",
+        "pt": "Recompensa da Foraging Ahead"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch6-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Fungi Fricassee Feast"
+      },
+      "source": {
+        "en": "Reward for Fellowship with Flavor",
+        "pt": "Recompensa da Fellowship with Flavor"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch6-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Sizzling Gratin Box Lunch"
+      },
+      "source": {
+        "en": "Specular Bay — Northern Citadel recapture, rank S",
+        "pt": "Retomada da Northern Citadel em Specular Bay, rank S"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch6-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Pizza-Making Showdown"
+      },
+      "source": {
+        "en": "Treasure chest in the Ruined Capital of Ribe",
+        "pt": "Baú na Ruined Capital of Ribe"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch6-fi-01",
+      "name": {
+        "en": "Hineria"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Specular Bay"
+      ]
+    },
+    {
+      "id": "ysx-ch6-fi-02",
+      "name": {
+        "en": "Queen Boleh"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 6 - Ruined Capital of Ribe"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch6-fi-01",
+      "where": {
+        "en": "Orlen Islands — pond",
+        "pt": "Orlen Islands — lago"
+      }
+    },
+    {
+      "fishId": "ysx-ch6-fi-02",
+      "where": {
+        "en": "Ruined Capital of Ribe — middle of the sunken city",
+        "pt": "Ruined Capital of Ribe — meio da cidade submersa"
+      },
+      "bait": "Fishing Bait M"
+    }
+  ]
+}

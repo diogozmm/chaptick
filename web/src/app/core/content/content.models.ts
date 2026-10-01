@@ -105,8 +105,11 @@ export interface Fish {
 /** A good spot in the chapter's region; may refer to a fish from an earlier chapter. */
 export interface FishSpot {
   fishId: string;
-  rank: FishRank;
+  /** Best size rank here, for games that grade catches. */
+  rank?: FishRank;
   where: Localized;
+  /** Bait needed here, for games where bait decides the catch. */
+  bait?: string;
 }
 
 export interface Recipe {

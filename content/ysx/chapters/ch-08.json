@@ -1,0 +1,349 @@
+{
+  "id": "ysx-ch8",
+  "gameId": "ysx",
+  "order": 8,
+  "neutralLabel": {
+    "en": "Chapter 8",
+    "pt": "Capítulo 8"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "ysx-ch8-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Soleli Island treasure chests (3)",
+        "pt": "Baús de Soleli Island (3)"
+      },
+      "location": {
+        "en": "Soleli Island",
+        "pt": "Soleli Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Talking to Lǫgr moves you on, but the island can be visited again later.",
+        "pt": "Falar com o Lǫgr leva você adiante, mas a ilha pode ser visitada de novo depois."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 8 - Eastern Rogue Sea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "West corner — Blaze Gloves",
+            "pt": "Canto oeste — Blaze Gloves"
+          }
+        },
+        {
+          "text": {
+            "en": "Right side of the map — Basic Craft Stock ×125",
+            "pt": "Lado direito do mapa — Basic Craft Stock ×125"
+          }
+        },
+        {
+          "text": {
+            "en": "Right side of the map — 5000 Gold",
+            "pt": "Lado direito do mapa — 5000 Gold"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch8-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Serenes Island treasure chests (13)",
+        "pt": "Baús de Serenes Island (13)"
+      },
+      "location": {
+        "en": "Serenes Island",
+        "pt": "Serenes Island"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Rune Tablet Part Three (red chest, needed to move on) lets Mana Ride go up water streams.",
+        "pt": "A Rune Tablet Part Three (baú vermelho, necessária para avançar) permite subir correntezas com o Mana Ride."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 8 - Eastern Rogue Sea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "West, by a tree where the path opens up — Fishing Bait EX ×3 (buried)",
+            "pt": "Oeste, junto a uma árvore onde o caminho se abre — Fishing Bait EX ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "North end — Super Antidote ×3",
+            "pt": "Extremo norte — Super Antidote ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest past the blue gate (split party at the Ravenbound Statue) — Hail Bracelet",
+            "pt": "Baú azul depois do portão azul (dupla separada na Ravenbound Statue) — Hail Bracelet"
+          }
+        },
+        {
+          "text": {
+            "en": "Past the purple gate — Panacea ×3",
+            "pt": "Depois do portão roxo — Panacea ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Split room, on the mini-boss side — Break Elixir (buried)",
+            "pt": "Sala dividida, no lado do mini-chefe — Break Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: by trees near the first Mana Cluster — Dark Lump ×5 (buried)",
+            "pt": "Segunda área: junto às árvores perto do primeiro Mana Cluster — Dark Lump ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: blue chest at the eastern end — Lyre Soul",
+            "pt": "Segunda área: baú azul no extremo leste — Lyre Soul"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: by a barrel past the river's west end — Dryad Tear ×3 (buried)",
+            "pt": "Segunda área: junto a um barril depois do fim do rio, a oeste — Dryad Tear ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: patch near a tree to the northwest — Empty Bottle (buried)",
+            "pt": "Segunda área: trecho perto de uma árvore a noroeste — Empty Bottle (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: before the next Mana Stream — Basic Reagents ×125",
+            "pt": "Segunda área: antes do próximo fluxo de mana — Basic Reagents ×125"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: southwest, near trees — Rainbow Lump ×3 (buried)",
+            "pt": "Segunda área: sudoeste, perto de árvores — Rainbow Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: far eastern end after the river — Yellow Seastone ×3",
+            "pt": "Segunda área: extremo leste depois do rio — Yellow Seastone ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Second area: by the Mana String spot near the end — 6500 Gold (buried)",
+            "pt": "Segunda área: junto ao ponto de Mana String perto do fim — 6500 Gold (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch8-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Serenes Island — cave treasure chests (16)",
+        "pt": "Baús de Serenes Island — caverna (16)"
+      },
+      "location": {
+        "en": "Serenes Island — cave",
+        "pt": "Serenes Island — caverna"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Three floors linked by elevators; the boss waits past the last Hewnstone.",
+        "pt": "Três andares ligados por elevadores; o chefe espera depois da última Hewnstone."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 8 - Eastern Rogue Sea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Red chest after the first Mana Ride — Sea God's Incense",
+            "pt": "Baú vermelho depois do primeiro Mana Ride — Sea God's Incense"
+          }
+        },
+        {
+          "text": {
+            "en": "By the jars — Super Stimulant ×2 (buried)",
+            "pt": "Junto aos jarros — Super Stimulant ×2 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Behind the lamppost to the west — Blue Seastone ×3 (buried)",
+            "pt": "Atrás do poste a oeste — Blue Seastone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Up the Mana String sword to the south — Fishing Bait L ×3",
+            "pt": "Subindo pela espada do Mana String ao sul — Fishing Bait L ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Before the end of the path — Blizzard Gloves",
+            "pt": "Antes do fim do caminho — Blizzard Gloves"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: behind the jars — Red Seastone ×3 (buried)",
+            "pt": "Segunda parte: atrás dos jarros — Red Seastone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: blue chest after the invisible floor — Chalice Soul",
+            "pt": "Segunda parte: baú azul depois do chão invisível — Chalice Soul"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: far east side — Basic Craft Stock ×150 (buried)",
+            "pt": "Segunda parte: extremo leste — Basic Craft Stock ×150 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: far east side — Fishing Bait G ×3",
+            "pt": "Segunda parte: extremo leste — Fishing Bait G ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: red chest behind the northwest timed gate (slow time with Mana Sense) — Luncheon Recipe: Potatoes",
+            "pt": "Segunda parte: baú vermelho atrás do portão temporizado noroeste (desacelere o tempo com o Mana Sense) — Luncheon Recipe: Potatoes"
+          }
+        },
+        {
+          "text": {
+            "en": "Second part: past the northeast timed gate — Rainbow Lump ×3 (buried)",
+            "pt": "Segunda parte: depois do portão temporizado nordeste — Rainbow Lump ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Depths: behind the elevator — 6750 Gold (buried)",
+            "pt": "Fundo: atrás do elevador — 6750 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Depths: across the Mana String — Aurora Berries ×3 (buried)",
+            "pt": "Fundo: depois do Mana String — Aurora Berries ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Depths: jump off the stream halfway — Hermit's Remedy",
+            "pt": "Fundo: pule do fluxo no meio do caminho — Hermit's Remedy"
+          }
+        },
+        {
+          "text": {
+            "en": "Depths: red chest after Karja's Mana Burst jump — Hellblaze Tome",
+            "pt": "Fundo: baú vermelho depois do salto com o Mana Burst da Karja — Hellblaze Tome"
+          }
+        },
+        {
+          "text": {
+            "en": "Depths: near the last Hewnstone — Defense Elixir (buried)",
+            "pt": "Fundo: perto da última Hewnstone — Defense Elixir (enterrado)"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch8-bs-01",
+      "name": {
+        "en": "Lǫgr (true form)",
+        "pt": "Lǫgr (forma verdadeira)"
+      },
+      "location": {
+        "en": "Serenes Island — cave depths",
+        "pt": "Serenes Island — fundo da caverna"
+      },
+      "strategy": {
+        "en": "A melee fighter now. He covers the floor with vines and summons twin tornadoes that shrink your space while he keeps attacking. Breaking his durability only makes him more aggressive; dodge his spear dive.",
+        "pt": "Agora ele luta corpo a corpo. Ele cobre o chão com vinhas e invoca dois tornados que diminuem seu espaço enquanto continua atacando. Quebrar a resistência só o deixa mais agressivo; desvie do mergulho com a lança."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 8 - Eastern Rogue Sea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 8: Lila"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch8-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Dazzling Potato Platter"
+      },
+      "source": {
+        "en": "Treasure chest on Serenes Island",
+        "pt": "Baú em Serenes Island"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch8-fi-01",
+      "name": {
+        "en": "Aqua Marina"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 8 - Eastern Rogue Sea"
+      ]
+    },
+    {
+      "id": "ysx-ch8-fi-02",
+      "name": {
+        "en": "Calamitis"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 8 - Eastern Rogue Sea"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch8-fi-01",
+      "where": {
+        "en": "Soleli Island — ocean spot near the event marker",
+        "pt": "Soleli Island — pesqueiro no mar perto do marcador de evento"
+      },
+      "bait": "Fishing Bait L"
+    },
+    {
+      "fishId": "ysx-ch8-fi-02",
+      "where": {
+        "en": "Serenes Island — shore",
+        "pt": "Serenes Island — margem"
+      },
+      "bait": "Fishing Bait M"
+    }
+  ]
+}

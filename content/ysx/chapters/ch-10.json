@@ -1,0 +1,845 @@
+{
+  "id": "ysx-ch10",
+  "gameId": "ysx",
+  "order": 10,
+  "neutralLabel": {
+    "en": "Chapter 10",
+    "pt": "Capítulo 10"
+  },
+  "checkpoints": [
+    {
+      "id": "ysx-ch10-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Going through the doors to the final battle (point of no return)",
+        "pt": "Passar pelas portas da batalha final (ponto sem volta)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "ysx-ch10-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Return to Ribe"
+      },
+      "location": {
+        "en": "Sandras — Lila in the cabin",
+        "pt": "Sandras — Lila na cabine"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Short deadline. Visit the three event markers in the city of Ribe, then fast travel to the depths of the capital and examine the glowing object underwater. Rewards Abiding Love+ and Lila's character note.",
+        "pt": "Prazo curto. Visite os três marcadores de evento na cidade de Ribe, depois viaje até o fundo da capital e examine o objeto brilhante debaixo d'água. Dá Abiding Love+ e a nota de personagem da Lila."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Sandras",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    },
+    {
+      "id": "ysx-ch10-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Rushed off Their Fleet"
+      },
+      "location": {
+        "en": "Anchor Island — Village Chiefs Nel and Isaac in Mynorca Village",
+        "pt": "Anchor Island — Village Chiefs Nel e Isaac em Mynorca Village"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Short deadline. Three rounds against the Undying Fleet, each a naval battle plus a land battle: near Anchor Island, near Falun Island and at Carnac (fast travel to the Seagull Flock). Upgrade the Sandras first. Rewards a Sverkite.",
+        "pt": "Prazo curto. Três rodadas contra a Undying Fleet, cada uma com batalha naval e batalha em terra: perto de Anchor Island, perto de Falun Island e em Carnac (viaje até o Seagull Flock). Melhore o Sandras antes. Dá uma Sverkite."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Sandras",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    },
+    {
+      "id": "ysx-ch10-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Cull the Griegr: Crescent"
+      },
+      "location": {
+        "en": "Crescent Moons Isle",
+        "pt": "Crescent Moons Isle"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Short deadline. Added when you land. Defeat every Griegr on the island; the target then appears in the northeast corner. Rewards Crystal Shards ×25,000.",
+        "pt": "Prazo curto. Entra ao desembarcar. Derrote todos os Griegrs da ilha; o alvo então aparece no canto nordeste. Dá Crystal Shards ×25.000."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    },
+    {
+      "id": "ysx-ch10-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Treasure Trawl F"
+      },
+      "location": {
+        "en": "Rogue Sea — east of Soleli Island",
+        "pt": "Rogue Sea — a leste de Soleli Island"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Short deadline. Buy Hidden Treasure Chart F from the merchant Gøsta, north of the second Rogue Sea recapture. Rewards 50,000 Gold.",
+        "pt": "Prazo curto. Compre o Hidden Treasure Chart F do mercador Gøsta, ao norte da segunda retomada do Rogue Sea. Dá 50.000 Gold."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea"
+      ]
+    },
+    {
+      "id": "ysx-ch10-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Whale of Fortune"
+      },
+      "location": {
+        "en": "Sandras — Ashley at the bow",
+        "pt": "Sandras — Ashley na proa"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Short deadline. Needs all three Rogue Sea islands recaptured, or some markers never appear. Use the spyglass at every green marker; the last one appears west of Gøsta's ship. Rewards a Spirit Necklace.",
+        "pt": "Prazo curto. Exige as três ilhas do Rogue Sea retomadas, senão alguns marcadores nunca aparecem. Use a luneta em cada marcador verde; o último aparece a oeste do navio do Gøsta. Dá um Spirit Necklace."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    },
+    {
+      "id": "ysx-ch10-q-06",
+      "type": "quest",
+      "name": {
+        "en": "An Axe to Regrind"
+      },
+      "location": {
+        "en": "Giant's Hand Isle, then Ivalde on Balta Island",
+        "pt": "Giant's Hand Isle e depois a Ivalde em Balta Island"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Short deadline. Examine the axe at the end of Giant's Hand Isle, then bring Ivalde Crystalucent Coral ×3 (Gamellion, Seabed Temple) and Vajra Bone ×3 (Zylk Biter, Rollo's Ark). Rewards Karja's strongest weapon.",
+        "pt": "Prazo curto. Examine o machado no fim de Giant's Hand Isle e leve à Ivalde Crystalucent Coral ×3 (Gamellion, Seabed Temple) e Vajra Bone ×3 (Zylk Biter, Rollo's Ark). Dá a arma mais forte da Karja."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    },
+    {
+      "id": "ysx-ch10-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Ship upgrades for the trophy",
+        "pt": "Melhorias do navio para o troféu"
+      },
+      "location": {
+        "en": "Sandras"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Not lost at the final battle, but ship refits do not carry over to New Game+: buy them all in one playthrough if you want \"All Decked Out\".",
+        "pt": "Não se perdem na batalha final, mas as melhorias do navio não passam para o New Game+: compre todas na mesma jogada se quiser o \"All Decked Out\"."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost",
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch10-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Rollo's Ark treasure chests (10)",
+        "pt": "Baús de Rollo's Ark (10)"
+      },
+      "location": {
+        "en": "Rollo's Ark",
+        "pt": "Rollo's Ark"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Lost once you go through the doors to the final battle.",
+        "pt": "Perdido quando você passa pelas portas da batalha final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Cicatrix"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Entrance: locked first-floor room, reached from the raised pillar (Enhanced Mana Sense) — Blue Crystal Water ×3",
+            "pt": "Entrada: sala trancada do primeiro andar, alcançada pelo pilar erguido (Enhanced Mana Sense) — Blue Crystal Water ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Entrance: second floor, north room — Fishing Bait G ×3",
+            "pt": "Entrada: segundo andar, sala norte — Fishing Bait G ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Entrance: hole with spider webs in the northeast (burn them with Adol) — Thunder Gloves",
+            "pt": "Entrada: buraco com teias no nordeste (queime com o Adol) — Thunder Gloves"
+          }
+        },
+        {
+          "text": {
+            "en": "Midpoint: room on the right — Axe Soul+",
+            "pt": "Meio: sala à direita — Axe Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Midpoint: west room, after pulling the switch — Hermit's Remedy ×2",
+            "pt": "Meio: sala oeste, depois de puxar o interruptor — Hermit's Remedy ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Third floor: top platform, by a lever — Green Crystal Water ×3",
+            "pt": "Terceiro andar: plataforma de cima, junto a uma alavanca — Green Crystal Water ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Third floor: red chest across the raised pillars — Break Elixir",
+            "pt": "Terceiro andar: baú vermelho depois dos pilares erguidos — Break Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "Third floor: room past the gate unlocked earlier — Basic Beast Parts ×200",
+            "pt": "Terceiro andar: sala depois do portão destrancado antes — Basic Beast Parts ×200"
+          }
+        },
+        {
+          "text": {
+            "en": "Third floor: southwest corner, via the moving pole — Lyre Soul+",
+            "pt": "Terceiro andar: canto sudoeste, pelo poste móvel — Lyre Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Third floor: red chest at the event marker — Esoteric Bounding Text",
+            "pt": "Terceiro andar: baú vermelho no marcador de evento — Esoteric Bounding Text"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch10-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Crescent Moons Isle treasure chests (4)",
+        "pt": "Baús de Crescent Moons Isle (4)"
+      },
+      "location": {
+        "en": "Crescent Moons Isle",
+        "pt": "Crescent Moons Isle"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Lost once you go through the doors to the final battle.",
+        "pt": "Perdido quando você passa pelas portas da batalha final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "South, near the lizard mini-boss — Super Repair Kit ×3 (buried)",
+            "pt": "Sul, perto do mini-chefe lagarto — Super Repair Kit ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "West end of the ledge in the north center — Punishment Soul+ (buried)",
+            "pt": "Extremo oeste da borda no centro-norte — Punishment Soul+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "South of the northwest Runestone — Supreme Fish Meat ×2",
+            "pt": "Ao sul da Runestone do noroeste — Supreme Fish Meat ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest in a hidden drop by the east Mana String spot — Break Elixir",
+            "pt": "Baú vermelho numa queda escondida junto ao ponto de Mana String do leste — Break Elixir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch10-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Giant's Hand Isle treasure chests (4)",
+        "pt": "Baús de Giant's Hand Isle (4)"
+      },
+      "location": {
+        "en": "Giant's Hand Isle",
+        "pt": "Giant's Hand Isle"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Lost once you go through the doors to the final battle.",
+        "pt": "Perdido quando você passa pelas portas da batalha final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Patch of land by the lake fishing spot, to the east — Dark Seastone ×3 (buried)",
+            "pt": "Trecho de terra junto ao pesqueiro do lago, a leste — Dark Seastone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Far northwest corner — Panacea III ×2 (buried)",
+            "pt": "Extremo noroeste — Panacea III ×2 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast corner — Vajra Bone ×2",
+            "pt": "Canto sudeste — Vajra Bone ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest in the north center (drop through and ride the stream) — Ancient Defense Formula",
+            "pt": "Baú vermelho no centro-norte (caia pelo buraco e siga o fluxo) — Ancient Defense Formula"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch10-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Viewpoint Isle — last buried treasures (6)",
+        "pt": "Viewpoint Isle — últimos tesouros enterrados (6)"
+      },
+      "location": {
+        "en": "Viewpoint Isle",
+        "pt": "Viewpoint Isle"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Six buried treasures: one near the cottage, two on the east side and three on the west side, which only opens fully once you enter the treasure room. Lost once you go through the doors to the final battle.",
+        "pt": "Seis tesouros enterrados: um perto da cabana, dois no lado leste e três no lado oeste, que só abre por completo quando você entra na sala do tesouro. Perdidos quando você passa pelas portas da batalha final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Final Area"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Axe Seal+ (buried)",
+            "pt": "Axe Seal+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Crystal Shard ×200 (buried)",
+            "pt": "Crystal Shard ×200 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Luck Elixir (buried)",
+            "pt": "Luck Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Strength Elixir (buried)",
+            "pt": "Strength Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fishing Bait ×10 (buried)",
+            "pt": "Fishing Bait ×10 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dark Drop (buried)",
+            "pt": "Dark Drop (enterrado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch10-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Viewpoint Isle — Forbidden Lands treasure chests (10)",
+        "pt": "Baús de Viewpoint Isle — Forbidden Lands (10)"
+      },
+      "location": {
+        "en": "Viewpoint Isle — Forbidden Lands",
+        "pt": "Viewpoint Isle — Forbidden Lands"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Lost once you go through the doors to the final battle.",
+        "pt": "Perdido quando você passa pelas portas da batalha final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Final Area"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Entrance, on the first visit — Blue Seastone ×5 (buried)",
+            "pt": "Entrada, na primeira visita — Blue Seastone ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Behind the plant mini-boss to the northeast, by a tree — Yellow Seastone ×5 (buried)",
+            "pt": "Atrás do mini-chefe planta a nordeste, junto a uma árvore — Yellow Seastone ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest: platform to the northwest — Red Seastone ×5 (buried)",
+            "pt": "Sudoeste: plataforma a noroeste — Red Seastone ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "North, guarded by monsters — Rainbow Seastone ×3",
+            "pt": "Norte, guardado por monstros — Rainbow Seastone ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest west of the second plant mini-boss — Lightning Boots",
+            "pt": "Baú azul a oeste do segundo mini-chefe planta — Lightning Boots"
+          }
+        },
+        {
+          "text": {
+            "en": "East platform, halfway along the Mana String — Fishing Bait EX ×5",
+            "pt": "Plataforma leste, no meio do Mana String — Fishing Bait EX ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast, near a plant enemy by a tree — Strength Elixir (buried)",
+            "pt": "Nordeste, perto de um inimigo planta junto a uma árvore — Strength Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue chest below, before the two harpies — Chalice Soul+",
+            "pt": "Baú azul embaixo, antes das duas harpias — Chalice Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "By the wall where Karja starts talking — Rainbow Seastone ×5 (buried)",
+            "pt": "Junto à parede onde a Karja começa a falar — Rainbow Seastone ×5 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red chest on the platform below the double mana stream — Luck Elixir",
+            "pt": "Baú vermelho na plataforma abaixo do fluxo de mana duplo — Luck Elixir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ysx-ch10-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Faarlundheim treasure chests (30)",
+        "pt": "Baús de Faarlundheim (30)"
+      },
+      "location": {
+        "en": "Faarlundheim",
+        "pt": "Faarlundheim"
+      },
+      "availableUntil": "ysx-ch10-cp-01",
+      "hint": {
+        "en": "Lost once you go through the doors to the final battle.",
+        "pt": "Perdido quando você passa pelas portas da batalha final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Final Area"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Part 1: behind the starting gate — Panacea II ×2 (buried)",
+            "pt": "Parte 1: atrás do portão do início — Panacea II ×2 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: behind the rock wall east of the northwest cluster — Hermit's Remedy",
+            "pt": "Parte 1: atrás da parede de rocha a leste do cluster do noroeste — Hermit's Remedy"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: blue chest on the islet past the red platform (slow time) — Sword Soul+",
+            "pt": "Parte 1: baú azul na ilhota depois da plataforma vermelha (desacelere o tempo) — Sword Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: center, by a rock pillar — 10000 Gold (buried)",
+            "pt": "Parte 1: centro, junto a um pilar de rocha — 10000 Gold (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: southeast corner — Seafood Supreme Box Lunch",
+            "pt": "Parte 1: canto sudeste — Seafood Supreme Box Lunch"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: behind the end of the high ledge on the north route — Break Elixir (buried)",
+            "pt": "Parte 1: atrás do fim da borda alta na rota norte — Break Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: north dead end — Punishment Soul+ (buried)",
+            "pt": "Parte 1: beco sem saída ao norte — Punishment Soul+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: west after swinging on the red pillar — Crystalucent Coral ×5",
+            "pt": "Parte 1: oeste depois de balançar no pilar vermelho — Crystalucent Coral ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: red chest via the southwest mana stream — Sea God's Incense",
+            "pt": "Parte 1: baú vermelho pelo fluxo de mana do sudoeste — Sea God's Incense"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: blue chest on a southeast platform below the northeast stream — Gwyllgi Guardstone",
+            "pt": "Parte 1: baú azul numa plataforma a sudeste abaixo do fluxo do nordeste — Gwyllgi Guardstone"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 1: ledge just below it — Lyre Soul+ (buried)",
+            "pt": "Parte 1: borda logo abaixo — Lyre Soul+ (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: hidden platform in the southeast — Basic Ingredients ×350 (buried)",
+            "pt": "Parte 2: plataforma escondida no sudeste — Basic Ingredients ×350 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: northwest tunnel — Crystal Shard ×5000 (buried)",
+            "pt": "Parte 2: túnel noroeste — Crystal Shard ×5000 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: red chest in the same tunnel — Vitality Elixir",
+            "pt": "Parte 2: baú vermelho no mesmo túnel — Vitality Elixir"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: under the giant statue — Basic Beast Parts ×350 (buried)",
+            "pt": "Parte 2: embaixo da estátua gigante — Basic Beast Parts ×350 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: blue chest after the monster room (break the boulder) — Shield Soul+",
+            "pt": "Parte 2: baú azul depois da sala de monstros (quebre a rocha) — Shield Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: end of that path — Basic Reagents ×350 (buried)",
+            "pt": "Parte 2: fim desse caminho — Basic Reagents ×350 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: red chest on the abandoned ship — Skill Potion",
+            "pt": "Parte 2: baú vermelho no navio abandonado — Skill Potion"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: tunnel reached from the ship's mana stream — Basic Craft Stock ×350 (buried)",
+            "pt": "Parte 2: túnel alcançado pelo fluxo de mana do navio — Basic Craft Stock ×350 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: blue chest via the red pillar on the east route — Hero's Gauntlets",
+            "pt": "Parte 2: baú azul pelo pilar vermelho na rota leste — Hero's Gauntlets"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: northeast corner before the northwest route — Ascetic's Arcanum (buried)",
+            "pt": "Parte 2: canto nordeste antes da rota noroeste — Ascetic's Arcanum (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: behind the brick wall by the Ravenbound Statue — 10000 Gold",
+            "pt": "Parte 2: atrás do muro de tijolos junto à Ravenbound Statue — 10000 Gold"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 2: Karja's path, by the cages — Luck Elixir (buried)",
+            "pt": "Parte 2: caminho da Karja, junto às jaulas — Luck Elixir (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 3: blue chest on the east route — Chevalier Gloves",
+            "pt": "Parte 3: baú azul na rota leste — Chevalier Gloves"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 3: west route — Fleeting Hope (buried)",
+            "pt": "Parte 3: rota oeste — Fleeting Hope (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 3: blue chest north of the northwest stream (jump with momentum) — Armor Soul+",
+            "pt": "Parte 3: baú azul ao norte do fluxo do noroeste (pule com impulso) — Armor Soul+"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 3: north corner of the north-central area — Panacea III ×3",
+            "pt": "Parte 3: canto norte da área centro-norte — Panacea III ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 3: southeast wall of the same area — Abiding Love (buried)",
+            "pt": "Parte 3: parede sudeste da mesma área — Abiding Love (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 3: southwest ledge of the northeast section — Dark Seastone ×3 (buried)",
+            "pt": "Parte 3: borda sudoeste da seção nordeste — Dark Seastone ×3 (enterrado)"
+          }
+        },
+        {
+          "text": {
+            "en": "Part 3: red chest at the top center — Limitless Courage+",
+            "pt": "Parte 3: baú vermelho no centro, no alto — Limitless Courage+"
+          }
+        }
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "ysx-ch10-bs-01",
+      "name": {
+        "en": "Grimson"
+      },
+      "location": {
+        "en": "Rollo's Ark"
+      },
+      "strategy": {
+        "en": "Duo guard his leaping downward slash. Below half HP a pink aura makes him faster and stronger, but he gains no new moves.",
+        "pt": "Use a defesa em dupla contra o golpe para baixo com salto. Abaixo da metade do HP, uma aura rosa o deixa mais rápido e forte, mas ele não ganha golpes novos."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Cicatrix",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    },
+    {
+      "id": "ysx-ch10-bs-02",
+      "name": {
+        "en": "Vermóðr"
+      },
+      "location": {
+        "en": "Jötunn Island (optional, level 99)",
+        "pt": "Jötunn Island (opcional, nível 99)"
+      },
+      "strategy": {
+        "en": "The toughest fight, a stronger take on Iði: bring paralysis protection and plenty of medicine and box lunches. Its electric smash fills the arena with lightning and its darkness orb curses. Rewards the Ancient Strength Formula.",
+        "pt": "A luta mais difícil, uma versão mais forte do Iði: leve proteção contra paralisia e muitos remédios e marmitas. A pancada elétrica enche a arena de raios e o orbe de trevas amaldiçoa. Dá a Ancient Strength Formula."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    },
+    {
+      "id": "ysx-ch10-bs-03",
+      "name": {
+        "en": "The final battle",
+        "pt": "A batalha final"
+      },
+      "location": {
+        "en": "Beyond the last doors",
+        "pt": "Além das últimas portas"
+      },
+      "strategy": {
+        "en": "Shared HP bar for both foes. Focus the melee fighter while keeping the ranged one in view; they are open to ailments such as paralysis. In the last phase an unblockable grab is signalled by a charging fist: keep your distance.",
+        "pt": "Barra de HP compartilhada pelos dois inimigos. Foque o lutador corpo a corpo sem perder o de longe de vista; eles são vulneráveis a efeitos como paralisia. Na última fase, um agarrão que não pode ser defendido é anunciado por um punho carregando: mantenha distância."
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Final Area",
+        "guide: GameFAQs Ys X walkthrough, Chapter 10: The Normans' Paradise Lost"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ysx-ch10-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Premium Seafood BBQ"
+      },
+      "source": {
+        "en": "Give every large fish to the Reticent Penguin (Ozmid Expanse)",
+        "pt": "Entregue todos os peixes grandes ao Reticent Penguin (Ozmid Expanse)"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch10-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Mega Ulti-Meat Box Lunch"
+      },
+      "source": {
+        "en": "Report Adventures at 80% exploration, or a chest on Viewpoint Isle",
+        "pt": "Relate as aventuras com 80% de exploração, ou um baú em Viewpoint Isle"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    },
+    {
+      "id": "ysx-ch10-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Seafood Supreme Box Lunch"
+      },
+      "source": {
+        "en": "Report Fishing after 24 kinds of fish, or a chest in Faarlundheim",
+        "pt": "Relate a pesca depois de 24 tipos de peixe, ou um baú em Faarlundheim"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Trophy Cleanup"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "ysx-ch10-fi-01",
+      "name": {
+        "en": "Murgleys"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Rogue Sea"
+      ]
+    },
+    {
+      "id": "ysx-ch10-fi-02",
+      "name": {
+        "en": "Wishstar"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Final Area"
+      ]
+    },
+    {
+      "id": "ysx-ch10-fi-03",
+      "name": {
+        "en": "Megalofang"
+      },
+      "sources": [
+        "guide: Neoseeker Ys X walkthrough, Chapter 10 - Final Area"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "ysx-ch10-fi-01",
+      "where": {
+        "en": "Crescent Moons Isle — shore",
+        "pt": "Crescent Moons Isle — margem"
+      },
+      "bait": "Fishing Bait EX"
+    },
+    {
+      "fishId": "ysx-ch10-fi-02",
+      "where": {
+        "en": "Viewpoint Isle — Forbidden Lands, left spot at the entrance",
+        "pt": "Viewpoint Isle — Forbidden Lands, pesqueiro da esquerda na entrada"
+      },
+      "bait": "Fishing Bait EX"
+    },
+    {
+      "fishId": "ysx-ch10-fi-03",
+      "where": {
+        "en": "Viewpoint Isle — Forbidden Lands, behind the last Runestone",
+        "pt": "Viewpoint Isle — Forbidden Lands, atrás da última Runestone"
+      },
+      "bait": "Fishing Bait EX"
+    }
+  ]
+}

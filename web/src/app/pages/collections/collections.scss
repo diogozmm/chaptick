@@ -1,6 +1,12 @@
 :host { display: grid; gap: 1rem; }
+.back { font-size: 0.9rem; justify-self: start; margin: -0.5rem 0 -0.5rem -0.1rem; text-decoration: none; }
 .small { font-size: 0.8125rem; }
-h2 { margin-top: 0.5rem; }
+
+.hero { display: grid; gap: 0.75rem; }
+.hero-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; }
+.hero .eyebrow { margin-bottom: 0.25rem; }
+.percent { font: 600 2.25rem/1 var(--font-display); color: var(--accent); font-variant-numeric: tabular-nums; }
+.percent small { font-size: 1rem; margin-left: 0.1rem; }
 
 .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; padding: 0.25rem; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); }
 .tabs button {
@@ -8,10 +14,21 @@ h2 { margin-top: 0.5rem; }
   background: transparent; color: var(--text-muted); font: 600 0.95rem/1 var(--font-body); cursor: pointer; transition: background-color 0.2s, color 0.2s;
 }
 .tabs button[aria-selected='true'] { background: var(--accent); color: var(--accent-text); }
+.tab-count { font-weight: 500; font-size: 0.8125rem; opacity: 0.85; font-variant-numeric: tabular-nums; }
 
-.panel { display: grid; gap: 0.75rem; }
-.stats { display: flex; justify-content: space-around; gap: 1rem; text-align: center; }
-.stats strong { font: 600 1.75rem/1 var(--font-display); color: var(--accent); }
+.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.hint { margin: 0; }
+.toolbar .chip { flex: none; }
+.chip app-icon { width: 1rem; height: 1rem; }
+
+.panel { display: grid; gap: 1.25rem; }
+.group { display: grid; gap: 0.6rem; }
+.group h2 { display: flex; align-items: center; gap: 0.5rem; font-size: 1.15rem; }
+.now {
+  padding: 0.15rem 0.5rem; border-radius: 999px; background: var(--accent-soft); color: var(--text);
+  font: 600 0.7rem/1.2 var(--font-body); letter-spacing: 0.04em; text-transform: uppercase;
+}
+.group-count { margin-left: auto; font: 500 0.875rem/1 var(--font-body); color: var(--text-muted); font-variant-numeric: tabular-nums; }
 
 .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
 .row {
@@ -21,19 +38,26 @@ h2 { margin-top: 0.5rem; }
 .row.done { background: color-mix(in srgb, var(--surface) 55%, transparent); }
 .row.done .name { color: var(--text-muted); }
 .check { flex: none; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; cursor: pointer; }
-.body { flex: 1; display: grid; gap: 0.35rem; padding-top: 0.55rem; min-width: 0; }
-.title-line { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
-.name { font-weight: 600; }
-.meta { font-size: 0.8125rem; color: var(--text-muted); }
-.chapter { font-size: 0.75rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.body { flex: 1; display: grid; gap: 0.4rem; padding-top: 0.55rem; min-width: 0; }
+.name { font-weight: 600; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
 
-.rank, .spot-rank {
-  display: inline-grid; place-items: center; min-width: 1.6rem; height: 1.6rem; border-radius: 0.4rem;
-  font: 700 0.8rem/1 var(--font-body); background: var(--surface-2); color: var(--text-muted);
+.spots { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.35rem; font-size: 0.8125rem; color: var(--text-muted); }
+.spots li, .how { display: flex; gap: 0.35rem; align-items: flex-start; }
+.how { font-size: 0.8125rem; color: var(--text-muted); }
+.spots app-icon, .how app-icon { flex: none; width: 0.9rem; height: 0.9rem; margin-top: 0.15rem; }
+.where { display: grid; gap: 0.25rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.tag {
+  padding: 0.1rem 0.45rem; border-radius: 0.35rem; background: var(--surface-2); color: var(--text-muted);
+  font: 600 0.72rem/1.4 var(--font-body);
 }
-.rank[data-rank='A'], .spot-rank[data-rank='A'] { background: var(--accent); color: var(--accent-text); }
-.spot-rank { min-width: 1.25rem; height: 1.25rem; font-size: 0.7rem; margin-right: 0.35rem; }
-.spots { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.25rem; font-size: 0.8125rem; color: var(--text-muted); }
-.chip { justify-self: start; }
-.chip app-icon { width: 1rem; height: 1rem; }
+.tag[data-rank='A'] { background: var(--accent-soft); color: var(--text); }
+
+.rank-a {
+  justify-self: start; display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; margin-left: -0.25rem;
+  font-size: 0.875rem; font-weight: 600; cursor: pointer;
+}
+.rank-a app-icon { width: 1rem; height: 1rem; color: var(--accent); }
+
+.all-done { padding: 0.25rem 0.25rem; }
 .empty { text-align: center; color: var(--text-muted); }
