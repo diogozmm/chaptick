@@ -1,0 +1,11 @@
+// Cloudflare Workers static assets: serves the built Angular app. No server code.
+// The name must match the Worker created in the Cloudflare dashboard.
+{
+  "name": "chaptick",
+  "compatibility_date": "2026-09-30",
+  "assets": {
+    "directory": "./web/dist/web/browser",
+    // Deep links like /sc/chapters/sc-ch0 have no file of their own: serve index.html for them.
+    "not_found_handling": "single-page-application"
+  }
+}
