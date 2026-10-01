@@ -6,6 +6,7 @@ import { unlockedChapterGuard } from './core/spoiler/chapter-access';
 export const routes: Routes = [
   { path: '', loadComponent: () => import('./pages/home/home').then((m) => m.Home) },
   { path: 'credits', loadComponent: () => import('./pages/credits/credits').then((m) => m.Credits) },
+  { path: 'backup', loadComponent: () => import('./pages/backup/backup').then((m) => m.Backup) },
   { path: 'privacy', loadComponent: () => import('./pages/privacy/privacy').then((m) => m.Privacy) },
   {
     // Every game lives under its own id: /sc/chapters, /sc/items/..., and later other games.

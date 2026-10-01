@@ -5,47 +5,95 @@
 .intro h1 { font-size: clamp(2rem, 8vw, 2.75rem); }
 .lead { font-size: 1.05rem; max-width: 30rem; }
 
-.journey { display: grid; gap: 0.75rem; padding: 1.25rem; animation-delay: 0.05s; border-color: var(--border-strong); }
-.journey h2 { font-size: 1.6rem; margin-top: -0.25rem; }
+/* Covers bleed to the card edges: the card's padding is undone on the image only. */
+.cover { margin: 0 -1.125rem; }
+
+.journey { display: grid; gap: 0.75rem; padding: 0 1.25rem 1.25rem; overflow: hidden; animation-delay: 0.05s; border-color: var(--border-strong); }
+.journey .cover { margin: 0 -1.25rem 0.25rem; }
+.chapter { margin-top: -0.25rem; font: 600 1.35rem/1.25 var(--font-display); color: var(--text); }
 .next { display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.875rem; color: var(--warn-text); }
 .next app-icon { width: 1.1rem; height: 1.1rem; margin-top: 0.1rem; }
 .journey .button.primary { margin-top: 0.25rem; }
-
-.transfer { display: grid; gap: 0.75rem; }
-.actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.actions .button { flex: 1 1 8rem; }
-.confirm { display: grid; gap: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
-.error { color: var(--warn-text); }
-label.button:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
 .secondary { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .secondary .button { flex: 1 1 9rem; }
-.chapter { margin-top: -0.25rem; font: 600 1.35rem/1.25 var(--font-display); color: var(--text); }
-.library { display: grid; gap: 1rem; }
+
+/* Other started games: compact rows. */
+.mine { display: grid; gap: 0.6rem; }
+.mine h2 { font-size: 1.15rem; }
+.mine-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.mine-row {
+  display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.75rem 0.5rem 0.5rem; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border); color: var(--text); text-decoration: none;
+}
+.mine-row:hover { border-color: var(--accent); }
+.thumb { flex: none; width: 5.5rem; border-radius: var(--radius-sm); }
+.mine-body { flex: 1; display: grid; gap: 0.15rem; min-width: 0; }
+.mine-name { font: 600 1rem/1.3 var(--font-display); }
+.mine-row > app-icon { flex: none; color: var(--text-muted); }
+
+.library { display: grid; gap: 1rem; scroll-margin-top: 4.5rem; }
 .library > h2 { font-size: 1.4rem; }
+.filters { display: flex; gap: 0.5rem; overflow-x: auto; margin: 0 -1rem; padding: 0.15rem 1rem; scrollbar-width: none; }
+.filters::-webkit-scrollbar { display: none; }
+.filters .chip { flex: none; text-decoration: none; display: inline-flex; align-items: center; }
+.filters .chip[aria-current='true'] { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
+
 .franchise { display: grid; gap: 0.6rem; }
+.franchise-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
 .franchise h3 { font-size: 1.1rem; }
-.games { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 0.75rem; }
+.franchise p { margin: 0; }
+.see-all { display: inline-flex; align-items: center; gap: 0.1rem; min-height: 2.75rem; font-size: 0.875rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.see-all app-icon { width: 1rem; height: 1rem; }
+.soon-series { margin: 0; border-style: dashed; background: transparent; box-shadow: none; }
+
+/* A franchise row: covers scroll sideways; the next one peeks in at the edge. */
+.row-wrap { position: relative; }
+.row {
+  list-style: none; margin: 0 -1rem; padding: 0.25rem 1rem 0.5rem; display: grid; grid-auto-flow: column;
+  grid-auto-columns: min(15rem, 70%); gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 1rem;
+  scrollbar-width: none;
+}
+.row::-webkit-scrollbar { display: none; }
+.row > li { scroll-snap-align: start; display: grid; }
+.arrow {
+  display: none; position: absolute; top: 35%; z-index: 1; width: 2.5rem; height: 2.5rem; place-items: center; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); box-shadow: var(--shadow); cursor: pointer;
+}
+.arrow:hover { color: var(--accent); border-color: var(--accent); }
+.arrow.prev { left: -3.25rem; }
+.arrow.next { right: -3.25rem; }
+/* Arrows sit in the side margin, so only on wide screens with a mouse; touch screens swipe. */
+@media (hover: hover) and (pointer: fine) and (min-width: 50rem) {
+  .arrow { display: grid; }
+}
+
+.grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(10rem, 45%), 1fr)); gap: 0.75rem; }
+.grid > li { display: grid; }
+
 .game {
-  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0.75rem 1rem; padding-top: 0; overflow: hidden;
+  display: flex; flex-direction: column; gap: 0.5rem; padding: 0 1.125rem 0.9rem; overflow: hidden;
   text-decoration: none; color: var(--text); transition: border-color 0.2s, transform 0.2s var(--ease);
 }
-.game:hover { transform: translateY(-2px); }
-/* Covers bleed to the card edges: the card's padding is undone on the image only. */
-.cover { margin: 0 -1.125rem; }
-.game .cover { grid-column: 1 / -1; }
-.journey { overflow: hidden; padding-top: 0; }
-.journey .cover { margin: 0 -1.25rem 0.25rem; }
-.game:hover { border-color: var(--accent); }
-.game-body { display: grid; gap: 0.3rem; }
-.game-name { font: 600 1.05rem/1.3 var(--font-display); }
+.game:hover { transform: translateY(-2px); border-color: var(--accent); }
+.game-body { flex: 1; display: grid; gap: 0.3rem; align-content: start; }
 .game .badge { justify-self: start; }
 .game-action { display: inline-flex; align-items: center; gap: 0.25rem; color: var(--accent); font-weight: 600; white-space: nowrap; }
+
 .soon { display: flex; gap: 0.75rem; align-items: flex-start; border-style: dashed; background: transparent; box-shadow: none; }
 .soon app-icon { color: var(--accent); margin-top: 0.15rem; }
 .soon p { margin: 0.2rem 0 0.4rem; }
+
+.backup-link {
+  justify-self: center; display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.75rem;
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+}
+.backup-link app-icon { width: 1rem; height: 1rem; }
 
 .incoming { display: grid; gap: 0.75rem; border-color: var(--accent); }
 .incoming h2 { display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; }
 .incoming h2 app-icon { color: var(--accent); }
 .incoming p { margin: 0; }
 .top-status { margin: 0; font-weight: 500; }
+.error { color: var(--warn-text); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.actions .button { flex: 1 1 8rem; }

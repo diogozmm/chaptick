@@ -1,35 +1,40 @@
 import { ChangeDetectionStrategy, Component, computed, inject, resource, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { NgTemplateOutlet } from '@angular/common';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import { map } from 'rxjs';
 import { TranslocoPipe } from '@jsverse/transloco';
 
-import { AnalyticsService } from '../../core/analytics.service';
 import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { SavedProgress } from '../../core/progress/progress.models';
 import { ProgressImportError, ProgressStore, parseExport } from '../../core/progress/progress.store';
 import { TransferService } from '../../core/progress/transfer.service';
-import { TranslocoService } from '@jsverse/transloco';
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { SITE } from '../../site.config';
 import { Icon } from '../../ui/icon/icon';
 import { GameCover } from '../../ui/game-cover/game-cover';
+import { ScrollHints } from '../../ui/scroll-hints/scroll-hints';
 import { fallbackCoverText } from '../../core/cover/cover-art';
 import { localize } from '../../core/content/content.models';
 
-type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number; atTop?: boolean } | null;
+type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number } | null;
 
-/** Progress waiting for "replace my progress?": from a picked file, or from the link that opened the page. */
+/** Progress carried by the transfer link that opened the page, waiting for "replace my progress?". */
 interface PendingImport {
   text: string;
-  source: 'file' | 'link';
   games: string;
 }
 
-/** The library: continue the last game, browse franchises and games, move progress between devices. */
+/**
+ * The library. Returning players see their games first (the last one played, then the others);
+ * below, every franchise is a row of covers, and a filter (?f=<franchise>) shows one franchise as a
+ * grid. Backup and transfer live on their own page; a transfer link still lands here.
+ */
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, GameCover],
+  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, Icon, GameCover, ScrollHints],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.html',
   styleUrl: './home.scss',
@@ -38,10 +43,7 @@ export class Home {
   protected readonly content = inject(ContentService);
   protected readonly lang = inject(LangService);
   private readonly progress = inject(ProgressStore);
-  private readonly analytics = inject(AnalyticsService);
   private readonly transfer = inject(TransferService);
-  private readonly transloco = inject(TranslocoService);
-  protected readonly canShare = typeof navigator !== 'undefined' && typeof navigator.share === 'function';
   protected readonly suggestUrl = SITE.repoUrl ? `${SITE.repoUrl}/issues` : '';
 
   private readonly saved = resource({ loader: () => this.progress.listSaved() });
@@ -49,6 +51,28 @@ export class Home {
     () => new Map<string, SavedProgress>((this.saved.hasValue() ? this.saved.value() : []).map((p) => [p.gameId, p])),
   );
   protected readonly franchises = computed(() => this.content.catalog()?.franchises ?? []);
+  protected readonly hasProgress = computed(() => this.savedByGame().size > 0);
+
+  /** The franchise filter from ?f=, ignored when it names no franchise. */
+  private readonly filterParam = toSignal(inject(ActivatedRoute).queryParamMap.pipe(map((p) => p.get('f'))));
+  protected readonly filter = computed(() => this.franchises().find((f) => f.id === this.filterParam()) ?? null);
+  protected readonly shown = computed(() => {
+    const only = this.filter();
+    return only ? [only] : this.franchises();
+  });
+
+  /** Started games other than the most recent one, newest first, with their current chapter. */
+  protected readonly others = resource({
+    params: () => (this.saved.hasValue() ? this.saved.value() : []).filter((p) => this.content.game(p.gameId)).slice(1),
+    loader: ({ params }) =>
+      Promise.all(
+        params.map(async (saved) => {
+          const manifest = await this.content.loadManifest(saved.gameId);
+          const chapter = manifest.chapters.find((c) => c.id === saved.currentChapter) ?? manifest.chapters[0];
+          return { gameId: saved.gameId, game: this.content.game(saved.gameId)!, chapter };
+        }),
+      ),
+  });
 
   /** The most recently played game that is still in the catalog, with its current chapter. */
   protected readonly recent = resource({
@@ -106,10 +130,10 @@ export class Home {
   private async receiveLink(): Promise<void> {
     try {
       const text = await this.transfer.takeIncoming();
-      if (text !== null) this.pendingImport.set({ text, source: 'link', games: this.gameNames(text) });
+      if (text !== null) this.pendingImport.set({ text, games: this.gameNames(text) });
     } catch (error) {
       const reason = error instanceof ProgressImportError ? error.reason : 'wrong-format';
-      this.status.set({ kind: 'error', key: `transfer.error.${reason}`, atTop: true });
+      this.status.set({ kind: 'error', key: `transfer.error.${reason}` });
     }
   }
 
@@ -123,64 +147,17 @@ export class Home {
       .join(', ');
   }
 
-  /** Shares (phones) or copies a link that opens Chaptick elsewhere with this device's progress. */
-  protected async shareLink(): Promise<void> {
-    this.status.set(null);
-    if (this.savedByGame().size === 0) {
-      this.status.set({ kind: 'error', key: 'transfer.nothingToShare' });
-      return;
-    }
-    const url = await this.transfer.createLink();
-    if (this.canShare) {
-      try {
-        await navigator.share({ title: 'Chaptick', text: this.transloco.translate('transfer.shareText'), url });
-        return;
-      } catch (error) {
-        if (error instanceof DOMException && error.name === 'AbortError') return;
-        // Sharing is unavailable here after all: fall back to the clipboard.
-      }
-    }
-    try {
-      await navigator.clipboard.writeText(url);
-      this.status.set({ kind: 'ok', key: 'transfer.linkCopied' });
-    } catch {
-      this.status.set({ kind: 'error', key: 'transfer.linkFailed' });
-    }
-  }
-
-  protected async exportProgress(): Promise<void> {
-    const blob = new Blob([await this.progress.exportJson()], { type: 'application/json' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = `chaptick-progress-${new Date().toISOString().slice(0, 10)}.json`;
-    link.click();
-    URL.revokeObjectURL(link.href);
-    this.status.set({ kind: 'ok', key: 'transfer.exported' });
-    this.analytics.track('progress_exported');
-  }
-
-  protected async pickFile(event: Event): Promise<void> {
-    const input = event.target as HTMLInputElement;
-    const file = input.files?.[0];
-    input.value = ''; // lets the same file be picked again
-    if (!file) return;
-    this.status.set(null);
-    const text = await file.text();
-    this.pendingImport.set({ text, source: 'file', games: '' });
-  }
-
   protected async confirmImport(): Promise<void> {
     const pending = this.pendingImport();
     this.pendingImport.set(null);
     if (pending === null) return;
-    const atTop = pending.source === 'link';
     try {
       const count = await this.progress.importJson(pending.text);
-      this.status.set({ kind: 'ok', key: 'transfer.imported', count, atTop });
+      this.status.set({ kind: 'ok', key: 'transfer.imported', count });
       this.saved.reload();
     } catch (error) {
       const reason = error instanceof ProgressImportError ? error.reason : 'wrong-format';
-      this.status.set({ kind: 'error', key: `transfer.error.${reason}`, atTop });
+      this.status.set({ kind: 'error', key: `transfer.error.${reason}` });
     }
   }
 }

@@ -1,26 +1,28 @@
 @let l = lang.lang();
 @if (pendingImport(); as p) {
-  @if (p.source === 'link') {
-    <section class="card incoming rise" role="alertdialog" aria-labelledby="incoming-title" aria-describedby="incoming-text">
-      <h2 id="incoming-title"><app-icon name="download" /> {{ 'transfer.incomingTitle' | transloco }}</h2>
-      <p id="incoming-text">{{ 'transfer.incoming' | transloco: { games: p.games } }}</p>
-      <div class="actions">
-        <button type="button" class="button primary" (click)="confirmImport()">{{ 'transfer.replace' | transloco }}</button>
-        <button type="button" class="button" (click)="pendingImport.set(null)">{{ 'common.cancel' | transloco }}</button>
-      </div>
-    </section>
-  }
+  <section class="card incoming rise" role="alertdialog" aria-labelledby="incoming-title" aria-describedby="incoming-text">
+    <h2 id="incoming-title"><app-icon name="download" /> {{ 'transfer.incomingTitle' | transloco }}</h2>
+    <p id="incoming-text">{{ 'transfer.incoming' | transloco: { games: p.games } }}</p>
+    <div class="actions">
+      <button type="button" class="button primary" (click)="confirmImport()">{{ 'transfer.replace' | transloco }}</button>
+      <button type="button" class="button" (click)="pendingImport.set(null)">{{ 'common.cancel' | transloco }}</button>
+    </div>
+  </section>
 }
 @if (status(); as s) {
-  @if (s.atTop) {
-    <p class="card top-status rise" role="status" [class.error]="s.kind === 'error'">{{ s.key | transloco: { count: s.count } }}</p>
-  }
+  <p class="card top-status rise" role="status" [class.error]="s.kind === 'error'">{{ s.key | transloco: { count: s.count } }}</p>
 }
-<section class="intro rise">
-  <p class="eyebrow">{{ 'home.eyebrow' | transloco }}</p>
-  <h1>{{ 'home.title' | transloco }}</h1>
-  <p class="muted lead">{{ 'home.promise' | transloco }}</p>
-</section>
+
+<!-- First visit only: returning players go straight to their games. -->
+@if (!hasProgress()) {
+  <section class="intro rise">
+    <p class="eyebrow">{{ 'home.eyebrow' | transloco }}</p>
+    <h1>{{ 'home.title' | transloco }}</h1>
+    <p class="muted lead">{{ 'home.promise' | transloco }}</p>
+  </section>
+} @else {
+  <h1 class="visually-hidden">{{ 'home.yourGames' | transloco }}</h1>
+}
 
 @if (recent.hasValue()) {
   @let r = recent.value();
@@ -53,82 +55,112 @@
   </section>
 }
 
-<section class="library" aria-labelledby="library-title">
+@if (others.hasValue() && others.value().length > 0) {
+  <section class="mine" aria-labelledby="mine-title">
+    <h2 id="mine-title">{{ 'home.otherGames' | transloco }}</h2>
+    <ul class="mine-list">
+      @for (o of others.value(); track o.gameId) {
+        @let oc = cover(o.gameId);
+        <li>
+          <a class="mine-row" [routerLink]="gameLink(o.gameId)">
+            <app-game-cover class="thumb" [cover]="oc.style" [text]="oc.text" />
+            <span class="mine-body">
+              <span class="mine-name">{{ o.game.name | localize: l }}</span>
+              <span class="muted small">{{ o.chapter.neutralLabel | localize: l }} · {{ 'home.doneCount' | transloco: { count: doneCount(o.gameId) } }}</span>
+            </span>
+            <app-icon name="chevron-right" />
+          </a>
+        </li>
+      }
+    </ul>
+  </section>
+}
+
+<section class="library" id="library" aria-labelledby="library-title">
   <h2 id="library-title">{{ 'home.library' | transloco }}</h2>
-  @for (franchise of franchises(); track franchise.id) {
+
+  <nav class="filters" [attr.aria-label]="'home.filterLabel' | transloco">
+    <a class="chip" routerLink="/" fragment="library" [attr.aria-current]="filter() ? null : 'true'">{{ 'home.filterAll' | transloco }}</a>
+    @for (f of franchises(); track f.id) {
+      <a class="chip" routerLink="/" [queryParams]="{ f: f.id }" fragment="library" [attr.aria-current]="filter()?.id === f.id ? 'true' : null">
+        {{ f.name | localize: l }}
+      </a>
+    }
+  </nav>
+
+  @for (franchise of shown(); track franchise.id) {
     <section class="franchise" [attr.aria-labelledby]="'franchise-' + franchise.id">
-      <header>
+      <header class="franchise-head">
         <h3 [id]="'franchise-' + franchise.id">{{ franchise.name | localize: l }}</h3>
-        @if (franchise.description) {
-          <p class="muted small">{{ franchise.description | localize: l }}</p>
+        @if (!filter() && franchise.games.length > 0) {
+          <a class="see-all" routerLink="/" [queryParams]="{ f: franchise.id }" fragment="library">
+            {{ 'home.seeAll' | transloco }} <app-icon name="chevron-right" />
+          </a>
         }
       </header>
-      <ul class="games">
-        @for (g of franchise.games; track g.id) {
-          <li>
-            @let gc = cover(g.id);
-            <a class="card game" [routerLink]="gameLink(g.id)">
-              <app-game-cover class="cover" [cover]="gc.style" [text]="gc.text" />
-              <span class="game-body">
-                <span class="game-name visually-hidden">{{ g.name | localize: l }}</span>
-                <span class="muted small">{{ 'home.counts' | transloco: { chapters: g.chapterCount, items: g.itemCount } }}</span>
-                @if (started(g.id)) {
-                  <span class="badge">{{ 'home.inProgress' | transloco: { count: doneCount(g.id) } }}</span>
-                }
-              </span>
-              <span class="game-action">
-                {{ (started(g.id) ? 'home.resume' : 'home.start') | transloco }}
-                <app-icon name="chevron-right" />
-              </span>
-            </a>
-          </li>
-        } @empty {
-          <li class="card soon muted">{{ 'home.franchiseSoon' | transloco }}</li>
-        }
-      </ul>
+      @if (filter() && franchise.description) {
+        <p class="muted small">{{ franchise.description | localize: l }}</p>
+      }
+      @if (franchise.games.length === 0) {
+        <p class="card soon-series muted small">{{ 'home.franchiseSoon' | transloco }}</p>
+      } @else if (filter()) {
+        <ul class="grid">
+          @for (g of franchise.games; track g.id) {
+            <li><ng-container *ngTemplateOutlet="gameCard; context: { $implicit: g }" /></li>
+          }
+        </ul>
+      } @else {
+        <div class="row-wrap">
+          @if (hints.canBack()) {
+            <button type="button" class="arrow prev" [attr.aria-label]="'home.scrollBack' | transloco" (click)="hints.scroll(-1)">
+              <app-icon name="chevron-left" />
+            </button>
+          }
+          <ul class="row" appScrollHints #hints="scrollHints">
+            @for (g of franchise.games; track g.id) {
+              <li><ng-container *ngTemplateOutlet="gameCard; context: { $implicit: g }" /></li>
+            }
+          </ul>
+          @if (hints.canForward()) {
+            <button type="button" class="arrow next" [attr.aria-label]="'home.scrollForward' | transloco" (click)="hints.scroll(1)">
+              <app-icon name="chevron-right" />
+            </button>
+          }
+        </div>
+      }
     </section>
   }
-  <div class="card soon">
-    <app-icon name="sparkles" />
-    <div>
-      <strong>{{ 'home.moreSoonTitle' | transloco }}</strong>
-      <p class="muted small">{{ 'home.moreSoonText' | transloco }}</p>
-      @if (suggestUrl) {
-        <a [href]="suggestUrl" rel="noopener" target="_blank">{{ 'home.suggest' | transloco }}</a>
-      }
-    </div>
-  </div>
-</section>
 
-<section class="card transfer" aria-labelledby="transfer-title">
-  <h2 id="transfer-title">{{ 'transfer.title' | transloco }}</h2>
-  <p class="muted small">{{ 'transfer.intro' | transloco }}</p>
-  <button type="button" class="button primary" (click)="shareLink()">
-    <app-icon name="upload" /> {{ (canShare ? 'transfer.shareLink' : 'transfer.copyLink') | transloco }}
-  </button>
-  <p class="muted small">{{ 'transfer.linkHint' | transloco }}</p>
-  <div class="actions">
-    <button type="button" class="button" (click)="exportProgress()"><app-icon name="download" /> {{ 'transfer.export' | transloco }}</button>
-    <label class="button">
-      <app-icon name="upload" /> {{ 'transfer.import' | transloco }}
-      <input type="file" accept="application/json,.json" class="visually-hidden" (change)="pickFile($event)" />
-    </label>
-  </div>
-
-  @if (pendingImport()?.source === 'file') {
-    <div class="confirm" role="alertdialog" aria-labelledby="import-confirm">
-      <p id="import-confirm">{{ 'transfer.confirm' | transloco }}</p>
-      <div class="actions">
-        <button type="button" class="button primary" (click)="confirmImport()">{{ 'transfer.replace' | transloco }}</button>
-        <button type="button" class="button" (click)="pendingImport.set(null)">{{ 'common.cancel' | transloco }}</button>
+  @if (!filter()) {
+    <div class="card soon">
+      <app-icon name="sparkles" />
+      <div>
+        <strong>{{ 'home.moreSoonTitle' | transloco }}</strong>
+        <p class="muted small">{{ 'home.moreSoonText' | transloco }}</p>
+        @if (suggestUrl) {
+          <a [href]="suggestUrl" rel="noopener" target="_blank">{{ 'home.suggest' | transloco }}</a>
+        }
       </div>
     </div>
   }
-  <p role="status" class="small" [class.error]="status()?.kind === 'error'">
-    @if (status(); as s) {
-      @if (!s.atTop) {
-        {{ s.key | transloco: { count: s.count } }}
-      }
-    }
-  </p>
 </section>
+
+<a class="backup-link" routerLink="/backup"><app-icon name="upload" /> {{ 'home.backupLink' | transloco }} <app-icon name="chevron-right" /></a>
+
+<ng-template #gameCard let-g>
+  @let gc = cover(g.id);
+  <a class="card game" [routerLink]="gameLink(g.id)">
+    <app-game-cover class="cover" [cover]="gc.style" [text]="gc.text" />
+    <span class="game-body">
+      <span class="visually-hidden">{{ g.name | localize: l }}</span>
+      <span class="muted small">{{ 'home.counts' | transloco: { chapters: g.chapterCount, items: g.itemCount } }}</span>
+      @if (started(g.id)) {
+        <span class="badge">{{ 'home.inProgress' | transloco: { count: doneCount(g.id) } }}</span>
+      }
+    </span>
+    <span class="game-action">
+      {{ (started(g.id) ? 'home.resume' : 'home.start') | transloco }}
+      <app-icon name="chevron-right" />
+    </span>
+  </a>
+</ng-template>

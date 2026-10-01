@@ -10,6 +10,7 @@ test('a transfer link carries progress to a fresh browser', async ({ browser, ba
   await pageA.goto('/sc/chapters/sc-ch0');
   await row(pageA, 'Safe Quest').getByRole('checkbox').check();
   await pageA.getByRole('link', { name: 'Chaptick' }).click();
+  await pageA.getByRole('link', { name: 'Back up or move your progress' }).click();
   await pageA.getByRole('button', { name: 'Copy a transfer link' }).click();
   await expect(pageA.getByText('Link copied. Open it on the other device.')).toBeVisible();
   const link = await pageA.evaluate(() => navigator.clipboard.readText());

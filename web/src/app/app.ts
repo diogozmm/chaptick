@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -21,6 +22,11 @@ export class App {
   protected readonly game = inject(ActiveGame);
   protected readonly transfer = inject(TransferService);
   protected readonly movedHost = this.transfer.movedTo ? new URL(this.transfer.movedTo).host : '';
+
+  constructor() {
+    // Anchor links (e.g. the library filters, #library) land below the sticky top bar, not under it.
+    inject(ViewportScroller).setOffset(() => [0, (document.querySelector('.topbar')?.clientHeight ?? 0) + 12]);
+  }
 
   protected toggleLang(): void {
     void this.lang.use(this.lang.lang() === 'pt' ? 'en' : 'pt');

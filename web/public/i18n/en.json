@@ -32,7 +32,16 @@
     "franchiseSoon": "Games for this series are on the way.",
     "moreSoonTitle": "More games and series coming",
     "moreSoonText": "Chaptick is built to grow beyond one game.",
-    "suggest": "Suggest a game"
+    "suggest": "Suggest a game",
+    "yourGames": "Your games",
+    "otherGames": "Your other games",
+    "doneCount": "{{count}} done",
+    "filterLabel": "Filter by series",
+    "filterAll": "All",
+    "seeAll": "See all",
+    "scrollBack": "Scroll back",
+    "scrollForward": "Scroll forward",
+    "backupLink": "Back up or move your progress"
   },
   "where": {
     "title": "Where am I?",
@@ -230,5 +239,12 @@
   "trophy": {
     "countsToward": "Counts toward the trophy",
     "filter": "Trophies"
+  },
+  "backup": {
+    "short": "Backup",
+    "eyebrow": "Backup and transfer",
+    "linkTitle": "Another device or browser",
+    "fileTitle": "Backup file",
+    "fileHint": "One file with every game on this device. Keep it somewhere safe, or open it on another phone with Import."
   }
 }

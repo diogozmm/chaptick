@@ -1,0 +1,40 @@
+<header class="stack-sm">
+  <p class="eyebrow">{{ 'backup.eyebrow' | transloco }}</p>
+  <h1>{{ 'transfer.title' | transloco }}</h1>
+  <p class="muted">{{ 'transfer.intro' | transloco }}</p>
+</header>
+
+<section class="card" aria-labelledby="link-title">
+  <h2 id="link-title"><app-icon name="upload" /> {{ 'backup.linkTitle' | transloco }}</h2>
+  <p class="muted small">{{ 'transfer.linkHint' | transloco }}</p>
+  <button type="button" class="button primary block" (click)="shareLink()">
+    {{ (canShare ? 'transfer.shareLink' : 'transfer.copyLink') | transloco }}
+  </button>
+</section>
+
+<section class="card" aria-labelledby="file-title">
+  <h2 id="file-title"><app-icon name="download" /> {{ 'backup.fileTitle' | transloco }}</h2>
+  <p class="muted small">{{ 'backup.fileHint' | transloco }}</p>
+  <div class="actions">
+    <button type="button" class="button" (click)="exportProgress()"><app-icon name="download" /> {{ 'transfer.export' | transloco }}</button>
+    <label class="button">
+      <app-icon name="upload" /> {{ 'transfer.import' | transloco }}
+      <input type="file" accept="application/json,.json" class="visually-hidden" (change)="pickFile($event)" />
+    </label>
+  </div>
+  @if (pendingFile() !== null) {
+    <div class="confirm" role="alertdialog" aria-labelledby="import-confirm">
+      <p id="import-confirm">{{ 'transfer.confirm' | transloco }}</p>
+      <div class="actions">
+        <button type="button" class="button primary" (click)="confirmImport()">{{ 'transfer.replace' | transloco }}</button>
+        <button type="button" class="button" (click)="pendingFile.set(null)">{{ 'common.cancel' | transloco }}</button>
+      </div>
+    </div>
+  }
+</section>
+
+<p role="status" class="small status" [class.error]="status()?.kind === 'error'">
+  @if (status(); as s) {
+    {{ s.key | transloco: { count: s.count } }}
+  }
+</p>

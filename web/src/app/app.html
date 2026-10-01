@@ -41,6 +41,7 @@
 
 <footer class="footer">
   <nav [attr.aria-label]="'app.footerNav' | transloco">
+    <a routerLink="/backup">{{ 'backup.short' | transloco }}</a>
     <a routerLink="/credits">{{ 'credits.title' | transloco }}</a>
     <a routerLink="/credits" fragment="support"><app-icon name="heart" /> {{ 'app.support' | transloco }}</a>
     <a routerLink="/privacy">{{ 'privacy.title' | transloco }}</a>

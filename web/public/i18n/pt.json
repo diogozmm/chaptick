@@ -32,7 +32,16 @@
     "franchiseSoon": "Os jogos desta série estão a caminho.",
     "moreSoonTitle": "Mais jogos e séries em breve",
     "moreSoonText": "O Chaptick foi feito para crescer além de um jogo só.",
-    "suggest": "Sugerir um jogo"
+    "suggest": "Sugerir um jogo",
+    "yourGames": "Seus jogos",
+    "otherGames": "Seus outros jogos",
+    "doneCount": "{{count}} feitos",
+    "filterLabel": "Filtrar por série",
+    "filterAll": "Todas",
+    "seeAll": "Ver todos",
+    "scrollBack": "Voltar",
+    "scrollForward": "Avançar",
+    "backupLink": "Fazer backup ou levar seu progresso"
   },
   "where": {
     "title": "Onde estou?",
@@ -230,5 +239,12 @@
   "trophy": {
     "countsToward": "Conta para o troféu",
     "filter": "Troféus"
+  },
+  "backup": {
+    "short": "Backup",
+    "eyebrow": "Backup e transferência",
+    "linkTitle": "Outro aparelho ou navegador",
+    "fileTitle": "Arquivo de backup",
+    "fileHint": "Um arquivo com todos os jogos deste aparelho. Guarde num lugar seguro, ou abra em outro celular com Importar."
   }
 }
