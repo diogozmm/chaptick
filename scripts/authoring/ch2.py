@@ -1,6 +1,6 @@
 # Chapter 2 — rewritten in our own words from the Neoseeker walkthrough (facts only).
 # Once published, never reorder or remove items: ids are derived from order.
-from lib import Chapter, src, t
+from lib import Chapter, gf, src, t
 
 RUAN = src('Chapter 2 - Ruan')
 ZEISS = src('Chapter 2 - Zeiss')
@@ -109,6 +109,59 @@ c.item('collectible', t('Hot spring cave treasure chests (9)', 'Baús da caverna
        t('Includes Septium Jelly Beans (eat it for the recipe) and a monster chest. The last two chests are down the side branch near the end, not the path to the healing device.',
          'Inclui Septium Jelly Beans (coma para ganhar a receita) e um baú de monstros. Os dois últimos baús ficam no desvio perto do fim, não no caminho do dispositivo de cura.'),
        1, [WOLF])
+
+# ---------------------------------------------------------------- routes (append-only once published)
+GF2 = gf('Chapter 2 - The Raging Land')
+c.set_steps('sc-ch2-co-07', [
+    t('North, along the west wall — Droplet of Defense', 'Ao norte, junto à parede oeste — Droplet of Defense'),
+    t('Skip the northwest fork, continue east along the wall — U-Material', 'Ignore a bifurcação noroeste e siga a leste pela parede — U-Material'),
+    t('Next chest — Jade Guard', 'Próximo baú — Jade Guard'),
+], source=GF2)
+c.set_steps('sc-ch2-co-08', [
+    t('First chest along the road — Curia Balm ×2', 'Primeiro baú da estrada — Curia Balm ×2'),
+    t('Next — Droplet of Spirit', 'Próximo — Droplet of Spirit'),
+    t('Next — U-Material ×2', 'Próximo — U-Material ×2'),
+    t('Monster chest (grasshoppers) — Red Sphere', 'Baú de monstros (gafanhotos) — Red Sphere'),
+], source=GF2)
+c.set_steps('sc-ch2-co-09', [
+    t('First fork south (2 chests) — Salmon Roe ×5, EP Charge II', 'Primeira bifurcação ao sul (2 baús) — Salmon Roe ×5, EP Charge II'),
+    t('West; a "statue" on the north wall is a monster. Next fork south — Gemini Boots', 'Oeste; uma "estátua" na parede norte é um monstro. Próxima bifurcação ao sul — Gemini Boots'),
+    t('The splits at the end, left to right (3 chests) — U-Material ×2, Freeze, Red Fly ×5', 'As divisões no fim, da esquerda para a direita (3 baús) — U-Material ×2, Freeze, Red Fly ×5'),
+], source=GF2)
+c.set_steps('sc-ch2-co-10', [
+    t('East path, southeast along the wall — Droplet of Strength', 'Caminho leste, sudeste junto à parede — Droplet of Strength'),
+    t('Main road south — Petrify', 'Estrada principal ao sul — Petrify'),
+    t('Northeast — Larva ×5', 'Nordeste — Larva ×5'),
+    t('East — Teara Balm', 'Leste — Teara Balm'),
+    t('Further south — Droplet of Magic', 'Mais ao sul — Droplet of Magic'),
+    t('East along the north wall — Pisces Heart (fishing rod)', 'Leste pela parede norte — Pisces Heart (vara de pesca)'),
+    t('Further east along the north wall — EP Charge II', 'Mais a leste pela parede norte — EP Charge II'),
+    t('South along the east wall — U-Material ×2', 'Ao sul pela parede leste — U-Material ×2'),
+    t('Monster chest (sheep and mantises) — Green Sphere', 'Baú de monstros (ovelhas e louva-a-deus) — Green Sphere'),
+    t('Back in the southwest of this part — All Sepith ×100', 'De volta ao sudoeste desta parte — All Sepith ×100'),
+    t('East along the south wall — Sleep', 'Leste pela parede sul — Sleep'),
+    t('East, then south — Zeram Powder', 'Leste e depois sul — Zeram Powder'),
+    t('Northwest — Thelas Balm ×2', 'Noroeste — Thelas Balm ×2'),
+], source=GF2)
+c.set_steps('sc-ch2-co-11', [
+    t('1F, both sides of the roundabout and near the stairs (4 chests) — EP Charge II, Droplet of Defense, All Sepith ×100, Thelas Balm ×2', '1F, dos dois lados da rotatória e perto da escada (4 baús) — EP Charge II, Droplet of Defense, All Sepith ×100, Thelas Balm ×2'),
+    t('2F, center of the room — Droplet of Strength', '2F, centro da sala — Droplet of Strength'),
+    t('West fork up to 3F — U-Material', 'Bifurcação oeste até o 3F — U-Material'),
+    t('East fork up to 3F — Seal', 'Bifurcação leste até o 3F — Seal'),
+    t('4F, all the way south (2 chests) — Teara Balm, Droplet of Spirit', '4F, todo o caminho ao sul (2 baús) — Teara Balm, Droplet of Spirit'),
+    t('5F (east stairs are closer), south — Cashmere Sweater', '5F (a escada leste fica mais perto), ao sul — Cashmere Sweater'),
+    t('5F, around the central room (5 chests) — Accelerators, Droplet of Magic, Five-Ring Staff, Red Jacket and a monster chest with Vajra (five Fire Trappers)', '5F, ao redor da sala central (5 baús) — Accelerators, Droplet of Magic, Five-Ring Staff, Red Jacket e um baú de monstros com Vajra (cinco Fire Trappers)'),
+], source=GF2)
+c.set_steps('sc-ch2-co-12', [
+    t('East fork — Thelas Balm ×2', 'Bifurcação leste — Thelas Balm ×2'),
+    t('West fork — monster chest: Machine Planker', 'Bifurcação oeste — baú de monstros: Machine Planker'),
+    t('South, then east, among the Ya-Kahs — Gemini Boots+', 'Sul e depois leste, entre os Ya-Kahs — Gemini Boots+'),
+    t('Back, then south — Septium Jelly Beans', 'Volte e siga ao sul — Septium Jelly Beans'),
+    t('Back, then west near the Faerie Epitaph — Zeram Powder', 'Volte e siga a oeste, perto do Faerie Epitaph — Zeram Powder'),
+    t('Fork north — Cashmere Sweater+', 'Bifurcação ao norte — Cashmere Sweater+'),
+    t('West, then southeast with the Shining Poms — All Sepith ×100', 'Oeste e depois sudeste, junto aos Shining Poms — All Sepith ×100'),
+    t('Side branch by the hot spring near the end (2 chests) — Teara Balm, EP Charge II', 'Desvio da fonte termal perto do fim (2 baús) — Teara Balm, EP Charge II'),
+], source=GF2)
 
 # ---------------------------------------------------------------- bosses
 c.boss(t('Neptune Frog'), t('Kaldia Tunnel'),

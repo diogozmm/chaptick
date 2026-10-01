@@ -105,6 +105,53 @@ c.item('collectible', t('Grancel Sewers E. & N. Blocks treasure chests (9)', 'Ba
          'Inclui Bone-In Meat (coma para ganhar a receita). O baú de monstros do North Block (quatro toupeiras) é a luta mais difícil do capítulo; dá para deixar para o fim.'),
        1, [VILLA])
 
+# ---------------------------------------------------------------- routes (append-only once published)
+c.set_steps('sc-ch3-co-09', [
+    t('Kaldia Tunnel, the newly opened path to the cave — All Sepith ×100', 'Kaldia Tunnel, o caminho recém-aberto até a caverna — All Sepith ×100'),
+    t('In the cave, next fork north — Onyx Guard', 'Na caverna, próxima bifurcação ao norte — Onyx Guard'),
+    t('North fork — Droplet of Defense', 'Bifurcação norte — Droplet of Defense'),
+    t('South fork — Droplet of Life', 'Bifurcação sul — Droplet of Life'),
+    t('At the next fork keep west — Teara Balm', 'Na próxima bifurcação siga a oeste — Teara Balm'),
+    t('Back, north, then east — Droplet of Strength', 'Volte, norte e depois leste — Droplet of Strength'),
+    t('West, following the bend southwest — Droplet of Spirit', 'Oeste, seguindo a curva a sudoeste — Droplet of Spirit'),
+    t('Back north, first fork west — Droplet of Magic', 'De volta ao norte, primeira bifurcação a oeste — Droplet of Magic'),
+    t('Back to the west — Thelas Balm ×2', 'De volta a oeste — Thelas Balm ×2'),
+], source=GF1)
+c.set_steps('sc-ch3-co-10', [
+    t('First fork east — fishing bait (Dumpling, Pond Snail, Frog)', 'Primeira bifurcação a leste — iscas (Dumpling, Pond Snail, Frog)'),
+    t('Next fork west, all the way down — Deathblow', 'Próxima bifurcação a oeste, até o fim — Deathblow'),
+    t('Then left — Droplet of Strength', 'Depois à esquerda — Droplet of Strength'),
+    t('Right path, the chest in the center — Edel Armor', 'Caminho da direita, o baú no centro — Edel Armor'),
+    t('Southeast corner — monster chest: Silver Gauntlets (sheep that reflect)', 'Canto sudeste — baú de monstros: Silver Gauntlets (ovelhas que refletem)'),
+    t('Near the end — Droplet of Defense', 'Perto do fim — Droplet of Defense'),
+], source=GF2)
+c.set_steps('sc-ch3-co-11', [
+    t('West path, toward Sanktheim Gate — Droplet of Spirit', 'Caminho oeste, rumo ao Sanktheim Gate — Droplet of Spirit'),
+    t('East at the fork, along the south wall — All Sepith ×250', 'Leste na bifurcação, junto à parede sul — All Sepith ×250'),
+    t('A little further south on the same wall — U-Material ×10', 'Um pouco mais ao sul, na mesma parede — U-Material ×10'),
+    t('East, then uphill to the north end — Silver Guard', 'Leste e depois subindo até o extremo norte — Silver Guard'),
+], source=GF1)
+c.set_steps('sc-ch3-co-12', [
+    t('First fork west, behind the monument — Mute', 'Primeira bifurcação a oeste, atrás do monumento — Mute'),
+    t('Main road west, north wall — Zeram Powder', 'Estrada principal a oeste, parede norte — Zeram Powder'),
+    t('Next fork south — monster chest: Trickster (burst the bone fish early)', 'Próxima bifurcação ao sul — baú de monstros: Trickster (derrube os peixes-esqueleto cedo)'),
+    t('Next fork — Holy Cloth', 'Próxima bifurcação — Holy Cloth'),
+    t('Southwest fork, along the left wall — Athelas Balm', 'Bifurcação sudoeste, junto à parede esquerda — Athelas Balm'),
+    t('Northeast fork — Droplet of Magic', 'Bifurcação nordeste — Droplet of Magic'),
+    t('One guide also lists a chest by the east wall at the next fork (Droplet of Spirit)', 'Um dos guias também cita um baú junto à parede leste na próxima bifurcação (Droplet of Spirit)'),
+], source=GF1)
+c.set_steps('sc-ch3-co-13', [
+    t('E. Block, around to the north side: room on the left — Athelas Balm', 'E. Block, contornando até o lado norte: sala à esquerda — Athelas Balm'),
+    t('Room on the right — Golden Guard', 'Sala à direita — Golden Guard'),
+    t('East hallway down to the next section, right at the split — Crystal Heels', 'Corredor leste até a próxima seção, à direita na divisão — Crystal Heels'),
+    t('Fork to the left, at the end — Zeram Powder', 'Bifurcação à esquerda, no fim — Zeram Powder'),
+    t('Back, north to the end of the hallway — Bone-In Meat', 'Volte, norte até o fim do corredor — Bone-In Meat'),
+    t('N. Block (breakable wall), all the way south — Edel Girders', 'N. Block (parede quebrável), todo o caminho ao sul — Edel Girders'),
+    t('West, then north to the end, behind the big crocodile — Confuse', 'Oeste e depois norte até o fim, atrás do crocodilo grande — Confuse'),
+    t('At the end — monster chest: Proxy Puppet L (the hardest fight of the chapter)', 'No fim — baú de monstros: Proxy Puppet L (a luta mais difícil do capítulo)'),
+    t('Upstairs, northern room, top-left side room — All Sepith ×250', 'No andar de cima, sala norte, sala lateral do canto superior esquerdo — All Sepith ×250'),
+], source=GF2)
+
 # ---------------------------------------------------------------- bosses
 c.boss(t('Divine Pengu'), t('Kaldia Limestone Cave — northwest depths', 'Kaldia Limestone Cave — fundo a noroeste'),
        t('It is game over if the boy you are protecting falls, so clear the small pengus quickly. After Rage Boost it S-Breaks with a line attack (a Taunt can redirect it). Below half HP its dance confuses everyone (debuff immunity or Lily Necklace+) and calls pengus that take its damage: sweep them with area attacks. It survives one lethal hit.',

@@ -210,6 +210,110 @@
       "spoilerLevel": 1,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "1F, east hallway, south door — Droplet of Defense",
+            "pt": "1F, corredor leste, porta sul — Droplet of Defense"
+          }
+        },
+        {
+          "text": {
+            "en": "1F, all the way north — Droplet of Spirit",
+            "pt": "1F, todo o caminho ao norte — Droplet of Spirit"
+          }
+        },
+        {
+          "text": {
+            "en": "1F, right hallway, last door on the right — Tearal Balm ×2",
+            "pt": "1F, corredor da direita, última porta à direita — Tearal Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "1F, next room, right door — Droplet of Strength",
+            "pt": "1F, sala seguinte, porta da direita — Droplet of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, left door in the first room — EP Charge III ×2",
+            "pt": "2F, porta da esquerda na primeira sala — EP Charge III ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, second hallway, first door on the left — Night-Vision Goggles",
+            "pt": "2F, segundo corredor, primeira porta à esquerda — Night-Vision Goggles"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, south exit, then left — Droplet of Life",
+            "pt": "2F, saída sul e depois à esquerda — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "2F dark room, along the right wall to the south door — Ebony Shoes+",
+            "pt": "2F, sala escura, pela parede da direita até a porta sul — Ebony Shoes+"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, door at the end that needs the second key — Star Rabbits+",
+            "pt": "2F, porta no fim que pede o segundo cartão — Star Rabbits+"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, outdoors — Green Cookie",
+            "pt": "3F, área externa — Green Cookie"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, southern hallway, door on the left — All Sepith ×300",
+            "pt": "3F, corredor sul, porta à esquerda — All Sepith ×300"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, room at the end (3 chests) — Ebony Suit+, Droplet of Magic, Zeram Powder",
+            "pt": "3F, sala no fim (3 baús) — Ebony Suit+, Droplet of Magic, Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "With all keys: 1F, door to the north — All Sepith ×300",
+            "pt": "Com todos os cartões: 1F, porta ao norte — All Sepith ×300"
+          }
+        },
+        {
+          "text": {
+            "en": "1F, door next to the room with the large machine — Misty Veil+",
+            "pt": "1F, porta ao lado da sala com a máquina grande — Misty Veil+"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, door right of the elevator — All Sepith ×300",
+            "pt": "2F, porta à direita do elevador — All Sepith ×300"
+          }
+        },
+        {
+          "text": {
+            "en": "2F, door on the left side of the dark room — All Sepith ×300",
+            "pt": "2F, porta no lado esquerdo da sala escura — All Sepith ×300"
+          }
+        },
+        {
+          "text": {
+            "en": "3F, the hallway door you skipped — monster chest: Chronograph",
+            "pt": "3F, a porta do corredor que você pulou — baú de monstros: Chronograph"
+          }
+        }
       ]
     },
     {
@@ -231,6 +335,62 @@
       "spoilerLevel": 2,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Starting area, room on the left — Spicy Meatballs",
+            "pt": "Área inicial, sala à esquerda — Spicy Meatballs"
+          }
+        },
+        {
+          "text": {
+            "en": "Next room — Tearal Balm",
+            "pt": "Sala seguinte — Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "North hallway, third room — EP Charge III",
+            "pt": "Corredor norte, terceira sala — EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Next level: first door on the left, upstairs, second door (3 chests) — Tearal Balm, Zeram Capsule, U-Material+",
+            "pt": "Nível seguinte: primeira porta à esquerda, andar de cima, segunda porta (3 baús) — Tearal Balm, Zeram Capsule, U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "Door across the hall to the north, upstairs, door on the right — Athelas Balm ×2",
+            "pt": "Porta do outro lado do corredor ao norte, andar de cima, porta à direita — Athelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Rear section, first level: middle room of the north hallway — Droplet of Life",
+            "pt": "Seção traseira, primeiro nível: sala do meio do corredor norte — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "Southernmost hallway, center door — monster chest: Seven-Ring Staff",
+            "pt": "Corredor mais ao sul, porta central — baú de monstros: Seven-Ring Staff"
+          }
+        },
+        {
+          "text": {
+            "en": "Rear section, second level: first room of the north hallway — EP Charge III",
+            "pt": "Seção traseira, segundo nível: primeira sala do corredor norte — EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Southernmost hallway, middle room — All Sepith ×300",
+            "pt": "Corredor mais ao sul, sala do meio — All Sepith ×300"
+          }
+        }
       ]
     }
   ],

@@ -1,7 +1,7 @@
 # Chapter 1 — rewritten in our own words from the Neoseeker walkthrough (facts only).
 # Once published, never reorder or remove items here: ids are derived from order and saved
 # progress points at them. Append new items at the end of each type.
-from lib import Chapter, src, t
+from lib import Chapter, gf, src, t
 
 RUAN = src('Chapter 1 - Ruan')
 MERCIA = src('Chapter 1 - Mercia Orphanage')
@@ -111,6 +111,72 @@ c.item('collectible', t('Underground ruins treasure chests (19)', 'Baús das ru�
        t('Includes a monster chest with three Puppet Flagger+. Collect everything before the last healing station.',
          'Inclui um baú de monstros com três Puppet Flagger+. Pegue tudo antes da última estação de cura.'),
        1, [MERCIA])
+
+# ---------------------------------------------------------------- routes (append-only once published)
+GF1 = gf('Chapter 1 - A Looming Shadow')
+c.set_steps('sc-ch1-co-09', [
+    t('At the fork toward Vista Forest Road — All Sepith ×50', 'Na bifurcação rumo à Vista Forest Road — All Sepith ×50'),
+    t('Hug the west wall around the hill; climb the ladder at the back — Hard Loafers', 'Contorne a colina pela parede oeste; suba a escada no fundo — Hard Loafers'),
+    t('Down on the beach, the nearby chest icon — S-Tablet ×5', 'Lá embaixo, na praia, o ícone de baú próximo — S-Tablet ×5'),
+    t('North along the shoreline, after the Jabba and Tatuunons — U-Material', 'Ao norte pela orla, depois do Jabba e dos Tatuunons — U-Material'),
+    t('Back on the main path, left wall — White Bracelet', 'De volta à trilha principal, parede esquerda — White Bracelet'),
+    t('End of the road, before the north beach — Thelas Balm ×2', 'Fim da estrada, antes da praia norte — Thelas Balm ×2'),
+    t('North beach, northwest by the Shining Poms — EP Charge I ×2', 'Praia norte, a noroeste, junto aos Shining Poms — EP Charge I ×2'),
+    t('North beach — monster chest: Blue Sphere', 'Praia norte — baú de monstros: Blue Sphere'),
+    t('Behind the Knight Ammonite (2 chests, one on each side) — Tear Balm ×2, Poison', 'Atrás do Knight Ammonite (2 baús, um de cada lado) — Tear Balm ×2, Poison'),
+    t('One more All Sepith ×50 on the road north toward Manoria (the guides disagree on which map it belongs to)', 'Mais um All Sepith ×50 na estrada ao norte rumo a Manoria (os guias divergem sobre em qual mapa ele fica)'),
+], source=GF1)
+c.set_steps('sc-ch1-co-10', [
+    t('First chest on the byroad — Mirage Ring', 'Primeiro baú da estrada — Mirage Ring'),
+    t('Further north — Jenis Jacket', 'Mais ao norte — Jenis Jacket'),
+    t('Southwest: follow the yellow line on the map and drop down two ladders — Black Bangle', 'Sudoeste: siga a linha amarela no mapa e desça duas escadas — Black Bangle'),
+    t('Back on the main road, nearby — U-Material', 'De volta à estrada principal, por perto — U-Material'),
+    t('Inside Varenne Lighthouse — All Sepith ×50', 'Dentro do Varenne Lighthouse — All Sepith ×50'),
+], source=GF1)
+c.set_steps('sc-ch1-co-11', [
+    t('Where the first Mini Egger-Rs are, drop down the ladder — U-Material', 'Onde ficam os primeiros Mini Egger-Rs, desça a escada — U-Material'),
+    t('Back on the main path — Cool Necklace', 'De volta à trilha principal — Cool Necklace'),
+    t('Further east — Earthworm ×5', 'Mais a leste — Earthworm ×5'),
+], source=GF1)
+c.set_steps('sc-ch1-co-12', [
+    t('North from the entrance — Burn', 'Ao norte da entrada — Burn'),
+    t('Further along — Thelas Balm ×2', 'Mais adiante — Thelas Balm ×2'),
+    t('Follow the south wall uphill — monster chest: Yellow Sphere', 'Siga a parede sul na subida — baú de monstros: Yellow Sphere'),
+    t('Back down, north of the quest marker — Curia Balm ×2', 'De volta para baixo, ao norte do marcador da quest — Curia Balm ×2'),
+], source=GF1)
+c.set_steps('sc-ch1-co-13', [
+    t('Follow the east wall — All Sepith ×50', 'Siga a parede leste — All Sepith ×50'),
+    t('South of the fork, along the west wall — Lily Necklace', 'Ao sul da bifurcação, junto à parede oeste — Lily Necklace'),
+    t('Further south — Blind', 'Mais ao sul — Blind'),
+], source=GF1)
+c.set_steps('sc-ch1-co-14', [
+    t('2F upper path up to 4F, first stairs to 5F — Jenis Blazer', '2F, caminho de cima até o 4F, primeira escada para o 5F — Jenis Blazer'),
+    t('4F, south then east into the center (2 chests) — Force Seal, EP Charge I ×2', '4F, sul e depois leste até o centro (2 baús) — Force Seal, EP Charge I ×2'),
+    t('Monster chest with five Aqua Trappers (weak to earth) — Ebony Staff', 'Baú de monstros com cinco Aqua Trappers (fracos contra terra) — Ebony Staff'),
+    t('Back down on 2F — U-Material', 'De volta ao 2F — U-Material'),
+    t('4F south, stairs up to 5F — Tear Balm ×2', '4F, sul, escada para o 5F — Tear Balm ×2'),
+    t('Down to 2F again — All Sepith ×50', 'Desça ao 2F de novo — All Sepith ×50'),
+    t('Southeast fork up to 4F, center room, north fork to 5F — Rotund Meatballs', 'Bifurcação sudeste até o 4F, sala central, bifurcação norte para o 5F — Rotund Meatballs'),
+    t('Fork outside the center room — Clog Boots', 'Bifurcação do lado de fora da sala central — Clog Boots'),
+    t('Center room — Droplet of Life', 'Sala central — Droplet of Life'),
+], source=GF1)
+c.set_steps('sc-ch1-co-15', [
+    t('B1F: straight, then right to a three-way fork; right — Tear Balm ×2', 'B1F: siga reto e depois à direita até uma bifurcação tripla; direita — Tear Balm ×2'),
+    t('Middle path (3 chests) — Jenis Blazer+, All Sepith ×50, EP Charge I ×2', 'Caminho do meio (3 baús) — Jenis Blazer+, All Sepith ×50, EP Charge I ×2'),
+    t('Left path (2 chests) — Zeram Powder, Feather Brooch', 'Caminho da esquerda (2 baús) — Zeram Powder, Feather Brooch'),
+    t('From the start, southwest path: room on the right — Crimson Guard', 'Do início, caminho sudoeste: sala à direita — Crimson Guard'),
+    t('Room at the end of that path — Droplet of Strength', 'Sala no fim desse caminho — Droplet of Strength'),
+    t('From the start, east fork, first room on the left — Droplet of Magic', 'Do início, bifurcação leste, primeira sala à esquerda — Droplet of Magic'),
+    t('Next fork, straight ahead — All Sepith ×50', 'Próxima bifurcação, em frente — All Sepith ×50'),
+    t('East fork — Thelas Balm ×2', 'Bifurcação leste — Thelas Balm ×2'),
+    t('B2F — monster chest: Stinger II (three Puppet Flagger+)', 'B2F — baú de monstros: Stinger II (três Puppet Flagger+)'),
+    t('B2F, dead ahead — Topaz Guard', 'B2F, logo em frente — Topaz Guard'),
+    t('South fork — Droplet of Defense', 'Bifurcação sul — Droplet of Defense'),
+    t('North fork (2 chests) — Droplet of Spirit, Curia Balm ×2', 'Bifurcação norte (2 baús) — Droplet of Spirit, Curia Balm ×2'),
+    t('Southeast, with the Shining Poms — Hard Loafers+', 'Sudeste, junto aos Shining Poms — Hard Loafers+'),
+    t('Northeast, straight at the next fork — Droplet of Life', 'Nordeste, em frente na próxima bifurcação — Droplet of Life'),
+    t('Last path, straight at the fork — Skull Pendant', 'Último caminho, em frente na bifurcação — Skull Pendant'),
+], source=GF1)
 
 # ---------------------------------------------------------------- bosses
 c.boss(t('Raven gang trio', 'Trio da gangue Raven'), t('Ruan — South Block warehouse', 'Ruan — depósito do South Block'),

@@ -50,6 +50,38 @@ c.item('collectible', t('Ship treasure chests (11)', 'Baús da nave (11)'), t('L
          'Inclui Spicy Meatballs (coma para ganhar a receita) e um baú de monstros no primeiro nível da popa. Não dá para voltar aqui.'),
        2, [D2])
 
+# ---------------------------------------------------------------- routes (append-only once published)
+c.set_steps('sc-ch6-co-05', [
+    t('1F, east hallway, south door — Droplet of Defense', '1F, corredor leste, porta sul — Droplet of Defense'),
+    t('1F, all the way north — Droplet of Spirit', '1F, todo o caminho ao norte — Droplet of Spirit'),
+    t('1F, right hallway, last door on the right — Tearal Balm ×2', '1F, corredor da direita, última porta à direita — Tearal Balm ×2'),
+    t('1F, next room, right door — Droplet of Strength', '1F, sala seguinte, porta da direita — Droplet of Strength'),
+    t('2F, left door in the first room — EP Charge III ×2', '2F, porta da esquerda na primeira sala — EP Charge III ×2'),
+    t('2F, second hallway, first door on the left — Night-Vision Goggles', '2F, segundo corredor, primeira porta à esquerda — Night-Vision Goggles'),
+    t('2F, south exit, then left — Droplet of Life', '2F, saída sul e depois à esquerda — Droplet of Life'),
+    t('2F dark room, along the right wall to the south door — Ebony Shoes+', '2F, sala escura, pela parede da direita até a porta sul — Ebony Shoes+'),
+    t('2F, door at the end that needs the second key — Star Rabbits+', '2F, porta no fim que pede o segundo cartão — Star Rabbits+'),
+    t('3F, outdoors — Green Cookie', '3F, área externa — Green Cookie'),
+    t('3F, southern hallway, door on the left — All Sepith ×300', '3F, corredor sul, porta à esquerda — All Sepith ×300'),
+    t('3F, room at the end (3 chests) — Ebony Suit+, Droplet of Magic, Zeram Powder', '3F, sala no fim (3 baús) — Ebony Suit+, Droplet of Magic, Zeram Powder'),
+    t('With all keys: 1F, door to the north — All Sepith ×300', 'Com todos os cartões: 1F, porta ao norte — All Sepith ×300'),
+    t('1F, door next to the room with the large machine — Misty Veil+', '1F, porta ao lado da sala com a máquina grande — Misty Veil+'),
+    t('2F, door right of the elevator — All Sepith ×300', '2F, porta à direita do elevador — All Sepith ×300'),
+    t('2F, door on the left side of the dark room — All Sepith ×300', '2F, porta no lado esquerdo da sala escura — All Sepith ×300'),
+    t('3F, the hallway door you skipped — monster chest: Chronograph', '3F, a porta do corredor que você pulou — baú de monstros: Chronograph'),
+], source=D2)
+c.set_steps('sc-ch6-co-06', [
+    t('Starting area, room on the left — Spicy Meatballs', 'Área inicial, sala à esquerda — Spicy Meatballs'),
+    t('Next room — Tearal Balm', 'Sala seguinte — Tearal Balm'),
+    t('North hallway, third room — EP Charge III', 'Corredor norte, terceira sala — EP Charge III'),
+    t('Next level: first door on the left, upstairs, second door (3 chests) — Tearal Balm, Zeram Capsule, U-Material+', 'Nível seguinte: primeira porta à esquerda, andar de cima, segunda porta (3 baús) — Tearal Balm, Zeram Capsule, U-Material+'),
+    t('Door across the hall to the north, upstairs, door on the right — Athelas Balm ×2', 'Porta do outro lado do corredor ao norte, andar de cima, porta à direita — Athelas Balm ×2'),
+    t('Rear section, first level: middle room of the north hallway — Droplet of Life', 'Seção traseira, primeiro nível: sala do meio do corredor norte — Droplet of Life'),
+    t('Southernmost hallway, center door — monster chest: Seven-Ring Staff', 'Corredor mais ao sul, porta central — baú de monstros: Seven-Ring Staff'),
+    t('Rear section, second level: first room of the north hallway — EP Charge III', 'Seção traseira, segundo nível: primeira sala do corredor norte — EP Charge III'),
+    t('Southernmost hallway, middle room — All Sepith ×300', 'Corredor mais ao sul, sala do meio — All Sepith ×300'),
+], source=D2)
+
 # ---------------------------------------------------------------- bosses
 c.boss(t('Hide Spinner'), t('Ravennue Trail'),
        t('Part of the timed escort: blast the seven Millipede Balls with S-Crafts, then finish the leader with water arts. You should still have most of the clock left.',

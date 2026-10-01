@@ -409,7 +409,70 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 1 - A Looming Shadow"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "At the fork toward Vista Forest Road — All Sepith ×50",
+            "pt": "Na bifurcação rumo à Vista Forest Road — All Sepith ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "Hug the west wall around the hill; climb the ladder at the back — Hard Loafers",
+            "pt": "Contorne a colina pela parede oeste; suba a escada no fundo — Hard Loafers"
+          }
+        },
+        {
+          "text": {
+            "en": "Down on the beach, the nearby chest icon — S-Tablet ×5",
+            "pt": "Lá embaixo, na praia, o ícone de baú próximo — S-Tablet ×5"
+          }
+        },
+        {
+          "text": {
+            "en": "North along the shoreline, after the Jabba and Tatuunons — U-Material",
+            "pt": "Ao norte pela orla, depois do Jabba e dos Tatuunons — U-Material"
+          }
+        },
+        {
+          "text": {
+            "en": "Back on the main path, left wall — White Bracelet",
+            "pt": "De volta à trilha principal, parede esquerda — White Bracelet"
+          }
+        },
+        {
+          "text": {
+            "en": "End of the road, before the north beach — Thelas Balm ×2",
+            "pt": "Fim da estrada, antes da praia norte — Thelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "North beach, northwest by the Shining Poms — EP Charge I ×2",
+            "pt": "Praia norte, a noroeste, junto aos Shining Poms — EP Charge I ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "North beach — monster chest: Blue Sphere",
+            "pt": "Praia norte — baú de monstros: Blue Sphere"
+          }
+        },
+        {
+          "text": {
+            "en": "Behind the Knight Ammonite (2 chests, one on each side) — Tear Balm ×2, Poison",
+            "pt": "Atrás do Knight Ammonite (2 baús, um de cada lado) — Tear Balm ×2, Poison"
+          }
+        },
+        {
+          "text": {
+            "en": "One more All Sepith ×50 on the road north toward Manoria (the guides disagree on which map it belongs to)",
+            "pt": "Mais um All Sepith ×50 na estrada ao norte rumo a Manoria (os guias divergem sobre em qual mapa ele fica)"
+          }
+        }
       ]
     },
     {
@@ -429,7 +492,40 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 1 - A Looming Shadow"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "First chest on the byroad — Mirage Ring",
+            "pt": "Primeiro baú da estrada — Mirage Ring"
+          }
+        },
+        {
+          "text": {
+            "en": "Further north — Jenis Jacket",
+            "pt": "Mais ao norte — Jenis Jacket"
+          }
+        },
+        {
+          "text": {
+            "en": "Southwest: follow the yellow line on the map and drop down two ladders — Black Bangle",
+            "pt": "Sudoeste: siga a linha amarela no mapa e desça duas escadas — Black Bangle"
+          }
+        },
+        {
+          "text": {
+            "en": "Back on the main road, nearby — U-Material",
+            "pt": "De volta à estrada principal, por perto — U-Material"
+          }
+        },
+        {
+          "text": {
+            "en": "Inside Varenne Lighthouse — All Sepith ×50",
+            "pt": "Dentro do Varenne Lighthouse — All Sepith ×50"
+          }
+        }
       ]
     },
     {
@@ -449,7 +545,28 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 1 - A Looming Shadow"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Where the first Mini Egger-Rs are, drop down the ladder — U-Material",
+            "pt": "Onde ficam os primeiros Mini Egger-Rs, desça a escada — U-Material"
+          }
+        },
+        {
+          "text": {
+            "en": "Back on the main path — Cool Necklace",
+            "pt": "De volta à trilha principal — Cool Necklace"
+          }
+        },
+        {
+          "text": {
+            "en": "Further east — Earthworm ×5",
+            "pt": "Mais a leste — Earthworm ×5"
+          }
+        }
       ]
     },
     {
@@ -469,7 +586,34 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 1 - A Looming Shadow"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "North from the entrance — Burn",
+            "pt": "Ao norte da entrada — Burn"
+          }
+        },
+        {
+          "text": {
+            "en": "Further along — Thelas Balm ×2",
+            "pt": "Mais adiante — Thelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Follow the south wall uphill — monster chest: Yellow Sphere",
+            "pt": "Siga a parede sul na subida — baú de monstros: Yellow Sphere"
+          }
+        },
+        {
+          "text": {
+            "en": "Back down, north of the quest marker — Curia Balm ×2",
+            "pt": "De volta para baixo, ao norte do marcador da quest — Curia Balm ×2"
+          }
+        }
       ]
     },
     {
@@ -489,7 +633,28 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 1 - A Looming Shadow"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Follow the east wall — All Sepith ×50",
+            "pt": "Siga a parede leste — All Sepith ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "South of the fork, along the west wall — Lily Necklace",
+            "pt": "Ao sul da bifurcação, junto à parede oeste — Lily Necklace"
+          }
+        },
+        {
+          "text": {
+            "en": "Further south — Blind",
+            "pt": "Mais ao sul — Blind"
+          }
+        }
       ]
     },
     {
@@ -509,7 +674,64 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 1 - A Looming Shadow"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "2F upper path up to 4F, first stairs to 5F — Jenis Blazer",
+            "pt": "2F, caminho de cima até o 4F, primeira escada para o 5F — Jenis Blazer"
+          }
+        },
+        {
+          "text": {
+            "en": "4F, south then east into the center (2 chests) — Force Seal, EP Charge I ×2",
+            "pt": "4F, sul e depois leste até o centro (2 baús) — Force Seal, EP Charge I ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Monster chest with five Aqua Trappers (weak to earth) — Ebony Staff",
+            "pt": "Baú de monstros com cinco Aqua Trappers (fracos contra terra) — Ebony Staff"
+          }
+        },
+        {
+          "text": {
+            "en": "Back down on 2F — U-Material",
+            "pt": "De volta ao 2F — U-Material"
+          }
+        },
+        {
+          "text": {
+            "en": "4F south, stairs up to 5F — Tear Balm ×2",
+            "pt": "4F, sul, escada para o 5F — Tear Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Down to 2F again — All Sepith ×50",
+            "pt": "Desça ao 2F de novo — All Sepith ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast fork up to 4F, center room, north fork to 5F — Rotund Meatballs",
+            "pt": "Bifurcação sudeste até o 4F, sala central, bifurcação norte para o 5F — Rotund Meatballs"
+          }
+        },
+        {
+          "text": {
+            "en": "Fork outside the center room — Clog Boots",
+            "pt": "Bifurcação do lado de fora da sala central — Clog Boots"
+          }
+        },
+        {
+          "text": {
+            "en": "Center room — Droplet of Life",
+            "pt": "Sala central — Droplet of Life"
+          }
+        }
       ]
     },
     {
@@ -530,7 +752,100 @@
       },
       "spoilerLevel": 1,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 1 - A Looming Shadow"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "B1F: straight, then right to a three-way fork; right — Tear Balm ×2",
+            "pt": "B1F: siga reto e depois à direita até uma bifurcação tripla; direita — Tear Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Middle path (3 chests) — Jenis Blazer+, All Sepith ×50, EP Charge I ×2",
+            "pt": "Caminho do meio (3 baús) — Jenis Blazer+, All Sepith ×50, EP Charge I ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Left path (2 chests) — Zeram Powder, Feather Brooch",
+            "pt": "Caminho da esquerda (2 baús) — Zeram Powder, Feather Brooch"
+          }
+        },
+        {
+          "text": {
+            "en": "From the start, southwest path: room on the right — Crimson Guard",
+            "pt": "Do início, caminho sudoeste: sala à direita — Crimson Guard"
+          }
+        },
+        {
+          "text": {
+            "en": "Room at the end of that path — Droplet of Strength",
+            "pt": "Sala no fim desse caminho — Droplet of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "From the start, east fork, first room on the left — Droplet of Magic",
+            "pt": "Do início, bifurcação leste, primeira sala à esquerda — Droplet of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "Next fork, straight ahead — All Sepith ×50",
+            "pt": "Próxima bifurcação, em frente — All Sepith ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "East fork — Thelas Balm ×2",
+            "pt": "Bifurcação leste — Thelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "B2F — monster chest: Stinger II (three Puppet Flagger+)",
+            "pt": "B2F — baú de monstros: Stinger II (três Puppet Flagger+)"
+          }
+        },
+        {
+          "text": {
+            "en": "B2F, dead ahead — Topaz Guard",
+            "pt": "B2F, logo em frente — Topaz Guard"
+          }
+        },
+        {
+          "text": {
+            "en": "South fork — Droplet of Defense",
+            "pt": "Bifurcação sul — Droplet of Defense"
+          }
+        },
+        {
+          "text": {
+            "en": "North fork (2 chests) — Droplet of Spirit, Curia Balm ×2",
+            "pt": "Bifurcação norte (2 baús) — Droplet of Spirit, Curia Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Southeast, with the Shining Poms — Hard Loafers+",
+            "pt": "Sudeste, junto aos Shining Poms — Hard Loafers+"
+          }
+        },
+        {
+          "text": {
+            "en": "Northeast, straight at the next fork — Droplet of Life",
+            "pt": "Nordeste, em frente na próxima bifurcação — Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "Last path, straight at the fork — Skull Pendant",
+            "pt": "Último caminho, em frente na bifurcação — Skull Pendant"
+          }
+        }
       ]
     }
   ],
