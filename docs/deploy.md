@@ -30,6 +30,23 @@ Cache and security headers live in `web/public/_headers`, which Workers static a
 Pages also works without `wrangler.jsonc`: same build command, output directory `web/dist/web/browser`. With no
 `404.html` in the output, Pages serves `index.html` for unknown paths.
 
+## Moving to a new domain
+
+Browsers keep each address's saved data apart, so progress saved on `chaptick.diogo-zmm.workers.dev` is not
+visible on a new domain. The app carries it over with a transfer link (the progress travels after the `#`, which
+never reaches a server). To move:
+
+1. Cloudflare dashboard → Workers & Pages → `chaptick` → Settings → Domains & Routes → add the custom domain.
+   The same Worker now answers on both addresses; keep the `workers.dev` one enabled.
+2. In `web/src/app/site.config.ts`, set `canonicalOrigin` to the new address, e.g. `'https://chaptick.app'`
+   (no trailing slash).
+3. In `web/src/index.html`, change the `og:image` URL to the new domain.
+4. Deploy. Visits on the old address now show "Chaptick moved to …" with "Take my progress there": one tap opens
+   the new address with the player's progress, and the new address asks before replacing anything.
+
+Leave the old address running for a long while: players who come back months later still need it to move their
+progress. Players can also move progress between devices any time with "Share a transfer link" in the library.
+
 ## Publishing a content correction
 
 1. Edit `content/`, bump `dataVersion` in `content/sc/game.json`.

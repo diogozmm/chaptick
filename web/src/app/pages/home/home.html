@@ -1,4 +1,21 @@
 @let l = lang.lang();
+@if (pendingImport(); as p) {
+  @if (p.source === 'link') {
+    <section class="card incoming rise" role="alertdialog" aria-labelledby="incoming-title" aria-describedby="incoming-text">
+      <h2 id="incoming-title"><app-icon name="download" /> {{ 'transfer.incomingTitle' | transloco }}</h2>
+      <p id="incoming-text">{{ 'transfer.incoming' | transloco: { games: p.games } }}</p>
+      <div class="actions">
+        <button type="button" class="button primary" (click)="confirmImport()">{{ 'transfer.replace' | transloco }}</button>
+        <button type="button" class="button" (click)="pendingImport.set(null)">{{ 'common.cancel' | transloco }}</button>
+      </div>
+    </section>
+  }
+}
+@if (status(); as s) {
+  @if (s.atTop) {
+    <p class="card top-status rise" role="status" [class.error]="s.kind === 'error'">{{ s.key | transloco: { count: s.count } }}</p>
+  }
+}
 <section class="intro rise">
   <p class="eyebrow">{{ 'home.eyebrow' | transloco }}</p>
   <h1>{{ 'home.title' | transloco }}</h1>
@@ -85,6 +102,10 @@
 <section class="card transfer" aria-labelledby="transfer-title">
   <h2 id="transfer-title">{{ 'transfer.title' | transloco }}</h2>
   <p class="muted small">{{ 'transfer.intro' | transloco }}</p>
+  <button type="button" class="button primary" (click)="shareLink()">
+    <app-icon name="upload" /> {{ (canShare ? 'transfer.shareLink' : 'transfer.copyLink') | transloco }}
+  </button>
+  <p class="muted small">{{ 'transfer.linkHint' | transloco }}</p>
   <div class="actions">
     <button type="button" class="button" (click)="exportProgress()"><app-icon name="download" /> {{ 'transfer.export' | transloco }}</button>
     <label class="button">
@@ -93,7 +114,7 @@
     </label>
   </div>
 
-  @if (pendingImport() !== null) {
+  @if (pendingImport()?.source === 'file') {
     <div class="confirm" role="alertdialog" aria-labelledby="import-confirm">
       <p id="import-confirm">{{ 'transfer.confirm' | transloco }}</p>
       <div class="actions">
@@ -104,7 +125,9 @@
   }
   <p role="status" class="small" [class.error]="status()?.kind === 'error'">
     @if (status(); as s) {
-      {{ s.key | transloco: { count: s.count } }}
+      @if (!s.atTop) {
+        {{ s.key | transloco: { count: s.count } }}
+      }
     }
   </p>
 </section>

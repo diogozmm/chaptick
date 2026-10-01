@@ -6,7 +6,9 @@
     "reload": "Reload",
     "footerNav": "Site",
     "support": "Support the project",
-    "mainNav": "Main"
+    "mainNav": "Main",
+    "moved": "Chaptick moved to {{host}}. Your progress is saved only at this address.",
+    "moveProgress": "Take my progress there"
   },
   "common": {
     "cancel": "Cancel",
@@ -121,7 +123,7 @@
   },
   "transfer": {
     "title": "Move your progress",
-    "intro": "Progress lives only on this device. Export one file with all your games to back it up or open it on another phone.",
+    "intro": "Progress lives only on this device. Move it with a link, or keep a backup file with all your games.",
     "export": "Export",
     "import": "Import",
     "confirm": "Replace the progress on this device with the games in the file?",
@@ -132,7 +134,16 @@
       "invalid-json": "That file isn't valid JSON.",
       "wrong-format": "That file isn't an exported progress file.",
       "newer-version": "That file comes from a newer version of the app. Reload and try again."
-    }
+    },
+    "shareLink": "Share a transfer link",
+    "copyLink": "Copy a transfer link",
+    "linkHint": "Opening the link on another phone or browser brings your progress along. Anyone with the link can import it.",
+    "linkCopied": "Link copied. Open it on the other device.",
+    "linkFailed": "Couldn't copy the link here. Use Export instead.",
+    "nothingToShare": "There is no progress on this device yet.",
+    "shareText": "My Chaptick progress",
+    "incomingTitle": "Progress from a link",
+    "incoming": "Replace the progress on this device with the one in this link ({{games}})?"
   },
   "credits": {
     "title": "Credits",

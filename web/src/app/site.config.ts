@@ -6,6 +6,13 @@ export const SITE = {
   repoUrl: 'https://github.com/diogozmm/chaptick',
   contactEmail: 'diogo.zmm@outlook.com',
   donations: [] as { label: string; url: string }[], // e.g. GitHub Sponsors, Ko-fi, Pix/Apoia.se
+  /**
+   * The address the app should live at, e.g. 'https://chaptick.app' once a domain is bought. Empty
+   * for now. When set, visits on any other address (like the workers.dev one) show a banner that
+   * carries the player's progress over, since browsers keep each address's data apart.
+   * See docs/deploy.md, "Moving to a new domain".
+   */
+  canonicalOrigin: '',
   /** Cookieless Umami. Null disables analytics entirely. */
   analytics: null as { scriptUrl: string; websiteId: string } | null,
 

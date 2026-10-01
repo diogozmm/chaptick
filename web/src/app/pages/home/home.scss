@@ -43,3 +43,9 @@ label.button:focus-within { outline: 2px solid var(--accent); outline-offset: 2p
 .soon { display: flex; gap: 0.75rem; align-items: flex-start; border-style: dashed; background: transparent; box-shadow: none; }
 .soon app-icon { color: var(--accent); margin-top: 0.15rem; }
 .soon p { margin: 0.2rem 0 0.4rem; }
+
+.incoming { display: grid; gap: 0.75rem; border-color: var(--accent); }
+.incoming h2 { display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; }
+.incoming h2 app-icon { color: var(--accent); }
+.incoming p { margin: 0; }
+.top-status { margin: 0; font-weight: 500; }

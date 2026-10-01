@@ -82,9 +82,10 @@ export class ProgressStore {
     return this.update((p) => ({ preferences: { ...p.preferences, ...change } }));
   }
 
-  async exportJson(): Promise<string> {
+  /** Every saved game as one file. `compact` drops the indentation, for transfer links. */
+  async exportJson(compact = false): Promise<string> {
     const file: ExportFile = { schemaVersion: PROGRESS_SCHEMA_VERSION, app: 'chaptick', games: await this.listSaved() };
-    return JSON.stringify(file, null, 2);
+    return JSON.stringify(file, null, compact ? undefined : 2);
   }
 
   /**
@@ -145,7 +146,8 @@ export class ProgressStore {
   }
 }
 
-function parseExport(text: string): SavedProgress[] {
+/** Reads an exported file (or a transfer link's contents) without saving anything. */
+export function parseExport(text: string): SavedProgress[] {
   let data: unknown;
   try {
     data = JSON.parse(text);

@@ -6,7 +6,9 @@
     "reload": "Recarregar",
     "footerNav": "Site",
     "support": "Apoie o projeto",
-    "mainNav": "Principal"
+    "mainNav": "Principal",
+    "moved": "O Chaptick mudou para {{host}}. Seu progresso está salvo só neste endereço.",
+    "moveProgress": "Levar meu progresso"
   },
   "common": {
     "cancel": "Cancelar",
@@ -121,7 +123,7 @@
   },
   "transfer": {
     "title": "Levar seu progresso",
-    "intro": "O progresso fica só neste aparelho. Exporte um arquivo com todos os seus jogos para ter um backup ou abrir em outro celular.",
+    "intro": "O progresso fica só neste aparelho. Leve-o para outro com um link, ou guarde um arquivo de backup com todos os seus jogos.",
     "export": "Exportar",
     "import": "Importar",
     "confirm": "Substituir o progresso deste aparelho pelos jogos do arquivo?",
@@ -132,7 +134,16 @@
       "invalid-json": "Esse arquivo não é um JSON válido.",
       "wrong-format": "Esse arquivo não é um progresso exportado.",
       "newer-version": "Esse arquivo vem de uma versão mais nova do app. Recarregue e tente de novo."
-    }
+    },
+    "shareLink": "Compartilhar link de transferência",
+    "copyLink": "Copiar link de transferência",
+    "linkHint": "Abrir o link em outro celular ou navegador leva seu progresso junto. Qualquer pessoa com o link pode importá-lo.",
+    "linkCopied": "Link copiado. Abra no outro aparelho.",
+    "linkFailed": "Não deu para copiar o link aqui. Use Exportar.",
+    "nothingToShare": "Ainda não há progresso neste aparelho.",
+    "shareText": "Meu progresso no Chaptick",
+    "incomingTitle": "Progresso vindo de um link",
+    "incoming": "Substituir o progresso deste aparelho pelo deste link ({{games}})?"
   },
   "credits": {
     "title": "Créditos",

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { SITE } from '../site.config';
 
-type AnalyticsEvent = 'item_toggled' | 'chapter_advanced' | 'progress_exported';
+type AnalyticsEvent = 'item_toggled' | 'chapter_advanced' | 'progress_exported' | 'progress_link_created' | 'progress_moved';
 
 interface Umami {
   track(event: string, data?: Record<string, string | number>): void;

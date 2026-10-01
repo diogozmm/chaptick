@@ -9,6 +9,7 @@ import { AnalyticsService } from './core/analytics.service';
 import { ContentService } from './core/content/content.service';
 import { LangService } from './core/i18n/lang.service';
 import { TranslocoHttpLoader } from './core/i18n/transloco-http-loader';
+import { TransferService } from './core/progress/transfer.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -38,6 +39,8 @@ export const appConfig: ApplicationConfig = {
     }),
     // The library needs the catalog before the first navigation; each game loads on demand.
     provideAppInitializer(async () => {
+      // Before the router reads the URL: a transfer link's data must not stay in the address bar.
+      inject(TransferService).captureIncoming();
       inject(AnalyticsService).init();
       await Promise.all([inject(ContentService).loadCatalog(), inject(LangService).init()]);
     }),

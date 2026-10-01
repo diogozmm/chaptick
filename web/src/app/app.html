@@ -25,6 +25,13 @@
   </div>
 }
 
+@if (movedHost) {
+  <div class="update" role="status">
+    <span>{{ 'app.moved' | transloco: { host: movedHost } }}</span>
+    <button type="button" class="link" (click)="transfer.moveToCanonical()">{{ 'app.moveProgress' | transloco }}</button>
+  </div>
+}
+
 <main class="page">
   <router-outlet />
 </main>

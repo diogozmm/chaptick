@@ -7,7 +7,9 @@ import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { SavedProgress } from '../../core/progress/progress.models';
-import { ProgressImportError, ProgressStore } from '../../core/progress/progress.store';
+import { ProgressImportError, ProgressStore, parseExport } from '../../core/progress/progress.store';
+import { TransferService } from '../../core/progress/transfer.service';
+import { TranslocoService } from '@jsverse/transloco';
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { SITE } from '../../site.config';
 import { Icon } from '../../ui/icon/icon';
@@ -15,7 +17,14 @@ import { GameCover } from '../../ui/game-cover/game-cover';
 import { fallbackCoverText } from '../../core/cover/cover-art';
 import { localize } from '../../core/content/content.models';
 
-type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number } | null;
+type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number; atTop?: boolean } | null;
+
+/** Progress waiting for "replace my progress?": from a picked file, or from the link that opened the page. */
+interface PendingImport {
+  text: string;
+  source: 'file' | 'link';
+  games: string;
+}
 
 /** The library: continue the last game, browse franchises and games, move progress between devices. */
 @Component({
@@ -30,6 +39,9 @@ export class Home {
   protected readonly lang = inject(LangService);
   private readonly progress = inject(ProgressStore);
   private readonly analytics = inject(AnalyticsService);
+  private readonly transfer = inject(TransferService);
+  private readonly transloco = inject(TranslocoService);
+  protected readonly canShare = typeof navigator !== 'undefined' && typeof navigator.share === 'function';
   protected readonly suggestUrl = SITE.repoUrl ? `${SITE.repoUrl}/issues` : '';
 
   private readonly saved = resource({ loader: () => this.progress.listSaved() });
@@ -83,9 +95,58 @@ export class Home {
     return saved ? ['/', gameId, 'chapters', saved.currentChapter] : ['/', gameId, 'chapters'];
   }
 
-  /** File contents waiting for "replace my progress?" confirmation. */
-  protected readonly pendingImport = signal<string | null>(null);
+  protected readonly pendingImport = signal<PendingImport | null>(null);
   protected readonly status = signal<TransferStatus>(null);
+
+  constructor() {
+    void this.receiveLink();
+  }
+
+  /** A transfer link opened this page: show what it carries and ask before replacing anything. */
+  private async receiveLink(): Promise<void> {
+    try {
+      const text = await this.transfer.takeIncoming();
+      if (text !== null) this.pendingImport.set({ text, source: 'link', games: this.gameNames(text) });
+    } catch (error) {
+      const reason = error instanceof ProgressImportError ? error.reason : 'wrong-format';
+      this.status.set({ kind: 'error', key: `transfer.error.${reason}`, atTop: true });
+    }
+  }
+
+  /** "Trails in the Sky 2nd Chapter, Ys X: Proud Nordics" for the games in an exported file. */
+  private gameNames(text: string): string {
+    const lang = this.lang.lang();
+    return parseExport(text)
+      .map((g) => this.content.game(g.gameId))
+      .filter((g) => g !== undefined)
+      .map((g) => localize(g.name, lang))
+      .join(', ');
+  }
+
+  /** Shares (phones) or copies a link that opens Chaptick elsewhere with this device's progress. */
+  protected async shareLink(): Promise<void> {
+    this.status.set(null);
+    if (this.savedByGame().size === 0) {
+      this.status.set({ kind: 'error', key: 'transfer.nothingToShare' });
+      return;
+    }
+    const url = await this.transfer.createLink();
+    if (this.canShare) {
+      try {
+        await navigator.share({ title: 'Chaptick', text: this.transloco.translate('transfer.shareText'), url });
+        return;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+        // Sharing is unavailable here after all: fall back to the clipboard.
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      this.status.set({ kind: 'ok', key: 'transfer.linkCopied' });
+    } catch {
+      this.status.set({ kind: 'error', key: 'transfer.linkFailed' });
+    }
+  }
 
   protected async exportProgress(): Promise<void> {
     const blob = new Blob([await this.progress.exportJson()], { type: 'application/json' });
@@ -104,20 +165,22 @@ export class Home {
     input.value = ''; // lets the same file be picked again
     if (!file) return;
     this.status.set(null);
-    this.pendingImport.set(await file.text());
+    const text = await file.text();
+    this.pendingImport.set({ text, source: 'file', games: '' });
   }
 
   protected async confirmImport(): Promise<void> {
-    const text = this.pendingImport();
+    const pending = this.pendingImport();
     this.pendingImport.set(null);
-    if (text === null) return;
+    if (pending === null) return;
+    const atTop = pending.source === 'link';
     try {
-      const count = await this.progress.importJson(text);
-      this.status.set({ kind: 'ok', key: 'transfer.imported', count });
+      const count = await this.progress.importJson(pending.text);
+      this.status.set({ kind: 'ok', key: 'transfer.imported', count, atTop });
       this.saved.reload();
     } catch (error) {
       const reason = error instanceof ProgressImportError ? error.reason : 'wrong-format';
-      this.status.set({ kind: 'error', key: `transfer.error.${reason}` });
+      this.status.set({ kind: 'error', key: `transfer.error.${reason}`, atTop });
     }
   }
 }
