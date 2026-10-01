@@ -1,5 +1,5 @@
-:host { display: grid; gap: 1rem; }
-.back { font-size: 0.9rem; justify-self: start; margin: -0.5rem 0 -0.5rem -0.1rem; text-decoration: none; }
+:host { display: grid; gap: 1.25rem; }
+.back { font-size: 0.9rem; justify-self: start; margin: -0.5rem 0 -0.75rem -0.1rem; text-decoration: none; }
 .hero { display: grid; gap: 0.6rem; border-top: 3px solid var(--type-missable); }
 .type {
   display: inline-flex; align-items: center; gap: 0.4rem; justify-self: start; padding: 0.3rem 0.7rem; border-radius: 999px;
@@ -7,13 +7,22 @@
   color: var(--type-missable); background: color-mix(in srgb, var(--type-missable) 14%, transparent);
 }
 .type app-icon { width: 0.95rem; height: 0.95rem; }
-.related { justify-self: start; font-size: 0.9rem; min-height: 2.75rem; display: inline-flex; align-items: center; }
-.facts { display: grid; gap: 0.6rem; margin: 0; }
-.fact { padding: 0.875rem 1rem; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); }
-.fact dt {
-  display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.3rem;
-  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted);
+.related {
+  justify-self: stretch; display: flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm); background: var(--surface-2); color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500;
 }
-.fact dt app-icon { width: 0.95rem; height: 0.95rem; }
-.fact dd { margin: 0; line-height: 1.6; }
-.fact dd.hidden { color: var(--text-muted); font-style: italic; }
+.related:hover { color: var(--accent); }
+.related app-icon { flex: none; width: 1rem; height: 1rem; color: var(--text-muted); }
+.related app-icon:last-child { margin-left: auto; }
+
+.facts { margin: 0; padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.fact { display: grid; gap: 0.15rem; padding: 0.65rem 0; }
+.fact dt { display: flex; align-items: center; gap: 0.35rem; font-size: 0.8125rem; color: var(--text-muted); }
+.fact dt app-icon { width: 0.9rem; height: 0.9rem; }
+.fact dd { margin: 0; font-weight: 500; }
+
+.section { display: grid; gap: 0.6rem; }
+.section h2 { font-size: 1.2rem; }
+.strategy { margin: 0; line-height: 1.65; }
+.sources { margin: 0; font-size: 0.75rem; line-height: 1.5; }
+.position { margin: 0; text-align: center; font-size: 0.875rem; font-weight: 600; color: var(--text-muted); }

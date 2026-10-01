@@ -1,7 +1,7 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-const PAGES = ['/', '/sc/chapters', '/sc/chapters/sc-ch0', '/sc/items/sc-ch0-co-01', '/sc/bosses/sc-ch0-bs-01', '/sc/collections', '/credits', '/privacy'];
+const PAGES = ['/', '/sc/chapters', '/sc/chapters/sc-ch0', '/sc/items/sc-ch0-co-01', '/sc/items/sc-ch0-mi-01', '/sc/bosses/sc-ch0-bs-01', '/sc/collections', '/credits', '/privacy'];
 
 for (const colorScheme of ['dark', 'light'] as const) {
   for (const path of PAGES) {

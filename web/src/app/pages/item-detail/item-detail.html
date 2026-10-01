@@ -1,55 +1,85 @@
 @let l = lang.lang();
 @let e = entry();
 @if (e) {
-  @let done = progress.done().has(e.item.id);
+  @let done = e.status === 'done';
   <a class="link back" [routerLink]="game.link('chapters', e.chapter.id)"><app-icon name="chevron-left" /> {{ e.chapter.neutralLabel | localize: l }}</a>
 
   <header class="hero card rise" [attr.data-type]="e.item.type">
-    <span class="type"><app-icon [name]="typeIcon[e.item.type]" /> {{ 'type.many.' + e.item.type | transloco }}</span>
-    <h1>
-      <app-spoiler-reveal [itemId]="e.item.id" [level]="e.item.spoilerLevel" [placeholder]="view.placeholder(e.chapter, e.item)">
-        {{ e.item.name | localize: l }}
-      </app-spoiler-reveal>
-    </h1>
-    @if (done) {
-      <span class="badge done-badge"><app-icon name="check" /> {{ 'item.done' | transloco }}</span>
-    }
+    <span class="type"><app-icon [name]="typeIcon[e.item.type]" /> {{ 'type.label.' + e.item.type | transloco }}</span>
+    <h1>{{ e.showName ? (e.item.name | localize: l) : view.placeholder(e.chapter, e.item) }}</h1>
+    <p class="status" [attr.data-status]="e.status">
+      <app-icon [name]="statusIcon[e.status]" /> {{ 'item.status.' + e.status | transloco }}
+    </p>
   </header>
 
-  <dl class="facts">
-    <div class="fact">
-      <dt><app-icon name="map-pin" /> {{ 'item.location' | transloco }}</dt>
-      <dd [class.hidden]="!view.showLocation(e.item)">
-        {{ view.showLocation(e.item) ? (e.item.location | localize: l) : ('item.hidden' | transloco) }}
-      </dd>
-    </div>
-    <div class="fact deadline">
-      <dt><app-icon name="flag" /> {{ 'item.deadline' | transloco }}</dt>
-      <dd>
-        @switch (e.deadline.kind) {
-          @case ('checkpoint') { {{ e.deadline.description | localize: l }} }
-          @case ('chapter') { {{ 'item.laterIn' | transloco: { chapter: e.deadline.label | localize: l } }} }
-          @default { {{ 'checklist.noDeadline' | transloco }} }
-        }
-      </dd>
-    </div>
-    <div class="fact">
-      <dt><app-icon name="sparkles" /> {{ 'item.hint' | transloco }}</dt>
-      <dd [class.hidden]="!view.showHint(e.item)">
-        {{ view.showHint(e.item) ? (e.item.hint | localize: l) : ('item.hidden' | transloco) }}
-      </dd>
-    </div>
-  </dl>
+  @if (!e.showName) {
+    <app-spoiler-notice [itemId]="e.item.id" [level]="e.item.spoilerLevel" [message]="e.hiddenMessage | transloco" />
+  }
 
-  @if (e.item.steps && view.showHint(e.item)) {
-    <section class="fact">
-      <app-route-steps [item]="e.item" [expanded]="true" />
+  @if (e.showLocation || e.deadline.kind !== 'none') {
+    <dl class="facts card">
+      @if (e.showLocation) {
+        <div class="fact">
+          <dt><app-icon name="map-pin" /> {{ 'item.location' | transloco }}</dt>
+          <dd>{{ e.item.location | localize: l }}</dd>
+        </div>
+      }
+      @if (e.deadline.kind !== 'none') {
+        <div class="fact deadline" [attr.data-status]="e.status">
+          <dt><app-icon name="flag" /> {{ 'item.deadline' | transloco }}</dt>
+          <dd>
+            @if (e.deadline.kind === 'checkpoint') {
+              {{ e.deadline.description | localize: l }}
+            } @else {
+              {{ 'item.laterIn' | transloco: { chapter: e.deadline.label | localize: l } }}
+            }
+          </dd>
+        </div>
+      }
+    </dl>
+  }
+
+  @if (e.showHint) {
+    <section class="section">
+      <h2>{{ 'item.hint' | transloco }}</h2>
+      <p class="hint">{{ e.item.hint | localize: l }}</p>
     </section>
   }
 
-  @if (e.texts.length > 0 && view.showHint(e.item)) {
-    <section class="stack-sm">
-      <h2><app-icon name="book-open" /> {{ 'item.community' | transloco }}</h2>
+  @if (e.route && e.showHint) {
+    <section class="section">
+      <h2>
+        {{ 'route.title' | transloco }}
+        <span class="count">{{ 'route.progress' | transloco: { done: e.route.done, total: e.route.total } }}</span>
+      </h2>
+      <div class="progress" aria-hidden="true"><span [style.width.%]="(e.route.done / e.route.total) * 100"></span></div>
+      <app-route-steps [item]="e.item" [collapsible]="false" />
+    </section>
+  }
+
+  @if (e.bosses.length > 0 && e.showHint) {
+    <section class="section">
+      <h2>{{ 'item.bosses' | transloco }}</h2>
+      <ul class="bosses">
+        @for (b of e.bosses; track b.boss.id) {
+          <li>
+            <a class="boss" [routerLink]="game.link('bosses', b.boss.id)">
+              <app-icon name="swords" />
+              <span>
+                {{ reveals.isRevealed(b.boss.id) ? (b.boss.name | localize: l) : ('boss.placeholder' | transloco: { n: b.n }) }}
+                <small class="muted">{{ 'item.seeStrategy' | transloco }}</small>
+              </span>
+              <app-icon name="chevron-right" />
+            </a>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+
+  @if (e.texts.length > 0 && e.showHint) {
+    <section class="section">
+      <h2>{{ 'item.community' | transloco }}</h2>
       @for (text of e.texts; track $index) {
         <figure class="quote">
           <blockquote>{{ text.text | localize: l }}</blockquote>
@@ -59,10 +89,24 @@
     </section>
   }
 
-  <button type="button" class="button block" [class.primary]="!done" [attr.aria-pressed]="done" (click)="toggle(e.item)">
-    <app-icon name="check" />
-    {{ (done ? 'item.markUndone' : 'item.markDone') | transloco }}
-  </button>
+  @if (e.showSources) {
+    <p class="sources muted">
+      {{ 'item.sources' | transloco }}
+      @for (source of e.item.sources; track source; let last = $last) {
+        {{ sourceLabel(source) }}@if (!last) { · }
+      }
+    </p>
+  }
+
+  <app-detail-bar [prev]="e.prev" [next]="e.next" [prevLabel]="'item.prev' | transloco" [nextLabel]="'item.next' | transloco">
+    <button type="button" class="button" [class.primary]="!done" [attr.aria-pressed]="done" (click)="toggle(e.item)">
+      <app-icon name="check" />
+      {{ (done ? 'item.markUndone' : 'item.markDone') | transloco }}
+      @if (e.route && !done) {
+        <span class="count">{{ e.route.done }}/{{ e.route.total }}</span>
+      }
+    </button>
+  </app-detail-bar>
 } @else if (e === null) {
   <p role="alert">{{ 'item.notFound' | transloco }}</p>
   <a class="button" [routerLink]="game.link('chapters')">{{ 'where.title' | transloco }}</a>

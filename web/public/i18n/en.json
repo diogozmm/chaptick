@@ -68,7 +68,11 @@
   "spoiler": {
     "tapToReveal": "tap to reveal",
     "confirm": "May contain spoilers. Show it?",
-    "show": "Show"
+    "show": "Show",
+    "reveal": "Reveal",
+    "hiddenItem": "The name, location and hint are hidden to avoid spoilers.",
+    "hiddenName": "The name and location are hidden to avoid spoilers. The hint below is safe.",
+    "hiddenBoss": "The name, location and strategy are hidden to avoid spoilers."
   },
   "type": {
     "one": {
@@ -82,6 +86,12 @@
       "hidden_quest": "Hidden quests",
       "missable": "Missables",
       "collectible": "Collectibles"
+    },
+    "label": {
+      "quest": "Quest",
+      "hidden_quest": "Hidden quest",
+      "missable": "Missable",
+      "collectible": "Collectible"
     }
   },
   "item": {
@@ -95,7 +105,19 @@
     "notFound": "This item does not exist (anymore).",
     "detailsFor": "Details: {{name}}",
     "done": "Done",
-    "laterIn": "Some point in {{chapter}}"
+    "laterIn": "Some point in {{chapter}}",
+    "sources": "Sources:",
+    "prev": "Previous item",
+    "next": "Next item",
+    "status": {
+      "done": "Done",
+      "left-behind": "Left behind: its deadline has passed",
+      "this-chapter": "Expires in this chapter",
+      "later": "Expires in a later chapter",
+      "none": "No deadline"
+    },
+    "bosses": "Related fights",
+    "seeStrategy": "See the strategy"
   },
   "transfer": {
     "title": "Move your progress",
@@ -138,7 +160,10 @@
     "for": "Part of: {{item}}",
     "strategyFor": "Strategy for boss #{{n}}",
     "eyebrow": "Boss",
-    "strategy": "Strategy"
+    "strategy": "Strategy",
+    "prev": "Previous boss",
+    "next": "Next boss",
+    "position": "Boss {{n}} of {{total}}"
   },
   "collections": {
     "short": "Collections",
@@ -159,6 +184,7 @@
     "noRecipes": "No recipes yet in the chapters you have reached."
   },
   "route": {
-    "title": "Route"
+    "title": "Route",
+    "progress": "{{done}} of {{total}}"
   }
 }

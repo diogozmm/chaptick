@@ -13,7 +13,7 @@ test('bosses stay masked and out of progress until revealed', async ({ page }) =
 
   await section.getByRole('link', { name: 'Strategy for boss #1' }).click();
   await expect(page.locator('main')).not.toContainText(/Secret Boss|Boss Lair|Secret strategy/);
-  await page.getByRole('button', { name: /Boss #1/ }).click();
+  await page.getByRole('button', { name: 'Reveal', exact: true }).click();
   await page.getByRole('button', { name: 'Show' }).click();
   await expect(page.locator('main')).toContainText('Secret Boss');
   await expect(page.locator('main')).toContainText('Boss Lair');

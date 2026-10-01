@@ -6,28 +6,42 @@
 
   <header class="hero card rise">
     <span class="type"><app-icon name="swords" /> {{ 'boss.eyebrow' | transloco }}</span>
-    <h1>
-      <app-spoiler-reveal [itemId]="e.boss.id" [level]="2" [placeholder]="'boss.placeholder' | transloco: { n: e.n }">
-        {{ e.boss.name | localize: l }}
-      </app-spoiler-reveal>
-    </h1>
+    <h1>{{ revealed ? (e.boss.name | localize: l) : ('boss.placeholder' | transloco: { n: e.n }) }}</h1>
     @if (e.related; as item) {
       <a class="related" [routerLink]="game.link('items', item.id)">
+        <app-icon name="scroll-text" />
         {{ 'boss.for' | transloco: { item: view.showLocation(item) ? (item.name | localize: l) : view.placeholder(e.chapter, item) } }}
+        <app-icon name="chevron-right" />
       </a>
     }
   </header>
 
-  <dl class="facts">
-    <div class="fact">
-      <dt><app-icon name="map-pin" /> {{ 'item.location' | transloco }}</dt>
-      <dd [class.hidden]="!revealed">{{ revealed ? (e.boss.location | localize: l) : ('item.hidden' | transloco) }}</dd>
-    </div>
-    <div class="fact">
-      <dt><app-icon name="sparkles" /> {{ 'boss.strategy' | transloco }}</dt>
-      <dd [class.hidden]="!revealed">{{ revealed ? (e.boss.strategy | localize: l) : ('item.hidden' | transloco) }}</dd>
-    </div>
-  </dl>
+  @if (!revealed) {
+    <app-spoiler-notice [itemId]="e.boss.id" [level]="2" [message]="'spoiler.hiddenBoss' | transloco" />
+  } @else {
+    <dl class="facts card">
+      <div class="fact">
+        <dt><app-icon name="map-pin" /> {{ 'item.location' | transloco }}</dt>
+        <dd>{{ e.boss.location | localize: l }}</dd>
+      </div>
+    </dl>
+    <section class="section">
+      <h2>{{ 'boss.strategy' | transloco }}</h2>
+      <p class="strategy">{{ e.boss.strategy | localize: l }}</p>
+    </section>
+    @if (e.boss.sources.length > 0) {
+      <p class="sources muted">
+        {{ 'item.sources' | transloco }}
+        @for (source of e.boss.sources; track source; let last = $last) {
+          {{ sourceLabel(source) }}@if (!last) { · }
+        }
+      </p>
+    }
+  }
+
+  <app-detail-bar [prev]="e.prev" [next]="e.next" [prevLabel]="'boss.prev' | transloco" [nextLabel]="'boss.next' | transloco">
+    <p class="position">{{ 'boss.position' | transloco: { n: e.n, total: e.total } }}</p>
+  </app-detail-bar>
 } @else if (e === null) {
   <p role="alert">{{ 'item.notFound' | transloco }}</p>
   <a class="button" [routerLink]="game.link('chapters')">{{ 'where.title' | transloco }}</a>

@@ -6,15 +6,17 @@ import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ActiveGame } from '../../core/game/active-game';
 import { ChapterAccess, chapterIdOfItem } from '../../core/spoiler/chapter-access';
+import { neighbours, sourceLabel } from '../../core/spoiler/item-status';
 import { ItemView } from '../../core/spoiler/item-view';
 import { RevealService } from '../../core/spoiler/reveal.service';
+import { DetailBar } from '../../ui/detail-bar/detail-bar';
 import { Icon } from '../../ui/icon/icon';
-import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
+import { SpoilerNotice } from '../../ui/spoiler-notice/spoiler-notice';
 
 /** Strategy for one fight. Everything but the neutral placeholder waits for an explicit reveal. */
 @Component({
   selector: 'app-boss-detail',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal, Icon],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, SpoilerNotice, DetailBar],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './boss-detail.html',
   styleUrl: './boss-detail.scss',
@@ -25,6 +27,7 @@ export class BossDetail {
   protected readonly view = inject(ItemView);
   protected readonly lang = inject(LangService);
   protected readonly game = inject(ActiveGame);
+  protected readonly sourceLabel = sourceLabel;
 
   /** Bound from the route; the route guard already checked its chapter is unlocked. */
   readonly bossId = input.required<string>();
@@ -38,9 +41,17 @@ export class BossDetail {
     if (!this.chapter.hasValue()) return undefined;
     const chapter = this.chapter.value();
     const bosses = chapter.bosses ?? [];
-    const index = bosses.findIndex((b) => b.id === this.bossId());
+    const { prev, next, index } = neighbours(bosses, this.bossId());
     if (index < 0) return null;
     const boss = bosses[index];
-    return { chapter, boss, n: index + 1, related: chapter.items.find((i) => i.id === boss.relatedItem) };
+    return {
+      chapter,
+      boss,
+      n: index + 1,
+      total: bosses.length,
+      related: chapter.items.find((i) => i.id === boss.relatedItem),
+      prev: prev ? this.game.link('bosses', prev.id) : null,
+      next: next ? this.game.link('bosses', next.id) : null,
+    };
   });
 }

@@ -15,12 +15,14 @@ import { Icon } from '../icon/icon';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @let p = progress();
-    <button type="button" class="toggle" [attr.aria-expanded]="open()" [attr.aria-controls]="listId()" (click)="open.set(!open())">
-      <app-icon name="map-pin" />
-      {{ 'route.title' | transloco }} · {{ p.done }}/{{ p.total }}
-      <app-icon class="chevron" [class.up]="open()" name="chevron-right" />
-    </button>
-    @if (open()) {
+    @if (collapsible()) {
+      <button type="button" class="toggle" [attr.aria-expanded]="open()" [attr.aria-controls]="listId()" (click)="open.set(!open())">
+        <app-icon name="map-pin" />
+        {{ 'route.title' | transloco }} · {{ p.done }}/{{ p.total }}
+        <app-icon class="chevron" [class.up]="open()" name="chevron-right" />
+      </button>
+    }
+    @if (open() || !collapsible()) {
       <ol class="steps" [id]="listId()">
         @for (step of item().steps; track $index) {
           @let key = stepKey(item().id, $index);
@@ -58,6 +60,8 @@ export class RouteSteps {
   readonly item = input.required<Item>();
   /** Start expanded (detail page) or collapsed (checklist row). */
   readonly expanded = input(false);
+  /** False on the detail page, where the route is the main content and always open. */
+  readonly collapsible = input(true);
 
   protected readonly open = linkedSignal(() => this.expanded());
   protected readonly progress = computed(() => routeProgress(this.item(), this.store.done()));
