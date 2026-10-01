@@ -31,7 +31,10 @@
       {{ 'home.continue' | transloco: { chapter: current.neutralLabel | localize: l } }}
       <app-icon name="chevron-right" />
     </a>
-    <a class="button block" routerLink="/sc/chapters"><app-icon name="compass" /> {{ 'home.whereAmI' | transloco }}</a>
+    <div class="secondary">
+      <a class="button" routerLink="/sc/chapters"><app-icon name="compass" /> {{ 'home.whereAmI' | transloco }}</a>
+      <a class="button" routerLink="/sc/collections"><app-icon name="book-open" /> {{ 'collections.short' | transloco }}</a>
+    </div>
   </section>
 }
 

@@ -3,10 +3,16 @@
     <img src="icons/mark.svg" alt="" width="28" height="28" />
     <span>Bracer Notes</span>
   </a>
+ <nav class="top-actions" [attr.aria-label]="'app.mainNav' | transloco">
+  <a routerLink="/sc/collections" routerLinkActive="active" class="lang">
+    <app-icon name="book-open" />
+    <span>{{ 'collections.short' | transloco }}</span>
+  </a>
   <button type="button" class="lang" (click)="toggleLang()" [attr.aria-label]="'app.switchLanguage' | transloco">
     <app-icon name="languages" />
     {{ lang.lang() === 'pt' ? 'EN' : 'PT' }}
   </button>
+ </nav>
 </header>
 
 @if (update.updateReady()) {

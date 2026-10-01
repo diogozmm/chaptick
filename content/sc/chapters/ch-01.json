@@ -534,5 +534,440 @@
       ]
     }
   ],
-  "itemTexts": []
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch1-bs-01",
+      "name": {
+        "en": "Raven gang trio",
+        "pt": "Trio da gangue Raven"
+      },
+      "location": {
+        "en": "Ruan — South Block warehouse",
+        "pt": "Ruan — depósito do South Block"
+      },
+      "strategy": {
+        "en": "They heal, buff and revive each other, and each survives the first KO at 1 HP, so budget an extra hit. They only get dangerous in Rage Boost below half HP: strip the buffs with Anti-Sept and try not to let all three boost at once.",
+        "pt": "Eles se curam, se fortalecem e se revivem, e cada um sobrevive ao primeiro KO com 1 HP, então conte com um golpe a mais. Só ficam perigosos no Rage Boost, abaixo da metade do HP: remova os buffs com Anti-Sept e evite que os três entrem no boost ao mesmo tempo."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-bs-02",
+      "name": {
+        "en": "Cobalt Saber ×3"
+      },
+      "location": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      },
+      "strategy": {
+        "en": "When one falls, the others get a big boost: bring all three down together. Their arts defense is terrible, so fire arts melt them.",
+        "pt": "Quando um cai, os outros ganham um grande reforço: derrube os três juntos. A defesa contra arts deles é péssima, então arts de fogo resolvem rápido."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "relatedItem": "sc-ch1-q-01"
+    },
+    {
+      "id": "sc-ch1-bs-03",
+      "name": {
+        "en": "Queen Viper and Sasa Pandas",
+        "pt": "Queen Viper e Sasa Pandas"
+      },
+      "location": {
+        "en": "Vista Forest Road"
+      },
+      "strategy": {
+        "en": "The pandas delay you and strip buffs, but they are very weak to Confuse (Chaos Brand). Confuse them and take them out first, then the viper. Bring Confuse protection and cure debuffs quickly.",
+        "pt": "Os pandas atrasam e removem buffs, mas são muito fracos contra Confuse (Chaos Brand). Confunda-os e derrube-os primeiro, depois a víbora. Leve proteção contra Confuse e cure os debuffs rápido."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ],
+      "relatedItem": "sc-ch1-q-03"
+    },
+    {
+      "id": "sc-ch1-bs-04",
+      "name": {
+        "en": "Jabbabba King"
+      },
+      "location": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      },
+      "strategy": {
+        "en": "Clear the four small Shumocks first with an area S-Craft or Aero Storm. The King swallows allies (three hits free them) and then spams a short-delay attack; it also casts top-tier arts, so impede its casts and keep speed buffs up.",
+        "pt": "Derrube primeiro os quatro Shumocks pequenos com um S-Craft em área ou Aero Storm. O King engole aliados (três golpes os libertam) e depois repete um ataque de pouco atraso; ele também usa arts poderosas, então interrompa as conjurações e mantenha buffs de velocidade."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "relatedItem": "sc-ch1-q-06"
+    },
+    {
+      "id": "sc-ch1-bs-05",
+      "name": {
+        "en": "Hapilsag"
+      },
+      "location": {
+        "en": "Krone Trail area",
+        "pt": "Região da Krone Trail"
+      },
+      "strategy": {
+        "en": "Poison, blind and delay, and several moves can be impeded. Shield and buff the party (Earth Wall, Sylphen Wing, Zodiac) and keep the fragile guest traveling with you alive.",
+        "pt": "Veneno, cegueira e atraso, e vários golpes podem ser interrompidos. Proteja e fortaleça a equipe (Earth Wall, Sylphen Wing, Zodiac) e mantenha viva a convidada frágil que viaja com vocês."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "relatedItem": "sc-ch1-q-07"
+    },
+    {
+      "id": "sc-ch1-bs-06",
+      "name": {
+        "en": "Ash Saber ×3"
+      },
+      "location": {
+        "en": "Aina Causeway"
+      },
+      "strategy": {
+        "en": "Same trick as the Cobalt Sabers: finish them together to avoid the boost when one dies, and shield the guest traveling with you.",
+        "pt": "O mesmo truque dos Cobalt Sabers: derrube-os juntos para evitar o reforço quando um morre, e proteja a convidada que viaja com vocês."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ],
+      "relatedItem": "sc-ch1-q-08"
+    },
+    {
+      "id": "sc-ch1-bs-07",
+      "name": {
+        "en": "Mouki and Puppet Flaggers",
+        "pt": "Mouki e Puppet Flaggers"
+      },
+      "location": {
+        "en": "Underground ruins — first gate",
+        "pt": "Ruínas subterrâneas — primeiro portão"
+      },
+      "strategy": {
+        "en": "Puppet Flaggers power up their allies when they fall: be ready with Anti-Sept (or Anti-Sept All), then focus the main target.",
+        "pt": "Os Puppet Flaggers fortalecem os aliados quando caem: tenha Anti-Sept (ou Anti-Sept All) pronto e depois foque o alvo principal."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-bs-08",
+      "name": {
+        "en": "Storm Bringer"
+      },
+      "location": {
+        "en": "Underground ruins — depths",
+        "pt": "Ruínas subterrâneas — fundo"
+      },
+      "strategy": {
+        "en": "Kill three of the four Puppet Flagger+ and leave one alive: it only summons more when all are gone. Hit it with water arts. Below two thirds and one third HP it charges Energy Blast; impede it or shield everyone (Earth Guard, Earth Wall or Kloe's S-Craft). When about to die it heals and boosts once more, so finish it immediately.",
+        "pt": "Derrube três dos quatro Puppet Flagger+ e deixe um vivo: ele só invoca mais quando todos caem. Use arts de água. Abaixo de dois terços e de um terço do HP, ele carrega o Energy Blast; interrompa ou proteja todos com escudo (Earth Guard, Earth Wall ou o S-Craft da Kloe). Perto de morrer ele se cura e se fortalece mais uma vez, então finalize na hora."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "sc-ch1-fi-01",
+      "name": {
+        "en": "Crab"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-02",
+      "name": {
+        "en": "Gold Angelfish"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-03",
+      "name": {
+        "en": "Kasago"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-04",
+      "name": {
+        "en": "Great Blackfish"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-05",
+      "name": {
+        "en": "Sea Bass"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-06",
+      "name": {
+        "en": "Trout"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-07",
+      "name": {
+        "en": "Claudine"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-08",
+      "name": {
+        "en": "Eel"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-fi-09",
+      "name": {
+        "en": "Octopus"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Ruan South Block, Manoria Village, Sapphirl Tower 5F"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Ruan North Block, Manoria Byroad"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "C",
+      "where": {
+        "en": "Ruan North and South Blocks, Air-Letten",
+        "pt": "Ruan North e South Blocks, Air-Letten"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "B",
+      "where": {
+        "en": "Ruan North and South Blocks, Manoria Village",
+        "pt": "Ruan North e South Blocks, Manoria Village"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "C",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-09",
+      "rank": "B",
+      "where": {
+        "en": "Manoria Village, Sapphirl Tower 5F"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch1-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Azelia Kiss"
+      },
+      "source": {
+        "en": "Lavantar Bar & Casino, Ruan North Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Roasted Fish Belly"
+      },
+      "source": {
+        "en": "Aqua Rossa Bar, Ruan South Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Sea Breeze Soup"
+      },
+      "source": {
+        "en": "Aqua Rossa Bar, Ruan South Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Ocean Froth"
+      },
+      "source": {
+        "en": "The White Magnolia, Manoria Village (Rex)"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Seaside Paradise"
+      },
+      "source": {
+        "en": "The White Magnolia, Manoria Village (Rex)"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Rotund Meatballs"
+      },
+      "source": {
+        "en": "Treasure chest in Sapphirl Tower",
+        "pt": "Baú na Sapphirl Tower"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Minnow's Keep"
+      },
+      "source": {
+        "en": "Air-Letten cafeteria",
+        "pt": "Cafeteria de Air-Letten"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Toasty Potato Wedges"
+      },
+      "source": {
+        "en": "Jenis Royal Academy cafeteria",
+        "pt": "Cafeteria da Jenis Royal Academy"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-09",
+      "kind": "standard",
+      "name": {
+        "en": "Royal Gelato"
+      },
+      "source": {
+        "en": "Jenis Royal Academy cafeteria",
+        "pt": "Cafeteria da Jenis Royal Academy"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    },
+    {
+      "id": "sc-ch1-re-10",
+      "kind": "standard",
+      "name": {
+        "en": "Young Lady Platter"
+      },
+      "source": {
+        "en": "Jenis Royal Academy cafeteria",
+        "pt": "Cafeteria da Jenis Royal Academy"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 1 - Mercia Orphanage"
+      ]
+    }
+  ]
 }

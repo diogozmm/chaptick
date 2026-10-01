@@ -2,13 +2,90 @@
   "id": "demo-ch1",
   "gameId": "demo",
   "order": 1,
-  "neutralLabel": { "en": "Chapter 1" },
-  "checkpoints": [{ "id": "demo-ch1-cp-01", "order": 1, "neutralDescription": { "en": "Boarding the ship" } }],
-  "items": [
+  "neutralLabel": {
+    "en": "Chapter 1"
+  },
+  "checkpoints": [
     {
-      "id": "demo-ch1-hq-01", "type": "hidden_quest", "name": { "en": "Example hidden quest" }, "location": { "en": "Port" },
-      "availableUntil": null, "hint": { "en": "Visit at night." }, "spoilerLevel": 2, "sources": ["fixture"]
+      "id": "demo-ch1-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Boarding the ship"
+      }
     }
   ],
-  "itemTexts": []
+  "items": [
+    {
+      "id": "demo-ch1-hq-01",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Example hidden quest"
+      },
+      "location": {
+        "en": "Port"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Visit at night."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "fixture"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "demo-ch1-bs-01",
+      "name": {
+        "en": "Demo Boss"
+      },
+      "location": {
+        "en": "Port"
+      },
+      "relatedItem": "demo-ch1-hq-01",
+      "strategy": {
+        "en": "Hit it."
+      },
+      "sources": [
+        "fixture"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "demo-ch1-fi-01",
+      "name": {
+        "en": "Demo Fish"
+      },
+      "sources": [
+        "fixture"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "demo-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Port"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "demo-ch1-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Demo Dish"
+      },
+      "source": {
+        "en": "Port cafe"
+      },
+      "sources": [
+        "fixture"
+      ]
+    }
+  ]
 }

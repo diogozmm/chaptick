@@ -112,4 +112,64 @@ c.item('collectible', t('Underground ruins treasure chests (19)', 'Baús das ru�
          'Inclui um baú de monstros com três Puppet Flagger+. Pegue tudo antes da última estação de cura.'),
        1, [MERCIA])
 
+# ---------------------------------------------------------------- bosses
+c.boss(t('Raven gang trio', 'Trio da gangue Raven'), t('Ruan — South Block warehouse', 'Ruan — depósito do South Block'),
+       t('They heal, buff and revive each other, and each survives the first KO at 1 HP, so budget an extra hit. They only get dangerous in Rage Boost below half HP: strip the buffs with Anti-Sept and try not to let all three boost at once.',
+         'Eles se curam, se fortalecem e se revivem, e cada um sobrevive ao primeiro KO com 1 HP, então conte com um golpe a mais. Só ficam perigosos no Rage Boost, abaixo da metade do HP: remova os buffs com Anti-Sept e evite que os três entrem no boost ao mesmo tempo.'),
+       sources=[RUAN])
+c.boss(t('Cobalt Saber ×3'), t('Gull Seaside Way — north beach', 'Gull Seaside Way — praia norte'),
+       t('When one falls, the others get a big boost: bring all three down together. Their arts defense is terrible, so fire arts melt them.',
+         'Quando um cai, os outros ganham um grande reforço: derrube os três juntos. A defesa contra arts deles é péssima, então arts de fogo resolvem rápido.'),
+       related='sc-ch1-q-01', sources=[RUAN])
+c.boss(t('Queen Viper and Sasa Pandas', 'Queen Viper e Sasa Pandas'), t('Vista Forest Road'),
+       t('The pandas delay you and strip buffs, but they are very weak to Confuse (Chaos Brand). Confuse them and take them out first, then the viper. Bring Confuse protection and cure debuffs quickly.',
+         'Os pandas atrasam e removem buffs, mas são muito fracos contra Confuse (Chaos Brand). Confunda-os e derrube-os primeiro, depois a víbora. Leve proteção contra Confuse e cure os debuffs rápido.'),
+       related='sc-ch1-q-03', sources=[RUAN])
+c.boss(t('Jabbabba King'), t('Gull Seaside Way — north beach', 'Gull Seaside Way — praia norte'),
+       t('Clear the four small Shumocks first with an area S-Craft or Aero Storm. The King swallows allies (three hits free them) and then spams a short-delay attack; it also casts top-tier arts, so impede its casts and keep speed buffs up.',
+         'Derrube primeiro os quatro Shumocks pequenos com um S-Craft em área ou Aero Storm. O King engole aliados (três golpes os libertam) e depois repete um ataque de pouco atraso; ele também usa arts poderosas, então interrompa as conjurações e mantenha buffs de velocidade.'),
+       related='sc-ch1-q-06', sources=[MERCIA])
+c.boss(t('Hapilsag'), t('Krone Trail area', 'Região da Krone Trail'),
+       t('Poison, blind and delay, and several moves can be impeded. Shield and buff the party (Earth Wall, Sylphen Wing, Zodiac) and keep the fragile guest traveling with you alive.',
+         'Veneno, cegueira e atraso, e vários golpes podem ser interrompidos. Proteja e fortaleça a equipe (Earth Wall, Sylphen Wing, Zodiac) e mantenha viva a convidada frágil que viaja com vocês.'),
+       related='sc-ch1-q-07', sources=[MERCIA])
+c.boss(t('Ash Saber ×3'), t('Aina Causeway'),
+       t('Same trick as the Cobalt Sabers: finish them together to avoid the boost when one dies, and shield the guest traveling with you.',
+         'O mesmo truque dos Cobalt Sabers: derrube-os juntos para evitar o reforço quando um morre, e proteja a convidada que viaja com vocês.'),
+       related='sc-ch1-q-08', sources=[MERCIA])
+c.boss(t('Mouki and Puppet Flaggers', 'Mouki e Puppet Flaggers'), t('Underground ruins — first gate', 'Ruínas subterrâneas — primeiro portão'),
+       t('Puppet Flaggers power up their allies when they fall: be ready with Anti-Sept (or Anti-Sept All), then focus the main target.',
+         'Os Puppet Flaggers fortalecem os aliados quando caem: tenha Anti-Sept (ou Anti-Sept All) pronto e depois foque o alvo principal.'),
+       sources=[MERCIA])
+c.boss(t('Storm Bringer'), t('Underground ruins — depths', 'Ruínas subterrâneas — fundo'),
+       t('Kill three of the four Puppet Flagger+ and leave one alive: it only summons more when all are gone. Hit it with water arts. Below two thirds and one third HP it charges Energy Blast; impede it or shield everyone (Earth Guard, Earth Wall or Kloe\'s S-Craft). When about to die it heals and boosts once more, so finish it immediately.',
+         'Derrube três dos quatro Puppet Flagger+ e deixe um vivo: ele só invoca mais quando todos caem. Use arts de água. Abaixo de dois terços e de um terço do HP, ele carrega o Energy Blast; interrompa ou proteja todos com escudo (Earth Guard, Earth Wall ou o S-Craft da Kloe). Perto de morrer ele se cura e se fortalece mais uma vez, então finalize na hora.'),
+       sources=[MERCIA])
+
+# ---------------------------------------------------------------- fishing
+FISH = {}
+for name in ['Crab', 'Gold Angelfish', 'Kasago', 'Great Blackfish', 'Sea Bass', 'Trout', 'Claudine', 'Eel', 'Octopus']:
+    FISH[name] = c.fish(name, sources=[CH2_RUAN])
+c.spot(FISH['Crab'], 'A', t('Air-Letten — side of the entrance', 'Air-Letten — lateral da entrada'))
+c.spot(FISH['Gold Angelfish'], 'A', t('Ruan South Block, Manoria Village, Sapphirl Tower 5F'))
+c.spot(FISH['Kasago'], 'A', t('Ruan North Block, Manoria Byroad'))
+c.spot(FISH['Great Blackfish'], 'A', t('Gull Seaside Way — south end of the beach', 'Gull Seaside Way — extremo sul da praia'))
+c.spot(FISH['Sea Bass'], 'A', t('Gull Seaside Way — north beach', 'Gull Seaside Way — praia norte'))
+c.spot(FISH['Trout'], 'C', t('Ruan North and South Blocks, Air-Letten', 'Ruan North e South Blocks, Air-Letten'))
+c.spot(FISH['Claudine'], 'B', t('Ruan North and South Blocks, Manoria Village', 'Ruan North e South Blocks, Manoria Village'))
+c.spot(FISH['Eel'], 'C', t('Air-Letten — side of the entrance', 'Air-Letten — lateral da entrada'))
+c.spot(FISH['Octopus'], 'B', t('Manoria Village, Sapphirl Tower 5F'))
+
+# ---------------------------------------------------------------- recipes
+c.recipe('Azelia Kiss', t('Lavantar Bar & Casino, Ruan North Block'), sources=[RUAN])
+c.recipe('Roasted Fish Belly', t('Aqua Rossa Bar, Ruan South Block'), sources=[RUAN])
+c.recipe('Sea Breeze Soup', t('Aqua Rossa Bar, Ruan South Block'), sources=[RUAN])
+c.recipe('Ocean Froth', t('The White Magnolia, Manoria Village (Rex)'), sources=[RUAN])
+c.recipe('Seaside Paradise', t('The White Magnolia, Manoria Village (Rex)'), sources=[RUAN])
+c.recipe('Rotund Meatballs', t('Treasure chest in Sapphirl Tower', 'Baú na Sapphirl Tower'), sources=[RUAN])
+c.recipe("Minnow's Keep", t('Air-Letten cafeteria', 'Cafeteria de Air-Letten'), sources=[MERCIA])
+c.recipe('Toasty Potato Wedges', t('Jenis Royal Academy cafeteria', 'Cafeteria da Jenis Royal Academy'), sources=[MERCIA])
+c.recipe('Royal Gelato', t('Jenis Royal Academy cafeteria', 'Cafeteria da Jenis Royal Academy'), sources=[MERCIA])
+c.recipe('Young Lady Platter', t('Jenis Royal Academy cafeteria', 'Cafeteria da Jenis Royal Academy'), sources=[MERCIA])
+
 c.write()

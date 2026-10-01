@@ -493,5 +493,457 @@
       ]
     }
   ],
-  "itemTexts": []
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch3-bs-01",
+      "name": {
+        "en": "Divine Pengu"
+      },
+      "location": {
+        "en": "Kaldia Limestone Cave — northwest depths",
+        "pt": "Kaldia Limestone Cave — fundo a noroeste"
+      },
+      "strategy": {
+        "en": "It is game over if the boy you are protecting falls, so clear the small pengus quickly. After Rage Boost it S-Breaks with a line attack (a Taunt can redirect it). Below half HP its dance confuses everyone (debuff immunity or Lily Necklace+) and calls pengus that take its damage: sweep them with area attacks. It survives one lethal hit.",
+        "pt": "É game over se o garoto que você protege cair, então derrube rápido os pengus pequenos. Depois do Rage Boost ele usa um S-Break em linha (um Taunt pode desviar). Abaixo da metade do HP a dança dele confunde todos (imunidade a debuffs ou Lily Necklace+) e chama pengus que absorvem o dano: varra-os com ataques em área. Ele sobrevive a um golpe letal."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "relatedItem": "sc-ch3-q-01"
+    },
+    {
+      "id": "sc-ch3-bs-02",
+      "name": {
+        "en": "Giant Tree and Mad Trees",
+        "pt": "Giant Tree e Mad Trees"
+      },
+      "location": {
+        "en": "Grancel Sewers — W. Block"
+      },
+      "strategy": {
+        "en": "They cripple stats, delay you and heal from the damage they deal (the big one heals ten times as much). Use shields and debuff immunity, burn the Mad Trees first with fire arts; they are also vulnerable to Deathblow.",
+        "pt": "Elas derrubam atributos, atrasam e se curam com o dano que causam (a grande cura dez vezes mais). Use escudos e imunidade a debuffs e queime primeiro as Mad Trees com arts de fogo; elas também são vulneráveis a Deathblow."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ],
+      "relatedItem": "sc-ch3-q-02"
+    },
+    {
+      "id": "sc-ch3-bs-03",
+      "name": {
+        "en": "Rhinoking"
+      },
+      "location": {
+        "en": "Erbe Scenic Route — middle intersection",
+        "pt": "Erbe Scenic Route — cruzamento central"
+      },
+      "strategy": {
+        "en": "A straight damage race. Buff up, add Foresight or debuff immunity, and expect a sleep-inducing scent at 75%, 50% and 25% HP.",
+        "pt": "Uma disputa direta de dano. Faça os buffs, adicione Foresight ou imunidade a debuffs e espere um aroma que causa sono em 75%, 50% e 25% do HP."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ],
+      "relatedItem": "sc-ch3-q-03"
+    },
+    {
+      "id": "sc-ch3-bs-04",
+      "name": {
+        "en": "Master Cryon"
+      },
+      "location": {
+        "en": "Grancel — Grand Arena"
+      },
+      "strategy": {
+        "en": "Bring Freeze protection. The Cryon Flakes walk up and explode after a turn, so burst the Flakes and Bits right away with S-Breaks or a Burst, then deal with the master using your usual buffs.",
+        "pt": "Leve proteção contra Freeze. Os Cryon Flakes se aproximam e explodem depois de um turno, então derrube Flakes e Bits na hora com S-Breaks ou Burst; depois cuide do mestre com os buffs de sempre."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ],
+      "relatedItem": "sc-ch3-q-04"
+    },
+    {
+      "id": "sc-ch3-bs-05",
+      "name": {
+        "en": "Special Ops machine",
+        "pt": "Máquina das Special Ops"
+      },
+      "location": {
+        "en": "Grancel Sewers — N. Block"
+      },
+      "strategy": {
+        "en": "An easy one: very vulnerable to Seal, and debuff immunity plus stat buffs cover its single real attack.",
+        "pt": "Uma luta fácil: muito vulnerável a Seal, e imunidade a debuffs com buffs de atributos cobrem o único ataque de verdade dela."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "sc-ch3-bs-06",
+      "name": {
+        "en": "King Pengu"
+      },
+      "location": {
+        "en": "Grancel Sewers — side room by the E. Block entrance",
+        "pt": "Grancel Sewers — sala lateral na entrada do E. Block"
+      },
+      "strategy": {
+        "en": "Bring Confuse protection. Sweep the small pengus with area attacks; if they all fall, it spends a turn reviving them at 30% HP. Rage Boost below 55% and 35% HP, and it survives one lethal hit.",
+        "pt": "Leve proteção contra Confuse. Varra os pengus pequenos com ataques em área; se todos caírem, ele gasta um turno revivendo-os com 30% do HP. Rage Boost abaixo de 55% e de 35% do HP, e ele sobrevive a um golpe letal."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ],
+      "relatedItem": "sc-ch3-q-06"
+    },
+    {
+      "id": "sc-ch3-bs-07",
+      "name": {
+        "en": "Hurricane Velg"
+      },
+      "location": {
+        "en": "Kirsche Avenue"
+      },
+      "strategy": {
+        "en": "Most attacks Seal, and Feather Shower lowers every stat. Sylpharion (debuff immunity and arts reflect) handles it, then Zodiac and Foresight. Try to burst it before it reaches half HP.",
+        "pt": "A maioria dos ataques causa Seal, e o Feather Shower reduz todos os atributos. O Sylpharion (imunidade a debuffs e reflexo de arts) resolve; depois use Zodiac e Foresight. Tente derrubá-lo antes da metade do HP."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ],
+      "relatedItem": "sc-ch3-q-07"
+    },
+    {
+      "id": "sc-ch3-bs-08",
+      "name": {
+        "en": "Battles at the port warehouse",
+        "pt": "Batalhas no depósito do porto"
+      },
+      "location": {
+        "en": "Grancel — port district",
+        "pt": "Grancel — distrito do porto"
+      },
+      "strategy": {
+        "en": "Several fights back to back with no rest, so pace EP and CP. In the last one, clear the summoned reinforcements before they close in, then chip the leader down; she survives one lethal hit, so keep an S-Break for right after.",
+        "pt": "Várias lutas seguidas sem descanso, então dose EP e CP. Na última, derrube os reforços invocados antes que se aproximem e depois desgaste a líder; ela sobrevive a um golpe letal, então guarde um S-Break para logo depois."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "sc-ch3-fi-01",
+      "name": {
+        "en": "Pearlglass"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "B",
+      "where": {
+        "en": "Kaldia Limestone Cave — entrance",
+        "pt": "Kaldia Limestone Cave — entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "B",
+      "where": {
+        "en": "Kaldia Limestone Cave — depths (after the quest); Grancel port and North Block",
+        "pt": "Kaldia Limestone Cave — fundo (depois da quest); porto e North Block de Grancel"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — W. Block and E. Block entrance",
+        "pt": "Grancel Sewers — W. Block e entrada do E. Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block",
+        "pt": "Grancel Sewers — E. Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block, near the N. Block",
+        "pt": "Grancel Sewers — E. Block, perto do N. Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "B",
+      "where": {
+        "en": "Grancel Sewers"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers E. Block near the N. Block; Erbe Scenic Route — Romal Pond",
+        "pt": "Grancel Sewers E. Block perto do N. Block; Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "B",
+      "where": {
+        "en": "Grancel Sewers; Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "B",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — port (the only Rank A spot in the capital; the port closes later, so fish it while you can)",
+        "pt": "Grancel — porto (único Rank A da capital; o porto fecha mais tarde, então pesque enquanto der)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "B",
+      "where": {
+        "en": "Grancel — port",
+        "pt": "Grancel — porto"
+      }
+    },
+    {
+      "fishId": "sc-ch3-fi-01",
+      "rank": "C",
+      "where": {
+        "en": "Erbe Royal Villa — front courtyard",
+        "pt": "Erbe Royal Villa — pátio da frente"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch3-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Sweet Crepe"
+      },
+      "source": {
+        "en": "Nonna's Crepe Shop, Grancel South Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Mystery Crepe"
+      },
+      "source": {
+        "en": "Nonna's Crepe Shop, Grancel South Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Agile Popcorn"
+      },
+      "source": {
+        "en": "Gaspard's Popcorn Shop, Grancel South Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Homemade Faux Pie"
+      },
+      "source": {
+        "en": "Sunnybell Inn, Grancel South Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Refined Carapace"
+      },
+      "source": {
+        "en": "Sunnybell Inn, Grancel South Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Sunshine Ice Cream"
+      },
+      "source": {
+        "en": "Sorbet's Ice Cream Shop, Grancel East Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Moonlight Ice Cream"
+      },
+      "source": {
+        "en": "Sorbet's Ice Cream Shop, Grancel East Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Sandman's Demise"
+      },
+      "source": {
+        "en": "Baral Coffee House, Grancel West Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-09",
+      "kind": "standard",
+      "name": {
+        "en": "Curry of Dreams"
+      },
+      "source": {
+        "en": "Baral Coffee House, Grancel West Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-10",
+      "kind": "standard",
+      "name": {
+        "en": "Dual-Layer Tempura"
+      },
+      "source": {
+        "en": "Gurune Gate cafeteria",
+        "pt": "Cafeteria do Gurune Gate"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-11",
+      "kind": "standard",
+      "name": {
+        "en": "Bone-In Meat"
+      },
+      "source": {
+        "en": "Treasure chest in Grancel Sewers N. Block",
+        "pt": "Baú no Grancel Sewers N. Block"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-12",
+      "kind": "customized",
+      "name": {
+        "en": "White Chiffon Cake"
+      },
+      "source": {
+        "en": "Have Kloe cook Fruit Kingdom",
+        "pt": "A Kloe cozinha Fruit Kingdom"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-13",
+      "kind": "customized",
+      "name": {
+        "en": "Omelet Pilaf"
+      },
+      "source": {
+        "en": "Have Tita cook Passionate Egg Roll",
+        "pt": "A Tita cozinha Passionate Egg Roll"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch3-re-14",
+      "kind": "customized",
+      "name": {
+        "en": "Red Wine Curry"
+      },
+      "source": {
+        "en": "Have Olivier cook Curry of Dreams",
+        "pt": "O Olivier cozinha Curry of Dreams"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Gurune Gate"
+      ]
+    }
+  ]
 }

@@ -44,8 +44,8 @@ function chapterErrors(chapter, file, gameId) {
   if (chapter.gameId !== gameId) errors.push(`${file}: gameId "${chapter.gameId}" should be "${gameId}"`);
   if (chapter.id !== expectedId) errors.push(`${file}: chapter id "${chapter.id}" should be "${expectedId}"`);
 
-  for (const entity of [...chapter.checkpoints, ...chapter.items]) {
-    if (!entity.id.startsWith(`${chapter.id}-`)) errors.push(`${file}: "${entity.id}" does not belong to ${chapter.id}`);
+  for (const id of [...chapter.checkpoints.map((c) => c.id), ...entityIds(chapter)]) {
+    if (!id.startsWith(`${chapter.id}-`)) errors.push(`${file}: "${id}" does not belong to ${chapter.id}`);
   }
   for (const item of chapter.items) {
     const code = item.id.split('-').at(-2);
@@ -59,6 +59,32 @@ function chapterErrors(chapter, file, gameId) {
   return errors;
 }
 
+/** Every id a chapter defines besides its checkpoints: items, bosses, fish and recipes. */
+const entityIds = (chapter) =>
+  [chapter.items, chapter.bosses, chapter.fish, chapter.recipes].flatMap((list) => (list ?? []).map((e) => e.id));
+
+/** References that may point to the same chapter or an earlier one, never a later one. */
+function backReferenceErrors(chapters) {
+  const errors = [];
+  const orderOf = new Map();
+  for (const { data } of chapters) {
+    for (const i of data.items) orderOf.set(i.id, data.order);
+    for (const f of data.fish ?? []) orderOf.set(f.id, data.order);
+  }
+  for (const { file, data } of chapters) {
+    const refs = [
+      ...(data.bosses ?? []).filter((b) => b.relatedItem).map((b) => [b.id, b.relatedItem]),
+      ...(data.fishSpots ?? []).map((s) => [`fish spot "${s.where.en}"`, s.fishId]),
+    ];
+    for (const [from, to] of refs) {
+      const order = orderOf.get(to);
+      if (order === undefined) errors.push(`${file}: ${from} refers to unknown "${to}"`);
+      else if (order > data.order) errors.push(`${file}: ${from} refers to "${to}" from a later chapter`);
+    }
+  }
+  return errors;
+}
+
 function crossChapterErrors(chapters) {
   const errors = [];
   const seen = new Map();
@@ -68,7 +94,7 @@ function crossChapterErrors(chapters) {
   for (const { file, data } of chapters) {
     if (orders.has(data.order)) errors.push(`${file}: order ${data.order} already used by ${orders.get(data.order)}`);
     orders.set(data.order, file);
-    for (const id of [data.id, ...data.checkpoints.map((c) => c.id), ...data.items.map((i) => i.id)]) {
+    for (const id of [data.id, ...data.checkpoints.map((c) => c.id), ...entityIds(data)]) {
       if (seen.has(id)) errors.push(`${file}: duplicate id "${id}" (also in ${seen.get(id)})`);
       seen.set(id, file);
     }
@@ -118,7 +144,7 @@ export function validateContent(root, { baseRegistry } = {}) {
     for (const { file, data } of valid) errors.push(...chapterErrors(data, file, game.id));
 
     const cross = crossChapterErrors(valid);
-    errors.push(...cross.errors);
+    errors.push(...cross.errors, ...backReferenceErrors(valid));
     allIds.push(game.id, ...cross.ids);
   }
 

@@ -38,6 +38,18 @@ export class ProgressStore {
     }));
   }
 
+  /** Idempotent: marks every id as done (or not), e.g. a Rank A catch also counts as caught. */
+  setDone(ids: readonly string[], done: boolean): Promise<void> {
+    return this.update((p) => {
+      const set = new Set(p.doneItems);
+      for (const id of ids) {
+        if (done) set.add(id);
+        else set.delete(id);
+      }
+      return { doneItems: [...set] };
+    });
+  }
+
   setChapter(chapterId: string): Promise<void> {
     return this.update(() => ({ currentChapter: chapterId }));
   }

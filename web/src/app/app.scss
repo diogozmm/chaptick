@@ -11,6 +11,7 @@
   font: 600 1.15rem/1 var(--font-display); color: var(--text); text-decoration: none; letter-spacing: -0.01em;
 }
 .brand img { border-radius: 0.45rem; }
+.top-actions { display: flex; gap: 0.4rem; }
 .lang {
   display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2.75rem; padding: 0 0.85rem; border-radius: 999px;
   border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 600 0.8rem/1 var(--font-body);
@@ -28,3 +29,5 @@
 .footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 0 1.25rem; }
 .footer nav a { min-height: 2.75rem; display: inline-flex; align-items: center; gap: 0.3rem; }
 .footer p { max-width: 32rem; margin: 0.25rem auto 0; }
+.lang { text-decoration: none; }
+.lang.active { border-color: var(--accent); color: var(--accent); }

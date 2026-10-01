@@ -110,4 +110,76 @@ c.item('collectible', t('Hot spring cave treasure chests (9)', 'Baús da caverna
          'Inclui Septium Jelly Beans (coma para ganhar a receita) e um baú de monstros. Os dois últimos baús ficam no desvio perto do fim, não no caminho do dispositivo de cura.'),
        1, [WOLF])
 
+# ---------------------------------------------------------------- bosses
+c.boss(t('Neptune Frog'), t('Kaldia Tunnel'),
+       t('The frogs swallow allies (three hits free them) and the swallower then repeats a short-delay area attack. Remove one Whale Frog before it swallows anyone, free allies first, then grind the rest down: no crippling ailments here.',
+         'Os sapos engolem aliados (três golpes os libertam) e quem engoliu repete um ataque em área de pouco atraso. Derrube um Whale Frog antes que engula alguém, liberte os aliados primeiro e depois desgaste o resto: não há efeitos incapacitantes aqui.'),
+       related='sc-ch2-q-06', sources=[ZEISS])
+c.boss(t('Lt. Colonel Cid'), t('Leiston Fortress — final round', 'Leiston Fortress — última rodada'),
+       t('Radiant Cleave hits a line for heavy damage: keep everyone high on HP. Always impede his arts; his Sylpharion gives his side arts reflect. Take out the soldiers, then Belc, then Cid. Strip his Rage Boost buffs, and after Indomitable Will finish him with S-Breaks.',
+         'O Radiant Cleave atinge uma linha com muito dano: mantenha todos com HP alto. Interrompa sempre as arts dele; o Sylpharion dele dá reflexo de arts ao grupo. Derrube os soldados, depois o Belc e por fim o Cid. Remova os buffs do Rage Boost e, depois do Indomitable Will, finalize com S-Breaks.'),
+       related='sc-ch2-q-05', sources=[ZEISS])
+c.boss(t('Mantrap ×3'), t('Tratt Plains Road — east', 'Tratt Plains Road — leste'),
+       t('A flood of ailments and stat downs, plus a swallow: debuff immunity (Sylphen Guard or Sylpharion) is close to mandatory. Free swallowed allies with three hits and keep healing.',
+         'Uma enxurrada de efeitos e reduções de atributos, mais um ataque que engole: imunidade a debuffs (Sylphen Guard ou Sylpharion) é quase obrigatória. Liberte aliados engolidos com três golpes e mantenha a cura.'),
+       related='sc-ch2-q-07', sources=[ZEISS])
+c.boss(t('Big Creepy Sheep'), t('Elmo Village'),
+       t('Phase one is six sheep inflicting Sleep, Blind and Confuse: be protected and use the time to buff and shield. In phase two the big sheep hits harder with the same ailments; Earth Wall blocks its attacks. Burst it when stunned.',
+         'A primeira fase são seis ovelhas que causam Sleep, Blind e Confuse: esteja protegido e use o tempo para buffs e escudos. Na segunda fase, a ovelha grande bate mais forte com os mesmos efeitos; o Earth Wall bloqueia os ataques dela. Ataque forte quando atordoar.'),
+       related='sc-ch2-q-09', sources=[WOLF])
+c.boss(t('Ya-Kah ×8'), t('Tratt Plains Road — southwest cliff', 'Tratt Plains Road — penhasco a sudoeste'),
+       t('Low HP, but they drain EP and CP, blind you and call more of their kind. Sweep them early with wind arts (Aero Storm, Grand Stream) or big S-Crafts.',
+         'Pouco HP, mas drenam EP e CP, cegam e chamam mais da espécie. Varra-os cedo com arts de vento (Aero Storm, Grand Stream) ou S-Crafts fortes.'),
+       related='sc-ch2-q-10', sources=[WOLF])
+c.boss(t('Mustang Saber'), t('Soldat Army Road — near Leiston Fortress', 'Soldat Army Road — perto da Leiston Fortress'),
+       t('No gimmick, just very high damage and a blinding zone. Stack HP and use Zodiac, debuff immunity and Foresight.',
+         'Sem truques, só dano muito alto e uma zona que cega. Aumente o HP e use Zodiac, imunidade a debuffs e Foresight.'),
+       related='sc-ch2-q-11', sources=[WOLF])
+c.boss(t('Abyss Worms'), t('Hot spring cave — depths', 'Caverna das fontes termais — fundo'),
+       t('The worms answer almost every hit, Chain and Burst included, with Earth-Shaker (heavy party damage and delay); counters do not trigger it. First kill the Parasite Primas without touching the worms, then take the worms one or two at a time with wind arts. Avoid area attacks that hit several worms.',
+         'As minhocas respondem a quase todo golpe, inclusive Chain e Burst, com o Earth-Shaker (muito dano na equipe e atraso); contra-ataques não ativam. Primeiro derrube os Parasite Primas sem tocar nelas; depois pegue uma ou duas por vez com arts de vento. Evite ataques em área que acertem várias.'),
+       sources=[WOLF])
+
+# ---------------------------------------------------------------- fishing
+CRAB, ANGEL, KASAGO, BLACKFISH, SEABASS, TROUT, CLAUDINE, EEL, OCTOPUS = (f'sc-ch1-fi-{n:02d}' for n in range(1, 10))
+NEW = {}
+for name in ['Kasagin', 'Yamany', 'Tiger Rockfish', 'Liberl Carp', 'Valleria Bass', 'Rainbow Trout', 'Carp',
+             'Rockeater', 'Salmon', 'Snakehead', 'Mahi-Mahi']:
+    NEW[name] = c.fish(name, sources=[CH3])
+SW = t('Tratt Plains Road — southwest corner by the cliff', 'Tratt Plains Road — canto sudoeste, junto ao penhasco')
+c.spot(CRAB, 'A', t('Tratt Plains Road — northeast and east ponds', 'Tratt Plains Road — lagos nordeste e leste'))
+c.spot(ANGEL, 'A', SW)
+c.spot(KASAGO, 'A', SW)
+c.spot(BLACKFISH, 'A', SW)
+c.spot(SEABASS, 'A', SW)
+c.spot(CLAUDINE, 'B', SW)
+c.spot(OCTOPUS, 'B', SW)
+c.spot(TROUT, 'B', t('Leiston Fortress — outside', 'Leiston Fortress — lado de fora'))
+c.spot(EEL, 'C', t('Elmo Village — Maple Leaf Inn courtyard', 'Elmo Village — pátio da Maple Leaf Inn'))
+c.spot(NEW['Kasagin'], 'A', t('Tratt Plains Road — pond near Elmo Village; Leiston Fortress — outside', 'Tratt Plains Road — lago perto de Elmo Village; Leiston Fortress — lado de fora'))
+c.spot(NEW['Yamany'], 'A', t('Kaldia Tunnel — bridge at the midpoint', 'Kaldia Tunnel — ponte no meio do caminho'))
+c.spot(NEW['Tiger Rockfish'], 'B', t('Kaldia Tunnel bridge; Soldat Army Road water cave', 'Ponte do Kaldia Tunnel; caverna com água da Soldat Army Road'))
+c.spot(NEW['Liberl Carp'], 'C', t('Tratt Plains Road ponds; Soldat Army Road water cave', 'Lagos da Tratt Plains Road; caverna com água da Soldat Army Road'))
+c.spot(NEW['Valleria Bass'], 'C', t('Soldat Army Road water cave; Tratt Plains Road ponds', 'Caverna com água da Soldat Army Road; lagos da Tratt Plains Road'))
+c.spot(NEW['Rainbow Trout'], 'C', t('Soldat Army Road water cave', 'Caverna com água da Soldat Army Road'))
+c.spot(NEW['Carp'], 'B', t('Maple Leaf Inn courtyard; Tratt Plains Road ponds', 'Pátio da Maple Leaf Inn; lagos da Tratt Plains Road'))
+c.spot(NEW['Rockeater'], 'B', t('Leiston Fortress — outside', 'Leiston Fortress — lado de fora'))
+c.spot(NEW['Salmon'], 'B', t('Tratt Plains Road southwest corner; Leiston Fortress — outside', 'Canto sudoeste da Tratt Plains Road; Leiston Fortress — lado de fora'))
+c.spot(NEW['Snakehead'], 'C', t('Tratt Plains Road — northeast and east ponds', 'Tratt Plains Road — lagos nordeste e leste'))
+c.spot(NEW['Mahi-Mahi'], 'B', SW)
+
+# ---------------------------------------------------------------- recipes
+c.recipe('Magma Wings', t('Forgel Bar, Zeiss'), sources=[ZEISS])
+c.recipe('Acerbic Tomato Sandwich', t('Forgel Bar, Zeiss (Ben also gives one)', 'Forgel Bar, Zeiss (o Ben também dá um)'), sources=[ZEISS])
+c.recipe('Fruit Kingdom', t('Forgel Bar, Zeiss'), sources=[ZEISS])
+c.recipe('Mysterious Paste', t("Priam's Drink Shop, outside Zeiss Central Factory", "Priam's Drink Shop, do lado de fora da Zeiss Central Factory"), sources=[ZEISS])
+c.recipe('Golden Risotto', t('Sanktheim Gate cafeteria', 'Cafeteria do Sanktheim Gate'), sources=[ZEISS])
+c.recipe('Continental Eggs', t('Maple Leaf Inn, Elmo Village'), sources=[ZEISS])
+c.recipe('Passionate Egg Roll', t('Maple Leaf Inn, Elmo Village'), sources=[ZEISS])
+c.recipe('Top-Rated Shake', t('Maple Leaf Inn, Elmo Village'), sources=[ZEISS])
+c.recipe('Septium Jelly Beans', t('Treasure chest in the hot spring cave', 'Baú na caverna das fontes termais'), sources=[WOLF])
+c.recipe('Ham & Egg Feast', t('Have Estelle cook Herb Sandwich', 'A Estelle cozinha Herb Sandwich'), 'customized', sources=[RUAN])
+c.recipe('Breeze Basil Pasta', t('Have Scherazard cook Sea Breeze Soup (needs her in the party)', 'A Scherazard cozinha Sea Breeze Soup (precisa dela na equipe)'), 'customized', sources=[RUAN])
+c.recipe('Thunderous Potato Soup', t('Have Agate cook Toasty Potato Wedges (needs him in the party)', 'O Agate cozinha Toasty Potato Wedges (precisa dele na equipe)'), 'customized', sources=[RUAN])
+
 c.write()

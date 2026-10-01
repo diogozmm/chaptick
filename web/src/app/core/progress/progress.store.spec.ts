@@ -31,6 +31,14 @@ describe('ProgressStore', () => {
     expect(reloaded.currentChapter()).toBe('sc-ch1');
   });
 
+  it('sets several ids at once without duplicates', async () => {
+    await store.setDone(['a', 'a#rank-a'], true);
+    await store.setDone(['a#rank-a'], true);
+    expect([...store.done()]).toEqual(['a', 'a#rank-a']);
+    await store.setDone(['a#rank-a'], false);
+    expect([...store.done()]).toEqual(['a']);
+  });
+
   it('round-trips export and import, keeping unknown ids', async () => {
     await store.toggle('sc-ch9-hq-01');
     await store.setPreferences({ hideDone: true });

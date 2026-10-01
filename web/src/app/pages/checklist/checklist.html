@@ -88,6 +88,31 @@
   } @empty {
     <p class="empty card">{{ (s.total ? 'checklist.allHidden' : 'checklist.empty') | transloco }}</p>
   }
+
+  @if (bosses().length > 0) {
+    <details class="bosses">
+      <summary><app-icon name="swords" /> {{ 'boss.section' | transloco: { count: bosses().length } }}</summary>
+      <p class="muted small">{{ 'boss.sectionHint' | transloco }}</p>
+      <ul class="boss-list">
+        @for (boss of bosses(); track boss.id; let n = $index) {
+          @let related = relatedLabel(ch, boss);
+          <li class="boss-row">
+            <div class="boss-body">
+              <app-spoiler-reveal [itemId]="boss.id" [level]="2" [placeholder]="'boss.placeholder' | transloco: { n: n + 1 }">
+                <span class="boss-name">{{ boss.name | localize: l }}</span>
+              </app-spoiler-reveal>
+              @if (related) {
+                <span class="meta">{{ 'boss.for' | transloco: { item: related } }}</span>
+              }
+            </div>
+            <a class="details" [routerLink]="['/sc/bosses', boss.id]" [attr.aria-label]="'boss.strategyFor' | transloco: { n: n + 1 }">
+              <app-icon name="chevron-right" />
+            </a>
+          </li>
+        }
+      </ul>
+    </details>
+  }
 } @else if (chapter.error()) {
   <p role="alert">{{ 'common.loadError' | transloco }}</p>
   <button type="button" class="button" (click)="chapter.reload()">{{ 'common.retry' | transloco }}</button>

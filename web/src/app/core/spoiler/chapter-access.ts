@@ -35,8 +35,8 @@ export class ChapterAccess {
 /** Item ids start with their chapter id: `sc-ch3-hq-02` belongs to `sc-ch3`. */
 export const chapterIdOfItem = (itemId: string): string => itemId.match(/^[a-z0-9]+-ch\d+/)?.[0] ?? '';
 
-/** Blocks a pasted link to a locked chapter or item instead of loading it. */
+/** Blocks a pasted link to a locked chapter, item or boss instead of loading it. */
 export const unlockedChapterGuard: CanActivateFn = (route) => {
-  const chapterId = route.params['chapterId'] ?? chapterIdOfItem(route.params['itemId'] ?? '');
+  const chapterId = route.params['chapterId'] ?? chapterIdOfItem(route.params['itemId'] ?? route.params['bossId'] ?? '');
   return inject(ChapterAccess).unlockedChapter(chapterId) ? true : inject(Router).parseUrl('/sc/chapters');
 };

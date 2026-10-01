@@ -393,5 +393,241 @@
       ]
     }
   ],
-  "itemTexts": []
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch4-bs-01",
+      "name": {
+        "en": "Stronghold commander",
+        "pt": "Comandante da fortaleza"
+      },
+      "location": {
+        "en": "First area of the chapter — top",
+        "pt": "Primeira área do capítulo — topo"
+      },
+      "strategy": {
+        "en": "A gentle fight. Open with Earth Guard and Sylphen Wing, heal as needed and steal his AT bonuses with an Orbal Bomb. In Rage Boost he removes your buffs and S-Breaks: reapply the shield and keep going.",
+        "pt": "Uma luta tranquila. Comece com Earth Guard e Sylphen Wing, cure quando precisar e roube os bônus de AT dele com uma Orbal Bomb. No Rage Boost ele remove seus buffs e usa o S-Break: reaplique o escudo e siga."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Sky Pirate Stronghold"
+      ]
+    },
+    {
+      "id": "sc-ch4-bs-02",
+      "name": {
+        "en": "Master Wisdom ×3"
+      },
+      "location": {
+        "en": "Elize Highway — near Gurune Gate",
+        "pt": "Elize Highway — perto do Gurune Gate"
+      },
+      "strategy": {
+        "en": "Force of Nature delays, lowers all stats and can Petrify; their hits also heal them. Most of their damage is magic, so Sylpharion (arts reflect and debuff immunity) does a lot of the work. They spam Force of Nature in Rage Boost.",
+        "pt": "O Force of Nature atrasa, reduz todos os atributos e pode causar Petrify; os golpes deles também os curam. A maior parte do dano é mágico, então o Sylpharion (reflexo de arts e imunidade a debuffs) faz boa parte do trabalho. No Rage Boost eles repetem o Force of Nature."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ],
+      "relatedItem": "sc-ch4-q-03"
+    },
+    {
+      "id": "sc-ch4-bs-03",
+      "name": {
+        "en": "Big the Yeti"
+      },
+      "location": {
+        "en": "Milch Main Road — west end",
+        "pt": "Milch Main Road — extremo oeste"
+      },
+      "strategy": {
+        "en": "It keeps stacking Bulk Up, which also clears its debuffs. Dispel at two or three stacks or after a Rage Boost (below two thirds and one third HP), and bring Freeze protection.",
+        "pt": "Ele acumula Bulk Up o tempo todo, o que também limpa os debuffs dele. Remova os buffs com dois ou três acúmulos ou depois de um Rage Boost (abaixo de dois terços e de um terço do HP), e leve proteção contra Freeze."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ],
+      "relatedItem": "sc-ch4-q-04"
+    }
+  ],
+  "fish": [
+    {
+      "id": "sc-ch4-fi-01",
+      "name": {
+        "en": "Garvelze"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch4-fi-01",
+      "rank": "B",
+      "where": {
+        "en": "Rolent Sewers"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Rolent Sewers"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Rolent Sewers; Bright Family House pond",
+        "pt": "Rolent Sewers; lago da casa da família Bright"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Rolent Sewers; Milch Main Road — northeastern pond",
+        "pt": "Rolent Sewers; Milch Main Road — lago a nordeste"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Rolent Sewers, Bright Family House pond, Elize Highway stream, Verte Bridge",
+        "pt": "Rolent Sewers, lago da casa Bright, riacho da Elize Highway, Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Bright Family House pond; Verte Bridge",
+        "pt": "Lago da casa da família Bright; Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Elize Highway — stream",
+        "pt": "Elize Highway — riacho"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "B",
+      "where": {
+        "en": "Elize Highway stream; Verte Bridge",
+        "pt": "Riacho da Elize Highway; Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "B",
+      "where": {
+        "en": "Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "B",
+      "where": {
+        "en": "Elize Highway stream; Milch Main Road pond",
+        "pt": "Riacho da Elize Highway; lago da Milch Main Road"
+      }
+    },
+    {
+      "fishId": "sc-ch3-fi-01",
+      "rank": "C",
+      "where": {
+        "en": "Elize Highway stream; Milch Main Road pond",
+        "pt": "Riacho da Elize Highway; lago da Milch Main Road"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch4-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Silken Soup"
+      },
+      "source": {
+        "en": "Abend Bar, Rolent"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Spring Spiral Noodles"
+      },
+      "source": {
+        "en": "Abend Bar, Rolent"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Strawberry Supreme Crepe"
+      },
+      "source": {
+        "en": "Abend Bar, Rolent"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Three-Egg Rice Porridge"
+      },
+      "source": {
+        "en": "Abend Bar, Rolent"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    },
+    {
+      "id": "sc-ch4-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Maelstrom Soup"
+      },
+      "source": {
+        "en": "Treasure chest in Esmelas Tower",
+        "pt": "Baú na Esmelas Tower"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ]
+    }
+  ]
 }

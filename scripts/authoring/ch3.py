@@ -98,4 +98,73 @@ c.item('collectible', t('Grancel Sewers E. & N. Blocks treasure chests (9)', 'Ba
          'Inclui Bone-In Meat (coma para ganhar a receita). O baú de monstros do North Block (quatro toupeiras) é a luta mais difícil do capítulo; dá para deixar para o fim.'),
        1, [VILLA])
 
+# ---------------------------------------------------------------- bosses
+c.boss(t('Divine Pengu'), t('Kaldia Limestone Cave — northwest depths', 'Kaldia Limestone Cave — fundo a noroeste'),
+       t('It is game over if the boy you are protecting falls, so clear the small pengus quickly. After Rage Boost it S-Breaks with a line attack (a Taunt can redirect it). Below half HP its dance confuses everyone (debuff immunity or Lily Necklace+) and calls pengus that take its damage: sweep them with area attacks. It survives one lethal hit.',
+         'É game over se o garoto que você protege cair, então derrube rápido os pengus pequenos. Depois do Rage Boost ele usa um S-Break em linha (um Taunt pode desviar). Abaixo da metade do HP a dança dele confunde todos (imunidade a debuffs ou Lily Necklace+) e chama pengus que absorvem o dano: varra-os com ataques em área. Ele sobrevive a um golpe letal.'),
+       related='sc-ch3-q-01', sources=[ZEISS])
+c.boss(t('Giant Tree and Mad Trees', 'Giant Tree e Mad Trees'), t('Grancel Sewers — W. Block'),
+       t('They cripple stats, delay you and heal from the damage they deal (the big one heals ten times as much). Use shields and debuff immunity, burn the Mad Trees first with fire arts; they are also vulnerable to Deathblow.',
+         'Elas derrubam atributos, atrasam e se curam com o dano que causam (a grande cura dez vezes mais). Use escudos e imunidade a debuffs e queime primeiro as Mad Trees com arts de fogo; elas também são vulneráveis a Deathblow.'),
+       related='sc-ch3-q-02', sources=[GRANCEL])
+c.boss(t('Rhinoking'), t('Erbe Scenic Route — middle intersection', 'Erbe Scenic Route — cruzamento central'),
+       t('A straight damage race. Buff up, add Foresight or debuff immunity, and expect a sleep-inducing scent at 75%, 50% and 25% HP.',
+         'Uma disputa direta de dano. Faça os buffs, adicione Foresight ou imunidade a debuffs e espere um aroma que causa sono em 75%, 50% e 25% do HP.'),
+       related='sc-ch3-q-03', sources=[GRANCEL])
+c.boss(t('Master Cryon'), t('Grancel — Grand Arena'),
+       t('Bring Freeze protection. The Cryon Flakes walk up and explode after a turn, so burst the Flakes and Bits right away with S-Breaks or a Burst, then deal with the master using your usual buffs.',
+         'Leve proteção contra Freeze. Os Cryon Flakes se aproximam e explodem depois de um turno, então derrube Flakes e Bits na hora com S-Breaks ou Burst; depois cuide do mestre com os buffs de sempre.'),
+       related='sc-ch3-q-04', sources=[VILLA])
+c.boss(t('Special Ops machine', 'Máquina das Special Ops'), t('Grancel Sewers — N. Block'),
+       t('An easy one: very vulnerable to Seal, and debuff immunity plus stat buffs cover its single real attack.',
+         'Uma luta fácil: muito vulnerável a Seal, e imunidade a debuffs com buffs de atributos cobrem o único ataque de verdade dela.'),
+       sources=[VILLA])
+c.boss(t('King Pengu'), t('Grancel Sewers — side room by the E. Block entrance', 'Grancel Sewers — sala lateral na entrada do E. Block'),
+       t('Bring Confuse protection. Sweep the small pengus with area attacks; if they all fall, it spends a turn reviving them at 30% HP. Rage Boost below 55% and 35% HP, and it survives one lethal hit.',
+         'Leve proteção contra Confuse. Varra os pengus pequenos com ataques em área; se todos caírem, ele gasta um turno revivendo-os com 30% do HP. Rage Boost abaixo de 55% e de 35% do HP, e ele sobrevive a um golpe letal.'),
+       related='sc-ch3-q-06', sources=[GURUNE])
+c.boss(t('Hurricane Velg'), t('Kirsche Avenue'),
+       t('Most attacks Seal, and Feather Shower lowers every stat. Sylpharion (debuff immunity and arts reflect) handles it, then Zodiac and Foresight. Try to burst it before it reaches half HP.',
+         'A maioria dos ataques causa Seal, e o Feather Shower reduz todos os atributos. O Sylpharion (imunidade a debuffs e reflexo de arts) resolve; depois use Zodiac e Foresight. Tente derrubá-lo antes da metade do HP.'),
+       related='sc-ch3-q-07', sources=[GURUNE])
+c.boss(t('Battles at the port warehouse', 'Batalhas no depósito do porto'), t('Grancel — port district', 'Grancel — distrito do porto'),
+       t('Several fights back to back with no rest, so pace EP and CP. In the last one, clear the summoned reinforcements before they close in, then chip the leader down; she survives one lethal hit, so keep an S-Break for right after.',
+         'Várias lutas seguidas sem descanso, então dose EP e CP. Na última, derrube os reforços invocados antes que se aproximem e depois desgaste a líder; ela sobrevive a um golpe letal, então guarde um S-Break para logo depois.'),
+       sources=[GURUNE])
+
+# ---------------------------------------------------------------- fishing
+CRAB, TROUT, EEL = 'sc-ch1-fi-01', 'sc-ch1-fi-06', 'sc-ch1-fi-08'
+KASAGIN, YAMANY, TIGER, LCARP, VBASS, RTROUT, CARP, ROCK, SALMON, SNAKE = (f'sc-ch2-fi-{n:02d}' for n in range(1, 11))
+PEARL = c.fish('Pearlglass', sources=[VILLA])
+c.spot(VBASS, 'B', t('Kaldia Limestone Cave — entrance', 'Kaldia Limestone Cave — entrada'))
+c.spot(RTROUT, 'B', t('Kaldia Limestone Cave — depths (after the quest); Grancel port and North Block', 'Kaldia Limestone Cave — fundo (depois da quest); porto e North Block de Grancel'))
+c.spot(CRAB, 'A', t('Erbe Scenic Route — Romal Pond'))
+c.spot(KASAGIN, 'A', t('Grancel Sewers — W. Block and E. Block entrance', 'Grancel Sewers — W. Block e entrada do E. Block'))
+c.spot(YAMANY, 'A', t('Grancel Sewers — E. Block', 'Grancel Sewers — E. Block'))
+c.spot(TIGER, 'A', t('Grancel Sewers — E. Block, near the N. Block', 'Grancel Sewers — E. Block, perto do N. Block'))
+c.spot(LCARP, 'B', t('Grancel Sewers'))
+c.spot(CARP, 'A', t('Grancel Sewers E. Block near the N. Block; Erbe Scenic Route — Romal Pond', 'Grancel Sewers E. Block perto do N. Block; Erbe Scenic Route — Romal Pond'))
+c.spot(EEL, 'A', t('Erbe Scenic Route — Romal Pond'))
+c.spot(ROCK, 'B', t('Grancel Sewers; Erbe Scenic Route — Romal Pond'))
+c.spot(TROUT, 'B', t('Grancel — North Block'))
+c.spot(SALMON, 'A', t('Grancel — port (the only Rank A spot in the capital; the port closes later, so fish it while you can)', 'Grancel — porto (único Rank A da capital; o porto fecha mais tarde, então pesque enquanto der)'))
+c.spot(SNAKE, 'B', t('Grancel — port', 'Grancel — porto'))
+c.spot(PEARL, 'C', t('Erbe Royal Villa — front courtyard', 'Erbe Royal Villa — pátio da frente'))
+
+# ---------------------------------------------------------------- recipes
+c.recipe('Sweet Crepe', t("Nonna's Crepe Shop, Grancel South Block"), sources=[GRANCEL])
+c.recipe('Mystery Crepe', t("Nonna's Crepe Shop, Grancel South Block"), sources=[GRANCEL])
+c.recipe('Agile Popcorn', t("Gaspard's Popcorn Shop, Grancel South Block"), sources=[GRANCEL])
+c.recipe('Homemade Faux Pie', t('Sunnybell Inn, Grancel South Block'), sources=[GRANCEL])
+c.recipe('Refined Carapace', t('Sunnybell Inn, Grancel South Block'), sources=[GRANCEL])
+c.recipe('Sunshine Ice Cream', t("Sorbet's Ice Cream Shop, Grancel East Block"), sources=[GRANCEL])
+c.recipe('Moonlight Ice Cream', t("Sorbet's Ice Cream Shop, Grancel East Block"), sources=[GRANCEL])
+c.recipe("Sandman's Demise", t('Baral Coffee House, Grancel West Block'), sources=[GRANCEL])
+c.recipe('Curry of Dreams', t('Baral Coffee House, Grancel West Block'), sources=[GRANCEL])
+c.recipe('Dual-Layer Tempura', t('Gurune Gate cafeteria', 'Cafeteria do Gurune Gate'), sources=[GRANCEL])
+c.recipe('Bone-In Meat', t('Treasure chest in Grancel Sewers N. Block', 'Baú no Grancel Sewers N. Block'), sources=[VILLA])
+c.recipe('White Chiffon Cake', t('Have Kloe cook Fruit Kingdom', 'A Kloe cozinha Fruit Kingdom'), 'customized', sources=[ZEISS])
+c.recipe('Omelet Pilaf', t('Have Tita cook Passionate Egg Roll', 'A Tita cozinha Passionate Egg Roll'), 'customized', sources=[ZEISS])
+c.recipe('Red Wine Curry', t('Have Olivier cook Curry of Dreams', 'O Olivier cozinha Curry of Dreams'), 'customized', sources=[GURUNE])
+
 c.write()

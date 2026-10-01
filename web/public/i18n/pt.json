@@ -5,7 +5,8 @@
     "updateReady": "Uma nova versão está pronta.",
     "reload": "Recarregar",
     "footerNav": "Site",
-    "support": "Apoie o projeto"
+    "support": "Apoie o projeto",
+    "mainNav": "Principal"
   },
   "common": {
     "cancel": "Cancelar",
@@ -117,5 +118,33 @@
     "analytics": "As métricas não usam cookies e são agregadas (visitas e alguns eventos anônimos). Sem IDs de itens e sem dados pessoais.",
     "suggestions": "Quando as sugestões forem ativadas, guardaremos só o texto enviado, um apelido opcional e um hash irreversível do seu IP para limitar spam.",
     "contact": "Dúvidas ou pedidos de remoção:"
+  },
+  "boss": {
+    "section": "Bosses ({{count}})",
+    "sectionHint": "Nomes e estratégias ficam escondidos até você revelar. Não contam no progresso.",
+    "placeholder": "Boss #{{n}}",
+    "for": "Parte de: {{item}}",
+    "strategyFor": "Estratégia do boss #{{n}}",
+    "eyebrow": "Boss",
+    "strategy": "Estratégia"
+  },
+  "collections": {
+    "short": "Coleções",
+    "eyebrow": "Seus cadernos",
+    "title": "Coleções",
+    "intro": "Só o que os capítulos que você alcançou revelam. Pesqueiros e pratos de regiões futuras aparecem conforme você avança.",
+    "fish": "Pesca",
+    "recipes": "Receitas",
+    "caught": "pescados",
+    "rankA": "Rank A",
+    "bestRank": "Melhor rank até agora: {{rank}}",
+    "gotRankA": "Pesquei no Rank A",
+    "fishHint": "Melhores pesqueiros primeiro. O rank mostrado é o melhor conhecido até agora.",
+    "noFish": "Ainda não há pesca nos capítulos que você alcançou.",
+    "learned": "receitas",
+    "customized": "personalizados",
+    "recipesHint": "Coma o prato (ou cozinhe) para aprender a receita.",
+    "standardTitle": "Livro de receitas",
+    "customizedTitle": "Pratos personalizados"
   }
 }

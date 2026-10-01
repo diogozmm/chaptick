@@ -72,3 +72,17 @@ test('rejects ids removed from the registry', () => {
 test('rejects community text for an item of another chapter', () => {
   expectError(validateWith(CH0, (d) => void (d.itemTexts[0].itemId = 'demo-ch1-hq-01')), 'not an item of this chapter');
 });
+
+test('rejects a fish spot for a fish from a later chapter', () => {
+  const errors = validateWith(CH0, (d) => void (d.fishSpots = [{ fishId: 'demo-ch1-fi-01', rank: 'B', where: { en: 'Town' } }]));
+  expectError(errors, 'from a later chapter');
+});
+
+test('rejects a boss linked to an unknown item', () => {
+  expectError(validateWith('demo/chapters/ch-01.json', (d) => void (d.bosses[0].relatedItem = 'demo-ch1-q-99')), 'refers to unknown');
+});
+
+test('rejects unregistered boss, fish and recipe ids', () => {
+  const errors = validateWith('id-registry.json', (r) => r.filter((id) => !id.includes('-bs-')));
+  expectError(errors, '"demo-ch1-bs-01" is used in content but not registered');
+});

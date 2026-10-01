@@ -15,6 +15,12 @@ export const routes: Routes = [
     canActivate: [unlockedChapterGuard],
     loadComponent: () => import('./pages/item-detail/item-detail').then((m) => m.ItemDetail),
   },
+  {
+    path: 'sc/bosses/:bossId',
+    canActivate: [unlockedChapterGuard],
+    loadComponent: () => import('./pages/boss-detail/boss-detail').then((m) => m.BossDetail),
+  },
+  { path: 'sc/collections', loadComponent: () => import('./pages/collections/collections').then((m) => m.Collections) },
   { path: 'credits', loadComponent: () => import('./pages/credits/credits').then((m) => m.Credits) },
   { path: 'privacy', loadComponent: () => import('./pages/privacy/privacy').then((m) => m.Privacy) },
   { path: '**', redirectTo: '' },

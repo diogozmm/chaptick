@@ -77,4 +77,44 @@ c.item('collectible', t('Esmelas Tower treasure chests (11)', 'Baús da Esmelas 
          'Inclui Maelstrom Soup (coma para ganhar a receita) e um baú de monstros com Wind Trappers.'),
        0, [ROLENT])
 
+# ---------------------------------------------------------------- bosses
+c.boss(t('Stronghold commander', 'Comandante da fortaleza'), t('First area of the chapter — top', 'Primeira área do capítulo — topo'),
+       t('A gentle fight. Open with Earth Guard and Sylphen Wing, heal as needed and steal his AT bonuses with an Orbal Bomb. In Rage Boost he removes your buffs and S-Breaks: reapply the shield and keep going.',
+         'Uma luta tranquila. Comece com Earth Guard e Sylphen Wing, cure quando precisar e roube os bônus de AT dele com uma Orbal Bomb. No Rage Boost ele remove seus buffs e usa o S-Break: reaplique o escudo e siga.'),
+       sources=[FORT])
+c.boss(t('Master Wisdom ×3'), t('Elize Highway — near Gurune Gate', 'Elize Highway — perto do Gurune Gate'),
+       t('Force of Nature delays, lowers all stats and can Petrify; their hits also heal them. Most of their damage is magic, so Sylpharion (arts reflect and debuff immunity) does a lot of the work. They spam Force of Nature in Rage Boost.',
+         'O Force of Nature atrasa, reduz todos os atributos e pode causar Petrify; os golpes deles também os curam. A maior parte do dano é mágico, então o Sylpharion (reflexo de arts e imunidade a debuffs) faz boa parte do trabalho. No Rage Boost eles repetem o Force of Nature.'),
+       related='sc-ch4-q-03', sources=[ROLENT])
+c.boss(t('Big the Yeti'), t('Milch Main Road — west end', 'Milch Main Road — extremo oeste'),
+       t('It keeps stacking Bulk Up, which also clears its debuffs. Dispel at two or three stacks or after a Rage Boost (below two thirds and one third HP), and bring Freeze protection.',
+         'Ele acumula Bulk Up o tempo todo, o que também limpa os debuffs dele. Remova os buffs com dois ou três acúmulos ou depois de um Rage Boost (abaixo de dois terços e de um terço do HP), e leve proteção contra Freeze.'),
+       related='sc-ch4-q-04', sources=[ROLENT])
+
+# ---------------------------------------------------------------- fishing
+CRAB, TROUT = 'sc-ch1-fi-01', 'sc-ch1-fi-06'
+KASAGIN, YAMANY, TIGER, LCARP, VBASS, RTROUT, CARP, ROCK, SALMON, SNAKE = (f'sc-ch2-fi-{n:02d}' for n in range(1, 11))
+PEARL = 'sc-ch3-fi-01'
+GARVELZE = c.fish('Garvelze', sources=[ROLENT])
+c.spot(GARVELZE, 'B', t('Rolent Sewers'))
+c.spot(CRAB, 'A', t('Rolent Sewers'))
+c.spot(KASAGIN, 'A', t('Rolent Sewers; Bright Family House pond', 'Rolent Sewers; lago da casa da família Bright'))
+c.spot(LCARP, 'A', t('Rolent Sewers; Milch Main Road — northeastern pond', 'Rolent Sewers; Milch Main Road — lago a nordeste'))
+c.spot(CARP, 'A', t('Rolent Sewers, Bright Family House pond, Elize Highway stream, Verte Bridge', 'Rolent Sewers, lago da casa Bright, riacho da Elize Highway, Verte Bridge'))
+c.spot(ROCK, 'A', t('Bright Family House pond; Verte Bridge', 'Lago da casa da família Bright; Verte Bridge'))
+c.spot(VBASS, 'A', t('Elize Highway — stream', 'Elize Highway — riacho'))
+c.spot(YAMANY, 'A', t('Verte Bridge'))
+c.spot(TIGER, 'A', t('Verte Bridge'))
+c.spot(TROUT, 'B', t('Elize Highway stream; Verte Bridge', 'Riacho da Elize Highway; Verte Bridge'))
+c.spot(RTROUT, 'B', t('Verte Bridge'))
+c.spot(SNAKE, 'B', t('Elize Highway stream; Milch Main Road pond', 'Riacho da Elize Highway; lago da Milch Main Road'))
+c.spot(PEARL, 'C', t('Elize Highway stream; Milch Main Road pond', 'Riacho da Elize Highway; lago da Milch Main Road'))
+
+# ---------------------------------------------------------------- recipes
+c.recipe('Silken Soup', t('Abend Bar, Rolent'), sources=[ROLENT])
+c.recipe('Spring Spiral Noodles', t('Abend Bar, Rolent'), sources=[ROLENT])
+c.recipe('Strawberry Supreme Crepe', t('Abend Bar, Rolent'), sources=[ROLENT])
+c.recipe('Three-Egg Rice Porridge', t('Abend Bar, Rolent'), sources=[ROLENT])
+c.recipe('Maelstrom Soup', t('Treasure chest in Esmelas Tower', 'Baú na Esmelas Tower'), sources=[ROLENT])
+
 c.write()

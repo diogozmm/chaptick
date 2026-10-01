@@ -3,49 +3,157 @@
   "$id": "https://bracer-notes/schema/chapter.schema.json",
   "description": "One chapter per file, so the app only ever downloads unlocked chapters.",
   "type": "object",
-  "required": ["id", "gameId", "order", "neutralLabel", "checkpoints", "items", "itemTexts"],
+  "required": [
+    "id",
+    "gameId",
+    "order",
+    "neutralLabel",
+    "checkpoints",
+    "items",
+    "itemTexts"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z0-9]+-ch\\d+$" },
-    "gameId": { "type": "string" },
-    "order": { "type": "integer", "minimum": 0 },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+-ch\\d+$"
+    },
+    "gameId": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0
+    },
     "neutralLabel": {
       "description": "\"Prologue\", \"Chapter 1\"... never the real chapter title.",
       "$ref": "common.schema.json#/$defs/localized"
     },
-    "checkpoints": { "type": "array", "items": { "$ref": "#/$defs/checkpoint" } },
-    "items": { "type": "array", "items": { "$ref": "#/$defs/item" } },
-    "itemTexts": { "type": "array", "items": { "$ref": "#/$defs/itemText" } }
+    "checkpoints": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/checkpoint"
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "itemTexts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/itemText"
+      }
+    },
+    "bosses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/boss"
+      },
+      "description": "Guide content: never counted in progress, always shown masked."
+    },
+    "fish": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fish"
+      },
+      "description": "Species first catchable in this chapter."
+    },
+    "fishSpots": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fishSpot"
+      },
+      "description": "Good spots in this chapter's region; they may refer to fish from earlier chapters."
+    },
+    "recipes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/recipe"
+      },
+      "description": "Recipes first obtainable in this chapter."
+    }
   },
   "additionalProperties": false,
   "$defs": {
     "checkpoint": {
       "type": "object",
-      "required": ["id", "order", "neutralDescription"],
+      "required": [
+        "id",
+        "order",
+        "neutralDescription"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-z0-9]+-ch\\d+-cp-\\d{2}$" },
-        "order": { "type": "integer", "minimum": 1 },
-        "neutralDescription": { "$ref": "common.schema.json#/$defs/localized" }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-ch\\d+-cp-\\d{2}$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "neutralDescription": {
+          "$ref": "common.schema.json#/$defs/localized"
+        }
       },
       "additionalProperties": false
     },
     "item": {
       "type": "object",
-      "required": ["id", "type", "name", "location", "availableUntil", "hint", "spoilerLevel", "sources"],
+      "required": [
+        "id",
+        "type",
+        "name",
+        "location",
+        "availableUntil",
+        "hint",
+        "spoilerLevel",
+        "sources"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-z0-9]+-ch\\d+-(q|hq|mi|co)-\\d{2}$" },
-        "type": { "enum": ["quest", "hidden_quest", "missable", "collectible"] },
-        "name": { "$ref": "common.schema.json#/$defs/localized" },
-        "location": { "$ref": "common.schema.json#/$defs/localized" },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-ch\\d+-(q|hq|mi|co)-\\d{2}$"
+        },
+        "type": {
+          "enum": [
+            "quest",
+            "hidden_quest",
+            "missable",
+            "collectible"
+          ]
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "location": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
         "availableUntil": {
           "description": "Checkpoint id after which the item is lost, or null when it never expires.",
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
-        "hint": { "$ref": "common.schema.json#/$defs/localized" },
-        "spoilerLevel": { "enum": [0, 1, 2] },
+        "hint": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "spoilerLevel": {
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
         "sources": {
           "description": "Internal provenance: \"wiki\", \"guide X\", \"verified in game\".",
           "type": "array",
-          "items": { "type": "string", "minLength": 1 },
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
           "minItems": 1
         }
       },
@@ -53,13 +161,157 @@
     },
     "itemText": {
       "type": "object",
-      "required": ["itemId", "text", "author", "license", "approvedAt"],
+      "required": [
+        "itemId",
+        "text",
+        "author",
+        "license",
+        "approvedAt"
+      ],
       "properties": {
-        "itemId": { "type": "string" },
-        "text": { "$ref": "common.schema.json#/$defs/localized" },
-        "author": { "type": "string", "minLength": 1 },
-        "license": { "const": "CC-BY-SA-4.0" },
-        "approvedAt": { "type": "string", "format": "date" }
+        "itemId": {
+          "type": "string"
+        },
+        "text": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license": {
+          "const": "CC-BY-SA-4.0"
+        },
+        "approvedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "boss": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "location",
+        "strategy",
+        "sources"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-ch\\d+-bs-\\d{2}$"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "location": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "relatedItem": {
+          "type": "string",
+          "description": "Quest or missable this fight belongs to, if any."
+        },
+        "strategy": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "fish": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "sources"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-ch\\d+-fi-\\d{2}$"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "fishSpot": {
+      "type": "object",
+      "required": [
+        "fishId",
+        "rank",
+        "where"
+      ],
+      "properties": {
+        "fishId": {
+          "type": "string"
+        },
+        "rank": {
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "where": {
+          "$ref": "common.schema.json#/$defs/localized"
+        }
+      },
+      "additionalProperties": false
+    },
+    "recipe": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "source",
+        "sources"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-ch\\d+-re-\\d{2}$"
+        },
+        "kind": {
+          "enum": [
+            "standard",
+            "customized"
+          ]
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "source": {
+          "$ref": "common.schema.json#/$defs/localized",
+          "description": "Where to get it, or who cooks what for a customized dish."
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
       },
       "additionalProperties": false
     }

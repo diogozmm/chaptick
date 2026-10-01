@@ -2,20 +2,22 @@ import { ChangeDetectionStrategy, Component, computed, inject, input, resource }
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
-import { Chapter, ITEM_TYPES, Item, ItemType } from '../../core/content/content.models';
+import { Boss, Chapter, ITEM_TYPES, Item, ItemType, localize } from '../../core/content/content.models';
 import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
+import { ItemView } from '../../core/spoiler/item-view';
 import { carriedOver, chapterProgress, expiredItems, groupByType, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { Icon } from '../../ui/icon/icon';
 import { ItemRow } from '../../ui/item-row/item-row';
+import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
 import { TYPE_ICON } from '../../ui/item-type';
 
 @Component({
   selector: 'app-checklist',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon, SpoilerReveal],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './checklist.html',
   styleUrl: './checklist.scss',
@@ -25,6 +27,7 @@ export class Checklist {
   private readonly access = inject(ChapterAccess);
   protected readonly progress = inject(ProgressStore);
   protected readonly lang = inject(LangService);
+  protected readonly view = inject(ItemView);
 
   /** Bound from the route; the route guard already checked it is unlocked. */
   readonly chapterId = input.required<string>();
@@ -91,6 +94,15 @@ export class Checklist {
     );
     return groupByType(visible, ITEM_TYPES);
   });
+
+  protected readonly bosses = computed(() => this.loaded()?.bosses ?? []);
+
+  /** The quest a fight belongs to, named only as far as that quest's own mask allows. */
+  protected relatedLabel(chapter: Chapter, boss: Boss): string | null {
+    const item = chapter.items.find((i) => i.id === boss.relatedItem);
+    if (!item) return null;
+    return this.view.showLocation(item) ? localize(item.name, this.lang.lang()) : this.view.placeholder(chapter, item);
+  }
 
   protected isFilterOn(type: ItemType): boolean {
     return this.progress.preferences().filters.includes(type);

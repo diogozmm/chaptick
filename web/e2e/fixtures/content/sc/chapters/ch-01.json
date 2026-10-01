@@ -1,9 +1,74 @@
 {
-  "id": "sc-ch1", "gameId": "sc", "order": 1, "neutralLabel": { "en": "Chapter 1", "pt": "Capítulo 1" },
-  "checkpoints": [{ "id": "sc-ch1-cp-01", "order": 1, "neutralDescription": { "en": "FUTURE CHECKPOINT 1" } }],
-  "items": [
-    { "id": "sc-ch1-q-01", "type": "quest", "name": { "en": "FUTURE QUEST 1" }, "location": { "en": "FUTURE PLACE" },
-      "availableUntil": "sc-ch1-cp-01", "hint": { "en": "FUTURE HINT" }, "spoilerLevel": 0, "sources": ["e2e"] }
+  "id": "sc-ch1",
+  "gameId": "sc",
+  "order": 1,
+  "neutralLabel": {
+    "en": "Chapter 1",
+    "pt": "Cap\u00edtulo 1"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch1-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "FUTURE CHECKPOINT 1"
+      }
+    }
   ],
-  "itemTexts": []
+  "items": [
+    {
+      "id": "sc-ch1-q-01",
+      "type": "quest",
+      "name": {
+        "en": "FUTURE QUEST 1"
+      },
+      "location": {
+        "en": "FUTURE PLACE"
+      },
+      "availableUntil": "sc-ch1-cp-01",
+      "hint": {
+        "en": "FUTURE HINT"
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "e2e"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "fish": [
+    {
+      "id": "sc-ch1-fi-01",
+      "name": {
+        "en": "FUTURE FISH"
+      },
+      "sources": [
+        "e2e"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "B",
+      "where": {
+        "en": "FUTURE SPOT"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch1-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "FUTURE DISH"
+      },
+      "source": {
+        "en": "Somewhere"
+      },
+      "sources": [
+        "e2e"
+      ]
+    }
+  ]
 }

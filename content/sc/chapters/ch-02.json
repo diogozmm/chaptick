@@ -560,5 +560,558 @@
       ]
     }
   ],
-  "itemTexts": []
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch2-bs-01",
+      "name": {
+        "en": "Neptune Frog"
+      },
+      "location": {
+        "en": "Kaldia Tunnel"
+      },
+      "strategy": {
+        "en": "The frogs swallow allies (three hits free them) and the swallower then repeats a short-delay area attack. Remove one Whale Frog before it swallows anyone, free allies first, then grind the rest down: no crippling ailments here.",
+        "pt": "Os sapos engolem aliados (três golpes os libertam) e quem engoliu repete um ataque em área de pouco atraso. Derrube um Whale Frog antes que engula alguém, liberte os aliados primeiro e depois desgaste o resto: não há efeitos incapacitantes aqui."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ],
+      "relatedItem": "sc-ch2-q-06"
+    },
+    {
+      "id": "sc-ch2-bs-02",
+      "name": {
+        "en": "Lt. Colonel Cid"
+      },
+      "location": {
+        "en": "Leiston Fortress — final round",
+        "pt": "Leiston Fortress — última rodada"
+      },
+      "strategy": {
+        "en": "Radiant Cleave hits a line for heavy damage: keep everyone high on HP. Always impede his arts; his Sylpharion gives his side arts reflect. Take out the soldiers, then Belc, then Cid. Strip his Rage Boost buffs, and after Indomitable Will finish him with S-Breaks.",
+        "pt": "O Radiant Cleave atinge uma linha com muito dano: mantenha todos com HP alto. Interrompa sempre as arts dele; o Sylpharion dele dá reflexo de arts ao grupo. Derrube os soldados, depois o Belc e por fim o Cid. Remova os buffs do Rage Boost e, depois do Indomitable Will, finalize com S-Breaks."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ],
+      "relatedItem": "sc-ch2-q-05"
+    },
+    {
+      "id": "sc-ch2-bs-03",
+      "name": {
+        "en": "Mantrap ×3"
+      },
+      "location": {
+        "en": "Tratt Plains Road — east",
+        "pt": "Tratt Plains Road — leste"
+      },
+      "strategy": {
+        "en": "A flood of ailments and stat downs, plus a swallow: debuff immunity (Sylphen Guard or Sylpharion) is close to mandatory. Free swallowed allies with three hits and keep healing.",
+        "pt": "Uma enxurrada de efeitos e reduções de atributos, mais um ataque que engole: imunidade a debuffs (Sylphen Guard ou Sylpharion) é quase obrigatória. Liberte aliados engolidos com três golpes e mantenha a cura."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ],
+      "relatedItem": "sc-ch2-q-07"
+    },
+    {
+      "id": "sc-ch2-bs-04",
+      "name": {
+        "en": "Big Creepy Sheep"
+      },
+      "location": {
+        "en": "Elmo Village"
+      },
+      "strategy": {
+        "en": "Phase one is six sheep inflicting Sleep, Blind and Confuse: be protected and use the time to buff and shield. In phase two the big sheep hits harder with the same ailments; Earth Wall blocks its attacks. Burst it when stunned.",
+        "pt": "A primeira fase são seis ovelhas que causam Sleep, Blind e Confuse: esteja protegido e use o tempo para buffs e escudos. Na segunda fase, a ovelha grande bate mais forte com os mesmos efeitos; o Earth Wall bloqueia os ataques dela. Ataque forte quando atordoar."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ],
+      "relatedItem": "sc-ch2-q-09"
+    },
+    {
+      "id": "sc-ch2-bs-05",
+      "name": {
+        "en": "Ya-Kah ×8"
+      },
+      "location": {
+        "en": "Tratt Plains Road — southwest cliff",
+        "pt": "Tratt Plains Road — penhasco a sudoeste"
+      },
+      "strategy": {
+        "en": "Low HP, but they drain EP and CP, blind you and call more of their kind. Sweep them early with wind arts (Aero Storm, Grand Stream) or big S-Crafts.",
+        "pt": "Pouco HP, mas drenam EP e CP, cegam e chamam mais da espécie. Varra-os cedo com arts de vento (Aero Storm, Grand Stream) ou S-Crafts fortes."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ],
+      "relatedItem": "sc-ch2-q-10"
+    },
+    {
+      "id": "sc-ch2-bs-06",
+      "name": {
+        "en": "Mustang Saber"
+      },
+      "location": {
+        "en": "Soldat Army Road — near Leiston Fortress",
+        "pt": "Soldat Army Road — perto da Leiston Fortress"
+      },
+      "strategy": {
+        "en": "No gimmick, just very high damage and a blinding zone. Stack HP and use Zodiac, debuff immunity and Foresight.",
+        "pt": "Sem truques, só dano muito alto e uma zona que cega. Aumente o HP e use Zodiac, imunidade a debuffs e Foresight."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ],
+      "relatedItem": "sc-ch2-q-11"
+    },
+    {
+      "id": "sc-ch2-bs-07",
+      "name": {
+        "en": "Abyss Worms"
+      },
+      "location": {
+        "en": "Hot spring cave — depths",
+        "pt": "Caverna das fontes termais — fundo"
+      },
+      "strategy": {
+        "en": "The worms answer almost every hit, Chain and Burst included, with Earth-Shaker (heavy party damage and delay); counters do not trigger it. First kill the Parasite Primas without touching the worms, then take the worms one or two at a time with wind arts. Avoid area attacks that hit several worms.",
+        "pt": "As minhocas respondem a quase todo golpe, inclusive Chain e Burst, com o Earth-Shaker (muito dano na equipe e atraso); contra-ataques não ativam. Primeiro derrube os Parasite Primas sem tocar nelas; depois pegue uma ou duas por vez com arts de vento. Evite ataques em área que acertem várias."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "sc-ch2-fi-01",
+      "name": {
+        "en": "Kasagin"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-02",
+      "name": {
+        "en": "Yamany"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-03",
+      "name": {
+        "en": "Tiger Rockfish"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-04",
+      "name": {
+        "en": "Liberl Carp"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-05",
+      "name": {
+        "en": "Valleria Bass"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-06",
+      "name": {
+        "en": "Rainbow Trout"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-07",
+      "name": {
+        "en": "Carp"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-08",
+      "name": {
+        "en": "Rockeater"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-09",
+      "name": {
+        "en": "Salmon"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-10",
+      "name": {
+        "en": "Snakehead"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-fi-11",
+      "name": {
+        "en": "Mahi-Mahi"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — northeast and east ponds",
+        "pt": "Tratt Plains Road — lagos nordeste e leste"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "B",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-09",
+      "rank": "B",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "B",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "C",
+      "where": {
+        "en": "Elmo Village — Maple Leaf Inn courtyard",
+        "pt": "Elmo Village — pátio da Maple Leaf Inn"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — pond near Elmo Village; Leiston Fortress — outside",
+        "pt": "Tratt Plains Road — lago perto de Elmo Village; Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "B",
+      "where": {
+        "en": "Kaldia Tunnel bridge; Soldat Army Road water cave",
+        "pt": "Ponte do Kaldia Tunnel; caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "C",
+      "where": {
+        "en": "Tratt Plains Road ponds; Soldat Army Road water cave",
+        "pt": "Lagos da Tratt Plains Road; caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "C",
+      "where": {
+        "en": "Soldat Army Road water cave; Tratt Plains Road ponds",
+        "pt": "Caverna com água da Soldat Army Road; lagos da Tratt Plains Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "C",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "B",
+      "where": {
+        "en": "Maple Leaf Inn courtyard; Tratt Plains Road ponds",
+        "pt": "Pátio da Maple Leaf Inn; lagos da Tratt Plains Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "B",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "B",
+      "where": {
+        "en": "Tratt Plains Road southwest corner; Leiston Fortress — outside",
+        "pt": "Canto sudoeste da Tratt Plains Road; Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "C",
+      "where": {
+        "en": "Tratt Plains Road — northeast and east ponds",
+        "pt": "Tratt Plains Road — lagos nordeste e leste"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-11",
+      "rank": "B",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch2-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Magma Wings"
+      },
+      "source": {
+        "en": "Forgel Bar, Zeiss"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Acerbic Tomato Sandwich"
+      },
+      "source": {
+        "en": "Forgel Bar, Zeiss (Ben also gives one)",
+        "pt": "Forgel Bar, Zeiss (o Ben também dá um)"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Fruit Kingdom"
+      },
+      "source": {
+        "en": "Forgel Bar, Zeiss"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Mysterious Paste"
+      },
+      "source": {
+        "en": "Priam's Drink Shop, outside Zeiss Central Factory",
+        "pt": "Priam's Drink Shop, do lado de fora da Zeiss Central Factory"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Golden Risotto"
+      },
+      "source": {
+        "en": "Sanktheim Gate cafeteria",
+        "pt": "Cafeteria do Sanktheim Gate"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Continental Eggs"
+      },
+      "source": {
+        "en": "Maple Leaf Inn, Elmo Village"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Passionate Egg Roll"
+      },
+      "source": {
+        "en": "Maple Leaf Inn, Elmo Village"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Top-Rated Shake"
+      },
+      "source": {
+        "en": "Maple Leaf Inn, Elmo Village"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Zeiss"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-09",
+      "kind": "standard",
+      "name": {
+        "en": "Septium Jelly Beans"
+      },
+      "source": {
+        "en": "Treasure chest in the hot spring cave",
+        "pt": "Baú na caverna das fontes termais"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Wolf Fort"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-10",
+      "kind": "customized",
+      "name": {
+        "en": "Ham & Egg Feast"
+      },
+      "source": {
+        "en": "Have Estelle cook Herb Sandwich",
+        "pt": "A Estelle cozinha Herb Sandwich"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-11",
+      "kind": "customized",
+      "name": {
+        "en": "Breeze Basil Pasta"
+      },
+      "source": {
+        "en": "Have Scherazard cook Sea Breeze Soup (needs her in the party)",
+        "pt": "A Scherazard cozinha Sea Breeze Soup (precisa dela na equipe)"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "sc-ch2-re-12",
+      "kind": "customized",
+      "name": {
+        "en": "Thunderous Potato Soup"
+      },
+      "source": {
+        "en": "Have Agate cook Toasty Potato Wedges (needs him in the party)",
+        "pt": "O Agate cozinha Toasty Potato Wedges (precisa dele na equipe)"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ]
+    }
+  ]
 }

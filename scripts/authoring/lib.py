@@ -21,6 +21,39 @@ class Chapter:
                      'checkpoints': [], 'items': [], 'itemTexts': []}
         self.counters = {}
 
+    @classmethod
+    def load(cls, order):
+        """Extends a chapter file written by hand, keeping its existing ids untouched."""
+        c = cls.__new__(cls)
+        c.order, c.id = order, f'sc-ch{order}'
+        c.data = json.loads((ROOT / 'sc' / 'chapters' / f'ch-{order:02d}.json').read_text())
+        for key in ('bosses', 'fish', 'fishSpots', 'recipes'):
+            c.data[key] = []
+        c.counters = {}
+        return c
+
+    def _next(self, code):
+        self.counters[code] = self.counters.get(code, 0) + 1
+        return f'{self.id}-{code}-{self.counters[code]:02d}'
+
+    def boss(self, name, location, strategy, related=None, sources=()):
+        boss = {'id': self._next('bs'), 'name': name, 'location': location, 'strategy': strategy, 'sources': list(sources)}
+        if related:
+            boss['relatedItem'] = related
+        self.data.setdefault('bosses', []).append(boss)
+
+    def fish(self, name, sources=()):
+        fid = self._next('fi')
+        self.data.setdefault('fish', []).append({'id': fid, 'name': t(name), 'sources': list(sources)})
+        return fid
+
+    def spot(self, fish_id, rank, where):
+        self.data.setdefault('fishSpots', []).append({'fishId': fish_id, 'rank': rank, 'where': where})
+
+    def recipe(self, name, source, kind='standard', sources=()):
+        self.data.setdefault('recipes', []).append(
+            {'id': self._next('re'), 'kind': kind, 'name': t(name), 'source': source, 'sources': list(sources)})
+
     def cp(self, en, pt):
         n = len(self.data['checkpoints']) + 1
         cid = f'{self.id}-cp-{n:02d}'
@@ -29,8 +62,7 @@ class Chapter:
 
     def item(self, type_, name, location, until, hint, level=0, sources=()):
         code = {'quest': 'q', 'hidden_quest': 'hq', 'missable': 'mi', 'collectible': 'co'}[type_]
-        self.counters[code] = self.counters.get(code, 0) + 1
-        iid = f'{self.id}-{code}-{self.counters[code]:02d}'
+        iid = self._next(code)
         self.data['items'].append({'id': iid, 'type': type_, 'name': name, 'location': location,
                                    'availableUntil': until, 'hint': hint, 'spoilerLevel': level,
                                    'sources': list(sources)})
@@ -41,7 +73,11 @@ class Chapter:
         path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2) + '\n')
         registry_path = ROOT / 'id-registry.json'
         registry = json.loads(registry_path.read_text())
-        ids = [self.id] + [c['id'] for c in self.data['checkpoints']] + [i['id'] for i in self.data['items']]
+        extra = [e['id'] for key in ('bosses', 'fish', 'recipes') for e in self.data.get(key, [])]
+        ids = [self.id] + [c['id'] for c in self.data['checkpoints']] + [i['id'] for i in self.data['items']] + extra
         registry += [i for i in ids if i not in registry]
         registry_path.write_text(json.dumps(registry, indent=2) + '\n')
-        print(f'{path.name}: {len(self.data["checkpoints"])} checkpoints, {len(self.data["items"])} items')
+        d = self.data
+        print(f'{path.name}: {len(d["checkpoints"])} checkpoints, {len(d["items"])} items, '
+              f'{len(d.get("bosses", []))} bosses, {len(d.get("fish", []))} fish, '
+              f'{len(d.get("fishSpots", []))} spots, {len(d.get("recipes", []))} recipes')

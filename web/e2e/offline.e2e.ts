@@ -10,12 +10,12 @@ test('works offline after the first visit', async ({ page, context }) => {
   // The first load happened before the worker took control; this one goes through it and fills the cache.
   await page.reload();
   await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
-  await expect(page.getByText('Safe Quest')).toBeVisible();
+  await expect(page.getByText('Safe Quest', { exact: true })).toBeVisible();
 
   await context.setOffline(true);
   await page.reload();
   await expect(page.getByRole('heading', { level: 1, name: 'Prologue' })).toBeVisible();
-  await expect(page.getByText('Safe Quest')).toBeVisible();
+  await expect(page.getByText('Safe Quest', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: /Where am I/ }).click();
   await expect(page.getByText('Chapter 1 — locked')).toBeVisible();
 });
@@ -26,7 +26,7 @@ test('locked chapters never land in the offline cache', async ({ page }) => {
     await navigator.serviceWorker.ready;
   });
   await page.reload();
-  await expect(page.getByText('Safe Quest')).toBeVisible();
+  await expect(page.getByText('Safe Quest', { exact: true })).toBeVisible();
 
   const cached = await page.evaluate(async () => {
     const urls: string[] = [];

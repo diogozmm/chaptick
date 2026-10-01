@@ -1,20 +1,176 @@
 {
-  "id": "sc-ch0", "gameId": "sc", "order": 0, "neutralLabel": { "en": "Prologue", "pt": "Prólogo" },
+  "id": "sc-ch0",
+  "gameId": "sc",
+  "order": 0,
+  "neutralLabel": {
+    "en": "Prologue",
+    "pt": "Pr\u00f3logo"
+  },
   "checkpoints": [
-    { "id": "sc-ch0-cp-01", "order": 1, "neutralDescription": { "en": "Leaving town" } },
-    { "id": "sc-ch0-cp-02", "order": 2, "neutralDescription": { "en": "End of prologue" } }
+    {
+      "id": "sc-ch0-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Leaving town"
+      }
+    },
+    {
+      "id": "sc-ch0-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "End of prologue"
+      }
+    }
   ],
   "items": [
-    { "id": "sc-ch0-q-01", "type": "quest", "name": { "en": "Safe Quest" }, "location": { "en": "Town" },
-      "availableUntil": "sc-ch0-cp-01", "hint": { "en": "Talk to the guard." }, "spoilerLevel": 0, "sources": ["e2e"] },
-    { "id": "sc-ch0-hq-01", "type": "hidden_quest", "name": { "en": "Secret Name" }, "location": { "en": "Secret Place" },
-      "availableUntil": "sc-ch0-cp-02", "hint": { "en": "Secret hint" }, "spoilerLevel": 1, "sources": ["e2e"] },
-    { "id": "sc-ch0-mi-01", "type": "missable", "name": { "en": "Very Secret" }, "location": { "en": "Hidden Place" },
-      "availableUntil": "sc-ch0-cp-02", "hint": { "en": "Safe hint" }, "spoilerLevel": 2, "sources": ["e2e"] },
-    { "id": "sc-ch0-co-01", "type": "collectible", "name": { "en": "Book One" }, "location": { "en": "Library" },
-      "availableUntil": null, "hint": { "en": "On the shelf." }, "spoilerLevel": 0, "sources": ["e2e"] }
+    {
+      "id": "sc-ch0-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Safe Quest"
+      },
+      "location": {
+        "en": "Town"
+      },
+      "availableUntil": "sc-ch0-cp-01",
+      "hint": {
+        "en": "Talk to the guard."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "e2e"
+      ]
+    },
+    {
+      "id": "sc-ch0-hq-01",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Secret Name"
+      },
+      "location": {
+        "en": "Secret Place"
+      },
+      "availableUntil": "sc-ch0-cp-02",
+      "hint": {
+        "en": "Secret hint"
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "e2e"
+      ]
+    },
+    {
+      "id": "sc-ch0-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Very Secret"
+      },
+      "location": {
+        "en": "Hidden Place"
+      },
+      "availableUntil": "sc-ch0-cp-02",
+      "hint": {
+        "en": "Safe hint"
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "e2e"
+      ]
+    },
+    {
+      "id": "sc-ch0-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Book One"
+      },
+      "location": {
+        "en": "Library"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "On the shelf."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "e2e"
+      ]
+    }
   ],
   "itemTexts": [
-    { "itemId": "sc-ch0-co-01", "text": { "en": "A community description." }, "author": "tester", "license": "CC-BY-SA-4.0", "approvedAt": "2026-09-30" }
+    {
+      "itemId": "sc-ch0-co-01",
+      "text": {
+        "en": "A community description."
+      },
+      "author": "tester",
+      "license": "CC-BY-SA-4.0",
+      "approvedAt": "2026-09-30"
+    }
+  ],
+  "bosses": [
+    {
+      "id": "sc-ch0-bs-01",
+      "name": {
+        "en": "Secret Boss"
+      },
+      "location": {
+        "en": "Boss Lair"
+      },
+      "relatedItem": "sc-ch0-q-01",
+      "strategy": {
+        "en": "Secret strategy text."
+      },
+      "sources": [
+        "e2e"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "sc-ch0-fi-01",
+      "name": {
+        "en": "Silver Fish"
+      },
+      "sources": [
+        "e2e"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Town pier"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch0-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Town Stew"
+      },
+      "source": {
+        "en": "Town inn"
+      },
+      "sources": [
+        "e2e"
+      ]
+    },
+    {
+      "id": "sc-ch0-re-02",
+      "kind": "customized",
+      "name": {
+        "en": "Hero Stew"
+      },
+      "source": {
+        "en": "Hero cooks Town Stew"
+      },
+      "sources": [
+        "e2e"
+      ]
+    }
   ]
 }

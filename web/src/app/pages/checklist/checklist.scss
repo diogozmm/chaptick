@@ -49,3 +49,12 @@
 .carried summary { display: flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; cursor: pointer; font-weight: 600; }
 .carried summary app-icon { color: var(--accent); }
 .carried .items { margin-top: 0.5rem; }
+.bosses { margin-top: 1rem; padding: 0.25rem 1rem 0.75rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); }
+.bosses summary { display: flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; cursor: pointer; font: 600 1.1rem/1.2 var(--font-display); }
+.bosses summary app-icon { color: var(--type-missable); }
+.boss-list { list-style: none; padding: 0; margin: 0.5rem 0 0; display: grid; gap: 0.25rem; }
+.boss-row { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0; border-top: 1px solid var(--border); }
+.boss-body { flex: 1; display: grid; gap: 0.15rem; min-width: 0; }
+.boss-name { font-weight: 600; }
+.boss-row .meta { font-size: 0.8125rem; color: var(--text-muted); }
+.boss-row .details { flex: none; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; color: var(--text-muted); }

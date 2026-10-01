@@ -56,6 +56,39 @@ export interface ItemText {
   approvedAt: string;
 }
 
+export interface Boss {
+  id: string;
+  name: Localized;
+  location: Localized;
+  /** Quest or missable this fight belongs to, if any. */
+  relatedItem?: string;
+  strategy: Localized;
+  sources: string[];
+}
+
+export type FishRank = 'A' | 'B' | 'C';
+
+export interface Fish {
+  id: string;
+  name: Localized;
+  sources: string[];
+}
+
+/** A good spot in the chapter's region; may refer to a fish from an earlier chapter. */
+export interface FishSpot {
+  fishId: string;
+  rank: FishRank;
+  where: Localized;
+}
+
+export interface Recipe {
+  id: string;
+  kind: 'standard' | 'customized';
+  name: Localized;
+  source: Localized;
+  sources: string[];
+}
+
 export interface Chapter {
   id: string;
   gameId: string;
@@ -64,6 +97,10 @@ export interface Chapter {
   checkpoints: Checkpoint[];
   items: Item[];
   itemTexts: ItemText[];
+  bosses?: Boss[];
+  fish?: Fish[];
+  fishSpots?: FishSpot[];
+  recipes?: Recipe[];
 }
 
 export const localize = (text: Localized, lang: Lang): string => (lang === 'pt' ? text.pt : undefined) ?? text.en;

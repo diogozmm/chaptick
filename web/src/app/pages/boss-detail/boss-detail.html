@@ -1,0 +1,39 @@
+@let l = lang.lang();
+@let e = entry();
+@if (e) {
+  @let revealed = reveals.isRevealed(e.boss.id);
+  <a class="link back" [routerLink]="['/sc/chapters', e.chapter.id]"><app-icon name="chevron-left" /> {{ e.chapter.neutralLabel | localize: l }}</a>
+
+  <header class="hero card rise">
+    <span class="type"><app-icon name="swords" /> {{ 'boss.eyebrow' | transloco }}</span>
+    <h1>
+      <app-spoiler-reveal [itemId]="e.boss.id" [level]="2" [placeholder]="'boss.placeholder' | transloco: { n: e.n }">
+        {{ e.boss.name | localize: l }}
+      </app-spoiler-reveal>
+    </h1>
+    @if (e.related; as item) {
+      <a class="related" [routerLink]="['/sc/items', item.id]">
+        {{ 'boss.for' | transloco: { item: view.showLocation(item) ? (item.name | localize: l) : view.placeholder(e.chapter, item) } }}
+      </a>
+    }
+  </header>
+
+  <dl class="facts">
+    <div class="fact">
+      <dt><app-icon name="map-pin" /> {{ 'item.location' | transloco }}</dt>
+      <dd [class.hidden]="!revealed">{{ revealed ? (e.boss.location | localize: l) : ('item.hidden' | transloco) }}</dd>
+    </div>
+    <div class="fact">
+      <dt><app-icon name="sparkles" /> {{ 'boss.strategy' | transloco }}</dt>
+      <dd [class.hidden]="!revealed">{{ revealed ? (e.boss.strategy | localize: l) : ('item.hidden' | transloco) }}</dd>
+    </div>
+  </dl>
+} @else if (e === null) {
+  <p role="alert">{{ 'item.notFound' | transloco }}</p>
+  <a class="button" routerLink="/sc/chapters">{{ 'where.title' | transloco }}</a>
+} @else if (chapter.error()) {
+  <p role="alert">{{ 'common.loadError' | transloco }}</p>
+  <button type="button" class="button" (click)="chapter.reload()">{{ 'common.retry' | transloco }}</button>
+} @else {
+  <p class="muted" aria-busy="true">{{ 'common.loading' | transloco }}</p>
+}

@@ -408,5 +408,124 @@
       ]
     }
   ],
-  "itemTexts": []
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch0-bs-01",
+      "name": {
+        "en": "Kurt"
+      },
+      "location": {
+        "en": "Balstar Channel — end of the training course",
+        "pt": "Balstar Channel — fim do treinamento"
+      },
+      "strategy": {
+        "en": "Keep the party spread out: both of his main attacks hit an area, and one can block arts. Before pushing him below half HP, heal everyone and raise DEF, because he then acts several times in a row and fires his S-Break. Once you survive it, use Overdrive and finish him.",
+        "pt": "Mantenha a equipe espalhada: os dois ataques principais dele atingem uma área, e um pode bloquear arts. Antes de deixá-lo abaixo da metade do HP, cure todos e aumente a DEF, porque ele passa a agir várias vezes seguidas e usa o S-Break. Depois de sobreviver, use Overdrive e finalize."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue - Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-bs-02",
+      "name": {
+        "en": "Jaeger (first night)",
+        "pt": "Jaeger (primeira noite)"
+      },
+      "location": {
+        "en": "Le Locle — lodge",
+        "pt": "Le Locle — hospedaria"
+      },
+      "strategy": {
+        "en": "Harmless until half HP, then it enters Rage Boost. Save S-Crafts to burst it through that threshold. On high difficulties, keep Anelace free to strip its buffs with Fallen Leaves and let Estelle land the hit that crosses half HP.",
+        "pt": "Inofensivo até a metade do HP; depois entra em Rage Boost. Guarde os S-Crafts para passar desse limite de uma vez. Em dificuldades altas, deixe a Anelace livre para remover os buffs com Fallen Leaves e faça a Estelle dar o golpe que passa da metade."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue - Part 1"
+      ],
+      "relatedItem": "sc-ch0-mi-02"
+    },
+    {
+      "id": "sc-ch0-bs-03",
+      "name": {
+        "en": "Female Jaeger"
+      },
+      "location": {
+        "en": "Saint-Croix Forest — event marker",
+        "pt": "Saint-Croix Forest — marcador de evento"
+      },
+      "strategy": {
+        "en": "Each of her three attacks brings an ailment (Freeze, Poison, Impede). Equip the accessories from the forest chests and claim the tier-2 quartz in Rewards first, for arts like Earth Guard and Saint. Burst her before Rage Boost, or strip the buffs with Fallen Leaves.",
+        "pt": "Cada um dos três ataques dela traz um efeito (Freeze, Poison, Impede). Equipe os acessórios dos baús da floresta e resgate antes os quartz de nível 2 em Rewards, para arts como Earth Guard e Saint. Derrube-a antes do Rage Boost ou remova os buffs com Fallen Leaves."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue - Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch0-bs-04",
+      "name": {
+        "en": "Jaeger (fortress)",
+        "pt": "Jaeger (fortaleza)"
+      },
+      "location": {
+        "en": "Grimsel Fortress — final marker",
+        "pt": "Grimsel Fortress — último marcador"
+      },
+      "strategy": {
+        "en": "It opens by raising its own defenses: dispel them with Fallen Leaves. Its small-area attack can Mute, so keep characters apart. Clock Up, Earth Guard and Petal Dance carry the fight; keep CP to strip the Rage Boost buffs.",
+        "pt": "Começa aumentando as próprias defesas: remova com Fallen Leaves. O ataque em área pequena pode causar Mute, então mantenha os personagens afastados. Clock Up, Earth Guard e Petal Dance sustentam a luta; guarde CP para remover os buffs do Rage Boost."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue - Part 2"
+      ]
+    }
+  ],
+  "fish": [],
+  "fishSpots": [],
+  "recipes": [
+    {
+      "id": "sc-ch0-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Nature's Font"
+      },
+      "source": {
+        "en": "Given by Phyllis at the lodge (story)",
+        "pt": "Dado pela Phyllis na hospedaria (história)"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue - Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Herb Sandwich"
+      },
+      "source": {
+        "en": "Buy at Phyllis' Kitchen in the lodge",
+        "pt": "Compre na Phyllis' Kitchen, na hospedaria"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue - Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch0-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Jam Cookie"
+      },
+      "source": {
+        "en": "Treasure chest in Balstar Channel",
+        "pt": "Baú no Balstar Channel"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Prologue - Part 1"
+      ]
+    }
+  ]
 }
