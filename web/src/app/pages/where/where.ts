@@ -1,27 +1,21 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
-import { Chapter, ChapterSummary } from '../../core/content/content.models';
+import { ChapterSummary } from '../../core/content/content.models';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
-import { AnalyticsService } from '../../core/analytics.service';
 import { ActiveGame } from '../../core/game/active-game';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
-import { isUnlocked, newlyLeftBehind } from '../../core/spoiler/spoiler';
+import { isUnlocked } from '../../core/spoiler/spoiler';
 import { Icon } from '../../ui/icon/icon';
-import { ItemRow } from '../../ui/item-row/item-row';
-
-interface PendingAdvance {
-  target: ChapterSummary;
-  chapters: Chapter[];
-}
+import { AdvanceConfirm } from '../../ui/advance-confirm/advance-confirm';
 
 /** "Where am I": pick the current chapter. Moving forward is always explicit and confirmed. */
 @Component({
   selector: 'app-where',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, AdvanceConfirm, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './where.html',
   styleUrl: './where.scss',
@@ -32,29 +26,16 @@ export class Where {
   protected readonly game = inject(ActiveGame);
   private readonly progress = inject(ProgressStore);
   private readonly router = inject(Router);
-  private readonly analytics = inject(AnalyticsService);
 
-  protected readonly pending = signal<PendingAdvance | null>(null);
-
-  /** Recomputed as the player ticks items off right here, before confirming. */
-  protected readonly leftBehind = computed(() => {
-    const pending = this.pending();
-    if (!pending) return [];
-    const lost = newlyLeftBehind(pending.chapters, this.progress.done(), this.access.currentOrder(), pending.target.order);
-    const ids = new Set(lost.map((i) => i.id));
-    return pending.chapters.flatMap((chapter) => chapter.items.filter((i) => ids.has(i.id)).map((item) => ({ chapter, item })));
-  });
+  /** The locked chapter whose confirmation is open. */
+  protected readonly pending = signal<ChapterSummary | null>(null);
 
   protected isUnlocked(chapter: ChapterSummary): boolean {
     return isUnlocked(chapter, this.access.currentOrder());
   }
 
-  protected async askToAdvance(target: ChapterSummary): Promise<void> {
-    this.pending.set({ target, chapters: await this.access.loadUnlocked() });
-  }
-
+  /** Going back to an unlocked chapter needs no confirmation; moving forward goes through AdvanceConfirm. */
   protected async choose(chapter: ChapterSummary): Promise<void> {
-    if (chapter.order > this.access.currentOrder()) this.analytics.track('chapter_advanced', { order: chapter.order });
     await this.progress.setChapter(chapter.id);
     this.pending.set(null);
     await this.router.navigate(this.game.link('chapters', chapter.id));

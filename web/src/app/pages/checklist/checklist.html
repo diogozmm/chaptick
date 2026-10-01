@@ -113,6 +113,28 @@
       </ul>
     </details>
   }
+
+  @if (next(); as n) {
+    @let nextLabel = n.chapter.neutralLabel | localize: l;
+    <nav class="next card" [attr.aria-label]="'checklist.nextChapter' | transloco">
+      @if (n.unlocked) {
+        <a class="next-link" [routerLink]="game.link('chapters', n.chapter.id)">
+          <span>
+            <span class="eyebrow">{{ 'checklist.nextChapter' | transloco }}</span>
+            <span class="next-title">{{ nextLabel }}</span>
+          </span>
+          <app-icon name="chevron-right" />
+        </a>
+      } @else if (advancing()) {
+        <app-advance-confirm [target]="n.chapter" (cancelled)="advancing.set(false)" />
+      } @else {
+        <p class="eyebrow">{{ 'checklist.nextChapter' | transloco }}</p>
+        <button type="button" class="button primary block" (click)="advancing.set(true)">
+          {{ 'checklist.advanceTo' | transloco: { chapter: nextLabel } }} <app-icon name="chevron-right" />
+        </button>
+      }
+    </nav>
+  }
 } @else if (chapter.error()) {
   <p role="alert">{{ 'common.loadError' | transloco }}</p>
   <button type="button" class="button" (click)="chapter.reload()">{{ 'common.retry' | transloco }}</button>

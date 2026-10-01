@@ -61,7 +61,9 @@
     "allClear": "No point of no return with pending items. All caught up!",
     "untilChapter": "Until: some point in {{chapter}}",
     "carried": "Still doable: {{count}} item(s) from earlier chapters",
-    "carriedHint": "Their deadline is in this chapter or later."
+    "carriedHint": "Their deadline is in this chapter or later.",
+    "nextChapter": "Next chapter",
+    "advanceTo": "I've reached {{chapter}}"
   },
   "spoiler": {
     "tapToReveal": "tap to reveal",

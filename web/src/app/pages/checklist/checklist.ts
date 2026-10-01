@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input, resource } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input, resource, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -13,11 +13,12 @@ import { carriedOver, chapterProgress, expiredItems, groupByType, nextCheckpoint
 import { Icon } from '../../ui/icon/icon';
 import { ItemRow } from '../../ui/item-row/item-row';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
+import { AdvanceConfirm } from '../../ui/advance-confirm/advance-confirm';
 import { TYPE_ICON } from '../../ui/item-type';
 
 @Component({
   selector: 'app-checklist',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon, SpoilerReveal],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon, SpoilerReveal, AdvanceConfirm],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './checklist.html',
   styleUrl: './checklist.scss',
@@ -96,6 +97,23 @@ export class Checklist {
   });
 
   protected readonly bosses = computed(() => this.loaded()?.bosses ?? []);
+
+  /** The chapter after this one: a plain link when already unlocked, a confirmed advance otherwise. */
+  protected readonly next = computed(() => {
+    const chapters = this.access.chapters();
+    const index = chapters.findIndex((c) => c.id === this.chapterId());
+    const next = index >= 0 ? chapters[index + 1] : undefined;
+    return next ? { chapter: next, unlocked: next.order <= this.access.currentOrder() } : null;
+  });
+  protected readonly advancing = signal(false);
+
+  constructor() {
+    // A different chapter starts with the confirmation closed.
+    effect(() => {
+      this.chapterId();
+      this.advancing.set(false);
+    });
+  }
 
   /** The quest a fight belongs to, named only as far as that quest's own mask allows. */
   protected relatedLabel(chapter: Chapter, boss: Boss): string | null {

@@ -61,7 +61,9 @@
     "allClear": "Nenhum ponto sem volta com itens pendentes. Tudo em dia!",
     "untilChapter": "Até: algum ponto do {{chapter}}",
     "carried": "Ainda dá tempo: {{count}} item(ns) de capítulos anteriores",
-    "carriedHint": "O prazo deles é neste capítulo ou depois."
+    "carriedHint": "O prazo deles é neste capítulo ou depois.",
+    "nextChapter": "Próximo capítulo",
+    "advanceTo": "Cheguei ao {{chapter}}"
   },
   "spoiler": {
     "tapToReveal": "toque para ver",
