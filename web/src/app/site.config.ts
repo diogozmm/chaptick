@@ -13,8 +13,16 @@ export const SITE = {
    * See docs/deploy.md, "Moving to a new domain".
    */
   canonicalOrigin: '',
-  /** Cookieless Umami. Null disables analytics entirely. */
-  analytics: null as { scriptUrl: string; websiteId: string } | null,
+  /**
+   * Cookieless Umami. Null disables analytics entirely. It only runs on `hosts`, so local
+   * development and the e2e tests never load it or count as visits: add the new host here when
+   * the site moves to its own domain.
+   */
+  analytics: {
+    scriptUrl: 'https://cloud.umami.is/script.js',
+    websiteId: '72d5d9cc-0ead-43cf-8565-c133dc8da961',
+    hosts: ['chaptick.diogo-zmm.workers.dev'],
+  } as { scriptUrl: string; websiteId: string; hosts: string[] } | null,
 
   /** Guides and wikis the data was checked against. Keep in sync with `sources` in content/. */
   sources: [

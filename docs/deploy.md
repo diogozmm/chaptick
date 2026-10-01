@@ -40,7 +40,8 @@ never reaches a server). To move:
    The same Worker now answers on both addresses; keep the `workers.dev` one enabled.
 2. In `web/src/app/site.config.ts`, set `canonicalOrigin` to the new address, e.g. `'https://chaptick.app'`
    (no trailing slash).
-3. In `web/src/index.html`, change the `og:image` URL to the new domain.
+3. In `web/src/index.html`, change the `og:image` URL to the new domain, and add the new host to
+   `analytics.hosts` in `site.config.ts`.
 4. Deploy. Visits on the old address now show "Chaptick moved to …" with "Take my progress there": one tap opens
    the new address with the player's progress, and the new address asks before replacing anything.
 
@@ -55,7 +56,7 @@ progress. Players can also move progress between devices any time with "Share a 
 
 ## Optional settings (`web/src/app/site.config.ts`)
 
-- `analytics`: Umami script URL and website id (Umami Cloud's free tier, or self-hosted). Leave `null`
-  to disable. It is cookieless and set to honour Do Not Track, so no consent banner is needed.
+- `analytics`: Umami script URL, website id and the `hosts` it may run on (Umami Cloud's free tier, or
+  self-hosted). Leave `null` to disable. Local development and the e2e tests never load it. It is cookieless and set to honour Do Not Track, so no consent banner is needed.
 - `donations`, `contactEmail`, `repoUrl`: empty values hide the related UI.
 - `sources`, `contributors`, `supporters`: shown on the credits page.

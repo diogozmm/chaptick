@@ -160,7 +160,7 @@
   "privacy": {
     "title": "Privacy",
     "progress": "Your progress is stored only in this browser. We never receive it.",
-    "analytics": "Analytics are cookieless and aggregate (page views and a few anonymous events). No item ids and no personal data.",
+    "analytics": "Analytics are cookieless and aggregate (Umami: page views and a few anonymous events, such as how many items were ticked). No item ids, no search terms and no personal data. Do Not Track is honoured.",
     "suggestions": "When suggestions are enabled, we will keep only the text you send, an optional nickname and a one-way hash of your IP address to limit spam.",
     "contact": "Questions or removal requests:"
   },

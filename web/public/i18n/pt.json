@@ -160,7 +160,7 @@
   "privacy": {
     "title": "Privacidade",
     "progress": "Seu progresso fica só neste navegador. Nós nunca o recebemos.",
-    "analytics": "As métricas não usam cookies e são agregadas (visitas e alguns eventos anônimos). Sem IDs de itens e sem dados pessoais.",
+    "analytics": "O analytics não usa cookies e é agregado (Umami: visualizações de página e alguns eventos anônimos, como quantos itens foram marcados). Nada de IDs de itens, termos de busca ou dados pessoais. O Do Not Track é respeitado.",
     "suggestions": "Quando as sugestões forem ativadas, guardaremos só o texto enviado, um apelido opcional e um hash irreversível do seu IP para limitar spam.",
     "contact": "Dúvidas ou pedidos de remoção:"
   },

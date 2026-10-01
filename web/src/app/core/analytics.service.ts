@@ -16,12 +16,14 @@ interface Umami {
 export class AnalyticsService {
   init(): void {
     const config = SITE.analytics;
-    if (!config) return;
+    if (!config || !config.hosts.includes(location.hostname)) return;
     const script = document.createElement('script');
     script.defer = true;
     script.src = config.scriptUrl;
     script.dataset['websiteId'] = config.websiteId;
     script.dataset['doNotTrack'] = 'true';
+    // Umami's own guard too: never count a visit on any other host.
+    script.dataset['domains'] = config.hosts.join(',');
     document.head.appendChild(script);
   }
 

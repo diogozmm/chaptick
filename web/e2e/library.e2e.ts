@@ -32,3 +32,14 @@ test('an unknown game goes back to the library', async ({ page }) => {
   await page.goto('/nope/chapters');
   await expect(page).toHaveURL('/');
 });
+
+test('analytics never load outside the production host', async ({ page }) => {
+  const external: string[] = [];
+  page.on('request', (req) => {
+    if (!req.url().startsWith('http://127.0.0.1')) external.push(req.url());
+  });
+  await page.goto('/');
+  await page.getByRole('link', { name: /Start|Continue/ }).first().click();
+  await page.waitForLoadState('networkidle');
+  expect(external).toEqual([]);
+});
