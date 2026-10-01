@@ -90,4 +90,22 @@ describe('ProgressStore', () => {
     await expect(store.importJson(text)).rejects.toThrow(new ProgressImportError(reason as never).message);
     expect(store.done().has('sc-ch0-co-01')).toBe(true);
   });
+
+  it('asks once to keep storage, on the first change rather than on load', async () => {
+    const persist = vi.fn().mockResolvedValue(true);
+    const persisted = vi.fn().mockResolvedValue(false);
+    vi.stubGlobal('navigator', { ...navigator, storage: { persist, persisted } });
+    try {
+      const fresh = TestBed.runInInjectionContext(() => new ProgressStore());
+      await fresh.load('sc', 'sc-ch0');
+      expect(persisted).not.toHaveBeenCalled();
+
+      await fresh.toggle('sc-ch0-co-01');
+      await fresh.toggle('sc-ch0-co-02');
+      await vi.waitFor(() => expect(persist).toHaveBeenCalledTimes(1));
+      expect(persisted).toHaveBeenCalledTimes(1);
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
 });

@@ -26,6 +26,7 @@ export class ProgressStore {
   private readonly analytics = inject(AnalyticsService);
   private readonly state = signal<SavedProgress | null>(null);
   private saving: Promise<void> = Promise.resolve();
+  private persistenceAsked = false;
 
   readonly progress = this.state.asReadonly();
   readonly currentChapter = computed(() => this.state()?.currentChapter ?? '');
@@ -93,6 +94,7 @@ export class ProgressStore {
    */
   async importJson(text: string): Promise<number> {
     const games = parseExport(text);
+    this.askToKeepStorage();
     for (const game of games) this.persist(game);
     await this.saving;
     const active = games.find((g) => g.gameId === this.state()?.gameId);
@@ -105,7 +107,24 @@ export class ProgressStore {
     if (!current) throw new Error('ProgressStore used before load()');
     const next = { ...current, ...change(current), updatedAt: new Date().toISOString() };
     this.state.set(next);
+    this.askToKeepStorage();
     return this.persist(next);
+  }
+
+  /**
+   * Asks the browser not to evict saved progress (e.g. Safari clears sites left unvisited for a
+   * week). Done once, on the first real change rather than on page load, because Firefox shows a
+   * prompt. Best effort: the browser may refuse, and progress is saved either way.
+   */
+  private askToKeepStorage(): void {
+    if (this.persistenceAsked) return;
+    this.persistenceAsked = true;
+    const storage = typeof navigator === 'undefined' ? undefined : navigator.storage;
+    if (!storage?.persist) return;
+    void storage
+      .persisted()
+      .then((kept) => kept || storage.persist())
+      .catch(() => undefined);
   }
 
   // Writes are chained so a slow write can never land after a newer one.
