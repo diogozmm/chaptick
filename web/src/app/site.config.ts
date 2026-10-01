@@ -37,6 +37,11 @@ export const SITE = {
       url: 'https://gamefaqs.gamespot.com/ps5/605493-trails-in-the-sky-2nd-chapter/faqs/82698',
     },
     {
+      name: 'Neoseeker — Trails in the Sky 1st Chapter Walkthrough',
+      authors: 'Zoelius, BlazingMeat',
+      url: 'https://www.neoseeker.com/the-legend-of-heroes-trails-in-the-sky-the-1st/',
+    },
+    {
       name: 'Neoseeker — Ys X: Nordics and Proud Nordics Walkthrough',
       authors: 'Neoseeker guide team',
       url: 'https://www.neoseeker.com/ys-x-nordics/walkthrough',

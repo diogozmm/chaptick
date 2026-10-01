@@ -1,0 +1,1067 @@
+{
+  "id": "fc-ch0",
+  "gameId": "fc",
+  "order": 0,
+  "neutralLabel": {
+    "en": "Prologue",
+    "pt": "Prólogo"
+  },
+  "checkpoints": [
+    {
+      "id": "fc-ch0-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Entering Esmelas Tower for the first time",
+        "pt": "Entrar na Esmelas Tower pela primeira vez"
+      }
+    },
+    {
+      "id": "fc-ch0-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "The night patrol at Perzel Farm",
+        "pt": "A patrulha noturna na Perzel Farm"
+      }
+    },
+    {
+      "id": "fc-ch0-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Starting the reporters' escort (talk to Verne at Hotel Rolent)",
+        "pt": "Começar a escolta dos repórteres (falar com o Verne no Hotel Rolent)"
+      }
+    },
+    {
+      "id": "fc-ch0-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "Wrapping up the robbery investigation with Scherazard",
+        "pt": "Encerrar a investigação do roubo com a Scherazard"
+      }
+    },
+    {
+      "id": "fc-ch0-cp-05",
+      "order": 5,
+      "neutralDescription": {
+        "en": "The event marker deep in Mistwald (end of the Prologue)",
+        "pt": "O marcador de evento no fundo de Mistwald (fim do Prólogo)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "fc-ch0-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Shiny Stone Search"
+      },
+      "location": {
+        "en": "Rolent — Carl, behind the Orbal Factory",
+        "pt": "Rolent — Carl, atrás da Orbal Factory"
+      },
+      "availableUntil": "fc-ch0-cp-02",
+      "hint": {
+        "en": "2 BP. Check the steam from the drain cover near Rinon's General Goods, then take the sewer entrance behind the chapel and find the shiny stone. Eat the Drill Meatballs you get for the recipe.",
+        "pt": "2 BP. Veja o vapor saindo do bueiro perto da Rinon's General Goods, depois entre no esgoto pelos fundos da capela e ache a pedra brilhante. Coma as Drill Meatballs que você ganha para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Milch Monster"
+      },
+      "location": {
+        "en": "Milch Main Road — middle of the road",
+        "pt": "Milch Main Road — meio da estrada"
+      },
+      "availableUntil": "fc-ch0-cp-02",
+      "hint": {
+        "en": "3 BP. Weak to fire. It explodes when it dies, so keep the party out of range for the last hit.",
+        "pt": "3 BP. Fraco contra fogo. Ele explode ao morrer, então deixe a equipe fora do alcance no golpe final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Malga Mushroom"
+      },
+      "location": {
+        "en": "Rolent Landing Port — Orvid",
+        "pt": "Rolent Landing Port — Orvid"
+      },
+      "availableUntil": "fc-ch0-cp-03",
+      "hint": {
+        "en": "3 BP. The glowing Firefly Mushroom is near the Silver Earrings chest at the northeast end of Malga Trail; picking it starts a fight.",
+        "pt": "3 BP. O Firefly Mushroom brilhante fica perto do baú das Silver Earrings, no extremo nordeste da Malga Trail; pegá-lo começa uma luta."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Streetlight Switch"
+      },
+      "location": {
+        "en": "Rolent — Freddy at the Orbment Shop",
+        "pt": "Rolent — Freddy na loja de orbments"
+      },
+      "availableUntil": "fc-ch0-cp-03",
+      "hint": {
+        "en": "3 (+1) BP. The broken light is in the middle of Milch Main Road. For the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818). Rewards Impede 2.",
+        "pt": "3 (+1) BP. A luz quebrada fica no meio da Milch Main Road. Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818). Dá Impede 2."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Medicinal Material"
+      },
+      "location": {
+        "en": "Rolent Chapel — Father Divine",
+        "pt": "Capela de Rolent — Father Divine"
+      },
+      "availableUntil": "fc-ch0-cp-03",
+      "hint": {
+        "en": "3 BP. Bring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer Hornets in Mistwald). Mistwald only has four Bear Claws: don't cook them all.",
+        "pt": "3 BP. Leve uma Bear Claw (extremo sudeste de Mistwald) e Monster Powder (Killer Hornets em Mistwald). Mistwald só tem quatro Bear Claws: não cozinhe todas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2",
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Troop Training"
+      },
+      "location": {
+        "en": "Verte Bridge — Chief Warrant Officer Ashton",
+        "pt": "Verte Bridge — Chief Warrant Officer Ashton"
+      },
+      "availableUntil": "fc-ch0-cp-03",
+      "hint": {
+        "en": "2 (+2) BP. Win the training fight against two soldiers for the bonus; save first. Their attacks lower Defense: Estelle's Morale helps.",
+        "pt": "2 (+2) BP. Vença a luta de treino contra dois soldados para o bônus; salve antes. Os ataques deles reduzem a defesa: o Morale da Estelle ajuda."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Catch that Cat!"
+      },
+      "location": {
+        "en": "Rolent — Ida at the café",
+        "pt": "Rolent — Ida no café"
+      },
+      "availableUntil": "fc-ch0-cp-03",
+      "hint": {
+        "en": "2 BP. Short deadline: do it right away. The cat isn't marked: look between the clock tower, near Elger Arms & Guards, by Hotel Rolent, then upstairs in the chapel.",
+        "pt": "2 BP. Prazo curto: faça na hora. O gato não aparece no mapa: procure entre a torre do relógio, perto da Elger Arms & Guards, junto ao Hotel Rolent e, por fim, no andar de cima da capela."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-q-08",
+      "type": "quest",
+      "name": {
+        "en": "Elize Hwy Monster"
+      },
+      "location": {
+        "en": "Elize Highway — the bridge",
+        "pt": "Elize Highway — a ponte"
+      },
+      "availableUntil": "fc-ch0-cp-05",
+      "hint": {
+        "en": "4 BP. It blocks the bridge to your next destination, so you can't skip it. Wear Sleep protection; weak to fire.",
+        "pt": "4 BP. Ele bloqueia a ponte para o próximo destino, então não dá para pular. Use proteção contra Sleep; fraco contra fogo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: storming into Esmelas Tower",
+        "pt": "BP bônus: entrar na Esmelas Tower"
+      },
+      "location": {
+        "en": "Esmelas Tower — entrance",
+        "pt": "Esmelas Tower — entrada"
+      },
+      "availableUntil": "fc-ch0-cp-01",
+      "hint": {
+        "en": "+1 BP (Child Rescue). The choice comes right as you enter: pick the 2nd option, storming in together with Joshua.",
+        "pt": "+1 BP (Child Rescue). A escolha aparece logo ao entrar: escolha a 2ª opção, entrar junto com o Joshua."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: sneaking up on the crop thief",
+        "pt": "BP bônus: chegar de surpresa no ladrão de plantações"
+      },
+      "location": {
+        "en": "Perzel Farm",
+        "pt": "Perzel Farm"
+      },
+      "availableUntil": "fc-ch0-cp-02",
+      "hint": {
+        "en": "+2 BP (Perzel Pest Control). After the stables and the greenhouse, sneak up behind the monster without entering its line of sight, and examine it. Save first.",
+        "pt": "+2 BP (Perzel Pest Control). Depois do estábulo e da estufa, chegue por trás do monstro sem entrar no campo de visão dele e examine-o. Salve antes."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the four robbery questions",
+        "pt": "BP bônus: as quatro perguntas do roubo"
+      },
+      "location": {
+        "en": "Rolent — Mayor's Residence",
+        "pt": "Rolent — residência do prefeito"
+      },
+      "availableUntil": "fc-ch0-cp-04",
+      "hint": {
+        "en": "+4 BP (Mayoral Robbery), one per right answer: 2nd, 2nd, 3rd, 4th.",
+        "pt": "+4 BP (Mayoral Robbery), um por resposta certa: 2ª, 2ª, 3ª, 4ª."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-mi-04",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the choice in Mistwald",
+        "pt": "BP bônus: a escolha em Mistwald"
+      },
+      "location": {
+        "en": "Mistwald — southeast end",
+        "pt": "Mistwald — extremo sudeste"
+      },
+      "availableUntil": "fc-ch0-cp-05",
+      "hint": {
+        "en": "+1 BP (Mayoral Robbery). Pick the 2nd option during the event. The boss right after is much harder than in the original: bring Earth Guard.",
+        "pt": "+1 BP (Mayoral Robbery). Escolha a 2ª opção durante o evento. O chefe logo depois é bem mais difícil que no original: leve Earth Guard."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 1"
+      },
+      "location": {
+        "en": "Rolent — northwest house, upstairs",
+        "pt": "Rolent — casa a noroeste, andar de cima"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "Talk to Rhett. The Carnelia volumes are traded together for Estelle and Joshua's best weapons late in the game. A missed volume can later be bought, at a high price.",
+        "pt": "Fale com o Rhett. Os volumes de Carnelia são trocados juntos pelas melhores armas da Estelle e do Joshua no fim do jogo. Um volume perdido pode ser comprado depois, por um preço alto."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Luke's Diary"
+      },
+      "location": {
+        "en": "Rolent — northwest house, ground floor",
+        "pt": "Rolent — casa a noroeste, térreo"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "Read the diary on the table in Luke's room.",
+        "pt": "Leia o diário sobre a mesa do quarto do Luke."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 1"
+      },
+      "location": {
+        "en": "Rolent — Rinon's General Goods",
+        "pt": "Rolent — Rinon's General Goods"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Bought during a story scene: you can't miss it.",
+        "pt": "Comprado durante uma cena da história: não tem como perder."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Rolent region (8)",
+        "pt": "Receitas: região de Rolent (8)"
+      },
+      "location": {
+        "en": "Rolent region",
+        "pt": "região de Rolent"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "Eat each dish once to learn its recipe.",
+        "pt": "Coma cada prato uma vez para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1",
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Maple Cookie — story scene at Rinon's General Goods",
+            "pt": "Maple Cookie — cena da história na Rinon's General Goods"
+          }
+        },
+        {
+          "text": {
+            "en": "Wholesome Pasta — Abend Bar",
+            "pt": "Wholesome Pasta — Abend Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Fried Potatoes — Abend Bar",
+            "pt": "Fried Potatoes — Abend Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Flowery Soda — Abend Bar",
+            "pt": "Flowery Soda — Abend Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Carmine's Eye — Abend Bar",
+            "pt": "Carmine's Eye — Abend Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Drill Meatballs — Shiny Stone Search reward",
+            "pt": "Drill Meatballs — recompensa da Shiny Stone Search"
+          }
+        },
+        {
+          "text": {
+            "en": "Dreamy Shell Bake — chest on Esmelas Tower 3F",
+            "pt": "Dreamy Shell Bake — baú no 3F da Esmelas Tower"
+          }
+        },
+        {
+          "text": {
+            "en": "Salad Sandwich — Emily at Gurune Gate",
+            "pt": "Salad Sandwich — Emily no Gurune Gate"
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef",
+        "peculiar-chef"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Rolent Sewers treasure chests (2)",
+        "pt": "Baús de Rolent Sewers (2)"
+      },
+      "location": {
+        "en": "Rolent Sewers",
+        "pt": "Rolent Sewers"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "The first dungeon, during Retrieval Training.",
+        "pt": "A primeira dungeon, durante a Retrieval Training."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Thelas Balm",
+            "pt": "Thelas Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Small Box ×2",
+            "pt": "Small Box ×2"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Elize Highway treasure chests (5)",
+        "pt": "Baús de Elize Highway (5)"
+      },
+      "location": {
+        "en": "Elize Highway",
+        "pt": "Elize Highway"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "A hidden cave west of the Droplet of Life is a great early grinding spot.",
+        "pt": "Uma caverna escondida a oeste do Droplet of Life é um ótimo lugar para treinar cedo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1",
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tear Balm",
+            "pt": "Tear Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge I",
+            "pt": "EP Charge I"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Life",
+            "pt": "Droplet of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "Thelas Balm",
+            "pt": "Thelas Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×50",
+            "pt": "All Sepith ×50"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Esmelas Tower treasure chests (9)",
+        "pt": "Baús de Esmelas Tower (9)"
+      },
+      "location": {
+        "en": "Esmelas Tower",
+        "pt": "Esmelas Tower"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "Both monster chests hold Wind Trappers that are very hard before level 8 and explode when defeated. You come back here in the story, so they can wait.",
+        "pt": "Os dois baús de monstros têm Wind Trappers muito difíceis antes do nível 8, que explodem ao serem derrotados. Você volta aqui na história, então eles podem esperar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "2F — Tear Balm",
+            "pt": "2F — Tear Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "3F — Dreamy Shell Bake",
+            "pt": "3F — Dreamy Shell Bake"
+          }
+        },
+        {
+          "text": {
+            "en": "3F — Monk's Staff (monster chest: Wind Trapper ×3)",
+            "pt": "3F — Monk's Staff (baú de monstros: Wind Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "3F — EP Charge I",
+            "pt": "3F — EP Charge I"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — All Sepith ×50",
+            "pt": "4F — All Sepith ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — Green Sphere (monster chest: Wind Trapper ×3)",
+            "pt": "4F — Green Sphere (baú de monstros: Wind Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Droplet of Spirit",
+            "pt": "5F — Droplet of Spirit"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Curia Balm",
+            "pt": "5F — Curia Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Thelas Balm",
+            "pt": "5F — Thelas Balm"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Mistwald treasure chests (4)",
+        "pt": "Baús de Mistwald (4)"
+      },
+      "location": {
+        "en": "Mistwald",
+        "pt": "Mistwald"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "Black Bangle and Beast Hide Jumpsuit are big early upgrades, with no monster chests.",
+        "pt": "Black Bangle e Beast Hide Jumpsuit são grandes melhorias no começo, sem baús de monstros."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mint Drop",
+            "pt": "Mint Drop"
+          }
+        },
+        {
+          "text": {
+            "en": "Black Bangle",
+            "pt": "Black Bangle"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Magic",
+            "pt": "Droplet of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "Beast Hide Jumpsuit",
+            "pt": "Beast Hide Jumpsuit"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Malga Trail treasure chests (6)",
+        "pt": "Baús de Malga Trail (6)"
+      },
+      "location": {
+        "en": "Malga Trail",
+        "pt": "Malga Trail"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "The side path that Joshua blocks on Day 1 opens on Day 2.",
+        "pt": "O caminho lateral que o Joshua bloqueia no Dia 1 abre no Dia 2."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 1",
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Antidote ×3",
+            "pt": "Antidote ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Tear Balm",
+            "pt": "Tear Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge I",
+            "pt": "EP Charge I"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Strength",
+            "pt": "Droplet of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×50",
+            "pt": "All Sepith ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "Silver Earrings",
+            "pt": "Silver Earrings"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch0-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Milch Main Road treasure chests (6)",
+        "pt": "Baús de Milch Main Road (6)"
+      },
+      "location": {
+        "en": "Milch Main Road",
+        "pt": "Milch Main Road"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "One monster chest with Lily Movers. A Shining Pom can spawn near the first Rhinocider.",
+        "pt": "Um baú de monstros com Lily Movers. Um Shining Pom pode aparecer perto do primeiro Rhinocider."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Eye Drops ×3",
+            "pt": "Eye Drops ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Laced Boots (monster chest: Lily Mover+ ×3, Lily Mover ×3)",
+            "pt": "Laced Boots (baú de monstros: Lily Mover+ ×3, Lily Mover ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×50",
+            "pt": "All Sepith ×50"
+          }
+        },
+        {
+          "text": {
+            "en": "White Bracelet",
+            "pt": "White Bracelet"
+          }
+        },
+        {
+          "text": {
+            "en": "Thelas Balm",
+            "pt": "Thelas Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Defense",
+            "pt": "Droplet of Defense"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "fc-ch0-bs-01",
+      "name": {
+        "en": "Pine Plant+"
+      },
+      "location": {
+        "en": "Milch Main Road"
+      },
+      "strategy": {
+        "en": "Weak to fire. It explodes on defeat (up to 800 damage on high difficulties): keep the party away for the final blow.",
+        "pt": "Fraco contra fogo. Explode ao ser derrotado (até 800 de dano nas dificuldades altas): mantenha a equipe longe no golpe final."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ],
+      "relatedItem": "fc-ch0-q-02"
+    },
+    {
+      "id": "fc-ch0-bs-02",
+      "name": {
+        "en": "Great Crop Muncher"
+      },
+      "location": {
+        "en": "Perzel Farm"
+      },
+      "strategy": {
+        "en": "Teaches Overdrive: turn it on and chain Brave Attacks. Fire arts work well; it powers up by eating its apple.",
+        "pt": "Ensina o Overdrive: ative e encadeie Brave Attacks. Arts de fogo funcionam bem; ele fica mais forte comendo a maçã."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 2"
+      ]
+    },
+    {
+      "id": "fc-ch0-bs-03",
+      "name": {
+        "en": "Royal Army soldiers",
+        "pt": "Soldados do Royal Army"
+      },
+      "location": {
+        "en": "Verte Bridge"
+      },
+      "strategy": {
+        "en": "Their hits lower Defense; Estelle's Morale counters it, and Overdrive ends the fight fast.",
+        "pt": "Os golpes deles reduzem a defesa; o Morale da Estelle compensa, e o Overdrive encerra a luta rápido."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "relatedItem": "fc-ch0-q-06"
+    },
+    {
+      "id": "fc-ch0-bs-04",
+      "name": {
+        "en": "Emeronecider"
+      },
+      "location": {
+        "en": "Elize Highway"
+      },
+      "strategy": {
+        "en": "Tanky but weak to fire. Spread out (its hits splash) and wear Sleep protection.",
+        "pt": "Resistente, mas fraco contra fogo. Espalhe a equipe (os golpes atingem em área) e use proteção contra Sleep."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ],
+      "relatedItem": "fc-ch0-q-08"
+    },
+    {
+      "id": "fc-ch0-bs-05",
+      "name": {
+        "en": "Josette and the bandits",
+        "pt": "Josette e os bandidos"
+      },
+      "location": {
+        "en": "Mistwald"
+      },
+      "strategy": {
+        "en": "Much harder than the original. Bring Earth Guard, take out the bandits first with Schera's wind arts, impede Josette's casts and dispel her Rage buff with Anti-Sept or Joshua's Sever.",
+        "pt": "Bem mais difícil que no original. Leve Earth Guard, derrube os bandidos primeiro com as arts de vento da Schera, interrompa as conjurações da Josette e remova o buff de Rage com Anti-Sept ou o Sever do Joshua."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Prologue - Day 3"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "fc-ch0-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Maple Cookie"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Wholesome Pasta"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Fried Potatoes"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Flowery Soda"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Carmine's Eye"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Drill Meatballs"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Dreamy Shell Bake"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Salad Sandwich"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-09",
+      "kind": "customized",
+      "name": {
+        "en": "Energy Smoothie"
+      },
+      "source": {
+        "en": "Have Estelle cook Carmine's Eye.",
+        "pt": "Peça para a Estelle cozinhar Carmine's Eye."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch0-re-10",
+      "kind": "customized",
+      "name": {
+        "en": "Potato Salad Sandwich"
+      },
+      "source": {
+        "en": "Have Joshua cook Salad Sandwich.",
+        "pt": "Peça para o Joshua cozinhar Salad Sandwich."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    }
+  ]
+}

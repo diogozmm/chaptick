@@ -1,0 +1,1522 @@
+{
+  "id": "fc-ch3",
+  "gameId": "fc",
+  "order": 3,
+  "neutralLabel": {
+    "en": "Chapter 3",
+    "pt": "Capítulo 3"
+  },
+  "checkpoints": [
+    {
+      "id": "fc-ch3-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Requesting the border permit at Air-Letten (no return to Ruan)",
+        "pt": "Pedir a permissão de fronteira em Air-Letten (sem volta para Ruan)"
+      }
+    },
+    {
+      "id": "fc-ch3-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Examining the pump shed in Elmo Village",
+        "pt": "Examinar a casa da bomba em Elmo Village"
+      }
+    },
+    {
+      "id": "fc-ch3-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Reaching the 3rd-floor workshop during the factory incident",
+        "pt": "Chegar à oficina do 3º andar durante o incidente na fábrica"
+      }
+    },
+    {
+      "id": "fc-ch3-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "The fight at the Carnelia Tower entrance",
+        "pt": "A luta na entrada da Carnelia Tower"
+      }
+    },
+    {
+      "id": "fc-ch3-cp-05",
+      "order": 5,
+      "neutralDescription": {
+        "en": "Reporting at the guild after visiting Leiston Fortress",
+        "pt": "Relatar na guilda depois de visitar a Leiston Fortress"
+      }
+    },
+    {
+      "id": "fc-ch3-cp-06",
+      "order": 6,
+      "neutralDescription": {
+        "en": "Telling Chief Murdock you are ready (airship to Leiston)",
+        "pt": "Dizer ao Chief Murdock que você está pronto (airship para Leiston)"
+      }
+    },
+    {
+      "id": "fc-ch3-cp-07",
+      "order": 7,
+      "neutralDescription": {
+        "en": "Examining the boat at Leiston Fortress (end of Chapter 3)",
+        "pt": "Examinar o barco na Leiston Fortress (fim do Capítulo 3)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "fc-ch3-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Looking for Librarian"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — Constance, 2F library",
+        "pt": "Zeiss Central Factory — Constance, biblioteca do 2F"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "3 BP. Recover three books: 3F Design Room (steel table), 4F Laboratory (table) and 4F Clinic (drawer). It starts the Overtime chain.",
+        "pt": "3 BP. Recupere três livros: sala de projetos do 3F (mesa de aço), laboratório do 4F (mesa) e clínica do 4F (gaveta). Começa a sequência Overtime."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-hq-01",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Present for Parents"
+      },
+      "location": {
+        "en": "Zeiss — Russell Home",
+        "pt": "Zeiss — Russell Home"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "4 BP. Not on the board, new in the remake. Check the mailbox, then Tita's desk (3rd option). Visit the chapel plaque and Ray in the 4F Laboratory, and defeat the pink Creepy Sheep in southwest Tratt Plains for its wool.",
+        "pt": "4 BP. Não aparece no quadro, nova no remake. Veja a caixa de correio e depois a mesa da Tita (3ª opção). Visite a placa da capela e o Ray no laboratório do 4F, e derrote a Creepy Sheep rosa no sudoeste das Tratt Plains para pegar a lã."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Product Piloting"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — Terry, 4F laboratory",
+        "pt": "Zeiss Central Factory — Terry, laboratório do 4F"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "4 (+2) BP. Wear the Strega-α on Estelle and visit at least four of Air-Letten, Wolf Fort, Sanktheim Gate, Leiston Fortress and Elmo Village (fast travel counts).",
+        "pt": "4 (+2) BP. Equipe as Strega-α na Estelle e visite pelo menos quatro entre Air-Letten, Wolf Fort, Sanktheim Gate, Leiston Fortress e Elmo Village (viagem rápida conta)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Stopping Smoking"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — Dr. Miriam, 4F clinic",
+        "pt": "Zeiss Central Factory — Dr. Miriam, clínica do 4F"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "4 BP. Give Antoine fresh milk, ask Travis (5F) about the cigarettes, talk to Chief Murdock (2F), take the Back Room Key from the desk and check his desk in the back room.",
+        "pt": "4 BP. Dê leite fresco ao Antoine, pergunte ao Travis (5F) sobre os cigarros, fale com o Chief Murdock (2F), pegue a Back Room Key na mesa e examine a mesa dele na sala dos fundos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Fresher Flavors"
+      },
+      "location": {
+        "en": "Zeiss — Ben at Forgel Bar",
+        "pt": "Zeiss — Ben no Forgel Bar"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "3 BP. Pick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben. Rewards Acerbic Tomato Sandwich.",
+        "pt": "3 BP. Pegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben. Dá o Acerbic Tomato Sandwich."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Tratt Plains Monster"
+      },
+      "location": {
+        "en": "Tratt Plains Road",
+        "pt": "Tratt Plains Road"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "4 BP. Tanky against physical hits but weak to arts and most ailments; it shields itself at low HP.",
+        "pt": "4 BP. Aguenta golpes físicos, mas é fraco contra arts e quase todos os efeitos; ele se protege com pouco HP."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Cargo Car"
+      },
+      "location": {
+        "en": "Tratt Plains Road — the stranded cargo car",
+        "pt": "Tratt Plains Road — o carro de carga parado"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "4 BP. Talk to Wong and beat the Armored Rabbits. Unlocks Roadside Repair.",
+        "pt": "4 BP. Fale com o Wong e derrote os Armored Rabbits. Libera a Roadside Repair."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Roadside Repair"
+      },
+      "location": {
+        "en": "Tratt Plains Road — Wong",
+        "pt": "Tratt Plains Road — Wong"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "5 BP. Talk to Prometheus (3F), read the Orbal Automobile entry on the 5F computer, get the Drive Orbment from Rudi in Kaldia Tunnel and bring it to Wong.",
+        "pt": "5 BP. Fale com o Prometheus (3F), leia a entrada do Orbal Automobile no computador do 5F, pegue o Drive Orbment com o Rudi no Kaldia Tunnel e leve ao Wong."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-hq-02",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Cupid on Cue"
+      },
+      "location": {
+        "en": "Wolf Fort — Private Brahm",
+        "pt": "Wolf Fort — Private Brahm"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "2 (+4) BP. Not on the board. Deliver his letter to Fey (factory B1F) with a gift: the Wool Knit Cap from Bell Station gives the full +4; Work Gloves or a Seasonal Tart give +2.",
+        "pt": "2 (+4) BP. Não aparece no quadro. Entregue a carta dele à Fey (B1F da fábrica) com um presente: o Wool Knit Cap da Bell Station dá os +4; Work Gloves ou uma Seasonal Tart dão +2."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-08",
+      "type": "quest",
+      "name": {
+        "en": "Ritter Rd Monster"
+      },
+      "location": {
+        "en": "Ritter Roadway — where the road splits",
+        "pt": "Ritter Roadway — onde a estrada se divide"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "5 BP. Clear the small snakes with area attacks and bring poison protection.",
+        "pt": "5 BP. Derrube as cobras pequenas com ataques em área e leve proteção contra veneno."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-09",
+      "type": "quest",
+      "name": {
+        "en": "Overtime"
+      },
+      "location": {
+        "en": "Elmo Village — stone by the hot springs",
+        "pt": "Elmo Village — pedra junto às fontes termais"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "3 BP. After Looking for Librarian. Take The Erbe Woodpecker back to Constance.",
+        "pt": "3 BP. Depois da Looking for Librarian. Devolva The Erbe Woodpecker à Constance."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-10",
+      "type": "quest",
+      "name": {
+        "en": "Over-Overtime"
+      },
+      "location": {
+        "en": "Tratt Plains Road — the four stone pillars near Carnelia Tower",
+        "pt": "Tratt Plains Road — os quatro pilares de pedra perto da Carnelia Tower"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "4 BP. Examine the central pillar for Hertz's Adventure Vol. 2 and return it.",
+        "pt": "4 BP. Examine o pilar do centro para pegar Hertz's Adventure Vol. 2 e devolva."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-11",
+      "type": "quest",
+      "name": {
+        "en": "Over-Over-Overtime"
+      },
+      "location": {
+        "en": "Sanktheim Gate — top floor",
+        "pt": "Sanktheim Gate — último andar"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "4 BP. The book 31 Cypress Trees is on a barrel (with an Impede 3).",
+        "pt": "4 BP. O livro 31 Cypress Trees está sobre um barril (com um Impede 3)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-q-12",
+      "type": "quest",
+      "name": {
+        "en": "Ritter Rd Monster 2"
+      },
+      "location": {
+        "en": "Ritter Roadway",
+        "pt": "Ritter Roadway"
+      },
+      "availableUntil": "fc-ch3-cp-06",
+      "hint": {
+        "en": "6 BP. Short deadline. Defeating the leader buffs the other wolves and it can revive them: bring Anti-Sept All. You can wait until Agate and Tita rejoin, but it expires once you board the airship for Leiston.",
+        "pt": "6 BP. Prazo curto. Derrotar o líder fortalece os outros lobos, e ele pode revivê-los: leve Anti-Sept All. Dá para esperar o Agate e a Tita voltarem, mas a quest expira quando você embarca no airship para Leiston."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the smoke canisters",
+        "pt": "BP bônus: os botijões de fumaça"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — emergency stairs",
+        "pt": "Zeiss Central Factory — escada de emergência"
+      },
+      "availableUntil": "fc-ch3-cp-03",
+      "hint": {
+        "en": "+5 BP (Factory Incident): examine all five smoke canisters (blue markers), +1 each, before going to the 3F workshop.",
+        "pt": "+5 BP (Factory Incident): examine os cinco botijões de fumaça (marcadores azuis), +1 cada, antes de ir à oficina do 3F."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the answer at Carnelia Tower",
+        "pt": "BP bônus: a resposta na Carnelia Tower"
+      },
+      "location": {
+        "en": "Carnelia Tower — entrance",
+        "pt": "Carnelia Tower — entrada"
+      },
+      "availableUntil": "fc-ch3-cp-04",
+      "hint": {
+        "en": "+3 BP (Factory Incident). After the fight at the entrance, pick the 3rd option.",
+        "pt": "+3 BP (Factory Incident). Depois da luta na entrada, escolha a 3ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the answer at the Zeiss guild",
+        "pt": "BP bônus: a resposta na guilda de Zeiss"
+      },
+      "location": {
+        "en": "Zeiss — Bracer Guild",
+        "pt": "Zeiss — Bracer Guild"
+      },
+      "availableUntil": "fc-ch3-cp-05",
+      "hint": {
+        "en": "+3 BP (Vanished Professor). Back at the guild after Leiston Fortress, pick the 3rd option.",
+        "pt": "+3 BP (Vanished Professor). De volta à guilda depois da Leiston Fortress, escolha a 3ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-mi-04",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: sneaking into Leiston Fortress",
+        "pt": "BP bônus: entrar escondido na Leiston Fortress"
+      },
+      "location": {
+        "en": "Leiston Fortress",
+        "pt": "Leiston Fortress"
+      },
+      "availableUntil": "fc-ch3-cp-07",
+      "hint": {
+        "en": "+3 BP (Vanished Professor). Get past the alerted guards without being seen (slip by on the left, watching their sight on the minimap). Save first.",
+        "pt": "+3 BP (Vanished Professor). Passe pelos guardas em alerta sem ser visto (vá pela esquerda, observando a visão deles no minimapa). Salve antes."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 6"
+      },
+      "location": {
+        "en": "Jenis Royal Academy — Violet, clubhouse 2F",
+        "pt": "Jenis Royal Academy — Violet, 2º andar do clube"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Before leaving Ruan at the start of the chapter. Bell Station in Zeiss sells it if missed.",
+        "pt": "Antes de sair de Ruan, no começo do capítulo. A Bell Station em Zeiss vende se você perder."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 6"
+      },
+      "location": {
+        "en": "Ruan — O'Neil Duty-Free Shop",
+        "pt": "Ruan — O'Neil Duty-Free Shop"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Buy it before leaving Ruan at the start of the chapter.",
+        "pt": "Compre antes de sair de Ruan, no começo do capítulo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Hertz's Adventure Vol. 1"
+      },
+      "location": {
+        "en": "Zeiss Central Factory — 2F library bookshelf",
+        "pt": "Zeiss Central Factory — estante da biblioteca do 2F"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "Examine the bookshelf.",
+        "pt": "Examine a estante."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Crystal Optical Theory"
+      },
+      "location": {
+        "en": "Zeiss Central Factory",
+        "pt": "Zeiss Central Factory"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "Part of Looking for Librarian.",
+        "pt": "Parte da Looking for Librarian."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Tomorrow's Cooking"
+      },
+      "location": {
+        "en": "Zeiss Central Factory",
+        "pt": "Zeiss Central Factory"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "Part of Looking for Librarian. Reading it in the notebook teaches Portable Bouillabaisse.",
+        "pt": "Parte da Looking for Librarian. Lê-lo no caderno ensina o Portable Bouillabaisse."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Cat Talk for Dummies"
+      },
+      "location": {
+        "en": "Zeiss Central Factory",
+        "pt": "Zeiss Central Factory"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "Part of Looking for Librarian.",
+        "pt": "Parte da Looking for Librarian."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "The Erbe Woodpecker"
+      },
+      "location": {
+        "en": "Elmo Village — hot springs",
+        "pt": "Elmo Village — fontes termais"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "Found during Overtime.",
+        "pt": "Encontrado durante a Overtime."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Hertz's Adventure Vol. 2"
+      },
+      "location": {
+        "en": "Tratt Plains Road — stone pillars",
+        "pt": "Tratt Plains Road — pilares de pedra"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "Found during Over-Overtime.",
+        "pt": "Encontrado durante a Over-Overtime."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "31 Cypress Trees"
+      },
+      "location": {
+        "en": "Sanktheim Gate — top floor",
+        "pt": "Sanktheim Gate — último andar"
+      },
+      "availableUntil": "fc-ch3-cp-02",
+      "hint": {
+        "en": "Found during Over-Over-Overtime.",
+        "pt": "Encontrado durante a Over-Over-Overtime."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 7"
+      },
+      "location": {
+        "en": "Wolf Fort — Bruno",
+        "pt": "Wolf Fort — Bruno"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "After the factory incident. Bell Station sells it if missed.",
+        "pt": "Depois do incidente na fábrica. A Bell Station vende se você perder."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 7"
+      },
+      "location": {
+        "en": "Zeiss — Bell Station",
+        "pt": "Zeiss — Bell Station"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "Buy it before leaving the Zeiss region.",
+        "pt": "Compre antes de sair da região de Zeiss."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Zeiss region (12)",
+        "pt": "Receitas: região de Zeiss (12)"
+      },
+      "location": {
+        "en": "Zeiss region",
+        "pt": "região de Zeiss"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "Eat each dish once to learn its recipe.",
+        "pt": "Coma cada prato uma vez para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss",
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Spiral Pasta — Forgel Bar",
+            "pt": "Spiral Pasta — Forgel Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Black Pepper Soup — Forgel Bar",
+            "pt": "Black Pepper Soup — Forgel Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Seasonal Tart — Forgel Bar",
+            "pt": "Seasonal Tart — Forgel Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Portable Bouillabaisse — read Tomorrow's Cooking in the notebook",
+            "pt": "Portable Bouillabaisse — leia Tomorrow's Cooking no caderno"
+          }
+        },
+        {
+          "text": {
+            "en": "Acerbic Tomato Sandwich — Fresher Flavors reward",
+            "pt": "Acerbic Tomato Sandwich — recompensa da Fresher Flavors"
+          }
+        },
+        {
+          "text": {
+            "en": "Meat Lover's Hot Pot — Sanktheim Gate cafeteria",
+            "pt": "Meat Lover's Hot Pot — cafeteria do Sanktheim Gate"
+          }
+        },
+        {
+          "text": {
+            "en": "Infernal Fried Eggs — chest on Carnelia Tower 5F",
+            "pt": "Infernal Fried Eggs — baú no 5F da Carnelia Tower"
+          }
+        },
+        {
+          "text": {
+            "en": "Soft-Boiled Hot Spring Egg — Autumn Souvenirs, Elmo Village",
+            "pt": "Soft-Boiled Hot Spring Egg — Autumn Souvenirs, Elmo Village"
+          }
+        },
+        {
+          "text": {
+            "en": "Fruit Milk — Maple Leaf Inn diner (after the pump is fixed)",
+            "pt": "Fruit Milk — restaurante da Maple Leaf Inn (depois do conserto da bomba)"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Eggnog — Maple Leaf Inn diner",
+            "pt": "Special Eggnog — restaurante da Maple Leaf Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Monster Fish Sashimi — Maple Leaf Inn diner",
+            "pt": "Monster Fish Sashimi — restaurante da Maple Leaf Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Wild Veggie Hot Pot — Maple Leaf Inn diner",
+            "pt": "Wild Veggie Hot Pot — restaurante da Maple Leaf Inn"
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef",
+        "peculiar-chef"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Kaldia Tunnel treasure chests (7)",
+        "pt": "Baús de Kaldia Tunnel (7)"
+      },
+      "location": {
+        "en": "Kaldia Tunnel",
+        "pt": "Kaldia Tunnel"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "Combo Attacks and Full Burst are introduced here.",
+        "pt": "Combo Attacks e Full Burst são apresentados aqui."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tearal Balm",
+            "pt": "Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material ×3",
+            "pt": "U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×150",
+            "pt": "All Sepith ×150"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge III",
+            "pt": "EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Magic ×4",
+            "pt": "Droplet of Magic ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "Mute",
+            "pt": "Mute"
+          }
+        },
+        {
+          "text": {
+            "en": "Feather Brooch",
+            "pt": "Feather Brooch"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Kaldia Limestone Cave treasure chests (9)",
+        "pt": "Baús de Kaldia Limestone Cave (9)"
+      },
+      "location": {
+        "en": "Kaldia Limestone Cave",
+        "pt": "Kaldia Limestone Cave"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "Optional and stronger than you at first; you return in the story. Pengus fall to Confuse and Deathblow; the two monster chests give Tita's G-Impact and the Black Coat.",
+        "pt": "Opcional e mais forte que você no começo; você volta na história. Os Pengus caem com Confuse e Deathblow; os dois baús de monstros dão o G-Impact da Tita e o Black Coat."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "EP Charge III",
+            "pt": "EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Deathblow",
+            "pt": "Deathblow"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×150",
+            "pt": "All Sepith ×150"
+          }
+        },
+        {
+          "text": {
+            "en": "Zeram Capsule",
+            "pt": "Zeram Capsule"
+          }
+        },
+        {
+          "text": {
+            "en": "G-Impact (monster chest: White Pengu+, Little Pengus+ Blue Pengu+, Pink Pengu+)",
+            "pt": "G-Impact (baú de monstros: White Pengu+, Little Pengus+ Blue Pengu+, Pink Pengu+)"
+          }
+        },
+        {
+          "text": {
+            "en": "Zeram Powder",
+            "pt": "Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "Black Coat (monster chest: Red Pengu+, Yellow Pengu+ Green Pengu+, Little Pengus+)",
+            "pt": "Black Coat (baú de monstros: Red Pengu+, Yellow Pengu+ Green Pengu+, Little Pengus+)"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+",
+            "pt": "U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm",
+            "pt": "Athelas Balm"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-15",
+      "type": "collectible",
+      "name": {
+        "en": "Tratt Plains Road treasure chests (13)",
+        "pt": "Baús de Tratt Plains Road (13)"
+      },
+      "location": {
+        "en": "Tratt Plains Road",
+        "pt": "Tratt Plains Road"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "Includes Wolf Fort and the hidden cave on the east side; the Shining Pom of the region spawns here.",
+        "pt": "Inclui o Wolf Fort e a caverna escondida no lado leste; o Shining Pom da região aparece aqui."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tearal Balm",
+            "pt": "Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Spirit ×4",
+            "pt": "Droplet of Spirit ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm",
+            "pt": "Athelas Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+",
+            "pt": "U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×150",
+            "pt": "All Sepith ×150"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material ×3",
+            "pt": "U-Material ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Strength ×4",
+            "pt": "Droplet of Strength ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "Tearal Balm",
+            "pt": "Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge III",
+            "pt": "EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Force Seal",
+            "pt": "Force Seal"
+          }
+        },
+        {
+          "text": {
+            "en": "Chaos Blade (monster chest: Hopper Chief+, Grass Hopper+ ×3)",
+            "pt": "Chaos Blade (baú de monstros: Hopper Chief+, Grass Hopper+ ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "Octagonal Staff (monster chest: Armored Rabbit+ ×6)",
+            "pt": "Octagonal Staff (baú de monstros: Armored Rabbit+ ×6)"
+          }
+        },
+        {
+          "text": {
+            "en": "Demi-Handers (monster chest: Creepy Sheep+ ×3)",
+            "pt": "Demi-Handers (baú de monstros: Creepy Sheep+ ×3)"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-16",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Tower treasure chests (8)",
+        "pt": "Baús de Carnelia Tower (8)"
+      },
+      "location": {
+        "en": "Carnelia Tower",
+        "pt": "Carnelia Tower"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "On 2F each staircase leads to a chest; only the middle one goes up. The Trappers are weak to water and explode.",
+        "pt": "No 2F cada escada leva a um baú; só a do meio sobe. Os Trappers são fracos contra água e explodem."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "3F — U-Material+",
+            "pt": "3F — U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "3F — Attack 3",
+            "pt": "3F — Attack 3"
+          }
+        },
+        {
+          "text": {
+            "en": "3F — Zanbato (monster chest: Fire Trapper ×3)",
+            "pt": "3F — Zanbato (baú de monstros: Fire Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — Zeram Powder",
+            "pt": "4F — Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — Red Sphere (monster chest: Fire Trapper ×3)",
+            "pt": "4F — Red Sphere (baú de monstros: Fire Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Black Coat",
+            "pt": "5F — Black Coat"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Infernal Fried Eggs",
+            "pt": "5F — Infernal Fried Eggs"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Mind 3",
+            "pt": "5F — Mind 3"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch3-co-17",
+      "type": "collectible",
+      "name": {
+        "en": "Ritter Roadway treasure chests (5)",
+        "pt": "Baús de Ritter Roadway (5)"
+      },
+      "location": {
+        "en": "Ritter Roadway",
+        "pt": "Ritter Roadway"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "Follow the road to the end of Soldat Army Road; also touch Sanktheim Gate for fast travel.",
+        "pt": "Siga a estrada até o fim da Soldat Army Road; passe também pelo Sanktheim Gate para a viagem rápida."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Droplet of Life ×4",
+            "pt": "Droplet of Life ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+",
+            "pt": "U-Material+"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×150",
+            "pt": "All Sepith ×150"
+          }
+        },
+        {
+          "text": {
+            "en": "Zeram Powder",
+            "pt": "Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Defense ×4",
+            "pt": "Droplet of Defense ×4"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "fc-ch3-bs-01",
+      "name": {
+        "en": "Rhinoking"
+      },
+      "location": {
+        "en": "Tratt Plains Road"
+      },
+      "strategy": {
+        "en": "A huge HP sponge for physical parties: use arts and ailments (Blind, Confuse, Sleep). It shields itself and Rages at low HP.",
+        "pt": "Uma esponja de HP para equipes físicas: use arts e efeitos (Blind, Confuse, Sleep). Ele se protege e entra em Rage com pouco HP."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "relatedItem": "fc-ch3-q-05"
+    },
+    {
+      "id": "fc-ch3-bs-02",
+      "name": {
+        "en": "Mercury Viper"
+      },
+      "location": {
+        "en": "Ritter Roadway"
+      },
+      "strategy": {
+        "en": "Wipe the small snakes with one area attack and bring poison protection (or Tita's Vital Cannon to cleanse).",
+        "pt": "Derrube as cobras pequenas com um ataque em área e leve proteção contra veneno (ou o Vital Cannon da Tita para curar)."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+      ],
+      "relatedItem": "fc-ch3-q-08"
+    },
+    {
+      "id": "fc-ch3-bs-03",
+      "name": {
+        "en": "Black-clad soldiers",
+        "pt": "Soldados de preto"
+      },
+      "location": {
+        "en": "Carnelia Tower — roof",
+        "pt": "Carnelia Tower — terraço"
+      },
+      "strategy": {
+        "en": "Seal, Poison and Deathblow; they Rage below half HP. Chaos Brand works, and Agate and Joshua's S-Crafts finish them, but brace for Rage.",
+        "pt": "Seal, Poison e Deathblow; entram em Rage abaixo da metade do HP. Chaos Brand funciona, e os S-Crafts do Agate e do Joshua finalizam, mas prepare-se para o Rage."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ]
+    },
+    {
+      "id": "fc-ch3-bs-04",
+      "name": {
+        "en": "King Pengu"
+      },
+      "location": {
+        "en": "Kaldia Limestone Cave"
+      },
+      "strategy": {
+        "en": "Wear Confuse protection and spread out against Tuna Missile. Chaos Brand stops its worst moves; near the end it calls guards and a huge area attack.",
+        "pt": "Use proteção contra Confuse e espalhe a equipe contra o Tuna Missile. Chaos Brand impede os piores golpes; perto do fim ele chama guardas e um ataque em área enorme."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ]
+    },
+    {
+      "id": "fc-ch3-bs-05",
+      "name": {
+        "en": "Bloody Saber"
+      },
+      "location": {
+        "en": "Ritter Roadway"
+      },
+      "strategy": {
+        "en": "Defeating it buffs the remaining wolves and it can revive them all: clear the wolves first or dispel with Anti-Sept All. Joshua's Evil Eye confuses the pack.",
+        "pt": "Derrotá-lo fortalece os lobos restantes, e ele pode reviver todos: derrube os lobos primeiro ou remova os buffs com Anti-Sept All. O Evil Eye do Joshua confunde a matilha."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Leiston Fortress"
+      ],
+      "relatedItem": "fc-ch3-q-12"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "fc-ch3-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Spiral Pasta"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Black Pepper Soup"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Seasonal Tart"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Portable Bouillabaisse"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Acerbic Tomato Sandwich"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Meat Lover's Hot Pot"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Infernal Fried Eggs"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Soft-Boiled Hot Spring Egg"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-09",
+      "kind": "standard",
+      "name": {
+        "en": "Fruit Milk"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-10",
+      "kind": "standard",
+      "name": {
+        "en": "Special Eggnog"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-11",
+      "kind": "standard",
+      "name": {
+        "en": "Monster Fish Sashimi"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-12",
+      "kind": "standard",
+      "name": {
+        "en": "Wild Veggie Hot Pot"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-13",
+      "kind": "customized",
+      "name": {
+        "en": "Fluffy Pancakes"
+      },
+      "source": {
+        "en": "Have Estelle cook Seasonal Tart.",
+        "pt": "Peça para a Estelle cozinhar Seasonal Tart."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch3-re-14",
+      "kind": "customized",
+      "name": {
+        "en": "Demi-glace Omelette Rice"
+      },
+      "source": {
+        "en": "Have Joshua cook Infernal Fried Eggs.",
+        "pt": "Peça para o Joshua cozinhar Infernal Fried Eggs."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    }
+  ]
+}

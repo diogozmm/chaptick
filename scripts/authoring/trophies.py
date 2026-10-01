@@ -43,7 +43,30 @@ def _ysx(item):
     return tags
 
 
-RULES = {'sc': _sc, 'ysx': _ysx}
+_FC_OTHER_BOOKS = {"Luke's Diary", 'Hundred Days War - A True Account', 'Ruan Economic History 1', 'Ruan Economic History 2',
+                   'Ruan Economic History 3', "Hertz's Adventure Vol. 1", 'Crystal Optical Theory', "Tomorrow's Cooking",
+                   'Cat Talk for Dummies', 'The Erbe Woodpecker', "Hertz's Adventure Vol. 2", '31 Cypress Trees'}
+
+
+def _fc(item):
+    en, kind = item['name']['en'], item['type']
+    tags = []
+    if kind in ('quest', 'hidden_quest'):
+        tags += ['quest-master', 'promising-newcomer']
+    if en.startswith('Bonus BP'):
+        tags.append('promising-newcomer')
+    if 'treasure chests' in en:
+        tags.append('treasure-hunter')
+    if en.startswith(('Carnelia Vol.', 'Liberl News')) or en in _FC_OTHER_BOOKS:
+        tags.append('book-master')
+    if en.startswith('Trade the Carnelia'):
+        tags.append('ultimate-weapons')
+    if en.startswith('Recipes:'):
+        tags += ['three-star-chef', 'peculiar-chef']
+    return tags
+
+
+RULES = {'sc': _sc, 'ysx': _ysx, 'fc': _fc}
 
 
 def apply(game, data):

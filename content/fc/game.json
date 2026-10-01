@@ -1,0 +1,75 @@
+{
+  "id": "fc",
+  "franchise": "trails",
+  "order": 1,
+  "name": {
+    "en": "Trails in the Sky 1st Chapter",
+    "pt": "Trails in the Sky 1st Chapter"
+  },
+  "cover": {
+    "title": "Trails in the Sky",
+    "subtitle": "1st Chapter"
+  },
+  "platforms": [],
+  "dataVersion": 1,
+  "trophies": [
+    {
+      "id": "quest-master",
+      "name": "Quest Master",
+      "description": {
+        "en": "Complete and report all 73 quests. Some are hidden (not on the board) and most expire as the story moves on.",
+        "pt": "Conclua e relate as 73 quests. Algumas são escondidas (fora do quadro) e a maioria expira conforme a história avança."
+      }
+    },
+    {
+      "id": "promising-newcomer",
+      "name": "Promising Newcomer",
+      "description": {
+        "en": "Reach Junior Bracer Rank 1: 350 of the 395 BP. Quests and the bonus BP choices add up; you can miss up to 45.",
+        "pt": "Chegue ao Junior Bracer Rank 1: 350 dos 395 BP. Quests e as escolhas de BP bônus somam; dá para perder até 45."
+      }
+    },
+    {
+      "id": "treasure-hunter",
+      "name": "Treasure Hunter",
+      "description": {
+        "en": "Open all 212 treasure chests. Each region closes when the story moves on, and some dungeons are one-time visits.",
+        "pt": "Abra os 212 baús. Cada região fecha quando a história avança, e algumas dungeons são de visita única."
+      }
+    },
+    {
+      "id": "book-master",
+      "name": "Book Master",
+      "description": {
+        "en": "Fill in all 33 books: 10 Liberl News issues, 11 Carnelia volumes and 12 other books.",
+        "pt": "Preencha os 33 livros: 10 edições do Liberl News, 11 volumes de Carnelia e 12 outros livros."
+      }
+    },
+    {
+      "id": "ultimate-weapons",
+      "name": "Ultimate Weapons",
+      "description": {
+        "en": "Trade the full Carnelia set for Estelle and Joshua's strongest weapons.",
+        "pt": "Troque a coleção completa de Carnelia pelas armas mais fortes da Estelle e do Joshua."
+      }
+    },
+    {
+      "id": "three-star-chef",
+      "name": "Three-Star Chef",
+      "description": {
+        "en": "Cook all 58 dishes successfully, plus the 10 customized ones. Each recipe has to be learned first by eating the dish.",
+        "pt": "Cozinhe com sucesso os 58 pratos, mais os 10 customizados. Cada receita precisa ser aprendida antes, comendo o prato."
+      },
+      "collection": "recipes"
+    },
+    {
+      "id": "peculiar-chef",
+      "name": "Peculiar Chef",
+      "description": {
+        "en": "Also cook the peculiar version of all 58 dishes (customized dishes have none).",
+        "pt": "Cozinhe também a versão peculiar dos 58 pratos (os customizados não têm)."
+      },
+      "collection": "recipes"
+    }
+  ]
+}

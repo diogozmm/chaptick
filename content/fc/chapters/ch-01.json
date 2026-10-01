@@ -1,0 +1,1599 @@
+{
+  "id": "fc-ch1",
+  "gameId": "fc",
+  "order": 1,
+  "neutralLabel": {
+    "en": "Chapter 1",
+    "pt": "Capítulo 1"
+  },
+  "checkpoints": [
+    {
+      "id": "fc-ch1-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Crossing Verte Bridge into the Bose region (no return to Rolent)",
+        "pt": "Atravessar a Verte Bridge para a região de Bose (sem volta para Rolent)"
+      }
+    },
+    {
+      "id": "fc-ch1-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Passing the soldiers on East Bose Highway into Eisen Road",
+        "pt": "Passar pelos soldados na East Bose Highway rumo à Eisen Road"
+      }
+    },
+    {
+      "id": "fc-ch1-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Heading to Ravennue Village to follow the airliner lead",
+        "pt": "Ir para Ravennue Village atrás da pista do airliner"
+      }
+    },
+    {
+      "id": "fc-ch1-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "The clearing in the Abandoned Mine (boss fight)",
+        "pt": "A clareira da Abandoned Mine (luta contra chefe)"
+      }
+    },
+    {
+      "id": "fc-ch1-cp-05",
+      "order": 5,
+      "neutralDescription": {
+        "en": "Talking to Sophina at the Kingfisher Inn (stuck at Valleria Shore)",
+        "pt": "Falar com a Sophina na Kingfisher Inn (preso em Valleria Shore)"
+      }
+    },
+    {
+      "id": "fc-ch1-cp-06",
+      "order": 6,
+      "neutralDescription": {
+        "en": "Leaving the Sky Pirate Stronghold (end of Chapter 1)",
+        "pt": "Sair do Sky Pirate Stronghold (fim do Capítulo 1)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "fc-ch1-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Divine Delivery"
+      },
+      "location": {
+        "en": "Rolent Chapel, then Bose Chapel",
+        "pt": "Capela de Rolent e depois capela de Bose"
+      },
+      "availableUntil": "fc-ch1-cp-02",
+      "hint": {
+        "en": "2 BP. Short deadline. Pick up the letter from Father Divine BEFORE crossing Verte Bridge, then give it to Father Holstein in the Bose chapel.",
+        "pt": "2 BP. Prazo curto. Pegue a carta com o Father Divine ANTES de atravessar a Verte Bridge e entregue ao Father Holstein na capela de Bose."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-hq-01",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Elissa's Entreaty"
+      },
+      "location": {
+        "en": "Rolent — Elissa at Abend Bar",
+        "pt": "Rolent — Elissa no Abend Bar"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "2 (+2) BP. Not on the board, new in the remake. At Perzel Farm check every green marker; pick the 1st option at the strawberries and the 2nd at the cow for the bonus. Eat the Sunshine Mille Crepe for its recipe.",
+        "pt": "2 (+2) BP. Não aparece no quadro, nova no remake. Na Perzel Farm, examine todos os marcadores verdes; escolha a 1ª opção nos morangos e a 2ª na vaca para o bônus. Coma o Sunshine Mille Crepe para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Mountain Monster"
+      },
+      "location": {
+        "en": "Ravennue Trail",
+        "pt": "Ravennue Trail"
+      },
+      "availableUntil": "fc-ch1-cp-02",
+      "hint": {
+        "en": "4 BP. Short deadline. Its Fate Saber can K.O. instantly: bring Deathblow protection (Grail Ring, Crest Charm). It is slow and easy to stun.",
+        "pt": "4 BP. Prazo curto. O Fate Saber dele pode derrubar na hora: leve proteção contra Deathblow (Grail Ring, Crest Charm). Ele é lento e fácil de atordoar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Culinary Collection"
+      },
+      "location": {
+        "en": "Bose — Gwen at Restaurant Anterose",
+        "pt": "Bose — Gwen no Restaurant Anterose"
+      },
+      "availableUntil": "fc-ch1-cp-02",
+      "hint": {
+        "en": "3 BP. Bring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway). Rewards the Royal Omelette recipe.",
+        "pt": "3 BP. Leve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway). Dá a receita do Royal Omelette."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-hq-02",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Amber Alarm"
+      },
+      "location": {
+        "en": "Amberl Tower",
+        "pt": "Amberl Tower"
+      },
+      "availableUntil": "fc-ch1-cp-03",
+      "hint": {
+        "en": "4 BP. Not on the board: it starts when you enter Amberl Tower. Reach 5F, approach the center, then leave the tower.",
+        "pt": "4 BP. Não aparece no quadro: começa quando você entra na Amberl Tower. Suba até o 5F, aproxime-se do centro e depois saia da torre."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Claw Cure"
+      },
+      "location": {
+        "en": "Bose Market — Spence",
+        "pt": "Bose Market — Spence"
+      },
+      "availableUntil": "fc-ch1-cp-03",
+      "hint": {
+        "en": "4 BP. Appears after Divine Delivery. Bring two Bear Claws from Nebel Valley: near the end of the west path (after its quest monster) and beside the Thelas Balm chest.",
+        "pt": "4 BP. Aparece depois da Divine Delivery. Leve duas Bear Claws de Nebel Valley: perto do fim do caminho oeste (depois do monstro da quest) e ao lado do baú do Thelas Balm."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Escort Escapade"
+      },
+      "location": {
+        "en": "Bose — Hart at Frieden Hotel",
+        "pt": "Bose — Hart no Frieden Hotel"
+      },
+      "availableUntil": "fc-ch1-cp-03",
+      "hint": {
+        "en": "4 (+1) BP. Walk Hart to Krone Trail; if he falls it's game over, so avoid fights. Choose \"A frontal assault!\" (1st option) for the bonus.",
+        "pt": "4 (+1) BP. Leve o Hart até a Krone Trail; se ele cair é game over, então evite lutas. Escolha \"A frontal assault!\" (1ª opção) para o bônus."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-06",
+      "type": "quest",
+      "name": {
+        "en": "E Bose Hwy Monster"
+      },
+      "location": {
+        "en": "East Bose Highway",
+        "pt": "East Bose Highway"
+      },
+      "availableUntil": "fc-ch1-cp-03",
+      "hint": {
+        "en": "4 BP. Poisonous scorpions; the leader calls more.",
+        "pt": "4 BP. Escorpiões venenosos; o líder chama mais."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Nebel Valley Monster"
+      },
+      "location": {
+        "en": "Nebel Valley",
+        "pt": "Nebel Valley"
+      },
+      "availableUntil": "fc-ch1-cp-03",
+      "hint": {
+        "en": "5 BP. Kill the Boiled Eggers from a distance (they explode) and wear Flame Zippos against Freeze.",
+        "pt": "5 BP. Derrube os Boiled Eggers à distância (eles explodem) e use Flame Zippos contra Freeze."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-08",
+      "type": "quest",
+      "name": {
+        "en": "W Bose Hwy Monster"
+      },
+      "location": {
+        "en": "West Bose Highway",
+        "pt": "West Bose Highway"
+      },
+      "availableUntil": "fc-ch1-cp-03",
+      "hint": {
+        "en": "4 BP. The toughest of this set: spread out, keep Earth Guard up and protect against Mute, Seal and Blind.",
+        "pt": "4 BP. O mais difícil deste grupo: espalhe a equipe, mantenha o Earth Guard e se proteja de Mute, Seal e Blind."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-09",
+      "type": "quest",
+      "name": {
+        "en": "Battle Backup"
+      },
+      "location": {
+        "en": "Nebel Valley",
+        "pt": "Nebel Valley"
+      },
+      "availableUntil": "fc-ch1-cp-05",
+      "hint": {
+        "en": "4 BP. New in the remake. Help Anelace in Nebel Valley; Flame Zippos recommended. Later, Sting at the Bose guild gives Proxy Puppet S ×2.",
+        "pt": "4 BP. Nova no remake. Ajude a Anelace em Nebel Valley; Flame Zippos recomendados. Depois, o Sting na guilda de Bose dá Proxy Puppet S ×2."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-q-10",
+      "type": "quest",
+      "name": {
+        "en": "Ansel Path Monster"
+      },
+      "location": {
+        "en": "New Ansel Path",
+        "pt": "New Ansel Path"
+      },
+      "availableUntil": "fc-ch1-cp-05",
+      "hint": {
+        "en": "5 BP. It blocks the way to Valleria Shore, so you can't skip it. The turtles shrug off physical hits: use arts and step out of the red circles.",
+        "pt": "5 BP. Ele bloqueia o caminho para Valleria Shore, então não dá para pular. As tartarugas aguentam golpes físicos: use arts e saia dos círculos vermelhos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the answer on the airliner deck",
+        "pt": "BP bônus: a resposta no convés do airliner"
+      },
+      "location": {
+        "en": "Abandoned Mine — the airliner",
+        "pt": "Abandoned Mine — o airliner"
+      },
+      "availableUntil": "fc-ch1-cp-05",
+      "hint": {
+        "en": "+3 BP (Missing Airliner). Outside on the airliner, pick the 5th option: their hideout is somewhere special.",
+        "pt": "+3 BP (Missing Airliner). No lado de fora do airliner, escolha a 5ª opção: o esconderijo deles fica num lugar especial."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch1-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Examine the vacuum cleaner",
+        "pt": "Examinar o aspirador de pó"
+      },
+      "location": {
+        "en": "Sky Pirate Stronghold — second floor, northwest",
+        "pt": "Sky Pirate Stronghold — segundo andar, noroeste"
+      },
+      "availableUntil": "fc-ch1-cp-06",
+      "hint": {
+        "en": "Examining it gives the Black Notebook, needed for the hidden quest Black Notebook in Chapter 2.",
+        "pt": "Examiná-lo dá o Black Notebook, necessário para a quest escondida Black Notebook no Capítulo 2."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 2"
+      },
+      "location": {
+        "en": "Verte Bridge — Private Harold",
+        "pt": "Verte Bridge — Private Harold"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "He stands by the gate: talk to him before going through.",
+        "pt": "Ele fica junto ao portão: fale com ele antes de passar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 2"
+      },
+      "location": {
+        "en": "Rolent — Rinon's General Goods",
+        "pt": "Rolent — Rinon's General Goods"
+      },
+      "availableUntil": "fc-ch1-cp-01",
+      "hint": {
+        "en": "Buy it before leaving Rolent.",
+        "pt": "Compre antes de sair de Rolent."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 3"
+      },
+      "location": {
+        "en": "Haken Gate — Marco in the rest area",
+        "pt": "Haken Gate — Marco na área de descanso"
+      },
+      "availableUntil": "fc-ch1-cp-03",
+      "hint": {
+        "en": "Talk to him before entering the main building and examining the far door.",
+        "pt": "Fale com ele antes de entrar no prédio principal e examinar a porta do fundo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 4"
+      },
+      "location": {
+        "en": "Bose Market — Libro",
+        "pt": "Bose Market — Libro"
+      },
+      "availableUntil": "fc-ch1-cp-05",
+      "hint": {
+        "en": "Talk to him before heading to Valleria Shore. Grocery Minuet sells missed volumes, at a high price.",
+        "pt": "Fale com ele antes de ir para Valleria Shore. A Grocery Minuet vende volumes perdidos, por um preço alto."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 3"
+      },
+      "location": {
+        "en": "Bose Market — Grocery Minuet",
+        "pt": "Bose Market — Grocery Minuet"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Buy it before leaving the Bose region.",
+        "pt": "Compre antes de sair da região de Bose."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Hundred Days War - A True Account"
+      },
+      "location": {
+        "en": "Valleria Shore",
+        "pt": "Valleria Shore"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Received in a story scene: you can't miss it.",
+        "pt": "Recebido numa cena da história: não tem como perder."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Bose region (17)",
+        "pt": "Receitas: região de Bose (17)"
+      },
+      "location": {
+        "en": "Bose region",
+        "pt": "região de Bose"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Eat each dish once to learn its recipe.",
+        "pt": "Coma cada prato uma vez para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose",
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sunshine Mille Crepe — Elissa's Entreaty reward (Rolent)",
+            "pt": "Sunshine Mille Crepe — recompensa da Elissa's Entreaty (Rolent)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fullmouth Soup — Kirsche Bar",
+            "pt": "Fullmouth Soup — Kirsche Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Red Tail Soup — Kirsche Bar",
+            "pt": "Red Tail Soup — Kirsche Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Astonishing Cheese Risotto — Kirsche Bar",
+            "pt": "Astonishing Cheese Risotto — Kirsche Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Sweet Castella — Caterina's Shop, Bose Market",
+            "pt": "Sweet Castella — Caterina's Shop, Bose Market"
+          }
+        },
+        {
+          "text": {
+            "en": "Flowery Jelly — Caterina's Shop, Bose Market",
+            "pt": "Flowery Jelly — Caterina's Shop, Bose Market"
+          }
+        },
+        {
+          "text": {
+            "en": "Beast Steak — chest on Ravennue Trail",
+            "pt": "Beast Steak — baú na Ravennue Trail"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Omelette — Culinary Collection reward",
+            "pt": "Royal Omelette — recompensa da Culinary Collection"
+          }
+        },
+        {
+          "text": {
+            "en": "Cursed Fried Eyeballs — chest on Krone Trail",
+            "pt": "Cursed Fried Eyeballs — baú na Krone Trail"
+          }
+        },
+        {
+          "text": {
+            "en": "Heaven-and-Hell Stew — have some stew at Whemler Hut (2nd option)",
+            "pt": "Heaven-and-Hell Stew — aceite o ensopado na Whemler Hut (2ª opção)"
+          }
+        },
+        {
+          "text": {
+            "en": "Kasagin Tempura — The Kingfisher Inn",
+            "pt": "Kasagin Tempura — The Kingfisher Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Miso-Simmered Carp — The Kingfisher Inn",
+            "pt": "Miso-Simmered Carp — The Kingfisher Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Grilled Rockfish Skewer — The Kingfisher Inn",
+            "pt": "Grilled Rockfish Skewer — The Kingfisher Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Salmon Meunière — The Kingfisher Inn",
+            "pt": "Salmon Meunière — The Kingfisher Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Grilled Rainbow Trout — The Kingfisher Inn",
+            "pt": "Grilled Rainbow Trout — The Kingfisher Inn"
+          }
+        },
+        {
+          "text": {
+            "en": "Apple Ice Cream — The Moonlight Path, Ravennue Village",
+            "pt": "Apple Ice Cream — The Moonlight Path, Ravennue Village"
+          }
+        },
+        {
+          "text": {
+            "en": "Fresh-Squeezed Juice — The Moonlight Path, Ravennue Village",
+            "pt": "Fresh-Squeezed Juice — The Moonlight Path, Ravennue Village"
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef",
+        "peculiar-chef"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "East Bose Highway treasure chests (3)",
+        "pt": "Baús de East Bose Highway (3)"
+      },
+      "location": {
+        "en": "East Bose Highway",
+        "pt": "East Bose Highway"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Two of the three can be opened before the story event midway along the road.",
+        "pt": "Dois dos três podem ser abertos antes do evento da história no meio da estrada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tear Balm ×3",
+            "pt": "Tear Balm ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge I ×2",
+            "pt": "EP Charge I ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Pearl Earrings",
+            "pt": "Pearl Earrings"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "West Bose Highway treasure chests (5)",
+        "pt": "Baús de West Bose Highway (5)"
+      },
+      "location": {
+        "en": "West Bose Highway",
+        "pt": "West Bose Highway"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "The monster chest holds Katars, an upgrade for Joshua. A hidden cave in the southwest is a farming spot.",
+        "pt": "O baú de monstros tem Katars, uma melhoria para o Joshua. Uma caverna escondida no sudoeste serve para farmar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Curia Balm ×2",
+            "pt": "Curia Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Katars (monster chest: Rock Pecker+ ×3, Rock Pecker ×3)",
+            "pt": "Katars (baú de monstros: Rock Pecker+ ×3, Rock Pecker ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×100",
+            "pt": "All Sepith ×100"
+          }
+        },
+        {
+          "text": {
+            "en": "Hit 2",
+            "pt": "Hit 2"
+          }
+        },
+        {
+          "text": {
+            "en": "Teara Balm",
+            "pt": "Teara Balm"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Ravennue Trail treasure chests (7)",
+        "pt": "Baús de Ravennue Trail (7)"
+      },
+      "location": {
+        "en": "Ravennue Trail",
+        "pt": "Ravennue Trail"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Four chests before the quest marker (approaching it starts the boss fight), three after it.",
+        "pt": "Quatro baús antes do marcador da quest (chegar perto começa a luta), três depois."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "EP Charge II",
+            "pt": "EP Charge II"
+          }
+        },
+        {
+          "text": {
+            "en": "Beast Steak",
+            "pt": "Beast Steak"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×100",
+            "pt": "All Sepith ×100"
+          }
+        },
+        {
+          "text": {
+            "en": "Mirage Ring",
+            "pt": "Mirage Ring"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Strength ×2",
+            "pt": "Droplet of Strength ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material",
+            "pt": "U-Material"
+          }
+        },
+        {
+          "text": {
+            "en": "Strega R (monster chest: Millipede Ball+ ×2)",
+            "pt": "Strega R (baú de monstros: Millipede Ball+ ×2)"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Krone Trail (Bose side) treasure chests (3)",
+        "pt": "Baús de Krone Trail (lado de Bose) (3)"
+      },
+      "location": {
+        "en": "Krone Trail (Bose side)",
+        "pt": "Krone Trail (lado de Bose)"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Includes the Cursed Fried Eyeballs dish. Reach the western checkpoint to unlock fast travel.",
+        "pt": "Inclui o prato Cursed Fried Eyeballs. Chegue ao posto a oeste para liberar a viagem rápida."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "U-Material",
+            "pt": "U-Material"
+          }
+        },
+        {
+          "text": {
+            "en": "Cursed Fried Eyeballs",
+            "pt": "Cursed Fried Eyeballs"
+          }
+        },
+        {
+          "text": {
+            "en": "Grail Ring (monster chest: Wisdom+ ×2)",
+            "pt": "Grail Ring (baú de monstros: Wisdom+ ×2)"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Nebel Valley treasure chests (3)",
+        "pt": "Baús de Nebel Valley (3)"
+      },
+      "location": {
+        "en": "Nebel Valley",
+        "pt": "Nebel Valley"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Many enemies freeze: wear Flame Zippos. Picking up a Bear Claw early skips a fun line in a later quest.",
+        "pt": "Muitos inimigos congelam: use Flame Zippos. Pegar uma Bear Claw cedo pula uma fala divertida de uma quest futura."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Teara Balm",
+            "pt": "Teara Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Flame Zippo",
+            "pt": "Flame Zippo"
+          }
+        },
+        {
+          "text": {
+            "en": "Thelas Balm ×2",
+            "pt": "Thelas Balm ×2"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "New Ansel Path treasure chests (2)",
+        "pt": "Baús de New Ansel Path (2)"
+      },
+      "location": {
+        "en": "New Ansel Path",
+        "pt": "New Ansel Path"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Evasive enemies: Hit quartz on the field leader helps.",
+        "pt": "Inimigos evasivos: quartzo Hit no líder de campo ajuda."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cool Necklace",
+            "pt": "Cool Necklace"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Magic ×2",
+            "pt": "Droplet of Magic ×2"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Amberl Tower treasure chests (8)",
+        "pt": "Baús de Amberl Tower (8)"
+      },
+      "location": {
+        "en": "Amberl Tower",
+        "pt": "Amberl Tower"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Both monster chests hold Ground Trappers that explode on defeat; they are very weak to wind (Aero Storm).",
+        "pt": "Os dois baús de monstros têm Ground Trappers que explodem ao serem derrotados; eles são muito fracos contra vento (Aero Storm)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "2F — Topaz Guard",
+            "pt": "2F — Topaz Guard"
+          }
+        },
+        {
+          "text": {
+            "en": "2F — Droplet of Defense ×2",
+            "pt": "2F — Droplet of Defense ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — All Sepith ×100",
+            "pt": "4F — All Sepith ×100"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — Yellow Sphere (monster chest: Ground Trapper ×3)",
+            "pt": "4F — Yellow Sphere (baú de monstros: Ground Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — EP Charge II",
+            "pt": "4F — EP Charge II"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — Chain Mail (monster chest: Ground Trapper ×3)",
+            "pt": "4F — Chain Mail (baú de monstros: Ground Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Droplet of Spirit ×2",
+            "pt": "5F — Droplet of Spirit ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Blind",
+            "pt": "5F — Blind"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-15",
+      "type": "collectible",
+      "name": {
+        "en": "Eisen Road treasure chests (2)",
+        "pt": "Baús de Eisen Road (2)"
+      },
+      "location": {
+        "en": "Eisen Road",
+        "pt": "Eisen Road"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Limera reflect arts and call Hresvelgr; both drop the Monster Tenders for Culinary Collection.",
+        "pt": "Limeras refletem arts e chamam Hresvelgr; os dois deixam cair os Monster Tenders da Culinary Collection."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "EP Charge II",
+            "pt": "EP Charge II"
+          }
+        },
+        {
+          "text": {
+            "en": "Glam Choker",
+            "pt": "Glam Choker"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-16",
+      "type": "collectible",
+      "name": {
+        "en": "Abandoned Mine treasure chests (2)",
+        "pt": "Baús de Abandoned Mine (2)"
+      },
+      "location": {
+        "en": "Abandoned Mine",
+        "pt": "Abandoned Mine"
+      },
+      "availableUntil": "fc-ch1-cp-04",
+      "hint": {
+        "en": "One-time visit. Take the right path for both chests before heading toward the story event.",
+        "pt": "Visita única. Pegue o caminho da direita para os dois baús antes de ir ao evento da história."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Teara Balm",
+            "pt": "Teara Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×100",
+            "pt": "All Sepith ×100"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch1-co-17",
+      "type": "collectible",
+      "name": {
+        "en": "Sky Pirate Stronghold treasure chests (10)",
+        "pt": "Baús de Sky Pirate Stronghold (10)"
+      },
+      "location": {
+        "en": "Sky Pirate Stronghold",
+        "pt": "Sky Pirate Stronghold"
+      },
+      "availableUntil": "fc-ch1-cp-06",
+      "hint": {
+        "en": "One-time dungeon. The last chest holds the Jeweled Ring for the Ring Robbery quest, and the vacuum cleaner on the second floor starts a hidden quest.",
+        "pt": "Dungeon de visita única. O último baú tem o Jeweled Ring da quest Ring Robbery, e o aspirador de pó do segundo andar começa uma quest escondida."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "B2F — Teara Balm",
+            "pt": "B2F — Teara Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "B2F — EP Charge II",
+            "pt": "B2F — EP Charge II"
+          }
+        },
+        {
+          "text": {
+            "en": "B2F — Scorpion",
+            "pt": "B2F — Scorpion"
+          }
+        },
+        {
+          "text": {
+            "en": "B2F — Thelas Balm ×2",
+            "pt": "B2F — Thelas Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "B2F — Bear Assault",
+            "pt": "B2F — Bear Assault"
+          }
+        },
+        {
+          "text": {
+            "en": "B3F — Droplet of Life ×2",
+            "pt": "B3F — Droplet of Life ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "B3F — U-Material",
+            "pt": "B3F — U-Material"
+          }
+        },
+        {
+          "text": {
+            "en": "B3F — Chain Mail+",
+            "pt": "B3F — Chain Mail+"
+          }
+        },
+        {
+          "text": {
+            "en": "B3F — Strega R+",
+            "pt": "B3F — Strega R+"
+          }
+        },
+        {
+          "text": {
+            "en": "B4F — Jeweled Ring",
+            "pt": "B4F — Jeweled Ring"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "fc-ch1-bs-01",
+      "name": {
+        "en": "Fate Spinner"
+      },
+      "location": {
+        "en": "Ravennue Trail"
+      },
+      "strategy": {
+        "en": "Its Fate Saber can K.O. instantly: wear Deathblow protection or keep revives ready. It is slow, so delay and Overdrive can lock it down.",
+        "pt": "O Fate Saber pode derrubar na hora: use proteção contra Deathblow ou deixe itens de reviver prontos. Ele é lento, então atraso e Overdrive podem travá-lo."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+      ],
+      "relatedItem": "fc-ch1-q-02"
+    },
+    {
+      "id": "fc-ch1-bs-02",
+      "name": {
+        "en": "King Scorpion+"
+      },
+      "location": {
+        "en": "East Bose Highway"
+      },
+      "strategy": {
+        "en": "Easy: poisonous scorpions and more of them over time.",
+        "pt": "Fácil: escorpiões venenosos, e mais deles com o tempo."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "relatedItem": "fc-ch1-q-06"
+    },
+    {
+      "id": "fc-ch1-bs-03",
+      "name": {
+        "en": "Master Cryon"
+      },
+      "location": {
+        "en": "Nebel Valley"
+      },
+      "strategy": {
+        "en": "Kill the Boiled Eggers from range (they explode), wear Flame Zippos against Diamond Dust's Freeze, and dispel its Rage near the end.",
+        "pt": "Derrube os Boiled Eggers à distância (eles explodem), use Flame Zippos contra o Freeze do Diamond Dust e remova o Rage dele perto do fim."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "relatedItem": "fc-ch1-q-07"
+    },
+    {
+      "id": "fc-ch1-bs-04",
+      "name": {
+        "en": "Thunder Quake"
+      },
+      "location": {
+        "en": "West Bose Highway"
+      },
+      "strategy": {
+        "en": "Fast and tanky. Spread out against its area attacks, keep Earth Guard up, protect against Mute, Seal and Blind, and Sever its Rage.",
+        "pt": "Rápido e resistente. Espalhe a equipe contra os ataques em área, mantenha o Earth Guard, se proteja de Mute, Seal e Blind e use o Sever no Rage."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ],
+      "relatedItem": "fc-ch1-q-08"
+    },
+    {
+      "id": "fc-ch1-bs-05",
+      "name": {
+        "en": "Kyle and the sky pirates",
+        "pt": "Kyle e os piratas do céu"
+      },
+      "location": {
+        "en": "Abandoned Mine"
+      },
+      "strategy": {
+        "en": "Grenades hit in small areas: spread out and cast Earth Guard. Clear the three pirates first; Kyle is tanky and can Burn or Blind.",
+        "pt": "As granadas acertam pequenas áreas: espalhe a equipe e use Earth Guard. Derrube os três piratas primeiro; o Kyle é resistente e pode causar Burn ou Blind."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Haken Gate"
+      ]
+    },
+    {
+      "id": "fc-ch1-bs-06",
+      "name": {
+        "en": "Big the Yeti"
+      },
+      "location": {
+        "en": "Nebel Valley"
+      },
+      "strategy": {
+        "en": "Wear Flame Zippos against its Ice Breath and dispel its Rage with Sever or Anti-Sept. Sylphen Wing helps.",
+        "pt": "Use Flame Zippos contra o Ice Breath e remova o Rage com Sever ou Anti-Sept. Sylphen Wing ajuda."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "relatedItem": "fc-ch1-q-09"
+    },
+    {
+      "id": "fc-ch1-bs-07",
+      "name": {
+        "en": "Diamond Turtle"
+      },
+      "location": {
+        "en": "New Ansel Path"
+      },
+      "strategy": {
+        "en": "Very high physical defense: use arts and magic crafts, and step out of the red circles. At low HP it reflects one art.",
+        "pt": "Defesa física altíssima: use arts e crafts mágicos e saia dos círculos vermelhos. Com pouco HP, reflete uma art."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ],
+      "relatedItem": "fc-ch1-q-10"
+    },
+    {
+      "id": "fc-ch1-bs-08",
+      "name": {
+        "en": "The Capua family",
+        "pt": "A família Capua"
+      },
+      "location": {
+        "en": "Sky Pirate Stronghold"
+      },
+      "strategy": {
+        "en": "Harder than the Prologue boss and you can't go back to town: bring La Tear, Earth Guard and Clock Up EX. Focus one sibling at a time near 33% HP so they don't Rage together, and leave the tanky Don for last.",
+        "pt": "Mais difícil que o chefe do Prólogo e não dá para voltar à cidade: leve La Tear, Earth Guard e Clock Up EX. Foque um irmão por vez perto de 33% do HP para que não entrem em Rage juntos, e deixe o Don, mais resistente, por último."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Valleria Shore"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "fc-ch1-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Sunshine Mille Crepe"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Fullmouth Soup"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Red Tail Soup"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Astonishing Cheese Risotto"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Sweet Castella"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Flowery Jelly"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Beast Steak"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Royal Omelette"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-09",
+      "kind": "standard",
+      "name": {
+        "en": "Cursed Fried Eyeballs"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-10",
+      "kind": "standard",
+      "name": {
+        "en": "Heaven-and-Hell Stew"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-11",
+      "kind": "standard",
+      "name": {
+        "en": "Kasagin Tempura"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-12",
+      "kind": "standard",
+      "name": {
+        "en": "Miso-Simmered Carp"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-13",
+      "kind": "standard",
+      "name": {
+        "en": "Grilled Rockfish Skewer"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-14",
+      "kind": "standard",
+      "name": {
+        "en": "Salmon Meunière"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-15",
+      "kind": "standard",
+      "name": {
+        "en": "Grilled Rainbow Trout"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-16",
+      "kind": "standard",
+      "name": {
+        "en": "Apple Ice Cream"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-17",
+      "kind": "standard",
+      "name": {
+        "en": "Fresh-Squeezed Juice"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-18",
+      "kind": "customized",
+      "name": {
+        "en": "Apple Compote"
+      },
+      "source": {
+        "en": "Have Estelle cook Apple Ice Cream.",
+        "pt": "Peça para a Estelle cozinhar Apple Ice Cream."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch1-re-19",
+      "kind": "customized",
+      "name": {
+        "en": "Fried Salmon"
+      },
+      "source": {
+        "en": "Have Joshua cook Salmon Meunière.",
+        "pt": "Peça para o Joshua cozinhar Salmon Meunière."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    }
+  ]
+}

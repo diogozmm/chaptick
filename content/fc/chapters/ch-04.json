@@ -1,0 +1,1564 @@
+{
+  "id": "fc-ch4",
+  "gameId": "fc",
+  "order": 4,
+  "neutralLabel": {
+    "en": "Final Chapter",
+    "pt": "Capítulo Final"
+  },
+  "checkpoints": [
+    {
+      "id": "fc-ch4-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Requesting the border permit at Sanktheim Gate (no return to Zeiss)",
+        "pt": "Pedir a permissão de fronteira no Sanktheim Gate (sem volta para Zeiss)"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Arriving at the Grancel Bracer Guild",
+        "pt": "Chegar à Bracer Guild de Grancel"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Reading the profiles at the Liberl News Service",
+        "pt": "Ler os perfis no Liberl News Service"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "Sneaking to the cathedral at night",
+        "pt": "Ir escondido até a catedral à noite"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-05",
+      "order": 5,
+      "neutralDescription": {
+        "en": "Talking to the Usher for the Grand Arena final",
+        "pt": "Falar com o Usher para a final da Grand Arena"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-06",
+      "order": 6,
+      "neutralDescription": {
+        "en": "Starting the operation with Elnan (point of no return)",
+        "pt": "Começar a operação com o Elnan (ponto sem volta)"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-07",
+      "order": 7,
+      "neutralDescription": {
+        "en": "Waiting until noon at the North Block sewer door",
+        "pt": "Esperar até o meio-dia na porta do esgoto do North Block"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-08",
+      "order": 8,
+      "neutralDescription": {
+        "en": "The battles in the Royal Keep",
+        "pt": "As batalhas no Royal Keep"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-09",
+      "order": 9,
+      "neutralDescription": {
+        "en": "Opening the giant door on the bottom level of the Sealed Area",
+        "pt": "Abrir a porta gigante no nível mais baixo da Sealed Area"
+      }
+    },
+    {
+      "id": "fc-ch4-cp-10",
+      "order": 10,
+      "neutralDescription": {
+        "en": "Resting on the East Block benches (the ending)",
+        "pt": "Descansar nos bancos do East Block (o final)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "fc-ch4-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Wayside Wallet"
+      },
+      "location": {
+        "en": "Grancel — Anton or Ricky at the Edel Department Store",
+        "pt": "Grancel — Anton ou Ricky na Edel Department Store"
+      },
+      "availableUntil": "fc-ch4-cp-05",
+      "hint": {
+        "en": "5 BP. New in the remake. Talk to Culetti (Sunnybell Inn), Armand or Ellie (South Block) and Private Barranco (Gurune Gate), then bring the wallet back.",
+        "pt": "5 BP. Nova no remake. Fale com o Culetti (Sunnybell Inn), o Armand ou a Ellie (South Block) e o Private Barranco (Gurune Gate), depois devolva a carteira."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Child Custody"
+      },
+      "location": {
+        "en": "Grancel — tourist couple outside the cathedral",
+        "pt": "Grancel — casal de turistas em frente à catedral"
+      },
+      "availableUntil": "fc-ch4-cp-05",
+      "hint": {
+        "en": "5 BP. New in the remake. Check the castle entrance, talk to Grant (East Block), see the scene at the Landing Port and finish at the Fisherman's Guild.",
+        "pt": "5 BP. Nova no remake. Vá à entrada do castelo, fale com o Grant (East Block), veja a cena no Landing Port e termine na Fisherman's Guild."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-q-03",
+      "type": "quest",
+      "name": {
+        "en": "W Block Sewers Monster"
+      },
+      "location": {
+        "en": "Grancel Sewers — W. Block",
+        "pt": "Grancel Sewers — W. Block"
+      },
+      "availableUntil": "fc-ch4-cp-05",
+      "hint": {
+        "en": "8 BP. Use Zin's Taunt to pull the crowd and clear it with wind arts. The same sewers hold Chewy Spare Ribs, the last recipe.",
+        "pt": "8 BP. Use o Taunt do Zin para atrair o grupo e derrube-o com arts de vento. O mesmo esgoto tem as Chewy Spare Ribs, a última receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Myriad Monsters"
+      },
+      "location": {
+        "en": "Grancel — Elnan at the Bracer Guild",
+        "pt": "Grancel — Elnan na Bracer Guild"
+      },
+      "availableUntil": "fc-ch4-cp-05",
+      "hint": {
+        "en": "6 BP. New in the remake. Clear the monsters marked on his map; the boss then appears near the hidden cave. Use area attacks so it can't keep reviving the Millipede Balls.",
+        "pt": "6 BP. Nova no remake. Derrote os monstros marcados no mapa dele; o chefe aparece em seguida perto da caverna escondida. Use ataques em área para ele não ficar revivendo as Millipede Balls."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-q-05",
+      "type": "quest",
+      "name": {
+        "en": "E Block Sewers Monster"
+      },
+      "location": {
+        "en": "Grancel Sewers — E. Block",
+        "pt": "Grancel Sewers — E. Block"
+      },
+      "availableUntil": "fc-ch4-cp-05",
+      "hint": {
+        "en": "8 BP. In the first rooms downstairs. Freeze protection makes it easy; its Pearl Mirror reflects one attack.",
+        "pt": "8 BP. Nas primeiras salas do andar de baixo. Proteção contra Freeze facilita; o Pearl Mirror dele reflete um ataque."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Embassy Emergency"
+      },
+      "location": {
+        "en": "Grancel Castle — lounge",
+        "pt": "Grancel Castle — salão"
+      },
+      "availableUntil": "fc-ch4-cp-10",
+      "hint": {
+        "en": "3 BP. After the final battle: meet Olivier in the castle lounge, read the request at the guild, then return to the lounge and watch the fireworks.",
+        "pt": "3 BP. Depois da batalha final: encontre o Olivier no salão do castelo, leia o pedido na guilda, volte ao salão e veja os fogos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the answer at the Grancel guild",
+        "pt": "BP bônus: a resposta na guilda de Grancel"
+      },
+      "location": {
+        "en": "Grancel — Bracer Guild",
+        "pt": "Grancel — Bracer Guild"
+      },
+      "availableUntil": "fc-ch4-cp-02",
+      "hint": {
+        "en": "+1 BP (Royal Message). Pick the 3rd option: the letter of introduction won't work?",
+        "pt": "+1 BP (Royal Message). Escolha a 3ª opção: a carta de apresentação não vai funcionar?"
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the name at the Liberl News Service",
+        "pt": "BP bônus: o nome no Liberl News Service"
+      },
+      "location": {
+        "en": "Grancel — Liberl News Service",
+        "pt": "Grancel — Liberl News Service"
+      },
+      "availableUntil": "fc-ch4-cp-03",
+      "hint": {
+        "en": "+2 BP (Royal Message). After reading the profiles, pick the 3rd option.",
+        "pt": "+2 BP (Royal Message). Depois de ler os perfis, escolha a 3ª opção."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: reaching the cathedral unseen",
+        "pt": "BP bônus: chegar à catedral sem ser visto"
+      },
+      "location": {
+        "en": "Grancel — at night",
+        "pt": "Grancel — à noite"
+      },
+      "availableUntil": "fc-ch4-cp-04",
+      "hint": {
+        "en": "+5 BP (Royal Message). Reach the cathedral without being caught once. Detour to the landing port first for Carnelia Vol. 10. Save first.",
+        "pt": "+5 BP (Royal Message). Chegue à catedral sem ser pego nenhuma vez. Passe antes no porto para pegar o Carnelia Vol. 10. Salve antes."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-mi-04",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the two answers at the Liberl News Service",
+        "pt": "BP bônus: as duas respostas no Liberl News Service"
+      },
+      "location": {
+        "en": "Grancel — Liberl News Service",
+        "pt": "Grancel — Liberl News Service"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "+4 BP (Hostage Rescue). Upstairs, pick the 2nd option both times.",
+        "pt": "+4 BP (Hostage Rescue). No andar de cima, escolha a 2ª opção nas duas vezes."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Erbe Royal Villa"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-mi-05",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the battles in the Royal Keep",
+        "pt": "BP bônus: as batalhas no Royal Keep"
+      },
+      "location": {
+        "en": "Grancel Castle — Royal Keep",
+        "pt": "Grancel Castle — Royal Keep"
+      },
+      "availableUntil": "fc-ch4-cp-08",
+      "hint": {
+        "en": "+5 BP (Save the Queen): don't defeat the Duke in the first fight (+2; keep area attacks off him and skip Burst), then win the last fight (+3).",
+        "pt": "+5 BP (Save the Queen): não derrote o Duque na primeira luta (+2; mantenha os ataques em área longe dele e não use Burst), depois vença a última luta (+3)."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Erbe Royal Villa"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch4-mi-06",
+      "type": "missable",
+      "name": {
+        "en": "Trade the Carnelia volumes for the ultimate weapons",
+        "pt": "Trocar os volumes de Carnelia pelas armas definitivas"
+      },
+      "location": {
+        "en": "Grancel — Baral at Baral Coffee House",
+        "pt": "Grancel — Baral no Baral Coffee House"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "With all 11 volumes, Baral trades them for Estelle and Joshua's strongest weapons. Missed volumes 8–11 are sold at the Edel Department Store.",
+        "pt": "Com os 11 volumes, o Baral troca pelas armas mais fortes da Estelle e do Joshua. Os volumes 8 a 11 perdidos são vendidos na Edel Department Store."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Erbe Royal Villa"
+      ],
+      "trophies": [
+        "ultimate-weapons"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 8"
+      },
+      "location": {
+        "en": "Air-Letten — Private Otto",
+        "pt": "Air-Letten — Private Otto"
+      },
+      "availableUntil": "fc-ch4-cp-01",
+      "hint": {
+        "en": "At the start of the chapter, before leaving Zeiss.",
+        "pt": "No começo do capítulo, antes de sair de Zeiss."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 9"
+      },
+      "location": {
+        "en": "Gurune Gate — Private Selbourne, upstairs",
+        "pt": "Gurune Gate — Private Selbourne, andar de cima"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "East of Kirsche Avenue.",
+        "pt": "A leste da Kirsche Avenue."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 10"
+      },
+      "location": {
+        "en": "Grancel — Ralph at the landing port",
+        "pt": "Grancel — Ralph no porto"
+      },
+      "availableUntil": "fc-ch4-cp-04",
+      "hint": {
+        "en": "During the night sneak to the cathedral (blue marker).",
+        "pt": "Durante a ida escondida até a catedral à noite (marcador azul)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 11"
+      },
+      "location": {
+        "en": "Grancel — Anton by the Edel Department Store",
+        "pt": "Grancel — Anton perto da Edel Department Store"
+      },
+      "availableUntil": "fc-ch4-cp-05",
+      "hint": {
+        "en": "Talk to him and Marsha each time she walks by; on her third pass, he hands it over.",
+        "pt": "Fale com ele e com a Marsha cada vez que ela passar; na terceira passagem, ele entrega o livro."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 8"
+      },
+      "location": {
+        "en": "Grancel — Edel Department Store, General Goods",
+        "pt": "Grancel — Edel Department Store, General Goods"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "Buy it before the point of no return.",
+        "pt": "Compre antes do ponto sem volta."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 9"
+      },
+      "location": {
+        "en": "Grancel — Edel Department Store, General Goods",
+        "pt": "Grancel — Edel Department Store, General Goods"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "Out on Day 5, before the point of no return.",
+        "pt": "Sai no Dia 5, antes do ponto sem volta."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Erbe Royal Villa"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News - Special Edition"
+      },
+      "location": {
+        "en": "Grancel — Edel Department Store, General Goods",
+        "pt": "Grancel — Edel Department Store, General Goods"
+      },
+      "availableUntil": "fc-ch4-cp-10",
+      "hint": {
+        "en": "After the final battle, before resting on the benches.",
+        "pt": "Depois da batalha final, antes de descansar nos bancos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Grancel (8)",
+        "pt": "Receitas: Grancel (8)"
+      },
+      "location": {
+        "en": "Grancel",
+        "pt": "Grancel"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "Eat each dish once to learn its recipe.",
+        "pt": "Coma cada prato uma vez para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel",
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Gorgeous Crepe — Nonna's Crepe Shop, South Block",
+            "pt": "Gorgeous Crepe — Nonna's Crepe Shop, South Block"
+          }
+        },
+        {
+          "text": {
+            "en": "Concentrated Espresso — Baral Coffee House, West Block",
+            "pt": "Concentrated Espresso — Baral Coffee House, West Block"
+          }
+        },
+        {
+          "text": {
+            "en": "Artisan Rice Curry — Baral Coffee House, West Block",
+            "pt": "Artisan Rice Curry — Baral Coffee House, West Block"
+          }
+        },
+        {
+          "text": {
+            "en": "Mixed Cocktail — Sunnybell Inn, South Block",
+            "pt": "Mixed Cocktail — Sunnybell Inn, South Block"
+          }
+        },
+        {
+          "text": {
+            "en": "Refreshing Pie — Sunnybell Inn, South Block",
+            "pt": "Refreshing Pie — Sunnybell Inn, South Block"
+          }
+        },
+        {
+          "text": {
+            "en": "Hearty Bouillabaisse — Sunnybell Inn, South Block",
+            "pt": "Hearty Bouillabaisse — Sunnybell Inn, South Block"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Ice Cream — Sorbet's Ice Cream Shop, East Block",
+            "pt": "Special Ice Cream — Sorbet's Ice Cream Shop, East Block"
+          }
+        },
+        {
+          "text": {
+            "en": "Chewy Spare Ribs — chest in the W. Block sewers",
+            "pt": "Chewy Spare Ribs — baú no esgoto do W. Block"
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef",
+        "peculiar-chef"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Kirsche Avenue treasure chests (4)",
+        "pt": "Baús de Kirsche Avenue (4)"
+      },
+      "location": {
+        "en": "Kirsche Avenue",
+        "pt": "Kirsche Avenue"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "Gurune Gate, to the east, has Carnelia Vol. 9.",
+        "pt": "O Gurune Gate, a leste, tem o Carnelia Vol. 9."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tearal Balm",
+            "pt": "Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge III",
+            "pt": "EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Elixir of Life",
+            "pt": "Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+ ×2",
+            "pt": "U-Material+ ×2"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Erbe Scenic Route treasure chests (5)",
+        "pt": "Baús de Erbe Scenic Route (5)"
+      },
+      "location": {
+        "en": "Erbe Scenic Route",
+        "pt": "Erbe Scenic Route"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "Easier if you come before the story escort. The hidden cave is behind the bushes at the Sapphirl Monument.",
+        "pt": "Mais fácil se você vier antes da escolta da história. A caverna escondida fica atrás dos arbustos no Sapphirl Monument."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Athelas Balm",
+            "pt": "Athelas Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×200",
+            "pt": "All Sepith ×200"
+          }
+        },
+        {
+          "text": {
+            "en": "Elixir of Strength",
+            "pt": "Elixir of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Cut 3 (monster chest: Crocoshark+, Crocoshark ×3)",
+            "pt": "EP Cut 3 (baú de monstros: Crocoshark+, Crocoshark ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "EP 3 (monster chest: Dinedile+)",
+            "pt": "EP 3 (baú de monstros: Dinedile+)"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Grancel Sewers — W. Block treasure chests (5)",
+        "pt": "Baús de Grancel Sewers — W. Block (5)"
+      },
+      "location": {
+        "en": "Grancel Sewers — W. Block",
+        "pt": "Grancel Sewers — W. Block"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "Includes Chewy Spare Ribs, the last standard recipe.",
+        "pt": "Inclui as Chewy Spare Ribs, a última receita padrão."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Chewy Spare Ribs",
+            "pt": "Chewy Spare Ribs"
+          }
+        },
+        {
+          "text": {
+            "en": "Cestus",
+            "pt": "Cestus"
+          }
+        },
+        {
+          "text": {
+            "en": "Elixir of Magic",
+            "pt": "Elixir of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "Reflector",
+            "pt": "Reflector"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+ ×2",
+            "pt": "U-Material+ ×2"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Grancel Sewers — E. Block treasure chests (4)",
+        "pt": "Baús de Grancel Sewers — E. Block (4)"
+      },
+      "location": {
+        "en": "Grancel Sewers — E. Block",
+        "pt": "Grancel Sewers — E. Block"
+      },
+      "availableUntil": "fc-ch4-cp-06",
+      "hint": {
+        "en": "A switch deeper in opens a shortcut to the W. Block.",
+        "pt": "Um interruptor mais ao fundo abre um atalho para o W. Block."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "All Sepith ×200",
+            "pt": "All Sepith ×200"
+          }
+        },
+        {
+          "text": {
+            "en": "Proxy Puppet L (monster chest: Dark Creepy Sheep+ Dark Creepy Sheep ×6)",
+            "pt": "Proxy Puppet L (baú de monstros: Dark Creepy Sheep+ Dark Creepy Sheep ×6)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hawkeye",
+            "pt": "Hawkeye"
+          }
+        },
+        {
+          "text": {
+            "en": "Elixir of Defense",
+            "pt": "Elixir of Defense"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Grancel Sewers — N. Block treasure chests (4)",
+        "pt": "Baús de Grancel Sewers — N. Block (4)"
+      },
+      "location": {
+        "en": "Grancel Sewers — N. Block",
+        "pt": "Grancel Sewers — N. Block"
+      },
+      "availableUntil": "fc-ch4-cp-07",
+      "hint": {
+        "en": "One-time visit. The monster chest holds the Cloak quartz.",
+        "pt": "Visita única. O baú de monstros tem o quartzo Cloak."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Erbe Royal Villa"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "U-Material+ ×2",
+            "pt": "U-Material+ ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×200",
+            "pt": "All Sepith ×200"
+          }
+        },
+        {
+          "text": {
+            "en": "Cloak (monster chest: Whale Frog ♀+, Whale Frog ♂+ ×2)",
+            "pt": "Cloak (baú de monstros: Whale Frog ♀+, Whale Frog ♂+ ×2)"
+          }
+        },
+        {
+          "text": {
+            "en": "Elixir of Spirit",
+            "pt": "Elixir of Spirit"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Sealed Area — 1st Level treasure chests (11)",
+        "pt": "Baús de Sealed Area — 1º nível (11)"
+      },
+      "location": {
+        "en": "Sealed Area — 1st Level",
+        "pt": "Sealed Area — 1º nível"
+      },
+      "availableUntil": "fc-ch4-cp-09",
+      "hint": {
+        "en": "Many chests are locked behind fights and hold the strongest gear for the rest of the party. Check the minimap legend: the chest icon disappears once a floor is cleared.",
+        "pt": "Muitos baús ficam atrás de lutas e têm o melhor equipamento para o resto da equipe. Veja a legenda do minimapa: o ícone de baú some quando o andar está limpo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tearal Balm",
+            "pt": "Tearal Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Magester (monster chest: Photon Judge+, Broken Piece+ ×2)",
+            "pt": "Magester (baú de monstros: Photon Judge+, Broken Piece+ ×2)"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge III",
+            "pt": "EP Charge III"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm",
+            "pt": "Athelas Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Daedalus Arm (monster chest: Guard Minion+ ×5)",
+            "pt": "Daedalus Arm (baú de monstros: Guard Minion+ ×5)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Guard",
+            "pt": "Royal Guard"
+          }
+        },
+        {
+          "text": {
+            "en": "Tear All Balm",
+            "pt": "Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Nine Tails (monster chest: Doom Type S+ Doom Type D+, Doom Type M+)",
+            "pt": "Nine Tails (baú de monstros: Doom Type S+ Doom Type D+, Doom Type M+)"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×250",
+            "pt": "All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+ ×3",
+            "pt": "U-Material+ ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Berserker (monster chest: Broken Piece+ ×2, Guard Minion+ ×2)",
+            "pt": "Berserker (baú de monstros: Broken Piece+ ×2, Guard Minion+ ×2)"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-15",
+      "type": "collectible",
+      "name": {
+        "en": "Sealed Area — 2nd Level treasure chests (9)",
+        "pt": "Baús de Sealed Area — 2º nível (9)"
+      },
+      "location": {
+        "en": "Sealed Area — 2nd Level",
+        "pt": "Sealed Area — 2º nível"
+      },
+      "availableUntil": "fc-ch4-cp-09",
+      "hint": {
+        "en": "The Berserker chest is reached from this level by an elevator up to a corner of the 1st Level.",
+        "pt": "O baú do Berserker é alcançado a partir deste nível, por um elevador até um canto do 1º nível."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "EP Charge IV",
+            "pt": "EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×250",
+            "pt": "All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "Atlas Gear",
+            "pt": "Atlas Gear"
+          }
+        },
+        {
+          "text": {
+            "en": "Sylphen Boots",
+            "pt": "Sylphen Boots"
+          }
+        },
+        {
+          "text": {
+            "en": "Hauteclaire (monster chest: Photon Judge+, Guard Minion+ ×2)",
+            "pt": "Hauteclaire (baú de monstros: Photon Judge+, Guard Minion+ ×2)"
+          }
+        },
+        {
+          "text": {
+            "en": "Valkyrie Dress",
+            "pt": "Valkyrie Dress"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+ ×3",
+            "pt": "U-Material+ ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm EX",
+            "pt": "Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "Thor's Hammer (monster chest: Broken Piece+, Broken Piece ×3)",
+            "pt": "Thor's Hammer (baú de monstros: Broken Piece+, Broken Piece ×3)"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-16",
+      "type": "collectible",
+      "name": {
+        "en": "Sealed Area — 3rd Level treasure chests (7)",
+        "pt": "Baús de Sealed Area — 3º nível (7)"
+      },
+      "location": {
+        "en": "Sealed Area — 3rd Level",
+        "pt": "Sealed Area — 3º nível"
+      },
+      "availableUntil": "fc-ch4-cp-09",
+      "hint": {
+        "en": "Thor's Hammer on the 2nd Level is reached from here. You should be at 199 of 212 before the elevator down.",
+        "pt": "O Thor's Hammer do 2º nível é alcançado daqui. Você deve estar com 199 de 212 antes do elevador para baixo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "All Sepith ×250",
+            "pt": "All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+ ×3",
+            "pt": "U-Material+ ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Tear All Balm",
+            "pt": "Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Atlas Gear",
+            "pt": "Atlas Gear"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge IV",
+            "pt": "EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm EX",
+            "pt": "Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "Sylphen Boots",
+            "pt": "Sylphen Boots"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch4-co-17",
+      "type": "collectible",
+      "name": {
+        "en": "Sealed Area — 4th Level treasure chests (13)",
+        "pt": "Baús de Sealed Area — 4º nível (13)"
+      },
+      "location": {
+        "en": "Sealed Area — 4th Level",
+        "pt": "Sealed Area — 4º nível"
+      },
+      "availableUntil": "fc-ch4-cp-09",
+      "hint": {
+        "en": "Take the left (east) path first, then the west path down. Opening the last one gives Treasure Hunter if none were missed.",
+        "pt": "Pegue primeiro o caminho da esquerda (leste), depois o oeste descendo. Abrir o último dá o Treasure Hunter se nenhum ficou para trás."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tear All Balm",
+            "pt": "Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge IV",
+            "pt": "EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm EX",
+            "pt": "Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×250",
+            "pt": "All Sepith ×250"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material+ ×3",
+            "pt": "U-Material+ ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Valkyrie Dress (monster chest: Doom Type D+, Broken Piece+ ×2)",
+            "pt": "Valkyrie Dress (baú de monstros: Doom Type D+, Broken Piece+ ×2)"
+          }
+        },
+        {
+          "text": {
+            "en": "Erbe Blades",
+            "pt": "Erbe Blades"
+          }
+        },
+        {
+          "text": {
+            "en": "Tear All Balm",
+            "pt": "Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge IV",
+            "pt": "EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "Arc Rod (monster chest: Gandor+, Doom Type S+, Doom Type M+)",
+            "pt": "Arc Rod (baú de monstros: Gandor+, Doom Type S+, Doom Type M+)"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm EX",
+            "pt": "Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Guard",
+            "pt": "Royal Guard"
+          }
+        },
+        {
+          "text": {
+            "en": "Zeram Capsule",
+            "pt": "Zeram Capsule"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "fc-ch4-bs-01",
+      "name": {
+        "en": "The Ravens",
+        "pt": "Os Ravens"
+      },
+      "location": {
+        "en": "Grand Arena"
+      },
+      "strategy": {
+        "en": "A pushover by now: burst them down with area arts or S-Crafts right after stunning them.",
+        "pt": "Fácil a esta altura: derrube com arts em área ou S-Crafts logo depois de atordoá-los."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel"
+      ]
+    },
+    {
+      "id": "fc-ch4-bs-02",
+      "name": {
+        "en": "Zvryu Dryu"
+      },
+      "location": {
+        "en": "Grancel Sewers — W. Block"
+      },
+      "strategy": {
+        "en": "One of the easiest fights: Zin's Taunt draws everything, and wind arts plus a Full Burst wipe the crowd.",
+        "pt": "Uma das lutas mais fáceis: o Taunt do Zin atrai todos, e arts de vento com um Full Burst limpam o grupo."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "relatedItem": "fc-ch4-q-03"
+    },
+    {
+      "id": "fc-ch4-bs-03",
+      "name": {
+        "en": "The Grancel bracers",
+        "pt": "Os bracers de Grancel"
+      },
+      "location": {
+        "en": "Grand Arena — semi-final",
+        "pt": "Grand Arena — semifinal"
+      },
+      "strategy": {
+        "en": "Have Zin bait them with Taunt (and Sylphen Wing), dispel buffs with Anti-Sept All and burst them when stunned. Kurt can revive the others: don't leave him for last.",
+        "pt": "Faça o Zin atraí-los com Taunt (e Sylphen Wing), remova buffs com Anti-Sept All e ataque com tudo quando atordoados. O Kurt pode reviver os outros: não o deixe por último."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ]
+    },
+    {
+      "id": "fc-ch4-bs-04",
+      "name": {
+        "en": "Hide Spinner"
+      },
+      "location": {
+        "en": "Grancel outskirts",
+        "pt": "Arredores de Grancel"
+      },
+      "strategy": {
+        "en": "It spends its turns reviving and buffing the Millipede Balls: keep up area attacks and Burst.",
+        "pt": "Ele gasta os turnos revivendo e fortalecendo as Millipede Balls: mantenha os ataques em área e o Burst."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "relatedItem": "fc-ch4-q-04"
+    },
+    {
+      "id": "fc-ch4-bs-05",
+      "name": {
+        "en": "Dangle Bone"
+      },
+      "location": {
+        "en": "Grancel Sewers — E. Block",
+        "pt": "Grancel Sewers — E. Block"
+      },
+      "strategy": {
+        "en": "Freeze protection is the key; Pearl Mirror reflects one attack or art, and it calls more Bone Fish.",
+        "pt": "Proteção contra Freeze é o essencial; o Pearl Mirror reflete um ataque ou art, e ele chama mais Bone Fish."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ],
+      "relatedItem": "fc-ch4-q-05"
+    },
+    {
+      "id": "fc-ch4-bs-06",
+      "name": {
+        "en": "The arena final",
+        "pt": "A final da arena"
+      },
+      "location": {
+        "en": "Grand Arena — final",
+        "pt": "Grand Arena — final"
+      },
+      "strategy": {
+        "en": "The commander debuffs and splits into a weak copy (stun or defeat it for the notebook). Bait with Zin, keep buffs up and use area attacks; the soldiers can revive each other with balms.",
+        "pt": "O comandante aplica debuffs e se divide numa cópia fraca (atordoe ou derrote para o caderno). Atraia com o Zin, mantenha os buffs e use ataques em área; os soldados podem se reviver com balms."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Grancel Sewers"
+      ]
+    },
+    {
+      "id": "fc-ch4-bs-07",
+      "name": {
+        "en": "Captain Amalthea"
+      },
+      "location": {
+        "en": "Grancel Castle",
+        "pt": "Grancel Castle"
+      },
+      "strategy": {
+        "en": "She drains EP/CP and inflicts Poison, Seal, Deathblow and Mute. Use Sylphen Wing or Kloe's Weiss Aura and keep Kloe's S-Break as a panic button.",
+        "pt": "Ela drena EP/CP e causa Poison, Seal, Deathblow e Mute. Use Sylphen Wing ou o Weiss Aura da Kloe e guarde o S-Break da Kloe como botão de emergência."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "fc-ch4-bs-08",
+      "name": {
+        "en": "The Duke and his guards",
+        "pt": "O Duque e os guardas"
+      },
+      "location": {
+        "en": "Grancel Castle — Royal Keep",
+        "pt": "Grancel Castle — Royal Keep"
+      },
+      "strategy": {
+        "en": "For the bonus, don't defeat the Duke: lure the soldiers away from him, aim area attacks elsewhere and skip Burst. Recover CP before the last enemy falls: the next fight is very hard.",
+        "pt": "Para o bônus, não derrote o Duque: afaste os soldados dele, mire os ataques em área em outro lugar e não use Burst. Recupere CP antes de o último inimigo cair: a próxima luta é muito difícil."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Erbe Royal Villa"
+      ]
+    },
+    {
+      "id": "fc-ch4-bs-09",
+      "name": {
+        "en": "Captain Amalthea (rematch)",
+        "pt": "Captain Amalthea (revanche)"
+      },
+      "location": {
+        "en": "Sealed Area — 2nd Level",
+        "pt": "Sealed Area — 2º nível"
+      },
+      "strategy": {
+        "en": "Same as before, with two Gandor+ that call minions; your best party handles it.",
+        "pt": "Igual à anterior, com dois Gandor+ que chamam ajudantes; sua melhor equipe resolve."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ]
+    },
+    {
+      "id": "fc-ch4-bs-10",
+      "name": {
+        "en": "The colonel",
+        "pt": "O coronel"
+      },
+      "location": {
+        "en": "Sealed Area — bottom level",
+        "pt": "Sealed Area — nível mais baixo"
+      },
+      "strategy": {
+        "en": "His crafts hit small areas, so spread out; his S-Craft hits one target, so just revive. Heal HP and EP before the last blow: the next fight starts as you end this one.",
+        "pt": "Os crafts dele acertam áreas pequenas, então espalhe a equipe; o S-Craft acerta um alvo só, então basta reviver. Recupere HP e EP antes do golpe final: a próxima luta começa assim que esta termina."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ]
+    },
+    {
+      "id": "fc-ch4-bs-11",
+      "name": {
+        "en": "The final battle",
+        "pt": "A batalha final"
+      },
+      "location": {
+        "en": "Sealed Area — beyond the giant door",
+        "pt": "Sealed Area — além da porta gigante"
+      },
+      "strategy": {
+        "en": "Several phases. Impede the side units' casts and dispel the boss's Rage-like boosts at once. Later, block its single-target nuke with Earth Wall and impede its long area cast; from a third of its HP it stays enraged, so dispel and push through.",
+        "pt": "Várias fases. Interrompa as conjurações das unidades laterais e remova na hora os reforços parecidos com Rage. Depois, bloqueie o ataque forte de alvo único com Earth Wall e interrompa a conjuração longa em área; a partir de um terço do HP ele fica em Rage até o fim, então remova os buffs e insista."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Final Chapter - Final Dungeon"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "fc-ch4-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Gorgeous Crepe"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Concentrated Espresso"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Artisan Rice Curry"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Mixed Cocktail"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Refreshing Pie"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Hearty Bouillabaisse"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Special Ice Cream"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Chewy Spare Ribs"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-09",
+      "kind": "customized",
+      "name": {
+        "en": "Brown Sugar Syrup Parfait"
+      },
+      "source": {
+        "en": "Have Joshua cook Special Ice Cream.",
+        "pt": "Peça para o Joshua cozinhar Special Ice Cream."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch4-re-10",
+      "kind": "customized",
+      "name": {
+        "en": "Hearty Baked Curry Doria"
+      },
+      "source": {
+        "en": "Have Estelle cook Artisan Rice Curry.",
+        "pt": "Peça para a Estelle cozinhar Artisan Rice Curry."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    }
+  ]
+}

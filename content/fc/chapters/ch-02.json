@@ -1,0 +1,1401 @@
+{
+  "id": "fc-ch2",
+  "gameId": "fc",
+  "order": 2,
+  "neutralLabel": {
+    "en": "Chapter 2",
+    "pt": "Capítulo 2"
+  },
+  "checkpoints": [
+    {
+      "id": "fc-ch2-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Reaching the Krone Pass checkpoint (no return to Bose)",
+        "pt": "Chegar ao posto da Krone Pass (sem volta para Bose)"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Arriving in Ruan with Kloe",
+        "pt": "Chegar a Ruan com a Kloe"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Investigating the burnt Mercia Orphanage",
+        "pt": "Investigar o Mercia Orphanage incendiado"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "The fight in the South Block warehouse",
+        "pt": "A luta no depósito do South Block"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-05",
+      "order": 5,
+      "neutralDescription": {
+        "en": "Going to the headmaster's office at Jenis Royal Academy",
+        "pt": "Ir à sala do diretor na Jenis Royal Academy"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-06",
+      "order": 6,
+      "neutralDescription": {
+        "en": "Returning to the headmaster's office on the eve of the festival",
+        "pt": "Voltar à sala do diretor na véspera do festival"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-07",
+      "order": 7,
+      "neutralDescription": {
+        "en": "Guiding Professor Alba at the school festival",
+        "pt": "Guiar o Professor Alba no festival da escola"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-08",
+      "order": 8,
+      "neutralDescription": {
+        "en": "The event at The White Magnolia in Manoria (Agate joins)",
+        "pt": "O evento na The White Magnolia em Manoria (o Agate entra)"
+      }
+    },
+    {
+      "id": "fc-ch2-cp-09",
+      "order": 9,
+      "neutralDescription": {
+        "en": "The last event of Chapter 2",
+        "pt": "O último evento do Capítulo 2"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "fc-ch2-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Ring Robbery"
+      },
+      "location": {
+        "en": "Bose — Lana, southeast corner",
+        "pt": "Bose — Lana, canto sudeste"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "3 BP. Needs the Jeweled Ring from the last chest of the Sky Pirate Stronghold; return it to Lana.",
+        "pt": "3 BP. Precisa do Jeweled Ring do último baú do Sky Pirate Stronghold; devolva à Lana."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-hq-01",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Black Notebook"
+      },
+      "location": {
+        "en": "Haken Gate — underground cells",
+        "pt": "Haken Gate — celas subterrâneas"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "5 BP. Only if you examined the vacuum cleaner in the Sky Pirate Stronghold: bring the notebook to the guards.",
+        "pt": "5 BP. Só se você examinou o aspirador de pó no Sky Pirate Stronghold: leve o caderno aos guardas."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-hq-02",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Lighthouse Labor"
+      },
+      "location": {
+        "en": "Varenne Lighthouse — Vogt",
+        "pt": "Varenne Lighthouse — Vogt"
+      },
+      "availableUntil": "fc-ch2-cp-03",
+      "hint": {
+        "en": "4 BP. Not on the board: talk to Vogt outside the lighthouse and clear the four Red Shumocks inside.",
+        "pt": "4 BP. Não aparece no quadro: fale com o Vogt do lado de fora do farol e derrote os quatro Red Shumocks lá dentro."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Seaside Way Monster"
+      },
+      "location": {
+        "en": "Gull Seaside Way",
+        "pt": "Gull Seaside Way"
+      },
+      "availableUntil": "fc-ch2-cp-02",
+      "hint": {
+        "en": "4 BP. It blocks the road to Ruan, so you can't skip it. Disable the weaker mobs with Chaos Brand first.",
+        "pt": "4 BP. Ele bloqueia a estrada para Ruan, então não dá para pular. Desative os inimigos menores com Chaos Brand primeiro."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Key Keeping"
+      },
+      "location": {
+        "en": "Ruan — Harg at the port",
+        "pt": "Ruan — Harg no porto"
+      },
+      "availableUntil": "fc-ch2-cp-03",
+      "hint": {
+        "en": "2 BP. The key is in the water by the plank bridge east of Aqua Rossa Bar. Check the rods upstairs in the bar, borrow the Progressive Rod from Squaro and fish it out.",
+        "pt": "2 BP. A chave está na água junto à ponte de tábuas a leste do Aqua Rossa Bar. Veja as varas no andar de cima do bar, pegue a Progressive Rod emprestada com o Squaro e pesque a chave."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Aina Cswy Monster"
+      },
+      "location": {
+        "en": "Aina Causeway — outside Sapphirl Tower",
+        "pt": "Aina Causeway — em frente à Sapphirl Tower"
+      },
+      "availableUntil": "fc-ch2-cp-03",
+      "hint": {
+        "en": "4 BP. The crabs reflect physical hits until stunned: use arts and wear Mute protection. Drops Prototype Zero for Prototype Pursuit.",
+        "pt": "4 BP. Os caranguejos refletem golpes físicos até serem atordoados: use arts e proteção contra Mute. Deixa cair o Prototype Zero da Prototype Pursuit."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Prototype Pursuit"
+      },
+      "location": {
+        "en": "Ruan — Karl at Joan Arms & Guards",
+        "pt": "Ruan — Karl na Joan Arms & Guards"
+      },
+      "availableUntil": "fc-ch2-cp-03",
+      "hint": {
+        "en": "3 BP. Hand over Prototype Zero (from the Aina Cswy Monster). Rewards Seal Blade.",
+        "pt": "3 BP. Entregue o Prototype Zero (do Aina Cswy Monster). Dá a Seal Blade."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Maintenance Mail"
+      },
+      "location": {
+        "en": "Ruan — Tobias at Granate's Orbal Factory",
+        "pt": "Ruan — Tobias na Granate's Orbal Factory"
+      },
+      "availableUntil": "fc-ch2-cp-05",
+      "hint": {
+        "en": "4 BP. Short deadline. Take the bag to Vogt at the top of Varenne Lighthouse. Bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore's, Manoria) too for a Work Helmet and a Victory Headband.",
+        "pt": "4 BP. Prazo curto. Leve a bolsa ao Vogt no alto do Varenne Lighthouse. Leve também Azelia Rosè (Primo, cassino) e Salty Anchovies (Fiore's, Manoria) para ganhar um Work Helmet e um Victory Headband."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Map Mystery"
+      },
+      "location": {
+        "en": "Ruan Chapel — Jimmy",
+        "pt": "Capela de Ruan — Jimmy"
+      },
+      "availableUntil": "fc-ch2-cp-05",
+      "hint": {
+        "en": "3 (+2) BP. Short deadline. The treasure is in a barrel on the small beach by Gull Seaside Way's east wall (Skull Dagger + map fragment). The bonus needs Jimmy saved earlier on Gull Seaside Way.",
+        "pt": "3 (+2) BP. Prazo curto. O tesouro está num barril na prainha junto à parede leste da Gull Seaside Way (Skull Dagger + fragmento de mapa). O bônus exige ter salvado o Jimmy antes na Gull Seaside Way."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy",
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-08",
+      "type": "quest",
+      "name": {
+        "en": "Exploration Escort"
+      },
+      "location": {
+        "en": "Manoria Village — Amelia at the north entrance",
+        "pt": "Manoria Village — Amelia na entrada norte"
+      },
+      "availableUntil": "fc-ch2-cp-05",
+      "hint": {
+        "en": "5 BP. Short deadline. Go to the north end of Krone Trail, win the fight, then escort Orvid back to Manoria.",
+        "pt": "5 BP. Prazo curto. Vá ao extremo norte da Krone Trail, vença a luta e escolte o Orvid de volta a Manoria."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-09",
+      "type": "quest",
+      "name": {
+        "en": "Delicate Diplomacy"
+      },
+      "location": {
+        "en": "Air-Letten",
+        "pt": "Air-Letten"
+      },
+      "availableUntil": "fc-ch2-cp-05",
+      "hint": {
+        "en": "3 (+2) BP. Short deadline. Agree on the balcony, then in the cafeteria answer 2nd, either, 1st, 2nd for the bonus.",
+        "pt": "3 (+2) BP. Prazo curto. Aceite na varanda e, na cafeteria, responda 2ª, qualquer uma, 1ª, 2ª para o bônus."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-10",
+      "type": "quest",
+      "name": {
+        "en": "Candelabrum Clues"
+      },
+      "location": {
+        "en": "Ruan — Gilbert at the Mayor's Residence",
+        "pt": "Ruan — Gilbert na residência do prefeito"
+      },
+      "availableUntil": "fc-ch2-cp-05",
+      "hint": {
+        "en": "7 BP. Short deadline. Check the plaque at Ruan Lighthouse, the roulette table upstairs in the casino, the forklift at the port and the crane near the bar, then talk to Harg.",
+        "pt": "7 BP. Prazo curto. Examine a placa do farol de Ruan, a roleta no andar de cima do cassino, a empilhadeira do porto e o guindaste perto do bar, depois fale com o Harg."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-q-11",
+      "type": "quest",
+      "name": {
+        "en": "Seaside Way Monster 2"
+      },
+      "location": {
+        "en": "Gull Seaside Way",
+        "pt": "Gull Seaside Way"
+      },
+      "availableUntil": "fc-ch2-cp-08",
+      "hint": {
+        "en": "5 BP. It blocks the way to Manoria, so you can't skip it. Use arts against Seal and Blind; Knight Ammonites explode when defeated.",
+        "pt": "5 BP. Ele bloqueia o caminho para Manoria, então não dá para pular. Use arts contra Seal e Blind; os Knight Ammonites explodem ao serem derrotados."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "quest-master",
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Save Jimmy on Gull Seaside Way",
+        "pt": "Salvar o Jimmy na Gull Seaside Way"
+      },
+      "location": {
+        "en": "Gull Seaside Way — alcove on the beach",
+        "pt": "Gull Seaside Way — reentrância na praia"
+      },
+      "availableUntil": "fc-ch2-cp-02",
+      "hint": {
+        "en": "A side event on the way to Ruan (three Sharkagators). Saving him unlocks +2 BP in the Map Mystery quest later.",
+        "pt": "Um evento opcional a caminho de Ruan (três Sharkagators). Salvá-lo libera +2 BP na quest Map Mystery depois."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ]
+    },
+    {
+      "id": "fc-ch2-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the questions at the orphanage",
+        "pt": "BP bônus: as perguntas no orfanato"
+      },
+      "location": {
+        "en": "Mercia Orphanage; Manoria Village",
+        "pt": "Mercia Orphanage; Manoria Village"
+      },
+      "availableUntil": "fc-ch2-cp-04",
+      "hint": {
+        "en": "+4 BP (Orphanage Investigation). After examining every clue, pick the 2nd option (someone started the fire?); later at The White Magnolia, pick the 3rd (the thugs?!).",
+        "pt": "+4 BP (Orphanage Investigation). Depois de examinar todas as pistas, escolha a 2ª opção (alguém começou o fogo?); depois, na The White Magnolia, escolha a 3ª (os bandidos?!)."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the festival preparations",
+        "pt": "BP bônus: os preparativos do festival"
+      },
+      "location": {
+        "en": "Jenis Royal Academy",
+        "pt": "Jenis Royal Academy"
+      },
+      "availableUntil": "fc-ch2-cp-06",
+      "hint": {
+        "en": "+5 BP (A Festival Favor), via the blue markers: Logan's three books (+1), Janitor Parkes's three decoration spots (+1) and clearing the old schoolhouse (+3). Pick up its three U-Materials first.",
+        "pt": "+5 BP (A Festival Favor), pelos marcadores azuis: os três livros do Logan (+1), os três lugares de decoração do zelador Parkes (+1) e limpar a escola antiga (+3). Pegue antes os três U-Materials de lá."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "promising-newcomer"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 4"
+      },
+      "location": {
+        "en": "Bose Market — Grocery Minuet",
+        "pt": "Bose Market — Grocery Minuet"
+      },
+      "availableUntil": "fc-ch2-cp-01",
+      "hint": {
+        "en": "Buy it before leaving Bose for good.",
+        "pt": "Compre antes de sair de Bose de vez."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Ruan Economic History 1"
+      },
+      "location": {
+        "en": "Jenis Royal Academy — boys' locker room (clubhouse)",
+        "pt": "Jenis Royal Academy — vestiário masculino (clube)"
+      },
+      "availableUntil": "fc-ch2-cp-06",
+      "hint": {
+        "en": "One of Logan's three books for the festival preparations.",
+        "pt": "Um dos três livros do Logan nos preparativos do festival."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Ruan Economic History 2"
+      },
+      "location": {
+        "en": "Jenis Royal Academy — faculty lounge, main building",
+        "pt": "Jenis Royal Academy — sala dos professores, prédio principal"
+      },
+      "availableUntil": "fc-ch2-cp-06",
+      "hint": {
+        "en": "The book by Ms. Millia.",
+        "pt": "O livro perto da Ms. Millia."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Ruan Economic History 3"
+      },
+      "location": {
+        "en": "Jenis Royal Academy — boys' dorm, 1F southwest room",
+        "pt": "Jenis Royal Academy — dormitório masculino, sala sudoeste do 1F"
+      },
+      "availableUntil": "fc-ch2-cp-06",
+      "hint": {
+        "en": "On the desk.",
+        "pt": "Sobre a escrivaninha."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Carnelia Vol. 5"
+      },
+      "location": {
+        "en": "Ruan — Matilda by the hotel bridge",
+        "pt": "Ruan — Matilda junto à ponte do hotel"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Available after the festival. If missed, O'Neil Duty-Free Shop sells it later.",
+        "pt": "Disponível depois do festival. Se perder, a O'Neil Duty-Free Shop vende depois."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 5"
+      },
+      "location": {
+        "en": "Ruan — O'Neil Duty-Free Shop",
+        "pt": "Ruan — O'Neil Duty-Free Shop"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Buy it before leaving the Ruan region.",
+        "pt": "Compre antes de sair da região de Ruan."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: Ruan region (8)",
+        "pt": "Receitas: região de Ruan (8)"
+      },
+      "location": {
+        "en": "Ruan region",
+        "pt": "região de Ruan"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Eat each dish once to learn its recipe.",
+        "pt": "Coma cada prato uma vez para aprender a receita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village",
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan",
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Morning-Picked Herbal Tea — The White Magnolia, Manoria",
+            "pt": "Morning-Picked Herbal Tea — The White Magnolia, Manoria"
+          }
+        },
+        {
+          "text": {
+            "en": "Stubborn Paella — The White Magnolia, Manoria",
+            "pt": "Stubborn Paella — The White Magnolia, Manoria"
+          }
+        },
+        {
+          "text": {
+            "en": "Azelia Rosè — Lavantar Casino & Bar",
+            "pt": "Azelia Rosè — Lavantar Casino & Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Steamed Roe in Sake — Aqua Rossa Bar",
+            "pt": "Steamed Roe in Sake — Aqua Rossa Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Healthy Rice Porridge — Aqua Rossa Bar",
+            "pt": "Healthy Rice Porridge — Aqua Rossa Bar"
+          }
+        },
+        {
+          "text": {
+            "en": "Blazing Fried Chicken — chest on Sapphirl Tower 5F",
+            "pt": "Blazing Fried Chicken — baú no 5F da Sapphirl Tower"
+          }
+        },
+        {
+          "text": {
+            "en": "Salt-Crusted Small Fish — Air-Letten cafeteria",
+            "pt": "Salt-Crusted Small Fish — cafeteria de Air-Letten"
+          }
+        },
+        {
+          "text": {
+            "en": "Jenis Lunch — Jenis Royal Academy cafeteria",
+            "pt": "Jenis Lunch — cafeteria da Jenis Royal Academy"
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef",
+        "peculiar-chef"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: school festival stalls (5)",
+        "pt": "Receitas: barracas do festival (5)"
+      },
+      "location": {
+        "en": "school festival stalls",
+        "pt": "barracas do festival"
+      },
+      "availableUntil": "fc-ch2-cp-07",
+      "hint": {
+        "en": "The stalls only exist on festival day: buy and eat each dish before moving the story on.",
+        "pt": "As barracas só existem no dia do festival: compre e coma cada prato antes de avançar a história."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Coffee Ice Cream — Frozen Sweets Fleuret",
+            "pt": "Coffee Ice Cream — Frozen Sweets Fleuret"
+          }
+        },
+        {
+          "text": {
+            "en": "Orange Ice Cream — Frozen Sweets Fleuret",
+            "pt": "Orange Ice Cream — Frozen Sweets Fleuret"
+          }
+        },
+        {
+          "text": {
+            "en": "Crunchy Popcorn — Pop Step",
+            "pt": "Crunchy Popcorn — Pop Step"
+          }
+        },
+        {
+          "text": {
+            "en": "Rainbow Jelly Beans — Fortissimo Candies",
+            "pt": "Rainbow Jelly Beans — Fortissimo Candies"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Crepe — Crepe Shop Nagomi",
+            "pt": "Royal Crepe — Crepe Shop Nagomi"
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef",
+        "peculiar-chef"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Krone Trail (Ruan side) treasure chests (3)",
+        "pt": "Baús de Krone Trail (lado de Ruan) (3)"
+      },
+      "location": {
+        "en": "Krone Trail (Ruan side)",
+        "pt": "Krone Trail (lado de Ruan)"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Same monsters as the Bose side, at a higher level.",
+        "pt": "Os mesmos monstros do lado de Bose, em nível mais alto."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Lily Necklace",
+            "pt": "Lily Necklace"
+          }
+        },
+        {
+          "text": {
+            "en": "Athelas Balm",
+            "pt": "Athelas Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "Onyx Guard",
+            "pt": "Onyx Guard"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Manoria Byroad treasure chests (5)",
+        "pt": "Baús de Manoria Byroad (5)"
+      },
+      "location": {
+        "en": "Manoria Byroad",
+        "pt": "Manoria Byroad"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "The monster chest with Military Boots swarms you with Stove Plants: Joshua's Black Fang (level 21) clears them.",
+        "pt": "O baú de monstros com as Military Boots cerca você de Stove Plants: o Black Fang do Joshua (nível 21) resolve."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Droplet of Defense ×3",
+            "pt": "Droplet of Defense ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×125",
+            "pt": "All Sepith ×125"
+          }
+        },
+        {
+          "text": {
+            "en": "EP Charge II ×2",
+            "pt": "EP Charge II ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Military Boots (monster chest: Stove Plant+, Stove Plant ×6)",
+            "pt": "Military Boots (baú de monstros: Stove Plant+, Stove Plant ×6)"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Strength ×3",
+            "pt": "Droplet of Strength ×3"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Gull Seaside Way treasure chests (9)",
+        "pt": "Baús de Gull Seaside Way (9)"
+      },
+      "location": {
+        "en": "Gull Seaside Way",
+        "pt": "Gull Seaside Way"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Shining Poms appear on the beaches. The Skull Dagger barrel by the east wall belongs to the Map Mystery quest.",
+        "pt": "Shining Poms aparecem nas praias. O barril da Skull Dagger junto à parede leste é da quest Map Mystery."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Teara Balm ×2",
+            "pt": "Teara Balm ×2"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Magic ×3",
+            "pt": "Droplet of Magic ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "U-Material ×4",
+            "pt": "U-Material ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "Skull Pendant (monster chest: Sharkagator+, Killer Shumock ×2)",
+            "pt": "Skull Pendant (baú de monstros: Sharkagator+, Killer Shumock ×2)"
+          }
+        },
+        {
+          "text": {
+            "en": "Zeram Powder",
+            "pt": "Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×125",
+            "pt": "All Sepith ×125"
+          }
+        },
+        {
+          "text": {
+            "en": "Break 2",
+            "pt": "Break 2"
+          }
+        },
+        {
+          "text": {
+            "en": "Battle Suit (monster chest: Flying Shrimp+ ×3)",
+            "pt": "Battle Suit (baú de monstros: Flying Shrimp+ ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "Freeze",
+            "pt": "Freeze"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Vista Forest Road treasure chests (4)",
+        "pt": "Baús de Vista Forest Road (4)"
+      },
+      "location": {
+        "en": "Vista Forest Road",
+        "pt": "Vista Forest Road"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "Evasive enemies; one monster chest.",
+        "pt": "Inimigos evasivos; um baú de monstros."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "U-Material ×4",
+            "pt": "U-Material ×4"
+          }
+        },
+        {
+          "text": {
+            "en": "All Sepith ×125",
+            "pt": "All Sepith ×125"
+          }
+        },
+        {
+          "text": {
+            "en": "Scent (monster chest: Gourd Boar+, Mini Gourd Boars+ ×3)",
+            "pt": "Scent (baú de monstros: Gourd Boar+, Mini Gourd Boars+ ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Life ×3",
+            "pt": "Droplet of Life ×3"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Aina Causeway treasure chests (3)",
+        "pt": "Baús de Aina Causeway (3)"
+      },
+      "location": {
+        "en": "Aina Causeway",
+        "pt": "Aina Causeway"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "The hidden cave of the region is to the south, near Air-Letten.",
+        "pt": "A caverna escondida da região fica ao sul, perto de Air-Letten."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "All Sepith ×125",
+            "pt": "All Sepith ×125"
+          }
+        },
+        {
+          "text": {
+            "en": "Droplet of Spirit ×3",
+            "pt": "Droplet of Spirit ×3"
+          }
+        },
+        {
+          "text": {
+            "en": "Golden Guard",
+            "pt": "Golden Guard"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "fc-ch2-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Sapphirl Tower treasure chests (7)",
+        "pt": "Baús de Sapphirl Tower (7)"
+      },
+      "location": {
+        "en": "Sapphirl Tower",
+        "pt": "Sapphirl Tower"
+      },
+      "availableUntil": "fc-ch3-cp-01",
+      "hint": {
+        "en": "The north path from 2F has both monster chests (Aqua Trappers, weak to earth); the south path leads to the rest and the roof. Includes Kloe's Flamberge.",
+        "pt": "O caminho norte a partir do 2F tem os dois baús de monstros (Aqua Trappers, fracos contra terra); o caminho sul leva aos outros e ao terraço. Inclui a Flamberge da Kloe."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "2F — Flamberge (monster chest: Aqua Trapper ×3)",
+            "pt": "2F — Flamberge (baú de monstros: Aqua Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "4F — Evade 2",
+            "pt": "4F — Evade 2"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — EP Cut 2",
+            "pt": "5F — EP Cut 2"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Blue Sphere (monster chest: Aqua Trapper ×3)",
+            "pt": "5F — Blue Sphere (baú de monstros: Aqua Trapper ×3)"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Military Boots",
+            "pt": "5F — Military Boots"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Blazing Fried Chicken",
+            "pt": "5F — Blazing Fried Chicken"
+          }
+        },
+        {
+          "text": {
+            "en": "5F — Battle Suit",
+            "pt": "5F — Battle Suit"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "fc-ch2-bs-01",
+      "name": {
+        "en": "Jabba"
+      },
+      "location": {
+        "en": "Gull Seaside Way"
+      },
+      "strategy": {
+        "en": "Two halves: disable the weaker mobs with Chaos Brand and clear them, then focus the Jabba.",
+        "pt": "Duas metades: desative os inimigos menores com Chaos Brand e derrube-os, depois foque o Jabba."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
+      ],
+      "relatedItem": "fc-ch2-q-02"
+    },
+    {
+      "id": "fc-ch2-bs-02",
+      "name": {
+        "en": "Helm Cancer+"
+      },
+      "location": {
+        "en": "Aina Causeway"
+      },
+      "strategy": {
+        "en": "They reflect physical hits until stunned: use arts, Chaos Brand the small ones and step out of Blue Impact. Wear Mute protection.",
+        "pt": "Eles refletem golpes físicos até serem atordoados: use arts, aplique Chaos Brand nos pequenos e saia do Blue Impact. Use proteção contra Mute."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ],
+      "relatedItem": "fc-ch2-q-04"
+    },
+    {
+      "id": "fc-ch2-bs-03",
+      "name": {
+        "en": "The Ravens",
+        "pt": "Os Ravens"
+      },
+      "location": {
+        "en": "Ruan — South Block warehouse",
+        "pt": "Ruan — depósito do South Block"
+      },
+      "strategy": {
+        "en": "Six foes; the three named ones support and revive the grunts. Joshua's Protect works well here. At low HP they Rage and gain an instant-K.O. attack: Resurgence and Kloe's healing S-Craft are your safety net.",
+        "pt": "Seis inimigos; os três com nome dão suporte e revivem os capangas. O Protect do Joshua funciona bem aqui. Com pouco HP eles entram em Rage e ganham um ataque de KO instantâneo: Resurgence e o S-Craft de cura da Kloe são sua rede de segurança."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Ruan"
+      ]
+    },
+    {
+      "id": "fc-ch2-bs-04",
+      "name": {
+        "en": "Jabba King"
+      },
+      "location": {
+        "en": "Gull Seaside Way"
+      },
+      "strategy": {
+        "en": "Its escorts scale to your level. Kloe's water arts hit hard; arts beat its Seal and Blind, and Knight Ammonites explode when defeated.",
+        "pt": "Os acompanhantes acompanham o seu nível. As arts de água da Kloe batem forte; arts contornam o Seal e o Blind, e os Knight Ammonites explodem ao serem derrotados."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ],
+      "relatedItem": "fc-ch2-q-11"
+    },
+    {
+      "id": "fc-ch2-bs-05",
+      "name": {
+        "en": "Black-clad soldiers",
+        "pt": "Soldados de preto"
+      },
+      "location": {
+        "en": "Varenne Lighthouse — top",
+        "pt": "Varenne Lighthouse — topo"
+      },
+      "strategy": {
+        "en": "Very fast: Clock Up EX helps. The claw soldier's sweep hits hard, so spread out, and don't push both into Rage at once.",
+        "pt": "Muito rápidos: Clock Up EX ajuda. A varrida do soldado com garras bate forte, então espalhe a equipe e não leve os dois ao Rage juntos."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ]
+    },
+    {
+      "id": "fc-ch2-bs-06",
+      "name": {
+        "en": "Fango and Bronco",
+        "pt": "Fango e Bronco"
+      },
+      "location": {
+        "en": "Ruan — Mayor's Residence",
+        "pt": "Ruan — residência do prefeito"
+      },
+      "strategy": {
+        "en": "When one wolf falls, its Death Throes greatly buffs the other: damage both evenly and finish them together, dispelling with Anti-Sept or Sever. Stay out of their fire and ice circles.",
+        "pt": "Quando um lobo cai, o Death Throes dele fortalece muito o outro: distribua o dano e termine os dois juntos, removendo buffs com Anti-Sept ou Sever. Fique fora dos círculos de fogo e gelo."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Chapter 2 - Jenis Royal Academy"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "fc-ch2-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Morning-Picked Herbal Tea"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Stubborn Paella"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Azelia Rosè"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Steamed Roe in Sake"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Healthy Rice Porridge"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Blazing Fried Chicken"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Salt-Crusted Small Fish"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Jenis Lunch"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-09",
+      "kind": "standard",
+      "name": {
+        "en": "Coffee Ice Cream"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-10",
+      "kind": "standard",
+      "name": {
+        "en": "Orange Ice Cream"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-11",
+      "kind": "standard",
+      "name": {
+        "en": "Crunchy Popcorn"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-12",
+      "kind": "standard",
+      "name": {
+        "en": "Rainbow Jelly Beans"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-13",
+      "kind": "standard",
+      "name": {
+        "en": "Royal Crepe"
+      },
+      "source": {
+        "en": "Eat it once; the checklist entry for its region says where to get it.",
+        "pt": "Coma uma vez; a entrada da região no checklist diz onde conseguir."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-14",
+      "kind": "customized",
+      "name": {
+        "en": "Cheesy Chicken Burger"
+      },
+      "source": {
+        "en": "Have Estelle cook Blazing Fried Chicken.",
+        "pt": "Peça para a Estelle cozinhar Blazing Fried Chicken."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "fc-ch2-re-15",
+      "kind": "customized",
+      "name": {
+        "en": "Colorful Fruit Punch"
+      },
+      "source": {
+        "en": "Have Joshua cook Azelia Rosè.",
+        "pt": "Peça para o Joshua cozinhar Azelia Rosè."
+      },
+      "sources": [
+        "guide: Neoseeker FC walkthrough, Recipe List"
+      ]
+    }
+  ]
+}
