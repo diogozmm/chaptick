@@ -203,5 +203,16 @@
     "github": "Reporte no GitHub",
     "or": "ou",
     "email": "por e-mail"
+  },
+  "deadlines": {
+    "eyebrow": "Pontos sem volta",
+    "title": "O que ainda posso perder",
+    "count": "{{count}} item(ns) pendente(s) se perdem se você passar do prazo deles.",
+    "none": "Nada com prazo está pendente. Pode avançar tranquilo.",
+    "next": "Próximo ponto sem volta",
+    "before": "Antes de: {{checkpoint}}",
+    "laterIn": "Algum ponto do {{chapter}}",
+    "from": "Do {{chapter}}",
+    "link": "O que ainda posso perder"
   }
 }

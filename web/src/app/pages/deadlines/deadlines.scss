@@ -1,0 +1,14 @@
+:host { display: grid; gap: 1.25rem; }
+.back { font-size: 0.9rem; justify-self: start; margin: -0.5rem 0 -0.75rem -0.1rem; text-decoration: none; }
+.hero { display: grid; gap: 0.5rem; border-top: 3px solid var(--type-missable); }
+.hero p { margin: 0; }
+
+.group { display: grid; gap: 0.6rem; }
+.group h2 { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 1.1rem; line-height: 1.35; }
+.group h2 > app-icon { flex: none; width: 1.15rem; height: 1.15rem; margin-top: 0.2rem; color: var(--text-muted); }
+.group h2 > span:not(.count) { display: grid; gap: 0.2rem; }
+.group.next h2 > app-icon, .group.next .eyebrow { color: var(--warn-text); }
+.count { margin-left: auto; font: 500 0.875rem/1.6 var(--font-body); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+.items { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+.from { margin: 0 0 0.25rem 0.25rem; font-size: 0.75rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); }

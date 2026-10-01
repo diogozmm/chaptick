@@ -25,6 +25,7 @@
       <div>
         <strong>{{ 'checklist.alertTitle' | transloco }}</strong>
         <p>{{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}</p>
+        <a class="alert-link" [routerLink]="game.link('deadlines')">{{ 'deadlines.link' | transloco }} <app-icon name="chevron-right" /></a>
       </div>
     </aside>
   } @else if (s.total > 0) {

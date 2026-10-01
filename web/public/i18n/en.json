@@ -203,5 +203,16 @@
     "github": "Report it on GitHub",
     "or": "or",
     "email": "by e-mail"
+  },
+  "deadlines": {
+    "eyebrow": "Points of no return",
+    "title": "What can I still miss",
+    "count": "{{count}} pending item(s) will be lost if you move on past their deadline.",
+    "none": "Nothing with a deadline is pending. Safe to move on.",
+    "next": "Next point of no return",
+    "before": "Before: {{checkpoint}}",
+    "laterIn": "Some point in {{chapter}}",
+    "from": "From {{chapter}}",
+    "link": "What can I still miss"
   }
 }

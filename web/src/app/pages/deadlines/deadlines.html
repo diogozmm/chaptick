@@ -1,0 +1,42 @@
+@let l = lang.lang();
+@let here = current();
+@if (here) {
+  <a [routerLink]="game.link('chapters', here.id)" class="link back"><app-icon name="chevron-left" /> {{ here.neutralLabel | localize: l }}</a>
+}
+
+<header class="hero card rise">
+  <p class="eyebrow">{{ 'deadlines.eyebrow' | transloco }}</p>
+  <h1>{{ 'deadlines.title' | transloco }}</h1>
+  @if (ready()) {
+    <p class="muted">{{ (total() ? 'deadlines.count' : 'deadlines.none') | transloco: { count: total() } }}</p>
+  }
+</header>
+
+@for (group of groups(); track group.key; let first = $first) {
+  <section class="group" [class.next]="first">
+    <h2>
+      <app-icon [name]="first ? 'triangle-alert' : 'flag'" />
+      <span>
+        @if (first) {
+          <small class="eyebrow">{{ 'deadlines.next' | transloco }}</small>
+        }
+        @if (group.kind === 'checkpoint') {
+          {{ 'deadlines.before' | transloco: { checkpoint: group.checkpoint.neutralDescription | localize: l } }}
+        } @else {
+          {{ 'deadlines.laterIn' | transloco: { chapter: (chapterLabel(group.chapterOrder) | localize: l) } }}
+        }
+      </span>
+      <span class="count">{{ group.entries.length }}</span>
+    </h2>
+    <ul class="items">
+      @for (entry of group.entries; track entry.item.id) {
+        <li>
+          @if (entry.chapter.id !== here?.id) {
+            <p class="from">{{ 'deadlines.from' | transloco: { chapter: entry.chapter.neutralLabel | localize: l } }}</p>
+          }
+          <app-item-row [chapter]="entry.chapter" [item]="entry.item" />
+        </li>
+      }
+    </ul>
+  </section>
+}
