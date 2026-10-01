@@ -1,0 +1,385 @@
+{
+  "id": "sc-ch7",
+  "gameId": "sc",
+  "order": 7,
+  "neutralLabel": {
+    "en": "Chapter 7",
+    "pt": "Capítulo 7"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch7-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "The boss at the top of the first tower",
+        "pt": "O boss no topo da primeira torre"
+      }
+    },
+    {
+      "id": "sc-ch7-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "The boss at the top of the second tower",
+        "pt": "O boss no topo da segunda torre"
+      }
+    },
+    {
+      "id": "sc-ch7-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "The boss at the top of the third tower",
+        "pt": "O boss no topo da terceira torre"
+      }
+    },
+    {
+      "id": "sc-ch7-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "The boss at the top of the fourth tower (end of Chapter 7)",
+        "pt": "O boss no topo da quarta torre (fim do Capítulo 7)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch7-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 9"
+      },
+      "location": {
+        "en": "Your airship — cafeteria",
+        "pt": "Seu airship — cafeteria"
+      },
+      "availableUntil": "sc-ch7-cp-04",
+      "hint": {
+        "en": "Sold at the cafeteria counter.",
+        "pt": "Vendido no balcão da cafeteria."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: airship cafeteria (3)",
+        "pt": "Receitas: cafeteria do airship (3)"
+      },
+      "location": {
+        "en": "Your airship — cafeteria",
+        "pt": "Seu airship — cafeteria"
+      },
+      "availableUntil": "sc-ch7-cp-04",
+      "hint": {
+        "en": "Seafood Gelatin, Victor's Steak and Platinum Risotto.",
+        "pt": "Seafood Gelatin, Victor's Steak e Platinum Risotto."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 10"
+      },
+      "location": {
+        "en": "Your airship — south deck",
+        "pt": "Seu airship — convés sul"
+      },
+      "availableUntil": "sc-ch7-cp-04",
+      "hint": {
+        "en": "Talk to Antoine after the second tower.",
+        "pt": "Fale com o Antoine depois da segunda torre."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Data crystals: first tower (4)",
+        "pt": "Cristais de dados: primeira torre (4)"
+      },
+      "location": {
+        "en": "Shadow Esmelas Tower — 4th level",
+        "pt": "Shadow Esmelas Tower — 4º nível"
+      },
+      "availableUntil": "sc-ch7-cp-01",
+      "hint": {
+        "en": "One at the red marker, three at the optional terminals around the ring-shaped floor. Hand them to the professor on the airship.",
+        "pt": "Um no marcador vermelho e três nos terminais opcionais ao redor do andar em anel. Entregue ao professor no airship."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Data crystals: second tower (4)",
+        "pt": "Cristais de dados: segunda torre (4)"
+      },
+      "location": {
+        "en": "Shadow Carnelia Tower — 3rd level",
+        "pt": "Shadow Carnelia Tower — 3º nível"
+      },
+      "availableUntil": "sc-ch7-cp-02",
+      "hint": {
+        "en": "All four sit along the circular path on the 3rd level.",
+        "pt": "Os quatro ficam ao longo do caminho circular do 3º nível."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Data crystals: third tower (4)",
+        "pt": "Cristais de dados: terceira torre (4)"
+      },
+      "location": {
+        "en": "Shadow Sapphirl Tower"
+      },
+      "availableUntil": "sc-ch7-cp-03",
+      "hint": {
+        "en": "One terminal on each level from the 2nd to the 5th, after each ambush.",
+        "pt": "Um terminal em cada nível, do 2º ao 5º, depois de cada emboscada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Data crystals: fourth tower (4)",
+        "pt": "Cristais de dados: quarta torre (4)"
+      },
+      "location": {
+        "en": "Shadow Amberl Tower — 5th level",
+        "pt": "Shadow Amberl Tower — 5º nível"
+      },
+      "availableUntil": "sc-ch7-cp-04",
+      "hint": {
+        "en": "Two on the west side early on, two at the terminals you reach at the end of the big loop.",
+        "pt": "Dois no lado oeste logo no início e dois nos terminais que você alcança no fim da grande volta."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Shadow Esmelas Tower treasure chests (~22)",
+        "pt": "Baús da Shadow Esmelas Tower (~22)"
+      },
+      "location": {
+        "en": "Shadow Esmelas Tower"
+      },
+      "availableUntil": "sc-ch7-cp-01",
+      "hint": {
+        "en": "Two teleporters on the 3rd level each lead to a room with five chests. Monster chest on the 3rd level (Photon Judge E+ survives one lethal hit). Some armor is gender-locked.",
+        "pt": "Dois teletransportes no 3º nível levam cada um a uma sala com cinco baús. Baú de monstros no 3º nível (o Photon Judge E+ sobrevive a um golpe letal). Algumas armaduras são exclusivas por gênero."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Shadow Carnelia Tower treasure chests (~35)",
+        "pt": "Baús da Shadow Carnelia Tower (~35)"
+      },
+      "location": {
+        "en": "Shadow Carnelia Tower"
+      },
+      "availableUntil": "sc-ch7-cp-02",
+      "hint": {
+        "en": "Seven right at the start. The monster chest is reached through a teleporter down to the 2nd level. The 5th level is a chain of platforms with chests on every fork.",
+        "pt": "Sete logo no início. O baú de monstros fica depois de um teletransporte que desce ao 2º nível. O 5º nível é uma sequência de plataformas com baús em cada bifurcação."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Shadow Sapphirl Tower treasure chests (~23)",
+        "pt": "Baús da Shadow Sapphirl Tower (~23)"
+      },
+      "location": {
+        "en": "Shadow Sapphirl Tower"
+      },
+      "availableUntil": "sc-ch7-cp-03",
+      "hint": {
+        "en": "Look behind the big teleporter walls on the 5th level. Monster chest on the west side of the 5th level. Blue electricity on the floor causes Mute.",
+        "pt": "Olhe atrás das paredes dos teletransportes grandes no 5º nível. Baú de monstros no lado oeste do 5º nível. A eletricidade azul no chão causa Mute."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Shadow Amberl Tower treasure chests (~30)",
+        "pt": "Baús da Shadow Amberl Tower (~30)"
+      },
+      "location": {
+        "en": "Shadow Amberl Tower"
+      },
+      "availableUntil": "sc-ch7-cp-04",
+      "hint": {
+        "en": "The floors form one big loop of teleporters; activate the healing device on the 5th level for fast travel. The monster chest is in the grid on the 4th level.",
+        "pt": "Os andares formam uma grande volta de teletransportes; ative o dispositivo de cura no 5º nível para a viagem rápida. O baú de monstros fica na grade do 4º nível."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch7-bs-01",
+      "name": {
+        "en": "Bleublanc"
+      },
+      "location": {
+        "en": "Shadow Esmelas Tower — top",
+        "pt": "Shadow Esmelas Tower — topo"
+      },
+      "strategy": {
+        "en": "Two strong earth arts clear his clowns. He fills the field with copies (a wide S-Craft wipes them) and loves ailments, including Pommify and Misfortune: bring debuff-curing crafts or plenty of Curia Balms.",
+        "pt": "Duas arts de terra fortes eliminam os palhaços. Ele enche o campo de cópias (um S-Craft amplo apaga todas) e adora efeitos negativos, inclusive Pommify e Misfortune: leve crafts que curam debuffs ou muitos Curia Balms."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-bs-02",
+      "name": {
+        "en": "Walter"
+      },
+      "location": {
+        "en": "Shadow Carnelia Tower — top",
+        "pt": "Shadow Carnelia Tower — topo"
+      },
+      "strategy": {
+        "en": "Comes with three Steel Cougars and survives one lethal hit. Shields and Earth Guard matter: one of his attacks breaks through a shield and nearly kills. Ends Rage Boost with an area S-Break.",
+        "pt": "Vem com três Steel Cougars e sobrevive a um golpe letal. Escudos e Earth Guard importam: um dos ataques dele atravessa o escudo e quase mata. Termina o Rage Boost com um S-Break em área."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-bs-03",
+      "name": {
+        "en": "Luciola"
+      },
+      "location": {
+        "en": "Shadow Sapphirl Tower — top",
+        "pt": "Shadow Sapphirl Tower — topo"
+      },
+      "strategy": {
+        "en": "Brings back weaker versions of the mist guardians from Chapter 4 (physical-only and arts-only). Bring Sleep protection first, then Burn; her S-Break burns an area.",
+        "pt": "Traz versões mais fracas dos guardiões da névoa do Capítulo 4 (um só apanha de golpes físicos, o outro só de arts). Leve primeiro proteção contra Sleep e depois contra Burn; o S-Break dela queima uma área."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-bs-04",
+      "name": {
+        "en": "The last tower's two-stage fight",
+        "pt": "A luta em duas fases da última torre"
+      },
+      "location": {
+        "en": "Shadow Amberl Tower — roof",
+        "pt": "Shadow Amberl Tower — terraço"
+      },
+      "strategy": {
+        "en": "Bring Deathblow protection (Grail Locket, Blue Sphere+, Skull Pendant+). Use Earth Wall or Gaia Shield, since Earth Guard does little against the second phase, a giant machine that reflects attacks during its boost.",
+        "pt": "Leve proteção contra Deathblow (Grail Locket, Blue Sphere+, Skull Pendant+). Use Earth Wall ou Gaia Shield, porque o Earth Guard pouco adianta contra a segunda fase, uma máquina gigante que reflete ataques durante o reforço."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch7-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Seafood Gelatin"
+      },
+      "source": {
+        "en": "Airship cafeteria",
+        "pt": "Cafeteria do airship"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Victor's Steak"
+      },
+      "source": {
+        "en": "Airship cafeteria",
+        "pt": "Cafeteria do airship"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    },
+    {
+      "id": "sc-ch7-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Platinum Risotto"
+      },
+      "source": {
+        "en": "Airship cafeteria",
+        "pt": "Cafeteria do airship"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+      ]
+    }
+  ]
+}

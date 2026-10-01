@@ -17,7 +17,7 @@
     },
     {
       "id": "sc-ch3-cp-02",
-      "order": 2,
+      "order": 3,
       "neutralDescription": {
         "en": "Finishing the round of visits in the capital (the time of day changes)",
         "pt": "Terminar a rodada de visitas na capital (o horário do dia muda)"
@@ -25,10 +25,26 @@
     },
     {
       "id": "sc-ch3-cp-03",
-      "order": 3,
+      "order": 5,
       "neutralDescription": {
         "en": "Boarding the airliner at the end of Chapter 3",
         "pt": "Embarcar no airliner no fim do Capítulo 3"
+      }
+    },
+    {
+      "id": "sc-ch3-cp-04",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Entering Erbe Royal Villa (the road back is closed for a while)",
+        "pt": "Entrar na Erbe Royal Villa (o caminho de volta fica fechado por um tempo)"
+      }
+    },
+    {
+      "id": "sc-ch3-cp-05",
+      "order": 4,
+      "neutralDescription": {
+        "en": "Triggering the event near the landing port during the search in the capital",
+        "pt": "Ativar o evento perto do porto de airships durante a busca na capital"
       }
     }
   ],
@@ -62,14 +78,15 @@
         "en": "Grancel Sewers — W. Block, far end",
         "pt": "Grancel Sewers — W. Block, no fim"
       },
-      "availableUntil": "sc-ch3-cp-03",
+      "availableUntil": "sc-ch3-cp-05",
       "hint": {
-        "en": "+4 BP. Trees that cripple stats and heal from damage: shields and debuff immunity; fire arts on the small ones first.",
-        "pt": "+4 BP. Árvores que derrubam atributos e se curam causando dano: escudos e imunidade a debuffs; arts de fogo nas menores primeiro."
+        "en": "+4 BP. Trees that cripple stats and heal from damage: shields and debuff immunity; fire arts on the small ones first. Its deadline shortens mid-chapter, so finish it before advancing the search in the capital.",
+        "pt": "+4 BP. Árvores que derrubam atributos e se curam causando dano: escudos e imunidade a debuffs; arts de fogo nas menores primeiro. O prazo encurta no meio do capítulo, então termine antes de avançar a busca na capital."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel"
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Grancel",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 3 - Day 2"
       ]
     },
     {
@@ -82,7 +99,7 @@
         "en": "Erbe Scenic Route — middle intersection",
         "pt": "Erbe Scenic Route — cruzamento central"
       },
-      "availableUntil": "sc-ch3-cp-03",
+      "availableUntil": "sc-ch3-cp-04",
       "hint": {
         "en": "+4 BP. Blocks the way to the villa. Straightforward: buff up and burst when stunned.",
         "pt": "+4 BP. Bloqueia o caminho para a mansão. Direto ao ponto: faça buffs e ataque forte quando atordoar."
@@ -122,14 +139,15 @@
         "en": "Grancel Sewers — E. and N. Blocks",
         "pt": "Grancel Sewers — E. e N. Blocks"
       },
-      "availableUntil": "sc-ch3-cp-03",
+      "availableUntil": "sc-ch3-cp-05",
       "hint": {
-        "en": "+4 BP. The North Block entrance is a breakable wall at the end of the East Block.",
-        "pt": "+4 BP. A entrada do North Block é uma parede quebrável no fim do East Block."
+        "en": "+4 BP. The North Block entrance is a breakable wall at the end of the East Block. Medium deadline: do it before advancing the search in the capital.",
+        "pt": "+4 BP. A entrada do North Block é uma parede quebrável no fim do East Block. Prazo médio: faça antes de avançar a busca na capital."
       },
       "spoilerLevel": 1,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa"
+        "guide: Neoseeker SC walkthrough, Chapter 3 - Erbe Royal Villa",
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 3 - Day 2"
       ]
     },
     {
@@ -462,7 +480,7 @@
       "location": {
         "en": "Erbe Scenic Route"
       },
-      "availableUntil": "sc-ch3-cp-03",
+      "availableUntil": "sc-ch3-cp-04",
       "hint": {
         "en": "Monster chest near the Earth Monument: burst the bone fish before they rage. A hidden sepith cave sits behind bushes at the Water Monument.",
         "pt": "Baú de monstros perto do Earth Monument: derrube os peixes-esqueleto antes que entrem em fúria. Uma caverna de sepith escondida fica atrás de arbustos no Water Monument."

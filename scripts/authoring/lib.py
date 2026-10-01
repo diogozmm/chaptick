@@ -13,6 +13,10 @@ def src(page):
     return f'guide: Neoseeker SC walkthrough, {page}'
 
 
+def gf(page):
+    return f'guide: GameFAQs SC walkthrough by shockinblue, {page}'
+
+
 class Chapter:
     def __init__(self, order, en, pt):
         self.order = order
@@ -54,10 +58,12 @@ class Chapter:
         self.data.setdefault('recipes', []).append(
             {'id': self._next('re'), 'kind': kind, 'name': t(name), 'source': source, 'sources': list(sources)})
 
-    def cp(self, en, pt):
+    def cp(self, en, pt, order=None):
+        """Ids follow creation order (never reuse them); `order` places a checkpoint added later
+        between existing ones on the story timeline."""
         n = len(self.data['checkpoints']) + 1
         cid = f'{self.id}-cp-{n:02d}'
-        self.data['checkpoints'].append({'id': cid, 'order': n, 'neutralDescription': t(en, pt)})
+        self.data['checkpoints'].append({'id': cid, 'order': order or n, 'neutralDescription': t(en, pt)})
         return cid
 
     def item(self, type_, name, location, until, hint, level=0, sources=()):

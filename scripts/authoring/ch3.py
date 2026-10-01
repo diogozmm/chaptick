@@ -1,28 +1,35 @@
 # Chapter 3 — rewritten in our own words from the Neoseeker walkthrough (facts only).
 # Once published, never reorder or remove items: ids are derived from order.
-from lib import Chapter, src, t
+from lib import Chapter, gf, src, t
 
 ZEISS = src('Chapter 3 - Zeiss')
 GRANCEL = src('Chapter 3 - Grancel')
 VILLA = src('Chapter 3 - Erbe Royal Villa')
 GURUNE = src('Chapter 3 - Gurune Gate')
+GF1 = gf('Chapter 3 - Day 1')
+GF2 = gf('Chapter 3 - Day 2')
 
 c = Chapter(3, 'Chapter 3', 'Capítulo 3')
-LEAVE_ZEISS = c.cp('Boarding the airliner from Zeiss to Grancel', 'Embarcar no airliner de Zeiss para Grancel')
+LEAVE_ZEISS = c.cp('Boarding the airliner from Zeiss to Grancel', 'Embarcar no airliner de Zeiss para Grancel', order=1)
 VISITS = c.cp('Finishing the round of visits in the capital (the time of day changes)',
-              'Terminar a rodada de visitas na capital (o horário do dia muda)')
-END = c.cp('Boarding the airliner at the end of Chapter 3', 'Embarcar no airliner no fim do Capítulo 3')
+              'Terminar a rodada de visitas na capital (o horário do dia muda)', order=3)
+END = c.cp('Boarding the airliner at the end of Chapter 3', 'Embarcar no airliner no fim do Capítulo 3', order=5)
+# Added after cross-checking with GameFAQs; ids keep creation order, `order` places them in time.
+VILLA_IN = c.cp('Entering Erbe Royal Villa (the road back is closed for a while)',
+                'Entrar na Erbe Royal Villa (o caminho de volta fica fechado por um tempo)', order=2)
+SEARCH = c.cp('Triggering the event near the landing port during the search in the capital',
+              'Ativar o evento perto do porto de airships durante a busca na capital', order=4)
 
 # Quests
 c.item('quest', t('Guest Gone Missing'), t('Zeiss — Zahnrad Hotel'), LEAVE_ZEISS,
        t('+5 BP. Leads into Kaldia Limestone Cave, off Kaldia Tunnel. Bring Confuse and Seal protection, and keep the person you escort alive in the final fight.',
          '+5 BP. Leva à Kaldia Limestone Cave, a partir do Kaldia Tunnel. Leve proteção contra Confuse e Seal, e mantenha vivo quem você escolta na luta final.'),
        0, [ZEISS])
-c.item('quest', t('Sewer Monster'), t('Grancel Sewers — W. Block, far end', 'Grancel Sewers — W. Block, no fim'), END,
-       t('+4 BP. Trees that cripple stats and heal from damage: shields and debuff immunity; fire arts on the small ones first.',
-         '+4 BP. Árvores que derrubam atributos e se curam causando dano: escudos e imunidade a debuffs; arts de fogo nas menores primeiro.'),
-       0, [GRANCEL])
-c.item('quest', t('Erbe Scenic Route Monster'), t('Erbe Scenic Route — middle intersection', 'Erbe Scenic Route — cruzamento central'), END,
+c.item('quest', t('Sewer Monster'), t('Grancel Sewers — W. Block, far end', 'Grancel Sewers — W. Block, no fim'), SEARCH,
+       t('+4 BP. Trees that cripple stats and heal from damage: shields and debuff immunity; fire arts on the small ones first. Its deadline shortens mid-chapter, so finish it before advancing the search in the capital.',
+         '+4 BP. Árvores que derrubam atributos e se curam causando dano: escudos e imunidade a debuffs; arts de fogo nas menores primeiro. O prazo encurta no meio do capítulo, então termine antes de avançar a busca na capital.'),
+       0, [GRANCEL, GF2])
+c.item('quest', t('Erbe Scenic Route Monster'), t('Erbe Scenic Route — middle intersection', 'Erbe Scenic Route — cruzamento central'), VILLA_IN,
        t('+4 BP. Blocks the way to the villa. Straightforward: buff up and burst when stunned.',
          '+4 BP. Bloqueia o caminho para a mansão. Direto ao ponto: faça buffs e ataque forte quando atordoar.'),
        0, [GRANCEL])
@@ -30,10 +37,10 @@ c.item('quest', t('Exhibit Enigma'), t('Grancel — History Museum, 2F', 'Grance
        t("+4 BP. Cards: grandfather clock upstairs in General Morgan's house (next to the cathedral); the South Block fountain; Calvard Embassy, right room, The Doll Knight vol. 15; then the Grand Arena through the southern waiting room. Bring Freeze protection for the fight.",
          '+4 BP. Cartões: relógio de pêndulo no andar de cima da casa do General Morgan (ao lado da catedral); a fonte do South Block; embaixada de Calvard, sala à direita, The Doll Knight vol. 15; por fim, a Grand Arena pela sala de espera sul. Leve proteção contra Freeze para a luta.'),
        1, [VILLA])
-c.item('quest', t('Sewer Monster 2'), t('Grancel Sewers — E. and N. Blocks', 'Grancel Sewers — E. e N. Blocks'), END,
-       t('+4 BP. The North Block entrance is a breakable wall at the end of the East Block.',
-         '+4 BP. A entrada do North Block é uma parede quebrável no fim do East Block.'),
-       1, [VILLA])
+c.item('quest', t('Sewer Monster 2'), t('Grancel Sewers — E. and N. Blocks', 'Grancel Sewers — E. e N. Blocks'), SEARCH,
+       t('+4 BP. The North Block entrance is a breakable wall at the end of the East Block. Medium deadline: do it before advancing the search in the capital.',
+         '+4 BP. A entrada do North Block é uma parede quebrável no fim do East Block. Prazo médio: faça antes de avançar a busca na capital.'),
+       1, [VILLA, GF2])
 c.item('quest', t('Piscine Pilferer'), t('Grancel Castle — entrance hall', 'Grancel Castle — saguão de entrada'), END,
        t('+4 BP. Needs Kloe in the party; talk to Hilda. You stay in the sewers until it ends, so prepare first.',
          '+4 BP. Precisa da Kloe na equipe; fale com a Hilda. Você fica nos esgotos até terminar, então se prepare antes.'),
@@ -89,7 +96,7 @@ c.item('collectible', t('Kirsche Avenue treasure chests (4)', 'Baús da Kirsche 
        t('West and east paths. A breakable wall near the Erbe exit opens a water cave.',
          'Caminhos oeste e leste. Uma parede quebrável perto da saída para Erbe abre uma caverna com água.'),
        0, [GRANCEL])
-c.item('collectible', t('Erbe Scenic Route treasure chests (6)', 'Baús da Erbe Scenic Route (6)'), t('Erbe Scenic Route'), END,
+c.item('collectible', t('Erbe Scenic Route treasure chests (6)', 'Baús da Erbe Scenic Route (6)'), t('Erbe Scenic Route'), VILLA_IN,
        t('Monster chest near the Earth Monument: burst the bone fish before they rage. A hidden sepith cave sits behind bushes at the Water Monument.',
          'Baú de monstros perto do Earth Monument: derrube os peixes-esqueleto antes que entrem em fúria. Uma caverna de sepith escondida fica atrás de arbustos no Water Monument.'),
        0, [GRANCEL])

@@ -1,0 +1,358 @@
+{
+  "id": "sc-ch6",
+  "gameId": "sc",
+  "order": 6,
+  "neutralLabel": {
+    "en": "Chapter 6",
+    "pt": "Capítulo 6"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch6-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Choosing to take a breather at The Kingfisher Inn",
+        "pt": "Escolher fazer uma pausa na The Kingfisher Inn"
+      }
+    },
+    {
+      "id": "sc-ch6-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "The final fight inside the research facility",
+        "pt": "A luta final dentro da instalação de pesquisa"
+      }
+    },
+    {
+      "id": "sc-ch6-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 6",
+        "pt": "O último marcador de evento do Capítulo 6"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch6-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Distant Days"
+      },
+      "location": {
+        "en": "Bose — Kirsche Bar"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "+6 BP. Corna gives you an old photo; show it to Lila upstairs in the Mayor's Residence, then to the Mayor.",
+        "pt": "+6 BP. A Corna entrega uma foto antiga; mostre à Lila no andar de cima da residência do prefeito e depois à prefeita."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch6-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Businesswoman's Bodyguard"
+      },
+      "location": {
+        "en": "Bose — Trino's Home",
+        "pt": "Bose — casa do Trino"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "4 +2 BP. Escort Milano from the west exit to Ravennue Village within 10 minutes for the bonus. The timer pauses in scenes and Command Battles, but each turn costs 5 seconds; a forced fight waits on Ravennue Trail (the leader is weak to water).",
+        "pt": "4 +2 BP. Escolte a Milano da saída oeste até Ravennue Village em até 10 minutos para o bônus. O cronômetro pausa em cenas e Command Battles, mas cada turno custa 5 segundos; uma luta obrigatória espera na Ravennue Trail (o líder é fraco contra água)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch6-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Mine Mop Up"
+      },
+      "location": {
+        "en": "Abandoned mine — front gate",
+        "pt": "Mina abandonada — portão da frente"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "Talk to the officers at the gate, then clear every mystery machine inside until the game says they are all defeated. Grab the chest beyond the east exit: there is no way back in afterwards.",
+        "pt": "Fale com os oficiais no portão e depois derrote todas as máquinas misteriosas lá dentro até o jogo avisar que acabaram. Pegue o baú depois da saída leste: depois não dá para voltar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch6-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: win the fight on the deck",
+        "pt": "BP bônus: vencer a luta no convés"
+      },
+      "location": {
+        "en": "Later in the chapter",
+        "pt": "Mais adiante no capítulo"
+      },
+      "availableUntil": "sc-ch6-cp-03",
+      "hint": {
+        "en": "+5 BP. Losing still lets the story go on, so save first. Equip Grail Locket or a Proxy Puppet, keep Earth Guard up, blind them with Grand Stream, and when they start reviving each other finish them with an area art.",
+        "pt": "+5 BP. Perder não impede a história de seguir, então salve antes. Equipe Grail Locket ou um Proxy Puppet, mantenha o Earth Guard, cegue-os com Grand Stream e, quando começarem a se reviver, finalize com uma art em área."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    },
+    {
+      "id": "sc-ch6-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 8"
+      },
+      "location": {
+        "en": "Bose Market — Grocery Minuet"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "The rebuilt market sells it.",
+        "pt": "O mercado reconstruído vende."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch6-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 8"
+      },
+      "location": {
+        "en": "Ravennue Village"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "Talk to Louie.",
+        "pt": "Fale com o Louie."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch6-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 9"
+      },
+      "location": {
+        "en": "Haken Gate"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "Talk to Carlos.",
+        "pt": "Fale com o Carlos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch6-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Fishing rod: Lakelord II",
+        "pt": "Vara de pesca: Lakelord II"
+      },
+      "location": {
+        "en": "Bose — Kuwano's Home",
+        "pt": "Bose — casa do Kuwano"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "Talk to Cecile, find her husband at Valleria Shore, then come back to her.",
+        "pt": "Fale com a Cecile, encontre o marido dela na Valleria Shore e volte a ela."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch6-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Research facility treasure chests (19)",
+        "pt": "Baús da instalação de pesquisa (19)"
+      },
+      "location": {
+        "en": "Research facility",
+        "pt": "Instalação de pesquisa"
+      },
+      "availableUntil": "sc-ch6-cp-02",
+      "hint": {
+        "en": "Several rooms open only with the three card keys you collect along the way, so backtrack once you have all of them (the monster chest needs the last key). Includes Green Cookie (eat it for the recipe) and a second pair of Night-Vision Goggles for the dark room.",
+        "pt": "Várias salas só abrem com os três cartões de acesso que você pega pelo caminho, então volte quando tiver todos (o baú de monstros precisa do último). Inclui Green Cookie (coma para ganhar a receita) e um segundo par de Night-Vision Goggles para a sala escura."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    },
+    {
+      "id": "sc-ch6-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Ship treasure chests (11)",
+        "pt": "Baús da nave (11)"
+      },
+      "location": {
+        "en": "Later in the chapter",
+        "pt": "Mais adiante no capítulo"
+      },
+      "availableUntil": "sc-ch6-cp-03",
+      "hint": {
+        "en": "Includes Spicy Meatballs (eat it for the recipe) and a monster chest on the stern's first level. You cannot come back here.",
+        "pt": "Inclui Spicy Meatballs (coma para ganhar a receita) e um baú de monstros no primeiro nível da popa. Não dá para voltar aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch6-bs-01",
+      "name": {
+        "en": "Hide Spinner"
+      },
+      "location": {
+        "en": "Ravennue Trail"
+      },
+      "strategy": {
+        "en": "Part of the timed escort: blast the seven Millipede Balls with S-Crafts, then finish the leader with water arts. You should still have most of the clock left.",
+        "pt": "Parte da escolta com tempo: destrua as sete Millipede Balls com S-Crafts e finalize o líder com arts de água. Ainda deve sobrar boa parte do tempo."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ],
+      "relatedItem": "sc-ch6-q-02"
+    },
+    {
+      "id": "sc-ch6-bs-02",
+      "name": {
+        "en": "Three duels in the facility",
+        "pt": "Três duelos na instalação"
+      },
+      "location": {
+        "en": "Research facility",
+        "pt": "Instalação de pesquisa"
+      },
+      "strategy": {
+        "en": "Three familiar fighters, one per floor, each with escort machines. All of them survive one lethal hit, so save an S-Break. Bring Sleep and Seal protection for the second, and expect the third to strip your buffs and steal bonuses.",
+        "pt": "Três lutadores conhecidos, um por andar, cada um com máquinas de escolta. Todos sobrevivem a um golpe letal, então guarde um S-Break. Leve proteção contra Sleep e Seal para o segundo, e espere que o terceiro remova seus buffs e roube bônus."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    },
+    {
+      "id": "sc-ch6-bs-03",
+      "name": {
+        "en": "Doppelrunner ×3"
+      },
+      "location": {
+        "en": "Research facility — top floor",
+        "pt": "Instalação de pesquisa — último andar"
+      },
+      "strategy": {
+        "en": "They spread out, so bring wide area arts. Each Rage Boost is followed by an S-Break that hits everyone, poisons and strips buffs: be ready to answer with your own S-Crafts, three times in a row.",
+        "pt": "Eles se espalham, então leve arts de área ampla. Cada Rage Boost vem seguido de um S-Break que atinge todos, envenena e remove buffs: esteja pronto para responder com seus S-Crafts, três vezes seguidas."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    },
+    {
+      "id": "sc-ch6-bs-04",
+      "name": {
+        "en": "Battle on the deck",
+        "pt": "Batalha no convés"
+      },
+      "location": {
+        "en": "Later in the chapter",
+        "pt": "Mais adiante no capítulo"
+      },
+      "strategy": {
+        "en": "See the bonus BP item: blind them with Grand Stream, shield up, and use area arts once they start reviving each other. Their counters still hurt while blinded.",
+        "pt": "Veja o item de BP bônus: cegue-os com Grand Stream, use escudos e arts em área quando começarem a se reviver. Os contra-ataques ainda doem mesmo com eles cegos."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ],
+      "relatedItem": "sc-ch6-mi-01"
+    },
+    {
+      "id": "sc-ch6-bs-05",
+      "name": {
+        "en": "Pale Apache"
+      },
+      "location": {
+        "en": "Later in the chapter",
+        "pt": "Mais adiante no capítulo"
+      },
+      "strategy": {
+        "en": "Weak to wind and water. Resist Burn from its grenade, and watch for the charged line cannon that lowers stats.",
+        "pt": "Fraco contra vento e água. Resista ao Burn da granada e fique atento ao canhão em linha carregado, que reduz atributos."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch6-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Green Cookie"
+      },
+      "source": {
+        "en": "Treasure chest in the research facility",
+        "pt": "Baú na instalação de pesquisa"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    },
+    {
+      "id": "sc-ch6-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Spicy Meatballs"
+      },
+      "source": {
+        "en": "Treasure chest later in the chapter",
+        "pt": "Baú mais adiante no capítulo"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
+      ]
+    }
+  ]
+}

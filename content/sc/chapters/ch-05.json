@@ -1,0 +1,822 @@
+{
+  "id": "sc-ch5",
+  "gameId": "sc",
+  "order": 5,
+  "neutralLabel": {
+    "en": "Chapter 5",
+    "pt": "Capítulo 5"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch5-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Boarding the airliner from Rolent to Bose",
+        "pt": "Embarcar no airliner de Rolent para Bose"
+      }
+    },
+    {
+      "id": "sc-ch5-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Reporting to Lugran at the Bose guild after Nebel Valley (the market closes)",
+        "pt": "Falar com o Lugran na guilda de Bose depois do Nebel Valley (o mercado fecha)"
+      }
+    },
+    {
+      "id": "sc-ch5-cp-03",
+      "order": 3,
+      "neutralDescription": {
+        "en": "Choosing to wait for the airship in Bose",
+        "pt": "Escolher esperar o airship em Bose"
+      }
+    },
+    {
+      "id": "sc-ch5-cp-04",
+      "order": 4,
+      "neutralDescription": {
+        "en": "The last event marker of Chapter 5",
+        "pt": "O último marcador de evento do Capítulo 5"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch5-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Recipe Reminiscence"
+      },
+      "location": {
+        "en": "Rolent — Abend Bar kitchen",
+        "pt": "Rolent — cozinha do Abend Bar"
+      },
+      "availableUntil": "sc-ch5-cp-01",
+      "hint": {
+        "en": "+4 BP. Ask Lao at the counter, Bloom on the 2F of the general store and Rhett in the apartment next to the bar; read the recipe book in Rhett's room. Everything can be bought except 2 Monster Bone (Dirty Rat, Crop Muncher). Rewards the Spiced Stew recipe.",
+        "pt": "+4 BP. Pergunte ao Lao no balcão, à Bloom no 2F do armazém e ao Rhett no apartamento ao lado do bar; leia o livro de receitas no quarto do Rhett. Tudo pode ser comprado, menos 2 Monster Bone (Dirty Rat, Crop Muncher). A recompensa é a receita Spiced Stew."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Dabbling with Diaset"
+      },
+      "location": {
+        "en": "Rolent — top of the clock tower",
+        "pt": "Rolent — topo da torre do relógio"
+      },
+      "availableUntil": "sc-ch5-cp-01",
+      "hint": {
+        "en": "+4 BP. Hand Anton 5 Monster Shell (Russet Beetle), 5 Monster Seed (Lily Mover, Pine Plant), 5 Monster Powder (Garphase, Killer Hornet) and 1 Pearlglass (fish it on Milch Main Road or Elize Highway). Olivier has to step out of the party for a moment.",
+        "pt": "+4 BP. Entregue ao Anton 5 Monster Shell (Russet Beetle), 5 Monster Seed (Lily Mover, Pine Plant), 5 Monster Powder (Garphase, Killer Hornet) e 1 Pearlglass (pesque na Milch Main Road ou na Elize Highway). O Olivier precisa sair da equipe por um momento."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Commission Caper"
+      },
+      "location": {
+        "en": "Rolent — Mine Chief Garton's residence",
+        "pt": "Rolent — residência do Mine Chief Garton"
+      },
+      "availableUntil": "sc-ch5-cp-01",
+      "hint": {
+        "en": "+5 BP. Clues: the chair on the chapel balcony upstairs, the crates on the south side of the Mayor's house, the forge behind the arms shop, then the locked door in Rolent Sewers (fight inside; the document is on the table).",
+        "pt": "+5 BP. Pistas: a cadeira na sacada do andar de cima da capela, as caixas no lado sul da casa do prefeito, a forja atrás da loja de armas e, por fim, a porta trancada no Rolent Sewers (luta lá dentro; o documento está na mesa)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Ambassador's Assignment"
+      },
+      "location": {
+        "en": "Bose — Frieden Hotel, 2F",
+        "pt": "Bose — Frieden Hotel, 2º andar"
+      },
+      "availableUntil": "sc-ch5-cp-03",
+      "hint": {
+        "en": "+5 BP. Clues: the basket of red flowers outside the 2F door of the orbal factory, the desk with an open book on the guild 3F, the crate on the forklift at the landing port, and the book on the altar upstairs in the chapel (side door).",
+        "pt": "+5 BP. Pistas: a cesta de flores vermelhas do lado de fora da porta do 2F da fábrica orbal, a mesa com um livro aberto no 3F da guilda, a caixa na empilhadeira do porto e o livro no altar do andar de cima da capela (porta lateral)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Delicacy Delivery"
+      },
+      "location": {
+        "en": "Bose — Anterose Restaurant"
+      },
+      "availableUntil": "sc-ch5-cp-02",
+      "hint": {
+        "en": "4 +2 BP. Deliver 10 each of Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat and Roe. Orvid, outside the market's south entrance, chips in 7 of each, so you only need 3 more of each; you still get the bonus.",
+        "pt": "4 +2 BP. Entregue 10 de cada: Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat e Roe. O Orvid, do lado de fora da entrada sul do mercado, contribui com 7 de cada, então só faltam 3 de cada; o bônus continua valendo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Damsel Disappearance"
+      },
+      "location": {
+        "en": "Bose — Anterose Restaurant"
+      },
+      "availableUntil": "sc-ch5-cp-02",
+      "hint": {
+        "en": "4 +1 BP. Leads to Krone Pass. When talking to the girl there, pick the option that calls her a coward.",
+        "pt": "4 +1 BP. Leva à Krone Pass. Ao falar com a garota lá, escolha a opção que a chama de covarde."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: report after the valley",
+        "pt": "BP bônus: relato depois do vale"
+      },
+      "location": {
+        "en": "Nebel Valley"
+      },
+      "availableUntil": "sc-ch5-cp-02",
+      "hint": {
+        "en": "+2 BP. After the last required monster request, pick the option saying the monsters were agitated.",
+        "pt": "+2 BP. Depois do último pedido obrigatório de monstro, escolha a opção que diz que os monstros estavam agitados."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Bonus BP: the plan at the guild",
+        "pt": "BP bônus: o plano na guilda"
+      },
+      "location": {
+        "en": "Bose — Bracer Guild",
+        "pt": "Bose — Bracer Guild"
+      },
+      "availableUntil": "sc-ch5-cp-02",
+      "hint": {
+        "en": "+3 BP. In the scene after talking to Lugran, choose to make a plan first.",
+        "pt": "+3 BP. Na cena depois de falar com o Lugran, escolha fazer um plano primeiro."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Recipe: Herbal Squeeze",
+        "pt": "Receita: Herbal Squeeze"
+      },
+      "location": {
+        "en": "Perzel Farm"
+      },
+      "availableUntil": "sc-ch5-cp-01",
+      "hint": {
+        "en": "Talk to Hanna inside the farmhouse before leaving Rolent.",
+        "pt": "Fale com a Hanna dentro da casa da fazenda antes de sair de Rolent."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Gambler Jack — Vol. 7"
+      },
+      "location": {
+        "en": "Krone Pass checkpoint",
+        "pt": "Posto da Krone Pass"
+      },
+      "availableUntil": "sc-ch5-cp-02",
+      "hint": {
+        "en": "Talk to Private Mikey.",
+        "pt": "Fale com o Private Mikey."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 7"
+      },
+      "location": {
+        "en": "Bose Market — Grocery Minuet"
+      },
+      "availableUntil": "sc-ch5-cp-03",
+      "hint": {
+        "en": "Also sold at the general store in Ravennue Village.",
+        "pt": "Também vendido no armazém de Ravennue Village."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News — Special Edition"
+      },
+      "location": {
+        "en": "Bose — Frieden Hotel, 2F",
+        "pt": "Bose — Frieden Hotel, 2º andar"
+      },
+      "availableUntil": "sc-ch5-cp-03",
+      "hint": {
+        "en": "Sold by the grocer while the market stalls are set up inside the hotel.",
+        "pt": "Vendido pelo merceeiro enquanto as barracas do mercado ficam dentro do hotel."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 2"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Plain Medal"
+      },
+      "location": {
+        "en": "Bose Market — Paul Elk"
+      },
+      "availableUntil": "sc-ch5-cp-03",
+      "hint": {
+        "en": "The 5th animal medal. With all five, trade them for the Beast Medal through the Customize menu at the orbal factory.",
+        "pt": "A 5ª medalha de animal. Com as cinco, troque pela Beast Medal no menu Customize da fábrica orbal."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "West Bose Highway treasure chests (4)",
+        "pt": "Baús da West Bose Highway (4)"
+      },
+      "location": {
+        "en": "West Bose Highway"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "One holds a weapon for Olivier, across the bridge to the east.",
+        "pt": "Um guarda uma arma do Olivier, depois da ponte a leste."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Krone Trail treasure chests (5)",
+        "pt": "Baús da Krone Trail (5)"
+      },
+      "location": {
+        "en": "Krone Trail"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "Includes a monster chest with scorpions and a Hapilsag. Drop down the ladders for extra field items.",
+        "pt": "Inclui um baú de monstros com escorpiões e um Hapilsag. Desça pelas escadas para pegar itens de campo extras."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "New Ansel Path treasure chests (6)",
+        "pt": "Baús da New Ansel Path (6)"
+      },
+      "location": {
+        "en": "New Ansel Path"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "The last one sits right outside Amberl Tower.",
+        "pt": "O último fica logo na frente da Amberl Tower."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Amberl Tower treasure chests (20)",
+        "pt": "Baús da Amberl Tower (20)"
+      },
+      "location": {
+        "en": "Amberl Tower"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "Spread across all five floors; the 3F and 4F outer loops hide several. The 5F monster chest has three Ground Trappers: wind arts, and they explode when defeated.",
+        "pt": "Espalhados pelos cinco andares; os anéis externos do 3F e do 4F escondem vários. O baú de monstros do 5F tem três Ground Trappers: use arts de vento, e eles explodem quando caem."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Eisen Road and East Bose Highway treasure chests (5)",
+        "pt": "Baús da Eisen Road e da East Bose Highway (5)"
+      },
+      "location": {
+        "en": "Eisen Road, East Bose Highway"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "East Bose Highway has a monster chest with turtles uphill along the south wall, and a breakable wall leading to a water cave.",
+        "pt": "A East Bose Highway tem um baú de monstros com tartarugas na subida junto à parede sul, e uma parede quebrável que leva a uma caverna com água."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Nebel Valley treasure chests (3)",
+        "pt": "Baús do Nebel Valley (3)"
+      },
+      "location": {
+        "en": "Nebel Valley"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "One is just before the old stronghold entrance. Whemler, in his hut, gives you Dark Stew if you accept his stew on the second talk.",
+        "pt": "Um fica logo antes da entrada da antiga fortaleza. O Whemler, na cabana dele, dá Dark Stew se você aceitar o ensopado na segunda conversa."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Ravennue Trail treasure chests (9)",
+        "pt": "Baús da Ravennue Trail (9)"
+      },
+      "location": {
+        "en": "Ravennue Trail"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "Explore both branches past the village; one holds a weapon for Zin.",
+        "pt": "Explore os dois ramos depois da vila; um guarda uma arma do Zin."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Abandoned mine treasure chests (5)",
+        "pt": "Baús da mina abandonada (5)"
+      },
+      "location": {
+        "en": "Mine near Ravennue Village",
+        "pt": "Mina perto de Ravennue Village"
+      },
+      "availableUntil": "sc-ch5-cp-03",
+      "hint": {
+        "en": "One is hidden behind breakables on the north fork near the start.",
+        "pt": "Um fica escondido atrás de objetos quebráveis no ramo norte, perto do início."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Dragon lair treasure chests (11)",
+        "pt": "Baús do covil do dragão (11)"
+      },
+      "location": {
+        "en": "North of Nebel Valley",
+        "pt": "Ao norte do Nebel Valley"
+      },
+      "availableUntil": "sc-ch5-cp-04",
+      "hint": {
+        "en": "A side cave on the left holds two, and a dead end near the last healing device has three, including a monster chest (Master Cryon and its Cryons).",
+        "pt": "Uma caverna lateral à esquerda guarda dois, e um beco perto do último dispositivo de cura tem três, incluindo um baú de monstros (Master Cryon e seus Cryons)."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 2"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch5-bs-01",
+      "name": {
+        "en": "Blade Fang ×2"
+      },
+      "location": {
+        "en": "Krone Trail"
+      },
+      "strategy": {
+        "en": "Huge HP and little else. They sometimes confuse themselves; each survives one lethal hit, so keep a follow-up ready.",
+        "pt": "Muito HP e pouco mais. Às vezes eles se confundem sozinhos; cada um sobrevive a um golpe letal, então tenha um ataque extra pronto."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-bs-02",
+      "name": {
+        "en": "Octobone ×4"
+      },
+      "location": {
+        "en": "Amberl Tower — roof",
+        "pt": "Amberl Tower — terraço"
+      },
+      "strategy": {
+        "en": "Petrify and Burn protection; high-tier fire arts work well. Their basic attack drains HP, EP and CP.",
+        "pt": "Proteção contra Petrify e Burn; arts de fogo fortes funcionam bem. O ataque básico deles drena HP, EP e CP."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-bs-03",
+      "name": {
+        "en": "Ghost Epitaph"
+      },
+      "location": {
+        "en": "Nebel Valley"
+      },
+      "strategy": {
+        "en": "Bring Freeze and Petrify protection (Red Sphere+ covers both) and strong wind arts. Keep Earth Guard up and some CP to steal its zero-arts bonus.",
+        "pt": "Leve proteção contra Freeze e Petrify (a Red Sphere+ cobre os dois) e arts de vento fortes. Mantenha o Earth Guard e guarde CP para roubar o bônus de arts instantâneas."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-bs-04",
+      "name": {
+        "en": "Gold Spinner"
+      },
+      "location": {
+        "en": "Ravennue Trail"
+      },
+      "strategy": {
+        "en": "Lots of HP; bring Petrify protection and wind arts.",
+        "pt": "Muito HP; leve proteção contra Petrify e arts de vento."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 2"
+      ]
+    },
+    {
+      "id": "sc-ch5-bs-05",
+      "name": {
+        "en": "Ragnard"
+      },
+      "location": {
+        "en": "Dragon lair — summit",
+        "pt": "Covil do dragão — topo"
+      },
+      "strategy": {
+        "en": "Big but not hard. Get behind its head for back-attack bonuses, resist Blind and Burn, shield the party after its half-HP scene, and strip its boost with Anti-Sept.",
+        "pt": "Grande, mas não difícil. Vá para trás da cabeça para ganhar bônus de ataque pelas costas, resista a Blind e Burn, proteja a equipe com escudo depois da cena na metade do HP e remova o reforço com Anti-Sept."
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 2"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore — by the docks",
+        "pt": "Valleria Shore — junto às docas"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore — by the docks",
+        "pt": "Valleria Shore — junto às docas"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore — by the docks",
+        "pt": "Valleria Shore — junto às docas"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore — by the docks",
+        "pt": "Valleria Shore — junto às docas"
+      }
+    },
+    {
+      "fishId": "sc-ch4-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore — by the docks",
+        "pt": "Valleria Shore — junto às docas"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Ravennue Village — docks",
+        "pt": "Ravennue Village — docas"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Ravennue Village — docks",
+        "pt": "Ravennue Village — docas"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Ravennue Village — docks",
+        "pt": "Ravennue Village — docas"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Mistwald — bridge at the back (opens this chapter)",
+        "pt": "Mistwald — ponte no fundo (abre neste capítulo)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Mistwald — bridge at the back (opens this chapter)",
+        "pt": "Mistwald — ponte no fundo (abre neste capítulo)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Mistwald — bridge at the back (opens this chapter)",
+        "pt": "Mistwald — ponte no fundo (abre neste capítulo)"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch5-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Spiced Stew"
+      },
+      "source": {
+        "en": "Reward for Recipe Reminiscence",
+        "pt": "Recompensa da Recipe Reminiscence"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Herbal Squeeze"
+      },
+      "source": {
+        "en": "Hanna at Perzel Farm",
+        "pt": "Hanna, na Perzel Farm"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Crimson Monster Stew"
+      },
+      "source": {
+        "en": "Kirsche Bar, Bose"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-04",
+      "kind": "standard",
+      "name": {
+        "en": "Toasty Side Soup"
+      },
+      "source": {
+        "en": "Kirsche Bar, Bose"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-05",
+      "kind": "standard",
+      "name": {
+        "en": "Refreshing Jelly"
+      },
+      "source": {
+        "en": "Caterina's Shop, Bose Market"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-06",
+      "kind": "standard",
+      "name": {
+        "en": "Angular Castella"
+      },
+      "source": {
+        "en": "Caterina's Shop, Bose Market"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-07",
+      "kind": "standard",
+      "name": {
+        "en": "Eastern Fried Fish"
+      },
+      "source": {
+        "en": "The Kingfisher Inn, Valleria Shore"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-08",
+      "kind": "standard",
+      "name": {
+        "en": "Miso Simmered Fish"
+      },
+      "source": {
+        "en": "The Kingfisher Inn, Valleria Shore"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-09",
+      "kind": "standard",
+      "name": {
+        "en": "Berserker Fish"
+      },
+      "source": {
+        "en": "The Kingfisher Inn, Valleria Shore"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-10",
+      "kind": "standard",
+      "name": {
+        "en": "Attention Grabber"
+      },
+      "source": {
+        "en": "Haken Gate rest area",
+        "pt": "Área de descanso do Haken Gate"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-11",
+      "kind": "standard",
+      "name": {
+        "en": "Dark Stew"
+      },
+      "source": {
+        "en": "Whemler's hut, Nebel Valley (accept the stew on the second talk)",
+        "pt": "Cabana do Whemler, Nebel Valley (aceite o ensopado na segunda conversa)"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-12",
+      "kind": "standard",
+      "name": {
+        "en": "Mighty Juice"
+      },
+      "source": {
+        "en": "The Moonlight Path 2F, Ravennue Village",
+        "pt": "The Moonlight Path, 2º andar, Ravennue Village"
+      },
+      "sources": [
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+      ]
+    }
+  ]
+}

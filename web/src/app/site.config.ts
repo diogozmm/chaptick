@@ -16,6 +16,11 @@ export const SITE = {
       authors: 'Zoelius, BlazingMeat',
       url: 'https://www.neoseeker.com/trails-in-the-sky-2nd-chapter/walkthrough',
     },
+    {
+      name: 'GameFAQs — Trails in the Sky 2nd Chapter Guide and Walkthrough',
+      authors: 'shockinblue',
+      url: 'https://gamefaqs.gamespot.com/ps5/605493-trails-in-the-sky-2nd-chapter/faqs/82698',
+    },
   ],
   /** Nicknames of approved community contributors. */
   contributors: [] as string[],
