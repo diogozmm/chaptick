@@ -16,3 +16,6 @@ body:
   - type: input
     id: source
     attributes: { label: Source, placeholder: "verified in game / wiki page / guide" }
+  - type: input
+    id: version
+    attributes: { label: Data version, description: Filled in by the app's "Report a mistake" link, placeholder: "sc data v1" }

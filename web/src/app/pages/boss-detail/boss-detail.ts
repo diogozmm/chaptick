@@ -10,13 +10,14 @@ import { neighbours, sourceLabel } from '../../core/spoiler/item-status';
 import { ItemView } from '../../core/spoiler/item-view';
 import { RevealService } from '../../core/spoiler/reveal.service';
 import { DetailBar } from '../../ui/detail-bar/detail-bar';
+import { ReportLink } from '../../ui/report-link/report-link';
 import { Icon } from '../../ui/icon/icon';
 import { SpoilerNotice } from '../../ui/spoiler-notice/spoiler-notice';
 
 /** Strategy for one fight. Everything but the neutral placeholder waits for an explicit reveal. */
 @Component({
   selector: 'app-boss-detail',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, SpoilerNotice, DetailBar],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, SpoilerNotice, DetailBar, ReportLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './boss-detail.html',
   styleUrl: './boss-detail.scss',

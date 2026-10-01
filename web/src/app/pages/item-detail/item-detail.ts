@@ -12,6 +12,7 @@ import { checklistOrder, itemStatus, neighbours, sourceLabel } from '../../core/
 import { ItemView } from '../../core/spoiler/item-view';
 import { RevealService } from '../../core/spoiler/reveal.service';
 import { DetailBar } from '../../ui/detail-bar/detail-bar';
+import { ReportLink } from '../../ui/report-link/report-link';
 import { Icon } from '../../ui/icon/icon';
 import { IconName } from '../../ui/icon/icons';
 import { TYPE_ICON } from '../../ui/item-type';
@@ -29,7 +30,7 @@ const STATUS_ICON: Record<ReturnType<typeof itemStatus>, IconName> = {
 
 @Component({
   selector: 'app-item-detail',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, RouteSteps, SpoilerNotice, DetailBar],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, RouteSteps, SpoilerNotice, DetailBar, ReportLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './item-detail.html',
   styleUrl: './item-detail.scss',

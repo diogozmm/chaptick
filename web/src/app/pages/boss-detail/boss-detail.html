@@ -39,6 +39,8 @@
     }
   }
 
+  <app-report-link [entryId]="e.boss.id" />
+
   <app-detail-bar [prev]="e.prev" [next]="e.next" [prevLabel]="'boss.prev' | transloco" [nextLabel]="'boss.next' | transloco">
     <p class="position">{{ 'boss.position' | transloco: { n: e.n, total: e.total } }}</p>
   </app-detail-bar>

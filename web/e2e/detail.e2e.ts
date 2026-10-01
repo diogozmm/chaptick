@@ -79,3 +79,17 @@ test('a quest lists its fights, masked, with a link to the strategy', async ({ p
   await page.getByRole('link', { name: /Part of: Safe Quest/ }).click();
   await expect(page.getByRole('link', { name: /Secret Boss/ })).toBeVisible();
 });
+
+test('a mistake is reported by id only, never by name', async ({ page }) => {
+  await page.goto('/sc/items/sc-ch0-hq-01');
+  const github = page.getByRole('link', { name: 'Report it on GitHub' });
+  const url = new URL((await github.getAttribute('href'))!);
+  expect(url.pathname).toBe('/diogozmm/chaptick/issues/new');
+  expect(url.searchParams.get('template')).toBe('item-correction.yml');
+  expect(url.searchParams.get('title')).toBe('fix sc-ch0-hq-01');
+  expect(url.searchParams.get('version')).toMatch(/^sc data v\d+$/);
+  const mail = await page.getByRole('link', { name: 'by e-mail' }).getAttribute('href');
+  expect(mail).toContain('subject=Chaptick%3A%20fix%20sc-ch0-hq-01');
+  // The masked name stays out of both reports.
+  expect(`${url} ${mail}`).not.toContain('Secret');
+});

@@ -98,6 +98,8 @@
     </p>
   }
 
+  <app-report-link [entryId]="e.item.id" />
+
   <app-detail-bar [prev]="e.prev" [next]="e.next" [prevLabel]="'item.prev' | transloco" [nextLabel]="'item.next' | transloco">
     <button type="button" class="button" [class.primary]="!done" [attr.aria-pressed]="done" (click)="toggle(e.item)">
       <app-icon name="check" />

@@ -197,5 +197,11 @@
   "route": {
     "title": "Route",
     "progress": "{{done}} of {{total}}"
+  },
+  "report": {
+    "question": "Something wrong here?",
+    "github": "Report it on GitHub",
+    "or": "or",
+    "email": "by e-mail"
   }
 }
