@@ -28,3 +28,5 @@ a.title:hover { color: var(--accent); }
 .here { justify-self: start; text-decoration: none; }
 
 .confirm { margin-top: 0.5rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
+.picking::before { background: var(--border); }
+.pick-note { margin: -0.5rem 0 0; text-align: center; }

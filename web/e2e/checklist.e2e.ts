@@ -5,7 +5,9 @@ import { expectSaved, row, rowById, trackContent } from './helpers';
 test('reaches a chapter checklist in at most two taps, then resumes in one', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('link', { name: /E2E Game.*Start/ }).click();
-  await page.getByRole('link', { name: 'Prologue' }).click();
+  // A first visit asks where the player is instead of assuming the start.
+  await expect(page.getByRole('heading', { level: 1, name: 'Which chapter are you in?' })).toBeVisible();
+  await page.getByRole('listitem').filter({ hasText: 'Prologue' }).getByRole('button', { name: "I'm here" }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Prologue' })).toBeVisible();
 
   await page.goto('/');
@@ -77,7 +79,7 @@ test('never fetches or shows a locked chapter, even from a pasted link', async (
     await page.goto(locked);
     await expect(page).toHaveURL('/sc/chapters');
   }
-  await expect(page.getByText('Chapter 1 — locked')).toBeVisible();
+  await expect(page.getByRole('listitem').filter({ hasText: 'Chapter 1' })).toBeVisible();
   await expect(page.locator('body')).not.toContainText('FUTURE');
   expect(fetched.filter((url) => /ch-[12]\.json/.test(url))).toEqual([]);
 });

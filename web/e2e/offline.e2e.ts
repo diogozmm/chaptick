@@ -17,7 +17,7 @@ test('works offline after the first visit', async ({ page, context }) => {
   await expect(page.getByRole('heading', { level: 1, name: 'Prologue' })).toBeVisible();
   await expect(page.getByText('Safe Quest', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: /Where am I/ }).click();
-  await expect(page.getByText('Chapter 1 — locked')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'Which chapter are you in?' })).toBeVisible();
 });
 
 test('locked chapters never land in the offline cache', async ({ page }) => {

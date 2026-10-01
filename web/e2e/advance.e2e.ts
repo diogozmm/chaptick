@@ -1,9 +1,10 @@
 import { expect, test } from '@playwright/test';
 
-import { row, trackContent } from './helpers';
+import { pickChapter, row, trackContent } from './helpers';
 
 test('advancing warns about what is left behind without naming it first', async ({ page }) => {
   const fetched = trackContent(page);
+  await pickChapter(page, 'sc', 'Prologue');
   await page.goto('/sc/chapters');
   await page.getByRole('listitem').filter({ hasText: 'Chapter 1 — locked' }).getByRole('button', { name: "I'm here" }).click();
 
@@ -26,6 +27,7 @@ test('advancing warns about what is left behind without naming it first', async 
 });
 
 test('going back to an earlier chapter needs no confirmation', async ({ page }) => {
+  await pickChapter(page, 'sc', 'Prologue');
   await page.goto('/sc/chapters');
   await page.getByRole('listitem').filter({ hasText: 'Chapter 1 — locked' }).getByRole('button', { name: "I'm here" }).click();
   await page.getByRole('button', { name: "Yes, I'm here" }).click();

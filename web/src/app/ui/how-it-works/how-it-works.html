@@ -1,0 +1,15 @@
+@if (open()) {
+  <section class="card how rise" aria-labelledby="how-title">
+    <h2 id="how-title">{{ 'howItWorks.title' | transloco }}</h2>
+    <ul>
+      <li><app-icon name="check" /> <span>{{ 'howItWorks.tick' | transloco }}</span></li>
+      <li><app-icon name="eye-off" /> <span>{{ 'howItWorks.reveal' | transloco }}</span></li>
+      <li><app-icon name="triangle-alert" /> <span>{{ 'howItWorks.deadlines' | transloco }}</span></li>
+      <li>
+        <app-icon name="download" />
+        <span>{{ 'howItWorks.saved' | transloco }} <a routerLink="/backup">{{ 'howItWorks.backup' | transloco }}</a></span>
+      </li>
+    </ul>
+    <button type="button" class="button primary" (click)="dismiss()">{{ 'howItWorks.gotIt' | transloco }}</button>
+  </section>
+}

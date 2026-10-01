@@ -32,6 +32,11 @@ export class ProgressStore {
   readonly currentChapter = computed(() => this.state()?.currentChapter ?? '');
   readonly done = computed(() => new Set(this.state()?.doneItems ?? []));
   readonly preferences = computed(() => this.state()?.preferences ?? DEFAULT_PREFERENCES);
+  /** A first visit: nothing ticked and no chapter picked yet, so "Where am I" asks instead of warning. */
+  readonly needsChapterPick = computed(() => {
+    const p = this.state();
+    return !!p && needsChapterPick(p);
+  });
 
   /**
    * Switches to a game's saved progress, or starts it at `firstChapterId` on a first visit. A
@@ -75,7 +80,7 @@ export class ProgressStore {
   }
 
   setChapter(chapterId: string): Promise<void> {
-    return this.update(() => ({ currentChapter: chapterId }));
+    return this.update(() => ({ currentChapter: chapterId, chapterChosen: true }));
   }
 
   setPreferences(change: Partial<Preferences>): Promise<void> {
@@ -166,7 +171,7 @@ function parseGame(data: unknown): SavedProgress {
   if (typeof data['schemaVersion'] === 'number' && data['schemaVersion'] > PROGRESS_SCHEMA_VERSION) {
     throw new ProgressImportError('newer-version');
   }
-  const { gameId, currentChapter, doneItems, preferences, updatedAt } = data;
+  const { gameId, currentChapter, doneItems, preferences, updatedAt, chapterChosen } = data;
   const validItems = Array.isArray(doneItems) && doneItems.every((id) => typeof id === 'string');
   if (typeof gameId !== 'string' || typeof currentChapter !== 'string' || !validItems) {
     throw new ProgressImportError('wrong-format');
@@ -178,8 +183,12 @@ function parseGame(data: unknown): SavedProgress {
     doneItems: [...new Set(doneItems as string[])],
     preferences: { ...DEFAULT_PREFERENCES, ...(isRecord(preferences) ? preferences : {}) },
     updatedAt: typeof updatedAt === 'string' ? updatedAt : new Date().toISOString(),
+    ...(chapterChosen === true ? { chapterChosen } : {}),
   };
 }
+
+/** True until the player picks a chapter or ticks anything (older saves count as picked once ticked). */
+export const needsChapterPick = (p: SavedProgress): boolean => !p.chapterChosen && p.doneItems.length === 0;
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
   typeof value === 'object' && value !== null && !Array.isArray(value);

@@ -41,7 +41,13 @@
     "seeAll": "See all",
     "scrollBack": "Scroll back",
     "scrollForward": "Scroll forward",
-    "backupLink": "Back up or move your progress"
+    "backupLink": "Back up or move your progress",
+    "stepsLabel": "How it works",
+    "step1": "Pick your game",
+    "step2": "Tell us which chapter you're in",
+    "step3": "Tick off what you've done; anything ahead stays hidden",
+    "localNote": "No account: progress is saved on this device.",
+    "pickChapter": "Choose the chapter you're in"
   },
   "where": {
     "title": "Where am I?",
@@ -54,7 +60,10 @@
     "confirmYes": "Yes, I'm here",
     "leftBehind": "You will leave {{count}} item(s) behind",
     "leftBehindHint": "Their deadline ends before that chapter. Tick off any you already did.",
-    "eyebrow": "Your journey"
+    "eyebrow": "Your journey",
+    "pickTitle": "Which chapter are you in?",
+    "pickIntro": "Pick where you are right now. Chapters after it stay locked, so nothing ahead is shown.",
+    "pickNote": "You can change it at any time."
   },
   "checklist": {
     "progress": "{{done}} of {{total}} done",
@@ -246,5 +255,14 @@
     "linkTitle": "Another device or browser",
     "fileTitle": "Backup file",
     "fileHint": "One file with every game on this device. Keep it somewhere safe, or open it on another phone with Import."
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "tick": "Tap the box to mark an item as done. Started mid-game? Mark what you've already done in earlier chapters too.",
+    "reveal": "Names that could spoil something stay hidden until you tap to reveal them.",
+    "deadlines": "Before a point of no return, you're told how many items are still left.",
+    "saved": "Progress is saved on this device only, with no account.",
+    "backup": "Back it up or move it",
+    "gotIt": "Got it"
   }
 }

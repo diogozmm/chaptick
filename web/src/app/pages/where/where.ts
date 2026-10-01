@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -26,6 +26,14 @@ export class Where {
   protected readonly game = inject(ActiveGame);
   private readonly progress = inject(ProgressStore);
   private readonly router = inject(Router);
+
+  /**
+   * First visit: the player may already be deep into the game, so every chapter is offered as a
+   * plain choice. Nothing was ticked yet, so there is nothing to warn about leaving behind.
+   */
+  protected readonly picking = computed(
+    () => this.progress.needsChapterPick() && this.access.current()?.id === this.access.chapters()[0]?.id,
+  );
 
   /** The locked chapter whose confirmation is open. */
   protected readonly pending = signal<ChapterSummary | null>(null);

@@ -41,7 +41,13 @@
     "seeAll": "Ver todos",
     "scrollBack": "Voltar",
     "scrollForward": "Avançar",
-    "backupLink": "Fazer backup ou levar seu progresso"
+    "backupLink": "Fazer backup ou levar seu progresso",
+    "stepsLabel": "Como funciona",
+    "step1": "Escolha seu jogo",
+    "step2": "Diga em que capítulo você está",
+    "step3": "Marque o que já fez; o que vem depois fica escondido",
+    "localNote": "Sem conta: o progresso fica salvo neste aparelho.",
+    "pickChapter": "Escolha o capítulo em que você está"
   },
   "where": {
     "title": "Onde estou?",
@@ -54,7 +60,10 @@
     "confirmYes": "Sim, estou aqui",
     "leftBehind": "Você vai deixar {{count}} item(ns) para trás",
     "leftBehindHint": "O prazo deles acaba antes desse capítulo. Marque os que você já fez.",
-    "eyebrow": "Sua jornada"
+    "eyebrow": "Sua jornada",
+    "pickTitle": "Em que capítulo você está?",
+    "pickIntro": "Escolha onde você está agora. Os capítulos depois dele ficam bloqueados, então nada à frente aparece.",
+    "pickNote": "Dá para mudar quando quiser."
   },
   "checklist": {
     "progress": "{{done}} de {{total}} feitos",
@@ -246,5 +255,14 @@
     "linkTitle": "Outro aparelho ou navegador",
     "fileTitle": "Arquivo de backup",
     "fileHint": "Um arquivo com todos os jogos deste aparelho. Guarde num lugar seguro, ou abra em outro celular com Importar."
+  },
+  "howItWorks": {
+    "title": "Como funciona",
+    "tick": "Toque no quadrado para marcar um item como feito. Começou no meio do jogo? Marque também o que já fez nos capítulos anteriores.",
+    "reveal": "Nomes que podem dar spoiler ficam escondidos até você tocar para revelar.",
+    "deadlines": "Antes de um ponto sem volta, avisamos quantos itens ainda faltam.",
+    "saved": "O progresso fica salvo só neste aparelho, sem conta.",
+    "backup": "Faça backup ou transfira",
+    "gotIt": "Entendi"
   }
 }

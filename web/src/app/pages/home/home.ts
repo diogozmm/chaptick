@@ -9,7 +9,7 @@ import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { SavedProgress } from '../../core/progress/progress.models';
-import { ProgressImportError, ProgressStore, parseExport } from '../../core/progress/progress.store';
+import { ProgressImportError, ProgressStore, needsChapterPick, parseExport } from '../../core/progress/progress.store';
 import { TransferService } from '../../core/progress/transfer.service';
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { SITE } from '../../site.config';
@@ -91,6 +91,7 @@ export class Home {
         stats,
         percent: stats.total ? Math.round((stats.done / stats.total) * 100) : 0,
         alert: nextCheckpointAlert(chapter, done),
+        picking: needsChapterPick(saved),
       };
     },
   });
@@ -116,7 +117,7 @@ export class Home {
   /** A started game resumes at its current chapter; a new one opens "Where am I?" first. */
   protected gameLink(gameId: string): string[] {
     const saved = this.savedByGame().get(gameId);
-    return saved ? ['/', gameId, 'chapters', saved.currentChapter] : ['/', gameId, 'chapters'];
+    return saved && !needsChapterPick(saved) ? ['/', gameId, 'chapters', saved.currentChapter] : ['/', gameId, 'chapters'];
   }
 
   protected readonly pendingImport = signal<PendingImport | null>(null);

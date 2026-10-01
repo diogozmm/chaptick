@@ -15,10 +15,11 @@ import { ItemRow } from '../../ui/item-row/item-row';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
 import { AdvanceConfirm } from '../../ui/advance-confirm/advance-confirm';
 import { TYPE_ICON } from '../../ui/item-type';
+import { HowItWorks } from '../../ui/how-it-works/how-it-works';
 
 @Component({
   selector: 'app-checklist',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon, SpoilerReveal, AdvanceConfirm],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, ItemRow, Icon, SpoilerReveal, AdvanceConfirm, HowItWorks],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './checklist.html',
   styleUrl: './checklist.scss',

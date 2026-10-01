@@ -19,6 +19,27 @@ describe('ProgressStore', () => {
     expect(store.done().size).toBe(0);
   });
 
+  it('asks for the chapter on a first visit, until one is picked or anything is ticked', async () => {
+    expect(store.needsChapterPick()).toBe(true);
+    await store.setChapter('sc-ch0');
+    expect(store.needsChapterPick()).toBe(false);
+
+    await store.load('ysx', 'ysx-ch0');
+    expect(store.needsChapterPick()).toBe(true);
+    await store.toggle('ysx-ch0-q-01');
+    expect(store.needsChapterPick()).toBe(false);
+  });
+
+  it('keeps the picked chapter through export and import', async () => {
+    await store.setChapter('sc-ch1');
+    const json = await store.exportJson();
+    indexedDB = new IDBFactory();
+    const fresh = TestBed.runInInjectionContext(() => new ProgressStore());
+    await fresh.load('sc', 'sc-ch0');
+    await fresh.importJson(json);
+    expect(fresh.needsChapterPick()).toBe(false);
+  });
+
   it('persists toggles and chapter changes across reloads', async () => {
     await store.toggle('sc-ch0-co-01');
     await store.toggle('sc-ch0-co-02');

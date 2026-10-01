@@ -19,6 +19,12 @@
     <p class="eyebrow">{{ 'home.eyebrow' | transloco }}</p>
     <h1>{{ 'home.title' | transloco }}</h1>
     <p class="muted lead">{{ 'home.promise' | transloco }}</p>
+    <ol class="steps" [attr.aria-label]="'home.stepsLabel' | transloco">
+      <li><span class="step-n" aria-hidden="true">1</span> {{ 'home.step1' | transloco }}</li>
+      <li><span class="step-n" aria-hidden="true">2</span> {{ 'home.step2' | transloco }}</li>
+      <li><span class="step-n" aria-hidden="true">3</span> {{ 'home.step3' | transloco }}</li>
+    </ol>
+    <p class="muted small local-note"><app-icon name="download" /> {{ 'home.localNote' | transloco }}</p>
   </section>
 } @else {
   <h1 class="visually-hidden">{{ 'home.yourGames' | transloco }}</h1>
@@ -43,10 +49,17 @@
         {{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}
       </p>
     }
-    <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters', r.summary.id]">
-      {{ 'home.continue' | transloco: { chapter: r.summary.neutralLabel | localize: l } }}
-      <app-icon name="chevron-right" />
-    </a>
+    @if (r.picking) {
+      <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters']">
+        {{ 'home.pickChapter' | transloco }}
+        <app-icon name="chevron-right" />
+      </a>
+    } @else {
+      <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters', r.summary.id]">
+        {{ 'home.continue' | transloco: { chapter: r.summary.neutralLabel | localize: l } }}
+        <app-icon name="chevron-right" />
+      </a>
+    }
     <div class="secondary">
       <a class="button" [routerLink]="['/', r.gameId, 'chapters']"><app-icon name="compass" /> {{ 'home.whereAmI' | transloco }}</a>
       <a class="button" [routerLink]="['/', r.gameId, 'collections']"><app-icon name="book-open" /> {{ 'collections.short' | transloco }}</a>

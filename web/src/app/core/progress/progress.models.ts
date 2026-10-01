@@ -18,6 +18,8 @@ export interface SavedProgress {
   doneItems: string[];
   preferences: Preferences;
   updatedAt: string;
+  /** Set once the player has said where they are. Optional, so older saves and exports stay valid. */
+  chapterChosen?: boolean;
 }
 
 export const DEFAULT_PREFERENCES: Preferences = { hideDone: false, filters: [] };

@@ -29,6 +29,13 @@ export async function expectSaved(page: Page, itemId: string, saved = true): Pro
     .toBe(saved);
 }
 
+/** Answers the first-visit "Which chapter are you in?" so "Where am I" shows its usual view. */
+export async function pickChapter(page: Page, gameId: string, chapter: string): Promise<void> {
+  await page.goto(`/${gameId}/chapters`);
+  await page.getByRole('listitem').filter({ hasText: chapter }).getByRole('button', { name: "I'm here" }).click();
+  await expect(page.getByRole('heading', { level: 1, name: chapter })).toBeVisible();
+}
+
 export const row = (page: Page, text: string | RegExp) => page.locator('app-item-row').filter({ hasText: text });
 
 /** A checklist row found by item id, so it still matches after its name is revealed. */

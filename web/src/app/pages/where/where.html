@@ -1,47 +1,73 @@
-<header class="stack-sm">
-  <p class="eyebrow">{{ 'where.eyebrow' | transloco }}</p>
-  <h1>{{ 'where.title' | transloco }}</h1>
-  <p class="muted">{{ 'where.intro' | transloco }}</p>
-</header>
+@if (picking()) {
+  <header class="stack-sm">
+    @if (game.manifest(); as m) {
+      <p class="eyebrow">{{ m.game.name | localize: lang.lang() }}</p>
+    }
+    <h1>{{ 'where.pickTitle' | transloco }}</h1>
+    <p class="muted">{{ 'where.pickIntro' | transloco }}</p>
+  </header>
 
-<ol class="trail">
-  @for (chapter of access.chapters(); track chapter.id) {
-    @let label = chapter.neutralLabel | localize: lang.lang();
-    @let current = chapter.id === access.current()?.id;
-    @let unlocked = isUnlocked(chapter);
-    <li class="stop" [class.current]="current" [class.past]="unlocked && !current" [class.locked]="!unlocked">
-      <span class="node" aria-hidden="true">
-        @if (current) {
-          <app-icon name="compass" />
-        } @else if (unlocked) {
-          <app-icon name="check" />
-        } @else {
-          <app-icon name="lock" />
-        }
-      </span>
-      <div class="card stop-card">
-        <div class="stop-head">
-          @if (unlocked) {
-            <a class="title" [routerLink]="game.link('chapters', chapter.id)">{{ label }}</a>
-          } @else {
-            <span class="title">{{ 'where.locked' | transloco: { chapter: label } }}</span>
-          }
+  <ol class="trail picking">
+    @for (chapter of access.chapters(); track chapter.id) {
+      <li class="stop">
+        <span class="node" aria-hidden="true"><app-icon name="map-pin" /></span>
+        <div class="card stop-card">
+          <span class="title">{{ chapter.neutralLabel | localize: lang.lang() }}</span>
+          <span class="muted small">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
+          <button type="button" class="link here" (click)="choose(chapter)">
+            <app-icon name="map-pin" /> {{ 'where.imHere' | transloco }}
+          </button>
+        </div>
+      </li>
+    }
+  </ol>
+  <p class="muted small pick-note">{{ 'where.pickNote' | transloco }}</p>
+} @else {
+  <header class="stack-sm">
+    <p class="eyebrow">{{ 'where.eyebrow' | transloco }}</p>
+    <h1>{{ 'where.title' | transloco }}</h1>
+    <p class="muted">{{ 'where.intro' | transloco }}</p>
+  </header>
+
+  <ol class="trail">
+    @for (chapter of access.chapters(); track chapter.id) {
+      @let label = chapter.neutralLabel | localize: lang.lang();
+      @let current = chapter.id === access.current()?.id;
+      @let unlocked = isUnlocked(chapter);
+      <li class="stop" [class.current]="current" [class.past]="unlocked && !current" [class.locked]="!unlocked">
+        <span class="node" aria-hidden="true">
           @if (current) {
-            <span class="badge">{{ 'where.current' | transloco }}</span>
+            <app-icon name="compass" />
+          } @else if (unlocked) {
+            <app-icon name="check" />
+          } @else {
+            <app-icon name="lock" />
+          }
+        </span>
+        <div class="card stop-card">
+          <div class="stop-head">
+            @if (unlocked) {
+              <a class="title" [routerLink]="game.link('chapters', chapter.id)">{{ label }}</a>
+            } @else {
+              <span class="title">{{ 'where.locked' | transloco: { chapter: label } }}</span>
+            }
+            @if (current) {
+              <span class="badge">{{ 'where.current' | transloco }}</span>
+            }
+          </div>
+          <span class="muted small">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
+
+          @if (!current) {
+            @if (!unlocked && pending()?.id === chapter.id) {
+              <app-advance-confirm class="confirm" [target]="chapter" (cancelled)="pending.set(null)" />
+            } @else {
+              <button type="button" class="link here" (click)="unlocked ? choose(chapter) : pending.set(chapter)">
+                <app-icon name="map-pin" /> {{ 'where.imHere' | transloco }}
+              </button>
+            }
           }
         </div>
-        <span class="muted small">{{ 'where.items' | transloco: { count: chapter.itemCount } }}</span>
-
-        @if (!current) {
-          @if (!unlocked && pending()?.id === chapter.id) {
-            <app-advance-confirm class="confirm" [target]="chapter" (cancelled)="pending.set(null)" />
-          } @else {
-            <button type="button" class="link here" (click)="unlocked ? choose(chapter) : pending.set(chapter)">
-              <app-icon name="map-pin" /> {{ 'where.imHere' | transloco }}
-            </button>
-          }
-        }
-      </div>
-    </li>
-  }
-</ol>
+      </li>
+    }
+  </ol>
+}

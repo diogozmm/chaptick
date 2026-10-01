@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { expectSaved, row } from './helpers';
+import { expectSaved, pickChapter, row } from './helpers';
 
 test('a first visit gets the introduction; a returning player gets their games first', async ({ page }) => {
   await page.goto('/');
@@ -9,8 +9,7 @@ test('a first visit gets the introduction; a returning player gets their games f
   await page.goto('/sc/chapters/sc-ch0');
   await row(page, 'Book One').getByRole('checkbox').check();
   await expectSaved(page, 'sc-ch0-co-01');
-  await page.goto('/zz/chapters/zz-ch0');
-  await expect(page.getByRole('heading', { level: 1, name: 'Opening' })).toBeVisible();
+  await pickChapter(page, 'zz', 'Opening');
 
   await page.goto('/');
   await expect(page.getByRole('heading', { name: 'Never miss a thing, chapter by chapter' })).toHaveCount(0);

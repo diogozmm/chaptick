@@ -19,6 +19,8 @@
     <p class="muted small">{{ 'checklist.progress' | transloco: { done: s.done, total: s.total } }}</p>
   </header>
 
+  <app-how-it-works />
+
   @if (alert(); as a) {
     <aside class="alert rise" role="status">
       <app-icon name="triangle-alert" />
