@@ -22,7 +22,7 @@
       <div class="card stop-card">
         <div class="stop-head">
           @if (unlocked) {
-            <a class="title" [routerLink]="['/sc/chapters', chapter.id]">{{ label }}</a>
+            <a class="title" [routerLink]="game.link('chapters', chapter.id)">{{ label }}</a>
           } @else {
             <span class="title">{{ 'where.locked' | transloco: { chapter: label } }}</span>
           }

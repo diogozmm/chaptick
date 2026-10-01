@@ -2,7 +2,7 @@
 @let e = entry();
 @if (e) {
   @let done = progress.done().has(e.item.id);
-  <a class="link back" [routerLink]="['/sc/chapters', e.chapter.id]"><app-icon name="chevron-left" /> {{ e.chapter.neutralLabel | localize: l }}</a>
+  <a class="link back" [routerLink]="game.link('chapters', e.chapter.id)"><app-icon name="chevron-left" /> {{ e.chapter.neutralLabel | localize: l }}</a>
 
   <header class="hero card rise" [attr.data-type]="e.item.type">
     <span class="type"><app-icon [name]="typeIcon[e.item.type]" /> {{ 'type.many.' + e.item.type | transloco }}</span>
@@ -65,7 +65,7 @@
   </button>
 } @else if (e === null) {
   <p role="alert">{{ 'item.notFound' | transloco }}</p>
-  <a class="button" routerLink="/sc/chapters">{{ 'where.title' | transloco }}</a>
+  <a class="button" [routerLink]="game.link('chapters')">{{ 'where.title' | transloco }}</a>
 } @else if (chapter.error()) {
   <p role="alert">{{ 'common.loadError' | transloco }}</p>
   <button type="button" class="button" (click)="chapter.reload()">{{ 'common.retry' | transloco }}</button>

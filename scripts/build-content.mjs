@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 // Validates content/ and writes the static files the app serves:
+//   <out>/catalog.json          franchises and their games, counts only (the library screen)
 //   <out>/<game>/manifest.json  counts only, never names, so locked chapters stay spoiler-free
 //   <out>/<game>/ch-<order>.json one file per chapter, fetched only once it is unlocked
 import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { loadContent, validateContent } from './content-validation.mjs';
+import { loadContent, loadFranchises, validateContent } from './content-validation.mjs';
 
 const { values } = parseArgs({
   options: { root: { type: 'string', default: 'content' }, out: { type: 'string', default: 'web/public/content' } },
@@ -18,7 +19,27 @@ if (errors.length > 0) {
 }
 
 rmSync(values.out, { recursive: true, force: true });
-for (const { game, chapters } of loadContent(values.root)) {
+mkdirSync(values.out, { recursive: true });
+const games = loadContent(values.root);
+
+const catalog = {
+  franchises: loadFranchises(values.root).map((franchise) => ({
+    ...franchise,
+    games: games
+      .filter(({ game }) => game.franchise === franchise.id)
+      .sort((a, b) => (a.game.order ?? 0) - (b.game.order ?? 0))
+      .map(({ game, chapters }) => ({
+        id: game.id,
+        name: game.name,
+        platforms: game.platforms,
+        chapterCount: chapters.length,
+        itemCount: chapters.reduce((sum, c) => sum + c.data.items.length, 0),
+      })),
+  })),
+};
+writeFileSync(join(values.out, 'catalog.json'), JSON.stringify(catalog));
+
+for (const { game, chapters } of games) {
   const outDir = join(values.out, game.id);
   mkdirSync(outDir, { recursive: true });
 

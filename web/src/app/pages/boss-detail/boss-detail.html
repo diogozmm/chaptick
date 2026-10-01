@@ -2,7 +2,7 @@
 @let e = entry();
 @if (e) {
   @let revealed = reveals.isRevealed(e.boss.id);
-  <a class="link back" [routerLink]="['/sc/chapters', e.chapter.id]"><app-icon name="chevron-left" /> {{ e.chapter.neutralLabel | localize: l }}</a>
+  <a class="link back" [routerLink]="game.link('chapters', e.chapter.id)"><app-icon name="chevron-left" /> {{ e.chapter.neutralLabel | localize: l }}</a>
 
   <header class="hero card rise">
     <span class="type"><app-icon name="swords" /> {{ 'boss.eyebrow' | transloco }}</span>
@@ -12,7 +12,7 @@
       </app-spoiler-reveal>
     </h1>
     @if (e.related; as item) {
-      <a class="related" [routerLink]="['/sc/items', item.id]">
+      <a class="related" [routerLink]="game.link('items', item.id)">
         {{ 'boss.for' | transloco: { item: view.showLocation(item) ? (item.name | localize: l) : view.placeholder(e.chapter, item) } }}
       </a>
     }
@@ -30,7 +30,7 @@
   </dl>
 } @else if (e === null) {
   <p role="alert">{{ 'item.notFound' | transloco }}</p>
-  <a class="button" routerLink="/sc/chapters">{{ 'where.title' | transloco }}</a>
+  <a class="button" [routerLink]="game.link('chapters')">{{ 'where.title' | transloco }}</a>
 } @else if (chapter.error()) {
   <p role="alert">{{ 'common.loadError' | transloco }}</p>
   <button type="button" class="button" (click)="chapter.reload()">{{ 'common.retry' | transloco }}</button>

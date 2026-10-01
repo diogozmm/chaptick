@@ -4,10 +4,12 @@
     <span>Chaptick</span>
   </a>
  <nav class="top-actions" [attr.aria-label]="'app.mainNav' | transloco">
-  <a routerLink="/sc/collections" routerLinkActive="active" class="lang">
-    <app-icon name="book-open" />
-    <span>{{ 'collections.short' | transloco }}</span>
-  </a>
+  @if (game.id()) {
+    <a [routerLink]="game.link('collections')" routerLinkActive="active" class="lang">
+      <app-icon name="book-open" />
+      <span>{{ 'collections.short' | transloco }}</span>
+    </a>
+  }
   <button type="button" class="lang" (click)="toggleLang()" [attr.aria-label]="'app.switchLanguage' | transloco">
     <app-icon name="languages" />
     {{ lang.lang() === 'pt' ? 'EN' : 'PT' }}

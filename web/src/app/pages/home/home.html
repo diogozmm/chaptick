@@ -1,42 +1,82 @@
-@let current = access.current();
-@let game = content.manifest()?.game;
 @let l = lang.lang();
 <section class="intro rise">
-  <p class="eyebrow">{{ 'home.companionFor' | transloco }}</p>
-  @if (game) {
-    <h1>{{ game.name | localize: l }}</h1>
-  }
+  <p class="eyebrow">{{ 'home.eyebrow' | transloco }}</p>
+  <h1>{{ 'home.title' | transloco }}</h1>
   <p class="muted lead">{{ 'home.promise' | transloco }}</p>
 </section>
 
-@if (current) {
-  @let sum = summary();
+@if (recent.hasValue()) {
+  @let r = recent.value();
   <section class="card journey rise" aria-labelledby="journey-title">
-    <p class="eyebrow">{{ 'home.youAreIn' | transloco }}</p>
-    <h2 id="journey-title">{{ current.neutralLabel | localize: l }}</h2>
-    @if (sum) {
-      <div class="progress" role="progressbar" [attr.aria-valuenow]="sum.done" aria-valuemin="0" [attr.aria-valuemax]="sum.total"
-        [attr.aria-label]="'checklist.progress' | transloco: { done: sum.done, total: sum.total }">
-        <span [style.width.%]="sum.percent"></span>
-      </div>
-      <p class="muted small">{{ 'checklist.progress' | transloco: { done: sum.done, total: sum.total } }}</p>
-      @if (sum.alert; as a) {
-        <p class="next">
-          <app-icon name="triangle-alert" />
-          {{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}
-        </p>
-      }
+    <p class="eyebrow">{{ 'home.continueFrom' | transloco }}</p>
+    <h2 id="journey-title">{{ r.game.name | localize: l }}</h2>
+    <p class="muted chapter">{{ r.summary.neutralLabel | localize: l }}</p>
+    <div class="progress" role="progressbar" [attr.aria-valuenow]="r.stats.done" aria-valuemin="0" [attr.aria-valuemax]="r.stats.total"
+      [attr.aria-label]="'checklist.progress' | transloco: { done: r.stats.done, total: r.stats.total }">
+      <span [style.width.%]="r.percent"></span>
+    </div>
+    <p class="muted small">{{ 'checklist.progress' | transloco: { done: r.stats.done, total: r.stats.total } }}</p>
+    @if (r.alert; as a) {
+      <p class="next">
+        <app-icon name="triangle-alert" />
+        {{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}
+      </p>
     }
-    <a class="button primary block" [routerLink]="['/sc/chapters', current.id]">
-      {{ 'home.continue' | transloco: { chapter: current.neutralLabel | localize: l } }}
+    <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters', r.summary.id]">
+      {{ 'home.continue' | transloco: { chapter: r.summary.neutralLabel | localize: l } }}
       <app-icon name="chevron-right" />
     </a>
     <div class="secondary">
-      <a class="button" routerLink="/sc/chapters"><app-icon name="compass" /> {{ 'home.whereAmI' | transloco }}</a>
-      <a class="button" routerLink="/sc/collections"><app-icon name="book-open" /> {{ 'collections.short' | transloco }}</a>
+      <a class="button" [routerLink]="['/', r.gameId, 'chapters']"><app-icon name="compass" /> {{ 'home.whereAmI' | transloco }}</a>
+      <a class="button" [routerLink]="['/', r.gameId, 'collections']"><app-icon name="book-open" /> {{ 'collections.short' | transloco }}</a>
     </div>
   </section>
 }
+
+<section class="library" aria-labelledby="library-title">
+  <h2 id="library-title">{{ 'home.library' | transloco }}</h2>
+  @for (franchise of franchises(); track franchise.id) {
+    <section class="franchise" [attr.aria-labelledby]="'franchise-' + franchise.id">
+      <header>
+        <h3 [id]="'franchise-' + franchise.id">{{ franchise.name | localize: l }}</h3>
+        @if (franchise.description) {
+          <p class="muted small">{{ franchise.description | localize: l }}</p>
+        }
+      </header>
+      <ul class="games">
+        @for (g of franchise.games; track g.id) {
+          <li>
+            <a class="card game" [routerLink]="gameLink(g.id)">
+              <span class="game-body">
+                <span class="game-name">{{ g.name | localize: l }}</span>
+                <span class="muted small">{{ 'home.counts' | transloco: { chapters: g.chapterCount, items: g.itemCount } }}</span>
+                @if (started(g.id)) {
+                  <span class="badge">{{ 'home.inProgress' | transloco: { count: doneCount(g.id) } }}</span>
+                }
+              </span>
+              <span class="game-action">
+                {{ (started(g.id) ? 'home.resume' : 'home.start') | transloco }}
+                <app-icon name="chevron-right" />
+              </span>
+            </a>
+          </li>
+        } @empty {
+          <li class="card soon muted">{{ 'home.franchiseSoon' | transloco }}</li>
+        }
+      </ul>
+    </section>
+  }
+  <div class="card soon">
+    <app-icon name="sparkles" />
+    <div>
+      <strong>{{ 'home.moreSoonTitle' | transloco }}</strong>
+      <p class="muted small">{{ 'home.moreSoonText' | transloco }}</p>
+      @if (suggestUrl) {
+        <a [href]="suggestUrl" rel="noopener" target="_blank">{{ 'home.suggest' | transloco }}</a>
+      }
+    </div>
+  </div>
+</section>
 
 <section class="card transfer" aria-labelledby="transfer-title">
   <h2 id="transfer-title">{{ 'transfer.title' | transloco }}</h2>
@@ -60,7 +100,7 @@
   }
   <p role="status" class="small" [class.error]="status()?.kind === 'error'">
     @if (status(); as s) {
-      {{ s.key | transloco }}
+      {{ s.key | transloco: { count: s.count } }}
     }
   </p>
 </section>

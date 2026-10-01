@@ -1,0 +1,23 @@
+[
+  {
+    "id": "demo-series",
+    "name": {
+      "en": "Demo series"
+    },
+    "description": {
+      "en": "The first fixture series."
+    }
+  },
+  {
+    "id": "second-series",
+    "name": {
+      "en": "Second series"
+    }
+  },
+  {
+    "id": "empty-series",
+    "name": {
+      "en": "Empty series"
+    }
+  }
+]

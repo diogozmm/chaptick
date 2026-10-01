@@ -15,11 +15,22 @@
     "retry": "Tentar de novo"
   },
   "home": {
-    "companionFor": "Companion sem spoiler para",
     "promise": "Diga em que capítulo você está e veja só o que você não pode perder até ali.",
     "continue": "Continuar: {{chapter}}",
     "whereAmI": "Onde estou?",
-    "youAreIn": "Você está em"
+    "youAreIn": "Você está em",
+    "eyebrow": "Companion sem spoiler",
+    "title": "Não perca nada, capítulo por capítulo",
+    "continueFrom": "Continue de onde parou",
+    "library": "Biblioteca",
+    "counts": "{{chapters}} capítulos · {{items}} itens",
+    "inProgress": "Em andamento · {{count}} feito(s)",
+    "start": "Começar",
+    "resume": "Continuar",
+    "franchiseSoon": "Os jogos desta série estão a caminho.",
+    "moreSoonTitle": "Mais jogos e séries em breve",
+    "moreSoonText": "O Chaptick foi feito para crescer além de um jogo só.",
+    "suggest": "Sugerir um jogo"
   },
   "where": {
     "title": "Onde estou?",
@@ -86,17 +97,16 @@
   },
   "transfer": {
     "title": "Levar seu progresso",
-    "intro": "O progresso fica só neste aparelho. Exporte um arquivo para ter um backup ou abrir em outro celular.",
+    "intro": "O progresso fica só neste aparelho. Exporte um arquivo com todos os seus jogos para ter um backup ou abrir em outro celular.",
     "export": "Exportar",
     "import": "Importar",
-    "confirm": "Substituir o progresso deste aparelho pelo do arquivo?",
+    "confirm": "Substituir o progresso deste aparelho pelos jogos do arquivo?",
     "replace": "Substituir",
     "exported": "Progresso exportado.",
-    "imported": "Progresso importado.",
+    "imported": "Progresso importado ({{count}} jogo(s)).",
     "error": {
       "invalid-json": "Esse arquivo não é um JSON válido.",
       "wrong-format": "Esse arquivo não é um progresso exportado.",
-      "wrong-game": "Esse arquivo é de outro jogo.",
       "newer-version": "Esse arquivo vem de uma versão mais nova do app. Recarregue e tente de novo."
     }
   },

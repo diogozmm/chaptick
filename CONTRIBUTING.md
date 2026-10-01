@@ -37,3 +37,16 @@ if you cite the page (same CC BY-SA 4.0 license). By contributing you license yo
 ## No game assets
 
 No screenshots, art, icons or music.
+
+## Adding a franchise or a game
+
+Chaptick is organised as franchises → games → chapters.
+
+1. Franchise: add an entry to `content/franchises.json` (`id`, `name`, optional `description`). A franchise
+   with no games yet shows in the library as "on the way".
+2. Game: create `content/<gameId>/game.json` with `franchise` set to that id, plus `chapters/ch-00.json` and so on.
+   The game id prefixes every id in it (`<gameId>-ch3-hq-02`), so pick a short, unique one; it also becomes the URL
+   (`/<gameId>/chapters`).
+3. Register every new id at the end of `content/id-registry.json` and run `npm run content:validate`.
+
+Nothing else is needed: `npm run content:build` adds the game to `catalog.json`, and the app picks it up.

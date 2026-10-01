@@ -15,7 +15,7 @@ test('exported progress restores on another device', async ({ page, browser }) =
   await phone.goto('/');
   await phone.locator('input[type=file]').setInputFiles(file);
   await phone.getByRole('button', { name: 'Replace' }).click();
-  await expect(phone.getByRole('status')).toHaveText('Progress imported.');
+  await expect(phone.getByRole('status')).toHaveText('Progress imported (1 game(s)).');
   await phone.goto('/sc/chapters/sc-ch0');
   await expect(row(phone, 'Book One').getByRole('checkbox')).toBeChecked();
   await other.close();

@@ -11,11 +11,18 @@ const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
 function createValidators() {
   const ajv = new Ajv2020({ allErrors: true });
   addFormats(ajv);
-  for (const name of ['common', 'game', 'chapter']) {
+  for (const name of ['common', 'game', 'chapter', 'franchises']) {
     ajv.addSchema(readJson(new URL(`${name}.schema.json`, SCHEMA_DIR)), `${name}.schema.json`);
   }
-  return { game: ajv.getSchema('game.schema.json'), chapter: ajv.getSchema('chapter.schema.json') };
+  return {
+    game: ajv.getSchema('game.schema.json'),
+    chapter: ajv.getSchema('chapter.schema.json'),
+    franchises: ajv.getSchema('franchises.schema.json'),
+  };
 }
+
+/** The franchise list at the content root. */
+export const loadFranchises = (root) => readJson(join(root, 'franchises.json'));
 
 /** Loads every game under `root` as { game, chapters: [{ file, data }] }. */
 export function loadContent(root) {
@@ -132,9 +139,18 @@ export function validateContent(root, { baseRegistry } = {}) {
   const errors = [];
   const allIds = [];
 
+  const franchises = loadFranchises(root);
+  errors.push(...schemaErrors(validators.franchises, franchises, 'franchises.json'));
+  const franchiseIds = new Set();
+  for (const { id } of Array.isArray(franchises) ? franchises : []) {
+    if (franchiseIds.has(id)) errors.push(`franchises.json: duplicate franchise "${id}"`);
+    franchiseIds.add(id);
+  }
+
   for (const { dir, game, chapters } of loadContent(root)) {
     errors.push(...schemaErrors(validators.game, game, `${dir}/game.json`));
     if (game.id !== dir) errors.push(`${dir}/game.json: id "${game.id}" should match folder "${dir}"`);
+    if (!franchiseIds.has(game.franchise)) errors.push(`${dir}/game.json: unknown franchise "${game.franchise}"`);
 
     const valid = chapters.filter(({ file, data }) => {
       const found = schemaErrors(validators.chapter, data, file);

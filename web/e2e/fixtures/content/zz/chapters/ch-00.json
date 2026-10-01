@@ -1,0 +1,30 @@
+{
+  "id": "zz-ch0",
+  "gameId": "zz",
+  "order": 0,
+  "neutralLabel": {
+    "en": "Opening"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "zz-ch0-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Other Game Gem"
+      },
+      "location": {
+        "en": "Somewhere"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Look around."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "e2e"
+      ]
+    }
+  ],
+  "itemTexts": []
+}

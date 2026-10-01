@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { Chapter, Item } from '../../core/content/content.models';
+import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
@@ -25,6 +26,7 @@ export class ItemRow {
   protected readonly progress = inject(ProgressStore);
   protected readonly view = inject(ItemView);
   protected readonly lang = inject(LangService);
+  protected readonly game = inject(ActiveGame);
 
   /** The chapter the item belongs to. */
   readonly chapter = input.required<Chapter>();

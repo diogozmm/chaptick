@@ -2,7 +2,7 @@
 @if (chapter.hasValue()) {
   @let ch = chapter.value();
   @let s = stats();
-  <a routerLink="/sc/chapters" class="link back"><app-icon name="chevron-left" /> {{ 'where.title' | transloco }}</a>
+  <a [routerLink]="game.link('chapters')" class="link back"><app-icon name="chevron-left" /> {{ 'where.title' | transloco }}</a>
 
   <header class="hero card rise">
     <div class="hero-top">
@@ -105,7 +105,7 @@
                 <span class="meta">{{ 'boss.for' | transloco: { item: related } }}</span>
               }
             </div>
-            <a class="details" [routerLink]="['/sc/bosses', boss.id]" [attr.aria-label]="'boss.strategyFor' | transloco: { n: n + 1 }">
+            <a class="details" [routerLink]="game.link('bosses', boss.id)" [attr.aria-label]="'boss.strategyFor' | transloco: { n: n + 1 }">
               <app-icon name="chevron-right" />
             </a>
           </li>

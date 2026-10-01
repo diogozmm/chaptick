@@ -38,7 +38,7 @@
     }
   }
 </div>
-<a class="details" [routerLink]="['/sc/items', it.id]"
+<a class="details" [routerLink]="game.link('items', it.id)"
   [attr.aria-label]="'item.detailsFor' | transloco: { name: view.showLocation(it) ? (it.name | localize: l) : label }">
   <app-icon name="chevron-right" />
 </a>

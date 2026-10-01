@@ -7,6 +7,7 @@ import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { AnalyticsService } from '../../core/analytics.service';
+import { ActiveGame } from '../../core/game/active-game';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { isUnlocked, newlyLeftBehind } from '../../core/spoiler/spoiler';
 import { Icon } from '../../ui/icon/icon';
@@ -28,6 +29,7 @@ interface PendingAdvance {
 export class Where {
   protected readonly access = inject(ChapterAccess);
   protected readonly lang = inject(LangService);
+  protected readonly game = inject(ActiveGame);
   private readonly progress = inject(ProgressStore);
   private readonly router = inject(Router);
   private readonly analytics = inject(AnalyticsService);
@@ -55,6 +57,6 @@ export class Where {
     if (chapter.order > this.access.currentOrder()) this.analytics.track('chapter_advanced', { order: chapter.order });
     await this.progress.setChapter(chapter.id);
     this.pending.set(null);
-    await this.router.navigate(['/sc/chapters', chapter.id]);
+    await this.router.navigate(this.game.link('chapters', chapter.id));
   }
 }

@@ -3,6 +3,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { LangService } from './core/i18n/lang.service';
+import { ActiveGame } from './core/game/active-game';
 import { AppUpdateService } from './core/pwa/app-update.service';
 import { Icon } from './ui/icon/icon';
 
@@ -16,6 +17,7 @@ import { Icon } from './ui/icon/icon';
 export class App {
   protected readonly lang = inject(LangService);
   protected readonly update = inject(AppUpdateService);
+  protected readonly game = inject(ActiveGame);
 
   protected toggleLang(): void {
     void this.lang.use(this.lang.lang() === 'pt' ? 'en' : 'pt');

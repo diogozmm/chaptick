@@ -3,6 +3,7 @@ import { TranslocoService } from '@jsverse/transloco';
 
 import { Chapter, Item, Localized } from '../content/content.models';
 import { ContentService } from '../content/content.service';
+import { ActiveGame } from '../game/active-game';
 import { RevealService } from './reveal.service';
 import { chapterOrderOf, isMasked, maskOrdinal } from './spoiler';
 
@@ -18,6 +19,7 @@ export class ItemView {
   private readonly transloco = inject(TranslocoService);
   private readonly reveals = inject(RevealService);
   private readonly content = inject(ContentService);
+  private readonly active = inject(ActiveGame);
 
   /** "Hidden quest #2": what a masked item is called until revealed. */
   placeholder(chapter: Chapter, item: Item): string {
@@ -44,7 +46,7 @@ export class ItemView {
     const checkpoint = owner?.checkpoints.find((c) => c.id === id);
     if (checkpoint) return { kind: 'checkpoint', description: checkpoint.neutralDescription };
     const order = chapterOrderOf(id);
-    const summary = this.content.manifest()?.chapters.find((c) => c.order === order);
+    const summary = this.active.manifest()?.chapters.find((c) => c.order === order);
     return summary ? { kind: 'chapter', label: summary.neutralLabel } : { kind: 'none' };
   }
 }

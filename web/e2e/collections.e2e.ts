@@ -22,7 +22,7 @@ test('bosses stay masked and out of progress until revealed', async ({ page }) =
 
 test('collections only show what unlocked chapters reveal', async ({ page }) => {
   const fetched = trackContent(page);
-  await page.goto('/');
+  await page.goto('/sc/chapters');
   await page.getByRole('link', { name: 'Collections' }).first().click();
   await expect(page.getByRole('heading', { level: 1, name: 'Collections' })).toBeVisible();
   await expect(page.getByText('Silver Fish')).toBeVisible();

@@ -12,9 +12,31 @@ export type SpoilerLevel = 0 | 1 | 2;
 
 export interface Game {
   id: string;
+  franchise: string;
+  order?: number;
   name: Localized;
   platforms: string[];
   dataVersion: number;
+}
+
+/** A game as listed in the library: counts only, nothing that could spoil. */
+export interface CatalogGame {
+  id: string;
+  name: Localized;
+  platforms: string[];
+  chapterCount: number;
+  itemCount: number;
+}
+
+export interface Franchise {
+  id: string;
+  name: Localized;
+  description?: Localized;
+  games: CatalogGame[];
+}
+
+export interface Catalog {
+  franchises: Franchise[];
 }
 
 /** What the manifest knows about a chapter: enough to show it locked, never its items. */

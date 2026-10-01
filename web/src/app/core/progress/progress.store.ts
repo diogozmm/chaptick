@@ -1,11 +1,10 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 
 import { AnalyticsService } from '../analytics.service';
-import { GAME_ID } from '../content/content.service';
 import { DEFAULT_PREFERENCES, PROGRESS_SCHEMA_VERSION, Preferences, SavedProgress } from './progress.models';
 import { ProgressRepository } from './progress.repository';
 
-export type ImportFailure = 'invalid-json' | 'wrong-format' | 'wrong-game' | 'newer-version';
+export type ImportFailure = 'invalid-json' | 'wrong-format' | 'newer-version';
 
 export class ProgressImportError extends Error {
   constructor(readonly reason: ImportFailure) {
@@ -13,6 +12,14 @@ export class ProgressImportError extends Error {
   }
 }
 
+/** Exported file: every game saved on this device. */
+interface ExportFile {
+  schemaVersion: number;
+  app: 'chaptick';
+  games: SavedProgress[];
+}
+
+/** Progress of the active game, plus device-wide export/import. One record per game. */
 @Injectable({ providedIn: 'root' })
 export class ProgressStore {
   private readonly repository = inject(ProgressRepository);
@@ -25,10 +32,26 @@ export class ProgressStore {
   readonly done = computed(() => new Set(this.state()?.doneItems ?? []));
   readonly preferences = computed(() => this.state()?.preferences ?? DEFAULT_PREFERENCES);
 
-  /** Loads saved progress, or starts at `firstChapterId` on a first visit. */
-  async load(firstChapterId: string): Promise<void> {
-    const saved = await this.repository.get(GAME_ID);
-    this.state.set(saved ?? this.fresh(firstChapterId));
+  /**
+   * Switches to a game's saved progress, or starts it at `firstChapterId` on a first visit. A
+   * first visit is saved right away so the library can offer "Continue" for it.
+   */
+  async load(gameId: string, firstChapterId: string): Promise<void> {
+    await this.saving;
+    const saved = await this.repository.get(gameId);
+    if (saved) {
+      this.state.set(saved);
+      return;
+    }
+    const fresh = this.fresh(gameId, firstChapterId);
+    this.state.set(fresh);
+    await this.persist(fresh);
+  }
+
+  /** Every game saved on this device, most recently played first. */
+  async listSaved(): Promise<SavedProgress[]> {
+    await this.saving;
+    return (await this.repository.getAll()).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
   }
 
   toggle(itemId: string): Promise<void> {
@@ -58,15 +81,23 @@ export class ProgressStore {
     return this.update((p) => ({ preferences: { ...p.preferences, ...change } }));
   }
 
-  exportJson(): string {
-    return JSON.stringify(this.state(), null, 2);
+  async exportJson(): Promise<string> {
+    const file: ExportFile = { schemaVersion: PROGRESS_SCHEMA_VERSION, app: 'chaptick', games: await this.listSaved() };
+    return JSON.stringify(file, null, 2);
   }
 
-  /** Replaces progress with an exported file. Unknown item ids are kept: the file may come from newer content. */
-  async importJson(text: string): Promise<void> {
-    const imported = parseProgress(text);
-    this.state.set(imported);
-    await this.persist(imported);
+  /**
+   * Replaces the saved progress of every game in the file and returns how many games it had.
+   * Also accepts the older single-game export. Unknown item ids are kept: the file may come
+   * from newer content.
+   */
+  async importJson(text: string): Promise<number> {
+    const games = parseExport(text);
+    for (const game of games) this.persist(game);
+    await this.saving;
+    const active = games.find((g) => g.gameId === this.state()?.gameId);
+    if (active) this.state.set(active);
+    return games.length;
   }
 
   private update(change: (current: SavedProgress) => Partial<SavedProgress>): Promise<void> {
@@ -83,10 +114,10 @@ export class ProgressStore {
     return this.saving;
   }
 
-  private fresh(firstChapterId: string): SavedProgress {
+  private fresh(gameId: string, firstChapterId: string): SavedProgress {
     return {
       schemaVersion: PROGRESS_SCHEMA_VERSION,
-      gameId: GAME_ID,
+      gameId,
       currentChapter: firstChapterId,
       doneItems: [],
       preferences: DEFAULT_PREFERENCES,
@@ -95,7 +126,7 @@ export class ProgressStore {
   }
 }
 
-function parseProgress(text: string): SavedProgress {
+function parseExport(text: string): SavedProgress[] {
   let data: unknown;
   try {
     data = JSON.parse(text);
@@ -104,19 +135,28 @@ function parseProgress(text: string): SavedProgress {
   }
   if (!isRecord(data) || typeof data['schemaVersion'] !== 'number') throw new ProgressImportError('wrong-format');
   if (data['schemaVersion'] > PROGRESS_SCHEMA_VERSION) throw new ProgressImportError('newer-version');
-  if (data['gameId'] !== GAME_ID) throw new ProgressImportError('wrong-game');
+  const records = Array.isArray(data['games']) ? data['games'] : [data];
+  if (records.length === 0) throw new ProgressImportError('wrong-format');
+  return records.map(parseGame);
+}
 
-  const { currentChapter, doneItems, preferences } = data;
+function parseGame(data: unknown): SavedProgress {
+  if (!isRecord(data)) throw new ProgressImportError('wrong-format');
+  if (typeof data['schemaVersion'] === 'number' && data['schemaVersion'] > PROGRESS_SCHEMA_VERSION) {
+    throw new ProgressImportError('newer-version');
+  }
+  const { gameId, currentChapter, doneItems, preferences, updatedAt } = data;
   const validItems = Array.isArray(doneItems) && doneItems.every((id) => typeof id === 'string');
-  if (typeof currentChapter !== 'string' || !validItems) throw new ProgressImportError('wrong-format');
-
+  if (typeof gameId !== 'string' || typeof currentChapter !== 'string' || !validItems) {
+    throw new ProgressImportError('wrong-format');
+  }
   return {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
-    gameId: GAME_ID,
+    gameId,
     currentChapter,
     doneItems: [...new Set(doneItems as string[])],
     preferences: { ...DEFAULT_PREFERENCES, ...(isRecord(preferences) ? preferences : {}) },
-    updatedAt: new Date().toISOString(),
+    updatedAt: typeof updatedAt === 'string' ? updatedAt : new Date().toISOString(),
   };
 }
 

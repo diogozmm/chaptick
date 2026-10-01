@@ -3,10 +3,10 @@ import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { Item } from '../../core/content/content.models';
-import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
+import { ActiveGame } from '../../core/game/active-game';
 import { ChapterAccess, chapterIdOfItem } from '../../core/spoiler/chapter-access';
 import { ItemView } from '../../core/spoiler/item-view';
 import { Icon } from '../../ui/icon/icon';
@@ -23,11 +23,11 @@ import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
   styleUrl: './item-detail.scss',
 })
 export class ItemDetail {
-  private readonly content = inject(ContentService);
   private readonly access = inject(ChapterAccess);
   protected readonly progress = inject(ProgressStore);
   protected readonly view = inject(ItemView);
   protected readonly lang = inject(LangService);
+  protected readonly game = inject(ActiveGame);
   protected readonly typeIcon = TYPE_ICON;
 
   /** Bound from the route; the route guard already checked its chapter is unlocked. */
@@ -35,7 +35,7 @@ export class ItemDetail {
 
   protected readonly chapter = resource({
     params: () => this.access.unlockedChapter(chapterIdOfItem(this.itemId())),
-    loader: ({ params }) => this.content.loadChapter(params),
+    loader: ({ params }) => this.access.loadChapter(params),
   });
 
   protected toggle(item: Item): void {

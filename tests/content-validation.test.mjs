@@ -86,3 +86,11 @@ test('rejects unregistered boss, fish and recipe ids', () => {
   const errors = validateWith('id-registry.json', (r) => r.filter((id) => !id.includes('-bs-')));
   expectError(errors, '"demo-ch1-bs-01" is used in content but not registered');
 });
+
+test('rejects a game from an unknown franchise', () => {
+  expectError(validateWith('demo/game.json', (g) => void (g.franchise = 'nope')), 'unknown franchise "nope"');
+});
+
+test('rejects duplicate franchises', () => {
+  expectError(validateWith('franchises.json', (f) => [...f, f[0]]), 'duplicate franchise');
+});

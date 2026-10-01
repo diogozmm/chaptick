@@ -2,44 +2,62 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 
-import { Chapter, ChapterSummary, Manifest } from './content.models';
+import { Catalog, CatalogGame, Chapter, ChapterSummary, Manifest } from './content.models';
 
-export const GAME_ID = 'sc';
-const BASE = `/content/${GAME_ID}`;
+const BASE = '/content';
 
 /**
- * Loads game data. Chapter files are fetched one by one and only when asked for, so a
- * locked chapter never reaches the browser (not even the network tab or the SW cache).
- * Callers are responsible for asking only for unlocked chapters; see `ChapterAccess`.
+ * Loads game data for any game in the catalog. Chapter files are fetched one by one and only
+ * when asked for, so a locked chapter never reaches the browser (not even the network tab or
+ * the SW cache). Callers ask only for unlocked chapters; see `ChapterAccess`.
  */
 @Injectable({ providedIn: 'root' })
 export class ContentService {
   private readonly http = inject(HttpClient);
+  private readonly manifests = new Map<string, Promise<Manifest>>();
   private readonly chapters = new Map<string, Promise<Chapter>>();
-  private readonly manifestSignal = signal<Manifest | null>(null);
+  private readonly catalogSignal = signal<Catalog | null>(null);
+  private readonly manifestsSignal = signal<ReadonlyMap<string, Manifest>>(new Map());
   private readonly loadedSignal = signal<ReadonlyMap<string, Chapter>>(new Map());
 
-  readonly manifest = this.manifestSignal.asReadonly();
-  /** Chapters already fetched. Only unlocked chapters are ever fetched, so everything here is safe to show. */
+  readonly catalog = this.catalogSignal.asReadonly();
+  /** Chapters already fetched, by chapter id. Only unlocked chapters are ever fetched, so everything here is safe to show. */
   readonly loaded = this.loadedSignal.asReadonly();
 
-  async loadManifest(): Promise<Manifest> {
-    const manifest = await firstValueFrom(this.http.get<Manifest>(`${BASE}/manifest.json`));
-    manifest.chapters.sort((a, b) => a.order - b.order);
-    this.manifestSignal.set(manifest);
-    return manifest;
+  async loadCatalog(): Promise<Catalog> {
+    const catalog = await firstValueFrom(this.http.get<Catalog>(`${BASE}/catalog.json`));
+    this.catalogSignal.set(catalog);
+    return catalog;
   }
 
-  summary(chapterId: string): ChapterSummary | undefined {
-    return this.manifest()?.chapters.find((c) => c.id === chapterId);
+  game(gameId: string): CatalogGame | undefined {
+    return this.catalog()?.franchises.flatMap((f) => f.games).find((g) => g.id === gameId);
   }
 
-  loadChapter(summary: ChapterSummary): Promise<Chapter> {
+  manifestOf(gameId: string | null): Manifest | undefined {
+    return gameId ? this.manifestsSignal().get(gameId) : undefined;
+  }
+
+  loadManifest(gameId: string): Promise<Manifest> {
+    let pending = this.manifests.get(gameId);
+    if (!pending) {
+      pending = firstValueFrom(this.http.get<Manifest>(`${BASE}/${gameId}/manifest.json`)).then((manifest) => {
+        manifest.chapters.sort((a, b) => a.order - b.order);
+        this.manifestsSignal.update((map) => new Map(map).set(gameId, manifest));
+        return manifest;
+      });
+      pending.catch(() => this.manifests.delete(gameId));
+      this.manifests.set(gameId, pending);
+    }
+    return pending;
+  }
+
+  loadChapter(gameId: string, summary: ChapterSummary): Promise<Chapter> {
     let pending = this.chapters.get(summary.id);
     if (!pending) {
       // The data version busts the offline cache whenever a correction is published.
-      const url = `${BASE}/${summary.file}?v=${this.manifest()?.game.dataVersion ?? 0}`;
-      pending = firstValueFrom(this.http.get<Chapter>(url));
+      const version = this.manifestOf(gameId)?.game.dataVersion ?? 0;
+      pending = firstValueFrom(this.http.get<Chapter>(`${BASE}/${gameId}/${summary.file}?v=${version}`));
       pending.then(
         (chapter) => this.loadedSignal.update((map) => new Map(map).set(chapter.id, chapter)),
         () => this.chapters.delete(summary.id),

@@ -13,7 +13,8 @@ quests, hidden quests, missables and collectibles, with a warning before each po
 
 | Path | What |
 | --- | --- |
-| `content/` | Game data, one JSON file per chapter, validated by `content/schema/` |
+| `content/franchises.json` | Franchises shown in the library |
+| `content/<game>/` | One game: `game.json` plus one JSON file per chapter, validated by `content/schema/` |
 | `content/id-registry.json` | Every id ever used. Append-only: saved progress points at these ids |
 | `scripts/` | `validate-content.mjs` (CI) and `build-content.mjs` (writes `web/public/content/`) |
 | `web/` | Angular PWA |

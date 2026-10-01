@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, computed, inject, input, resource }
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
-import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
+import { ActiveGame } from '../../core/game/active-game';
 import { ChapterAccess, chapterIdOfItem } from '../../core/spoiler/chapter-access';
 import { ItemView } from '../../core/spoiler/item-view';
 import { RevealService } from '../../core/spoiler/reveal.service';
@@ -20,18 +20,18 @@ import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
   styleUrl: './boss-detail.scss',
 })
 export class BossDetail {
-  private readonly content = inject(ContentService);
   private readonly access = inject(ChapterAccess);
   protected readonly reveals = inject(RevealService);
   protected readonly view = inject(ItemView);
   protected readonly lang = inject(LangService);
+  protected readonly game = inject(ActiveGame);
 
   /** Bound from the route; the route guard already checked its chapter is unlocked. */
   readonly bossId = input.required<string>();
 
   protected readonly chapter = resource({
     params: () => this.access.unlockedChapter(chapterIdOfItem(this.bossId())),
-    loader: ({ params }) => this.content.loadChapter(params),
+    loader: ({ params }) => this.access.loadChapter(params),
   });
 
   protected readonly entry = computed(() => {

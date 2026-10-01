@@ -6,13 +6,15 @@ import { AnalyticsService } from '../../core/analytics.service';
 import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
+import { SavedProgress } from '../../core/progress/progress.models';
 import { ProgressImportError, ProgressStore } from '../../core/progress/progress.store';
-import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
+import { SITE } from '../../site.config';
 import { Icon } from '../../ui/icon/icon';
 
-type TransferStatus = { kind: 'ok' | 'error'; key: string } | null;
+type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number } | null;
 
+/** The library: continue the last game, browse franchises and games, move progress between devices. */
 @Component({
   selector: 'app-home',
   imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon],
@@ -22,34 +24,59 @@ type TransferStatus = { kind: 'ok' | 'error'; key: string } | null;
 })
 export class Home {
   protected readonly content = inject(ContentService);
-  protected readonly access = inject(ChapterAccess);
   protected readonly lang = inject(LangService);
   private readonly progress = inject(ProgressStore);
-  private readonly contentService = inject(ContentService);
   private readonly analytics = inject(AnalyticsService);
+  protected readonly suggestUrl = SITE.repoUrl ? `${SITE.repoUrl}/issues` : '';
 
-  /** The current chapter is always unlocked, so loading it here never leaks anything. */
-  private readonly currentChapter = resource({
-    params: () => this.access.current(),
-    loader: ({ params }) => this.contentService.loadChapter(params),
+  private readonly saved = resource({ loader: () => this.progress.listSaved() });
+  private readonly savedByGame = computed(
+    () => new Map<string, SavedProgress>((this.saved.hasValue() ? this.saved.value() : []).map((p) => [p.gameId, p])),
+  );
+  protected readonly franchises = computed(() => this.content.catalog()?.franchises ?? []);
+
+  /** The most recently played game that is still in the catalog, with its current chapter. */
+  protected readonly recent = resource({
+    params: () => (this.saved.hasValue() ? this.saved.value() : []).find((p) => this.content.game(p.gameId)),
+    loader: async ({ params: saved }) => {
+      const manifest = await this.content.loadManifest(saved.gameId);
+      const summary = manifest.chapters.find((c) => c.id === saved.currentChapter) ?? manifest.chapters[0];
+      // The current chapter is unlocked for that game by definition, so loading it spoils nothing.
+      const chapter = await this.content.loadChapter(saved.gameId, summary);
+      const done = new Set(saved.doneItems);
+      const stats = chapterProgress(chapter, done);
+      return {
+        gameId: saved.gameId,
+        game: this.content.game(saved.gameId)!,
+        summary,
+        stats,
+        percent: stats.total ? Math.round((stats.done / stats.total) * 100) : 0,
+        alert: nextCheckpointAlert(chapter, done),
+      };
+    },
   });
-  protected readonly summary = computed(() => {
-    if (!this.currentChapter.hasValue()) return null;
-    const chapter = this.currentChapter.value();
-    const stats = chapterProgress(chapter, this.progress.done());
-    return {
-      ...stats,
-      percent: stats.total ? Math.round((stats.done / stats.total) * 100) : 0,
-      alert: nextCheckpointAlert(chapter, this.progress.done()),
-    };
-  });
+
+  /** Ticked items of a saved game (route steps and Rank A marks are not counted twice). */
+  protected doneCount(gameId: string): number {
+    return this.savedByGame().get(gameId)?.doneItems.filter((id) => !id.includes('#')).length ?? 0;
+  }
+
+  protected started(gameId: string): boolean {
+    return this.savedByGame().has(gameId);
+  }
+
+  /** A started game resumes at its current chapter; a new one opens "Where am I?" first. */
+  protected gameLink(gameId: string): string[] {
+    const saved = this.savedByGame().get(gameId);
+    return saved ? ['/', gameId, 'chapters', saved.currentChapter] : ['/', gameId, 'chapters'];
+  }
 
   /** File contents waiting for "replace my progress?" confirmation. */
   protected readonly pendingImport = signal<string | null>(null);
   protected readonly status = signal<TransferStatus>(null);
 
-  protected exportProgress(): void {
-    const blob = new Blob([this.progress.exportJson()], { type: 'application/json' });
+  protected async exportProgress(): Promise<void> {
+    const blob = new Blob([await this.progress.exportJson()], { type: 'application/json' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
     link.download = `chaptick-progress-${new Date().toISOString().slice(0, 10)}.json`;
@@ -73,8 +100,9 @@ export class Home {
     this.pendingImport.set(null);
     if (text === null) return;
     try {
-      await this.progress.importJson(text);
-      this.status.set({ kind: 'ok', key: 'transfer.imported' });
+      const count = await this.progress.importJson(text);
+      this.status.set({ kind: 'ok', key: 'transfer.imported', count });
+      this.saved.reload();
     } catch (error) {
       const reason = error instanceof ProgressImportError ? error.reason : 'wrong-format';
       this.status.set({ kind: 'error', key: `transfer.error.${reason}` });

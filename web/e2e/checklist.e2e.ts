@@ -2,7 +2,12 @@ import { expect, test } from '@playwright/test';
 
 import { expectSaved, row, rowById, trackContent } from './helpers';
 
-test('reaches the current chapter checklist in at most two taps', async ({ page }) => {
+test('reaches a chapter checklist in at most two taps, then resumes in one', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('link', { name: /E2E Game.*Start/ }).click();
+  await page.getByRole('link', { name: 'Prologue' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Prologue' })).toBeVisible();
+
   await page.goto('/');
   await page.getByRole('link', { name: 'Continue: Prologue' }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Prologue' })).toBeVisible();

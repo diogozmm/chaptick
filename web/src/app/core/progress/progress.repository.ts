@@ -23,6 +23,10 @@ export class ProgressRepository {
     return (await this.open()).get('progress', gameId);
   }
 
+  async getAll(): Promise<SavedProgress[]> {
+    return (await this.open()).getAll('progress');
+  }
+
   async put(progress: SavedProgress): Promise<void> {
     await (await this.open()).put('progress', progress);
   }

@@ -1,6 +1,6 @@
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig, inject, isDevMode, provideAppInitializer, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withRouterConfig } from '@angular/router';
 import { provideServiceWorker } from '@angular/service-worker';
 import { provideTransloco } from '@jsverse/transloco';
 
@@ -9,7 +9,6 @@ import { AnalyticsService } from './core/analytics.service';
 import { ContentService } from './core/content/content.service';
 import { LangService } from './core/i18n/lang.service';
 import { TranslocoHttpLoader } from './core/i18n/transloco-http-loader';
-import { ProgressStore } from './core/progress/progress.store';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -19,6 +18,8 @@ export const appConfig: ApplicationConfig = {
       routes,
       withComponentInputBinding(),
       withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
+      // Child pages also see the :gameId of their parent route.
+      withRouterConfig({ paramsInheritanceStrategy: 'always' }),
     ),
     // Offline-first: the app shell is prefetched, chapters are cached as they unlock.
     provideServiceWorker('ngsw-worker.js', {
@@ -35,14 +36,10 @@ export const appConfig: ApplicationConfig = {
       },
       loader: TranslocoHttpLoader,
     }),
-    // Guards need the manifest and the current chapter before the first navigation.
+    // The library needs the catalog before the first navigation; each game loads on demand.
     provideAppInitializer(async () => {
-      const content = inject(ContentService);
-      const progress = inject(ProgressStore);
-      const lang = inject(LangService);
       inject(AnalyticsService).init();
-      const [manifest] = await Promise.all([content.loadManifest(), lang.init()]);
-      await progress.load(manifest.chapters[0]?.id ?? '');
+      await Promise.all([inject(ContentService).loadCatalog(), inject(LangService).init()]);
     }),
   ],
 };

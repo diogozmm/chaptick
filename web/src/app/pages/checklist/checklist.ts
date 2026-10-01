@@ -3,10 +3,10 @@ import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { Boss, Chapter, ITEM_TYPES, Item, ItemType, localize } from '../../core/content/content.models';
-import { ContentService } from '../../core/content/content.service';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
+import { ActiveGame } from '../../core/game/active-game';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { ItemView } from '../../core/spoiler/item-view';
 import { carriedOver, chapterProgress, expiredItems, groupByType, nextCheckpointAlert } from '../../core/spoiler/spoiler';
@@ -23,10 +23,10 @@ import { TYPE_ICON } from '../../ui/item-type';
   styleUrl: './checklist.scss',
 })
 export class Checklist {
-  private readonly content = inject(ContentService);
   private readonly access = inject(ChapterAccess);
   protected readonly progress = inject(ProgressStore);
   protected readonly lang = inject(LangService);
+  protected readonly game = inject(ActiveGame);
   protected readonly view = inject(ItemView);
 
   /** Bound from the route; the route guard already checked it is unlocked. */
@@ -34,7 +34,7 @@ export class Checklist {
 
   protected readonly chapter = resource({
     params: () => this.access.unlockedChapter(this.chapterId()),
-    loader: ({ params }) => this.content.loadChapter(params),
+    loader: ({ params }) => this.access.loadChapter(params),
   });
 
   /** Earlier chapters, loaded only for the current chapter's "left behind" section. */

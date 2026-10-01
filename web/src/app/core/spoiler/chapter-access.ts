@@ -3,16 +3,18 @@ import { CanActivateFn, Router } from '@angular/router';
 
 import { Chapter, ChapterSummary } from '../content/content.models';
 import { ContentService } from '../content/content.service';
+import { ActiveGame } from '../game/active-game';
 import { ProgressStore } from '../progress/progress.store';
 import { isUnlocked } from './spoiler';
 
-/** Joins the manifest with the player's current chapter to decide what may be loaded. */
+/** Joins the active game's manifest with the player's current chapter to decide what may be loaded. */
 @Injectable({ providedIn: 'root' })
 export class ChapterAccess {
   private readonly content = inject(ContentService);
+  private readonly active = inject(ActiveGame);
   private readonly progress = inject(ProgressStore);
 
-  readonly chapters = computed(() => this.content.manifest()?.chapters ?? []);
+  readonly chapters = computed(() => this.active.manifest()?.chapters ?? []);
   readonly current = computed<ChapterSummary | undefined>(() => {
     const chapters = this.chapters();
     return chapters.find((c) => c.id === this.progress.currentChapter()) ?? chapters[0];
@@ -22,12 +24,16 @@ export class ChapterAccess {
 
   /** Every chapter up to the current one, for rules that look across chapters. */
   loadUnlocked(): Promise<Chapter[]> {
-    return Promise.all(this.unlocked().map((summary) => this.content.loadChapter(summary)));
+    return Promise.all(this.unlocked().map((summary) => this.loadChapter(summary)));
+  }
+
+  loadChapter(summary: ChapterSummary): Promise<Chapter> {
+    return this.content.loadChapter(this.active.id() ?? '', summary);
   }
 
   /** The chapter if the player may see it, otherwise undefined. */
   unlockedChapter(chapterId: string): ChapterSummary | undefined {
-    const summary = this.content.summary(chapterId);
+    const summary = this.chapters().find((c) => c.id === chapterId);
     return summary && isUnlocked(summary, this.currentOrder()) ? summary : undefined;
   }
 }
@@ -38,5 +44,6 @@ export const chapterIdOfItem = (itemId: string): string => itemId.match(/^[a-z0-
 /** Blocks a pasted link to a locked chapter, item or boss instead of loading it. */
 export const unlockedChapterGuard: CanActivateFn = (route) => {
   const chapterId = route.params['chapterId'] ?? chapterIdOfItem(route.params['itemId'] ?? route.params['bossId'] ?? '');
-  return inject(ChapterAccess).unlockedChapter(chapterId) ? true : inject(Router).parseUrl('/sc/chapters');
+  if (inject(ChapterAccess).unlockedChapter(chapterId)) return true;
+  return inject(Router).createUrlTree(inject(ActiveGame).link('chapters'));
 };
