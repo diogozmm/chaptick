@@ -706,8 +706,8 @@
       "id": "fc-ch1-co-09",
       "type": "collectible",
       "name": {
-        "en": "West Bose Highway treasure chests (5)",
-        "pt": "Baús de West Bose Highway (5)"
+        "en": "West Bose Highway treasure chests (4)",
+        "pt": "Baús de West Bose Highway (4)"
       },
       "location": {
         "en": "West Bose Highway",
@@ -746,12 +746,6 @@
             "en": "Hit 2",
             "pt": "Hit 2"
           }
-        },
-        {
-          "text": {
-            "en": "Teara Balm",
-            "pt": "Teara Balm"
-          }
         }
       ],
       "trophies": [
@@ -762,8 +756,8 @@
       "id": "fc-ch1-co-10",
       "type": "collectible",
       "name": {
-        "en": "Ravennue Trail treasure chests (7)",
-        "pt": "Baús de Ravennue Trail (7)"
+        "en": "Ravennue Trail treasure chests (8)",
+        "pt": "Baús de Ravennue Trail (8)"
       },
       "location": {
         "en": "Ravennue Trail",
@@ -771,12 +765,13 @@
       },
       "availableUntil": "fc-ch2-cp-01",
       "hint": {
-        "en": "Four chests before the quest marker (approaching it starts the boss fight), three after it.",
-        "pt": "Quatro baús antes do marcador da quest (chegar perto começa a luta), três depois."
+        "en": "Four chests before the quest marker on the east side (approaching it starts the boss fight), three after it, plus a Teara Balm.",
+        "pt": "Quatro baús antes do marcador da quest no lado leste (chegar perto começa a luta), três depois e mais um Teara Balm."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose"
+        "guide: Neoseeker FC walkthrough, Chapter 1 - Bose",
+        "guide: Neoseeker FC walkthrough, Treasure List"
       ],
       "steps": [
         {
@@ -819,6 +814,12 @@
           "text": {
             "en": "Strega R (monster chest: Millipede Ball+ ×2)",
             "pt": "Strega R (baú de monstros: Millipede Ball+ ×2)"
+          }
+        },
+        {
+          "text": {
+            "en": "Teara Balm",
+            "pt": "Teara Balm"
           }
         }
       ],

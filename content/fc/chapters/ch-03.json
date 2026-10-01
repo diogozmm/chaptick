@@ -1189,42 +1189,43 @@
       },
       "availableUntil": "fc-ch4-cp-01",
       "hint": {
-        "en": "Follow the road to the end of Soldat Army Road; also touch Sanktheim Gate for fast travel.",
-        "pt": "Siga a estrada até o fim da Soldat Army Road; passe também pelo Sanktheim Gate para a viagem rápida."
+        "en": "Three on Ritter Roadway and two at the end of Soldat Army Road; also touch Sanktheim Gate for fast travel.",
+        "pt": "Três na Ritter Roadway e dois no fim da Soldat Army Road; passe também pelo Sanktheim Gate para a viagem rápida."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village"
+        "guide: Neoseeker FC walkthrough, Chapter 3 - Elmo Village",
+        "guide: Neoseeker FC walkthrough, Treasure List"
       ],
       "steps": [
         {
           "text": {
-            "en": "Droplet of Life ×4",
-            "pt": "Droplet of Life ×4"
+            "en": "Ritter Roadway — Droplet of Life ×4",
+            "pt": "Ritter Roadway — Droplet of Life ×4"
           }
         },
         {
           "text": {
-            "en": "U-Material+",
-            "pt": "U-Material+"
+            "en": "Ritter Roadway — U-Material+",
+            "pt": "Ritter Roadway — U-Material+"
           }
         },
         {
           "text": {
-            "en": "All Sepith ×150",
-            "pt": "All Sepith ×150"
+            "en": "Ritter Roadway — All Sepith ×150",
+            "pt": "Ritter Roadway — All Sepith ×150"
           }
         },
         {
           "text": {
-            "en": "Zeram Powder",
-            "pt": "Zeram Powder"
+            "en": "Soldat Army Road — Zeram Powder",
+            "pt": "Soldat Army Road — Zeram Powder"
           }
         },
         {
           "text": {
-            "en": "Droplet of Defense ×4",
-            "pt": "Droplet of Defense ×4"
+            "en": "Soldat Army Road — Droplet of Defense ×4",
+            "pt": "Soldat Army Road — Droplet of Defense ×4"
           }
         }
       ],

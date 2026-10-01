@@ -35,13 +35,16 @@ def qty(name):
     return re.sub(r' x ?(\d)', r' ×\1', name)
 
 
-def chests(c, area, nums, until, hint, sources, title=None):
-    """One entry per area; every chest is a route step, in the guide's order."""
+def chests(c, area, nums, until, hint, sources, title=None, places=None):
+    """One entry per area; every chest is a route step, in the guide's order. Once published, steps
+    may only be appended (progress keys are <itemId>#step-<n>). `places` prefixes a step with the
+    map it is on, for groups that span two maps."""
     steps = []
     for n in nums:
         item, floor, battle = CHESTS[n]
         item = qty(item)
-        en, pt = (f'{floor} — {item}', f'{floor} — {item}') if floor else (item, item)
+        where = (places or {}).get(n) or (floor and (floor, floor))
+        en, pt = (f'{where[0]} — {item}', f'{where[1]} — {item}') if where else (item, item)
         if battle:
             foes = ', '.join(qty(b.strip()) for b in battle.split(',') if b.strip())
             en += f' (monster chest: {foes})'
@@ -256,10 +259,13 @@ recipes(c, ('Bose region', 'região de Bose'), [
 S_BOSE = [BOSE]
 chests(c, ('East Bose Highway', 'East Bose Highway'), [33, 34, 35], KRONE,
        ('Two of the three can be opened before the story event midway along the road.', 'Dois dos três podem ser abertos antes do evento da história no meio da estrada.'), S_BOSE)
-chests(c, ('West Bose Highway', 'West Bose Highway'), [36, 37, 38, 39, 40], KRONE,
+# Chest 40 belongs to Ravennue Trail (Treasure List); it was first published under West Bose
+# Highway, so it moved as the last Ravennue step to keep every other step's progress key.
+chests(c, ('West Bose Highway', 'West Bose Highway'), [36, 37, 38, 39], KRONE,
        ('The monster chest holds Katars, an upgrade for Joshua. A hidden cave in the southwest is a farming spot.', 'O baú de monstros tem Katars, uma melhoria para o Joshua. Uma caverna escondida no sudoeste serve para farmar.'), S_BOSE)
-chests(c, ('Ravennue Trail', 'Ravennue Trail'), [41, 42, 43, 44, 45, 46, 47], KRONE,
-       ('Four chests before the quest marker (approaching it starts the boss fight), three after it.', 'Quatro baús antes do marcador da quest (chegar perto começa a luta), três depois.'), S_BOSE)
+chests(c, ('Ravennue Trail', 'Ravennue Trail'), [41, 42, 43, 44, 45, 46, 47, 40], KRONE,
+       ('Four chests before the quest marker on the east side (approaching it starts the boss fight), three after it, plus a Teara Balm.',
+        'Quatro baús antes do marcador da quest no lado leste (chegar perto começa a luta), três depois e mais um Teara Balm.'), S_BOSE + [NEO('Treasure List')])
 chests(c, ('Krone Trail (Bose side)', 'Krone Trail (lado de Bose)'), [48, 49, 50], KRONE,
        ('Includes the Cursed Fried Eyeballs dish. Reach the western checkpoint to unlock fast travel.', 'Inclui o prato Cursed Fried Eyeballs. Chegue ao posto a oeste para liberar a viagem rápida.'), S_BOSE)
 chests(c, ('Nebel Valley', 'Nebel Valley'), [51, 52, 53], KRONE,
@@ -534,7 +540,11 @@ chests(c, ('Tratt Plains Road', 'Tratt Plains Road'), list(range(125, 138)), SAN
 chests(c, ('Carnelia Tower', 'Carnelia Tower'), list(range(138, 146)), SANKTHEIM,
        ('On 2F each staircase leads to a chest; only the middle one goes up. The Trappers are weak to water and explode.', 'No 2F cada escada leva a um baú; só a do meio sobe. Os Trappers são fracos contra água e explodem.'), [ELMO])
 chests(c, ('Ritter Roadway', 'Ritter Roadway'), list(range(146, 151)), SANKTHEIM,
-       ('Follow the road to the end of Soldat Army Road; also touch Sanktheim Gate for fast travel.', 'Siga a estrada até o fim da Soldat Army Road; passe também pelo Sanktheim Gate para a viagem rápida.'), [ELMO])
+       ('Three on Ritter Roadway and two at the end of Soldat Army Road; also touch Sanktheim Gate for fast travel.',
+        'Três na Ritter Roadway e dois no fim da Soldat Army Road; passe também pelo Sanktheim Gate para a viagem rápida.'),
+       [ELMO, NEO('Treasure List')],
+       places={146: ('Ritter Roadway',) * 2, 147: ('Ritter Roadway',) * 2, 148: ('Ritter Roadway',) * 2,
+               149: ('Soldat Army Road',) * 2, 150: ('Soldat Army Road',) * 2})
 c.boss(t('Rhinoking'), t('Tratt Plains Road'),
        t('A huge HP sponge for physical parties: use arts and ailments (Blind, Confuse, Sleep). It shields itself and Rages at low HP.',
          'Uma esponja de HP para equipes físicas: use arts e efeitos (Blind, Confuse, Sleep). Ele se protege e entra em Rage com pouco HP.'),
