@@ -1,0 +1,99 @@
+{
+  "id": "cc-ch0",
+  "gameId": "cc",
+  "order": 0,
+  "neutralLabel": {
+    "en": "Area 1"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "cc-ch0-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Fence Task"
+      },
+      "location": {
+        "en": "Farm"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Do Fence Task."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "fixture"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "entries": [
+    {
+      "id": "cc-bitter-herb",
+      "name": {
+        "en": "Bitter Herb"
+      },
+      "category": "materials",
+      "sell": "4g",
+      "sources": [
+        {
+          "kind": "forage",
+          "where": {
+            "en": "Town"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-herb-tea",
+      "name": {
+        "en": "Herb Tea"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Kettle"
+          }
+        }
+      ]
+    }
+  ],
+  "crafts": [
+    {
+      "id": "cc-cook-herb-tea",
+      "name": {
+        "en": "Herb Tea"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Kettle"
+      },
+      "makes": "cc-herb-tea",
+      "ingredients": [
+        {
+          "entryId": "cc-bitter-herb",
+          "name": {
+            "en": "Bitter Herb"
+          },
+          "qty": 2
+        }
+      ]
+    }
+  ],
+  "creatures": [
+    {
+      "id": "cc-cr-scarecrow",
+      "name": {
+        "en": "Grinning Scarecrow"
+      },
+      "where": [
+        {
+          "en": "Farm"
+        }
+      ],
+      "spoilerLevel": 0
+    }
+  ]
+}

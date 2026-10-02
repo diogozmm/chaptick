@@ -2,12 +2,12 @@
 @if (chapter.hasValue()) {
   @let ch = chapter.value();
   @let s = stats();
-  <a [routerLink]="game.link('chapters')" class="link back"><app-icon name="chevron-left" /> {{ 'where.title' | transloco }}</a>
+  <a [routerLink]="game.link('chapters')" class="link back"><app-icon name="chevron-left" /> {{ game.k('where.title') | transloco }}</a>
 
   <header class="hero card rise">
     <div class="hero-top">
       <div>
-        <p class="eyebrow">{{ 'checklist.eyebrow' | transloco }}</p>
+        <p class="eyebrow">{{ game.k('checklist.eyebrow') | transloco }}</p>
         <h1>{{ ch.neutralLabel | localize: l }}</h1>
       </div>
       <p class="percent" aria-hidden="true">{{ percent() }}<small>%</small></p>
@@ -18,6 +18,17 @@
     </div>
     <p class="muted small">{{ 'checklist.progress' | transloco: { done: s.done, total: s.total } }}</p>
   </header>
+
+  @if (game.hasCompendium()) {
+    <a class="card compendium-link" [routerLink]="game.link('compendium')">
+      <app-icon name="book-open" />
+      <span>
+        <strong>{{ 'compendium.title' | transloco }}</strong>
+        <span class="muted small">{{ 'compendium.short' | transloco }}</span>
+      </span>
+      <app-icon name="chevron-right" />
+    </a>
+  }
 
   <app-how-it-works />
 
@@ -30,7 +41,7 @@
         <a class="alert-link" [routerLink]="game.link('deadlines')">{{ 'deadlines.link' | transloco }} <app-icon name="chevron-right" /></a>
       </div>
     </aside>
-  } @else if (s.total > 0) {
+  } @else if (s.total > 0 && game.hasDeadlines()) {
     <aside class="alert clear rise" role="status">
       <app-icon name="circle-check" />
       <p>{{ 'checklist.allClear' | transloco }}</p>
@@ -95,7 +106,7 @@
       </ul>
     </section>
   } @empty {
-    <p class="empty card">{{ (s.total ? 'checklist.allHidden' : 'checklist.empty') | transloco }}</p>
+    <p class="empty card">{{ (s.total ? 'checklist.allHidden' : game.k('checklist.empty')) | transloco }}</p>
   }
 
   @if (bosses().length > 0) {
@@ -125,11 +136,11 @@
 
   @if (next(); as n) {
     @let nextLabel = n.chapter.neutralLabel | localize: l;
-    <nav class="next card" [attr.aria-label]="'checklist.nextChapter' | transloco">
+    <nav class="next card" [attr.aria-label]="game.k('checklist.nextChapter') | transloco">
       @if (n.unlocked) {
         <a class="next-link" [routerLink]="game.link('chapters', n.chapter.id)">
           <span>
-            <span class="eyebrow">{{ 'checklist.nextChapter' | transloco }}</span>
+            <span class="eyebrow">{{ game.k('checklist.nextChapter') | transloco }}</span>
             <span class="next-title">{{ nextLabel }}</span>
           </span>
           <app-icon name="chevron-right" />
@@ -137,9 +148,9 @@
       } @else if (advancing()) {
         <app-advance-confirm [target]="n.chapter" (cancelled)="advancing.set(false)" />
       } @else {
-        <p class="eyebrow">{{ 'checklist.nextChapter' | transloco }}</p>
+        <p class="eyebrow">{{ game.k('checklist.nextChapter') | transloco }}</p>
         <button type="button" class="button primary block" (click)="advancing.set(true)">
-          {{ 'checklist.advanceTo' | transloco: { chapter: nextLabel } }} <app-icon name="chevron-right" />
+          {{ game.k('checklist.advanceTo') | transloco: { chapter: nextLabel } }} <app-icon name="chevron-right" />
         </button>
       }
     </nav>

@@ -1,0 +1,161 @@
+Aged Wine (Cloudberry)
+Aged Wine (Duskmelon)
+Ancientwood
+Baked Crab
+Baked Serpent
+Battery
+Blood Potion
+Blood Punch
+Blood Skewer
+Blood-Soaked Gem Bag
+Blueprint: Ghostly Scarecrow
+Blueprint: Lapidary Table
+Blueprint: Skeletal Scarecrow
+Blueprint: Wicker Scarecrow
+Bone Ingot
+Brain
+Bubble Gum
+Bubble-Tea
+Chaos Potion
+Chocolate Bar
+Chocolate Cake
+Cloudberry
+Cloudberry Punch
+Coffee Maker
+Combat Drink
+Crank Lure
+Cured Mana Steak (Raw)
+Death Crystal
+Deep Crystal
+Dense Fertilizer (Lv3)
+Dream Crystal
+Dusk Juice
+Duskberries
+Duskmelon
+Duskmelon Slice
+Eldersprout
+Energy Drink
+Entrails
+Expert Adventurer's Meal
+Expert Wizard's Meal
+Exploding Candy
+Failed Meal
+Fancy Fertilizer (Lv3)
+Farmer's Potion
+Flask of Blood
+Flask of the Gods (Agility)
+Flask of the Gods (Attack)
+Flask of the Gods (Defense)
+Flask of the Gods (HP)
+Flask of the Gods (Luck)
+Flask of the Gods (M. Atk)
+Flask of the Gods (M. Def)
+Flask of the Gods (MP)
+Ghost Crystal
+Ghost Egg
+Ghostly Scarecrow
+Goat Horn
+Godflesh
+Goldpuff
+Goodie Bag
+Gravemoss
+Greater Death Crystal
+Greater Deep Crystal
+Greater Dream Crystal
+Greater Ghost Crystal
+Greater Light Crystal
+Greater Moon Crystal
+Greater Potion of Brutalism
+Greater Potion of Greed
+Greater Potion of Zealotry
+Hardwood Seed
+Hazard Potion
+Herbal Cake
+Herbal Crab
+Herbal Cupcake
+Herbal Feast
+Herbal Pie
+Herbal Platter
+Herbal Roast
+Herbal Serpent
+Herbal Soup
+Herbal Stew
+Iron Chain
+Jelly (Cloudberry)
+Jelly (Duskmelon)
+Jelly (Soulfruit)
+Jelly (Voidberry)
+Ladybug
+Large Egg
+Large Goat Milk
+Large Milk
+Leadleaf
+Light Crystal
+Meat Egg
+Moon Crystal
+Mystery Egg
+Mystery Roast
+Night-Owl Potion
+Obsidian Egg
+Perfect Cookie
+Pickles (Eldersprout)
+Pocket Sand
+Potion of Commerce
+Potion of Debt
+Potion of Everything
+Potion of Refuse
+Pumpkin Vine
+Rage Cookie
+Rancher's Potion
+Raw Hay
+Recipe: Flesh Sandwich
+Recipe: Rancher's Meal
+Recipe: Slime Pizza
+Recipe: Special Hotdog
+Rich Cookie
+Ring of Binding
+Ritual Tome: Energizing Blast
+Ritual Tome: Frenzy Blast
+Ritual Tome: Induce Anxiety
+Ritual Tome: Mana Drain
+Ritual Tome: Mark of Insight
+Ritual Tome: Sludge Blast
+Ritual Tome: Terror Blast
+Simple Kebab
+Skeletal Scarecrow
+Skill Tome: Frenzy Slash
+Skill Tome: Light Pierce
+Slayer's Feast
+Slime Egg
+Slime Tonic
+Small Coin Pouch
+Small Egg
+Small Goat Milk
+Smoothie
+Soft Cookie
+Soothing Soup
+Soul Stew
+Soulbargain Potion
+Soulfruit
+Sour Lollipop
+Spicy Candy
+Spiritwood Seed
+Sturdy Cookie
+Superior Axe
+Superior Pickaxe
+Superior Scythe
+Sushi
+Sweet Cookie
+Sweet Lollipop
+Taunting Potion
+Tiny Coin Pouch
+Vegetable Smoothie
+Vilebloom
+Vileroot
+Vilewood
+Viscera
+Void Dinner
+Voidberry
+Wicker Scarecrow
+Wine (Cloudberry)
+Wine (Duskmelon)

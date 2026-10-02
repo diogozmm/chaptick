@@ -9,9 +9,9 @@
 <div class="field">
   <app-icon name="search" />
   <input type="search" [value]="query()" (input)="setQuery($any($event.target).value)" autofocus enterkeyhint="search"
-    [attr.aria-label]="'search.label' | transloco" [placeholder]="'search.placeholder' | transloco" />
+    [attr.aria-label]="game.k('search.label') | transloco" [placeholder]="'search.placeholder' | transloco" />
 </div>
-<p class="muted small">{{ 'search.hint' | transloco }}</p>
+<p class="muted small">{{ game.k('search.hint') | transloco }}</p>
 
 @if (searching()) {
   <p class="muted small" role="status">{{ 'search.count' | transloco: { count: hits().length } }}</p>

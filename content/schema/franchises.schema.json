@@ -35,7 +35,8 @@
             "enum": [
               "orbits",
               "waves",
-              "stripes"
+              "stripes",
+              "fields"
             ]
           },
           "from": {

@@ -110,6 +110,42 @@ function backReferenceErrors(chapters) {
   return errors;
 }
 
+/**
+ * Compendium ids (entries, crafts, creatures) are unique per game, and every reference to an entry
+ * points to the same chapter or an earlier one, so an unlocked file never names something ahead.
+ */
+function compendiumErrors(chapters) {
+  const errors = [];
+  const orderOf = new Map();
+  for (const { file, data } of chapters) {
+    for (const e of [...(data.entries ?? []), ...(data.crafts ?? []), ...(data.creatures ?? [])]) {
+      if (orderOf.has(e.id)) errors.push(`${file}: duplicate compendium id "${e.id}"`);
+      orderOf.set(e.id, data.order);
+    }
+  }
+  const entryIds = new Set(chapters.flatMap(({ data }) => (data.entries ?? []).map((e) => e.id)));
+  for (const { file, data } of chapters) {
+    const refs = [
+      ...(data.entrySources ?? []).map((s) => ['a later source', s.entryId]),
+      ...(data.crafts ?? []).flatMap((c) => [
+        ...c.ingredients.filter((i) => i.entryId).map((i) => [`craft "${c.id}"`, i.entryId]),
+        ...(c.makes ? [[`craft "${c.id}"`, c.makes]] : []),
+      ]),
+      ...(data.creatures ?? []).flatMap((c) =>
+        (c.rewards ?? [])
+          .flatMap((r) => [...r.items, ...(r.gives ?? [])])
+          .filter((i) => i.entryId)
+          .map((i) => [`creature "${c.id}"`, i.entryId]),
+      ),
+    ];
+    for (const [from, to] of refs) {
+      if (!entryIds.has(to)) errors.push(`${file}: ${from} refers to unknown entry "${to}"`);
+      else if (orderOf.get(to) > data.order) errors.push(`${file}: ${from} refers to "${to}" from a later chapter`);
+    }
+  }
+  return errors;
+}
+
 function crossChapterErrors(chapters) {
   const errors = [];
   const seen = new Map();
@@ -179,7 +215,7 @@ export function validateContent(root, { baseRegistry } = {}) {
     errors.push(...trophyErrors(game, valid, dir));
 
     const cross = crossChapterErrors(valid);
-    errors.push(...cross.errors, ...backReferenceErrors(valid));
+    errors.push(...cross.errors, ...backReferenceErrors(valid), ...compendiumErrors(valid));
     allIds.push(game.id, ...cross.ids);
   }
 

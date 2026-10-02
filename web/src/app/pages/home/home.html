@@ -51,19 +51,31 @@
     }
     @if (r.picking) {
       <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters']">
-        {{ 'home.pickChapter' | transloco }}
+        {{ k('home.pickChapter', r.gameId) | transloco }}
         <app-icon name="chevron-right" />
       </a>
-    } @else {
+    } @else if (r.features.includes('checklist')) {
       <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters', r.summary.id]">
         {{ 'home.continue' | transloco: { chapter: r.summary.neutralLabel | localize: l } }}
         <app-icon name="chevron-right" />
       </a>
+    } @else {
+      <a class="button primary block" [routerLink]="['/', r.gameId, 'compendium']">
+        {{ 'compendium.open' | transloco }}
+        <app-icon name="chevron-right" />
+      </a>
     }
     <div class="secondary">
-      <a class="button" [routerLink]="['/', r.gameId, 'chapters']"><app-icon name="compass" /> {{ 'home.whereAmI' | transloco }}</a>
-      <a class="button" [routerLink]="['/', r.gameId, 'collections']"><app-icon name="book-open" /> {{ 'collections.short' | transloco }}</a>
-      <a class="button" [routerLink]="['/', r.gameId, 'deadlines']"><app-icon name="hourglass" /> {{ 'deadlines.link' | transloco }}</a>
+      <a class="button" [routerLink]="['/', r.gameId, 'chapters']"><app-icon name="compass" /> {{ k('home.whereAmI', r.gameId) | transloco }}</a>
+      @if (r.features.includes('compendium') && r.features.includes('checklist')) {
+        <a class="button" [routerLink]="['/', r.gameId, 'compendium']"><app-icon name="book-open" /> {{ 'compendium.title' | transloco }}</a>
+      }
+      @if (r.hasCollections) {
+        <a class="button" [routerLink]="['/', r.gameId, 'collections']"><app-icon name="book-open" /> {{ 'collections.short' | transloco }}</a>
+      }
+      @if (r.hasDeadlines) {
+        <a class="button" [routerLink]="['/', r.gameId, 'deadlines']"><app-icon name="hourglass" /> {{ 'deadlines.link' | transloco }}</a>
+      }
     </div>
   </section>
 }
@@ -93,9 +105,16 @@
   <h2 id="library-title">{{ 'home.library' | transloco }}</h2>
 
   <nav class="filters" [attr.aria-label]="'home.filterLabel' | transloco">
-    <a class="chip" routerLink="/" fragment="library" [attr.aria-current]="filter() ? null : 'true'">{{ 'home.filterAll' | transloco }}</a>
+    <a class="chip" routerLink="/" fragment="library" [attr.aria-current]="filtered() ? null : 'true'">{{ 'home.filterAll' | transloco }}</a>
+    @for (t of gameFeatures; track t) {
+      <a class="chip" routerLink="/" [queryParams]="{ t: featureFilter() === t ? null : t, f: filter()?.id ?? null }" fragment="library"
+        [attr.aria-current]="featureFilter() === t ? 'true' : null">
+        {{ 'feature.' + t | transloco }}
+      </a>
+    }
+    <span class="divider" aria-hidden="true"></span>
     @for (f of franchises(); track f.id) {
-      <a class="chip" routerLink="/" [queryParams]="{ f: f.id }" fragment="library" [attr.aria-current]="filter()?.id === f.id ? 'true' : null">
+      <a class="chip" routerLink="/" [queryParams]="{ f: filter()?.id === f.id ? null : f.id, t: featureFilter() }" fragment="library" [attr.aria-current]="filter()?.id === f.id ? 'true' : null">
         {{ f.name | localize: l }}
       </a>
     }
@@ -106,7 +125,7 @@
       <header class="franchise-head">
         <h3 [id]="'franchise-' + franchise.id">{{ franchise.name | localize: l }}</h3>
         @if (!filter() && franchise.games.length > 0) {
-          <a class="see-all" routerLink="/" [queryParams]="{ f: franchise.id }" fragment="library">
+          <a class="see-all" routerLink="/" [queryParams]="{ f: franchise.id, t: featureFilter() }" fragment="library">
             {{ 'home.seeAll' | transloco }} <app-icon name="chevron-right" />
           </a>
         }
@@ -144,7 +163,7 @@
     </section>
   }
 
-  @if (!filter()) {
+  @if (!filtered()) {
     <div class="card soon">
       <app-icon name="sparkles" />
       <div>
@@ -166,7 +185,12 @@
     <app-game-cover class="cover" [cover]="gc.style" [text]="gc.text" />
     <span class="game-body">
       <span class="visually-hidden">{{ g.name | localize: l }}</span>
-      <span class="muted small">{{ 'home.counts' | transloco: { chapters: g.chapterCount, items: g.itemCount } }}</span>
+      <span class="features">
+        @for (t of features(g.id); track t) {
+          <span class="feature" [attr.data-feature]="t">{{ 'feature.' + t | transloco }}</span>
+        }
+      </span>
+      <span class="muted small">{{ k('home.counts', g.id) | transloco: { chapters: g.chapterCount, items: g.itemCount } }}</span>
       @if (started(g.id)) {
         <span class="badge">{{ 'home.inProgress' | transloco: { count: doneCount(g.id) } }}</span>
       }

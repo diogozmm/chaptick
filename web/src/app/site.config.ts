@@ -51,7 +51,19 @@ export const SITE = {
       authors: 'shockinblue',
       url: 'https://gamefaqs.gamespot.com/ps5/390326-ys-x-nordics/faqs/80939',
     },
+    {
+      name: 'Welcome to Elderfield Wiki (wiki.gg) — CC BY-SA 4.0',
+      authors: 'Welcome to Elderfield Wiki contributors',
+      url: 'https://welcometoelderfield.wiki.gg/',
+    },
+    {
+      name: 'Neoseeker — Welcome to Elderfield task guides',
+      authors: 'Neoseeker guide team',
+      url: 'https://www.neoseeker.com/welcome-to-elderfield/',
+    },
   ],
+  /** Compendium entries link to the game's wiki page of the same name (they are CC BY-SA there). */
+  wikis: { wte: 'https://welcometoelderfield.wiki.gg/wiki/' } as Record<string, string>,
   /** Nicknames of approved community contributors. */
   contributors: [] as string[],
   /** Supporters who asked to be credited. */

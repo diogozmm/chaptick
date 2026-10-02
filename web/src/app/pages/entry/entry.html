@@ -1,0 +1,118 @@
+@let l = lang.lang();
+<a [routerLink]="game.link('compendium')" class="link back"><app-icon name="chevron-left" /> {{ 'compendium.title' | transloco }}</a>
+
+@if (found(); as f) {
+  <header class="hero card rise">
+    <p class="eyebrow">{{ 'compendium.category.' + f.entry.category | transloco }}</p>
+    <h1>{{ f.entry.name | localize: l }}</h1>
+    @if (f.entry.name | original: l; as en) {
+      <p class="en">{{ 'compendium.inEnglish' | transloco: { name: en } }}</p>
+    }
+    <p class="muted small">
+      {{ 'compendium.from' | transloco: { chapter: f.chapter.neutralLabel | localize: l } }}
+      @if (f.entry.sell) {
+        · {{ 'compendium.sells' | transloco: { price: f.entry.sell } }}
+      }
+    </p>
+  </header>
+
+  <section class="section" aria-labelledby="ways-title">
+    <h2 id="ways-title">{{ 'compendium.howToGet' | transloco }}</h2>
+    @for (way of ways(); track way.kind) {
+      <div class="way">
+        <h3><app-icon [name]="kindIcon[way.kind]" /> {{ 'compendium.kind.' + way.kind | transloco }}</h3>
+        <ul>
+          @for (p of way.sources; track $index) {
+            <li>
+              {{ p.source.where | localize: l }}
+              @if (p.source.seasons?.length || p.source.time || p.chapter.id !== f.chapter.id) {
+                <span class="tags">
+                  @for (season of p.source.seasons ?? []; track season) {
+                    <span class="tag">{{ 'compendium.season.' + season | transloco }}</span>
+                  }
+                  @if (p.source.time) {
+                    <span class="tag">{{ 'compendium.time.' + p.source.time | transloco }}</span>
+                  }
+                  @if (p.chapter.id !== f.chapter.id) {
+                    <span class="tag later">{{ 'compendium.from' | transloco: { chapter: p.chapter.neutralLabel | localize: l } }}</span>
+                  }
+                </span>
+              }
+            </li>
+          }
+        </ul>
+      </div>
+    } @empty {
+      <p class="muted small">{{ 'compendium.noWays' | transloco }}</p>
+    }
+  </section>
+
+  @if (madeBy().length > 0) {
+    <section class="section" aria-labelledby="made-title">
+      <h2 id="made-title">{{ 'compendium.madeWith' | transloco }}</h2>
+      @for (c of madeBy(); track c.craft.id) {
+        <div class="way">
+          <h3><app-icon name="scroll-text" /> {{ c.craft.group | localize: l }}</h3>
+          <ul class="ingredients">
+            @for (i of c.craft.ingredients; track $index) {
+              <li>
+                @if (i.entryId) {
+                  <a [routerLink]="game.link('entries', i.entryId)">{{ i.qty }}× {{ i.name | localize: l }}</a>
+                } @else {
+                  <span>{{ i.qty }}× {{ i.name | localize: l }}</span>
+                }
+              </li>
+            }
+          </ul>
+          @if (c.craft.unlock) {
+            <p class="muted small">{{ c.craft.unlock | localize: l }}</p>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  @if (usedIn().length > 0) {
+    <section class="section" aria-labelledby="used-title">
+      <h2 id="used-title">{{ 'compendium.usedIn' | transloco: { count: usedIn().length } }}</h2>
+      <ul class="used">
+        @for (c of usedIn(); track c.craft.id) {
+          <li>
+            @if (c.craft.makes) {
+              <a [routerLink]="game.link('entries', c.craft.makes)">{{ c.craft.name | localize: l }}</a>
+            } @else {
+              <span>{{ c.craft.name | localize: l }}</span>
+            }
+            <span class="muted small">{{ c.craft.group | localize: l }}</span>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+
+  @if (givenBy().length > 0) {
+    <section class="section" aria-labelledby="given-title">
+      <h2 id="given-title">{{ 'compendium.givenBy' | transloco }}</h2>
+      <ul class="used">
+        @for (c of givenBy(); track c.creature.id) {
+          <li>
+            <app-spoiler-reveal [itemId]="c.creature.id" [level]="c.creature.spoilerLevel"
+              [placeholder]="'compendium.creaturePlaceholder' | transloco: { n: creatureNumber().get(c.creature.id) }">
+              <a [routerLink]="game.link('creatures', c.creature.id)">{{ c.creature.name | localize: l }}</a>
+            </app-spoiler-reveal>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+  @if (wikiUrl(); as url) {
+    <a class="wiki" [href]="url" target="_blank" rel="noopener">{{ 'compendium.wiki' | transloco }} <app-icon name="chevron-right" /></a>
+  }
+} @else if (ready()) {
+  <div class="card notfound">
+    <p>{{ 'compendium.notFound' | transloco }}</p>
+    <a class="button" [routerLink]="game.link('compendium')">{{ 'compendium.title' | transloco }}</a>
+  </div>
+} @else {
+  <p class="muted" aria-busy="true">{{ 'common.loading' | transloco }}</p>
+}

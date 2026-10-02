@@ -9,6 +9,9 @@
   <span class="name" [id]="'name-' + it.id">
     <app-spoiler-reveal [itemId]="it.id" [level]="it.spoilerLevel" [placeholder]="label">
       {{ it.name | localize: l }}
+      @if (it.name | original: l; as en) {
+        <span class="en">{{ en }}</span>
+      }
     </app-spoiler-reveal>
   </span>
   <span class="meta">

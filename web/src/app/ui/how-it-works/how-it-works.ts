@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
+import { ActiveGame } from '../../core/game/active-game';
 import { Icon } from '../icon/icon';
 
 const STORAGE_KEY = 'chaptick.howItWorks';
@@ -18,6 +19,7 @@ const STORAGE_KEY = 'chaptick.howItWorks';
   styleUrl: './how-it-works.scss',
 })
 export class HowItWorks {
+  protected readonly game = inject(ActiveGame);
   protected readonly open = signal(!readSeen());
 
   protected dismiss(): void {

@@ -1,0 +1,6137 @@
+{
+  "id": "wte-ch1",
+  "gameId": "wte",
+  "order": 1,
+  "neutralLabel": {
+    "en": "Mall, Mines & Sewers",
+    "pt": "Shopping, Minas e Esgotos"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "wte-ch1-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Fishing in the Mall...?",
+        "pt": "Pescando no Shopping...?"
+      },
+      "location": {
+        "en": "Office Worker — Mall Back office",
+        "pt": "Escritório Worker — Escritório dos fundos do Shopping"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Bring the Office Worker a Stalktopus. Reward: The Mall Administrator gets called.",
+        "pt": "Objetivos: Leve um Polvo-de-antenas ao funcionário do escritório. Recompensa: O Administrador do Shopping é chamado."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch1-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Healthy Eating",
+        "pt": "Comendo Bem"
+      },
+      "location": {
+        "en": "Jeremiah — Sewers (North East)",
+        "pt": "Jeremiah — Esgotos (Nordeste)"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Bring Jeremiah a Light Salad.",
+        "pt": "Objetivos: Leve uma Salada Leve ao Jeremiah."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch1-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Secrets of the Deep",
+        "pt": "Segredos das Profundezas"
+      },
+      "location": {
+        "en": "Art — Town",
+        "pt": "Art — Cidade"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Speak to Art for more details; Reach the third floor of the Mall Mines. Reward: Blueprint: Preserving Barrel.",
+        "pt": "Objetivos: Fale com o Art para saber mais; Chegue ao 3º andar das Minas do Shopping. Recompensa: Projeto: Barril de Conserva."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch1-q-04",
+      "type": "quest",
+      "name": {
+        "en": "The Gatekeeper",
+        "pt": "O Guardião do Portão"
+      },
+      "location": {
+        "en": "The Gatekeeper — Sewers F1",
+        "pt": "The Gatekeeper — Esgotos 1º andar"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Bring the Gatekeeper some pizza; Find the first Gate Key; Speak to the Gatekeeper; Find the second Gate Key; Speak to the Gatekeeper; Find the final Gate Key.",
+        "pt": "Objetivos: Leve pizza ao Guardião do Portão; Encontre a primeira Chave do Portão; Fale com o Guardião do Portão; Encontre a segunda Chave do Portão; Fale com o Guardião do Portão; Encontre a última Chave do Portão."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch1-q-05",
+      "type": "quest",
+      "name": {
+        "en": "Tentacle Cleanup",
+        "pt": "Limpeza de Tentáculos"
+      },
+      "location": {
+        "en": "Adrian — Town",
+        "pt": "Adrian — Cidade"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Sort out this tentacle mess.",
+        "pt": "Objetivos: Dê um jeito nessa bagunça de tentáculos."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch1-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Treasure Map 2",
+        "pt": "Mapa do Tesouro 2"
+      },
+      "location": {
+        "en": "Sewers: right of the god shrine behind a Gatekeeper's door, below the drain.",
+        "pt": "Esgotos: à direita do santuário atrás de uma porta do Guardião, abaixo do ralo."
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "How to get it: Lend Ellie some money while she shops in the General Store. Inside: 2× Cursed Die, 1× Lucky Die, 1× Crimson Die.",
+        "pt": "Como conseguir: Empreste dinheiro à Ellie quando ela estiver comprando no Armazém. Conteúdo: 2× Dado Amaldiçoado, 1× Dado da Sorte, 1× Dado Carmesim."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
+      ]
+    },
+    {
+      "id": "wte-ch1-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Treasure Map 5",
+        "pt": "Mapa do Tesouro 5"
+      },
+      "location": {
+        "en": "Mall back offices, by the Stalktopus pond, just below the clock across the pond.",
+        "pt": "Escritórios dos fundos do shopping, no lago do Polvo-de-antenas, logo abaixo do relógio do outro lado."
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "How to get it: Random: tier 1 book loot in the Mall Mines. Inside: 1× Aged Rum, 1× Small Coin Pouch, 1× Fickle Potion of Greed, 1× Fickle Potion of Panic, 1× Fickle Potion of Daring, 5× Gold Ore, 1× Mystery Sandwich.",
+        "pt": "Como conseguir: Aleatório: livros (nível 1) achados nas Minas do Shopping. Conteúdo: 1× Rum Envelhecido, 1× Bolsinha de Moedas Pequena, 1× Poção Volúvel de Ganância, 1× Poção Volúvel de Pânico, 1× Poção Volúvel de Ousadia, 5× Minério de Ouro, 1× Sanduíche Misterioso."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
+      ]
+    },
+    {
+      "id": "wte-ch1-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Treasure Map 6",
+        "pt": "Mapa do Tesouro 6"
+      },
+      "location": {
+        "en": "Mall, left of the mines entrance, next to the blue trash can.",
+        "pt": "Shopping, à esquerda da entrada das minas, ao lado da lixeira azul."
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "How to get it: Talk to Molly in her workshop. Inside: 3× Assorted Gems, 2× Treasure Casket, 1× Gem Bag, 1× Blood Potion.",
+        "pt": "Como conseguir: Converse com a Molly na oficina dela. Conteúdo: 3× Assorted Gems, 2× Baú do Tesouro, 1× Bolsa de Gemas, 1× Poção de Sangue."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
+      ]
+    },
+    {
+      "id": "wte-ch1-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Treasure Map 11",
+        "pt": "Mapa do Tesouro 11"
+      },
+      "location": {
+        "en": "Mall Music Store, in front of the three brown guitars on the back wall.",
+        "pt": "Loja de Música do shopping, na frente das três guitarras marrons da parede do fundo."
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "How to get it: Talk to Alice while she is at the farmhouse. Inside: 1× Gem Bag, 2× Treasure Casket, 1× Love Potion, 2× Spiced Sausage, 1× Cured Mana Steak.",
+        "pt": "Como conseguir: Converse com a Alice quando ela estiver na casa da fazenda. Conteúdo: 1× Bolsa de Gemas, 2× Baú do Tesouro, 1× Poção do Amor, 2× Linguiça Temperada, 1× Bife Curado de Mana."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
+      ]
+    },
+    {
+      "id": "wte-ch1-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Treasure Map 12",
+        "pt": "Mapa do Tesouro 12"
+      },
+      "location": {
+        "en": "Sewers next to Greystone Estates, behind the door that needs the Slimy Key.",
+        "pt": "Esgotos ao lado do Residencial Greystone, atrás da porta que pede a Chave Gosmenta."
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "How to get it: Talk to Josh in the Art Gallery. Inside: 2× Rare Gem Bag, 2× Cured Mana Steak.",
+        "pt": "Como conseguir: Converse com o Josh na Galeria de Arte. Conteúdo: 2× Bolsa de Gemas Rara, 2× Bife Curado de Mana."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "entries": [
+    {
+      "id": "wte-basic-herb-bundle",
+      "name": {
+        "en": "Basic Herb Bundle",
+        "pt": "Maço de Ervas Básico"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-basic-pickaxe",
+      "name": {
+        "en": "Basic Pickaxe",
+        "pt": "Picareta Básica"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "found",
+          "where": {
+            "en": "Mine 1 — Floor 1 (30, 24)",
+            "pt": "Mina 1 — Andar 1 (30, 24)"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Mine 1 — Floor 2, Room 2 (17, 4)",
+            "pt": "Mina 1 — Andar 2, Sala 2 (17, 4)"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Mine 1 — Floor 3, Room 3 (5, 28)",
+            "pt": "Mina 1 — Andar 3, Sala 3 (5, 28)"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Mining Shop; stocked at Mine 1 — Floor 1 — Mall Rat (18, 9)",
+            "pt": "Loja de Mineração; à venda em: Mina 1 — Andar 1 — Rato do Shopping (18, 9)"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
+      "id": "wte-basic-scythe",
+      "name": {
+        "en": "Basic Scythe",
+        "pt": "Foice Básica"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Upgrade: Basic Scythe",
+            "pt": "Melhoria: Foice Básica"
+          }
+        }
+      ],
+      "sell": "12g"
+    },
+    {
+      "id": "wte-bee-house",
+      "name": {
+        "en": "Bee House",
+        "pt": "Colmeia"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Utility: Bee House",
+            "pt": "Utilidades: Colmeia"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-blood-of-the-gods",
+      "name": {
+        "en": "Blood of the Gods",
+        "pt": "Sangue dos Deuses"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Gifts of Nezroth: Blood of the Gods",
+            "pt": "Dádivas de Nezroth: Sangue dos Deuses"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "20g"
+    },
+    {
+      "id": "wte-bloody-skin",
+      "name": {
+        "en": "Bloody Skin",
+        "pt": "Pele Ensanguentada"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-bones",
+      "name": {
+        "en": "Bones",
+        "pt": "Ossos"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Witching Mortar: Bones",
+            "pt": "Pilão de Bruxaria: Ossos"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "5g"
+    },
+    {
+      "id": "wte-bug",
+      "name": {
+        "en": "Bug",
+        "pt": "Inseto"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-combat-offering",
+      "name": {
+        "en": "Combat Offering",
+        "pt": "Oferenda de Combate"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab: Combat Offering",
+            "pt": "Laboratório de Poções: Oferenda de Combate"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Mall 1 (2, 2)",
+            "pt": "Shopping 1 (2, 2)"
+          }
+        },
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        }
+      ],
+      "sell": "100g"
+    },
+    {
+      "id": "wte-copper-bar",
+      "name": {
+        "en": "Copper Bar",
+        "pt": "Barra de Cobre"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "30g"
+    },
+    {
+      "id": "wte-cotton-candy",
+      "name": {
+        "en": "Cotton Candy",
+        "pt": "Algodão-doce"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Snack Shop; stocked at Town 1 — Blocker (54, 14)",
+            "pt": "Lanchonete; à venda em: Cidade 1 — Blocker (54, 14)"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-crafting-pattern",
+      "name": {
+        "en": "Crafting Pattern",
+        "pt": "Molde de Criação"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "a tinker's desk: Crafting Pattern",
+            "pt": "Mesa do Inventor: Molde de Criação"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-cured-mana-steak",
+      "name": {
+        "en": "Cured Mana Steak",
+        "pt": "Bife Curado de Mana"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "60g"
+    },
+    {
+      "id": "wte-cured-simple-steak",
+      "name": {
+        "en": "Cured Simple Steak",
+        "pt": "Bife Curado Simples"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-cured-spiced-steak",
+      "name": {
+        "en": "Cured Spiced Steak",
+        "pt": "Bife Curado Temperado"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "60g"
+    },
+    {
+      "id": "wte-damp-gem-cluster",
+      "name": {
+        "en": "Damp Gem Cluster",
+        "pt": "Aglomerado de Gemas Úmidas"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "gather",
+          "where": {
+            "en": "Mine spawned Damp Gem Nodes in the deeper Mall Mines",
+            "pt": "Minere Gema Úmida Nodes no fundo das Minas do Shopping"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-damp-stone",
+      "name": {
+        "en": "Damp Stone",
+        "pt": "Pedra Úmida"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "gather",
+          "where": {
+            "en": "Mine spawned Damp Rocks in the deeper Mall Mines",
+            "pt": "Minere Damp Rocks no fundo das Minas do Shopping"
+          }
+        }
+      ],
+      "sell": "7g"
+    },
+    {
+      "id": "wte-drying-rack",
+      "name": {
+        "en": "Drying Rack",
+        "pt": "Varal de Secagem"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Utility: Drying Rack",
+            "pt": "Utilidades: Varal de Secagem"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-elder-flour",
+      "name": {
+        "en": "Elder Flour",
+        "pt": "Farinha Anciã"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Soggy Slice (after an unlock)",
+            "pt": "The Soggy Slice (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-enchanted-pitchfork",
+      "name": {
+        "en": "Enchanted Pitchfork",
+        "pt": "Forcado Encantado"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Gifts of Hagroth: Enchanted Pitchfork",
+            "pt": "Dádivas de Hagroth: Forcado Encantado"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-fish-taco",
+      "name": {
+        "en": "Fish Taco",
+        "pt": "Taco de Peixe"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Fish Taco",
+            "pt": "Taco de Peixe"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-flesh-coral",
+      "name": {
+        "en": "Flesh Coral",
+        "pt": "Coral de Carne"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "125g"
+    },
+    {
+      "id": "wte-gem-bag",
+      "name": {
+        "en": "Gem Bag",
+        "pt": "Bolsa de Gemas"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
+      "id": "wte-gemberries",
+      "name": {
+        "en": "Gemberries",
+        "pt": "Bagas-gema"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-godscale",
+      "name": {
+        "en": "Godscale",
+        "pt": "Escama Divina"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Fishing treasure (during raining days) Weird Fish boss loot Treasure Casket Lucky roll (5)",
+            "pt": "Tesouro de pesca (em dias de chuva) Loot do chefe Peixe Esquisito Baú do Tesouro rolagem de sorte (5)"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-goldberries",
+      "name": {
+        "en": "Goldberries",
+        "pt": "Bagas-douradas"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
+      "id": "wte-golden-rod",
+      "name": {
+        "en": "Golden Rod",
+        "pt": "Vara Dourada"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "a craftsman's bench: Golden Rod",
+            "pt": "Bancada do Artesão: Vara Dourada"
+          }
+        }
+      ],
+      "sell": "250g"
+    },
+    {
+      "id": "wte-harvest-stew",
+      "name": {
+        "en": "Harvest Stew",
+        "pt": "Ensopado da Colheita"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Harvest Stew",
+            "pt": "Ensopado da Colheita"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "45g"
+    },
+    {
+      "id": "wte-hot-chocolate",
+      "name": {
+        "en": "Hot Chocolate",
+        "pt": "Chocolate Quente"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Snack Shop; stocked at Town 1 — Blocker (54, 14)",
+            "pt": "Lanchonete; à venda em: Cidade 1 — Blocker (54, 14)"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-jar-of-blood",
+      "name": {
+        "en": "Jar of Blood",
+        "pt": "Pote de Sangue"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-lesser-holy-water",
+      "name": {
+        "en": "Lesser Holy Water",
+        "pt": "Água Benta Menor"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-lightning-rod",
+      "name": {
+        "en": "Lightning Rod",
+        "pt": "Para-raios"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Utility: Lightning Rod",
+            "pt": "Utilidades: Para-raios"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Farm (44, 6) Blueprint: Completing Trisha's tasks: \"A Ghostly Catch\" In a chest behind Dax in the Sewers after giving him Spectral Rain and Godscale",
+            "pt": "Fazenda (44, 6) Blueprint: Completing Trisha's tasks: \"Uma Pesca Fantasmagórica\" In a chest behind Dax in Esgotos after giving him Chuva Espectral e Escama Divina"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-lucky-die",
+      "name": {
+        "en": "Lucky Die",
+        "pt": "Dado da Sorte"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Gifts of Delvek: Lucky Die",
+            "pt": "Dádivas de Delvek: Dado da Sorte"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-mana-sausage",
+      "name": {
+        "en": "Mana Sausage",
+        "pt": "Linguiça de Mana"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "40g"
+    },
+    {
+      "id": "wte-medium-coin-pouch",
+      "name": {
+        "en": "Medium Coin Pouch",
+        "pt": "Bolsinha de Moedas Média"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-monkey-brains",
+      "name": {
+        "en": "Monkey Brains",
+        "pt": "Cérebro de Macaco"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-mystery-sandwich",
+      "name": {
+        "en": "Mystery Sandwich",
+        "pt": "Sanduíche Misterioso"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Mystery Sandwich",
+            "pt": "Sanduíche Misterioso"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-odd-sandwich",
+      "name": {
+        "en": "Odd Sandwich",
+        "pt": "Sanduíche Esquisito"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Rooftop (28, 7)",
+            "pt": "Terraço (28, 7)"
+          }
+        },
+        {
+          "kind": "task",
+          "where": {
+            "en": "Obtained during the Skeleton Dinner event",
+            "pt": "Durante o evento Skeleton Dinner"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-paper",
+      "name": {
+        "en": "Paper",
+        "pt": "Papel"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-perfect-opal",
+      "name": {
+        "en": "Perfect Opal",
+        "pt": "Opala Perfeita"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Mining Shop (after an unlock)",
+            "pt": "Loja de Mineração (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "100g"
+    },
+    {
+      "id": "wte-potent-herb-bundle",
+      "name": {
+        "en": "Potent Herb Bundle",
+        "pt": "Maço de Ervas Potente"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "100g"
+    },
+    {
+      "id": "wte-prep-table",
+      "name": {
+        "en": "Prep Table",
+        "pt": "Mesa de Preparo"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Utility: Prep Table",
+            "pt": "Utilidades: Mesa de Preparo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-quality-gardening-hoe",
+      "name": {
+        "en": "Quality Gardening Hoe",
+        "pt": "Enxada de Qualidade"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Upgrade: Quality Gardening Hoe",
+            "pt": "Melhoria: Enxada de Qualidade"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Mine 1 — Floor 1 (33, 5)",
+            "pt": "Mina 1 — Andar 1 (33, 5)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-quality-watering-can",
+      "name": {
+        "en": "Quality Watering Can",
+        "pt": "Regador de Qualidade"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Upgrade: Quality Watering Can",
+            "pt": "Melhoria: Regador de Qualidade"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Mine 1 — Floor 1 (33, 5)",
+            "pt": "Mina 1 — Andar 1 (33, 5)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-rare-gem-bag",
+      "name": {
+        "en": "Rare Gem Bag",
+        "pt": "Bolsa de Gemas Rara"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-rawhide",
+      "name": {
+        "en": "Rawhide",
+        "pt": "Couro Cru"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-recipe-mystery-sandwich",
+      "name": {
+        "en": "Recipe: Mystery Sandwich",
+        "pt": "Receita: Sanduíche Misterioso"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "other",
+          "where": {
+            "en": "Mall Mines book loot",
+            "pt": "Minas do Shopping book loot"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-recipe-soul-stew",
+      "name": {
+        "en": "Recipe: Soul Stew",
+        "pt": "Receita: Ensopado de Alma"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Fishing treasure loot. Treasure Goblin loot Treasure Casket",
+            "pt": "Tesouro de pesca loot. Loot do Goblin do Tesouro Baú do Tesouro"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-recipe-void-dinner",
+      "name": {
+        "en": "Recipe: Void Dinner",
+        "pt": "Receita: Jantar do Vazio"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Fishing treasure loot. Treasure Goblin loot Treasure Casket",
+            "pt": "Tesouro de pesca loot. Loot do Goblin do Tesouro Baú do Tesouro"
+          }
+        }
+      ],
+      "sell": "100g"
+    },
+    {
+      "id": "wte-ritual-tome-blood-mana",
+      "name": {
+        "en": "Ritual Tome: Blood Mana",
+        "pt": "Tomo de Ritual: Mana de Sangue"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "other",
+          "where": {
+            "en": "Mall Mines Harvest Chamber reward",
+            "pt": "Minas do Shopping Câmara da Colheita (recompensa)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-ritual-tome-chaos-thorns",
+      "name": {
+        "en": "Ritual Tome: Chaos Thorns",
+        "pt": "Tomo de Ritual: Espinhos do Caos"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "other",
+          "where": {
+            "en": "Sewers Harvest Chamber reward",
+            "pt": "Esgotos Câmara da Colheita (recompensa)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-ritual-tome-cosmic-premonition",
+      "name": {
+        "en": "Ritual Tome: Cosmic Premonition",
+        "pt": "Tomo de Ritual: Premonição Cósmica"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Vending Machine (after an unlock)",
+            "pt": "Máquina de Vendas (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-ritual-tome-dark-shield",
+      "name": {
+        "en": "Ritual Tome: Dark Shield",
+        "pt": "Tomo de Ritual: Escudo Sombrio"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Office Slime in front of the Mall F1 Hallway door",
+            "pt": "the Gosma de Escritório in front of the Shopping 1º andar Corredor door"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-ritual-tome-lesser-mending",
+      "name": {
+        "en": "Ritual Tome: Lesser Mending",
+        "pt": "Tomo de Ritual: Cura Menor"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Vending Machine (after an unlock)",
+            "pt": "Máquina de Vendas (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "12g"
+    },
+    {
+      "id": "wte-ritual-tome-torrent-of-darkness",
+      "name": {
+        "en": "Ritual Tome: Torrent of Darkness",
+        "pt": "Tomo de Ritual: Torrente de Trevas"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Vending Machine (after an unlock)",
+            "pt": "Máquina de Vendas (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-rot-puffer",
+      "name": {
+        "en": "Rot Puffer",
+        "pt": "Baiacu Podre"
+      },
+      "category": "fish",
+      "sources": [
+        {
+          "kind": "fish",
+          "where": {
+            "en": "Sewers; Old Fishing Rod or better; Maggot bait",
+            "pt": "Esgotos; Vara de Pescar Velha ou melhor; isca Larva"
+          }
+        }
+      ],
+      "sell": "35g"
+    },
+    {
+      "id": "wte-simple-jerky",
+      "name": {
+        "en": "Simple Jerky",
+        "pt": "Charque Simples"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-simple-sausage",
+      "name": {
+        "en": "Simple Sausage",
+        "pt": "Linguiça Simples"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-skill-tome-all-or-nothing",
+      "name": {
+        "en": "Skill Tome: All or Nothing",
+        "pt": "Tomo de Habilidade: Tudo ou Nada"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "other",
+          "where": {
+            "en": "Sold in Mall Vending Machine",
+            "pt": "Vendido em: Shopping Máquina de Vendas"
+          }
+        }
+      ],
+      "sell": "12g"
+    },
+    {
+      "id": "wte-skill-tome-energizing-strike",
+      "name": {
+        "en": "Skill Tome: Energizing Strike",
+        "pt": "Tomo de Habilidade: Golpe Energizante"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "found",
+          "where": {
+            "en": "Found in loot box at the Mall in the \"Music Store\"",
+            "pt": "Found in loot box em the Shopping in the \"Loja de Música\""
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-skill-tome-heavy-blow",
+      "name": {
+        "en": "Skill Tome: Heavy Blow",
+        "pt": "Tomo de Habilidade: Golpe Pesado"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "other",
+          "where": {
+            "en": "Sold in Mall Vending Machine",
+            "pt": "Vendido em: Shopping Máquina de Vendas"
+          }
+        }
+      ],
+      "sell": "37g"
+    },
+    {
+      "id": "wte-skill-tome-heretical-blow",
+      "name": {
+        "en": "Skill Tome: Heretical Blow",
+        "pt": "Tomo de Habilidade: Golpe Herege"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Sewers F1 (16, 13)",
+            "pt": "Esgotos 1º andar (16, 13)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-slimefish",
+      "name": {
+        "en": "Slimefish",
+        "pt": "Peixe-gosma"
+      },
+      "category": "fish",
+      "sources": [
+        {
+          "kind": "fish",
+          "where": {
+            "en": "Sewers; Old Fishing Rod or better; Maggot bait",
+            "pt": "Esgotos; Vara de Pescar Velha ou melhor; isca Larva"
+          }
+        }
+      ],
+      "sell": "12g"
+    },
+    {
+      "id": "wte-spiced-jerky",
+      "name": {
+        "en": "Spiced Jerky",
+        "pt": "Charque Temperado"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-spiced-sausage",
+      "name": {
+        "en": "Spiced Sausage",
+        "pt": "Linguiça Temperada"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Drying Rack",
+            "pt": "Processe o ingrediente certo em: Varal de Secagem"
+          }
+        }
+      ],
+      "sell": "40g"
+    },
+    {
+      "id": "wte-spoiled-rations",
+      "name": {
+        "en": "Spoiled Rations",
+        "pt": "Rações Estragadas"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        }
+      ],
+      "sell": "10g"
+    },
+    {
+      "id": "wte-stalktopus",
+      "name": {
+        "en": "Stalktopus",
+        "pt": "Polvo-de-antenas"
+      },
+      "category": "fish",
+      "sources": [
+        {
+          "kind": "fish",
+          "where": {
+            "en": "Mall first-floor hallway; Old Fishing Rod or better; Bug bait Gift from Josh during Farm visit",
+            "pt": "Corredor do 1º andar do Shopping; Vara de Pescar Velha ou melhor; isca Inseto Presente de Josh numa visita à fazenda"
+          }
+        }
+      ],
+      "sell": "30g"
+    },
+    {
+      "id": "wte-strange-fruit",
+      "name": {
+        "en": "Strange Fruit",
+        "pt": "Fruta Estranha"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
+      "id": "wte-string",
+      "name": {
+        "en": "String",
+        "pt": "Barbante"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "7g"
+    },
+    {
+      "id": "wte-sturdy-pickaxe",
+      "name": {
+        "en": "Sturdy Pickaxe",
+        "pt": "Picareta Resistente"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Upgrade: Sturdy Pickaxe",
+            "pt": "Melhoria: Picareta Resistente"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Mine 1 — Floor 3, Room 3 (4, 28)",
+            "pt": "Mina 1 — Andar 3, Sala 3 (4, 28)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-swiftroot",
+      "name": {
+        "en": "Swiftroot",
+        "pt": "Raiz Veloz"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
+      "id": "wte-the-book-of-cookies",
+      "name": {
+        "en": "The Book of Cookies",
+        "pt": "O Livro dos Biscoitos"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Soggy Slice (after an unlock)",
+            "pt": "The Soggy Slice (depois de liberar)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-thick-hide",
+      "name": {
+        "en": "Thick Hide",
+        "pt": "Pele Grossa"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Prepare at a prep table: Thick Hide",
+            "pt": "Mesa de Preparo: Pele Grossa"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-treasure-casket",
+      "name": {
+        "en": "Treasure Casket",
+        "pt": "Baú do Tesouro"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-void-sashimi",
+      "name": {
+        "en": "Void Sashimi",
+        "pt": "Sashimi do Vazio"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-voidberry-seed",
+      "name": {
+        "en": "Voidberry Seed",
+        "pt": "Semente de Baga-do-vazio"
+      },
+      "category": "seeds",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Mall 1 Enhanced Loot",
+            "pt": "Shopping 1 (loot aprimorado)"
+          }
+        },
+        {
+          "kind": "task",
+          "where": {
+            "en": "Abigail upon completing the task Artwork for Abigail",
+            "pt": "Abigail, ao concluir a tarefa Artwork for Abigail"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-wax",
+      "name": {
+        "en": "Wax",
+        "pt": "Cera"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Garbage Shop",
+            "pt": "Loja do Lixo"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock) Gift from Sam during farm visit",
+            "pt": "O Homem da Carne (depois de liberar) Presente de Sam numa visita à fazenda"
+          }
+        }
+      ],
+      "sell": "20g"
+    },
+    {
+      "id": "wte-whetstone",
+      "name": {
+        "en": "Whetstone",
+        "pt": "Pedra de Amolar"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Mining Shop (after an unlock)",
+            "pt": "Loja de Mineração (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "250g"
+    }
+  ],
+  "entrySources": [
+    {
+      "entryId": "wte-basic-axe",
+      "kind": "found",
+      "where": {
+        "en": "Mine 1 — Floor 3, Room 2 (38, 21)",
+        "pt": "Mina 1 — Andar 3, Sala 2 (38, 21)"
+      }
+    },
+    {
+      "entryId": "wte-basic-axe",
+      "kind": "task",
+      "where": {
+        "en": "Adrian's Tasks \"Tentacle Cleanup\"",
+        "pt": "Tarefas de Adrian: \"Limpeza de Tentáculos\""
+      }
+    },
+    {
+      "entryId": "wte-bitter-herb",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-bitter-herb",
+      "kind": "forage",
+      "where": {
+        "en": "Mall",
+        "pt": "Shopping"
+      }
+    },
+    {
+      "entryId": "wte-cleansing-balm",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-coal",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-coal",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-creature-claw",
+      "kind": "loot",
+      "where": {
+        "en": "the Sewers",
+        "pt": "Esgotos"
+      }
+    },
+    {
+      "entryId": "wte-dreamleaf-seed",
+      "kind": "found",
+      "where": {
+        "en": "Mine 1 — Floor 1 (33, 5)",
+        "pt": "Mina 1 — Andar 1 (33, 5)"
+      }
+    },
+    {
+      "entryId": "wte-dreamleaf-seed",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-dreampearl-seed",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-extra-pouch",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-extra-pouch",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-ghost-sashimi",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-gold-bar",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-hotdog",
+      "kind": "shop",
+      "where": {
+        "en": "Snack Shop; stocked at Town 1 — Blocker (54, 14)",
+        "pt": "Lanchonete; à venda em: Cidade 1 — Blocker (54, 14)"
+      }
+    },
+    {
+      "entryId": "wte-iron-bar",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-leather",
+      "kind": "found",
+      "where": {
+        "en": "Rooftop (23, 18)",
+        "pt": "Terraço (23, 18)"
+      }
+    },
+    {
+      "entryId": "wte-leech",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-mysterious-ooze",
+      "kind": "loot",
+      "where": {
+        "en": "the Sewers",
+        "pt": "Esgotos"
+      }
+    },
+    {
+      "entryId": "wte-mysterious-ooze",
+      "kind": "loot",
+      "where": {
+        "en": "Mall Floor 1",
+        "pt": "Shopping Andar 1"
+      }
+    },
+    {
+      "entryId": "wte-mystery-meat",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-pizza",
+      "kind": "shop",
+      "where": {
+        "en": "Snack Shop; stocked at Town 1 — Blocker (54, 14) Gift from Alice during farm visit",
+        "pt": "Lanchonete; à venda em: Cidade 1 — Blocker (54, 14) Presente de Alice numa visita à fazenda"
+      }
+    },
+    {
+      "entryId": "wte-preserving-barrel",
+      "kind": "task",
+      "where": {
+        "en": "Completing Dave's tasks: \"A snack for a cat\" gives a Preserving Barrel. Blueprint: Completing Art's tasks: \"Secrets of the Deep\"",
+        "pt": "Completing Dave's tasks: \"A snack for a cat\" gives a Barril de Conserva. Blueprint: Completing Art's tasks: \"Segredos das Profundezas\""
+      }
+    },
+    {
+      "entryId": "wte-rain-gem",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-red-mushroom",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-red-mushroom",
+      "kind": "forage",
+      "where": {
+        "en": "Mall",
+        "pt": "Shopping"
+      }
+    },
+    {
+      "entryId": "wte-ritual-tome-pumpkin-blast",
+      "kind": "loot",
+      "where": {
+        "en": "Rooftop (25, 10)",
+        "pt": "Terraço (25, 10)"
+      }
+    },
+    {
+      "entryId": "wte-rusty-pickaxe",
+      "kind": "found",
+      "where": {
+        "en": "Mine 1 — Floor 2, Room 1 (1, 7)",
+        "pt": "Mina 1 — Andar 2, Sala 1 (1, 7)"
+      }
+    },
+    {
+      "entryId": "wte-rusty-pickaxe",
+      "kind": "found",
+      "where": {
+        "en": "Mine 1 — Floor 3, Room 3 (6, 28)",
+        "pt": "Mina 1 — Andar 3, Sala 3 (6, 28)"
+      }
+    },
+    {
+      "entryId": "wte-scrap-metal",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop Chance to find after consuming an Equipment Pack. Gift from Ellie during Farm visit",
+        "pt": "Loja do Lixo Pode aparecer ao usar um(a) Pacote de Equipamento. Presente de Ellie numa visita à fazenda"
+      }
+    },
+    {
+      "entryId": "wte-slime-pizza",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-soda-pop",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-soulfruit-seed",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-special-hotdog",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-spiritwood",
+      "kind": "found",
+      "where": {
+        "en": "Rooftop (23, 18)",
+        "pt": "Terraço (23, 18)"
+      }
+    },
+    {
+      "entryId": "wte-stone",
+      "kind": "found",
+      "where": {
+        "en": "Mine 1 — Floor 1 (19, 7)",
+        "pt": "Mina 1 — Andar 1 (19, 7)"
+      }
+    },
+    {
+      "entryId": "wte-stone",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-unmarked-seed",
+      "kind": "loot",
+      "where": {
+        "en": "Mall 1 Enhanced Loot",
+        "pt": "Shopping 1 (loot aprimorado)"
+      }
+    },
+    {
+      "entryId": "wte-wood",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
+      "entryId": "wte-wood",
+      "kind": "forage",
+      "where": {
+        "en": "Mall",
+        "pt": "Shopping"
+      }
+    }
+  ],
+  "crafts": [
+    {
+      "id": "wte-craft-grinder",
+      "name": {
+        "en": "Grinder",
+        "pt": "Moedor"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-grinder",
+      "unlock": {
+        "en": "Automatically available with workbench A gift after completing Farmer Hans tasks \"The Farmer's Path\"",
+        "pt": "Disponível desde o início na bancada. Também é presente do Fazendeiro Hans depois de \"O Caminho do Fazendeiro\""
+      }
+    },
+    {
+      "id": "wte-craft-prep-table",
+      "name": {
+        "en": "Prep Table",
+        "pt": "Mesa de Preparo"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-bitter-herb",
+          "name": {
+            "en": "Bitter Herb",
+            "pt": "Erva Amarga"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-red-mushroom",
+          "name": {
+            "en": "Red Mushroom",
+            "pt": "Cogumelo Vermelho"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-prep-table",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-drying-rack",
+      "name": {
+        "en": "Drying Rack",
+        "pt": "Varal de Secagem"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-drying-rack",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-food-processor",
+      "name": {
+        "en": "Food Processor",
+        "pt": "Processador de Alimentos"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 25
+        }
+      ],
+      "makes": "wte-food-processor",
+      "unlock": {
+        "en": "Blueprint: Purchased from Henrietta's shop",
+        "pt": "Projeto: compre na loja da Henrietta"
+      }
+    },
+    {
+      "id": "wte-craft-preserving-barrel",
+      "name": {
+        "en": "Preserving Barrel",
+        "pt": "Barril de Conserva"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 30
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-preserving-barrel",
+      "unlock": {
+        "en": "Completing Dave's tasks: \"A snack for a cat\" gives a Preserving Barrel Blueprint: Completing Art's tasks: \"Secrets of the Deep\"",
+        "pt": "\"Um Petisco para o Gato\" (Dave) dá um Barril de Conserva; o projeto vem de \"Segredos das Profundezas\" (Art)"
+      }
+    },
+    {
+      "id": "wte-craft-keg",
+      "name": {
+        "en": "Keg",
+        "pt": "Barril de Fermentação"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-hardwood",
+          "name": {
+            "en": "Hardwood",
+            "pt": "Madeira de Lei"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-wax",
+          "name": {
+            "en": "Wax",
+            "pt": "Cera"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-keg",
+      "unlock": {
+        "en": "Completing Hank's tasks: \"Good As Gold\" gives blueprint",
+        "pt": "\"Vale Ouro\" (Hank) dá o projeto"
+      }
+    },
+    {
+      "id": "wte-craft-bat-box",
+      "name": {
+        "en": "Bat Box",
+        "pt": "Casa de Morcegos"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-bat-box",
+      "unlock": {
+        "en": "Blueprint: Purchased from Henrietta's shop",
+        "pt": "Projeto: compre na loja da Henrietta"
+      }
+    },
+    {
+      "id": "wte-craft-bee-house",
+      "name": {
+        "en": "Bee House",
+        "pt": "Colmeia"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-wax",
+          "name": {
+            "en": "Wax",
+            "pt": "Cera"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-hardwood",
+          "name": {
+            "en": "Hardwood",
+            "pt": "Madeira de Lei"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 25
+        }
+      ],
+      "makes": "wte-bee-house",
+      "unlock": {
+        "en": "Blueprint: Purchased from Henrietta's shop",
+        "pt": "Projeto: compre na loja da Henrietta"
+      }
+    },
+    {
+      "id": "wte-craft-lightning-rod",
+      "name": {
+        "en": "Lightning Rod",
+        "pt": "Para-raios"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-void-crystal-bar",
+          "name": {
+            "en": "Void Crystal Bar",
+            "pt": "Barra de Cristal do Vazio"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 8
+        }
+      ],
+      "makes": "wte-lightning-rod",
+      "unlock": {
+        "en": "Completing Trisha's tasks: \"A Ghostly Catch\" gives blueprint",
+        "pt": "\"Uma Pesca Fantasmagórica\" (Trisha) dá o projeto"
+      }
+    },
+    {
+      "id": "wte-craft-giant-skull-chalice",
+      "name": {
+        "en": "Giant Skull Chalice",
+        "pt": "Cálice de Crânio Gigante"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Blueprint: Starting Farmer Hans' tasks: \"The Skull Chalice\"",
+        "pt": "Projeto: ao começar \"O Cálice de Crânio\" (Fazendeiro Hans)"
+      }
+    },
+    {
+      "id": "wte-craft-kaal-idol",
+      "name": {
+        "en": "Kaal Idol",
+        "pt": "Ídolo de Kaal"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Utility",
+        "pt": "Utilidades"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 50
+        },
+        {
+          "entryId": "wte-void-crystal-bar",
+          "name": {
+            "en": "Void Crystal Bar",
+            "pt": "Barra de Cristal do Vazio"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-verdite-bar",
+          "name": {
+            "en": "Verdite Bar",
+            "pt": "Barra de Verdite"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-gravemoss",
+          "name": {
+            "en": "Gravemoss",
+            "pt": "Musgo de Túmulo"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Blueprint: Starting Denzel's tasks: \"False Idols\"",
+        "pt": "Projeto: ao começar \"Falsos Ídolos\" (Denzel)"
+      }
+    },
+    {
+      "id": "wte-craft-basic-scarecrow",
+      "name": {
+        "en": "Basic Scarecrow",
+        "pt": "Espantalho Básico"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Scarecrows",
+        "pt": "Espantalhos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-ragged-scarecrow",
+          "name": {
+            "en": "Ragged Scarecrow",
+            "pt": "Espantalho Esfarrapado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-basic-scarecrow",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-jack-o-scarecrow",
+      "name": {
+        "en": "Jack o' Scarecrow",
+        "pt": "Espantalho de Abóbora"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Scarecrows",
+        "pt": "Espantalhos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-basic-scarecrow",
+          "name": {
+            "en": "Basic Scarecrow",
+            "pt": "Espantalho Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-red-mushroom",
+          "name": {
+            "en": "Red Mushroom",
+            "pt": "Cogumelo Vermelho"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-jack-o-scarecrow",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-tortured-scarecrow",
+      "name": {
+        "en": "Tortured Scarecrow",
+        "pt": "Espantalho Torturado"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Scarecrows",
+        "pt": "Espantalhos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-jack-o-scarecrow",
+          "name": {
+            "en": "Jack o' Scarecrow",
+            "pt": "Espantalho de Abóbora"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-tortured-scarecrow",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-dripping-scarecrow",
+      "name": {
+        "en": "Dripping Scarecrow",
+        "pt": "Espantalho Gotejante"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Scarecrows",
+        "pt": "Espantalhos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-tortured-scarecrow",
+          "name": {
+            "en": "Tortured Scarecrow",
+            "pt": "Espantalho Torturado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-bitter-gel",
+          "name": {
+            "en": "Bitter Gel",
+            "pt": "Gel Amargo"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-dripping-scarecrow",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-wicker-scarecrow",
+      "name": {
+        "en": "Wicker Scarecrow",
+        "pt": "Espantalho de Vime"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Scarecrows",
+        "pt": "Espantalhos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-dripping-scarecrow",
+          "name": {
+            "en": "Dripping Scarecrow",
+            "pt": "Espantalho Gotejante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-raw-hay",
+          "name": {
+            "en": "Raw Hay",
+            "pt": "Feno Cru"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-hardwood",
+          "name": {
+            "en": "Hardwood",
+            "pt": "Madeira de Lei"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-wicker-scarecrow",
+      "unlock": {
+        "en": "Blueprint: Getting Very Highly Appreciated in the Harvest Festival",
+        "pt": "Projeto: tirando a nota mais alta no Festival da Colheita"
+      }
+    },
+    {
+      "id": "wte-craft-rope-fence",
+      "name": {
+        "en": "Rope Fence",
+        "pt": "Cerca de Corda"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-torch",
+      "name": {
+        "en": "Torch",
+        "pt": "Tocha"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-candles",
+      "name": {
+        "en": "Candles",
+        "pt": "Velas"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wax",
+          "name": {
+            "en": "Wax",
+            "pt": "Cera"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-candles",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-lesser-harvest-effigy",
+      "name": {
+        "en": "Lesser Harvest Effigy",
+        "pt": "Efígie da Colheita Menor"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Large Objects",
+        "pt": "Objetos grandes"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-lesser-harvest-effigy",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-lesser-fertility-effigy",
+      "name": {
+        "en": "Lesser Fertility Effigy",
+        "pt": "Efígie da Fertilidade Menor"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Large Objects",
+        "pt": "Objetos grandes"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-lesser-fertility-effigy",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-medium-harvest-effigy",
+      "name": {
+        "en": "Medium Harvest Effigy",
+        "pt": "Efígie da Colheita Média"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Large Objects",
+        "pt": "Objetos grandes"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-lesser-harvest-effigy",
+          "name": {
+            "en": "Lesser Harvest Effigy",
+            "pt": "Efígie da Colheita Menor"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-wheat",
+          "name": {
+            "en": "Wheat",
+            "pt": "Trigo"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-medium-harvest-effigy",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-medium-fertility-effigy",
+      "name": {
+        "en": "Medium Fertility Effigy",
+        "pt": "Efígie da Fertilidade Média"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Large Objects",
+        "pt": "Objetos grandes"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-lesser-fertility-effigy",
+          "name": {
+            "en": "Lesser Fertility Effigy",
+            "pt": "Efígie da Fertilidade Menor"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-eyeball",
+          "name": {
+            "en": "Eyeball",
+            "pt": "Globo Ocular"
+          },
+          "qty": 8
+        }
+      ],
+      "makes": "wte-medium-fertility-effigy",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-greater-harvest-effigy",
+      "name": {
+        "en": "Greater Harvest Effigy",
+        "pt": "Efígie da Colheita Maior"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Large Objects",
+        "pt": "Objetos grandes"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-medium-harvest-effigy",
+          "name": {
+            "en": "Medium Harvest Effigy",
+            "pt": "Efígie da Colheita Média"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-pumpkin",
+          "name": {
+            "en": "Pumpkin",
+            "pt": "Abóbora"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-candles",
+          "name": {
+            "en": "Candles",
+            "pt": "Velas"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-greater-harvest-effigy",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-greater-fertility-effigy",
+      "name": {
+        "en": "Greater Fertility Effigy",
+        "pt": "Efígie da Fertilidade Maior"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Large Objects",
+        "pt": "Objetos grandes"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-medium-fertility-effigy",
+          "name": {
+            "en": "Medium Fertility Effigy",
+            "pt": "Efígie da Fertilidade Média"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-pumpkin",
+          "name": {
+            "en": "Pumpkin",
+            "pt": "Abóbora"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-candles",
+          "name": {
+            "en": "Candles",
+            "pt": "Velas"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-greater-fertility-effigy",
+      "unlock": {
+        "en": "Automatically available with workbench",
+        "pt": "Disponível desde o início na bancada"
+      }
+    },
+    {
+      "id": "wte-craft-lesser-offering-of-rain",
+      "name": {
+        "en": "Lesser Offering of Rain",
+        "pt": "Oferenda da Chuva Menor"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Witching Mortar",
+        "pt": "Pilão de Bruxaria"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-red-mushroom",
+          "name": {
+            "en": "Red Mushroom",
+            "pt": "Cogumelo Vermelho"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-bitter-herb",
+          "name": {
+            "en": "Bitter Herb",
+            "pt": "Erva Amarga"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-worm",
+          "name": {
+            "en": "Worm",
+            "pt": "Minhoca"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-eyeball",
+          "name": {
+            "en": "Eyeball",
+            "pt": "Globo Ocular"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 8
+        }
+      ],
+      "makes": "wte-lesser-offering-of-rain",
+      "unlock": {
+        "en": "Automatically available with Witching Mortar",
+        "pt": "Disponível desde o início no Pilão de Bruxaria"
+      }
+    },
+    {
+      "id": "wte-craft-offering-of-the-void",
+      "name": {
+        "en": "Offering of The Void",
+        "pt": "Oferenda do Vazio"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Witching Mortar",
+        "pt": "Pilão de Bruxaria"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-worm",
+          "name": {
+            "en": "Worm",
+            "pt": "Minhoca"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Recipe: Complete the task \"Farming Supplies\"",
+        "pt": "Receita: conclua \"Suprimentos de Fazenda\""
+      }
+    },
+    {
+      "id": "wte-craft-crushed-bones",
+      "name": {
+        "en": "Crushed Bones",
+        "pt": "Ossos Moídos"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Witching Mortar",
+        "pt": "Pilão de Bruxaria"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Witching Mortar",
+        "pt": "Disponível desde o início no Pilão de Bruxaria"
+      }
+    },
+    {
+      "id": "wte-craft-thick-hide",
+      "name": {
+        "en": "Thick Hide",
+        "pt": "Pele Grossa"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Prep Table",
+        "pt": "Mesa de Preparo"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bloody-skin",
+          "name": {
+            "en": "Bloody Skin",
+            "pt": "Pele Ensanguentada"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-thick-hide",
+      "unlock": {
+        "en": "Automatically available with Prep Table",
+        "pt": "Disponível desde o início na Mesa de Preparo"
+      }
+    },
+    {
+      "id": "wte-craft-enchanted-pitchfork",
+      "name": {
+        "en": "Enchanted Pitchfork",
+        "pt": "Forcado Encantado"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-whetstone",
+          "name": {
+            "en": "Whetstone",
+            "pt": "Pedra de Amolar"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-enchanted-pitchfork",
+      "unlock": {
+        "en": "Aligned to the God Hagroth",
+        "pt": "Ligado ao deus Hagroth"
+      }
+    },
+    {
+      "id": "wte-craft-straw-hat",
+      "name": {
+        "en": "Straw Hat",
+        "pt": "Chapéu de Palha"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-raw-hay",
+          "name": {
+            "en": "Raw Hay",
+            "pt": "Feno Cru"
+          },
+          "qty": 30
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Hagroth",
+        "pt": "Ligado ao deus Hagroth"
+      }
+    },
+    {
+      "id": "wte-craft-blood-of-the-gods",
+      "name": {
+        "en": "Blood of the Gods",
+        "pt": "Sangue dos Deuses"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-mystery-meat",
+          "name": {
+            "en": "Mystery Meat",
+            "pt": "Carne Misteriosa"
+          },
+          "qty": 19
+        },
+        {
+          "entryId": "wte-bloody-skin",
+          "name": {
+            "en": "Bloody Skin",
+            "pt": "Pele Ensanguentada"
+          },
+          "qty": 24
+        }
+      ],
+      "makes": "wte-blood-of-the-gods",
+      "unlock": {
+        "en": "Aligned to the God Nezroth",
+        "pt": "Ligado ao deus Nezroth"
+      }
+    },
+    {
+      "id": "wte-craft-bloated-chestplate",
+      "name": {
+        "en": "Bloated Chestplate",
+        "pt": "Peitoral Inchado"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-mystery-meat",
+          "name": {
+            "en": "Mystery Meat",
+            "pt": "Carne Misteriosa"
+          },
+          "qty": 30
+        },
+        {
+          "entryId": "wte-bloody-skin",
+          "name": {
+            "en": "Bloody Skin",
+            "pt": "Pele Ensanguentada"
+          },
+          "qty": 30
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Nezroth",
+        "pt": "Ligado ao deus Nezroth"
+      }
+    },
+    {
+      "id": "wte-craft-finger-necklace",
+      "name": {
+        "en": "Finger Necklace",
+        "pt": "Colar de Dedos"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-mystery-meat",
+          "name": {
+            "en": "Mystery Meat",
+            "pt": "Carne Misteriosa"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-bloody-skin",
+          "name": {
+            "en": "Bloody Skin",
+            "pt": "Pele Ensanguentada"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Nezroth",
+        "pt": "Ligado ao deus Nezroth"
+      }
+    },
+    {
+      "id": "wte-craft-magnifying-glass",
+      "name": {
+        "en": "Magnifying Glass",
+        "pt": "Lupa"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-staring-orb",
+          "name": {
+            "en": "Staring Orb",
+            "pt": "Orbe que Encara"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-perfect-opal",
+          "name": {
+            "en": "Perfect Opal",
+            "pt": "Opala Perfeita"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Delvek",
+        "pt": "Ligado ao deus Delvek"
+      }
+    },
+    {
+      "id": "wte-craft-whip-of-delvek",
+      "name": {
+        "en": "Whip of Delvek",
+        "pt": "Chicote de Delvek"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-whetstone",
+          "name": {
+            "en": "Whetstone",
+            "pt": "Pedra de Amolar"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-staring-orb",
+          "name": {
+            "en": "Staring Orb",
+            "pt": "Orbe que Encara"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-verdite-bar",
+          "name": {
+            "en": "Verdite Bar",
+            "pt": "Barra de Verdite"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Delvek",
+        "pt": "Ligado ao deus Delvek"
+      }
+    },
+    {
+      "id": "wte-craft-opal-ring",
+      "name": {
+        "en": "Opal Ring",
+        "pt": "Anel de Opala"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-perfect-opal",
+          "name": {
+            "en": "Perfect Opal",
+            "pt": "Opala Perfeita"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Gatis",
+        "pt": "Ligado ao deus Gatis"
+      }
+    },
+    {
+      "id": "wte-craft-moonlight-shoes",
+      "name": {
+        "en": "Moonlight Shoes",
+        "pt": "Sapatos ao Luar"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-paper",
+          "name": {
+            "en": "Paper",
+            "pt": "Papel"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 3
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Gatis",
+        "pt": "Ligado ao deus Gatis"
+      }
+    },
+    {
+      "id": "wte-craft-cat-s-eye-necklace",
+      "name": {
+        "en": "Cat's Eye Necklace",
+        "pt": "Colar Olho-de-gato"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-perfect-opal",
+          "name": {
+            "en": "Perfect Opal",
+            "pt": "Opala Perfeita"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Gatis",
+        "pt": "Ligado ao deus Gatis"
+      }
+    },
+    {
+      "id": "wte-craft-hardwood-plank",
+      "name": {
+        "en": "Hardwood Plank",
+        "pt": "Tábua de Madeira de Lei"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Materials",
+        "pt": "Materiais"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-hardwood",
+          "name": {
+            "en": "Hardwood",
+            "pt": "Madeira de Lei"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-wax",
+          "name": {
+            "en": "Wax",
+            "pt": "Cera"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-hardwood-plank",
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-metal-rod",
+      "name": {
+        "en": "Metal Rod",
+        "pt": "Barra de Metal"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Materials",
+        "pt": "Materiais"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-void-crystal-bar",
+          "name": {
+            "en": "Void Crystal Bar",
+            "pt": "Barra de Cristal do Vazio"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-metal-rod",
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-golden-rod",
+      "name": {
+        "en": "Golden Rod",
+        "pt": "Vara Dourada"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Materials",
+        "pt": "Materiais"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-perfect-opal",
+          "name": {
+            "en": "Perfect Opal",
+            "pt": "Opala Perfeita"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-godscale",
+          "name": {
+            "en": "Godscale",
+            "pt": "Escama Divina"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-spectral-rain",
+          "name": {
+            "en": "Spectral Rain",
+            "pt": "Chuva Espectral"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-golden-rod",
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-ancient-shrine",
+      "name": {
+        "en": "Ancient Shrine",
+        "pt": "Santuário Ancestral"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-hardwood-plank",
+          "name": {
+            "en": "Hardwood Plank",
+            "pt": "Tábua de Madeira de Lei"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-raw-hay",
+          "name": {
+            "en": "Raw Hay",
+            "pt": "Feno Cru"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-godscale",
+          "name": {
+            "en": "Godscale",
+            "pt": "Escama Divina"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-giant-fountain",
+      "name": {
+        "en": "Giant Fountain",
+        "pt": "Fonte Gigante"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-brick",
+          "name": {
+            "en": "Brick",
+            "pt": "Tijolo"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-spectral-rain",
+          "name": {
+            "en": "Spectral Rain",
+            "pt": "Chuva Espectral"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-golden-rod",
+          "name": {
+            "en": "Golden Rod",
+            "pt": "Vara Dourada"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-swingset",
+      "name": {
+        "en": "Swingset",
+        "pt": "Balanço"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-hardwood-plank",
+          "name": {
+            "en": "Hardwood Plank",
+            "pt": "Tábua de Madeira de Lei"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-bucket-of-paint",
+          "name": {
+            "en": "Bucket of Paint",
+            "pt": "Balde de Tinta"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-tent",
+      "name": {
+        "en": "Tent",
+        "pt": "Barraca"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-metal-rod",
+          "name": {
+            "en": "Metal Rod",
+            "pt": "Barra de Metal"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 20
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-jeweler-s-desk",
+      "name": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Tinker's Desk",
+        "pt": "Mesa do Inventor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-hardwood",
+          "name": {
+            "en": "Hardwood",
+            "pt": "Madeira de Lei"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-spiritwood",
+          "name": {
+            "en": "Spiritwood",
+            "pt": "Madeira Espiritual"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wax",
+          "name": {
+            "en": "Wax",
+            "pt": "Cera"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Blueprint: Automatically available with Tinker's Desk",
+        "pt": "Projeto: disponível desde o início na Mesa do Inventor"
+      }
+    },
+    {
+      "id": "wte-craft-crafting-pattern",
+      "name": {
+        "en": "Crafting Pattern",
+        "pt": "Molde de Criação"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Tinker's Desk",
+        "pt": "Mesa do Inventor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-paper",
+          "name": {
+            "en": "Paper",
+            "pt": "Papel"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wax",
+          "name": {
+            "en": "Wax",
+            "pt": "Cera"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-crafting-pattern",
+      "unlock": {
+        "en": "Blueprint: Automatically available with Tinker's Desk",
+        "pt": "Projeto: disponível desde o início na Mesa do Inventor"
+      }
+    },
+    {
+      "id": "wte-cook-mystery-sandwich",
+      "name": {
+        "en": "Mystery Sandwich",
+        "pt": "Sanduíche Misterioso"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Cooking Pot",
+        "pt": "Panela"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-pumpkin",
+          "name": {
+            "en": "Pumpkin",
+            "pt": "Abóbora"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-stalktopus",
+          "name": {
+            "en": "Stalktopus",
+            "pt": "Polvo-de-antenas"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-fog-eel",
+          "name": {
+            "en": "Fog Eel",
+            "pt": "Enguia da Névoa"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-secret-sauce",
+          "name": {
+            "en": "Secret Sauce",
+            "pt": "Molho Secreto"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-salt",
+          "name": {
+            "en": "Salt",
+            "pt": "Sal"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bread",
+          "name": {
+            "en": "Bread",
+            "pt": "Pão"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-mystery-sandwich",
+      "unlock": {
+        "en": "Recipe: Mall Mines (book on the ground)",
+        "pt": "Receita: livro no chão das Minas do Shopping"
+      }
+    },
+    {
+      "id": "wte-cook-fish-taco",
+      "name": {
+        "en": "Fish Taco",
+        "pt": "Taco de Peixe"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Cooking Pot",
+        "pt": "Panela"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-stalktopus",
+          "name": {
+            "en": "Stalktopus",
+            "pt": "Polvo-de-antenas"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bread",
+          "name": {
+            "en": "Bread",
+            "pt": "Pão"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-radish",
+          "name": {
+            "en": "Radish",
+            "pt": "Rabanete"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-salt",
+          "name": {
+            "en": "Salt",
+            "pt": "Sal"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-fish-taco",
+      "unlock": {
+        "en": "Recipe: From Edwin as he takes a walk near the Notice Board",
+        "pt": "Receita: do Edwin, passeando perto do quadro de avisos"
+      }
+    },
+    {
+      "id": "wte-cook-special-hotdog",
+      "name": {
+        "en": "Special Hotdog",
+        "pt": "Cachorro-quente Especial"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Cooking Pot",
+        "pt": "Panela"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bread",
+          "name": {
+            "en": "Bread",
+            "pt": "Pão"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-fog-eel",
+          "name": {
+            "en": "Fog Eel",
+            "pt": "Enguia da Névoa"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-red-mushroom",
+          "name": {
+            "en": "Red Mushroom",
+            "pt": "Cogumelo Vermelho"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-salt",
+          "name": {
+            "en": "Salt",
+            "pt": "Sal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-secret-sauce",
+          "name": {
+            "en": "Secret Sauce",
+            "pt": "Molho Secreto"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-special-hotdog",
+      "unlock": {
+        "en": "Recipe: Treasure Map 3 Purchase from The Garbage Man Mondays & Thursdays (occasionally)",
+        "pt": "Receita: Mapa do Tesouro 3, ou compre do Homem do Lixo às segundas e quintas (às vezes)"
+      }
+    },
+    {
+      "id": "wte-forge-copper-shortsword",
+      "name": {
+        "en": "Copper Shortsword",
+        "pt": "Espada Curta de Cobre"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Weapons",
+        "pt": "Armas"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "en": "Stone Shortsword",
+            "pt": "Espada Curta de Pedra"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 4
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-copper-staff",
+      "name": {
+        "en": "Copper Staff",
+        "pt": "Cajado de Cobre"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Weapons",
+        "pt": "Armas"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "en": "Wooden Staff",
+            "pt": "Cajado de Madeira"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 4
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-metal-bat",
+      "name": {
+        "en": "Metal Bat",
+        "pt": "Taco de Metal"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Weapons",
+        "pt": "Armas"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-nomad-hood",
+      "name": {
+        "en": "Nomad Hood",
+        "pt": "Capuz do Nômade"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-nomad-cloak",
+      "name": {
+        "en": "Nomad Cloak",
+        "pt": "Manto do Nômade"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-copper-helmet",
+      "name": {
+        "en": "Copper Helmet",
+        "pt": "Elmo de Cobre"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-copper-greaves",
+      "name": {
+        "en": "Copper Greaves",
+        "pt": "Grevas de Cobre"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-copper-legguards",
+      "name": {
+        "en": "Copper Legguards",
+        "pt": "Perneiras de Cobre"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-copper-chestplate",
+      "name": {
+        "en": "Copper Chestplate",
+        "pt": "Peitoral de Cobre"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-sturdy-watering-can",
+      "name": {
+        "en": "Sturdy Watering Can",
+        "pt": "Regador Resistente"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-basic-watering-can",
+          "name": {
+            "en": "Basic Watering Can",
+            "pt": "Regador Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 8
+        }
+      ],
+      "makes": "wte-sturdy-watering-can"
+    },
+    {
+      "id": "wte-forge-sturdy-pickaxe",
+      "name": {
+        "en": "Sturdy Pickaxe",
+        "pt": "Picareta Resistente"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rusty-pickaxe",
+          "name": {
+            "en": "Rusty Pickaxe",
+            "pt": "Picareta Enferrujada"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-pickaxe",
+          "name": {
+            "en": "Basic Pickaxe",
+            "pt": "Picareta Básica"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 6
+        }
+      ],
+      "makes": "wte-sturdy-pickaxe"
+    },
+    {
+      "id": "wte-forge-sturdy-gardening-hoe",
+      "name": {
+        "en": "Sturdy Gardening Hoe",
+        "pt": "Enxada Resistente"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-basic-gardening-hoe",
+          "name": {
+            "en": "Basic Gardening Hoe",
+            "pt": "Enxada Básica"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 8
+        }
+      ],
+      "makes": "wte-sturdy-gardening-hoe"
+    },
+    {
+      "id": "wte-forge-basic-scythe",
+      "name": {
+        "en": "Basic Scythe",
+        "pt": "Foice Básica"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rusty-scythe",
+          "name": {
+            "en": "Rusty Scythe",
+            "pt": "Foice Enferrujada"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-basic-scythe"
+    },
+    {
+      "id": "wte-forge-sturdy-scythe",
+      "name": {
+        "en": "Sturdy Scythe",
+        "pt": "Foice Resistente"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-basic-scythe",
+          "name": {
+            "en": "Basic Scythe",
+            "pt": "Foice Básica"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-sturdy-scythe"
+    },
+    {
+      "id": "wte-forge-sturdy-fishing-rod",
+      "name": {
+        "en": "Sturdy Fishing Rod",
+        "pt": "Vara de Pescar Resistente"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-old-fishing-rod",
+          "name": {
+            "en": "Old Fishing Rod",
+            "pt": "Vara de Pescar Velha"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "id": "wte-forge-sturdy-axe",
+      "name": {
+        "en": "Sturdy Axe",
+        "pt": "Machado Resistente"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rusty-axe",
+          "name": {
+            "en": "Rusty Axe",
+            "pt": "Machado Enferrujado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-axe",
+          "name": {
+            "en": "Basic Axe",
+            "pt": "Machado Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 8
+        }
+      ]
+    },
+    {
+      "id": "wte-forge-brutal-knife",
+      "name": {
+        "en": "Brutal Knife",
+        "pt": "Faca Brutal"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Combine"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "en": "Wooden Stick",
+            "pt": "Graveto"
+          },
+          "qty": 1
+        },
+        {
+          "name": {
+            "en": "Rusty Scissors",
+            "pt": "Tesoura Enferrujada"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    }
+  ],
+  "creatures": [
+    {
+      "id": "wte-cr-ancient-mushroom",
+      "name": {
+        "en": "Ancient Mushroom",
+        "pt": "Cogumelo Ancestral"
+      },
+      "where": [
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Living Soul",
+                "pt": "Alma Viva"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Old Woods — Encounter",
+            "pt": "Bosque Antigo — Encontro"
+          }
+        },
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Living Soul",
+                "pt": "Alma Viva"
+              }
+            },
+            {
+              "entryId": "wte-spiritwood",
+              "name": {
+                "en": "Spiritwood",
+                "pt": "Madeira Espiritual"
+              }
+            },
+            {
+              "name": {
+                "en": "Common Mushroom",
+                "pt": "Cogumelo Comum"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Mall and Mall Mines — Encounter",
+            "pt": "Shopping e Minas do Shopping — Encontro"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-arm",
+      "name": {
+        "en": "Arm",
+        "pt": "Braço"
+      },
+      "where": [
+        {
+          "en": "Mall",
+          "pt": "Shopping"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-bighead",
+      "name": {
+        "en": "Bighead",
+        "pt": "Cabeção"
+      },
+      "where": [
+        {
+          "en": "Mall",
+          "pt": "Shopping"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-caveman",
+      "name": {
+        "en": "Caveman",
+        "pt": "Homem das Cavernas"
+      },
+      "where": [
+        {
+          "en": "Beginner Mines — Mines",
+          "pt": "Minas Iniciais — Minas"
+        },
+        {
+          "en": "Mine F2 (Beginner Mines)",
+          "pt": "Mina 2º andar (Minas Iniciais)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-chest-mimic",
+      "name": {
+        "en": "Chest Mimic",
+        "pt": "Baú Mímico"
+      },
+      "where": [
+        {
+          "en": "Mine F1 (The Old Woods Mines)",
+          "pt": "Mina 1º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F2 (The Old Woods Mines)",
+          "pt": "Mina 2º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Catacombs 2F (Catacombs)",
+          "pt": "Catacumbas 2º andar (Catacumbas)"
+        },
+        {
+          "en": "Catacombs 3F (Catacombs)",
+          "pt": "Catacumbas 3º andar (Catacumbas)"
+        },
+        {
+          "en": "Catacombs 1F (Catacombs)",
+          "pt": "Catacumbas 1º andar (Catacumbas)"
+        },
+        {
+          "en": "Catacombs — Sealed Chamber",
+          "pt": "Catacumbas — Câmara Selada"
+        },
+        {
+          "en": "Catacombs — Mine",
+          "pt": "Catacumbas — Mina"
+        },
+        {
+          "en": "Catacombs — Mines",
+          "pt": "Catacumbas — Minas"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-denizen-of-the-deep-fryer",
+      "name": {
+        "en": "Denizen of the Deep-Fryer",
+        "pt": "Morador da Fritadeira"
+      },
+      "where": [
+        {
+          "en": "Kitchen (Mall)",
+          "pt": "Cozinha (Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-door-mimic",
+      "name": {
+        "en": "Door Mimic",
+        "pt": "Porta Mímica"
+      },
+      "where": [
+        {
+          "en": "Mine F2 (The Old Woods Mines)",
+          "pt": "Mina 2º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Catacombs — Mine",
+          "pt": "Catacumbas — Mina"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-eye",
+      "name": {
+        "en": "Eye",
+        "pt": "Olho"
+      },
+      "where": [
+        {
+          "en": "Mall",
+          "pt": "Shopping"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-fingermen",
+      "name": {
+        "en": "Fingermen",
+        "pt": "Homens-dedo"
+      },
+      "where": [
+        {
+          "en": "Mine F3 (Beginner Mines)",
+          "pt": "Mina 3º andar (Minas Iniciais)"
+        },
+        {
+          "en": "Mine F2 (The Old Woods Mines)",
+          "pt": "Mina 2º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Abandoned Mill (The Old Woods)",
+          "pt": "Moinho Abandonado (Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-flower-bird",
+      "name": {
+        "en": "Flower Bird",
+        "pt": "Pássaro-flor"
+      },
+      "where": [
+        {
+          "en": "The Old Woods — Clearing",
+          "pt": "Bosque Antigo — Clareira"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        },
+        {
+          "en": "Campsite (The Old Woods)",
+          "pt": "Acampamento (Bosque Antigo)"
+        },
+        {
+          "en": "The Pale Clearing (The Old Woods)",
+          "pt": "A Clareira Pálida (Bosque Antigo)"
+        },
+        {
+          "en": "The Red Clearing (The Old Woods)",
+          "pt": "A Clareira Vermelha (Bosque Antigo)"
+        },
+        {
+          "en": "Mine F1 (The Old Woods Mines)",
+          "pt": "Mina 1º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-hall-monitor",
+      "name": {
+        "en": "Hall Monitor",
+        "pt": "Monitor do Corredor"
+      },
+      "where": [
+        {
+          "en": "Mall F1 Hallway (Mall)",
+          "pt": "Shopping 1º andar Corredor (Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-head-crop",
+      "name": {
+        "en": "Head Crop",
+        "pt": "Plantação de Cabeças"
+      },
+      "where": [
+        {
+          "en": "Mall",
+          "pt": "Shopping"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-hungry-plant",
+      "name": {
+        "en": "Hungry Plant",
+        "pt": "Planta Faminta"
+      },
+      "where": [
+        {
+          "en": "Mine F2 (Beginner Mines)",
+          "pt": "Mina 2º andar (Minas Iniciais)"
+        },
+        {
+          "en": "Mine F3 (Beginner Mines)",
+          "pt": "Mina 3º andar (Minas Iniciais)"
+        },
+        {
+          "en": "Mine F2 (The Old Woods Mines)",
+          "pt": "Mina 2º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-leg",
+      "name": {
+        "en": "Leg",
+        "pt": "Perna"
+      },
+      "where": [
+        {
+          "en": "Mall",
+          "pt": "Shopping"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-mall-administrator",
+      "name": {
+        "en": "Mall Administrator",
+        "pt": "Administrador do Shopping"
+      },
+      "where": [
+        {
+          "en": "Mall F1 Hallway (Mall)",
+          "pt": "Shopping 1º andar Corredor (Shopping)"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Skull of the Mall",
+                "pt": "Crânio do Shopping"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Mall and Mall Mines — Mall Admin — Encounter",
+            "pt": "Shopping e Minas do Shopping — Administração do Shopping — Encontro"
+          },
+          "when": {
+            "en": "an earlier stage of this interaction is complete",
+            "pt": "depois da etapa anterior da conversa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-mimic",
+      "name": {
+        "en": "Mimic",
+        "pt": "Mímico"
+      },
+      "where": [
+        {
+          "en": "Empty Shop (Mall)",
+          "pt": "Loja Vazia (Shopping)"
+        },
+        {
+          "en": "Mall F1 Office (Mall)",
+          "pt": "Shopping 1º andar Escritório (Shopping)"
+        },
+        {
+          "en": "Sewers F1 (Sewers)",
+          "pt": "Esgotos 1º andar (Esgotos)"
+        },
+        {
+          "en": "Mine F2 (Beginner Mines)",
+          "pt": "Mina 2º andar (Minas Iniciais)"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        },
+        {
+          "en": "Cabin (The Old Woods)",
+          "pt": "Cabana (Bosque Antigo)"
+        },
+        {
+          "en": "Closet (The Old Woods)",
+          "pt": "Armário (Bosque Antigo)"
+        },
+        {
+          "en": "Catacombs — Sealed Chamber",
+          "pt": "Catacumbas — Câmara Selada"
+        },
+        {
+          "en": "Catacombs — Mine",
+          "pt": "Catacumbas — Mina"
+        },
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-office-slime",
+      "name": {
+        "en": "Office Slime",
+        "pt": "Gosma de Escritório"
+      },
+      "where": [
+        {
+          "en": "Mall F1 (Mall)",
+          "pt": "Shopping 1º andar (Shopping)"
+        },
+        {
+          "en": "Mall F1 Hallway (Mall)",
+          "pt": "Shopping 1º andar Corredor (Shopping)"
+        },
+        {
+          "en": "Mall F1 Office (Mall)",
+          "pt": "Shopping 1º andar Escritório (Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-pipe-cleaner",
+      "name": {
+        "en": "Pipe Cleaner",
+        "pt": "Limpa-canos"
+      },
+      "where": [
+        {
+          "en": "Sewers F1 (Sewers)",
+          "pt": "Esgotos 1º andar (Esgotos)"
+        },
+        {
+          "en": "Mine F1 (Beginner Mines)",
+          "pt": "Mina 1º andar (Minas Iniciais)"
+        },
+        {
+          "en": "Beginner Mines — Mines",
+          "pt": "Minas Iniciais — Minas"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-pretty-flower",
+      "name": {
+        "en": "Pretty Flower",
+        "pt": "Flor Bonita"
+      },
+      "where": [
+        {
+          "en": "The Old Woods — Clearing",
+          "pt": "Bosque Antigo — Clareira"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        },
+        {
+          "en": "Campsite (The Old Woods)",
+          "pt": "Acampamento (Bosque Antigo)"
+        },
+        {
+          "en": "The Pale Clearing (The Old Woods)",
+          "pt": "A Clareira Pálida (Bosque Antigo)"
+        },
+        {
+          "en": "The Red Clearing (The Old Woods)",
+          "pt": "A Clareira Vermelha (Bosque Antigo)"
+        },
+        {
+          "en": "Abandoned Hovel (The Old Woods)",
+          "pt": "Casebre Abandonado (Bosque Antigo)"
+        },
+        {
+          "en": "Mine F1 (The Old Woods Mines)",
+          "pt": "Mina 1º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-scarecrow",
+      "name": {
+        "en": "Scarecrow",
+        "pt": "Espantalho"
+      },
+      "where": [
+        {
+          "en": "The Old Woods — Clearing",
+          "pt": "Bosque Antigo — Clareira"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        },
+        {
+          "en": "Campsite (The Old Woods)",
+          "pt": "Acampamento (Bosque Antigo)"
+        },
+        {
+          "en": "The Pale Clearing (The Old Woods)",
+          "pt": "A Clareira Pálida (Bosque Antigo)"
+        },
+        {
+          "en": "The Red Clearing (The Old Woods)",
+          "pt": "A Clareira Vermelha (Bosque Antigo)"
+        },
+        {
+          "en": "Mine F1 (The Old Woods Mines)",
+          "pt": "Mina 1º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-shopper",
+      "name": {
+        "en": "Shopper",
+        "pt": "Consumidor"
+      },
+      "where": [
+        {
+          "en": "Kitchen (Mall)",
+          "pt": "Cozinha (Shopping)"
+        },
+        {
+          "en": "Mall F1 Hallway (Mall)",
+          "pt": "Shopping 1º andar Corredor (Shopping)"
+        },
+        {
+          "en": "Mall F1 (Mall)",
+          "pt": "Shopping 1º andar (Shopping)"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "steal",
+          "items": [
+            {
+              "entryId": "wte-bitter-herb",
+              "name": {
+                "en": "Bitter Herb",
+                "pt": "Erva Amarga"
+              }
+            }
+          ],
+          "chance": "25%",
+          "variant": {
+            "en": "Level 1 — Shopper",
+            "pt": "Nível 1 — Consumidor"
+          }
+        },
+        {
+          "how": "steal",
+          "items": [
+            {
+              "entryId": "wte-bitter-herb",
+              "name": {
+                "en": "Bitter Herb",
+                "pt": "Erva Amarga"
+              }
+            }
+          ],
+          "chance": "25%",
+          "variant": {
+            "en": "Level 2 — Shopper",
+            "pt": "Nível 2 — Consumidor"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-soul-swarm",
+      "name": {
+        "en": "Soul Swarm",
+        "pt": "Enxame de Almas"
+      },
+      "where": [
+        {
+          "en": "Mall",
+          "pt": "Shopping"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-strange-plant",
+      "name": {
+        "en": "Strange Plant",
+        "pt": "Planta Estranha"
+      },
+      "where": [
+        {
+          "en": "The Old Woods — Clearing",
+          "pt": "Bosque Antigo — Clareira"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        },
+        {
+          "en": "Campsite (The Old Woods)",
+          "pt": "Acampamento (Bosque Antigo)"
+        },
+        {
+          "en": "The Pale Clearing (The Old Woods)",
+          "pt": "A Clareira Pálida (Bosque Antigo)"
+        },
+        {
+          "en": "The Red Clearing (The Old Woods)",
+          "pt": "A Clareira Vermelha (Bosque Antigo)"
+        },
+        {
+          "en": "Mine F1 (The Old Woods Mines)",
+          "pt": "Mina 1º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-tall-man",
+      "name": {
+        "en": "Tall Man",
+        "pt": "Homem Alto"
+      },
+      "where": [
+        {
+          "en": "Mall",
+          "pt": "Shopping"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-treasure-goblin",
+      "name": {
+        "en": "Treasure Goblin",
+        "pt": "Goblin do Tesouro"
+      },
+      "where": [
+        {
+          "en": "Mall F1 (Mall)",
+          "pt": "Shopping 1º andar (Shopping)"
+        },
+        {
+          "en": "Mall F1 Hallway (Mall)",
+          "pt": "Shopping 1º andar Corredor (Shopping)"
+        },
+        {
+          "en": "Sewers F1 (Sewers)",
+          "pt": "Esgotos 1º andar (Esgotos)"
+        },
+        {
+          "en": "The Deep Woods",
+          "pt": "Floresta Profunda"
+        },
+        {
+          "en": "Deep Catacombs",
+          "pt": "Catacumbas Profundas"
+        },
+        {
+          "en": "Sealed Passage",
+          "pt": "Passagem Selada"
+        },
+        {
+          "en": "Mall BF",
+          "pt": "Subsolo do Shopping"
+        },
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        },
+        {
+          "en": "Deep Catacombs — Sealed Chamber",
+          "pt": "Catacumbas Profundas — Câmara Selada"
+        },
+        {
+          "en": "Deep Catacombs — Bone Chamber",
+          "pt": "Catacumbas Profundas — Câmara dos Ossos"
+        },
+        {
+          "en": "Catacombs 2F (Catacombs)",
+          "pt": "Catacumbas 2º andar (Catacumbas)"
+        },
+        {
+          "en": "Catacombs 3F (Catacombs)",
+          "pt": "Catacumbas 3º andar (Catacumbas)"
+        },
+        {
+          "en": "Catacombs 1F (Catacombs)",
+          "pt": "Catacumbas 1º andar (Catacumbas)"
+        },
+        {
+          "en": "Catacombs — Sealed Chamber",
+          "pt": "Catacumbas — Câmara Selada"
+        },
+        {
+          "en": "Catacombs — Mine",
+          "pt": "Catacumbas — Mina"
+        },
+        {
+          "en": "Catacombs — Mines",
+          "pt": "Catacumbas — Minas"
+        },
+        {
+          "en": "The Old Woods",
+          "pt": "Bosque Antigo"
+        },
+        {
+          "en": "Mine F1 (The Old Woods Mines)",
+          "pt": "Mina 1º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F2 (The Old Woods Mines)",
+          "pt": "Mina 2º andar (Minas do Bosque Antigo)"
+        },
+        {
+          "en": "Mine F3 (The Old Woods Mines)",
+          "pt": "Mina 3º andar (Minas do Bosque Antigo)"
+        }
+      ],
+      "spoilerLevel": 0
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+@let l = lang.lang();
+<a [routerLink]="game.link('compendium')" [queryParams]="{ tab: 'creatures' }" class="link back">
+  <app-icon name="chevron-left" /> {{ 'compendium.tab.creatures' | transloco }}
+</a>
+
+@if (found(); as f) {
+  <header class="hero card rise">
+    <p class="eyebrow">{{ 'compendium.creature' | transloco }}</p>
+    <app-spoiler-reveal [itemId]="f.creature.id" [level]="f.creature.spoilerLevel" [placeholder]="'compendium.creaturePlaceholder' | transloco: { n: f.n }">
+      <h1>{{ f.creature.name | localize: l }}</h1>
+      @if (f.creature.name | original: l; as en) {
+        <p class="en">{{ 'compendium.inEnglish' | transloco: { name: en } }}</p>
+      }
+    </app-spoiler-reveal>
+    <p class="muted small">{{ 'compendium.from' | transloco: { chapter: f.chapter.neutralLabel | localize: l } }}</p>
+  </header>
+
+  @if (f.creature.where.length > 0) {
+    <section class="section" aria-labelledby="where-title">
+      <h2 id="where-title">{{ 'compendium.whereFound' | transloco }}</h2>
+      <ul class="places">
+        @for (w of f.creature.where; track $index) {
+          <li><app-icon name="map-pin" /> {{ w | localize: l }}</li>
+        }
+      </ul>
+    </section>
+  }
+
+  <section class="section" aria-labelledby="gives-title">
+    <h2 id="gives-title">{{ 'compendium.whatItGives' | transloco }}</h2>
+    @if (steals().length > 0) {
+      <div class="way">
+        <h3><app-icon name="gem" /> {{ 'compendium.reward.steal' | transloco }}</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">{{ 'compendium.item' | transloco }}</th>
+              <th scope="col">{{ 'compendium.variant' | transloco }}</th>
+              <th scope="col">{{ 'compendium.chance' | transloco }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (r of steals(); track $index) {
+              <tr>
+                <td>
+                  @for (i of r.items; track $index) {
+                    @if (i.entryId) {
+                      <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                    } @else {
+                      {{ i.name | localize: l }}
+                    }
+                  }
+                </td>
+                <td>{{ r.variant ? (r.variant | localize: l) : '—' }}</td>
+                <td class="num">{{ r.chance ?? '—' }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+    @for (r of events(); track $index) {
+      <div class="way">
+        <h3><app-icon name="sparkles" /> {{ r.situation ? (r.situation | localize: l) : ('compendium.reward.event' | transloco) }}</h3>
+        @if (r.when) {
+          <p class="muted small">{{ 'compendium.when' | transloco: { condition: r.when | localize: l } }}</p>
+        }
+        @if (r.gives?.length) {
+          <p class="small">
+            <strong>{{ 'compendium.youGive' | transloco }}</strong>
+            @for (i of r.gives; track $index; let last = $last) {
+              @if (i.entryId) {
+                <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+              } @else {
+                {{ i.name | localize: l }}
+              }
+              @if (!last) {
+                ,
+              }
+            }
+          </p>
+        }
+        <ul class="items">
+          @for (i of r.items; track $index) {
+            <li>
+              @if (i.entryId) {
+                <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+              } @else {
+                <span>{{ i.name | localize: l }}</span>
+              }
+            </li>
+          }
+        </ul>
+      </div>
+    } @empty {
+      @if (steals().length === 0) {
+        <p class="muted small">{{ 'compendium.givesNothing' | transloco }}</p>
+      }
+    }
+  </section>
+} @else if (ready()) {
+  <div class="card notfound">
+    <p>{{ 'compendium.notFound' | transloco }}</p>
+    <a class="button" [routerLink]="game.link('compendium')">{{ 'compendium.title' | transloco }}</a>
+  </div>
+} @else {
+  <p class="muted" aria-busy="true">{{ 'common.loading' | transloco }}</p>
+}

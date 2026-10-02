@@ -13,11 +13,12 @@ import { ProgressImportError, ProgressStore, needsChapterPick, parseExport } fro
 import { TransferService } from '../../core/progress/transfer.service';
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { SITE } from '../../site.config';
+import { termKey } from '../../core/i18n/terms';
 import { Icon } from '../../ui/icon/icon';
 import { GameCover } from '../../ui/game-cover/game-cover';
 import { ScrollHints } from '../../ui/scroll-hints/scroll-hints';
 import { fallbackCoverText } from '../../core/cover/cover-art';
-import { localize } from '../../core/content/content.models';
+import { GameFeature, localize } from '../../core/content/content.models';
 
 type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number } | null;
 
@@ -56,10 +57,25 @@ export class Home {
   /** The franchise filter from ?f=, ignored when it names no franchise. */
   private readonly filterParam = toSignal(inject(ActivatedRoute).queryParamMap.pipe(map((p) => p.get('f'))));
   protected readonly filter = computed(() => this.franchises().find((f) => f.id === this.filterParam()) ?? null);
+  /** The feature filter from ?t=: games that include a checklist, or a compendium. */
+  private readonly featureParam = toSignal(inject(ActivatedRoute).queryParamMap.pipe(map((p) => p.get('t'))));
+  protected readonly featureFilter = computed<GameFeature | null>(() => {
+    const t = this.featureParam();
+    return t === 'checklist' || t === 'compendium' ? t : null;
+  });
+  protected readonly gameFeatures: GameFeature[] = ['checklist', 'compendium'];
+  /** Series to show, each with only the games the feature filter lets through; empty ones drop out. */
   protected readonly shown = computed(() => {
     const only = this.filter();
-    return only ? [only] : this.franchises();
+    const feature = this.featureFilter();
+    const series = only ? [only] : this.franchises();
+    if (!feature) return series;
+    return series
+      .map((f) => ({ ...f, games: f.games.filter((g) => (g.features ?? ['checklist']).includes(feature)) }))
+      .filter((f) => f.games.length > 0);
   });
+  /** Whether any filter is on: series and features each narrow the library. */
+  protected readonly filtered = computed(() => this.filter() !== null || this.featureFilter() !== null);
 
   /** Started games other than the most recent one, newest first, with their current chapter. */
   protected readonly others = resource({
@@ -91,6 +107,9 @@ export class Home {
         stats,
         percent: stats.total ? Math.round((stats.done / stats.total) * 100) : 0,
         alert: nextCheckpointAlert(chapter, done),
+        features: manifest.features ?? ['checklist'],
+        hasCollections: !manifest.collections || manifest.collections.fish + manifest.collections.recipes > 0,
+        hasDeadlines: (manifest.deadlines ?? 1) > 0,
         picking: needsChapterPick(saved),
       };
     },
@@ -114,10 +133,23 @@ export class Home {
     return this.savedByGame().has(gameId);
   }
 
-  /** A started game resumes at its current chapter; a new one opens "Where am I?" first. */
+  /** An i18n key worded for the game's progress term (chapters or areas). */
+  protected k(key: string, gameId: string): string {
+    return termKey(key, this.content.game(gameId)?.progressTerm);
+  }
+
+  protected features(gameId: string): GameFeature[] {
+    return this.content.game(gameId)?.features ?? ['checklist'];
+  }
+
+  /**
+   * A started game resumes at its current chapter (or its compendium, when it has no checklist);
+   * a new one opens "Where am I?" first.
+   */
   protected gameLink(gameId: string): string[] {
     const saved = this.savedByGame().get(gameId);
-    return saved && !needsChapterPick(saved) ? ['/', gameId, 'chapters', saved.currentChapter] : ['/', gameId, 'chapters'];
+    if (!saved || needsChapterPick(saved)) return ['/', gameId, 'chapters'];
+    return this.features(gameId).includes('checklist') ? ['/', gameId, 'chapters', saved.currentChapter] : ['/', gameId, 'compendium'];
   }
 
   protected readonly pendingImport = signal<PendingImport | null>(null);

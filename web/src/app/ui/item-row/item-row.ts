@@ -6,6 +6,7 @@ import { Chapter, Item } from '../../core/content/content.models';
 import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
+import { OriginalPipe } from '../../core/i18n/original.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { ItemView } from '../../core/spoiler/item-view';
 import { Icon } from '../icon/icon';
@@ -16,7 +17,7 @@ import { SpoilerReveal } from '../spoiler-reveal/spoiler-reveal';
 /** One checklist entry: checkbox, masked name, deadline, hint and a link to the details. */
 @Component({
   selector: 'app-item-row',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, SpoilerReveal, Icon, RouteSteps],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, OriginalPipe, SpoilerReveal, Icon, RouteSteps],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './item-row.html',
   styleUrl: './item-row.scss',

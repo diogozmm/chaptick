@@ -1,0 +1,3230 @@
+{
+  "id": "wte-ch4",
+  "gameId": "wte",
+  "order": 4,
+  "neutralLabel": {
+    "en": "Deep Woods & Deep Catacombs",
+    "pt": "Floresta Profunda e Catacumbas Profundas"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "wte-ch4-q-01",
+      "type": "quest",
+      "name": {
+        "en": "The Dusklight Pearls",
+        "pt": "As Pérolas do Crepúsculo"
+      },
+      "location": {
+        "en": "Isaiah — Deep Woods Village",
+        "pt": "Isaiah — Vila da Floresta Profunda"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Pearls found: (3 required). Reward: A \"special axe\" of some kind.",
+        "pt": "Objetivos: Pérolas encontradas: (3 necessárias). Recompensa: Algum tipo de \"machado especial\"."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-02",
+      "type": "quest",
+      "name": {
+        "en": "A Herbal Cure",
+        "pt": "Uma Cura de Ervas"
+      },
+      "location": {
+        "en": "Grace — Deep Woods Village",
+        "pt": "Grace — Vila da Floresta Profunda"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Bring Grace a Herbal Salve. Reward: A Golden Hatchet.",
+        "pt": "Objetivos: Leve uma Pomada de Ervas à Grace. Recompensa: Uma Machadinha Dourada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-03",
+      "type": "quest",
+      "name": {
+        "en": "Stocking the Storehouse",
+        "pt": "Abastecendo o Depósito"
+      },
+      "location": {
+        "en": "Hannah — Deep Woods Village",
+        "pt": "Hannah — Vila da Floresta Profunda"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Restock the Storehouse. Reward: A Golden Hatchet.",
+        "pt": "Objetivos: Reabasteça o depósito. Recompensa: Uma Machadinha Dourada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-04",
+      "type": "quest",
+      "name": {
+        "en": "Mysteries of the Deep Woods",
+        "pt": "Mistérios da Floresta Profunda"
+      },
+      "location": {
+        "en": "Adam — Deep Woods Village",
+        "pt": "Adam — Vila da Floresta Profunda"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Mysteries Investigated: (3 required). Reward: A Golden Hatchet.",
+        "pt": "Objetivos: Mistérios investigados: (3 necessários). Recompensa: Uma Machadinha Dourada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-05",
+      "type": "quest",
+      "name": {
+        "en": "A Strange Elixir",
+        "pt": "Um Elixir Estranho"
+      },
+      "location": {
+        "en": "Samson — Deep Woods Village",
+        "pt": "Samson — Vila da Floresta Profunda"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Bring Samson a Soulbargain Potion.",
+        "pt": "Objetivos: Leve uma Poção do Pacto de Alma ao Samson."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-06",
+      "type": "quest",
+      "name": {
+        "en": "Lost Journal",
+        "pt": "Diário Perdido"
+      },
+      "location": {
+        "en": "Jacob — Deep Woods",
+        "pt": "Jacob — Floresta Profunda"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Find Jacob's Lost Journal.",
+        "pt": "Objetivos: Encontre o diário perdido do Jacob."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Lost Pocket Knife",
+        "pt": "Canivete Perdido"
+      },
+      "location": {
+        "en": "Sarah — Deep Woods",
+        "pt": "Sarah — Floresta Profunda"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Find Sarah's Lost Pocket Knife.",
+        "pt": "Objetivos: Encontre o canivete perdido da Sarah."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-08",
+      "type": "quest",
+      "name": {
+        "en": "Dental Records",
+        "pt": "Arcada Dentária"
+      },
+      "location": {
+        "en": "Olivia — Deep Catacombs",
+        "pt": "Olivia — Catacumbas Profundas"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Find 5 Golden Teeth. Reward: A key to one of the gates.",
+        "pt": "Objetivos: Encontre 5 Dentes de Ouro. Recompensa: A chave de um dos portões."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-09",
+      "type": "quest",
+      "name": {
+        "en": "Silver and Bone",
+        "pt": "Prata e Osso"
+      },
+      "location": {
+        "en": "Chloe — Deep Catacombs",
+        "pt": "Chloe — Catacumbas Profundas"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Craft a Necklace of Bone. Reward: A key to one of the gates.",
+        "pt": "Objetivos: Crie um Colar de Osso. Recompensa: A chave de um dos portões."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-10",
+      "type": "quest",
+      "name": {
+        "en": "The Coins of Death",
+        "pt": "As Moedas da Morte"
+      },
+      "location": {
+        "en": "Thaddeus — Deep Catacombs",
+        "pt": "Thaddeus — Catacumbas Profundas"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Find all four Gold Coins of Death. Reward: The Final Key.",
+        "pt": "Objetivos: Encontre as quatro Moedas de Ouro da Morte. Recompensa: A Chave Final."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-11",
+      "type": "quest",
+      "name": {
+        "en": "Supply Run",
+        "pt": "Busca de Suprimentos"
+      },
+      "location": {
+        "en": "Lydia — Deep Catacombs",
+        "pt": "Lydia — Catacumbas Profundas"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Bring Lydia a Herbal Stew, Herbal Feast, Herbal Serpent and Herbal Roast. Reward: A key to one of the gates.",
+        "pt": "Objetivos: Leve à Lydia um Ensopado de Ervas, um Banquete de Ervas, uma Serpente com Ervas e um Assado com Ervas. Recompensa: A chave de um dos portões."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-12",
+      "type": "quest",
+      "name": {
+        "en": "Missing Skeletons",
+        "pt": "Esqueletos Desaparecidos"
+      },
+      "location": {
+        "en": "Theodore — Deep Catacombs",
+        "pt": "Theodore — Catacumbas Profundas"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Find Dimitri in the tunnels. Reward: A key to one of the gates.",
+        "pt": "Objetivos: Encontre o Dimitri nos túneis. Recompensa: A chave de um dos portões."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    },
+    {
+      "id": "wte-ch4-q-13",
+      "type": "quest",
+      "name": {
+        "en": "Helping Grandma",
+        "pt": "Ajudando a Vovó"
+      },
+      "location": {
+        "en": "Grandma — Grandma's Cabin",
+        "pt": "Grandma — Cabana da Vovó"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Objectives: Acquire a Palewood Branch. Reward: Grandma's forgiveness.",
+        "pt": "Objetivos: Consiga um Galho de Madeira Pálida. Recompensa: O perdão da Vovó."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "entries": [
+    {
+      "id": "wte-aged-rum",
+      "name": {
+        "en": "Aged Rum",
+        "pt": "Rum Envelhecido"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "100g"
+    },
+    {
+      "id": "wte-apple",
+      "name": {
+        "en": "Apple",
+        "pt": "Maçã"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "20g"
+    },
+    {
+      "id": "wte-artery-gem",
+      "name": {
+        "en": "Artery Gem",
+        "pt": "Gema da Artéria"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-blacksteel-bar",
+      "name": {
+        "en": "Blacksteel Bar",
+        "pt": "Barra de Aço Negro"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-clot-gem",
+      "name": {
+        "en": "Clot Gem",
+        "pt": "Gema do Coágulo"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-crimson-bar",
+      "name": {
+        "en": "Crimson Bar",
+        "pt": "Barra de Carmesim"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-crimson-die",
+      "name": {
+        "en": "Crimson Die",
+        "pt": "Dado Carmesim"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-crimson-ore",
+      "name": {
+        "en": "Crimson Ore",
+        "pt": "Minério de Carmesim"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "100g"
+    },
+    {
+      "id": "wte-crimson-sinew",
+      "name": {
+        "en": "Crimson Sinew",
+        "pt": "Tendão Carmesim"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-crushed-bones",
+      "name": {
+        "en": "Crushed Bones",
+        "pt": "Ossos Moídos"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Witching Mortar: Crushed Bones Failed craft result at Witching Mortar: Bones",
+            "pt": "Pilão de Bruxaria: Ossos Moídos Resultado de receita que falhou: Pilão de Bruxaria: Ossos"
+          }
+        },
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "3g"
+    },
+    {
+      "id": "wte-cursed-bone-fragments",
+      "name": {
+        "en": "Cursed Bone Fragments",
+        "pt": "Fragmentos de Osso Amaldiçoados"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-cursed-bones",
+      "name": {
+        "en": "Cursed Bones",
+        "pt": "Ossos Amaldiçoados"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "20g"
+    },
+    {
+      "id": "wte-cursed-demon-skull",
+      "name": {
+        "en": "Cursed Demon Skull",
+        "pt": "Crânio de Demônio Amaldiçoado"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        }
+      ],
+      "sell": "100g"
+    },
+    {
+      "id": "wte-cursed-skull",
+      "name": {
+        "en": "Cursed Skull",
+        "pt": "Crânio Amaldiçoado"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        }
+      ],
+      "sell": "37g"
+    },
+    {
+      "id": "wte-dense-fertilizer-lv2",
+      "name": {
+        "en": "Dense Fertilizer (Lv2)",
+        "pt": "Fertilizante Denso (Nv2)"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft 5 at a Compost Bin",
+            "pt": "Crie 5 em: Composteira"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-duskberry-cake",
+      "name": {
+        "en": "Duskberry Cake",
+        "pt": "Bolo de Baga-do-crepúsculo"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Duskberry Cake",
+            "pt": "Forno: Bolo de Baga-do-crepúsculo"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-duskmelon-cupcake",
+      "name": {
+        "en": "Duskmelon Cupcake",
+        "pt": "Cupcake de Melão-do-crepúsculo"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Duskmelon Cupcake",
+            "pt": "Forno: Cupcake de Melão-do-crepúsculo"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-eldersprout-pizza",
+      "name": {
+        "en": "Eldersprout Pizza",
+        "pt": "Pizza de Broto Ancião"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Eldersprout Pizza",
+            "pt": "Forno: Pizza de Broto Ancião"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-filling-platter",
+      "name": {
+        "en": "Filling Platter",
+        "pt": "Travessa Farta"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Filling Platter",
+            "pt": "Forno: Travessa Farta"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-flesh-gem",
+      "name": {
+        "en": "Flesh Gem",
+        "pt": "Gema de Carne"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-forbidden-elixir",
+      "name": {
+        "en": "Forbidden Elixir",
+        "pt": "Elixir Proibido"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-gold-plate",
+      "name": {
+        "en": "Gold Plate",
+        "pt": "Placa de Ouro"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "80g"
+    },
+    {
+      "id": "wte-greater-holy-water",
+      "name": {
+        "en": "Greater Holy Water",
+        "pt": "Água Benta Maior"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Gifts of Daeus: Greater Holy Water",
+            "pt": "Dádivas de Daeus: Água Benta Maior"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-healthy-platter",
+      "name": {
+        "en": "Healthy Platter",
+        "pt": "Travessa Saudável"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Healthy Platter",
+            "pt": "Forno: Travessa Saudável"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-herbal-salve",
+      "name": {
+        "en": "Herbal Salve",
+        "pt": "Pomada de Ervas"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Herbal Salve",
+            "pt": "Pomada de Ervas"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-huge-meat-chunk",
+      "name": {
+        "en": "Huge Meat Chunk",
+        "pt": "Pedaço de Carne Enorme"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "80g"
+    },
+    {
+      "id": "wte-large-coin-box",
+      "name": {
+        "en": "Large Coin Box",
+        "pt": "Caixa de Moedas Grande"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-large-meat-chunk",
+      "name": {
+        "en": "Large Meat Chunk",
+        "pt": "Pedaço de Carne Grande"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "64g"
+    },
+    {
+      "id": "wte-love-potion",
+      "name": {
+        "en": "Love Potion",
+        "pt": "Poção do Amor"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab: Love Potion",
+            "pt": "Laboratório de Poções: Poção do Amor"
+          }
+        },
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "125g"
+    },
+    {
+      "id": "wte-mana-sausage-raw",
+      "name": {
+        "en": "Mana Sausage (Raw)",
+        "pt": "Linguiça de Mana (Cru)"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Prepare at a prep table: Mana Sausage (Raw)",
+            "pt": "Mesa de Preparo: Linguiça de Mana (Cru)"
+          }
+        }
+      ],
+      "sell": "40g"
+    },
+    {
+      "id": "wte-meat-gem",
+      "name": {
+        "en": "Meat Gem",
+        "pt": "Gema de Carne"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-medium-meat-chunk",
+      "name": {
+        "en": "Medium Meat Chunk",
+        "pt": "Pedaço de Carne Médio"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Deep Woods",
+            "pt": "Floresta Profunda"
+          }
+        }
+      ],
+      "sell": "48g"
+    },
+    {
+      "id": "wte-molotov-cocktail",
+      "name": {
+        "en": "Molotov Cocktail",
+        "pt": "Coquetel Molotov"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-perfect-armor-gem",
+      "name": {
+        "en": "Perfect Armor Gem",
+        "pt": "Gema de Armadura Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-blood-gem",
+      "name": {
+        "en": "Perfect Blood Gem",
+        "pt": "Gema de Sangue Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-focus-gem",
+      "name": {
+        "en": "Perfect Focus Gem",
+        "pt": "Gema do Foco Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-greed-gem",
+      "name": {
+        "en": "Perfect Greed Gem",
+        "pt": "Gema da Ganância Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-magic-gem",
+      "name": {
+        "en": "Perfect Magic Gem",
+        "pt": "Gema Mágica Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-mind-gem",
+      "name": {
+        "en": "Perfect Mind Gem",
+        "pt": "Gema da Mente Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-rage-gem",
+      "name": {
+        "en": "Perfect Rage Gem",
+        "pt": "Gema da Fúria Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-sharp-gem",
+      "name": {
+        "en": "Perfect Sharp Gem",
+        "pt": "Gema Afiada Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-soul-gem",
+      "name": {
+        "en": "Perfect Soul Gem",
+        "pt": "Gema da Alma Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-swift-gem",
+      "name": {
+        "en": "Perfect Swift Gem",
+        "pt": "Gema Veloz Perfeita"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "150g"
+    },
+    {
+      "id": "wte-poison-vial",
+      "name": {
+        "en": "Poison Vial",
+        "pt": "Frasco de Veneno"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-radiant-scales",
+      "name": {
+        "en": "Radiant Scales",
+        "pt": "Escamas Radiantes"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Slicer",
+            "pt": "Processe o ingrediente certo em: Fatiador"
+          }
+        }
+      ],
+      "sell": "60g"
+    },
+    {
+      "id": "wte-razor-tooth",
+      "name": {
+        "en": "Razor Tooth",
+        "pt": "Dente Afiado"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Slicer",
+            "pt": "Processe o ingrediente certo em: Fatiador"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-recall-potion",
+      "name": {
+        "en": "Recall Potion",
+        "pt": "Poção de Retorno"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab: Recall Potion",
+            "pt": "Laboratório de Poções: Poção de Retorno"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-serpent-soup",
+      "name": {
+        "en": "Serpent Soup",
+        "pt": "Sopa de Serpente"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Serpent Soup",
+            "pt": "Forno: Sopa de Serpente"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-serpent-steak",
+      "name": {
+        "en": "Serpent Steak",
+        "pt": "Bife de Serpente"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Slicer",
+            "pt": "Processe o ingrediente certo em: Fatiador"
+          }
+        }
+      ],
+      "sell": "40g"
+    },
+    {
+      "id": "wte-sinew-gem",
+      "name": {
+        "en": "Sinew Gem",
+        "pt": "Gema do Tendão"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-slicer",
+      "name": {
+        "en": "Slicer",
+        "pt": "Fatiador"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "a tinker's desk: Slicer",
+            "pt": "Mesa do Inventor: Fatiador"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-small-meat-chunk",
+      "name": {
+        "en": "Small Meat Chunk",
+        "pt": "Pedaço de Carne Pequeno"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Deep Woods",
+            "pt": "Floresta Profunda"
+          }
+        }
+      ],
+      "sell": "32g"
+    },
+    {
+      "id": "wte-soul-fragments",
+      "name": {
+        "en": "Soul Fragments",
+        "pt": "Fragmentos de Alma"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-soulroot",
+      "name": {
+        "en": "Soulroot",
+        "pt": "Raiz da Alma"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-spellbomb-of-chaos",
+      "name": {
+        "en": "Spellbomb of Chaos",
+        "pt": "Bomba Mágica do Caos"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-spellbomb-of-hex",
+      "name": {
+        "en": "Spellbomb of Hex",
+        "pt": "Bomba Mágica da Maldição"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-stealth-musk",
+      "name": {
+        "en": "Stealth Musk",
+        "pt": "Almíscar Furtivo"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab: Stealth Musk",
+            "pt": "Laboratório de Poções: Almíscar Furtivo"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-steel-bar",
+      "name": {
+        "en": "Steel Bar",
+        "pt": "Barra de Aço"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-super-stew",
+      "name": {
+        "en": "Super Stew",
+        "pt": "Superensopado"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "task",
+          "where": {
+            "en": "Deep Catacombs",
+            "pt": "Catacumbas Profundas"
+          }
+        },
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Super Stew",
+            "pt": "Forno: Superensopado"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-viscera-gem",
+      "name": {
+        "en": "Viscera Gem",
+        "pt": "Gema de Vísceras"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible reward from the Deep Woods God Shrine gem outcome",
+            "pt": "Pode vir do Santuário dos Deuses da Floresta Profunda (resultado de gemas)"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-wishbone",
+      "name": {
+        "en": "Wishbone",
+        "pt": "Ossinho da Sorte"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+            "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "50g"
+    }
+  ],
+  "entrySources": [
+    {
+      "entryId": "wte-bait-pack-tier-2",
+      "kind": "loot",
+      "where": {
+        "en": "Daeus Room 3 (2, 10)",
+        "pt": "Daeus Sala 3 (2, 10)"
+      }
+    },
+    {
+      "entryId": "wte-beating-heart",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-bones",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-cleansing-balm",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-coal",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-combat-offering",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-combat-offering",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-crystal-flask",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-extra-pouch",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-extra-pouch",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-gem-bag",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-hardwood",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-iron-bar",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-lesser-holy-water",
+      "kind": "craft",
+      "where": {
+        "en": "Gifts of Daeus: Lesser Holy Water",
+        "pt": "Dádivas de Daeus: Água Benta Menor"
+      }
+    },
+    {
+      "entryId": "wte-lucky-die",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-paper",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-rare-gem-bag",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-rare-gem-bag",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-shovel",
+      "kind": "task",
+      "where": {
+        "en": "Deep Catacombs",
+        "pt": "Catacumbas Profundas"
+      }
+    },
+    {
+      "entryId": "wte-shovel",
+      "kind": "found",
+      "where": {
+        "en": "Deep Catacombs (44, 60)",
+        "pt": "Catacumbas Profundas (44, 60)"
+      }
+    },
+    {
+      "entryId": "wte-spiritwood",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-staring-orb",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-treasure-casket",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-void-sphere",
+      "kind": "loot",
+      "where": {
+        "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
+        "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    }
+  ],
+  "crafts": [
+    {
+      "id": "wte-craft-greater-offering-of-rain",
+      "name": {
+        "en": "Greater Offering of Rain",
+        "pt": "Oferenda da Chuva Maior"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Witching Mortar",
+        "pt": "Pilão de Bruxaria"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-gravemoss",
+          "name": {
+            "en": "Gravemoss",
+            "pt": "Musgo de Túmulo"
+          },
+          "qty": 16
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 24
+        },
+        {
+          "entryId": "wte-cauliflower",
+          "name": {
+            "en": "Cauliflower",
+            "pt": "Couve-flor"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-strawberry",
+          "name": {
+            "en": "Strawberry",
+            "pt": "Morango"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-eldersprout",
+          "name": {
+            "en": "Eldersprout",
+            "pt": "Broto Ancião"
+          },
+          "qty": 6
+        }
+      ],
+      "makes": "wte-greater-offering-of-rain",
+      "unlock": {
+        "en": "Automatically available with Witching Mortar",
+        "pt": "Disponível desde o início no Pilão de Bruxaria"
+      }
+    },
+    {
+      "id": "wte-craft-scraped-hide",
+      "name": {
+        "en": "Scraped Hide",
+        "pt": "Pele Raspada"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Witching Mortar",
+        "pt": "Pilão de Bruxaria"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bloody-skin",
+          "name": {
+            "en": "Bloody Skin",
+            "pt": "Pele Ensanguentada"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-salt",
+          "name": {
+            "en": "Salt",
+            "pt": "Sal"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-scraped-hide",
+      "unlock": {
+        "en": "Automatically available with Witching Mortar",
+        "pt": "Disponível desde o início no Pilão de Bruxaria"
+      }
+    },
+    {
+      "id": "wte-craft-mana-sausage-raw",
+      "name": {
+        "en": "Mana Sausage (Raw)",
+        "pt": "Linguiça de Mana (Cru)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Prep Table",
+        "pt": "Mesa de Preparo"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-mystery-meat",
+          "name": {
+            "en": "Mystery Meat",
+            "pt": "Carne Misteriosa"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-mystery-steak",
+          "name": {
+            "en": "Mystery Steak",
+            "pt": "Bife Misterioso"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-salt",
+          "name": {
+            "en": "Salt",
+            "pt": "Sal"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-mana-sausage-raw",
+      "unlock": {
+        "en": "Automatically available with Prep Table",
+        "pt": "Disponível desde o início na Mesa de Preparo"
+      }
+    },
+    {
+      "id": "wte-craft-cured-mana-steak-raw",
+      "name": {
+        "en": "Cured Mana Steak (Raw)",
+        "pt": "Bife Curado de Mana (Cru)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Prep Table",
+        "pt": "Mesa de Preparo"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-mystery-meat",
+          "name": {
+            "en": "Mystery Meat",
+            "pt": "Carne Misteriosa"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-mystery-steak",
+          "name": {
+            "en": "Mystery Steak",
+            "pt": "Bife Misterioso"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-salt",
+          "name": {
+            "en": "Salt",
+            "pt": "Sal"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gravemoss",
+          "name": {
+            "en": "Gravemoss",
+            "pt": "Musgo de Túmulo"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-corpse-ear-mushroom",
+          "name": {
+            "en": "Corpse-Ear Mushroom",
+            "pt": "Cogumelo Orelha-de-cadáver"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-cured-mana-steak-raw",
+      "unlock": {
+        "en": "Automatically available with Prep Table",
+        "pt": "Disponível desde o início na Mesa de Preparo"
+      }
+    },
+    {
+      "id": "wte-craft-dense-fertilizer-lv1",
+      "name": {
+        "en": "Dense Fertilizer (Lv1)",
+        "pt": "Fertilizante Denso (Nv1)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Compost Bin",
+        "pt": "Composteira"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bat-guano",
+          "name": {
+            "en": "Bat Guano",
+            "pt": "Guano de Morcego"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-dense-fertilizer-lv1",
+      "unlock": {
+        "en": "Automatically available with Compost Bin",
+        "pt": "Disponível desde o início na Composteira"
+      }
+    },
+    {
+      "id": "wte-craft-dense-fertilizer-lv2",
+      "name": {
+        "en": "Dense Fertilizer (Lv2)",
+        "pt": "Fertilizante Denso (Nv2)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Compost Bin",
+        "pt": "Composteira"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bat-guano",
+          "name": {
+            "en": "Bat Guano",
+            "pt": "Guano de Morcego"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-common-mushroom",
+          "name": {
+            "en": "Common Mushroom",
+            "pt": "Cogumelo Comum"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-dense-fertilizer-lv2",
+      "unlock": {
+        "en": "Automatically available with Compost Bin",
+        "pt": "Disponível desde o início na Composteira"
+      }
+    },
+    {
+      "id": "wte-craft-lesser-holy-water",
+      "name": {
+        "en": "Lesser Holy Water",
+        "pt": "Água Benta Menor"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-secret-sauce",
+          "name": {
+            "en": "Secret Sauce",
+            "pt": "Molho Secreto"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-lesser-holy-water",
+      "unlock": {
+        "en": "Aligned to the God Daeus",
+        "pt": "Ligado ao deus Daeus"
+      }
+    },
+    {
+      "id": "wte-craft-greater-holy-water",
+      "name": {
+        "en": "Greater Holy Water",
+        "pt": "Água Benta Maior"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-lesser-holy-water",
+          "name": {
+            "en": "Lesser Holy Water",
+            "pt": "Água Benta Menor"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-green-crystal",
+          "name": {
+            "en": "Green Crystal",
+            "pt": "Cristal Verde"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-green-mushroom",
+          "name": {
+            "en": "Green Mushroom",
+            "pt": "Cogumelo Verde"
+          },
+          "qty": 5
+        },
+        {
+          "name": {
+            "en": "Whipstop Mushroom",
+            "pt": "Cogumelo Chicote"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-greater-holy-water",
+      "unlock": {
+        "en": "Aligned to the God Daeus",
+        "pt": "Ligado ao deus Daeus"
+      }
+    },
+    {
+      "id": "wte-craft-trident-of-the-deep",
+      "name": {
+        "en": "Trident of the Deep",
+        "pt": "Tridente das Profundezas"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-whetstone",
+          "name": {
+            "en": "Whetstone",
+            "pt": "Pedra de Amolar"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-verdite-bar",
+          "name": {
+            "en": "Verdite Bar",
+            "pt": "Barra de Verdite"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Daeus",
+        "pt": "Ligado ao deus Daeus"
+      }
+    },
+    {
+      "id": "wte-craft-earring-of-the-dark-sea",
+      "name": {
+        "en": "Earring of the Dark Sea",
+        "pt": "Brinco do Mar Sombrio"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "God Forge",
+        "pt": "Forja Divina"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-perfect-opal",
+          "name": {
+            "en": "Perfect Opal",
+            "pt": "Opala Perfeita"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Aligned to the God Daeus",
+        "pt": "Ligado ao deus Daeus"
+      }
+    },
+    {
+      "id": "wte-craft-iron-chain",
+      "name": {
+        "en": "Iron Chain",
+        "pt": "Corrente de Ferro"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Materials",
+        "pt": "Materiais"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-goat-horn",
+          "name": {
+            "en": "Goat Horn",
+            "pt": "Chifre de Cabra"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-sign-of-death",
+          "name": {
+            "en": "Sign of Death",
+            "pt": "Sinal da Morte"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-iron-chain",
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-large-machine",
+      "name": {
+        "en": "Large Machine",
+        "pt": "Máquina Grande"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-metal-rod",
+          "name": {
+            "en": "Metal Rod",
+            "pt": "Barra de Metal"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-toxic-waste-machine",
+      "name": {
+        "en": "Toxic Waste Machine",
+        "pt": "Máquina de Lixo Tóxico"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-metal-rod",
+          "name": {
+            "en": "Metal Rod",
+            "pt": "Barra de Metal"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 4
+        },
+        {
+          "name": {
+            "en": "Slimeweed",
+            "pt": "Alga Gosmenta"
+          },
+          "qty": 50
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Craftsman's Bench",
+        "pt": "Disponível desde o início na Bancada do Artesão"
+      }
+    },
+    {
+      "id": "wte-craft-love-potion",
+      "name": {
+        "en": "Love Potion",
+        "pt": "Poção do Amor"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "General",
+        "pt": "Geral"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-goat-horn",
+          "name": {
+            "en": "Goat Horn",
+            "pt": "Chifre de Cabra"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-love-potion",
+      "unlock": {
+        "en": "Automatically available with Potion Lab",
+        "pt": "Disponível desde o início no Laboratório de Poções"
+      }
+    },
+    {
+      "id": "wte-craft-recall-potion",
+      "name": {
+        "en": "Recall Potion",
+        "pt": "Poção de Retorno"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "General",
+        "pt": "Geral"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-potent-herb-bundle",
+          "name": {
+            "en": "Potent Herb Bundle",
+            "pt": "Maço de Ervas Potente"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rune-of-the-dead-god",
+          "name": {
+            "en": "Rune of the Dead God",
+            "pt": "Runa do Deus Morto"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-corrupted-tar",
+          "name": {
+            "en": "Corrupted Tar",
+            "pt": "Piche Corrompido"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-recall-potion",
+      "unlock": {
+        "en": "Automatically available with Potion Lab",
+        "pt": "Disponível desde o início no Laboratório de Poções"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-luck-hp-mp-attack-defense-m-attack-m-defense-agility",
+      "name": {
+        "en": "Flask of the Gods (Luck, HP, MP, Attack, Defense, M. Attack, M. Defense, Agility)",
+        "pt": "Frasco dos Deuses (Sorte, PV, PM, Ataque, Defesa, M. Attack, M. Defense, Agilidade)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Automatically available with Potion Lab",
+        "pt": "Disponível desde o início no Laboratório de Poções"
+      }
+    },
+    {
+      "id": "wte-craft-generator",
+      "name": {
+        "en": "Generator",
+        "pt": "Gerador"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Tinker's Desk",
+        "pt": "Mesa do Inventor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-void-crystal-bar",
+          "name": {
+            "en": "Void Crystal Bar",
+            "pt": "Barra de Cristal do Vazio"
+          },
+          "qty": 4
+        }
+      ],
+      "unlock": {
+        "en": "Blueprint: Automatically available with Tinker's Desk",
+        "pt": "Projeto: disponível desde o início na Mesa do Inventor"
+      }
+    },
+    {
+      "id": "wte-craft-slicer",
+      "name": {
+        "en": "Slicer",
+        "pt": "Fatiador"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Tinker's Desk",
+        "pt": "Mesa do Inventor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-copper-bar",
+          "name": {
+            "en": "Copper Bar",
+            "pt": "Barra de Cobre"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-slicer",
+      "unlock": {
+        "en": "Blueprint: Automatically available with Tinker's Desk",
+        "pt": "Projeto: disponível desde o início na Mesa do Inventor"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-salve",
+      "name": {
+        "en": "Herbal Salve",
+        "pt": "Pomada de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Cooking Pot",
+        "pt": "Panela"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-secret-sauce",
+          "name": {
+            "en": "Secret Sauce",
+            "pt": "Molho Secreto"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-herbal-salve",
+      "unlock": {
+        "en": "Basic beginner recipe",
+        "pt": "Receita inicial"
+      }
+    },
+    {
+      "id": "wte-cook-energy-drink",
+      "name": {
+        "en": "Energy Drink",
+        "pt": "Energético"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Juicer",
+        "pt": "Espremedor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-duskmelon-slice",
+          "name": {
+            "en": "Duskmelon Slice",
+            "pt": "Fatia de Melão-do-crepúsculo"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-secret-sauce",
+          "name": {
+            "en": "Secret Sauce",
+            "pt": "Molho Secreto"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-energy-drink",
+      "unlock": {
+        "en": "Recipe: Purchased from Chef Elroy after building house upgrade 1 and Defeating the Ancient Tree",
+        "pt": "Receita: compre do Chef Elroy depois da melhoria 1 da casa e de derrotar a Árvore Ancestral"
+      }
+    },
+    {
+      "id": "wte-forge-superior-watering-can",
+      "name": {
+        "en": "Superior Watering Can",
+        "pt": "Regador Superior"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-quality-watering-can",
+          "name": {
+            "en": "Quality Watering Can",
+            "pt": "Regador de Qualidade"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-superior-watering-can"
+    },
+    {
+      "id": "wte-forge-superior-pickaxe",
+      "name": {
+        "en": "Superior Pickaxe",
+        "pt": "Picareta Superior"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-quality-pickaxe",
+          "name": {
+            "en": "Quality Pickaxe",
+            "pt": "Picareta de Qualidade"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-superior-pickaxe"
+    },
+    {
+      "id": "wte-forge-superior-gardening-hoe",
+      "name": {
+        "en": "Superior Gardening Hoe",
+        "pt": "Enxada Superior"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-quality-gardening-hoe",
+          "name": {
+            "en": "Quality Gardening Hoe",
+            "pt": "Enxada de Qualidade"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-superior-gardening-hoe"
+    },
+    {
+      "id": "wte-forge-superior-scythe",
+      "name": {
+        "en": "Superior Scythe",
+        "pt": "Foice Superior"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-quality-scythe",
+          "name": {
+            "en": "Quality Scythe",
+            "pt": "Foice de Qualidade"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-superior-scythe"
+    },
+    {
+      "id": "wte-forge-superior-axe",
+      "name": {
+        "en": "Superior Axe",
+        "pt": "Machado Superior"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Tools"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-quality-axe",
+          "name": {
+            "en": "Quality Axe",
+            "pt": "Machado de Qualidade"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-superior-axe"
+    }
+  ],
+  "creatures": [
+    {
+      "id": "wte-cr-beckoning-branch",
+      "name": {
+        "en": "Beckoning Branch",
+        "pt": "Galho que Chama"
+      },
+      "where": [
+        {
+          "en": "The Deep Woods",
+          "pt": "Floresta Profunda"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-coin-totem",
+      "name": {
+        "en": "Coin Totem",
+        "pt": "Totem de Moedas"
+      },
+      "where": [
+        {
+          "en": "Deep Catacombs",
+          "pt": "Catacumbas Profundas"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-emissary-of-delvek",
+      "name": {
+        "en": "Emissary of Delvek",
+        "pt": "Emissário de Delvek"
+      },
+      "where": [
+        {
+          "en": "Hidden Manor (The Deep Woods)",
+          "pt": "Mansão Oculta (Floresta Profunda)"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Skull of the Lost",
+                "pt": "Crânio dos Perdidos"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Hidden Manor — Emissary of Devlek — Encounter",
+            "pt": "Mansão Oculta — Emissary of Devlek — Encontro"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-emissary-of-kaal",
+      "name": {
+        "en": "Emissary of Kaal",
+        "pt": "Emissário de Kaal"
+      },
+      "where": [
+        {
+          "en": "Deep Catacombs",
+          "pt": "Catacumbas Profundas"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Skull of the Dark",
+                "pt": "Crânio das Trevas"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Catacombs — Encounter",
+            "pt": "Catacumbas — Encontro"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-forest-dancers",
+      "name": {
+        "en": "Forest Dancers",
+        "pt": "Dançarinos da Floresta"
+      },
+      "where": [
+        {
+          "en": "The Deep Woods",
+          "pt": "Floresta Profunda"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-glow-bear",
+      "name": {
+        "en": "Glow Bear",
+        "pt": "Urso Brilhante"
+      },
+      "where": [
+        {
+          "en": "The Deep Woods",
+          "pt": "Floresta Profunda"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-grandma",
+      "name": {
+        "en": "Grandma",
+        "pt": "Vovó"
+      },
+      "where": [
+        {
+          "en": "Grandma's Cabin (The Deep Woods)",
+          "pt": "Cabana da Vovó (Floresta Profunda)"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Essence of Delvek",
+                "pt": "Essência de Delvek"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Granny's House — Encounter",
+            "pt": "Granny's Casa — Encontro"
+          },
+          "when": {
+            "en": "the required item is available",
+            "pt": "com o item pedido em mãos"
+          },
+          "gives": [
+            {
+              "name": {
+                "en": "Palewood Branch",
+                "pt": "Galho de Madeira Pálida"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-mask-of-delvek",
+      "name": {
+        "en": "Mask of Delvek",
+        "pt": "Máscara de Delvek"
+      },
+      "where": [
+        {
+          "en": "Hidden Manor (The Deep Woods)",
+          "pt": "Mansão Oculta (Floresta Profunda)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-minotaur",
+      "name": {
+        "en": "Minotaur",
+        "pt": "Minotauro"
+      },
+      "where": [
+        {
+          "en": "Deep Catacombs",
+          "pt": "Catacumbas Profundas"
+        },
+        {
+          "en": "Deep Catacombs — Sealed Chamber",
+          "pt": "Catacumbas Profundas — Câmara Selada"
+        },
+        {
+          "en": "Deep Catacombs — Bone Chamber",
+          "pt": "Catacumbas Profundas — Câmara dos Ossos"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-mr-wiggles-v2",
+      "name": {
+        "en": "Mr. Wiggles v2",
+        "pt": "Sr. Remexe v2"
+      },
+      "where": [
+        {
+          "en": "The Deep Woods",
+          "pt": "Floresta Profunda"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-skin-thief",
+      "name": {
+        "en": "Skin Thief",
+        "pt": "Ladrão de Pele"
+      },
+      "where": [
+        {
+          "en": "The Deep Woods",
+          "pt": "Floresta Profunda"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-soul-vessel",
+      "name": {
+        "en": "Soul Vessel",
+        "pt": "Receptáculo de Almas"
+      },
+      "where": [
+        {
+          "en": "Deep Catacombs",
+          "pt": "Catacumbas Profundas"
+        },
+        {
+          "en": "Deep Catacombs — Sealed Chamber",
+          "pt": "Catacumbas Profundas — Câmara Selada"
+        },
+        {
+          "en": "Deep Catacombs — Bone Chamber",
+          "pt": "Catacumbas Profundas — Câmara dos Ossos"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-the-necromancer",
+      "name": {
+        "en": "The Necromancer",
+        "pt": "O Necromante"
+      },
+      "where": [
+        {
+          "en": "Deep Catacombs — Bone Chamber",
+          "pt": "Catacumbas Profundas — Câmara dos Ossos"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-tickler",
+      "name": {
+        "en": "Tickler",
+        "pt": "Fazedor de Cócegas"
+      },
+      "where": [
+        {
+          "en": "Deep Catacombs",
+          "pt": "Catacumbas Profundas"
+        },
+        {
+          "en": "Deep Catacombs — Sealed Chamber",
+          "pt": "Catacumbas Profundas — Câmara Selada"
+        },
+        {
+          "en": "Deep Catacombs — Bone Chamber",
+          "pt": "Catacumbas Profundas — Câmara dos Ossos"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-tomb-cleaner",
+      "name": {
+        "en": "Tomb Cleaner",
+        "pt": "Limpador de Tumbas"
+      },
+      "where": [
+        {
+          "en": "Deep Catacombs",
+          "pt": "Catacumbas Profundas"
+        },
+        {
+          "en": "Deep Catacombs — Sealed Chamber",
+          "pt": "Catacumbas Profundas — Câmara Selada"
+        },
+        {
+          "en": "Deep Catacombs — Bone Chamber",
+          "pt": "Catacumbas Profundas — Câmara dos Ossos"
+        }
+      ],
+      "spoilerLevel": 0
+    }
+  ]
+}

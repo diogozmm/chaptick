@@ -73,6 +73,34 @@
         "$ref": "#/$defs/recipe"
       },
       "description": "Recipes first obtainable in this chapter."
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      },
+      "description": "Compendium: things first obtainable in this chapter or area, with where to get them here."
+    },
+    "entrySources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entrySource"
+      },
+      "description": "More ways to get entries from earlier chapters or areas, found only from here on."
+    },
+    "crafts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/craft"
+      },
+      "description": "Compendium: things made at a station, first makeable here."
+    },
+    "creatures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/creature"
+      },
+      "description": "Compendium: creatures first met here. Names are always masked."
     }
   },
   "additionalProperties": false,
@@ -346,6 +374,315 @@
         }
       },
       "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "kind",
+        "where"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "found",
+            "shop",
+            "loot",
+            "random",
+            "fish",
+            "forage",
+            "craft",
+            "cook",
+            "process",
+            "gather",
+            "task",
+            "drop",
+            "other"
+          ]
+        },
+        "where": {
+          "$ref": "common.schema.json#/$defs/localized",
+          "description": "Place, shop or station; in English as the game names it, plus Portuguese."
+        },
+        "seasons": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ]
+          }
+        },
+        "time": {
+          "enum": [
+            "day",
+            "night"
+          ]
+        }
+      }
+    },
+    "entrySource": {
+      "type": "object",
+      "required": [
+        "entryId",
+        "kind",
+        "where"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "entryId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+        },
+        "kind": {
+          "enum": [
+            "found",
+            "shop",
+            "loot",
+            "random",
+            "fish",
+            "forage",
+            "craft",
+            "cook",
+            "process",
+            "gather",
+            "task",
+            "drop",
+            "other"
+          ]
+        },
+        "where": {
+          "$ref": "common.schema.json#/$defs/localized",
+          "description": "Place, shop or station; in English as the game names it, plus Portuguese."
+        },
+        "seasons": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ]
+          }
+        },
+        "time": {
+          "enum": [
+            "day",
+            "night"
+          ]
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "category",
+        "sources"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "category": {
+          "enum": [
+            "materials",
+            "gems",
+            "metals",
+            "fish",
+            "crops",
+            "seeds",
+            "food",
+            "potions",
+            "tools"
+          ]
+        },
+        "sell": {
+          "type": "string",
+          "pattern": "^\\d+g$"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        }
+      }
+    },
+    "craft": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "group",
+        "ingredients"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "kind": {
+          "enum": [
+            "craft",
+            "cook",
+            "forge"
+          ]
+        },
+        "group": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "ingredients": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "qty"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "entryId": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+              },
+              "name": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "qty": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "makes": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+        },
+        "unlock": {
+          "$ref": "common.schema.json#/$defs/localized"
+        }
+      }
+    },
+    "creature": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "where",
+        "spoilerLevel"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "where": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        },
+        "spoilerLevel": {
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "rewards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "how",
+              "items"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "how": {
+                "enum": [
+                  "steal",
+                  "event"
+                ],
+                "description": "steal: taken in battle, with a chance; event: given at a fight or meeting."
+              },
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "entryId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+                    },
+                    "name": {
+                      "$ref": "common.schema.json#/$defs/localized"
+                    }
+                  }
+                }
+              },
+              "chance": {
+                "type": "string"
+              },
+              "variant": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "situation": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "when": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "gives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "entryId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+                    },
+                    "name": {
+                      "$ref": "common.schema.json#/$defs/localized"
+                    }
+                  }
+                },
+                "description": "Items handed over in exchange."
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

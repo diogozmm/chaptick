@@ -5,13 +5,22 @@
   </a>
  <nav class="top-actions" [attr.aria-label]="'app.mainNav' | transloco">
   @if (game.id()) {
-    <a [routerLink]="game.link('search')" routerLinkActive="active" class="lang icon-only" [attr.aria-label]="'search.title' | transloco">
-      <app-icon name="search" />
-    </a>
-    <a [routerLink]="game.link('collections')" routerLinkActive="active" class="lang" [attr.aria-label]="'collections.short' | transloco">
-      <app-icon name="book-open" />
-      <span class="wide-only">{{ 'collections.short' | transloco }}</span>
-    </a>
+    @if (game.hasChecklist()) {
+      <a [routerLink]="game.link('search')" routerLinkActive="active" class="lang icon-only" [attr.aria-label]="'search.title' | transloco">
+        <app-icon name="search" />
+      </a>
+    }
+    @if (game.hasCompendium()) {
+      <a [routerLink]="game.link('compendium')" routerLinkActive="active" class="lang" [attr.aria-label]="'compendium.title' | transloco">
+        <app-icon name="book-open" />
+        <span class="wide-only">{{ 'compendium.title' | transloco }}</span>
+      </a>
+    } @else if (game.hasCollections()) {
+      <a [routerLink]="game.link('collections')" routerLinkActive="active" class="lang" [attr.aria-label]="'collections.short' | transloco">
+        <app-icon name="book-open" />
+        <span class="wide-only">{{ 'collections.short' | transloco }}</span>
+      </a>
+    }
   }
   <button type="button" class="lang" (click)="toggleLang()" [attr.aria-label]="'app.switchLanguage' | transloco">
     <app-icon name="languages" />

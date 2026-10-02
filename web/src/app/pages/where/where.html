@@ -3,8 +3,8 @@
     @if (game.manifest(); as m) {
       <p class="eyebrow">{{ m.game.name | localize: lang.lang() }}</p>
     }
-    <h1>{{ 'where.pickTitle' | transloco }}</h1>
-    <p class="muted">{{ 'where.pickIntro' | transloco }}</p>
+    <h1>{{ game.k('where.pickTitle') | transloco }}</h1>
+    <p class="muted">{{ game.k('where.pickIntro') | transloco }}</p>
   </header>
 
   <ol class="trail picking">
@@ -25,8 +25,8 @@
 } @else {
   <header class="stack-sm">
     <p class="eyebrow">{{ 'where.eyebrow' | transloco }}</p>
-    <h1>{{ 'where.title' | transloco }}</h1>
-    <p class="muted">{{ 'where.intro' | transloco }}</p>
+    <h1>{{ game.k('where.title') | transloco }}</h1>
+    <p class="muted">{{ game.k('where.intro') | transloco }}</p>
   </header>
 
   <ol class="trail">
@@ -49,7 +49,7 @@
             @if (unlocked) {
               <a class="title" [routerLink]="game.link('chapters', chapter.id)">{{ label }}</a>
             } @else {
-              <span class="title">{{ 'where.locked' | transloco: { chapter: label } }}</span>
+              <span class="title">{{ game.k('where.locked') | transloco: { chapter: label } }}</span>
             }
             @if (current) {
               <span class="badge">{{ 'where.current' | transloco }}</span>

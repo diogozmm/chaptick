@@ -34,5 +34,22 @@
       "accent": "#f06a4d",
       "font": "uncial-antiqua"
     }
+  },
+  {
+    "id": "elderfield",
+    "name": {
+      "en": "Welcome to Elderfield",
+      "pt": "Welcome to Elderfield"
+    },
+    "description": {
+      "en": "A cozy horror farming RPG by Chris Cote, published by Kwalee.",
+      "pt": "Um RPG de fazenda cozy com terror, de Chris Cote, publicado pela Kwalee."
+    },
+    "cover": {
+      "motif": "fields",
+      "from": "#2b1d2e",
+      "to": "#6b4a3a",
+      "accent": "#e8d27a"
+    }
   }
 ]

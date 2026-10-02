@@ -1,7 +1,7 @@
 {
   "app": {
     "switchLanguage": "Switch to English",
-    "disclaimer": "Projeto de fã, não oficial e sem vínculo com Nihon Falcom ou suas editoras. Todas as marcas pertencem aos seus donos.",
+    "disclaimer": "Projeto de fã, não oficial e sem vínculo com os desenvolvedores ou editoras destes jogos. Todas as marcas pertencem aos seus donos.",
     "updateReady": "Uma nova versão está pronta.",
     "reload": "Recarregar",
     "footerNav": "Site",
@@ -264,5 +264,129 @@
     "saved": "O progresso fica salvo só neste aparelho, sem conta.",
     "backup": "Faça backup ou transfira",
     "gotIt": "Entendi"
+  },
+  "area": {
+    "where": {
+      "title": "Até onde cheguei?",
+      "intro": "As áreas depois da sua ficam bloqueadas, então nada à frente aparece.",
+      "locked": "{{chapter}} — bloqueada",
+      "pickTitle": "Até qual área você já chegou?",
+      "pickIntro": "Escolha a área mais distante que você já abriu. As seguintes ficam bloqueadas, então nada à frente aparece.",
+      "confirmAdvance": "Ir para: {{chapter}}? O que tem lá vai aparecer."
+    },
+    "checklist": {
+      "eyebrow": "Tarefas da área",
+      "empty": "Ainda não há nada para acompanhar nesta área.",
+      "nextChapter": "Próxima área",
+      "advanceTo": "Cheguei em: {{chapter}}"
+    },
+    "home": {
+      "whereAmI": "Até onde cheguei?",
+      "counts": "{{chapters}} áreas · {{items}} tarefas",
+      "pickChapter": "Escolha até onde você chegou"
+    },
+    "search": {
+      "label": "Buscar nas áreas que você alcançou",
+      "hint": "Só nas áreas que você alcançou, e só o que já está revelado."
+    },
+    "howItWorks": {
+      "tick": "Toque no quadrado para marcar uma tarefa como feita. Já joga há um tempo? Marque também o que já fez nas áreas anteriores."
+    }
+  },
+  "feature": {
+    "checklist": "Checklist",
+    "compendium": "Compêndio"
+  },
+  "compendium": {
+    "title": "Compêndio",
+    "short": "Onde achar itens, receitas e criaturas",
+    "open": "Abrir o compêndio",
+    "upTo": "Mostrando até: {{chapter}}. Lugares mais adiante continuam escondidos.",
+    "tab": {
+      "items": "Itens",
+      "crafts": "Receitas",
+      "creatures": "Criaturas"
+    },
+    "searchLabel": "Buscar itens",
+    "searchPlaceholder": "Bitter Herb, bones, copper…",
+    "categories": "Categorias de item",
+    "found": "{{count}} item(ns)",
+    "more": "E mais {{count}}: digite mais do nome para filtrar.",
+    "itemsHint": "Digite um nome ou escolha uma categoria para ver onde conseguir.",
+    "ways": "{{count}} forma(s) de conseguir",
+    "category": {
+      "materials": "Materiais",
+      "gems": "Gemas",
+      "metals": "Metais",
+      "fish": "Peixes",
+      "crops": "Cultivos",
+      "seeds": "Sementes",
+      "food": "Comida",
+      "potions": "Poções",
+      "tools": "Ferramentas"
+    },
+    "craftSearchLabel": "Buscar receitas",
+    "craftSearchPlaceholder": "Receita ou ingrediente",
+    "craftKinds": "Tipos de receita",
+    "craftKind": {
+      "craft": "Criação",
+      "cook": "Cozinha",
+      "forge": "Forja"
+    },
+    "ingredients": "Ingredientes",
+    "noCrafts": "Nenhuma receita encontrada.",
+    "creaturesHint": "Toque numa criatura que dá itens para ver exatamente o quê, e como.",
+    "creaturePlaceholder": "Criatura nº {{n}}",
+    "noCreatures": "Nenhuma criatura encontrada ainda.",
+    "reward": {
+      "steal": "Roubado em batalha",
+      "event": "Num encontro"
+    },
+    "from": "{{chapter}} em diante",
+    "sells": "vende por {{price}}",
+    "howToGet": "Como conseguir",
+    "kind": {
+      "found": "Achado no mapa",
+      "shop": "Comprado",
+      "forage": "Coletado",
+      "fish": "Pescado",
+      "gather": "Extraído",
+      "loot": "Baús e loot",
+      "random": "Recompensas aleatórias",
+      "task": "Recompensa de tarefa",
+      "drop": "Dropado",
+      "craft": "Criado",
+      "cook": "Cozinhado",
+      "process": "Processado",
+      "other": "Outros"
+    },
+    "season": {
+      "spring": "Primavera (Rebirth)",
+      "summer": "Verão (Harvest)",
+      "autumn": "Outono (Witch)",
+      "winter": "Inverno (Death)"
+    },
+    "time": {
+      "day": "De dia",
+      "night": "À noite"
+    },
+    "noWays": "Ainda não se sabe como conseguir nos lugares que você alcançou.",
+    "madeWith": "Feito com",
+    "usedIn": "Usado em {{count}} receita(s)",
+    "givenBy": "Dado por criaturas",
+    "notFound": "Isto ainda não está nos lugares que você alcançou.",
+    "wiki": "Mais na wiki do jogo (CC BY-SA)",
+    "givesItems": "O que dá",
+    "givingOnly": "Só as que dão itens",
+    "inEnglish": "Em inglês: {{name}}",
+    "creature": "Criatura",
+    "whereFound": "Onde aparece",
+    "whatItGives": "O que dá",
+    "item": "Item",
+    "variant": "Versão",
+    "chance": "Chance",
+    "when": "Condição: {{condition}}",
+    "youGive": "Você entrega:",
+    "givesNothing": "Não se conhece nenhum item vindo dela."
   }
 }

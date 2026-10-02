@@ -27,7 +27,7 @@ import { ItemRow } from '../item-row/item-row';
 export class AdvanceConfirm {
   private readonly access = inject(ChapterAccess);
   private readonly progress = inject(ProgressStore);
-  private readonly game = inject(ActiveGame);
+  protected readonly game = inject(ActiveGame);
   private readonly router = inject(Router);
   private readonly analytics = inject(AnalyticsService);
   protected readonly lang = inject(LangService);

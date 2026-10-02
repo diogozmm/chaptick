@@ -1,7 +1,7 @@
 {
   "app": {
     "switchLanguage": "Mudar para português",
-    "disclaimer": "Unofficial fan project, not affiliated with Nihon Falcom or its publishers. All trademarks belong to their owners.",
+    "disclaimer": "Unofficial fan project, not affiliated with the developers or publishers of these games. All trademarks belong to their owners.",
     "updateReady": "A new version is ready.",
     "reload": "Reload",
     "footerNav": "Site",
@@ -264,5 +264,129 @@
     "saved": "Progress is saved on this device only, with no account.",
     "backup": "Back it up or move it",
     "gotIt": "Got it"
+  },
+  "area": {
+    "where": {
+      "title": "How far have I got?",
+      "intro": "Areas after yours stay locked, so nothing ahead is shown.",
+      "locked": "{{chapter}} — locked",
+      "pickTitle": "Which area have you reached?",
+      "pickIntro": "Pick the furthest area you have opened. The ones after it stay locked, so nothing ahead is shown.",
+      "confirmAdvance": "Move to: {{chapter}}? What it holds will be shown."
+    },
+    "checklist": {
+      "eyebrow": "Area tasks",
+      "empty": "Nothing to track in this area yet.",
+      "nextChapter": "Next area",
+      "advanceTo": "I've reached: {{chapter}}"
+    },
+    "home": {
+      "whereAmI": "How far have I got?",
+      "counts": "{{chapters}} areas · {{items}} tasks",
+      "pickChapter": "Choose the area you have reached"
+    },
+    "search": {
+      "label": "Search the areas you have reached",
+      "hint": "Only the areas you have reached, and only what is already revealed."
+    },
+    "howItWorks": {
+      "tick": "Tap the box to mark a task as done. Started a while ago? Mark what you've already done in earlier areas too."
+    }
+  },
+  "feature": {
+    "checklist": "Checklist",
+    "compendium": "Compendium"
+  },
+  "compendium": {
+    "title": "Compendium",
+    "short": "Where to find things, recipes and creatures",
+    "open": "Open the compendium",
+    "upTo": "Showing up to: {{chapter}}. Later places stay hidden.",
+    "tab": {
+      "items": "Items",
+      "crafts": "Recipes",
+      "creatures": "Creatures"
+    },
+    "searchLabel": "Search items",
+    "searchPlaceholder": "Bitter Herb, bones, copper…",
+    "categories": "Item categories",
+    "found": "{{count}} item(s)",
+    "more": "And {{count}} more: type more of the name to narrow it down.",
+    "itemsHint": "Type a name or pick a category to see where to get it.",
+    "ways": "{{count}} way(s) to get it",
+    "category": {
+      "materials": "Materials",
+      "gems": "Gems",
+      "metals": "Metals",
+      "fish": "Fish",
+      "crops": "Crops",
+      "seeds": "Seeds",
+      "food": "Food",
+      "potions": "Potions",
+      "tools": "Tools"
+    },
+    "craftSearchLabel": "Search recipes",
+    "craftSearchPlaceholder": "Recipe or ingredient",
+    "craftKinds": "Kinds of recipe",
+    "craftKind": {
+      "craft": "Crafting",
+      "cook": "Cooking",
+      "forge": "Forge"
+    },
+    "ingredients": "Ingredients",
+    "noCrafts": "No recipes match.",
+    "creaturesHint": "Tap a creature that gives items to see exactly what, and how.",
+    "creaturePlaceholder": "Creature #{{n}}",
+    "noCreatures": "No creatures met yet.",
+    "reward": {
+      "steal": "Stolen in battle",
+      "event": "At an encounter"
+    },
+    "from": "{{chapter}} onwards",
+    "sells": "sells for {{price}}",
+    "howToGet": "How to get it",
+    "kind": {
+      "found": "Found on the map",
+      "shop": "Bought",
+      "forage": "Foraged",
+      "fish": "Fished",
+      "gather": "Gathered",
+      "loot": "Chests and loot",
+      "random": "Random rewards",
+      "task": "Task rewards",
+      "drop": "Dropped",
+      "craft": "Crafted",
+      "cook": "Cooked",
+      "process": "Processed",
+      "other": "Other"
+    },
+    "season": {
+      "spring": "Spring (Rebirth)",
+      "summer": "Summer (Harvest)",
+      "autumn": "Autumn (Witch)",
+      "winter": "Winter (Death)"
+    },
+    "time": {
+      "day": "Daytime",
+      "night": "Night"
+    },
+    "noWays": "No way to get it is known yet in the places you have reached.",
+    "madeWith": "Made with",
+    "usedIn": "Used in {{count}} recipe(s)",
+    "givenBy": "Given by creatures",
+    "notFound": "This isn't in the places you have reached yet.",
+    "wiki": "More on the game's wiki (CC BY-SA)",
+    "givesItems": "What it gives",
+    "givingOnly": "Only those that give items",
+    "inEnglish": "In English: {{name}}",
+    "creature": "Creature",
+    "whereFound": "Where it shows up",
+    "whatItGives": "What it gives",
+    "item": "Item",
+    "variant": "Version",
+    "chance": "Chance",
+    "when": "Condition: {{condition}}",
+    "youGive": "You hand over:",
+    "givesNothing": "No items are known to come from it."
   }
 }

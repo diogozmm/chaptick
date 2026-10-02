@@ -1,0 +1,11 @@
+{
+  "id": "cc",
+  "franchise": "second-series",
+  "order": 2,
+  "name": {
+    "en": "Field Game"
+  },
+  "platforms": [],
+  "dataVersion": 1,
+  "progressTerm": "area"
+}

@@ -88,6 +88,17 @@
           }
         }
       }
+    },
+    "progressTerm": {
+      "description": "What the game is split into for spoiler locking: story chapters, or areas opened in order.",
+      "enum": [
+        "chapter",
+        "area"
+      ]
+    },
+    "gameVersion": {
+      "description": "Game patch the content was checked against; drops and prices change between patches.",
+      "type": "string"
     }
   },
   "additionalProperties": false

@@ -1,0 +1,515 @@
+{
+  "id": "wte-ch3",
+  "gameId": "wte",
+  "order": 3,
+  "neutralLabel": {
+    "en": "Mall Basement & Sealed Passage",
+    "pt": "Subsolo do Shopping e Passagem Selada"
+  },
+  "checkpoints": [],
+  "items": [],
+  "itemTexts": [],
+  "entries": [
+    {
+      "id": "wte-coral-gem",
+      "name": {
+        "en": "Coral Gem",
+        "pt": "Gema de Coral"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
+            "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-damp-gem",
+      "name": {
+        "en": "Damp Gem",
+        "pt": "Gema Úmida"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
+            "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-elder-coral",
+      "name": {
+        "en": "Elder Coral",
+        "pt": "Coral Ancião"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Deep Mall",
+            "pt": "Shopping Profundo"
+          }
+        }
+      ],
+      "sell": "10g"
+    },
+    {
+      "id": "wte-eldritch-tears",
+      "name": {
+        "en": "Eldritch Tears",
+        "pt": "Lágrimas Sobrenaturais"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "loot",
+          "where": {
+            "en": "the Deep Mall",
+            "pt": "Shopping Profundo"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-fog-gem",
+      "name": {
+        "en": "Fog Gem",
+        "pt": "Gema da Névoa"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
+            "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-pumpkin-pie",
+      "name": {
+        "en": "Pumpkin Pie",
+        "pt": "Torta de Abóbora"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Pumpkin Pie",
+            "pt": "Torta de Abóbora"
+          }
+        },
+        {
+          "kind": "found",
+          "where": {
+            "en": "Deep Mall (65, 108)",
+            "pt": "Shopping Profundo (65, 108)"
+          }
+        }
+      ],
+      "sell": "40g"
+    },
+    {
+      "id": "wte-riptide-gem",
+      "name": {
+        "en": "Riptide Gem",
+        "pt": "Gema da Correnteza"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
+            "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-tidal-gem",
+      "name": {
+        "en": "Tidal Gem",
+        "pt": "Gema da Maré"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
+            "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        }
+      ],
+      "sell": "200g"
+    },
+    {
+      "id": "wte-treasure-gem",
+      "name": {
+        "en": "Treasure Gem",
+        "pt": "Gema do Tesouro"
+      },
+      "category": "gems",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
+            "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        }
+      ],
+      "sell": "200g"
+    }
+  ],
+  "entrySources": [
+    {
+      "entryId": "wte-lesser-offering-of-rain",
+      "kind": "found",
+      "where": {
+        "en": "Deep Mall (65, 108)",
+        "pt": "Shopping Profundo (65, 108)"
+      }
+    }
+  ],
+  "creatures": [
+    {
+      "id": "wte-cr-best-friend",
+      "name": {
+        "en": "Best Friend",
+        "pt": "Melhor Amigo"
+      },
+      "where": [
+        {
+          "en": "Basement (Mall BF)",
+          "pt": "Porão (Subsolo do Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-colossal-rat",
+      "name": {
+        "en": "Colossal Rat",
+        "pt": "Rato Colossal"
+      },
+      "where": [
+        {
+          "en": "Mall BF",
+          "pt": "Subsolo do Shopping"
+        },
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-emissary-of-daeus",
+      "name": {
+        "en": "Emissary of Daeus",
+        "pt": "Emissário de Daeus"
+      },
+      "where": [
+        {
+          "en": "Mall BF",
+          "pt": "Subsolo do Shopping"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Skull of the Deep",
+                "pt": "Crânio das Profundezas"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Mall and Mall Mines — Boss encounter — Encounter",
+            "pt": "Shopping e Minas do Shopping — Encontro com chefe — Encontro"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-frog-baby",
+      "name": {
+        "en": "Frog Baby",
+        "pt": "Bebê-sapo"
+      },
+      "where": [
+        {
+          "en": "Mall BF",
+          "pt": "Subsolo do Shopping"
+        },
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-fungal-swarm",
+      "name": {
+        "en": "Fungal Swarm",
+        "pt": "Enxame Fúngico"
+      },
+      "where": [
+        {
+          "en": "Sealed Passage",
+          "pt": "Passagem Selada"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-garbage-mimic",
+      "name": {
+        "en": "Garbage Mimic",
+        "pt": "Lixeira Mímica"
+      },
+      "where": [
+        {
+          "en": "Classroom 102 (Mall BF)",
+          "pt": "Sala de Aula 102 (Subsolo do Shopping)"
+        },
+        {
+          "en": "Front Office (Mall BF)",
+          "pt": "Recepção (Subsolo do Shopping)"
+        },
+        {
+          "en": "Mall BF",
+          "pt": "Subsolo do Shopping"
+        },
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-gem-golem",
+      "name": {
+        "en": "Gem Golem",
+        "pt": "Golem de Gemas"
+      },
+      "where": [
+        {
+          "en": "Sealed Passage",
+          "pt": "Passagem Selada"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-giant-man-fish",
+      "name": {
+        "en": "Giant Man-Fish",
+        "pt": "Homem-peixe Gigante"
+      },
+      "where": [
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "event",
+          "items": [
+            {
+              "name": {
+                "en": "Essence of Daeus",
+                "pt": "Essência de Daeus"
+              }
+            },
+            {
+              "name": {
+                "en": "Damp Nails",
+                "pt": "Pregos Úmidos"
+              }
+            }
+          ],
+          "situation": {
+            "en": "Mall and Mall Mines — Boss Battle — Encounter",
+            "pt": "Shopping e Minas do Shopping — Batalha de chefe — Encontro"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-cr-horde-of-shoppers",
+      "name": {
+        "en": "Horde of Shoppers",
+        "pt": "Horda de Consumidores"
+      },
+      "where": [
+        {
+          "en": "Mall BF",
+          "pt": "Subsolo do Shopping"
+        },
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-hungry-sister",
+      "name": {
+        "en": "Hungry Sister",
+        "pt": "Irmã Faminta"
+      },
+      "where": [
+        {
+          "en": "Bathroom (Mall BF)",
+          "pt": "Banheiro (Subsolo do Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-lost-schoolboy",
+      "name": {
+        "en": "Lost Schoolboy",
+        "pt": "Estudante Perdido"
+      },
+      "where": [
+        {
+          "en": "Basement (Mall BF)",
+          "pt": "Porão (Subsolo do Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-lost-schoolgirl",
+      "name": {
+        "en": "Lost Schoolgirl",
+        "pt": "Estudante Perdida"
+      },
+      "where": [
+        {
+          "en": "Basement (Mall BF)",
+          "pt": "Porão (Subsolo do Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-ms-moody",
+      "name": {
+        "en": "Ms. Moody",
+        "pt": "Sra. Mal-humorada"
+      },
+      "where": [
+        {
+          "en": "Classroom 104 (Mall BF)",
+          "pt": "Sala de Aula 104 (Subsolo do Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-pale-wiggler",
+      "name": {
+        "en": "Pale Wiggler",
+        "pt": "Remexedor Pálido"
+      },
+      "where": [
+        {
+          "en": "Sealed Passage",
+          "pt": "Passagem Selada"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-stoneface",
+      "name": {
+        "en": "Stoneface",
+        "pt": "Cara-de-pedra"
+      },
+      "where": [
+        {
+          "en": "Sealed Passage",
+          "pt": "Passagem Selada"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-teacher",
+      "name": {
+        "en": "Teacher",
+        "pt": "Professora"
+      },
+      "where": [
+        {
+          "en": "f1 Hallway West (Mall BF)",
+          "pt": "f1 Corredor Oeste (Subsolo do Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-teacher-s-pet",
+      "name": {
+        "en": "Teacher's Pet",
+        "pt": "Queridinho da Professora"
+      },
+      "where": [
+        {
+          "en": "Basement (Mall BF)",
+          "pt": "Porão (Subsolo do Shopping)"
+        }
+      ],
+      "spoilerLevel": 0
+    },
+    {
+      "id": "wte-cr-wet-mouth",
+      "name": {
+        "en": "Wet Mouth",
+        "pt": "Boca Molhada"
+      },
+      "where": [
+        {
+          "en": "Mall BF",
+          "pt": "Subsolo do Shopping"
+        },
+        {
+          "en": "Mall BF — Store",
+          "pt": "Subsolo do Shopping — Loja"
+        }
+      ],
+      "spoilerLevel": 0
+    }
+  ]
+}

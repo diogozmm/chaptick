@@ -103,3 +103,24 @@ test('rejects duplicate trophies in a game', () => {
   const trophy = { id: 'all', name: 'All', description: { en: 'Everything.' } };
   expectError(validateWith('demo/game.json', (d) => void (d.trophies = [trophy, trophy])), 'duplicate trophy "all"');
 });
+
+test('compendium references only point to the same chapter or an earlier one', () => {
+  const entry = { id: 'demo-ore', name: { en: 'Ore' }, category: 'metals', sources: [{ kind: 'gather', where: { en: 'Mine' } }] };
+  const root = mkdtempSync(join(tmpdir(), 'content-'));
+  cpSync(FIXTURE, root, { recursive: true });
+  const edit = (file, mutate) => {
+    const path = join(root, file);
+    const data = JSON.parse(readFileSync(path, 'utf8'));
+    mutate(data);
+    writeFileSync(path, JSON.stringify(data));
+  };
+  edit('demo/chapters/ch-01.json', (d) => void (d.entries = [entry]));
+  edit(CH0, (d) => {
+    d.entries = [{ ...entry, id: 'demo-herb', name: { en: 'Herb' } }];
+    d.crafts = [{ id: 'demo-cook-tea', name: { en: 'Tea' }, kind: 'cook', group: { en: 'Pot' }, ingredients: [{ entryId: 'demo-ore', name: { en: 'Ore' }, qty: 1 }] }];
+    d.entrySources = [{ entryId: 'demo-nothing', kind: 'shop', where: { en: 'Shop' } }];
+  });
+  const errors = validateContent(root);
+  expectError(errors, 'craft "demo-cook-tea" refers to "demo-ore" from a later chapter');
+  expectError(errors, 'refers to unknown entry "demo-nothing"');
+});

@@ -1,0 +1,87 @@
+{
+  "id": "cc-ch1",
+  "gameId": "cc",
+  "order": 1,
+  "neutralLabel": {
+    "en": "Area 2"
+  },
+  "checkpoints": [],
+  "items": [
+    {
+      "id": "cc-ch1-q-01",
+      "type": "quest",
+      "name": {
+        "en": "Cellar Task"
+      },
+      "location": {
+        "en": "Cellar"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Do Cellar Task."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "fixture"
+      ]
+    }
+  ],
+  "itemTexts": [],
+  "entries": [
+    {
+      "id": "cc-deep-ore",
+      "name": {
+        "en": "Deep Ore"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "gather",
+          "where": {
+            "en": "Cellar Mine"
+          }
+        }
+      ]
+    }
+  ],
+  "entrySources": [
+    {
+      "entryId": "cc-bitter-herb",
+      "kind": "shop",
+      "where": {
+        "en": "Cellar Market"
+      }
+    }
+  ],
+  "creatures": [
+    {
+      "id": "cc-cr-cellar-thing",
+      "name": {
+        "en": "Cellar Thing"
+      },
+      "where": [
+        {
+          "en": "Cellar"
+        }
+      ],
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "steal",
+          "items": [
+            {
+              "entryId": "cc-bitter-herb",
+              "name": {
+                "en": "Bitter Herb"
+              }
+            }
+          ],
+          "chance": "25%",
+          "variant": {
+            "en": "Level 1"
+          }
+        }
+      ]
+    }
+  ]
+}

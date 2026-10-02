@@ -1,0 +1,16 @@
+{
+  "id": "wte",
+  "franchise": "elderfield",
+  "order": 1,
+  "name": {
+    "en": "Welcome to Elderfield",
+    "pt": "Welcome to Elderfield"
+  },
+  "cover": {
+    "title": "Elderfield",
+    "subtitle": "A cozy horror farm"
+  },
+  "platforms": [],
+  "dataVersion": 1,
+  "progressTerm": "area"
+}

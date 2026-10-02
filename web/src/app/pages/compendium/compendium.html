@@ -1,0 +1,178 @@
+@let l = lang.lang();
+@let done = progress.done();
+@if (here(); as h) {
+  @if (game.hasChecklist()) {
+    <a [routerLink]="game.link('chapters', h.id)" class="link back"><app-icon name="chevron-left" /> {{ h.neutralLabel | localize: l }}</a>
+  } @else {
+    <a [routerLink]="game.link('chapters')" class="link back"><app-icon name="chevron-left" /> {{ game.k('where.title') | transloco }}</a>
+  }
+}
+
+<header class="stack-sm">
+  @if (game.game(); as g) {
+    <p class="eyebrow">{{ g.name | localize: l }}</p>
+  }
+  <h1>{{ 'compendium.title' | transloco }}</h1>
+  @if (here(); as h) {
+    <p class="muted small">{{ 'compendium.upTo' | transloco: { chapter: h.neutralLabel | localize: l } }}</p>
+  }
+</header>
+
+<div class="tabs" role="tablist" [attr.aria-label]="'compendium.title' | transloco">
+  @for (t of tabs; track t) {
+    <button type="button" role="tab" [id]="'tab-' + t" [attr.aria-controls]="'panel-' + t" [attr.aria-selected]="current() === t" (click)="switchTab(t)">
+      <app-icon [name]="t === 'items' ? 'search' : t === 'crafts' ? 'utensils-crossed' : 'swords'" />
+      {{ 'compendium.tab.' + t | transloco }}
+    </button>
+  }
+</div>
+
+@if (current() === 'items') {
+  <div id="panel-items" role="tabpanel" aria-labelledby="tab-items" class="panel">
+    <div class="field">
+      <app-icon name="search" />
+      <input type="search" [value]="query()" (input)="go({ q: $any($event.target).value })" enterkeyhint="search"
+        [attr.aria-label]="'compendium.searchLabel' | transloco" [placeholder]="'compendium.searchPlaceholder' | transloco" />
+    </div>
+    <nav class="chips" [attr.aria-label]="'compendium.categories' | transloco">
+      @for (cat of categories; track cat) {
+        @if (counts().get(cat); as n) {
+          <button type="button" class="chip" [attr.aria-pressed]="category() === cat" (click)="go({ c: category() === cat ? null : cat })">
+            {{ 'compendium.category.' + cat | transloco }} <span class="count">{{ n }}</span>
+          </button>
+        }
+      }
+    </nav>
+
+    @if (listing()) {
+      <p class="muted small" role="status">{{ 'compendium.found' | transloco: { count: entries().length + moreEntries() } }}</p>
+      <ul class="list">
+        @for (e of entries(); track e.entry.id) {
+          <li>
+            <a class="row-link" [routerLink]="game.link('entries', e.entry.id)">
+              <span class="name">
+                {{ e.entry.name | localize: l }}
+                @if (e.entry.name | original: l; as en) {
+                  <span class="en">{{ en }}</span>
+                }
+              </span>
+              <span class="meta">
+                {{ 'compendium.category.' + e.entry.category | transloco }} ·
+                {{ 'compendium.ways' | transloco: { count: e.sources.length } }}
+              </span>
+              <app-icon name="chevron-right" />
+            </a>
+          </li>
+        }
+      </ul>
+      @if (moreEntries() > 0) {
+        <p class="muted small center">{{ 'compendium.more' | transloco: { count: moreEntries() } }}</p>
+      }
+    } @else if (ready()) {
+      <p class="muted small">{{ 'compendium.itemsHint' | transloco }}</p>
+    }
+  </div>
+} @else if (current() === 'crafts') {
+  <div id="panel-crafts" role="tabpanel" aria-labelledby="tab-crafts" class="panel">
+    <div class="field">
+      <app-icon name="search" />
+      <input type="search" [value]="query()" (input)="go({ q: $any($event.target).value })" enterkeyhint="search"
+        [attr.aria-label]="'compendium.craftSearchLabel' | transloco" [placeholder]="'compendium.craftSearchPlaceholder' | transloco" />
+    </div>
+    <nav class="chips" [attr.aria-label]="'compendium.craftKinds' | transloco">
+      @for (kind of craftKinds; track kind) {
+        @if (craftCounts().get(kind); as n) {
+          <button type="button" class="chip" [attr.aria-pressed]="craftKind() === kind" (click)="go({ c: kind })">
+            {{ 'compendium.craftKind.' + kind | transloco }} <span class="count">{{ n }}</span>
+          </button>
+        }
+      }
+    </nav>
+    @for (group of craftGroups(); track group.key) {
+      <section class="group">
+        <h2>{{ group.label | localize: l }}</h2>
+        <ul class="list">
+          @for (c of group.crafts; track c.craft.id) {
+            @let made = done.has(c.craft.id);
+            <li class="row" [class.done]="made">
+              <label class="check">
+                <input type="checkbox" class="checkbox" [checked]="made" (change)="progress.toggle(c.craft.id)" [attr.aria-labelledby]="'craft-' + c.craft.id" />
+              </label>
+              <div class="body">
+                @if (c.craft.makes) {
+                  <a class="name" [id]="'craft-' + c.craft.id" [routerLink]="game.link('entries', c.craft.makes)">{{ c.craft.name | localize: l }}</a>
+                } @else {
+                  <span class="name" [id]="'craft-' + c.craft.id">{{ c.craft.name | localize: l }}</span>
+                }
+                @if (c.craft.name | original: l; as en) {
+                  <span class="en">{{ en }}</span>
+                }
+                <ul class="ingredients" [attr.aria-label]="'compendium.ingredients' | transloco">
+                  @for (i of c.craft.ingredients; track $index) {
+                    <li>
+                      @if (i.entryId) {
+                        <a [routerLink]="game.link('entries', i.entryId)">{{ i.qty }}× {{ i.name | localize: l }}</a>
+                      } @else {
+                        <span>{{ i.qty }}× {{ i.name | localize: l }}</span>
+                      }
+                    </li>
+                  }
+                </ul>
+                @if (c.craft.unlock) {
+                  <span class="how"><app-icon name="scroll-text" /> {{ c.craft.unlock | localize: l }}</span>
+                }
+              </div>
+            </li>
+          }
+        </ul>
+      </section>
+    } @empty {
+      @if (ready()) {
+        <p class="empty card">{{ 'compendium.noCrafts' | transloco }}</p>
+      }
+    }
+  </div>
+} @else {
+  <div id="panel-creatures" role="tabpanel" aria-labelledby="tab-creatures" class="panel">
+    <p class="muted small">{{ 'compendium.creaturesHint' | transloco }}</p>
+    <button type="button" class="chip" [attr.aria-pressed]="givingOnly()" (click)="go({ c: givingOnly() ? null : 'gives' })">
+      <app-icon name="gem" /> {{ 'compendium.givingOnly' | transloco }}
+    </button>
+    @for (group of creatureGroups(); track group.chapter.id) {
+      <section class="group">
+        <h2>{{ group.chapter.neutralLabel | localize: l }}</h2>
+        <ul class="list">
+          @for (entry of group.creatures; track entry.creature.id) {
+            @let cr = entry.creature;
+            <li class="row creature">
+              <div class="body">
+                <app-spoiler-reveal [itemId]="cr.id" [level]="cr.spoilerLevel" [placeholder]="'compendium.creaturePlaceholder' | transloco: { n: entry.n }">
+                  @if (cr.rewards?.length) {
+                    <a class="name" [routerLink]="game.link('creatures', cr.id)">{{ cr.name | localize: l }}</a>
+                  } @else {
+                    <span class="name">{{ cr.name | localize: l }}</span>
+                  }
+                  @if (cr.name | original: l; as en) {
+                    <span class="en">{{ en }}</span>
+                  }
+                  @if (cr.where.length > 0) {
+                    <span class="how"><app-icon name="map-pin" /> {{ whereList(cr) }}</span>
+                  }
+                  @if (cr.rewards?.length) {
+                    <a class="gives" [routerLink]="game.link('creatures', cr.id)">
+                      <app-icon name="gem" /> {{ 'compendium.givesItems' | transloco }} <app-icon name="chevron-right" />
+                    </a>
+                  }
+                </app-spoiler-reveal>
+              </div>
+            </li>
+          }
+        </ul>
+      </section>
+    } @empty {
+      @if (ready()) {
+        <p class="empty card">{{ 'compendium.noCreatures' | transloco }}</p>
+      }
+    }
+  </div>
+}

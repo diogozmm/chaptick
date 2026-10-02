@@ -44,6 +44,7 @@
 .filters { display: flex; gap: 0.5rem; overflow-x: auto; margin: 0 -1rem; padding: 0.15rem 1rem; scrollbar-width: none; }
 .filters::-webkit-scrollbar { display: none; }
 .filters .chip { flex: none; text-decoration: none; display: inline-flex; align-items: center; }
+.filters .divider { flex: none; width: 1px; margin: 0.4rem 0.15rem; background: var(--border-strong); }
 .filters .chip[aria-current='true'] { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
 
 .franchise { display: grid; gap: 0.6rem; }
@@ -85,6 +86,12 @@
 .game:hover { transform: translateY(-2px); border-color: var(--accent); }
 .game-body { flex: 1; display: grid; gap: 0.3rem; align-content: start; }
 .game .badge { justify-self: start; }
+.features { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.feature {
+  padding: 0.1rem 0.45rem; border-radius: 0.35rem; background: var(--surface-2); color: var(--text-muted);
+  font: 600 0.68rem/1.5 var(--font-body); letter-spacing: 0.04em; text-transform: uppercase;
+}
+.feature[data-feature='compendium'] { background: var(--accent-soft); color: var(--text); }
 .game-action { display: inline-flex; align-items: center; gap: 0.25rem; color: var(--accent); font-weight: 600; white-space: nowrap; }
 
 .soon { display: flex; gap: 0.75rem; align-items: flex-start; border-style: dashed; background: transparent; box-shadow: none; }

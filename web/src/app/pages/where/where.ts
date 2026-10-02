@@ -46,6 +46,7 @@ export class Where {
   protected async choose(chapter: ChapterSummary): Promise<void> {
     await this.progress.setChapter(chapter.id);
     this.pending.set(null);
-    await this.router.navigate(this.game.link('chapters', chapter.id));
+    // A game without a checklist goes on to its compendium, now unlocked up to here.
+    await this.router.navigate(this.game.hasChecklist() ? this.game.link('chapters', chapter.id) : this.game.link('compendium'));
   }
 }

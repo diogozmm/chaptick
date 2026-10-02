@@ -4,7 +4,7 @@
  * same covers into the share image.
  */
 
-export type CoverMotif = 'orbits' | 'waves' | 'stripes';
+export type CoverMotif = 'orbits' | 'waves' | 'stripes' | 'fields';
 export type CoverFontId = 'cinzel' | 'uncial-antiqua';
 
 export interface CoverStyle {
@@ -66,6 +66,16 @@ const MOTIFS: Record<CoverMotif, CoverShape[]> = {
     { kind: 'path', d: wave(100, 12, 56), width: 2.5, opacity: 0.45, accent: true },
     { kind: 'path', d: wave(124, 12, 64), width: 1.5, opacity: 0.3 },
     { kind: 'path', d: wave(146, 14, 72), width: 1.5, opacity: 0.2 },
+  ],
+  // Crop rows running to the horizon under a pale moon, and an eye in the sky: a farm that watches back.
+  fields: [
+    { kind: 'circle', cx: 326, cy: 40, r: 22, fill: true, opacity: 0.55, accent: true },
+    { kind: 'path', d: 'M -10 78 L 410 78', width: 1.5, opacity: 0.35 },
+    ...[-260, -150, -40, 70, 180, 290, 400, 510, 620].map(
+      (x, i): CoverShape => ({ kind: 'path', d: `M ${x} ${COVER_HEIGHT + 10} L 200 78`, width: 1.5, opacity: i % 2 ? 0.3 : 0.18 }),
+    ),
+    { kind: 'path', d: 'M 66 40 Q 96 18 126 40 Q 96 62 66 40 Z', width: 1.5, opacity: 0.45 },
+    { kind: 'circle', cx: 96, cy: 40, r: 7, fill: true, opacity: 0.6, accent: true },
   ],
   stripes: Array.from({ length: 14 }, (_, i): CoverShape => ({
     kind: 'path',

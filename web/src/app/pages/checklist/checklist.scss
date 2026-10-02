@@ -72,3 +72,9 @@
 .alert-link app-icon { width: 1rem; height: 1rem; margin: 0; }
 
 .trophy-chip app-icon { color: var(--accent); }
+
+.compendium-link { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; text-decoration: none; color: var(--text); }
+.compendium-link:hover { border-color: var(--accent); }
+.compendium-link > span { flex: 1; display: grid; gap: 0.1rem; }
+.compendium-link > app-icon:first-child { color: var(--accent); }
+.compendium-link > app-icon:last-child { color: var(--text-muted); }

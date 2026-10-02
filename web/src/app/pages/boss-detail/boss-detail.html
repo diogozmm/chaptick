@@ -46,7 +46,7 @@
   </app-detail-bar>
 } @else if (e === null) {
   <p role="alert">{{ 'item.notFound' | transloco }}</p>
-  <a class="button" [routerLink]="game.link('chapters')">{{ 'where.title' | transloco }}</a>
+  <a class="button" [routerLink]="game.link('chapters')">{{ game.k('where.title') | transloco }}</a>
 } @else if (chapter.error()) {
   <p role="alert">{{ 'common.loadError' | transloco }}</p>
   <button type="button" class="button" (click)="chapter.reload()">{{ 'common.retry' | transloco }}</button>

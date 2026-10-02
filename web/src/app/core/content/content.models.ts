@@ -21,6 +21,12 @@ export interface Trophy {
   collection?: 'fish' | 'recipes';
 }
 
+/** What a game is split into for spoiler locking: story chapters, or areas opened in order. */
+export type ProgressTerm = 'chapter' | 'area';
+
+/** What a game offers, derived from its content at build time. */
+export type GameFeature = 'checklist' | 'compendium';
+
 export interface Game {
   id: string;
   franchise: string;
@@ -28,6 +34,9 @@ export interface Game {
   name: Localized;
   platforms: string[];
   dataVersion: number;
+  progressTerm?: ProgressTerm;
+  /** Game patch the content was checked against. */
+  gameVersion?: string;
   /** Trophies tied to what the app tracks; see content/schema/game.schema.json. */
   trophies?: Trophy[];
 }
@@ -39,6 +48,9 @@ export interface CatalogGame {
   /** Text drawn on the library cover; derived from the name when missing. */
   cover?: CoverText;
   platforms: string[];
+  /** Missing in older builds: treated as a checklist. */
+  features?: GameFeature[];
+  progressTerm?: ProgressTerm;
   chapterCount: number;
   itemCount: number;
 }
@@ -68,6 +80,11 @@ export interface Manifest {
   game: Game;
   /** How many fish and recipes the whole game has (counts only); missing in older builds. */
   collections?: { fish: number; recipes: number };
+  features?: GameFeature[];
+  /** Compendium totals (counts only). */
+  compendium?: { entries: number; crafts: number; creatures: number };
+  /** How many items have a deadline, so games without any can hide the deadlines screen. */
+  deadlines?: number;
   chapters: ChapterSummary[];
 }
 
@@ -140,6 +157,78 @@ export interface Recipe {
   sources: string[];
 }
 
+export const ENTRY_CATEGORIES = ['materials', 'gems', 'metals', 'fish', 'crops', 'seeds', 'food', 'potions', 'tools'] as const;
+export type EntryCategory = (typeof ENTRY_CATEGORIES)[number];
+export const SOURCE_KINDS = [
+  'found', 'shop', 'forage', 'fish', 'gather', 'loot', 'random', 'task', 'drop', 'craft', 'cook', 'process', 'other',
+] as const;
+export type SourceKind = (typeof SOURCE_KINDS)[number];
+export type Season = 'spring' | 'summer' | 'autumn' | 'winter';
+
+/** One way to get a compendium entry: places, shops and stations, as the game names them. */
+export interface Source {
+  kind: SourceKind;
+  where: Localized;
+  seasons?: Season[];
+  time?: 'day' | 'night';
+}
+
+/** Compendium: something you can get, listed in the chapter or area where it first becomes obtainable. */
+export interface Entry {
+  id: string;
+  name: Localized;
+  category: EntryCategory;
+  sell?: string;
+  sources: Source[];
+}
+
+/** A further way to get an earlier entry, only known from this chapter or area on. */
+export interface EntrySource extends Source {
+  entryId: string;
+}
+
+export type CraftKind = 'craft' | 'cook' | 'forge';
+
+export interface Craft {
+  id: string;
+  name: Localized;
+  kind: CraftKind;
+  /** The station or section it is made at. */
+  group: Localized;
+  /** `entryId` is missing when the ingredient is not in the compendium (or not reached yet). */
+  ingredients: { entryId?: string; name: Localized; qty: number }[];
+  makes?: string;
+  unlock?: Localized;
+}
+
+/** An item a creature hands over; linked when it is in the compendium. */
+export interface RewardItem {
+  entryId?: string;
+  name: Localized;
+}
+
+/** How a creature gives items: stolen in battle (with a chance), or at a fight or meeting. */
+export interface CreatureReward {
+  how: 'steal' | 'event';
+  items: RewardItem[];
+  chance?: string;
+  /** Which version of the creature, for steals. */
+  variant?: Localized;
+  situation?: Localized;
+  /** A condition, e.g. a task in progress. */
+  when?: Localized;
+  /** Items handed over in exchange. */
+  gives?: RewardItem[];
+}
+
+export interface Creature {
+  id: string;
+  name: Localized;
+  where: Localized[];
+  spoilerLevel: SpoilerLevel;
+  rewards?: CreatureReward[];
+}
+
 export interface Chapter {
   id: string;
   gameId: string;
@@ -152,6 +241,10 @@ export interface Chapter {
   fish?: Fish[];
   fishSpots?: FishSpot[];
   recipes?: Recipe[];
+  entries?: Entry[];
+  entrySources?: EntrySource[];
+  crafts?: Craft[];
+  creatures?: Creature[];
 }
 
 export const localize = (text: Localized, lang: Lang): string => (lang === 'pt' ? text.pt : undefined) ?? text.en;

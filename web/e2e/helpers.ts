@@ -11,19 +11,19 @@ export function trackContent(page: Page): string[] {
 }
 
 /** Progress writes are async; wait until IndexedDB has them before reloading. */
-export async function expectSaved(page: Page, itemId: string, saved = true): Promise<void> {
+export async function expectSaved(page: Page, itemId: string, saved = true, gameId = itemId.split('-')[0]): Promise<void> {
   await expect
     .poll(() =>
       page.evaluate(
-        (id) =>
+        ([id, game]) =>
           new Promise<boolean>((resolve) => {
             const open = indexedDB.open('chaptick');
             open.onsuccess = () => {
-              const get = open.result.transaction('progress').objectStore('progress').get('sc');
+              const get = open.result.transaction('progress').objectStore('progress').get(game);
               get.onsuccess = () => resolve(Boolean(get.result?.doneItems.includes(id)));
             };
           }),
-        itemId,
+        [itemId, gameId],
       ),
     )
     .toBe(saved);

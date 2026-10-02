@@ -1,5 +1,5 @@
 <div class="confirm">
-  <p>{{ 'where.confirmAdvance' | transloco: { chapter: target().neutralLabel | localize: lang.lang() } }}</p>
+  <p>{{ game.k('where.confirmAdvance') | transloco: { chapter: target().neutralLabel | localize: lang.lang() } }}</p>
   @if (leftBehind().length > 0) {
     <details class="left-behind">
       <summary><app-icon name="hourglass" /> {{ 'where.leftBehind' | transloco: { count: leftBehind().length } }}</summary>

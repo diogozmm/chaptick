@@ -43,6 +43,8 @@ export function searchItems(chapters: readonly Chapter[], query: string, lang: L
       const fields: [MatchField, string][] = [];
       if (visible.name(item)) {
         fields.push(['name', localize(item.name, lang)], ['location', localize(item.location, lang)]);
+        // The game may show the English name even to a Portuguese reader.
+        if (item.name.en !== localize(item.name, lang)) fields.push(['name', item.name.en]);
       }
       if (visible.hint(item)) {
         for (const step of item.steps ?? []) fields.push(['step', localize(step.text, lang)]);
