@@ -1,9 +1,22 @@
+3-D Glasses +1
 Aged Wine (Cloudberry)
 Aged Wine (Duskmelon)
 Ancientwood
-Baked Crab
-Baked Serpent
+Archmage's Boots +8
+Archmage's Hat +8
+Archmage's Robe +8
+Archmage's Sash +8
+Bard's Lute
 Battery
+Blacksteel Chestplate +7
+Blacksteel Greatsword +7
+Blacksteel Greaves +7
+Blacksteel Helmet +7
+Blacksteel Legguards +7
+Blacksteel Quickblade +7
+Blacksteel Staff +7
+Blade of the Hopeless +10
+Bladefan of Delvek +8
 Blood Potion
 Blood Punch
 Blood Skewer
@@ -12,50 +25,73 @@ Blueprint: Ghostly Scarecrow
 Blueprint: Lapidary Table
 Blueprint: Skeletal Scarecrow
 Blueprint: Wicker Scarecrow
+Bone Boots +5
+Bone Chestplate +5
+Bone Helmet +5
+Bone Honey
 Bone Ingot
+Bone Legguards +5
+Bone Staff +5
+Bone Sword +5
 Brain
+Brutal Maul of Kaal +8
 Bubble Gum
 Bubble-Tea
+Cat's-Eye Spear +8
+Champion's Chestplate +8
+Champion's Greaves +8
+Champion's Helmet +8
+Champion's Loincloth +8
 Chaos Potion
+Chaos Robe +5
 Chocolate Bar
 Chocolate Cake
 Cloudberry
 Cloudberry Punch
-Coffee Maker
 Combat Drink
+Corvid Boots +10
+Corvid Cloak +10
+Corvid Legguards +10
+Corvid Mask +10
 Crank Lure
+Crimson Bandana +10
+Crimson Robe +10
+Crimson Sash +10
+Crimson Shoes +10
+Crusader's Chestplate +10
+Crusader's Greaves +10
+Crusader's Helmet +10
+Crusader's Legguards +10
+Cultist's Boots +7
+Cultist's Legguards +7
+Cultist's Mask +7
+Cultist's Robe +7
 Cured Mana Steak (Raw)
+Cursed Crucifix +5
+Dagger of Valtris +8
 Death Crystal
+Deceiver's Orb +5
 Deep Crystal
 Dense Fertilizer (Lv3)
+Dough Ball
 Dream Crystal
 Dusk Juice
-Duskberries
-Duskmelon
 Duskmelon Slice
-Eldersprout
+Encrusted Blade +10
 Energy Drink
 Entrails
-Expert Adventurer's Meal
-Expert Wizard's Meal
 Exploding Candy
-Failed Meal
 Fancy Fertilizer (Lv3)
 Farmer's Potion
 Flask of Blood
-Flask of the Gods (Agility)
-Flask of the Gods (Attack)
-Flask of the Gods (Defense)
-Flask of the Gods (HP)
-Flask of the Gods (Luck)
-Flask of the Gods (M. Atk)
-Flask of the Gods (M. Def)
-Flask of the Gods (MP)
+Flthy Shoes +1
+Gas Mask +2
 Ghost Crystal
 Ghost Egg
-Ghostly Scarecrow
+Gilded Chestplate +7
 Goat Horn
 Godflesh
+Golden Tooth +5
 Goldpuff
 Goodie Bag
 Gravemoss
@@ -68,6 +104,7 @@ Greater Moon Crystal
 Greater Potion of Brutalism
 Greater Potion of Greed
 Greater Potion of Zealotry
+Greatsword of the Dead God +5
 Hardwood Seed
 Hazard Potion
 Herbal Cake
@@ -75,36 +112,57 @@ Herbal Crab
 Herbal Cupcake
 Herbal Feast
 Herbal Pie
+Herbal Pizza
 Herbal Platter
 Herbal Roast
 Herbal Serpent
 Herbal Soup
 Herbal Stew
+Illusory Cloak +15
 Iron Chain
 Jelly (Cloudberry)
 Jelly (Duskmelon)
 Jelly (Soulfruit)
 Jelly (Voidberry)
+Jeweled Chalice +5
+Kaal's Executioner +5
 Ladybug
 Large Egg
 Large Goat Milk
 Large Milk
-Leadleaf
 Light Crystal
 Meat Egg
+Mirror Chestplate +8
 Moon Crystal
+Mysterious Boots +6
+Mysterious Hat +6
+Mysterious Legguards +6
+Mysterious Tunic +6
 Mystery Egg
 Mystery Roast
 Night-Owl Potion
+Nomad Cloak +2
+Nomad Hood +2
+Nomad Legguards +2
+Nomad Shoes +2
 Obsidian Egg
-Perfect Cookie
+Obsidian Helm +7
+Odd Skull +1
+Old Beanie
 Pickles (Eldersprout)
 Pocket Sand
+Police Hat +3
+Police Jacket +3
+Police Shoes +3
+Police Trousers +3
 Potion of Commerce
 Potion of Debt
 Potion of Everything
 Potion of Refuse
+Pumpkin Mask +6
+Pumpkin Pants +7
 Pumpkin Vine
+Pumpkin-Carver +3
 Rage Cookie
 Rancher's Potion
 Raw Hay
@@ -112,8 +170,9 @@ Recipe: Flesh Sandwich
 Recipe: Rancher's Meal
 Recipe: Slime Pizza
 Recipe: Special Hotdog
-Rich Cookie
 Ring of Binding
+Ritual Blade +3
+Ritual Spear +5
 Ritual Tome: Energizing Blast
 Ritual Tome: Frenzy Blast
 Ritual Tome: Induce Anxiety
@@ -121,6 +180,13 @@ Ritual Tome: Mana Drain
 Ritual Tome: Mark of Insight
 Ritual Tome: Sludge Blast
 Ritual Tome: Terror Blast
+Rockshell Chestplate +4
+Rockshell Greaves +4
+Rockshell Helmet +4
+Rockshell Legguards +4
+Rusty Shackle +2
+Scrap Pants +3
+Seeker's Orb
 Simple Kebab
 Skeletal Scarecrow
 Skill Tome: Frenzy Slash
@@ -131,31 +197,57 @@ Slime Tonic
 Small Coin Pouch
 Small Egg
 Small Goat Milk
-Smoothie
-Soft Cookie
-Soothing Soup
+Soul Lamp +5
 Soul Stew
 Soulbargain Potion
-Soulfruit
 Sour Lollipop
+Spear of Daeus +5
 Spicy Candy
 Spiritwood Seed
-Sturdy Cookie
+Staff of Blood +10
+Staff of Flesh +6
+Staff of Insight +3
+Staff of Valtris +3
+Steel Greatsword +6
+Steel Quickblade +6
+Steel Staff +6
+Steel-Knuckled Glove +5
+Stone Shield +2
+Straw Hat +4
+Strawberry Milk
 Superior Axe
 Superior Pickaxe
 Superior Scythe
-Sushi
 Sweet Cookie
 Sweet Lollipop
+Sword of the Harvest +8
 Taunting Potion
+Tentacle Blade +10
+The Decimator +10
 Tiny Coin Pouch
 Vegetable Smoothie
+Vile Chestplate +10
+Vile Greataxe +10
+Vile Greatsword +10
+Vile Greaves +10
+Vile Hat +10
+Vile Helmet +10
+Vile Lamp +8
+Vile Leggings +10
+Vile Legguards +10
+Vile Quickblade +10
+Vile Robe +10
+Vile Shoes +10
+Vile Spear +10
+Vile Staff +10
 Vilebloom
 Vileroot
 Vilewood
 Viscera
 Void Dinner
-Voidberry
+Wanderer's Orb
+White Shorts +3
 Wicker Scarecrow
 Wine (Cloudberry)
 Wine (Duskmelon)
+Worn Underwear

@@ -78,3 +78,5 @@
 .compendium-link > span { flex: 1; display: grid; gap: 0.1rem; }
 .compendium-link > app-icon:first-child { color: var(--accent); }
 .compendium-link > app-icon:last-child { color: var(--text-muted); }
+.season-link { justify-self: start; display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.75rem; margin: -0.5rem 0; font-size: 0.9rem; font-weight: 600; text-decoration: none; }
+.season-link app-icon { width: 1rem; height: 1rem; }

@@ -19,9 +19,9 @@
 </header>
 
 <div class="tabs" role="tablist" [attr.aria-label]="'compendium.title' | transloco">
-  @for (t of tabs; track t) {
+  @for (t of tabs(); track t) {
     <button type="button" role="tab" [id]="'tab-' + t" [attr.aria-controls]="'panel-' + t" [attr.aria-selected]="current() === t" (click)="switchTab(t)">
-      <app-icon [name]="t === 'items' ? 'search' : t === 'crafts' ? 'utensils-crossed' : 'swords'" />
+      <app-icon [name]="t === 'items' ? 'search' : t === 'crafts' ? 'utensils-crossed' : t === 'creatures' ? 'swords' : 'hourglass'" />
       {{ 'compendium.tab.' + t | transloco }}
     </button>
   }
@@ -57,7 +57,7 @@
                 }
               </span>
               <span class="meta">
-                {{ 'compendium.category.' + e.entry.category | transloco }} ·
+                {{ (e.entry.gear ? 'compendium.slot.' + e.entry.gear.slot : 'compendium.category.' + e.entry.category) | transloco }} ·
                 {{ 'compendium.ways' | transloco: { count: e.sources.length } }}
               </span>
               <app-icon name="chevron-right" />
@@ -107,6 +107,9 @@
                 @if (c.craft.name | original: l; as en) {
                   <span class="en">{{ en }}</span>
                 }
+                @if (c.craft.success) {
+                  <span class="tag success">{{ 'compendium.success' | transloco: { chance: c.craft.success } }}</span>
+                }
                 <ul class="ingredients" [attr.aria-label]="'compendium.ingredients' | transloco">
                   @for (i of c.craft.ingredients; track $index) {
                     <li>
@@ -130,6 +133,92 @@
       @if (ready()) {
         <p class="empty card">{{ 'compendium.noCrafts' | transloco }}</p>
       }
+    }
+  </div>
+} @else if (current() === 'season') {
+  <div id="panel-season" role="tabpanel" aria-labelledby="tab-season" class="panel">
+    <div class="season-pick" role="group" [attr.aria-label]="'compendium.seasonPick' | transloco">
+      <p class="muted small">{{ 'compendium.seasonPick' | transloco }}</p>
+      <div class="chips">
+        @for (s of seasons; track s) {
+          <button type="button" class="chip" [attr.aria-pressed]="season() === s" (click)="setSeason(s)">
+            {{ 'compendium.season.' + s | transloco }}
+          </button>
+        }
+      </div>
+    </div>
+
+    @if (seasonNow(); as v) {
+      @if (v.plant.length > 0) {
+        <section class="group" aria-labelledby="plant-title">
+          <h2 id="plant-title">{{ 'compendium.plantNow' | transloco }} <span class="group-count">{{ v.plant.length }}</span></h2>
+          <ul class="list">
+            @for (p of v.plant; track p.entry.entry.id) {
+              @let g = p.entry.entry.grow!;
+              <li>
+                <a class="row-link season-row" [routerLink]="game.link('entries', p.entry.entry.id)">
+                  <span class="name">
+                    {{ p.entry.entry.name | localize: lang.lang() }}
+                    @if (p.entry.entry.name | original: lang.lang(); as en) {
+                      <span class="en">{{ en }}</span>
+                    }
+                  </span>
+                  <span class="meta">
+                    <span>
+                      @if (g.days) {
+                        {{ 'compendium.growDays' | transloco: { days: g.days } }} ·
+                      }
+                      {{ 'compendium.harvests' | transloco: { count: g.harvests, yield: g.yield } }}
+                    </span>
+                    @if (p.lastChance) {
+                      <span class="tag last">{{ 'compendium.lastPlanting' | transloco }}</span>
+                    } @else if (p.anytime) {
+                      <span class="tag">{{ 'compendium.allYear' | transloco }}</span>
+                    }
+                  </span>
+                  <app-icon name="chevron-right" />
+                </a>
+              </li>
+            }
+          </ul>
+        </section>
+      }
+
+      <section class="group" aria-labelledby="only-title">
+        <h2 id="only-title">{{ 'compendium.onlyNow' | transloco }} <span class="group-count">{{ v.only.length }}</span></h2>
+        <ul class="list">
+          @for (s of v.only; track s.entry.entry.id) {
+            <ng-container *ngTemplateOutlet="seasonRow; context: { $implicit: s }" />
+          } @empty {
+            <li class="muted small">{{ 'compendium.nothingOnlyNow' | transloco }}</li>
+          }
+        </ul>
+      </section>
+
+      @if (v.also.length > 0) {
+        <section class="group" aria-labelledby="also-title">
+          <h2 id="also-title">{{ 'compendium.alsoNow' | transloco }} <span class="group-count">{{ v.also.length }}</span></h2>
+          <p class="muted small">{{ 'compendium.alsoNowHint' | transloco }}</p>
+          <ul class="list">
+            @for (s of v.also; track s.entry.entry.id) {
+              <ng-container *ngTemplateOutlet="seasonRow; context: { $implicit: s }" />
+            }
+          </ul>
+        </section>
+      }
+
+      @if (v.coming.length > 0) {
+        <details class="coming">
+          <summary>{{ 'compendium.comingNext' | transloco: { season: ('compendium.season.' + next() | transloco), count: v.coming.length } }}</summary>
+          <ul class="list">
+            @for (s of v.coming; track s.entry.entry.id) {
+              <ng-container *ngTemplateOutlet="seasonRow; context: { $implicit: s }" />
+            }
+          </ul>
+        </details>
+      }
+    } @else {
+      <p class="empty card">{{ 'compendium.seasonFirst' | transloco }}</p>
     }
   </div>
 } @else {
@@ -176,3 +265,35 @@
     }
   </div>
 }
+
+<ng-template #seasonRow let-s>
+  <li>
+    <a class="row-link season-row" [routerLink]="game.link('entries', s.entry.entry.id)">
+      <span class="name">
+        {{ s.entry.entry.name | localize: lang.lang() }}
+        @if (s.entry.entry.name | original: lang.lang(); as en) {
+          <span class="en">{{ en }}</span>
+        }
+      </span>
+      <span class="meta">
+        @for (p of s.sources; track $index) {
+          <span class="season-source">
+            <app-icon [name]="sourceIcon(p.source.kind)" />
+            <span>
+              {{ p.source.where | localize: lang.lang() }}
+              @if (p.source.time) {
+                <span class="tag">{{ 'compendium.time.' + p.source.time | transloco }}</span>
+              }
+            </span>
+          </span>
+        }
+        @if (s.lastChance) {
+          <span class="tag last">{{ 'compendium.lastChance' | transloco }}</span>
+        } @else if (s.seasons.length > 0) {
+          <span class="tag">{{ 'compendium.seasonsList' | transloco: { seasons: seasonNames(s.seasons) } }}</span>
+        }
+      </span>
+      <app-icon name="chevron-right" />
+    </a>
+  </li>
+</ng-template>

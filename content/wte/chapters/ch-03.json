@@ -11,6 +11,34 @@
   "itemTexts": [],
   "entries": [
     {
+      "id": "wte-basketball-15",
+      "name": {
+        "en": "Basketball +15",
+        "pt": "Bola de Basquete +15"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "other",
+          "where": {
+            "en": "Return to the shopper in Deep Mall after the fight inside the store he unlocked",
+            "pt": "Volte ao consumidor no Shopping Profundo depois da luta na loja que ele abriu"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "offhand",
+        "stats": {
+          "en": "None",
+          "pt": "Nenhum"
+        },
+        "effect": {
+          "en": "+15% chance for Basic Attacks to hit twice.",
+          "pt": "+15% de chance de o Ataque Básico acertar duas vezes."
+        }
+      }
+    },
+    {
       "id": "wte-coral-gem",
       "name": {
         "en": "Coral Gem",
@@ -101,6 +129,34 @@
       "sell": "200g"
     },
     {
+      "id": "wte-overalls",
+      "name": {
+        "en": "Overalls",
+        "pt": "Macacão"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "drop",
+          "where": {
+            "en": "Possible reward: Deep Mall Loot",
+            "pt": "Possível recompensa: Loot: Shopping Profundo"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "legs",
+        "stats": {
+          "en": "Max HP +15; Max MP +10; Defense +6; Magic defense +6; Agility +20; Luck +5",
+          "pt": "PV máx. +15; PM máx. +10; Defesa +6; Def. mágica +6; Agilidade +20; Sorte +5"
+        },
+        "bonuses": {
+          "en": "Pockets",
+          "pt": "Bolsos"
+        }
+      }
+    },
+    {
       "id": "wte-pumpkin-pie",
       "name": {
         "en": "Pumpkin Pie",
@@ -126,6 +182,24 @@
       "sell": "40g"
     },
     {
+      "id": "wte-rich-cookie",
+      "name": {
+        "en": "Rich Cookie",
+        "pt": "Biscoito Rico"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Rich Cookie",
+            "pt": "Forno: Biscoito Rico"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
       "id": "wte-riptide-gem",
       "name": {
         "en": "Riptide Gem",
@@ -142,6 +216,70 @@
         }
       ],
       "sell": "200g"
+    },
+    {
+      "id": "wte-soft-cookie",
+      "name": {
+        "en": "Soft Cookie",
+        "pt": "Biscoito Macio"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Soft Cookie",
+            "pt": "Forno: Biscoito Macio"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-stilettos-8",
+      "name": {
+        "en": "Stilettos +8",
+        "pt": "Saltos Agulha +8"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "drop",
+          "where": {
+            "en": "Possible reward: Deep Mall Loot",
+            "pt": "Possível recompensa: Loot: Shopping Profundo"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "feet",
+        "stats": {
+          "en": "Max HP +15; Max MP +15; Attack +8; Defense +8; Magic attack +8; Magic defense +8; Agility -25; Luck +8",
+          "pt": "PV máx. +15; PM máx. +15; Ataque +8; Defesa +8; Atq. mágico +8; Def. mágica +8; Agilidade -25; Sorte +8"
+        },
+        "bonuses": {
+          "en": "Hit chance -15% / Light",
+          "pt": "Precisão -15% / Leve"
+        }
+      }
+    },
+    {
+      "id": "wte-sturdy-cookie",
+      "name": {
+        "en": "Sturdy Cookie",
+        "pt": "Biscoito Resistente"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Sturdy Cookie",
+            "pt": "Forno: Biscoito Resistente"
+          }
+        }
+      ],
+      "sell": "25g"
     },
     {
       "id": "wte-tidal-gem",
@@ -190,6 +328,319 @@
       }
     }
   ],
+  "crafts": [
+    {
+      "id": "wte-cook-rage-cookie",
+      "name": {
+        "en": "Rage Cookie",
+        "pt": "Biscoito da Fúria"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-dust",
+          "name": {
+            "en": "Damp Dust",
+            "pt": "Pó Úmido"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-elder-flour",
+          "name": {
+            "en": "Elder Flour",
+            "pt": "Farinha Anciã"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-rage-cookie",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-rich-cookie",
+      "name": {
+        "en": "Rich Cookie",
+        "pt": "Biscoito Rico"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-dust",
+          "name": {
+            "en": "Damp Dust",
+            "pt": "Pó Úmido"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-elder-flour",
+          "name": {
+            "en": "Elder Flour",
+            "pt": "Farinha Anciã"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-golden-mushroom",
+          "name": {
+            "en": "Golden Mushroom",
+            "pt": "Cogumelo Dourado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-rich-cookie",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-soft-cookie",
+      "name": {
+        "en": "Soft Cookie",
+        "pt": "Biscoito Macio"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-dust",
+          "name": {
+            "en": "Damp Dust",
+            "pt": "Pó Úmido"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-elder-flour",
+          "name": {
+            "en": "Elder Flour",
+            "pt": "Farinha Anciã"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-spectral-rain",
+          "name": {
+            "en": "Spectral Rain",
+            "pt": "Chuva Espectral"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-green-crystal",
+          "name": {
+            "en": "Green Crystal",
+            "pt": "Cristal Verde"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-soft-cookie",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-sturdy-cookie",
+      "name": {
+        "en": "Sturdy Cookie",
+        "pt": "Biscoito Resistente"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-dust",
+          "name": {
+            "en": "Damp Dust",
+            "pt": "Pó Úmido"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-elder-flour",
+          "name": {
+            "en": "Elder Flour",
+            "pt": "Farinha Anciã"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rock-dweller",
+          "name": {
+            "en": "Rock-Dweller",
+            "pt": "Morador-das-pedras"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-stonelurker",
+          "name": {
+            "en": "Stonelurker",
+            "pt": "Espreitador-de-pedra"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-platinum-bar",
+          "name": {
+            "en": "Platinum Bar",
+            "pt": "Barra de Platina"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-sturdy-cookie",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-sweet-cookie",
+      "name": {
+        "en": "Sweet Cookie",
+        "pt": "Biscoito Doce"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-dust",
+          "name": {
+            "en": "Damp Dust",
+            "pt": "Pó Úmido"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-elder-flour",
+          "name": {
+            "en": "Elder Flour",
+            "pt": "Farinha Anciã"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-honey",
+          "name": {
+            "en": "Honey",
+            "pt": "Mel"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-bone-honey",
+          "name": {
+            "en": "Bone Honey",
+            "pt": "Mel de Osso"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-sweet-cookie",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    }
+  ],
   "creatures": [
     {
       "id": "wte-cr-best-friend",
@@ -203,7 +654,43 @@
           "pt": "Porão (Subsolo do Shopping)"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insight Attacks. Deals Curse Damage",
+        "pt": "Fraco contra ataques de Percepção. Causa dano de Maldição"
+      },
+      "rewards": [
+        {
+          "how": "victory",
+          "items": [
+            {
+              "entryId": "wte-crystal-flask",
+              "name": {
+                "en": "Crystal Flask",
+                "pt": "Frasco de Cristal"
+              }
+            },
+            {
+              "entryId": "wte-dreamleaf-seed",
+              "name": {
+                "en": "Dreamleaf Seed",
+                "pt": "Semente de Folha-dos-sonhos"
+              }
+            },
+            {
+              "entryId": "wte-dreampearl-seed",
+              "name": {
+                "en": "Dreampearl Seed",
+                "pt": "Semente de Pérola-dos-sonhos"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Best Friend Victory Rewards",
+            "pt": "Recompensas de vitória: Melhor Amigo"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-colossal-rat",
@@ -221,7 +708,96 @@
           "pt": "Subsolo do Shopping — Loja"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insanity Attacks. Deals Light Damage",
+        "pt": "Fraco contra ataques de Insanidade. Causa dano de Luz"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "name": {
+                "en": "Damp Plank",
+                "pt": "Tábua Úmida"
+              }
+            },
+            {
+              "entryId": "wte-eldritch-tears",
+              "name": {
+                "en": "Eldritch Tears",
+                "pt": "Lágrimas Sobrenaturais"
+              }
+            },
+            {
+              "entryId": "wte-entrails",
+              "name": {
+                "en": "Entrails",
+                "pt": "Entranhas"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-viscera",
+              "name": {
+                "en": "Viscera",
+                "pt": "Vísceras"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "name": {
+                "en": "Coldheart Pendant +10",
+                "pt": "Pingente Coração-frio +10"
+              }
+            },
+            {
+              "entryId": "wte-elder-coral",
+              "name": {
+                "en": "Elder Coral",
+                "pt": "Coral Ancião"
+              }
+            },
+            {
+              "entryId": "wte-overalls",
+              "name": {
+                "en": "Overalls",
+                "pt": "Macacão"
+              }
+            },
+            {
+              "name": {
+                "en": "Soultrap Necklace +10",
+                "pt": "Colar Prende-almas +10"
+              }
+            },
+            {
+              "entryId": "wte-stilettos-8",
+              "name": {
+                "en": "Stilettos +8",
+                "pt": "Saltos Agulha +8"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Mall Loot",
+            "pt": "Loot: Shopping Profundo"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-emissary-of-daeus",
@@ -270,7 +846,96 @@
           "pt": "Subsolo do Shopping — Loja"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Light Attacks. Deals Insanity Damage",
+        "pt": "Fraco contra ataques de Luz. Causa dano de Insanidade"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "name": {
+                "en": "Damp Plank",
+                "pt": "Tábua Úmida"
+              }
+            },
+            {
+              "entryId": "wte-eldritch-tears",
+              "name": {
+                "en": "Eldritch Tears",
+                "pt": "Lágrimas Sobrenaturais"
+              }
+            },
+            {
+              "entryId": "wte-entrails",
+              "name": {
+                "en": "Entrails",
+                "pt": "Entranhas"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-viscera",
+              "name": {
+                "en": "Viscera",
+                "pt": "Vísceras"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "name": {
+                "en": "Coldheart Pendant +10",
+                "pt": "Pingente Coração-frio +10"
+              }
+            },
+            {
+              "entryId": "wte-elder-coral",
+              "name": {
+                "en": "Elder Coral",
+                "pt": "Coral Ancião"
+              }
+            },
+            {
+              "entryId": "wte-overalls",
+              "name": {
+                "en": "Overalls",
+                "pt": "Macacão"
+              }
+            },
+            {
+              "name": {
+                "en": "Soultrap Necklace +10",
+                "pt": "Colar Prende-almas +10"
+              }
+            },
+            {
+              "entryId": "wte-stilettos-8",
+              "name": {
+                "en": "Stilettos +8",
+                "pt": "Saltos Agulha +8"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Mall Loot",
+            "pt": "Loot: Shopping Profundo"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-fungal-swarm",
@@ -284,7 +949,239 @@
           "pt": "Passagem Selada"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Curse Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Maldição. Causa dano de Percepção"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-bloody-skin",
+              "name": {
+                "en": "Bloody Skin",
+                "pt": "Pele Ensanguentada"
+              }
+            },
+            {
+              "entryId": "wte-creature-claw",
+              "name": {
+                "en": "Creature Claw",
+                "pt": "Garra de Criatura"
+              }
+            },
+            {
+              "entryId": "wte-mysterious-ooze",
+              "name": {
+                "en": "Mysterious Ooze",
+                "pt": "Gosma Misteriosa"
+              }
+            },
+            {
+              "entryId": "wte-mystery-meat",
+              "name": {
+                "en": "Mystery Meat",
+                "pt": "Carne Misteriosa"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "name": {
+                "en": "Flask of the Gods (HP)",
+                "pt": "Frasco dos Deuses (PV)"
+              }
+            },
+            {
+              "name": {
+                "en": "Flask of the Gods (MP)",
+                "pt": "Frasco dos Deuses (PM)"
+              }
+            },
+            {
+              "entryId": "wte-leech",
+              "name": {
+                "en": "Leech",
+                "pt": "Sanguessuga"
+              }
+            },
+            {
+              "name": {
+                "en": "Wand of Parks and Recreation",
+                "pt": "Varinha de Parques e Recreação"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Sewers and Mine Strong Enemy Loot",
+            "pt": "Loot de inimigo forte: Esgotos e Mina"
+          },
+          "also": [
+            {
+              "name": {
+                "en": "Random Potions",
+                "pt": "Poções aleatórias"
+              },
+              "items": [
+                {
+                  "entryId": "wte-blessing-potion-of-brutalism",
+                  "name": {
+                    "en": "Blessing Potion of Brutalism",
+                    "pt": "Poção de Bênção: Brutalidade"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-daring",
+                  "name": {
+                    "en": "Blessing Potion of Daring",
+                    "pt": "Poção de Bênção: Ousadia"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-greed",
+                  "name": {
+                    "en": "Blessing Potion of Greed",
+                    "pt": "Poção de Bênção: Ganância"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-panic",
+                  "name": {
+                    "en": "Blessing Potion of Panic",
+                    "pt": "Poção de Bênção: Pânico"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-skepticism",
+                  "name": {
+                    "en": "Blessing Potion of Skepticism",
+                    "pt": "Poção de Bênção: Ceticismo"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-stubbornness",
+                  "name": {
+                    "en": "Blessing Potion of Stubbornness",
+                    "pt": "Poção de Bênção: Teimosia"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-zealotry",
+                  "name": {
+                    "en": "Blessing Potion of Zealotry",
+                    "pt": "Poção de Bênção: Fanatismo"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-brutalism",
+                  "name": {
+                    "en": "Fickle Potion of Brutalism",
+                    "pt": "Poção Volúvel de Brutalidade"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-daring",
+                  "name": {
+                    "en": "Fickle Potion of Daring",
+                    "pt": "Poção Volúvel de Ousadia"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-greed",
+                  "name": {
+                    "en": "Fickle Potion of Greed",
+                    "pt": "Poção Volúvel de Ganância"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-panic",
+                  "name": {
+                    "en": "Fickle Potion of Panic",
+                    "pt": "Poção Volúvel de Pânico"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-skepticism",
+                  "name": {
+                    "en": "Fickle Potion of Skepticism",
+                    "pt": "Poção Volúvel de Ceticismo"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-stubbornness",
+                  "name": {
+                    "en": "Fickle Potion of Stubbornness",
+                    "pt": "Poção Volúvel de Teimosia"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-zealotry",
+                  "name": {
+                    "en": "Fickle Potion of Zealotry",
+                    "pt": "Poção Volúvel de Fanatismo"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-chaos",
+                  "name": {
+                    "en": "Restore Potion of Chaos",
+                    "pt": "Poção Restauradora de Caos"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-doom",
+                  "name": {
+                    "en": "Restore Potion of Doom",
+                    "pt": "Poção Restauradora de Ruína"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-dread",
+                  "name": {
+                    "en": "Restore Potion of Dread",
+                    "pt": "Poção Restauradora de Pavor"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-fear",
+                  "name": {
+                    "en": "Restore Potion of Fear",
+                    "pt": "Poção Restauradora de Medo"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-hex",
+                  "name": {
+                    "en": "Restore Potion of Hex",
+                    "pt": "Poção Restauradora de Maldição"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-sickness",
+                  "name": {
+                    "en": "Restore Potion of Sickness",
+                    "pt": "Poção Restauradora de Doença"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-weakness",
+                  "name": {
+                    "en": "Restore Potion of Weakness",
+                    "pt": "Poção Restauradora de Fraqueza"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "wte-cr-garbage-mimic",
@@ -310,7 +1207,59 @@
           "pt": "Subsolo do Shopping — Loja"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insight Attacks. Deals Insanity Damage",
+        "pt": "Fraco contra ataques de Percepção. Causa dano de Insanidade"
+      },
+      "rewards": [
+        {
+          "how": "victory",
+          "items": [
+            {
+              "name": {
+                "en": "Classroom 103 Key",
+                "pt": "Chave da Sala 103"
+              }
+            },
+            {
+              "name": {
+                "en": "Classroom 106 Key",
+                "pt": "Chave da Sala 106"
+              }
+            },
+            {
+              "name": {
+                "en": "Damp Nails",
+                "pt": "Pregos Úmidos"
+              }
+            },
+            {
+              "name": {
+                "en": "Love Potion",
+                "pt": "Poção do Amor"
+              }
+            },
+            {
+              "entryId": "wte-scrap-metal",
+              "name": {
+                "en": "Scrap Metal",
+                "pt": "Sucata"
+              }
+            },
+            {
+              "name": {
+                "en": "Wishbone",
+                "pt": "Ossinho da Sorte"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Garbage Mimic Victory Rewards",
+            "pt": "Recompensas de vitória: Lixeira Mímica"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-gem-golem",
@@ -324,7 +1273,28 @@
           "pt": "Passagem Selada"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insanity Attacks. Deals Light Damage",
+        "pt": "Fraco contra ataques de Insanidade. Causa dano de Luz"
+      },
+      "rewards": [
+        {
+          "how": "victory",
+          "items": [
+            {
+              "name": {
+                "en": "Elder Gem",
+                "pt": "Gema Anciã"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Gem Golem Victory Rewards",
+            "pt": "Recompensas de vitória: Golem de Gemas"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-giant-man-fish",
@@ -339,6 +1309,10 @@
         }
       ],
       "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insanity Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Insanidade. Causa dano de Percepção"
+      },
       "rewards": [
         {
           "how": "event",
@@ -379,7 +1353,96 @@
           "pt": "Subsolo do Shopping — Loja"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Darkness Attacks. Deals Darkness Damage",
+        "pt": "Fraco contra ataques de Trevas. Causa dano de Trevas"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "name": {
+                "en": "Damp Plank",
+                "pt": "Tábua Úmida"
+              }
+            },
+            {
+              "entryId": "wte-eldritch-tears",
+              "name": {
+                "en": "Eldritch Tears",
+                "pt": "Lágrimas Sobrenaturais"
+              }
+            },
+            {
+              "entryId": "wte-entrails",
+              "name": {
+                "en": "Entrails",
+                "pt": "Entranhas"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-viscera",
+              "name": {
+                "en": "Viscera",
+                "pt": "Vísceras"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "name": {
+                "en": "Coldheart Pendant +10",
+                "pt": "Pingente Coração-frio +10"
+              }
+            },
+            {
+              "entryId": "wte-elder-coral",
+              "name": {
+                "en": "Elder Coral",
+                "pt": "Coral Ancião"
+              }
+            },
+            {
+              "entryId": "wte-overalls",
+              "name": {
+                "en": "Overalls",
+                "pt": "Macacão"
+              }
+            },
+            {
+              "name": {
+                "en": "Soultrap Necklace +10",
+                "pt": "Colar Prende-almas +10"
+              }
+            },
+            {
+              "entryId": "wte-stilettos-8",
+              "name": {
+                "en": "Stilettos +8",
+                "pt": "Saltos Agulha +8"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Mall Loot",
+            "pt": "Loot: Shopping Profundo"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-hungry-sister",
@@ -393,7 +1456,43 @@
           "pt": "Banheiro (Subsolo do Shopping)"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insight Attacks. Deals Curse Damage",
+        "pt": "Fraco contra ataques de Percepção. Causa dano de Maldição"
+      },
+      "rewards": [
+        {
+          "how": "victory",
+          "items": [
+            {
+              "entryId": "wte-crystal-flask",
+              "name": {
+                "en": "Crystal Flask",
+                "pt": "Frasco de Cristal"
+              }
+            },
+            {
+              "entryId": "wte-dreamleaf-seed",
+              "name": {
+                "en": "Dreamleaf Seed",
+                "pt": "Semente de Folha-dos-sonhos"
+              }
+            },
+            {
+              "entryId": "wte-dreampearl-seed",
+              "name": {
+                "en": "Dreampearl Seed",
+                "pt": "Semente de Pérola-dos-sonhos"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Hungry Sister Victory Rewards",
+            "pt": "Recompensas de vitória: Irmã Faminta"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-lost-schoolboy",
@@ -449,7 +1548,239 @@
           "pt": "Passagem Selada"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Darkness Attacks. Deals Curse Damage",
+        "pt": "Fraco contra ataques de Trevas. Causa dano de Maldição"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-bloody-skin",
+              "name": {
+                "en": "Bloody Skin",
+                "pt": "Pele Ensanguentada"
+              }
+            },
+            {
+              "entryId": "wte-creature-claw",
+              "name": {
+                "en": "Creature Claw",
+                "pt": "Garra de Criatura"
+              }
+            },
+            {
+              "entryId": "wte-mysterious-ooze",
+              "name": {
+                "en": "Mysterious Ooze",
+                "pt": "Gosma Misteriosa"
+              }
+            },
+            {
+              "entryId": "wte-mystery-meat",
+              "name": {
+                "en": "Mystery Meat",
+                "pt": "Carne Misteriosa"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "name": {
+                "en": "Flask of the Gods (HP)",
+                "pt": "Frasco dos Deuses (PV)"
+              }
+            },
+            {
+              "name": {
+                "en": "Flask of the Gods (MP)",
+                "pt": "Frasco dos Deuses (PM)"
+              }
+            },
+            {
+              "entryId": "wte-leech",
+              "name": {
+                "en": "Leech",
+                "pt": "Sanguessuga"
+              }
+            },
+            {
+              "name": {
+                "en": "Wand of Parks and Recreation",
+                "pt": "Varinha de Parques e Recreação"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Sewers and Mine Strong Enemy Loot",
+            "pt": "Loot de inimigo forte: Esgotos e Mina"
+          },
+          "also": [
+            {
+              "name": {
+                "en": "Random Potions",
+                "pt": "Poções aleatórias"
+              },
+              "items": [
+                {
+                  "entryId": "wte-blessing-potion-of-brutalism",
+                  "name": {
+                    "en": "Blessing Potion of Brutalism",
+                    "pt": "Poção de Bênção: Brutalidade"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-daring",
+                  "name": {
+                    "en": "Blessing Potion of Daring",
+                    "pt": "Poção de Bênção: Ousadia"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-greed",
+                  "name": {
+                    "en": "Blessing Potion of Greed",
+                    "pt": "Poção de Bênção: Ganância"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-panic",
+                  "name": {
+                    "en": "Blessing Potion of Panic",
+                    "pt": "Poção de Bênção: Pânico"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-skepticism",
+                  "name": {
+                    "en": "Blessing Potion of Skepticism",
+                    "pt": "Poção de Bênção: Ceticismo"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-stubbornness",
+                  "name": {
+                    "en": "Blessing Potion of Stubbornness",
+                    "pt": "Poção de Bênção: Teimosia"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-zealotry",
+                  "name": {
+                    "en": "Blessing Potion of Zealotry",
+                    "pt": "Poção de Bênção: Fanatismo"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-brutalism",
+                  "name": {
+                    "en": "Fickle Potion of Brutalism",
+                    "pt": "Poção Volúvel de Brutalidade"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-daring",
+                  "name": {
+                    "en": "Fickle Potion of Daring",
+                    "pt": "Poção Volúvel de Ousadia"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-greed",
+                  "name": {
+                    "en": "Fickle Potion of Greed",
+                    "pt": "Poção Volúvel de Ganância"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-panic",
+                  "name": {
+                    "en": "Fickle Potion of Panic",
+                    "pt": "Poção Volúvel de Pânico"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-skepticism",
+                  "name": {
+                    "en": "Fickle Potion of Skepticism",
+                    "pt": "Poção Volúvel de Ceticismo"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-stubbornness",
+                  "name": {
+                    "en": "Fickle Potion of Stubbornness",
+                    "pt": "Poção Volúvel de Teimosia"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-zealotry",
+                  "name": {
+                    "en": "Fickle Potion of Zealotry",
+                    "pt": "Poção Volúvel de Fanatismo"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-chaos",
+                  "name": {
+                    "en": "Restore Potion of Chaos",
+                    "pt": "Poção Restauradora de Caos"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-doom",
+                  "name": {
+                    "en": "Restore Potion of Doom",
+                    "pt": "Poção Restauradora de Ruína"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-dread",
+                  "name": {
+                    "en": "Restore Potion of Dread",
+                    "pt": "Poção Restauradora de Pavor"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-fear",
+                  "name": {
+                    "en": "Restore Potion of Fear",
+                    "pt": "Poção Restauradora de Medo"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-hex",
+                  "name": {
+                    "en": "Restore Potion of Hex",
+                    "pt": "Poção Restauradora de Maldição"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-sickness",
+                  "name": {
+                    "en": "Restore Potion of Sickness",
+                    "pt": "Poção Restauradora de Doença"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-weakness",
+                  "name": {
+                    "en": "Restore Potion of Weakness",
+                    "pt": "Poção Restauradora de Fraqueza"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "wte-cr-stoneface",
@@ -463,7 +1794,239 @@
           "pt": "Passagem Selada"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Light Attacks. Deals Darkness Damage",
+        "pt": "Fraco contra ataques de Luz. Causa dano de Trevas"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-bloody-skin",
+              "name": {
+                "en": "Bloody Skin",
+                "pt": "Pele Ensanguentada"
+              }
+            },
+            {
+              "entryId": "wte-creature-claw",
+              "name": {
+                "en": "Creature Claw",
+                "pt": "Garra de Criatura"
+              }
+            },
+            {
+              "entryId": "wte-mysterious-ooze",
+              "name": {
+                "en": "Mysterious Ooze",
+                "pt": "Gosma Misteriosa"
+              }
+            },
+            {
+              "entryId": "wte-mystery-meat",
+              "name": {
+                "en": "Mystery Meat",
+                "pt": "Carne Misteriosa"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "name": {
+                "en": "Flask of the Gods (HP)",
+                "pt": "Frasco dos Deuses (PV)"
+              }
+            },
+            {
+              "name": {
+                "en": "Flask of the Gods (MP)",
+                "pt": "Frasco dos Deuses (PM)"
+              }
+            },
+            {
+              "entryId": "wte-leech",
+              "name": {
+                "en": "Leech",
+                "pt": "Sanguessuga"
+              }
+            },
+            {
+              "name": {
+                "en": "Wand of Parks and Recreation",
+                "pt": "Varinha de Parques e Recreação"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Sewers and Mine Strong Enemy Loot",
+            "pt": "Loot de inimigo forte: Esgotos e Mina"
+          },
+          "also": [
+            {
+              "name": {
+                "en": "Random Potions",
+                "pt": "Poções aleatórias"
+              },
+              "items": [
+                {
+                  "entryId": "wte-blessing-potion-of-brutalism",
+                  "name": {
+                    "en": "Blessing Potion of Brutalism",
+                    "pt": "Poção de Bênção: Brutalidade"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-daring",
+                  "name": {
+                    "en": "Blessing Potion of Daring",
+                    "pt": "Poção de Bênção: Ousadia"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-greed",
+                  "name": {
+                    "en": "Blessing Potion of Greed",
+                    "pt": "Poção de Bênção: Ganância"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-panic",
+                  "name": {
+                    "en": "Blessing Potion of Panic",
+                    "pt": "Poção de Bênção: Pânico"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-skepticism",
+                  "name": {
+                    "en": "Blessing Potion of Skepticism",
+                    "pt": "Poção de Bênção: Ceticismo"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-stubbornness",
+                  "name": {
+                    "en": "Blessing Potion of Stubbornness",
+                    "pt": "Poção de Bênção: Teimosia"
+                  }
+                },
+                {
+                  "entryId": "wte-blessing-potion-of-zealotry",
+                  "name": {
+                    "en": "Blessing Potion of Zealotry",
+                    "pt": "Poção de Bênção: Fanatismo"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-brutalism",
+                  "name": {
+                    "en": "Fickle Potion of Brutalism",
+                    "pt": "Poção Volúvel de Brutalidade"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-daring",
+                  "name": {
+                    "en": "Fickle Potion of Daring",
+                    "pt": "Poção Volúvel de Ousadia"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-greed",
+                  "name": {
+                    "en": "Fickle Potion of Greed",
+                    "pt": "Poção Volúvel de Ganância"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-panic",
+                  "name": {
+                    "en": "Fickle Potion of Panic",
+                    "pt": "Poção Volúvel de Pânico"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-skepticism",
+                  "name": {
+                    "en": "Fickle Potion of Skepticism",
+                    "pt": "Poção Volúvel de Ceticismo"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-stubbornness",
+                  "name": {
+                    "en": "Fickle Potion of Stubbornness",
+                    "pt": "Poção Volúvel de Teimosia"
+                  }
+                },
+                {
+                  "entryId": "wte-fickle-potion-of-zealotry",
+                  "name": {
+                    "en": "Fickle Potion of Zealotry",
+                    "pt": "Poção Volúvel de Fanatismo"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-chaos",
+                  "name": {
+                    "en": "Restore Potion of Chaos",
+                    "pt": "Poção Restauradora de Caos"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-doom",
+                  "name": {
+                    "en": "Restore Potion of Doom",
+                    "pt": "Poção Restauradora de Ruína"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-dread",
+                  "name": {
+                    "en": "Restore Potion of Dread",
+                    "pt": "Poção Restauradora de Pavor"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-fear",
+                  "name": {
+                    "en": "Restore Potion of Fear",
+                    "pt": "Poção Restauradora de Medo"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-hex",
+                  "name": {
+                    "en": "Restore Potion of Hex",
+                    "pt": "Poção Restauradora de Maldição"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-sickness",
+                  "name": {
+                    "en": "Restore Potion of Sickness",
+                    "pt": "Poção Restauradora de Doença"
+                  }
+                },
+                {
+                  "entryId": "wte-restore-potion-of-weakness",
+                  "name": {
+                    "en": "Restore Potion of Weakness",
+                    "pt": "Poção Restauradora de Fraqueza"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "wte-cr-teacher",
@@ -491,7 +2054,98 @@
           "pt": "Porão (Subsolo do Shopping)"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Darkness Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Trevas. Causa dano de Percepção"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "name": {
+                "en": "Apple",
+                "pt": "Maçã"
+              }
+            },
+            {
+              "entryId": "wte-bloody-skin",
+              "name": {
+                "en": "Bloody Skin",
+                "pt": "Pele Ensanguentada"
+              }
+            },
+            {
+              "entryId": "wte-brain",
+              "name": {
+                "en": "Brain",
+                "pt": "Cérebro"
+              }
+            },
+            {
+              "entryId": "wte-entrails",
+              "name": {
+                "en": "Entrails",
+                "pt": "Entranhas"
+              }
+            },
+            {
+              "entryId": "wte-mystery-meat",
+              "name": {
+                "en": "Mystery Meat",
+                "pt": "Carne Misteriosa"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-viscera",
+              "name": {
+                "en": "Viscera",
+                "pt": "Vísceras"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "entryId": "wte-dreamleaf-seed",
+              "name": {
+                "en": "Dreamleaf Seed",
+                "pt": "Semente de Folha-dos-sonhos"
+              }
+            },
+            {
+              "entryId": "wte-dreampearl-seed",
+              "name": {
+                "en": "Dreampearl Seed",
+                "pt": "Semente de Pérola-dos-sonhos"
+              }
+            },
+            {
+              "entryId": "wte-extra-pouch",
+              "name": {
+                "en": "Extra Pouch",
+                "pt": "Bolsa Extra"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Teacher's Pet Loot",
+            "pt": "Loot do Queridinho da Professora"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-wet-mouth",
@@ -509,7 +2163,96 @@
           "pt": "Subsolo do Shopping — Loja"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Curse Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Maldição. Causa dano de Percepção"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "name": {
+                "en": "Damp Plank",
+                "pt": "Tábua Úmida"
+              }
+            },
+            {
+              "entryId": "wte-eldritch-tears",
+              "name": {
+                "en": "Eldritch Tears",
+                "pt": "Lágrimas Sobrenaturais"
+              }
+            },
+            {
+              "entryId": "wte-entrails",
+              "name": {
+                "en": "Entrails",
+                "pt": "Entranhas"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-viscera",
+              "name": {
+                "en": "Viscera",
+                "pt": "Vísceras"
+              }
+            },
+            {
+              "entryId": "wte-cleansing-balm",
+              "name": {
+                "en": "Cleansing Balm",
+                "pt": "Bálsamo Purificador"
+              }
+            },
+            {
+              "name": {
+                "en": "Coldheart Pendant +10",
+                "pt": "Pingente Coração-frio +10"
+              }
+            },
+            {
+              "entryId": "wte-elder-coral",
+              "name": {
+                "en": "Elder Coral",
+                "pt": "Coral Ancião"
+              }
+            },
+            {
+              "entryId": "wte-overalls",
+              "name": {
+                "en": "Overalls",
+                "pt": "Macacão"
+              }
+            },
+            {
+              "name": {
+                "en": "Soultrap Necklace +10",
+                "pt": "Colar Prende-almas +10"
+              }
+            },
+            {
+              "entryId": "wte-stilettos-8",
+              "name": {
+                "en": "Stilettos +8",
+                "pt": "Saltos Agulha +8"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Mall Loot",
+            "pt": "Loot: Shopping Profundo"
+          }
+        }
+      ]
     }
   ]
 }

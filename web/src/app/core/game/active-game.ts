@@ -29,6 +29,7 @@ export class ActiveGame {
     const c = this.manifest()?.collections;
     return !c || c.fish + c.recipes > 0;
   });
+  readonly hasSeasons = computed(() => (this.manifest()?.compendium?.seasonal ?? 0) > 0);
   readonly hasDeadlines = computed(() => (this.manifest()?.deadlines ?? 1) > 0);
 
   /** The i18n key worded for this game's progress term (chapters or areas). */

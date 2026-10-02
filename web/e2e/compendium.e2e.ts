@@ -44,9 +44,14 @@ test('reaching a later area adds its sources; creatures that give items have a d
   await expect(page.getByText('Area 2 onwards')).toBeVisible();
 
   await page.goto('/cc/compendium?tab=creatures');
-  await expect(page.getByText('Grinning Scarecrow')).toBeVisible();
   await page.getByRole('button', { name: 'Only those that give items' }).click();
-  await expect(page.getByText('Grinning Scarecrow')).toBeHidden();
+  await page.getByRole('link', { name: 'Grinning Scarecrow' }).click();
+  await expect(page.getByText('Weak point: Weak to Light Attacks')).toBeVisible();
+  await expect(page.getByText('Battle loot · Farm Common Loot')).toBeVisible();
+  await page.getByText('Can also draw from Random Potions (1)').click();
+  await expect(page.getByText('Chaos Potion')).toBeVisible();
+
+  await page.goto('/cc/compendium?tab=creatures');
   await page.getByRole('link', { name: 'Cellar Thing' }).click();
 
   await expect(page.getByRole('heading', { level: 1, name: 'Cellar Thing' })).toBeVisible();
@@ -71,4 +76,36 @@ test('a made recipe stays ticked', async ({ page }) => {
   await expectSaved(page, 'cc-cook-herb-tea');
   await page.goto('/cc/compendium?tab=crafts&c=cook');
   await expect(page.getByRole('checkbox', { name: 'Herb Tea' })).toBeChecked();
+});
+
+test('the season view shows what only this season has, last chances first, for reached areas only', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.getByRole('link', { name: 'What does your season bring?' }).click();
+  await expect(page.getByText('Pick your season to see what it brings.')).toBeVisible();
+
+  await page.getByRole('button', { name: 'Summer (Harvest)' }).click();
+  const only = page.getByRole('region', { name: /Only this season/ });
+  await expect(only.getByRole('link')).toHaveText([/Glow Fish.*Night.*Last chance/, /Frost Eel.*Seasons: summer, autumn/]);
+  await expect(page.locator('main')).not.toContainText('Moon Carp');
+
+  await page.getByRole('button', { name: 'Spring (Rebirth)' }).click();
+  await expect(page.getByText('Coming in Summer (Harvest) (2)')).toBeVisible();
+
+  // Seeds show up in the season they can be planted, flagged when it is their last one.
+  await page.getByRole('button', { name: 'Autumn (Witch)' }).click();
+  const plant = page.getByRole('region', { name: /To plant now/ });
+  await expect(plant.getByRole('link')).toHaveText([/Squash Seed.*Grows in 12 days.*Last season to plant it/]);
+
+  // The season is remembered for the game.
+  await page.goto('/cc/chapters/cc-ch0');
+  await expect(page.getByRole('link', { name: 'This season: Autumn (Witch)' })).toBeVisible();
+});
+
+test('equipment shows its slot, stats and effect', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/compendium?c=equipment');
+  await page.getByRole('link', { name: /Iron Sword \+2.*Weapon/ }).click();
+  await expect(page.getByRole('heading', { level: 2, name: 'Equipment: Weapon' })).toBeVisible();
+  await expect(page.getByRole('listitem').filter({ hasText: 'Attack +6' })).toBeVisible();
+  await expect(page.getByText('+25% chance for Basic Attacks to add +1 Lethal point')).toBeVisible();
 });

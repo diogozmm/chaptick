@@ -224,6 +224,7 @@ MAPS = {
 
 # How each recipe becomes available ("unlock"), English as the wiki has it → our Portuguese.
 UNLOCKS = {
+    'Known at start': 'Conhecida desde o início', 'Learned later': 'Aprendida mais tarde',
     'Automatically available with workbench': 'Disponível desde o início na bancada',
     'Automatically available at the Forge': 'Disponível desde o início na forja',
     "Automatically available with Craftsman's Bench": 'Disponível desde o início na Bancada do Artesão',

@@ -127,13 +127,14 @@ function compendiumErrors(chapters) {
   for (const { file, data } of chapters) {
     const refs = [
       ...(data.entrySources ?? []).map((s) => ['a later source', s.entryId]),
+      ...(data.entries ?? []).filter((e) => e.grow?.crop).map((e) => [`seed "${e.id}"`, e.grow.crop]),
       ...(data.crafts ?? []).flatMap((c) => [
         ...c.ingredients.filter((i) => i.entryId).map((i) => [`craft "${c.id}"`, i.entryId]),
         ...(c.makes ? [[`craft "${c.id}"`, c.makes]] : []),
       ]),
       ...(data.creatures ?? []).flatMap((c) =>
         (c.rewards ?? [])
-          .flatMap((r) => [...r.items, ...(r.gives ?? [])])
+          .flatMap((r) => [...r.items, ...(r.gives ?? []), ...(r.also ?? []).flatMap((a) => a.items)])
           .filter((i) => i.entryId)
           .map((i) => [`creature "${c.id}"`, i.entryId]),
       ),

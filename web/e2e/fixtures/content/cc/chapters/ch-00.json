@@ -58,6 +58,94 @@
           }
         }
       ]
+    },
+    {
+      "id": "cc-glow-fish",
+      "name": {
+        "en": "Glow Fish"
+      },
+      "category": "fish",
+      "sources": [
+        {
+          "kind": "fish",
+          "where": {
+            "en": "Pond"
+          },
+          "seasons": [
+            "summer"
+          ],
+          "time": "night"
+        }
+      ]
+    },
+    {
+      "id": "cc-frost-eel",
+      "name": {
+        "en": "Frost Eel"
+      },
+      "category": "fish",
+      "sources": [
+        {
+          "kind": "fish",
+          "where": {
+            "en": "Pond"
+          },
+          "seasons": [
+            "summer",
+            "autumn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cc-squash-seed",
+      "name": {
+        "en": "Squash Seed"
+      },
+      "category": "seeds",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Seed Stand"
+          }
+        }
+      ],
+      "grow": {
+        "seasons": [
+          "autumn"
+        ],
+        "days": 12,
+        "harvests": 1,
+        "yield": "1"
+      }
+    },
+    {
+      "id": "cc-iron-sword-2",
+      "name": {
+        "en": "Iron Sword +2"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Forge"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "weapon",
+        "stats": {
+          "en": "Attack +6; Agility -2"
+        },
+        "bonuses": {
+          "en": "Piercing"
+        },
+        "effect": {
+          "en": "+25% chance for Basic Attacks to add +1 Lethal point"
+        }
+      }
     }
   ],
   "crafts": [
@@ -93,7 +181,40 @@
           "en": "Farm"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Light Attacks"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "pool": {
+            "en": "Farm Common Loot"
+          },
+          "items": [
+            {
+              "entryId": "cc-bitter-herb",
+              "name": {
+                "en": "Bitter Herb"
+              }
+            }
+          ],
+          "also": [
+            {
+              "name": {
+                "en": "Random Potions"
+              },
+              "items": [
+                {
+                  "name": {
+                    "en": "Chaos Potion"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

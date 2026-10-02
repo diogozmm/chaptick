@@ -82,7 +82,7 @@ export interface Manifest {
   collections?: { fish: number; recipes: number };
   features?: GameFeature[];
   /** Compendium totals (counts only). */
-  compendium?: { entries: number; crafts: number; creatures: number };
+  compendium?: { entries: number; crafts: number; creatures: number; seasonal?: number };
   /** How many items have a deadline, so games without any can hide the deadlines screen. */
   deadlines?: number;
   chapters: ChapterSummary[];
@@ -157,13 +157,14 @@ export interface Recipe {
   sources: string[];
 }
 
-export const ENTRY_CATEGORIES = ['materials', 'gems', 'metals', 'fish', 'crops', 'seeds', 'food', 'potions', 'tools'] as const;
+export const ENTRY_CATEGORIES = ['materials', 'gems', 'metals', 'fish', 'crops', 'seeds', 'food', 'potions', 'tools', 'equipment'] as const;
 export type EntryCategory = (typeof ENTRY_CATEGORIES)[number];
 export const SOURCE_KINDS = [
   'found', 'shop', 'forage', 'fish', 'gather', 'loot', 'random', 'task', 'drop', 'craft', 'cook', 'process', 'other',
 ] as const;
 export type SourceKind = (typeof SOURCE_KINDS)[number];
 export type Season = 'spring' | 'summer' | 'autumn' | 'winter';
+export type GearSlot = 'weapon' | 'offhand' | 'head' | 'body' | 'legs' | 'feet';
 
 /** One way to get a compendium entry: places, shops and stations, as the game names them. */
 export interface Source {
@@ -180,6 +181,10 @@ export interface Entry {
   category: EntryCategory;
   sell?: string;
   sources: Source[];
+  /** For equipment: where it goes, what it changes and any special effect. */
+  gear?: { slot: GearSlot; stats?: Localized; bonuses?: Localized; effect?: Localized };
+  /** For seeds: when they can be planted and how they grow. */
+  grow?: { seasons: Season[]; days: number | null; harvests: number; yield: string; crop?: string };
 }
 
 /** A further way to get an earlier entry, only known from this chapter or area on. */
@@ -199,6 +204,8 @@ export interface Craft {
   ingredients: { entryId?: string; name: Localized; qty: number }[];
   makes?: string;
   unlock?: Localized;
+  /** Chance the recipe works, when below 100%. */
+  success?: string;
 }
 
 /** An item a creature hands over; linked when it is in the compendium. */
@@ -207,9 +214,16 @@ export interface RewardItem {
   name: Localized;
 }
 
-/** How a creature gives items: stolen in battle (with a chance), or at a fight or meeting. */
+/**
+ * How a creature gives items: stolen in battle (with a chance), at a fight or meeting, from a
+ * battle loot pool, or as what winning that fight can give.
+ */
 export interface CreatureReward {
-  how: 'steal' | 'event';
+  how: 'steal' | 'event' | 'loot' | 'victory';
+  /** The loot pool's name. */
+  pool?: Localized;
+  /** Shared pools this one can also draw from. */
+  also?: { name: Localized; items: RewardItem[] }[];
   items: RewardItem[];
   chance?: string;
   /** Which version of the creature, for steals. */
@@ -226,6 +240,8 @@ export interface Creature {
   name: Localized;
   where: Localized[];
   spoilerLevel: SpoilerLevel;
+  /** Weak points and the damage it deals. */
+  notes?: Localized;
   rewards?: CreatureReward[];
 }
 

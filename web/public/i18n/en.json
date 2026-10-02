@@ -305,7 +305,8 @@
     "tab": {
       "items": "Items",
       "crafts": "Recipes",
-      "creatures": "Creatures"
+      "creatures": "Creatures",
+      "season": "Season"
     },
     "searchLabel": "Search items",
     "searchPlaceholder": "Bitter Herb, bones, copper…",
@@ -323,7 +324,8 @@
       "seeds": "Seeds",
       "food": "Food",
       "potions": "Potions",
-      "tools": "Tools"
+      "tools": "Tools",
+      "equipment": "Equipment"
     },
     "craftSearchLabel": "Search recipes",
     "craftSearchPlaceholder": "Recipe or ingredient",
@@ -340,7 +342,9 @@
     "noCreatures": "No creatures met yet.",
     "reward": {
       "steal": "Stolen in battle",
-      "event": "At an encounter"
+      "event": "At an encounter",
+      "loot": "Battle loot",
+      "victory": "Winning this fight"
     },
     "from": "{{chapter}} onwards",
     "sells": "sells for {{price}}",
@@ -387,6 +391,49 @@
     "chance": "Chance",
     "when": "Condition: {{condition}}",
     "youGive": "You hand over:",
-    "givesNothing": "No items are known to come from it."
+    "givesNothing": "No items are known to come from it.",
+    "seasonPick": "Which season is it in your game?",
+    "onlyNow": "Only this season",
+    "nothingOnlyNow": "Nothing in the places you have reached is limited to this season.",
+    "alsoNow": "Also this season",
+    "alsoNowHint": "Available all year, but these spots only this season.",
+    "comingNext": "Coming in {{season}} ({{count}})",
+    "seasonFirst": "Pick your season to see what it brings.",
+    "lastChance": "Last chance: gone next season",
+    "seasonsList": "Seasons: {{seasons}}",
+    "seasonShort": {
+      "spring": "spring",
+      "summer": "summer",
+      "autumn": "autumn",
+      "winter": "winter"
+    },
+    "seasonLink": "This season: {{season}}",
+    "seasonPickLink": "What does your season bring?",
+    "weakPoint": "Weak point:",
+    "alsoPool": "Can also draw from {{pool}} ({{count}})",
+    "lootHint": "After a battle, a roll picks a few items from these pools: you never get the whole list at once.",
+    "planting": "Planting",
+    "plantIn": "Plant in",
+    "growDays": "Grows in {{days}} days",
+    "harvests": "{{count}} harvest(s), {{yield}} each",
+    "gives": "Grows: {{crop}}",
+    "plantNow": "To plant now",
+    "lastPlanting": "Last season to plant it",
+    "allYear": "All year",
+    "success": "{{chance}} success",
+    "slot": {
+      "weapon": "Weapon",
+      "offhand": "Off-hand",
+      "head": "Head",
+      "body": "Body",
+      "legs": "Legs",
+      "feet": "Feet"
+    },
+    "gear": {
+      "title": "Equipment: {{slot}}",
+      "stats": "Stats",
+      "bonuses": "Bonuses",
+      "effect": "Special effect"
+    }
   }
 }

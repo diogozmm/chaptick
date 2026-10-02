@@ -231,7 +231,7 @@ SKILLS = {
     'Greater Mending': 'Cura Maior', 'Induce Anxiety': 'Induzir Ansiedade', 'Lesser Mending': 'Cura Menor',
     'Light Blast': 'Explosão de Luz', 'Mana Drain': 'Drenar Mana', 'Mark of Death': 'Marca da Morte',
     'Mark of Insight': 'Marca da Percepção', 'Mind Blast': 'Explosão Mental', 'Pumpkin Blast': 'Explosão de Abóbora',
-    'Sludge Blast': 'Explosão de Lodo', 'Terror Blast': 'Explosão de Terror', 'Torrent of Darkness': 'Torrente de Trevas',
+    'Sludge Blast': 'Explosão de Lodo', 'Precision Strike': 'Golpe Preciso', 'Terror Blast': 'Explosão de Terror', 'Torrent of Darkness': 'Torrente de Trevas',
 }
 
 
@@ -239,10 +239,45 @@ def _gender(noun, template):
     return template.format(o='a' if noun in FEMININE else 'o')
 
 
+MATERIALS = {'Copper': 'de Cobre', 'Iron': 'de Ferro', 'Platinum': 'de Platina', 'Verdite': 'de Verdite', 'Stone': 'de Pedra',
+             'Blacksteel': 'de Aço Negro', 'Bone': 'de Osso', 'Gold': 'de Ouro', 'Steel': 'de Aço', 'Crimson': 'Carmesim',
+             'Wooden': 'de Madeira', 'Leather': 'de Couro', 'Crystal': 'de Cristal', 'Void': 'do Vazio', 'Blood': 'de Sangue'}
+PIECES = {'Chestplate': 'Peitoral', 'Helmet': 'Elmo', 'Greaves': 'Grevas', 'Legguards': 'Perneiras', 'Shortsword': 'Espada Curta',
+          'Greatsword': 'Espadão', 'Quickblade': 'Lâmina Ligeira', 'Staff': 'Cajado', 'Boots': 'Botas', 'Shield': 'Escudo',
+          'Sword': 'Espada', 'Robe': 'Manto', 'Hat': 'Chapéu', 'Sash': 'Faixa', 'Hood': 'Capuz', 'Cloak': 'Capa', 'Ring': 'Anel',
+          'Necklace': 'Colar', 'Pendant': 'Pingente', 'Earring': 'Brinco', 'Dagger': 'Adaga', 'Axe': 'Machado', 'Spear': 'Lança',
+          'Wand': 'Varinha', 'Mask': 'Máscara', 'Shoes': 'Sapatos', 'Leggings': 'Calças', 'Gloves': 'Luvas'}
+
+
 def tr(name):
     """Portuguese for an English name, or None when there is no confident translation."""
     if name in WORDS:
         return WORDS[name]
+    # "10x Tile Path" (a batch) and "Bone Sword +5" (an item level) keep their number around the name.
+    m = re.match(r'^(\d+)x (.+)$', name)
+    if m:
+        inner = tr(m[2])
+        return f'{m[1]}× {inner}' if inner else None
+    m = re.match(r'^(.+) (\+\d+)$', name)
+    if m:
+        inner = tr(m[1])
+        return f'{inner} {m[2]}' if inner else None
+    m = re.match(r'^(\w+) (\w+)$', name)
+    if m and m[1] in MATERIALS and m[2] in PIECES:
+        return f'{PIECES[m[2]]} {MATERIALS[m[1]]}'
+    m = re.match(r"^(\w+)'s (\w+)$", name)
+    if m and m[2] in PIECES and m[1] in OWNERS:
+        return f'{PIECES[m[2]]} {OWNERS[m[1]]}'
+    m = re.match(r'^(\w+) of (.+)$', name)
+    if m and m[1] in PIECES and m[2] in VIRTUES:
+        return f'{PIECES[m[1]]} {VIRTUES[m[2]]}'
+    m = re.match(r'^(.+) \((Brown|Pink|Red|Teal|Blue|Green|White|Black|Grey|Purple|Yellow)\)$', name)
+    if m and tr(m[1]):
+        return f'{tr(m[1])} ({COLORS[m[2]]})'
+    m = re.match(r'^(Brown|Red|White|Black|Blue|Green|Grey|Pink) (.+)$', name)
+    if m and m[2] in WORDS:
+        return f'{WORDS[m[2]]} {COLORS_ADJ[m[1]]}'
+    
     rules = [
         (r'^(.+) Tree Seed$', lambda m: f'Semente de Árvore de {tr(m[1])}' if tr(m[1]) else None),
         (r'^(.+) Seeds?$', lambda m: f'Semente de {tr(m[1])}' if tr(m[1]) else None),
@@ -363,7 +398,7 @@ PLACES = {
     'Potion Lab': 'Laboratório de Poções', 'Cooking Pot': 'Panela', 'Juicer': 'Espremedor', 'Oven': 'Forno', 'Forge': 'Forja',
     # Characters named in sources
     'Farmer Hans': 'Fazendeiro Hans', 'Old Man Crawford': 'Velho Crawford', 'Chef Elroy': 'Chef Elroy', 'Fisherman Herb': 'Pescador Herb',
-    'Mall Rat': 'Rato do Shopping', 'Mall Admin': 'Administração do Shopping', 'Boss encounter': 'Encontro com chefe', 'Harvest Chamber': 'Câmara da Colheita', 'Grotto': 'Gruta', 'Stairs': 'Escada',
+    'Mall Rat': 'Rato do Shopping', "Old Man Crawford's shop": 'loja do Velho Crawford', 'Mall Admin': 'Administração do Shopping', 'Boss encounter': 'Encontro com chefe', 'Harvest Chamber': 'Câmara da Colheita', 'Grotto': 'Gruta', 'Stairs': 'Escada',
     'Statue': 'Estátua', 'Seed Stand': 'Barraca de Sementes', 'Villager': 'Morador',
 }
 
@@ -377,6 +412,15 @@ def place_pt(text):
     out = re.sub(r'\b(\d)F\b|\bF(\d)\b|\b(\d)f\b', lambda m: f'{m[1] or m[2] or m[3]}º andar', out)
     return out.replace(' and ', ' e ')
 
+OWNERS = {'Archmage': 'do Arquimago', 'Bandit': 'do Bandido', 'Scholar': 'do Erudito', 'Thief': 'do Ladrão', 'Jester': 'do Bobo',
+          'Inventor': 'do Inventor', 'Executioner': 'do Carrasco', 'Jailer': 'do Carcereiro', 'Heathen': 'do Pagão', 'Archmagus': 'do Arquimago'}
+VIRTUES = {'Hope': 'da Esperança', 'Light': 'da Luz', 'Slime': 'de Gosma', 'Steel': 'de Aço', 'Torture': 'da Tortura', 'Wealth': 'da Riqueza',
+           'Chaos': 'do Caos', 'Life': 'da Vida', 'Blood': 'de Sangue', 'Bone': 'de Osso', 'Power': 'do Poder', 'Wit': 'da Astúcia',
+           'Fortune': 'da Fortuna', 'Binding': 'da Amarração', 'Darkness': 'das Trevas', 'Insight': 'da Percepção'}
+COLORS = {'Brown': 'marrom', 'Pink': 'rosa', 'Red': 'vermelho', 'Teal': 'verde-azulado', 'Blue': 'azul', 'Green': 'verde',
+          'White': 'branco', 'Black': 'preto', 'Grey': 'cinza', 'Purple': 'roxo', 'Yellow': 'amarelo'}
+COLORS_ADJ = {'Brown': 'Marrom', 'Red': 'Vermelha', 'White': 'Branca', 'Black': 'Preta', 'Blue': 'Azul', 'Green': 'Verde',
+              'Grey': 'Cinza', 'Pink': 'Rosa'}
 SEASON_PT = {'Rebirth': 'primavera', 'Harvest': 'verão', 'Witch': 'outono', 'Death': 'inverno'}
 
 
@@ -476,19 +520,16 @@ PHRASES = [
 ]
 
 
+_TERMS = {'size': -1, 'regex': None, 'names': {}}
+
+
 def terms_pt(text):
-    """Item, creature and place names inside a phrase, longest first, each replaced once."""
-    names = {**{k: v for k, v in PLACES.items()}, **{k: v for k, v in CREATURES.items() if k not in PLACES}}
-    words = sorted(set(names) | set(WORDS), key=len, reverse=True)
-    out, slots = text, []
-    for en in words:
-        pattern = r'(?<![\w\'-])' + re.escape(en) + r'(?![\w\'-])'
-        if re.search(pattern, out):
-            pt = names.get(en) or WORDS.get(en)
-            slots.append(pt)
-            out = re.sub(pattern, f'\0{len(slots) - 1}\0', out)
-    # Composite names the patterns know ("Jelly (Grape)", "Iron Bar") that are not whole words above.
-    out = re.sub('\0(\\d+)\0', lambda m: slots[int(m[1])], out)
+    """Item, creature and place names inside a phrase, longest first, in one pass."""
+    names = {**WORDS, **{k: v for k, v in CREATURES.items() if k not in PLACES}, **PLACES}
+    if _TERMS['size'] != len(names):  # the glossaries grow as modules load: rebuild when they do
+        alternation = '|'.join(re.escape(n) for n in sorted(names, key=len, reverse=True))
+        _TERMS.update(size=len(names), names=names, regex=re.compile(r"(?<![\w'-])(" + alternation + r")(?![\w'-])"))
+    out = _TERMS['regex'].sub(lambda m: _TERMS['names'][m[1]], text)
     return re.sub(r'\b(\d)F\b|\bF(\d)\b|\b(\d)f\b', lambda m: f'{m[1] or m[2] or m[3]}º andar', out)
 
 
@@ -505,3 +546,270 @@ def source_pt(where, item_names=()):
     for pattern, repl in PHRASES:
         out = re.sub(pattern, repl, out)
     return terms_pt(out)
+
+ELEMENTS = {'Light': 'Luz', 'Darkness': 'Trevas', 'Insight': 'Percepção', 'Insanity': 'Insanidade', 'Curse': 'Maldição',
+            'Physical': 'Físico', 'Normal': 'Normal', 'Fire': 'Fogo', 'Poison': 'Veneno'}
+
+
+def notes_pt(text):
+    """Weak points as the guide writes them: "Weak to Light Attacks. Deals Insanity Damage"."""
+    out = re.sub(r'[Ww]eak to (\w+) [Aa]ttacks', lambda m: f'Fraco contra ataques de {ELEMENTS.get(m[1].title(), m[1])}', text)
+    out = re.sub(r'Deals (\w+) [Dd]amage', lambda m: f'Causa dano de {ELEMENTS.get(m[1].title(), m[1])}', out)
+    out = re.sub(r'Weak to (\w+)', lambda m: f'Fraco contra {ELEMENTS.get(m[1].title(), m[1])}', out)
+    return terms_pt(out)
+
+
+POOLS = {
+    'Random Potions': 'Poções aleatórias', 'Basic Treasure Items': 'Tesouros básicos', 'Advanced Treasure Items': 'Tesouros avançados',
+    'High-Tier Treasure Items': 'Tesouros de nível alto', 'Great Pumpkin Rewards': 'Recompensas da Grande Abóbora',
+    'Small Crystals': 'Cristais pequenos', 'Large Crystals': 'Cristais grandes', 'Catacombs Tools': 'Ferramentas das Catacumbas',
+    'High-Tier Gems': 'Gemas de nível alto', 'Mid-Tier Gems': 'Gemas de nível médio', 'Low-Tier Gems': 'Gemas de nível baixo',
+    'Library Loot': 'Loot da Biblioteca', 'Early Mine Loot': 'Loot das primeiras minas', 'Flesh Pile Loot': 'Loot da Pilha de Carne',
+    'Eldritch Angler Loot': 'Loot do Pescador Sobrenatural', 'Mysterious Sign Loot': 'Loot da Placa Misteriosa',
+    "Teacher's Pet Loot": 'Loot do Queridinho da Professora', 'Silly Dog Loot': 'Loot do Cachorro Bobo',
+}
+
+
+def pool_pt(name):
+    """Loot pool names: "Sewers Common Loot", "Bag Boy Elite Loot", "Dripper Victory Rewards"."""
+    if name in POOLS:
+        return POOLS[name]
+    for suffix, pt in [(' Victory Rewards', 'Recompensas de vitória'), (' Common Loot', 'Loot comum'),
+                       (' Strong Enemy Loot', 'Loot de inimigo forte'), (' Mini-Boss Loot', 'Loot de minichefe'),
+                       (' Boss Loot', 'Loot de chefe'), (' Elite Loot', 'Loot de elite'), (' Strong Loot', 'Loot forte'),
+                       (' Loot', 'Loot')]:
+        if name.endswith(suffix):
+            who = name.removesuffix(suffix)
+            return f"{pt}: {CREATURES.get(who) or terms_pt(who).replace(' and ', ' e ')}"
+    return terms_pt(name).replace(' and ', ' e ')
+
+
+PHRASES += [
+    (r'^Grow from (.+)', lambda m: f'Cultive a partir de: {m[1]}'),
+    (r'Combat Shrine reward \((.+)\)', lambda m: f'Recompensa do Santuário de Combate ({m[1]})'),
+    (r'Carnival of Souls pond by the town park \(Season of Death, day 27\); Jig Lure bait',
+     'Lago do Carnaval das Almas, perto do parque da cidade (estação Death, dia 27); isca Jig'),
+]
+WORDS.update({'Big Ghostfish': 'Peixe-fantasma Grande', 'Fat Ghostfish': 'Peixe-fantasma Gordo',
+              'Small Ghostfish': 'Peixe-fantasma Pequeno'})
+CREATURES.update({'Mysterious Sign': 'Placa Misteriosa', 'Soul Dark': 'Alma Sombria', 'Cult': 'Culto'})
+
+WORDS.update({
+    # Gear (the item level "+N" is added by tr)
+    'Basic Necklace': 'Colar Básico', 'Bloodsliver Pendant': 'Pingente Lasca-de-sangue', 'Bone Coin of Chaos': 'Moeda de Osso do Caos',
+    'Bone Coin of Life': 'Moeda de Osso da Vida', 'Bonestaff': 'Cajado de Ossos', 'Brutal Necklace': 'Colar Brutal', 'Brutal Ring': 'Anel Brutal',
+    'Chalice of Blood': 'Cálice de Sangue', "Champion's Chestplate": 'Peitoral do Campeão', "Champion's Greaves": 'Grevas do Campeão',
+    "Champion's Helmet": 'Elmo do Campeão', "Champion's Loincloth": 'Tanga do Campeão', 'Corvid Boots': 'Botas Corvídeas',
+    'Corvid Cloak': 'Capa Corvídea', 'Corvid Legguards': 'Perneiras Corvídeas', 'Corvid Mask': 'Máscara Corvídea',
+    'Crimson Bandana': 'Bandana Carmesim', 'Crude Necklace': 'Colar Rústico', 'Crude Ring': 'Anel Rústico',
+    "Crusader's Chestplate": 'Peitoral do Cruzado', "Crusader's Greaves": 'Grevas do Cruzado', "Crusader's Helmet": 'Elmo do Cruzado',
+    "Crusader's Legguards": 'Perneiras do Cruzado', "Cultist's Boots": 'Botas do Cultista', "Cultist's Legguards": 'Perneiras do Cultista',
+    "Cultist's Mask": 'Máscara do Cultista', "Cultist's Robe": 'Manto do Cultista', 'Cursed Axe': 'Machado Amaldiçoado',
+    'Encrusted Blade': 'Lâmina Incrustada', 'Gas Mask': 'Máscara de Gás', 'Giant Club': 'Clava Gigante', 'Golden Band': 'Aro Dourado',
+    'Improvised Sickle': 'Foice Improvisada', "Inventor's Gear": 'Engrenagem do Inventor', "Inventor's Pendant": 'Pingente do Inventor',
+    'Mysterious Boots': 'Botas Misteriosas', 'Mysterious Hat': 'Chapéu Misterioso', 'Mysterious Legguards': 'Perneiras Misteriosas',
+    'Mysterious Tunic': 'Túnica Misteriosa', 'Nomad Legguards': 'Perneiras do Nômade', 'Nomad Shoes': 'Sapatos do Nômade',
+    'Ornate Greataxe': 'Machadão Ornamentado', 'Precision Necklace': 'Colar da Precisão', 'Quicksilver Pendant': 'Pingente de Mercúrio',
+    'Reckless Necklace': 'Colar Imprudente', 'Red Sneakers': 'Tênis Vermelho', 'Ring of Fire': 'Anel de Fogo',
+    'Ring of Immortality': 'Anel da Imortalidade', 'Ring of Magic': 'Anel da Magia', 'Ring of Might': 'Anel da Força',
+    'Ring of Mind': 'Anel da Mente', 'Ring of Nature': 'Anel da Natureza', 'Ring of Stone': 'Anel de Pedra', 'Ring of Vanity': 'Anel da Vaidade',
+    'Ring of the Dead': 'Anel dos Mortos', 'Rockshell Chestplate': 'Peitoral Casco-de-rocha', 'Rockshell Greaves': 'Grevas Casco-de-rocha',
+    'Rockshell Helmet': 'Elmo Casco-de-rocha', 'Rockshell Legguards': 'Perneiras Casco-de-rocha', 'Scrap Pants': 'Calça de Sucata',
+    'Staff of Hatred': 'Cajado do Ódio', 'Staff of Nature': 'Cajado da Natureza', 'Tentacle Blade': 'Lâmina de Tentáculo',
+    'The Decimator': 'O Dizimador', 'Thick Jacket': 'Jaqueta Grossa', 'Tuxedo Jacket': 'Paletó de Smoking', 'Vile Chestplate': 'Peitoral Vil',
+    'Vile Greataxe': 'Machadão Vil', 'Vile Greatsword': 'Espadão Vil', 'Vile Greaves': 'Grevas Vis', 'Vile Hat': 'Chapéu Vil',
+    'Vile Helmet': 'Elmo Vil', 'Vile Leggings': 'Calças Vis', 'Vile Legguards': 'Perneiras Vis', 'Vile Quickblade': 'Lâmina Ligeira Vil',
+    'Vile Robe': 'Manto Vil', 'Vile Shoes': 'Sapatos Vis', 'Vile Spear': 'Lança Vil', 'Vile Staff': 'Cajado Vil', 'Bloody Clump': 'Coágulo Sangrento',
+    # Furniture and decoration
+    'Brown Picket Fence': 'Cerca de Estacas Marrom', 'Red Picket Fence': 'Cerca de Estacas Vermelha', 'White Picket Fence': 'Cerca de Estacas Branca',
+    'Pylon': 'Cone', 'Birdhouse': 'Casa de Passarinho', 'Black Garbage Can': 'Lixeira Preta', 'Black Tombstone': 'Lápide Preta',
+    'Broken Bench': 'Banco Quebrado', 'Broken Post': 'Poste Quebrado', 'Chopping Block': 'Cepo', 'Coffin': 'Caixão',
+    'Corn Maze Wall': 'Parede de Labirinto de Milho', 'Crate Pile': 'Pilha de Caixotes', 'Crate of Corn': 'Caixote de Milho',
+    'Crate of Farming Tools': 'Caixote de Ferramentas Agrícolas', 'Crate of Garden Tools': 'Caixote de Ferramentas de Jardim',
+    'Crate of Pumpkins': 'Caixote de Abóboras', 'Crate of Tomatoes': 'Caixote de Tomates', 'Crate of Watermelon': 'Caixote de Melancias',
+    'Crate of Wheat': 'Caixote de Trigo', 'Crooked Signpost': 'Placa Torta', 'Cross Tombstone': 'Lápide em Cruz', 'Danger Sign': 'Placa de Perigo',
+    'Drinking Fountain': 'Bebedouro', 'Empty Flower Pot': 'Vaso Vazio', 'Empty Wheelbarrow': 'Carrinho de Mão Vazio',
+    'Farming Wheelbarrow': 'Carrinho de Mão da Fazenda', 'Fire Hydrant': 'Hidrante', 'Fire Pit': 'Fogueira', 'Garbage Heap 1': 'Monte de Lixo 1',
+    'Garbage Heap 2': 'Monte de Lixo 2', 'Garden Fountain': 'Fonte de Jardim', 'Gardening Table': 'Mesa de Jardinagem',
+    'Gardening Wheelbarrow': 'Carrinho de Mão de Jardinagem', 'Hay Pile': 'Monte de Feno', 'Hazard Barrier': 'Barreira de Perigo',
+    'Hedge Maze Wall': 'Parede de Labirinto de Cerca-viva', 'Iron Brazier': 'Braseiro de Ferro', 'Junk Pile 1': 'Pilha de Tralhas 1',
+    'Junk Pile 2': 'Pilha de Tralhas 2', 'Large Cross Tombstone': 'Lápide em Cruz Grande', 'Large Grave 1': 'Túmulo Grande 1',
+    'Large Grave 2': 'Túmulo Grande 2', 'Laundry Line': 'Varal', 'Offering Post': 'Poste de Oferendas', 'Open Grave': 'Cova Aberta',
+    'Oven': 'Forno', 'Picnic': 'Piquenique', 'Picnic Table': 'Mesa de Piquenique', 'Pipe': 'Cano', 'Plank Pile': 'Pilha de Tábuas',
+    'Round Tombstone': 'Lápide Redonda', 'Sack Pile': 'Pilha de Sacos', 'Scattered Bones': 'Ossos Espalhados', 'Short Rope Fence': 'Cerca de Corda Baixa',
+    'Short Wood Fence': 'Cerca de Madeira Baixa', 'Skeleton 1': 'Esqueleto 1', 'Skeleton 2': 'Esqueleto 2', 'Small Wooden Cross': 'Cruz de Madeira Pequena',
+    'Stack of Tires': 'Pilha de Pneus', 'Stone Shrub Garden': 'Jardim de Pedras e Arbustos', 'Tall Garden Wall': 'Muro de Jardim Alto',
+    'Tall Wire Fence': 'Cerca de Arame Alta', 'Toxic Waste Barrel': 'Barril de Lixo Tóxico', 'Water Barrel': 'Barril de Água',
+    'Weather Vane': 'Cata-vento', 'Wooden Bucket': 'Balde de Madeira', 'Wooden Table': 'Mesa de Madeira',
+})
+
+GEAR_WORDS = [
+    (r'Max HP', 'PV máx.'), (r'Max MP', 'PM máx.'), (r'Magic attack', 'Atq. mágico'), (r'Magic defense', 'Def. mágica'),
+    (r'\bAttack element: (\w+)', lambda m: f'Elemento: {ELEMENTS.get(m[1], m[1])}'), (r'\bAttack\b', 'Ataque'),
+    (r'\bDefense\b', 'Defesa'), (r'\bAgility\b', 'Agilidade'), (r'\bLuck\b', 'Sorte'), (r'Hit chance', 'Precisão'),
+    (r'Critical chance', 'Chance de crítico'), (r'MP cost', 'Custo de PM'), (r'Healing received', 'Cura recebida'),
+    (r'(\w+) damage received', lambda m: f'Dano de {ELEMENTS.get(m[1], m[1])} recebido'), (r'Counterattack', 'Contra-ataque'),
+    (r'Magic reflection', 'Reflexo mágico'), (r'EXP gain', 'EXP ganha'), (r'Basic attack: (.+?)(?= /|$)', lambda m: f'Ataque básico: {SKILLS.get(m[1], m[1])}'),
+    (r'\bSturdy\b', 'Robusto'), (r'\bLight\b', 'Leve'), (r'\bPockets\b', 'Bolsos'), (r'\bPiercing\b', 'Perfurante'),
+    (r'\bStaff\b', 'Cajado'), (r'\bHeavy\b', 'Pesado'), (r'\bArcing\b', 'Em arco'), (r'\bMassive\b', 'Maciço'),
+    (r'\bClotting\b', 'Coagulante'), (r'\bHateful\b', 'Odioso'), (r'\bPoisoned\b', 'Envenenado'), (r'\bBloodbound\b', 'Ligado ao sangue'),
+    (r'\bEnshrouded\b', 'Encoberto'), (r'\bFlexible\b', 'Flexível'), (r'\bPolished\b', 'Polido'), (r'\bNone\b', 'Nenhum'),
+]
+EFFECTS = [
+    (r'\+?(\d+)% chance for Basic Attacks to add \+1 (\w+) point', lambda m: f'+{m[1]}% de chance de o Ataque Básico somar +1 ponto {POINTS.get(m[2], m[2])}'),
+    (r'(\d+)% chance to add \+1 (.+?) each time you\'re attacked', lambda m: f'{m[1]}% de chance de somar +1 ponto {_points(m[2])} a cada ataque sofrido'),
+    (r'Basic Attacks add \+1 (\w+) point', lambda m: f'Ataques Básicos somam +1 ponto {POINTS.get(m[1], m[1])}'),
+    (r'Basic Attack becomes (' + '|'.join(re.escape(k) for k in SKILLS) + r')\.?', lambda m: f'O Ataque Básico vira {SKILLS[m[1]]}.'),
+    (r'All other Rituals are sealed\.?', 'Os outros rituais ficam selados.'), (r'(' + '|'.join(re.escape(k) for k in SKILLS) + r') becomes sealed\.?', lambda m: f'{SKILLS[m[1]]} fica selado.'),
+    (r'"(\w+)" rituals are sealed\.?', lambda m: f'Os rituais "{m[1]}" ficam selados.'), (r'Skills and Rituals cost no MP\.?', 'Habilidades e rituais não gastam PM.'),
+    (r'\+?(\d+)% chance to skip normal enemy encounters\.?', lambda m: f'+{m[1]}% de chance de evitar encontros comuns.'),
+    (r'When Equipped: ', 'Equipado: '), (r'In Battle: ', 'Em batalha: '), (r'Reduces damage from debris by (\d+)%', lambda m: f'Reduz em {m[1]}% o dano de destroços'),
+    (r'Applies a (\d+)-turn curse at the start of each battle', lambda m: f'Aplica uma maldição de {m[1]} turnos no início de cada batalha'),
+]
+POINTS = {'Lethal': 'Letal', 'Swift': 'Ágil', 'Defensive': 'Defensivo'}
+
+
+def _points(text):
+    return re.sub(r'(Lethal|Swift|Defensive)', lambda m: POINTS[m[1]], text.replace(' points', '').replace(' point', '').replace(' and ', ' e '))
+
+
+def gear_pt(text):
+    out = text
+    for pattern, repl in EFFECTS + GEAR_WORDS:
+        out = re.sub(pattern, repl, out)
+    return out
+
+
+PHRASES[:0] = [
+    (r'^Craft: (.+?) Recipes$', lambda m: 'Criação: receitas de ' + {'Weapon, Armor, and Jewelry': 'armas, armaduras e joias',
+        'Upgrade and Combination': 'melhorias e combinações', 'Furniture and Decoration': 'móveis e decoração'}.get(m[1], m[1])),
+    (r'^Possible shrine bonus: (.+)', lambda m: f'Possível bônus do santuário de combate: {m[1]}'),
+    (r'^Fixed pickup: (.+)', lambda m: f'Sempre no mesmo lugar: {m[1]}'),
+    (r'^Possible reward: (.+)', lambda m: f'Possível recompensa: {pool_pt(m[1])}'),
+    (r'^Possible victory reward: (.+)', lambda m: f'Possível recompensa de vitória: {CREATURES.get(m[1], m[1])}'),
+    (r'^Chest reward: (.+)', lambda m: f'Baú: {m[1]}'), (r'^Possible Equipment Pack result', 'Pode vir de um Pacote de Equipamento'),
+    (r'^Possible God Shrine outcome: (.+)', lambda m: f'Possível resultado de Santuário dos Deuses: {m[1]}'),
+    (r'^Possible (Pain Altar|Candles|Hiding Skeleton|Arcade Machine|Strange Tree|Fleshy Mass) outcome(?:: (.+))?', lambda m: '{}{}'.format(
+        {'Pain Altar': 'Possível resultado do Altar da Dor', 'Candles': 'Possível resultado das Velas', 'Hiding Skeleton': 'Possível resultado do Esqueleto Escondido',
+         'Arcade Machine': 'Possível resultado do fliperama', 'Strange Tree': 'Possível resultado da Árvore Estranha', 'Fleshy Mass': 'Possível resultado da Massa de Carne'}[m[1]],
+        f': {m[2]}' if m[2] else '')),
+    (r'^Possible find when searching old equipment stands in the Catacombs mines', 'Pode aparecer ao revistar suportes de equipamento velhos nas minas das Catacumbas'),
+    (r'^Possible find when searching garbage in town or the Mall', 'Pode aparecer ao revirar lixo na cidade ou no shopping'),
+    (r'^Possible find when searching old equipment in the Mall Mine or Farm Mine', 'Pode aparecer ao revistar equipamento velho na Mina do Shopping ou na Mina da Fazenda'),
+    (r'^Possible find when searching ancient skeleton remains in the Northern Mine', 'Pode aparecer ao revistar restos de esqueletos antigos na Mina do Norte'),
+    (r'^Possible reward from the stronger Farm bosses that appear later in the story', 'Possível recompensa dos chefes mais fortes da fazenda, que aparecem mais adiante na história'),
+    (r'^Possible Bird Woman reward on the rooftop after returning her Giant Egg; selection depends on story progress',
+     'Possível recompensa da Mulher-pássaro no terraço depois de devolver o Ovo Gigante dela; depende do avanço na história'),
+    (r'^Possible reward from breaking a Warding Totem on the Farm; Basic Axe or better', 'Possível recompensa ao quebrar um Totem de Proteção na fazenda; Machado Básico ou melhor'),
+    (r'^Possible Farm boss reward from Tall Man, Bighead, or Soul Swarm', 'Possível recompensa dos chefes da fazenda: Homem Alto, Cabeção ou Enxame de Almas'),
+    (r"^Sam's conversation about feeling lost", 'Conversa com o Sam sobre se sentir perdido'),
+    (r'^Specific Skullcrawler chest reward in a Sealed Chamber in the Catacombs', 'Baú específico do Rastejador de Crânios numa Câmara Selada das Catacumbas'),
+    (r'^Talk to Alice about movies at Ultra Video', 'Converse com a Alice sobre filmes na Ultra Video'),
+    (r'^Possible reward from the medium Mutated Snowman encounter in town', 'Possível recompensa do Boneco de Neve Mutante médio na cidade'),
+    (r'^Answer 5930 when Edwin asks for the four sacred numbers in town', 'Responda 5930 quando o Edwin pedir os quatro números sagrados na cidade'),
+    (r"^Akira's reward after investigating 7 mysteries", 'Recompensa do Akira depois de investigar 7 mistérios'),
+    (r'^Return to the shopper in Deep Mall after the fight inside the store he unlocked', 'Volte ao consumidor no Shopping Profundo depois da luta na loja que ele abriu'),
+]
+
+WORDS.update({
+    '3-D Glasses': 'Óculos 3D', 'Ancient Tablet': 'Tábua Ancestral', "Angler's Vest": 'Colete do Pescador', 'Archmagus Boots': 'Botas do Arquimago',
+    'Archmagus Hat': 'Chapéu do Arquimago', 'Archmagus Leggings': 'Calças do Arquimago', 'Archmagus Robe': 'Manto do Arquimago',
+    'Axe of Misfortune': 'Machado do Infortúnio', "Bandit's Chaps": 'Perneiras de Couro do Bandido', "Bard's Lute": 'Alaúde do Bardo',
+    'Basketball': 'Bola de Basquete', 'Blackblade': 'Lâmina Negra', 'Blade of the Hopeless': 'Lâmina dos Desesperançados',
+    'Bladefan of Delvek': 'Leque-lâmina de Delvek', 'Bladestaff of the Dead God': 'Cajado-lâmina do Deus Morto', 'Blood Moon Robe': 'Manto da Lua de Sangue',
+    'Bloodiron Coif': 'Coifa de Ferro-sangue', 'Bloodiron Greaves': 'Grevas de Ferro-sangue', 'Bloodiron Hauberk': 'Cota de Ferro-sangue',
+    'Bloodiron Legguards': 'Perneiras de Ferro-sangue', 'Bloody Cleaver': 'Cutelo Ensanguentado', 'Bluesteel Chestplate': 'Peitoral de Aço Azul',
+    'Bluesteel Greaves': 'Grevas de Aço Azul', 'Bluesteel Helmet': 'Elmo de Aço Azul', 'Bluesteel Legguards': 'Perneiras de Aço Azul',
+    'Bone Chopper': 'Cortador de Ossos', 'Bonecrusher': 'Esmaga-ossos', 'Bonesplitter': 'Racha-ossos', 'Book of Darkness': 'Livro das Trevas',
+    'Bow of Destruction': 'Laço da Destruição', 'Brass Compass': 'Bússola de Latão', 'Brass Knuckles': 'Soco-inglês',
+    'Brutal Maul of Kaal': 'Marreta Brutal de Kaal', 'Bulbous Blade': 'Lâmina Bulbosa', 'Cat Staff': 'Cajado do Gato', 'Cat Stuffy': 'Gato de Pelúcia',
+    "Cat's-Eye Spear": 'Lança Olho-de-gato', 'Chaos Robe': 'Manto do Caos', 'Chestplate of Stone': 'Peitoral de Pedra',
+    'Chestplate of the Dead God': 'Peitoral do Deus Morto', 'Cockroach Armor': 'Armadura de Barata', 'Comfy Shorts': 'Shorts Confortável',
+    'Crab Hat': 'Chapéu de Caranguejo', 'Crab Shirt': 'Camisa de Caranguejo', 'Crescent Bladestaff': 'Cajado-lâmina Crescente',
+    'Crimson Chaps': 'Perneiras de Couro Carmesim', 'Crown of Thorns': 'Coroa de Espinhos', 'Crown of Xxarteck': 'Coroa de Xxarteck',
+    'Crown of the Dead God': 'Coroa do Deus Morto', 'Crystal Battleshield': 'Escudo de Batalha de Cristal', 'Crystal Greatstaff': 'Cajadão de Cristal',
+    'Cursed Blade': 'Lâmina Amaldiçoada', 'Cursed Cookbook': 'Livro de Receitas Amaldiçoado', 'Cursed Crucifix': 'Crucifixo Amaldiçoado',
+    'Curved Greatsword': 'Espadão Curvo', 'Dagger of Valtris': 'Adaga de Valtris', 'Darkstone Boots': 'Botas de Pedra Negra',
+    "Deceiver's Orb": 'Orbe do Enganador', "Detective's Hat": 'Chapéu de Detetive', 'Divine Mageblade': 'Lâmina Mágica Divina',
+    'Dress of Destruction': 'Vestido da Destruição', "Executioner's Greataxe": 'Machadão do Carrasco', "Explorer's Boots": 'Botas do Explorador',
+    "Explorer's Hat": 'Chapéu do Explorador', "Explorer's Pants": 'Calças do Explorador', "Explorer's Vest": 'Colete do Explorador',
+    'Eyeglasses': 'Óculos', 'Feathered Cap': 'Gorro de Penas', 'Fire Extinguisher': 'Extintor', 'Fire Tiara': 'Tiara de Fogo',
+    'Flthy Shoes': 'Sapatos Imundos', 'Gargantuan Greatsword': 'Espadão Gigantesco', 'Gilded Chestplate': 'Peitoral Dourado',
+    "Gladiator's Chestplate": 'Peitoral do Gladiador', "Gladiator's Helmet": 'Elmo do Gladiador', "Gladiator's Legguards": 'Perneiras do Gladiador',
+    "Gladiator's Sandals": 'Sandálias do Gladiador', 'Gnawed Bone Club': 'Clava de Osso Roído', 'Gold Battleaxe': 'Machado de Batalha de Ouro',
+    'Golden Gun': 'Arma Dourada', 'Golden Knight': 'Cavaleiro Dourado', 'Golden Lamp': 'Lâmpada Dourada', 'Golden Skull': 'Crânio Dourado',
+    'Golden Stake': 'Estaca Dourada', 'Golden Tooth': 'Dente Dourado', 'Greatsword of the Dead God': 'Espadão do Deus Morto',
+    'Greaves of the Dead God': 'Grevas do Deus Morto', 'Hard Hat': 'Capacete de Obra', 'Harvester': 'Ceifador', "Heathen's Flail": 'Mangual do Pagão',
+    'Helm of the Mind': 'Elmo da Mente', 'Helm of the One Point': 'Elmo do Ponto Único', 'Hidden Kunai': 'Kunai Oculta',
+    'Hungry Battleshield': 'Escudo de Batalha Faminto', 'Icicle Greatword': 'Espadão de Gelo', 'Icicle Spear': 'Lança de Gelo',
+    'Icicle Sword': 'Espada de Gelo', 'Illusory Cloak': 'Capa Ilusória', 'Iron Cestus': 'Cesto de Ferro', 'Iron Halberd': 'Alabarda de Ferro',
+    "Jailer's Blade": 'Lâmina do Carcereiro', 'Jeweled Chalice': 'Cálice Cravejado', "Kaal's Executioner": 'Carrasco de Kaal',
+    'Lamp of Light': 'Lâmpada da Luz', 'Large Wrench': 'Chave Inglesa Grande', 'Lead Greataxe': 'Machadão de Chumbo', 'Leather Chaps': 'Perneiras de Couro',
+    'Leather Shorts': 'Shorts de Couro', 'Light Bladestaff': 'Cajado-lâmina Leve', 'Liquimetal Shield': 'Escudo de Metal Líquido',
+    "Lost Mariner's Bauble": 'Bugiganga do Marinheiro Perdido', 'Mask of the Beast': 'Máscara da Fera', 'Mask of the Glutton': 'Máscara do Glutão',
+    'Mending Spear': 'Lança Curativa', 'Mirror Chestplate': 'Peitoral Espelhado', 'Nunchaku': 'Nunchaku', 'Obsidian Helm': 'Elmo de Obsidiana',
+    'Obsidian Spear': 'Lança de Obsidiana', 'Odd Skull': 'Crânio Estranho', 'Old Beanie': 'Gorro Velho', 'Old Green Jeans': 'Jeans Verde Velho',
+    'Old Sleeveless Shirt': 'Regata Velha', 'Old Socks': 'Meias Velhas', 'Oldwood Greatstaff': 'Cajadão de Madeira Antiga', 'Ornate Dagger': 'Adaga Ornamentada',
+    'Overalls': 'Macacão', 'Painted Buckler': 'Broquel Pintado', 'Pale Mask': 'Máscara Pálida', 'Platinum Star': 'Estrela de Platina',
+    'Poison Greatsword': 'Espadão Venenoso', 'Poisoned Cutlass': 'Cutelo Envenenado', 'Police Hat': 'Quepe de Polícia', 'Police Jacket': 'Jaqueta de Polícia',
+    'Police Shoes': 'Sapatos de Polícia', 'Police Trousers': 'Calças de Polícia', 'Pumpkin Mask': 'Máscara de Abóbora', 'Pumpkin Pants': 'Calças de Abóbora',
+    'Pumpkin-Carver': 'Entalha-abóbora', 'Pumpkin-Smasher': 'Esmaga-abóbora', 'Rapier of the Dead God': 'Florete do Deus Morto', 'Ritual Spear': 'Lança Ritual',
+    "Ritualist's Shield": 'Escudo do Ritualista', 'Robe of Curses': 'Manto das Maldições', "Rogue's Boots": 'Botas do Malandro',
+    "Rogue's Chaps": 'Perneiras de Couro do Malandro', "Rogue's Cloak": 'Capa do Malandro', "Rogue's Hood": 'Capuz do Malandro',
+    'Royal Bulwark': 'Baluarte Real', 'Royal Dagger': 'Adaga Real', 'Royal Shield': 'Escudo Real', 'Royal Staff': 'Cajado Real',
+    'Rubber Pants': 'Calças de Borracha', 'Rusty Shackle': 'Algema Enferrujada', 'Sacrificial Blade': 'Lâmina Sacrificial', 'Seeing Sword': 'Espada Vidente',
+    "Seeker's Orb": 'Orbe do Buscador', 'Shield of Spite': 'Escudo do Rancor', 'Shield of the Dead God': 'Escudo do Deus Morto',
+    'Shieldstaff of Warding': 'Cajado-escudo da Proteção', 'Shoes of Destruction': 'Sapatos da Destruição', 'Shoes of Swiftness': 'Sapatos da Rapidez',
+    'Shopping List': 'Lista de Compras', 'Silver Scimitar': 'Cimitarra de Prata', 'Smile Carver': 'Entalha-sorriso', 'Soul Lamp': 'Lâmpada da Alma',
+    'Spear of Daeus': 'Lança de Daeus', 'Spellblade of Rage': 'Lâmina Mágica da Fúria', 'Spiked Bat': 'Taco com Pregos', 'Staff of Flesh': 'Cajado de Carne',
+    'Staff of Thorns': 'Cajado de Espinhos', 'Staff of Valtris': 'Cajado de Valtris', 'Staff of the Dead': 'Cajado dos Mortos', 'Staff of the Deep': 'Cajado das Profundezas',
+    'Star Wand': 'Varinha Estelar', 'Steel-Knuckled Glove': 'Luva com Soco de Aço', 'Stiletto': 'Estilete', 'Stilettos': 'Saltos Agulha',
+    'Sturdy Boots': 'Botas Resistentes', 'Sword of the Harvest': 'Espada da Colheita', 'Syringe': 'Seringa', 'Tainted Spear': 'Lança Maculada',
+    'Tattered Hood': 'Capuz Esfarrapado', 'Tattered Shirt': 'Camisa Esfarrapada', "Thief's Chaps": 'Perneiras de Couro do Ladrão', 'Tome of Fire': 'Tomo do Fogo',
+    'Tome of Water': 'Tomo da Água', 'Tower Shield': 'Escudo-torre', 'Triangle Greatsword': 'Espadão Triangular', 'Used Work Boots': 'Botinas Usadas',
+    'Varsity Jacket': 'Jaqueta Universitária', 'Vile Lamp': 'Lâmpada Vil', 'Void Channeler': 'Canalizador do Vazio', "Wanderer's Orb": 'Orbe do Andarilho',
+    "Wayfarer's Shoes": 'Sapatos do Viajante', 'Weathered Sandals': 'Sandálias Gastas', 'White Shorts': 'Shorts Branco', 'Wind Tiara': 'Tiara do Vento',
+    'Witch Hat': 'Chapéu de Bruxa', 'Witch Leggings': 'Calças de Bruxa', 'Witch Robe': 'Manto de Bruxa', 'Witch Shoes': 'Sapatos de Bruxa',
+    'Wooden Club': 'Clava de Madeira', 'Worn Underwear': 'Cueca Gasta', 'Xanthic Cloak': 'Capa Xântica', 'Xanthic Hat': 'Chapéu Xântico',
+    'Xanthic Leggings': 'Calças Xânticas', 'Xanthic Shoes': 'Sapatos Xânticos', 'Yellow Pants': 'Calças Amarelas', 'Blade of Blood': 'Lâmina de Sangue',
+    "Bandit's Boots": 'Botas do Bandido', "Bandit's Cloak": 'Capa do Bandido', "Bandit's Hood": 'Capuz do Bandido',
+})
+
+WORDS.update({
+    'Assorted Gems': 'Gemas Variadas', 'Coldheart Pendant': 'Pingente Coração-frio', 'Deer Claw': 'Garra de Cervo', 'Essence of Kaal': 'Essência de Kaal',
+    'Giant Mushroom': 'Cogumelo Gigante', 'Gold Tooth': 'Dente de Ouro', 'Hand of Nezroth': 'Mão de Nezroth', 'Living Bones': 'Ossos Vivos',
+    'Lost Mirror': 'Espelho Perdido', 'Lucky Pocket Knife': 'Canivete da Sorte', 'Meat Portion': 'Porção de Carne', 'Pendant of Leaves': 'Pingente de Folhas',
+    'Pendant of the Lost': 'Pingente dos Perdidos', 'Pendant of the Woods': 'Pingente da Floresta', 'Ring of The Right Path': 'Anel do Caminho Certo',
+    'Ring of the New God': 'Anel do Novo Deus', 'Ring of the Woods': 'Anel da Floresta', 'Skull': 'Crânio', 'Skull of the Catacombs': 'Crânio das Catacumbas',
+    'Soultrap Necklace': 'Colar Prende-almas',
+})
+
+_P = lambda w: POINTS.get(w, w)
+_STATUS = {'Hex': 'Maldição', 'Weakness': 'Fraqueza', 'Fear': 'Medo', **BLESSINGS}
+_SKILLS2 = {'Evil Eye': 'Olho Gordo', 'Energy Shot': 'Tiro de Energia', 'Ghost Blast': 'Explosão Fantasma', **SKILLS}
+EFFECTS[:0] = [
+    (r'When equipped: \+?(\d+)% chance to catch extra large fish\.?', lambda m: f'Equipado: +{m[1]}% de chance de pescar peixes extragrandes.'),
+    (r'When equipped: Applies Fear to all enemies at the start of combat\.?', 'Equipado: aplica Medo a todos os inimigos no início do combate.'),
+    (r'When equipped: Applies (\w+) and (\w+) blessings at the start of combat\.?',
+     lambda m: f'Equipado: aplica as bênçãos {_STATUS.get(m[1], m[1])} e {_STATUS.get(m[2], m[2])} no início do combate.'),
+    (r'\+?(\d+)% chance to add \+1 (\w+) point when Guarding\.?', lambda m: f'+{m[1]}% de chance de somar +1 ponto {_P(m[2])} ao defender.'),
+    (r'Adds \+(\d+) (\w+) points? when Guarding\.?', lambda m: f'Soma +{m[1]} ponto(s) {_P(m[2])} ao defender.'),
+    (r'\+?(\d+)% chance to guard a 2nd attack', lambda m: f'+{m[1]}% de chance de defender um 2º ataque.'),
+    (r'(\d+)% chance to cause (\w+)(?: and (\w+))?', lambda m: f'{m[1]}% de chance de causar {_STATUS.get(m[2], m[2])}' + (f' e {_STATUS.get(m[3], m[3])}' if m[3] else '')),
+    (r"(\d+)% chance to add 1 Swift, 1 Lethal, and 1 Defensive point each time you're attacked\.?",
+     lambda m: f'{m[1]}% de chance de somar 1 ponto Ágil, 1 Letal e 1 Defensivo a cada ataque sofrido.'),
+    (r'(\d+)% chance to add \+1 (\w+) point when attacked\.?', lambda m: f'{m[1]}% de chance de somar +1 ponto {_P(m[2])} ao ser atacado.'),
+    (r'Start each battle with \+(\d+) (\w+) points?', lambda m: f'Começa cada batalha com +{m[1]} ponto(s) {_P(m[2])}'),
+    (r'(\d+)% chance to generate \+1 AP', lambda m: f'{m[1]}% de chance de gerar +1 PA'),
+    (r'(\d+)% chance for all Skills, Rituals and Basic Attacks to add \+1 (\w+) point\.?',
+     lambda m: f'{m[1]}% de chance de habilidades, rituais e Ataques Básicos somarem +1 ponto {_P(m[2])}.'),
+    (r'Basic Attacks have \+(\d+)% chance to add \+1 (\w+) point and \+(\d+)% chance to add -1 (\w+) points\.?',
+     lambda m: f'Ataques Básicos têm +{m[1]}% de chance de somar +1 ponto {_P(m[2])} e +{m[3]}% de chance de tirar 1 ponto {_P(m[4])}.'),
+    (r'\+?(\d+)% chance for Basic Attacks to hit twice\.?', lambda m: f'+{m[1]}% de chance de o Ataque Básico acertar duas vezes.'),
+    (r'(' + '|'.join(re.escape(k) for k in _SKILLS2) + r') has a (\d+)% chance to add \+1 (\w+) point',
+     lambda m: f'{_SKILLS2[m[1]]} tem {m[2]}% de chance de somar +1 ponto {_P(m[3])}'),
+    (r'(' + '|'.join(re.escape(k) for k in _SKILLS2) + r') adds (?:an additional )?\+1 (\w+) point(?: and \+1 (\w+) point)?',
+     lambda m: f'{_SKILLS2[m[1]]} soma +1 ponto {_P(m[2])}' + (f' e +1 ponto {_P(m[3])}' if m[3] else '')),
+]
+EFFECTS.insert(0, (r'When equipped: Increases total HP, MP, Defense and M\. Defense by (\d+)%\.?',
+                   lambda m: f'Equipado: aumenta em {m[1]}% o total de PV, PM, Defesa e Def. mágica.'))

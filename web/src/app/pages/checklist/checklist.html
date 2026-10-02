@@ -28,6 +28,14 @@
       </span>
       <app-icon name="chevron-right" />
     </a>
+    @if (game.hasSeasons()) {
+      @let season = progress.preferences().season;
+      <a class="season-link" [routerLink]="game.link('compendium')" [queryParams]="{ tab: 'season' }">
+        <app-icon name="hourglass" />
+        {{ season ? ('compendium.seasonLink' | transloco: { season: ('compendium.season.' + season | transloco) }) : ('compendium.seasonPickLink' | transloco) }}
+        <app-icon name="chevron-right" />
+      </a>
+    }
   }
 
   <app-how-it-works />

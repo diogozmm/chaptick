@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { compendiumIndex, PlacedSource } from '../../core/compendium/compendium';
-import { SOURCE_KINDS, SourceKind } from '../../core/content/content.models';
+import { SOURCE_KINDS, SourceKind, localize } from '../../core/content/content.models';
 import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
@@ -56,6 +56,15 @@ export class EntryDetail {
     const found = this.found();
     return base && found ? base + encodeURIComponent(found.entry.name.en.replace(/ /g, '_')) : null;
   });
+  protected statList(stats: string): string[] {
+    return stats.split(';').map((s) => s.trim()).filter((s) => s);
+  }
+
+  protected cropName(entryId: string): string | null {
+    const crop = this.index().entries.get(entryId);
+    return crop ? localize(crop.entry.name, this.lang.lang()) : null;
+  }
+
   protected readonly madeBy = computed(() => this.index().madeBy.get(this.entryId()) ?? []);
   protected readonly usedIn = computed(() => this.index().usedIn.get(this.entryId()) ?? []);
   protected readonly givenBy = computed(() => this.index().givenBy.get(this.entryId()) ?? []);

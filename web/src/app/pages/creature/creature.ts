@@ -43,4 +43,10 @@ export class CreatureDetail {
   });
   protected readonly steals = computed(() => (this.found()?.creature.rewards ?? []).filter((r) => r.how === 'steal'));
   protected readonly events = computed(() => (this.found()?.creature.rewards ?? []).filter((r) => r.how === 'event'));
+  /** Battle loot pools first, then what winning the fight gives. */
+  protected readonly loot = computed(() =>
+    (this.found()?.creature.rewards ?? [])
+      .filter((r) => r.how === 'loot' || r.how === 'victory')
+      .sort((a, b) => Number(a.how === 'victory') - Number(b.how === 'victory')),
+  );
 }

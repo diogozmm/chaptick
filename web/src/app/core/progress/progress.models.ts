@@ -1,4 +1,4 @@
-import { ItemType } from '../content/content.models';
+import { ItemType, Season } from '../content/content.models';
 
 export const PROGRESS_SCHEMA_VERSION = 1;
 
@@ -8,6 +8,8 @@ export interface Preferences {
   filters: ItemType[];
   /** Only items that count toward a trophy. Optional, so older saves and exports stay valid. */
   trophiesOnly?: boolean;
+  /** The in-game season the player is in, for games whose content depends on it. */
+  season?: Season;
 }
 
 /** Saved on the device only. Exported as-is, so changes need a schemaVersion bump and a migration. */

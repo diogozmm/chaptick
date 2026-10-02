@@ -503,7 +503,8 @@
             "seeds",
             "food",
             "potions",
-            "tools"
+            "tools",
+            "equipment"
           ]
         },
         "sell": {
@@ -514,6 +515,75 @@
           "type": "array",
           "items": {
             "$ref": "#/$defs/source"
+          }
+        },
+        "grow": {
+          "type": "object",
+          "description": "For seeds: when they can be planted and how they grow.",
+          "required": [
+            "seasons",
+            "harvests"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "seasons": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "enum": [
+                  "spring",
+                  "summer",
+                  "autumn",
+                  "winter"
+                ]
+              }
+            },
+            "days": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "harvests": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "yield": {
+              "type": "string"
+            },
+            "crop": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+            }
+          }
+        },
+        "gear": {
+          "type": "object",
+          "description": "For equipment: slot, stat changes, bonuses and special effect.",
+          "required": [
+            "slot"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "slot": {
+              "enum": [
+                "weapon",
+                "offhand",
+                "head",
+                "body",
+                "legs",
+                "feet"
+              ]
+            },
+            "stats": {
+              "$ref": "common.schema.json#/$defs/localized"
+            },
+            "bonuses": {
+              "$ref": "common.schema.json#/$defs/localized"
+            },
+            "effect": {
+              "$ref": "common.schema.json#/$defs/localized"
+            }
           }
         }
       }
@@ -577,6 +647,11 @@
         },
         "unlock": {
           "$ref": "common.schema.json#/$defs/localized"
+        },
+        "success": {
+          "type": "string",
+          "pattern": "^\\d+%$",
+          "description": "Chance the recipe works, when below 100%."
         }
       }
     },
@@ -623,13 +698,15 @@
               "how": {
                 "enum": [
                   "steal",
-                  "event"
+                  "event",
+                  "loot",
+                  "victory"
                 ],
-                "description": "steal: taken in battle, with a chance; event: given at a fight or meeting."
+                "description": "steal: taken in battle; event: given at a fight or meeting; loot: a battle loot pool; victory: what winning that fight can give."
               },
               "items": {
                 "type": "array",
-                "minItems": 1,
+                "minItems": 0,
                 "items": {
                   "type": "object",
                   "required": [
@@ -678,9 +755,53 @@
                   }
                 },
                 "description": "Items handed over in exchange."
+              },
+              "pool": {
+                "$ref": "common.schema.json#/$defs/localized",
+                "description": "The loot pool's name."
+              },
+              "also": {
+                "type": "array",
+                "description": "Shared pools this one can also draw from, with their items.",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "items"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "$ref": "common.schema.json#/$defs/localized"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "name"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "entryId": {
+                            "type": "string",
+                            "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+                          },
+                          "name": {
+                            "$ref": "common.schema.json#/$defs/localized"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
+        },
+        "notes": {
+          "$ref": "common.schema.json#/$defs/localized",
+          "description": "Weak points and the damage it deals."
         }
       }
     }

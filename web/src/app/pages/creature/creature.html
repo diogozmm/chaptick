@@ -15,6 +15,10 @@
     <p class="muted small">{{ 'compendium.from' | transloco: { chapter: f.chapter.neutralLabel | localize: l } }}</p>
   </header>
 
+  @if (f.creature.notes; as notes) {
+    <p class="card notes"><app-icon name="swords" /> <span><strong>{{ 'compendium.weakPoint' | transloco }}</strong> {{ notes | localize: l }}</span></p>
+  }
+
   @if (f.creature.where.length > 0) {
     <section class="section" aria-labelledby="where-title">
       <h2 id="where-title">{{ 'compendium.whereFound' | transloco }}</h2>
@@ -92,10 +96,52 @@
           }
         </ul>
       </div>
-    } @empty {
-      @if (steals().length === 0) {
-        <p class="muted small">{{ 'compendium.givesNothing' | transloco }}</p>
-      }
+    }
+    @for (r of loot(); track $index) {
+      <div class="way">
+        <h3>
+          <app-icon [name]="r.how === 'victory' ? 'trophy' : 'gem'" />
+          {{ (r.how === 'victory' ? 'compendium.reward.victory' : 'compendium.reward.loot') | transloco }}
+          @if (r.pool && r.how === 'loot') {
+            <span class="pool">· {{ r.pool | localize: l }}</span>
+          }
+        </h3>
+        @if (r.items.length > 0) {
+          <ul class="items">
+            @for (i of r.items; track $index) {
+              <li>
+                @if (i.entryId) {
+                  <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                } @else {
+                  <span>{{ i.name | localize: l }}</span>
+                }
+              </li>
+            }
+          </ul>
+        }
+        @for (a of r.also ?? []; track $index) {
+          <details class="also">
+            <summary>{{ 'compendium.alsoPool' | transloco: { pool: (a.name | localize: l), count: a.items.length } }}</summary>
+            <ul class="items">
+              @for (i of a.items; track $index) {
+                <li>
+                  @if (i.entryId) {
+                    <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                  } @else {
+                    <span>{{ i.name | localize: l }}</span>
+                  }
+                </li>
+              }
+            </ul>
+          </details>
+        }
+      </div>
+    }
+    @if (steals().length === 0 && events().length === 0 && loot().length === 0) {
+      <p class="muted small">{{ 'compendium.givesNothing' | transloco }}</p>
+    }
+    @if (loot().length > 0) {
+      <p class="muted small">{{ 'compendium.lootHint' | transloco }}</p>
     }
   </section>
 } @else if (ready()) {

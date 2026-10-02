@@ -42,6 +42,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "cc-moon-carp",
+      "name": {
+        "en": "Moon Carp"
+      },
+      "category": "fish",
+      "sources": [
+        {
+          "kind": "fish",
+          "where": {
+            "en": "Cellar Pool"
+          },
+          "seasons": [
+            "summer"
+          ]
+        }
+      ]
     }
   ],
   "entrySources": [

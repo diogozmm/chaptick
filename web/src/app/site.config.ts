@@ -57,7 +57,7 @@ export const SITE = {
       url: 'https://welcometoelderfield.wiki.gg/',
     },
     {
-      name: 'Neoseeker — Welcome to Elderfield task guides',
+      name: 'Neoseeker — Welcome to Elderfield guides (tasks, encounters and loot, crops, recipes)',
       authors: 'Neoseeker guide team',
       url: 'https://www.neoseeker.com/welcome-to-elderfield/',
     },

@@ -16,6 +16,55 @@
     </p>
   </header>
 
+  @if (f.entry.gear; as g) {
+    <section class="section" aria-labelledby="gear-title">
+      <h2 id="gear-title">{{ 'compendium.gear.title' | transloco: { slot: ('compendium.slot.' + g.slot | transloco) } }}</h2>
+      <dl class="way gear">
+        @if (g.stats) {
+          <dt>{{ 'compendium.gear.stats' | transloco }}</dt>
+          <dd>
+            <ul class="stats">
+              @for (stat of statList(g.stats | localize: l); track $index) {
+                <li [class.down]="stat.includes('-')">{{ stat }}</li>
+              }
+            </ul>
+          </dd>
+        }
+        @if (g.bonuses) {
+          <dt>{{ 'compendium.gear.bonuses' | transloco }}</dt>
+          <dd>{{ g.bonuses | localize: l }}</dd>
+        }
+        @if (g.effect) {
+          <dt>{{ 'compendium.gear.effect' | transloco }}</dt>
+          <dd>{{ g.effect | localize: l }}</dd>
+        }
+      </dl>
+    </section>
+  }
+
+  @if (f.entry.grow; as g) {
+    <section class="section" aria-labelledby="grow-title">
+      <h2 id="grow-title">{{ 'compendium.planting' | transloco }}</h2>
+      <div class="way">
+        <h3><app-icon name="sparkles" /> {{ 'compendium.plantIn' | transloco }}</h3>
+        <span class="tags">
+          @for (season of g.seasons; track season) {
+            <span class="tag">{{ 'compendium.season.' + season | transloco }}</span>
+          }
+        </span>
+        <ul>
+          @if (g.days) {
+            <li>{{ 'compendium.growDays' | transloco: { days: g.days } }}</li>
+          }
+          <li>{{ 'compendium.harvests' | transloco: { count: g.harvests, yield: g.yield } }}</li>
+          @if (g.crop && cropName(g.crop); as crop) {
+            <li><a [routerLink]="game.link('entries', g.crop)">{{ 'compendium.gives' | transloco: { crop: crop } }}</a></li>
+          }
+        </ul>
+      </div>
+    </section>
+  }
+
   <section class="section" aria-labelledby="ways-title">
     <h2 id="ways-title">{{ 'compendium.howToGet' | transloco }}</h2>
     @for (way of ways(); track way.kind) {

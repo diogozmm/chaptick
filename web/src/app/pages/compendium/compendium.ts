@@ -1,9 +1,11 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, resource } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { TranslocoPipe } from '@jsverse/transloco';
+import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
+import { NgTemplateOutlet } from '@angular/common';
 
 import { categoryCounts, compendiumIndex, findEntries, IndexedCraft } from '../../core/compendium/compendium';
-import { Chapter, CraftKind, Creature, ENTRY_CATEGORIES, EntryCategory, Localized, localize } from '../../core/content/content.models';
+import { hasSeasons, nextSeason, SEASONS, seasonView } from '../../core/compendium/seasons';
+import { Chapter, CraftKind, Creature, ENTRY_CATEGORIES, EntryCategory, Localized, Season, SourceKind, localize } from '../../core/content/content.models';
 import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
@@ -14,8 +16,8 @@ import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { Icon } from '../../ui/icon/icon';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
 
-type Tab = 'items' | 'crafts' | 'creatures';
-const TABS: Tab[] = ['items', 'crafts', 'creatures'];
+type Tab = 'items' | 'crafts' | 'creatures' | 'season';
+const TABS: Tab[] = ['items', 'crafts', 'creatures', 'season'];
 const CRAFT_KINDS: CraftKind[] = ['craft', 'cook', 'forge'];
 const MAX_LIST = 80;
 
@@ -26,7 +28,7 @@ const MAX_LIST = 80;
  */
 @Component({
   selector: 'app-compendium',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, OriginalPipe, Icon, SpoilerReveal],
+  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, OriginalPipe, Icon, SpoilerReveal],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './compendium.html',
   styleUrl: './compendium.scss',
@@ -34,6 +36,7 @@ const MAX_LIST = 80;
 export class Compendium {
   private readonly access = inject(ChapterAccess);
   private readonly router = inject(Router);
+  private readonly transloco = inject(TranslocoService);
   protected readonly game = inject(ActiveGame);
   protected readonly progress = inject(ProgressStore);
   protected readonly lang = inject(LangService);
@@ -43,7 +46,8 @@ export class Compendium {
   /** Category (items tab) or craft kind (crafts tab). */
   readonly c = input<string | undefined>();
 
-  protected readonly tabs = TABS;
+  /** The season tab only for games whose reached content depends on the season. */
+  protected readonly tabs = computed(() => TABS.filter((t) => t !== 'season' || this.seasonal()));
   protected readonly categories = ENTRY_CATEGORIES;
   protected readonly craftKinds = CRAFT_KINDS;
   protected readonly current = computed<Tab>(() => (TABS as string[]).includes(this.tab() ?? '') ? (this.tab() as Tab) : 'items');
@@ -57,6 +61,25 @@ export class Compendium {
   protected readonly ready = computed(() => this.chapters.hasValue());
   private readonly index = computed(() => compendiumIndex(this.chapters.hasValue() ? this.chapters.value() : []));
   protected readonly counts = computed(() => categoryCounts(this.index()));
+
+  protected readonly seasonal = computed(() => hasSeasons(this.index()));
+  protected readonly seasons = SEASONS;
+  /** The player's in-game season, remembered per game. */
+  protected readonly season = computed(() => this.progress.preferences().season ?? null);
+  protected readonly next = computed(() => (this.season() ? nextSeason(this.season()!) : null));
+  protected readonly seasonNow = computed(() => (this.season() ? seasonView(this.index(), this.season()!) : null));
+
+  protected seasonNames(seasons: Season[]): string {
+    return seasons.map((s) => this.transloco.translate(`compendium.seasonShort.${s}`)).join(', ');
+  }
+
+  protected setSeason(season: Season): void {
+    void this.progress.setPreferences({ season });
+  }
+
+  protected sourceIcon(kind: SourceKind): 'fish' | 'compass' | 'map-pin' {
+    return kind === 'fish' ? 'fish' : kind === 'forage' ? 'compass' : 'map-pin';
+  }
 
   protected readonly category = computed<EntryCategory | null>(() =>
     (ENTRY_CATEGORIES as readonly string[]).includes(this.c() ?? '') ? (this.c() as EntryCategory) : null,

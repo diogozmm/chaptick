@@ -339,6 +339,24 @@
       "sell": "200g"
     },
     {
+      "id": "wte-baked-serpent",
+      "name": {
+        "en": "Baked Serpent",
+        "pt": "Serpente Assada"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Baked Serpent",
+            "pt": "Forno: Serpente Assada"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
       "id": "wte-blacksteel-bar",
       "name": {
         "en": "Blacksteel Bar",
@@ -355,6 +373,34 @@
         }
       ],
       "sell": "150g"
+    },
+    {
+      "id": "wte-book-of-darkness-8",
+      "name": {
+        "en": "Book of Darkness +8",
+        "pt": "Livro das Trevas +8"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible Skeleton Well outcome: Deep Catacombs",
+            "pt": "Possible Skeleton Well outcome: Catacumbas Profundas"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "offhand",
+        "stats": {
+          "en": "None",
+          "pt": "Nenhum"
+        },
+        "bonuses": {
+          "en": "Magic damage received +10% / Darkness damage received -5%",
+          "pt": "Dano de Magic recebido +10% / Dano de Trevas recebido -5%"
+        }
+      }
     },
     {
       "id": "wte-clot-gem",
@@ -515,6 +561,34 @@
       "sell": "20g"
     },
     {
+      "id": "wte-cursed-cookbook-8",
+      "name": {
+        "en": "Cursed Cookbook +8",
+        "pt": "Livro de Receitas Amaldiçoado +8"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible Skeleton Bell outcome: Deep Catacombs",
+            "pt": "Possible Skeleton Bell outcome: Catacumbas Profundas"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "offhand",
+        "stats": {
+          "en": "None",
+          "pt": "Nenhum"
+        },
+        "bonuses": {
+          "en": "Healing received +25% / Curse damage received -5% / Resourceful / Clotting",
+          "pt": "Cura recebida +25% / Dano de Maldição recebido -5% / Resourceful / Coagulante"
+        }
+      }
+    },
+    {
       "id": "wte-cursed-demon-skull",
       "name": {
         "en": "Cursed Demon Skull",
@@ -669,6 +743,150 @@
       "sell": "25g"
     },
     {
+      "id": "wte-flask-of-the-gods-agility",
+      "name": {
+        "en": "Flask of the Gods (Agility)",
+        "pt": "Frasco dos Deuses (Agilidade)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-flask-of-the-gods-attack",
+      "name": {
+        "en": "Flask of the Gods (Attack)",
+        "pt": "Frasco dos Deuses (Ataque)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-flask-of-the-gods-defense",
+      "name": {
+        "en": "Flask of the Gods (Defense)",
+        "pt": "Frasco dos Deuses (Defesa)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-flask-of-the-gods-hp",
+      "name": {
+        "en": "Flask of the Gods (HP)",
+        "pt": "Frasco dos Deuses (PV)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-flask-of-the-gods-luck",
+      "name": {
+        "en": "Flask of the Gods (Luck)",
+        "pt": "Frasco dos Deuses (Sorte)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-flask-of-the-gods-m-atk",
+      "name": {
+        "en": "Flask of the Gods (M. Atk)",
+        "pt": "Frasco dos Deuses (Atq. Mágico)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-flask-of-the-gods-m-def",
+      "name": {
+        "en": "Flask of the Gods (M. Def)",
+        "pt": "Frasco dos Deuses (Def. Mágica)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-flask-of-the-gods-mp",
+      "name": {
+        "en": "Flask of the Gods (MP)",
+        "pt": "Frasco dos Deuses (PM)"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab",
+            "pt": "Laboratório de Poções"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
       "id": "wte-flesh-gem",
       "name": {
         "en": "Flesh Gem",
@@ -699,6 +917,24 @@
           "where": {
             "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
             "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
+      "id": "wte-ghostly-scarecrow",
+      "name": {
+        "en": "Ghostly Scarecrow",
+        "pt": "Espantalho Fantasmagórico"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Scarecrows: Ghostly Scarecrow",
+            "pt": "Espantalhos: Espantalho Fantasmagórico"
           }
         }
       ],
@@ -782,6 +1018,34 @@
         }
       ],
       "sell": "25g"
+    },
+    {
+      "id": "wte-hidden-kunai-8",
+      "name": {
+        "en": "Hidden Kunai +8",
+        "pt": "Kunai Oculta +8"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible Skeleton Hole outcome: Deep Catacombs",
+            "pt": "Possible Skeleton Hole outcome: Catacumbas Profundas"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "offhand",
+        "stats": {
+          "en": "Max MP -10; Attack +5; Agility +5",
+          "pt": "PM máx. -10; Ataque +5; Agilidade +5"
+        },
+        "bonuses": {
+          "en": "Counterattack +3%",
+          "pt": "Contra-ataque +3%"
+        }
+      }
     },
     {
       "id": "wte-huge-meat-chunk",
@@ -934,6 +1198,38 @@
       "sell": "25g"
     },
     {
+      "id": "wte-ornate-greataxe-8",
+      "name": {
+        "en": "Ornate Greataxe +8",
+        "pt": "Machadão Ornamentado +8"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft: Weapon, Armor, and Jewelry Recipes",
+            "pt": "Criação: receitas de armas, armaduras e joias"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "weapon",
+        "stats": {
+          "en": "Max HP +15; Max MP +10; Attack +38; Magic defense -6",
+          "pt": "PV máx. +15; PM máx. +10; Ataque +38; Def. mágica -6"
+        },
+        "bonuses": {
+          "en": "Attack element: Normal / Hit chance -10% / Piercing",
+          "pt": "Elemento: Normal / Precisão -10% / Perfurante"
+        },
+        "effect": {
+          "en": "+25% chance for Basic Attacks to add +1 Lethal point",
+          "pt": "+25% de chance de o Ataque Básico somar +1 ponto Letal"
+        }
+      }
+    },
+    {
       "id": "wte-perfect-armor-gem",
       "name": {
         "en": "Perfect Armor Gem",
@@ -968,6 +1264,24 @@
         }
       ],
       "sell": "150g"
+    },
+    {
+      "id": "wte-perfect-cookie",
+      "name": {
+        "en": "Perfect Cookie",
+        "pt": "Biscoito Perfeito"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Perfect Cookie",
+            "pt": "Forno: Biscoito Perfeito"
+          }
+        }
+      ],
+      "sell": "25g"
     },
     {
       "id": "wte-perfect-focus-gem",
@@ -1229,6 +1543,34 @@
       "sell": "40g"
     },
     {
+      "id": "wte-shopping-list-8",
+      "name": {
+        "en": "Shopping List +8",
+        "pt": "Lista de Compras +8"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "random",
+          "where": {
+            "en": "Possible Skeleton List outcome: Deep Catacombs",
+            "pt": "Possible Skeleton List outcome: Catacumbas Profundas"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "offhand",
+        "stats": {
+          "en": "None",
+          "pt": "Nenhum"
+        },
+        "bonuses": {
+          "en": "Polished / Clotting / Resourceful",
+          "pt": "Polido / Coagulante / Resourceful"
+        }
+      }
+    },
+    {
       "id": "wte-sinew-gem",
       "name": {
         "en": "Sinew Gem",
@@ -1281,6 +1623,24 @@
         }
       ],
       "sell": "32g"
+    },
+    {
+      "id": "wte-soothing-soup",
+      "name": {
+        "en": "Soothing Soup",
+        "pt": "Sopa Calmante"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Soothing Soup",
+            "pt": "Forno: Sopa Calmante"
+          }
+        }
+      ],
+      "sell": "15g"
     },
     {
       "id": "wte-soul-fragments",
@@ -1362,6 +1722,94 @@
       "sell": "25g"
     },
     {
+      "id": "wte-staff-of-hatred-10",
+      "name": {
+        "en": "Staff of Hatred +10",
+        "pt": "Cajado do Ódio +10"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft: Upgrade and Combination Recipes",
+            "pt": "Criação: receitas de melhorias e combinações"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "weapon",
+        "stats": {
+          "en": "Max MP +20; Defense -20; Magic attack +45; Magic defense -5; Agility +20",
+          "pt": "PM máx. +20; Defesa -20; Atq. mágico +45; Def. mágica -5; Agilidade +20"
+        },
+        "bonuses": {
+          "en": "MP cost +150% / Critical chance +5% / Arcing / Staff",
+          "pt": "Custo de PM +150% / Chance de crítico +5% / Em arco / Cajado"
+        }
+      }
+    },
+    {
+      "id": "wte-staff-of-nature-10",
+      "name": {
+        "en": "Staff of Nature +10",
+        "pt": "Cajado da Natureza +10"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft: Upgrade and Combination Recipes",
+            "pt": "Criação: receitas de melhorias e combinações"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "weapon",
+        "stats": {
+          "en": "Max HP +15; Max MP +30; Defense -10; Magic attack +35; Magic defense +8; Agility +20; Luck +5",
+          "pt": "PV máx. +15; PM máx. +30; Defesa -10; Atq. mágico +35; Def. mágica +8; Agilidade +20; Sorte +5"
+        },
+        "bonuses": {
+          "en": "MP cost +100% / Arcing / Staff",
+          "pt": "Custo de PM +100% / Em arco / Cajado"
+        }
+      }
+    },
+    {
+      "id": "wte-staff-of-the-deep-8",
+      "name": {
+        "en": "Staff of the Deep +8",
+        "pt": "Cajado das Profundezas +8"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "found",
+          "where": {
+            "en": "Fixed pickup: Chamber of Daeus (Northwest Elderfield)",
+            "pt": "Sempre no mesmo lugar: Chamber of Daeus (Northwest Elderfield)"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "weapon",
+        "stats": {
+          "en": "Max MP +15; Attack -30; Defense -10; Magic attack +30; Magic defense +2; Agility -10; Luck +5",
+          "pt": "PM máx. +15; Ataque -30; Defesa -10; Atq. mágico +30; Def. mágica +2; Agilidade -10; Sorte +5"
+        },
+        "bonuses": {
+          "en": "Attack element: Normal / Critical chance +5% / MP cost +50% / Arcing",
+          "pt": "Elemento: Normal / Chance de crítico +5% / Custo de PM +50% / Em arco"
+        },
+        "effect": {
+          "en": "Energy Shot adds +1 Defensive point",
+          "pt": "Tiro de Energia soma +1 ponto Defensivo"
+        }
+      }
+    },
+    {
       "id": "wte-stealth-musk",
       "name": {
         "en": "Stealth Musk",
@@ -1403,6 +1851,118 @@
         }
       ],
       "sell": "50g"
+    },
+    {
+      "id": "wte-steel-chestplate-6",
+      "name": {
+        "en": "Steel Chestplate +6",
+        "pt": "Peitoral de Aço +6"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft: Weapon, Armor, and Jewelry Recipes",
+            "pt": "Criação: receitas de armas, armaduras e joias"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "body",
+        "stats": {
+          "en": "Max HP +17; Attack +1; Defense +9; Magic attack -4; Magic defense +7; Luck +4",
+          "pt": "PV máx. +17; Ataque +1; Defesa +9; Atq. mágico -4; Def. mágica +7; Sorte +4"
+        },
+        "bonuses": {
+          "en": "Hit chance -1% / Sturdy",
+          "pt": "Precisão -1% / Robusto"
+        }
+      }
+    },
+    {
+      "id": "wte-steel-greaves-6",
+      "name": {
+        "en": "Steel Greaves +6",
+        "pt": "Grevas de Aço +6"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft: Weapon, Armor, and Jewelry Recipes",
+            "pt": "Criação: receitas de armas, armaduras e joias"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "feet",
+        "stats": {
+          "en": "Max HP +17; Attack +1; Defense +9; Magic attack -4; Magic defense +7; Luck +4",
+          "pt": "PV máx. +17; Ataque +1; Defesa +9; Atq. mágico -4; Def. mágica +7; Sorte +4"
+        },
+        "bonuses": {
+          "en": "Hit chance -1% / Sturdy",
+          "pt": "Precisão -1% / Robusto"
+        }
+      }
+    },
+    {
+      "id": "wte-steel-helmet-6",
+      "name": {
+        "en": "Steel Helmet +6",
+        "pt": "Elmo de Aço +6"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft: Weapon, Armor, and Jewelry Recipes",
+            "pt": "Criação: receitas de armas, armaduras e joias"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "head",
+        "stats": {
+          "en": "Max HP +17; Attack +1; Defense +9; Magic attack -4; Magic defense +7; Luck +4",
+          "pt": "PV máx. +17; Ataque +1; Defesa +9; Atq. mágico -4; Def. mágica +7; Sorte +4"
+        },
+        "bonuses": {
+          "en": "Hit chance -1% / Sturdy",
+          "pt": "Precisão -1% / Robusto"
+        }
+      }
+    },
+    {
+      "id": "wte-steel-legguards-6",
+      "name": {
+        "en": "Steel Legguards +6",
+        "pt": "Perneiras de Aço +6"
+      },
+      "category": "equipment",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Craft: Weapon, Armor, and Jewelry Recipes",
+            "pt": "Criação: receitas de armas, armaduras e joias"
+          }
+        }
+      ],
+      "gear": {
+        "slot": "legs",
+        "stats": {
+          "en": "Max HP +17; Attack +1; Defense +9; Magic attack -4; Magic defense +7; Luck +4",
+          "pt": "PV máx. +17; Ataque +1; Defesa +9; Atq. mágico -4; Def. mágica +7; Sorte +4"
+        },
+        "bonuses": {
+          "en": "Hit chance -1% / Sturdy",
+          "pt": "Precisão -1% / Robusto"
+        }
+      }
     },
     {
       "id": "wte-super-stew",
@@ -2113,6 +2673,7 @@
           "qty": 10
         }
       ],
+      "makes": "wte-trident-of-the-deep-8",
       "unlock": {
         "en": "Aligned to the God Daeus",
         "pt": "Ligado ao deus Daeus"
@@ -2657,7 +3218,8 @@
       },
       "kind": "forge",
       "group": {
-        "en": "Tools"
+        "en": "Tools",
+        "pt": "Ferramentas"
       },
       "ingredients": [
         {
@@ -2711,7 +3273,8 @@
       },
       "kind": "forge",
       "group": {
-        "en": "Tools"
+        "en": "Tools",
+        "pt": "Ferramentas"
       },
       "ingredients": [
         {
@@ -2765,7 +3328,8 @@
       },
       "kind": "forge",
       "group": {
-        "en": "Tools"
+        "en": "Tools",
+        "pt": "Ferramentas"
       },
       "ingredients": [
         {
@@ -2819,7 +3383,8 @@
       },
       "kind": "forge",
       "group": {
-        "en": "Tools"
+        "en": "Tools",
+        "pt": "Ferramentas"
       },
       "ingredients": [
         {
@@ -2873,7 +3438,8 @@
       },
       "kind": "forge",
       "group": {
-        "en": "Tools"
+        "en": "Tools",
+        "pt": "Ferramentas"
       },
       "ingredients": [
         {
@@ -2918,6 +3484,6604 @@
         }
       ],
       "makes": "wte-superior-axe"
+    },
+    {
+      "id": "wte-cook-baked-serpent",
+      "name": {
+        "en": "Baked Serpent",
+        "pt": "Serpente Assada"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-serpent-steak",
+          "name": {
+            "en": "Serpent Steak",
+            "pt": "Bife de Serpente"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-common-mushroom",
+          "name": {
+            "en": "Common Mushroom",
+            "pt": "Cogumelo Comum"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bean",
+          "name": {
+            "en": "Bean",
+            "pt": "Feijão"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-pumpkin",
+          "name": {
+            "en": "Pumpkin",
+            "pt": "Abóbora"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-baked-serpent",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-cake",
+      "name": {
+        "en": "Herbal Cake",
+        "pt": "Bolo de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-duskberry-cake",
+          "name": {
+            "en": "Duskberry Cake",
+            "pt": "Bolo de Baga-do-crepúsculo"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-cake",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-cupcake",
+      "name": {
+        "en": "Herbal Cupcake",
+        "pt": "Cupcake de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-duskmelon-cupcake",
+          "name": {
+            "en": "Duskmelon Cupcake",
+            "pt": "Cupcake de Melão-do-crepúsculo"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-cupcake",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-feast",
+      "name": {
+        "en": "Herbal Feast",
+        "pt": "Banquete de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-filling-platter",
+          "name": {
+            "en": "Filling Platter",
+            "pt": "Travessa Farta"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-feast",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-pizza",
+      "name": {
+        "en": "Herbal Pizza",
+        "pt": "Pizza de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-eldersprout-pizza",
+          "name": {
+            "en": "Eldersprout Pizza",
+            "pt": "Pizza de Broto Ancião"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-pizza",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-platter",
+      "name": {
+        "en": "Herbal Platter",
+        "pt": "Travessa de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-healthy-platter",
+          "name": {
+            "en": "Healthy Platter",
+            "pt": "Travessa Saudável"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-platter",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-serpent",
+      "name": {
+        "en": "Herbal Serpent",
+        "pt": "Serpente com Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-baked-serpent",
+          "name": {
+            "en": "Baked Serpent",
+            "pt": "Serpente Assada"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-serpent",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-soup",
+      "name": {
+        "en": "Herbal Soup",
+        "pt": "Sopa de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-serpent-soup",
+          "name": {
+            "en": "Serpent Soup",
+            "pt": "Sopa de Serpente"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-soup",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-herbal-stew",
+      "name": {
+        "en": "Herbal Stew",
+        "pt": "Ensopado de Ervas"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-super-stew",
+          "name": {
+            "en": "Super Stew",
+            "pt": "Superensopado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-basic-herb-bundle",
+          "name": {
+            "en": "Basic Herb Bundle",
+            "pt": "Maço de Ervas Básico"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-herbal-stew",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-perfect-cookie",
+      "name": {
+        "en": "Perfect Cookie",
+        "pt": "Biscoito Perfeito"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-dust",
+          "name": {
+            "en": "Damp Dust",
+            "pt": "Pó Úmido"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-elder-flour",
+          "name": {
+            "en": "Elder Flour",
+            "pt": "Farinha Anciã"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-godscale",
+          "name": {
+            "en": "Godscale",
+            "pt": "Escama Divina"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-perfect-cookie",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-serpent-soup",
+      "name": {
+        "en": "Serpent Soup",
+        "pt": "Sopa de Serpente"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-serpent-steak",
+          "name": {
+            "en": "Serpent Steak",
+            "pt": "Bife de Serpente"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bonefish",
+          "name": {
+            "en": "Bonefish",
+            "pt": "Peixe-osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bitter-herb",
+          "name": {
+            "en": "Bitter Herb",
+            "pt": "Erva Amarga"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-red-mushroom",
+          "name": {
+            "en": "Red Mushroom",
+            "pt": "Cogumelo Vermelho"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-radish",
+          "name": {
+            "en": "Radish",
+            "pt": "Rabanete"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-serpent-soup",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-cook-soothing-soup",
+      "name": {
+        "en": "Soothing Soup",
+        "pt": "Sopa Calmante"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-soulroot",
+          "name": {
+            "en": "Soulroot",
+            "pt": "Raiz da Alma"
+          },
+          "qty": 2
+        },
+        {
+          "name": {
+            "en": "Milk",
+            "pt": "Leite"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-soothing-soup",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-cook-super-stew",
+      "name": {
+        "en": "Super Stew",
+        "pt": "Superensopado"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-cauliflower",
+          "name": {
+            "en": "Cauliflower",
+            "pt": "Couve-flor"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-eldersprout",
+          "name": {
+            "en": "Eldersprout",
+            "pt": "Broto Ancião"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mystery-steak",
+          "name": {
+            "en": "Mystery Steak",
+            "pt": "Bife Misterioso"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-serpent-steak",
+          "name": {
+            "en": "Serpent Steak",
+            "pt": "Bife de Serpente"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-super-stew",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-potion-of-debt",
+      "name": {
+        "en": "Potion of Debt",
+        "pt": "Poção da Dívida"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "General",
+        "pt": "Geral"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-potent-herb-bundle",
+          "name": {
+            "en": "Potent Herb Bundle",
+            "pt": "Maço de Ervas Potente"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-potion-of-debt",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-taunting-potion",
+      "name": {
+        "en": "Taunting Potion",
+        "pt": "Poção de Provocação"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "General",
+        "pt": "Geral"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-potent-herb-bundle",
+          "name": {
+            "en": "Potent Herb Bundle",
+            "pt": "Maço de Ervas Potente"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-taunting-potion",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-agility",
+      "name": {
+        "en": "Flask of the Gods (Agility)",
+        "pt": "Frasco dos Deuses (Agilidade)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-agility",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-attack",
+      "name": {
+        "en": "Flask of the Gods (Attack)",
+        "pt": "Frasco dos Deuses (Ataque)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-attack",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-defense",
+      "name": {
+        "en": "Flask of the Gods (Defense)",
+        "pt": "Frasco dos Deuses (Defesa)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-defense",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-hp",
+      "name": {
+        "en": "Flask of the Gods (HP)",
+        "pt": "Frasco dos Deuses (PV)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-hp",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-luck",
+      "name": {
+        "en": "Flask of the Gods (Luck)",
+        "pt": "Frasco dos Deuses (Sorte)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-luck",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-m-atk",
+      "name": {
+        "en": "Flask of the Gods (M. Atk)",
+        "pt": "Frasco dos Deuses (Atq. Mágico)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-m-atk",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-m-def",
+      "name": {
+        "en": "Flask of the Gods (M. Def)",
+        "pt": "Frasco dos Deuses (Def. Mágica)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-m-def",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-flask-of-the-gods-mp",
+      "name": {
+        "en": "Flask of the Gods (MP)",
+        "pt": "Frasco dos Deuses (PM)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Flasks",
+        "pt": "Frascos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crystal-flask",
+          "name": {
+            "en": "Crystal Flask",
+            "pt": "Frasco de Cristal"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-pickled-eyeballs",
+          "name": {
+            "en": "Pickled Eyeballs",
+            "pt": "Olhos em Conserva"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-flask-of-the-gods-mp",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-basic-necklace-5",
+      "name": {
+        "en": "Basic Necklace +5",
+        "pt": "Colar Básico +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-deep-crystal",
+          "name": {
+            "en": "Deep Crystal",
+            "pt": "Cristal das Profundezas"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-bloodsliver-pendant-8",
+      "name": {
+        "en": "Bloodsliver Pendant +8",
+        "pt": "Pingente Lasca-de-sangue +8"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-rune-of-the-dead-god",
+          "name": {
+            "en": "Rune of the Dead God",
+            "pt": "Runa do Deus Morto"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-chalice-of-blood-8",
+      "name": {
+        "en": "Chalice of Blood +8",
+        "pt": "Cálice de Sangue +8"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-earring-of-steel-4",
+      "name": {
+        "en": "Earring of Steel +4",
+        "pt": "Brinco de Aço +4"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-golden-band-5",
+      "name": {
+        "en": "Golden Band +5",
+        "pt": "Aro Dourado +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 25
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-inventor-s-gear-8",
+      "name": {
+        "en": "Inventor's Gear +8",
+        "pt": "Engrenagem do Inventor +8"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-inventor-s-pendant-8",
+      "name": {
+        "en": "Inventor's Pendant +8",
+        "pt": "Pingente do Inventor +8"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-gold-bar",
+          "name": {
+            "en": "Gold Bar",
+            "pt": "Barra de Ouro"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-necklace-of-bone",
+      "name": {
+        "en": "Necklace of Bone",
+        "pt": "Colar de Osso"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-precision-necklace-5",
+      "name": {
+        "en": "Precision Necklace +5",
+        "pt": "Colar da Precisão +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-death-crystal",
+          "name": {
+            "en": "Death Crystal",
+            "pt": "Cristal da Morte"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-perfect-opal",
+          "name": {
+            "en": "Perfect Opal",
+            "pt": "Opala Perfeita"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-godscale",
+          "name": {
+            "en": "Godscale",
+            "pt": "Escama Divina"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-quicksilver-pendant-8",
+      "name": {
+        "en": "Quicksilver Pendant +8",
+        "pt": "Pingente de Mercúrio +8"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-platinum-bar",
+          "name": {
+            "en": "Platinum Bar",
+            "pt": "Barra de Platina"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-reckless-necklace-5",
+      "name": {
+        "en": "Reckless Necklace +5",
+        "pt": "Colar Imprudente +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ghost-crystal",
+          "name": {
+            "en": "Ghost Crystal",
+            "pt": "Cristal Fantasma"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-whetstone",
+          "name": {
+            "en": "Whetstone",
+            "pt": "Pedra de Amolar"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-ring-of-fire-5",
+      "name": {
+        "en": "Ring of Fire +5",
+        "pt": "Anel de Fogo +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-greater-light-crystal",
+          "name": {
+            "en": "Greater Light Crystal",
+            "pt": "Cristal de Luz Maior"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 50
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-ring-of-might-5",
+      "name": {
+        "en": "Ring of Might +5",
+        "pt": "Anel da Força +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-greater-death-crystal",
+          "name": {
+            "en": "Greater Death Crystal",
+            "pt": "Cristal da Morte Maior"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-demon-skull",
+          "name": {
+            "en": "Cursed Demon Skull",
+            "pt": "Crânio de Demônio Amaldiçoado"
+          },
+          "qty": 1
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-ring-of-mind-5",
+      "name": {
+        "en": "Ring of Mind +5",
+        "pt": "Anel da Mente +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-greater-dream-crystal",
+          "name": {
+            "en": "Greater Dream Crystal",
+            "pt": "Cristal dos Sonhos Maior"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-ring-of-steel-4",
+      "name": {
+        "en": "Ring of Steel +4",
+        "pt": "Anel de Aço +4"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-ghost-crystal",
+          "name": {
+            "en": "Ghost Crystal",
+            "pt": "Cristal Fantasma"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-bulbous-mushroom",
+          "name": {
+            "en": "Bulbous Mushroom",
+            "pt": "Cogumelo Bulboso"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-ring-of-stone-4",
+      "name": {
+        "en": "Ring of Stone +4",
+        "pt": "Anel de Pedra +4"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-death-crystal",
+          "name": {
+            "en": "Death Crystal",
+            "pt": "Cristal da Morte"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 50
+        },
+        {
+          "entryId": "wte-ashy-mushroom",
+          "name": {
+            "en": "Ashy Mushroom",
+            "pt": "Cogumelo Cinzento"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-ring-of-the-dead-5",
+      "name": {
+        "en": "Ring of the Dead +5",
+        "pt": "Anel dos Mortos +5"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-blacksteel-chestplate-7",
+      "name": {
+        "en": "Blacksteel Chestplate +7",
+        "pt": "Peitoral de Aço Negro +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-chestplate-6",
+          "name": {
+            "en": "Steel Chestplate +6",
+            "pt": "Peitoral de Aço +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-blacksteel-chestplate-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-blacksteel-greatsword-7",
+      "name": {
+        "en": "Blacksteel Greatsword +7",
+        "pt": "Espadão de Aço Negro +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-greatsword-6",
+          "name": {
+            "en": "Steel Greatsword +6",
+            "pt": "Espadão de Aço +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-blacksteel-greatsword-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-blacksteel-greaves-7",
+      "name": {
+        "en": "Blacksteel Greaves +7",
+        "pt": "Grevas de Aço Negro +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-greaves-6",
+          "name": {
+            "en": "Steel Greaves +6",
+            "pt": "Grevas de Aço +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-blacksteel-greaves-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-blacksteel-helmet-7",
+      "name": {
+        "en": "Blacksteel Helmet +7",
+        "pt": "Elmo de Aço Negro +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-helmet-6",
+          "name": {
+            "en": "Steel Helmet +6",
+            "pt": "Elmo de Aço +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-blacksteel-helmet-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-blacksteel-legguards-7",
+      "name": {
+        "en": "Blacksteel Legguards +7",
+        "pt": "Perneiras de Aço Negro +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-legguards-6",
+          "name": {
+            "en": "Steel Legguards +6",
+            "pt": "Perneiras de Aço +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-blacksteel-legguards-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-blacksteel-quickblade-7",
+      "name": {
+        "en": "Blacksteel Quickblade +7",
+        "pt": "Lâmina Ligeira de Aço Negro +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-quickblade-6",
+          "name": {
+            "en": "Steel Quickblade +6",
+            "pt": "Lâmina Ligeira de Aço +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-blacksteel-quickblade-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-blacksteel-staff-7",
+      "name": {
+        "en": "Blacksteel Staff +7",
+        "pt": "Cajado de Aço Negro +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-staff-6",
+          "name": {
+            "en": "Steel Staff +6",
+            "pt": "Cajado de Aço +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-blacksteel-staff-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-bone-coin-of-chaos-1",
+      "name": {
+        "en": "Bone Coin of Chaos +1",
+        "pt": "Moeda de Osso do Caos +1"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-creature-claw",
+          "name": {
+            "en": "Creature Claw",
+            "pt": "Garra de Criatura"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mysterious-ooze",
+          "name": {
+            "en": "Mysterious Ooze",
+            "pt": "Gosma Misteriosa"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-bone-coin-of-life-1",
+      "name": {
+        "en": "Bone Coin of Life +1",
+        "pt": "Moeda de Osso da Vida +1"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-brutal-necklace-1",
+      "name": {
+        "en": "Brutal Necklace +1",
+        "pt": "Colar Brutal +1"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-soulroot",
+          "name": {
+            "en": "Soulroot",
+            "pt": "Raiz da Alma"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-brutal-ring-2",
+      "name": {
+        "en": "Brutal Ring +2",
+        "pt": "Anel Brutal +2"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-stone",
+          "name": {
+            "en": "Stone",
+            "pt": "Pedra"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-soulroot",
+          "name": {
+            "en": "Soulroot",
+            "pt": "Raiz da Alma"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-creature-claw",
+          "name": {
+            "en": "Creature Claw",
+            "pt": "Garra de Criatura"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-crude-necklace",
+      "name": {
+        "en": "Crude Necklace",
+        "pt": "Colar Rústico"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-crude-ring-1",
+      "name": {
+        "en": "Crude Ring +1",
+        "pt": "Anel Rústico +1"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-wishbone",
+          "name": {
+            "en": "Wishbone",
+            "pt": "Ossinho da Sorte"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-creature-claw",
+          "name": {
+            "en": "Creature Claw",
+            "pt": "Garra de Criatura"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-cultist-s-boots-7",
+      "name": {
+        "en": "Cultist's Boots +7",
+        "pt": "Botas do Cultista +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-cultist-s-boots-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-cultist-s-legguards-7",
+      "name": {
+        "en": "Cultist's Legguards +7",
+        "pt": "Perneiras do Cultista +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-cultist-s-legguards-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-cultist-s-mask-7",
+      "name": {
+        "en": "Cultist's Mask +7",
+        "pt": "Máscara do Cultista +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-cultist-s-mask-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-cultist-s-robe-7",
+      "name": {
+        "en": "Cultist's Robe +7",
+        "pt": "Manto do Cultista +7"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-cultist-s-robe-7",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-mysterious-boots-6",
+      "name": {
+        "en": "Mysterious Boots +6",
+        "pt": "Botas Misteriosas +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-corrupted-tar",
+          "name": {
+            "en": "Corrupted Tar",
+            "pt": "Piche Corrompido"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-rune-of-the-dead-god",
+          "name": {
+            "en": "Rune of the Dead God",
+            "pt": "Runa do Deus Morto"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-mysterious-boots-6",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-mysterious-hat-6",
+      "name": {
+        "en": "Mysterious Hat +6",
+        "pt": "Chapéu Misterioso +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-corrupted-tar",
+          "name": {
+            "en": "Corrupted Tar",
+            "pt": "Piche Corrompido"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-rune-of-the-dead-god",
+          "name": {
+            "en": "Rune of the Dead God",
+            "pt": "Runa do Deus Morto"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-mysterious-hat-6",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-mysterious-legguards-6",
+      "name": {
+        "en": "Mysterious Legguards +6",
+        "pt": "Perneiras Misteriosas +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-corrupted-tar",
+          "name": {
+            "en": "Corrupted Tar",
+            "pt": "Piche Corrompido"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-rune-of-the-dead-god",
+          "name": {
+            "en": "Rune of the Dead God",
+            "pt": "Runa do Deus Morto"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-mysterious-legguards-6",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-mysterious-tunic-6",
+      "name": {
+        "en": "Mysterious Tunic +6",
+        "pt": "Túnica Misteriosa +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-corrupted-tar",
+          "name": {
+            "en": "Corrupted Tar",
+            "pt": "Piche Corrompido"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-rune-of-the-dead-god",
+          "name": {
+            "en": "Rune of the Dead God",
+            "pt": "Runa do Deus Morto"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-mysterious-tunic-6",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-ornate-greataxe-8",
+      "name": {
+        "en": "Ornate Greataxe +8",
+        "pt": "Machadão Ornamentado +8"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-platinum-bar",
+          "name": {
+            "en": "Platinum Bar",
+            "pt": "Barra de Platina"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-ornate-greataxe-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-rockshell-chestplate-4",
+      "name": {
+        "en": "Rockshell Chestplate +4",
+        "pt": "Peitoral Casco-de-rocha +4"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-goldpuff",
+          "name": {
+            "en": "Goldpuff",
+            "pt": "Baiacu-dourado"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-soulroot",
+          "name": {
+            "en": "Soulroot",
+            "pt": "Raiz da Alma"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-rockshell-chestplate-4",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-steel-chestplate-6",
+      "name": {
+        "en": "Steel Chestplate +6",
+        "pt": "Peitoral de Aço +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-steel-chestplate-6",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-steel-greatsword-6",
+      "name": {
+        "en": "Steel Greatsword +6",
+        "pt": "Espadão de Aço +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-steel-greatsword-6",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-steel-greaves-6",
+      "name": {
+        "en": "Steel Greaves +6",
+        "pt": "Grevas de Aço +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-steel-greaves-6",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-steel-helmet-6",
+      "name": {
+        "en": "Steel Helmet +6",
+        "pt": "Elmo de Aço +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-steel-helmet-6",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-steel-legguards-6",
+      "name": {
+        "en": "Steel Legguards +6",
+        "pt": "Perneiras de Aço +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-steel-legguards-6",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-steel-quickblade-6",
+      "name": {
+        "en": "Steel Quickblade +6",
+        "pt": "Lâmina Ligeira de Aço +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-steel-quickblade-6",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-steel-staff-6",
+      "name": {
+        "en": "Steel Staff +6",
+        "pt": "Cajado de Aço +6"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-steel-bar",
+          "name": {
+            "en": "Steel Bar",
+            "pt": "Barra de Aço"
+          },
+          "qty": 4
+        },
+        {
+          "entryId": "wte-razor-tooth",
+          "name": {
+            "en": "Razor Tooth",
+            "pt": "Dente Afiado"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-iron-bar",
+          "name": {
+            "en": "Iron Bar",
+            "pt": "Barra de Ferro"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-steel-staff-6",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-greataxe-10",
+      "name": {
+        "en": "Vile Greataxe +10",
+        "pt": "Machadão Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-ornate-greataxe-8",
+          "name": {
+            "en": "Ornate Greataxe +8",
+            "pt": "Machadão Ornamentado +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-vile-greataxe-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-archmage-s-boots-8",
+      "name": {
+        "en": "Archmage's Boots +8",
+        "pt": "Botas do Arquimago +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-cultist-s-boots-7",
+          "name": {
+            "en": "Cultist's Boots +7",
+            "pt": "Botas do Cultista +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-explorer-s-boots-5",
+          "name": {
+            "en": "Explorer's Boots +5",
+            "pt": "Botas do Explorador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-archmage-s-boots-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-archmage-s-hat-8",
+      "name": {
+        "en": "Archmage's Hat +8",
+        "pt": "Chapéu do Arquimago +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-cultist-s-mask-7",
+          "name": {
+            "en": "Cultist's Mask +7",
+            "pt": "Máscara do Cultista +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-explorer-s-hat-5",
+          "name": {
+            "en": "Explorer's Hat +5",
+            "pt": "Chapéu do Explorador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-archmage-s-hat-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-archmage-s-robe-8",
+      "name": {
+        "en": "Archmage's Robe +8",
+        "pt": "Manto do Arquimago +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-cultist-s-robe-7",
+          "name": {
+            "en": "Cultist's Robe +7",
+            "pt": "Manto do Cultista +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-explorer-s-vest-5",
+          "name": {
+            "en": "Explorer's Vest +5",
+            "pt": "Colete do Explorador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-archmage-s-robe-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-archmage-s-sash-8",
+      "name": {
+        "en": "Archmage's Sash +8",
+        "pt": "Faixa do Arquimago +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-cultist-s-legguards-7",
+          "name": {
+            "en": "Cultist's Legguards +7",
+            "pt": "Perneiras do Cultista +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-explorer-s-pants-5",
+          "name": {
+            "en": "Explorer's Pants +5",
+            "pt": "Calças do Explorador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-archmage-s-sash-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-champion-s-chestplate-8",
+      "name": {
+        "en": "Champion's Chestplate +8",
+        "pt": "Peitoral do Campeão +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-blacksteel-chestplate-7",
+          "name": {
+            "en": "Blacksteel Chestplate +7",
+            "pt": "Peitoral de Aço Negro +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gladiator-s-chestplate-5",
+          "name": {
+            "en": "Gladiator's Chestplate +5",
+            "pt": "Peitoral do Gladiador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-champion-s-chestplate-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-champion-s-greaves-8",
+      "name": {
+        "en": "Champion's Greaves +8",
+        "pt": "Grevas do Campeão +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-blacksteel-greaves-7",
+          "name": {
+            "en": "Blacksteel Greaves +7",
+            "pt": "Grevas de Aço Negro +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gladiator-s-sandals-5",
+          "name": {
+            "en": "Gladiator's Sandals +5",
+            "pt": "Sandálias do Gladiador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-champion-s-greaves-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-champion-s-helmet-8",
+      "name": {
+        "en": "Champion's Helmet +8",
+        "pt": "Elmo do Campeão +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-blacksteel-helmet-7",
+          "name": {
+            "en": "Blacksteel Helmet +7",
+            "pt": "Elmo de Aço Negro +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gladiator-s-helmet-5",
+          "name": {
+            "en": "Gladiator's Helmet +5",
+            "pt": "Elmo do Gladiador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-champion-s-helmet-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-champion-s-loincloth-8",
+      "name": {
+        "en": "Champion's Loincloth +8",
+        "pt": "Tanga do Campeão +8"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-blacksteel-legguards-7",
+          "name": {
+            "en": "Blacksteel Legguards +7",
+            "pt": "Perneiras de Aço Negro +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-gladiator-s-legguards-5",
+          "name": {
+            "en": "Gladiator's Legguards +5",
+            "pt": "Perneiras do Gladiador +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-blacksteel-bar",
+          "name": {
+            "en": "Blacksteel Bar",
+            "pt": "Barra de Aço Negro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 6
+        },
+        {
+          "entryId": "wte-ancientwood",
+          "name": {
+            "en": "Ancientwood",
+            "pt": "Madeira Ancestral"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-radiant-scales",
+          "name": {
+            "en": "Radiant Scales",
+            "pt": "Escamas Radiantes"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-champion-s-loincloth-8",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-corvid-boots-10",
+      "name": {
+        "en": "Corvid Boots +10",
+        "pt": "Botas Corvídeas +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-plague-doctor-boots-4",
+          "name": {
+            "en": "Plague Doctor Boots +4",
+            "pt": "Botas do Médico da Peste +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mysterious-boots-6",
+          "name": {
+            "en": "Mysterious Boots +6",
+            "pt": "Botas Misteriosas +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-corvid-boots-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-corvid-cloak-10",
+      "name": {
+        "en": "Corvid Cloak +10",
+        "pt": "Capa Corvídea +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-plague-doctor-robe-4",
+          "name": {
+            "en": "Plague Doctor Robe +4",
+            "pt": "Manto do Médico da Peste +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mysterious-tunic-6",
+          "name": {
+            "en": "Mysterious Tunic +6",
+            "pt": "Túnica Misteriosa +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-corvid-cloak-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-corvid-legguards-10",
+      "name": {
+        "en": "Corvid Legguards +10",
+        "pt": "Perneiras Corvídeas +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-plague-doctor-legguards-4",
+          "name": {
+            "en": "Plague Doctor Legguards +4",
+            "pt": "Perneiras do Médico da Peste +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mysterious-legguards-6",
+          "name": {
+            "en": "Mysterious Legguards +6",
+            "pt": "Perneiras Misteriosas +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-corvid-legguards-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-corvid-mask-10",
+      "name": {
+        "en": "Corvid Mask +10",
+        "pt": "Máscara Corvídea +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-plague-doctor-mask-4",
+          "name": {
+            "en": "Plague Doctor Mask +4",
+            "pt": "Máscara do Médico da Peste +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mysterious-hat-6",
+          "name": {
+            "en": "Mysterious Hat +6",
+            "pt": "Chapéu Misterioso +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-corvid-mask-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crimson-bandana-10",
+      "name": {
+        "en": "Crimson Bandana +10",
+        "pt": "Bandana Carmesim +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-witch-hat-3",
+          "name": {
+            "en": "Witch Hat +3",
+            "pt": "Chapéu de Bruxa +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rogue-s-hood-5",
+          "name": {
+            "en": "Rogue's Hood +5",
+            "pt": "Capuz do Malandro +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-nomad-hood-2",
+          "name": {
+            "en": "Nomad Hood +2",
+            "pt": "Capuz do Nômade +2"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crimson-bandana-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crimson-robe-10",
+      "name": {
+        "en": "Crimson Robe +10",
+        "pt": "Manto Carmesim +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-witch-robe-3",
+          "name": {
+            "en": "Witch Robe +3",
+            "pt": "Manto de Bruxa +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rogue-s-cloak-5",
+          "name": {
+            "en": "Rogue's Cloak +5",
+            "pt": "Capa do Malandro +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-nomad-cloak-2",
+          "name": {
+            "en": "Nomad Cloak +2",
+            "pt": "Manto do Nômade +2"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crimson-robe-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crimson-sash-10",
+      "name": {
+        "en": "Crimson Sash +10",
+        "pt": "Faixa Carmesim +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-witch-leggings-3",
+          "name": {
+            "en": "Witch Leggings +3",
+            "pt": "Calças de Bruxa +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rogue-s-chaps-5",
+          "name": {
+            "en": "Rogue's Chaps +5",
+            "pt": "Perneiras de Couro do Malandro +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-nomad-legguards-2",
+          "name": {
+            "en": "Nomad Legguards +2",
+            "pt": "Perneiras do Nômade +2"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crimson-sash-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crimson-shoes-10",
+      "name": {
+        "en": "Crimson Shoes +10",
+        "pt": "Sapatos Carmesim +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-witch-shoes-3",
+          "name": {
+            "en": "Witch Shoes +3",
+            "pt": "Sapatos de Bruxa +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rogue-s-boots-5",
+          "name": {
+            "en": "Rogue's Boots +5",
+            "pt": "Botas do Malandro +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-nomad-shoes-2",
+          "name": {
+            "en": "Nomad Shoes +2",
+            "pt": "Sapatos do Nômade +2"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crimson-shoes-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crusader-s-chestplate-10",
+      "name": {
+        "en": "Crusader's Chestplate +10",
+        "pt": "Peitoral do Cruzado +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-platinum-chestplate-4",
+          "name": {
+            "en": "Platinum Chestplate +4",
+            "pt": "Peitoral de Platina +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bluesteel-chestplate-3",
+          "name": {
+            "en": "Bluesteel Chestplate +3",
+            "pt": "Peitoral de Aço Azul +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rockshell-chestplate-4",
+          "name": {
+            "en": "Rockshell Chestplate +4",
+            "pt": "Peitoral Casco-de-rocha +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crusader-s-chestplate-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crusader-s-greaves-10",
+      "name": {
+        "en": "Crusader's Greaves +10",
+        "pt": "Grevas do Cruzado +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crusader-s-greaves-10",
+          "name": {
+            "en": "Crusader's Greaves +10",
+            "pt": "Grevas do Cruzado +10"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crusader-s-greaves-10",
+          "name": {
+            "en": "Crusader's Greaves +10",
+            "pt": "Grevas do Cruzado +10"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crusader-s-greaves-10",
+          "name": {
+            "en": "Crusader's Greaves +10",
+            "pt": "Grevas do Cruzado +10"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crusader-s-greaves-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crusader-s-helmet-10",
+      "name": {
+        "en": "Crusader's Helmet +10",
+        "pt": "Elmo do Cruzado +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-platinum-helmet-4",
+          "name": {
+            "en": "Platinum Helmet +4",
+            "pt": "Elmo de Platina +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bluesteel-helmet-3",
+          "name": {
+            "en": "Bluesteel Helmet +3",
+            "pt": "Elmo de Aço Azul +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rockshell-helmet-4",
+          "name": {
+            "en": "Rockshell Helmet +4",
+            "pt": "Elmo Casco-de-rocha +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-skull",
+          "name": {
+            "en": "Cursed Skull",
+            "pt": "Crânio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crusader-s-helmet-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-crusader-s-legguards-10",
+      "name": {
+        "en": "Crusader's Legguards +10",
+        "pt": "Perneiras do Cruzado +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-platinum-legguards-4",
+          "name": {
+            "en": "Platinum Legguards +4",
+            "pt": "Perneiras de Platina +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bluesteel-legguards-3",
+          "name": {
+            "en": "Bluesteel Legguards +3",
+            "pt": "Perneiras de Aço Azul +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-rockshell-legguards-4",
+          "name": {
+            "en": "Rockshell Legguards +4",
+            "pt": "Perneiras Casco-de-rocha +4"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 8
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 12
+        },
+        {
+          "entryId": "wte-cursed-bone-fragments",
+          "name": {
+            "en": "Cursed Bone Fragments",
+            "pt": "Fragmentos de Osso Amaldiçoados"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-crusader-s-legguards-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-encrusted-blade-10",
+      "name": {
+        "en": "Encrusted Blade +10",
+        "pt": "Lâmina Incrustada +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-platinum-quickblade-5",
+          "name": {
+            "en": "Platinum Quickblade +5",
+            "pt": "Lâmina Ligeira de Platina +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-obsidian-spear-7",
+          "name": {
+            "en": "Obsidian Spear +7",
+            "pt": "Lança de Obsidiana +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-sword-of-the-harvest-8",
+          "name": {
+            "en": "Sword of the Harvest +8",
+            "pt": "Espada da Colheita +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-cursed-demon-skull",
+          "name": {
+            "en": "Cursed Demon Skull",
+            "pt": "Crânio de Demônio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-encrusted-blade-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-staff-of-blood-10",
+      "name": {
+        "en": "Staff of Blood +10",
+        "pt": "Cajado de Sangue +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-platinum-staff-5",
+          "name": {
+            "en": "Platinum Staff +5",
+            "pt": "Cajado de Platina +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-staff-of-flesh-6",
+          "name": {
+            "en": "Staff of Flesh +6",
+            "pt": "Cajado de Carne +6"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-staff-of-valtris-3",
+          "name": {
+            "en": "Staff of Valtris +3",
+            "pt": "Cajado de Valtris +3"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-cursed-demon-skull",
+          "name": {
+            "en": "Cursed Demon Skull",
+            "pt": "Crânio de Demônio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-staff-of-blood-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-staff-of-hatred-10",
+      "name": {
+        "en": "Staff of Hatred +10",
+        "pt": "Cajado do Ódio +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-forbidden-lorebook-10",
+          "name": {
+            "en": "Forbidden Lorebook +10",
+            "pt": "Livro do Saber Proibido +10"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-staff-of-the-dead-7",
+          "name": {
+            "en": "Staff of the Dead +7",
+            "pt": "Cajado dos Mortos +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-obsidian-spear-7",
+          "name": {
+            "en": "Obsidian Spear +7",
+            "pt": "Lança de Obsidiana +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-cursed-demon-skull",
+          "name": {
+            "en": "Cursed Demon Skull",
+            "pt": "Crânio de Demônio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-staff-of-hatred-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-staff-of-nature-10",
+      "name": {
+        "en": "Staff of Nature +10",
+        "pt": "Cajado da Natureza +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-staff-of-the-deep-8",
+          "name": {
+            "en": "Staff of the Deep +8",
+            "pt": "Cajado das Profundezas +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bonestaff-5",
+          "name": {
+            "en": "Bonestaff +5",
+            "pt": "Cajado de Ossos +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mending-spear-8",
+          "name": {
+            "en": "Mending Spear +8",
+            "pt": "Lança Curativa +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-cursed-demon-skull",
+          "name": {
+            "en": "Cursed Demon Skull",
+            "pt": "Crânio de Demônio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-staff-of-nature-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-tentacle-blade-10",
+      "name": {
+        "en": "Tentacle Blade +10",
+        "pt": "Lâmina de Tentáculo +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-whip-of-delvek-8",
+          "name": {
+            "en": "Whip of Delvek +8",
+            "pt": "Chicote de Delvek +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-dagger-of-valtris-8",
+          "name": {
+            "en": "Dagger of Valtris +8",
+            "pt": "Adaga de Valtris +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-nunchaku-7",
+          "name": {
+            "en": "Nunchaku +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-cursed-demon-skull",
+          "name": {
+            "en": "Cursed Demon Skull",
+            "pt": "Crânio de Demônio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-tentacle-blade-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-the-decimator-10",
+      "name": {
+        "en": "The Decimator +10",
+        "pt": "O Dizimador +10"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Combine",
+        "pt": "Combinações"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-platinum-greatsword-5",
+          "name": {
+            "en": "Platinum Greatsword +5",
+            "pt": "Espadão de Platina +5"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-ornate-greataxe-8",
+          "name": {
+            "en": "Ornate Greataxe +8",
+            "pt": "Machadão Ornamentado +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-brutal-maul-of-kaal-8",
+          "name": {
+            "en": "Brutal Maul of Kaal +8",
+            "pt": "Marreta Brutal de Kaal +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crimson-bar",
+          "name": {
+            "en": "Crimson Bar",
+            "pt": "Barra de Carmesim"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-soul-fragments",
+          "name": {
+            "en": "Soul Fragments",
+            "pt": "Fragmentos de Alma"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crimson-sinew",
+          "name": {
+            "en": "Crimson Sinew",
+            "pt": "Tendão Carmesim"
+          },
+          "qty": 15
+        },
+        {
+          "entryId": "wte-cursed-demon-skull",
+          "name": {
+            "en": "Cursed Demon Skull",
+            "pt": "Crânio de Demônio Amaldiçoado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-cursed-bones",
+          "name": {
+            "en": "Cursed Bones",
+            "pt": "Ossos Amaldiçoados"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-the-decimator-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-skeleton-2",
+      "name": {
+        "en": "Skeleton 2",
+        "pt": "Esqueleto 2"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Decorative",
+        "pt": "Decoração"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 10
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-ghostly-scarecrow",
+      "name": {
+        "en": "Ghostly Scarecrow",
+        "pt": "Espantalho Fantasmagórico"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Scarecrows",
+        "pt": "Espantalhos"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-dripping-scarecrow",
+          "name": {
+            "en": "Dripping Scarecrow",
+            "pt": "Espantalho Gotejante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 50
+        },
+        {
+          "entryId": "wte-string",
+          "name": {
+            "en": "String",
+            "pt": "Barbante"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-wood",
+          "name": {
+            "en": "Wood",
+            "pt": "Madeira"
+          },
+          "qty": 25
+        },
+        {
+          "entryId": "wte-spiritwood",
+          "name": {
+            "en": "Spiritwood",
+            "pt": "Madeira Espiritual"
+          },
+          "qty": 15
+        }
+      ],
+      "makes": "wte-ghostly-scarecrow",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-craft-5x-dense-fertilizer-lv1",
+      "name": {
+        "en": "5x Dense Fertilizer (Lv1)",
+        "pt": "5× Fertilizante Denso (Nv1)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Compost Bin",
+        "pt": "Composteira"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bat-guano",
+          "name": {
+            "en": "Bat Guano",
+            "pt": "Guano de Morcego"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-5x-dense-fertilizer-lv2",
+      "name": {
+        "en": "5x Dense Fertilizer (Lv2)",
+        "pt": "5× Fertilizante Denso (Nv2)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Compost Bin",
+        "pt": "Composteira"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bat-guano",
+          "name": {
+            "en": "Bat Guano",
+            "pt": "Guano de Morcego"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-common-mushroom",
+          "name": {
+            "en": "Common Mushroom",
+            "pt": "Cogumelo Comum"
+          },
+          "qty": 2
+        }
+      ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-craft-forge-upgrade-t3",
+      "name": {
+        "en": "Forge Upgrade (t3)",
+        "pt": "Melhoria da Forja (n3)"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Tinker's Desk",
+        "pt": "Mesa do Inventor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-forge-upgrade-t2",
+          "name": {
+            "en": "Forge Upgrade (t2)",
+            "pt": "Melhoria da Forja (n2)"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-deep-crystal",
+          "name": {
+            "en": "Deep Crystal",
+            "pt": "Cristal das Profundezas"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bone-ingot",
+          "name": {
+            "en": "Bone Ingot",
+            "pt": "Lingote de Osso"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-gold-plate",
+          "name": {
+            "en": "Gold Plate",
+            "pt": "Placa de Ouro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-spiritwood",
+          "name": {
+            "en": "Spiritwood",
+            "pt": "Madeira Espiritual"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-forge-upgrade-t3",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
     }
   ],
   "creatures": [
@@ -2933,7 +10097,114 @@
           "pt": "Floresta Profunda"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insight Attacks. Deals Insanity Damage",
+        "pt": "Fraco contra ataques de Percepção. Causa dano de Insanidade"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-goldpuff",
+              "name": {
+                "en": "Goldpuff",
+                "pt": "Baiacu-dourado"
+              }
+            },
+            {
+              "entryId": "wte-huge-meat-chunk",
+              "name": {
+                "en": "Huge Meat Chunk",
+                "pt": "Pedaço de Carne Enorme"
+              }
+            },
+            {
+              "entryId": "wte-large-meat-chunk",
+              "name": {
+                "en": "Large Meat Chunk",
+                "pt": "Pedaço de Carne Grande"
+              }
+            },
+            {
+              "name": {
+                "en": "Meat Portion",
+                "pt": "Porção de Carne"
+              }
+            },
+            {
+              "entryId": "wte-medium-meat-chunk",
+              "name": {
+                "en": "Medium Meat Chunk",
+                "pt": "Pedaço de Carne Médio"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-small-meat-chunk",
+              "name": {
+                "en": "Small Meat Chunk",
+                "pt": "Pedaço de Carne Pequeno"
+              }
+            },
+            {
+              "entryId": "wte-soulroot",
+              "name": {
+                "en": "Soulroot",
+                "pt": "Raiz da Alma"
+              }
+            },
+            {
+              "name": {
+                "en": "Lucky Pocket Knife",
+                "pt": "Canivete da Sorte"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of Leaves +5",
+                "pt": "Pingente de Folhas +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Lost +5",
+                "pt": "Pingente dos Perdidos +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Woods +5",
+                "pt": "Pingente da Floresta +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Ring of the Woods +5",
+                "pt": "Anel da Floresta +5"
+              }
+            },
+            {
+              "entryId": "wte-vile-relic",
+              "name": {
+                "en": "Vile Relic",
+                "pt": "Relíquia Vil"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Woods Loot",
+            "pt": "Loot: Floresta Profunda"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-coin-totem",
@@ -2947,7 +10218,24 @@
           "pt": "Catacumbas Profundas"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "rewards": [
+        {
+          "how": "victory",
+          "items": [
+            {
+              "name": {
+                "en": "Skull of the Dark",
+                "pt": "Crânio das Trevas"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Coin Totem Victory Rewards",
+            "pt": "Recompensas de vitória: Totem de Moedas"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-emissary-of-delvek",
@@ -3023,7 +10311,114 @@
           "pt": "Floresta Profunda"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insight Attacks. Deals Insanity Damage",
+        "pt": "Fraco contra ataques de Percepção. Causa dano de Insanidade"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-goldpuff",
+              "name": {
+                "en": "Goldpuff",
+                "pt": "Baiacu-dourado"
+              }
+            },
+            {
+              "entryId": "wte-huge-meat-chunk",
+              "name": {
+                "en": "Huge Meat Chunk",
+                "pt": "Pedaço de Carne Enorme"
+              }
+            },
+            {
+              "entryId": "wte-large-meat-chunk",
+              "name": {
+                "en": "Large Meat Chunk",
+                "pt": "Pedaço de Carne Grande"
+              }
+            },
+            {
+              "name": {
+                "en": "Meat Portion",
+                "pt": "Porção de Carne"
+              }
+            },
+            {
+              "entryId": "wte-medium-meat-chunk",
+              "name": {
+                "en": "Medium Meat Chunk",
+                "pt": "Pedaço de Carne Médio"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-small-meat-chunk",
+              "name": {
+                "en": "Small Meat Chunk",
+                "pt": "Pedaço de Carne Pequeno"
+              }
+            },
+            {
+              "entryId": "wte-soulroot",
+              "name": {
+                "en": "Soulroot",
+                "pt": "Raiz da Alma"
+              }
+            },
+            {
+              "name": {
+                "en": "Lucky Pocket Knife",
+                "pt": "Canivete da Sorte"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of Leaves +5",
+                "pt": "Pingente de Folhas +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Lost +5",
+                "pt": "Pingente dos Perdidos +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Woods +5",
+                "pt": "Pingente da Floresta +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Ring of the Woods +5",
+                "pt": "Anel da Floresta +5"
+              }
+            },
+            {
+              "entryId": "wte-vile-relic",
+              "name": {
+                "en": "Vile Relic",
+                "pt": "Relíquia Vil"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Woods Loot",
+            "pt": "Loot: Floresta Profunda"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-glow-bear",
@@ -3037,7 +10432,114 @@
           "pt": "Floresta Profunda"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Curse Attacks. Deals Light Damage",
+        "pt": "Fraco contra ataques de Maldição. Causa dano de Luz"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-goldpuff",
+              "name": {
+                "en": "Goldpuff",
+                "pt": "Baiacu-dourado"
+              }
+            },
+            {
+              "entryId": "wte-huge-meat-chunk",
+              "name": {
+                "en": "Huge Meat Chunk",
+                "pt": "Pedaço de Carne Enorme"
+              }
+            },
+            {
+              "entryId": "wte-large-meat-chunk",
+              "name": {
+                "en": "Large Meat Chunk",
+                "pt": "Pedaço de Carne Grande"
+              }
+            },
+            {
+              "name": {
+                "en": "Meat Portion",
+                "pt": "Porção de Carne"
+              }
+            },
+            {
+              "entryId": "wte-medium-meat-chunk",
+              "name": {
+                "en": "Medium Meat Chunk",
+                "pt": "Pedaço de Carne Médio"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-small-meat-chunk",
+              "name": {
+                "en": "Small Meat Chunk",
+                "pt": "Pedaço de Carne Pequeno"
+              }
+            },
+            {
+              "entryId": "wte-soulroot",
+              "name": {
+                "en": "Soulroot",
+                "pt": "Raiz da Alma"
+              }
+            },
+            {
+              "name": {
+                "en": "Lucky Pocket Knife",
+                "pt": "Canivete da Sorte"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of Leaves +5",
+                "pt": "Pingente de Folhas +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Lost +5",
+                "pt": "Pingente dos Perdidos +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Woods +5",
+                "pt": "Pingente da Floresta +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Ring of the Woods +5",
+                "pt": "Anel da Floresta +5"
+              }
+            },
+            {
+              "entryId": "wte-vile-relic",
+              "name": {
+                "en": "Vile Relic",
+                "pt": "Relíquia Vil"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Woods Loot",
+            "pt": "Loot: Floresta Profunda"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-grandma",
@@ -3052,6 +10554,10 @@
         }
       ],
       "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insanity Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Insanidade. Causa dano de Percepção"
+      },
       "rewards": [
         {
           "how": "event",
@@ -3116,7 +10622,84 @@
           "pt": "Catacumbas Profundas — Câmara dos Ossos"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Darkness Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Trevas. Causa dano de Percepção"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-cursed-bone-fragments",
+              "name": {
+                "en": "Cursed Bone Fragments",
+                "pt": "Fragmentos de Osso Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-bones",
+              "name": {
+                "en": "Cursed Bones",
+                "pt": "Ossos Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-demon-skull",
+              "name": {
+                "en": "Cursed Demon Skull",
+                "pt": "Crânio de Demônio Amaldiçoado"
+              }
+            },
+            {
+              "entryId": "wte-cursed-skull",
+              "name": {
+                "en": "Cursed Skull",
+                "pt": "Crânio Amaldiçoado"
+              }
+            },
+            {
+              "name": {
+                "en": "Gold Tooth",
+                "pt": "Dente de Ouro"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Catacombs Loot",
+            "pt": "Loot: Catacumbas Profundas"
+          },
+          "also": [
+            {
+              "name": {
+                "en": "Catacombs Tools",
+                "pt": "Ferramentas das Catacumbas"
+              },
+              "items": [
+                {
+                  "name": {
+                    "en": "Large Hammer",
+                    "pt": "Martelo Grande"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Small Hammer",
+                    "pt": "Martelo Pequeno"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Wire Cutters",
+                    "pt": "Alicate de Corte"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "wte-cr-mr-wiggles-v2",
@@ -3144,7 +10727,114 @@
           "pt": "Floresta Profunda"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insight Attacks. Deals Insanity Damage",
+        "pt": "Fraco contra ataques de Percepção. Causa dano de Insanidade"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-goldpuff",
+              "name": {
+                "en": "Goldpuff",
+                "pt": "Baiacu-dourado"
+              }
+            },
+            {
+              "entryId": "wte-huge-meat-chunk",
+              "name": {
+                "en": "Huge Meat Chunk",
+                "pt": "Pedaço de Carne Enorme"
+              }
+            },
+            {
+              "entryId": "wte-large-meat-chunk",
+              "name": {
+                "en": "Large Meat Chunk",
+                "pt": "Pedaço de Carne Grande"
+              }
+            },
+            {
+              "name": {
+                "en": "Meat Portion",
+                "pt": "Porção de Carne"
+              }
+            },
+            {
+              "entryId": "wte-medium-meat-chunk",
+              "name": {
+                "en": "Medium Meat Chunk",
+                "pt": "Pedaço de Carne Médio"
+              }
+            },
+            {
+              "entryId": "wte-mystery-steak",
+              "name": {
+                "en": "Mystery Steak",
+                "pt": "Bife Misterioso"
+              }
+            },
+            {
+              "entryId": "wte-small-meat-chunk",
+              "name": {
+                "en": "Small Meat Chunk",
+                "pt": "Pedaço de Carne Pequeno"
+              }
+            },
+            {
+              "entryId": "wte-soulroot",
+              "name": {
+                "en": "Soulroot",
+                "pt": "Raiz da Alma"
+              }
+            },
+            {
+              "name": {
+                "en": "Lucky Pocket Knife",
+                "pt": "Canivete da Sorte"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of Leaves +5",
+                "pt": "Pingente de Folhas +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Lost +5",
+                "pt": "Pingente dos Perdidos +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Pendant of the Woods +5",
+                "pt": "Pingente da Floresta +5"
+              }
+            },
+            {
+              "name": {
+                "en": "Ring of the Woods +5",
+                "pt": "Anel da Floresta +5"
+              }
+            },
+            {
+              "entryId": "wte-vile-relic",
+              "name": {
+                "en": "Vile Relic",
+                "pt": "Relíquia Vil"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Woods Loot",
+            "pt": "Loot: Floresta Profunda"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-soul-vessel",
@@ -3166,7 +10856,99 @@
           "pt": "Catacumbas Profundas — Câmara dos Ossos"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Darkness Attacks. Deals Insight Damage, Weak to Insight Attacks. Deals Curse Damage",
+        "pt": "Fraco contra ataques de Trevas. Causa dano de Percepção, Fraco contra ataques de Percepção. Causa dano de Maldição"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-cursed-bone-fragments",
+              "name": {
+                "en": "Cursed Bone Fragments",
+                "pt": "Fragmentos de Osso Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-bones",
+              "name": {
+                "en": "Cursed Bones",
+                "pt": "Ossos Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-demon-skull",
+              "name": {
+                "en": "Cursed Demon Skull",
+                "pt": "Crânio de Demônio Amaldiçoado"
+              }
+            },
+            {
+              "entryId": "wte-cursed-skull",
+              "name": {
+                "en": "Cursed Skull",
+                "pt": "Crânio Amaldiçoado"
+              }
+            },
+            {
+              "name": {
+                "en": "Gold Tooth",
+                "pt": "Dente de Ouro"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Catacombs Loot",
+            "pt": "Loot: Catacumbas Profundas"
+          },
+          "also": [
+            {
+              "name": {
+                "en": "Catacombs Tools",
+                "pt": "Ferramentas das Catacumbas"
+              },
+              "items": [
+                {
+                  "name": {
+                    "en": "Large Hammer",
+                    "pt": "Martelo Grande"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Small Hammer",
+                    "pt": "Martelo Pequeno"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Wire Cutters",
+                    "pt": "Alicate de Corte"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "how": "victory",
+          "items": [
+            {
+              "name": {
+                "en": "Essence of Kaal",
+                "pt": "Essência de Kaal"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Soul Vessel Victory Rewards",
+            "pt": "Recompensas de vitória: Receptáculo de Almas"
+          }
+        }
+      ]
     },
     {
       "id": "wte-cr-the-necromancer",
@@ -3180,7 +10962,11 @@
           "pt": "Catacumbas Profundas — Câmara dos Ossos"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Insight Attacks. Deals Curse Damage",
+        "pt": "Fraco contra ataques de Percepção. Causa dano de Maldição"
+      }
     },
     {
       "id": "wte-cr-tickler",
@@ -3202,7 +10988,84 @@
           "pt": "Catacumbas Profundas — Câmara dos Ossos"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Darkness Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Trevas. Causa dano de Percepção"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-cursed-bone-fragments",
+              "name": {
+                "en": "Cursed Bone Fragments",
+                "pt": "Fragmentos de Osso Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-bones",
+              "name": {
+                "en": "Cursed Bones",
+                "pt": "Ossos Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-demon-skull",
+              "name": {
+                "en": "Cursed Demon Skull",
+                "pt": "Crânio de Demônio Amaldiçoado"
+              }
+            },
+            {
+              "entryId": "wte-cursed-skull",
+              "name": {
+                "en": "Cursed Skull",
+                "pt": "Crânio Amaldiçoado"
+              }
+            },
+            {
+              "name": {
+                "en": "Gold Tooth",
+                "pt": "Dente de Ouro"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Catacombs Loot",
+            "pt": "Loot: Catacumbas Profundas"
+          },
+          "also": [
+            {
+              "name": {
+                "en": "Catacombs Tools",
+                "pt": "Ferramentas das Catacumbas"
+              },
+              "items": [
+                {
+                  "name": {
+                    "en": "Large Hammer",
+                    "pt": "Martelo Grande"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Small Hammer",
+                    "pt": "Martelo Pequeno"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Wire Cutters",
+                    "pt": "Alicate de Corte"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "wte-cr-tomb-cleaner",
@@ -3224,7 +11087,84 @@
           "pt": "Catacumbas Profundas — Câmara dos Ossos"
         }
       ],
-      "spoilerLevel": 0
+      "spoilerLevel": 0,
+      "notes": {
+        "en": "Weak to Darkness Attacks. Deals Insight Damage",
+        "pt": "Fraco contra ataques de Trevas. Causa dano de Percepção"
+      },
+      "rewards": [
+        {
+          "how": "loot",
+          "items": [
+            {
+              "entryId": "wte-cursed-bone-fragments",
+              "name": {
+                "en": "Cursed Bone Fragments",
+                "pt": "Fragmentos de Osso Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-bones",
+              "name": {
+                "en": "Cursed Bones",
+                "pt": "Ossos Amaldiçoados"
+              }
+            },
+            {
+              "entryId": "wte-cursed-demon-skull",
+              "name": {
+                "en": "Cursed Demon Skull",
+                "pt": "Crânio de Demônio Amaldiçoado"
+              }
+            },
+            {
+              "entryId": "wte-cursed-skull",
+              "name": {
+                "en": "Cursed Skull",
+                "pt": "Crânio Amaldiçoado"
+              }
+            },
+            {
+              "name": {
+                "en": "Gold Tooth",
+                "pt": "Dente de Ouro"
+              }
+            }
+          ],
+          "pool": {
+            "en": "Deep Catacombs Loot",
+            "pt": "Loot: Catacumbas Profundas"
+          },
+          "also": [
+            {
+              "name": {
+                "en": "Catacombs Tools",
+                "pt": "Ferramentas das Catacumbas"
+              },
+              "items": [
+                {
+                  "name": {
+                    "en": "Large Hammer",
+                    "pt": "Martelo Grande"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Small Hammer",
+                    "pt": "Martelo Pequeno"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Wire Cutters",
+                    "pt": "Alicate de Corte"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

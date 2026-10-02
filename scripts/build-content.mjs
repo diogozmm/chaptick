@@ -70,6 +70,13 @@ for (const { game, chapters } of games) {
       entries: sorted.reduce((sum, c) => sum + (c.entries ?? []).length, 0),
       crafts: sorted.reduce((sum, c) => sum + (c.crafts ?? []).length, 0),
       creatures: sorted.reduce((sum, c) => sum + (c.creatures ?? []).length, 0),
+      // Ways to get things that depend on the in-game season, so screens can offer a season view.
+      seasonal: sorted.reduce(
+        (sum, c) =>
+          sum +
+          [...(c.entries ?? []).flatMap((e) => e.sources), ...(c.entrySources ?? [])].filter((s) => s.seasons?.length).length,
+        0,
+      ),
     },
     chapters: sorted.map(({ id, order, neutralLabel, items }) => ({
       id,

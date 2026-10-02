@@ -92,6 +92,10 @@ class _Tables(HTMLParser):
                 self.cell = []
             if tag == 'br' and self.cell is not None:
                 self.cell.append(' / ')
+            # Season icons carry the only season data some tables have.
+            alt = dict(attrs).get('alt', '') if tag == 'img' else ''
+            if self.cell is not None and alt in SEASON_ICONS:
+                self.cell.append(f'[{alt}]')
 
     def handle_endtag(self, tag):
         if tag == self.inh:
@@ -114,6 +118,9 @@ class _Tables(HTMLParser):
             self.htext.append(data)
         if self.cell is not None:
             self.cell.append(data)
+
+
+SEASON_ICONS = {'Spring.png': 'spring', 'Summer.png': 'summer', 'Autumn.png': 'autumn', 'Winter.png': 'winter'}
 
 
 def tables(name):
@@ -234,10 +241,15 @@ FORAGE_SEASONS = {'Spring': 'spring', 'Summer': 'summer', 'Autumn': 'autumn', 'W
 def add_foraging(entries):
     """The Foraging page lists every spot (and season) a forageable shows up in; item pages often
     miss them. One source per place, so each lands in its own area."""
+    replaced = set()
     for head, row in tables('Foraging - Welcome to Elderfield Wiki.html'):
         name = clean_name(re.sub(r'\[[^\]]*\]', '', row['Name']))
         if name not in entries:
             continue
+        # This page is the full picture (spots and seasons): it replaces the item page's summary.
+        if name not in replaced:
+            entries[name]['sources'] = [s for s in entries[name]['sources'] if s['kind'] != 'forage']
+            replaced.add(name)
         season = FORAGE_SEASONS.get(head)
         known = {s['where'] for s in entries[name]['sources'] if s['kind'] == 'forage'}
         for place in [p.strip() for p in row.get('Location', '').split(',') if p.strip()]:
@@ -248,6 +260,45 @@ def add_foraging(entries):
             if season:
                 source['seasons'] = [season]
             entries[name]['sources'].append(source)
+
+
+FISH_ALIASES = {'Gold Fish': 'Goldfish'}
+FISH_SPOTS = {'Lakefront': 'Lakefront', 'Campsite (The Old Woods)': 'Campsite'}
+
+
+def add_fishing(entries):
+    """Seasons and hours per fish and spot, from the Fishing page's tables (item pages only name
+    them for some fish). A fish found in every season gets no season tag."""
+    parser = _Tables()
+    parser.feed((PAGES / 'Fishing - Welcome to Elderfield Wiki.html').read_text(encoding='utf-8'))
+    for table in parser.tables:
+        rows = table['rows']
+        if not rows or 'Season' not in rows[0] or table['head'] not in FISH_SPOTS:
+            continue
+        spot = FISH_SPOTS[table['head']]
+        for row in rows[1:]:
+            d = dict(zip(rows[0], row))
+            name = clean_name(re.sub(r'\[[^\]]*\]', '', d['Fish']))
+            name = FISH_ALIASES.get(name, name)
+            if name not in entries:
+                continue
+            seasons = [s for icon, s in SEASON_ICONS.items() if f'[{icon}]' in d['Season']]
+            hours = d.get('Time', '')
+            time = 'day' if hours.startswith('6:00am') else 'night' if hours.startswith('8:00pm') else None
+            fishing = [s for s in entries[name]['sources'] if s['kind'] == 'fish' and spot in s['where']]
+            if not fishing:
+                bait = ' or '.join(b.strip() for b in re.sub(r'\[[^\]]*\]', '', d.get('Bait', '')).split('/') if b.strip())
+                where = f'The Old Woods Campsite' if spot == 'Campsite' else spot
+                fishing = [{'kind': 'fish', 'where': f'{where}; {bait} bait' if bait else where,
+                            'area': max(areas_in(where))}]
+                entries[name]['sources'].extend(fishing)
+            for source in fishing:
+                source.pop('seasons', None)
+                source.pop('time', None)
+                if 0 < len(seasons) < 4:
+                    source['seasons'] = seasons
+                if time:
+                    source['time'] = time
 
 
 # --- Crafts (Crafting, Cooking, Forging) --------------------------------------------------------
@@ -367,11 +418,204 @@ def load_treasure():
     return maps
 
 
+
+# --- Neoseeker guides (pre-release edits: the wiki wins where both cover the same fact) ---------
+def neo_text(name):
+    """A Neoseeker page as plain text: "### " headings, "| " table rows, "- " list items."""
+    page = (PAGES / name).read_text(encoding='utf-8')
+    page = re.sub(r'<(script|style|noscript)[^>]*>.*?</\1>', '', page, flags=re.S)
+    start, end = page.find('<h2'), page.rfind('Related Guides')
+    body = page[start:end if end > 0 else len(page)]
+    body = re.sub(r'<(h[234])[^>]*>(.*?)</\1>', lambda m: '\n### ' + re.sub('<[^>]+>', '', m[2]).strip() + '\n', body, flags=re.S)
+    body = re.sub(r'<tr[^>]*>', '\n| ', body)
+    body = re.sub(r'</t[dh]>', ' | ', body)
+    body = re.sub(r'<li[^>]*>', '\n- ', body)
+    body = re.sub(r'<br ?/?>', ' / ', body)
+    text = html.unescape(re.sub(r'<[^>]+>', '', body))
+    text = re.sub(r'[ \t]+', ' ', text).replace('- Advertisement -', '')
+    text = text[:text.find('Get Walkthroughs')] if 'Get Walkthroughs' in text else text
+    return re.sub(r'\n\s*\n+', '\n', text)
+
+
+def neo_sections(text):
+    """(heading, lines) pairs, in page order."""
+    out, head, lines = [], '', []
+    for line in text.split('\n'):
+        if line.startswith('### '):
+            out.append((head, lines))
+            head, lines = line[4:].strip(), []
+        elif line.strip():
+            lines.append(line.strip())
+    out.append((head, lines))
+    return out
+
+
+def neo_rows(lines):
+    """Table rows as dicts keyed by the header row."""
+    rows = [[c.strip() for c in l.strip().strip('|').split('|')] for l in lines if l.startswith('| ')]
+    if not rows:
+        return []
+    header = rows[0]
+    return [dict(zip(header, r)) for r in rows[1:] if len(r) >= len(header) - 1]
+
+
+def split_names(text):
+    return [n.strip().rstrip('.') for n in text.split(',') if n.strip().rstrip('.')]
+
+
+ENCOUNTER_PAGES = ['Town, Farm and Mall', 'Old Woods and Northern Mine', 'Deep Woods', 'Catacombs']
+REGION_AREAS = {
+    'Elderfield Southeast and Farm': 0, 'Elderfield Northeast': 0, 'Elderfield Northwest': 0, 'Town Outskirts South': 0,
+    'The Mall': 1, 'Deep Mall': 3, 'Farm Mine': 1, 'Mall Mine': 1, 'Shrine of Xxarteck': 2, 'The Old Woods': 2,
+    'Northern Mine': 2, 'The Deep Woods': 4, 'The Catacombs': 2, 'Deep Catacombs': 4,
+}
+
+
+POOL_AREAS = {}  # loot pool → earliest region whose creatures use it, filled by load_encounters
+
+
+def load_encounters():
+    """Creatures with their loot pools and weak points, and what every pool can give."""
+    enemies, pools = {}, {}
+    for page in ENCOUNTER_PAGES:
+        sections = neo_sections(neo_text(f'Welcome to Elderfield - {page} Encounters + Drops - Neoseeker.html'))
+        in_reference = False
+        for head, lines in sections:
+            if head == 'Loot Reference':
+                in_reference = True
+                continue
+            if in_reference:
+                pool = pools.setdefault(head, {'items': [], 'also': []})
+                for line in lines:
+                    label, _, names = line.partition(':')
+                    # Pools shared by regions are listed on each region's page: keep one copy.
+                    key = 'also' if label == 'Additional reward pools' else 'items' if label in (
+                        'Food and materials', 'Equipment and conditional rewards', 'Possible victory rewards') else None
+                    if key:
+                        pool[key] += [n for n in split_names(names) if n not in pool[key]]
+                continue
+            if head not in REGION_AREAS:
+                continue
+            for row in neo_rows(lines):
+                name = row.get('Enemy', '').strip()
+                if not name:
+                    continue
+                enemy = enemies.setdefault(name, {'areas': set(), 'places': [], 'pools': [], 'notes': ''})
+                enemy['areas'].add(REGION_AREAS[head])
+                for place in split_names(row.get('Found In', '')):
+                    if place not in enemy['places']:
+                        enemy['places'].append(place)
+                for pool in [p.strip() for p in row.get('Loot', '').split(' / ') if p.strip()]:
+                    pool = f'{name} Victory Rewards' if pool == 'Victory rewards' else pool
+                    POOL_AREAS[pool] = min(POOL_AREAS.get(pool, 9), REGION_AREAS[head])
+                    if pool not in enemy['pools']:
+                        enemy['pools'].append(pool)
+                notes = row.get('Weakness / Notes', '').strip(' -')
+                if notes and not enemy['notes']:
+                    enemy['notes'] = notes
+    return enemies, pools
+
+
+def load_shared_pools():
+    """Treasure and random reward selections other pools draw from, flattened to their items."""
+    raw = {}
+    for head, lines in neo_sections(neo_text('Welcome to Elderfield - Treasure and Random Rewards - Neoseeker.html')):
+        items = [l[2:].strip() for l in lines if l.startswith('- ')]
+        also = []
+        for l in lines:
+            m = re.match(r'This selection can also draw from (.+)\.', l)
+            if m:
+                also = split_names(m[1])
+        if head and (items or also):
+            raw[head] = (items, also)
+
+    def flat(name, seen=()):
+        items, also = raw.get(name, ([], []))
+        out = list(items)
+        for other in also:
+            if other not in seen:
+                out += [i for i in flat(other, (*seen, name)) if i not in out]
+        return out
+
+    return {name: flat(name) for name in raw}
+
+
+def load_combat_shrines():
+    """Items (not gear) the combat shrine of each area can give."""
+    out, area = {}, None
+    for head, lines in neo_sections(neo_text('Welcome to Elderfield - Combat Shrine Rewards - Neoseeker.html')):
+        if head in ('Mall', 'Old Woods', 'Catacombs'):
+            area = head
+        elif head == 'Items' and area:
+            out[area] = [l[2:].strip() for l in lines if l.startswith('- ')]
+    return out
+
+
+SEASON_NAMES = {'Season of Rebirth': 'spring', 'Season of the Harvest': 'summer', 'Season of the Witch': 'autumn',
+                'Season of Death': 'winter'}
+CROP_ALIASES = {'Beans': 'Bean', 'Coffee Beans': 'Coffee Bean', 'Strawberries': 'Strawberry', 'Tooth': 'Tooth'}
+
+
+def load_crops():
+    """Planting seasons, growth time, yield and harvests per seed."""
+    crops = []
+    for head, lines in neo_sections(neo_text('Welcome to Elderfield - Crops Guide - Neoseeker.html')):
+        for row in neo_rows(lines):
+            if 'Seed' not in row or 'Planting Seasons' not in row:
+                continue
+            seasons = (list(SEASON_NAMES.values()) if 'All seasons' in row['Planting Seasons']
+                       else [v for k, v in SEASON_NAMES.items() if k in row['Planting Seasons']])
+            days = re.match(r'(\d+)', row.get('Growth', ''))
+            harvests = re.match(r'(\d+)', row.get('Harvests', ''))
+            crops.append({'crop': CROP_ALIASES.get(row['Crop'], row['Crop']), 'seed': row['Seed'], 'seasons': seasons,
+                          'days': int(days[1]) if days else None, 'harvests': int(harvests[1]) if harvests else 1,
+                          'yield': row.get('Yield', '').strip()})
+    return crops
+
+
+RECIPE_PAGES = {
+    'Cooking and Drink Recipes': 'cook', 'Potions, Flasks, and Blessings': 'craft',
+    'Weapon, Armor, and Jewelry Recipes': 'forge', 'Upgrade and Combination Recipes': 'craft',
+    'Furniture and Decoration Recipes': 'craft', 'Farm, Building and Utility Recipes': 'craft',
+}
+
+
+def load_neo_recipes():
+    """Every recipe the guide lists: station, what it makes, ingredients, success chance."""
+    recipes = []
+    for page, kind in RECIPE_PAGES.items():
+        for head, lines in neo_sections(neo_text(f'Welcome to Elderfield - {page} - Neoseeker.html')):
+            group = head.removesuffix(' Recipes')
+            for row in neo_rows(lines):
+                if 'Ingredients' not in row:
+                    continue
+                makes = clean_name(row.get('Creates') or row.get('Recipe', ''))
+                if makes.startswith('TEST'):
+                    continue  # a leftover test row in the guide
+                ingredients = []
+                for part in split_names(row['Ingredients']):
+                    m = re.match(r'^(\d+)x\s+(.+)$', part)
+                    ingredients.append({'name': clean_name(m[2] if m else part), 'qty': int(m[1]) if m else 1})
+                success = row.get('Success', '').strip()
+                availability = row.get('Availability', '').strip()
+                recipes.append({'name': makes, 'kind': 'forge' if group in ('Forge', "Jeweler's Desk", 'Tools') else kind,
+                                'group': group, 'ingredients': ingredients,
+                                'success': success if success and success != '100%' else None,
+                                'unlock': availability})
+    return recipes
+
+
 # --- Placement ----------------------------------------------------------------------------------
 def place(entries, crafts, tasks=()):
     """Area of every entry: the earliest of its sources. Task rewards take the task's area; made-only
     items take the latest area among their ingredients, resolved repeatedly until nothing changes."""
     by_name = {c['name']: c for c in crafts}
+    for c in list(crafts):
+        by_name.setdefault(re.sub(r' \+\d+$', '', c['name']), c)
+    for name in entries:
+        base = re.sub(r' \+\d+$', '', name)
+        if base != name and base in by_name:
+            by_name.setdefault(name, by_name[base])
     task_area = {task['name'].lower(): task['area'] for task in tasks}
     for e in entries.values():
         for s in e['sources']:
@@ -383,13 +627,11 @@ def place(entries, crafts, tasks=()):
     # Processed goods name what they are made from ("Age Wine (Grape) in a Cask"): they inherit it.
     names = sorted(entries, key=len, reverse=True)
 
+    any_name = re.compile(r'(?<![\w(])(' + '|'.join(re.escape(n) for n in names) + r')(?![\w)])')
+
     def inputs(name, e):
-        text, found = ' '.join(s['where'] for s in e['sources']), []
-        for other in names:
-            if other != name and re.search(r'(?<![\w(])' + re.escape(other) + r'(?![\w)])', text):
-                found.append(other)
-                text = text.replace(other, ' ')
-        return found
+        text = ' '.join(s['where'] for s in e['sources'])
+        return [m for m in dict.fromkeys(any_name.findall(text)) if m != name]
 
     for _ in range(10):
         changed = False
@@ -425,13 +667,20 @@ GROUPS = {
     'Materials': 'Materiais', 'Shelters': 'Abrigos', 'General': 'Geral', 'Blessings': 'Bênçãos', 'Flasks': 'Frascos',
     "Tinker's Desk": 'Mesa do Inventor', 'Basic Ingredients': 'Ingredientes básicos', 'Cooking Pot': 'Panela', 'Juicer': 'Espremedor',
     'Oven': 'Forno', 'Coffee Maker': 'Cafeteira', 'Weapons': 'Armas', 'Armor': 'Armaduras', 'Accessories': 'Acessórios',
+    'Grinder': 'Moedor', 'Combine': 'Combinações', "Jeweler's Desk": 'Mesa do Joalheiro', 'Tools': 'Ferramentas', 'Forge': 'Forja',
+    'Gifts of Gatis': 'Dádivas de Gatis', 'Gifts of Delvek': 'Dádivas de Delvek', 'Gifts of Kaal': 'Dádivas de Kaal',
+    'Gifts of Daeus': 'Dádivas de Daeus', 'Gifts of Hagroth': 'Dádivas de Hagroth', 'Gifts of Valtris': 'Dádivas de Valtris',
+    'Gifts of Nezroth': 'Dádivas de Nezroth',
 }
 KEY_ITEMS = {
     'Skull of the Deep': 'Crânio das Profundezas', 'Skull of the Lost': 'Crânio dos Perdidos', 'Skull of the Dark': 'Crânio das Trevas',
     'Skull of the Mall': 'Crânio do Shopping', 'Skull of the Woods': 'Crânio da Floresta', 'Lost Supplies': 'Suprimentos Perdidos',
     'Essence of Daeus': 'Essência de Daeus', 'Essence of Delvek': 'Essência de Delvek', 'Damp Nails': 'Pregos Úmidos',
     'Living Soul': 'Alma Viva', 'Gold Coin of Death': 'Moeda de Ouro da Morte', 'New Doll': 'Boneca Nova',
-    'Palewood Branch': 'Galho de Madeira Pálida',
+    'Palewood Branch': 'Galho de Madeira Pálida', 'Wand of Parks and Recreation': 'Varinha de Parques e Recreação',
+    "Tracy's Laundry": 'Roupa da Tracy', 'Elder Gem': 'Gema Anciã', 'Sledgehammer': 'Marreta', 'Classroom 103 Key': 'Chave da Sala 103',
+    'Classroom 106 Key': 'Chave da Sala 106', 'Damp Plank': 'Tábua Úmida', 'Lost Bell': 'Sino Perdido', 'Small Hammer': 'Martelo Pequeno',
+    'Large Hammer': 'Martelo Grande', 'Wire Cutters': 'Alicate de Corte', 'Magic Jack o\' Lantern +4': "Lanterna de Abóbora Mágica +4",
 }
 PT.WORDS.update(KEY_ITEMS)
 WHEN = {
@@ -466,6 +715,10 @@ def creature_reward(reward, known_ids):
         out['when'] = both(when, pt)
     if reward.get('gives'):
         out['gives'] = [item(n) for n in reward['gives']]
+    if reward.get('pool'):
+        out['pool'] = both(reward['pool'], PT.pool_pt(reward['pool']))
+    if reward.get('also'):
+        out['also'] = [{'name': both(n, PT.pool_pt(n)), 'items': [item(i) for i in items]} for n, items in reward['also']]
     return out
 
 
@@ -506,15 +759,143 @@ def map_item(m, next_id):
             'hint': t(hint_en, hint_pt), 'spoilerLevel': 1, 'sources': [f'{WIKI}: Treasure']}
 
 
+
+
+GEAR_PAGES = {'Swords and Blades': 'weapon', 'Staves and Wands': 'weapon', 'Axes, Spears, and Other Weapons': 'weapon',
+              'Offhand Equipment': 'offhand', 'Head Equipment': 'head', 'Body Equipment': 'body', 'Leg Equipment': 'legs',
+              'Foot Equipment': 'feet'}
+# Mechanics worth keeping from "Special effects"; the rest of the text is the game's own description.
+MECHANICS = re.compile(r'\d|Basic Attack|sealed|In Battle|When Equipped|cost no MP|becomes', re.I)
+
+
+def gear_effect(text):
+    if not text or text.strip() == '-':
+        return ''
+    parts = re.split(r'(?<=[.!?])\s+|\s+(?=(?:\+?\d+% chance|In Battle:|When Equipped:|Basic Attack))', text.strip())
+    return ' '.join(p.strip() for p in parts if p.strip() and MECHANICS.search(p)).strip()
+
+
+GEAR_KINDS = [('craft', r'^Craft'), ('random', r'shrine bonus|God Shrine|Equipment Pack|outcome|Possible find'),
+              ('found', r'^Fixed pickup'), ('drop', r'Possible reward:|victory reward|Farm boss|Farm bosses'),
+              ('loot', r'Chest reward|chest reward')]
+
+
+def load_gear(creature_areas, pool_areas):
+    """Equipment from the Neoseeker lists: slot, stats, bonuses, mechanics and how to get it."""
+    gear = {}
+    for page, slot in GEAR_PAGES.items():
+        for _, lines in neo_sections(neo_text(f'Welcome to Elderfield - {page} - Neoseeker.html')):
+            for row in neo_rows(lines):
+                name = clean_name(row.get('Equipment', ''))
+                if not name or name in gear:
+                    continue
+                sources = []
+                for how in [h.strip() for h in row.get('How to get', '').split(' / ') if h.strip() and h.strip() != '-']:
+                    kind = next((k for k, pat in GEAR_KINDS if re.search(pat, how)), 'other')
+                    # A place named in the text wins; otherwise the pool's region, then the creature's area.
+                    areas = set(areas_in(how)) or {a for n, a in pool_areas.items() if n in how} or {
+                        a for n, a in creature_areas.items() if re.search(r'\b' + re.escape(n) + r'\b', how)}
+                    sources.append({'kind': kind, 'where': how, 'area': min(areas) if areas else None})
+                gear[name] = {'name': name, 'category': 'equipment', 'sell': None, 'sources': sources,
+                              'gear': {'slot': slot, 'stats': row.get('Stat changes', '').strip(' -'),
+                                       'bonuses': row.get('Bonuses', '').strip(' -'),
+                                       'effect': gear_effect(row.get('Special effects', ''))}}
+    return gear
+
+ENEMY_ALIASES = {'Cave Man': 'Caveman', 'Fingerman': 'Fingermen', 'Beckoning Branch (Large)': 'Beckoning Branch',
+                 'Beckoning Branch (Small)': 'Beckoning Branch'}
+SHRINE_AREAS = {'Mall': 1, 'Old Woods': 2, 'Catacombs': 2}
+CARNIVAL_FISH = ['Big Ghostfish', 'Fat Ghostfish', 'Small Ghostfish']
+CARNIVAL_WHERE = 'Carnival of Souls pond by the town park (Season of Death, day 27); Jig Lure bait'
+
+
+def merge_guides(entries, crafts, creatures):
+    """Adds what only the Neoseeker guides have: battle loot and weak points, planting seasons,
+    recipes the wiki lacks, combat shrine rewards and the carnival's fish."""
+    enemies, pools = load_encounters()
+    shared = load_shared_pools()
+    by_name = {c['name']: c for c in creatures}
+    for name, enemy in enemies.items():
+        target = by_name.get(ENEMY_ALIASES.get(name, name))
+        known_pools = [p for p in enemy['pools'] if p in pools and pools[p]['items'] + pools[p]['also']]
+        if not target:
+            if not known_pools:
+                continue
+            target = {'name': name, 'area': min(enemy['areas']), 'where': enemy['places'], 'rewards': []}
+            creatures.append(target)
+            by_name[name] = target
+        if enemy['notes'] and not target.get('notes'):
+            target['notes'] = enemy['notes']
+        given = {i for r in target['rewards'] for i in r['items']}
+        for pool in known_pools:
+            items = pools[pool]['items']
+            victory = pool.endswith('Victory Rewards')
+            if victory and items and set(items) <= given:
+                continue  # the wiki already lists this fight's reward
+            if any(r.get('pool') == pool for r in target['rewards']):
+                continue
+            target['rewards'].append({'how': 'victory' if victory else 'loot', 'pool': pool, 'items': items,
+                                      'also': [(a, shared.get(a, [])) for a in pools[pool]['also']]})
+    creatures.sort(key=lambda c: c['name'])
+
+    creature_areas = {c['name']: c['area'] for c in creatures}
+    pool_areas = dict(POOL_AREAS)
+    for name, piece in load_gear(creature_areas, pool_areas).items():
+        if name not in entries:
+            entries[name] = piece
+
+    for crop in load_crops():
+        seed = entries.get(crop['seed'])
+        if seed:
+            seed['grow'] = crop
+
+    for area, items in load_combat_shrines().items():
+        for name in items:
+            if name in entries:
+                entries[name]['sources'].append({'kind': 'random', 'where': f'Combat Shrine reward ({area})',
+                                                 'area': SHRINE_AREAS[area]})
+
+    for name in CARNIVAL_FISH:
+        entries.setdefault(name, {'name': name, 'category': 'fish', 'sell': None, 'sources': [
+            {'kind': 'fish', 'where': CARNIVAL_WHERE, 'seasons': ['winter'], 'area': 0}]})
+
+    have = {c['name'] for c in crafts}
+    for recipe in load_neo_recipes():
+        base = re.sub(r' \+\d+$', '', recipe['name'])
+        twin = next((c for c in crafts if c['name'] in (recipe['name'], base)), None)
+        if twin:
+            if recipe['success'] and not twin.get('success'):
+                twin['success'] = recipe['success']
+            continue
+        if recipe['name'] in have:
+            continue
+        have.add(recipe['name'])
+        crafts.append({**recipe, 'unlock': recipe['unlock']})
+
+
 def build():
     entries, crafts, tasks = load_entries(), load_crafts(), load_tasks()
     add_foraging(entries)
+    add_fishing(entries)
+    creatures = load_creatures()
+    merge_guides(entries, crafts, creatures)
     unplaced = place(entries, crafts, tasks)
-    creatures, maps = load_creatures(), load_treasure()
+    # A crop can be grown from its seed: it is obtainable as early as the seed is.
+    for seed in entries.values():
+        crop = entries.get((seed.get('grow') or {}).get('crop'))
+        if crop and seed['area'] is not None:
+            crop['sources'].append({'kind': 'gather', 'where': f"Grow from {seed['name']}", 'area': seed['area']})
+            crop['area'] = min(crop['area'], seed['area'])
+            if crop['name'] in unplaced:
+                unplaced.remove(crop['name'])
+    maps = load_treasure()
     known_ids = {name: f'{G}-{slug(name)}' for name in entries}
 
     chapters = []
     names = set(entries) | {c['name'] for c in crafts} | {i['name'] for c in crafts for i in c['ingredients']}
+    seen_crafts = set()
+    # Wiki recipes name gear without its level ("Copper Shortsword" makes "Copper Shortsword +2").
+    gear_names = {re.sub(r' \+\d+$', '', n): n for n, e in entries.items() if e.get('gear')}
     for order in range(len(LABELS)):
         ch_id = f'{G}-ch{order}'
         items, counters = [], {}
@@ -538,18 +919,31 @@ def build():
                 entry = {'id': known_ids[name], 'name': PT.t2(name), 'category': e['category'], 'sources': clean}
                 if e['sell']:
                     entry['sell'] = e['sell']
+                if e.get('gear'):
+                    g = e['gear']
+                    entry['gear'] = {'slot': g['slot'], **{k: both(g[k], PT.gear_pt(g[k])) for k in ('stats', 'bonuses', 'effect') if g[k]}}
+                if e.get('grow'):
+                    g = e['grow']
+                    entry['grow'] = {'seasons': g['seasons'], 'days': g['days'], 'harvests': g['harvests'], 'yield': g['yield'],
+                                     **({'crop': known_ids[g['crop']]} if g['crop'] in known_ids else {})}
                 ch_entries.append(entry)
             else:
                 extra.extend({'entryId': known_ids[name], **s} for s in clean)
 
         ch_crafts = []
         for c in [x for x in crafts if x['area'] == order]:
+            if f"{G}-{c['kind']}-{slug(c['name'])}" in seen_crafts:
+                continue  # the same recipe spelled twice ("Bubble Tea", "Bubble-Tea")
+            seen_crafts.add(f"{G}-{c['kind']}-{slug(c['name'])}")
             craft = {'id': f"{G}-{c['kind']}-{slug(c['name'])}", 'name': PT.t2(c['name']), 'kind': c['kind'],
                      'group': t(c['group'], GROUPS.get(c['group'])), 'ingredients': [
                          {**({'entryId': known_ids[i['name']]} if i['name'] in known_ids else {}),
                           'name': PT.t2(i['name']), 'qty': i['qty']} for i in c['ingredients']]}
-            if c['name'] in known_ids:
-                craft['makes'] = known_ids[c['name']]
+            made = c['name'] if c['name'] in known_ids else gear_names.get(c['name'])
+            if made:
+                craft['makes'] = known_ids[made]
+            if c.get('success'):
+                craft['success'] = c['success']
             if c['unlock']:
                 unlock = c['unlock'].rstrip(' /.')
                 craft['unlock'] = both(unlock, TASKS.UNLOCKS.get(c['unlock']) or TASKS.UNLOCKS.get(unlock)
@@ -561,6 +955,8 @@ def build():
             # Creatures are shown by name (a player asked not to mask them).
             creature = {'id': f"{G}-cr-{slug(c['name'])}", 'name': t(c['name'], PT.CREATURES.get(c['name'])),
                         'where': [both(w, PT.place_pt(w)) for w in c['where']], 'spoilerLevel': 0}
+            if c.get('notes'):
+                creature['notes'] = both(c['notes'], PT.notes_pt(c['notes']))
             if c['rewards']:
                 creature['rewards'] = [creature_reward(r, known_ids) for r in c['rewards']]
             ch_creatures.append(creature)
@@ -586,7 +982,7 @@ def build():
                 del c['makes']
         for c in ch.get('creatures', []):
             for r in c.get('rewards', []):
-                for i in [*r['items'], *r.get('gives', [])]:
+                for i in [*r['items'], *r.get('gives', []), *(x for a in r.get('also', []) for x in a['items'])]:
                     if 'entryId' in i and area_of[i['entryId']] > ch['order']:
                         del i['entryId']
 
