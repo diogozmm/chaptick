@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 import { compendiumIndex, PlacedSource } from '../../core/compendium/compendium';
-import { SOURCE_KINDS, SourceKind, localize } from '../../core/content/content.models';
+import { GIFT_REACTIONS, SOURCE_KINDS, SourceKind, localize } from '../../core/content/content.models';
 import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
@@ -67,6 +67,15 @@ export class EntryDetail {
 
   protected readonly madeBy = computed(() => this.index().madeBy.get(this.entryId()) ?? []);
   protected readonly usedIn = computed(() => this.index().usedIn.get(this.entryId()) ?? []);
+  /** How villagers react to it as a gift, grouped by reaction. */
+  protected readonly gifts = computed(() => {
+    const lang = this.lang.lang();
+    const all = this.index().gifts.get(this.entryId()) ?? [];
+    return GIFT_REACTIONS.map((reaction) => ({
+      reaction,
+      names: all.filter((g) => g.reaction === reaction).map((g) => localize(g.villager.name, lang)).join(', '),
+    })).filter((g) => g.names);
+  });
   protected readonly givenBy = computed(() => this.index().givenBy.get(this.entryId()) ?? []);
   protected readonly creatureNumber = computed(() => new Map(this.index().creatures.map((c, i) => [c.creature.id, i + 1])));
 

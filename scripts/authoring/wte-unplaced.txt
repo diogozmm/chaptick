@@ -17,10 +17,6 @@ Blacksteel Quickblade +7
 Blacksteel Staff +7
 Blade of the Hopeless +10
 Bladefan of Delvek +8
-Blood Potion
-Blood Punch
-Blood Skewer
-Blood-Soaked Gem Bag
 Blueprint: Ghostly Scarecrow
 Blueprint: Lapidary Table
 Blueprint: Skeletal Scarecrow
@@ -79,7 +75,6 @@ Dusk Juice
 Duskmelon Slice
 Encrusted Blade +10
 Energy Drink
-Entrails
 Exploding Candy
 Fancy Fertilizer (Lv3)
 Farmer's Potion
@@ -92,7 +87,6 @@ Gilded Chestplate +7
 Goat Horn
 Godflesh
 Golden Tooth +5
-Goldpuff
 Goodie Bag
 Gravemoss
 Greater Death Crystal
@@ -106,7 +100,6 @@ Greater Potion of Greed
 Greater Potion of Zealotry
 Greatsword of the Dead God +5
 Hardwood Seed
-Hazard Potion
 Herbal Cake
 Herbal Crab
 Herbal Cupcake
@@ -168,9 +161,7 @@ Rancher's Potion
 Raw Hay
 Recipe: Flesh Sandwich
 Recipe: Rancher's Meal
-Recipe: Slime Pizza
 Recipe: Special Hotdog
-Ring of Binding
 Ritual Blade +3
 Ritual Spear +5
 Ritual Tome: Energizing Blast
@@ -187,13 +178,10 @@ Rockshell Legguards +4
 Rusty Shackle +2
 Scrap Pants +3
 Seeker's Orb
-Simple Kebab
 Skeletal Scarecrow
 Skill Tome: Frenzy Slash
 Skill Tome: Light Pierce
-Slayer's Feast
 Slime Egg
-Slime Tonic
 Small Coin Pouch
 Small Egg
 Small Goat Milk
@@ -214,7 +202,6 @@ Steel Staff +6
 Steel-Knuckled Glove +5
 Stone Shield +2
 Straw Hat +4
-Strawberry Milk
 Superior Axe
 Superior Pickaxe
 Superior Scythe
@@ -243,7 +230,6 @@ Vile Staff +10
 Vilebloom
 Vileroot
 Vilewood
-Viscera
 Void Dinner
 Wanderer's Orb
 White Shorts +3

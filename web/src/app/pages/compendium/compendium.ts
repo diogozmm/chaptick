@@ -16,8 +16,8 @@ import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { Icon } from '../../ui/icon/icon';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
 
-type Tab = 'items' | 'crafts' | 'creatures' | 'season';
-const TABS: Tab[] = ['items', 'crafts', 'creatures', 'season'];
+type Tab = 'items' | 'crafts' | 'creatures' | 'season' | 'villagers';
+const TABS: Tab[] = ['items', 'crafts', 'creatures', 'season', 'villagers'];
 const CRAFT_KINDS: CraftKind[] = ['craft', 'cook', 'forge'];
 const MAX_LIST = 80;
 
@@ -47,7 +47,11 @@ export class Compendium {
   readonly c = input<string | undefined>();
 
   /** The season tab only for games whose reached content depends on the season. */
-  protected readonly tabs = computed(() => TABS.filter((t) => t !== 'season' || this.seasonal()));
+  protected readonly tabs = computed(() =>
+    TABS.filter((t) => (t !== 'season' || this.seasonal()) && (t !== 'villagers' || this.index().villagers.length > 0)),
+  );
+  protected readonly villagers = computed(() => this.index().villagers);
+  protected readonly reactions = ['likes', 'neutral', 'hates'] as const;
   protected readonly categories = ENTRY_CATEGORIES;
   protected readonly craftKinds = CRAFT_KINDS;
   protected readonly current = computed<Tab>(() => (TABS as string[]).includes(this.tab() ?? '') ? (this.tab() as Tab) : 'items');

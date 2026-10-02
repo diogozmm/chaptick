@@ -140,6 +140,19 @@
     </section>
   }
 
+  @if (gifts().length > 0) {
+    <section class="section" aria-labelledby="gifts-title">
+      <h2 id="gifts-title">{{ 'villagers.asGift' | transloco }}</h2>
+      <div class="way">
+        @for (g of gifts(); track g.reaction) {
+          <p class="gift-line" [class.bad]="g.reaction === 'hates'">
+            <strong>{{ 'villagers.reaction.' + g.reaction | transloco }}:</strong> {{ g.names }}
+          </p>
+        }
+      </div>
+    </section>
+  }
+
   @if (givenBy().length > 0) {
     <section class="section" aria-labelledby="given-title">
       <h2 id="given-title">{{ 'compendium.givenBy' | transloco }}</h2>

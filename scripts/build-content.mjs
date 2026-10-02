@@ -28,7 +28,7 @@ const featuresOf = (chapters) => {
   const has = (key) => chapters.some(({ data }) => (data[key] ?? []).length > 0);
   return [
     ...(has('items') ? ['checklist'] : []),
-    ...(['entries', 'crafts', 'creatures'].some(has) ? ['compendium'] : []),
+    ...(['entries', 'crafts', 'creatures', 'villagers'].some(has) ? ['compendium'] : []),
   ];
 };
 

@@ -375,6 +375,78 @@
       "sell": "150g"
     },
     {
+      "id": "wte-blood-potion",
+      "name": {
+        "en": "Blood Potion",
+        "pt": "Poção de Sangue"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab: Blood Potion",
+            "pt": "Laboratório de Poções: Poção de Sangue"
+          }
+        }
+      ],
+      "sell": "25g"
+    },
+    {
+      "id": "wte-blood-punch",
+      "name": {
+        "en": "Blood Punch",
+        "pt": "Ponche de Sangue"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Juice: Blood Punch",
+            "pt": "Espremedor: Ponche de Sangue"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-blood-skewer",
+      "name": {
+        "en": "Blood Skewer",
+        "pt": "Espetinho de Sangue"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "oven: Blood Skewer",
+            "pt": "Forno: Espetinho de Sangue"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
+      "id": "wte-blood-soaked-gem-bag",
+      "name": {
+        "en": "Blood-Soaked Gem Bag",
+        "pt": "Bolsa de Gemas Ensanguentada"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
       "id": "wte-book-of-darkness-8",
       "name": {
         "en": "Book of Darkness +8",
@@ -607,6 +679,31 @@
       "sell": "100g"
     },
     {
+      "id": "wte-cursed-die",
+      "name": {
+        "en": "Cursed Die",
+        "pt": "Dado Amaldiçoado"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Gifts of Delvek: Cursed Die",
+            "pt": "Dádivas de Delvek: Dado Amaldiçoado"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "12g"
+    },
+    {
       "id": "wte-cursed-skull",
       "name": {
         "en": "Cursed Skull",
@@ -716,6 +813,24 @@
         }
       ],
       "sell": "25g"
+    },
+    {
+      "id": "wte-entrails",
+      "name": {
+        "en": "Entrails",
+        "pt": "Entranhas"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "10g"
     },
     {
       "id": "wte-filling-platter",
@@ -959,6 +1074,24 @@
       "sell": "80g"
     },
     {
+      "id": "wte-goldpuff",
+      "name": {
+        "en": "Goldpuff",
+        "pt": "Baiacu-dourado"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
       "id": "wte-greater-holy-water",
       "name": {
         "en": "Greater Holy Water",
@@ -975,6 +1108,24 @@
         }
       ],
       "sell": "50g"
+    },
+    {
+      "id": "wte-hazard-potion",
+      "name": {
+        "en": "Hazard Potion",
+        "pt": "Poção do Perigo"
+      },
+      "category": "potions",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Potion Lab: Hazard Potion",
+            "pt": "Laboratório de Poções: Poção do Perigo"
+          }
+        }
+      ],
+      "sell": "25g"
     },
     {
       "id": "wte-healthy-platter",
@@ -1500,6 +1651,23 @@
       "sell": "25g"
     },
     {
+      "id": "wte-ring-of-binding",
+      "name": {
+        "en": "Ring of Binding",
+        "pt": "Anel da Amarração"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "a jeweller's desk: Ring of Binding",
+            "pt": "a jeweller's desk: Anel da Amarração"
+          }
+        }
+      ]
+    },
+    {
       "id": "wte-serpent-soup",
       "name": {
         "en": "Serpent Soup",
@@ -1571,6 +1739,24 @@
       }
     },
     {
+      "id": "wte-simple-kebab",
+      "name": {
+        "en": "Simple Kebab",
+        "pt": "Kebab Simples"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Simple Kebab",
+            "pt": "Kebab Simples"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
       "id": "wte-sinew-gem",
       "name": {
         "en": "Sinew Gem",
@@ -1589,6 +1775,24 @@
       "sell": "200g"
     },
     {
+      "id": "wte-slayer-s-feast",
+      "name": {
+        "en": "Slayer's Feast",
+        "pt": "Banquete do Matador"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Slayer's Feast",
+            "pt": "Banquete do Matador"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
       "id": "wte-slicer",
       "name": {
         "en": "Slicer",
@@ -1605,6 +1809,24 @@
         }
       ],
       "sell": "50g"
+    },
+    {
+      "id": "wte-slime-tonic",
+      "name": {
+        "en": "Slime Tonic",
+        "pt": "Tônico de Gosma"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Juice: Slime Tonic",
+            "pt": "Espremedor: Tônico de Gosma"
+          }
+        }
+      ],
+      "sell": "15g"
     },
     {
       "id": "wte-small-meat-chunk",
@@ -1965,6 +2187,24 @@
       }
     },
     {
+      "id": "wte-strawberry-milk",
+      "name": {
+        "en": "Strawberry Milk",
+        "pt": "Leite de Morango"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Juice: Strawberry Milk",
+            "pt": "Espremedor: Leite de Morango"
+          }
+        }
+      ],
+      "sell": "15g"
+    },
+    {
       "id": "wte-super-stew",
       "name": {
         "en": "Super Stew",
@@ -1988,6 +2228,100 @@
         }
       ],
       "sell": "25g"
+    },
+    {
+      "id": "wte-tome-of-culinary-lore",
+      "name": {
+        "en": "Tome of Culinary Lore",
+        "pt": "Tomo da Arte Culinária"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Woodsman's Shop (after an unlock)",
+            "pt": "Loja do Lenhador (depois de liberar)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-tome-of-lost-tinctures",
+      "name": {
+        "en": "Tome of Lost Tinctures",
+        "pt": "Tomo das Tinturas Perdidas"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Woodsman's Shop (after an unlock)",
+            "pt": "Loja do Lenhador (depois de liberar)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-tome-of-vile-patterns",
+      "name": {
+        "en": "Tome of Vile Patterns",
+        "pt": "Tomo dos Moldes Vis"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Woodsman's Shop (after an unlock)",
+            "pt": "Loja do Lenhador (depois de liberar)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-vile-relic",
+      "name": {
+        "en": "Vile Relic",
+        "pt": "Relíquia Vil"
+      },
+      "category": "materials",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        },
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Woodsman's Shop (after an unlock)",
+            "pt": "Loja do Lenhador (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "125g"
+    },
+    {
+      "id": "wte-viscera",
+      "name": {
+        "en": "Viscera",
+        "pt": "Vísceras"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Meat Man (after an unlock)",
+            "pt": "O Homem da Carne (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "10g"
     },
     {
       "id": "wte-viscera-gem",
@@ -2044,6 +2378,14 @@
       }
     },
     {
+      "entryId": "wte-bloody-skin",
+      "kind": "shop",
+      "where": {
+        "en": "The Meat Man (after an unlock)",
+        "pt": "O Homem da Carne (depois de liberar)"
+      }
+    },
+    {
       "entryId": "wte-bones",
       "kind": "loot",
       "where": {
@@ -2057,6 +2399,14 @@
       "where": {
         "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
         "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-cleansing-balm",
+      "kind": "shop",
+      "where": {
+        "en": "The Meat Man (after an unlock) Gift from Edwin during farm visit",
+        "pt": "O Homem da Carne (depois de liberar) Presente de Edwin numa visita à fazenda"
       }
     },
     {
@@ -2092,6 +2442,14 @@
       }
     },
     {
+      "entryId": "wte-crystal-flask",
+      "kind": "shop",
+      "where": {
+        "en": "The Meat Man (after an unlock)",
+        "pt": "O Homem da Carne (depois de liberar)"
+      }
+    },
+    {
       "entryId": "wte-extra-pouch",
       "kind": "loot",
       "where": {
@@ -2105,6 +2463,14 @@
       "where": {
         "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
         "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-extra-pouch",
+      "kind": "shop",
+      "where": {
+        "en": "The Meat Man (after an unlock)",
+        "pt": "O Homem da Carne (depois de liberar)"
       }
     },
     {
@@ -2145,6 +2511,14 @@
       "where": {
         "en": "Deep Catacombs Chest 1 at Catacombs Chest 1 (5, 7), Catacombs Mimic Chest 1 (7, 7)",
         "pt": "Catacumbas Profundas Baú 1 em Catacumbas Baú 1 (5, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-lucky-die",
+      "kind": "shop",
+      "where": {
+        "en": "The Meat Man (after an unlock)",
+        "pt": "O Homem da Carne (depois de liberar)"
       }
     },
     {
@@ -2204,6 +2578,14 @@
       }
     },
     {
+      "entryId": "wte-string",
+      "kind": "shop",
+      "where": {
+        "en": "The Meat Man (after an unlock)",
+        "pt": "O Homem da Carne (depois de liberar)"
+      }
+    },
+    {
       "entryId": "wte-treasure-casket",
       "kind": "loot",
       "where": {
@@ -2217,6 +2599,14 @@
       "where": {
         "en": "Deep Catacombs Chest 2 at Catacombs Chest 2 (6, 7), Catacombs Mimic Chest 1 (7, 7)",
         "pt": "Catacumbas Profundas Baú 2 em Catacumbas Baú 2 (6, 7), Catacumbas Baú Mímico 1 (7, 7)"
+      }
+    },
+    {
+      "entryId": "wte-wax",
+      "kind": "shop",
+      "where": {
+        "en": "The Meat Man (after an unlock) Gift from Sam during farm visit",
+        "pt": "O Homem da Carne (depois de liberar) Presente de Sam numa visita à fazenda"
       }
     }
   ],
@@ -2907,6 +3297,183 @@
       }
     },
     {
+      "id": "wte-craft-combat-offering",
+      "name": {
+        "en": "Combat Offering",
+        "pt": "Oferenda de Combate"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "General",
+        "pt": "Geral"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-spiritcap-mushroom",
+          "name": {
+            "en": "Spiritcap Mushroom",
+            "pt": "Cogumelo Espiritual"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-night-hood-mushroom",
+          "name": {
+            "en": "Night-Hood Mushroom",
+            "pt": "Cogumelo Capuz-noturno"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-corpse-ear-mushroom",
+          "name": {
+            "en": "Corpse-Ear Mushroom",
+            "pt": "Cogumelo Orelha-de-cadáver"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-ashy-mushroom",
+          "name": {
+            "en": "Ashy Mushroom",
+            "pt": "Cogumelo Cinzento"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-whisptop-mushroom",
+          "name": {
+            "en": "Whisptop Mushroom",
+            "pt": "Cogumelo Sussurrante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bulbous-mushroom",
+          "name": {
+            "en": "Bulbous Mushroom",
+            "pt": "Cogumelo Bulboso"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-dual-sprout-mushroom",
+          "name": {
+            "en": "Dual-Sprout Mushroom",
+            "pt": "Cogumelo Broto-duplo"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-golden-mushroom",
+          "name": {
+            "en": "Golden Mushroom",
+            "pt": "Cogumelo Dourado"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-combat-offering",
+      "unlock": {
+        "en": "Automatically available with Potion Lab",
+        "pt": "Disponível desde o início no Laboratório de Poções"
+      }
+    },
+    {
+      "id": "wte-craft-hazard-potion",
+      "name": {
+        "en": "Hazard Potion",
+        "pt": "Poção do Perigo"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "General",
+        "pt": "Geral"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-goldpuff",
+          "name": {
+            "en": "Goldpuff",
+            "pt": "Baiacu-dourado"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-creature-claw",
+          "name": {
+            "en": "Creature Claw",
+            "pt": "Garra de Criatura"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-hazard-potion",
+      "unlock": {
+        "en": "Automatically available with Potion Lab",
+        "pt": "Disponível desde o início no Laboratório de Poções"
+      }
+    },
+    {
+      "id": "wte-craft-blood-potion",
+      "name": {
+        "en": "Blood Potion",
+        "pt": "Poção de Sangue"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "General",
+        "pt": "Geral"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-tooth-dust",
+          "name": {
+            "en": "Tooth Dust",
+            "pt": "Pó de Dente"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-blood-potion",
+      "unlock": {
+        "en": "Automatically available with Potion Lab",
+        "pt": "Disponível desde o início no Laboratório de Poções"
+      }
+    },
+    {
       "id": "wte-craft-recall-potion",
       "name": {
         "en": "Recall Potion",
@@ -3125,6 +3692,57 @@
       }
     },
     {
+      "id": "wte-cook-slayer-s-feast",
+      "name": {
+        "en": "Slayer's Feast",
+        "pt": "Banquete do Matador"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Cooking Pot",
+        "pt": "Panela"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-mysterious-ooze",
+          "name": {
+            "en": "Mysterious Ooze",
+            "pt": "Gosma Misteriosa"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mystery-meat",
+          "name": {
+            "en": "Mystery Meat",
+            "pt": "Carne Misteriosa"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-slayer-s-feast",
+      "unlock": {
+        "en": "Basic beginner recipe",
+        "pt": "Receita inicial"
+      }
+    },
+    {
       "id": "wte-cook-herbal-salve",
       "name": {
         "en": "Herbal Salve",
@@ -3208,6 +3826,108 @@
       "unlock": {
         "en": "Recipe: Purchased from Chef Elroy after building house upgrade 1 and Defeating the Ancient Tree",
         "pt": "Receita: compre do Chef Elroy depois da melhoria 1 da casa e de derrotar a Árvore Ancestral"
+      }
+    },
+    {
+      "id": "wte-forge-nomad-hood",
+      "name": {
+        "en": "Nomad Hood",
+        "pt": "Capuz do Nômade"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-nomad-hood-2",
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
+      }
+    },
+    {
+      "id": "wte-forge-nomad-cloak",
+      "name": {
+        "en": "Nomad Cloak",
+        "pt": "Manto do Nômade"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Armor",
+        "pt": "Armaduras"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-nomad-cloak-2",
+      "unlock": {
+        "en": "Automatically available at the Forge",
+        "pt": "Disponível desde o início na forja"
       }
     },
     {
@@ -3486,6 +4206,169 @@
       "makes": "wte-superior-axe"
     },
     {
+      "id": "wte-cook-simple-kebab",
+      "name": {
+        "en": "Simple Kebab",
+        "pt": "Kebab Simples"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Cooking Pot",
+        "pt": "Panela"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-bitter-herb",
+          "name": {
+            "en": "Bitter Herb",
+            "pt": "Erva Amarga"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-mystery-meat",
+          "name": {
+            "en": "Mystery Meat",
+            "pt": "Carne Misteriosa"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-simple-kebab",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-cook-blood-punch",
+      "name": {
+        "en": "Blood Punch",
+        "pt": "Ponche de Sangue"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Juicer",
+        "pt": "Espremedor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-mysterious-ooze",
+          "name": {
+            "en": "Mysterious Ooze",
+            "pt": "Gosma Misteriosa"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-red-mushroom",
+          "name": {
+            "en": "Red Mushroom",
+            "pt": "Cogumelo Vermelho"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-blood-punch",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-cook-slime-tonic",
+      "name": {
+        "en": "Slime Tonic",
+        "pt": "Tônico de Gosma"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Juicer",
+        "pt": "Espremedor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-mysterious-ooze",
+          "name": {
+            "en": "Mysterious Ooze",
+            "pt": "Gosma Misteriosa"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bitter-herb",
+          "name": {
+            "en": "Bitter Herb",
+            "pt": "Erva Amarga"
+          },
+          "qty": 5
+        }
+      ],
+      "makes": "wte-slime-tonic",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-cook-strawberry-milk",
+      "name": {
+        "en": "Strawberry Milk",
+        "pt": "Leite de Morango"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Juicer",
+        "pt": "Espremedor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "name": {
+            "en": "Milk",
+            "pt": "Leite"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-strawberry-milk",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
       "id": "wte-cook-baked-serpent",
       "name": {
         "en": "Baked Serpent",
@@ -3539,6 +4422,49 @@
         }
       ],
       "makes": "wte-baked-serpent",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-cook-blood-skewer",
+      "name": {
+        "en": "Blood Skewer",
+        "pt": "Espetinho de Sangue"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-mystery-steak",
+          "name": {
+            "en": "Mystery Steak",
+            "pt": "Bife Misterioso"
+          },
+          "qty": 3
+        }
+      ],
+      "makes": "wte-blood-skewer",
       "unlock": {
         "en": "Known at start",
         "pt": "Conhecida desde o início"
@@ -4006,6 +4932,73 @@
         }
       ],
       "makes": "wte-perfect-cookie",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-cook-rage-cookie",
+      "name": {
+        "en": "Rage Cookie",
+        "pt": "Biscoito da Fúria"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Oven",
+        "pt": "Forno"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-dust",
+          "name": {
+            "en": "Damp Dust",
+            "pt": "Pó Úmido"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-elder-flour",
+          "name": {
+            "en": "Elder Flour",
+            "pt": "Farinha Anciã"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-eldritch-tears",
+          "name": {
+            "en": "Eldritch Tears",
+            "pt": "Lágrimas Sobrenaturais"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-rage-cookie",
       "unlock": {
         "en": "Learned later",
         "pt": "Aprendida mais tarde"
@@ -5474,6 +6467,65 @@
           "qty": 2
         }
       ],
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-ring-of-binding",
+      "name": {
+        "en": "Ring of Binding",
+        "pt": "Anel da Amarração"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Jeweler's Desk",
+        "pt": "Mesa do Joalheiro"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-crafting-pattern",
+          "name": {
+            "en": "Crafting Pattern",
+            "pt": "Molde de Criação"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-platinum-bar",
+          "name": {
+            "en": "Platinum Bar",
+            "pt": "Barra de Platina"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-void-crystal-bar",
+          "name": {
+            "en": "Void Crystal Bar",
+            "pt": "Barra de Cristal do Vazio"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-beating-heart",
+          "name": {
+            "en": "Beating Heart",
+            "pt": "Coração Pulsante"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-ring-of-binding",
       "unlock": {
         "en": "Known at start",
         "pt": "Conhecida desde o início"
@@ -7165,6 +8217,108 @@
       }
     },
     {
+      "id": "wte-forge-nomad-legguards-2",
+      "name": {
+        "en": "Nomad Legguards +2",
+        "pt": "Perneiras do Nômade +2"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-nomad-legguards-2",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-nomad-shoes-2",
+      "name": {
+        "en": "Nomad Shoes +2",
+        "pt": "Sapatos do Nômade +2"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-creature-claw",
+          "name": {
+            "en": "Creature Claw",
+            "pt": "Garra de Criatura"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-nomad-shoes-2",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
       "id": "wte-forge-ornate-greataxe-8",
       "name": {
         "en": "Ornate Greataxe +8",
@@ -7285,6 +8439,183 @@
         }
       ],
       "makes": "wte-rockshell-chestplate-4",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-rockshell-greaves-4",
+      "name": {
+        "en": "Rockshell Greaves +4",
+        "pt": "Grevas Casco-de-rocha +4"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-goldpuff",
+          "name": {
+            "en": "Goldpuff",
+            "pt": "Baiacu-dourado"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bones",
+          "name": {
+            "en": "Bones",
+            "pt": "Ossos"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-brain",
+          "name": {
+            "en": "Brain",
+            "pt": "Cérebro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-rockshell-greaves-4",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-rockshell-helmet-4",
+      "name": {
+        "en": "Rockshell Helmet +4",
+        "pt": "Elmo Casco-de-rocha +4"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-goldpuff",
+          "name": {
+            "en": "Goldpuff",
+            "pt": "Baiacu-dourado"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-creature-claw",
+          "name": {
+            "en": "Creature Claw",
+            "pt": "Garra de Criatura"
+          },
+          "qty": 3
+        },
+        {
+          "entryId": "wte-viscera",
+          "name": {
+            "en": "Viscera",
+            "pt": "Vísceras"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-rockshell-helmet-4",
+      "unlock": {
+        "en": "Known at start",
+        "pt": "Conhecida desde o início"
+      }
+    },
+    {
+      "id": "wte-forge-rockshell-legguards-4",
+      "name": {
+        "en": "Rockshell Legguards +4",
+        "pt": "Perneiras Casco-de-rocha +4"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-rawhide",
+          "name": {
+            "en": "Rawhide",
+            "pt": "Couro Cru"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-goldpuff",
+          "name": {
+            "en": "Goldpuff",
+            "pt": "Baiacu-dourado"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-leather",
+          "name": {
+            "en": "Leather",
+            "pt": "Couro"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-entrails",
+          "name": {
+            "en": "Entrails",
+            "pt": "Entranhas"
+          },
+          "qty": 5
+        },
+        {
+          "entryId": "wte-leadleaf",
+          "name": {
+            "en": "Leadleaf",
+            "pt": "Folha de Chumbo"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-rockshell-legguards-4",
       "unlock": {
         "en": "Known at start",
         "pt": "Conhecida desde o início"
@@ -7672,6 +9003,57 @@
       }
     },
     {
+      "id": "wte-forge-vile-chestplate-10",
+      "name": {
+        "en": "Vile Chestplate +10",
+        "pt": "Peitoral Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-champion-s-chestplate-8",
+          "name": {
+            "en": "Champion's Chestplate +8",
+            "pt": "Peitoral do Campeão +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-chestplate-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
       "id": "wte-forge-vile-greataxe-10",
       "name": {
         "en": "Vile Greataxe +10",
@@ -7725,6 +9107,599 @@
         }
       ],
       "makes": "wte-vile-greataxe-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-greatsword-10",
+      "name": {
+        "en": "Vile Greatsword +10",
+        "pt": "Espadão Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-blacksteel-greatsword-7",
+          "name": {
+            "en": "Blacksteel Greatsword +7",
+            "pt": "Espadão de Aço Negro +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-vile-greatsword-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-greaves-10",
+      "name": {
+        "en": "Vile Greaves +10",
+        "pt": "Grevas Vis +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-champion-s-greaves-8",
+          "name": {
+            "en": "Champion's Greaves +8",
+            "pt": "Grevas do Campeão +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-greaves-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-hat-10",
+      "name": {
+        "en": "Vile Hat +10",
+        "pt": "Chapéu Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-archmage-s-hat-8",
+          "name": {
+            "en": "Archmage's Hat +8",
+            "pt": "Chapéu do Arquimago +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-hat-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-helmet-10",
+      "name": {
+        "en": "Vile Helmet +10",
+        "pt": "Elmo Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-champion-s-helmet-8",
+          "name": {
+            "en": "Champion's Helmet +8",
+            "pt": "Elmo do Campeão +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-helmet-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-leggings-10",
+      "name": {
+        "en": "Vile Leggings +10",
+        "pt": "Calças Vis +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-archmage-s-sash-8",
+          "name": {
+            "en": "Archmage's Sash +8",
+            "pt": "Faixa do Arquimago +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-leggings-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-legguards-10",
+      "name": {
+        "en": "Vile Legguards +10",
+        "pt": "Perneiras Vis +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-champion-s-loincloth-8",
+          "name": {
+            "en": "Champion's Loincloth +8",
+            "pt": "Tanga do Campeão +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-legguards-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-quickblade-10",
+      "name": {
+        "en": "Vile Quickblade +10",
+        "pt": "Lâmina Ligeira Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-blacksteel-quickblade-7",
+          "name": {
+            "en": "Blacksteel Quickblade +7",
+            "pt": "Lâmina Ligeira de Aço Negro +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-vile-quickblade-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-robe-10",
+      "name": {
+        "en": "Vile Robe +10",
+        "pt": "Manto Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-archmage-s-robe-8",
+          "name": {
+            "en": "Archmage's Robe +8",
+            "pt": "Manto do Arquimago +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-robe-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-shoes-10",
+      "name": {
+        "en": "Vile Shoes +10",
+        "pt": "Sapatos Vis +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-archmage-s-boots-8",
+          "name": {
+            "en": "Archmage's Boots +8",
+            "pt": "Botas do Arquimago +8"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 20
+        }
+      ],
+      "makes": "wte-vile-shoes-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-spear-10",
+      "name": {
+        "en": "Vile Spear +10",
+        "pt": "Lança Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-obsidian-spear-7",
+          "name": {
+            "en": "Obsidian Spear +7",
+            "pt": "Lança de Obsidiana +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-vile-spear-10",
+      "unlock": {
+        "en": "Learned later",
+        "pt": "Aprendida mais tarde"
+      }
+    },
+    {
+      "id": "wte-forge-vile-staff-10",
+      "name": {
+        "en": "Vile Staff +10",
+        "pt": "Cajado Vil +10"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge",
+        "pt": "Forja"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-blacksteel-staff-7",
+          "name": {
+            "en": "Blacksteel Staff +7",
+            "pt": "Cajado de Aço Negro +7"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-vile-relic",
+          "name": {
+            "en": "Vile Relic",
+            "pt": "Relíquia Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vilewood",
+          "name": {
+            "en": "Vilewood",
+            "pt": "Madeira Vil"
+          },
+          "qty": 20
+        },
+        {
+          "entryId": "wte-vilebloom",
+          "name": {
+            "en": "Vilebloom",
+            "pt": "Flor Vil"
+          },
+          "qty": 10
+        },
+        {
+          "entryId": "wte-vileroot",
+          "name": {
+            "en": "Vileroot",
+            "pt": "Raiz Vil"
+          },
+          "qty": 10
+        }
+      ],
+      "makes": "wte-vile-staff-10",
       "unlock": {
         "en": "Learned later",
         "pt": "Aprendida mais tarde"

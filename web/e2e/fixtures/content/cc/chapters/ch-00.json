@@ -293,5 +293,47 @@
         }
       ]
     }
+  ],
+  "villagers": [
+    {
+      "id": "cc-vl-ada",
+      "name": {
+        "en": "Ada"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "entryId": "cc-herb-tea",
+            "name": {
+              "en": "Herb Tea"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "entryId": "cc-bitter-herb",
+            "name": {
+              "en": "Bitter Herb"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "entryId": "cc-iron-ore",
+            "name": {
+              "en": "Iron Ore"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cc-vl-bo",
+      "name": {
+        "en": "Bo"
+      },
+      "gifts": {},
+      "commonOnly": true
+    }
   ]
 }

@@ -245,6 +245,18 @@ export interface Creature {
   rewards?: CreatureReward[];
 }
 
+export const GIFT_REACTIONS = ['loves', 'likes', 'neutral', 'hates'] as const;
+export type GiftReaction = (typeof GIFT_REACTIONS)[number];
+
+/** A villager and their own gift reactions (they take priority over the game's common lists). */
+export interface Villager {
+  id: string;
+  name: Localized;
+  gifts: Partial<Record<GiftReaction, RewardItem[]>>;
+  /** Follows only the common gift lists, without personal exceptions. */
+  commonOnly?: true;
+}
+
 export interface Chapter {
   id: string;
   gameId: string;
@@ -261,6 +273,7 @@ export interface Chapter {
   entrySources?: EntrySource[];
   crafts?: Craft[];
   creatures?: Creature[];
+  villagers?: Villager[];
 }
 
 export const localize = (text: Localized, lang: Lang): string => (lang === 'pt' ? text.pt : undefined) ?? text.en;

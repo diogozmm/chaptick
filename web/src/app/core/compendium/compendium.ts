@@ -1,4 +1,6 @@
-import { Chapter, Craft, Creature, Entry, EntryCategory, Lang, Source, localize } from '../content/content.models';
+import {
+  Chapter, Craft, Creature, Entry, EntryCategory, GIFT_REACTIONS, GiftReaction, Lang, RewardItem, Source, Villager, localize,
+} from '../content/content.models';
 import { normalize } from '../search/search';
 
 /** A way to get an entry, with the chapter or area where it applies. */
@@ -36,6 +38,9 @@ export interface CompendiumIndex {
   usedIn: Map<string, IndexedCraft[]>;
   /** Creatures that give an entry. */
   givenBy: Map<string, IndexedCreature[]>;
+  villagers: Villager[];
+  /** How each villager reacts to an entry given as a gift. */
+  gifts: Map<string, { villager: Villager; reaction: GiftReaction }[]>;
 }
 
 const push = <K, V>(map: Map<K, V[]>, key: K, value: V): void => {
@@ -53,6 +58,7 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
   const sorted = [...chapters].sort((a, b) => a.order - b.order);
   const index: CompendiumIndex = {
     entries: new Map(), crafts: [], creatures: [], madeBy: new Map(), usedIn: new Map(), givenBy: new Map(),
+    villagers: [], gifts: new Map(),
   };
   for (const chapter of sorted) {
     for (const entry of chapter.entries ?? []) {
@@ -67,11 +73,36 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
       if (craft.makes) push(index.madeBy, craft.makes, placed);
       for (const ingredient of craft.ingredients) if (ingredient.entryId) push(index.usedIn, ingredient.entryId, placed);
     }
-    for (const creature of chapter.creatures ?? []) {
+  }
+  // Creatures and villagers come before some of what they give: content leaves those items unlinked
+  // (it never points ahead), so they are linked here by name, once their own chapter is reached too.
+  const byName = new Map([...index.entries.values()].map((e) => [e.entry.name.en, e.entry.id]));
+  const link = (item: RewardItem): RewardItem => (item.entryId || !byName.has(item.name.en) ? item : { ...item, entryId: byName.get(item.name.en) });
+  for (const chapter of sorted) {
+    for (const original of chapter.creatures ?? []) {
+      const creature: Creature = {
+        ...original,
+        rewards: original.rewards?.map((r) => ({
+          ...r,
+          items: r.items.map(link),
+          gives: r.gives?.map(link),
+          also: r.also?.map((a) => ({ ...a, items: a.items.map(link) })),
+        })),
+      };
       const placed = { creature, chapter };
       index.creatures.push(placed);
       const given = new Set((creature.rewards ?? []).flatMap((r) => r.items).flatMap((i) => (i.entryId ? [i.entryId] : [])));
       for (const entryId of given) push(index.givenBy, entryId, placed);
+    }
+    for (const original of chapter.villagers ?? []) {
+      const villager: Villager = {
+        ...original,
+        gifts: Object.fromEntries(Object.entries(original.gifts).map(([reaction, gifts]) => [reaction, gifts.map(link)])),
+      };
+      index.villagers.push(villager);
+      for (const reaction of GIFT_REACTIONS) {
+        for (const gift of villager.gifts[reaction] ?? []) if (gift.entryId) push(index.gifts, gift.entryId, { villager, reaction });
+      }
     }
   }
   return index;

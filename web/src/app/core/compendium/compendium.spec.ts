@@ -16,6 +16,7 @@ const area1 = chapter(0, {
     ingredients: [{ entryId: 'zz-bitter-herb', name: { en: 'Bitter Herb' }, qty: 2 }],
   }],
 });
+area1.villagers = [{ id: 'zz-vl-ada', name: { en: 'Ada' }, gifts: { loves: [{ entryId: 'zz-herb-tea', name: { en: 'Herb Tea' } }], hates: [{ name: { en: 'Rock' } }] } }];
 const area2 = chapter(1, {
   entries: [{ id: 'zz-bone', name: { en: 'Bone' }, category: 'materials', sources: [{ kind: 'loot', where: { en: 'Crypt' } }] }],
   entrySources: [{ entryId: 'zz-bitter-herb', kind: 'shop', where: { en: 'Crypt Market' } }],
@@ -45,6 +46,20 @@ describe('compendium', () => {
     expect(index.madeBy.get('zz-herb-tea')!.map((c) => c.craft.id)).toEqual(['zz-cook-herb-tea']);
     expect(index.usedIn.get('zz-bitter-herb')!.map((c) => c.craft.id)).toEqual(['zz-cook-herb-tea']);
     expect(index.givenBy.get('zz-bitter-herb')!.map((c) => c.creature.id)).toEqual(['zz-cr-ghoul']);
+  });
+
+  it('links what a creature or villager gives by name once that item is reached', () => {
+    const later = chapter(1, { entries: [{ id: 'zz-rock', name: { en: 'Rock' }, category: 'materials', sources: [{ kind: 'gather', where: { en: 'Pit' } }] }] });
+    expect(compendiumIndex([area1]).gifts.has('zz-rock')).toBe(false);
+    const index = compendiumIndex([area1, later]);
+    expect(index.gifts.get('zz-rock')!.map((g) => g.reaction)).toEqual(['hates']);
+    expect(index.villagers[0].gifts.hates![0].entryId).toBe('zz-rock');
+  });
+
+  it('knows how each villager reacts to an item', () => {
+    const index = compendiumIndex([area1]);
+    expect(index.villagers.map((v) => v.id)).toEqual(['zz-vl-ada']);
+    expect(index.gifts.get('zz-herb-tea')!.map((g) => [g.villager.id, g.reaction])).toEqual([['zz-vl-ada', 'loves']]);
   });
 
   it('finds by every word, names starting with the query first, ignoring accents and case', () => {

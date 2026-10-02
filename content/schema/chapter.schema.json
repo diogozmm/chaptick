@@ -101,6 +101,13 @@
         "$ref": "#/$defs/creature"
       },
       "description": "Compendium: creatures first met here. Names are always masked."
+    },
+    "villagers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/villager"
+      },
+      "description": "Compendium: villagers and how they react to gifts."
     }
   },
   "additionalProperties": false,
@@ -802,6 +809,110 @@
         "notes": {
           "$ref": "common.schema.json#/$defs/localized",
           "description": "Weak points and the damage it deals."
+        }
+      }
+    },
+    "villager": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "gifts"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "gifts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "loves": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "entryId": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+                  },
+                  "name": {
+                    "$ref": "common.schema.json#/$defs/localized"
+                  }
+                }
+              }
+            },
+            "likes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "entryId": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+                  },
+                  "name": {
+                    "$ref": "common.schema.json#/$defs/localized"
+                  }
+                }
+              }
+            },
+            "neutral": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "entryId": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+                  },
+                  "name": {
+                    "$ref": "common.schema.json#/$defs/localized"
+                  }
+                }
+              }
+            },
+            "hates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "entryId": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+                  },
+                  "name": {
+                    "$ref": "common.schema.json#/$defs/localized"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "commonOnly": {
+          "const": true,
+          "description": "Follows only the game's common gift lists, without personal exceptions."
         }
       }
     }

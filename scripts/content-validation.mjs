@@ -118,7 +118,7 @@ function compendiumErrors(chapters) {
   const errors = [];
   const orderOf = new Map();
   for (const { file, data } of chapters) {
-    for (const e of [...(data.entries ?? []), ...(data.crafts ?? []), ...(data.creatures ?? [])]) {
+    for (const e of [...(data.entries ?? []), ...(data.crafts ?? []), ...(data.creatures ?? []), ...(data.villagers ?? [])]) {
       if (orderOf.has(e.id)) errors.push(`${file}: duplicate compendium id "${e.id}"`);
       orderOf.set(e.id, data.order);
     }
@@ -128,6 +128,9 @@ function compendiumErrors(chapters) {
     const refs = [
       ...(data.entrySources ?? []).map((s) => ['a later source', s.entryId]),
       ...(data.entries ?? []).filter((e) => e.grow?.crop).map((e) => [`seed "${e.id}"`, e.grow.crop]),
+      ...(data.villagers ?? []).flatMap((v) =>
+        Object.values(v.gifts).flat().filter((g) => g.entryId).map((g) => [`villager "${v.id}"`, g.entryId]),
+      ),
       ...(data.crafts ?? []).flatMap((c) => [
         ...c.ingredients.filter((i) => i.entryId).map((i) => [`craft "${c.id}"`, i.entryId]),
         ...(c.makes ? [[`craft "${c.id}"`, c.makes]] : []),

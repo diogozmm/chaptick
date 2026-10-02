@@ -21,7 +21,7 @@
 <div class="tabs" role="tablist" [attr.aria-label]="'compendium.title' | transloco">
   @for (t of tabs(); track t) {
     <button type="button" role="tab" [id]="'tab-' + t" [attr.aria-controls]="'panel-' + t" [attr.aria-selected]="current() === t" (click)="switchTab(t)">
-      <app-icon [name]="t === 'items' ? 'search' : t === 'crafts' ? 'utensils-crossed' : t === 'creatures' ? 'swords' : 'hourglass'" />
+      <app-icon [name]="t === 'items' ? 'search' : t === 'crafts' ? 'utensils-crossed' : t === 'creatures' ? 'swords' : t === 'season' ? 'hourglass' : 'heart'" />
       {{ 'compendium.tab.' + t | transloco }}
     </button>
   }
@@ -136,6 +136,37 @@
       @if (ready()) {
         <p class="empty card">{{ 'compendium.noCrafts' | transloco }}</p>
       }
+    }
+  </div>
+} @else if (current() === 'villagers') {
+  <div id="panel-villagers" role="tabpanel" aria-labelledby="tab-villagers" class="panel">
+    <p class="card rules small">{{ 'villagers.rules' | transloco }}</p>
+    @for (v of villagers(); track v.id) {
+      <section class="card villager" [attr.aria-labelledby]="'vl-' + v.id">
+        <h2 [id]="'vl-' + v.id">{{ v.name | localize: l }}</h2>
+        @if (v.commonOnly) {
+          <p class="muted small">{{ 'villagers.commonOnly' | transloco }}</p>
+        } @else {
+          <p class="reaction-label"><app-icon name="heart" /> {{ 'villagers.reaction.loves' | transloco }}</p>
+          <ul class="gift-list">
+            @for (g of v.gifts.loves ?? []; track $index) {
+              <li><ng-container *ngTemplateOutlet="giftTpl; context: { $implicit: g }" /></li>
+            }
+          </ul>
+          @for (reaction of reactions; track reaction) {
+            @if (v.gifts[reaction]?.length) {
+              <details class="more-gifts">
+                <summary>{{ 'villagers.reaction.' + reaction | transloco }} ({{ v.gifts[reaction]!.length }})</summary>
+                <ul class="gift-list" [class.hates]="reaction === 'hates'">
+                  @for (g of v.gifts[reaction]; track $index) {
+                    <li><ng-container *ngTemplateOutlet="giftTpl; context: { $implicit: g }" /></li>
+                  }
+                </ul>
+              </details>
+            }
+          }
+        }
+      </section>
     }
   </div>
 } @else if (current() === 'season') {
@@ -299,4 +330,12 @@
       <app-icon name="chevron-right" />
     </a>
   </li>
+</ng-template>
+
+<ng-template #giftTpl let-g>
+  @if (g.entryId) {
+    <a [routerLink]="game.link('entries', g.entryId)">{{ g.name | localize: lang.lang() }}</a>
+  } @else {
+    <span>{{ g.name | localize: lang.lang() }}</span>
+  }
 </ng-template>

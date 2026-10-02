@@ -555,13 +555,6 @@
           }
         },
         {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
-          }
-        },
-        {
           "kind": "random",
           "where": {
             "en": "Combat Shrine reward (Mall)",
@@ -1464,24 +1457,6 @@
       ]
     },
     {
-      "id": "wte-elder-flour",
-      "name": {
-        "en": "Elder Flour",
-        "pt": "Farinha Anciã"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Soggy Slice (after an unlock)",
-            "pt": "The Soggy Slice (depois de liberar)"
-          }
-        }
-      ],
-      "sell": "50g"
-    },
-    {
       "id": "wte-enchanted-pitchfork",
       "name": {
         "en": "Enchanted Pitchfork",
@@ -1545,24 +1520,6 @@
       "sell": "25g"
     },
     {
-      "id": "wte-flesh-coral",
-      "name": {
-        "en": "Flesh Coral",
-        "pt": "Coral de Carne"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "125g"
-    },
-    {
       "id": "wte-gargantuan-greatsword-10",
       "name": {
         "en": "Gargantuan Greatsword +10",
@@ -1618,24 +1575,6 @@
         }
       ],
       "sell": "75g"
-    },
-    {
-      "id": "wte-gemberries",
-      "name": {
-        "en": "Gemberries",
-        "pt": "Bagas-gema"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "150g"
     },
     {
       "id": "wte-giant-club-5",
@@ -1714,24 +1653,6 @@
           "pt": "Elemento: Normal / Chance de crítico +5% / Dano de Físico recebido +10% / Perfurante"
         }
       }
-    },
-    {
-      "id": "wte-goldberries",
-      "name": {
-        "en": "Goldberries",
-        "pt": "Bagas-douradas"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "75g"
     },
     {
       "id": "wte-golden-rod",
@@ -1909,24 +1830,6 @@
           "pt": "Elemento: Normal / Precisão -20% / Chance de crítico +10% / Maciço"
         }
       }
-    },
-    {
-      "id": "wte-jar-of-blood",
-      "name": {
-        "en": "Jar of Blood",
-        "pt": "Pote de Sangue"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "150g"
     },
     {
       "id": "wte-lamp-of-light-5",
@@ -2107,13 +2010,6 @@
             "en": "Garbage Shop",
             "pt": "Loja do Lixo"
           }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
-          }
         }
       ],
       "sell": "25g"
@@ -2191,24 +2087,6 @@
           "pt": "+25% de chance de o Ataque Básico somar +1 ponto Letal"
         }
       }
-    },
-    {
-      "id": "wte-monkey-brains",
-      "name": {
-        "en": "Monkey Brains",
-        "pt": "Cérebro de Macaco"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "50g"
     },
     {
       "id": "wte-moonlight-shoes-3",
@@ -3164,24 +3042,6 @@
       "sell": "30g"
     },
     {
-      "id": "wte-strange-fruit",
-      "name": {
-        "en": "Strange Fruit",
-        "pt": "Fruta Estranha"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "75g"
-    },
-    {
       "id": "wte-string",
       "name": {
         "en": "String",
@@ -3201,13 +3061,6 @@
           "where": {
             "en": "Garbage Shop",
             "pt": "Loja do Lixo"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
           }
         },
         {
@@ -3289,24 +3142,6 @@
       "sell": "20g"
     },
     {
-      "id": "wte-swiftroot",
-      "name": {
-        "en": "Swiftroot",
-        "pt": "Raiz Veloz"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "75g"
-    },
-    {
       "id": "wte-tattered-hood",
       "name": {
         "en": "Tattered Hood",
@@ -3333,23 +3168,6 @@
           "pt": "Leve"
         }
       }
-    },
-    {
-      "id": "wte-the-book-of-cookies",
-      "name": {
-        "en": "The Book of Cookies",
-        "pt": "O Livro dos Biscoitos"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Soggy Slice (after an unlock)",
-            "pt": "The Soggy Slice (depois de liberar)"
-          }
-        }
-      ]
     },
     {
       "id": "wte-thick-hide",
@@ -3570,24 +3388,6 @@
       }
     },
     {
-      "id": "wte-void-sashimi",
-      "name": {
-        "en": "Void Sashimi",
-        "pt": "Sashimi do Vazio"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Food Cart",
-            "pt": "Carrinho de Comida"
-          }
-        }
-      ],
-      "sell": "50g"
-    },
-    {
       "id": "wte-voidberry-seed",
       "name": {
         "en": "Voidberry Seed",
@@ -3643,13 +3443,6 @@
           "where": {
             "en": "Garbage Shop",
             "pt": "Loja do Lixo"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock) Gift from Sam during farm visit",
-            "pt": "O Homem da Carne (depois de liberar) Presente de Sam numa visita à fazenda"
           }
         }
       ],
@@ -6939,108 +6732,6 @@
       }
     },
     {
-      "id": "wte-forge-nomad-hood",
-      "name": {
-        "en": "Nomad Hood",
-        "pt": "Capuz do Nômade"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Armor",
-        "pt": "Armaduras"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rawhide",
-          "name": {
-            "en": "Rawhide",
-            "pt": "Couro Cru"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-brain",
-          "name": {
-            "en": "Brain",
-            "pt": "Cérebro"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-leadleaf",
-          "name": {
-            "en": "Leadleaf",
-            "pt": "Folha de Chumbo"
-          },
-          "qty": 1
-        }
-      ],
-      "makes": "wte-nomad-hood-2",
-      "unlock": {
-        "en": "Automatically available at the Forge",
-        "pt": "Disponível desde o início na forja"
-      }
-    },
-    {
-      "id": "wte-forge-nomad-cloak",
-      "name": {
-        "en": "Nomad Cloak",
-        "pt": "Manto do Nômade"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Armor",
-        "pt": "Armaduras"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rawhide",
-          "name": {
-            "en": "Rawhide",
-            "pt": "Couro Cru"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-leadleaf",
-          "name": {
-            "en": "Leadleaf",
-            "pt": "Folha de Chumbo"
-          },
-          "qty": 1
-        }
-      ],
-      "makes": "wte-nomad-cloak-2",
-      "unlock": {
-        "en": "Automatically available at the Forge",
-        "pt": "Disponível desde o início na forja"
-      }
-    },
-    {
       "id": "wte-forge-copper-helmet",
       "name": {
         "en": "Copper Helmet",
@@ -7986,285 +7677,6 @@
           "qty": 10
         }
       ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-nomad-legguards-2",
-      "name": {
-        "en": "Nomad Legguards +2",
-        "pt": "Perneiras do Nômade +2"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Forge",
-        "pt": "Forja"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rawhide",
-          "name": {
-            "en": "Rawhide",
-            "pt": "Couro Cru"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-leadleaf",
-          "name": {
-            "en": "Leadleaf",
-            "pt": "Folha de Chumbo"
-          },
-          "qty": 1
-        }
-      ],
-      "makes": "wte-nomad-legguards-2",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-nomad-shoes-2",
-      "name": {
-        "en": "Nomad Shoes +2",
-        "pt": "Sapatos do Nômade +2"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Forge",
-        "pt": "Forja"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rawhide",
-          "name": {
-            "en": "Rawhide",
-            "pt": "Couro Cru"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-creature-claw",
-          "name": {
-            "en": "Creature Claw",
-            "pt": "Garra de Criatura"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-leadleaf",
-          "name": {
-            "en": "Leadleaf",
-            "pt": "Folha de Chumbo"
-          },
-          "qty": 1
-        }
-      ],
-      "makes": "wte-nomad-shoes-2",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-rockshell-greaves-4",
-      "name": {
-        "en": "Rockshell Greaves +4",
-        "pt": "Grevas Casco-de-rocha +4"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Forge",
-        "pt": "Forja"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rawhide",
-          "name": {
-            "en": "Rawhide",
-            "pt": "Couro Cru"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-goldpuff",
-          "name": {
-            "en": "Goldpuff",
-            "pt": "Baiacu-dourado"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-brain",
-          "name": {
-            "en": "Brain",
-            "pt": "Cérebro"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-leadleaf",
-          "name": {
-            "en": "Leadleaf",
-            "pt": "Folha de Chumbo"
-          },
-          "qty": 10
-        }
-      ],
-      "makes": "wte-rockshell-greaves-4",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-rockshell-helmet-4",
-      "name": {
-        "en": "Rockshell Helmet +4",
-        "pt": "Elmo Casco-de-rocha +4"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Forge",
-        "pt": "Forja"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rawhide",
-          "name": {
-            "en": "Rawhide",
-            "pt": "Couro Cru"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-goldpuff",
-          "name": {
-            "en": "Goldpuff",
-            "pt": "Baiacu-dourado"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-creature-claw",
-          "name": {
-            "en": "Creature Claw",
-            "pt": "Garra de Criatura"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-leadleaf",
-          "name": {
-            "en": "Leadleaf",
-            "pt": "Folha de Chumbo"
-          },
-          "qty": 10
-        }
-      ],
-      "makes": "wte-rockshell-helmet-4",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-rockshell-legguards-4",
-      "name": {
-        "en": "Rockshell Legguards +4",
-        "pt": "Perneiras Casco-de-rocha +4"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Forge",
-        "pt": "Forja"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rawhide",
-          "name": {
-            "en": "Rawhide",
-            "pt": "Couro Cru"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-goldpuff",
-          "name": {
-            "en": "Goldpuff",
-            "pt": "Baiacu-dourado"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-entrails",
-          "name": {
-            "en": "Entrails",
-            "pt": "Entranhas"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-leadleaf",
-          "name": {
-            "en": "Leadleaf",
-            "pt": "Folha de Chumbo"
-          },
-          "qty": 10
-        }
-      ],
-      "makes": "wte-rockshell-legguards-4",
       "unlock": {
         "en": "Known at start",
         "pt": "Conhecida desde o início"
@@ -10176,7 +9588,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -10190,7 +9601,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -10516,14 +9926,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -10542,7 +9950,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -10680,7 +10087,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -10694,7 +10100,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -10994,14 +10399,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -11020,7 +10423,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -11142,7 +10544,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -12110,7 +11511,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -12124,7 +11524,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -12182,7 +11581,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -12203,7 +11601,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -12326,7 +11723,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -12656,14 +12052,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -12682,7 +12076,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -12784,14 +12177,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -12810,7 +12201,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -12926,14 +12316,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -12952,7 +12340,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -13054,14 +12441,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -13080,7 +12465,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -13214,7 +12598,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -13228,7 +12611,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -13286,7 +12668,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -13307,7 +12688,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -13441,14 +12821,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -13467,7 +12845,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -13569,14 +12946,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -13595,7 +12970,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"

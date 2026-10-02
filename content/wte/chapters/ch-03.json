@@ -93,6 +93,24 @@
       "sell": "10g"
     },
     {
+      "id": "wte-elder-flour",
+      "name": {
+        "en": "Elder Flour",
+        "pt": "Farinha Anciã"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Soggy Slice (after an unlock)",
+            "pt": "The Soggy Slice (depois de liberar)"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
       "id": "wte-eldritch-tears",
       "name": {
         "en": "Eldritch Tears",
@@ -282,6 +300,23 @@
       "sell": "25g"
     },
     {
+      "id": "wte-the-book-of-cookies",
+      "name": {
+        "en": "The Book of Cookies",
+        "pt": "O Livro dos Biscoitos"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "The Soggy Slice (after an unlock)",
+            "pt": "The Soggy Slice (depois de liberar)"
+          }
+        }
+      ]
+    },
+    {
       "id": "wte-tidal-gem",
       "name": {
         "en": "Tidal Gem",
@@ -329,73 +364,6 @@
     }
   ],
   "crafts": [
-    {
-      "id": "wte-cook-rage-cookie",
-      "name": {
-        "en": "Rage Cookie",
-        "pt": "Biscoito da Fúria"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Oven",
-        "pt": "Forno"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-damp-dust",
-          "name": {
-            "en": "Damp Dust",
-            "pt": "Pó Úmido"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-elder-flour",
-          "name": {
-            "en": "Elder Flour",
-            "pt": "Farinha Anciã"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-eldritch-tears",
-          "name": {
-            "en": "Eldritch Tears",
-            "pt": "Lágrimas Sobrenaturais"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-entrails",
-          "name": {
-            "en": "Entrails",
-            "pt": "Entranhas"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-brain",
-          "name": {
-            "en": "Brain",
-            "pt": "Cérebro"
-          },
-          "qty": 1
-        }
-      ],
-      "makes": "wte-rage-cookie",
-      "unlock": {
-        "en": "Learned later",
-        "pt": "Aprendida mais tarde"
-      }
-    },
     {
       "id": "wte-cook-rich-cookie",
       "name": {
@@ -731,7 +699,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -745,7 +712,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -869,7 +835,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -883,7 +848,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -1376,7 +1340,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -1390,7 +1353,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -2084,7 +2046,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -2105,7 +2066,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -2186,7 +2146,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -2200,7 +2159,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"

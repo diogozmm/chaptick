@@ -1211,31 +1211,6 @@
       "sell": "25g"
     },
     {
-      "id": "wte-bait-pack-tier-2",
-      "name": {
-        "en": "Bait Pack (Tier 2)",
-        "pt": "Pacote de Iscas (Nível 2)"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Bait Shop",
-            "pt": "Loja de Iscas"
-          }
-        },
-        {
-          "kind": "random",
-          "where": {
-            "en": "Possible reward while digging for treasure",
-            "pt": "Possível recompensa while digging for treasure"
-          }
-        }
-      ],
-      "sell": "125g"
-    },
-    {
       "id": "wte-baked-fish-fillet",
       "name": {
         "en": "Baked Fish Fillet",
@@ -1543,6 +1518,24 @@
         "yield": "1-3",
         "crop": "wte-bean"
       }
+    },
+    {
+      "id": "wte-bean-stew",
+      "name": {
+        "en": "Bean Stew",
+        "pt": "Ensopado de Feijão"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "cook",
+          "where": {
+            "en": "Bean Stew",
+            "pt": "Ensopado de Feijão"
+          }
+        }
+      ],
+      "sell": "50g"
     },
     {
       "id": "wte-big-ghostfish",
@@ -1942,42 +1935,6 @@
       "sell": "20g"
     },
     {
-      "id": "wte-blood-potion",
-      "name": {
-        "en": "Blood Potion",
-        "pt": "Poção de Sangue"
-      },
-      "category": "potions",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Potion Lab: Blood Potion",
-            "pt": "Laboratório de Poções: Poção de Sangue"
-          }
-        }
-      ],
-      "sell": "25g"
-    },
-    {
-      "id": "wte-blood-punch",
-      "name": {
-        "en": "Blood Punch",
-        "pt": "Ponche de Sangue"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Juice: Blood Punch",
-            "pt": "Espremedor: Ponche de Sangue"
-          }
-        }
-      ],
-      "sell": "15g"
-    },
-    {
       "id": "wte-blood-sandwich",
       "name": {
         "en": "Blood Sandwich",
@@ -1996,24 +1953,6 @@
       "sell": "50g"
     },
     {
-      "id": "wte-blood-skewer",
-      "name": {
-        "en": "Blood Skewer",
-        "pt": "Espetinho de Sangue"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "cook",
-          "where": {
-            "en": "oven: Blood Skewer",
-            "pt": "Forno: Espetinho de Sangue"
-          }
-        }
-      ],
-      "sell": "15g"
-    },
-    {
       "id": "wte-blood-soup",
       "name": {
         "en": "Blood Soup",
@@ -2030,24 +1969,6 @@
         }
       ],
       "sell": "50g"
-    },
-    {
-      "id": "wte-blood-soaked-gem-bag",
-      "name": {
-        "en": "Blood-Soaked Gem Bag",
-        "pt": "Bolsa de Gemas Ensanguentada"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
-          }
-        }
-      ],
-      "sell": "75g"
     },
     {
       "id": "wte-bloodberries",
@@ -3350,22 +3271,8 @@
         {
           "kind": "shop",
           "where": {
-            "en": "Big Cat's Shop (after an unlock)",
-            "pt": "Loja do Gatão (depois de liberar)"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
             "en": "Farming Shop (after an unlock)",
             "pt": "Loja da Fazenda (depois de liberar)"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock) Gift from Edwin during farm visit",
-            "pt": "O Homem da Carne (depois de liberar) Presente de Edwin numa visita à fazenda"
           }
         }
       ],
@@ -5548,24 +5455,6 @@
       "sell": "25g"
     },
     {
-      "id": "wte-entrails",
-      "name": {
-        "en": "Entrails",
-        "pt": "Entranhas"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
-          }
-        }
-      ],
-      "sell": "10g"
-    },
-    {
       "id": "wte-equipment-pack",
       "name": {
         "en": "Equipment Pack",
@@ -5705,22 +5594,8 @@
         {
           "kind": "shop",
           "where": {
-            "en": "Big Cat's Shop (after an unlock)",
-            "pt": "Loja do Gatão (depois de liberar)"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
             "en": "General Store (after an unlock)",
             "pt": "Armazém (depois de liberar)"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
           }
         }
       ],
@@ -6057,6 +5932,24 @@
       "sell": "37g"
     },
     {
+      "id": "wte-flesh-coral",
+      "name": {
+        "en": "Flesh Coral",
+        "pt": "Coral de Carne"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "125g"
+    },
+    {
       "id": "wte-flesh-sandwich",
       "name": {
         "en": "Flesh Sandwich",
@@ -6384,6 +6277,24 @@
           "pt": "Chance de crítico +5% / Precisão +2% / Bolsos"
         }
       }
+    },
+    {
+      "id": "wte-gemberries",
+      "name": {
+        "en": "Gemberries",
+        "pt": "Bagas-gema"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "150g"
     },
     {
       "id": "wte-ghost-broth",
@@ -6865,6 +6776,24 @@
       "sell": "40g"
     },
     {
+      "id": "wte-goldberries",
+      "name": {
+        "en": "Goldberries",
+        "pt": "Bagas-douradas"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
       "id": "wte-golden-knight-5",
       "name": {
         "en": "Golden Knight +5",
@@ -6998,24 +6927,6 @@
           "pt": "EXP ganha +10%"
         }
       }
-    },
-    {
-      "id": "wte-goldpuff",
-      "name": {
-        "en": "Goldpuff",
-        "pt": "Baiacu-dourado"
-      },
-      "category": "metals",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
-          }
-        }
-      ],
-      "sell": "15g"
     },
     {
       "id": "wte-goodie-bag",
@@ -7702,24 +7613,6 @@
         "harvests": 1,
         "yield": "4-7"
       }
-    },
-    {
-      "id": "wte-hazard-potion",
-      "name": {
-        "en": "Hazard Potion",
-        "pt": "Poção do Perigo"
-      },
-      "category": "potions",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Potion Lab: Hazard Potion",
-            "pt": "Laboratório de Poções: Poção do Perigo"
-          }
-        }
-      ],
-      "sell": "25g"
     },
     {
       "id": "wte-headswarm-seed",
@@ -8474,6 +8367,24 @@
         }
       ],
       "sell": "10g"
+    },
+    {
+      "id": "wte-jar-of-blood",
+      "name": {
+        "en": "Jar of Blood",
+        "pt": "Pote de Sangue"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "150g"
     },
     {
       "id": "wte-jelly-bloodberry",
@@ -9380,24 +9291,6 @@
       "sell": "25g"
     },
     {
-      "id": "wte-lugworm",
-      "name": {
-        "en": "Lugworm",
-        "pt": "Minhoca-marinha"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "other",
-          "where": {
-            "en": "Mid roll (3 - 4) from Bait Pack (Tier 2). Can be purchased from the bait shop during the Fishing Contest (held on the 7th and 21st of every season)",
-            "pt": "Rolagem média (3 - 4) de Pacote de Iscas (Nível 2). Can be purchased de the bait shop during the Fishing Contest (nos dias 7 e 21 de cada estação)"
-          }
-        }
-      ],
-      "sell": "30g"
-    },
-    {
       "id": "wte-maggot",
       "name": {
         "en": "Maggot",
@@ -9741,6 +9634,24 @@
           "pt": "Contra-ataque +3% / Robusto"
         }
       }
+    },
+    {
+      "id": "wte-monkey-brains",
+      "name": {
+        "en": "Monkey Brains",
+        "pt": "Cérebro de Macaco"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "50g"
     },
     {
       "id": "wte-moon-crystal",
@@ -10420,6 +10331,24 @@
           "where": {
             "en": "Process Eyeball in Preserving Barrel",
             "pt": "Processe Globo Ocular em: Barril de Conserva"
+          }
+        }
+      ],
+      "sell": "77g"
+    },
+    {
+      "id": "wte-pickles-bean",
+      "name": {
+        "en": "Pickles (Bean)",
+        "pt": "Conserva (Feijão)"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process Bean in a Preserving Barrel",
+            "pt": "Processe Feijão em: Barril de Conserva"
           }
         }
       ],
@@ -11910,23 +11839,6 @@
       "sell": "6g"
     },
     {
-      "id": "wte-ring-of-binding",
-      "name": {
-        "en": "Ring of Binding",
-        "pt": "Anel da Amarração"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "a jeweller's desk: Ring of Binding",
-            "pt": "a jeweller's desk: Anel da Amarração"
-          }
-        }
-      ]
-    },
-    {
       "id": "wte-ritual-blade-3",
       "name": {
         "en": "Ritual Blade +3",
@@ -12763,24 +12675,6 @@
       "sell": "15g"
     },
     {
-      "id": "wte-simple-kebab",
-      "name": {
-        "en": "Simple Kebab",
-        "pt": "Kebab Simples"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "cook",
-          "where": {
-            "en": "Simple Kebab",
-            "pt": "Kebab Simples"
-          }
-        }
-      ],
-      "sell": "15g"
-    },
-    {
       "id": "wte-skeletal-scarecrow",
       "name": {
         "en": "Skeletal Scarecrow",
@@ -12850,24 +12744,6 @@
       ]
     },
     {
-      "id": "wte-slayer-s-feast",
-      "name": {
-        "en": "Slayer's Feast",
-        "pt": "Banquete do Matador"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "cook",
-          "where": {
-            "en": "Slayer's Feast",
-            "pt": "Banquete do Matador"
-          }
-        }
-      ],
-      "sell": "15g"
-    },
-    {
       "id": "wte-slime-egg",
       "name": {
         "en": "Slime Egg",
@@ -12909,24 +12785,6 @@
         }
       ],
       "sell": "10g"
-    },
-    {
-      "id": "wte-slime-tonic",
-      "name": {
-        "en": "Slime Tonic",
-        "pt": "Tônico de Gosma"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Juice: Slime Tonic",
-            "pt": "Espremedor: Tônico de Gosma"
-          }
-        }
-      ],
-      "sell": "15g"
     },
     {
       "id": "wte-small-coin-pouch",
@@ -13930,6 +13788,24 @@
       }
     },
     {
+      "id": "wte-strange-fruit",
+      "name": {
+        "en": "Strange Fruit",
+        "pt": "Fruta Estranha"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "75g"
+    },
+    {
       "id": "wte-straw-hat-4",
       "name": {
         "en": "Straw Hat +4",
@@ -13988,24 +13864,6 @@
         }
       ],
       "sell": "45g"
-    },
-    {
-      "id": "wte-strawberry-milk",
-      "name": {
-        "en": "Strawberry Milk",
-        "pt": "Leite de Morango"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Juice: Strawberry Milk",
-            "pt": "Espremedor: Leite de Morango"
-          }
-        }
-      ],
-      "sell": "15g"
     },
     {
       "id": "wte-strawberry-pie",
@@ -14298,6 +14156,24 @@
         }
       ],
       "sell": "10g"
+    },
+    {
+      "id": "wte-swiftroot",
+      "name": {
+        "en": "Swiftroot",
+        "pt": "Raiz Veloz"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "75g"
     },
     {
       "id": "wte-sword-of-hope-5",
@@ -15387,24 +15263,6 @@
       "sell": "7g"
     },
     {
-      "id": "wte-viscera",
-      "name": {
-        "en": "Viscera",
-        "pt": "Vísceras"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "The Meat Man (after an unlock)",
-            "pt": "O Homem da Carne (depois de liberar)"
-          }
-        }
-      ],
-      "sell": "10g"
-    },
-    {
       "id": "wte-void-crystal-bar",
       "name": {
         "en": "Void Crystal Bar",
@@ -15500,6 +15358,24 @@
         }
       ],
       "sell": "900g"
+    },
+    {
+      "id": "wte-void-sashimi",
+      "name": {
+        "en": "Void Sashimi",
+        "pt": "Sashimi do Vazio"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "shop",
+          "where": {
+            "en": "Food Cart",
+            "pt": "Carrinho de Comida"
+          }
+        }
+      ],
+      "sell": "50g"
     },
     {
       "id": "wte-voidberry",
@@ -16382,6 +16258,1868 @@
           "en": "Pockets",
           "pt": "Bolsos"
         }
+      }
+    }
+  ],
+  "villagers": [
+    {
+      "id": "wte-vl-alice",
+      "name": {
+        "en": "Alice"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "name": {
+              "en": "Beating Heart",
+              "pt": "Coração Pulsante"
+            }
+          },
+          {
+            "name": {
+              "en": "Expert Garden Salad",
+              "pt": "Salada da Horta Experiente"
+            }
+          },
+          {
+            "name": {
+              "en": "Funneltop",
+              "pt": "Funil-de-flor"
+            }
+          },
+          {
+            "name": {
+              "en": "Greater Holy Water",
+              "pt": "Água Benta Maior"
+            }
+          },
+          {
+            "name": {
+              "en": "Lesser Holy Water",
+              "pt": "Água Benta Menor"
+            }
+          },
+          {
+            "name": {
+              "en": "Shadewing Moth",
+              "pt": "Mariposa Asa-sombria"
+            }
+          },
+          {
+            "entryId": "wte-spectral-rain",
+            "name": {
+              "en": "Spectral Rain",
+              "pt": "Chuva Espectral"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "entryId": "wte-bone-honey",
+            "name": {
+              "en": "Bone Honey",
+              "pt": "Mel de Osso"
+            }
+          },
+          {
+            "entryId": "wte-large-milk",
+            "name": {
+              "en": "Large Milk",
+              "pt": "Leite Grande"
+            }
+          },
+          {
+            "entryId": "wte-leather",
+            "name": {
+              "en": "Leather",
+              "pt": "Couro"
+            }
+          },
+          {
+            "entryId": "wte-small-milk",
+            "name": {
+              "en": "Small Milk",
+              "pt": "Leite Pequeno"
+            }
+          },
+          {
+            "entryId": "wte-soda-pop",
+            "name": {
+              "en": "Soda Pop",
+              "pt": "Refrigerante"
+            }
+          },
+          {
+            "entryId": "wte-special-hotdog",
+            "name": {
+              "en": "Special Hotdog",
+              "pt": "Cachorro-quente Especial"
+            }
+          },
+          {
+            "name": {
+              "en": "Sushi"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "name": {
+              "en": "Bloody Skin",
+              "pt": "Pele Ensanguentada"
+            }
+          },
+          {
+            "name": {
+              "en": "Bug",
+              "pt": "Inseto"
+            }
+          },
+          {
+            "entryId": "wte-fog-eel",
+            "name": {
+              "en": "Fog Eel",
+              "pt": "Enguia da Névoa"
+            }
+          },
+          {
+            "entryId": "wte-ghost-flounder",
+            "name": {
+              "en": "Ghost Flounder",
+              "pt": "Linguado Fantasma"
+            }
+          },
+          {
+            "entryId": "wte-leech",
+            "name": {
+              "en": "Leech",
+              "pt": "Sanguessuga"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          },
+          {
+            "entryId": "wte-scraped-hide",
+            "name": {
+              "en": "Scraped Hide",
+              "pt": "Pele Raspada"
+            }
+          },
+          {
+            "name": {
+              "en": "Stalktopus",
+              "pt": "Polvo-de-antenas"
+            }
+          },
+          {
+            "entryId": "wte-tooth",
+            "name": {
+              "en": "Tooth",
+              "pt": "Dente"
+            }
+          },
+          {
+            "entryId": "wte-worm",
+            "name": {
+              "en": "Worm",
+              "pt": "Minhoca"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "name": {
+              "en": "Duskmelon Cupcake",
+              "pt": "Cupcake de Melão-do-crepúsculo"
+            }
+          },
+          {
+            "entryId": "wte-raw-void-crystal",
+            "name": {
+              "en": "Raw Void Crystal",
+              "pt": "Cristal do Vazio Bruto"
+            }
+          },
+          {
+            "entryId": "wte-void-crystal-bar",
+            "name": {
+              "en": "Void Crystal Bar",
+              "pt": "Barra de Cristal do Vazio"
+            }
+          },
+          {
+            "entryId": "wte-void-dinner",
+            "name": {
+              "en": "Void Dinner",
+              "pt": "Jantar do Vazio"
+            }
+          },
+          {
+            "name": {
+              "en": "Wax",
+              "pt": "Cera"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wte-vl-blorph",
+      "name": {
+        "en": "Blorph"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "entryId": "wte-godflesh",
+            "name": {
+              "en": "Godflesh",
+              "pt": "Carne Divina"
+            }
+          },
+          {
+            "name": {
+              "en": "Godscale",
+              "pt": "Escama Divina"
+            }
+          },
+          {
+            "entryId": "wte-monkey-brains",
+            "name": {
+              "en": "Monkey Brains",
+              "pt": "Cérebro de Macaco"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          },
+          {
+            "entryId": "wte-spectral-rain",
+            "name": {
+              "en": "Spectral Rain",
+              "pt": "Chuva Espectral"
+            }
+          },
+          {
+            "name": {
+              "en": "Stealth Musk",
+              "pt": "Almíscar Furtivo"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "entryId": "wte-flesh-sandwich",
+            "name": {
+              "en": "Flesh Sandwich",
+              "pt": "Sanduíche de Carne Crua"
+            }
+          },
+          {
+            "entryId": "wte-leather",
+            "name": {
+              "en": "Leather",
+              "pt": "Couro"
+            }
+          },
+          {
+            "name": {
+              "en": "Rot Puffer",
+              "pt": "Baiacu Podre"
+            }
+          },
+          {
+            "entryId": "wte-secret-sauce",
+            "name": {
+              "en": "Secret Sauce",
+              "pt": "Molho Secreto"
+            }
+          },
+          {
+            "entryId": "wte-slime-pizza",
+            "name": {
+              "en": "Slime Pizza",
+              "pt": "Pizza de Gosma"
+            }
+          },
+          {
+            "name": {
+              "en": "Slimefish",
+              "pt": "Peixe-gosma"
+            }
+          },
+          {
+            "entryId": "wte-soul-stew",
+            "name": {
+              "en": "Soul Stew",
+              "pt": "Ensopado de Alma"
+            }
+          },
+          {
+            "entryId": "wte-void-dinner",
+            "name": {
+              "en": "Void Dinner",
+              "pt": "Jantar do Vazio"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "name": {
+              "en": "Bloody Skin",
+              "pt": "Pele Ensanguentada"
+            }
+          },
+          {
+            "name": {
+              "en": "Bones",
+              "pt": "Ossos"
+            }
+          },
+          {
+            "name": {
+              "en": "Bug",
+              "pt": "Inseto"
+            }
+          },
+          {
+            "entryId": "wte-eyeball",
+            "name": {
+              "en": "Eyeball",
+              "pt": "Globo Ocular"
+            }
+          },
+          {
+            "entryId": "wte-leech",
+            "name": {
+              "en": "Leech",
+              "pt": "Sanguessuga"
+            }
+          },
+          {
+            "entryId": "wte-maggot",
+            "name": {
+              "en": "Maggot",
+              "pt": "Larva"
+            }
+          },
+          {
+            "entryId": "wte-scraped-hide",
+            "name": {
+              "en": "Scraped Hide",
+              "pt": "Pele Raspada"
+            }
+          },
+          {
+            "name": {
+              "en": "Spoiled Rations",
+              "pt": "Rações Estragadas"
+            }
+          },
+          {
+            "entryId": "wte-tooth",
+            "name": {
+              "en": "Tooth",
+              "pt": "Dente"
+            }
+          },
+          {
+            "entryId": "wte-worm",
+            "name": {
+              "en": "Worm",
+              "pt": "Minhoca"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "name": {
+              "en": "Baked Crab",
+              "pt": "Caranguejo Assado"
+            }
+          },
+          {
+            "entryId": "wte-baked-fish-fillet",
+            "name": {
+              "en": "Baked Fish Fillet",
+              "pt": "Filé de Peixe Assado"
+            }
+          },
+          {
+            "name": {
+              "en": "Baked Serpent",
+              "pt": "Serpente Assada"
+            }
+          },
+          {
+            "entryId": "wte-bread",
+            "name": {
+              "en": "Bread",
+              "pt": "Pão"
+            }
+          },
+          {
+            "entryId": "wte-bubble-tea",
+            "name": {
+              "en": "Bubble-Tea",
+              "pt": "Chá de Bolhas"
+            }
+          },
+          {
+            "entryId": "wte-celery",
+            "name": {
+              "en": "Celery",
+              "pt": "Aipo"
+            }
+          },
+          {
+            "entryId": "wte-cheese",
+            "name": {
+              "en": "Cheese",
+              "pt": "Queijo"
+            }
+          },
+          {
+            "entryId": "wte-cloudberry-punch",
+            "name": {
+              "en": "Cloudberry Punch",
+              "pt": "Ponche de Amora-ártica"
+            }
+          },
+          {
+            "entryId": "wte-corn",
+            "name": {
+              "en": "Corn",
+              "pt": "Milho"
+            }
+          },
+          {
+            "entryId": "wte-cornbread",
+            "name": {
+              "en": "Cornbread",
+              "pt": "Pão de Milho"
+            }
+          },
+          {
+            "entryId": "wte-cornmeal",
+            "name": {
+              "en": "Cornmeal",
+              "pt": "Fubá"
+            }
+          },
+          {
+            "entryId": "wte-cup-of-tea",
+            "name": {
+              "en": "Cup of Tea",
+              "pt": "Xícara de Chá"
+            }
+          },
+          {
+            "entryId": "wte-dusk-juice",
+            "name": {
+              "en": "Dusk Juice",
+              "pt": "Suco do Crepúsculo"
+            }
+          },
+          {
+            "name": {
+              "en": "Duskberry Cake",
+              "pt": "Bolo de Baga-do-crepúsculo"
+            }
+          },
+          {
+            "name": {
+              "en": "Duskmelon Cupcake",
+              "pt": "Cupcake de Melão-do-crepúsculo"
+            }
+          },
+          {
+            "name": {
+              "en": "Eldersprout Pizza",
+              "pt": "Pizza de Broto Ancião"
+            }
+          },
+          {
+            "entryId": "wte-energy-drink",
+            "name": {
+              "en": "Energy Drink",
+              "pt": "Energético"
+            }
+          },
+          {
+            "name": {
+              "en": "Filling Platter",
+              "pt": "Travessa Farta"
+            }
+          },
+          {
+            "entryId": "wte-fingerfruit-juice",
+            "name": {
+              "en": "Fingerfruit Juice",
+              "pt": "Suco de Fruta-dedo"
+            }
+          },
+          {
+            "name": {
+              "en": "Fish Taco",
+              "pt": "Taco de Peixe"
+            }
+          },
+          {
+            "entryId": "wte-fruit-salad",
+            "name": {
+              "en": "Fruit Salad",
+              "pt": "Salada de Frutas"
+            }
+          },
+          {
+            "entryId": "wte-ghost-flounder-soup",
+            "name": {
+              "en": "Ghost Flounder Soup",
+              "pt": "Sopa de Linguado Fantasma"
+            }
+          },
+          {
+            "entryId": "wte-ghost-sashimi",
+            "name": {
+              "en": "Ghost Sashimi",
+              "pt": "Sashimi Fantasma"
+            }
+          },
+          {
+            "entryId": "wte-grape-drink",
+            "name": {
+              "en": "Grape Drink",
+              "pt": "Suco de Uva"
+            }
+          },
+          {
+            "name": {
+              "en": "Harvest Stew",
+              "pt": "Ensopado da Colheita"
+            }
+          },
+          {
+            "name": {
+              "en": "Healthy Platter",
+              "pt": "Travessa Saudável"
+            }
+          },
+          {
+            "name": {
+              "en": "Hearty Omelette",
+              "pt": "Omelete Reforçada"
+            }
+          },
+          {
+            "entryId": "wte-hotdog",
+            "name": {
+              "en": "Hotdog",
+              "pt": "Cachorro-quente"
+            }
+          },
+          {
+            "entryId": "wte-large-egg",
+            "name": {
+              "en": "Large Egg",
+              "pt": "Ovo Grande"
+            }
+          },
+          {
+            "entryId": "wte-large-milk",
+            "name": {
+              "en": "Large Milk",
+              "pt": "Leite Grande"
+            }
+          },
+          {
+            "entryId": "wte-light-salad",
+            "name": {
+              "en": "Light Salad",
+              "pt": "Salada Leve"
+            }
+          },
+          {
+            "entryId": "wte-light-sandwich",
+            "name": {
+              "en": "Light Sandwich",
+              "pt": "Sanduíche Leve"
+            }
+          },
+          {
+            "entryId": "wte-mana-muffin",
+            "name": {
+              "en": "Mana Muffin",
+              "pt": "Muffin de Mana"
+            }
+          },
+          {
+            "entryId": "wte-mayonnaise",
+            "name": {
+              "en": "Mayonnaise",
+              "pt": "Maionese"
+            }
+          },
+          {
+            "entryId": "wte-mystery-roast",
+            "name": {
+              "en": "Mystery Roast",
+              "pt": "Assado Misterioso"
+            }
+          },
+          {
+            "name": {
+              "en": "Mystery Sandwich",
+              "pt": "Sanduíche Misterioso"
+            }
+          },
+          {
+            "entryId": "wte-pizza",
+            "name": {
+              "en": "Pizza"
+            }
+          },
+          {
+            "entryId": "wte-pumpkin",
+            "name": {
+              "en": "Pumpkin",
+              "pt": "Abóbora"
+            }
+          },
+          {
+            "entryId": "wte-pumpkin-muffin",
+            "name": {
+              "en": "Pumpkin Muffin",
+              "pt": "Muffin de Abóbora"
+            }
+          },
+          {
+            "name": {
+              "en": "Pumpkin Pie",
+              "pt": "Torta de Abóbora"
+            }
+          },
+          {
+            "entryId": "wte-radish",
+            "name": {
+              "en": "Radish",
+              "pt": "Rabanete"
+            }
+          },
+          {
+            "name": {
+              "en": "Serpent Soup",
+              "pt": "Sopa de Serpente"
+            }
+          },
+          {
+            "entryId": "wte-small-egg",
+            "name": {
+              "en": "Small Egg",
+              "pt": "Ovo Pequeno"
+            }
+          },
+          {
+            "entryId": "wte-small-milk",
+            "name": {
+              "en": "Small Milk",
+              "pt": "Leite Pequeno"
+            }
+          },
+          {
+            "entryId": "wte-smoothie",
+            "name": {
+              "en": "Smoothie",
+              "pt": "Vitamina"
+            }
+          },
+          {
+            "entryId": "wte-soda-pop",
+            "name": {
+              "en": "Soda Pop",
+              "pt": "Refrigerante"
+            }
+          },
+          {
+            "entryId": "wte-special-burger",
+            "name": {
+              "en": "Special Burger",
+              "pt": "Hambúrguer Especial"
+            }
+          },
+          {
+            "entryId": "wte-special-donut",
+            "name": {
+              "en": "Special Donut",
+              "pt": "Rosquinha Especial"
+            }
+          },
+          {
+            "entryId": "wte-special-hotdog",
+            "name": {
+              "en": "Special Hotdog",
+              "pt": "Cachorro-quente Especial"
+            }
+          },
+          {
+            "entryId": "wte-strawberry-pie",
+            "name": {
+              "en": "Strawberry Pie",
+              "pt": "Torta de Morango"
+            }
+          },
+          {
+            "name": {
+              "en": "Super Stew",
+              "pt": "Superensopado"
+            }
+          },
+          {
+            "name": {
+              "en": "Sushi"
+            }
+          },
+          {
+            "entryId": "wte-takoyaki",
+            "name": {
+              "en": "Takoyaki"
+            }
+          },
+          {
+            "entryId": "wte-tempura",
+            "name": {
+              "en": "Tempura",
+              "pt": "Tempurá"
+            }
+          },
+          {
+            "entryId": "wte-vegetable-cocktail",
+            "name": {
+              "en": "Vegetable Cocktail",
+              "pt": "Coquetel de Legumes"
+            }
+          },
+          {
+            "entryId": "wte-vegetable-smoothie",
+            "name": {
+              "en": "Vegetable Smoothie",
+              "pt": "Vitamina de Legumes"
+            }
+          },
+          {
+            "entryId": "wte-vegetable-soup",
+            "name": {
+              "en": "Vegetable Soup",
+              "pt": "Sopa de Legumes"
+            }
+          },
+          {
+            "entryId": "wte-void-plum-pie",
+            "name": {
+              "en": "Void Plum Pie",
+              "pt": "Torta de Ameixa-do-vazio"
+            }
+          },
+          {
+            "entryId": "wte-wheat",
+            "name": {
+              "en": "Wheat",
+              "pt": "Trigo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wte-vl-celeste",
+      "name": {
+        "en": "Celeste"
+      },
+      "gifts": {},
+      "commonOnly": true
+    },
+    {
+      "id": "wte-vl-edwin",
+      "name": {
+        "en": "Edwin"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "name": {
+              "en": "Beating Heart",
+              "pt": "Coração Pulsante"
+            }
+          },
+          {
+            "name": {
+              "en": "Blood of the Gods",
+              "pt": "Sangue dos Deuses"
+            }
+          },
+          {
+            "name": {
+              "en": "Duskberry Cake",
+              "pt": "Bolo de Baga-do-crepúsculo"
+            }
+          },
+          {
+            "entryId": "wte-godflesh",
+            "name": {
+              "en": "Godflesh",
+              "pt": "Carne Divina"
+            }
+          },
+          {
+            "name": {
+              "en": "Gorgon's Eye",
+              "pt": "Olho de Górgona"
+            }
+          },
+          {
+            "name": {
+              "en": "Pale Empress Moth"
+            }
+          },
+          {
+            "entryId": "wte-void-crystal-bar",
+            "name": {
+              "en": "Void Crystal Bar",
+              "pt": "Barra de Cristal do Vazio"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "entryId": "wte-celery",
+            "name": {
+              "en": "Celery",
+              "pt": "Aipo"
+            }
+          },
+          {
+            "entryId": "wte-eyeball",
+            "name": {
+              "en": "Eyeball",
+              "pt": "Globo Ocular"
+            }
+          },
+          {
+            "entryId": "wte-iron-bar",
+            "name": {
+              "en": "Iron Bar",
+              "pt": "Barra de Ferro"
+            }
+          },
+          {
+            "entryId": "wte-large-egg",
+            "name": {
+              "en": "Large Egg",
+              "pt": "Ovo Grande"
+            }
+          },
+          {
+            "entryId": "wte-leather",
+            "name": {
+              "en": "Leather",
+              "pt": "Couro"
+            }
+          },
+          {
+            "name": {
+              "en": "Shadewing Moth",
+              "pt": "Mariposa Asa-sombria"
+            }
+          },
+          {
+            "entryId": "wte-small-egg",
+            "name": {
+              "en": "Small Egg",
+              "pt": "Ovo Pequeno"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "name": {
+              "en": "Bones",
+              "pt": "Ossos"
+            }
+          },
+          {
+            "entryId": "wte-coal",
+            "name": {
+              "en": "Coal",
+              "pt": "Carvão"
+            }
+          },
+          {
+            "name": {
+              "en": "Crushed Bones",
+              "pt": "Ossos Moídos"
+            }
+          },
+          {
+            "entryId": "wte-salt",
+            "name": {
+              "en": "Salt",
+              "pt": "Sal"
+            }
+          },
+          {
+            "entryId": "wte-tooth",
+            "name": {
+              "en": "Tooth",
+              "pt": "Dente"
+            }
+          },
+          {
+            "name": {
+              "en": "Wax",
+              "pt": "Cera"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "name": {
+              "en": "Greater Holy Water",
+              "pt": "Água Benta Maior"
+            }
+          },
+          {
+            "name": {
+              "en": "Lesser Holy Water",
+              "pt": "Água Benta Menor"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          },
+          {
+            "name": {
+              "en": "Pearlfish"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wte-vl-ellie",
+      "name": {
+        "en": "Ellie"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "name": {
+              "en": "Beating Heart",
+              "pt": "Coração Pulsante"
+            }
+          },
+          {
+            "name": {
+              "en": "Bloodwing Moth"
+            }
+          },
+          {
+            "name": {
+              "en": "Gorgon's Eye",
+              "pt": "Olho de Górgona"
+            }
+          },
+          {
+            "entryId": "wte-greater-death-crystal",
+            "name": {
+              "en": "Greater Death Crystal",
+              "pt": "Cristal da Morte Maior"
+            }
+          },
+          {
+            "entryId": "wte-greater-deep-crystal",
+            "name": {
+              "en": "Greater Deep Crystal",
+              "pt": "Cristal das Profundezas Maior"
+            }
+          },
+          {
+            "entryId": "wte-greater-dream-crystal",
+            "name": {
+              "en": "Greater Dream Crystal",
+              "pt": "Cristal dos Sonhos Maior"
+            }
+          },
+          {
+            "entryId": "wte-greater-ghost-crystal",
+            "name": {
+              "en": "Greater Ghost Crystal",
+              "pt": "Cristal Fantasma Maior"
+            }
+          },
+          {
+            "entryId": "wte-greater-light-crystal",
+            "name": {
+              "en": "Greater Light Crystal",
+              "pt": "Cristal de Luz Maior"
+            }
+          },
+          {
+            "entryId": "wte-greater-moon-crystal",
+            "name": {
+              "en": "Greater Moon Crystal",
+              "pt": "Cristal da Lua Maior"
+            }
+          },
+          {
+            "entryId": "wte-pickled-eyeballs",
+            "name": {
+              "en": "Pickled Eyeballs",
+              "pt": "Olhos em Conserva"
+            }
+          },
+          {
+            "entryId": "wte-spectral-rain",
+            "name": {
+              "en": "Spectral Rain",
+              "pt": "Chuva Espectral"
+            }
+          },
+          {
+            "name": {
+              "en": "Stealth Musk",
+              "pt": "Almíscar Furtivo"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "name": {
+              "en": "Bloody Skin",
+              "pt": "Pele Ensanguentada"
+            }
+          },
+          {
+            "entryId": "wte-mana-muffin",
+            "name": {
+              "en": "Mana Muffin",
+              "pt": "Muffin de Mana"
+            }
+          },
+          {
+            "entryId": "wte-mayonnaise",
+            "name": {
+              "en": "Mayonnaise",
+              "pt": "Maionese"
+            }
+          },
+          {
+            "entryId": "wte-radish",
+            "name": {
+              "en": "Radish",
+              "pt": "Rabanete"
+            }
+          },
+          {
+            "name": {
+              "en": "Shadewing Moth",
+              "pt": "Mariposa Asa-sombria"
+            }
+          },
+          {
+            "entryId": "wte-slime-pizza",
+            "name": {
+              "en": "Slime Pizza",
+              "pt": "Pizza de Gosma"
+            }
+          },
+          {
+            "name": {
+              "en": "Stalktopus",
+              "pt": "Polvo-de-antenas"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "name": {
+              "en": "Bones",
+              "pt": "Ossos"
+            }
+          },
+          {
+            "name": {
+              "en": "Crushed Bones",
+              "pt": "Ossos Moídos"
+            }
+          },
+          {
+            "entryId": "wte-gravemoss",
+            "name": {
+              "en": "Gravemoss",
+              "pt": "Musgo de Túmulo"
+            }
+          },
+          {
+            "name": {
+              "en": "Hard Bones",
+              "pt": "Ossos Duros"
+            }
+          },
+          {
+            "entryId": "wte-salt",
+            "name": {
+              "en": "Salt",
+              "pt": "Sal"
+            }
+          },
+          {
+            "entryId": "wte-tooth",
+            "name": {
+              "en": "Tooth",
+              "pt": "Dente"
+            }
+          },
+          {
+            "name": {
+              "en": "Wax",
+              "pt": "Cera"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "name": {
+              "en": "Greater Holy Water",
+              "pt": "Água Benta Maior"
+            }
+          },
+          {
+            "name": {
+              "en": "Lesser Holy Water",
+              "pt": "Água Benta Menor"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wte-vl-josh",
+      "name": {
+        "en": "Josh"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "name": {
+              "en": "Beating Heart",
+              "pt": "Coração Pulsante"
+            }
+          },
+          {
+            "name": {
+              "en": "Bloodwing Moth"
+            }
+          },
+          {
+            "name": {
+              "en": "Expert BBQ Platter",
+              "pt": "Travessa de Churrasco Experiente"
+            }
+          },
+          {
+            "name": {
+              "en": "Filling Platter",
+              "pt": "Travessa Farta"
+            }
+          },
+          {
+            "name": {
+              "en": "Harvest Stew",
+              "pt": "Ensopado da Colheita"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "entryId": "wte-gold-bar",
+            "name": {
+              "en": "Gold Bar",
+              "pt": "Barra de Ouro"
+            }
+          },
+          {
+            "name": {
+              "en": "Green Mushroom",
+              "pt": "Cogumelo Verde"
+            }
+          },
+          {
+            "entryId": "wte-honey",
+            "name": {
+              "en": "Honey",
+              "pt": "Mel"
+            }
+          },
+          {
+            "entryId": "wte-light-sandwich",
+            "name": {
+              "en": "Light Sandwich",
+              "pt": "Sanduíche Leve"
+            }
+          },
+          {
+            "entryId": "wte-soda-pop",
+            "name": {
+              "en": "Soda Pop",
+              "pt": "Refrigerante"
+            }
+          },
+          {
+            "name": {
+              "en": "Wax",
+              "pt": "Cera"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "name": {
+              "en": "Copper Bar",
+              "pt": "Barra de Cobre"
+            }
+          },
+          {
+            "entryId": "wte-copper-ore",
+            "name": {
+              "en": "Copper Ore",
+              "pt": "Minério de Cobre"
+            }
+          },
+          {
+            "entryId": "wte-gold-ore",
+            "name": {
+              "en": "Gold Ore",
+              "pt": "Minério de Ouro"
+            }
+          },
+          {
+            "entryId": "wte-iron-ore",
+            "name": {
+              "en": "Iron Ore",
+              "pt": "Minério de Ferro"
+            }
+          },
+          {
+            "name": {
+              "en": "Paper",
+              "pt": "Papel"
+            }
+          },
+          {
+            "entryId": "wte-salt-rock",
+            "name": {
+              "en": "Salt Rock",
+              "pt": "Pedra de Sal"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "entryId": "wte-fruit-salad",
+            "name": {
+              "en": "Fruit Salad",
+              "pt": "Salada de Frutas"
+            }
+          },
+          {
+            "name": {
+              "en": "Healthy Platter",
+              "pt": "Travessa Saudável"
+            }
+          },
+          {
+            "entryId": "wte-light-salad",
+            "name": {
+              "en": "Light Salad",
+              "pt": "Salada Leve"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          },
+          {
+            "entryId": "wte-tooth",
+            "name": {
+              "en": "Tooth",
+              "pt": "Dente"
+            }
+          },
+          {
+            "entryId": "wte-vegetable-soup",
+            "name": {
+              "en": "Vegetable Soup",
+              "pt": "Sopa de Legumes"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wte-vl-molly",
+      "name": {
+        "en": "Molly"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "name": {
+              "en": "Beating Heart",
+              "pt": "Coração Pulsante"
+            }
+          },
+          {
+            "name": {
+              "en": "Blacksteel Bar",
+              "pt": "Barra de Aço Negro"
+            }
+          },
+          {
+            "name": {
+              "en": "Funneltop",
+              "pt": "Funil-de-flor"
+            }
+          },
+          {
+            "name": {
+              "en": "Godscale",
+              "pt": "Escama Divina"
+            }
+          },
+          {
+            "name": {
+              "en": "Pale Empress Moth"
+            }
+          },
+          {
+            "entryId": "wte-platinum-bar",
+            "name": {
+              "en": "Platinum Bar",
+              "pt": "Barra de Platina"
+            }
+          },
+          {
+            "entryId": "wte-platinum-ore",
+            "name": {
+              "en": "Platinum Ore",
+              "pt": "Minério de Platina"
+            }
+          },
+          {
+            "name": {
+              "en": "Steel Bar",
+              "pt": "Barra de Aço"
+            }
+          },
+          {
+            "entryId": "wte-void-crystal-bar",
+            "name": {
+              "en": "Void Crystal Bar",
+              "pt": "Barra de Cristal do Vazio"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "name": {
+              "en": "Dense Iron Ore",
+              "pt": "Minério de Ferro Denso"
+            }
+          },
+          {
+            "name": {
+              "en": "Green Crystal",
+              "pt": "Cristal Verde"
+            }
+          },
+          {
+            "entryId": "wte-iron-bar",
+            "name": {
+              "en": "Iron Bar",
+              "pt": "Barra de Ferro"
+            }
+          },
+          {
+            "name": {
+              "en": "Mystery Sandwich",
+              "pt": "Sanduíche Misterioso"
+            }
+          },
+          {
+            "entryId": "wte-rock-dweller",
+            "name": {
+              "en": "Rock-Dweller",
+              "pt": "Morador-das-pedras"
+            }
+          },
+          {
+            "entryId": "wte-scrap-metal",
+            "name": {
+              "en": "Scrap Metal",
+              "pt": "Sucata"
+            }
+          },
+          {
+            "name": {
+              "en": "Stonelurker",
+              "pt": "Espreitador-de-pedra"
+            }
+          },
+          {
+            "entryId": "wte-verdite-bar",
+            "name": {
+              "en": "Verdite Bar",
+              "pt": "Barra de Verdite"
+            }
+          },
+          {
+            "entryId": "wte-verdite-ore",
+            "name": {
+              "en": "Verdite Ore",
+              "pt": "Minério de Verdite"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "entryId": "wte-bone-ingot",
+            "name": {
+              "en": "Bone Ingot",
+              "pt": "Lingote de Osso"
+            }
+          },
+          {
+            "entryId": "wte-copper-ore",
+            "name": {
+              "en": "Copper Ore",
+              "pt": "Minério de Cobre"
+            }
+          },
+          {
+            "entryId": "wte-gold-ore",
+            "name": {
+              "en": "Gold Ore",
+              "pt": "Minério de Ouro"
+            }
+          },
+          {
+            "name": {
+              "en": "Hard Bones",
+              "pt": "Ossos Duros"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "name": {
+              "en": "Bloody Skin",
+              "pt": "Pele Ensanguentada"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          },
+          {
+            "entryId": "wte-slime-pizza",
+            "name": {
+              "en": "Slime Pizza",
+              "pt": "Pizza de Gosma"
+            }
+          },
+          {
+            "entryId": "wte-tooth",
+            "name": {
+              "en": "Tooth",
+              "pt": "Dente"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wte-vl-sam",
+      "name": {
+        "en": "Sam"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "name": {
+              "en": "Beating Heart",
+              "pt": "Coração Pulsante"
+            }
+          },
+          {
+            "name": {
+              "en": "Expert Garden Salad",
+              "pt": "Salada da Horta Experiente"
+            }
+          },
+          {
+            "name": {
+              "en": "Pale Empress Moth"
+            }
+          },
+          {
+            "entryId": "wte-void-crystal-bar",
+            "name": {
+              "en": "Void Crystal Bar",
+              "pt": "Barra de Cristal do Vazio"
+            }
+          },
+          {
+            "entryId": "wte-void-dinner",
+            "name": {
+              "en": "Void Dinner",
+              "pt": "Jantar do Vazio"
+            }
+          },
+          {
+            "name": {
+              "en": "Voidbloom",
+              "pt": "Flor do Vazio"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "entryId": "wte-cup-of-coffee",
+            "name": {
+              "en": "Cup of Coffee",
+              "pt": "Xícara de Café"
+            }
+          },
+          {
+            "name": {
+              "en": "Firefly",
+              "pt": "Vaga-lume"
+            }
+          },
+          {
+            "entryId": "wte-pizza",
+            "name": {
+              "en": "Pizza"
+            }
+          },
+          {
+            "entryId": "wte-raw-void-crystal",
+            "name": {
+              "en": "Raw Void Crystal",
+              "pt": "Cristal do Vazio Bruto"
+            }
+          },
+          {
+            "name": {
+              "en": "Shadewing Moth",
+              "pt": "Mariposa Asa-sombria"
+            }
+          },
+          {
+            "entryId": "wte-slime-pizza",
+            "name": {
+              "en": "Slime Pizza",
+              "pt": "Pizza de Gosma"
+            }
+          },
+          {
+            "entryId": "wte-voidberry",
+            "name": {
+              "en": "Voidberry",
+              "pt": "Baga-do-vazio"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "entryId": "wte-coal",
+            "name": {
+              "en": "Coal",
+              "pt": "Carvão"
+            }
+          },
+          {
+            "entryId": "wte-copper-ore",
+            "name": {
+              "en": "Copper Ore",
+              "pt": "Minério de Cobre"
+            }
+          },
+          {
+            "entryId": "wte-gold-ore",
+            "name": {
+              "en": "Gold Ore",
+              "pt": "Minério de Ouro"
+            }
+          },
+          {
+            "entryId": "wte-iron-ore",
+            "name": {
+              "en": "Iron Ore",
+              "pt": "Minério de Ferro"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "entryId": "wte-fog-eel",
+            "name": {
+              "en": "Fog Eel",
+              "pt": "Enguia da Névoa"
+            }
+          },
+          {
+            "entryId": "wte-ghost-flounder",
+            "name": {
+              "en": "Ghost Flounder",
+              "pt": "Linguado Fantasma"
+            }
+          },
+          {
+            "name": {
+              "en": "Harvest Stew",
+              "pt": "Ensopado da Colheita"
+            }
+          },
+          {
+            "entryId": "wte-mud-perch",
+            "name": {
+              "en": "Mud Perch",
+              "pt": "Perca da Lama"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          },
+          {
+            "name": {
+              "en": "Pearlfish"
+            }
+          },
+          {
+            "entryId": "wte-pumpkin",
+            "name": {
+              "en": "Pumpkin",
+              "pt": "Abóbora"
+            }
+          },
+          {
+            "entryId": "wte-pumpkin-muffin",
+            "name": {
+              "en": "Pumpkin Muffin",
+              "pt": "Muffin de Abóbora"
+            }
+          },
+          {
+            "name": {
+              "en": "Pumpkin Pie",
+              "pt": "Torta de Abóbora"
+            }
+          },
+          {
+            "entryId": "wte-rock-dweller",
+            "name": {
+              "en": "Rock-Dweller",
+              "pt": "Morador-das-pedras"
+            }
+          },
+          {
+            "name": {
+              "en": "Rot Puffer",
+              "pt": "Baiacu Podre"
+            }
+          },
+          {
+            "name": {
+              "en": "Slimefish",
+              "pt": "Peixe-gosma"
+            }
+          },
+          {
+            "name": {
+              "en": "Stalktopus",
+              "pt": "Polvo-de-antenas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wte-vl-tanner",
+      "name": {
+        "en": "Tanner"
+      },
+      "gifts": {
+        "loves": [
+          {
+            "name": {
+              "en": "Aged Rum",
+              "pt": "Rum Envelhecido"
+            }
+          },
+          {
+            "name": {
+              "en": "Beating Heart",
+              "pt": "Coração Pulsante"
+            }
+          },
+          {
+            "name": {
+              "en": "Eldersprout Pizza",
+              "pt": "Pizza de Broto Ancião"
+            }
+          },
+          {
+            "name": {
+              "en": "Harvest Stew",
+              "pt": "Ensopado da Colheita"
+            }
+          },
+          {
+            "name": {
+              "en": "Shadewing Moth",
+              "pt": "Mariposa Asa-sombria"
+            }
+          }
+        ],
+        "likes": [
+          {
+            "entryId": "wte-corn",
+            "name": {
+              "en": "Corn",
+              "pt": "Milho"
+            }
+          },
+          {
+            "entryId": "wte-leather",
+            "name": {
+              "en": "Leather",
+              "pt": "Couro"
+            }
+          },
+          {
+            "entryId": "wte-pumpkin-muffin",
+            "name": {
+              "en": "Pumpkin Muffin",
+              "pt": "Muffin de Abóbora"
+            }
+          },
+          {
+            "name": {
+              "en": "Pumpkin Pie",
+              "pt": "Torta de Abóbora"
+            }
+          }
+        ],
+        "neutral": [
+          {
+            "entryId": "wte-fog-eel",
+            "name": {
+              "en": "Fog Eel",
+              "pt": "Enguia da Névoa"
+            }
+          },
+          {
+            "entryId": "wte-ghost-flounder",
+            "name": {
+              "en": "Ghost Flounder",
+              "pt": "Linguado Fantasma"
+            }
+          },
+          {
+            "entryId": "wte-mud-perch",
+            "name": {
+              "en": "Mud Perch",
+              "pt": "Perca da Lama"
+            }
+          },
+          {
+            "entryId": "wte-rock-dweller",
+            "name": {
+              "en": "Rock-Dweller",
+              "pt": "Morador-das-pedras"
+            }
+          },
+          {
+            "name": {
+              "en": "Rot Puffer",
+              "pt": "Baiacu Podre"
+            }
+          },
+          {
+            "name": {
+              "en": "Slimefish",
+              "pt": "Peixe-gosma"
+            }
+          },
+          {
+            "name": {
+              "en": "Stalktopus",
+              "pt": "Polvo-de-antenas"
+            }
+          }
+        ],
+        "hates": [
+          {
+            "entryId": "wte-eyeball",
+            "name": {
+              "en": "Eyeball",
+              "pt": "Globo Ocular"
+            }
+          },
+          {
+            "name": {
+              "en": "Odd Sandwich",
+              "pt": "Sanduíche Esquisito"
+            }
+          },
+          {
+            "name": {
+              "en": "Stealth Musk",
+              "pt": "Almíscar Furtivo"
+            }
+          },
+          {
+            "entryId": "wte-tooth",
+            "name": {
+              "en": "Tooth",
+              "pt": "Dente"
+            }
+          }
+        ]
       }
     }
   ],
@@ -17742,92 +19480,6 @@
       }
     },
     {
-      "id": "wte-craft-hazard-potion",
-      "name": {
-        "en": "Hazard Potion",
-        "pt": "Poção do Perigo"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "General",
-        "pt": "Geral"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-goldpuff",
-          "name": {
-            "en": "Goldpuff",
-            "pt": "Baiacu-dourado"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-creature-claw",
-          "name": {
-            "en": "Creature Claw",
-            "pt": "Garra de Criatura"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-tooth-dust",
-          "name": {
-            "en": "Tooth Dust",
-            "pt": "Pó de Dente"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-hazard-potion",
-      "unlock": {
-        "en": "Automatically available with Potion Lab",
-        "pt": "Disponível desde o início no Laboratório de Poções"
-      }
-    },
-    {
-      "id": "wte-craft-blood-potion",
-      "name": {
-        "en": "Blood Potion",
-        "pt": "Poção de Sangue"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "General",
-        "pt": "Geral"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-tooth-dust",
-          "name": {
-            "en": "Tooth Dust",
-            "pt": "Pó de Dente"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-blood-potion",
-      "unlock": {
-        "en": "Automatically available with Potion Lab",
-        "pt": "Disponível desde o início no Laboratório de Poções"
-      }
-    },
-    {
       "id": "wte-cook-cooked-meat",
       "name": {
         "en": "Cooked Meat",
@@ -18928,6 +20580,49 @@
       }
     },
     {
+      "id": "wte-cook-bean-stew",
+      "name": {
+        "en": "Bean Stew",
+        "pt": "Ensopado de Feijão"
+      },
+      "kind": "cook",
+      "group": {
+        "en": "Cooking Pot",
+        "pt": "Panela"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-bean",
+          "name": {
+            "en": "Bean",
+            "pt": "Feijão"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-bitter-herb",
+          "name": {
+            "en": "Bitter Herb",
+            "pt": "Erva Amarga"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-red-mushroom",
+          "name": {
+            "en": "Red Mushroom",
+            "pt": "Cogumelo Vermelho"
+          },
+          "qty": 2
+        }
+      ],
+      "makes": "wte-bean-stew",
+      "unlock": {
+        "en": "Recipe: Purchased from the Saloon shop",
+        "pt": "Receita: compre na loja do Saloon"
+      }
+    },
+    {
       "id": "wte-cook-mana-candy",
       "name": {
         "en": "Mana Candy",
@@ -19108,57 +20803,6 @@
       "unlock": {
         "en": "Recipe: Given by the chef in the Library",
         "pt": "Receita: o Chef dá na Biblioteca"
-      }
-    },
-    {
-      "id": "wte-cook-slayer-s-feast",
-      "name": {
-        "en": "Slayer's Feast",
-        "pt": "Banquete do Matador"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Cooking Pot",
-        "pt": "Panela"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-mysterious-ooze",
-          "name": {
-            "en": "Mysterious Ooze",
-            "pt": "Gosma Misteriosa"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-entrails",
-          "name": {
-            "en": "Entrails",
-            "pt": "Entranhas"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-mystery-meat",
-          "name": {
-            "en": "Mystery Meat",
-            "pt": "Carne Misteriosa"
-          },
-          "qty": 10
-        }
-      ],
-      "makes": "wte-slayer-s-feast",
-      "unlock": {
-        "en": "Basic beginner recipe",
-        "pt": "Receita inicial"
       }
     },
     {
@@ -20390,135 +22034,6 @@
       }
     },
     {
-      "id": "wte-cook-simple-kebab",
-      "name": {
-        "en": "Simple Kebab",
-        "pt": "Kebab Simples"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Cooking Pot",
-        "pt": "Panela"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-entrails",
-          "name": {
-            "en": "Entrails",
-            "pt": "Entranhas"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-bitter-herb",
-          "name": {
-            "en": "Bitter Herb",
-            "pt": "Erva Amarga"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-mystery-meat",
-          "name": {
-            "en": "Mystery Meat",
-            "pt": "Carne Misteriosa"
-          },
-          "qty": 5
-        }
-      ],
-      "makes": "wte-simple-kebab",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-cook-blood-punch",
-      "name": {
-        "en": "Blood Punch",
-        "pt": "Ponche de Sangue"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Juicer",
-        "pt": "Espremedor"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-mysterious-ooze",
-          "name": {
-            "en": "Mysterious Ooze",
-            "pt": "Gosma Misteriosa"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-red-mushroom",
-          "name": {
-            "en": "Red Mushroom",
-            "pt": "Cogumelo Vermelho"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-blood-punch",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-cook-slime-tonic",
-      "name": {
-        "en": "Slime Tonic",
-        "pt": "Tônico de Gosma"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Juicer",
-        "pt": "Espremedor"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-mysterious-ooze",
-          "name": {
-            "en": "Mysterious Ooze",
-            "pt": "Gosma Misteriosa"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-bitter-herb",
-          "name": {
-            "en": "Bitter Herb",
-            "pt": "Erva Amarga"
-          },
-          "qty": 5
-        }
-      ],
-      "makes": "wte-slime-tonic",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
       "id": "wte-cook-smoothie",
       "name": {
         "en": "Smoothie",
@@ -20547,40 +22062,6 @@
         }
       ],
       "makes": "wte-smoothie",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-cook-strawberry-milk",
-      "name": {
-        "en": "Strawberry Milk",
-        "pt": "Leite de Morango"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Juicer",
-        "pt": "Espremedor"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-viscera",
-          "name": {
-            "en": "Viscera",
-            "pt": "Vísceras"
-          },
-          "qty": 2
-        },
-        {
-          "name": {
-            "en": "Milk",
-            "pt": "Leite"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-strawberry-milk",
       "unlock": {
         "en": "Known at start",
         "pt": "Conhecida desde o início"
@@ -23230,7 +24711,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -23244,7 +24724,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -23294,7 +24773,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -23308,7 +24786,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -23545,14 +25022,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -23566,7 +25041,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -23623,14 +25097,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -23643,7 +25115,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -23731,7 +25202,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -24094,14 +25564,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -24120,7 +25588,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -24190,7 +25657,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -24204,7 +25670,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -24259,7 +25724,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -24280,7 +25744,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -24447,7 +25910,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -24461,7 +25923,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -24511,7 +25972,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -24525,7 +25985,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -25019,7 +26478,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -25033,7 +26491,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -25088,7 +26545,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -25109,7 +26565,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -25197,7 +26652,6 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
@@ -25210,7 +26664,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -25854,14 +27307,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -25880,7 +27331,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"
@@ -25950,14 +27400,12 @@
               }
             },
             {
-              "entryId": "wte-entrails",
               "name": {
                 "en": "Entrails",
                 "pt": "Entranhas"
               }
             },
             {
-              "entryId": "wte-goldpuff",
               "name": {
                 "en": "Goldpuff",
                 "pt": "Baiacu-dourado"
@@ -25976,7 +27424,6 @@
               }
             },
             {
-              "entryId": "wte-viscera",
               "name": {
                 "en": "Viscera",
                 "pt": "Vísceras"

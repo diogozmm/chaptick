@@ -131,3 +131,16 @@ test('a shopping list sums what to gather and lets you make or buy each ingredie
   await gather.getByRole('checkbox', { name: /Bitter Herb/ }).check();
   await expect(gather.getByRole('listitem')).toHaveText([/4×\s*Iron Bar/, /2×\s*Bitter Herb/]);
 });
+
+test('villagers show what they love, and an item shows who likes it as a gift', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/compendium?tab=villagers');
+  const ada = page.getByRole('region', { name: 'Ada' });
+  await expect(ada.getByRole('link', { name: 'Herb Tea' })).toBeVisible();
+  await ada.getByText('Hates (1)').click();
+  await expect(ada.getByRole('link', { name: 'Iron Ore' })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Bo' })).toContainText('follows the common gift lists');
+
+  await page.goto('/cc/entries/cc-bitter-herb');
+  await expect(page.getByRole('region', { name: 'As a gift' })).toContainText('Likes: Ada');
+});

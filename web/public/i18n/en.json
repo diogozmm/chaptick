@@ -306,7 +306,8 @@
       "items": "Items",
       "crafts": "Recipes",
       "creatures": "Creatures",
-      "season": "Season"
+      "season": "Season",
+      "villagers": "Villagers"
     },
     "searchLabel": "Search items",
     "searchPlaceholder": "Bitter Herb, bones, copper…",
@@ -452,5 +453,16 @@
     "runs": "make {{count}}× at {{station}}",
     "getReady": "Get it ready-made",
     "makeIt": "Make it"
+  },
+  "villagers": {
+    "rules": "Each villager takes one gift a day and two a week. Loves +8, likes +6, neutral +4, hates −8. Their own tastes come first; items in no list are usually disliked (−6). A Love Potion gives +12 to anyone.",
+    "commonOnly": "No personal tastes: follows the common gift lists (coffee, tea and pumpkin are good picks).",
+    "asGift": "As a gift",
+    "reaction": {
+      "loves": "Loves",
+      "likes": "Likes",
+      "neutral": "Neutral",
+      "hates": "Hates"
+    }
   }
 }

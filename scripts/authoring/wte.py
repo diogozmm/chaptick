@@ -802,6 +802,59 @@ def load_gear(creature_areas, pool_areas):
                                        'effect': gear_effect(row.get('Special effects', ''))}}
     return gear
 
+
+REACTIONS = {'Loves': 'loves', 'Likes': 'likes', 'Neutral': 'neutral', 'Hates': 'hates'}
+
+
+def load_gifts():
+    """Each villager's own gift reactions (the common lists are a separate guide page)."""
+    villagers, current = [], None
+    for head, lines in neo_sections(neo_text('Welcome to Elderfield - Villager Gift Preferences Guide - Neoseeker.html')):
+        rows = neo_rows(lines)
+        if any('common gift lists without personal exceptions' in l for l in lines):
+            villagers.append({'name': head, 'gifts': {}, 'commonOnly': True})
+            continue
+        if not rows or 'Reaction' not in rows[0]:
+            continue
+        gifts = {}
+        for row in rows:
+            reaction = REACTIONS.get(row['Reaction'])
+            if reaction:
+                gifts[reaction] = [g.strip() for g in row['Gifts'].split(';') if g.strip()]
+        villagers.append({'name': head, 'gifts': gifts})
+    return villagers
+
+
+SHOP_ALIASES = {"Woodsman's Wares": ["Woodsman's Shop", 'Woodsman'], 'Saloon Shop': ['Elderfield Saloon', 'Saloon'],
+                'Carnival Snack Shop': [], 'Travelling Merchant': ["Travelling Merchant's shop", 'Travelling Merchant']}
+
+
+def load_shop_places():
+    """Where each shop is, as place names for `areas_in` (the guide lists every shop's location)."""
+    places = {}
+    for head, lines in neo_sections(neo_text('Welcome to Elderfield - Shops and Traders - Neoseeker.html')):
+        location = next((l.removeprefix('Location:').strip() for l in lines if l.startswith('Location:')), '')
+        areas = areas_in(location)
+        if not location or not areas:
+            continue
+        area = max(areas)  # "Clearing, Old Woods": the most specific (latest) place mentioned
+        for name in [head, *SHOP_ALIASES.get(head, [])]:
+            places[name] = area
+    return places
+
+
+def add_shop_places():
+    """Shops become places, so an item bought there lands in the shop's area."""
+    global _PLACE_RE
+    shops = load_shop_places()
+    for area_places in PLACES.values():
+        for name in shops:
+            if name in area_places:
+                area_places.remove(name)
+    for name, area in shops.items():
+        PLACES[area].append(name)
+    _PLACE_RE = sorted(((p, a) for a, ps in PLACES.items() for p in ps), key=lambda x: -len(x[0]))
+
 ENEMY_ALIASES = {'Cave Man': 'Caveman', 'Fingerman': 'Fingermen', 'Beckoning Branch (Large)': 'Beckoning Branch',
                  'Beckoning Branch (Small)': 'Beckoning Branch'}
 SHRINE_AREAS = {'Mall': 1, 'Old Woods': 2, 'Catacombs': 2}
@@ -874,6 +927,7 @@ def merge_guides(entries, crafts, creatures):
 
 
 def build():
+    add_shop_places()
     entries, crafts, tasks = load_entries(), load_crafts(), load_tasks()
     add_foraging(entries)
     add_fishing(entries)
@@ -963,6 +1017,12 @@ def build():
 
         chapter = {'id': ch_id, 'gameId': G, 'order': order, 'neutralLabel': LABELS[order], 'checkpoints': [],
                    'items': items, 'itemTexts': [], 'entries': ch_entries}
+        if order == 0:
+            # The nine villagers live in town, so their gift tastes are known from the start.
+            chapter['villagers'] = [{'id': f"{G}-vl-{slug(v['name'])}", 'name': t(v['name']), 'gifts': {
+                reaction: [{**({'entryId': known_ids[g]} if g in known_ids else {}), 'name': PT.t2(g)} for g in gifts]
+                for reaction, gifts in v['gifts'].items()}, **({'commonOnly': True} if v.get('commonOnly') else {})}
+                for v in sorted(load_gifts(), key=lambda v: v['name'])]
         if extra:
             chapter['entrySources'] = extra
         if ch_crafts:
@@ -985,6 +1045,13 @@ def build():
                 for i in [*r['items'], *r.get('gives', []), *(x for a in r.get('also', []) for x in a['items'])]:
                     if 'entryId' in i and area_of[i['entryId']] > ch['order']:
                         del i['entryId']
+
+    for ch in chapters:
+        for v in ch.get('villagers', []):
+            for gifts in v['gifts'].values():
+                for g in gifts:
+                    if 'entryId' in g and area_of[g['entryId']] > ch['order']:
+                        del g['entryId']
 
     out = ROOT / G / 'chapters'
     out.mkdir(parents=True, exist_ok=True)
