@@ -474,7 +474,9 @@
       "likes": "Gostam (+5)",
       "neutral": "Neutro (+3)",
       "dislikes": "Não gostam (−6)"
-    }
+    },
+    "friendship": "Corações de amizade",
+    "marriable": "Pode casar"
   },
   "nameFix": {
     "open": "O nome no seu jogo é diferente?",

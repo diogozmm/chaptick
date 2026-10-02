@@ -8,7 +8,7 @@ test('the library marks and filters games by what they offer', async ({ page }) 
   const card = library.getByRole('link', { name: /Field Game/ });
   await expect(card).toContainText('Checklist');
   await expect(card).toContainText('Compendium');
-  await expect(card).toContainText('2 areas · 2 tasks');
+  await expect(card).toContainText('2 areas · 3 tasks');
 
   await library.getByRole('navigation', { name: 'Filter by series' }).getByRole('link', { name: 'Compendium' }).click();
   await expect(page).toHaveURL(/\?t=compendium#library$/);
@@ -190,4 +190,15 @@ test('the season calendar shows today, later this season and weekly events', asy
 
   await page.getByRole('button', { name: 'Winter (Death)' }).click();
   await expect(cal).toContainText('Carnival');
+});
+
+test('friendship: hearts milestones, and a villager links to their school adventure with its steps', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/compendium?tab=villagers');
+  await expect(page.getByRole('region', { name: 'Friendship hearts' })).toContainText('School adventure invitation');
+  const ada = page.getByRole('region', { name: 'Ada' });
+  await expect(ada.getByText('Can marry')).toBeVisible();
+  await ada.getByRole('link', { name: "Ada's Adventure" }).click();
+  await expect(page.getByRole('heading', { level: 1, name: "Ada's Adventure" })).toBeVisible();
+  await expect(page.getByText('Beat the ghost')).toBeVisible();
 });

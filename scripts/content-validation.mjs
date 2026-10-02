@@ -149,6 +149,15 @@ function compendiumErrors(chapters) {
       else if (orderOf.get(to) > data.order) errors.push(`${file}: ${from} refers to "${to}" from a later chapter`);
     }
   }
+  // A villager's school adventure is a checklist item of the same chapter or an earlier one.
+  const itemOrder = new Map(chapters.flatMap(({ data }) => data.items.map((i) => [i.id, data.order])));
+  for (const { file, data } of chapters) {
+    for (const v of data.villagers ?? []) {
+      if (!v.adventure) continue;
+      if (!itemOrder.has(v.adventure)) errors.push(`${file}: villager "${v.id}" refers to unknown item "${v.adventure}"`);
+      else if (itemOrder.get(v.adventure) > data.order) errors.push(`${file}: villager "${v.id}" refers to an item from a later chapter`);
+    }
+  }
   return errors;
 }
 

@@ -24,6 +24,36 @@
       "sources": [
         "fixture"
       ]
+    },
+    {
+      "id": "cc-ch0-q-02",
+      "type": "quest",
+      "name": {
+        "en": "Ada's Adventure"
+      },
+      "location": {
+        "en": "School"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Reach 4 hearts with Ada."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "fixture"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Find the key"
+          }
+        },
+        {
+          "text": {
+            "en": "Beat the ghost"
+          }
+        }
+      ]
     }
   ],
   "itemTexts": [],
@@ -329,7 +359,9 @@
             }
           }
         ]
-      }
+      },
+      "adventure": "cc-ch0-q-02",
+      "marriable": true
     },
     {
       "id": "cc-vl-bo",
@@ -406,6 +438,20 @@
       },
       "weekly": {
         "en": "Weekends"
+      }
+    }
+  ],
+  "friendship": [
+    {
+      "hearts": 4,
+      "unlocks": {
+        "en": "School adventure invitation"
+      }
+    },
+    {
+      "hearts": 10,
+      "unlocks": {
+        "en": "Proposal"
       }
     }
   ]

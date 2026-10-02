@@ -55,6 +55,10 @@ export class Compendium {
   );
   protected readonly villagers = computed(() => this.index().villagers);
   protected readonly commonGifts = computed(() => this.index().commonGifts);
+  protected readonly friendship = computed(() => this.index().friendship);
+  protected adventureName(itemId: string): Localized | null {
+    return this.index().items.get(itemId)?.name ?? null;
+  }
   protected readonly reactions = ['likes', 'neutral', 'hates'] as const;
   protected readonly categories = ENTRY_CATEGORIES;
   protected readonly craftKinds = CRAFT_KINDS;

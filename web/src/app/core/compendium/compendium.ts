@@ -1,6 +1,6 @@
 import {
-  Chapter, Craft, Creature, Entry, EntryCategory, GameEvent, GIFT_REACTIONS, GiftReaction, Lang, RewardItem, Source, Villager,
-  localize,
+  Chapter, Craft, Creature, Entry, EntryCategory, GameEvent, GIFT_REACTIONS, GiftReaction, Item, Lang, Localized, RewardItem, Source,
+  Villager, localize,
 } from '../content/content.models';
 import { normalize } from '../search/search';
 
@@ -47,6 +47,9 @@ export interface CompendiumIndex {
   /** The common reaction to an entry, when it is on a common list. */
   commonGift: Map<string, 'likes' | 'neutral'>;
   events: GameEvent[];
+  friendship: { hearts: number; unlocks: Localized }[];
+  /** Checklist items by id, for links from compendium pages (e.g. a villager's school adventure). */
+  items: Map<string, Item>;
 }
 
 const push = <K, V>(map: Map<K, V[]>, key: K, value: V): void => {
@@ -64,7 +67,7 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
   const sorted = [...chapters].sort((a, b) => a.order - b.order);
   const index: CompendiumIndex = {
     entries: new Map(), crafts: [], creatures: [], madeBy: new Map(), usedIn: new Map(), givenBy: new Map(),
-    villagers: [], gifts: new Map(), commonGifts: { likes: [], neutral: [] }, commonGift: new Map(), events: [],
+    villagers: [], gifts: new Map(), commonGifts: { likes: [], neutral: [] }, commonGift: new Map(), events: [], friendship: [], items: new Map(),
   };
   for (const chapter of sorted) {
     for (const entry of chapter.entries ?? []) {
@@ -101,6 +104,8 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
       for (const entryId of given) push(index.givenBy, entryId, placed);
     }
     for (const event of chapter.events ?? []) index.events.push({ ...event, related: event.related?.map(link) });
+    index.friendship.push(...(chapter.friendship ?? []));
+    for (const item of chapter.items) index.items.set(item.id, item);
     for (const reaction of ['likes', 'neutral'] as const) {
       for (const gift of (chapter.commonGifts?.[reaction] ?? []).map(link)) {
         index.commonGifts[reaction].push(gift);

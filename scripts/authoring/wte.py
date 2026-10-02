@@ -28,6 +28,8 @@ from lib import ROOT, t
 PT.TASK_NAMES.update(TASKS.TASK_NAMES)
 
 G = 'wte'
+ID_FILE = Path(__file__).with_name('wte-ids.json')
+ITEM_IDS = json.loads(ID_FILE.read_text())
 PAGES = Path(sys.argv[1] if len(sys.argv) > 1 else Path.home() / 'Downloads' / 'Elderfield')
 WIKI = 'wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0)'
 NEO = 'guide: Neoseeker Welcome to Elderfield'
@@ -740,7 +742,7 @@ def task_item(task, next_id):
         hint_pt += f'. Atenção: aceitar esta faz falhar a tarefa {TASKS.TASK_NAMES.get(failed, failed)}'
     kind = 'missable' if task['fails'] else 'quest'
     location_pt = f"{PT.place_pt(task['giver'])} — {lines.get(task['location'], task['location'])}"
-    return {'id': next_id('mi' if kind == 'missable' else 'q'), 'type': kind,
+    return {'id': next_id('mi' if kind == 'missable' else 'q', kind, task['name']), 'type': kind,
             'name': t(task['name'], TASKS.TASK_NAMES.get(task['name'])),
             'location': both(f"{task['giver']} — {task['location']}", location_pt), 'availableUntil': None,
             'hint': t(hint_en + '.', hint_pt + '.'), 'spoilerLevel': 0, 'sources': [f"{NEO}: {task['page']}"]}
@@ -756,7 +758,7 @@ def map_item(m, next_id):
     if loot:
         hint_en += f' Inside: {loot_en}.'
         hint_pt += f' Conteúdo: {loot_pt}.'
-    return {'id': next_id('co'), 'type': 'collectible', 'name': t(m['name'], f'Mapa do Tesouro {n}'),
+    return {'id': next_id('co', 'collectible', m['name']), 'type': 'collectible', 'name': t(m['name'], f'Mapa do Tesouro {n}'),
             'location': t(*where) if where else t('Marked on the map', 'Indicado no mapa'), 'availableUntil': None,
             'hint': t(hint_en, hint_pt), 'spoilerLevel': 1, 'sources': [f'{WIKI}: Treasure']}
 
@@ -804,6 +806,88 @@ def load_gear(creature_areas, pool_areas):
                                        'effect': gear_effect(row.get('Special effects', ''))}}
     return gear
 
+
+
+# Friendship: Elderfield has no per-villager heart scenes; friendship unlocks letters, one school
+# adventure per group of three villagers (at four hearts with any of them) and marriage at ten.
+# Facts from the Neoseeker friendship and school adventure guides, in our own words.
+MILESTONES = [
+    (3, t('First letters and gifts', 'Primeiras cartas e presentes')),
+    (4, t('School adventure invitation for that villager\'s group', 'Convite da aventura escolar do grupo desse morador')),
+    (5, t('More letters and gifts', 'Mais cartas e presentes')),
+    (8, t('Last tier of letters and gifts', 'Último nível de cartas e presentes')),
+    (10, t('Proposal with a Ring of Binding', 'Pedido de casamento com o Anel da Amarração')),
+]
+MARRIABLE = ['Alice', 'Josh', 'Sam', 'Ellie', 'Edwin', 'Tanner', 'Molly', 'Blorph', 'Celeste']
+ADVENTURES = [
+    {'name': t("Josh's School Adventure", 'Aventura escolar do Josh'), 'group': ['Josh', 'Sam', 'Alice'], 'reward': 'Cube of One +7',
+     'steps': [
+         t('Classroom 102: beat the Garbage Mimic for the Classroom 106 Key, then meet Sam in Classroom 106',
+           'Sala 102: vença a Lixeira Mímica pela chave da Sala 106 e encontre o Sam na Sala 106'),
+         t('Front Office inner room: Alice gives you the Classroom 104 Key. In 104, keep asking the girl about Ms. Moody until she asks for her Pencil Case',
+           'Sala interna da Recepção: a Alice dá a chave da Sala 104. Na 104, continue perguntando à menina sobre a Sra. Mal-humorada até ela pedir o estojo'),
+         t("Right-hand basement stairs: beat Teacher's Pet for School Basement Key #1 and bring the Pencil Case from the last room",
+           'Escada da direita para o porão: vença o Queridinho da Professora pela chave nº 1 do porão e traga o estojo da última sala'),
+         t('Look behind the curtain in Classroom 104 and defeat Ms. Moody', 'Olhe atrás da cortina na Sala 104 e derrote a Sra. Mal-humorada'),
+     ],
+     'ending': t('Whoever of Josh, Sam and Alice has the most friendship gives the closing talk (ties: Josh, then Sam).',
+                 'Quem tiver mais amizade entre Josh, Sam e Alice faz a conversa final (empate: Josh, depois Sam).')},
+    {'name': t("Edwin's School Adventure", 'Aventura escolar do Edwin'), 'group': ['Edwin', 'Ellie', 'Blorph'], 'reward': 'Earring of Duality +5',
+     'steps': [
+         t('Follow the crying: East Hallway, lobby, Front Office entrance, South-West Hallway, West Hallway, stairwell, then Classroom 102 to meet Ellie',
+           'Siga o choro: Corredor Leste, saguão, entrada da Recepção, Corredor Sudoeste, Corredor Oeste, escada e então a Sala 102 para encontrar a Ellie'),
+         t('Front Office inner room: beat the Garbage Mimic for the Classroom 107 Key. Talk to the girl in 107, then find Blorph at the end of the closet passage',
+           'Sala interna da Recepção: vença a Lixeira Mímica pela chave da Sala 107. Fale com a menina na 107 e encontre o Blorph no fim da passagem do armário'),
+         t("Find the girl again: Girls' Bathroom, West Hallway, then the Front Office inner room",
+           'Encontre a menina de novo: banheiro feminino, Corredor Oeste e a sala interna da Recepção'),
+         t('At a bathroom mirror, answer "Ugly" three times and defeat the Hungry Sister',
+           'Num espelho do banheiro, responda "Ugly" três vezes e derrote a Irmã Faminta'),
+     ],
+     'ending': t('Whoever of Edwin, Ellie and Blorph has the most friendship gives the closing talk (ties: Edwin, then Ellie).',
+                 'Quem tiver mais amizade entre Edwin, Ellie e Blorph faz a conversa final (empate: Edwin, depois Ellie).')},
+    {'name': t("Molly's School Adventure", 'Aventura escolar da Molly'), 'group': ['Molly', 'Tanner', 'Celeste'], 'reward': 'Crystal Skull +10',
+     'steps': [
+         t("Examine the five drawings (Classroom 102, Boys' Bathroom, stairwell, Front Office, South-West Hallway), then meet Tanner in the Girls' Bathroom",
+           'Examine os cinco desenhos (Sala 102, banheiro masculino, escada, Recepção, Corredor Sudoeste) e encontre o Tanner no banheiro feminino'),
+         t('Front Office inner room: beat the Garbage Mimic for the Classroom 103 Key and meet Celeste in Classroom 103',
+           'Sala interna da Recepção: vença a Lixeira Mímica pela chave da Sala 103 e encontre a Celeste na Sala 103'),
+         t('Left-hand basement stairs: follow the passages and defeat the Best Friend at the far end',
+           'Escada da esquerda para o porão: siga as passagens e derrote o Melhor Amigo no fim'),
+     ],
+     'ending': t('The closing talk is odd here: a Molly lead gives Molly\'s, a Tanner lead gives Celeste\'s, a Celeste lead gives Tanner\'s.',
+                 'A conversa final é diferente aqui: se a Molly lidera, fala a Molly; se o Tanner lidera, fala a Celeste; se a Celeste lidera, fala o Tanner.')},
+]
+MARRIAGE_STEPS = [
+    t('Reach 10 hearts (200 friendship) with the person you choose', 'Chegue a 10 corações (200 de amizade) com quem você escolher'),
+    t("Build a Jeweler's Desk at the Tinker's Desk: 25 Hardwood, 10 Spiritwood, 15 Wax, 10 Copper Bar, 5 Iron Bar",
+      'Construa a Mesa do Joalheiro na Mesa do Inventor: 25 Madeira de Lei, 10 Madeira Espiritual, 15 Cera, 10 Barras de Cobre, 5 Barras de Ferro'),
+    t('Craft a Ring of Binding: 5 Crafting Pattern, 5 Platinum Bar, 5 Void Crystal Bar, 1 Beating Heart, 10 Viscera',
+      'Crie o Anel da Amarração: 5 Moldes de Criação, 5 Barras de Platina, 5 Barras de Cristal do Vazio, 1 Coração Pulsante, 10 Vísceras'),
+    t("Give the ring as that day's gift; the wedding follows right away and your spouse moves in at midnight",
+      'Entregue o anel como presente do dia; o casamento acontece na hora e quem casou se muda à meia-noite'),
+]
+
+
+def friendship_items(next_id):
+    items = []
+    for adv in ADVENTURES:
+        group_en, group_pt = ', '.join(adv['group'][:-1]) + ' or ' + adv['group'][-1], ', '.join(adv['group'][:-1]) + ' ou ' + adv['group'][-1]
+        reward_pt = PT.tr(adv['reward']) or adv['reward']
+        items.append({'id': next_id('q', 'quest', adv['name']['en']), 'type': 'quest', 'name': adv['name'],
+                      'location': t('Elderfield High lobby', 'Saguão do Colégio Elderfield'), 'availableUntil': None,
+                      'hint': t(f"Reach 4 hearts with {group_en} and wait for the \"I need your help\" letter. Bring healing items. "
+                                f"Reward: {adv['reward']}. {adv['ending']['en']}",
+                                f"Chegue a 4 corações com {group_pt} e espere a carta \"I need your help\". Leve itens de cura. "
+                                f"Recompensa: {reward_pt}. {adv['ending']['pt']}"),
+                      'spoilerLevel': 0, 'sources': [f'{NEO}: {adv["name"]["en"]} Guide'], 'steps': [{'text': x} for x in adv['steps']]})
+    items.append({'id': next_id('q', 'quest', 'Marriage'), 'type': 'quest', 'name': t('Marriage', 'Casamento'),
+                  'location': t('Any of the nine villagers', 'Qualquer um dos nove moradores'), 'availableUntil': None,
+                  'hint': t('You can marry ' + ', '.join(MARRIABLE) + '. It is separate from the school adventures. '
+                            'A refused proposal still uses that day\'s gift.',
+                            'Dá para casar com ' + ', '.join(MARRIABLE[:-1]) + ' ou ' + MARRIABLE[-1] + '. Não depende das aventuras escolares. '
+                            'Um pedido recusado também gasta o presente do dia.'),
+                  'spoilerLevel': 0, 'sources': [f'{NEO}: Friendship Events and Marriage Guide'], 'steps': [{'text': x} for x in MARRIAGE_STEPS]})
+    return items
 
 REACTIONS = {'Loves': 'loves', 'Likes': 'likes', 'Neutral': 'neutral', 'Hates': 'hates'}
 
@@ -1044,16 +1128,23 @@ def build():
     gear_names = {re.sub(r' \+\d+$', '', n): n for n, e in entries.items() if e.get('gear')}
     for order in range(len(LABELS)):
         ch_id = f'{G}-ch{order}'
-        items, counters = [], {}
+        items = []
 
-        def next_id(code):
-            counters[code] = counters.get(code, 0) + 1
-            return f'{ch_id}-{code}-{counters[code]:02d}'
+        def next_id(code, item_type, name):
+            """The item's published id, or the next free number in this area. Ids live in wte-ids.json
+            (append-only), so a task the guide inserts mid-list never shifts the others."""
+            key = f'{item_type}:{name}'
+            if key not in ITEM_IDS:
+                taken = [int(v.rsplit('-', 1)[1]) for v in ITEM_IDS.values() if v.startswith(f'{ch_id}-{code}-')]
+                ITEM_IDS[key] = f'{ch_id}-{code}-{max(taken, default=0) + 1:02d}'
+            return ITEM_IDS[key]
 
         for task in [x for x in tasks if x['area'] == order]:
             items.append(task_item(task, next_id))
         for m in [x for x in maps if x['area'] == order]:
             items.append(map_item(m, next_id))
+        if order == 0:
+            items.extend(friendship_items(next_id))
 
         ch_entries, extra = [], []
         for name, e in sorted(entries.items()):
@@ -1116,7 +1207,11 @@ def build():
                    'items': items, 'itemTexts': [], 'entries': ch_entries}
         if order == 0:
             # The nine villagers live in town, so their gift tastes are known from the start.
-            chapter['villagers'] = [{'id': f"{G}-vl-{slug(v['name'])}", 'name': t(v['name']), 'gifts': {
+            adventure_of = {name: ITEM_IDS[f"quest:{a['name']['en']}"] for a in ADVENTURES for name in a['group']}
+            chapter['friendship'] = [{'hearts': h, 'unlocks': text} for h, text in MILESTONES]
+            chapter['villagers'] = [{'id': f"{G}-vl-{slug(v['name'])}", 'name': t(v['name']),
+                                     **({'adventure': adventure_of[v['name']]} if v['name'] in adventure_of else {}),
+                                     **({'marriable': True} if v['name'] in MARRIABLE else {}), 'gifts': {
                 reaction: [{**({'entryId': known_ids[g]} if g in known_ids else {}), 'name': PT.t2(g)} for g in gifts]
                 for reaction, gifts in v['gifts'].items()}, **({'commonOnly': True} if v.get('commonOnly') else {})}
                 for v in sorted(load_gifts(), key=lambda v: v['name'])]
@@ -1156,6 +1251,8 @@ def build():
                 for g in gifts:
                     if 'entryId' in g and area_of[g['entryId']] > ch['order']:
                         del g['entryId']
+
+    ID_FILE.write_text(json.dumps(ITEM_IDS, indent=2, ensure_ascii=False) + '\n')
 
     out = ROOT / G / 'chapters'
     out.mkdir(parents=True, exist_ok=True)

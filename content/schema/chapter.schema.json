@@ -160,6 +160,28 @@
         "$ref": "#/$defs/event"
       },
       "description": "Dated or weekly events, from the chapter or area where they become reachable."
+    },
+    "friendship": {
+      "type": "array",
+      "description": "What friendship hearts unlock.",
+      "items": {
+        "type": "object",
+        "required": [
+          "hearts",
+          "unlocks"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "hearts": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "unlocks": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        }
+      }
     }
   },
   "additionalProperties": false,
@@ -975,6 +997,13 @@
         "commonOnly": {
           "const": true,
           "description": "Follows only the game's common gift lists, without personal exceptions."
+        },
+        "adventure": {
+          "type": "string",
+          "description": "Checklist item of the school adventure this villager's group unlocks."
+        },
+        "marriable": {
+          "const": true
         }
       }
     },

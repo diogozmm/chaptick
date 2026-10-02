@@ -259,6 +259,9 @@ export interface Villager {
   gifts: Partial<Record<GiftReaction, RewardItem[]>>;
   /** Follows only the common gift lists, without personal exceptions. */
   commonOnly?: true;
+  /** Checklist item of the school adventure this villager's group unlocks. */
+  adventure?: string;
+  marriable?: true;
 }
 
 /** A dated (by season and day) or weekly event. */
@@ -295,6 +298,8 @@ export interface Chapter {
   /** Gifts most villagers like (+5) or find neutral (+3); personal tastes override them. */
   commonGifts?: { likes?: RewardItem[]; neutral?: RewardItem[] };
   events?: GameEvent[];
+  /** What friendship hearts unlock. */
+  friendship?: { hearts: number; unlocks: Localized }[];
 }
 
 export const localize = (text: Localized, lang: Lang): string => (lang === 'pt' ? text.pt : undefined) ?? text.en;

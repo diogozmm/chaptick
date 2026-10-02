@@ -147,6 +147,16 @@
 } @else if (current() === 'villagers') {
   <div id="panel-villagers" role="tabpanel" aria-labelledby="tab-villagers" class="panel">
     <p class="card rules small">{{ 'villagers.rules' | transloco }}</p>
+    @if (friendship().length) {
+      <section class="card villager" aria-labelledby="vl-friendship">
+        <h2 id="vl-friendship">{{ 'villagers.friendship' | transloco }}</h2>
+        <ul class="milestones">
+          @for (m of friendship(); track m.hearts) {
+            <li><span class="hearts"><app-icon name="heart" /> {{ m.hearts }}</span> {{ m.unlocks | localize: l }}</li>
+          }
+        </ul>
+      </section>
+    }
     @if (commonGifts().likes.length || commonGifts().neutral.length) {
       <section class="card villager" aria-labelledby="vl-common">
         <h2 id="vl-common">{{ 'villagers.common' | transloco }}</h2>
@@ -169,6 +179,16 @@
     @for (v of villagers(); track v.id) {
       <section class="card villager" [attr.aria-labelledby]="'vl-' + v.id">
         <h2 [id]="'vl-' + v.id">{{ v.name | localize: l }}</h2>
+        @if (v.adventure || v.marriable) {
+          <p class="vl-meta small">
+            @if (v.adventure && adventureName(v.adventure); as adv) {
+              <a [routerLink]="game.link('items', v.adventure)"><app-icon name="flag" /> {{ adv | localize: l }}</a>
+            }
+            @if (v.marriable) {
+              <span class="tag">{{ 'villagers.marriable' | transloco }}</span>
+            }
+          </p>
+        }
         @if (v.commonOnly) {
           <p class="muted small">{{ 'villagers.commonOnly' | transloco }}</p>
         } @else {

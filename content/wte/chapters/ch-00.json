@@ -574,6 +574,188 @@
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
       ]
+    },
+    {
+      "id": "wte-ch0-q-19",
+      "type": "quest",
+      "name": {
+        "en": "Josh's School Adventure",
+        "pt": "Aventura escolar do Josh"
+      },
+      "location": {
+        "en": "Elderfield High lobby",
+        "pt": "Saguão do Colégio Elderfield"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Reach 4 hearts with Josh, Sam or Alice and wait for the \"I need your help\" letter. Bring healing items. Reward: Cube of One +7. Whoever of Josh, Sam and Alice has the most friendship gives the closing talk (ties: Josh, then Sam).",
+        "pt": "Chegue a 4 corações com Josh, Sam ou Alice e espere a carta \"I need your help\". Leve itens de cura. Recompensa: Cubo do Um +7. Quem tiver mais amizade entre Josh, Sam e Alice faz a conversa final (empate: Josh, depois Sam)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: Josh's School Adventure Guide"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Classroom 102: beat the Garbage Mimic for the Classroom 106 Key, then meet Sam in Classroom 106",
+            "pt": "Sala 102: vença a Lixeira Mímica pela chave da Sala 106 e encontre o Sam na Sala 106"
+          }
+        },
+        {
+          "text": {
+            "en": "Front Office inner room: Alice gives you the Classroom 104 Key. In 104, keep asking the girl about Ms. Moody until she asks for her Pencil Case",
+            "pt": "Sala interna da Recepção: a Alice dá a chave da Sala 104. Na 104, continue perguntando à menina sobre a Sra. Mal-humorada até ela pedir o estojo"
+          }
+        },
+        {
+          "text": {
+            "en": "Right-hand basement stairs: beat Teacher's Pet for School Basement Key #1 and bring the Pencil Case from the last room",
+            "pt": "Escada da direita para o porão: vença o Queridinho da Professora pela chave nº 1 do porão e traga o estojo da última sala"
+          }
+        },
+        {
+          "text": {
+            "en": "Look behind the curtain in Classroom 104 and defeat Ms. Moody",
+            "pt": "Olhe atrás da cortina na Sala 104 e derrote a Sra. Mal-humorada"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-ch0-q-20",
+      "type": "quest",
+      "name": {
+        "en": "Edwin's School Adventure",
+        "pt": "Aventura escolar do Edwin"
+      },
+      "location": {
+        "en": "Elderfield High lobby",
+        "pt": "Saguão do Colégio Elderfield"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Reach 4 hearts with Edwin, Ellie or Blorph and wait for the \"I need your help\" letter. Bring healing items. Reward: Earring of Duality +5. Whoever of Edwin, Ellie and Blorph has the most friendship gives the closing talk (ties: Edwin, then Ellie).",
+        "pt": "Chegue a 4 corações com Edwin, Ellie ou Blorph e espere a carta \"I need your help\". Leve itens de cura. Recompensa: Brinco da Dualidade +5. Quem tiver mais amizade entre Edwin, Ellie e Blorph faz a conversa final (empate: Edwin, depois Ellie)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: Edwin's School Adventure Guide"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Follow the crying: East Hallway, lobby, Front Office entrance, South-West Hallway, West Hallway, stairwell, then Classroom 102 to meet Ellie",
+            "pt": "Siga o choro: Corredor Leste, saguão, entrada da Recepção, Corredor Sudoeste, Corredor Oeste, escada e então a Sala 102 para encontrar a Ellie"
+          }
+        },
+        {
+          "text": {
+            "en": "Front Office inner room: beat the Garbage Mimic for the Classroom 107 Key. Talk to the girl in 107, then find Blorph at the end of the closet passage",
+            "pt": "Sala interna da Recepção: vença a Lixeira Mímica pela chave da Sala 107. Fale com a menina na 107 e encontre o Blorph no fim da passagem do armário"
+          }
+        },
+        {
+          "text": {
+            "en": "Find the girl again: Girls' Bathroom, West Hallway, then the Front Office inner room",
+            "pt": "Encontre a menina de novo: banheiro feminino, Corredor Oeste e a sala interna da Recepção"
+          }
+        },
+        {
+          "text": {
+            "en": "At a bathroom mirror, answer \"Ugly\" three times and defeat the Hungry Sister",
+            "pt": "Num espelho do banheiro, responda \"Ugly\" três vezes e derrote a Irmã Faminta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-ch0-q-21",
+      "type": "quest",
+      "name": {
+        "en": "Molly's School Adventure",
+        "pt": "Aventura escolar da Molly"
+      },
+      "location": {
+        "en": "Elderfield High lobby",
+        "pt": "Saguão do Colégio Elderfield"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Reach 4 hearts with Molly, Tanner or Celeste and wait for the \"I need your help\" letter. Bring healing items. Reward: Crystal Skull +10. The closing talk is odd here: a Molly lead gives Molly's, a Tanner lead gives Celeste's, a Celeste lead gives Tanner's.",
+        "pt": "Chegue a 4 corações com Molly, Tanner ou Celeste e espere a carta \"I need your help\". Leve itens de cura. Recompensa: Caveira de Cristal +10. A conversa final é diferente aqui: se a Molly lidera, fala a Molly; se o Tanner lidera, fala a Celeste; se a Celeste lidera, fala o Tanner."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: Molly's School Adventure Guide"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Examine the five drawings (Classroom 102, Boys' Bathroom, stairwell, Front Office, South-West Hallway), then meet Tanner in the Girls' Bathroom",
+            "pt": "Examine os cinco desenhos (Sala 102, banheiro masculino, escada, Recepção, Corredor Sudoeste) e encontre o Tanner no banheiro feminino"
+          }
+        },
+        {
+          "text": {
+            "en": "Front Office inner room: beat the Garbage Mimic for the Classroom 103 Key and meet Celeste in Classroom 103",
+            "pt": "Sala interna da Recepção: vença a Lixeira Mímica pela chave da Sala 103 e encontre a Celeste na Sala 103"
+          }
+        },
+        {
+          "text": {
+            "en": "Left-hand basement stairs: follow the passages and defeat the Best Friend at the far end",
+            "pt": "Escada da esquerda para o porão: siga as passagens e derrote o Melhor Amigo no fim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-ch0-q-22",
+      "type": "quest",
+      "name": {
+        "en": "Marriage",
+        "pt": "Casamento"
+      },
+      "location": {
+        "en": "Any of the nine villagers",
+        "pt": "Qualquer um dos nove moradores"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "You can marry Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph, Celeste. It is separate from the school adventures. A refused proposal still uses that day's gift.",
+        "pt": "Dá para casar com Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph ou Celeste. Não depende das aventuras escolares. Um pedido recusado também gasta o presente do dia."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker Welcome to Elderfield: Friendship Events and Marriage Guide"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Reach 10 hearts (200 friendship) with the person you choose",
+            "pt": "Chegue a 10 corações (200 de amizade) com quem você escolher"
+          }
+        },
+        {
+          "text": {
+            "en": "Build a Jeweler's Desk at the Tinker's Desk: 25 Hardwood, 10 Spiritwood, 15 Wax, 10 Copper Bar, 5 Iron Bar",
+            "pt": "Construa a Mesa do Joalheiro na Mesa do Inventor: 25 Madeira de Lei, 10 Madeira Espiritual, 15 Cera, 10 Barras de Cobre, 5 Barras de Ferro"
+          }
+        },
+        {
+          "text": {
+            "en": "Craft a Ring of Binding: 5 Crafting Pattern, 5 Platinum Bar, 5 Void Crystal Bar, 1 Beating Heart, 10 Viscera",
+            "pt": "Crie o Anel da Amarração: 5 Moldes de Criação, 5 Barras de Platina, 5 Barras de Cristal do Vazio, 1 Coração Pulsante, 10 Vísceras"
+          }
+        },
+        {
+          "text": {
+            "en": "Give the ring as that day's gift; the wedding follows right away and your spouse moves in at midnight",
+            "pt": "Entregue o anel como presente do dia; o casamento acontece na hora e quem casou se muda à meia-noite"
+          }
+        }
+      ]
     }
   ],
   "itemTexts": [],
@@ -16312,12 +16494,51 @@
       }
     }
   ],
+  "friendship": [
+    {
+      "hearts": 3,
+      "unlocks": {
+        "en": "First letters and gifts",
+        "pt": "Primeiras cartas e presentes"
+      }
+    },
+    {
+      "hearts": 4,
+      "unlocks": {
+        "en": "School adventure invitation for that villager's group",
+        "pt": "Convite da aventura escolar do grupo desse morador"
+      }
+    },
+    {
+      "hearts": 5,
+      "unlocks": {
+        "en": "More letters and gifts",
+        "pt": "Mais cartas e presentes"
+      }
+    },
+    {
+      "hearts": 8,
+      "unlocks": {
+        "en": "Last tier of letters and gifts",
+        "pt": "Último nível de cartas e presentes"
+      }
+    },
+    {
+      "hearts": 10,
+      "unlocks": {
+        "en": "Proposal with a Ring of Binding",
+        "pt": "Pedido de casamento com o Anel da Amarração"
+      }
+    }
+  ],
   "villagers": [
     {
       "id": "wte-vl-alice",
       "name": {
         "en": "Alice"
       },
+      "adventure": "wte-ch0-q-19",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -16524,6 +16745,8 @@
       "name": {
         "en": "Blorph"
       },
+      "adventure": "wte-ch0-q-20",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -17099,6 +17322,8 @@
       "name": {
         "en": "Celeste"
       },
+      "adventure": "wte-ch0-q-21",
+      "marriable": true,
       "gifts": {},
       "commonOnly": true
     },
@@ -17107,6 +17332,8 @@
       "name": {
         "en": "Edwin"
       },
+      "adventure": "wte-ch0-q-20",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -17142,7 +17369,8 @@
           },
           {
             "name": {
-              "en": "Pale Empress Moth"
+              "en": "Pale Empress Moth",
+              "pt": "Mariposa Imperatriz Pálida"
             }
           },
           {
@@ -17267,7 +17495,8 @@
           },
           {
             "name": {
-              "en": "Pearlfish"
+              "en": "Pearlfish",
+              "pt": "Peixe-pérola"
             }
           }
         ]
@@ -17278,6 +17507,8 @@
       "name": {
         "en": "Ellie"
       },
+      "adventure": "wte-ch0-q-20",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -17288,7 +17519,8 @@
           },
           {
             "name": {
-              "en": "Bloodwing Moth"
+              "en": "Bloodwing Moth",
+              "pt": "Mariposa Asa-de-sangue"
             }
           },
           {
@@ -17484,6 +17716,8 @@
       "name": {
         "en": "Josh"
       },
+      "adventure": "wte-ch0-q-19",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -17494,7 +17728,8 @@
           },
           {
             "name": {
-              "en": "Bloodwing Moth"
+              "en": "Bloodwing Moth",
+              "pt": "Mariposa Asa-de-sangue"
             }
           },
           {
@@ -17652,6 +17887,8 @@
       "name": {
         "en": "Molly"
       },
+      "adventure": "wte-ch0-q-21",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -17680,7 +17917,8 @@
           },
           {
             "name": {
-              "en": "Pale Empress Moth"
+              "en": "Pale Empress Moth",
+              "pt": "Mariposa Imperatriz Pálida"
             }
           },
           {
@@ -17835,6 +18073,8 @@
       "name": {
         "en": "Sam"
       },
+      "adventure": "wte-ch0-q-19",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -17851,7 +18091,8 @@
           },
           {
             "name": {
-              "en": "Pale Empress Moth"
+              "en": "Pale Empress Moth",
+              "pt": "Mariposa Imperatriz Pálida"
             }
           },
           {
@@ -17990,7 +18231,8 @@
           },
           {
             "name": {
-              "en": "Pearlfish"
+              "en": "Pearlfish",
+              "pt": "Peixe-pérola"
             }
           },
           {
@@ -18047,6 +18289,8 @@
       "name": {
         "en": "Tanner"
       },
+      "adventure": "wte-ch0-q-21",
+      "marriable": true,
       "gifts": {
         "loves": [
           {
@@ -18357,7 +18601,8 @@
       },
       {
         "name": {
-          "en": "Gem Beetle"
+          "en": "Gem Beetle",
+          "pt": "Besouro-gema"
         }
       },
       {
@@ -18536,7 +18781,8 @@
       },
       {
         "name": {
-          "en": "Pearlfish"
+          "en": "Pearlfish",
+          "pt": "Peixe-pérola"
         }
       },
       {

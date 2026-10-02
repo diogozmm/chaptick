@@ -821,3 +821,6 @@ def time_pt(text):
 
 
 PHRASES[:0] = [(r'^Blast Kiln: random result from a Damp Gem Cluster$', 'Forno de Fundição: resultado aleatório de um Aglomerado de Gemas Úmidas')]
+WORDS.update({'Cube of One': 'Cubo do Um', 'Earring of Duality': 'Brinco da Dualidade', 'Crystal Skull': 'Caveira de Cristal'})
+WORDS.update({'Pale Empress Moth': 'Mariposa Imperatriz Pálida', 'Bloodwing Moth': 'Mariposa Asa-de-sangue', 'Golden Beetle': 'Besouro Dourado',
+              'Gem Beetle': 'Besouro-gema', 'Pearlfish': 'Peixe-pérola'})
