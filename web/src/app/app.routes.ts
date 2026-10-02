@@ -33,6 +33,7 @@ export const routes: Routes = [
       { path: 'search', loadComponent: () => import('./pages/search/search').then((m) => m.Search) },
       { path: 'deadlines', loadComponent: () => import('./pages/deadlines/deadlines').then((m) => m.Deadlines) },
       { path: 'compendium', loadComponent: () => import('./pages/compendium/compendium').then((m) => m.Compendium) },
+      { path: 'plan/:craftId', loadComponent: () => import('./pages/plan/plan').then((m) => m.Plan) },
       { path: 'creatures/:creatureId', loadComponent: () => import('./pages/creature/creature').then((m) => m.CreatureDetail) },
       { path: 'entries/:entryId', loadComponent: () => import('./pages/entry/entry').then((m) => m.EntryDetail) },
       { path: 'collections', loadComponent: () => import('./pages/collections/collections').then((m) => m.Collections) },

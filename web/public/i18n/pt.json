@@ -435,5 +435,22 @@
       "bonuses": "Bônus",
       "effect": "Efeito especial"
     }
+  },
+  "plan": {
+    "open": "Lista de compras",
+    "eyebrow": "Lista de compras",
+    "howMany": "Quantos fazer",
+    "less": "Um a menos",
+    "more": "Um a mais",
+    "making": "Fazendo {{count}}",
+    "batch": "Cada vez rende {{count}}.",
+    "gather": "O que juntar",
+    "gatherHint": "Marque o que você já tem; o resto fica no topo.",
+    "unknown": "Ainda não está nos lugares que você alcançou.",
+    "steps": "Passo a passo",
+    "stepsHint": "O que tem receita pode ser feito ou conseguido pronto: toque para trocar.",
+    "runs": "fazer {{count}}× em {{station}}",
+    "getReady": "Conseguir pronto",
+    "makeIt": "Fazer"
   }
 }

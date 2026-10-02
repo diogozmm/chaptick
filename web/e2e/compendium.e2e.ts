@@ -25,7 +25,7 @@ test('an area game asks for the area, and its compendium only knows what is unlo
 
   // The checklist links to the compendium.
   await page.getByRole('link', { name: /Compendium/ }).first().click();
-  await page.getByRole('searchbox', { name: 'Search items' }).fill('ore');
+  await page.getByRole('searchbox', { name: 'Search items' }).fill('deep');
   await expect(page.getByText('0 item(s)')).toBeVisible();
   await page.getByRole('searchbox', { name: 'Search items' }).fill('herb');
   await page.getByRole('link', { name: /Bitter Herb/ }).click();
@@ -108,4 +108,26 @@ test('equipment shows its slot, stats and effect', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 2, name: 'Equipment: Weapon' })).toBeVisible();
   await expect(page.getByRole('listitem').filter({ hasText: 'Attack +6' })).toBeVisible();
   await expect(page.getByText('+25% chance for Basic Attacks to add +1 Lethal point')).toBeVisible();
+});
+
+test('a shopping list sums what to gather and lets you make or buy each ingredient', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/entries/cc-iron-sword-2');
+  await page.getByRole('link', { name: 'Shopping list' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Iron Sword +2' })).toBeVisible();
+
+  const gather = page.getByRole('region', { name: 'What to gather' });
+  // Iron Bar has no other way to get it, so it is made from ore by default.
+  await expect(gather.getByRole('listitem')).toHaveText([/1×\s*Bitter Herb/, /6×\s*Iron Ore/]);
+
+  await page.getByRole('button', { name: 'One more' }).click();
+  await expect(page).toHaveURL(/qty=2/);
+  await expect(gather.getByRole('listitem')).toHaveText([/2×\s*Bitter Herb/, /12×\s*Iron Ore/]);
+
+  await page.getByRole('button', { name: 'Get it ready-made' }).click();
+  await expect(gather.getByRole('listitem')).toHaveText([/2×\s*Bitter Herb/, /4×\s*Iron Bar/]);
+
+  // Ticked items move to the bottom.
+  await gather.getByRole('checkbox', { name: /Bitter Herb/ }).check();
+  await expect(gather.getByRole('listitem')).toHaveText([/4×\s*Iron Bar/, /2×\s*Bitter Herb/]);
 });

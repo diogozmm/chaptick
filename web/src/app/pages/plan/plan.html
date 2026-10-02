@@ -1,0 +1,99 @@
+@let l = lang.lang();
+<a [routerLink]="game.link('compendium')" [queryParams]="{ tab: 'crafts' }" class="link back">
+  <app-icon name="chevron-left" /> {{ 'compendium.tab.crafts' | transloco }}
+</a>
+
+@if (craft(); as c) {
+  <header class="hero card rise">
+    <p class="eyebrow">{{ 'plan.eyebrow' | transloco }}</p>
+    <h1>{{ c.craft.name | localize: l }}</h1>
+    @if (c.craft.name | original: l; as en) {
+      <p class="en">{{ 'compendium.inEnglish' | transloco: { name: en } }}</p>
+    }
+    <p class="muted small">
+      {{ c.craft.group | localize: l }}
+      @if (c.craft.success) {
+        · {{ 'compendium.success' | transloco: { chance: c.craft.success } }}
+      }
+    </p>
+    <div class="stepper" role="group" [attr.aria-label]="'plan.howMany' | transloco">
+      <button type="button" class="step" (click)="setAmount(amount() - 1)" [disabled]="amount() <= 1" [attr.aria-label]="'plan.less' | transloco">−</button>
+      <span class="count" aria-live="polite">{{ 'plan.making' | transloco: { count: amount() } }}</span>
+      <button type="button" class="step" (click)="setAmount(amount() + 1)" [attr.aria-label]="'plan.more' | transloco">+</button>
+    </div>
+    @if (perRun() > 1) {
+      <p class="muted small">{{ 'plan.batch' | transloco: { count: perRun() } }}</p>
+    }
+  </header>
+
+  <section class="section" aria-labelledby="gather-title">
+    <h2 id="gather-title">{{ 'plan.gather' | transloco }}</h2>
+    <p class="muted small">{{ 'plan.gatherHint' | transloco }}</p>
+    <ul class="list">
+      @for (t of totals(); track t.key) {
+        <li class="row" [class.done]="t.had">
+          <label class="check">
+            <input type="checkbox" class="checkbox" [checked]="t.had" (change)="toggleHave(t.key)" [attr.aria-labelledby]="'need-' + t.key" />
+          </label>
+          <div class="body">
+            <span class="name" [id]="'need-' + t.key">
+              <span class="qty">{{ t.qty }}×</span>
+              @if (t.entryId) {
+                <a [routerLink]="game.link('entries', t.entryId)">{{ t.name | localize: l }}</a>
+              } @else {
+                {{ t.name | localize: l }}
+              }
+            </span>
+            @for (w of ways(t.entryId); track $index) {
+              <span class="how">{{ 'compendium.kind.' + w.kind | transloco }}: {{ w.where }}</span>
+            } @empty {
+              @if (!t.entryId) {
+                <span class="how">{{ 'plan.unknown' | transloco }}</span>
+              }
+            }
+          </div>
+        </li>
+      }
+    </ul>
+  </section>
+
+  @if (plan(); as p) {
+    <section class="section" aria-labelledby="steps-title">
+      <h2 id="steps-title">{{ 'plan.steps' | transloco }}</h2>
+      <p class="muted small">{{ 'plan.stepsHint' | transloco }}</p>
+      <ul class="tree">
+        <ng-container *ngTemplateOutlet="nodeTpl; context: { $implicit: p, root: true }" />
+      </ul>
+    </section>
+  }
+} @else if (ready()) {
+  <div class="card notfound">
+    <p>{{ 'compendium.notFound' | transloco }}</p>
+    <a class="button" [routerLink]="game.link('compendium')">{{ 'compendium.title' | transloco }}</a>
+  </div>
+} @else {
+  <p class="muted" aria-busy="true">{{ 'common.loading' | transloco }}</p>
+}
+
+<ng-template #nodeTpl let-node let-root="root">
+  <li class="node" [class.made]="!!node.craft">
+    <div class="node-line">
+      <span class="node-name"><span class="qty">{{ node.qty }}×</span> {{ node.name | localize: lang.lang() }}</span>
+      @if (node.craft) {
+        <span class="tag">{{ 'plan.runs' | transloco: { count: node.runs, station: (node.craft.craft.group | localize: lang.lang()) } }}</span>
+      }
+      @if (!root && node.makeable) {
+        <button type="button" class="chip small-chip" (click)="toggleMake(node)">
+          {{ (node.craft ? 'plan.getReady' : 'plan.makeIt') | transloco }}
+        </button>
+      }
+    </div>
+    @if (node.children.length > 0) {
+      <ul class="tree">
+        @for (child of node.children; track $index) {
+          <ng-container *ngTemplateOutlet="nodeTpl; context: { $implicit: child, root: false }" />
+        }
+      </ul>
+    }
+  </li>
+</ng-template>

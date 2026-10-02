@@ -146,6 +146,36 @@
           "en": "+25% chance for Basic Attacks to add +1 Lethal point"
         }
       }
+    },
+    {
+      "id": "cc-iron-ore",
+      "name": {
+        "en": "Iron Ore"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "gather",
+          "where": {
+            "en": "Mine"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-iron-bar",
+      "name": {
+        "en": "Iron Bar"
+      },
+      "category": "metals",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Furnace"
+          }
+        }
+      ]
     }
   ],
   "crafts": [
@@ -166,6 +196,53 @@
             "en": "Bitter Herb"
           },
           "qty": 2
+        }
+      ]
+    },
+    {
+      "id": "cc-craft-iron-bar",
+      "name": {
+        "en": "Iron Bar"
+      },
+      "kind": "craft",
+      "group": {
+        "en": "Furnace"
+      },
+      "makes": "cc-iron-bar",
+      "ingredients": [
+        {
+          "entryId": "cc-iron-ore",
+          "name": {
+            "en": "Iron Ore"
+          },
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "id": "cc-forge-iron-sword-2",
+      "name": {
+        "en": "Iron Sword +2"
+      },
+      "kind": "forge",
+      "group": {
+        "en": "Forge"
+      },
+      "makes": "cc-iron-sword-2",
+      "ingredients": [
+        {
+          "entryId": "cc-iron-bar",
+          "name": {
+            "en": "Iron Bar"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "cc-bitter-herb",
+          "name": {
+            "en": "Bitter Herb"
+          },
+          "qty": 1
         }
       ]
     }

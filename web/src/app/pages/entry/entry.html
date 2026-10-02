@@ -116,6 +116,7 @@
           @if (c.craft.unlock) {
             <p class="muted small">{{ c.craft.unlock | localize: l }}</p>
           }
+          <a class="plan-link" [routerLink]="game.link('plan', c.craft.id)">{{ 'plan.open' | transloco }} <app-icon name="chevron-right" /></a>
         </div>
       }
     </section>

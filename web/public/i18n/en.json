@@ -435,5 +435,22 @@
       "bonuses": "Bonuses",
       "effect": "Special effect"
     }
+  },
+  "plan": {
+    "open": "Shopping list",
+    "eyebrow": "Shopping list",
+    "howMany": "How many to make",
+    "less": "One less",
+    "more": "One more",
+    "making": "Making {{count}}",
+    "batch": "Each time makes {{count}}.",
+    "gather": "What to gather",
+    "gatherHint": "Tick what you already have; the list keeps the rest on top.",
+    "unknown": "Not in the places you have reached yet.",
+    "steps": "Step by step",
+    "stepsHint": "Anything with a recipe can be made or bought ready-made: tap to switch.",
+    "runs": "make {{count}}× at {{station}}",
+    "getReady": "Get it ready-made",
+    "makeIt": "Make it"
   }
 }

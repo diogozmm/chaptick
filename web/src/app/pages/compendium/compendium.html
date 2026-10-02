@@ -124,6 +124,9 @@
                 @if (c.craft.unlock) {
                   <span class="how"><app-icon name="scroll-text" /> {{ c.craft.unlock | localize: l }}</span>
                 }
+                <a class="plan-link" [routerLink]="game.link('plan', c.craft.id)">
+                  <app-icon name="scroll-text" /> {{ 'plan.open' | transloco }} <app-icon name="chevron-right" />
+                </a>
               </div>
             </li>
           }
