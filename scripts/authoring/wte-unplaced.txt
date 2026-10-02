@@ -1,5 +1,10 @@
 3-D Glasses +1
+Aged Goat Cheese (Artisan)
+Aged Goat Cheese (Basic)
+Aged Goat Cheese (Perfect)
+Aged Goat Cheese (Quality)
 Aged Wine (Cloudberry)
+Aged Wine (Duskberry)
 Aged Wine (Duskmelon)
 Ancientwood
 Archmage's Boots +8
@@ -21,14 +26,7 @@ Blueprint: Ghostly Scarecrow
 Blueprint: Lapidary Table
 Blueprint: Skeletal Scarecrow
 Blueprint: Wicker Scarecrow
-Bone Boots +5
-Bone Chestplate +5
-Bone Helmet +5
 Bone Honey
-Bone Ingot
-Bone Legguards +5
-Bone Staff +5
-Bone Sword +5
 Brain
 Brutal Maul of Kaal +8
 Bubble Gum
@@ -58,10 +56,7 @@ Crusader's Chestplate +10
 Crusader's Greaves +10
 Crusader's Helmet +10
 Crusader's Legguards +10
-Cultist's Boots +7
-Cultist's Legguards +7
-Cultist's Mask +7
-Cultist's Robe +7
+Cured Mana Steak
 Cured Mana Steak (Raw)
 Cursed Crucifix +5
 Dagger of Valtris +8
@@ -75,7 +70,9 @@ Dusk Juice
 Duskmelon Slice
 Encrusted Blade +10
 Energy Drink
+Expert Assassin's Meal
 Exploding Candy
+Failed Meal
 Fancy Fertilizer (Lv3)
 Farmer's Potion
 Flask of Blood
@@ -84,6 +81,7 @@ Gas Mask +2
 Ghost Crystal
 Ghost Egg
 Gilded Chestplate +7
+Goat Cheese
 Goat Horn
 Godflesh
 Golden Tooth +5
@@ -114,6 +112,7 @@ Herbal Stew
 Illusory Cloak +15
 Iron Chain
 Jelly (Cloudberry)
+Jelly (Duskberry)
 Jelly (Duskmelon)
 Jelly (Soulfruit)
 Jelly (Voidberry)
@@ -124,6 +123,7 @@ Large Egg
 Large Goat Milk
 Large Milk
 Light Crystal
+Mayonnaise
 Meat Egg
 Mirror Chestplate +8
 Moon Crystal
@@ -202,9 +202,6 @@ Steel Staff +6
 Steel-Knuckled Glove +5
 Stone Shield +2
 Straw Hat +4
-Superior Axe
-Superior Pickaxe
-Superior Scythe
 Sweet Cookie
 Sweet Lollipop
 Sword of the Harvest +8
@@ -235,5 +232,6 @@ Wanderer's Orb
 White Shorts +3
 Wicker Scarecrow
 Wine (Cloudberry)
+Wine (Duskberry)
 Wine (Duskmelon)
 Worn Underwear

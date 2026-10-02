@@ -670,7 +670,9 @@ GROUPS = {
     'Grinder': 'Moedor', 'Combine': 'Combinações', "Jeweler's Desk": 'Mesa do Joalheiro', 'Tools': 'Ferramentas', 'Forge': 'Forja',
     'Gifts of Gatis': 'Dádivas de Gatis', 'Gifts of Delvek': 'Dádivas de Delvek', 'Gifts of Kaal': 'Dádivas de Kaal',
     'Gifts of Daeus': 'Dádivas de Daeus', 'Gifts of Hagroth': 'Dádivas de Hagroth', 'Gifts of Valtris': 'Dádivas de Valtris',
-    'Gifts of Nezroth': 'Dádivas de Nezroth',
+    'Gifts of Nezroth': 'Dádivas de Nezroth', 'Furnace': 'Fornalha', 'Food Processor': 'Processador de Alimentos',
+    'Feed Maker': 'Fabricante de Ração', 'Preserving Barrel': 'Barril de Conserva', 'Keg': 'Barril de Fermentação',
+    'Windmill': 'Moinho de Vento', 'Blast Kiln': 'Forno de Fundição', 'Slicer': 'Fatiador', 'Drying Rack': 'Varal de Secagem',
 }
 KEY_ITEMS = {
     'Skull of the Deep': 'Crânio das Profundezas', 'Skull of the Lost': 'Crânio dos Perdidos', 'Skull of the Dark': 'Crânio das Trevas',
@@ -855,6 +857,38 @@ def add_shop_places():
         PLACES[area].append(name)
     _PLACE_RE = sorted(((p, a) for a, ps in PLACES.items() for p in ps), key=lambda x: -len(x[0]))
 
+
+def load_common_gifts():
+    """Gifts most villagers like (+5) or find neutral (+3); personal tables override them."""
+    common = {}
+    for head, lines in neo_sections(neo_text('Welcome to Elderfield - Common Gift Preferences - Neoseeker.html')):
+        key = {'Common liked gifts': 'likes', 'Common neutral gifts': 'neutral'}.get(head)
+        if key:
+            common[key] = [row['Gift'].strip() for row in neo_rows(lines) if row.get('Gift')]
+    return common
+
+
+def load_processors():
+    """Processor recipes (input, output, amounts, time, coal); random multi-output rows are skipped.
+    Also returns the gems a Damp Gem Cluster can turn into in the Blast Kiln."""
+    recipes, gems = [], []
+    for head, lines in neo_sections(neo_text('Welcome to Elderfield - Processors Guide - Neoseeker.html')):
+        if head == 'Blast Kiln Gem Results':
+            gems = [l[2:].strip() for l in lines if l.startswith('- ')]
+            continue
+        for row in neo_rows(lines):
+            out, qin, qout = row.get('Output', ''), row.get('Input Qty', ''), row.get('Output Qty', '')
+            if not out or ',' in out or out.startswith('One of') or not qin.isdigit() or not qout.isdigit():
+                continue
+            ingredients = [{'name': clean_name(row['Input']), 'qty': int(qin)}]
+            coal = int(row.get('Coal', '0') or 0)
+            if coal:
+                ingredients.append({'name': 'Coal', 'qty': coal})
+            recipes.append({'name': clean_name(out), 'kind': 'process', 'group': head, 'ingredients': ingredients,
+                            'yield': int(qout), 'time': row.get('Time', '').strip(), 'unlock': '',
+                            'id': f"process-{slug(head)}-{slug(row['Input'])}"})
+    return recipes, gems
+
 ENEMY_ALIASES = {'Cave Man': 'Caveman', 'Fingerman': 'Fingermen', 'Beckoning Branch (Large)': 'Beckoning Branch',
                  'Beckoning Branch (Small)': 'Beckoning Branch'}
 SHRINE_AREAS = {'Mall': 1, 'Old Woods': 2, 'Catacombs': 2}
@@ -912,6 +946,13 @@ def merge_guides(entries, crafts, creatures):
         entries.setdefault(name, {'name': name, 'category': 'fish', 'sell': None, 'sources': [
             {'kind': 'fish', 'where': CARNIVAL_WHERE, 'seasons': ['winter'], 'area': 0}]})
 
+    processors, gems = load_processors()
+    crafts.extend(processors)
+    for gem in gems:
+        if gem in entries:
+            entries[gem]['sources'].append({'kind': 'process', 'where': 'Blast Kiln: random result from a Damp Gem Cluster',
+                                            'area': None})
+
     have = {c['name'] for c in crafts}
     for recipe in load_neo_recipes():
         base = re.sub(r' \+\d+$', '', recipe['name'])
@@ -934,6 +975,22 @@ def build():
     creatures = load_creatures()
     merge_guides(entries, crafts, creatures)
     unplaced = place(entries, crafts, tasks)
+    # Something you can make is obtainable as early as its recipe; that may in turn make other
+    # recipes earlier, so settle it a few rounds.
+    for _ in range(5):
+        changed = False
+        for c in crafts:
+            areas = [entries[i['name']]['area'] for i in c['ingredients'] if i['name'] in entries]
+            areas = [a for a in areas if a is not None] + list(areas_in(c['unlock']))
+            c['area'] = max(areas) if areas else 0
+            out = entries.get(c['name']) or entries.get(re.sub(r'^\d+x ', '', c['name']))
+            if out and out['area'] is not None and c['area'] < out['area']:
+                out['area'] = c['area']
+                changed = True
+                if out['name'] in unplaced:
+                    unplaced.remove(out['name'])
+        if not changed:
+            break
     # A crop can be grown from its seed: it is obtainable as early as the seed is.
     for seed in entries.values():
         crop = entries.get((seed.get('grow') or {}).get('crop'))
@@ -986,10 +1043,11 @@ def build():
 
         ch_crafts = []
         for c in [x for x in crafts if x['area'] == order]:
-            if f"{G}-{c['kind']}-{slug(c['name'])}" in seen_crafts:
+            craft_id = f"{G}-{c['id']}" if c.get('id') else f"{G}-{c['kind']}-{slug(c['name'])}"
+            if craft_id in seen_crafts:
                 continue  # the same recipe spelled twice ("Bubble Tea", "Bubble-Tea")
-            seen_crafts.add(f"{G}-{c['kind']}-{slug(c['name'])}")
-            craft = {'id': f"{G}-{c['kind']}-{slug(c['name'])}", 'name': PT.t2(c['name']), 'kind': c['kind'],
+            seen_crafts.add(craft_id)
+            craft = {'id': craft_id, 'name': PT.t2(c['name']), 'kind': c['kind'],
                      'group': t(c['group'], GROUPS.get(c['group'])), 'ingredients': [
                          {**({'entryId': known_ids[i['name']]} if i['name'] in known_ids else {}),
                           'name': PT.t2(i['name']), 'qty': i['qty']} for i in c['ingredients']]}
@@ -998,6 +1056,10 @@ def build():
                 craft['makes'] = known_ids[made]
             if c.get('success'):
                 craft['success'] = c['success']
+            if c.get('yield', 1) > 1:
+                craft['yield'] = c['yield']
+            if c.get('time'):
+                craft['time'] = both(c['time'], PT.time_pt(c['time']))
             if c['unlock']:
                 unlock = c['unlock'].rstrip(' /.')
                 craft['unlock'] = both(unlock, TASKS.UNLOCKS.get(c['unlock']) or TASKS.UNLOCKS.get(unlock)
@@ -1023,6 +1085,8 @@ def build():
                 reaction: [{**({'entryId': known_ids[g]} if g in known_ids else {}), 'name': PT.t2(g)} for g in gifts]
                 for reaction, gifts in v['gifts'].items()}, **({'commonOnly': True} if v.get('commonOnly') else {})}
                 for v in sorted(load_gifts(), key=lambda v: v['name'])]
+            chapter['commonGifts'] = {reaction: [{**({'entryId': known_ids[g]} if g in known_ids else {}), 'name': PT.t2(g)}
+                                                 for g in gifts] for reaction, gifts in load_common_gifts().items()}
         if extra:
             chapter['entrySources'] = extra
         if ch_crafts:
@@ -1047,7 +1111,7 @@ def build():
                         del i['entryId']
 
     for ch in chapters:
-        for v in ch.get('villagers', []):
+        for v in [*ch.get('villagers', []), {'gifts': ch.get('commonGifts', {})}]:
             for gifts in v['gifts'].values():
                 for g in gifts:
                     if 'entryId' in g and area_of[g['entryId']] > ch['order']:

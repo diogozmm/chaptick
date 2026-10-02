@@ -362,24 +362,6 @@
       }
     },
     {
-      "id": "wte-basic-herb-bundle",
-      "name": {
-        "en": "Basic Herb Bundle",
-        "pt": "Maço de Ervas Básico"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "15g"
-    },
-    {
       "id": "wte-basic-pickaxe",
       "name": {
         "en": "Basic Pickaxe",
@@ -417,24 +399,6 @@
         }
       ],
       "sell": "75g"
-    },
-    {
-      "id": "wte-basic-scythe",
-      "name": {
-        "en": "Basic Scythe",
-        "pt": "Foice Básica"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Upgrade: Basic Scythe",
-            "pt": "Melhoria: Foice Básica"
-          }
-        }
-      ],
-      "sell": "12g"
     },
     {
       "id": "wte-bee-house",
@@ -705,95 +669,6 @@
       }
     },
     {
-      "id": "wte-bone-shield-8",
-      "name": {
-        "en": "Bone Shield +8",
-        "pt": "Escudo de Osso +8"
-      },
-      "category": "equipment",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Craft: Potions, Flasks, and Blessings",
-            "pt": "Craft: Potions, Flasks, e Blessings"
-          }
-        }
-      ],
-      "gear": {
-        "slot": "offhand",
-        "stats": {
-          "en": "Attack -4; Defense +3; Magic attack -4; Magic defense +3",
-          "pt": "Ataque -4; Defesa +3; Atq. mágico -4; Def. mágica +3"
-        },
-        "bonuses": {
-          "en": "Curse damage received -5% / Insight damage received -5% / Insanity damage received -5% / Light damage received -5% / Darkness damage received -5% / Sturdy",
-          "pt": "Dano de Maldição recebido -5% / Dano de Percepção recebido -5% / Dano de Insanidade recebido -5% / Dano de Luz recebido -5% / Dano de Trevas recebido -5% / Robusto"
-        },
-        "effect": {
-          "en": "+25% chance to add +1 Defensive point when Guarding.",
-          "pt": "+25% de chance de somar +1 ponto Defensivo ao defender."
-        }
-      }
-    },
-    {
-      "id": "wte-bones",
-      "name": {
-        "en": "Bones",
-        "pt": "Ossos"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Witching Mortar: Bones",
-            "pt": "Pilão de Bruxaria: Ossos"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Garbage Shop",
-            "pt": "Loja do Lixo"
-          }
-        }
-      ],
-      "sell": "5g"
-    },
-    {
-      "id": "wte-bonestaff-5",
-      "name": {
-        "en": "Bonestaff +5",
-        "pt": "Cajado de Ossos +5"
-      },
-      "category": "equipment",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Craft: Potions, Flasks, and Blessings",
-            "pt": "Craft: Potions, Flasks, e Blessings"
-          }
-        }
-      ],
-      "gear": {
-        "slot": "weapon",
-        "stats": {
-          "en": "Max MP +20; Attack +14; Defense -4; Magic attack +20",
-          "pt": "PM máx. +20; Ataque +14; Defesa -4; Atq. mágico +20"
-        },
-        "bonuses": {
-          "en": "Attack element: Normal / Staff",
-          "pt": "Elemento: Normal / Cajado"
-        },
-        "effect": {
-          "en": "Energy Shot adds +1 Defensive point and +1 Lethal point",
-          "pt": "Tiro de Energia soma +1 ponto Defensivo e +1 ponto Letal"
-        }
-      }
-    },
-    {
       "id": "wte-brass-compass",
       "name": {
         "en": "Brass Compass",
@@ -952,23 +827,6 @@
       }
     },
     {
-      "id": "wte-coffee-maker",
-      "name": {
-        "en": "Coffee Maker",
-        "pt": "Cafeteira"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "a tinker's desk: Coffee Maker",
-            "pt": "Mesa do Inventor: Cafeteira"
-          }
-        }
-      ]
-    },
-    {
       "id": "wte-combat-offering",
       "name": {
         "en": "Combat Offering",
@@ -1006,24 +864,6 @@
         }
       ],
       "sell": "100g"
-    },
-    {
-      "id": "wte-copper-bar",
-      "name": {
-        "en": "Copper Bar",
-        "pt": "Barra de Cobre"
-      },
-      "category": "metals",
-      "sources": [
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Garbage Shop",
-            "pt": "Loja do Lixo"
-          }
-        }
-      ],
-      "sell": "30g"
     },
     {
       "id": "wte-copper-chestplate-1",
@@ -1258,60 +1098,6 @@
       }
     },
     {
-      "id": "wte-cured-mana-steak",
-      "name": {
-        "en": "Cured Mana Steak",
-        "pt": "Bife Curado de Mana"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "60g"
-    },
-    {
-      "id": "wte-cured-simple-steak",
-      "name": {
-        "en": "Cured Simple Steak",
-        "pt": "Bife Curado Simples"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "50g"
-    },
-    {
-      "id": "wte-cured-spiced-steak",
-      "name": {
-        "en": "Cured Spiced Steak",
-        "pt": "Bife Curado Temperado"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "60g"
-    },
-    {
       "id": "wte-cursed-axe-4",
       "name": {
         "en": "Cursed Axe +4",
@@ -1370,6 +1156,31 @@
           "pt": "O Ataque Básico vira Tudo ou Nada."
         }
       }
+    },
+    {
+      "id": "wte-damp-dust",
+      "name": {
+        "en": "Damp Dust",
+        "pt": "Pó Úmido"
+      },
+      "category": "food",
+      "sources": [
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Grinder",
+            "pt": "Processe o ingrediente certo em: Moedor"
+          }
+        },
+        {
+          "kind": "process",
+          "where": {
+            "en": "Process the appropriate ingredient in a Windmill",
+            "pt": "Processe o ingrediente certo em: Windmill"
+          }
+        }
+      ],
+      "sell": "17g"
     },
     {
       "id": "wte-damp-gem-cluster",
@@ -1577,6 +1388,24 @@
       "sell": "75g"
     },
     {
+      "id": "wte-ghostly-scarecrow",
+      "name": {
+        "en": "Ghostly Scarecrow",
+        "pt": "Espantalho Fantasmagórico"
+      },
+      "category": "tools",
+      "sources": [
+        {
+          "kind": "craft",
+          "where": {
+            "en": "Scarecrows: Ghostly Scarecrow",
+            "pt": "Espantalhos: Espantalho Fantasmagórico"
+          }
+        }
+      ],
+      "sell": "50g"
+    },
+    {
       "id": "wte-giant-club-5",
       "name": {
         "en": "Giant Club +5",
@@ -1671,31 +1500,6 @@
         }
       ],
       "sell": "250g"
-    },
-    {
-      "id": "wte-harvest-stew",
-      "name": {
-        "en": "Harvest Stew",
-        "pt": "Ensopado da Colheita"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "cook",
-          "where": {
-            "en": "Harvest Stew",
-            "pt": "Ensopado da Colheita"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Garbage Shop",
-            "pt": "Loja do Lixo"
-          }
-        }
-      ],
-      "sell": "45g"
     },
     {
       "id": "wte-hood-of-darkness-1",
@@ -1966,73 +1770,6 @@
       }
     },
     {
-      "id": "wte-lightning-rod",
-      "name": {
-        "en": "Lightning Rod",
-        "pt": "Para-raios"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Utility: Lightning Rod",
-            "pt": "Utilidades: Para-raios"
-          }
-        },
-        {
-          "kind": "found",
-          "where": {
-            "en": "Farm (44, 6) Blueprint: Completing Trisha's tasks: \"A Ghostly Catch\" In a chest behind Dax in the Sewers after giving him Spectral Rain and Godscale",
-            "pt": "Fazenda (44, 6) Blueprint: Completing Trisha's tasks: \"Uma Pesca Fantasmagórica\" In a chest behind Dax in Esgotos after giving him Chuva Espectral e Escama Divina"
-          }
-        }
-      ]
-    },
-    {
-      "id": "wte-lucky-die",
-      "name": {
-        "en": "Lucky Die",
-        "pt": "Dado da Sorte"
-      },
-      "category": "tools",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Gifts of Delvek: Lucky Die",
-            "pt": "Dádivas de Delvek: Dado da Sorte"
-          }
-        },
-        {
-          "kind": "shop",
-          "where": {
-            "en": "Garbage Shop",
-            "pt": "Loja do Lixo"
-          }
-        }
-      ],
-      "sell": "25g"
-    },
-    {
-      "id": "wte-mana-sausage",
-      "name": {
-        "en": "Mana Sausage",
-        "pt": "Linguiça de Mana"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "40g"
-    },
-    {
       "id": "wte-medium-coin-pouch",
       "name": {
         "en": "Medium Coin Pouch",
@@ -2261,24 +1998,6 @@
           "pt": "Elemento: Normal / Precisão -20% / Envenenado"
         }
       }
-    },
-    {
-      "id": "wte-potent-herb-bundle",
-      "name": {
-        "en": "Potent Herb Bundle",
-        "pt": "Maço de Ervas Potente"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "100g"
     },
     {
       "id": "wte-prep-table",
@@ -2818,42 +2537,6 @@
       }
     },
     {
-      "id": "wte-simple-jerky",
-      "name": {
-        "en": "Simple Jerky",
-        "pt": "Charque Simples"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "15g"
-    },
-    {
-      "id": "wte-simple-sausage",
-      "name": {
-        "en": "Simple Sausage",
-        "pt": "Linguiça Simples"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "25g"
-    },
-    {
       "id": "wte-skill-tome-all-or-nothing",
       "name": {
         "en": "Skill Tome: All or Nothing",
@@ -2940,42 +2623,6 @@
         }
       ],
       "sell": "12g"
-    },
-    {
-      "id": "wte-spiced-jerky",
-      "name": {
-        "en": "Spiced Jerky",
-        "pt": "Charque Temperado"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "25g"
-    },
-    {
-      "id": "wte-spiced-sausage",
-      "name": {
-        "en": "Spiced Sausage",
-        "pt": "Linguiça Temperada"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "process",
-          "where": {
-            "en": "Process the appropriate ingredient in a Drying Rack",
-            "pt": "Processe o ingrediente certo em: Varal de Secagem"
-          }
-        }
-      ],
-      "sell": "40g"
     },
     {
       "id": "wte-spiked-bat-2",
@@ -3186,34 +2833,6 @@
         }
       ],
       "sell": "25g"
-    },
-    {
-      "id": "wte-thick-jacket-3",
-      "name": {
-        "en": "Thick Jacket +3",
-        "pt": "Jaqueta Grossa +3"
-      },
-      "category": "equipment",
-      "sources": [
-        {
-          "kind": "craft",
-          "where": {
-            "en": "Craft: Upgrade and Combination Recipes",
-            "pt": "Criação: receitas de melhorias e combinações"
-          }
-        }
-      ],
-      "gear": {
-        "slot": "body",
-        "stats": {
-          "en": "Max HP +12; Attack +3; Defense +4; Magic defense +3; Agility -2",
-          "pt": "PV máx. +12; Ataque +3; Defesa +4; Def. mágica +3; Agilidade -2"
-        },
-        "bonuses": {
-          "en": "Pockets",
-          "pt": "Bolsos"
-        }
-      }
     },
     {
       "id": "wte-treasure-casket",
@@ -3641,6 +3260,14 @@
       }
     },
     {
+      "entryId": "wte-bones",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
       "entryId": "wte-cleansing-balm",
       "kind": "loot",
       "where": {
@@ -3678,6 +3305,14 @@
       "where": {
         "en": "Combat Shrine reward (Mall)",
         "pt": "Recompensa do Santuário de Combate (Shopping)"
+      }
+    },
+    {
+      "entryId": "wte-copper-bar",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
       }
     },
     {
@@ -3777,6 +3412,14 @@
       }
     },
     {
+      "entryId": "wte-harvest-stew",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
+      }
+    },
+    {
       "entryId": "wte-hotdog",
       "kind": "shop",
       "where": {
@@ -3814,6 +3457,22 @@
       "where": {
         "en": "Combat Shrine reward (Mall)",
         "pt": "Recompensa do Santuário de Combate (Shopping)"
+      }
+    },
+    {
+      "entryId": "wte-lightning-rod",
+      "kind": "found",
+      "where": {
+        "en": "Farm (44, 6) Blueprint: Completing Trisha's tasks: \"A Ghostly Catch\" In a chest behind Dax in the Sewers after giving him Spectral Rain and Godscale",
+        "pt": "Fazenda (44, 6) Blueprint: Completing Trisha's tasks: \"Uma Pesca Fantasmagórica\" In a chest behind Dax in Esgotos after giving him Chuva Espectral e Escama Divina"
+      }
+    },
+    {
+      "entryId": "wte-lucky-die",
+      "kind": "shop",
+      "where": {
+        "en": "Garbage Shop",
+        "pt": "Loja do Lixo"
       }
     },
     {
@@ -4035,49 +3694,6 @@
   ],
   "crafts": [
     {
-      "id": "wte-craft-grinder",
-      "name": {
-        "en": "Grinder",
-        "pt": "Moedor"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Utility",
-        "pt": "Utilidades"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 15
-        }
-      ],
-      "makes": "wte-grinder",
-      "unlock": {
-        "en": "Automatically available with workbench A gift after completing Farmer Hans tasks \"The Farmer's Path\"",
-        "pt": "Disponível desde o início na bancada. Também é presente do Fazendeiro Hans depois de \"O Caminho do Fazendeiro\""
-      }
-    },
-    {
       "id": "wte-craft-prep-table",
       "name": {
         "en": "Prep Table",
@@ -4177,108 +3793,6 @@
       "unlock": {
         "en": "Automatically available with workbench",
         "pt": "Disponível desde o início na bancada"
-      }
-    },
-    {
-      "id": "wte-craft-food-processor",
-      "name": {
-        "en": "Food Processor",
-        "pt": "Processador de Alimentos"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Utility",
-        "pt": "Utilidades"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 25
-        }
-      ],
-      "makes": "wte-food-processor",
-      "unlock": {
-        "en": "Blueprint: Purchased from Henrietta's shop",
-        "pt": "Projeto: compre na loja da Henrietta"
-      }
-    },
-    {
-      "id": "wte-craft-preserving-barrel",
-      "name": {
-        "en": "Preserving Barrel",
-        "pt": "Barril de Conserva"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Utility",
-        "pt": "Utilidades"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 30
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 8
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-preserving-barrel",
-      "unlock": {
-        "en": "Completing Dave's tasks: \"A snack for a cat\" gives a Preserving Barrel Blueprint: Completing Art's tasks: \"Secrets of the Deep\"",
-        "pt": "\"Um Petisco para o Gato\" (Dave) dá um Barril de Conserva; o projeto vem de \"Segredos das Profundezas\" (Art)"
       }
     },
     {
@@ -4424,165 +3938,6 @@
       "unlock": {
         "en": "Blueprint: Purchased from Henrietta's shop",
         "pt": "Projeto: compre na loja da Henrietta"
-      }
-    },
-    {
-      "id": "wte-craft-lightning-rod",
-      "name": {
-        "en": "Lightning Rod",
-        "pt": "Para-raios"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Utility",
-        "pt": "Utilidades"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-void-crystal-bar",
-          "name": {
-            "en": "Void Crystal Bar",
-            "pt": "Barra de Cristal do Vazio"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-gold-bar",
-          "name": {
-            "en": "Gold Bar",
-            "pt": "Barra de Ouro"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 8
-        }
-      ],
-      "makes": "wte-lightning-rod",
-      "unlock": {
-        "en": "Completing Trisha's tasks: \"A Ghostly Catch\" gives blueprint",
-        "pt": "\"Uma Pesca Fantasmagórica\" (Trisha) dá o projeto"
-      }
-    },
-    {
-      "id": "wte-craft-giant-skull-chalice",
-      "name": {
-        "en": "Giant Skull Chalice",
-        "pt": "Cálice de Crânio Gigante"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Utility",
-        "pt": "Utilidades"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-gold-bar",
-          "name": {
-            "en": "Gold Bar",
-            "pt": "Barra de Ouro"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 5
-        }
-      ],
-      "unlock": {
-        "en": "Blueprint: Starting Farmer Hans' tasks: \"The Skull Chalice\"",
-        "pt": "Projeto: ao começar \"O Cálice de Crânio\" (Fazendeiro Hans)"
-      }
-    },
-    {
-      "id": "wte-craft-kaal-idol",
-      "name": {
-        "en": "Kaal Idol",
-        "pt": "Ídolo de Kaal"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Utility",
-        "pt": "Utilidades"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-bone-ingot",
-          "name": {
-            "en": "Bone Ingot",
-            "pt": "Lingote de Osso"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 50
-        },
-        {
-          "entryId": "wte-void-crystal-bar",
-          "name": {
-            "en": "Void Crystal Bar",
-            "pt": "Barra de Cristal do Vazio"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-verdite-bar",
-          "name": {
-            "en": "Verdite Bar",
-            "pt": "Barra de Verdite"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-gravemoss",
-          "name": {
-            "en": "Gravemoss",
-            "pt": "Musgo de Túmulo"
-          },
-          "qty": 10
-        }
-      ],
-      "unlock": {
-        "en": "Blueprint: Starting Denzel's tasks: \"False Idols\"",
-        "pt": "Projeto: ao começar \"Falsos Ídolos\" (Denzel)"
       }
     },
     {
@@ -5008,92 +4363,6 @@
       }
     },
     {
-      "id": "wte-craft-lesser-harvest-effigy",
-      "name": {
-        "en": "Lesser Harvest Effigy",
-        "pt": "Efígie da Colheita Menor"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Large Objects",
-        "pt": "Objetos grandes"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 3
-        }
-      ],
-      "makes": "wte-lesser-harvest-effigy",
-      "unlock": {
-        "en": "Automatically available with workbench",
-        "pt": "Disponível desde o início na bancada"
-      }
-    },
-    {
-      "id": "wte-craft-lesser-fertility-effigy",
-      "name": {
-        "en": "Lesser Fertility Effigy",
-        "pt": "Efígie da Fertilidade Menor"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Large Objects",
-        "pt": "Objetos grandes"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 3
-        }
-      ],
-      "makes": "wte-lesser-fertility-effigy",
-      "unlock": {
-        "en": "Automatically available with workbench",
-        "pt": "Disponível desde o início na bancada"
-      }
-    },
-    {
       "id": "wte-craft-medium-harvest-effigy",
       "name": {
         "en": "Medium Harvest Effigy",
@@ -5378,10 +4647,10 @@
       }
     },
     {
-      "id": "wte-craft-lesser-offering-of-rain",
+      "id": "wte-craft-scraped-hide",
       "name": {
-        "en": "Lesser Offering of Rain",
-        "pt": "Oferenda da Chuva Menor"
+        "en": "Scraped Hide",
+        "pt": "Pele Raspada"
       },
       "kind": "craft",
       "group": {
@@ -5390,131 +4659,31 @@
       },
       "ingredients": [
         {
-          "entryId": "wte-red-mushroom",
+          "entryId": "wte-bloody-skin",
           "name": {
-            "en": "Red Mushroom",
-            "pt": "Cogumelo Vermelho"
-          },
-          "qty": 6
-        },
-        {
-          "entryId": "wte-bitter-herb",
-          "name": {
-            "en": "Bitter Herb",
-            "pt": "Erva Amarga"
-          },
-          "qty": 12
-        },
-        {
-          "entryId": "wte-coal",
-          "name": {
-            "en": "Coal",
-            "pt": "Carvão"
-          },
-          "qty": 6
-        },
-        {
-          "entryId": "wte-worm",
-          "name": {
-            "en": "Worm",
-            "pt": "Minhoca"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-eyeball",
-          "name": {
-            "en": "Eyeball",
-            "pt": "Globo Ocular"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 8
-        }
-      ],
-      "makes": "wte-lesser-offering-of-rain",
-      "unlock": {
-        "en": "Automatically available with Witching Mortar",
-        "pt": "Disponível desde o início no Pilão de Bruxaria"
-      }
-    },
-    {
-      "id": "wte-craft-offering-of-the-void",
-      "name": {
-        "en": "Offering of The Void",
-        "pt": "Oferenda do Vazio"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Witching Mortar",
-        "pt": "Pilão de Bruxaria"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 25
-        },
-        {
-          "entryId": "wte-coal",
-          "name": {
-            "en": "Coal",
-            "pt": "Carvão"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-worm",
-          "name": {
-            "en": "Worm",
-            "pt": "Minhoca"
-          },
-          "qty": 15
-        },
-        {
-          "entryId": "wte-pickled-eyeballs",
-          "name": {
-            "en": "Pickled Eyeballs",
-            "pt": "Olhos em Conserva"
-          },
-          "qty": 2
-        }
-      ],
-      "unlock": {
-        "en": "Recipe: Complete the task \"Farming Supplies\"",
-        "pt": "Receita: conclua \"Suprimentos de Fazenda\""
-      }
-    },
-    {
-      "id": "wte-craft-crushed-bones",
-      "name": {
-        "en": "Crushed Bones",
-        "pt": "Ossos Moídos"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Witching Mortar",
-        "pt": "Pilão de Bruxaria"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
+            "en": "Bloody Skin",
+            "pt": "Pele Ensanguentada"
           },
           "qty": 1
+        },
+        {
+          "entryId": "wte-crushed-bones",
+          "name": {
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
+          },
+          "qty": 2
+        },
+        {
+          "entryId": "wte-salt",
+          "name": {
+            "en": "Salt",
+            "pt": "Sal"
+          },
+          "qty": 2
         }
       ],
+      "makes": "wte-scraped-hide",
       "unlock": {
         "en": "Automatically available with Witching Mortar",
         "pt": "Disponível desde o início no Pilão de Bruxaria"
@@ -6035,49 +5204,6 @@
         }
       ],
       "makes": "wte-hardwood-plank",
-      "unlock": {
-        "en": "Automatically available with Craftsman's Bench",
-        "pt": "Disponível desde o início na Bancada do Artesão"
-      }
-    },
-    {
-      "id": "wte-craft-metal-rod",
-      "name": {
-        "en": "Metal Rod",
-        "pt": "Barra de Metal"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Materials",
-        "pt": "Materiais"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-void-crystal-bar",
-          "name": {
-            "en": "Void Crystal Bar",
-            "pt": "Barra de Cristal do Vazio"
-          },
-          "qty": 1
-        }
-      ],
-      "makes": "wte-metal-rod",
       "unlock": {
         "en": "Automatically available with Craftsman's Bench",
         "pt": "Disponível desde o início na Bancada do Artesão"
@@ -6689,228 +5815,6 @@
       }
     },
     {
-      "id": "wte-forge-metal-bat",
-      "name": {
-        "en": "Metal Bat",
-        "pt": "Taco de Metal"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Weapons",
-        "pt": "Armas"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-metal-bat-2",
-      "unlock": {
-        "en": "Automatically available at the Forge",
-        "pt": "Disponível desde o início na forja"
-      }
-    },
-    {
-      "id": "wte-forge-copper-helmet",
-      "name": {
-        "en": "Copper Helmet",
-        "pt": "Elmo de Cobre"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Armor",
-        "pt": "Armaduras"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-copper-helmet-1",
-      "unlock": {
-        "en": "Automatically available at the Forge",
-        "pt": "Disponível desde o início na forja"
-      }
-    },
-    {
-      "id": "wte-forge-copper-greaves",
-      "name": {
-        "en": "Copper Greaves",
-        "pt": "Grevas de Cobre"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Armor",
-        "pt": "Armaduras"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-copper-greaves-1",
-      "unlock": {
-        "en": "Automatically available at the Forge",
-        "pt": "Disponível desde o início na forja"
-      }
-    },
-    {
-      "id": "wte-forge-copper-legguards",
-      "name": {
-        "en": "Copper Legguards",
-        "pt": "Perneiras de Cobre"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Armor",
-        "pt": "Armaduras"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-copper-legguards-1",
-      "unlock": {
-        "en": "Automatically available at the Forge",
-        "pt": "Disponível desde o início na forja"
-      }
-    },
-    {
-      "id": "wte-forge-copper-chestplate",
-      "name": {
-        "en": "Copper Chestplate",
-        "pt": "Peitoral de Cobre"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Armor",
-        "pt": "Armaduras"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 4
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-copper-chestplate-1",
-      "unlock": {
-        "en": "Automatically available at the Forge",
-        "pt": "Disponível desde o início na forja"
-      }
-    },
-    {
-      "id": "wte-forge-sturdy-watering-can",
-      "name": {
-        "en": "Sturdy Watering Can",
-        "pt": "Regador Resistente"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Tools",
-        "pt": "Ferramentas"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-basic-watering-can",
-          "name": {
-            "en": "Basic Watering Can",
-            "pt": "Regador Básico"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 8
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 8
-        }
-      ],
-      "makes": "wte-sturdy-watering-can"
-    },
-    {
       "id": "wte-forge-sturdy-pickaxe",
       "name": {
         "en": "Sturdy Pickaxe",
@@ -6956,207 +5860,6 @@
         }
       ],
       "makes": "wte-sturdy-pickaxe"
-    },
-    {
-      "id": "wte-forge-sturdy-gardening-hoe",
-      "name": {
-        "en": "Sturdy Gardening Hoe",
-        "pt": "Enxada Resistente"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Tools",
-        "pt": "Ferramentas"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-basic-gardening-hoe",
-          "name": {
-            "en": "Basic Gardening Hoe",
-            "pt": "Enxada Básica"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 8
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 8
-        }
-      ],
-      "makes": "wte-sturdy-gardening-hoe"
-    },
-    {
-      "id": "wte-forge-basic-scythe",
-      "name": {
-        "en": "Basic Scythe",
-        "pt": "Foice Básica"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Tools",
-        "pt": "Ferramentas"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rusty-scythe",
-          "name": {
-            "en": "Rusty Scythe",
-            "pt": "Foice Enferrujada"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 15
-        }
-      ],
-      "makes": "wte-basic-scythe"
-    },
-    {
-      "id": "wte-forge-sturdy-scythe",
-      "name": {
-        "en": "Sturdy Scythe",
-        "pt": "Foice Resistente"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Tools",
-        "pt": "Ferramentas"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-basic-scythe",
-          "name": {
-            "en": "Basic Scythe",
-            "pt": "Foice Básica"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 8
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 5
-        }
-      ],
-      "makes": "wte-sturdy-scythe"
-    },
-    {
-      "id": "wte-forge-sturdy-fishing-rod",
-      "name": {
-        "en": "Sturdy Fishing Rod",
-        "pt": "Vara de Pescar Resistente"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Tools",
-        "pt": "Ferramentas"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-old-fishing-rod",
-          "name": {
-            "en": "Old Fishing Rod",
-            "pt": "Vara de Pescar Velha"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 8
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 6
-        }
-      ]
-    },
-    {
-      "id": "wte-forge-sturdy-axe",
-      "name": {
-        "en": "Sturdy Axe",
-        "pt": "Machado Resistente"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Tools",
-        "pt": "Ferramentas"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-rusty-axe",
-          "name": {
-            "en": "Rusty Axe",
-            "pt": "Machado Enferrujado"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-basic-axe",
-          "name": {
-            "en": "Basic Axe",
-            "pt": "Machado Básico"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 8
-        }
-      ]
     },
     {
       "id": "wte-forge-brutal-knife",
@@ -7218,6 +5921,95 @@
       }
     },
     {
+      "id": "wte-process-grinder-damp-stone",
+      "name": {
+        "en": "Damp Dust",
+        "pt": "Pó Úmido"
+      },
+      "kind": "process",
+      "group": {
+        "en": "Grinder",
+        "pt": "Moedor"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-stone",
+          "name": {
+            "en": "Damp Stone",
+            "pt": "Pedra Úmida"
+          },
+          "qty": 1
+        },
+        {
+          "entryId": "wte-coal",
+          "name": {
+            "en": "Coal",
+            "pt": "Carvão"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-damp-dust",
+      "time": {
+        "en": "4 hours",
+        "pt": "4 horas"
+      }
+    },
+    {
+      "id": "wte-process-windmill-damp-stone",
+      "name": {
+        "en": "Damp Dust",
+        "pt": "Pó Úmido"
+      },
+      "kind": "process",
+      "group": {
+        "en": "Windmill",
+        "pt": "Moinho de Vento"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-damp-stone",
+          "name": {
+            "en": "Damp Stone",
+            "pt": "Pedra Úmida"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-damp-dust",
+      "time": {
+        "en": "9 hours",
+        "pt": "9 horas"
+      }
+    },
+    {
+      "id": "wte-process-drying-rack-thick-hide",
+      "name": {
+        "en": "Rawhide",
+        "pt": "Couro Cru"
+      },
+      "kind": "process",
+      "group": {
+        "en": "Drying Rack",
+        "pt": "Varal de Secagem"
+      },
+      "ingredients": [
+        {
+          "entryId": "wte-thick-hide",
+          "name": {
+            "en": "Thick Hide",
+            "pt": "Pele Grossa"
+          },
+          "qty": 1
+        }
+      ],
+      "makes": "wte-rawhide",
+      "time": {
+        "en": "7-10 days",
+        "pt": "7-10 dias"
+      }
+    },
+    {
       "id": "wte-cook-sushi",
       "name": {
         "en": "Sushi"
@@ -7265,421 +6057,6 @@
       "unlock": {
         "en": "Not known at start",
         "pt": "Not known em start"
-      }
-    },
-    {
-      "id": "wte-cook-herbal-pie",
-      "name": {
-        "en": "Herbal Pie",
-        "pt": "Torta de Ervas"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Oven",
-        "pt": "Forno"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-strawberry-pie",
-          "name": {
-            "en": "Strawberry Pie",
-            "pt": "Torta de Morango"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-basic-herb-bundle",
-          "name": {
-            "en": "Basic Herb Bundle",
-            "pt": "Maço de Ervas Básico"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-vilebloom",
-          "name": {
-            "en": "Vilebloom",
-            "pt": "Flor Vil"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-vileroot",
-          "name": {
-            "en": "Vileroot",
-            "pt": "Raiz Vil"
-          },
-          "qty": 3
-        }
-      ],
-      "makes": "wte-herbal-pie",
-      "unlock": {
-        "en": "Learned later",
-        "pt": "Aprendida mais tarde"
-      }
-    },
-    {
-      "id": "wte-cook-herbal-roast",
-      "name": {
-        "en": "Herbal Roast",
-        "pt": "Assado com Ervas"
-      },
-      "kind": "cook",
-      "group": {
-        "en": "Oven",
-        "pt": "Forno"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-mystery-roast",
-          "name": {
-            "en": "Mystery Roast",
-            "pt": "Assado Misterioso"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-basic-herb-bundle",
-          "name": {
-            "en": "Basic Herb Bundle",
-            "pt": "Maço de Ervas Básico"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-vilebloom",
-          "name": {
-            "en": "Vilebloom",
-            "pt": "Flor Vil"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-vileroot",
-          "name": {
-            "en": "Vileroot",
-            "pt": "Raiz Vil"
-          },
-          "qty": 3
-        }
-      ],
-      "makes": "wte-herbal-roast",
-      "unlock": {
-        "en": "Learned later",
-        "pt": "Aprendida mais tarde"
-      }
-    },
-    {
-      "id": "wte-craft-potion-of-commerce",
-      "name": {
-        "en": "Potion of Commerce",
-        "pt": "Poção do Comércio"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "General",
-        "pt": "Geral"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-vilebloom",
-          "name": {
-            "en": "Vilebloom",
-            "pt": "Flor Vil"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-potent-herb-bundle",
-          "name": {
-            "en": "Potent Herb Bundle",
-            "pt": "Maço de Ervas Potente"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-platinum-bar",
-          "name": {
-            "en": "Platinum Bar",
-            "pt": "Barra de Platina"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-tooth-dust",
-          "name": {
-            "en": "Tooth Dust",
-            "pt": "Pó de Dente"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-potion-of-commerce",
-      "unlock": {
-        "en": "Learned later",
-        "pt": "Aprendida mais tarde"
-      }
-    },
-    {
-      "id": "wte-craft-bone-shield-8",
-      "name": {
-        "en": "Bone Shield +8",
-        "pt": "Escudo de Osso +8"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Gifts of Kaal",
-        "pt": "Dádivas de Kaal"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 20
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 5
-        }
-      ],
-      "makes": "wte-bone-shield-8",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-bonestaff-5",
-      "name": {
-        "en": "Bonestaff +5",
-        "pt": "Cajado de Ossos +5"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Gifts of Kaal",
-        "pt": "Dádivas de Kaal"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 20
-        },
-        {
-          "entryId": "wte-gold-bar",
-          "name": {
-            "en": "Gold Bar",
-            "pt": "Barra de Ouro"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-void-crystal-bar",
-          "name": {
-            "en": "Void Crystal Bar",
-            "pt": "Barra de Cristal do Vazio"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 5
-        }
-      ],
-      "makes": "wte-bonestaff-5",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-ring-of-immortality-2",
-      "name": {
-        "en": "Ring of Immortality +2",
-        "pt": "Anel da Imortalidade +2"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Gifts of Kaal",
-        "pt": "Dádivas de Kaal"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 3
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-earring-of-slime-3",
-      "name": {
-        "en": "Earring of Slime +3",
-        "pt": "Brinco de Gosma +3"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Jeweler's Desk",
-        "pt": "Mesa do Joalheiro"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-crafting-pattern",
-          "name": {
-            "en": "Crafting Pattern",
-            "pt": "Molde de Criação"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-ghost-crystal",
-          "name": {
-            "en": "Ghost Crystal",
-            "pt": "Cristal Fantasma"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-bone-ingot",
-          "name": {
-            "en": "Bone Ingot",
-            "pt": "Lingote de Osso"
-          },
-          "qty": 10
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-earring-of-torture-3",
-      "name": {
-        "en": "Earring of Torture +3",
-        "pt": "Brinco da Tortura +3"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Jeweler's Desk",
-        "pt": "Mesa do Joalheiro"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-crafting-pattern",
-          "name": {
-            "en": "Crafting Pattern",
-            "pt": "Molde de Criação"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-death-crystal",
-          "name": {
-            "en": "Death Crystal",
-            "pt": "Cristal da Morte"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-bone-ingot",
-          "name": {
-            "en": "Bone Ingot",
-            "pt": "Lingote de Osso"
-          },
-          "qty": 10
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-forge-earring-of-wealth-3",
-      "name": {
-        "en": "Earring of Wealth +3",
-        "pt": "Brinco da Riqueza +3"
-      },
-      "kind": "forge",
-      "group": {
-        "en": "Jeweler's Desk",
-        "pt": "Mesa do Joalheiro"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-crafting-pattern",
-          "name": {
-            "en": "Crafting Pattern",
-            "pt": "Molde de Criação"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-dream-crystal",
-          "name": {
-            "en": "Dream Crystal",
-            "pt": "Cristal dos Sonhos"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-bone-ingot",
-          "name": {
-            "en": "Bone Ingot",
-            "pt": "Lingote de Osso"
-          },
-          "qty": 10
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
       }
     },
     {
@@ -8026,65 +6403,6 @@
       }
     },
     {
-      "id": "wte-craft-thick-jacket-3",
-      "name": {
-        "en": "Thick Jacket +3",
-        "pt": "Jaqueta Grossa +3"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Combine",
-        "pt": "Combinações"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-tattered-shirt",
-          "name": {
-            "en": "Tattered Shirt",
-            "pt": "Camisa Esfarrapada"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-old-sleeveless-shirt",
-          "name": {
-            "en": "Old Sleeveless Shirt",
-            "pt": "Regata Velha"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 6
-        },
-        {
-          "entryId": "wte-leather",
-          "name": {
-            "en": "Leather",
-            "pt": "Couro"
-          },
-          "qty": 3
-        }
-      ],
-      "makes": "wte-thick-jacket-3",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
       "id": "wte-craft-tuxedo-jacket-3",
       "name": {
         "en": "Tuxedo Jacket +3",
@@ -8220,156 +6538,6 @@
             "pt": "Cera"
           },
           "qty": 1
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-cross-tombstone",
-      "name": {
-        "en": "Cross Tombstone",
-        "pt": "Lápide em Cruz"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Decorative",
-        "pt": "Decoração"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 1
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-garbage-heap-1",
-      "name": {
-        "en": "Garbage Heap 1",
-        "pt": "Monte de Lixo 1"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Decorative",
-        "pt": "Decoração"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-mystery-meat",
-          "name": {
-            "en": "Mystery Meat",
-            "pt": "Carne Misteriosa"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 5
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 2
-        },
-        {
-          "entryId": "wte-weeds",
-          "name": {
-            "en": "Weeds",
-            "pt": "Ervas Daninhas"
-          },
-          "qty": 2
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-garbage-heap-2",
-      "name": {
-        "en": "Garbage Heap 2",
-        "pt": "Monte de Lixo 2"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Decorative",
-        "pt": "Decoração"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-mystery-meat",
-          "name": {
-            "en": "Mystery Meat",
-            "pt": "Carne Misteriosa"
-          },
-          "qty": 7
-        },
-        {
-          "entryId": "wte-wood",
-          "name": {
-            "en": "Wood",
-            "pt": "Madeira"
-          },
-          "qty": 7
-        },
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 7
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 3
-        },
-        {
-          "entryId": "wte-weeds",
-          "name": {
-            "en": "Weeds",
-            "pt": "Ervas Daninhas"
-          },
-          "qty": 3
         }
       ],
       "unlock": {
@@ -8630,40 +6798,6 @@
       }
     },
     {
-      "id": "wte-craft-round-tombstone",
-      "name": {
-        "en": "Round Tombstone",
-        "pt": "Lápide Redonda"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Decorative",
-        "pt": "Decoração"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-stone",
-          "name": {
-            "en": "Stone",
-            "pt": "Pedra"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 1
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
       "id": "wte-craft-sack-pile",
       "name": {
         "en": "Sack Pile",
@@ -8682,65 +6816,6 @@
             "pt": "Barbante"
           },
           "qty": 5
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-scattered-bones",
-      "name": {
-        "en": "Scattered Bones",
-        "pt": "Ossos Espalhados"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Decorative",
-        "pt": "Decoração"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 10
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-skeleton-1",
-      "name": {
-        "en": "Skeleton 1",
-        "pt": "Esqueleto 1"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Decorative",
-        "pt": "Decoração"
-      },
-      "ingredients": [
-        {
-          "name": {
-            "en": "Skull",
-            "pt": "Crânio"
-          },
-          "qty": 1
-        },
-        {
-          "entryId": "wte-bones",
-          "name": {
-            "en": "Bones",
-            "pt": "Ossos"
-          },
-          "qty": 10
         }
       ],
       "unlock": {
@@ -8783,10 +6858,10 @@
       }
     },
     {
-      "id": "wte-craft-skeletal-scarecrow",
+      "id": "wte-craft-ghostly-scarecrow",
       "name": {
-        "en": "Skeletal Scarecrow",
-        "pt": "Espantalho Esquelético"
+        "en": "Ghostly Scarecrow",
+        "pt": "Espantalho Fantasmagórico"
       },
       "kind": "craft",
       "group": {
@@ -8803,135 +6878,42 @@
           "qty": 1
         },
         {
-          "entryId": "wte-bone-ingot",
+          "entryId": "wte-crushed-bones",
           "name": {
-            "en": "Bone Ingot",
-            "pt": "Lingote de Osso"
+            "en": "Crushed Bones",
+            "pt": "Ossos Moídos"
           },
-          "qty": 1
+          "qty": 50
         },
         {
-          "entryId": "wte-bones",
+          "entryId": "wte-string",
           "name": {
-            "en": "Bones",
-            "pt": "Ossos"
+            "en": "String",
+            "pt": "Barbante"
           },
           "qty": 25
         },
         {
-          "entryId": "wte-leather",
+          "entryId": "wte-wood",
           "name": {
-            "en": "Leather",
-            "pt": "Couro"
+            "en": "Wood",
+            "pt": "Madeira"
           },
-          "qty": 5
+          "qty": 25
         },
         {
-          "entryId": "wte-gravemoss",
+          "entryId": "wte-spiritwood",
           "name": {
-            "en": "Gravemoss",
-            "pt": "Musgo de Túmulo"
+            "en": "Spiritwood",
+            "pt": "Madeira Espiritual"
           },
-          "qty": 5
+          "qty": 15
         }
       ],
-      "makes": "wte-skeletal-scarecrow",
+      "makes": "wte-ghostly-scarecrow",
       "unlock": {
         "en": "Learned later",
         "pt": "Aprendida mais tarde"
-      }
-    },
-    {
-      "id": "wte-craft-coffee-maker",
-      "name": {
-        "en": "Coffee Maker",
-        "pt": "Cafeteira"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Tinker's Desk",
-        "pt": "Mesa do Inventor"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 15
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-platinum-bar",
-          "name": {
-            "en": "Platinum Bar",
-            "pt": "Barra de Platina"
-          },
-          "qty": 2
-        }
-      ],
-      "makes": "wte-coffee-maker",
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
-      }
-    },
-    {
-      "id": "wte-craft-oven",
-      "name": {
-        "en": "Oven",
-        "pt": "Forno"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Tinker's Desk",
-        "pt": "Mesa do Inventor"
-      },
-      "ingredients": [
-        {
-          "entryId": "wte-copper-bar",
-          "name": {
-            "en": "Copper Bar",
-            "pt": "Barra de Cobre"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-iron-bar",
-          "name": {
-            "en": "Iron Bar",
-            "pt": "Barra de Ferro"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-gold-bar",
-          "name": {
-            "en": "Gold Bar",
-            "pt": "Barra de Ouro"
-          },
-          "qty": 10
-        },
-        {
-          "entryId": "wte-verdite-bar",
-          "name": {
-            "en": "Verdite Bar",
-            "pt": "Barra de Verdite"
-          },
-          "qty": 5
-        }
-      ],
-      "unlock": {
-        "en": "Known at start",
-        "pt": "Conhecida desde o início"
       }
     }
   ],
@@ -9061,6 +7043,7 @@
           "how": "loot",
           "items": [
             {
+              "entryId": "wte-crushed-bones",
               "name": {
                 "en": "Crushed Bones",
                 "pt": "Ossos Moídos"
@@ -11394,6 +9377,7 @@
                   }
                 },
                 {
+                  "entryId": "wte-pumpkin-pie",
                   "name": {
                     "en": "Pumpkin Pie",
                     "pt": "Torta de Abóbora"

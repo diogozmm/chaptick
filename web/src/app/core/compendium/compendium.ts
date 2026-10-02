@@ -41,6 +41,10 @@ export interface CompendiumIndex {
   villagers: Villager[];
   /** How each villager reacts to an entry given as a gift. */
   gifts: Map<string, { villager: Villager; reaction: GiftReaction }[]>;
+  /** Gifts most villagers like or find neutral (personal tastes override them). */
+  commonGifts: { likes: RewardItem[]; neutral: RewardItem[] };
+  /** The common reaction to an entry, when it is on a common list. */
+  commonGift: Map<string, 'likes' | 'neutral'>;
 }
 
 const push = <K, V>(map: Map<K, V[]>, key: K, value: V): void => {
@@ -58,7 +62,7 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
   const sorted = [...chapters].sort((a, b) => a.order - b.order);
   const index: CompendiumIndex = {
     entries: new Map(), crafts: [], creatures: [], madeBy: new Map(), usedIn: new Map(), givenBy: new Map(),
-    villagers: [], gifts: new Map(),
+    villagers: [], gifts: new Map(), commonGifts: { likes: [], neutral: [] }, commonGift: new Map(),
   };
   for (const chapter of sorted) {
     for (const entry of chapter.entries ?? []) {
@@ -93,6 +97,12 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
       index.creatures.push(placed);
       const given = new Set((creature.rewards ?? []).flatMap((r) => r.items).flatMap((i) => (i.entryId ? [i.entryId] : [])));
       for (const entryId of given) push(index.givenBy, entryId, placed);
+    }
+    for (const reaction of ['likes', 'neutral'] as const) {
+      for (const gift of (chapter.commonGifts?.[reaction] ?? []).map(link)) {
+        index.commonGifts[reaction].push(gift);
+        if (gift.entryId) index.commonGift.set(gift.entryId, reaction);
+      }
     }
     for (const original of chapter.villagers ?? []) {
       const villager: Villager = {

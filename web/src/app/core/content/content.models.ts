@@ -192,7 +192,7 @@ export interface EntrySource extends Source {
   entryId: string;
 }
 
-export type CraftKind = 'craft' | 'cook' | 'forge';
+export type CraftKind = 'craft' | 'cook' | 'forge' | 'process';
 
 export interface Craft {
   id: string;
@@ -206,6 +206,10 @@ export interface Craft {
   unlock?: Localized;
   /** Chance the recipe works, when below 100%. */
   success?: string;
+  /** How many one run makes, when more than one. */
+  yield?: number;
+  /** How long one run takes (processors). */
+  time?: Localized;
 }
 
 /** An item a creature hands over; linked when it is in the compendium. */
@@ -274,6 +278,8 @@ export interface Chapter {
   crafts?: Craft[];
   creatures?: Creature[];
   villagers?: Villager[];
+  /** Gifts most villagers like (+5) or find neutral (+3); personal tastes override them. */
+  commonGifts?: { likes?: RewardItem[]; neutral?: RewardItem[] };
 }
 
 export const localize = (text: Localized, lang: Lang): string => (lang === 'pt' ? text.pt : undefined) ?? text.en;

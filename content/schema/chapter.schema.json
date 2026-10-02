@@ -108,6 +108,51 @@
         "$ref": "#/$defs/villager"
       },
       "description": "Compendium: villagers and how they react to gifts."
+    },
+    "commonGifts": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Gifts most villagers like or find neutral; personal tastes override them.",
+      "properties": {
+        "likes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "entryId": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+              },
+              "name": {
+                "$ref": "common.schema.json#/$defs/localized"
+              }
+            }
+          }
+        },
+        "neutral": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "entryId": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+-[a-z0-9-]+$"
+              },
+              "name": {
+                "$ref": "common.schema.json#/$defs/localized"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "additionalProperties": false,
@@ -617,7 +662,8 @@
           "enum": [
             "craft",
             "cook",
-            "forge"
+            "forge",
+            "process"
           ]
         },
         "group": {
@@ -659,6 +705,15 @@
           "type": "string",
           "pattern": "^\\d+%$",
           "description": "Chance the recipe works, when below 100%."
+        },
+        "yield": {
+          "type": "integer",
+          "minimum": 2,
+          "description": "How many one run makes, when more than one."
+        },
+        "time": {
+          "$ref": "common.schema.json#/$defs/localized",
+          "description": "How long one run takes."
         }
       }
     },

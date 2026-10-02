@@ -110,6 +110,12 @@
                 @if (c.craft.success) {
                   <span class="tag success">{{ 'compendium.success' | transloco: { chance: c.craft.success } }}</span>
                 }
+                @if (c.craft.time || c.craft.yield) {
+                  <span class="how">
+                    <app-icon name="hourglass" />
+                    {{ c.craft.time ? (c.craft.time | localize: l) : '' }}{{ c.craft.time && c.craft.yield ? ' · ' : '' }}{{ c.craft.yield ? ('compendium.yields' | transloco: { count: c.craft.yield }) : '' }}
+                  </span>
+                }
                 <ul class="ingredients" [attr.aria-label]="'compendium.ingredients' | transloco">
                   @for (i of c.craft.ingredients; track $index) {
                     <li>
@@ -141,6 +147,25 @@
 } @else if (current() === 'villagers') {
   <div id="panel-villagers" role="tabpanel" aria-labelledby="tab-villagers" class="panel">
     <p class="card rules small">{{ 'villagers.rules' | transloco }}</p>
+    @if (commonGifts().likes.length || commonGifts().neutral.length) {
+      <section class="card villager" aria-labelledby="vl-common">
+        <h2 id="vl-common">{{ 'villagers.common' | transloco }}</h2>
+        <p class="muted small">{{ 'villagers.commonHint' | transloco }}</p>
+        @for (reaction of ['likes', 'neutral']; track reaction) {
+          @let list = reaction === 'likes' ? commonGifts().likes : commonGifts().neutral;
+          @if (list.length) {
+            <details class="more-gifts">
+              <summary>{{ 'villagers.commonReaction.' + reaction | transloco }} ({{ list.length }})</summary>
+              <ul class="gift-list">
+                @for (g of list; track $index) {
+                  <li><ng-container *ngTemplateOutlet="giftTpl; context: { $implicit: g }" /></li>
+                }
+              </ul>
+            </details>
+          }
+        }
+      </section>
+    }
     @for (v of villagers(); track v.id) {
       <section class="card villager" [attr.aria-labelledby]="'vl-' + v.id">
         <h2 [id]="'vl-' + v.id">{{ v.name | localize: l }}</h2>

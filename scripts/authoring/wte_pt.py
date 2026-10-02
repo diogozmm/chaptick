@@ -813,3 +813,11 @@ EFFECTS[:0] = [
 ]
 EFFECTS.insert(0, (r'When equipped: Increases total HP, MP, Defense and M\. Defense by (\d+)%\.?',
                    lambda m: f'Equipado: aumenta em {m[1]}% o total de PV, PM, Defesa e Def. mágica.'))
+
+
+def time_pt(text):
+    """"1 hour", "2 hours", "3 days", "7-10 days"."""
+    return re.sub(r'(\d+(?:-\d+)?) (hour|day)s?', lambda m: f"{m[1]} {'hora' if m[2] == 'hour' else 'dia'}{'' if m[1] == '1' else 's'}", text)
+
+
+PHRASES[:0] = [(r'^Blast Kiln: random result from a Damp Gem Cluster$', 'Forno de Fundição: resultado aleatório de um Aglomerado de Gemas Úmidas')]

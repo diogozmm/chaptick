@@ -16,6 +16,7 @@ const area1 = chapter(0, {
     ingredients: [{ entryId: 'zz-bitter-herb', name: { en: 'Bitter Herb' }, qty: 2 }],
   }],
 });
+area1.commonGifts = { likes: [{ name: { en: 'Herb Tea' } }], neutral: [{ entryId: 'zz-bitter-herb', name: { en: 'Bitter Herb' } }] };
 area1.villagers = [{ id: 'zz-vl-ada', name: { en: 'Ada' }, gifts: { loves: [{ entryId: 'zz-herb-tea', name: { en: 'Herb Tea' } }], hates: [{ name: { en: 'Rock' } }] } }];
 const area2 = chapter(1, {
   entries: [{ id: 'zz-bone', name: { en: 'Bone' }, category: 'materials', sources: [{ kind: 'loot', where: { en: 'Crypt' } }] }],
@@ -60,6 +61,9 @@ describe('compendium', () => {
     const index = compendiumIndex([area1]);
     expect(index.villagers.map((v) => v.id)).toEqual(['zz-vl-ada']);
     expect(index.gifts.get('zz-herb-tea')!.map((g) => [g.villager.id, g.reaction])).toEqual([['zz-vl-ada', 'loves']]);
+    // Common lists are linked by name too.
+    expect(index.commonGift.get('zz-herb-tea')).toBe('likes');
+    expect(index.commonGift.get('zz-bitter-herb')).toBe('neutral');
   });
 
   it('finds by every word, names starting with the query first, ignoring accents and case', () => {

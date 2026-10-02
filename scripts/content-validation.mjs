@@ -128,6 +128,7 @@ function compendiumErrors(chapters) {
     const refs = [
       ...(data.entrySources ?? []).map((s) => ['a later source', s.entryId]),
       ...(data.entries ?? []).filter((e) => e.grow?.crop).map((e) => [`seed "${e.id}"`, e.grow.crop]),
+      ...Object.values(data.commonGifts ?? {}).flat().filter((g) => g.entryId).map((g) => ['common gifts', g.entryId]),
       ...(data.villagers ?? []).flatMap((v) =>
         Object.values(v.gifts).flat().filter((g) => g.entryId).map((g) => [`villager "${v.id}"`, g.entryId]),
       ),

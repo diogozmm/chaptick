@@ -200,26 +200,6 @@
       ]
     },
     {
-      "id": "cc-craft-iron-bar",
-      "name": {
-        "en": "Iron Bar"
-      },
-      "kind": "craft",
-      "group": {
-        "en": "Furnace"
-      },
-      "makes": "cc-iron-bar",
-      "ingredients": [
-        {
-          "entryId": "cc-iron-ore",
-          "name": {
-            "en": "Iron Ore"
-          },
-          "qty": 3
-        }
-      ]
-    },
-    {
       "id": "cc-forge-iron-sword-2",
       "name": {
         "en": "Iron Sword +2"
@@ -245,6 +225,30 @@
           "qty": 1
         }
       ]
+    },
+    {
+      "id": "cc-process-furnace-iron-ore",
+      "name": {
+        "en": "Iron Bar"
+      },
+      "kind": "process",
+      "group": {
+        "en": "Furnace"
+      },
+      "makes": "cc-iron-bar",
+      "ingredients": [
+        {
+          "entryId": "cc-iron-ore",
+          "name": {
+            "en": "Iron Ore"
+          },
+          "qty": 2
+        }
+      ],
+      "yield": 2,
+      "time": {
+        "en": "2 hours"
+      }
     }
   ],
   "creatures": [
@@ -335,5 +339,23 @@
       "gifts": {},
       "commonOnly": true
     }
-  ]
+  ],
+  "commonGifts": {
+    "likes": [
+      {
+        "entryId": "cc-herb-tea",
+        "name": {
+          "en": "Herb Tea"
+        }
+      }
+    ],
+    "neutral": [
+      {
+        "entryId": "cc-iron-bar",
+        "name": {
+          "en": "Iron Bar"
+        }
+      }
+    ]
+  }
 }

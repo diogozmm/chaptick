@@ -334,7 +334,8 @@
     "craftKind": {
       "craft": "Criação",
       "cook": "Cozinha",
-      "forge": "Forja"
+      "forge": "Forja",
+      "process": "Processamento"
     },
     "ingredients": "Ingredientes",
     "noCrafts": "Nenhuma receita encontrada.",
@@ -435,7 +436,8 @@
       "stats": "Atributos",
       "bonuses": "Bônus",
       "effect": "Efeito especial"
-    }
+    },
+    "yields": "rende {{count}}"
   },
   "plan": {
     "open": "Lista de compras",
@@ -456,13 +458,22 @@
   },
   "villagers": {
     "rules": "Cada morador aceita um presente por dia e dois por semana. Ama +8, gosta +6, neutro +4, odeia −8. O gosto pessoal vale primeiro; itens fora de todas as listas costumam desagradar (−6). A Poção do Amor dá +12 para qualquer um.",
-    "commonOnly": "Sem gostos próprios: segue as listas comuns de presentes (café, chá e abóbora são boas escolhas).",
+    "commonOnly": "Sem gostos próprios: segue os gostos comuns.",
     "asGift": "Como presente",
     "reaction": {
       "loves": "Ama",
       "likes": "Gosta",
       "neutral": "Neutro",
       "hates": "Odeia"
+    },
+    "common": "Gostos comuns",
+    "commonHint": "O que a maioria acha de um presente; os gostos pessoais acima valem primeiro.",
+    "others": "Os demais",
+    "everyone": "Moradores",
+    "commonReaction": {
+      "likes": "Gostam (+5)",
+      "neutral": "Neutro (+3)",
+      "dislikes": "Não gostam (−6)"
     }
   }
 }

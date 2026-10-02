@@ -51,6 +51,10 @@ describe('plan', () => {
     expect(planCraft(index, path, 25).runs).toBe(3);
   });
 
+  it('uses a recipe\'s declared yield, e.g. a processor that makes two', () => {
+    expect(craftYield({ ...area.crafts![0], yield: 2 })).toBe(2);
+  });
+
   it('stops instead of looping on recipes that lead back to themselves', () => {
     const loop = compendiumIndex([{ ...area, crafts: [craft('c-a', 'ore', [['bar', 1]]), craft('c-b', 'bar', [['ore', 1]])] }]);
     const plan = planCraft(loop, loop.crafts[0], 1, new Map([['bar', true], ['ore', true]]));

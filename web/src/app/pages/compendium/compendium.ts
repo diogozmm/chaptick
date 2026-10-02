@@ -18,7 +18,7 @@ import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
 
 type Tab = 'items' | 'crafts' | 'creatures' | 'season' | 'villagers';
 const TABS: Tab[] = ['items', 'crafts', 'creatures', 'season', 'villagers'];
-const CRAFT_KINDS: CraftKind[] = ['craft', 'cook', 'forge'];
+const CRAFT_KINDS: CraftKind[] = ['craft', 'cook', 'forge', 'process'];
 const MAX_LIST = 80;
 
 /**
@@ -51,6 +51,7 @@ export class Compendium {
     TABS.filter((t) => (t !== 'season' || this.seasonal()) && (t !== 'villagers' || this.index().villagers.length > 0)),
   );
   protected readonly villagers = computed(() => this.index().villagers);
+  protected readonly commonGifts = computed(() => this.index().commonGifts);
   protected readonly reactions = ['likes', 'neutral', 'hates'] as const;
   protected readonly categories = ENTRY_CATEGORIES;
   protected readonly craftKinds = CRAFT_KINDS;

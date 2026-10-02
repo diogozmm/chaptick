@@ -76,6 +76,8 @@ export class EntryDetail {
       names: all.filter((g) => g.reaction === reaction).map((g) => localize(g.villager.name, lang)).join(', '),
     })).filter((g) => g.names);
   });
+  protected readonly hasGiftData = computed(() => this.index().villagers.length > 0);
+  protected readonly commonGift = computed(() => this.index().commonGift.get(this.entryId()) ?? null);
   protected readonly givenBy = computed(() => this.index().givenBy.get(this.entryId()) ?? []);
   protected readonly creatureNumber = computed(() => new Map(this.index().creatures.map((c, i) => [c.creature.id, i + 1])));
 

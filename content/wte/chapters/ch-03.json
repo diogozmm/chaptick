@@ -52,6 +52,13 @@
             "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
             "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
           }
+        },
+        {
+          "kind": "process",
+          "where": {
+            "en": "Blast Kiln: random result from a Damp Gem Cluster",
+            "pt": "Forno de Fundição: random result de a Aglomerado de Gemas Úmidas"
+          }
         }
       ],
       "sell": "200g"
@@ -69,6 +76,13 @@
           "where": {
             "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
             "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        },
+        {
+          "kind": "process",
+          "where": {
+            "en": "Blast Kiln: random result from a Damp Gem Cluster",
+            "pt": "Forno de Fundição: random result de a Aglomerado de Gemas Úmidas"
           }
         }
       ],
@@ -142,6 +156,13 @@
             "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
             "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
           }
+        },
+        {
+          "kind": "process",
+          "where": {
+            "en": "Blast Kiln: random result from a Damp Gem Cluster",
+            "pt": "Forno de Fundição: random result de a Aglomerado de Gemas Úmidas"
+          }
         }
       ],
       "sell": "200g"
@@ -175,31 +196,6 @@
       }
     },
     {
-      "id": "wte-pumpkin-pie",
-      "name": {
-        "en": "Pumpkin Pie",
-        "pt": "Torta de Abóbora"
-      },
-      "category": "food",
-      "sources": [
-        {
-          "kind": "cook",
-          "where": {
-            "en": "Pumpkin Pie",
-            "pt": "Torta de Abóbora"
-          }
-        },
-        {
-          "kind": "found",
-          "where": {
-            "en": "Deep Mall (65, 108)",
-            "pt": "Shopping Profundo (65, 108)"
-          }
-        }
-      ],
-      "sell": "40g"
-    },
-    {
       "id": "wte-rich-cookie",
       "name": {
         "en": "Rich Cookie",
@@ -230,6 +226,13 @@
           "where": {
             "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
             "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
+          }
+        },
+        {
+          "kind": "process",
+          "where": {
+            "en": "Blast Kiln: random result from a Damp Gem Cluster",
+            "pt": "Forno de Fundição: random result de a Aglomerado de Gemas Úmidas"
           }
         }
       ],
@@ -330,6 +333,13 @@
             "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
             "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
           }
+        },
+        {
+          "kind": "process",
+          "where": {
+            "en": "Blast Kiln: random result from a Damp Gem Cluster",
+            "pt": "Forno de Fundição: random result de a Aglomerado de Gemas Úmidas"
+          }
         }
       ],
       "sell": "200g"
@@ -348,6 +358,13 @@
             "en": "Process a Damp Gem Cluster with Elder Coral in a Blast Kiln",
             "pt": "Processe Aglomerado de Gemas Úmidas com Coral Ancião em: Forno de Fundição"
           }
+        },
+        {
+          "kind": "process",
+          "where": {
+            "en": "Blast Kiln: random result from a Damp Gem Cluster",
+            "pt": "Forno de Fundição: random result de a Aglomerado de Gemas Úmidas"
+          }
         }
       ],
       "sell": "200g"
@@ -356,6 +373,14 @@
   "entrySources": [
     {
       "entryId": "wte-lesser-offering-of-rain",
+      "kind": "found",
+      "where": {
+        "en": "Deep Mall (65, 108)",
+        "pt": "Shopping Profundo (65, 108)"
+      }
+    },
+    {
+      "entryId": "wte-pumpkin-pie",
       "kind": "found",
       "where": {
         "en": "Deep Mall (65, 108)",
@@ -958,12 +983,14 @@
               }
             },
             {
+              "entryId": "wte-flask-of-the-gods-hp",
               "name": {
                 "en": "Flask of the Gods (HP)",
                 "pt": "Frasco dos Deuses (PV)"
               }
             },
             {
+              "entryId": "wte-flask-of-the-gods-mp",
               "name": {
                 "en": "Flask of the Gods (MP)",
                 "pt": "Frasco dos Deuses (PM)"
@@ -1555,12 +1582,14 @@
               }
             },
             {
+              "entryId": "wte-flask-of-the-gods-hp",
               "name": {
                 "en": "Flask of the Gods (HP)",
                 "pt": "Frasco dos Deuses (PV)"
               }
             },
             {
+              "entryId": "wte-flask-of-the-gods-mp",
               "name": {
                 "en": "Flask of the Gods (MP)",
                 "pt": "Frasco dos Deuses (PM)"
@@ -1801,12 +1830,14 @@
               }
             },
             {
+              "entryId": "wte-flask-of-the-gods-hp",
               "name": {
                 "en": "Flask of the Gods (HP)",
                 "pt": "Frasco dos Deuses (PV)"
               }
             },
             {
+              "entryId": "wte-flask-of-the-gods-mp",
               "name": {
                 "en": "Flask of the Gods (MP)",
                 "pt": "Frasco dos Deuses (PM)"

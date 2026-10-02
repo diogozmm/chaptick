@@ -334,7 +334,8 @@
     "craftKind": {
       "craft": "Crafting",
       "cook": "Cooking",
-      "forge": "Forge"
+      "forge": "Forge",
+      "process": "Processing"
     },
     "ingredients": "Ingredients",
     "noCrafts": "No recipes match.",
@@ -435,7 +436,8 @@
       "stats": "Stats",
       "bonuses": "Bonuses",
       "effect": "Special effect"
-    }
+    },
+    "yields": "makes {{count}}"
   },
   "plan": {
     "open": "Shopping list",
@@ -456,13 +458,22 @@
   },
   "villagers": {
     "rules": "Each villager takes one gift a day and two a week. Loves +8, likes +6, neutral +4, hates −8. Their own tastes come first; items in no list are usually disliked (−6). A Love Potion gives +12 to anyone.",
-    "commonOnly": "No personal tastes: follows the common gift lists (coffee, tea and pumpkin are good picks).",
+    "commonOnly": "No personal tastes: follows the common tastes below.",
     "asGift": "As a gift",
     "reaction": {
       "loves": "Loves",
       "likes": "Likes",
       "neutral": "Neutral",
       "hates": "Hates"
+    },
+    "common": "Common tastes",
+    "commonHint": "What most villagers think of a gift; their own tastes above come first.",
+    "others": "Everyone else",
+    "everyone": "Villagers",
+    "commonReaction": {
+      "likes": "Like it (+5)",
+      "neutral": "Neutral (+3)",
+      "dislikes": "Dislike it (−6)"
     }
   }
 }

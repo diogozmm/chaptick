@@ -140,7 +140,7 @@
     </section>
   }
 
-  @if (gifts().length > 0) {
+  @if (gifts().length > 0 || hasGiftData()) {
     <section class="section" aria-labelledby="gifts-title">
       <h2 id="gifts-title">{{ 'villagers.asGift' | transloco }}</h2>
       <div class="way">
@@ -149,6 +149,10 @@
             <strong>{{ 'villagers.reaction.' + g.reaction | transloco }}:</strong> {{ g.names }}
           </p>
         }
+        <p class="gift-line" [class.bad]="!commonGift()">
+          <strong>{{ (gifts().length ? 'villagers.others' : 'villagers.everyone') | transloco }}:</strong>
+          {{ 'villagers.commonReaction.' + (commonGift() ?? 'dislikes') | transloco }}
+        </p>
       </div>
     </section>
   }

@@ -118,11 +118,11 @@ test('a shopping list sums what to gather and lets you make or buy each ingredie
 
   const gather = page.getByRole('region', { name: 'What to gather' });
   // Iron Bar has no other way to get it, so it is made from ore by default.
-  await expect(gather.getByRole('listitem')).toHaveText([/1×\s*Bitter Herb/, /6×\s*Iron Ore/]);
+  await expect(gather.getByRole('listitem')).toHaveText([/1×\s*Bitter Herb/, /2×\s*Iron Ore/]);
 
   await page.getByRole('button', { name: 'One more' }).click();
   await expect(page).toHaveURL(/qty=2/);
-  await expect(gather.getByRole('listitem')).toHaveText([/2×\s*Bitter Herb/, /12×\s*Iron Ore/]);
+  await expect(gather.getByRole('listitem')).toHaveText([/2×\s*Bitter Herb/, /4×\s*Iron Ore/]);
 
   await page.getByRole('button', { name: 'Get it ready-made' }).click();
   await expect(gather.getByRole('listitem')).toHaveText([/2×\s*Bitter Herb/, /4×\s*Iron Bar/]);
@@ -139,8 +139,13 @@ test('villagers show what they love, and an item shows who likes it as a gift', 
   await expect(ada.getByRole('link', { name: 'Herb Tea' })).toBeVisible();
   await ada.getByText('Hates (1)').click();
   await expect(ada.getByRole('link', { name: 'Iron Ore' })).toBeVisible();
-  await expect(page.getByRole('region', { name: 'Bo' })).toContainText('follows the common gift lists');
+  await expect(page.getByRole('region', { name: 'Bo' })).toContainText('follows the common tastes');
 
   await page.goto('/cc/entries/cc-bitter-herb');
   await expect(page.getByRole('region', { name: 'As a gift' })).toContainText('Likes: Ada');
+  await expect(page.getByRole('region', { name: 'As a gift' })).toContainText('Everyone else: Dislike it (−6)');
+  await page.goto('/cc/entries/cc-herb-tea');
+  await expect(page.getByRole('region', { name: 'As a gift' })).toContainText('Everyone else: Like it (+5)');
+  await page.goto('/cc/compendium?tab=crafts&c=process');
+  await expect(page.getByText('2 hours · makes 2')).toBeVisible();
 });

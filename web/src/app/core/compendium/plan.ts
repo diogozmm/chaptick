@@ -24,8 +24,8 @@ export interface PlanTotal {
 const MAX_DEPTH = 8;
 const MADE_KINDS = new Set(['craft', 'cook', 'process']);
 
-/** How many a recipe makes at once: "10x Tile Path" makes ten. */
-export const craftYield = (craft: Craft): number => Number(/^(\d+)x /.exec(craft.name.en)?.[1] ?? 1);
+/** How many a recipe makes at once: its yield, or the batch in its name ("10x Tile Path" makes ten). */
+export const craftYield = (craft: Craft): number => craft.yield ?? Number(/^(\d+)x /.exec(craft.name.en)?.[1] ?? 1);
 
 /**
  * Whether an ingredient is made by default: only when a recipe for it is known and there is no
