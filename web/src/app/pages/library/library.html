@@ -1,0 +1,79 @@
+@let l = lang.lang();
+<a routerLink="/" class="link back"><app-icon name="chevron-left" /> {{ 'library.back' | transloco }}</a>
+
+<section class="library" id="library" aria-labelledby="library-title">
+  <h1 id="library-title">{{ 'library.title' | transloco }}</h1>
+
+  <nav class="filters" [attr.aria-label]="'home.filterLabel' | transloco">
+    <a class="chip" routerLink="/games" [attr.aria-current]="filtered() ? null : 'true'">{{ 'home.filterAll' | transloco }}</a>
+    @for (t of gameFeatures; track t) {
+      <a class="chip" routerLink="/games" [queryParams]="{ t: featureFilter() === t ? null : t, f: filter()?.id ?? null }"
+        [attr.aria-current]="featureFilter() === t ? 'true' : null">
+        {{ 'feature.' + t | transloco }}
+      </a>
+    }
+    <span class="divider" aria-hidden="true"></span>
+    @for (f of franchises(); track f.id) {
+      <a class="chip" routerLink="/games" [queryParams]="{ f: filter()?.id === f.id ? null : f.id, t: featureFilter() }" [attr.aria-current]="filter()?.id === f.id ? 'true' : null">
+        {{ f.name | localize: l }}
+      </a>
+    }
+  </nav>
+
+  @for (franchise of shown(); track franchise.id) {
+    <section class="franchise" [attr.aria-labelledby]="'franchise-' + franchise.id">
+      <header class="franchise-head">
+        <h3 [id]="'franchise-' + franchise.id">{{ franchise.name | localize: l }}</h3>
+        @if (!filter() && franchise.games.length > 0) {
+          <a class="see-all" routerLink="/games" [queryParams]="{ f: franchise.id, t: featureFilter() }">
+            {{ 'home.seeAll' | transloco }} <app-icon name="chevron-right" />
+          </a>
+        }
+      </header>
+      @if (filter() && franchise.description) {
+        <p class="muted small">{{ franchise.description | localize: l }}</p>
+      }
+      @if (franchise.games.length === 0) {
+        <p class="card soon-series muted small">{{ 'home.franchiseSoon' | transloco }}</p>
+      } @else if (filter()) {
+        <ul class="grid">
+          @for (g of franchise.games; track g.id) {
+            <li><app-game-card [game]="g" /></li>
+          }
+        </ul>
+      } @else {
+        <div class="row-wrap">
+          @if (hints.canBack()) {
+            <button type="button" class="arrow prev" [attr.aria-label]="'home.scrollBack' | transloco" (click)="hints.scroll(-1)">
+              <app-icon name="chevron-left" />
+            </button>
+          }
+          <ul class="row" appScrollHints #hints="scrollHints">
+            @for (g of franchise.games; track g.id) {
+              <li><app-game-card [game]="g" /></li>
+            }
+          </ul>
+          @if (hints.canForward()) {
+            <button type="button" class="arrow next" [attr.aria-label]="'home.scrollForward' | transloco" (click)="hints.scroll(1)">
+              <app-icon name="chevron-right" />
+            </button>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  @if (!filtered()) {
+    <div class="card soon">
+      <app-icon name="sparkles" />
+      <div>
+        <strong>{{ 'home.moreSoonTitle' | transloco }}</strong>
+        <p class="muted small">{{ 'home.moreSoonText' | transloco }}</p>
+        @if (suggestUrl) {
+          <a [href]="suggestUrl" rel="noopener" target="_blank">{{ 'home.suggest' | transloco }}</a>
+        }
+      </div>
+    </div>
+  }
+</section>
+

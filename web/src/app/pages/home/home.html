@@ -13,85 +13,152 @@
   <p class="card top-status rise" role="status" [class.error]="s.kind === 'error'">{{ s.key | transloco: { count: s.count } }}</p>
 }
 
-<!-- First visit only: returning players go straight to their games. -->
 @if (!hasProgress()) {
   <section class="intro rise">
     <p class="eyebrow">{{ 'home.eyebrow' | transloco }}</p>
     <h1>{{ 'home.title' | transloco }}</h1>
     <p class="muted lead">{{ 'home.promise' | transloco }}</p>
-    <ol class="steps" [attr.aria-label]="'home.stepsLabel' | transloco">
-      <li><span class="step-n" aria-hidden="true">1</span> {{ 'home.step1' | transloco }}</li>
-      <li><span class="step-n" aria-hidden="true">2</span> {{ 'home.step2' | transloco }}</li>
-      <li><span class="step-n" aria-hidden="true">3</span> {{ 'home.step3' | transloco }}</li>
-    </ol>
-    <p class="muted small local-note"><app-icon name="download" /> {{ 'home.localNote' | transloco }}</p>
   </section>
 } @else {
   <h1 class="visually-hidden">{{ 'home.yourGames' | transloco }}</h1>
 }
 
-@if (recent.hasValue()) {
-  @let r = recent.value();
-  @let rc = cover(r.gameId);
-  <section class="card journey rise" aria-labelledby="journey-title">
-    <app-game-cover class="cover" [cover]="rc.style" [text]="rc.text" />
-    <p class="eyebrow">{{ 'home.continueFrom' | transloco }}</p>
-    <h2 id="journey-title" class="visually-hidden">{{ r.game.name | localize: l }}</h2>
-    <p class="muted chapter">{{ r.summary.neutralLabel | localize: l }}</p>
-    <div class="progress" role="progressbar" [attr.aria-valuenow]="r.stats.done" aria-valuemin="0" [attr.aria-valuemax]="r.stats.total"
-      [attr.aria-label]="'checklist.progress' | transloco: { done: r.stats.done, total: r.stats.total }">
-      <span [style.width.%]="r.percent"></span>
-    </div>
-    <p class="muted small">{{ 'checklist.progress' | transloco: { done: r.stats.done, total: r.stats.total } }}</p>
-    @if (r.alert; as a) {
-      <p class="next">
-        <app-icon name="triangle-alert" />
-        {{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}
-      </p>
-    }
-    @if (r.picking) {
-      <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters']">
-        {{ k('home.pickChapter', r.gameId) | transloco }}
-        <app-icon name="chevron-right" />
-      </a>
-    } @else if (r.features.includes('checklist')) {
-      <a class="button primary block" [routerLink]="['/', r.gameId, 'chapters', r.summary.id]">
-        {{ 'home.continue' | transloco: { chapter: r.summary.neutralLabel | localize: l } }}
-        <app-icon name="chevron-right" />
-      </a>
-    } @else {
-      <a class="button primary block" [routerLink]="['/', r.gameId, 'compendium']">
-        {{ 'compendium.open' | transloco }}
-        <app-icon name="chevron-right" />
-      </a>
-    }
-    <div class="secondary">
-      <a class="button" [routerLink]="['/', r.gameId, 'chapters']"><app-icon name="compass" /> {{ k('home.whereAmI', r.gameId) | transloco }}</a>
-      @if (r.features.includes('compendium') && r.features.includes('checklist')) {
-        <a class="button" [routerLink]="['/', r.gameId, 'compendium']"><app-icon name="book-open" /> {{ 'compendium.title' | transloco }}</a>
-      }
-      @if (r.hasCollections) {
-        <a class="button" [routerLink]="['/', r.gameId, 'collections']"><app-icon name="book-open" /> {{ 'collections.short' | transloco }}</a>
-      }
-      @if (r.hasDeadlines) {
-        <a class="button" [routerLink]="['/', r.gameId, 'deadlines']"><app-icon name="hourglass" /> {{ 'deadlines.link' | transloco }}</a>
-      }
-    </div>
-  </section>
-}
+<div class="field search rise" role="search">
+  <app-icon name="search" />
+  <input type="search" [value]="query()" (input)="setQuery($any($event.target).value)" enterkeyhint="search"
+    [attr.aria-label]="'home.searchLabel' | transloco" [placeholder]="'home.searchPlaceholder' | transloco" />
+</div>
 
-@if (others.hasValue() && others.value().length > 0) {
-  <section class="mine" aria-labelledby="mine-title">
-    <h2 id="mine-title">{{ 'home.otherGames' | transloco }}</h2>
-    <ul class="mine-list">
-      @for (o of others.value(); track o.gameId) {
-        @let oc = cover(o.gameId);
+@if (searching()) {
+  <section class="results" aria-labelledby="results-title">
+    <h2 id="results-title" class="visually-hidden">{{ 'home.results' | transloco }}</h2>
+    @if (gameHits().length > 0) {
+      <div class="result-group">
+        <h3>{{ 'home.resultGames' | transloco }}</h3>
+        <ul class="hit-list">
+          @for (g of gameHits(); track g.id) {
+            @let gc = saved.cover(g.id);
+            <li>
+              <a class="hit game-hit" [routerLink]="saved.link(g.id)">
+                <app-game-cover class="thumb" [cover]="gc.style" [text]="gc.text" />
+                <span class="hit-body">
+                  <span class="hit-name">{{ g.name | localize: l }}</span>
+                  <span class="muted small">{{ (saved.started(g.id) ? 'home.resume' : 'home.start') | transloco }}</span>
+                </span>
+                <app-icon name="chevron-right" />
+              </a>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+    @for (r of contentHits(); track r.gameId) {
+      @let names = this.names().get(r.gameId);
+      <div class="result-group" role="group" [attr.aria-label]="r.game.name | localize: l">
+        <h3>{{ r.game.name | localize: l }} <span class="count">{{ r.total }}</span></h3>
+        <ul class="hit-list">
+          @for (h of r.items; track h.item.id) {
+            <li>
+              <a class="hit" [routerLink]="['/', r.gameId, 'items', h.item.id]">
+                <span class="hit-body">
+                  <span class="hit-name">{{ h.item.name | localize: l }}</span>
+                  <span class="muted small">{{ 'type.label.' + h.item.type | transloco }} · {{ h.chapter.neutralLabel | localize: l }}</span>
+                </span>
+                <app-icon name="chevron-right" />
+              </a>
+            </li>
+          }
+          @for (e of r.entries; track e.entry.id) {
+            <li>
+              <a class="hit" [routerLink]="['/', r.gameId, 'entries', e.entry.id]">
+                <span class="hit-body">
+                  <span class="hit-name">{{ e.entry.name | gameName: e.entry.id : names : l }}</span>
+                  <span class="muted small">{{ (e.entry.gear ? 'compendium.slot.' + e.entry.gear.slot : 'compendium.category.' + e.entry.category) | transloco }}</span>
+                </span>
+                <app-icon name="chevron-right" />
+              </a>
+            </li>
+          }
+          @for (c of r.creatures; track c.creature.id) {
+            <li>
+              <a class="hit" [routerLink]="['/', r.gameId, 'creatures', c.creature.id]">
+                <span class="hit-body">
+                  <span class="hit-name">{{ c.creature.name | gameName: c.creature.id : names : l }}</span>
+                  <span class="muted small">{{ 'compendium.creature' | transloco }}</span>
+                </span>
+                <app-icon name="chevron-right" />
+              </a>
+            </li>
+          }
+          @for (v of r.villagers; track v.id) {
+            <li>
+              <a class="hit" [routerLink]="['/', r.gameId, 'compendium']" [queryParams]="{ tab: 'villagers' }">
+                <span class="hit-body">
+                  <span class="hit-name">{{ v.name | localize: l }}</span>
+                  <span class="muted small">{{ 'home.villager' | transloco }}</span>
+                </span>
+                <app-icon name="chevron-right" />
+              </a>
+            </li>
+          }
+          @for (h of r.related; track h.item.id) {
+            <li>
+              <a class="hit" [routerLink]="['/', r.gameId, 'items', h.item.id]">
+                <span class="hit-body">
+                  <span class="hit-name">{{ h.item.name | localize: l }}</span>
+                  <span class="muted small">{{ 'type.label.' + h.item.type | transloco }} · {{ h.chapter.neutralLabel | localize: l }}</span>
+                </span>
+                <app-icon name="chevron-right" />
+              </a>
+            </li>
+          }
+        </ul>
+        @if (r.total > r.items.length + r.related.length + r.entries.length + r.creatures.length + r.villagers.length) {
+          <a class="see-more" [routerLink]="['/', r.gameId, r.entries.length ? 'compendium' : 'search']" [queryParams]="{ q: query() }">
+            {{ 'home.seeAllIn' | transloco: { game: (r.game.name | localize: l) } }} <app-icon name="chevron-right" />
+          </a>
+        }
+      </div>
+    }
+    @if (loadingContent()) {
+      <p class="muted small" aria-busy="true">{{ 'home.searchingGames' | transloco }}</p>
+    } @else if (nothingFound()) {
+      <p class="muted">{{ 'home.noResults' | transloco: { query: query() } }}</p>
+    }
+    @if (hasProgress()) {
+      <p class="muted small">{{ 'home.searchScope' | transloco }}</p>
+    }
+  </section>
+} @else if (hasProgress()) {
+  <section class="continue" aria-labelledby="continue-title">
+    <h2 id="continue-title">{{ 'home.continueTitle' | transloco }}</h2>
+    <ul class="continue-list">
+      @for (c of continuing.value() ?? []; track c.gameId) {
+        @let cc = saved.cover(c.gameId);
         <li>
-          <a class="mine-row" [routerLink]="gameLink(o.gameId)">
-            <app-game-cover class="thumb" [cover]="oc.style" [text]="oc.text" />
-            <span class="mine-body">
-              <span class="mine-name">{{ o.game.name | localize: l }}</span>
-              <span class="muted small">{{ o.chapter.neutralLabel | localize: l }} · {{ 'home.doneCount' | transloco: { count: doneCount(o.gameId) } }}</span>
+          <a class="card continue-card" [routerLink]="saved.link(c.gameId)">
+            <app-game-cover class="thumb" [cover]="cc.style" [text]="cc.text" />
+            <span class="continue-body">
+              <span class="continue-name">{{ c.game.name | localize: l }}</span>
+              <span class="muted small">
+                @if (c.picking) {
+                  {{ saved.k('home.pickChapter', c.gameId) | transloco }}
+                } @else {
+                  {{ c.summary.neutralLabel | localize: l }} · {{ 'home.doneCount' | transloco: { count: saved.doneCount(c.gameId) } }}
+                }
+              </span>
+              @if (!c.picking && c.stats.total > 0) {
+                <span class="progress" role="progressbar" [attr.aria-valuenow]="c.stats.done" aria-valuemin="0" [attr.aria-valuemax]="c.stats.total"
+                  [attr.aria-label]="'checklist.progress' | transloco: { done: c.stats.done, total: c.stats.total }">
+                  <span [style.width.%]="c.percent"></span>
+                </span>
+              }
+              @if (c.alert; as a) {
+                <span class="next small">
+                  <app-icon name="triangle-alert" />
+                  {{ 'checklist.alert' | transloco: { checkpoint: a.checkpoint.neutralDescription | localize: l, count: a.pending } }}
+                </span>
+              }
             </span>
             <app-icon name="chevron-right" />
           </a>
@@ -99,105 +166,24 @@
       }
     </ul>
   </section>
+} @else {
+  <section class="pick" aria-labelledby="pick-title">
+    <h2 id="pick-title">{{ 'home.pickGame' | transloco }}</h2>
+    <ol class="steps" [attr.aria-label]="'home.stepsLabel' | transloco">
+      <li><span class="step-n" aria-hidden="true">1</span> {{ 'home.step1' | transloco }}</li>
+      <li><span class="step-n" aria-hidden="true">2</span> {{ 'home.step2' | transloco }}</li>
+      <li><span class="step-n" aria-hidden="true">3</span> {{ 'home.step3' | transloco }}</li>
+    </ol>
+    <ul class="grid">
+      @for (g of allGames(); track g.id) {
+        <li><app-game-card [game]="g" /></li>
+      }
+    </ul>
+    <p class="muted small local-note"><app-icon name="download" /> {{ 'home.localNote' | transloco }}</p>
+  </section>
 }
 
-<section class="library" id="library" aria-labelledby="library-title">
-  <h2 id="library-title">{{ 'home.library' | transloco }}</h2>
-
-  <nav class="filters" [attr.aria-label]="'home.filterLabel' | transloco">
-    <a class="chip" routerLink="/" fragment="library" [attr.aria-current]="filtered() ? null : 'true'">{{ 'home.filterAll' | transloco }}</a>
-    @for (t of gameFeatures; track t) {
-      <a class="chip" routerLink="/" [queryParams]="{ t: featureFilter() === t ? null : t, f: filter()?.id ?? null }" fragment="library"
-        [attr.aria-current]="featureFilter() === t ? 'true' : null">
-        {{ 'feature.' + t | transloco }}
-      </a>
-    }
-    <span class="divider" aria-hidden="true"></span>
-    @for (f of franchises(); track f.id) {
-      <a class="chip" routerLink="/" [queryParams]="{ f: filter()?.id === f.id ? null : f.id, t: featureFilter() }" fragment="library" [attr.aria-current]="filter()?.id === f.id ? 'true' : null">
-        {{ f.name | localize: l }}
-      </a>
-    }
-  </nav>
-
-  @for (franchise of shown(); track franchise.id) {
-    <section class="franchise" [attr.aria-labelledby]="'franchise-' + franchise.id">
-      <header class="franchise-head">
-        <h3 [id]="'franchise-' + franchise.id">{{ franchise.name | localize: l }}</h3>
-        @if (!filter() && franchise.games.length > 0) {
-          <a class="see-all" routerLink="/" [queryParams]="{ f: franchise.id, t: featureFilter() }" fragment="library">
-            {{ 'home.seeAll' | transloco }} <app-icon name="chevron-right" />
-          </a>
-        }
-      </header>
-      @if (filter() && franchise.description) {
-        <p class="muted small">{{ franchise.description | localize: l }}</p>
-      }
-      @if (franchise.games.length === 0) {
-        <p class="card soon-series muted small">{{ 'home.franchiseSoon' | transloco }}</p>
-      } @else if (filter()) {
-        <ul class="grid">
-          @for (g of franchise.games; track g.id) {
-            <li><ng-container *ngTemplateOutlet="gameCard; context: { $implicit: g }" /></li>
-          }
-        </ul>
-      } @else {
-        <div class="row-wrap">
-          @if (hints.canBack()) {
-            <button type="button" class="arrow prev" [attr.aria-label]="'home.scrollBack' | transloco" (click)="hints.scroll(-1)">
-              <app-icon name="chevron-left" />
-            </button>
-          }
-          <ul class="row" appScrollHints #hints="scrollHints">
-            @for (g of franchise.games; track g.id) {
-              <li><ng-container *ngTemplateOutlet="gameCard; context: { $implicit: g }" /></li>
-            }
-          </ul>
-          @if (hints.canForward()) {
-            <button type="button" class="arrow next" [attr.aria-label]="'home.scrollForward' | transloco" (click)="hints.scroll(1)">
-              <app-icon name="chevron-right" />
-            </button>
-          }
-        </div>
-      }
-    </section>
-  }
-
-  @if (!filtered()) {
-    <div class="card soon">
-      <app-icon name="sparkles" />
-      <div>
-        <strong>{{ 'home.moreSoonTitle' | transloco }}</strong>
-        <p class="muted small">{{ 'home.moreSoonText' | transloco }}</p>
-        @if (suggestUrl) {
-          <a [href]="suggestUrl" rel="noopener" target="_blank">{{ 'home.suggest' | transloco }}</a>
-        }
-      </div>
-    </div>
-  }
-</section>
-
-<a class="backup-link" routerLink="/backup"><app-icon name="upload" /> {{ 'home.backupLink' | transloco }} <app-icon name="chevron-right" /></a>
-
-<ng-template #gameCard let-g>
-  @let gc = cover(g.id);
-  <a class="card game" [routerLink]="gameLink(g.id)">
-    <app-game-cover class="cover" [cover]="gc.style" [text]="gc.text" />
-    <span class="game-body">
-      <span class="visually-hidden">{{ g.name | localize: l }}</span>
-      <span class="features">
-        @for (t of features(g.id); track t) {
-          <span class="feature" [attr.data-feature]="t">{{ 'feature.' + t | transloco }}</span>
-        }
-      </span>
-      <span class="muted small">{{ k('home.counts', g.id) | transloco: { chapters: g.chapterCount, items: g.itemCount } }}</span>
-      @if (started(g.id)) {
-        <span class="badge">{{ 'home.inProgress' | transloco: { count: doneCount(g.id) } }}</span>
-      }
-    </span>
-    <span class="game-action">
-      {{ (started(g.id) ? 'home.resume' : 'home.start') | transloco }}
-      <app-icon name="chevron-right" />
-    </span>
-  </a>
-</ng-template>
+<nav class="more" [attr.aria-label]="'home.moreNav' | transloco">
+  <a class="more-link" routerLink="/games"><app-icon name="book-open" /> {{ 'home.allGames' | transloco: { count: allGames().length } }} <app-icon name="chevron-right" /></a>
+  <a class="more-link" routerLink="/backup"><app-icon name="upload" /> {{ 'home.backupLink' | transloco }} <app-icon name="chevron-right" /></a>
+</nav>

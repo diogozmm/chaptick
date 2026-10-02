@@ -47,7 +47,20 @@
     "step2": "Diga em que capítulo você está",
     "step3": "Marque o que já fez; o que vem depois fica escondido",
     "localNote": "Sem conta: o progresso fica salvo neste aparelho.",
-    "pickChapter": "Escolha o capítulo em que você está"
+    "pickChapter": "Escolha o capítulo em que você está",
+    "searchLabel": "Buscar jogos e o conteúdo dos seus jogos",
+    "searchPlaceholder": "Jogo, item, tarefa…",
+    "results": "Resultados da busca",
+    "resultGames": "Jogos",
+    "villager": "Morador",
+    "seeAllIn": "Ver tudo em {{game}}",
+    "searchingGames": "Procurando nos seus jogos…",
+    "noResults": "Nada encontrado para \"{{query}}\".",
+    "searchScope": "Só nos jogos que você começou, e só até onde você está.",
+    "continueTitle": "Continuar",
+    "pickGame": "Escolha um jogo",
+    "allGames": "Todos os jogos ({{count}})",
+    "moreNav": "Mais"
   },
   "where": {
     "title": "Onde estou?",
@@ -501,5 +514,9 @@
     "day": "Dia {{day}}",
     "inDays": "em {{count}} dia(s)",
     "weekly": "Toda semana"
+  },
+  "library": {
+    "title": "Todos os jogos",
+    "back": "Início"
   }
 }

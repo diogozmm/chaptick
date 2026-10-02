@@ -1,24 +1,21 @@
-import { ChangeDetectionStrategy, Component, computed, inject, resource, signal } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
-import { NgTemplateOutlet } from '@angular/common';
-import { ActivatedRoute, RouterLink } from '@angular/router';
-import { map } from 'rxjs';
+import { ChangeDetectionStrategy, Component, computed, inject, input, resource, signal } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
+import { CatalogGame, localize } from '../../core/content/content.models';
 import { ContentService } from '../../core/content/content.service';
+import { SavedGames } from '../../core/game/saved-games';
+import { GameNamePipe } from '../../core/i18n/game-name.pipe';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
-import { SavedProgress } from '../../core/progress/progress.models';
 import { ProgressImportError, ProgressStore, needsChapterPick, parseExport } from '../../core/progress/progress.store';
 import { TransferService } from '../../core/progress/transfer.service';
+import { GlobalSearch } from '../../core/search/global-search';
+import { normalize } from '../../core/search/search';
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
-import { SITE } from '../../site.config';
-import { termKey } from '../../core/i18n/terms';
-import { Icon } from '../../ui/icon/icon';
+import { GameCard } from '../../ui/game-card/game-card';
 import { GameCover } from '../../ui/game-cover/game-cover';
-import { ScrollHints } from '../../ui/scroll-hints/scroll-hints';
-import { fallbackCoverText } from '../../core/cover/cover-art';
-import { GameFeature, localize } from '../../core/content/content.models';
+import { Icon } from '../../ui/icon/icon';
 
 type TransferStatus = { kind: 'ok' | 'error'; key: string; count?: number } | null;
 
@@ -28,14 +25,16 @@ interface PendingImport {
   games: string;
 }
 
+const MIN_QUERY = 2;
+
 /**
- * The library. Returning players see their games first (the last one played, then the others);
- * below, every franchise is a row of covers, and a filter (?f=<franchise>) shows one franchise as a
- * grid. Backup and transfer live on their own page; a transfer link still lands here.
+ * Home: one search box for games and for what the player's started games hold (only up to where
+ * they are), then their games to continue. A first visit gets the introduction and every game
+ * instead. The full library, by series, lives at /games.
  */
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, Icon, GameCover, ScrollHints],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, GameNamePipe, Icon, GameCover, GameCard],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.html',
   styleUrl: './home.scss',
@@ -43,121 +42,83 @@ interface PendingImport {
 export class Home {
   protected readonly content = inject(ContentService);
   protected readonly lang = inject(LangService);
+  protected readonly saved = inject(SavedGames);
   private readonly progress = inject(ProgressStore);
   private readonly transfer = inject(TransferService);
-  protected readonly suggestUrl = SITE.repoUrl ? `${SITE.repoUrl}/issues` : '';
+  private readonly router = inject(Router);
+  private readonly globalSearch = inject(GlobalSearch);
 
-  private readonly saved = resource({ loader: () => this.progress.listSaved() });
-  private readonly savedByGame = computed(
-    () => new Map<string, SavedProgress>((this.saved.hasValue() ? this.saved.value() : []).map((p) => [p.gameId, p])),
-  );
-  protected readonly franchises = computed(() => this.content.catalog()?.franchises ?? []);
-  protected readonly hasProgress = computed(() => this.savedByGame().size > 0);
+  /** The search, kept in the URL (?q=) so "back" from a result returns to it. */
+  readonly q = input<string | undefined>();
+  protected readonly query = computed(() => (this.q() ?? '').trim());
+  protected readonly searching = computed(() => this.query().length >= MIN_QUERY);
 
-  /** The franchise filter from ?f=, ignored when it names no franchise. */
-  private readonly filterParam = toSignal(inject(ActivatedRoute).queryParamMap.pipe(map((p) => p.get('f'))));
-  protected readonly filter = computed(() => this.franchises().find((f) => f.id === this.filterParam()) ?? null);
-  /** The feature filter from ?t=: games that include a checklist, or a compendium. */
-  private readonly featureParam = toSignal(inject(ActivatedRoute).queryParamMap.pipe(map((p) => p.get('t'))));
-  protected readonly featureFilter = computed<GameFeature | null>(() => {
-    const t = this.featureParam();
-    return t === 'checklist' || t === 'compendium' ? t : null;
-  });
-  protected readonly gameFeatures: GameFeature[] = ['checklist', 'compendium'];
-  /** Series to show, each with only the games the feature filter lets through; empty ones drop out. */
-  protected readonly shown = computed(() => {
-    const only = this.filter();
-    const feature = this.featureFilter();
-    const series = only ? [only] : this.franchises();
-    if (!feature) return series;
-    return series
-      .map((f) => ({ ...f, games: f.games.filter((g) => (g.features ?? ['checklist']).includes(feature)) }))
-      .filter((f) => f.games.length > 0);
-  });
-  /** Whether any filter is on: series and features each narrow the library. */
-  protected readonly filtered = computed(() => this.filter() !== null || this.featureFilter() !== null);
+  protected readonly allGames = computed<CatalogGame[]>(() => (this.content.catalog()?.franchises ?? []).flatMap((f) => f.games));
+  protected readonly hasProgress = computed(() => this.saved.list().length > 0);
 
-  /** Started games other than the most recent one, newest first, with their current chapter. */
-  protected readonly others = resource({
-    params: () => (this.saved.hasValue() ? this.saved.value() : []).filter((p) => this.content.game(p.gameId)).slice(1),
+  constructor() {
+    this.saved.reload();
+    void this.receiveLink();
+  }
+
+  /** Each started game with where the player is, how far, and the next point of no return. */
+  protected readonly continuing = resource({
+    params: () => this.saved.list(),
     loader: ({ params }) =>
       Promise.all(
         params.map(async (saved) => {
           const manifest = await this.content.loadManifest(saved.gameId);
-          const chapter = manifest.chapters.find((c) => c.id === saved.currentChapter) ?? manifest.chapters[0];
-          return { gameId: saved.gameId, game: this.content.game(saved.gameId)!, chapter };
+          const summary = manifest.chapters.find((c) => c.id === saved.currentChapter) ?? manifest.chapters[0];
+          // The current chapter is unlocked for that game by definition, so loading it spoils nothing.
+          const chapter = await this.content.loadChapter(saved.gameId, summary);
+          const done = new Set(saved.doneItems);
+          const stats = chapterProgress(chapter, done);
+          return {
+            gameId: saved.gameId,
+            game: this.content.game(saved.gameId)!,
+            summary,
+            stats,
+            percent: stats.total ? Math.round((stats.done / stats.total) * 100) : 0,
+            alert: nextCheckpointAlert(chapter, done),
+            picking: needsChapterPick(saved),
+          };
         }),
       ),
   });
 
-  /** The most recently played game that is still in the catalog, with its current chapter. */
-  protected readonly recent = resource({
-    params: () => (this.saved.hasValue() ? this.saved.value() : []).find((p) => this.content.game(p.gameId)),
-    loader: async ({ params: saved }) => {
-      const manifest = await this.content.loadManifest(saved.gameId);
-      const summary = manifest.chapters.find((c) => c.id === saved.currentChapter) ?? manifest.chapters[0];
-      // The current chapter is unlocked for that game by definition, so loading it spoils nothing.
-      const chapter = await this.content.loadChapter(saved.gameId, summary);
-      const done = new Set(saved.doneItems);
-      const stats = chapterProgress(chapter, done);
-      return {
-        gameId: saved.gameId,
-        game: this.content.game(saved.gameId)!,
-        summary,
-        stats,
-        percent: stats.total ? Math.round((stats.done / stats.total) * 100) : 0,
-        alert: nextCheckpointAlert(chapter, done),
-        features: manifest.features ?? ['checklist'],
-        hasCollections: !manifest.collections || manifest.collections.fish + manifest.collections.recipes > 0,
-        hasDeadlines: (manifest.deadlines ?? 1) > 0,
-        picking: needsChapterPick(saved),
-      };
-    },
+  /** Games whose name holds every word of the query, in either language. */
+  protected readonly gameHits = computed(() => {
+    const words = normalize(this.query()).split(/\s+/).filter((w) => w);
+    if (!this.searching()) return [];
+    const lang = this.lang.lang();
+    return this.allGames().filter((g) => {
+      const text = normalize(`${localize(g.name, lang)} ${g.name.en}`);
+      return words.every((w) => text.includes(w));
+    });
   });
 
-  /** Ticked items of a saved game (route steps and Rank A marks are not counted twice). */
-  protected doneCount(gameId: string): number {
-    return this.savedByGame().get(gameId)?.doneItems.filter((id) => !id.includes('#')).length ?? 0;
-  }
+  /** Reached content of every started game, loaded once the player starts typing. */
+  private readonly reached = resource({
+    params: () => (this.searching() ? this.saved.list() : undefined),
+    loader: ({ params }) => this.globalSearch.reached(params),
+  });
+  protected readonly loadingContent = computed(() => this.searching() && this.reached.isLoading());
+  protected readonly contentHits = computed(() => {
+    if (!this.searching() || !this.reached.hasValue()) return [];
+    const lang = this.lang.lang();
+    return this.reached.value().map((g) => this.globalSearch.search(g, this.query(), lang)).filter((r) => r.total > 0);
+  });
+  protected readonly nothingFound = computed(
+    () => this.searching() && !this.loadingContent() && this.gameHits().length === 0 && this.contentHits().length === 0,
+  );
+  protected readonly names = computed(() => new Map(this.saved.list().map((p) => [p.gameId, p.preferences.names ?? {}])));
 
-  /** Cover colors come from the franchise; the text from the game, or its name. */
-  protected cover(gameId: string) {
-    const game = this.content.game(gameId);
-    return {
-      style: this.content.franchiseOf(gameId)?.cover,
-      text: game?.cover ?? fallbackCoverText(game ? localize(game.name, 'en') : gameId),
-    };
-  }
-
-  protected started(gameId: string): boolean {
-    return this.savedByGame().has(gameId);
-  }
-
-  /** An i18n key worded for the game's progress term (chapters or areas). */
-  protected k(key: string, gameId: string): string {
-    return termKey(key, this.content.game(gameId)?.progressTerm);
-  }
-
-  protected features(gameId: string): GameFeature[] {
-    return this.content.game(gameId)?.features ?? ['checklist'];
-  }
-
-  /**
-   * A started game resumes at its current chapter (or its compendium, when it has no checklist);
-   * a new one opens "Where am I?" first.
-   */
-  protected gameLink(gameId: string): string[] {
-    const saved = this.savedByGame().get(gameId);
-    if (!saved || needsChapterPick(saved)) return ['/', gameId, 'chapters'];
-    return this.features(gameId).includes('checklist') ? ['/', gameId, 'chapters', saved.currentChapter] : ['/', gameId, 'compendium'];
+  protected setQuery(value: string): void {
+    void this.router.navigate([], { queryParams: { q: value || null }, replaceUrl: true });
   }
 
   protected readonly pendingImport = signal<PendingImport | null>(null);
   protected readonly status = signal<TransferStatus>(null);
-
-  constructor() {
-    void this.receiveLink();
-  }
 
   /** A transfer link opened this page: show what it carries and ask before replacing anything. */
   private async receiveLink(): Promise<void> {

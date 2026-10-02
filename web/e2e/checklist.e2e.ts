@@ -11,7 +11,7 @@ test('reaches a chapter checklist in at most two taps, then resumes in one', asy
   await expect(page.getByRole('heading', { level: 1, name: 'Prologue' })).toBeVisible();
 
   await page.goto('/');
-  await page.getByRole('link', { name: 'Continue: Prologue' }).click();
+  await page.getByRole('region', { name: 'Continue' }).getByRole('link', { name: /E2E Game.*Prologue/ }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Prologue' })).toBeVisible();
 });
 

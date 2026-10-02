@@ -1,0 +1,48 @@
+:host { display: grid; gap: 1rem; }
+.small { font-size: 0.8125rem; }
+.back { font-size: 0.9rem; justify-self: start; margin: -0.5rem 0 -0.5rem -0.1rem; text-decoration: none; }
+.library { display: grid; gap: 1rem; scroll-margin-top: 4.5rem; }
+.library > h1 { font-size: 1.4rem; }
+.filters { display: flex; gap: 0.5rem; overflow-x: auto; margin: 0 -1rem; padding: 0.15rem 1rem; scrollbar-width: none; }
+.filters::-webkit-scrollbar { display: none; }
+.filters .chip { flex: none; text-decoration: none; display: inline-flex; align-items: center; }
+.filters .divider { flex: none; width: 1px; margin: 0.4rem 0.15rem; background: var(--border-strong); }
+.filters .chip[aria-current='true'] { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
+
+.franchise { display: grid; gap: 0.6rem; }
+.franchise-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.franchise h3 { font-size: 1.1rem; }
+.franchise p { margin: 0; }
+.see-all { display: inline-flex; align-items: center; gap: 0.1rem; min-height: 2.75rem; font-size: 0.875rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.see-all app-icon { width: 1rem; height: 1rem; }
+.soon-series { margin: 0; border-style: dashed; background: transparent; box-shadow: none; }
+
+/* A franchise row: covers scroll sideways; the next one peeks in at the edge. */
+.row-wrap { position: relative; }
+.row {
+  list-style: none; margin: 0 -1rem; padding: 0.25rem 1rem 0.5rem; display: grid; grid-auto-flow: column;
+  grid-auto-columns: min(15rem, 70%); gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 1rem;
+  scrollbar-width: none;
+}
+.row::-webkit-scrollbar { display: none; }
+.row > li { scroll-snap-align: start; display: grid; }
+.arrow {
+  display: none; position: absolute; top: 35%; z-index: 1; width: 2.5rem; height: 2.5rem; place-items: center; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); box-shadow: var(--shadow); cursor: pointer;
+}
+.arrow:hover { color: var(--accent); border-color: var(--accent); }
+.arrow.prev { left: -3.25rem; }
+.arrow.next { right: -3.25rem; }
+/* Arrows sit in the side margin, so only on wide screens with a mouse; touch screens swipe. */
+@media (hover: hover) and (pointer: fine) and (min-width: 50rem) {
+  .arrow { display: grid; }
+}
+
+.grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(10rem, 45%), 1fr)); gap: 0.75rem; }
+.grid > li { display: grid; }
+
+
+.soon { display: flex; gap: 0.75rem; align-items: flex-start; border-style: dashed; background: transparent; box-shadow: none; }
+.soon app-icon { color: var(--accent); margin-top: 0.15rem; }
+.soon p { margin: 0.2rem 0 0.4rem; }
+

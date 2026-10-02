@@ -47,7 +47,20 @@
     "step2": "Tell us which chapter you're in",
     "step3": "Tick off what you've done; anything ahead stays hidden",
     "localNote": "No account: progress is saved on this device.",
-    "pickChapter": "Choose the chapter you're in"
+    "pickChapter": "Choose the chapter you're in",
+    "searchLabel": "Search games and your games' content",
+    "searchPlaceholder": "Game, item, task…",
+    "results": "Search results",
+    "resultGames": "Games",
+    "villager": "Villager",
+    "seeAllIn": "See all in {{game}}",
+    "searchingGames": "Looking in your games…",
+    "noResults": "Nothing found for \"{{query}}\".",
+    "searchScope": "Only in games you have started, and only up to where you are.",
+    "continueTitle": "Continue",
+    "pickGame": "Pick a game",
+    "allGames": "All games ({{count}})",
+    "moreNav": "More"
   },
   "where": {
     "title": "Where am I?",
@@ -501,5 +514,9 @@
     "day": "Day {{day}}",
     "inDays": "in {{count}} day(s)",
     "weekly": "Every week"
+  },
+  "library": {
+    "title": "All games",
+    "back": "Home"
   }
 }

@@ -3,15 +3,15 @@ import { expect, test } from '@playwright/test';
 import { expectSaved, pickChapter, trackContent } from './helpers';
 
 test('the library marks and filters games by what they offer', async ({ page }) => {
-  await page.goto('/');
-  const library = page.getByRole('region', { name: 'Library' });
+  await page.goto('/games');
+  const library = page.getByRole('region', { name: 'All games' });
   const card = library.getByRole('link', { name: /Field Game/ });
   await expect(card).toContainText('Checklist');
   await expect(card).toContainText('Compendium');
   await expect(card).toContainText('2 areas · 3 tasks');
 
   await library.getByRole('navigation', { name: 'Filter by series' }).getByRole('link', { name: 'Compendium' }).click();
-  await expect(page).toHaveURL(/\?t=compendium#library$/);
+  await expect(page).toHaveURL(/\/games\?t=compendium$/);
   await expect(library.getByRole('link', { name: /Field Game/ })).toBeVisible();
   await expect(library.getByRole('link', { name: /E2E Game/ })).toHaveCount(0);
 });

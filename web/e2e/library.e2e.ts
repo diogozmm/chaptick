@@ -3,8 +3,8 @@ import { expect, test } from '@playwright/test';
 import { expectSaved, row, trackContent } from './helpers';
 
 test('the library groups games by franchise', async ({ page }) => {
-  await page.goto('/');
-  const library = page.getByRole('region', { name: 'Library' });
+  await page.goto('/games');
+  const library = page.getByRole('region', { name: 'All games' });
   await expect(library.getByRole('heading', { level: 3, name: 'Demo series' })).toBeVisible();
   await expect(library.getByRole('heading', { level: 3, name: 'Second series' })).toBeVisible();
   await expect(library.getByRole('link', { name: /Other Game/ })).toBeVisible();
@@ -24,6 +24,8 @@ test('each game keeps its own progress and content', async ({ page }) => {
   await expect(page.locator('main')).not.toContainText('Book One');
 
   await page.goto('/');
+  await expect(page.getByRole('region', { name: 'Continue' }).getByRole('link', { name: /E2E Game.*Prologue · 1 done/ })).toBeVisible();
+  await page.goto('/games');
   await expect(page.getByRole('link', { name: /E2E Game.*In progress · 1 done.*Continue/ })).toBeVisible();
   expect(fetched.filter((url) => url.startsWith('/content/zz/') && url.includes('sc-'))).toEqual([]);
 });
