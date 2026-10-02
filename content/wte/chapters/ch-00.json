@@ -19039,6 +19039,117 @@
       }
     ]
   },
+  "events": [
+    {
+      "id": "wte-ev-carnival-of-souls",
+      "season": "winter",
+      "days": [
+        27
+      ],
+      "name": {
+        "en": "Carnival of Souls",
+        "pt": "Carnaval das Almas"
+      },
+      "where": {
+        "en": "By the town park",
+        "pt": "Perto do parque da cidade"
+      },
+      "note": {
+        "en": "Fishing game with Jig Lures for the ghostfish, and a snack stand with limited stock.",
+        "pt": "Pescaria com Isca Jig para os peixes-fantasma, e uma barraca de lanches com estoque limitado."
+      },
+      "related": [
+        {
+          "entryId": "wte-big-ghostfish",
+          "name": {
+            "en": "Big Ghostfish",
+            "pt": "Peixe-fantasma Grande"
+          }
+        },
+        {
+          "entryId": "wte-fat-ghostfish",
+          "name": {
+            "en": "Fat Ghostfish",
+            "pt": "Peixe-fantasma Gordo"
+          }
+        },
+        {
+          "entryId": "wte-small-ghostfish",
+          "name": {
+            "en": "Small Ghostfish",
+            "pt": "Peixe-fantasma Pequeno"
+          }
+        },
+        {
+          "entryId": "wte-jig-lure",
+          "name": {
+            "en": "Jig Lure",
+            "pt": "Isca Jig"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wte-ev-witch-decoration-stall",
+      "season": "autumn",
+      "days": [
+        3,
+        10,
+        17,
+        24
+      ],
+      "name": {
+        "en": "Decoration stall",
+        "pt": "Barraca de decoração"
+      },
+      "where": {
+        "en": "Town",
+        "pt": "Cidade"
+      },
+      "note": {
+        "en": "A seasonal decoration selection, only on these days.",
+        "pt": "Decoração da estação, só nesses dias."
+      }
+    },
+    {
+      "id": "wte-ev-travelling-merchant",
+      "weekly": {
+        "en": "Weekends",
+        "pt": "Fins de semana"
+      },
+      "name": {
+        "en": "Travelling Merchant",
+        "pt": "Mercador Viajante"
+      },
+      "where": {
+        "en": "Town Outskirts (West)",
+        "pt": "Arredores da Cidade (Oeste)"
+      },
+      "note": {
+        "en": "Asks for two crops each visit and pays 75% of their value for them.",
+        "pt": "Pede dois cultivos a cada visita e paga 75% do valor deles."
+      }
+    },
+    {
+      "id": "wte-ev-saloon-menu",
+      "weekly": {
+        "en": "Mondays",
+        "pt": "Segundas"
+      },
+      "name": {
+        "en": "Saloon menu changes",
+        "pt": "Cardápio novo no Saloon"
+      },
+      "where": {
+        "en": "Elderfield Saloon",
+        "pt": "Saloon de Elderfield"
+      },
+      "note": {
+        "en": "The food selection changes, and recipe books may be stocked.",
+        "pt": "Os pratos mudam, e às vezes há livros de receitas."
+      }
+    }
+  ],
   "crafts": [
     {
       "id": "wte-craft-grinder",

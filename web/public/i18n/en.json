@@ -485,5 +485,19 @@
     "ours": "Our name: {{name}}",
     "edit": "Edit",
     "send": "Help fix it for everyone:"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "dayLabel": "Day of the season",
+    "prev": "Previous day",
+    "next": "Next day",
+    "clear": "I don't know",
+    "today": "Today, day {{day}}",
+    "nothingToday": "No events today.",
+    "later": "Later this season",
+    "thisSeason": "This season",
+    "day": "Day {{day}}",
+    "inDays": "in {{count}} day(s)",
+    "weekly": "Every week"
   }
 }

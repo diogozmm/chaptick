@@ -357,5 +357,56 @@
         }
       }
     ]
-  }
+  },
+  "events": [
+    {
+      "id": "cc-ev-contest",
+      "name": {
+        "en": "Fishing Contest"
+      },
+      "where": {
+        "en": "Pond"
+      },
+      "days": [
+        7,
+        21
+      ],
+      "note": {
+        "en": "Bring worms."
+      },
+      "related": [
+        {
+          "entryId": "cc-glow-fish",
+          "name": {
+            "en": "Glow Fish"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-ev-carnival",
+      "name": {
+        "en": "Carnival"
+      },
+      "where": {
+        "en": "Park"
+      },
+      "season": "winter",
+      "days": [
+        27
+      ]
+    },
+    {
+      "id": "cc-ev-merchant",
+      "name": {
+        "en": "Merchant"
+      },
+      "where": {
+        "en": "Road"
+      },
+      "weekly": {
+        "en": "Weekends"
+      }
+    }
+  ]
 }

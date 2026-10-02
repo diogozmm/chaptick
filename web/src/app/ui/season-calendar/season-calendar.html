@@ -1,0 +1,73 @@
+@if (calendarNow(); as cal) {
+  <section class="group calendar" aria-labelledby="cal-title">
+    <h2 id="cal-title">{{ 'calendar.title' | transloco }}</h2>
+    <div class="day-pick" role="group" [attr.aria-label]="'calendar.dayLabel' | transloco">
+      <span class="muted small">{{ 'calendar.dayLabel' | transloco }}</span>
+      <button type="button" class="step" (click)="setDay((day() ?? 2) - 1)" [disabled]="day() === 1" [attr.aria-label]="'calendar.prev' | transloco">−</button>
+      <span class="day-value" aria-live="polite">{{ day() ?? '—' }}</span>
+      <button type="button" class="step" (click)="setDay((day() ?? 0) + 1)" [disabled]="day() === maxDay" [attr.aria-label]="'calendar.next' | transloco">+</button>
+      @if (day()) {
+        <button type="button" class="link small" (click)="setDay(null)">{{ 'calendar.clear' | transloco }}</button>
+      }
+    </div>
+    @if (day()) {
+      <div class="card today" [class.empty-day]="cal.today.length === 0">
+        <p class="eyebrow">{{ 'calendar.today' | transloco: { day: day() } }}</p>
+        @for (e of cal.today; track e.id) {
+          <ng-container *ngTemplateOutlet="eventTpl; context: { $implicit: e }" />
+        } @empty {
+          <p class="muted small">{{ 'calendar.nothingToday' | transloco }}</p>
+        }
+      </div>
+    }
+    @if (cal.upcoming.length > 0) {
+      <h3 class="sub">{{ (day() ? 'calendar.later' : 'calendar.thisSeason') | transloco }}</h3>
+      <ul class="list">
+        @for (u of cal.upcoming; track u.event.id + u.day) {
+          <li class="card event-row">
+            <p class="event-day">
+              {{ 'calendar.day' | transloco: { day: u.day } }}
+              @if (day()) {
+                <span class="muted"> · {{ 'calendar.inDays' | transloco: { count: u.day - day()! } }}</span>
+              }
+            </p>
+            <ng-container *ngTemplateOutlet="eventTpl; context: { $implicit: u.event }" />
+          </li>
+        }
+      </ul>
+    }
+    @if (cal.weekly.length > 0) {
+      <h3 class="sub">{{ 'calendar.weekly' | transloco }}</h3>
+      <ul class="list">
+        @for (e of cal.weekly; track e.id) {
+          <li class="card event-row">
+            <p class="event-day">{{ e.weekly! | localize: lang.lang() }}</p>
+            <ng-container *ngTemplateOutlet="eventTpl; context: { $implicit: e }" />
+          </li>
+        }
+      </ul>
+    }
+  </section>
+}
+
+<ng-template #eventTpl let-e>
+  <div class="event">
+    <p class="event-name">{{ e.name | localize: lang.lang() }} <span class="muted">· {{ e.where | localize: lang.lang() }}</span></p>
+    @if (e.note) {
+      <p class="muted small">{{ e.note | localize: lang.lang() }}</p>
+    }
+    @if (e.related?.length) {
+      <ul class="gift-list">
+        @for (g of e.related; track $index) {
+          <li>
+            @if (g.entryId) {
+              <a [routerLink]="game.link('entries', g.entryId)">{{ g.name | localize: lang.lang() }}</a>
+            } @else {
+              <span>{{ g.name | localize: lang.lang() }}</span>
+            }
+          </li>
+        }
+      </ul>
+    }
+  </div>
+</ng-template>

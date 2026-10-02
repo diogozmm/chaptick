@@ -207,6 +207,10 @@
       </div>
     </div>
 
+    @if (season(); as current) {
+      <app-season-calendar [events]="events()" [season]="current" />
+    }
+
     @if (seasonNow(); as v) {
       @if (v.plant.length > 0) {
         <section class="group" aria-labelledby="plant-title">

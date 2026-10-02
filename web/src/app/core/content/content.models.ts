@@ -261,6 +261,20 @@ export interface Villager {
   commonOnly?: true;
 }
 
+/** A dated (by season and day) or weekly event. */
+export interface GameEvent {
+  id: string;
+  name: Localized;
+  where: Localized;
+  note?: Localized;
+  /** Missing: every season. */
+  season?: Season;
+  days?: number[];
+  /** For weekly events: which days of the week. */
+  weekly?: Localized;
+  related?: RewardItem[];
+}
+
 export interface Chapter {
   id: string;
   gameId: string;
@@ -280,6 +294,7 @@ export interface Chapter {
   villagers?: Villager[];
   /** Gifts most villagers like (+5) or find neutral (+3); personal tastes override them. */
   commonGifts?: { likes?: RewardItem[]; neutral?: RewardItem[] };
+  events?: GameEvent[];
 }
 
 export const localize = (text: Localized, lang: Lang): string => (lang === 'pt' ? text.pt : undefined) ?? text.en;

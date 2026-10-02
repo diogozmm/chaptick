@@ -16,6 +16,7 @@ import { normalize } from '../../core/search/search';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { Icon } from '../../ui/icon/icon';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
+import { SeasonCalendar } from '../../ui/season-calendar/season-calendar';
 
 type Tab = 'items' | 'crafts' | 'creatures' | 'season' | 'villagers';
 const TABS: Tab[] = ['items', 'crafts', 'creatures', 'season', 'villagers'];
@@ -29,7 +30,7 @@ const MAX_LIST = 80;
  */
 @Component({
   selector: 'app-compendium',
-  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, OriginalPipe, GameNamePipe, Icon, SpoilerReveal],
+  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, OriginalPipe, GameNamePipe, Icon, SpoilerReveal, SeasonCalendar],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './compendium.html',
   styleUrl: './compendium.scss',
@@ -79,6 +80,8 @@ export class Compendium {
   protected seasonNames(seasons: Season[]): string {
     return seasons.map((s) => this.transloco.translate(`compendium.seasonShort.${s}`)).join(', ');
   }
+
+  protected readonly events = computed(() => this.index().events);
 
   protected setSeason(season: Season): void {
     void this.progress.setPreferences({ season });

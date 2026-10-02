@@ -485,5 +485,19 @@
     "ours": "Nosso nome: {{name}}",
     "edit": "Editar",
     "send": "Ajude a corrigir para todos:"
+  },
+  "calendar": {
+    "title": "Calendário",
+    "dayLabel": "Dia da estação",
+    "prev": "Dia anterior",
+    "next": "Próximo dia",
+    "clear": "Não sei",
+    "today": "Hoje, dia {{day}}",
+    "nothingToday": "Nenhum evento hoje.",
+    "later": "Ainda nesta estação",
+    "thisSeason": "Nesta estação",
+    "day": "Dia {{day}}",
+    "inDays": "em {{count}} dia(s)",
+    "weekly": "Toda semana"
   }
 }

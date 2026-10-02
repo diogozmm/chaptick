@@ -3692,6 +3692,27 @@
       }
     }
   ],
+  "events": [
+    {
+      "id": "wte-ev-garbage-shop-restock",
+      "weekly": {
+        "en": "Mondays and Thursdays",
+        "pt": "Segundas e quintas"
+      },
+      "name": {
+        "en": "Garbage Shop restock",
+        "pt": "Novo estoque da Loja do Lixo"
+      },
+      "where": {
+        "en": "Sewers F1",
+        "pt": "Esgotos 1º andar"
+      },
+      "note": {
+        "en": "The selection rotates: listed items are possible, not guaranteed.",
+        "pt": "O estoque gira: os itens listados são possíveis, não garantidos."
+      }
+    }
+  ],
   "crafts": [
     {
       "id": "wte-craft-prep-table",

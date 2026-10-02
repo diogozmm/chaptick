@@ -1,5 +1,6 @@
 import {
-  Chapter, Craft, Creature, Entry, EntryCategory, GIFT_REACTIONS, GiftReaction, Lang, RewardItem, Source, Villager, localize,
+  Chapter, Craft, Creature, Entry, EntryCategory, GameEvent, GIFT_REACTIONS, GiftReaction, Lang, RewardItem, Source, Villager,
+  localize,
 } from '../content/content.models';
 import { normalize } from '../search/search';
 
@@ -45,6 +46,7 @@ export interface CompendiumIndex {
   commonGifts: { likes: RewardItem[]; neutral: RewardItem[] };
   /** The common reaction to an entry, when it is on a common list. */
   commonGift: Map<string, 'likes' | 'neutral'>;
+  events: GameEvent[];
 }
 
 const push = <K, V>(map: Map<K, V[]>, key: K, value: V): void => {
@@ -62,7 +64,7 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
   const sorted = [...chapters].sort((a, b) => a.order - b.order);
   const index: CompendiumIndex = {
     entries: new Map(), crafts: [], creatures: [], madeBy: new Map(), usedIn: new Map(), givenBy: new Map(),
-    villagers: [], gifts: new Map(), commonGifts: { likes: [], neutral: [] }, commonGift: new Map(),
+    villagers: [], gifts: new Map(), commonGifts: { likes: [], neutral: [] }, commonGift: new Map(), events: [],
   };
   for (const chapter of sorted) {
     for (const entry of chapter.entries ?? []) {
@@ -98,6 +100,7 @@ export function compendiumIndex(chapters: readonly Chapter[]): CompendiumIndex {
       const given = new Set((creature.rewards ?? []).flatMap((r) => r.items).flatMap((i) => (i.entryId ? [i.entryId] : [])));
       for (const entryId of given) push(index.givenBy, entryId, placed);
     }
+    for (const event of chapter.events ?? []) index.events.push({ ...event, related: event.related?.map(link) });
     for (const reaction of ['likes', 'neutral'] as const) {
       for (const gift of (chapter.commonGifts?.[reaction] ?? []).map(link)) {
         index.commonGifts[reaction].push(gift);

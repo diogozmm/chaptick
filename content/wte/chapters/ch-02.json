@@ -8216,6 +8216,50 @@
       }
     }
   ],
+  "events": [
+    {
+      "id": "wte-ev-fishing-contest",
+      "days": [
+        7,
+        21
+      ],
+      "name": {
+        "en": "Fishing Contest",
+        "pt": "Torneio de Pesca"
+      },
+      "where": {
+        "en": "Old Woods Campsite",
+        "pt": "Acampamento do Bosque Antigo"
+      },
+      "note": {
+        "en": "Every season, once the Catacombs are open. Lugworms only work during the contest; finish before judging at 6 PM.",
+        "pt": "Em toda estação, depois de abrir as Catacumbas. A Minhoca-marinha só funciona durante o torneio; termine antes do julgamento, às 18h."
+      },
+      "related": [
+        {
+          "entryId": "wte-ancient-manta",
+          "name": {
+            "en": "Ancient Manta",
+            "pt": "Manta Ancestral"
+          }
+        },
+        {
+          "entryId": "wte-mud-serpent",
+          "name": {
+            "en": "Mud Serpent",
+            "pt": "Serpente da Lama"
+          }
+        },
+        {
+          "entryId": "wte-lugworm",
+          "name": {
+            "en": "Lugworm",
+            "pt": "Minhoca-marinha"
+          }
+        }
+      ]
+    }
+  ],
   "crafts": [
     {
       "id": "wte-craft-kaal-idol",

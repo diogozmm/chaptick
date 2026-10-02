@@ -1,0 +1,28 @@
+
+:host { display: grid; gap: 0.6rem; }
+h2 { font-size: 1.1rem; }
+.small { font-size: 0.8125rem; }
+.list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+.gift-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.gift-list li > * {
+  display: inline-block; padding: 0.15rem 0.5rem; border-radius: 0.35rem; background: var(--accent-soft); color: var(--text);
+  font: 500 0.8125rem/1.5 var(--font-body); text-decoration: none;
+}
+
+.sub { font: 600 0.9rem/1.3 var(--font-body); color: var(--text-muted); margin-top: 0.25rem; }
+.day-pick { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+.step {
+  display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid var(--border-strong);
+  background: var(--surface); color: var(--text); font: 600 1.2rem/1 var(--font-body); cursor: pointer;
+}
+.step:disabled { opacity: 0.4; cursor: default; }
+.day-value { min-width: 1.75rem; text-align: center; font: 600 1.15rem/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.today { display: grid; gap: 0.5rem; border-color: var(--accent); }
+.today.empty-day { border-color: var(--border); }
+.today p { margin: 0; }
+.event-row { display: grid; gap: 0.35rem; padding: 0.75rem 0.875rem; }
+.event-day { margin: 0; font: 600 0.8125rem/1.3 var(--font-body); color: var(--accent); }
+.event { display: grid; gap: 0.3rem; }
+.event p { margin: 0; }
+.event-name { font-weight: 600; }
+.calendar { display: grid; gap: 0.6rem; }

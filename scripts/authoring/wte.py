@@ -889,6 +889,41 @@ def load_processors():
                             'id': f"process-{slug(head)}-{slug(row['Input'])}"})
     return recipes, gems
 
+
+# Dated and weekly events, from the Neoseeker fishing and shops guides (facts, our wording). Each
+# sits in the area where it becomes reachable: the contest needs the Catacombs opened.
+EVENTS = [
+    {'id': 'fishing-contest', 'area': 2, 'days': [7, 21],
+     'name': t('Fishing Contest', 'Torneio de Pesca'),
+     'where': t('Old Woods Campsite', 'Acampamento do Bosque Antigo'),
+     'note': t('Every season, once the Catacombs are open. Lugworms only work during the contest; finish before judging at 6 PM.',
+               'Em toda estação, depois de abrir as Catacumbas. A Minhoca-marinha só funciona durante o torneio; termine antes do julgamento, às 18h.'),
+     'related': ['Ancient Manta', 'Mud Serpent', 'Lugworm']},
+    {'id': 'carnival-of-souls', 'area': 0, 'season': 'winter', 'days': [27],
+     'name': t('Carnival of Souls', 'Carnaval das Almas'),
+     'where': t('By the town park', 'Perto do parque da cidade'),
+     'note': t('Fishing game with Jig Lures for the ghostfish, and a snack stand with limited stock.',
+               'Pescaria com Isca Jig para os peixes-fantasma, e uma barraca de lanches com estoque limitado.'),
+     'related': ['Big Ghostfish', 'Fat Ghostfish', 'Small Ghostfish', 'Jig Lure']},
+    {'id': 'witch-decoration-stall', 'area': 0, 'season': 'autumn', 'days': [3, 10, 17, 24],
+     'name': t('Decoration stall', 'Barraca de decoração'),
+     'where': t('Town', 'Cidade'),
+     'note': t('A seasonal decoration selection, only on these days.', 'Decoração da estação, só nesses dias.')},
+    {'id': 'travelling-merchant', 'area': 0, 'weekly': t('Weekends', 'Fins de semana'),
+     'name': t('Travelling Merchant', 'Mercador Viajante'),
+     'where': t('Town Outskirts (West)', 'Arredores da Cidade (Oeste)'),
+     'note': t('Asks for two crops each visit and pays 75% of their value for them.',
+               'Pede dois cultivos a cada visita e paga 75% do valor deles.')},
+    {'id': 'garbage-shop-restock', 'area': 1, 'weekly': t('Mondays and Thursdays', 'Segundas e quintas'),
+     'name': t('Garbage Shop restock', 'Novo estoque da Loja do Lixo'),
+     'where': t('Sewers F1', 'Esgotos 1º andar'),
+     'note': t('The selection rotates: listed items are possible, not guaranteed.', 'O estoque gira: os itens listados são possíveis, não garantidos.')},
+    {'id': 'saloon-menu', 'area': 0, 'weekly': t('Mondays', 'Segundas'),
+     'name': t('Saloon menu changes', 'Cardápio novo no Saloon'),
+     'where': t('Elderfield Saloon', 'Saloon de Elderfield'),
+     'note': t('The food selection changes, and recipe books may be stocked.', 'Os pratos mudam, e às vezes há livros de receitas.')},
+]
+
 ENEMY_ALIASES = {'Cave Man': 'Caveman', 'Fingerman': 'Fingermen', 'Beckoning Branch (Large)': 'Beckoning Branch',
                  'Beckoning Branch (Small)': 'Beckoning Branch'}
 SHRINE_AREAS = {'Mall': 1, 'Old Woods': 2, 'Catacombs': 2}
@@ -1089,6 +1124,11 @@ def build():
                                                  for g in gifts] for reaction, gifts in load_common_gifts().items()}
         if extra:
             chapter['entrySources'] = extra
+        events = [{k: v for k, v in e.items() if k not in ('area', 'related')} | {'id': f"{G}-ev-{e['id']}"} | (
+            {'related': [{**({'entryId': known_ids[n]} if n in known_ids else {}), 'name': PT.t2(n)} for n in e['related']]}
+            if e.get('related') else {}) for e in EVENTS if e['area'] == order]
+        if events:
+            chapter['events'] = events
         if ch_crafts:
             chapter['crafts'] = ch_crafts
         if ch_creatures:

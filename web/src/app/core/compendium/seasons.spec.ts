@@ -1,6 +1,6 @@
 import { Chapter } from '../content/content.models';
 import { compendiumIndex } from './compendium';
-import { hasSeasons, nextSeason, seasonView } from './seasons';
+import { calendar, hasSeasons, nextSeason, seasonView } from './seasons';
 
 const area = (order: number, extra: Partial<Chapter>): Chapter => ({
   id: `zz-ch${order}`, gameId: 'zz', order, neutralLabel: { en: `Area ${order + 1}` },
@@ -52,5 +52,20 @@ describe('seasons', () => {
     // Last chances come first: the ghost fish is autumn-only, the carp stays into winter.
     expect(seasonView(compendiumIndex([lake, woods]), 'autumn').only.map((e) => e.entry.entry.id)).toEqual(['ghost', 'carp']);
     expect(hasSeasons(compendiumIndex([area(0, { entries: [fish('eel')] })]))).toBe(false);
+  });
+
+  it('lays out a season\'s events around the player\'s day', () => {
+    const contest = { id: 'c', name: { en: 'Contest' }, where: { en: 'Camp' }, days: [7, 21] };
+    const carnival = { id: 'k', name: { en: 'Carnival' }, where: { en: 'Park' }, season: 'winter' as const, days: [27] };
+    const merchant = { id: 'm', name: { en: 'Merchant' }, where: { en: 'Road' }, weekly: { en: 'Weekends' } };
+    const events = [contest, carnival, merchant];
+
+    const autumn = calendar(events, 'autumn', 7);
+    expect(autumn.today.map((e) => e.id)).toEqual(['c']);
+    expect(autumn.upcoming.map((u) => [u.event.id, u.day])).toEqual([['c', 21]]);
+    expect(autumn.weekly.map((e) => e.id)).toEqual(['m']);
+
+    expect(calendar(events, 'winter', null).upcoming.map((u) => [u.event.id, u.day])).toEqual([['c', 7], ['c', 21], ['k', 27]]);
+    expect(calendar(events, 'winter', 22).upcoming.map((u) => u.event.id)).toEqual(['k']);
   });
 });

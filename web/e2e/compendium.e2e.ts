@@ -171,3 +171,23 @@ test('a name that differs in the game replaces ours on this device and can be se
   await page.getByRole('button', { name: 'Back to "Bitter Herb"' }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Bitter Herb' })).toBeVisible();
 });
+
+test('the season calendar shows today, later this season and weekly events', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/compendium?tab=season');
+  await page.getByRole('button', { name: 'Autumn (Witch)' }).click();
+  const cal = page.getByRole('region', { name: 'Calendar' });
+  await expect(cal.getByText('This season')).toBeVisible();
+  await expect(cal).toContainText('Day 7');
+  await expect(cal).not.toContainText('Carnival');
+  await expect(cal).toContainText('Weekends');
+
+  for (let i = 0; i < 7; i++) await cal.getByRole('button', { name: 'Next day' }).click();
+  await expect(cal.getByText('Today, day 7')).toBeVisible();
+  await expect(cal.locator('.today')).toContainText('Fishing Contest');
+  await expect(cal).toContainText('Day 21 · in 14 day(s)');
+  await expect(cal.locator('.today').getByRole('link', { name: 'Glow Fish' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Winter (Death)' }).click();
+  await expect(cal).toContainText('Carnival');
+});

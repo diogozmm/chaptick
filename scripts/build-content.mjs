@@ -28,7 +28,7 @@ const featuresOf = (chapters) => {
   const has = (key) => chapters.some(({ data }) => (data[key] ?? []).length > 0);
   return [
     ...(has('items') ? ['checklist'] : []),
-    ...(['entries', 'crafts', 'creatures', 'villagers'].some(has) ? ['compendium'] : []),
+    ...(['entries', 'crafts', 'creatures', 'villagers', 'events'].some(has) ? ['compendium'] : []),
   ];
 };
 
@@ -74,7 +74,8 @@ for (const { game, chapters } of games) {
       seasonal: sorted.reduce(
         (sum, c) =>
           sum +
-          [...(c.entries ?? []).flatMap((e) => e.sources), ...(c.entrySources ?? [])].filter((s) => s.seasons?.length).length,
+          [...(c.entries ?? []).flatMap((e) => e.sources), ...(c.entrySources ?? [])].filter((s) => s.seasons?.length).length +
+          (c.events ?? []).length,
         0,
       ),
     },

@@ -1,4 +1,4 @@
-import { Season } from '../content/content.models';
+import { GameEvent, Season } from '../content/content.models';
 import { CompendiumIndex, IndexedEntry, PlacedSource } from './compendium';
 
 export const SEASONS: Season[] = ['spring', 'summer', 'autumn', 'winter'];
@@ -35,7 +35,25 @@ export interface SeasonView {
 
 /** Whether a game's reached content says anything about seasons at all. */
 export const hasSeasons = (index: CompendiumIndex): boolean =>
-  [...index.entries.values()].some((e) => e.entry.grow || e.sources.some((s) => s.source.seasons?.length));
+  index.events.length > 0 || [...index.entries.values()].some((e) => e.entry.grow || e.sources.some((s) => s.source.seasons?.length));
+
+export interface Calendar {
+  /** Events on the given day (empty when no day is set). */
+  today: GameEvent[];
+  /** Dated events later this season (or all of them, when no day is set), soonest first. */
+  upcoming: { event: GameEvent; day: number }[];
+  weekly: GameEvent[];
+}
+
+/** What the season holds, around the player's day when they set one. */
+export function calendar(events: readonly GameEvent[], season: Season, day: number | null): Calendar {
+  const dated = events.filter((e) => e.days && (!e.season || e.season === season));
+  const today = day ? dated.filter((e) => e.days!.includes(day)) : [];
+  const upcoming = dated
+    .flatMap((event) => event.days!.filter((d) => !day || d > day).map((d) => ({ event, day: d })))
+    .sort((a, b) => a.day - b.day);
+  return { today, upcoming, weekly: events.filter((e) => e.weekly) };
+}
 
 /**
  * What a season changes, from the reached chapters (or areas) only. An entry counts as seasonal

@@ -10,6 +10,8 @@ export interface Preferences {
   trophiesOnly?: boolean;
   /** The in-game season the player is in, for games whose content depends on it. */
   season?: Season;
+  /** The in-game day of the season, for the calendar. */
+  day?: number;
   /** Names as the player's game shows them, by entry id, when ours differ (e.g. an unofficial translation). */
   names?: Record<string, string>;
 }
