@@ -149,3 +149,25 @@ test('villagers show what they love, and an item shows who likes it as a gift', 
   await page.goto('/cc/compendium?tab=crafts&c=process');
   await expect(page.getByText('2 hours · makes 2')).toBeVisible();
 });
+
+test('a name that differs in the game replaces ours on this device and can be sent in', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/entries/cc-bitter-herb');
+  await page.getByRole('button', { name: 'Different name in your game?' }).click();
+  await page.getByRole('textbox', { name: 'Name as your game shows it' }).fill('Bitterleaf');
+  await page.getByRole('button', { name: 'Use this name' }).click();
+
+  await expect(page.getByRole('heading', { level: 1, name: 'Bitterleaf' })).toBeVisible();
+  await expect(page.getByText('Our name: Bitter Herb')).toBeVisible();
+  const report = page.getByRole('link', { name: 'a GitHub issue' }).or(page.getByRole('link', { name: /GitHub/ }));
+  await expect(report.first()).toHaveAttribute('href', /template=name-correction\.yml.*ingame=Bitterleaf/);
+
+  // Search finds it by the player's name, and lists show it.
+  await page.goto('/cc/compendium?q=bitterleaf');
+  await expect(page.getByRole('link', { name: /Bitterleaf/ })).toBeVisible();
+
+  await page.goto('/cc/entries/cc-bitter-herb');
+  await page.getByRole('button', { name: 'Edit' }).click();
+  await page.getByRole('button', { name: 'Back to "Bitter Herb"' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Bitter Herb' })).toBeVisible();
+});

@@ -128,11 +128,13 @@ export function findEntries(
   query: string,
   lang: Lang,
   category: EntryCategory | null = null,
+  names: Record<string, string> = {},
 ): IndexedEntry[] {
   const words = normalize(query).split(/\s+/).filter((w) => w.length > 0);
   if (words.length === 0 && !category) return [];
-  const name = (e: IndexedEntry) => normalize(localize(e.entry.name, lang));
-  const both = (e: IndexedEntry) => `${name(e)} ${normalize(e.entry.name.en)}`;
+  // The player's own name for it (as their game shows it) counts first, then ours and English.
+  const name = (e: IndexedEntry) => normalize(names[e.entry.id] ?? localize(e.entry.name, lang));
+  const both = (e: IndexedEntry) => `${name(e)} ${normalize(localize(e.entry.name, lang))} ${normalize(e.entry.name.en)}`;
   return [...index.entries.values()]
     .filter((e) => (!category || e.entry.category === category) && words.every((w) => both(e).includes(w)))
     .map((e) => ({ e, starts: words.length > 0 && (name(e).startsWith(words[0]) || normalize(e.entry.name.en).startsWith(words[0])) }))

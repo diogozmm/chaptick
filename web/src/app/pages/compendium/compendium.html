@@ -51,7 +51,7 @@
           <li>
             <a class="row-link" [routerLink]="game.link('entries', e.entry.id)">
               <span class="name">
-                {{ e.entry.name | localize: l }}
+                {{ e.entry.name | gameName: e.entry.id : names() : l }}
                 @if (e.entry.name | original: l; as en) {
                   <span class="en">{{ en }}</span>
                 }
@@ -100,7 +100,7 @@
               </label>
               <div class="body">
                 @if (c.craft.makes) {
-                  <a class="name" [id]="'craft-' + c.craft.id" [routerLink]="game.link('entries', c.craft.makes)">{{ c.craft.name | localize: l }}</a>
+                  <a class="name" [id]="'craft-' + c.craft.id" [routerLink]="game.link('entries', c.craft.makes)">{{ c.craft.name | gameName: c.craft.makes : names() : l }}</a>
                 } @else {
                   <span class="name" [id]="'craft-' + c.craft.id">{{ c.craft.name | localize: l }}</span>
                 }
@@ -120,9 +120,9 @@
                   @for (i of c.craft.ingredients; track $index) {
                     <li>
                       @if (i.entryId) {
-                        <a [routerLink]="game.link('entries', i.entryId)">{{ i.qty }}× {{ i.name | localize: l }}</a>
+                        <a [routerLink]="game.link('entries', i.entryId)">{{ i.qty }}× {{ i.name | gameName: i.entryId : names() : l }}</a>
                       } @else {
-                        <span>{{ i.qty }}× {{ i.name | localize: l }}</span>
+                        <span>{{ i.qty }}× {{ i.name | gameName: i.entryId : names() : l }}</span>
                       }
                     </li>
                   }
@@ -217,7 +217,7 @@
               <li>
                 <a class="row-link season-row" [routerLink]="game.link('entries', p.entry.entry.id)">
                   <span class="name">
-                    {{ p.entry.entry.name | localize: lang.lang() }}
+                    {{ p.entry.entry.name | gameName: p.entry.entry.id : names() : lang.lang() }}
                     @if (p.entry.entry.name | original: lang.lang(); as en) {
                       <span class="en">{{ en }}</span>
                     }
@@ -296,9 +296,9 @@
               <div class="body">
                 <app-spoiler-reveal [itemId]="cr.id" [level]="cr.spoilerLevel" [placeholder]="'compendium.creaturePlaceholder' | transloco: { n: entry.n }">
                   @if (cr.rewards?.length) {
-                    <a class="name" [routerLink]="game.link('creatures', cr.id)">{{ cr.name | localize: l }}</a>
+                    <a class="name" [routerLink]="game.link('creatures', cr.id)">{{ cr.name | gameName: cr.id : names() : l }}</a>
                   } @else {
-                    <span class="name">{{ cr.name | localize: l }}</span>
+                    <span class="name">{{ cr.name | gameName: cr.id : names() : l }}</span>
                   }
                   @if (cr.name | original: l; as en) {
                     <span class="en">{{ en }}</span>
@@ -329,7 +329,7 @@
   <li>
     <a class="row-link season-row" [routerLink]="game.link('entries', s.entry.entry.id)">
       <span class="name">
-        {{ s.entry.entry.name | localize: lang.lang() }}
+        {{ s.entry.entry.name | gameName: s.entry.entry.id : names() : lang.lang() }}
         @if (s.entry.entry.name | original: lang.lang(); as en) {
           <span class="en">{{ en }}</span>
         }
@@ -359,7 +359,7 @@
 
 <ng-template #giftTpl let-g>
   @if (g.entryId) {
-    <a [routerLink]="game.link('entries', g.entryId)">{{ g.name | localize: lang.lang() }}</a>
+    <a [routerLink]="game.link('entries', g.entryId)">{{ g.name | gameName: g.entryId : names() : lang.lang() }}</a>
   } @else {
     <span>{{ g.name | localize: lang.lang() }}</span>
   }

@@ -475,5 +475,15 @@
       "neutral": "Neutral (+3)",
       "dislikes": "Dislike it (−6)"
     }
+  },
+  "nameFix": {
+    "open": "Different name in your game?",
+    "label": "Name as your game shows it",
+    "hint": "It replaces ours on this device right away, and is kept in your backups.",
+    "save": "Use this name",
+    "reset": "Back to \"{{name}}\"",
+    "ours": "Our name: {{name}}",
+    "edit": "Edit",
+    "send": "Help fix it for everyone:"
   }
 }

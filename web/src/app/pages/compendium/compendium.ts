@@ -10,6 +10,7 @@ import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { OriginalPipe } from '../../core/i18n/original.pipe';
+import { GameNamePipe } from '../../core/i18n/game-name.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { normalize } from '../../core/search/search';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
@@ -28,7 +29,7 @@ const MAX_LIST = 80;
  */
 @Component({
   selector: 'app-compendium',
-  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, OriginalPipe, Icon, SpoilerReveal],
+  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, OriginalPipe, GameNamePipe, Icon, SpoilerReveal],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './compendium.html',
   styleUrl: './compendium.scss',
@@ -40,6 +41,7 @@ export class Compendium {
   protected readonly game = inject(ActiveGame);
   protected readonly progress = inject(ProgressStore);
   protected readonly lang = inject(LangService);
+  protected readonly names = computed(() => this.progress.preferences().names);
 
   readonly tab = input<string | undefined>();
   readonly q = input<string | undefined>();
@@ -89,7 +91,7 @@ export class Compendium {
   protected readonly category = computed<EntryCategory | null>(() =>
     (ENTRY_CATEGORIES as readonly string[]).includes(this.c() ?? '') ? (this.c() as EntryCategory) : null,
   );
-  private readonly found = computed(() => findEntries(this.index(), this.query(), this.lang.lang(), this.category()));
+  private readonly found = computed(() => findEntries(this.index(), this.query(), this.lang.lang(), this.category(), this.names()));
   protected readonly entries = computed(() => this.found().slice(0, MAX_LIST));
   protected readonly moreEntries = computed(() => Math.max(0, this.found().length - MAX_LIST));
   protected readonly listing = computed(() => this.query().trim().length > 0 || this.category() !== null);

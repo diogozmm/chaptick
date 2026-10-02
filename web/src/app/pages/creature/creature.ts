@@ -7,6 +7,9 @@ import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { OriginalPipe } from '../../core/i18n/original.pipe';
+import { GameNamePipe } from '../../core/i18n/game-name.pipe';
+import { ProgressStore } from '../../core/progress/progress.store';
+import { NameFix } from '../../ui/name-fix/name-fix';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { Icon } from '../../ui/icon/icon';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
@@ -18,7 +21,7 @@ import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
  */
 @Component({
   selector: 'app-creature',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, OriginalPipe, Icon, SpoilerReveal],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, OriginalPipe, GameNamePipe, NameFix, Icon, SpoilerReveal],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './creature.html',
   styleUrl: './creature.scss',
@@ -27,6 +30,8 @@ export class CreatureDetail {
   private readonly access = inject(ChapterAccess);
   protected readonly game = inject(ActiveGame);
   protected readonly lang = inject(LangService);
+  private readonly progress = inject(ProgressStore);
+  protected readonly names = computed(() => this.progress.preferences().names);
 
   readonly creatureId = input.required<string>();
 

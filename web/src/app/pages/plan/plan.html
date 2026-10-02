@@ -39,7 +39,7 @@
             <span class="name" [id]="'need-' + t.key">
               <span class="qty">{{ t.qty }}×</span>
               @if (t.entryId) {
-                <a [routerLink]="game.link('entries', t.entryId)">{{ t.name | localize: l }}</a>
+                <a [routerLink]="game.link('entries', t.entryId)">{{ t.name | gameName: t.entryId : names() : l }}</a>
               } @else {
                 {{ t.name | localize: l }}
               }
@@ -78,7 +78,7 @@
 <ng-template #nodeTpl let-node let-root="root">
   <li class="node" [class.made]="!!node.craft">
     <div class="node-line">
-      <span class="node-name"><span class="qty">{{ node.qty }}×</span> {{ node.name | localize: lang.lang() }}</span>
+      <span class="node-name"><span class="qty">{{ node.qty }}×</span> {{ node.name | gameName: node.entryId : names() : lang.lang() }}</span>
       @if (node.craft) {
         <span class="tag">{{ 'plan.runs' | transloco: { count: node.runs, station: (node.craft.craft.group | localize: lang.lang()) } }}</span>
       }

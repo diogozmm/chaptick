@@ -4,10 +4,11 @@
 @if (found(); as f) {
   <header class="hero card rise">
     <p class="eyebrow">{{ 'compendium.category.' + f.entry.category | transloco }}</p>
-    <h1>{{ f.entry.name | localize: l }}</h1>
+    <h1>{{ f.entry.name | gameName: f.entry.id : names() : l }}</h1>
     @if (f.entry.name | original: l; as en) {
       <p class="en">{{ 'compendium.inEnglish' | transloco: { name: en } }}</p>
     }
+    <app-name-fix [entryId]="f.entry.id" [name]="f.entry.name" />
     <p class="muted small">
       {{ 'compendium.from' | transloco: { chapter: f.chapter.neutralLabel | localize: l } }}
       @if (f.entry.sell) {
@@ -106,9 +107,9 @@
             @for (i of c.craft.ingredients; track $index) {
               <li>
                 @if (i.entryId) {
-                  <a [routerLink]="game.link('entries', i.entryId)">{{ i.qty }}× {{ i.name | localize: l }}</a>
+                  <a [routerLink]="game.link('entries', i.entryId)">{{ i.qty }}× {{ i.name | gameName: i.entryId : names() : l }}</a>
                 } @else {
-                  <span>{{ i.qty }}× {{ i.name | localize: l }}</span>
+                  <span>{{ i.qty }}× {{ i.name | gameName: i.entryId : names() : l }}</span>
                 }
               </li>
             }

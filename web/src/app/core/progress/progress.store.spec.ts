@@ -40,6 +40,16 @@ describe('ProgressStore', () => {
     expect(fresh.needsChapterPick()).toBe(false);
   });
 
+  it('keeps the player\'s own names for entries, and clears one when emptied', async () => {
+    await store.setName('sc-bitter-herb', '  Erva Amarga  ');
+    expect(store.preferences().names).toEqual({ 'sc-bitter-herb': 'Erva Amarga' });
+    const reloaded = TestBed.runInInjectionContext(() => new ProgressStore());
+    await reloaded.load('sc', 'sc-ch0');
+    expect(reloaded.preferences().names).toEqual({ 'sc-bitter-herb': 'Erva Amarga' });
+    await reloaded.setName('sc-bitter-herb', '');
+    expect(reloaded.preferences().names).toEqual({});
+  });
+
   it('persists toggles and chapter changes across reloads', async () => {
     await store.toggle('sc-ch0-co-01');
     await store.toggle('sc-ch0-co-02');

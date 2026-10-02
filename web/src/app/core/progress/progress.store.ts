@@ -83,6 +83,14 @@ export class ProgressStore {
     return this.update(() => ({ currentChapter: chapterId, chapterChosen: true }));
   }
 
+  /** The player's own name for an entry; empty clears it. */
+  setName(id: string, name: string): Promise<void> {
+    const names = { ...(this.preferences().names ?? {}) };
+    if (name.trim()) names[id] = name.trim();
+    else delete names[id];
+    return this.setPreferences({ names });
+  }
+
   setPreferences(change: Partial<Preferences>): Promise<void> {
     return this.update((p) => ({ preferences: { ...p.preferences, ...change } }));
   }

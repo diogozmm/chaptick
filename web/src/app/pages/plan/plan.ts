@@ -9,6 +9,8 @@ import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { OriginalPipe } from '../../core/i18n/original.pipe';
+import { GameNamePipe } from '../../core/i18n/game-name.pipe';
+import { ProgressStore } from '../../core/progress/progress.store';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { Icon } from '../../ui/icon/icon';
 
@@ -21,7 +23,7 @@ const MAX_QTY = 99;
  */
 @Component({
   selector: 'app-plan',
-  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, OriginalPipe, Icon],
+  imports: [RouterLink, NgTemplateOutlet, TranslocoPipe, LocalizePipe, OriginalPipe, GameNamePipe, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './plan.html',
   styleUrl: './plan.scss',
@@ -31,6 +33,8 @@ export class Plan {
   private readonly router = inject(Router);
   protected readonly game = inject(ActiveGame);
   protected readonly lang = inject(LangService);
+  private readonly progress = inject(ProgressStore);
+  protected readonly names = computed(() => this.progress.preferences().names);
 
   readonly craftId = input.required<string>();
   /** How many to make, kept in the URL (?qty=). */

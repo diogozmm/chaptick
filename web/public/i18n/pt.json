@@ -475,5 +475,15 @@
       "neutral": "Neutro (+3)",
       "dislikes": "Não gostam (−6)"
     }
+  },
+  "nameFix": {
+    "open": "O nome no seu jogo é diferente?",
+    "label": "Nome como aparece no seu jogo",
+    "hint": "Ele substitui o nosso neste aparelho na hora, e vai junto no backup.",
+    "save": "Usar este nome",
+    "reset": "Voltar para \"{{name}}\"",
+    "ours": "Nosso nome: {{name}}",
+    "edit": "Editar",
+    "send": "Ajude a corrigir para todos:"
   }
 }

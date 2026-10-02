@@ -7,11 +7,12 @@
   <header class="hero card rise">
     <p class="eyebrow">{{ 'compendium.creature' | transloco }}</p>
     <app-spoiler-reveal [itemId]="f.creature.id" [level]="f.creature.spoilerLevel" [placeholder]="'compendium.creaturePlaceholder' | transloco: { n: f.n }">
-      <h1>{{ f.creature.name | localize: l }}</h1>
+      <h1>{{ f.creature.name | gameName: f.creature.id : names() : l }}</h1>
       @if (f.creature.name | original: l; as en) {
         <p class="en">{{ 'compendium.inEnglish' | transloco: { name: en } }}</p>
       }
     </app-spoiler-reveal>
+    <app-name-fix [entryId]="f.creature.id" [name]="f.creature.name" />
     <p class="muted small">{{ 'compendium.from' | transloco: { chapter: f.chapter.neutralLabel | localize: l } }}</p>
   </header>
 
@@ -49,9 +50,9 @@
                 <td>
                   @for (i of r.items; track $index) {
                     @if (i.entryId) {
-                      <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                      <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | gameName: i.entryId : names() : l }}</a>
                     } @else {
-                      {{ i.name | localize: l }}
+                      {{ i.name | gameName: i.entryId : names() : l }}
                     }
                   }
                 </td>
@@ -74,9 +75,9 @@
             <strong>{{ 'compendium.youGive' | transloco }}</strong>
             @for (i of r.gives; track $index; let last = $last) {
               @if (i.entryId) {
-                <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | gameName: i.entryId : names() : l }}</a>
               } @else {
-                {{ i.name | localize: l }}
+                {{ i.name | gameName: i.entryId : names() : l }}
               }
               @if (!last) {
                 ,
@@ -88,9 +89,9 @@
           @for (i of r.items; track $index) {
             <li>
               @if (i.entryId) {
-                <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | gameName: i.entryId : names() : l }}</a>
               } @else {
-                <span>{{ i.name | localize: l }}</span>
+                <span>{{ i.name | gameName: i.entryId : names() : l }}</span>
               }
             </li>
           }
@@ -111,9 +112,9 @@
             @for (i of r.items; track $index) {
               <li>
                 @if (i.entryId) {
-                  <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                  <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | gameName: i.entryId : names() : l }}</a>
                 } @else {
-                  <span>{{ i.name | localize: l }}</span>
+                  <span>{{ i.name | gameName: i.entryId : names() : l }}</span>
                 }
               </li>
             }
@@ -126,9 +127,9 @@
               @for (i of a.items; track $index) {
                 <li>
                   @if (i.entryId) {
-                    <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | localize: l }}</a>
+                    <a [routerLink]="game.link('entries', i.entryId)">{{ i.name | gameName: i.entryId : names() : l }}</a>
                   } @else {
-                    <span>{{ i.name | localize: l }}</span>
+                    <span>{{ i.name | gameName: i.entryId : names() : l }}</span>
                   }
                 </li>
               }

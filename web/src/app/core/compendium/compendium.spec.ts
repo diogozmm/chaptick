@@ -73,6 +73,8 @@ describe('compendium', () => {
     // In Portuguese both names are searched: the game may show either.
     expect(findEntries(index, 'chá', 'pt').map((e) => e.entry.id)).toEqual(['zz-herb-tea']);
     expect(findEntries(index, 'herb tea', 'pt').map((e) => e.entry.id)).toEqual(['zz-herb-tea']);
+    // The player's own name finds it too, and comes first.
+    expect(findEntries(index, 'cha mate', 'pt', null, { 'zz-herb-tea': 'Chá Mate' }).map((e) => e.entry.id)).toEqual(['zz-herb-tea']);
     expect(findEntries(index, '', 'en')).toEqual([]);
     expect(findEntries(index, '', 'en', 'materials').map((e) => e.entry.id)).toEqual(['zz-bitter-herb', 'zz-bone']);
     expect(categoryCounts(index).get('materials')).toBe(2);

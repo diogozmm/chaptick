@@ -1,0 +1,37 @@
+@if (open()) {
+  <form class="fix" (submit)="$event.preventDefault(); save()">
+    <label class="label" for="name-fix-input">{{ 'nameFix.label' | transloco }}</label>
+    <input id="name-fix-input" class="input" type="text" [value]="draft()" (input)="draft.set($any($event.target).value)" autocomplete="off" />
+    <p class="muted small">{{ 'nameFix.hint' | transloco }}</p>
+    <div class="actions">
+      <button type="submit" class="button primary">{{ 'nameFix.save' | transloco }}</button>
+      <button type="button" class="button" (click)="open.set(false)">{{ 'common.cancel' | transloco }}</button>
+      @if (saved()) {
+        <button type="button" class="link" (click)="reset()">{{ 'nameFix.reset' | transloco: { name: ours() } }}</button>
+      }
+    </div>
+  </form>
+} @else {
+  <div class="line">
+    @if (saved()) {
+      <span class="muted small">{{ 'nameFix.ours' | transloco: { name: ours() } }}</span>
+      <button type="button" class="link small" (click)="start()">{{ 'nameFix.edit' | transloco }}</button>
+    } @else {
+      <button type="button" class="link small" (click)="start()"><app-icon name="languages" /> {{ 'nameFix.open' | transloco }}</button>
+    }
+  </div>
+  @if (issueUrl() || mailUrl()) {
+    <p class="send muted small">
+      {{ 'nameFix.send' | transloco }}
+      @if (issueUrl(); as url) {
+        <a [href]="url" target="_blank" rel="noopener">{{ 'report.github' | transloco }}</a>
+      }
+      @if (issueUrl() && mailUrl()) {
+        {{ 'report.or' | transloco }}
+      }
+      @if (mailUrl(); as url) {
+        <a [href]="url">{{ 'report.email' | transloco }}</a>
+      }
+    </p>
+  }
+}

@@ -8,6 +8,9 @@ import { ActiveGame } from '../../core/game/active-game';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { OriginalPipe } from '../../core/i18n/original.pipe';
+import { GameNamePipe } from '../../core/i18n/game-name.pipe';
+import { ProgressStore } from '../../core/progress/progress.store';
+import { NameFix } from '../../ui/name-fix/name-fix';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { SITE } from '../../site.config';
 import { Icon } from '../../ui/icon/icon';
@@ -20,7 +23,7 @@ import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
  */
 @Component({
   selector: 'app-entry',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, OriginalPipe, Icon, SpoilerReveal],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, OriginalPipe, GameNamePipe, NameFix, Icon, SpoilerReveal],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './entry.html',
   styleUrl: './entry.scss',
@@ -29,6 +32,8 @@ export class EntryDetail {
   private readonly access = inject(ChapterAccess);
   protected readonly game = inject(ActiveGame);
   protected readonly lang = inject(LangService);
+  private readonly progress = inject(ProgressStore);
+  protected readonly names = computed(() => this.progress.preferences().names);
 
   readonly entryId = input.required<string>();
 

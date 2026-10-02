@@ -1,0 +1,24 @@
+name: Name differs in game
+description: The name the app shows isn't the one the game uses
+title: "name <entry-id>"
+body:
+  - type: input
+    id: item
+    attributes: { label: Entry id, placeholder: wte-bitter-herb }
+    validations: { required: true }
+  - type: input
+    id: english
+    attributes: { label: English name in the app }
+  - type: input
+    id: shown
+    attributes: { label: Name the app shows }
+  - type: input
+    id: ingame
+    attributes: { label: Name in the game, description: As it appears on screen }
+    validations: { required: true }
+  - type: input
+    id: language
+    attributes: { label: Game language, placeholder: "pt-BR" }
+  - type: input
+    id: version
+    attributes: { label: Data version, placeholder: "wte data v1" }
