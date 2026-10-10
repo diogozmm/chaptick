@@ -37,8 +37,8 @@
       },
       "availableUntil": "ysx-ch6-cp-01",
       "hint": {
-        "en": "SHORT deadline and easy to miss. It appears once Cohen, Father Cuthbert and Milette are rescued (Milette comes from the Southern Fort recapture), so it can show up already late in Chapter 5. Get the item from Magni on Balta Island's shore and bring it to Rosalind before the story moves on.",
-        "pt": "Prazo CURTO e fácil de perder. Aparece quando o Cohen, o Father Cuthbert e a Milette estão resgatados (a Milette vem da retomada do Southern Fort), então pode surgir já no fim do Capítulo 5. Pegue o item com o Magni na praia de Balta Island e leve à Rosalind antes de a história avançar."
+        "en": "SHORT deadline and easy to miss.\nIt appears once Cohen, Father Cuthbert and Milette are rescued (Milette comes from the Southern Fort recapture), so it can show up already late in Chapter 5.\nGet the item from Magni on Balta Island's shore and bring it to Rosalind before the story moves on.",
+        "pt": "Prazo CURTO e fácil de perder.\nAparece quando o Cohen, o Father Cuthbert e a Milette estão resgatados (a Milette vem da retomada do Southern Fort), então pode surgir já no fim do Capítulo 5.\nPegue o item com o Magni na praia de Balta Island e leve à Rosalind antes de a história avançar."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -61,8 +61,8 @@
       },
       "availableUntil": "ysx-ch6-cp-01",
       "hint": {
-        "en": "Medium deadline. Collect Fly Agarics (Anchor Island — Village Outskirts, bottom center), Henbane Blossoms (Lecto Island beach, northeast corner) and Bellflowers (Kalon Island mountain peak, near the start).",
-        "pt": "Prazo médio. Colete Fly Agarics (Anchor Island — Village Outskirts, centro de baixo), Henbane Blossoms (praia de Lecto Island, canto nordeste) e Bellflowers (pico de Kalon Island, perto do início)."
+        "en": "Medium deadline.\nGather the three plants at these locations.",
+        "pt": "Prazo médio.\nReúna as três plantas nestes locais."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -71,6 +71,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Fly Agarics — Anchor Island, Village Outskirts, bottom center.",
+            "pt": "Fly Agarics — Anchor Island, Village Outskirts, centro da parte inferior."
+          }
+        },
+        {
+          "text": {
+            "en": "Henbane Blossoms — Lecto Island beach, northeast corner.",
+            "pt": "Henbane Blossoms — praia de Lecto Island, canto nordeste."
+          }
+        },
+        {
+          "text": {
+            "en": "Bellflowers — Kalon Island mountain peak, near the start.",
+            "pt": "Bellflowers — pico da montanha de Kalon Island, perto do início."
+          }
+        }
       ]
     },
     {
@@ -85,8 +105,8 @@
       },
       "availableUntil": "ysx-ch6-cp-01",
       "hint": {
-        "en": "Long deadline. Added automatically. Several waves of beasts; dash through their speed attacks or Duo Guard their power attacks for big counters. Rewards a Gwyllgi Amulet.",
-        "pt": "Prazo longo. Entra sozinha no diário. Várias ondas de feras; use o dash contra os ataques rápidos ou a Duo Guard contra os poderosos para grandes contra-ataques. Dá um Gwyllgi Amulet."
+        "en": "Long deadline.\nAdded automatically. Several waves of beasts; dash through their speed attacks or Duo Guard their power attacks for big counters.\nRewards a Gwyllgi Amulet.",
+        "pt": "Prazo longo.\nEntra sozinha no diário. Várias ondas de feras; use o dash contra os ataques rápidos ou a Duo Guard contra os poderosos para grandes contra-ataques. Dá um Gwyllgi Amulet."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -109,8 +129,8 @@
       },
       "availableUntil": "ysx-ch6-cp-01",
       "hint": {
-        "en": "Long deadline. Use the spyglass at both green markers in the Sonnelia Basin, talk to Ashley, then visit the northernmost of the three new markers.",
-        "pt": "Prazo longo. Use a luneta nos dois marcadores verdes da Sonnelia Basin, fale com a Ashley e depois visite o mais ao norte dos três marcadores novos."
+        "en": "Long deadline.\nFollow the sightings in Sonnelia Basin.",
+        "pt": "Prazo longo.\nSiga os avistamentos em Sonnelia Basin."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -119,6 +139,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Use the spyglass at both green markers in Sonnelia Basin.",
+            "pt": "Use a luneta nos dois marcadores verdes em Sonnelia Basin."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Ashley.",
+            "pt": "Fale com Ashley."
+          }
+        },
+        {
+          "text": {
+            "en": "Visit the northernmost of the three new markers.",
+            "pt": "Visite o mais ao norte dos três novos marcadores."
+          }
+        }
       ]
     },
     {
@@ -133,8 +173,8 @@
       },
       "availableUntil": "ysx-ch6-cp-01",
       "hint": {
-        "en": "Long deadline. Buy Hidden Treasure Chart B from Gregorio's Curio and salvage the glowing spot. Rewards the Foreign Gauntlet (gift for Dogi).",
-        "pt": "Prazo longo. Compre o Hidden Treasure Chart B no Gregorio's Curio e resgate o ponto brilhante. Dá a Foreign Gauntlet (presente para o Dogi)."
+        "en": "Long deadline.\nBuy Hidden Treasure Chart B from Gregorio's Curio and salvage the glowing spot.\nRewards the Foreign Gauntlet (gift for Dogi).",
+        "pt": "Prazo longo.\nCompre o Hidden Treasure Chart B no Gregorio's Curio e resgate o ponto brilhante. Dá a Foreign Gauntlet (presente para o Dogi)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -157,8 +197,8 @@
       },
       "availableUntil": "ysx-ch6-cp-01",
       "hint": {
-        "en": "Long deadline. Appears when you return to Fuling Island after its event. Accepting turns it to night; several mini-bosses wait at the far end of the cave. Rewards a Holy Potion II.",
-        "pt": "Prazo longo. Aparece quando você volta a Fuling Island depois do evento dela. Aceitar faz anoitecer; vários mini-chefes esperam no fundo da caverna. Dá uma Holy Potion II."
+        "en": "Long deadline.\nAppears when you return to Fuling Island after its event. Accepting turns it to night; several mini-bosses wait at the far end of the cave.\nRewards a Holy Potion II.",
+        "pt": "Prazo longo.\nAparece quando você volta a Fuling Island depois do evento dela. Aceitar faz anoitecer; vários mini-chefes esperam no fundo da caverna. Dá uma Holy Potion II."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -180,8 +220,8 @@
       },
       "availableUntil": "ysx-ch6-cp-02",
       "hint": {
-        "en": "Long deadline. The mysterious old man asks you to catch his scattered pikkards at the green markers; for the one near the water, mana ride toward it and jump at the right moment. Rewards a Pickaback Pikkard (White).",
-        "pt": "Prazo longo. O velho misterioso pede para você pegar os pikkards espalhados nos marcadores verdes; para o que está perto da água, deslize até ele e pule na hora certa. Dá um Pickaback Pikkard (White)."
+        "en": "Long deadline.\nThe mysterious old man asks you to catch his scattered pikkards at the green markers; for the one near the water, mana ride toward it and jump at the right moment.\nRewards a Pickaback Pikkard (White).",
+        "pt": "Prazo longo.\nO velho misterioso pede para você pegar os pikkards espalhados nos marcadores verdes; para o que está perto da água, deslize até ele e pule na hora certa. Dá um Pickaback Pikkard (White)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -204,8 +244,8 @@
       },
       "availableUntil": "ysx-ch6-cp-02",
       "hint": {
-        "en": "Long deadline. Hidden Treasure Chart C comes from the Southern Castle recapture at rank C or better. Avoid the invulnerable Blade Shark. Rewards the Dancer's Shawl.",
-        "pt": "Prazo longo. O Hidden Treasure Chart C vem da retomada do Southern Castle com rank C ou melhor. Evite o Blade Shark, que é invulnerável. Dá o Dancer's Shawl."
+        "en": "Long deadline.\nHidden Treasure Chart C comes from the Southern Castle recapture at rank C or better. Avoid the invulnerable Blade Shark.\nRewards the Dancer's Shawl.",
+        "pt": "Prazo longo.\nO Hidden Treasure Chart C vem da retomada do Southern Castle com rank C ou melhor. Evite o Blade Shark, que é invulnerável. Dá o Dancer's Shawl."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -228,8 +268,8 @@
       },
       "availableUntil": "ysx-ch6-cp-02",
       "hint": {
-        "en": "Long deadline. Watch the sea turtles at both green markers in Specular Bay, use the quest button after shopping at Anika's Goods, then camp until night at the Orlen Islands' East Beach.",
-        "pt": "Prazo longo. Observe as tartarugas nos dois marcadores verdes de Specular Bay, use o botão de quest depois de comprar na Anika's Goods e acampe até a noite na East Beach de Orlen Islands."
+        "en": "Long deadline.\nComplete the sightings before camping.",
+        "pt": "Prazo longo.\nConclua os avistamentos antes de acampar."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -238,6 +278,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Watch the sea turtles at both green markers in Specular Bay.",
+            "pt": "Observe as tartarugas marinhas nos dois marcadores verdes em Specular Bay."
+          }
+        },
+        {
+          "text": {
+            "en": "After shopping at Anika’s Goods, use the quest button.",
+            "pt": "Depois de comprar em Anika’s Goods, use o botão da missão."
+          }
+        },
+        {
+          "text": {
+            "en": "Camp until night at the Orlen Islands’ East Beach.",
+            "pt": "Acampe até a noite na East Beach das Orlen Islands."
+          }
+        }
       ]
     },
     {
@@ -253,8 +313,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Needs the Mana Barrier, southeast of Raufos Island. The island opens fully after the first event with Nanna. To clear the boulder near the lake, talk to the two green-marked people first, then call Dogi.",
-        "pt": "Precisa da Mana Barrier, a sudeste de Raufos Island. A ilha abre por completo depois do primeiro evento com a Nanna. Para tirar a rocha perto do lago, fale antes com as duas pessoas marcadas em verde e depois chame o Dogi."
+        "en": "Needs the Mana Barrier, southeast of Raufos Island.\nThe island opens fully after the first event with Nanna.\nTo clear the boulder near the lake, talk to the two green-marked people first, then call Dogi.",
+        "pt": "Precisa da Mana Barrier, a sudeste de Raufos Island.\nA ilha abre por completo depois do primeiro evento com a Nanna.\nPara tirar a rocha perto do lago, fale antes com as duas pessoas marcadas em verde e depois chame o Dogi."
       },
       "spoilerLevel": 0,
       "sources": [

@@ -93,8 +93,8 @@
       },
       "availableUntil": "fc-ch2-cp-01",
       "hint": {
-        "en": "3 BP. Needs the Jeweled Ring from the last chest of the Sky Pirate Stronghold; return it to Lana.",
-        "pt": "3 BP. Precisa do Jeweled Ring do último baú do Sky Pirate Stronghold; devolva à Lana."
+        "en": "3 BP.\nNeeds the Jeweled Ring from the last chest of the Sky Pirate Stronghold; return it to Lana.",
+        "pt": "3 BP.\nPrecisa do Jeweled Ring do último baú do Sky Pirate Stronghold; devolva à Lana."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -117,8 +117,8 @@
       },
       "availableUntil": "fc-ch2-cp-01",
       "hint": {
-        "en": "5 BP. Only if you examined the vacuum cleaner in the Sky Pirate Stronghold: bring the notebook to the guards.",
-        "pt": "5 BP. Só se você examinou o aspirador de pó no Sky Pirate Stronghold: leve o caderno aos guardas."
+        "en": "5 BP.\nOnly if you examined the vacuum cleaner in the Sky Pirate Stronghold: bring the notebook to the guards.",
+        "pt": "5 BP.\nSó se você examinou o aspirador de pó no Sky Pirate Stronghold: leve o caderno aos guardas."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -141,8 +141,8 @@
       },
       "availableUntil": "fc-ch2-cp-03",
       "hint": {
-        "en": "4 BP. Not on the board: talk to Vogt outside the lighthouse and clear the four Red Shumocks inside.",
-        "pt": "4 BP. Não aparece no quadro: fale com o Vogt do lado de fora do farol e derrote os quatro Red Shumocks lá dentro."
+        "en": "4 BP.\nNot on the board: talk to Vogt outside the lighthouse and clear the four Red Shumocks inside.",
+        "pt": "4 BP.\nNão aparece no quadro: fale com o Vogt do lado de fora do farol e derrote os quatro Red Shumocks lá dentro."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -165,8 +165,8 @@
       },
       "availableUntil": "fc-ch2-cp-02",
       "hint": {
-        "en": "4 BP. It blocks the road to Ruan, so you can't skip it. Disable the weaker mobs with Chaos Brand first.",
-        "pt": "4 BP. Ele bloqueia a estrada para Ruan, então não dá para pular. Desative os inimigos menores com Chaos Brand primeiro."
+        "en": "4 BP.\nIt blocks the road to Ruan, so you can't skip it. Disable the weaker mobs with Chaos Brand first.",
+        "pt": "4 BP.\nEle bloqueia a estrada para Ruan, então não dá para pular. Desative os inimigos menores com Chaos Brand primeiro."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -189,8 +189,8 @@
       },
       "availableUntil": "fc-ch2-cp-03",
       "hint": {
-        "en": "2 BP. The key is in the water by the plank bridge east of Aqua Rossa Bar. Check the rods upstairs in the bar, borrow the Progressive Rod from Squaro and fish it out.",
-        "pt": "2 BP. A chave está na água junto à ponte de tábuas a leste do Aqua Rossa Bar. Veja as varas no andar de cima do bar, pegue a Progressive Rod emprestada com o Squaro e pesque a chave."
+        "en": "Reward: 2 BP. The key is in the water by the plank bridge east of Aqua Rossa Bar.",
+        "pt": "Recompensa: 2 BP. A chave está na água junto à ponte de tábuas a leste do Aqua Rossa Bar."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -199,6 +199,26 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Check the fishing rods upstairs in Aqua Rossa Bar.",
+            "pt": "Examine as varas de pesca no andar de cima do Aqua Rossa Bar."
+          }
+        },
+        {
+          "text": {
+            "en": "Borrow the Progressive Rod from Squaro.",
+            "pt": "Pegue a Progressive Rod emprestada com Squaro."
+          }
+        },
+        {
+          "text": {
+            "en": "Fish the key out by the plank bridge east of the bar.",
+            "pt": "Pesque a chave junto à ponte de tábuas a leste do bar."
+          }
+        }
       ]
     },
     {
@@ -213,8 +233,8 @@
       },
       "availableUntil": "fc-ch2-cp-03",
       "hint": {
-        "en": "4 BP. The crabs reflect physical hits until stunned: use arts and wear Mute protection. Drops Prototype Zero for Prototype Pursuit.",
-        "pt": "4 BP. Os caranguejos refletem golpes físicos até serem atordoados: use arts e proteção contra Mute. Deixa cair o Prototype Zero da Prototype Pursuit."
+        "en": "4 BP.\nThe crabs reflect physical hits until stunned: use arts and wear Mute protection. Drops Prototype Zero for Prototype Pursuit.",
+        "pt": "4 BP.\nOs caranguejos refletem golpes físicos até serem atordoados: use arts e proteção contra Mute. Deixa cair o Prototype Zero da Prototype Pursuit."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -237,8 +257,8 @@
       },
       "availableUntil": "fc-ch2-cp-03",
       "hint": {
-        "en": "3 BP. Hand over Prototype Zero (from the Aina Cswy Monster). Rewards Seal Blade.",
-        "pt": "3 BP. Entregue o Prototype Zero (do Aina Cswy Monster). Dá a Seal Blade."
+        "en": "3 BP.\nHand over Prototype Zero (from the Aina Cswy Monster).\nRewards Seal Blade.",
+        "pt": "3 BP.\nEntregue o Prototype Zero (do Aina Cswy Monster). Dá a Seal Blade."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -261,8 +281,8 @@
       },
       "availableUntil": "fc-ch2-cp-05",
       "hint": {
-        "en": "4 BP. Short deadline. Take the bag to Vogt at the top of Varenne Lighthouse. Bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore's, Manoria) too for a Work Helmet and a Victory Headband.",
-        "pt": "4 BP. Prazo curto. Leve a bolsa ao Vogt no alto do Varenne Lighthouse. Leve também Azelia Rosè (Primo, cassino) e Salty Anchovies (Fiore's, Manoria) para ganhar um Work Helmet e um Victory Headband."
+        "en": "Reward: 4 BP. Short deadline.\nDeliver the bag to Vogt at the top of Varenne Lighthouse.\nOptional: also bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore’s, Manoria) for a Work Helmet and a Victory Headband.",
+        "pt": "Recompensa: 4 BP. Prazo curto.\nEntregue a bolsa a Vogt no topo de Varenne Lighthouse.\nOpcional: leve também Azelia Rosè (Primo, cassino) e Salty Anchovies (Fiore’s, Manoria) para receber Work Helmet e Victory Headband."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -285,8 +305,8 @@
       },
       "availableUntil": "fc-ch2-cp-05",
       "hint": {
-        "en": "3 (+2) BP. Short deadline. The treasure is in a barrel on the small beach by Gull Seaside Way's east wall (Skull Dagger + map fragment). The bonus needs Jimmy saved earlier on Gull Seaside Way.",
-        "pt": "3 (+2) BP. Prazo curto. O tesouro está num barril na prainha junto à parede leste da Gull Seaside Way (Skull Dagger + fragmento de mapa). O bônus exige ter salvado o Jimmy antes na Gull Seaside Way."
+        "en": "3 (+2) BP.\nShort deadline. The treasure is in a barrel on the small beach by Gull Seaside Way's east wall (Skull Dagger + map fragment). The bonus needs Jimmy saved earlier on Gull Seaside Way.",
+        "pt": "3 (+2) BP.\nPrazo curto. O tesouro está num barril na prainha junto à parede leste da Gull Seaside Way (Skull Dagger + fragmento de mapa). O bônus exige ter salvado o Jimmy antes na Gull Seaside Way."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -310,8 +330,8 @@
       },
       "availableUntil": "fc-ch2-cp-05",
       "hint": {
-        "en": "5 BP. Short deadline. Go to the north end of Krone Trail, win the fight, then escort Orvid back to Manoria.",
-        "pt": "5 BP. Prazo curto. Vá ao extremo norte da Krone Trail, vença a luta e escolte o Orvid de volta a Manoria."
+        "en": "5 BP.\nShort deadline. Go to the north end of Krone Trail, win the fight, then escort Orvid back to Manoria.",
+        "pt": "5 BP.\nPrazo curto. Vá ao extremo norte da Krone Trail, vença a luta e escolte o Orvid de volta a Manoria."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -334,8 +354,8 @@
       },
       "availableUntil": "fc-ch2-cp-05",
       "hint": {
-        "en": "3 (+2) BP. Short deadline. Agree on the balcony, then in the cafeteria answer 2nd, either, 1st, 2nd for the bonus.",
-        "pt": "3 (+2) BP. Prazo curto. Aceite na varanda e, na cafeteria, responda 2ª, qualquer uma, 1ª, 2ª para o bônus."
+        "en": "BP: 3 (+2). Short deadline. Follow these choices for the bonus.",
+        "pt": "BP: 3 (+2). Prazo curto. Siga estas escolhas para receber o bônus."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -344,6 +364,38 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Agree on the balcony.",
+            "pt": "Concorde na varanda."
+          }
+        },
+        {
+          "text": {
+            "en": "Cafeteria, first question: choose the second option.",
+            "pt": "Cafeteria, primeira pergunta: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Cafeteria, second question: either option works.",
+            "pt": "Cafeteria, segunda pergunta: qualquer opção serve."
+          }
+        },
+        {
+          "text": {
+            "en": "Cafeteria, third question: choose the first option.",
+            "pt": "Cafeteria, terceira pergunta: escolha a 1ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Cafeteria, fourth question: choose the second option.",
+            "pt": "Cafeteria, quarta pergunta: escolha a 2ª opção."
+          }
+        }
       ]
     },
     {
@@ -358,8 +410,8 @@
       },
       "availableUntil": "fc-ch2-cp-05",
       "hint": {
-        "en": "7 BP. Short deadline. Check the plaque at Ruan Lighthouse, the roulette table upstairs in the casino, the forklift at the port and the crane near the bar, then talk to Harg.",
-        "pt": "7 BP. Prazo curto. Examine a placa do farol de Ruan, a roleta no andar de cima do cassino, a empilhadeira do porto e o guindaste perto do bar, depois fale com o Harg."
+        "en": "Reward: 7 BP. Short deadline. Follow these clues in order.",
+        "pt": "Recompensa: 7 BP. Prazo curto. Siga estas pistas em ordem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -368,6 +420,38 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Examine the plaque at Ruan Lighthouse.",
+            "pt": "Examine a placa no Ruan Lighthouse."
+          }
+        },
+        {
+          "text": {
+            "en": "Examine the roulette table upstairs in the casino.",
+            "pt": "Examine a mesa de roleta no andar de cima do cassino."
+          }
+        },
+        {
+          "text": {
+            "en": "Examine the forklift at the port.",
+            "pt": "Examine a empilhadeira no porto."
+          }
+        },
+        {
+          "text": {
+            "en": "Examine the crane near the bar.",
+            "pt": "Examine o guindaste perto do bar."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Harg.",
+            "pt": "Fale com Harg."
+          }
+        }
       ]
     },
     {
@@ -382,8 +466,8 @@
       },
       "availableUntil": "fc-ch2-cp-08",
       "hint": {
-        "en": "5 BP. It blocks the way to Manoria, so you can't skip it. Use arts against Seal and Blind; Knight Ammonites explode when defeated.",
-        "pt": "5 BP. Ele bloqueia o caminho para Manoria, então não dá para pular. Use arts contra Seal e Blind; os Knight Ammonites explodem ao serem derrotados."
+        "en": "5 BP.\nIt blocks the way to Manoria, so you can't skip it. Use arts against Seal and Blind; Knight Ammonites explode when defeated.",
+        "pt": "5 BP.\nEle bloqueia o caminho para Manoria, então não dá para pular. Use arts contra Seal e Blind; os Knight Ammonites explodem ao serem derrotados."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -428,8 +512,8 @@
       },
       "availableUntil": "fc-ch2-cp-04",
       "hint": {
-        "en": "+4 BP (Orphanage Investigation). After examining every clue, pick the 2nd option (someone started the fire?); later at The White Magnolia, pick the 3rd (the thugs?!).",
-        "pt": "+4 BP (Orphanage Investigation). Depois de examinar todas as pistas, escolha a 2ª opção (alguém começou o fogo?); depois, na The White Magnolia, escolha a 3ª (os bandidos?!)."
+        "en": "Bonus: +4 BP in Orphanage Investigation.",
+        "pt": "Bônus: +4 BP em Orphanage Investigation."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -437,6 +521,20 @@
       ],
       "trophies": [
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Examine every clue, then choose the second option: someone started the fire?",
+            "pt": "Examine todas as pistas e escolha a 2ª opção: alguém começou o incêndio?"
+          }
+        },
+        {
+          "text": {
+            "en": "Later, at The White Magnolia, choose the third option: the thugs?!",
+            "pt": "Mais tarde, em The White Magnolia, escolha a 3ª opção: os bandidos?!"
+          }
+        }
       ]
     },
     {
@@ -452,8 +550,8 @@
       },
       "availableUntil": "fc-ch2-cp-06",
       "hint": {
-        "en": "+5 BP (A Festival Favor), via the blue markers: Logan's three books (+1), Janitor Parkes's three decoration spots (+1) and clearing the old schoolhouse (+3). Pick up its three U-Materials first.",
-        "pt": "+5 BP (A Festival Favor), pelos marcadores azuis: os três livros do Logan (+1), os três lugares de decoração do zelador Parkes (+1) e limpar a escola antiga (+3). Pegue antes os três U-Materials de lá."
+        "en": "Bonus: +5 BP in A Festival Favor. Follow the blue markers.",
+        "pt": "Bônus: +5 BP em A Festival Favor. Siga os marcadores azuis."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -461,6 +559,26 @@
       ],
       "trophies": [
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Find Logan’s three books (+1 BP).",
+            "pt": "Encontre os três livros de Logan (+1 BP)."
+          }
+        },
+        {
+          "text": {
+            "en": "Check Janitor Parkes’s three decoration spots (+1 BP).",
+            "pt": "Confira os três locais de decoração de Janitor Parkes (+1 BP)."
+          }
+        },
+        {
+          "text": {
+            "en": "Collect the three U-Materials in the old schoolhouse, then clear it (+3 BP).",
+            "pt": "Recolha os três U-Materials no prédio antigo da escola e depois conclua a limpeza do local (+3 BP)."
+          }
+        }
       ]
     },
     {

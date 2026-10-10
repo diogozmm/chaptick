@@ -14,7 +14,11 @@ T4 = c.cp('The boss at the top of the fourth tower (end of Chapter 7)', 'O boss 
 c.item('collectible', t('Liberl News Issue 9'), t('Your airship — cafeteria', 'Seu airship — cafeteria'), T4,
        t('Sold at the cafeteria counter.', 'Vendido no balcão da cafeteria.'), 0, [G])
 c.item('collectible', t('Recipes: airship cafeteria (3)', 'Receitas: cafeteria do airship (3)'), t('Your airship — cafeteria', 'Seu airship — cafeteria'), T4,
-       t('Seafood Gelatin, Victor\'s Steak and Platinum Risotto.', 'Seafood Gelatin, Victor\'s Steak e Platinum Risotto.'), 0, [G])
+       t('Obtain and eat each dish to learn its recipe.', 'Obtenha e coma cada prato para aprender sua receita.'), 0, [G], steps=[
+           t('Seafood Gelatin', 'Seafood Gelatin'),
+           t('Victor’s Steak', 'Victor’s Steak'),
+           t('Platinum Risotto', 'Platinum Risotto'),
+       ])
 c.item('collectible', t('Gambler Jack — Vol. 10'), t('Your airship — south deck', 'Seu airship — convés sul'), T4,
        t('Talk to Antoine after the second tower.', 'Fale com o Antoine depois da segunda torre.'), 0, [G])
 c.item('collectible', t('Data crystals: first tower (4)', 'Cristais de dados: primeira torre (4)'), t('Shadow Esmelas Tower — 4th level', 'Shadow Esmelas Tower — 4º nível'), T1,

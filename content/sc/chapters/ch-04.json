@@ -52,8 +52,8 @@
       },
       "availableUntil": "sc-ch4-cp-02",
       "hint": {
-        "en": "+4 BP. Talk to Armand and Ellie. The ring is on the rooftop of Esmelas Tower, by the broken pillar on the left.",
-        "pt": "+4 BP. Fale com Armand e Ellie. O anel está no terraço da Esmelas Tower, junto ao pilar quebrado à esquerda."
+        "en": "Reward: +4 BP. The ring is at Esmelas Tower.",
+        "pt": "Recompensa: +4 BP. O anel está em Esmelas Tower."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -62,6 +62,20 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Armand and Ellie.",
+            "pt": "Fale com Armand e Ellie."
+          }
+        },
+        {
+          "text": {
+            "en": "Go to the rooftop of Esmelas Tower and look by the broken pillar on the left.",
+            "pt": "Vá ao terraço de Esmelas Tower e procure junto ao pilar quebrado à esquerda."
+          }
+        }
       ]
     },
     {
@@ -76,8 +90,8 @@
       },
       "availableUntil": "sc-ch5-cp-01",
       "hint": {
-        "en": "3 +2 BP. Start it first: only catches made after accepting count. Catch any fish at each of Rolent's 7 spots (Elize Highway, Bright Family House, Malga Trail water cave, Rolent Sewers, Milch Main Road, Verte Bridge, and one that opens at the start of Chapter 5), then report before leaving Rolent.",
-        "pt": "3 +2 BP. Aceite antes: só contam as pescas feitas depois disso. Pesque qualquer peixe em cada um dos 7 pesqueiros de Rolent (Elize Highway, casa da família Bright, caverna com água da Malga Trail, Rolent Sewers, Milch Main Road, Verte Bridge e um que abre no início do Capítulo 5) e entregue antes de sair de Rolent."
+        "en": "BP: 3 +2. Only fish caught after accepting the quest count. The seventh spot opens at the start of Chapter 5. Report before leaving Rolent.",
+        "pt": "BP: 3 +2. Só contam peixes pescados após aceitar a missão. O sétimo ponto abre no início do Capítulo 5. Entregue a missão antes de sair de Rolent."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -88,6 +102,62 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Accept the quest before fishing.",
+            "pt": "Aceite a missão antes de pescar."
+          }
+        },
+        {
+          "text": {
+            "en": "Catch any fish at Elize Highway.",
+            "pt": "Pesque qualquer peixe em Elize Highway."
+          }
+        },
+        {
+          "text": {
+            "en": "Catch any fish at Bright Family House.",
+            "pt": "Pesque qualquer peixe em Bright Family House."
+          }
+        },
+        {
+          "text": {
+            "en": "Catch any fish at Malga Trail — water cave.",
+            "pt": "Pesque qualquer peixe em Malga Trail — water cave."
+          }
+        },
+        {
+          "text": {
+            "en": "Catch any fish at Rolent Sewers.",
+            "pt": "Pesque qualquer peixe em Rolent Sewers."
+          }
+        },
+        {
+          "text": {
+            "en": "Catch any fish at Milch Main Road.",
+            "pt": "Pesque qualquer peixe em Milch Main Road."
+          }
+        },
+        {
+          "text": {
+            "en": "Catch any fish at Verte Bridge.",
+            "pt": "Pesque qualquer peixe em Verte Bridge."
+          }
+        },
+        {
+          "text": {
+            "en": "Catch any fish at the seventh spot when it opens at the start of Chapter 5.",
+            "pt": "Pesque qualquer peixe no sétimo ponto quando ele abrir no início do Capítulo 5."
+          }
+        },
+        {
+          "text": {
+            "en": "Report back before leaving Rolent.",
+            "pt": "Entregue a missão antes de sair de Rolent."
+          }
+        }
       ]
     },
     {
@@ -102,8 +172,8 @@
       },
       "availableUntil": "sc-ch4-cp-02",
       "hint": {
-        "en": "+4 BP. Petrify, delay and stat-down attacks: equip protection and use arts reflect.",
-        "pt": "+4 BP. Ataques de Petrify, atraso e redução de atributos: equipe proteção e use reflexo de arts."
+        "en": "+4 BP.\nPetrify, delay and stat-down attacks: equip protection and use arts reflect.",
+        "pt": "+4 BP.\nAtaques de Petrify, atraso e redução de atributos: equipe proteção e use reflexo de arts."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -126,8 +196,8 @@
       },
       "availableUntil": "sc-ch4-cp-02",
       "hint": {
-        "en": "+4 BP. It buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.",
-        "pt": "+4 BP. Ele se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve proteção contra Freeze."
+        "en": "+4 BP.\nIt buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.",
+        "pt": "+4 BP.\nEle se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve proteção contra Freeze."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -150,8 +220,8 @@
       },
       "availableUntil": "sc-ch4-cp-03",
       "hint": {
-        "en": "+4 BP. Only during the night. Skyler by the landing port warehouse → Captain Petrov in Abend Bar → Quint in the orbal factory → Zosimov by the tree at the port entrance → Fabree on the deck → bottom level of the airliner.",
-        "pt": "+4 BP. Só durante a noite. Skyler no depósito do porto → Captain Petrov no Abend Bar → Quint na fábrica orbal → Zosimov na árvore da entrada do porto → Fabree no deck → nível mais baixo do airliner."
+        "en": "Reward: +4 BP. Available only at night. Follow these leads in order.",
+        "pt": "Recompensa: +4 BP. Disponível apenas à noite. Siga estas pistas em ordem."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -160,6 +230,44 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Skyler by the landing port warehouse.",
+            "pt": "Fale com Skyler junto ao armazém do porto."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Captain Petrov in Abend Bar.",
+            "pt": "Fale com Captain Petrov no Abend Bar."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Quint in the orbal factory.",
+            "pt": "Fale com Quint na fábrica orbal."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Zosimov by the tree at the port entrance.",
+            "pt": "Fale com Zosimov junto à árvore na entrada do porto."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Fabree on the deck.",
+            "pt": "Fale com Fabree no convés."
+          }
+        },
+        {
+          "text": {
+            "en": "Go to the bottom level of the airliner.",
+            "pt": "Vá ao nível inferior do airliner."
+          }
+        }
       ]
     },
     {
@@ -174,8 +282,8 @@
       },
       "availableUntil": "sc-ch4-cp-03",
       "hint": {
-        "en": "+6 BP. When you report the night investigation, pick the 2nd option, then the 3rd.",
-        "pt": "+6 BP. Ao relatar a investigação da noite, escolha a 2ª opção e depois a 3ª."
+        "en": "+6 BP.\nWhen you report the night investigation, pick the 2nd option, then the 3rd.",
+        "pt": "+6 BP.\nAo relatar a investigação da noite, escolha a 2ª opção e depois a 3ª."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -369,8 +477,8 @@
       },
       "availableUntil": "sc-ch4-cp-03",
       "hint": {
-        "en": "Silken Soup, Spring Spiral Noodles, Strawberry Supreme Crepe and Three-Egg Rice Porridge.",
-        "pt": "Silken Soup, Spring Spiral Noodles, Strawberry Supreme Crepe e Three-Egg Rice Porridge."
+        "en": "Obtain and eat each dish to learn its recipe.",
+        "pt": "Obtenha e coma cada prato para aprender sua receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -378,6 +486,32 @@
       ],
       "trophies": [
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Silken Soup",
+            "pt": "Silken Soup"
+          }
+        },
+        {
+          "text": {
+            "en": "Spring Spiral Noodles",
+            "pt": "Spring Spiral Noodles"
+          }
+        },
+        {
+          "text": {
+            "en": "Strawberry Supreme Crepe",
+            "pt": "Strawberry Supreme Crepe"
+          }
+        },
+        {
+          "text": {
+            "en": "Three-Egg Rice Porridge",
+            "pt": "Three-Egg Rice Porridge"
+          }
+        }
       ]
     },
     {
@@ -801,8 +935,8 @@
       },
       "availableUntil": "sc-ch4-cp-04",
       "hint": {
-        "en": "+4 BP. Medium deadline. Its defense is so high that physical hits do nothing: bring water arts and orbal-gun users, spread the party, and resist Seal, Mute and Blind.",
-        "pt": "+4 BP. Prazo médio. A defesa é tão alta que golpes físicos não causam dano: leve arts de água e quem usa arma orbal, espalhe a equipe e resista a Seal, Mute e Blind."
+        "en": "+4 BP.\nMedium deadline.\nIts defense is so high that physical hits do nothing: bring water arts and orbal-gun users, spread the party, and resist Seal, Mute and Blind.",
+        "pt": "+4 BP.\nPrazo médio.\nA defesa é tão alta que golpes físicos não causam dano: leve arts de água e quem usa arma orbal, espalhe a equipe e resista a Seal, Mute e Blind."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -824,8 +958,8 @@
       },
       "availableUntil": "sc-ch4-cp-04",
       "hint": {
-        "en": "+4 BP. Medium deadline. Like the Mistwald monster chest: bring Confuse and Deathblow protection; its allies absorb water and wind but are weak to earth and fire.",
-        "pt": "+4 BP. Prazo médio. Parecido com o baú de monstros de Mistwald: leve proteção contra Confuse e Deathblow; os aliados absorvem água e vento, mas são fracos contra terra e fogo."
+        "en": "+4 BP.\nMedium deadline.\nLike the Mistwald monster chest: bring Confuse and Deathblow protection; its allies absorb water and wind but are weak to earth and fire.",
+        "pt": "+4 BP.\nPrazo médio.\nParecido com o baú de monstros de Mistwald: leve proteção contra Confuse e Deathblow; os aliados absorvem água e vento, mas são fracos contra terra e fogo."
       },
       "spoilerLevel": 0,
       "sources": [

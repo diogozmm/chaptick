@@ -77,8 +77,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "3 BP. Recover three books: 3F Design Room (steel table), 4F Laboratory (table) and 4F Clinic (drawer). It starts the Overtime chain.",
-        "pt": "3 BP. Recupere três livros: sala de projetos do 3F (mesa de aço), laboratório do 4F (mesa) e clínica do 4F (gaveta). Começa a sequência Overtime."
+        "en": "Reward: 3 BP. Recover all three books. This starts the Overtime quest chain.",
+        "pt": "Recompensa: 3 BP. Recupere os três livros. Isso inicia a sequência de missões Overtime."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -87,6 +87,26 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "3F Design Room — steel table.",
+            "pt": "Design Room, 3º andar — mesa de aço."
+          }
+        },
+        {
+          "text": {
+            "en": "4F Laboratory — table.",
+            "pt": "Laboratory, 4º andar — mesa."
+          }
+        },
+        {
+          "text": {
+            "en": "4F Clinic — drawer.",
+            "pt": "Clinic, 4º andar — gaveta."
+          }
+        }
       ]
     },
     {
@@ -101,8 +121,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "4 BP. Not on the board, new in the remake. Check the mailbox, then Tita's desk (3rd option). Visit the chapel plaque and Ray in the 4F Laboratory, and defeat the pink Creepy Sheep in southwest Tratt Plains for its wool.",
-        "pt": "4 BP. Não aparece no quadro, nova no remake. Veja a caixa de correio e depois a mesa da Tita (3ª opção). Visite a placa da capela e o Ray no laboratório do 4F, e derrote a Creepy Sheep rosa no sudoeste das Tratt Plains para pegar a lã."
+        "en": "Reward: 4 BP. Hidden quest, new in the remake.",
+        "pt": "Recompensa: 4 BP. Missão oculta, nova no remake."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -111,6 +131,38 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Check the mailbox.",
+            "pt": "Examine a caixa de correio."
+          }
+        },
+        {
+          "text": {
+            "en": "Check Tita’s desk and choose the third option.",
+            "pt": "Examine a mesa de Tita e escolha a 3ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Visit the chapel plaque.",
+            "pt": "Examine a placa na capela."
+          }
+        },
+        {
+          "text": {
+            "en": "Visit Ray in the 4F Laboratory.",
+            "pt": "Fale com Ray no Laboratory do 4º andar."
+          }
+        },
+        {
+          "text": {
+            "en": "Defeat the pink Creepy Sheep in southwest Tratt Plains to obtain its wool.",
+            "pt": "Derrote a Creepy Sheep rosa no sudoeste de Tratt Plains para obter a lã."
+          }
+        }
       ]
     },
     {
@@ -125,8 +177,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "4 (+2) BP. Wear the Strega-α on Estelle and visit at least four of Air-Letten, Wolf Fort, Sanktheim Gate, Leiston Fortress and Elmo Village (fast travel counts).",
-        "pt": "4 (+2) BP. Equipe as Strega-α na Estelle e visite pelo menos quatro entre Air-Letten, Wolf Fort, Sanktheim Gate, Leiston Fortress e Elmo Village (viagem rápida conta)."
+        "en": "BP: 4 (+2 bonus). Equip Strega-α on Estelle and visit at least FOUR of these five places; fast travel counts.\n• Air-Letten\n• Wolf Fort\n• Sanktheim Gate\n• Leiston Fortress\n• Elmo Village",
+        "pt": "BP: 4 (+2 de bônus). Equipe Strega-α em Estelle e visite pelo menos QUATRO destes cinco locais; viagem rápida conta.\n• Air-Letten\n• Wolf Fort\n• Sanktheim Gate\n• Leiston Fortress\n• Elmo Village"
       },
       "spoilerLevel": 0,
       "sources": [
@@ -149,8 +201,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "4 BP. Give Antoine fresh milk, ask Travis (5F) about the cigarettes, talk to Chief Murdock (2F), take the Back Room Key from the desk and check his desk in the back room.",
-        "pt": "4 BP. Dê leite fresco ao Antoine, pergunte ao Travis (5F) sobre os cigarros, fale com o Chief Murdock (2F), pegue a Back Room Key na mesa e examine a mesa dele na sala dos fundos."
+        "en": "Reward: 4 BP. Follow the investigation in this order.",
+        "pt": "Recompensa: 4 BP. Siga a investigação nesta ordem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -159,6 +211,38 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Give Antoine fresh milk.",
+            "pt": "Dê leite fresco a Antoine."
+          }
+        },
+        {
+          "text": {
+            "en": "Ask Travis on 5F about the cigarettes.",
+            "pt": "Pergunte a Travis, no 5º andar, sobre os cigarros."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Chief Murdock on 2F.",
+            "pt": "Fale com Chief Murdock no 2º andar."
+          }
+        },
+        {
+          "text": {
+            "en": "Take the Back Room Key from the desk.",
+            "pt": "Pegue a Back Room Key na mesa."
+          }
+        },
+        {
+          "text": {
+            "en": "Use it to check Murdock’s desk in the back room.",
+            "pt": "Use a chave para examinar a mesa de Murdock na sala dos fundos."
+          }
+        }
       ]
     },
     {
@@ -173,8 +257,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "3 BP. Pick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben. Rewards Acerbic Tomato Sandwich.",
-        "pt": "3 BP. Pegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben. Dá o Acerbic Tomato Sandwich."
+        "en": "3 BP.\nPick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben.\nRewards Acerbic Tomato Sandwich.",
+        "pt": "3 BP.\nPegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben. Dá o Acerbic Tomato Sandwich."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -197,8 +281,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "4 BP. Tanky against physical hits but weak to arts and most ailments; it shields itself at low HP.",
-        "pt": "4 BP. Aguenta golpes físicos, mas é fraco contra arts e quase todos os efeitos; ele se protege com pouco HP."
+        "en": "4 BP.\nTanky against physical hits but weak to arts and most ailments; it shields itself at low HP.",
+        "pt": "4 BP.\nAguenta golpes físicos, mas é fraco contra arts e quase todos os efeitos; ele se protege com pouco HP."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -221,8 +305,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "4 BP. Talk to Wong and beat the Armored Rabbits. Unlocks Roadside Repair.",
-        "pt": "4 BP. Fale com o Wong e derrote os Armored Rabbits. Libera a Roadside Repair."
+        "en": "4 BP.\nTalk to Wong and beat the Armored Rabbits. Unlocks Roadside Repair.",
+        "pt": "4 BP.\nFale com o Wong e derrote os Armored Rabbits. Libera a Roadside Repair."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -245,8 +329,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "5 BP. Talk to Prometheus (3F), read the Orbal Automobile entry on the 5F computer, get the Drive Orbment from Rudi in Kaldia Tunnel and bring it to Wong.",
-        "pt": "5 BP. Fale com o Prometheus (3F), leia a entrada do Orbal Automobile no computador do 5F, pegue o Drive Orbment com o Rudi no Kaldia Tunnel e leve ao Wong."
+        "en": "Reward: 5 BP. Unlocked by Cargo Car.",
+        "pt": "Recompensa: 5 BP. Desbloqueada por Cargo Car."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -255,6 +339,32 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Prometheus on 3F.",
+            "pt": "Fale com Prometheus no 3º andar."
+          }
+        },
+        {
+          "text": {
+            "en": "Read the Orbal Automobile entry on the 5F computer.",
+            "pt": "Leia a entrada Orbal Automobile no computador do 5º andar."
+          }
+        },
+        {
+          "text": {
+            "en": "Get the Drive Orbment from Rudi in Kaldia Tunnel.",
+            "pt": "Pegue o Drive Orbment com Rudi em Kaldia Tunnel."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring the Drive Orbment to Wong.",
+            "pt": "Entregue o Drive Orbment a Wong."
+          }
+        }
       ]
     },
     {
@@ -269,8 +379,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "2 (+4) BP. Not on the board. Deliver his letter to Fey (factory B1F) with a gift: the Wool Knit Cap from Bell Station gives the full +4; Work Gloves or a Seasonal Tart give +2.",
-        "pt": "2 (+4) BP. Não aparece no quadro. Entregue a carta dele à Fey (B1F da fábrica) com um presente: o Wool Knit Cap da Bell Station dá os +4; Work Gloves ou uma Seasonal Tart dão +2."
+        "en": "BP: 2 (+4 bonus). Hidden quest: deliver the letter to Fey on factory B1F with ONE gift.\n• Wool Knit Cap from Bell Station: full +4 bonus.\n• Work Gloves OR Seasonal Tart: +2 bonus.",
+        "pt": "BP: 2 (+4 de bônus). Missão oculta: entregue a carta a Fey no B1F da fábrica com UM presente.\n• Wool Knit Cap de Bell Station: bônus completo de +4.\n• Work Gloves OU Seasonal Tart: bônus de +2."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -293,8 +403,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "5 BP. Clear the small snakes with area attacks and bring poison protection.",
-        "pt": "5 BP. Derrube as cobras pequenas com ataques em área e leve proteção contra veneno."
+        "en": "5 BP.\nClear the small snakes with area attacks and bring poison protection.",
+        "pt": "5 BP.\nDerrube as cobras pequenas com ataques em área e leve proteção contra veneno."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -317,8 +427,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "3 BP. After Looking for Librarian. Take The Erbe Woodpecker back to Constance.",
-        "pt": "3 BP. Depois da Looking for Librarian. Devolva The Erbe Woodpecker à Constance."
+        "en": "3 BP.\nAfter Looking for Librarian. Take The Erbe Woodpecker back to Constance.",
+        "pt": "3 BP.\nDepois da Looking for Librarian. Devolva The Erbe Woodpecker à Constance."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -341,8 +451,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "4 BP. Examine the central pillar for Hertz's Adventure Vol. 2 and return it.",
-        "pt": "4 BP. Examine o pilar do centro para pegar Hertz's Adventure Vol. 2 e devolva."
+        "en": "4 BP.\nExamine the central pillar for Hertz's Adventure Vol. 2 and return it.",
+        "pt": "4 BP.\nExamine o pilar do centro para pegar Hertz's Adventure Vol. 2 e devolva."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -365,8 +475,8 @@
       },
       "availableUntil": "fc-ch3-cp-02",
       "hint": {
-        "en": "4 BP. The book 31 Cypress Trees is on a barrel (with an Impede 3).",
-        "pt": "4 BP. O livro 31 Cypress Trees está sobre um barril (com um Impede 3)."
+        "en": "4 BP.\nThe book 31 Cypress Trees is on a barrel (with an Impede 3).",
+        "pt": "4 BP.\nO livro 31 Cypress Trees está sobre um barril (com um Impede 3)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -389,8 +499,8 @@
       },
       "availableUntil": "fc-ch3-cp-06",
       "hint": {
-        "en": "6 BP. Short deadline. Defeating the leader buffs the other wolves and it can revive them: bring Anti-Sept All. You can wait until Agate and Tita rejoin, but it expires once you board the airship for Leiston.",
-        "pt": "6 BP. Prazo curto. Derrotar o líder fortalece os outros lobos, e ele pode revivê-los: leve Anti-Sept All. Dá para esperar o Agate e a Tita voltarem, mas a quest expira quando você embarca no airship para Leiston."
+        "en": "6 BP.\nShort deadline. Defeating the leader buffs the other wolves and it can revive them: bring Anti-Sept All. You can wait until Agate and Tita rejoin, but it expires once you board the airship for Leiston.",
+        "pt": "6 BP.\nPrazo curto. Derrotar o líder fortalece os outros lobos, e ele pode revivê-los: leve Anti-Sept All. Dá para esperar o Agate e a Tita voltarem, mas a quest expira quando você embarca no airship para Leiston."
       },
       "spoilerLevel": 0,
       "sources": [

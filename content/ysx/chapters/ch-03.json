@@ -29,8 +29,8 @@
       },
       "availableUntil": "ysx-ch3-cp-01",
       "hint": {
-        "en": "Long deadline. Pick up the three supply boxes at the green markers: behind Balta Island, between Carnac and Balta Island, and far southwest of Carnac near Tyrant Hills (blast the pillars with the cannon first).",
-        "pt": "Prazo longo. Recolha as três caixas de suprimentos nos marcadores verdes: atrás de Balta Island, entre Carnac e Balta Island, e bem a sudoeste de Carnac, perto de Tyrant Hills (destrua os pilares com o canhão antes)."
+        "en": "Long deadline.\nCollect the three supply boxes at the green markers.",
+        "pt": "Prazo longo.\nRecolha as três caixas de suprimentos nos marcadores verdes."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -39,6 +39,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Behind Balta Island.",
+            "pt": "Atrás de Balta Island."
+          }
+        },
+        {
+          "text": {
+            "en": "Between Carnac and Balta Island.",
+            "pt": "Entre Carnac e Balta Island."
+          }
+        },
+        {
+          "text": {
+            "en": "Far southwest of Carnac, near Tyrant Hills: blast the pillars with the cannon first.",
+            "pt": "No extremo sudoeste de Carnac, perto de Tyrant Hills: primeiro destrua os pilares com o canhão."
+          }
+        }
       ]
     },
     {

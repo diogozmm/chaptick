@@ -44,8 +44,8 @@
       },
       "availableUntil": "sc-ch6-cp-01",
       "hint": {
-        "en": "+6 BP. Corna gives you an old photo; show it to Lila upstairs in the Mayor's Residence, then to the Mayor.",
-        "pt": "+6 BP. A Corna entrega uma foto antiga; mostre à Lila no andar de cima da residência do prefeito e depois à prefeita."
+        "en": "Reward: +6 BP. Show the old photo in this order.",
+        "pt": "Recompensa: +6 BP. Mostre a foto antiga nesta ordem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -54,6 +54,26 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Get the old photo from Corna.",
+            "pt": "Pegue a foto antiga com Corna."
+          }
+        },
+        {
+          "text": {
+            "en": "Show it to Lila upstairs in the Mayor’s Residence.",
+            "pt": "Mostre a foto a Lila no andar de cima da residência do prefeito."
+          }
+        },
+        {
+          "text": {
+            "en": "Show it to the Mayor.",
+            "pt": "Mostre a foto ao prefeito."
+          }
+        }
       ]
     },
     {
@@ -68,8 +88,8 @@
       },
       "availableUntil": "sc-ch6-cp-01",
       "hint": {
-        "en": "4 +2 BP. Escort Milano from the west exit to Ravennue Village within 10 minutes for the bonus. The timer pauses in scenes and Command Battles, but each turn costs 5 seconds; a forced fight waits on Ravennue Trail (the leader is weak to water).",
-        "pt": "4 +2 BP. Escolte a Milano da saída oeste até Ravennue Village em até 10 minutos para o bônus. O cronômetro pausa em cenas e Command Battles, mas cada turno custa 5 segundos; uma luta obrigatória espera na Ravennue Trail (o líder é fraco contra água)."
+        "en": "BP: 4 (+2 bonus). Escort Milano from the west exit to Ravennue Village in under 10 minutes for the bonus.\nTimer: pauses during scenes and Command Battles, but each turn adds 5 seconds.\nForced fight: on Ravennue Trail; the leader is weak to water.",
+        "pt": "BP: 4 (+2 de bônus). Escolte Milano da saída oeste até Ravennue Village em menos de 10 minutos para receber o bônus.\nCronômetro: pausa nas cenas e nas Command Battles, mas cada turno custa 5 segundos.\nLuta obrigatória: em Ravennue Trail; o líder é fraco contra água."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -92,8 +112,8 @@
       },
       "availableUntil": "sc-ch6-cp-01",
       "hint": {
-        "en": "Talk to the officers at the gate, then clear every mystery machine inside until the game says they are all defeated. Grab the chest beyond the east exit: there is no way back in afterwards.",
-        "pt": "Fale com os oficiais no portão e depois derrote todas as máquinas misteriosas lá dentro até o jogo avisar que acabaram. Pegue o baú depois da saída leste: depois não dá para voltar."
+        "en": "One-time visit: collect the chest beyond the east exit before leaving.",
+        "pt": "Visita única: recolha o baú depois da saída leste antes de ir embora."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -102,6 +122,26 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to the officers at the gate.",
+            "pt": "Fale com os oficiais no portão."
+          }
+        },
+        {
+          "text": {
+            "en": "Defeat every mystery machine inside until the game confirms they are all defeated.",
+            "pt": "Derrote todas as máquinas misteriosas lá dentro até o jogo confirmar que todas foram vencidas."
+          }
+        },
+        {
+          "text": {
+            "en": "Collect the chest beyond the east exit; you cannot return afterwards.",
+            "pt": "Recolha o baú depois da saída leste; depois disso, não será possível voltar."
+          }
+        }
       ]
     },
     {
@@ -117,8 +157,8 @@
       },
       "availableUntil": "sc-ch6-cp-03",
       "hint": {
-        "en": "+5 BP. Losing still lets the story go on, so save first. Equip Grail Locket or a Proxy Puppet, keep Earth Guard up, blind them with Grand Stream, and when they start reviving each other finish them with an area art.",
-        "pt": "+5 BP. Perder não impede a história de seguir, então salve antes. Equipe Grail Locket ou um Proxy Puppet, mantenha o Earth Guard, cegue-os com Grand Stream e, quando começarem a se reviver, finalize com uma art em área."
+        "en": "Bonus: +5 BP. Save first: losing lets the story continue but costs the bonus.\nPreparation: equip Grail Locket or a Proxy Puppet.\nDuring the fight:\n• Keep Earth Guard active.\n• Use Grand Stream to inflict Blind.\n• When they start reviving each other, finish them with an area art.",
+        "pt": "Bônus: +5 BP. Salve antes: perder permite continuar a história, mas custa o bônus.\nPreparação: equipe Grail Locket ou Proxy Puppet.\nDurante a luta:\n• Mantenha Earth Guard ativo.\n• Use Grand Stream para causar Blind.\n• Quando começarem a reviver uns aos outros, finalize com uma art em área."
       },
       "spoilerLevel": 2,
       "sources": [
@@ -207,12 +247,32 @@
       },
       "availableUntil": "sc-ch6-cp-01",
       "hint": {
-        "en": "Talk to Cecile, find her husband at Valleria Shore, then come back to her.",
-        "pt": "Fale com a Cecile, encontre o marido dela na Valleria Shore e volte a ela."
+        "en": "Follow Cecile’s request to obtain Lakelord II.",
+        "pt": "Siga o pedido de Cecile para obter Lakelord II."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Cecile.",
+            "pt": "Fale com Cecile."
+          }
+        },
+        {
+          "text": {
+            "en": "Find her husband at Valleria Shore.",
+            "pt": "Encontre o marido dela em Valleria Shore."
+          }
+        },
+        {
+          "text": {
+            "en": "Return to Cecile.",
+            "pt": "Volte para falar com Cecile."
+          }
+        }
       ]
     },
     {
@@ -228,8 +288,8 @@
       },
       "availableUntil": "sc-ch6-cp-02",
       "hint": {
-        "en": "Several rooms open only with the three card keys you collect along the way, so backtrack once you have all of them (the monster chest needs the last key). Includes Green Cookie (eat it for the recipe) and a second pair of Night-Vision Goggles for the dark room.",
-        "pt": "Várias salas só abrem com os três cartões de acesso que você pega pelo caminho, então volte quando tiver todos (o baú de monstros precisa do último). Inclui Green Cookie (coma para ganhar a receita) e um segundo par de Night-Vision Goggles para a sala escura."
+        "en": "Several rooms open only with the three card keys you collect along the way, so backtrack once you have all of them (the monster chest needs the last key).\nIncludes Green Cookie (eat it for the recipe) and a second pair of Night-Vision Goggles for the dark room.",
+        "pt": "Várias salas só abrem com os três cartões de acesso que você pega pelo caminho, então volte quando tiver todos (o baú de monstros precisa do último).\nInclui Green Cookie (coma para ganhar a receita) e um segundo par de Night-Vision Goggles para a sala escura."
       },
       "spoilerLevel": 1,
       "sources": [

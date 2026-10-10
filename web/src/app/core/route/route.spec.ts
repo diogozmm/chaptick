@@ -1,5 +1,5 @@
 import { Item } from '../content/content.models';
-import { itemChange, routeProgress, stepChange, stepKey } from './route';
+import { itemChange, routeProgress, stepChange, stepDone, stepKey } from './route';
 
 const item: Item = {
   id: 't-ch0-co-01',
@@ -30,7 +30,22 @@ describe('route steps', () => {
 
   it('reopens the item when a step is unticked', () => {
     const done = new Set([item.id, stepKey(item.id, 0)]);
-    expect(stepChange(item, 0, done)).toEqual({ ids: [stepKey(item.id, 0), item.id], done: false });
+    expect(stepChange(item, 0, done)).toEqual({
+      ids: [stepKey(item.id, 0), item.id], done: false,
+      alsoDone: [stepKey(item.id, 1), stepKey(item.id, 2)],
+    });
+  });
+
+  it('preserves completion when a content revision adds steps to an already completed item', () => {
+    const done = new Set([item.id]);
+    expect(routeProgress(item, done)).toEqual({ done: 3, total: 3 });
+    expect(stepDone(item, 1, done)).toBe(true);
+    const change = stepChange(item, 1, done);
+    for (const key of change.alsoDone ?? []) done.add(key);
+    for (const key of change.ids) done.delete(key);
+    expect(routeProgress(item, done)).toEqual({ done: 2, total: 3 });
+    expect(stepDone(item, 1, done)).toBe(false);
+    expect(stepChange(item, 1, done).done).toBe(true);
   });
 
   it('ticks or clears every step with the item', () => {

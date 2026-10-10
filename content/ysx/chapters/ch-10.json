@@ -29,8 +29,8 @@
       },
       "availableUntil": "ysx-ch10-cp-01",
       "hint": {
-        "en": "Short deadline. Visit the three event markers in the city of Ribe, then fast travel to the depths of the capital and examine the glowing object underwater. Rewards Abiding Love+ and Lila's character note.",
-        "pt": "Prazo curto. Visite os três marcadores de evento na cidade de Ribe, depois viaje até o fundo da capital e examine o objeto brilhante debaixo d'água. Dá Abiding Love+ e a nota de personagem da Lila."
+        "en": "Short deadline.\nRewards: Abiding Love+ and Lila’s character note.",
+        "pt": "Prazo curto.\nRecompensas: Abiding Love+ e a nota de personagem de Lila."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -39,6 +39,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Visit all three event markers in the city of Ribe.",
+            "pt": "Visite os três marcadores de evento na cidade de Ribe."
+          }
+        },
+        {
+          "text": {
+            "en": "Fast travel to the depths of the capital.",
+            "pt": "Use a viagem rápida até as profundezas da capital."
+          }
+        },
+        {
+          "text": {
+            "en": "Examine the glowing object underwater.",
+            "pt": "Examine o objeto brilhante debaixo d’água."
+          }
+        }
       ]
     },
     {
@@ -53,8 +73,8 @@
       },
       "availableUntil": "ysx-ch10-cp-01",
       "hint": {
-        "en": "Short deadline. Three rounds against the Undying Fleet, each a naval battle plus a land battle: near Anchor Island, near Falun Island and at Carnac (fast travel to the Seagull Flock). Upgrade the Sandras first. Rewards a Sverkite.",
-        "pt": "Prazo curto. Três rodadas contra a Undying Fleet, cada uma com batalha naval e batalha em terra: perto de Anchor Island, perto de Falun Island e em Carnac (viaje até o Seagull Flock). Melhore o Sandras antes. Dá uma Sverkite."
+        "en": "Short deadline.\nUpgrade the Sandras first. Each round includes a naval battle and a land battle.\nReward: a Sverkite.",
+        "pt": "Prazo curto.\nMelhore o Sandras antes de começar. Cada rodada inclui uma batalha naval e uma terrestre.\nRecompensa: um Sverkite."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -63,6 +83,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Defeat the Undying Fleet near Anchor Island.",
+            "pt": "Derrote a Undying Fleet perto de Anchor Island."
+          }
+        },
+        {
+          "text": {
+            "en": "Defeat the Undying Fleet near Falun Island.",
+            "pt": "Derrote a Undying Fleet perto de Falun Island."
+          }
+        },
+        {
+          "text": {
+            "en": "Defeat the Undying Fleet at Carnac; fast travel to the Seagull Flock.",
+            "pt": "Derrote a Undying Fleet em Carnac; use a viagem rápida até Seagull Flock."
+          }
+        }
       ]
     },
     {
@@ -77,8 +117,8 @@
       },
       "availableUntil": "ysx-ch10-cp-01",
       "hint": {
-        "en": "Short deadline. Added when you land. Defeat every Griegr on the island; the target then appears in the northeast corner. Rewards Crystal Shards ×25,000.",
-        "pt": "Prazo curto. Entra ao desembarcar. Derrote todos os Griegrs da ilha; o alvo então aparece no canto nordeste. Dá Crystal Shards ×25.000."
+        "en": "Short deadline.\nAdded when you land. Defeat every Griegr on the island; the target then appears in the northeast corner.\nRewards Crystal Shards ×25,000.",
+        "pt": "Prazo curto.\nEntra ao desembarcar. Derrote todos os Griegrs da ilha; o alvo então aparece no canto nordeste. Dá Crystal Shards ×25.000."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -101,8 +141,8 @@
       },
       "availableUntil": "ysx-ch10-cp-01",
       "hint": {
-        "en": "Short deadline. Buy Hidden Treasure Chart F from the merchant Gøsta, north of the second Rogue Sea recapture. Rewards 50,000 Gold.",
-        "pt": "Prazo curto. Compre o Hidden Treasure Chart F do mercador Gøsta, ao norte da segunda retomada do Rogue Sea. Dá 50.000 Gold."
+        "en": "Short deadline.\nBuy Hidden Treasure Chart F from the merchant Gøsta, north of the second Rogue Sea recapture.\nRewards 50,000 Gold.",
+        "pt": "Prazo curto.\nCompre o Hidden Treasure Chart F do mercador Gøsta, ao norte da segunda retomada do Rogue Sea. Dá 50.000 Gold."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -124,8 +164,8 @@
       },
       "availableUntil": "ysx-ch10-cp-01",
       "hint": {
-        "en": "Short deadline. Needs all three Rogue Sea islands recaptured, or some markers never appear. Use the spyglass at every green marker; the last one appears west of Gøsta's ship. Rewards a Spirit Necklace.",
-        "pt": "Prazo curto. Exige as três ilhas do Rogue Sea retomadas, senão alguns marcadores nunca aparecem. Use a luneta em cada marcador verde; o último aparece a oeste do navio do Gøsta. Dá um Spirit Necklace."
+        "en": "Short deadline.\nNeeds all three Rogue Sea islands recaptured, or some markers never appear.\nUse the spyglass at every green marker; the last one appears west of Gøsta's ship.\nRewards a Spirit Necklace.",
+        "pt": "Prazo curto.\nExige as três ilhas do Rogue Sea retomadas, senão alguns marcadores nunca aparecem.\nUse a luneta em cada marcador verde; o último aparece a oeste do navio do Gøsta.\nDá um Spirit Necklace."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -148,8 +188,8 @@
       },
       "availableUntil": "ysx-ch10-cp-01",
       "hint": {
-        "en": "Short deadline. Examine the axe at the end of Giant's Hand Isle, then bring Ivalde Crystalucent Coral ×3 (Gamellion, Seabed Temple) and Vajra Bone ×3 (Zylk Biter, Rollo's Ark). Rewards Karja's strongest weapon.",
-        "pt": "Prazo curto. Examine o machado no fim de Giant's Hand Isle e leve à Ivalde Crystalucent Coral ×3 (Gamellion, Seabed Temple) e Vajra Bone ×3 (Zylk Biter, Rollo's Ark). Dá a arma mais forte da Karja."
+        "en": "Short deadline.\nReward: Karja’s strongest weapon.",
+        "pt": "Prazo curto.\nRecompensa: a arma mais forte de Karja."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -158,6 +198,32 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Examine the axe at the end of Giant’s Hand Isle.",
+            "pt": "Examine o machado no fim de Giant’s Hand Isle."
+          }
+        },
+        {
+          "text": {
+            "en": "Gather 3 Crystalucent Coral from Gamellion in Seabed Temple.",
+            "pt": "Reúna 3 Crystalucent Coral de Gamellion em Seabed Temple."
+          }
+        },
+        {
+          "text": {
+            "en": "Gather 3 Vajra Bone from Zylk Biter in Rollo’s Ark.",
+            "pt": "Reúna 3 Vajra Bone de Zylk Biter em Rollo’s Ark."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring the materials to Ivalde.",
+            "pt": "Entregue os materiais a Ivalde."
+          }
+        }
       ]
     },
     {

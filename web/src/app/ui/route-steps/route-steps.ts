@@ -5,7 +5,7 @@ import { Item } from '../../core/content/content.models';
 import { LangService } from '../../core/i18n/lang.service';
 import { LocalizePipe } from '../../core/i18n/localize.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
-import { routeProgress, stepChange, stepKey } from '../../core/route/route';
+import { routeProgress, stepChange, stepDone } from '../../core/route/route';
 import { Icon } from '../icon/icon';
 
 /** A route through an area: each stop has its own checkbox, and the last one completes the item. */
@@ -13,6 +13,7 @@ import { Icon } from '../icon/icon';
   selector: 'app-route-steps',
   imports: [TranslocoPipe, LocalizePipe, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { '[class.detailed]': '!collapsible()' },
   template: `
     @let p = progress();
     @if (collapsible()) {
@@ -25,11 +26,14 @@ import { Icon } from '../icon/icon';
     @if (open() || !collapsible()) {
       <ol class="steps" [id]="listId()">
         @for (step of item().steps; track $index) {
-          @let key = stepKey(item().id, $index);
-          <li [class.done]="store.done().has(key)">
+          @let done = stepDone(item(), $index, store.done());
+          <li [class.done]="done">
             <label>
-              <input type="checkbox" class="checkbox" [checked]="store.done().has(key)" (change)="toggle($index)" />
-              <span>{{ step.text | localize: lang.lang() }}</span>
+              @if (!collapsible()) {
+                <span class="step-number" aria-hidden="true">{{ $index + 1 }}</span>
+              }
+              <input type="checkbox" class="checkbox" [checked]="done" (change)="toggle($index)" />
+              <span class="step-text">{{ step.text | localize: lang.lang() }}</span>
             </label>
           </li>
         }
@@ -49,13 +53,34 @@ import { Icon } from '../icon/icon';
     .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; counter-reset: step; }
     .steps label { display: flex; align-items: flex-start; gap: 0.6rem; min-height: 2.75rem; padding: 0.35rem 0; cursor: pointer; font-size: 0.9rem; line-height: 1.45; }
     .steps .checkbox { width: 1.35rem; height: 1.35rem; margin-top: 0.05rem; }
-    .steps li.done span { color: var(--text-muted); text-decoration: line-through; }
+    .steps li.done .step-text { color: var(--text-muted); text-decoration: line-through; }
+    :host(.detailed) .steps { gap: 0.75rem; }
+    :host(.detailed) li { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+    :host(.detailed) label {
+      display: grid; grid-template-columns: 2rem minmax(0, 1fr) 1.35rem; gap: 0.75rem;
+      padding: 1rem; font-size: 1rem; line-height: 1.65;
+    }
+    .step-number {
+      display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
+      background: var(--accent-soft); color: var(--accent); font: 600 0.8125rem/1 var(--font-body);
+      font-variant-numeric: tabular-nums;
+    }
+    :host(.detailed) .step-text { grid-column: 2; grid-row: 1; overflow-wrap: anywhere; }
+    :host(.detailed) .checkbox { grid-column: 3; grid-row: 1; margin-top: 0.3rem; }
+    :host(.detailed) li:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
+    :host(.detailed) li.done { background: var(--surface-2); }
+    :host(.detailed) li.done .step-text { text-decoration: none; }
+    @media (hover: hover) { :host(.detailed) li:hover { border-color: var(--border-strong); } }
+    @media (max-width: 380px) {
+      :host(.detailed) label { grid-template-columns: 1.75rem minmax(0, 1fr) 1.35rem; padding: 0.875rem; gap: 0.5rem; }
+      .step-number { width: 1.75rem; height: 1.75rem; }
+    }
   `,
 })
 export class RouteSteps {
   protected readonly store = inject(ProgressStore);
   protected readonly lang = inject(LangService);
-  protected readonly stepKey = stepKey;
+  protected readonly stepDone = stepDone;
 
   readonly item = input.required<Item>();
   /** Start expanded (detail page) or collapsed (checklist row). */
@@ -69,6 +94,6 @@ export class RouteSteps {
 
   protected toggle(index: number): void {
     const change = stepChange(this.item(), index, this.store.done());
-    void this.store.setDone(change.ids, change.done);
+    void this.store.setDone(change.ids, change.done, change.alsoDone);
   }
 }

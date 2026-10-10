@@ -21,8 +21,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring the Office Worker a Stalktopus. Reward: The Mall Administrator gets called.",
-        "pt": "Objetivos: Leve um Polvo-de-antenas ao funcionário do escritório. Recompensa: O Administrador do Shopping é chamado."
+        "en": "Bring the Office Worker a Stalktopus.\nReward: The Mall Administrator gets called.",
+        "pt": "Leve um Polvo-de-antenas ao funcionário do escritório.\nRecompensa: O Administrador do Shopping é chamado."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -42,8 +42,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Jeremiah a Light Salad.",
-        "pt": "Objetivos: Leve uma Salada Leve ao Jeremiah."
+        "en": "Bring Jeremiah a Light Salad.",
+        "pt": "Leve uma Salada Leve ao Jeremiah."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -63,12 +63,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Art for more details; Reach the third floor of the Mall Mines. Reward: Blueprint: Preserving Barrel.",
-        "pt": "Objetivos: Fale com o Art para saber mais; Chegue ao 3º andar das Minas do Shopping. Recompensa: Projeto: Barril de Conserva."
+        "en": "Complete the objectives below.\nReward: Blueprint: Preserving Barrel.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Projeto: Barril de Conserva."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Art for more details.",
+            "pt": "Fale com o Art para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Reach the third floor of the Mall Mines.",
+            "pt": "Chegue ao 3º andar das Minas do Shopping."
+          }
+        }
       ]
     },
     {
@@ -84,12 +98,50 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring the Gatekeeper some pizza; Find the first Gate Key; Speak to the Gatekeeper; Find the second Gate Key; Speak to the Gatekeeper; Find the final Gate Key.",
-        "pt": "Objetivos: Leve pizza ao Guardião do Portão; Encontre a primeira Chave do Portão; Fale com o Guardião do Portão; Encontre a segunda Chave do Portão; Fale com o Guardião do Portão; Encontre a última Chave do Portão."
+        "en": "Complete the objectives below.",
+        "pt": "Conclua os objetivos abaixo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring the Gatekeeper some pizza.",
+            "pt": "Leve pizza ao Guardião do Portão."
+          }
+        },
+        {
+          "text": {
+            "en": "Find the first Gate Key.",
+            "pt": "Encontre a primeira Chave do Portão."
+          }
+        },
+        {
+          "text": {
+            "en": "Speak to the Gatekeeper.",
+            "pt": "Fale com o Guardião do Portão."
+          }
+        },
+        {
+          "text": {
+            "en": "Find the second Gate Key.",
+            "pt": "Encontre a segunda Chave do Portão."
+          }
+        },
+        {
+          "text": {
+            "en": "Speak to the Gatekeeper.",
+            "pt": "Fale com o Guardião do Portão."
+          }
+        },
+        {
+          "text": {
+            "en": "Find the final Gate Key.",
+            "pt": "Encontre a última Chave do Portão."
+          }
+        }
       ]
     },
     {
@@ -105,8 +157,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Sort out this tentacle mess.",
-        "pt": "Objetivos: Dê um jeito nessa bagunça de tentáculos."
+        "en": "Sort out this tentacle mess.",
+        "pt": "Dê um jeito nessa bagunça de tentáculos."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -126,8 +178,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Lend Ellie some money while she shops in the General Store. Inside: 2× Cursed Die, 1× Lucky Die, 1× Crimson Die.",
-        "pt": "Como conseguir: Empreste dinheiro à Ellie quando ela estiver comprando no Armazém. Conteúdo: 2× Dado Amaldiçoado, 1× Dado da Sorte, 1× Dado Carmesim."
+        "en": "How to get it: Lend Ellie some money while she shops in the General Store.\nInside: 2× Cursed Die, 1× Lucky Die, 1× Crimson Die.",
+        "pt": "Como conseguir: Empreste dinheiro à Ellie quando ela estiver comprando no Armazém.\nConteúdo: 2× Dado Amaldiçoado, 1× Dado da Sorte, 1× Dado Carmesim."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -147,8 +199,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Random: tier 1 book loot in the Mall Mines. Inside: 1× Aged Rum, 1× Small Coin Pouch, 1× Fickle Potion of Greed, 1× Fickle Potion of Panic, 1× Fickle Potion of Daring, 5× Gold Ore, 1× Mystery Sandwich.",
-        "pt": "Como conseguir: Aleatório: livros (nível 1) achados nas Minas do Shopping. Conteúdo: 1× Rum Envelhecido, 1× Bolsinha de Moedas Pequena, 1× Poção Volúvel de Ganância, 1× Poção Volúvel de Pânico, 1× Poção Volúvel de Ousadia, 5× Minério de Ouro, 1× Sanduíche Misterioso."
+        "en": "How to get it: Random: tier 1 book loot in the Mall Mines.\nInside: 1× Aged Rum, 1× Small Coin Pouch, 1× Fickle Potion of Greed, 1× Fickle Potion of Panic, 1× Fickle Potion of Daring, 5× Gold Ore, 1× Mystery Sandwich.",
+        "pt": "Como conseguir: Aleatório: livros (nível 1) achados nas Minas do Shopping.\nConteúdo: 1× Rum Envelhecido, 1× Bolsinha de Moedas Pequena, 1× Poção Volúvel de Ganância, 1× Poção Volúvel de Pânico, 1× Poção Volúvel de Ousadia, 5× Minério de Ouro, 1× Sanduíche Misterioso."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -168,8 +220,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Talk to Molly in her workshop. Inside: 3× Assorted Gems, 2× Treasure Casket, 1× Gem Bag, 1× Blood Potion.",
-        "pt": "Como conseguir: Converse com a Molly na oficina dela. Conteúdo: 3× Gemas Variadas, 2× Baú do Tesouro, 1× Bolsa de Gemas, 1× Poção de Sangue."
+        "en": "How to get it: Talk to Molly in her workshop.\nInside: 3× Assorted Gems, 2× Treasure Casket, 1× Gem Bag, 1× Blood Potion.",
+        "pt": "Como conseguir: Converse com a Molly na oficina dela.\nConteúdo: 3× Gemas Variadas, 2× Baú do Tesouro, 1× Bolsa de Gemas, 1× Poção de Sangue."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -189,8 +241,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Talk to Alice while she is at the farmhouse. Inside: 1× Gem Bag, 2× Treasure Casket, 1× Love Potion, 2× Spiced Sausage, 1× Cured Mana Steak.",
-        "pt": "Como conseguir: Converse com a Alice quando ela estiver na casa da fazenda. Conteúdo: 1× Bolsa de Gemas, 2× Baú do Tesouro, 1× Poção do Amor, 2× Linguiça Temperada, 1× Bife Curado de Mana."
+        "en": "How to get it: Talk to Alice while she is at the farmhouse.\nInside: 1× Gem Bag, 2× Treasure Casket, 1× Love Potion, 2× Spiced Sausage, 1× Cured Mana Steak.",
+        "pt": "Como conseguir: Converse com a Alice quando ela estiver na casa da fazenda.\nConteúdo: 1× Bolsa de Gemas, 2× Baú do Tesouro, 1× Poção do Amor, 2× Linguiça Temperada, 1× Bife Curado de Mana."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -210,8 +262,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Talk to Josh in the Art Gallery. Inside: 2× Rare Gem Bag, 2× Cured Mana Steak.",
-        "pt": "Como conseguir: Converse com o Josh na Galeria de Arte. Conteúdo: 2× Bolsa de Gemas Rara, 2× Bife Curado de Mana."
+        "en": "How to get it: Talk to Josh in the Art Gallery.\nInside: 2× Rare Gem Bag, 2× Cured Mana Steak.",
+        "pt": "Como conseguir: Converse com o Josh na Galeria de Arte.\nConteúdo: 2× Bolsa de Gemas Rara, 2× Bife Curado de Mana."
       },
       "spoilerLevel": 1,
       "sources": [

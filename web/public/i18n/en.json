@@ -130,6 +130,7 @@
   "item": {
     "location": "Location",
     "deadline": "Available until",
+    "instructions": "How to complete",
     "hint": "Hint",
     "hidden": "Hidden until you reveal the name",
     "community": "From the community",
@@ -226,6 +227,7 @@
     "noRecipes": "No recipes yet in the chapters you have reached."
   },
   "route": {
+    "detailTitle": "Step by step",
     "title": "Route",
     "progress": "{{done}} of {{total}}"
   },

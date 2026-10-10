@@ -37,8 +37,8 @@
       },
       "availableUntil": "ysx-ch4-cp-01",
       "hint": {
-        "en": "Long deadline. Hand over Basic Craft Stock ×50, Celadon Clay ×3 and Aged Wood ×3. Afterwards, rest in the Captain's Quarters for an event.",
-        "pt": "Prazo longo. Entregue Basic Craft Stock ×50, Celadon Clay ×3 e Aged Wood ×3. Depois, descanse no Captain's Quarters para um evento."
+        "en": "Long deadline.\nGather these materials for Sandras Spruce-Up.",
+        "pt": "Prazo longo.\nReúna estes materiais para Sandras Spruce-Up."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -47,6 +47,32 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Basic Craft Stock ×50.",
+            "pt": "Basic Craft Stock ×50."
+          }
+        },
+        {
+          "text": {
+            "en": "Celadon Clay ×3.",
+            "pt": "Celadon Clay ×3."
+          }
+        },
+        {
+          "text": {
+            "en": "Aged Wood ×3.",
+            "pt": "Aged Wood ×3."
+          }
+        },
+        {
+          "text": {
+            "en": "Hand over the materials, then rest in the Captain’s Quarters for the event.",
+            "pt": "Entregue os materiais e descanse na Captain’s Quarters para ver o evento."
+          }
+        }
       ]
     },
     {
@@ -61,8 +87,8 @@
       },
       "availableUntil": "ysx-ch4-cp-01",
       "hint": {
-        "en": "Long deadline. Go to the green marker southeast of the island you recaptured in the Ozmid Expanse and beat the Griegrs on the missing ship. Rewards a Plain Box Lunch (XL) and new stock in her store.",
-        "pt": "Prazo longo. Vá ao marcador verde a sudeste da ilha retomada em Ozmid Expanse e derrote os Griegrs no navio desaparecido. Dá um Plain Box Lunch (XL) e itens novos na loja dela."
+        "en": "Long deadline.\nGo to the green marker southeast of the island you recaptured in the Ozmid Expanse and beat the Griegrs on the missing ship.\nRewards a Plain Box Lunch (XL) and new stock in her store.",
+        "pt": "Prazo longo.\nVá ao marcador verde a sudeste da ilha retomada em Ozmid Expanse e derrote os Griegrs no navio desaparecido. Dá um Plain Box Lunch (XL) e itens novos na loja dela."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -85,8 +111,8 @@
       },
       "availableUntil": "ysx-ch4-cp-01",
       "hint": {
-        "en": "Long deadline. Sail to the far south (Great Tidal Reef), go to the quest marker in the northeast corner, beat the enemies, then report to Dogi.",
-        "pt": "Prazo longo. Navegue até o extremo sul (Great Tidal Reef), vá ao marcador da quest no canto nordeste, derrote os inimigos e fale com o Dogi."
+        "en": "Long deadline.\nTravel to Great Tidal Reef in the far south.",
+        "pt": "Prazo longo.\nVá até Great Tidal Reef, no extremo sul."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -95,6 +121,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Reach the quest marker in the northeast corner of Great Tidal Reef.",
+            "pt": "Alcance o marcador da missão no canto nordeste de Great Tidal Reef."
+          }
+        },
+        {
+          "text": {
+            "en": "Defeat the enemies.",
+            "pt": "Derrote os inimigos."
+          }
+        },
+        {
+          "text": {
+            "en": "Report back to Dogi.",
+            "pt": "Volte para falar com Dogi."
+          }
+        }
       ]
     },
     {
@@ -109,8 +155,8 @@
       },
       "availableUntil": "ysx-ch4-cp-01",
       "hint": {
-        "en": "Long deadline. Watch the dolphins with the spyglass near the island where Ashley was rescued, then repeat at each new marker. Rewards a Blessed Paper Scrap.",
-        "pt": "Prazo longo. Observe os golfinhos com a luneta perto da ilha onde a Ashley foi resgatada e repita em cada marcador novo. Dá um Blessed Paper Scrap."
+        "en": "Long deadline.\nWatch the dolphins with the spyglass near the island where Ashley was rescued, then repeat at each new marker.\nRewards a Blessed Paper Scrap.",
+        "pt": "Prazo longo.\nObserve os golfinhos com a luneta perto da ilha onde a Ashley foi resgatada e repita em cada marcador novo. Dá um Blessed Paper Scrap."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -133,8 +179,8 @@
       },
       "availableUntil": "ysx-ch4-cp-01",
       "hint": {
-        "en": "Long deadline. Starts with Hidden Treasure Chart A (a chest on Anchor Island). Hold the button at the glowing spot in the orange circle. Rewards 3,000 Gold. All six Treasure Trawls lead to a character note later.",
-        "pt": "Prazo longo. Começa com o Hidden Treasure Chart A (um baú em Anchor Island). Segure o botão no ponto brilhante do círculo laranja. Dá 3.000 Gold. Os seis Treasure Trawls levam a uma nota de personagem mais tarde."
+        "en": "Long deadline.\nStarts with Hidden Treasure Chart A (a chest on Anchor Island). Hold the button at the glowing spot in the orange circle.\nRewards 3,000 Gold. All six Treasure Trawls lead to a character note later.",
+        "pt": "Prazo longo.\nComeça com o Hidden Treasure Chart A (um baú em Anchor Island). Segure o botão no ponto brilhante do círculo laranja. Dá 3.000 Gold. Os seis Treasure Trawls levam a uma nota de personagem mais tarde."
       },
       "spoilerLevel": 0,
       "sources": [

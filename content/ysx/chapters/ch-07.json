@@ -69,8 +69,8 @@
       },
       "availableUntil": "ysx-ch7-cp-01",
       "hint": {
-        "en": "Medium deadline. Head to the green marker near Krangal Island, beat the ships in the fog and the jellyfish boss on the ghost ship. Rewards the Shield Cannons.",
-        "pt": "Prazo médio. Vá ao marcador verde perto de Krangal Island, derrote os navios na névoa e o chefe água-viva no navio fantasma. Dá os Shield Cannons."
+        "en": "Medium deadline.\nReward: Shield Cannons.",
+        "pt": "Prazo médio.\nRecompensa: Shield Cannons."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -79,6 +79,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sail to the green marker near Krangal Island.",
+            "pt": "Navegue até o marcador verde perto de Krangal Island."
+          }
+        },
+        {
+          "text": {
+            "en": "Defeat the ships in the fog.",
+            "pt": "Derrote os navios na névoa."
+          }
+        },
+        {
+          "text": {
+            "en": "Defeat the jellyfish boss on the ghost ship.",
+            "pt": "Derrote o chefe água-viva no navio fantasma."
+          }
+        }
       ]
     },
     {
@@ -93,8 +113,8 @@
       },
       "availableUntil": "ysx-ch7-cp-01",
       "hint": {
-        "en": "Medium deadline. Read Hugill's letter near the blue marker south of Gregorio's Curio, talk to him on the mast, and clear Grotto Isle. Rewards 5,000 Gold and frees the last Carnac townsperson.",
-        "pt": "Prazo médio. Leia a carta do Hugill perto do marcador azul ao sul do Gregorio's Curio, fale com ele no mastro e explore Grotto Isle até o fim. Dá 5.000 Gold e liberta o último morador de Carnac."
+        "en": "Medium deadline.\nRewards: 5,000 Gold and the rescue of the last Carnac townsperson.",
+        "pt": "Prazo médio.\nRecompensas: 5.000 Gold e o resgate do último morador de Carnac."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -103,6 +123,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Read Hugill’s letter near the blue marker south of Gregorio’s Curio.",
+            "pt": "Leia a carta de Hugill perto do marcador azul ao sul de Gregorio’s Curio."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Hugill on the mast.",
+            "pt": "Fale com Hugill no mastro."
+          }
+        },
+        {
+          "text": {
+            "en": "Clear Grotto Isle.",
+            "pt": "Conclua Grotto Isle."
+          }
+        }
       ]
     },
     {
@@ -117,8 +157,8 @@
       },
       "availableUntil": "ysx-ch7-cp-01",
       "hint": {
-        "en": "Long deadline. Hidden Treasure Chart D is sold at Gregorio's Curio in the Flumen Strait. Rewards Fleeting Hope+.",
-        "pt": "Prazo longo. O Hidden Treasure Chart D é vendido no Gregorio's Curio, em Flumen Strait. Dá Fleeting Hope+."
+        "en": "Long deadline.\nHidden Treasure Chart D is sold at Gregorio's Curio in the Flumen Strait.\nRewards Fleeting Hope+.",
+        "pt": "Prazo longo.\nO Hidden Treasure Chart D é vendido no Gregorio's Curio, em Flumen Strait. Dá Fleeting Hope+."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -141,8 +181,8 @@
       },
       "availableUntil": "ysx-ch7-cp-02",
       "hint": {
-        "en": "Long deadline. From the Norman soldier on the Norgest. A bird-like humanoid Griegr with small flying Watz that keep shooting. Rewards a Blessed Paper Scrap.",
-        "pt": "Prazo longo. Vem do soldado normando no Norgest. Um Griegr humanoide parecido com pássaro, com pequenos Watz voadores que não param de atirar. Dá um Blessed Paper Scrap."
+        "en": "Long deadline.\nFrom the Norman soldier on the Norgest. A bird-like humanoid Griegr with small flying Watz that keep shooting.\nRewards a Blessed Paper Scrap.",
+        "pt": "Prazo longo.\nVem do soldado normando no Norgest. Um Griegr humanoide parecido com pássaro, com pequenos Watz voadores que não param de atirar. Dá um Blessed Paper Scrap."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -165,8 +205,8 @@
       },
       "availableUntil": "ysx-ch7-cp-02",
       "hint": {
-        "en": "Long deadline. From Gregorio's Curio, sail west and spot the nest with the spyglass; follow the new markers (the one near the merchant ship, then the southeast one).",
-        "pt": "Prazo longo. Saindo do Gregorio's Curio, navegue a oeste e ache o ninho com a luneta; siga os marcadores novos (o perto do navio mercante e depois o do sudeste)."
+        "en": "Long deadline.\nStart from Gregorio’s Curio.",
+        "pt": "Prazo longo.\nComece em Gregorio’s Curio."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -175,6 +215,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sail west and spot the nest with the spyglass.",
+            "pt": "Navegue para oeste e aviste o ninho com a luneta."
+          }
+        },
+        {
+          "text": {
+            "en": "Visit the new marker near the merchant ship.",
+            "pt": "Visite o novo marcador perto do navio mercante."
+          }
+        },
+        {
+          "text": {
+            "en": "Visit the new marker to the southeast.",
+            "pt": "Visite o novo marcador a sudeste."
+          }
+        }
       ]
     },
     {

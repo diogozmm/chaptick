@@ -86,6 +86,13 @@ describe('ProgressStore', () => {
     expect([...store.done()]).toEqual(['a']);
   });
 
+  it('persists the other steps when reopening a previously completed item', async () => {
+    await store.setDone(['a'], true);
+    await store.setDone(['a', 'a#step-1'], false, ['a#step-2', 'a#step-3']);
+    await store.load('sc', 'sc-ch0');
+    expect([...store.done()]).toEqual(['a#step-2', 'a#step-3']);
+  });
+
   it('round-trips every game through export and import, keeping unknown ids', async () => {
     await store.toggle('sc-ch9-hq-01');
     await store.setPreferences({ hideDone: true });

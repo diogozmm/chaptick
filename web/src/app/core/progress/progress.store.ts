@@ -68,9 +68,11 @@ export class ProgressStore {
   }
 
   /** Idempotent: marks every id as done (or not), e.g. a Rank A catch also counts as caught. */
-  setDone(ids: readonly string[], done: boolean): Promise<void> {
+  setDone(ids: readonly string[], done: boolean, alsoDone: readonly string[] = []): Promise<void> {
     return this.update((p) => {
       const set = new Set(p.doneItems);
+      // Preserve implicitly completed route steps atomically when reopening an older item.
+      for (const id of alsoDone) set.add(id);
       for (const id of ids) {
         if (done) set.add(id);
         else set.delete(id);

@@ -77,8 +77,8 @@
       },
       "availableUntil": "sc-ch7-cp-04",
       "hint": {
-        "en": "Seafood Gelatin, Victor's Steak and Platinum Risotto.",
-        "pt": "Seafood Gelatin, Victor's Steak e Platinum Risotto."
+        "en": "Obtain and eat each dish to learn its recipe.",
+        "pt": "Obtenha e coma cada prato para aprender sua receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -86,6 +86,26 @@
       ],
       "trophies": [
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Seafood Gelatin",
+            "pt": "Seafood Gelatin"
+          }
+        },
+        {
+          "text": {
+            "en": "Victor’s Steak",
+            "pt": "Victor’s Steak"
+          }
+        },
+        {
+          "text": {
+            "en": "Platinum Risotto",
+            "pt": "Platinum Risotto"
+          }
+        }
       ]
     },
     {

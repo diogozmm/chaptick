@@ -19,30 +19,44 @@ FINALE = c.cp('Following the red marker into the back of Mistwald on the second 
 
 # Quests
 c.item('quest', t('Betrothal Band Bandit'), t('Rolent Chapel'), NIGHT,
-       t('+4 BP. Talk to Armand and Ellie. The ring is on the rooftop of Esmelas Tower, by the broken pillar on the left.',
-         '+4 BP. Fale com Armand e Ellie. O anel está no terraço da Esmelas Tower, junto ao pilar quebrado à esquerda.'),
-       0, [ROLENT])
+       t('Reward: +4 BP. The ring is at Esmelas Tower.', 'Recompensa: +4 BP. O anel está em Esmelas Tower.'),
+       0, [ROLENT], steps=[
+           t('Talk to Armand and Ellie.', 'Fale com Armand e Ellie.'),
+           t('Go to the rooftop of Esmelas Tower and look by the broken pillar on the left.', 'Vá ao terraço de Esmelas Tower e procure junto ao pilar quebrado à esquerda.'),
+       ])
 c.item('quest', t('Fishing Spot Scout'), t('Gurune Gate — talk to Pecheur', 'Gurune Gate — fale com o Pecheur'), 'sc-ch5-cp-01',
-       t("3 +2 BP. Start it first: only catches made after accepting count. Catch any fish at each of Rolent's 7 spots (Elize Highway, Bright Family House, Malga Trail water cave, Rolent Sewers, Milch Main Road, Verte Bridge, and one that opens at the start of Chapter 5), then report before leaving Rolent.",
-         '3 +2 BP. Aceite antes: só contam as pescas feitas depois disso. Pesque qualquer peixe em cada um dos 7 pesqueiros de Rolent (Elize Highway, casa da família Bright, caverna com água da Malga Trail, Rolent Sewers, Milch Main Road, Verte Bridge e um que abre no início do Capítulo 5) e entregue antes de sair de Rolent.'),
-       0, [ROLENT, GF1, GF_CH5])
+       t('BP: 3 +2. Only fish caught after accepting the quest count. The seventh spot opens at the start of Chapter 5. Report before leaving Rolent.', 'BP: 3 +2. Só contam peixes pescados após aceitar a missão. O sétimo ponto abre no início do Capítulo 5. Entregue a missão antes de sair de Rolent.'),
+       0, [ROLENT, GF1, GF_CH5], steps=[
+           t('Accept the quest before fishing.', 'Aceite a missão antes de pescar.'),
+           t('Catch any fish at Elize Highway.', 'Pesque qualquer peixe em Elize Highway.'),
+           t('Catch any fish at Bright Family House.', 'Pesque qualquer peixe em Bright Family House.'),
+           t('Catch any fish at Malga Trail — water cave.', 'Pesque qualquer peixe em Malga Trail — water cave.'),
+           t('Catch any fish at Rolent Sewers.', 'Pesque qualquer peixe em Rolent Sewers.'),
+           t('Catch any fish at Milch Main Road.', 'Pesque qualquer peixe em Milch Main Road.'),
+           t('Catch any fish at Verte Bridge.', 'Pesque qualquer peixe em Verte Bridge.'),
+           t('Catch any fish at the seventh spot when it opens at the start of Chapter 5.', 'Pesque qualquer peixe no sétimo ponto quando ele abrir no início do Capítulo 5.'),
+           t('Report back before leaving Rolent.', 'Entregue a missão antes de sair de Rolent.'),
+       ])
 c.item('quest', t('Elize Hwy Monster'), t('Elize Highway — near Gurune Gate', 'Elize Highway — perto do Gurune Gate'), NIGHT,
-       t('+4 BP. Petrify, delay and stat-down attacks: equip protection and use arts reflect.',
-         '+4 BP. Ataques de Petrify, atraso e redução de atributos: equipe proteção e use reflexo de arts.'),
+       t('+4 BP.\nPetrify, delay and stat-down attacks: equip protection and use arts reflect.', '+4 BP.\nAtaques de Petrify, atraso e redução de atributos: equipe proteção e use reflexo de arts.'),
        0, [ROLENT])
 c.item('quest', t('Milch Monster'), t('Milch Main Road — west end', 'Milch Main Road — extremo oeste'), NIGHT,
-       t('+4 BP. It buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.',
-         '+4 BP. Ele se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve proteção contra Freeze.'),
+       t('+4 BP.\nIt buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.', '+4 BP.\nEle se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve proteção contra Freeze.'),
        0, [ROLENT])
 c.item('quest', t('Find That Feline'), t('Rolent — Hotel Rolent, 1F', 'Rolent — Hotel Rolent, 1º andar'), NIGHT_END,
-       t('+4 BP. Only during the night. Skyler by the landing port warehouse → Captain Petrov in Abend Bar → Quint in the orbal factory → Zosimov by the tree at the port entrance → Fabree on the deck → bottom level of the airliner.',
-         '+4 BP. Só durante a noite. Skyler no depósito do porto → Captain Petrov no Abend Bar → Quint na fábrica orbal → Zosimov na árvore da entrada do porto → Fabree no deck → nível mais baixo do airliner.'),
-       1, [ROLENT])
+       t('Reward: +4 BP. Available only at night. Follow these leads in order.', 'Recompensa: +4 BP. Disponível apenas à noite. Siga estas pistas em ordem.'),
+       1, [ROLENT], steps=[
+           t('Talk to Skyler by the landing port warehouse.', 'Fale com Skyler junto ao armazém do porto.'),
+           t('Talk to Captain Petrov in Abend Bar.', 'Fale com Captain Petrov no Abend Bar.'),
+           t('Talk to Quint in the orbal factory.', 'Fale com Quint na fábrica orbal.'),
+           t('Talk to Zosimov by the tree at the port entrance.', 'Fale com Zosimov junto à árvore na entrada do porto.'),
+           t('Talk to Fabree on the deck.', 'Fale com Fabree no convés.'),
+           t('Go to the bottom level of the airliner.', 'Vá ao nível inferior do airliner.'),
+       ])
 
 # Missables
 c.item('missable', t("Bonus BP: Aina's two questions", 'BP bônus: as duas perguntas da Aina'), t('Rolent — Bracer Guild'), NIGHT_END,
-       t('+6 BP. When you report the night investigation, pick the 2nd option, then the 3rd.',
-         '+6 BP. Ao relatar a investigação da noite, escolha a 2ª opção e depois a 3ª.'),
+       t('+6 BP.\nWhen you report the night investigation, pick the 2nd option, then the 3rd.', '+6 BP.\nAo relatar a investigação da noite, escolha a 2ª opção e depois a 3ª.'),
        1, [ROLENT])
 
 # Collectibles
@@ -59,9 +73,13 @@ c.item('collectible', t('Liberl News Issue 6'), t("Rolent — Rinon's General Go
 c.item('collectible', t('Gambler Jack — Vol. 6'), t('Rolent — apartment next to Abend Bar, 2F', 'Rolent — apartamento ao lado do Abend Bar, 2º andar'), NIGHT_END,
        t('Talk to Serra.', 'Fale com a Serra.'), 0, [ROLENT])
 c.item('collectible', t('Recipes: Abend Bar (4)', 'Receitas: Abend Bar (4)'), t('Rolent — Abend Bar'), NIGHT_END,
-       t('Silken Soup, Spring Spiral Noodles, Strawberry Supreme Crepe and Three-Egg Rice Porridge.',
-         'Silken Soup, Spring Spiral Noodles, Strawberry Supreme Crepe e Three-Egg Rice Porridge.'),
-       0, [ROLENT])
+       t('Obtain and eat each dish to learn its recipe.', 'Obtenha e coma cada prato para aprender sua receita.'),
+       0, [ROLENT], steps=[
+           t('Silken Soup', 'Silken Soup'),
+           t('Spring Spiral Noodles', 'Spring Spiral Noodles'),
+           t('Strawberry Supreme Crepe', 'Strawberry Supreme Crepe'),
+           t('Three-Egg Rice Porridge', 'Three-Egg Rice Porridge'),
+       ])
 c.item('collectible', t('Bear Medal'), t("Rolent — Rinon's General Goods"), NIGHT_END,
        t('4th of the 5 animal medals.', '4ª das 5 medalhas de animais.'), 0, [ROLENT])
 c.item('collectible', t('Rolent Sewers treasure chests (2)', 'Baús do Rolent Sewers (2)'), t('Rolent Sewers'), NIGHT,
@@ -85,12 +103,10 @@ c.item('collectible', t('Esmelas Tower treasure chests (11)', 'Baús da Esmelas 
 
 # ---------------------------------------------------------------- Day 2 (from GameFAQs; the Neoseeker guide stopped before it)
 c.item('quest', t('Esmelas Tower Monster'), t('Outside Esmelas Tower', 'Do lado de fora da Esmelas Tower'), FINALE,
-       t('+4 BP. Medium deadline. Its defense is so high that physical hits do nothing: bring water arts and orbal-gun users, spread the party, and resist Seal, Mute and Blind.',
-         '+4 BP. Prazo médio. A defesa é tão alta que golpes físicos não causam dano: leve arts de água e quem usa arma orbal, espalhe a equipe e resista a Seal, Mute e Blind.'),
+       t('+4 BP.\nMedium deadline.\nIts defense is so high that physical hits do nothing: bring water arts and orbal-gun users, spread the party, and resist Seal, Mute and Blind.', '+4 BP.\nPrazo médio.\nA defesa é tão alta que golpes físicos não causam dano: leve arts de água e quem usa arma orbal, espalhe a equipe e resista a Seal, Mute e Blind.'),
        0, [GF2])
 c.item('quest', t('Milch Monster 2'), t('Milch Main Road'), FINALE,
-       t('+4 BP. Medium deadline. Like the Mistwald monster chest: bring Confuse and Deathblow protection; its allies absorb water and wind but are weak to earth and fire.',
-         '+4 BP. Prazo médio. Parecido com o baú de monstros de Mistwald: leve proteção contra Confuse e Deathblow; os aliados absorvem água e vento, mas são fracos contra terra e fogo.'),
+       t('+4 BP.\nMedium deadline.\nLike the Mistwald monster chest: bring Confuse and Deathblow protection; its allies absorb water and wind but are weak to earth and fire.', '+4 BP.\nPrazo médio.\nParecido com o baú de monstros de Mistwald: leve proteção contra Confuse e Deathblow; os aliados absorvem água e vento, mas são fracos contra terra e fogo.'),
        0, [GF2])
 c.item('missable', t('Bonus BP: the maze in the mist', 'BP bônus: o labirinto na névoa'), t('Mistwald — beyond the red marker', 'Mistwald — além do marcador vermelho'), FINALE,
        t('+3 BP when you reach the end. Follow the high bell sound and the flowers by each correct exit; lowering the music volume helps.',

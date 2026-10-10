@@ -728,24 +728,29 @@ def creature_reward(reward, known_ids):
 
 def task_item(task, next_id):
     lines = TASKS.LINES
-    steps_en = '; '.join(task['objectives'])
-    steps_pt = '; '.join(lines.get(o, o) for o in task['objectives'])
-    hint_en = f'Objectives: {steps_en}' if steps_en else 'Talk to the task giver to start it'
-    hint_pt = f'Objetivos: {steps_pt}' if steps_pt else 'Fale com quem dá a tarefa para começar'
+    objectives = [t(o.rstrip('.') + '.', lines.get(o, o).rstrip('.') + '.') for o in task['objectives']]
+    multiple = len(objectives) > 1
+    if multiple:
+        hint_en, hint_pt = 'Complete the objectives below.', 'Conclua os objetivos abaixo.'
+    elif objectives:
+        hint_en, hint_pt = objectives[0]['en'], objectives[0]['pt']
+    else:
+        hint_en, hint_pt = 'Talk to the task giver to start it.', 'Fale com quem dá a tarefa para começar.'
     if task['reward']:
         reward_en = TASKS.REWARD_EN.get(task['reward'], task['reward']).rstrip('.')
-        hint_en += f'. Reward: {reward_en}'
-        hint_pt += f". Recompensa: {lines.get(task['reward'], task['reward']).rstrip('.')}"
+        hint_en += f'\nReward: {reward_en}.'
+        hint_pt += f"\nRecompensa: {lines.get(task['reward'], task['reward']).rstrip('.')}."
     if task['fails']:
         failed = task['fails'].removesuffix('.')
-        hint_en += f'. Careful: accepting it fails {failed}'
-        hint_pt += f'. Atenção: aceitar esta faz falhar a tarefa {TASKS.TASK_NAMES.get(failed, failed)}'
+        hint_en += f'\nCareful: accepting it fails {failed}.'
+        failed_pt = 'esta tarefa' if failed == 'this task' else f"a tarefa {TASKS.TASK_NAMES.get(failed, failed)}"
+        hint_pt += f'\nAtenção: aceitar esta faz falhar {failed_pt}.'
     kind = 'missable' if task['fails'] else 'quest'
     location_pt = f"{PT.place_pt(task['giver'])} — {lines.get(task['location'], task['location'])}"
     return {'id': next_id('mi' if kind == 'missable' else 'q', kind, task['name']), 'type': kind,
             'name': t(task['name'], TASKS.TASK_NAMES.get(task['name'])),
             'location': both(f"{task['giver']} — {task['location']}", location_pt), 'availableUntil': None,
-            'hint': t(hint_en + '.', hint_pt + '.'), 'spoilerLevel': 0, 'sources': [f"{NEO}: {task['page']}"]}
+            'hint': t(hint_en, hint_pt), **({'steps': [{'text': o} for o in objectives]} if multiple else {}), 'spoilerLevel': 0, 'sources': [f"{NEO}: {task['page']}"]}
 
 
 def map_item(m, next_id):
@@ -756,8 +761,8 @@ def map_item(m, next_id):
     loot_pt = ', '.join(f'{q}× {PT.tr(name) or name}' for q, name in loot)
     hint_en, hint_pt = f'How to get it: {how_en}', f'Como conseguir: {how_pt}'
     if loot:
-        hint_en += f' Inside: {loot_en}.'
-        hint_pt += f' Conteúdo: {loot_pt}.'
+        hint_en += f'\nInside: {loot_en}.'
+        hint_pt += f'\nConteúdo: {loot_pt}.'
     return {'id': next_id('co', 'collectible', m['name']), 'type': 'collectible', 'name': t(m['name'], f'Mapa do Tesouro {n}'),
             'location': t(*where) if where else t('Marked on the map', 'Indicado no mapa'), 'availableUntil': None,
             'hint': t(hint_en, hint_pt), 'spoilerLevel': 1, 'sources': [f'{WIKI}: Treasure']}
@@ -1251,6 +1256,12 @@ def build():
                 for g in gifts:
                     if 'entryId' in g and area_of[g['entryId']] > ch['order']:
                         del g['entryId']
+
+    # Separate the manually authored adventure prerequisites, rewards and closing notes.
+    for ch in chapters:
+        for entry in ch['items']:
+            if entry['id'] in {'wte-ch0-q-19', 'wte-ch0-q-20', 'wte-ch0-q-21', 'wte-ch0-q-22'}:
+                entry['hint'] = {lang: text.replace('. ', '.\n') for lang, text in entry['hint'].items()}
 
     ID_FILE.write_text(json.dumps(ITEM_IDS, indent=2, ensure_ascii=False) + '\n')
 

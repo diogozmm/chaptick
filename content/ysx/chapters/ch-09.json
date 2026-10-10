@@ -37,8 +37,8 @@
       },
       "availableUntil": "ysx-ch9-cp-01",
       "hint": {
-        "en": "Long deadline. From the Hugill letter \"ST OP ME\". Land on the island for an event, then beat the Armed Biter in the mine. Rewards a Luminous Bangle.",
-        "pt": "Prazo longo. Vem da carta do Hugill \"ST OP ME\". Desembarque na ilha para um evento e derrote o Armed Biter na mina. Dá um Luminous Bangle."
+        "en": "Long deadline.\nFrom the Hugill letter \"ST OP ME\". Land on the island for an event, then beat the Armed Biter in the mine.\nRewards a Luminous Bangle.",
+        "pt": "Prazo longo.\nVem da carta do Hugill \"ST OP ME\". Desembarque na ilha para um evento e derrote o Armed Biter na mina. Dá um Luminous Bangle."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -61,8 +61,8 @@
       },
       "availableUntil": "ysx-ch9-cp-01",
       "hint": {
-        "en": "Medium deadline. Green marker in the middle of Moonview Isle, then the event marker on Fishscale Island (naval battle), then the event marker on the Orlen Islands' West Side (boss).",
-        "pt": "Prazo médio. Marcador verde no meio de Moonview Isle, depois o marcador de evento em Fishscale Island (batalha naval) e por fim o marcador de evento no West Side de Orlen Islands (chefe)."
+        "en": "Medium deadline.\nPrepare for a naval battle and a boss fight.",
+        "pt": "Prazo médio.\nPrepare-se para uma batalha naval e uma luta contra chefe."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -71,6 +71,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Visit the green marker in the middle of Moonview Isle.",
+            "pt": "Visite o marcador verde no centro de Moonview Isle."
+          }
+        },
+        {
+          "text": {
+            "en": "Visit the event marker on Fishscale Island and win the naval battle.",
+            "pt": "Visite o marcador de evento em Fishscale Island e vença a batalha naval."
+          }
+        },
+        {
+          "text": {
+            "en": "Visit the event marker on the Orlen Islands’ West Side and defeat the boss.",
+            "pt": "Visite o marcador de evento no West Side das Orlen Islands e derrote o chefe."
+          }
+        }
       ]
     },
     {
@@ -85,8 +105,8 @@
       },
       "availableUntil": "ysx-ch9-cp-01",
       "hint": {
-        "en": "Medium deadline. Fight the Griegrs at the green marker of Grugal Fortress — Entrance, then reach the event marker on Redsand Isle (south end of Raoul Darksea) and report back. Rewards the Full-Heal Formula.",
-        "pt": "Prazo médio. Enfrente os Griegrs no marcador verde de Grugal Fortress — Entrance, depois chegue ao marcador de evento em Redsand Isle (extremo sul de Raoul Darksea) e volte para relatar. Dá a Full-Heal Formula."
+        "en": "Medium deadline.\nReward: Full-Heal Formula.",
+        "pt": "Prazo médio.\nRecompensa: Full-Heal Formula."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -95,6 +115,26 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Defeat the Griegrs at the green marker at Grugal Fortress — Entrance.",
+            "pt": "Derrote os Griegrs no marcador verde em Grugal Fortress — Entrance."
+          }
+        },
+        {
+          "text": {
+            "en": "Reach the event marker on Redsand Isle, at the south end of Raoul Darksea.",
+            "pt": "Alcance o marcador de evento em Redsand Isle, na extremidade sul de Raoul Darksea."
+          }
+        },
+        {
+          "text": {
+            "en": "Report back.",
+            "pt": "Volte para entregar a missão."
+          }
+        }
       ]
     },
     {
@@ -109,8 +149,8 @@
       },
       "availableUntil": "ysx-ch9-cp-01",
       "hint": {
-        "en": "Long deadline. From Lila. Haze Island is northwest of Serenes Island; fast travel to the back half. The targets are fragile but hit very hard; stay out of the slowing water. Rewards the Panacea Formula III.",
-        "pt": "Prazo longo. Vem da Lila. Haze Island fica a noroeste de Serenes Island; viaje até a metade de trás. Os alvos são frágeis, mas batem muito forte; fique fora da água que deixa lento. Dá a Panacea Formula III."
+        "en": "Long deadline.\nFrom Lila. Haze Island is northwest of Serenes Island; fast travel to the back half. The targets are fragile but hit very hard; stay out of the slowing water.\nRewards the Panacea Formula III.",
+        "pt": "Prazo longo.\nVem da Lila. Haze Island fica a noroeste de Serenes Island; viaje até a metade de trás. Os alvos são frágeis, mas batem muito forte; fique fora da água que deixa lento. Dá a Panacea Formula III."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -133,8 +173,8 @@
       },
       "availableUntil": "ysx-ch9-cp-01",
       "hint": {
-        "en": "Long deadline. Hidden Treasure Chart E comes from the Eastern Fortress recapture at rank S. Rewards the Cycloid Crown. With every Treasure Trawl done, Mandy has one more treasure (northwest of Termina Island) that unlocks his character note.",
-        "pt": "Prazo longo. O Hidden Treasure Chart E vem da retomada da Eastern Fortress com rank S. Dá a Cycloid Crown. Com todos os Treasure Trawls feitos, o Mandy tem mais um tesouro (a noroeste de Termina Island) que libera a nota de personagem dele."
+        "en": "Long deadline.\nHidden Treasure Chart E comes from the Eastern Fortress recapture at rank S.\nRewards the Cycloid Crown.\nWith every Treasure Trawl done, Mandy has one more treasure (northwest of Termina Island) that unlocks his character note.",
+        "pt": "Prazo longo.\nO Hidden Treasure Chart E vem da retomada da Eastern Fortress com rank S.\nDá a Cycloid Crown.\nCom todos os Treasure Trawls feitos, o Mandy tem mais um tesouro (a noroeste de Termina Island) que libera a nota de personagem dele."
       },
       "spoilerLevel": 0,
       "sources": [

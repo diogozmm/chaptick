@@ -55,13 +55,13 @@ def chests(c, area, nums, until, hint, sources, title=None, places=None):
     c.item('collectible', name, t(*area), until, t(*hint), 0, sources, steps=steps)
 
 
-def quest(c, name, where, until, hint, sources, hidden=False):
-    c.item('hidden_quest' if hidden else 'quest', t(name), t(*where), until, t(*hint), 0, sources)
+def quest(c, name, where, until, hint, sources, hidden=False, steps=None):
+    c.item('hidden_quest' if hidden else 'quest', t(name), t(*where), until, t(*hint), 0, sources, steps=steps)
 
 
-def bonus(c, name, where, until, hint, sources):
+def bonus(c, name, where, until, hint, sources, steps=None):
     """Bonus BP from a story choice: level 1, since the choice can hint at the story."""
-    c.item('missable', t(f'Bonus BP: {name[0]}', f'BP bônus: {name[1]}'), t(*where), until, t(*hint), 1, sources)
+    c.item('missable', t(f'Bonus BP: {name[0]}', f'BP bônus: {name[1]}'), t(*where), until, t(*hint), 1, sources, steps=steps)
 
 
 def book(c, name, where, until, hint, sources):
@@ -90,29 +90,29 @@ P_ROBBERY = c.cp('Wrapping up the robbery investigation with Scherazard', 'Encer
 P_END = c.cp('The event marker deep in Mistwald (end of the Prologue)', 'O marcador de evento no fundo de Mistwald (fim do Prólogo)')
 
 quest(c, 'Shiny Stone Search', ('Rolent — Carl, behind the Orbal Factory', 'Rolent — Carl, atrás da Orbal Factory'), P_PERZEL,
-      ('2 BP. Check the steam from the drain cover near Rinon\'s General Goods, then take the sewer entrance behind the chapel and find the shiny stone. Eat the Drill Meatballs you get for the recipe.',
-       '2 BP. Veja o vapor saindo do bueiro perto da Rinon\'s General Goods, depois entre no esgoto pelos fundos da capela e ache a pedra brilhante. Coma as Drill Meatballs que você ganha para aprender a receita.'), [D2])
+      ('Reward: 2 BP. Eat the Drill Meatballs you receive to learn the recipe.', 'Recompensa: 2 BP. Coma os Drill Meatballs recebidos para aprender a receita.'), [D2], steps=[
+           t('Check the steam from the drain cover near Rinon’s General Goods.', 'Examine o vapor que sai da tampa do bueiro perto de Rinon’s General Goods.'),
+           t('Enter the sewers behind the chapel and find the shiny stone.', 'Entre nos esgotos atrás da capela e encontre a pedra brilhante.'),
+       ])
 quest(c, 'Milch Monster', ('Milch Main Road — middle of the road', 'Milch Main Road — meio da estrada'), P_PERZEL,
-      ('3 BP. Weak to fire. It explodes when it dies, so keep the party out of range for the last hit.',
-       '3 BP. Fraco contra fogo. Ele explode ao morrer, então deixe a equipe fora do alcance no golpe final.'), [D2])
+      ('3 BP.\nWeak to fire. It explodes when it dies, so keep the party out of range for the last hit.', '3 BP.\nFraco contra fogo. Ele explode ao morrer, então deixe a equipe fora do alcance no golpe final.'), [D2])
 quest(c, 'Malga Mushroom', ('Rolent Landing Port — Orvid', 'Rolent Landing Port — Orvid'), P_REPORTERS,
-      ('3 BP. The glowing Firefly Mushroom is near the Silver Earrings chest at the northeast end of Malga Trail; picking it starts a fight.',
-       '3 BP. O Firefly Mushroom brilhante fica perto do baú das Silver Earrings, no extremo nordeste da Malga Trail; pegá-lo começa uma luta.'), [D3])
+      ('3 BP.\nThe glowing Firefly Mushroom is near the Silver Earrings chest at the northeast end of Malga Trail; picking it starts a fight.', '3 BP.\nO Firefly Mushroom brilhante fica perto do baú das Silver Earrings, no extremo nordeste da Malga Trail; pegá-lo começa uma luta.'), [D3])
 quest(c, 'Streetlight Switch', ("Rolent — Freddy at the Orbment Shop", 'Rolent — Freddy na loja de orbments'), P_REPORTERS,
-      ('3 (+1) BP. The broken light is in the middle of Milch Main Road. For the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818). Rewards Impede 2.',
-       '3 (+1) BP. A luz quebrada fica no meio da Milch Main Road. Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818). Dá Impede 2.'), [D3])
+      ('3 (+1) BP.\nThe broken light is in the middle of Milch Main Road. For the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818).\nRewards Impede 2.', '3 (+1) BP.\nA luz quebrada fica no meio da Milch Main Road. Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818). Dá Impede 2.'), [D3])
 quest(c, 'Medicinal Material', ('Rolent Chapel — Father Divine', 'Capela de Rolent — Father Divine'), P_REPORTERS,
-      ('3 BP. Bring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer Hornets in Mistwald). Mistwald only has four Bear Claws: don\'t cook them all.',
-       '3 BP. Leve uma Bear Claw (extremo sudeste de Mistwald) e Monster Powder (Killer Hornets em Mistwald). Mistwald só tem quatro Bear Claws: não cozinhe todas.'), [D2, D3])
+      ("3 BP.\nBring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer Hornets in Mistwald). Mistwald only has four Bear Claws: don't cook them all.", '3 BP.\nLeve uma Bear Claw (extremo sudeste de Mistwald) e Monster Powder (Killer Hornets em Mistwald). Mistwald só tem quatro Bear Claws: não cozinhe todas.'), [D2, D3])
 quest(c, 'Troop Training', ('Verte Bridge — Chief Warrant Officer Ashton', 'Verte Bridge — Chief Warrant Officer Ashton'), P_REPORTERS,
-      ('2 (+2) BP. Win the training fight against two soldiers for the bonus; save first. Their attacks lower Defense: Estelle\'s Morale helps.',
-       '2 (+2) BP. Vença a luta de treino contra dois soldados para o bônus; salve antes. Os ataques deles reduzem a defesa: o Morale da Estelle ajuda.'), [D3])
+      ("2 (+2) BP.\nWin the training fight against two soldiers for the bonus; save first. Their attacks lower Defense: Estelle's Morale helps.", '2 (+2) BP.\nVença a luta de treino contra dois soldados para o bônus; salve antes. Os ataques deles reduzem a defesa: o Morale da Estelle ajuda.'), [D3])
 quest(c, 'Catch that Cat!', ('Rolent — Ida at the café', 'Rolent — Ida no café'), P_REPORTERS,
-      ('2 BP. Short deadline: do it right away. The cat isn\'t marked: look between the clock tower, near Elger Arms & Guards, by Hotel Rolent, then upstairs in the chapel.',
-       '2 BP. Prazo curto: faça na hora. O gato não aparece no mapa: procure entre a torre do relógio, perto da Elger Arms & Guards, junto ao Hotel Rolent e, por fim, no andar de cima da capela.'), [D3])
+      ('Reward: 2 BP. Short deadline: do this immediately. The cat is not marked on the map; check these locations in order.', 'Recompensa: 2 BP. Prazo curto: faça imediatamente. O gato não aparece marcado no mapa; procure nestes locais em ordem.'), [D3], steps=[
+           t('By the clock tower.', 'Junto à torre do relógio.'),
+           t('Near Elger Arms & Guards.', 'Perto de Elger Arms & Guards.'),
+           t('By Hotel Rolent.', 'Junto ao Hotel Rolent.'),
+           t('Upstairs in the chapel.', 'No andar de cima da capela.'),
+       ])
 quest(c, 'Elize Hwy Monster', ('Elize Highway — the bridge', 'Elize Highway — a ponte'), P_END,
-      ('4 BP. It blocks the bridge to your next destination, so you can\'t skip it. Wear Sleep protection; weak to fire.',
-       '4 BP. Ele bloqueia a ponte para o próximo destino, então não dá para pular. Use proteção contra Sleep; fraco contra fogo.'), [D3])
+      ("4 BP.\nIt blocks the bridge to your next destination, so you can't skip it. Wear Sleep protection; weak to fire.", '4 BP.\nEle bloqueia a ponte para o próximo destino, então não dá para pular. Use proteção contra Sleep; fraco contra fogo.'), [D3])
 bonus(c, ('storming into Esmelas Tower', 'entrar na Esmelas Tower'), ('Esmelas Tower — entrance', 'Esmelas Tower — entrada'), P_ESMELAS,
       ('+1 BP (Child Rescue). The choice comes right as you enter: pick the 2nd option, storming in together with Joshua.',
        '+1 BP (Child Rescue). A escolha aparece logo ao entrar: escolha a 2ª opção, entrar junto com o Joshua.'), [D1])
@@ -120,8 +120,12 @@ bonus(c, ('sneaking up on the crop thief', 'chegar de surpresa no ladrão de pla
       ('+2 BP (Perzel Pest Control). After the stables and the greenhouse, sneak up behind the monster without entering its line of sight, and examine it. Save first.',
        '+2 BP (Perzel Pest Control). Depois do estábulo e da estufa, chegue por trás do monstro sem entrar no campo de visão dele e examine-o. Salve antes.'), [D2])
 bonus(c, ('the four robbery questions', 'as quatro perguntas do roubo'), ("Rolent — Mayor's Residence", 'Rolent — residência do prefeito'), P_ROBBERY,
-      ('+4 BP (Mayoral Robbery), one per right answer: 2nd, 2nd, 3rd, 4th.',
-       '+4 BP (Mayoral Robbery), um por resposta certa: 2ª, 2ª, 3ª, 4ª.'), [D3])
+      ('Bonus: +4 BP in Mayoral Robbery, one per correct answer.', 'Bônus: +4 BP em Mayoral Robbery, um por resposta correta.'), [D3], steps=[
+           t('Question 1: choose option 2.', 'Pergunta 1: escolha a 2ª opção.'),
+           t('Question 2: choose option 2.', 'Pergunta 2: escolha a 2ª opção.'),
+           t('Question 3: choose option 3.', 'Pergunta 3: escolha a 3ª opção.'),
+           t('Question 4: choose option 4.', 'Pergunta 4: escolha a 4ª opção.'),
+       ])
 bonus(c, ('the choice in Mistwald', 'a escolha em Mistwald'), ('Mistwald — southeast end', 'Mistwald — extremo sudeste'), P_END,
       ('+1 BP (Mayoral Robbery). Pick the 2nd option during the event. The boss right after is much harder than in the original: bring Earth Guard.',
        '+1 BP (Mayoral Robbery). Escolha a 2ª opção durante o evento. O chefe logo depois é bem mais difícil que no original: leve Earth Guard.'), [D3])
@@ -184,40 +188,33 @@ MINE = c.cp('The clearing in the Abandoned Mine (boss fight)', 'A clareira da Ab
 VALLERIA = c.cp('Talking to Sophina at the Kingfisher Inn (stuck at Valleria Shore)', 'Falar com a Sophina na Kingfisher Inn (preso em Valleria Shore)')
 END1 = c.cp('Leaving the Sky Pirate Stronghold (end of Chapter 1)', 'Sair do Sky Pirate Stronghold (fim do Capítulo 1)')
 quest(c, 'Divine Delivery', ('Rolent Chapel, then Bose Chapel', 'Capela de Rolent e depois capela de Bose'), EISEN,
-      ('2 BP. Short deadline. Pick up the letter from Father Divine BEFORE crossing Verte Bridge, then give it to Father Holstein in the Bose chapel.',
-       '2 BP. Prazo curto. Pegue a carta com o Father Divine ANTES de atravessar a Verte Bridge e entregue ao Father Holstein na capela de Bose.'), [BOSE])
+      ('2 BP.\nShort deadline. Pick up the letter from Father Divine BEFORE crossing Verte Bridge, then give it to Father Holstein in the Bose chapel.', '2 BP.\nPrazo curto. Pegue a carta com o Father Divine ANTES de atravessar a Verte Bridge e entregue ao Father Holstein na capela de Bose.'), [BOSE])
 quest(c, "Elissa's Entreaty", ('Rolent — Elissa at Abend Bar', 'Rolent — Elissa no Abend Bar'), VERTE,
-      ('2 (+2) BP. Not on the board, new in the remake. At Perzel Farm check every green marker; pick the 1st option at the strawberries and the 2nd at the cow for the bonus. Eat the Sunshine Mille Crepe for its recipe.',
-       '2 (+2) BP. Não aparece no quadro, nova no remake. Na Perzel Farm, examine todos os marcadores verdes; escolha a 1ª opção nos morangos e a 2ª na vaca para o bônus. Coma o Sunshine Mille Crepe para aprender a receita.'), [BOSE], hidden=True)
+      ('BP: 2 (+2). Hidden quest, new in the remake. Eat Sunshine Mille Crepe for its recipe.', 'BP: 2 (+2). Missão oculta, nova no remake. Coma Sunshine Mille Crepe para aprender a receita.'), [BOSE], hidden=True, steps=[
+           t('At Perzel Farm, check every green marker.', 'Em Perzel Farm, examine todos os marcadores verdes.'),
+           t('At the strawberries, choose the first option.', 'Nos morangos, escolha a 1ª opção.'),
+           t('At the cow, choose the second option.', 'Na vaca, escolha a 2ª opção.'),
+       ])
 quest(c, 'Mountain Monster', ('Ravennue Trail', 'Ravennue Trail'), EISEN,
-      ('4 BP. Short deadline. Its Fate Saber can K.O. instantly: bring Deathblow protection (Grail Ring, Crest Charm). It is slow and easy to stun.',
-       '4 BP. Prazo curto. O Fate Saber dele pode derrubar na hora: leve proteção contra Deathblow (Grail Ring, Crest Charm). Ele é lento e fácil de atordoar.'), [BOSE])
+      ('4 BP.\nShort deadline. Its Fate Saber can K.O. instantly: bring Deathblow protection (Grail Ring, Crest Charm). It is slow and easy to stun.', '4 BP.\nPrazo curto. O Fate Saber dele pode derrubar na hora: leve proteção contra Deathblow (Grail Ring, Crest Charm). Ele é lento e fácil de atordoar.'), [BOSE])
 quest(c, 'Culinary Collection', ('Bose — Gwen at Restaurant Anterose', 'Bose — Gwen no Restaurant Anterose'), EISEN,
-      ('3 BP. Bring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway). Rewards the Royal Omelette recipe.',
-       '3 BP. Leve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway). Dá a receita do Royal Omelette.'), [BOSE])
+      ('3 BP.\nBring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway).\nRewards the Royal Omelette recipe.', '3 BP.\nLeve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway). Dá a receita do Royal Omelette.'), [BOSE])
 quest(c, 'Amber Alarm', ('Amberl Tower', 'Amberl Tower'), RAVENNUE,
-      ('4 BP. Not on the board: it starts when you enter Amberl Tower. Reach 5F, approach the center, then leave the tower.',
-       '4 BP. Não aparece no quadro: começa quando você entra na Amberl Tower. Suba até o 5F, aproxime-se do centro e depois saia da torre.'), [HAKEN], hidden=True)
+      ('4 BP.\nNot on the board: it starts when you enter Amberl Tower. Reach 5F, approach the center, then leave the tower.', '4 BP.\nNão aparece no quadro: começa quando você entra na Amberl Tower. Suba até o 5F, aproxime-se do centro e depois saia da torre.'), [HAKEN], hidden=True)
 quest(c, 'Claw Cure', ('Bose Market — Spence', 'Bose Market — Spence'), RAVENNUE,
-      ('4 BP. Appears after Divine Delivery. Bring two Bear Claws from Nebel Valley: near the end of the west path (after its quest monster) and beside the Thelas Balm chest.',
-       '4 BP. Aparece depois da Divine Delivery. Leve duas Bear Claws de Nebel Valley: perto do fim do caminho oeste (depois do monstro da quest) e ao lado do baú do Thelas Balm.'), [HAKEN])
+      ('4 BP.\nAppears after Divine Delivery. Bring two Bear Claws from Nebel Valley: near the end of the west path (after its quest monster) and beside the Thelas Balm chest.', '4 BP.\nAparece depois da Divine Delivery. Leve duas Bear Claws de Nebel Valley: perto do fim do caminho oeste (depois do monstro da quest) e ao lado do baú do Thelas Balm.'), [HAKEN])
 quest(c, 'Escort Escapade', ('Bose — Hart at Frieden Hotel', 'Bose — Hart no Frieden Hotel'), RAVENNUE,
-      ('4 (+1) BP. Walk Hart to Krone Trail; if he falls it\'s game over, so avoid fights. Choose "A frontal assault!" (1st option) for the bonus.',
-       '4 (+1) BP. Leve o Hart até a Krone Trail; se ele cair é game over, então evite lutas. Escolha "A frontal assault!" (1ª opção) para o bônus.'), [HAKEN])
+      ('4 (+1) BP.\nWalk Hart to Krone Trail; if he falls it\'s game over, so avoid fights. Choose "A frontal assault!" (1st option) for the bonus.', '4 (+1) BP.\nLeve o Hart até a Krone Trail; se ele cair é game over, então evite lutas. Escolha "A frontal assault!" (1ª opção) para o bônus.'), [HAKEN])
 quest(c, 'E Bose Hwy Monster', ('East Bose Highway', 'East Bose Highway'), RAVENNUE,
-      ('4 BP. Poisonous scorpions; the leader calls more.', '4 BP. Escorpiões venenosos; o líder chama mais.'), [HAKEN])
+      ('4 BP.\nPoisonous scorpions; the leader calls more.', '4 BP.\nEscorpiões venenosos; o líder chama mais.'), [HAKEN])
 quest(c, 'Nebel Valley Monster', ('Nebel Valley', 'Nebel Valley'), RAVENNUE,
-      ('5 BP. Kill the Boiled Eggers from a distance (they explode) and wear Flame Zippos against Freeze.',
-       '5 BP. Derrube os Boiled Eggers à distância (eles explodem) e use Flame Zippos contra Freeze.'), [HAKEN])
+      ('5 BP.\nKill the Boiled Eggers from a distance (they explode) and wear Flame Zippos against Freeze.', '5 BP.\nDerrube os Boiled Eggers à distância (eles explodem) e use Flame Zippos contra Freeze.'), [HAKEN])
 quest(c, 'W Bose Hwy Monster', ('West Bose Highway', 'West Bose Highway'), RAVENNUE,
-      ('4 BP. The toughest of this set: spread out, keep Earth Guard up and protect against Mute, Seal and Blind.',
-       '4 BP. O mais difícil deste grupo: espalhe a equipe, mantenha o Earth Guard e se proteja de Mute, Seal e Blind.'), [HAKEN])
+      ('4 BP.\nThe toughest of this set: spread out, keep Earth Guard up and protect against Mute, Seal and Blind.', '4 BP.\nO mais difícil deste grupo: espalhe a equipe, mantenha o Earth Guard e se proteja de Mute, Seal e Blind.'), [HAKEN])
 quest(c, 'Battle Backup', ('Nebel Valley', 'Nebel Valley'), VALLERIA,
-      ('4 BP. New in the remake. Help Anelace in Nebel Valley; Flame Zippos recommended. Later, Sting at the Bose guild gives Proxy Puppet S ×2.',
-       '4 BP. Nova no remake. Ajude a Anelace em Nebel Valley; Flame Zippos recomendados. Depois, o Sting na guilda de Bose dá Proxy Puppet S ×2.'), [VAL])
+      ('4 BP.\nNew in the remake. Help Anelace in Nebel Valley; Flame Zippos recommended. Later, Sting at the Bose guild gives Proxy Puppet S ×2.', '4 BP.\nNova no remake. Ajude a Anelace em Nebel Valley; Flame Zippos recomendados. Depois, o Sting na guilda de Bose dá Proxy Puppet S ×2.'), [VAL])
 quest(c, 'Ansel Path Monster', ('New Ansel Path', 'New Ansel Path'), VALLERIA,
-      ('5 BP. It blocks the way to Valleria Shore, so you can\'t skip it. The turtles shrug off physical hits: use arts and step out of the red circles.',
-       '5 BP. Ele bloqueia o caminho para Valleria Shore, então não dá para pular. As tartarugas aguentam golpes físicos: use arts e saia dos círculos vermelhos.'), [VAL])
+      ("5 BP.\nIt blocks the way to Valleria Shore, so you can't skip it. The turtles shrug off physical hits: use arts and step out of the red circles.", '5 BP.\nEle bloqueia o caminho para Valleria Shore, então não dá para pular. As tartarugas aguentam golpes físicos: use arts e saia dos círculos vermelhos.'), [VAL])
 bonus(c, ('the answer on the airliner deck', 'a resposta no convés do airliner'), ('Abandoned Mine — the airliner', 'Abandoned Mine — o airliner'), VALLERIA,
       ('+3 BP (Missing Airliner). Outside on the airliner, pick the 5th option: their hideout is somewhere special.',
        '+3 BP (Missing Airliner). No lado de fora do airliner, escolha a 5ª opção: o esconderijo deles fica num lugar especial.'), [HAKEN])
@@ -323,53 +320,61 @@ ALBA = c.cp('Guiding Professor Alba at the school festival', 'Guiar o Professor 
 MANORIA = c.cp('The event at The White Magnolia in Manoria (Agate joins)', 'O evento na The White Magnolia em Manoria (o Agate entra)')
 END2 = c.cp('The last event of Chapter 2', 'O último evento do Capítulo 2')
 quest(c, 'Ring Robbery', ('Bose — Lana, southeast corner', 'Bose — Lana, canto sudeste'), KRONE,
-      ('3 BP. Needs the Jeweled Ring from the last chest of the Sky Pirate Stronghold; return it to Lana.',
-       '3 BP. Precisa do Jeweled Ring do último baú do Sky Pirate Stronghold; devolva à Lana.'), [MAN])
+      ('3 BP.\nNeeds the Jeweled Ring from the last chest of the Sky Pirate Stronghold; return it to Lana.', '3 BP.\nPrecisa do Jeweled Ring do último baú do Sky Pirate Stronghold; devolva à Lana.'), [MAN])
 quest(c, 'Black Notebook', ('Haken Gate — underground cells', 'Haken Gate — celas subterrâneas'), KRONE,
-      ('5 BP. Only if you examined the vacuum cleaner in the Sky Pirate Stronghold: bring the notebook to the guards.',
-       '5 BP. Só se você examinou o aspirador de pó no Sky Pirate Stronghold: leve o caderno aos guardas.'), [MAN], hidden=True)
+      ('5 BP.\nOnly if you examined the vacuum cleaner in the Sky Pirate Stronghold: bring the notebook to the guards.', '5 BP.\nSó se você examinou o aspirador de pó no Sky Pirate Stronghold: leve o caderno aos guardas.'), [MAN], hidden=True)
 quest(c, 'Lighthouse Labor', ('Varenne Lighthouse — Vogt', 'Varenne Lighthouse — Vogt'), ORPHANAGE,
-      ('4 BP. Not on the board: talk to Vogt outside the lighthouse and clear the four Red Shumocks inside.',
-       '4 BP. Não aparece no quadro: fale com o Vogt do lado de fora do farol e derrote os quatro Red Shumocks lá dentro.'), [MAN], hidden=True)
+      ('4 BP.\nNot on the board: talk to Vogt outside the lighthouse and clear the four Red Shumocks inside.', '4 BP.\nNão aparece no quadro: fale com o Vogt do lado de fora do farol e derrote os quatro Red Shumocks lá dentro.'), [MAN], hidden=True)
 quest(c, 'Seaside Way Monster', ('Gull Seaside Way', 'Gull Seaside Way'), REACH_RUAN,
-      ('4 BP. It blocks the road to Ruan, so you can\'t skip it. Disable the weaker mobs with Chaos Brand first.',
-       '4 BP. Ele bloqueia a estrada para Ruan, então não dá para pular. Desative os inimigos menores com Chaos Brand primeiro.'), [MAN])
+      ("4 BP.\nIt blocks the road to Ruan, so you can't skip it. Disable the weaker mobs with Chaos Brand first.", '4 BP.\nEle bloqueia a estrada para Ruan, então não dá para pular. Desative os inimigos menores com Chaos Brand primeiro.'), [MAN])
 quest(c, 'Key Keeping', ('Ruan — Harg at the port', 'Ruan — Harg no porto'), ORPHANAGE,
-      ('2 BP. The key is in the water by the plank bridge east of Aqua Rossa Bar. Check the rods upstairs in the bar, borrow the Progressive Rod from Squaro and fish it out.',
-       '2 BP. A chave está na água junto à ponte de tábuas a leste do Aqua Rossa Bar. Veja as varas no andar de cima do bar, pegue a Progressive Rod emprestada com o Squaro e pesque a chave.'), [RUAN])
+      ('Reward: 2 BP. The key is in the water by the plank bridge east of Aqua Rossa Bar.', 'Recompensa: 2 BP. A chave está na água junto à ponte de tábuas a leste do Aqua Rossa Bar.'), [RUAN], steps=[
+           t('Check the fishing rods upstairs in Aqua Rossa Bar.', 'Examine as varas de pesca no andar de cima do Aqua Rossa Bar.'),
+           t('Borrow the Progressive Rod from Squaro.', 'Pegue a Progressive Rod emprestada com Squaro.'),
+           t('Fish the key out by the plank bridge east of the bar.', 'Pesque a chave junto à ponte de tábuas a leste do bar.'),
+       ])
 quest(c, 'Aina Cswy Monster', ('Aina Causeway — outside Sapphirl Tower', 'Aina Causeway — em frente à Sapphirl Tower'), ORPHANAGE,
-      ('4 BP. The crabs reflect physical hits until stunned: use arts and wear Mute protection. Drops Prototype Zero for Prototype Pursuit.',
-       '4 BP. Os caranguejos refletem golpes físicos até serem atordoados: use arts e proteção contra Mute. Deixa cair o Prototype Zero da Prototype Pursuit.'), [RUAN])
+      ('4 BP.\nThe crabs reflect physical hits until stunned: use arts and wear Mute protection. Drops Prototype Zero for Prototype Pursuit.', '4 BP.\nOs caranguejos refletem golpes físicos até serem atordoados: use arts e proteção contra Mute. Deixa cair o Prototype Zero da Prototype Pursuit.'), [RUAN])
 quest(c, 'Prototype Pursuit', ('Ruan — Karl at Joan Arms & Guards', 'Ruan — Karl na Joan Arms & Guards'), ORPHANAGE,
-      ('3 BP. Hand over Prototype Zero (from the Aina Cswy Monster). Rewards Seal Blade.',
-       '3 BP. Entregue o Prototype Zero (do Aina Cswy Monster). Dá a Seal Blade.'), [RUAN])
+      ('3 BP.\nHand over Prototype Zero (from the Aina Cswy Monster).\nRewards Seal Blade.', '3 BP.\nEntregue o Prototype Zero (do Aina Cswy Monster). Dá a Seal Blade.'), [RUAN])
 quest(c, 'Maintenance Mail', ("Ruan — Tobias at Granate's Orbal Factory", "Ruan — Tobias na Granate's Orbal Factory"), ACADEMY,
-      ('4 BP. Short deadline. Take the bag to Vogt at the top of Varenne Lighthouse. Bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore\'s, Manoria) too for a Work Helmet and a Victory Headband.',
-       '4 BP. Prazo curto. Leve a bolsa ao Vogt no alto do Varenne Lighthouse. Leve também Azelia Rosè (Primo, cassino) e Salty Anchovies (Fiore\'s, Manoria) para ganhar um Work Helmet e um Victory Headband.'), [ACAD])
+      ('Reward: 4 BP. Short deadline.\nDeliver the bag to Vogt at the top of Varenne Lighthouse.\nOptional: also bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore’s, Manoria) for a Work Helmet and a Victory Headband.', 'Recompensa: 4 BP. Prazo curto.\nEntregue a bolsa a Vogt no topo de Varenne Lighthouse.\nOpcional: leve também Azelia Rosè (Primo, cassino) e Salty Anchovies (Fiore’s, Manoria) para receber Work Helmet e Victory Headband.'), [ACAD])
 quest(c, 'Map Mystery', ('Ruan Chapel — Jimmy', 'Capela de Ruan — Jimmy'), ACADEMY,
-      ('3 (+2) BP. Short deadline. The treasure is in a barrel on the small beach by Gull Seaside Way\'s east wall (Skull Dagger + map fragment). The bonus needs Jimmy saved earlier on Gull Seaside Way.',
-       '3 (+2) BP. Prazo curto. O tesouro está num barril na prainha junto à parede leste da Gull Seaside Way (Skull Dagger + fragmento de mapa). O bônus exige ter salvado o Jimmy antes na Gull Seaside Way.'), [ACAD, MAN])
+      ("3 (+2) BP.\nShort deadline. The treasure is in a barrel on the small beach by Gull Seaside Way's east wall (Skull Dagger + map fragment). The bonus needs Jimmy saved earlier on Gull Seaside Way.", '3 (+2) BP.\nPrazo curto. O tesouro está num barril na prainha junto à parede leste da Gull Seaside Way (Skull Dagger + fragmento de mapa). O bônus exige ter salvado o Jimmy antes na Gull Seaside Way.'), [ACAD, MAN])
 quest(c, 'Exploration Escort', ('Manoria Village — Amelia at the north entrance', 'Manoria Village — Amelia na entrada norte'), ACADEMY,
-      ('5 BP. Short deadline. Go to the north end of Krone Trail, win the fight, then escort Orvid back to Manoria.',
-       '5 BP. Prazo curto. Vá ao extremo norte da Krone Trail, vença a luta e escolte o Orvid de volta a Manoria.'), [ACAD])
+      ('5 BP.\nShort deadline. Go to the north end of Krone Trail, win the fight, then escort Orvid back to Manoria.', '5 BP.\nPrazo curto. Vá ao extremo norte da Krone Trail, vença a luta e escolte o Orvid de volta a Manoria.'), [ACAD])
 quest(c, 'Delicate Diplomacy', ('Air-Letten', 'Air-Letten'), ACADEMY,
-      ('3 (+2) BP. Short deadline. Agree on the balcony, then in the cafeteria answer 2nd, either, 1st, 2nd for the bonus.',
-       '3 (+2) BP. Prazo curto. Aceite na varanda e, na cafeteria, responda 2ª, qualquer uma, 1ª, 2ª para o bônus.'), [ACAD])
+      ('BP: 3 (+2). Short deadline. Follow these choices for the bonus.', 'BP: 3 (+2). Prazo curto. Siga estas escolhas para receber o bônus.'), [ACAD], steps=[
+           t('Agree on the balcony.', 'Concorde na varanda.'),
+           t('Cafeteria, first question: choose the second option.', 'Cafeteria, primeira pergunta: escolha a 2ª opção.'),
+           t('Cafeteria, second question: either option works.', 'Cafeteria, segunda pergunta: qualquer opção serve.'),
+           t('Cafeteria, third question: choose the first option.', 'Cafeteria, terceira pergunta: escolha a 1ª opção.'),
+           t('Cafeteria, fourth question: choose the second option.', 'Cafeteria, quarta pergunta: escolha a 2ª opção.'),
+       ])
 quest(c, 'Candelabrum Clues', ("Ruan — Gilbert at the Mayor's Residence", 'Ruan — Gilbert na residência do prefeito'), ACADEMY,
-      ('7 BP. Short deadline. Check the plaque at Ruan Lighthouse, the roulette table upstairs in the casino, the forklift at the port and the crane near the bar, then talk to Harg.',
-       '7 BP. Prazo curto. Examine a placa do farol de Ruan, a roleta no andar de cima do cassino, a empilhadeira do porto e o guindaste perto do bar, depois fale com o Harg.'), [ACAD])
+      ('Reward: 7 BP. Short deadline. Follow these clues in order.', 'Recompensa: 7 BP. Prazo curto. Siga estas pistas em ordem.'), [ACAD], steps=[
+           t('Examine the plaque at Ruan Lighthouse.', 'Examine a placa no Ruan Lighthouse.'),
+           t('Examine the roulette table upstairs in the casino.', 'Examine a mesa de roleta no andar de cima do cassino.'),
+           t('Examine the forklift at the port.', 'Examine a empilhadeira no porto.'),
+           t('Examine the crane near the bar.', 'Examine o guindaste perto do bar.'),
+           t('Talk to Harg.', 'Fale com Harg.'),
+       ])
 quest(c, 'Seaside Way Monster 2', ('Gull Seaside Way', 'Gull Seaside Way'), MANORIA,
-      ('5 BP. It blocks the way to Manoria, so you can\'t skip it. Use arts against Seal and Blind; Knight Ammonites explode when defeated.',
-       '5 BP. Ele bloqueia o caminho para Manoria, então não dá para pular. Use arts contra Seal e Blind; os Knight Ammonites explodem ao serem derrotados.'), [ACAD])
+      ("5 BP.\nIt blocks the way to Manoria, so you can't skip it. Use arts against Seal and Blind; Knight Ammonites explode when defeated.", '5 BP.\nEle bloqueia o caminho para Manoria, então não dá para pular. Use arts contra Seal e Blind; os Knight Ammonites explodem ao serem derrotados.'), [ACAD])
 c.item('missable', t('Save Jimmy on Gull Seaside Way', 'Salvar o Jimmy na Gull Seaside Way'), t('Gull Seaside Way — alcove on the beach', 'Gull Seaside Way — reentrância na praia'), REACH_RUAN,
        t('A side event on the way to Ruan (three Sharkagators). Saving him unlocks +2 BP in the Map Mystery quest later.',
          'Um evento opcional a caminho de Ruan (três Sharkagators). Salvá-lo libera +2 BP na quest Map Mystery depois.'), 0, [MAN])
 bonus(c, ('the questions at the orphanage', 'as perguntas no orfanato'), ('Mercia Orphanage; Manoria Village', 'Mercia Orphanage; Manoria Village'), WAREHOUSE,
-      ('+4 BP (Orphanage Investigation). After examining every clue, pick the 2nd option (someone started the fire?); later at The White Magnolia, pick the 3rd (the thugs?!).',
-       '+4 BP (Orphanage Investigation). Depois de examinar todas as pistas, escolha a 2ª opção (alguém começou o fogo?); depois, na The White Magnolia, escolha a 3ª (os bandidos?!).'), [RUAN])
+      ('Bonus: +4 BP in Orphanage Investigation.', 'Bônus: +4 BP em Orphanage Investigation.'), [RUAN], steps=[
+           t('Examine every clue, then choose the second option: someone started the fire?', 'Examine todas as pistas e escolha a 2ª opção: alguém começou o incêndio?'),
+           t('Later, at The White Magnolia, choose the third option: the thugs?!', 'Mais tarde, em The White Magnolia, escolha a 3ª opção: os bandidos?!'),
+       ])
 bonus(c, ('the festival preparations', 'os preparativos do festival'), ('Jenis Royal Academy', 'Jenis Royal Academy'), EVE,
-      ('+5 BP (A Festival Favor), via the blue markers: Logan\'s three books (+1), Janitor Parkes\'s three decoration spots (+1) and clearing the old schoolhouse (+3). Pick up its three U-Materials first.',
-       '+5 BP (A Festival Favor), pelos marcadores azuis: os três livros do Logan (+1), os três lugares de decoração do zelador Parkes (+1) e limpar a escola antiga (+3). Pegue antes os três U-Materials de lá.'), [ACAD])
+      ('Bonus: +5 BP in A Festival Favor. Follow the blue markers.', 'Bônus: +5 BP em A Festival Favor. Siga os marcadores azuis.'), [ACAD], steps=[
+           t('Find Logan’s three books (+1 BP).', 'Encontre os três livros de Logan (+1 BP).'),
+           t('Check Janitor Parkes’s three decoration spots (+1 BP).', 'Confira os três locais de decoração de Janitor Parkes (+1 BP).'),
+           t('Collect the three U-Materials in the old schoolhouse, then clear it (+3 BP).', 'Recolha os três U-Materials no prédio antigo da escola e depois conclua a limpeza do local (+3 BP).'),
+       ])
 book(c, 'Liberl News Issue 4', ('Bose Market — Grocery Minuet', 'Bose Market — Grocery Minuet'), KRONE,
      ('Buy it before leaving Bose for good.', 'Compre antes de sair de Bose de vez.'), [MAN])
 book(c, 'Ruan Economic History 1', ("Jenis Royal Academy — boys' locker room (clubhouse)", 'Jenis Royal Academy — vestiário masculino (clube)'), EVE,
@@ -448,42 +453,54 @@ REPORT = c.cp('Reporting at the guild after visiting Leiston Fortress', 'Relatar
 AIRSHIP = c.cp('Telling Chief Murdock you are ready (airship to Leiston)', 'Dizer ao Chief Murdock que você está pronto (airship para Leiston)')
 END3 = c.cp('Examining the boat at Leiston Fortress (end of Chapter 3)', 'Examinar o barco na Leiston Fortress (fim do Capítulo 3)')
 quest(c, 'Looking for Librarian', ('Zeiss Central Factory — Constance, 2F library', 'Zeiss Central Factory — Constance, biblioteca do 2F'), PUMP,
-      ('3 BP. Recover three books: 3F Design Room (steel table), 4F Laboratory (table) and 4F Clinic (drawer). It starts the Overtime chain.',
-       '3 BP. Recupere três livros: sala de projetos do 3F (mesa de aço), laboratório do 4F (mesa) e clínica do 4F (gaveta). Começa a sequência Overtime.'), [ZEISS])
+      ('Reward: 3 BP. Recover all three books. This starts the Overtime quest chain.', 'Recompensa: 3 BP. Recupere os três livros. Isso inicia a sequência de missões Overtime.'), [ZEISS], steps=[
+           t('3F Design Room — steel table.', 'Design Room, 3º andar — mesa de aço.'),
+           t('4F Laboratory — table.', 'Laboratory, 4º andar — mesa.'),
+           t('4F Clinic — drawer.', 'Clinic, 4º andar — gaveta.'),
+       ])
 quest(c, 'Present for Parents', ('Zeiss — Russell Home', 'Zeiss — Russell Home'), PUMP,
-      ('4 BP. Not on the board, new in the remake. Check the mailbox, then Tita\'s desk (3rd option). Visit the chapel plaque and Ray in the 4F Laboratory, and defeat the pink Creepy Sheep in southwest Tratt Plains for its wool.',
-       '4 BP. Não aparece no quadro, nova no remake. Veja a caixa de correio e depois a mesa da Tita (3ª opção). Visite a placa da capela e o Ray no laboratório do 4F, e derrote a Creepy Sheep rosa no sudoeste das Tratt Plains para pegar a lã.'), [ELMO], hidden=True)
+      ('Reward: 4 BP. Hidden quest, new in the remake.', 'Recompensa: 4 BP. Missão oculta, nova no remake.'), [ELMO], hidden=True, steps=[
+           t('Check the mailbox.', 'Examine a caixa de correio.'),
+           t('Check Tita’s desk and choose the third option.', 'Examine a mesa de Tita e escolha a 3ª opção.'),
+           t('Visit the chapel plaque.', 'Examine a placa na capela.'),
+           t('Visit Ray in the 4F Laboratory.', 'Fale com Ray no Laboratory do 4º andar.'),
+           t('Defeat the pink Creepy Sheep in southwest Tratt Plains to obtain its wool.', 'Derrote a Creepy Sheep rosa no sudoeste de Tratt Plains para obter a lã.'),
+       ])
 quest(c, 'Product Piloting', ('Zeiss Central Factory — Terry, 4F laboratory', 'Zeiss Central Factory — Terry, laboratório do 4F'), PUMP,
-      ('4 (+2) BP. Wear the Strega-α on Estelle and visit at least four of Air-Letten, Wolf Fort, Sanktheim Gate, Leiston Fortress and Elmo Village (fast travel counts).',
-       '4 (+2) BP. Equipe as Strega-α na Estelle e visite pelo menos quatro entre Air-Letten, Wolf Fort, Sanktheim Gate, Leiston Fortress e Elmo Village (viagem rápida conta).'), [ELMO])
+      ('BP: 4 (+2 bonus). Equip Strega-α on Estelle and visit at least FOUR of these five places; fast travel counts.\n• Air-Letten\n• Wolf Fort\n• Sanktheim Gate\n• Leiston Fortress\n• Elmo Village', 'BP: 4 (+2 de bônus). Equipe Strega-α em Estelle e visite pelo menos QUATRO destes cinco locais; viagem rápida conta.\n• Air-Letten\n• Wolf Fort\n• Sanktheim Gate\n• Leiston Fortress\n• Elmo Village'), [ELMO])
 quest(c, 'Stopping Smoking', ('Zeiss Central Factory — Dr. Miriam, 4F clinic', 'Zeiss Central Factory — Dr. Miriam, clínica do 4F'), PUMP,
-      ('4 BP. Give Antoine fresh milk, ask Travis (5F) about the cigarettes, talk to Chief Murdock (2F), take the Back Room Key from the desk and check his desk in the back room.',
-       '4 BP. Dê leite fresco ao Antoine, pergunte ao Travis (5F) sobre os cigarros, fale com o Chief Murdock (2F), pegue a Back Room Key na mesa e examine a mesa dele na sala dos fundos.'), [ELMO])
+      ('Reward: 4 BP. Follow the investigation in this order.', 'Recompensa: 4 BP. Siga a investigação nesta ordem.'), [ELMO], steps=[
+           t('Give Antoine fresh milk.', 'Dê leite fresco a Antoine.'),
+           t('Ask Travis on 5F about the cigarettes.', 'Pergunte a Travis, no 5º andar, sobre os cigarros.'),
+           t('Talk to Chief Murdock on 2F.', 'Fale com Chief Murdock no 2º andar.'),
+           t('Take the Back Room Key from the desk.', 'Pegue a Back Room Key na mesa.'),
+           t('Use it to check Murdock’s desk in the back room.', 'Use a chave para examinar a mesa de Murdock na sala dos fundos.'),
+       ])
 quest(c, 'Fresher Flavors', ('Zeiss — Ben at Forgel Bar', 'Zeiss — Ben no Forgel Bar'), PUMP,
-      ('3 BP. Pick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben. Rewards Acerbic Tomato Sandwich.',
-       '3 BP. Pegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben. Dá o Acerbic Tomato Sandwich.'), [ELMO])
+      ('3 BP.\nPick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben.\nRewards Acerbic Tomato Sandwich.', '3 BP.\nPegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben. Dá o Acerbic Tomato Sandwich.'), [ELMO])
 quest(c, 'Tratt Plains Monster', ('Tratt Plains Road', 'Tratt Plains Road'), PUMP,
-      ('4 BP. Tanky against physical hits but weak to arts and most ailments; it shields itself at low HP.',
-       '4 BP. Aguenta golpes físicos, mas é fraco contra arts e quase todos os efeitos; ele se protege com pouco HP.'), [ELMO])
+      ('4 BP.\nTanky against physical hits but weak to arts and most ailments; it shields itself at low HP.', '4 BP.\nAguenta golpes físicos, mas é fraco contra arts e quase todos os efeitos; ele se protege com pouco HP.'), [ELMO])
 quest(c, 'Cargo Car', ('Tratt Plains Road — the stranded cargo car', 'Tratt Plains Road — o carro de carga parado'), PUMP,
-      ('4 BP. Talk to Wong and beat the Armored Rabbits. Unlocks Roadside Repair.', '4 BP. Fale com o Wong e derrote os Armored Rabbits. Libera a Roadside Repair.'), [ELMO])
+      ('4 BP.\nTalk to Wong and beat the Armored Rabbits. Unlocks Roadside Repair.', '4 BP.\nFale com o Wong e derrote os Armored Rabbits. Libera a Roadside Repair.'), [ELMO])
 quest(c, 'Roadside Repair', ('Tratt Plains Road — Wong', 'Tratt Plains Road — Wong'), PUMP,
-      ('5 BP. Talk to Prometheus (3F), read the Orbal Automobile entry on the 5F computer, get the Drive Orbment from Rudi in Kaldia Tunnel and bring it to Wong.',
-       '5 BP. Fale com o Prometheus (3F), leia a entrada do Orbal Automobile no computador do 5F, pegue o Drive Orbment com o Rudi no Kaldia Tunnel e leve ao Wong.'), [ELMO])
+      ('Reward: 5 BP. Unlocked by Cargo Car.', 'Recompensa: 5 BP. Desbloqueada por Cargo Car.'), [ELMO], steps=[
+           t('Talk to Prometheus on 3F.', 'Fale com Prometheus no 3º andar.'),
+           t('Read the Orbal Automobile entry on the 5F computer.', 'Leia a entrada Orbal Automobile no computador do 5º andar.'),
+           t('Get the Drive Orbment from Rudi in Kaldia Tunnel.', 'Pegue o Drive Orbment com Rudi em Kaldia Tunnel.'),
+           t('Bring the Drive Orbment to Wong.', 'Entregue o Drive Orbment a Wong.'),
+       ])
 quest(c, 'Cupid on Cue', ('Wolf Fort — Private Brahm', 'Wolf Fort — Private Brahm'), PUMP,
-      ('2 (+4) BP. Not on the board. Deliver his letter to Fey (factory B1F) with a gift: the Wool Knit Cap from Bell Station gives the full +4; Work Gloves or a Seasonal Tart give +2.',
-       '2 (+4) BP. Não aparece no quadro. Entregue a carta dele à Fey (B1F da fábrica) com um presente: o Wool Knit Cap da Bell Station dá os +4; Work Gloves ou uma Seasonal Tart dão +2.'), [ELMO], hidden=True)
+      ('BP: 2 (+4 bonus). Hidden quest: deliver the letter to Fey on factory B1F with ONE gift.\n• Wool Knit Cap from Bell Station: full +4 bonus.\n• Work Gloves OR Seasonal Tart: +2 bonus.', 'BP: 2 (+4 de bônus). Missão oculta: entregue a carta a Fey no B1F da fábrica com UM presente.\n• Wool Knit Cap de Bell Station: bônus completo de +4.\n• Work Gloves OU Seasonal Tart: bônus de +2.'), [ELMO], hidden=True)
 quest(c, 'Ritter Rd Monster', ('Ritter Roadway — where the road splits', 'Ritter Roadway — onde a estrada se divide'), PUMP,
-      ('5 BP. Clear the small snakes with area attacks and bring poison protection.', '5 BP. Derrube as cobras pequenas com ataques em área e leve proteção contra veneno.'), [ELMO])
+      ('5 BP.\nClear the small snakes with area attacks and bring poison protection.', '5 BP.\nDerrube as cobras pequenas com ataques em área e leve proteção contra veneno.'), [ELMO])
 quest(c, 'Overtime', ('Elmo Village — stone by the hot springs', 'Elmo Village — pedra junto às fontes termais'), PUMP,
-      ('3 BP. After Looking for Librarian. Take The Erbe Woodpecker back to Constance.', '3 BP. Depois da Looking for Librarian. Devolva The Erbe Woodpecker à Constance.'), [ELMO])
+      ('3 BP.\nAfter Looking for Librarian. Take The Erbe Woodpecker back to Constance.', '3 BP.\nDepois da Looking for Librarian. Devolva The Erbe Woodpecker à Constance.'), [ELMO])
 quest(c, 'Over-Overtime', ('Tratt Plains Road — the four stone pillars near Carnelia Tower', 'Tratt Plains Road — os quatro pilares de pedra perto da Carnelia Tower'), PUMP,
-      ("4 BP. Examine the central pillar for Hertz's Adventure Vol. 2 and return it.", "4 BP. Examine o pilar do centro para pegar Hertz's Adventure Vol. 2 e devolva."), [ELMO])
+      ("4 BP.\nExamine the central pillar for Hertz's Adventure Vol. 2 and return it.", "4 BP.\nExamine o pilar do centro para pegar Hertz's Adventure Vol. 2 e devolva."), [ELMO])
 quest(c, 'Over-Over-Overtime', ('Sanktheim Gate — top floor', 'Sanktheim Gate — último andar'), PUMP,
-      ('4 BP. The book 31 Cypress Trees is on a barrel (with an Impede 3).', '4 BP. O livro 31 Cypress Trees está sobre um barril (com um Impede 3).'), [ELMO])
+      ('4 BP.\nThe book 31 Cypress Trees is on a barrel (with an Impede 3).', '4 BP.\nO livro 31 Cypress Trees está sobre um barril (com um Impede 3).'), [ELMO])
 quest(c, 'Ritter Rd Monster 2', ('Ritter Roadway', 'Ritter Roadway'), AIRSHIP,
-      ('6 BP. Short deadline. Defeating the leader buffs the other wolves and it can revive them: bring Anti-Sept All. You can wait until Agate and Tita rejoin, but it expires once you board the airship for Leiston.',
-       '6 BP. Prazo curto. Derrotar o líder fortalece os outros lobos, e ele pode revivê-los: leve Anti-Sept All. Dá para esperar o Agate e a Tita voltarem, mas a quest expira quando você embarca no airship para Leiston.'), [LEIS])
+      ('6 BP.\nShort deadline. Defeating the leader buffs the other wolves and it can revive them: bring Anti-Sept All. You can wait until Agate and Tita rejoin, but it expires once you board the airship for Leiston.', '6 BP.\nPrazo curto. Derrotar o líder fortalece os outros lobos, e ele pode revivê-los: leve Anti-Sept All. Dá para esperar o Agate e a Tita voltarem, mas a quest expira quando você embarca no airship para Leiston.'), [LEIS])
 bonus(c, ('the smoke canisters', 'os botijões de fumaça'), ('Zeiss Central Factory — emergency stairs', 'Zeiss Central Factory — escada de emergência'), FACTORY,
       ('+5 BP (Factory Incident): examine all five smoke canisters (blue markers), +1 each, before going to the 3F workshop.',
        '+5 BP (Factory Incident): examine os cinco botijões de fumaça (marcadores azuis), +1 cada, antes de ir à oficina do 3F.'), [LEIS])
@@ -578,23 +595,31 @@ KEEP = c.cp('The battles in the Royal Keep', 'As batalhas no Royal Keep')
 FINAL_DOOR = c.cp('Opening the giant door on the bottom level of the Sealed Area', 'Abrir a porta gigante no nível mais baixo da Sealed Area')
 ENDING = c.cp('Resting on the East Block benches (the ending)', 'Descansar nos bancos do East Block (o final)')
 quest(c, 'Wayside Wallet', ('Grancel — Anton or Ricky at the Edel Department Store', 'Grancel — Anton ou Ricky na Edel Department Store'), FINAL_MATCH,
-      ('5 BP. New in the remake. Talk to Culetti (Sunnybell Inn), Armand or Ellie (South Block) and Private Barranco (Gurune Gate), then bring the wallet back.',
-       '5 BP. Nova no remake. Fale com o Culetti (Sunnybell Inn), o Armand ou a Ellie (South Block) e o Private Barranco (Gurune Gate), depois devolva a carteira.'), [GRAN])
+      ('Reward: 5 BP. New quest in the remake.', 'Recompensa: 5 BP. Missão nova no remake.'), [GRAN], steps=[
+           t('Talk to Culetti at Sunnybell Inn.', 'Fale com Culetti na Sunnybell Inn.'),
+           t('Talk to Armand or Ellie in the South Block.', 'Fale com Armand ou Ellie no South Block.'),
+           t('Talk to Private Barranco at Gurune Gate.', 'Fale com Private Barranco em Gurune Gate.'),
+           t('Bring the wallet back.', 'Devolva a carteira.'),
+       ])
 quest(c, 'Child Custody', ('Grancel — tourist couple outside the cathedral', 'Grancel — casal de turistas em frente à catedral'), FINAL_MATCH,
-      ("5 BP. New in the remake. Check the castle entrance, talk to Grant (East Block), see the scene at the Landing Port and finish at the Fisherman's Guild.",
-       "5 BP. Nova no remake. Vá à entrada do castelo, fale com o Grant (East Block), veja a cena no Landing Port e termine na Fisherman's Guild."), [SEW])
+      ('Reward: 5 BP. New quest in the remake.', 'Recompensa: 5 BP. Missão nova no remake.'), [SEW], steps=[
+           t('Check the castle entrance.', 'Confira a entrada do castelo.'),
+           t('Talk to Grant in the East Block.', 'Fale com Grant no East Block.'),
+           t('Watch the scene at the Landing Port.', 'Veja a cena no Landing Port.'),
+           t('Finish at the Fisherman’s Guild.', 'Termine na Fisherman’s Guild.'),
+       ])
 quest(c, 'W Block Sewers Monster', ('Grancel Sewers — W. Block', 'Grancel Sewers — W. Block'), FINAL_MATCH,
-      ("8 BP. Use Zin's Taunt to pull the crowd and clear it with wind arts. The same sewers hold Chewy Spare Ribs, the last recipe.",
-       '8 BP. Use o Taunt do Zin para atrair o grupo e derrube-o com arts de vento. O mesmo esgoto tem as Chewy Spare Ribs, a última receita.'), [SEW])
+      ("8 BP.\nUse Zin's Taunt to pull the crowd and clear it with wind arts. The same sewers hold Chewy Spare Ribs, the last recipe.", '8 BP.\nUse o Taunt do Zin para atrair o grupo e derrube-o com arts de vento. O mesmo esgoto tem as Chewy Spare Ribs, a última receita.'), [SEW])
 quest(c, 'Myriad Monsters', ('Grancel — Elnan at the Bracer Guild', 'Grancel — Elnan na Bracer Guild'), FINAL_MATCH,
-      ('6 BP. New in the remake. Clear the monsters marked on his map; the boss then appears near the hidden cave. Use area attacks so it can\'t keep reviving the Millipede Balls.',
-       '6 BP. Nova no remake. Derrote os monstros marcados no mapa dele; o chefe aparece em seguida perto da caverna escondida. Use ataques em área para ele não ficar revivendo as Millipede Balls.'), [SEW])
+      ("6 BP.\nNew in the remake. Clear the monsters marked on his map; the boss then appears near the hidden cave. Use area attacks so it can't keep reviving the Millipede Balls.", '6 BP.\nNova no remake. Derrote os monstros marcados no mapa dele; o chefe aparece em seguida perto da caverna escondida. Use ataques em área para ele não ficar revivendo as Millipede Balls.'), [SEW])
 quest(c, 'E Block Sewers Monster', ('Grancel Sewers — E. Block', 'Grancel Sewers — E. Block'), FINAL_MATCH,
-      ('8 BP. In the first rooms downstairs. Freeze protection makes it easy; its Pearl Mirror reflects one attack.',
-       '8 BP. Nas primeiras salas do andar de baixo. Proteção contra Freeze facilita; o Pearl Mirror dele reflete um ataque.'), [SEW])
+      ('8 BP.\nIn the first rooms downstairs. Freeze protection makes it easy; its Pearl Mirror reflects one attack.', '8 BP.\nNas primeiras salas do andar de baixo. Proteção contra Freeze facilita; o Pearl Mirror dele reflete um ataque.'), [SEW])
 quest(c, 'Embassy Emergency', ('Grancel Castle — lounge', 'Grancel Castle — salão'), ENDING,
-      ('3 BP. After the final battle: meet Olivier in the castle lounge, read the request at the guild, then return to the lounge and watch the fireworks.',
-       '3 BP. Depois da batalha final: encontre o Olivier no salão do castelo, leia o pedido na guilda, volte ao salão e veja os fogos.'), [FINAL])
+      ('Reward: 3 BP. Available after the final battle.', 'Recompensa: 3 BP. Disponível após a batalha final.'), [FINAL], steps=[
+           t('Meet Olivier in the castle lounge.', 'Encontre Olivier no lounge do castelo.'),
+           t('Read the request at the guild.', 'Leia o pedido na guilda.'),
+           t('Return to the castle lounge and watch the fireworks.', 'Volte ao lounge do castelo e veja os fogos de artifício.'),
+       ])
 bonus(c, ('the answer at the Grancel guild', 'a resposta na guilda de Grancel'), ('Grancel — Bracer Guild', 'Grancel — Bracer Guild'), GUILD,
       ('+1 BP (Royal Message). Pick the 3rd option: the letter of introduction won\'t work?', '+1 BP (Royal Message). Escolha a 3ª opção: a carta de apresentação não vai funcionar?'), [GRAN])
 bonus(c, ('the name at the Liberl News Service', 'o nome no Liberl News Service'), ('Grancel — Liberl News Service', 'Grancel — Liberl News Service'), PROFILES,
@@ -605,8 +630,10 @@ bonus(c, ('reaching the cathedral unseen', 'chegar à catedral sem ser visto'), 
 bonus(c, ('the two answers at the Liberl News Service', 'as duas respostas no Liberl News Service'), ('Grancel — Liberl News Service', 'Grancel — Liberl News Service'), OPERATION,
       ('+4 BP (Hostage Rescue). Upstairs, pick the 2nd option both times.', '+4 BP (Hostage Rescue). No andar de cima, escolha a 2ª opção nas duas vezes.'), [VILLA])
 bonus(c, ('the battles in the Royal Keep', 'as batalhas no Royal Keep'), ('Grancel Castle — Royal Keep', 'Grancel Castle — Royal Keep'), KEEP,
-      ('+5 BP (Save the Queen): don\'t defeat the Duke in the first fight (+2; keep area attacks off him and skip Burst), then win the last fight (+3).',
-       '+5 BP (Save the Queen): não derrote o Duque na primeira luta (+2; mantenha os ataques em área longe dele e não use Burst), depois vença a última luta (+3).'), [VILLA])
+      ('Bonus: +5 BP in Save the Queen.', 'Bônus: +5 BP em Save the Queen.'), [VILLA], steps=[
+           t('First fight: do not defeat the Duke (+2 BP). Keep area attacks away from him and do not use Burst.', 'Primeira luta: não derrote o Duke (+2 BP). Evite atingi-lo com ataques em área e não use Burst.'),
+           t('Win the last fight (+3 BP).', 'Vença a última luta (+3 BP).'),
+       ])
 c.item('missable', t('Trade the Carnelia volumes for the ultimate weapons', 'Trocar os volumes de Carnelia pelas armas definitivas'), t('Grancel — Baral at Baral Coffee House', 'Grancel — Baral no Baral Coffee House'), OPERATION,
        t('With all 11 volumes, Baral trades them for Estelle and Joshua\'s strongest weapons. Missed volumes 8–11 are sold at the Edel Department Store.',
          'Com os 11 volumes, o Baral troca pelas armas mais fortes da Estelle e do Joshua. Os volumes 8 a 11 perdidos são vendidos na Edel Department Store.'), 0, [VILLA])

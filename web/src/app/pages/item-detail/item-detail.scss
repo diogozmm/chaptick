@@ -27,9 +27,14 @@
 .deadline[data-status='this-chapter'] dd, .deadline[data-status='left-behind'] dd { color: var(--warn-text); }
 
 .section { display: grid; gap: 0.6rem; }
-.section h2 { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.2rem; }
+.section h2 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; font-size: 1.2rem; }
 .count { margin-left: auto; font: 500 0.875rem/1 var(--font-body); color: var(--text-muted); font-variant-numeric: tabular-nums; }
-.hint { margin: 0; line-height: 1.6; }
+.instructions { gap: 0.75rem; border-left: 3px solid var(--accent); }
+.hint { margin: 0; max-width: 68ch; line-height: 1.75; white-space: pre-line; overflow-wrap: anywhere; }
+.section > .count, .section h2 .count { white-space: nowrap; }
+@media (min-width: 640px) {
+  .instructions { padding: 1.25rem 1.5rem; }
+}
 
 .bosses { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
 .boss {

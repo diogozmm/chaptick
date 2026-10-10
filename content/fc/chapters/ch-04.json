@@ -101,8 +101,8 @@
       },
       "availableUntil": "fc-ch4-cp-05",
       "hint": {
-        "en": "5 BP. New in the remake. Talk to Culetti (Sunnybell Inn), Armand or Ellie (South Block) and Private Barranco (Gurune Gate), then bring the wallet back.",
-        "pt": "5 BP. Nova no remake. Fale com o Culetti (Sunnybell Inn), o Armand ou a Ellie (South Block) e o Private Barranco (Gurune Gate), depois devolva a carteira."
+        "en": "Reward: 5 BP. New quest in the remake.",
+        "pt": "Recompensa: 5 BP. Missão nova no remake."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -111,6 +111,32 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Culetti at Sunnybell Inn.",
+            "pt": "Fale com Culetti na Sunnybell Inn."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Armand or Ellie in the South Block.",
+            "pt": "Fale com Armand ou Ellie no South Block."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Private Barranco at Gurune Gate.",
+            "pt": "Fale com Private Barranco em Gurune Gate."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring the wallet back.",
+            "pt": "Devolva a carteira."
+          }
+        }
       ]
     },
     {
@@ -125,8 +151,8 @@
       },
       "availableUntil": "fc-ch4-cp-05",
       "hint": {
-        "en": "5 BP. New in the remake. Check the castle entrance, talk to Grant (East Block), see the scene at the Landing Port and finish at the Fisherman's Guild.",
-        "pt": "5 BP. Nova no remake. Vá à entrada do castelo, fale com o Grant (East Block), veja a cena no Landing Port e termine na Fisherman's Guild."
+        "en": "Reward: 5 BP. New quest in the remake.",
+        "pt": "Recompensa: 5 BP. Missão nova no remake."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -135,6 +161,32 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Check the castle entrance.",
+            "pt": "Confira a entrada do castelo."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Grant in the East Block.",
+            "pt": "Fale com Grant no East Block."
+          }
+        },
+        {
+          "text": {
+            "en": "Watch the scene at the Landing Port.",
+            "pt": "Veja a cena no Landing Port."
+          }
+        },
+        {
+          "text": {
+            "en": "Finish at the Fisherman’s Guild.",
+            "pt": "Termine na Fisherman’s Guild."
+          }
+        }
       ]
     },
     {
@@ -149,8 +201,8 @@
       },
       "availableUntil": "fc-ch4-cp-05",
       "hint": {
-        "en": "8 BP. Use Zin's Taunt to pull the crowd and clear it with wind arts. The same sewers hold Chewy Spare Ribs, the last recipe.",
-        "pt": "8 BP. Use o Taunt do Zin para atrair o grupo e derrube-o com arts de vento. O mesmo esgoto tem as Chewy Spare Ribs, a última receita."
+        "en": "8 BP.\nUse Zin's Taunt to pull the crowd and clear it with wind arts. The same sewers hold Chewy Spare Ribs, the last recipe.",
+        "pt": "8 BP.\nUse o Taunt do Zin para atrair o grupo e derrube-o com arts de vento. O mesmo esgoto tem as Chewy Spare Ribs, a última receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -173,8 +225,8 @@
       },
       "availableUntil": "fc-ch4-cp-05",
       "hint": {
-        "en": "6 BP. New in the remake. Clear the monsters marked on his map; the boss then appears near the hidden cave. Use area attacks so it can't keep reviving the Millipede Balls.",
-        "pt": "6 BP. Nova no remake. Derrote os monstros marcados no mapa dele; o chefe aparece em seguida perto da caverna escondida. Use ataques em área para ele não ficar revivendo as Millipede Balls."
+        "en": "6 BP.\nNew in the remake. Clear the monsters marked on his map; the boss then appears near the hidden cave. Use area attacks so it can't keep reviving the Millipede Balls.",
+        "pt": "6 BP.\nNova no remake. Derrote os monstros marcados no mapa dele; o chefe aparece em seguida perto da caverna escondida. Use ataques em área para ele não ficar revivendo as Millipede Balls."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -197,8 +249,8 @@
       },
       "availableUntil": "fc-ch4-cp-05",
       "hint": {
-        "en": "8 BP. In the first rooms downstairs. Freeze protection makes it easy; its Pearl Mirror reflects one attack.",
-        "pt": "8 BP. Nas primeiras salas do andar de baixo. Proteção contra Freeze facilita; o Pearl Mirror dele reflete um ataque."
+        "en": "8 BP.\nIn the first rooms downstairs. Freeze protection makes it easy; its Pearl Mirror reflects one attack.",
+        "pt": "8 BP.\nNas primeiras salas do andar de baixo. Proteção contra Freeze facilita; o Pearl Mirror dele reflete um ataque."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -221,8 +273,8 @@
       },
       "availableUntil": "fc-ch4-cp-10",
       "hint": {
-        "en": "3 BP. After the final battle: meet Olivier in the castle lounge, read the request at the guild, then return to the lounge and watch the fireworks.",
-        "pt": "3 BP. Depois da batalha final: encontre o Olivier no salão do castelo, leia o pedido na guilda, volte ao salão e veja os fogos."
+        "en": "Reward: 3 BP. Available after the final battle.",
+        "pt": "Recompensa: 3 BP. Disponível após a batalha final."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -231,6 +283,26 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Meet Olivier in the castle lounge.",
+            "pt": "Encontre Olivier no lounge do castelo."
+          }
+        },
+        {
+          "text": {
+            "en": "Read the request at the guild.",
+            "pt": "Leia o pedido na guilda."
+          }
+        },
+        {
+          "text": {
+            "en": "Return to the castle lounge and watch the fireworks.",
+            "pt": "Volte ao lounge do castelo e veja os fogos de artifício."
+          }
+        }
       ]
     },
     {
@@ -342,8 +414,8 @@
       },
       "availableUntil": "fc-ch4-cp-08",
       "hint": {
-        "en": "+5 BP (Save the Queen): don't defeat the Duke in the first fight (+2; keep area attacks off him and skip Burst), then win the last fight (+3).",
-        "pt": "+5 BP (Save the Queen): não derrote o Duque na primeira luta (+2; mantenha os ataques em área longe dele e não use Burst), depois vença a última luta (+3)."
+        "en": "Bonus: +5 BP in Save the Queen.",
+        "pt": "Bônus: +5 BP em Save the Queen."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -351,6 +423,20 @@
       ],
       "trophies": [
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "First fight: do not defeat the Duke (+2 BP). Keep area attacks away from him and do not use Burst.",
+            "pt": "Primeira luta: não derrote o Duke (+2 BP). Evite atingi-lo com ataques em área e não use Burst."
+          }
+        },
+        {
+          "text": {
+            "en": "Win the last fight (+3 BP).",
+            "pt": "Vença a última luta (+3 BP)."
+          }
+        }
       ]
     },
     {

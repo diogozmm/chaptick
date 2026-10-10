@@ -13,22 +13,26 @@ END = c.cp('The last event marker of Chapter 6', 'O último marcador de evento d
 
 # Quests
 c.item('quest', t('Distant Days'), t('Bose — Kirsche Bar'), BREATHER,
-       t('+6 BP. Corna gives you an old photo; show it to Lila upstairs in the Mayor\'s Residence, then to the Mayor.',
-         '+6 BP. A Corna entrega uma foto antiga; mostre à Lila no andar de cima da residência do prefeito e depois à prefeita.'),
-       0, [D1])
+       t('Reward: +6 BP. Show the old photo in this order.', 'Recompensa: +6 BP. Mostre a foto antiga nesta ordem.'),
+       0, [D1], steps=[
+           t('Get the old photo from Corna.', 'Pegue a foto antiga com Corna.'),
+           t('Show it to Lila upstairs in the Mayor’s Residence.', 'Mostre a foto a Lila no andar de cima da residência do prefeito.'),
+           t('Show it to the Mayor.', 'Mostre a foto ao prefeito.'),
+       ])
 c.item('quest', t("Businesswoman's Bodyguard"), t("Bose — Trino's Home", 'Bose — casa do Trino'), BREATHER,
-       t('4 +2 BP. Escort Milano from the west exit to Ravennue Village within 10 minutes for the bonus. The timer pauses in scenes and Command Battles, but each turn costs 5 seconds; a forced fight waits on Ravennue Trail (the leader is weak to water).',
-         '4 +2 BP. Escolte a Milano da saída oeste até Ravennue Village em até 10 minutos para o bônus. O cronômetro pausa em cenas e Command Battles, mas cada turno custa 5 segundos; uma luta obrigatória espera na Ravennue Trail (o líder é fraco contra água).'),
+       t('BP: 4 (+2 bonus). Escort Milano from the west exit to Ravennue Village in under 10 minutes for the bonus.\nTimer: pauses during scenes and Command Battles, but each turn adds 5 seconds.\nForced fight: on Ravennue Trail; the leader is weak to water.', 'BP: 4 (+2 de bônus). Escolte Milano da saída oeste até Ravennue Village em menos de 10 minutos para receber o bônus.\nCronômetro: pausa nas cenas e nas Command Battles, mas cada turno custa 5 segundos.\nLuta obrigatória: em Ravennue Trail; o líder é fraco contra água.'),
        0, [D1])
 c.item('quest', t('Mine Mop Up'), t('Abandoned mine — front gate', 'Mina abandonada — portão da frente'), BREATHER,
-       t('Talk to the officers at the gate, then clear every mystery machine inside until the game says they are all defeated. Grab the chest beyond the east exit: there is no way back in afterwards.',
-         'Fale com os oficiais no portão e depois derrote todas as máquinas misteriosas lá dentro até o jogo avisar que acabaram. Pegue o baú depois da saída leste: depois não dá para voltar.'),
-       0, [D1])
+       t('One-time visit: collect the chest beyond the east exit before leaving.', 'Visita única: recolha o baú depois da saída leste antes de ir embora.'),
+       0, [D1], steps=[
+           t('Talk to the officers at the gate.', 'Fale com os oficiais no portão.'),
+           t('Defeat every mystery machine inside until the game confirms they are all defeated.', 'Derrote todas as máquinas misteriosas lá dentro até o jogo confirmar que todas foram vencidas.'),
+           t('Collect the chest beyond the east exit; you cannot return afterwards.', 'Recolha o baú depois da saída leste; depois disso, não será possível voltar.'),
+       ])
 
 # Missables
 c.item('missable', t('Bonus BP: win the fight on the deck', 'BP bônus: vencer a luta no convés'), t('Later in the chapter', 'Mais adiante no capítulo'), END,
-       t('+5 BP. Losing still lets the story go on, so save first. Equip Grail Locket or a Proxy Puppet, keep Earth Guard up, blind them with Grand Stream, and when they start reviving each other finish them with an area art.',
-         '+5 BP. Perder não impede a história de seguir, então salve antes. Equipe Grail Locket ou um Proxy Puppet, mantenha o Earth Guard, cegue-os com Grand Stream e, quando começarem a se reviver, finalize com uma art em área.'),
+       t('Bonus: +5 BP. Save first: losing lets the story continue but costs the bonus.\nPreparation: equip Grail Locket or a Proxy Puppet.\nDuring the fight:\n• Keep Earth Guard active.\n• Use Grand Stream to inflict Blind.\n• When they start reviving each other, finish them with an area art.', 'Bônus: +5 BP. Salve antes: perder permite continuar a história, mas custa o bônus.\nPreparação: equipe Grail Locket ou Proxy Puppet.\nDurante a luta:\n• Mantenha Earth Guard ativo.\n• Use Grand Stream para causar Blind.\n• Quando começarem a reviver uns aos outros, finalize com uma art em área.'),
        2, [D2])
 
 # Collectibles
@@ -39,11 +43,14 @@ c.item('collectible', t('Gambler Jack — Vol. 8'), t('Ravennue Village'), BREAT
 c.item('collectible', t('Gambler Jack — Vol. 9'), t('Haken Gate'), BREATHER,
        t('Talk to Carlos.', 'Fale com o Carlos.'), 0, [D1])
 c.item('collectible', t('Fishing rod: Lakelord II', 'Vara de pesca: Lakelord II'), t("Bose — Kuwano's Home", 'Bose — casa do Kuwano'), BREATHER,
-       t('Talk to Cecile, find her husband at Valleria Shore, then come back to her.', 'Fale com a Cecile, encontre o marido dela na Valleria Shore e volte a ela.'),
-       0, [D1])
+       t('Follow Cecile’s request to obtain Lakelord II.', 'Siga o pedido de Cecile para obter Lakelord II.'),
+       0, [D1], steps=[
+           t('Talk to Cecile.', 'Fale com Cecile.'),
+           t('Find her husband at Valleria Shore.', 'Encontre o marido dela em Valleria Shore.'),
+           t('Return to Cecile.', 'Volte para falar com Cecile.'),
+       ])
 c.item('collectible', t('Research facility treasure chests (19)', 'Baús da instalação de pesquisa (19)'), t('Research facility', 'Instalação de pesquisa'), FACILITY,
-       t('Several rooms open only with the three card keys you collect along the way, so backtrack once you have all of them (the monster chest needs the last key). Includes Green Cookie (eat it for the recipe) and a second pair of Night-Vision Goggles for the dark room.',
-         'Várias salas só abrem com os três cartões de acesso que você pega pelo caminho, então volte quando tiver todos (o baú de monstros precisa do último). Inclui Green Cookie (coma para ganhar a receita) e um segundo par de Night-Vision Goggles para a sala escura.'),
+       t('Several rooms open only with the three card keys you collect along the way, so backtrack once you have all of them (the monster chest needs the last key).\nIncludes Green Cookie (eat it for the recipe) and a second pair of Night-Vision Goggles for the dark room.', 'Várias salas só abrem com os três cartões de acesso que você pega pelo caminho, então volte quando tiver todos (o baú de monstros precisa do último).\nInclui Green Cookie (coma para ganhar a receita) e um segundo par de Night-Vision Goggles para a sala escura.'),
        1, [D2])
 c.item('collectible', t('Ship treasure chests (11)', 'Baús da nave (11)'), t('Later in the chapter', 'Mais adiante no capítulo'), END,
        t('Includes Spicy Meatballs (eat it for the recipe) and a monster chest on the stern\'s first level. You cannot come back here.',

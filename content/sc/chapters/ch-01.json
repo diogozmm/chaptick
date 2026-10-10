@@ -44,8 +44,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "+3 BP. The monster waits at the entrance of the north beach, by the wall. Easier once a third party member joins; fire arts work well.",
-        "pt": "+3 BP. O monstro fica na entrada da praia norte, junto ao muro. Fica mais fácil com um terceiro membro na equipe; arts de fogo funcionam bem."
+        "en": "+3 BP.\nThe monster waits at the entrance of the north beach, by the wall. Easier once a third party member joins; fire arts work well.",
+        "pt": "+3 BP.\nO monstro fica na entrada da praia norte, junto ao muro. Fica mais fácil com um terceiro membro na equipe; arts de fogo funcionam bem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -68,8 +68,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "2 +2 BP. Bring all 6 ingredients missing from his list for the bonus: Monster Bird Egg and Monster Tender (Roadrun), Monster Bone (Tatuunon), Monster Fang (Gourd Boar), Monster Horn (Flying Shrimp), Monster Roe (Mars Gel or Sharkagator).",
-        "pt": "2 +2 BP. Entregue os 6 ingredientes que faltam na lista dele para ganhar o bônus: Monster Bird Egg e Monster Tender (Roadrun), Monster Bone (Tatuunon), Monster Fang (Gourd Boar), Monster Horn (Flying Shrimp), Monster Roe (Mars Gel ou Sharkagator)."
+        "en": "BP: 2 +2. Bring all six missing ingredients for the bonus.",
+        "pt": "BP: 2 +2. Entregue os seis ingredientes que faltam para receber o bônus."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -79,6 +79,50 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Monster Bird Egg — Roadrun.",
+            "pt": "Monster Bird Egg — Roadrun."
+          }
+        },
+        {
+          "text": {
+            "en": "Monster Tender — Roadrun.",
+            "pt": "Monster Tender — Roadrun."
+          }
+        },
+        {
+          "text": {
+            "en": "Monster Bone — Tatuunon.",
+            "pt": "Monster Bone — Tatuunon."
+          }
+        },
+        {
+          "text": {
+            "en": "Monster Fang — Gourd Boar.",
+            "pt": "Monster Fang — Gourd Boar."
+          }
+        },
+        {
+          "text": {
+            "en": "Monster Horn — Flying Shrimp.",
+            "pt": "Monster Horn — Flying Shrimp."
+          }
+        },
+        {
+          "text": {
+            "en": "Monster Roe — Mars Gel or Sharkagator.",
+            "pt": "Monster Roe — Mars Gel ou Sharkagator."
+          }
+        },
+        {
+          "text": {
+            "en": "Deliver all six ingredients.",
+            "pt": "Entregue os seis ingredientes."
+          }
+        }
       ]
     },
     {
@@ -93,8 +137,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "+3 BP. Nasty status effects: bring Confuse protection and take out the two smaller foes first.",
-        "pt": "+3 BP. Muitos efeitos negativos: leve proteção contra Confuse e derrube os dois inimigos menores primeiro."
+        "en": "+3 BP.\nNasty status effects: bring Confuse protection and take out the two smaller foes first.",
+        "pt": "+3 BP.\nMuitos efeitos negativos: leve proteção contra Confuse e derrube os dois inimigos menores primeiro."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -117,8 +161,8 @@
       },
       "availableUntil": "sc-ch1-cp-02",
       "hint": {
-        "en": "2 +2 BP. Take it from Santos at Hotel Blanche. On the rooftop, step a little forward and try the camera until Estelle says the spot might be perfect, then shoot.",
-        "pt": "2 +2 BP. Pegue com o Santos no Hotel Blanche. No terraço, avance um pouco e teste a câmera até a Estelle dizer que o lugar pode ser perfeito; então tire a foto."
+        "en": "BP: 2 +2. Use the perfect photo spot for the bonus.",
+        "pt": "BP: 2 +2. Use o ponto ideal para a foto e receba o bônus."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -127,6 +171,20 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Accept the task from Santos at Hotel Blanche.",
+            "pt": "Aceite a tarefa com Santos no Hotel Blanche."
+          }
+        },
+        {
+          "text": {
+            "en": "On the rooftop, move a little forward and try the camera until Estelle says the spot might be perfect; take the photo there.",
+            "pt": "No terraço, avance um pouco e teste a câmera até Estelle dizer que o ponto parece perfeito; tire a foto ali."
+          }
+        }
       ]
     },
     {
@@ -140,8 +198,8 @@
       },
       "availableUntil": "sc-ch1-cp-02",
       "hint": {
-        "en": "3 +2 BP. Answer every question right for the bonus. Answers in order: 2nd, 1st, 3rd, 3rd, 2nd, 2nd, 3rd, 2nd, 2nd, 3rd.",
-        "pt": "3 +2 BP. Acerte todas as perguntas para ganhar o bônus. Respostas em ordem: 2ª, 1ª, 3ª, 3ª, 2ª, 2ª, 3ª, 2ª, 2ª, 3ª."
+        "en": "BP: 3 +2. Answer every question correctly for the bonus. Follow this order.",
+        "pt": "BP: 3 +2. Acerte todas as perguntas para receber o bônus. Siga esta ordem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -150,6 +208,68 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Question 1: choose option 2.",
+            "pt": "Pergunta 1: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 2: choose option 1.",
+            "pt": "Pergunta 2: escolha a 1ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 3: choose option 3.",
+            "pt": "Pergunta 3: escolha a 3ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 4: choose option 3.",
+            "pt": "Pergunta 4: escolha a 3ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 5: choose option 2.",
+            "pt": "Pergunta 5: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 6: choose option 2.",
+            "pt": "Pergunta 6: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 7: choose option 3.",
+            "pt": "Pergunta 7: escolha a 3ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 8: choose option 2.",
+            "pt": "Pergunta 8: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 9: choose option 2.",
+            "pt": "Pergunta 9: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 10: choose option 3.",
+            "pt": "Pergunta 10: escolha a 3ª opção."
+          }
+        }
       ]
     },
     {
@@ -164,8 +284,8 @@
       },
       "availableUntil": "sc-ch1-cp-02",
       "hint": {
-        "en": "2 +1 BP. After talking to every tourist by the drawbridge, pick the 2nd option in the scene that follows. Ends with a tough fight.",
-        "pt": "2 +1 BP. Depois de falar com todos os turistas perto da ponte levadiça, escolha a 2ª opção na cena seguinte. Termina com uma luta difícil."
+        "en": "2 +1 BP.\nAfter talking to every tourist by the drawbridge, pick the 2nd option in the scene that follows. Ends with a tough fight.",
+        "pt": "2 +1 BP.\nDepois de falar com todos os turistas perto da ponte levadiça, escolha a 2ª opção na cena seguinte. Termina com uma luta difícil."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -188,8 +308,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "+3 BP. Poison-heavy fight: shields and speed buffs keep it simple.",
-        "pt": "+3 BP. Luta cheia de veneno: escudos e buffs de velocidade simplificam."
+        "en": "+3 BP.\nPoison-heavy fight: shields and speed buffs keep it simple.",
+        "pt": "+3 BP.\nLuta cheia de veneno: escudos e buffs de velocidade simplificam."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -211,8 +331,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "+3 BP. Three wolves that power up when one falls: try to finish them together.",
-        "pt": "+3 BP. Três lobos que ficam mais fortes quando um cai: tente derrotá-los juntos."
+        "en": "+3 BP.\nThree wolves that power up when one falls: try to finish them together.",
+        "pt": "+3 BP.\nTrês lobos que ficam mais fortes quando um cai: tente derrotá-los juntos."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -235,8 +355,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "2 +1 BP. Not on the board. Talk to Vogt and pick the 1st option. Order: both dials LOW, power ON, pressure MID, stabilizer MID, pressure HIGH, stabilizer HIGH, then the machine on the far left. Before finishing, pick the 2nd option for the bonus.",
-        "pt": "2 +1 BP. Não aparece no quadro. Fale com o Vogt e escolha a 1ª opção. Ordem: os dois controles em LOW, energia ON, pressão MID, estabilizador MID, pressão HIGH, estabilizador HIGH e, por fim, a máquina mais à esquerda. Antes de concluir, escolha a 2ª opção para o bônus."
+        "en": "BP: 2 +1. Hidden quest: it is not on the board. Follow the machine settings in order.",
+        "pt": "BP: 2 +1. Missão oculta: não aparece no quadro. Ajuste a máquina nesta ordem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -245,6 +365,62 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Vogt and choose the first option.",
+            "pt": "Fale com Vogt e escolha a 1ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Set both dials to LOW.",
+            "pt": "Coloque os dois seletores em LOW."
+          }
+        },
+        {
+          "text": {
+            "en": "Turn the power ON.",
+            "pt": "Ligue a energia: ON."
+          }
+        },
+        {
+          "text": {
+            "en": "Set pressure to MID.",
+            "pt": "Coloque a pressão em MID."
+          }
+        },
+        {
+          "text": {
+            "en": "Set the stabilizer to MID.",
+            "pt": "Coloque o estabilizador em MID."
+          }
+        },
+        {
+          "text": {
+            "en": "Set pressure to HIGH.",
+            "pt": "Coloque a pressão em HIGH."
+          }
+        },
+        {
+          "text": {
+            "en": "Set the stabilizer to HIGH.",
+            "pt": "Coloque o estabilizador em HIGH."
+          }
+        },
+        {
+          "text": {
+            "en": "Use the machine on the far left.",
+            "pt": "Use a máquina na extremidade esquerda."
+          }
+        },
+        {
+          "text": {
+            "en": "Before finishing, choose the second option for the bonus.",
+            "pt": "Antes de terminar, escolha a 2ª opção para receber o bônus."
+          }
+        }
       ]
     },
     {
@@ -259,8 +435,8 @@
       },
       "availableUntil": "sc-ch1-cp-02",
       "hint": {
-        "en": "+3 BP. When asked during the scene at the bridge, pick the 2nd option.",
-        "pt": "+3 BP. Quando perguntarem durante a cena na ponte, escolha a 2ª opção."
+        "en": "+3 BP.\nWhen asked during the scene at the bridge, pick the 2nd option.",
+        "pt": "+3 BP.\nQuando perguntarem durante a cena na ponte, escolha a 2ª opção."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -349,8 +525,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "Azelia Kiss at Lavantar Bar & Casino; Roasted Fish Belly and Sea Breeze Soup at Aqua Rossa Bar. Eat each dish to learn it.",
-        "pt": "Azelia Kiss no Lavantar Bar & Casino; Roasted Fish Belly e Sea Breeze Soup no Aqua Rossa Bar. Coma cada prato para aprender."
+        "en": "Obtain and eat each dish to learn its recipe.",
+        "pt": "Obtenha e coma cada prato para aprender sua receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -358,6 +534,26 @@
       ],
       "trophies": [
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Azelia Kiss — Lavantar Bar & Casino.",
+            "pt": "Azelia Kiss — Lavantar Bar & Casino."
+          }
+        },
+        {
+          "text": {
+            "en": "Roasted Fish Belly — Aqua Rossa Bar.",
+            "pt": "Roasted Fish Belly — Aqua Rossa Bar."
+          }
+        },
+        {
+          "text": {
+            "en": "Sea Breeze Soup — Aqua Rossa Bar.",
+            "pt": "Sea Breeze Soup — Aqua Rossa Bar."
+          }
+        }
       ]
     },
     {
@@ -372,8 +568,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "Ocean Froth and Seaside Paradise, sold by Rex.",
-        "pt": "Ocean Froth e Seaside Paradise, vendidos pelo Rex."
+        "en": "Obtain and eat each dish to learn its recipe.",
+        "pt": "Obtenha e coma cada prato para aprender sua receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -381,6 +577,20 @@
       ],
       "trophies": [
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Ocean Froth — Rex.",
+            "pt": "Ocean Froth — Rex."
+          }
+        },
+        {
+          "text": {
+            "en": "Seaside Paradise — Rex.",
+            "pt": "Seaside Paradise — Rex."
+          }
+        }
       ]
     },
     {
@@ -419,8 +629,8 @@
       },
       "availableUntil": "sc-ch1-cp-03",
       "hint": {
-        "en": "Toasty Potato Wedges, Royal Gelato and Young Lady Platter, downstairs.",
-        "pt": "Toasty Potato Wedges, Royal Gelato e Young Lady Platter, no andar de baixo."
+        "en": "Obtain and eat each dish to learn its recipe.",
+        "pt": "Obtenha e coma cada prato para aprender sua receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -428,6 +638,26 @@
       ],
       "trophies": [
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Toasty Potato Wedges — academy cafeteria, downstairs.",
+            "pt": "Toasty Potato Wedges — cafeteria da academia, no andar de baixo."
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Gelato — academy cafeteria, downstairs.",
+            "pt": "Royal Gelato — cafeteria da academia, no andar de baixo."
+          }
+        },
+        {
+          "text": {
+            "en": "Young Lady Platter — academy cafeteria, downstairs.",
+            "pt": "Young Lady Platter — cafeteria da academia, no andar de baixo."
+          }
+        }
       ]
     },
     {

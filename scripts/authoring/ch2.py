@@ -18,58 +18,68 @@ END = c.cp('The last event marker of Chapter 2', 'O último marcador de evento d
 
 # Quests
 c.item('quest', t('Election Office Outrage'), t('Ruan — Hotel Blanche'), LEAVE_RUAN,
-       t('+5 BP. Starts after talking to Nial and Dorothy downstairs; you stay inside the hotel until it ends. Ask everything until no new topics appear. Final answers: 6th, 2nd, 2nd, 2nd.',
-         '+5 BP. Começa depois de falar com Nial e Dorothy no andar de baixo; você fica preso no hotel até terminar. Pergunte tudo até não surgirem assuntos novos. Respostas finais: 6ª, 2ª, 2ª, 2ª.'),
-       1, [RUAN])
+       t('Reward: +5 BP. You cannot leave the hotel until this quest ends.', 'Recompensa: +5 BP. Você não pode sair do hotel até terminar a missão.'),
+       1, [RUAN], steps=[
+           t('Talk to Nial and Dorothy downstairs to start.', 'Fale com Nial e Dorothy no andar de baixo para começar.'),
+           t('Ask about every topic until no new ones appear.', 'Pergunte sobre todos os assuntos até não aparecerem novos tópicos.'),
+           t('Final question 1: choose option 6.', 'Pergunta final 1: escolha a 6ª opção.'),
+           t('Final question 2: choose option 2.', 'Pergunta final 2: escolha a 2ª opção.'),
+           t('Final question 3: choose option 2.', 'Pergunta final 3: escolha a 2ª opção.'),
+           t('Final question 4: choose option 2.', 'Pergunta final 4: escolha a 2ª opção.'),
+       ])
 c.item('quest', t('Winners Wanted'), t('Ruan — Lavantar Bar & Casino'), LEAVE_RUAN,
-       t('+4 BP. A wrong pick fails it. With Scherazard: Estelle 1st, 1st; Olivier 1st, 2nd; Scherazard 2nd. With Agate: Agate 1st, 1st; Olivier 1st, 2nd; Estelle 2nd.',
-         '+4 BP. Uma escolha errada faz falhar. Com Scherazard: Estelle 1ª, 1ª; Olivier 1ª, 2ª; Scherazard 2ª. Com Agate: Agate 1ª, 1ª; Olivier 1ª, 2ª; Estelle 2ª.'),
+       t('Reward: +4 BP. A wrong choice fails the quest.\nWith Scherazard:\n• Estelle: 1st, then 1st.\n• Olivier: 1st, then 2nd.\n• Scherazard: 2nd.\nWith Agate:\n• Agate: 1st, then 1st.\n• Olivier: 1st, then 2nd.\n• Estelle: 2nd.', 'Recompensa: +4 BP. Uma escolha errada faz a missão falhar.\nCom Scherazard:\n• Estelle: 1ª, depois 1ª.\n• Olivier: 1ª, depois 2ª.\n• Scherazard: 2ª.\nCom Agate:\n• Agate: 1ª, depois 1ª.\n• Olivier: 1ª, depois 2ª.\n• Estelle: 2ª.'),
        0, [RUAN])
 c.item('quest', t('Stolen Sign'), t('Zeiss'), LEAVE_ZEISS,
-       t('+4 BP. Ask Kilika about it. Cards: back of the clock tower in the plaza; the terminal in the factory 5F (Central Factory → All Orbal Technology → Bracer Guild Sign); under the three chimneys behind Forgel Bar; then talk to Fey by the conveyor on B1F.',
-         '+4 BP. Pergunte à Kilika. Cartões: atrás da torre do relógio na praça; o terminal no 5F da fábrica (Central Factory → All Orbal Technology → Bracer Guild Sign); sob as três chaminés atrás do Forgel Bar; depois fale com a Fey na esteira do B1F.'),
-       0, [ZEISS])
+       t('Reward: +4 BP. Follow the clues through Zeiss.', 'Recompensa: +4 BP. Siga as pistas por Zeiss.'),
+       0, [ZEISS], steps=[
+           t('Ask Kilika about the missing sign.', 'Pergunte a Kilika sobre a placa desaparecida.'),
+           t('Check the back of the clock tower in the plaza.', 'Examine a parte de trás da torre do relógio na praça.'),
+           t('Use the factory 5F terminal: Central Factory → All Orbal Technology → Bracer Guild Sign.', 'Use o terminal no 5º andar da fábrica: Central Factory → All Orbal Technology → Bracer Guild Sign.'),
+           t('Look under the three chimneys behind Forgel Bar.', 'Procure embaixo das três chaminés atrás do Forgel Bar.'),
+           t('Talk to Fey by the conveyor on B1F.', 'Fale com Fey junto à esteira no B1F.'),
+       ])
 c.item('quest', t('Firearm Field Test'), t('Zeiss Central Factory — 3F', 'Zeiss Central Factory — 3º andar'), LEAVE_ZEISS,
-       t('3 +2 BP. Karl gives Olivier a gun. Win 15 Command Battles on Tratt Plains Road with it equipped (10 is the minimum) before reporting back.',
-         '3 +2 BP. O Karl dá uma arma ao Olivier. Vença 15 Command Battles na Tratt Plains Road com ela equipada (o mínimo é 10) antes de voltar.'),
-       0, [ZEISS, CH3])
+       t('BP: 3 +2. Ten battles meet the minimum; win fifteen for the bonus.', 'BP: 3 +2. Dez batalhas cumprem o mínimo; vença quinze para receber o bônus.'),
+       0, [ZEISS, CH3], steps=[
+           t('Get the gun from Karl and equip it on Olivier.', 'Pegue a arma com Karl e equipe-a em Olivier.'),
+           t('Win 15 Command Battles on Tratt Plains Road with that gun equipped.', 'Vença 15 Command Battles em Tratt Plains Road com essa arma equipada.'),
+           t('Report back after the battles.', 'Volte para entregar a missão após as batalhas.'),
+       ])
 c.item('quest', t('Drill Duty'), t('Leiston Fortress — end of Soldat Army Road', 'Leiston Fortress — fim da Soldat Army Road'), FORT,
-       t('3 +2 BP. Three rounds with no healing in between; you must win the last one for the bonus.',
-         '3 +2 BP. Três rodadas sem cura entre elas; é preciso vencer a última para ganhar o bônus.'),
+       t('3 +2 BP.\nThree rounds with no healing in between; you must win the last one for the bonus.', '3 +2 BP.\nTrês rodadas sem cura entre elas; é preciso vencer a última para ganhar o bônus.'),
        0, [ZEISS])
 c.item('quest', t('Kaldia Tunnel Monster'), t('Kaldia Tunnel'), LEAVE_ZEISS,
-       t('+3 BP. Whale frogs swallow allies: hit the frog three times to free them.',
-         '+3 BP. Os sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los.'),
+       t('+3 BP.\nWhale frogs swallow allies: hit the frog three times to free them.', '+3 BP.\nOs sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los.'),
        0, [ZEISS])
 c.item('quest', t('Tratt Plains Monster'), t('Tratt Plains Road — east, before the fort path', 'Tratt Plains Road — leste, antes do caminho do forte'), LEAVE_ZEISS,
-       t('+3 BP. Lots of ailments: debuff immunity makes it manageable. Do not wander into the fort by accident.',
-         '+3 BP. Muitos efeitos negativos: imunidade a debuffs deixa a luta administrável. Cuidado para não entrar no forte sem querer.'),
+       t('+3 BP.\nLots of ailments: debuff immunity makes it manageable. Do not wander into the fort by accident.', '+3 BP.\nMuitos efeitos negativos: imunidade a debuffs deixa a luta administrável. Cuidado para não entrar no forte sem querer.'),
        0, [ZEISS])
 c.item('quest', t('Probe for Parts'), t('Zeiss Central Factory — ground floor', 'Zeiss Central Factory — térreo'), LEAVE_ZEISS,
-       t('3 +2 BP. Find all 8 parts: 3 in the 3F Workshop, 4 in the 4F Laboratory and 1 by the cat in the 4F Clinic.',
-         '3 +2 BP. Encontre as 8 peças: 3 na oficina do 3F, 4 no laboratório do 4F e 1 perto do gato na clínica do 4F.'),
-       1, [WOLF])
+       t('BP: 3 +2. Find all eight parts for the bonus.', 'BP: 3 +2. Encontre as oito peças para receber o bônus.'),
+       1, [WOLF], steps=[
+           t('Find 3 parts in the 3F Workshop.', 'Encontre 3 peças na Workshop do 3º andar.'),
+           t('Find 4 parts in the 4F Laboratory.', 'Encontre 4 peças no Laboratory do 4º andar.'),
+           t('Find 1 part by the cat in the 4F Clinic.', 'Encontre 1 peça junto ao gato na Clinic do 4º andar.'),
+       ])
 c.item('quest', t('Vanquish the Voyeurs'), t('Elmo Village — Maple Leaf Inn'), CAVE,
-       t('+4 BP. Equip Confuse and Sleep protection before talking to Mao.',
-         '+4 BP. Equipe proteção contra Confuse e Sleep antes de falar com a Mao.'),
+       t('+4 BP.\nEquip Confuse and Sleep protection before talking to Mao.', '+4 BP.\nEquipe proteção contra Confuse e Sleep antes de falar com a Mao.'),
        1, [WOLF])
 c.item('quest', t('Tratt Plains Monster 2'), t('Tratt Plains Road — southwest cliff fishing spot', 'Tratt Plains Road — pesqueiro no penhasco a sudoeste'), LEAVE_ZEISS,
-       t('+3 BP. A swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.',
-         '+3 BP. Um enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem rápido.'),
+       t('+3 BP.\nA swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.', '+3 BP.\nUm enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem rápido.'),
        1, [WOLF])
 c.item('quest', t('Army Road Monster'), t('Soldat Army Road — near Leiston Fortress', 'Soldat Army Road — perto da Leiston Fortress'), LEAVE_ZEISS,
-       t('+3 BP. Hits very hard: stack HP and keep buffs up.', '+3 BP. Bate muito forte: aumente o HP e mantenha os buffs.'),
+       t('+3 BP.\nHits very hard: stack HP and keep buffs up.', '+3 BP.\nBate muito forte: aumente o HP e mantenha os buffs.'),
        1, [WOLF])
 
 # Missables
 c.item('missable', t('Bonus BP: talk to Rudi in Kaldia Tunnel', 'BP bônus: falar com o Rudi no Kaldia Tunnel'), t('Kaldia Tunnel — near the factory exit', 'Kaldia Tunnel — perto da saída da fábrica'), FORT,
        t('+3 BP just for talking to him.', '+3 BP só por conversar com ele.'), 0, [ZEISS])
 c.item('missable', t('Bonus BP: question in the storeroom', 'BP bônus: pergunta no depósito'), t('Sanktheim Gate'), CAVE,
-       t('+3 BP. In the scene with Warrant Officer Talbot, pick the 3rd option.',
-         '+3 BP. Na cena com o Warrant Officer Talbot, escolha a 3ª opção.'),
+       t('+3 BP.\nIn the scene with Warrant Officer Talbot, pick the 3rd option.', '+3 BP.\nNa cena com o Warrant Officer Talbot, escolha a 3ª opção.'),
        1, [WOLF])
 c.item('missable', t("Bonus BP: question in the professor's office", 'BP bônus: pergunta na sala do professor'), t('Zeiss Central Factory — 5F', 'Zeiss Central Factory — 5º andar'), CAVE,
-       t('+2 BP. When asked where to go, pick the 3rd option.', '+2 BP. Quando perguntarem para onde ir, escolha a 3ª opção.'),
+       t('+2 BP.\nWhen asked where to go, pick the 3rd option.', '+2 BP.\nQuando perguntarem para onde ir, escolha a 3ª opção.'),
        1, [WOLF])
 
 # Collectibles
@@ -80,13 +90,21 @@ c.item('collectible', t('Gambler Jack — Vol. 3'), t('Airliner to Zeiss', 'Airl
 c.item('collectible', t('Liberl News Issue 3'), t('Zeiss — Bell Station'), LEAVE_ZEISS,
        t('Sold at Bell Station.', 'Vendido na Bell Station.'), 0, [ZEISS])
 c.item('collectible', t('Recipes: Zeiss (4)', 'Receitas: Zeiss (4)'), t('Zeiss'), LEAVE_ZEISS,
-       t("Magma Wings, Acerbic Tomato Sandwich (Ben also gives one) and Fruit Kingdom at Forgel Bar; Mysterious Paste at Priam's Drink Shop outside the factory.",
-         "Magma Wings, Acerbic Tomato Sandwich (o Ben também dá um) e Fruit Kingdom no Forgel Bar; Mysterious Paste na Priam's Drink Shop, do lado de fora da fábrica."),
-       0, [ZEISS])
+       t('Obtain and eat each dish to learn its recipe.', 'Obtenha e coma cada prato para aprender sua receita.'),
+       0, [ZEISS], steps=[
+           t('Magma Wings — Forgel Bar.', 'Magma Wings — Forgel Bar.'),
+           t('Acerbic Tomato Sandwich — Forgel Bar; Ben also gives one.', 'Acerbic Tomato Sandwich — Forgel Bar; Ben também dá um.'),
+           t('Fruit Kingdom — Forgel Bar.', 'Fruit Kingdom — Forgel Bar.'),
+           t('Mysterious Paste — Priam’s Drink Shop, outside the factory.', 'Mysterious Paste — Priam’s Drink Shop, fora da fábrica.'),
+       ])
 c.item('collectible', t('Recipe: Golden Risotto', 'Receita: Golden Risotto'), t('Sanktheim Gate — cafeteria'), LEAVE_ZEISS,
        t('Take the northeast branch of Ritter Roadway.', 'Siga pelo ramo nordeste da Ritter Roadway.'), 0, [ZEISS])
 c.item('collectible', t('Recipes: Elmo Village (3)', 'Receitas: Elmo Village (3)'), t('Elmo Village — Maple Leaf Inn'), LEAVE_ZEISS,
-       t('Continental Eggs, Passionate Egg Roll and Top-Rated Shake.', 'Continental Eggs, Passionate Egg Roll e Top-Rated Shake.'), 0, [ZEISS])
+       t('Obtain and eat each dish to learn its recipe.', 'Obtenha e coma cada prato para aprender sua receita.'), 0, [ZEISS], steps=[
+           t('Continental Eggs', 'Continental Eggs'),
+           t('Passionate Egg Roll', 'Passionate Egg Roll'),
+           t('Top-Rated Shake', 'Top-Rated Shake'),
+       ])
 c.item('collectible', t('Bunny Medal'), t('Elmo Village — Autumn Souvenirs'), LEAVE_ZEISS,
        t('2nd of the 5 animal medals.', '2ª das 5 medalhas de animais.'), 0, [ZEISS])
 c.item('collectible', t('Ritter Roadway treasure chests (3)', 'Baús da Ritter Roadway (3)'), t('Ritter Roadway'), LEAVE_ZEISS,

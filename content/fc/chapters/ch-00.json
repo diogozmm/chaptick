@@ -61,8 +61,8 @@
       },
       "availableUntil": "fc-ch0-cp-02",
       "hint": {
-        "en": "2 BP. Check the steam from the drain cover near Rinon's General Goods, then take the sewer entrance behind the chapel and find the shiny stone. Eat the Drill Meatballs you get for the recipe.",
-        "pt": "2 BP. Veja o vapor saindo do bueiro perto da Rinon's General Goods, depois entre no esgoto pelos fundos da capela e ache a pedra brilhante. Coma as Drill Meatballs que você ganha para aprender a receita."
+        "en": "Reward: 2 BP. Eat the Drill Meatballs you receive to learn the recipe.",
+        "pt": "Recompensa: 2 BP. Coma os Drill Meatballs recebidos para aprender a receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -71,6 +71,20 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Check the steam from the drain cover near Rinon’s General Goods.",
+            "pt": "Examine o vapor que sai da tampa do bueiro perto de Rinon’s General Goods."
+          }
+        },
+        {
+          "text": {
+            "en": "Enter the sewers behind the chapel and find the shiny stone.",
+            "pt": "Entre nos esgotos atrás da capela e encontre a pedra brilhante."
+          }
+        }
       ]
     },
     {
@@ -85,8 +99,8 @@
       },
       "availableUntil": "fc-ch0-cp-02",
       "hint": {
-        "en": "3 BP. Weak to fire. It explodes when it dies, so keep the party out of range for the last hit.",
-        "pt": "3 BP. Fraco contra fogo. Ele explode ao morrer, então deixe a equipe fora do alcance no golpe final."
+        "en": "3 BP.\nWeak to fire. It explodes when it dies, so keep the party out of range for the last hit.",
+        "pt": "3 BP.\nFraco contra fogo. Ele explode ao morrer, então deixe a equipe fora do alcance no golpe final."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -109,8 +123,8 @@
       },
       "availableUntil": "fc-ch0-cp-03",
       "hint": {
-        "en": "3 BP. The glowing Firefly Mushroom is near the Silver Earrings chest at the northeast end of Malga Trail; picking it starts a fight.",
-        "pt": "3 BP. O Firefly Mushroom brilhante fica perto do baú das Silver Earrings, no extremo nordeste da Malga Trail; pegá-lo começa uma luta."
+        "en": "3 BP.\nThe glowing Firefly Mushroom is near the Silver Earrings chest at the northeast end of Malga Trail; picking it starts a fight.",
+        "pt": "3 BP.\nO Firefly Mushroom brilhante fica perto do baú das Silver Earrings, no extremo nordeste da Malga Trail; pegá-lo começa uma luta."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -133,8 +147,8 @@
       },
       "availableUntil": "fc-ch0-cp-03",
       "hint": {
-        "en": "3 (+1) BP. The broken light is in the middle of Milch Main Road. For the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818). Rewards Impede 2.",
-        "pt": "3 (+1) BP. A luz quebrada fica no meio da Milch Main Road. Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818). Dá Impede 2."
+        "en": "3 (+1) BP.\nThe broken light is in the middle of Milch Main Road. For the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818).\nRewards Impede 2.",
+        "pt": "3 (+1) BP.\nA luz quebrada fica no meio da Milch Main Road. Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818). Dá Impede 2."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -157,8 +171,8 @@
       },
       "availableUntil": "fc-ch0-cp-03",
       "hint": {
-        "en": "3 BP. Bring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer Hornets in Mistwald). Mistwald only has four Bear Claws: don't cook them all.",
-        "pt": "3 BP. Leve uma Bear Claw (extremo sudeste de Mistwald) e Monster Powder (Killer Hornets em Mistwald). Mistwald só tem quatro Bear Claws: não cozinhe todas."
+        "en": "3 BP.\nBring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer Hornets in Mistwald). Mistwald only has four Bear Claws: don't cook them all.",
+        "pt": "3 BP.\nLeve uma Bear Claw (extremo sudeste de Mistwald) e Monster Powder (Killer Hornets em Mistwald). Mistwald só tem quatro Bear Claws: não cozinhe todas."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -182,8 +196,8 @@
       },
       "availableUntil": "fc-ch0-cp-03",
       "hint": {
-        "en": "2 (+2) BP. Win the training fight against two soldiers for the bonus; save first. Their attacks lower Defense: Estelle's Morale helps.",
-        "pt": "2 (+2) BP. Vença a luta de treino contra dois soldados para o bônus; salve antes. Os ataques deles reduzem a defesa: o Morale da Estelle ajuda."
+        "en": "2 (+2) BP.\nWin the training fight against two soldiers for the bonus; save first. Their attacks lower Defense: Estelle's Morale helps.",
+        "pt": "2 (+2) BP.\nVença a luta de treino contra dois soldados para o bônus; salve antes. Os ataques deles reduzem a defesa: o Morale da Estelle ajuda."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -206,8 +220,8 @@
       },
       "availableUntil": "fc-ch0-cp-03",
       "hint": {
-        "en": "2 BP. Short deadline: do it right away. The cat isn't marked: look between the clock tower, near Elger Arms & Guards, by Hotel Rolent, then upstairs in the chapel.",
-        "pt": "2 BP. Prazo curto: faça na hora. O gato não aparece no mapa: procure entre a torre do relógio, perto da Elger Arms & Guards, junto ao Hotel Rolent e, por fim, no andar de cima da capela."
+        "en": "Reward: 2 BP. Short deadline: do this immediately. The cat is not marked on the map; check these locations in order.",
+        "pt": "Recompensa: 2 BP. Prazo curto: faça imediatamente. O gato não aparece marcado no mapa; procure nestes locais em ordem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -216,6 +230,32 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "By the clock tower.",
+            "pt": "Junto à torre do relógio."
+          }
+        },
+        {
+          "text": {
+            "en": "Near Elger Arms & Guards.",
+            "pt": "Perto de Elger Arms & Guards."
+          }
+        },
+        {
+          "text": {
+            "en": "By Hotel Rolent.",
+            "pt": "Junto ao Hotel Rolent."
+          }
+        },
+        {
+          "text": {
+            "en": "Upstairs in the chapel.",
+            "pt": "No andar de cima da capela."
+          }
+        }
       ]
     },
     {
@@ -230,8 +270,8 @@
       },
       "availableUntil": "fc-ch0-cp-05",
       "hint": {
-        "en": "4 BP. It blocks the bridge to your next destination, so you can't skip it. Wear Sleep protection; weak to fire.",
-        "pt": "4 BP. Ele bloqueia a ponte para o próximo destino, então não dá para pular. Use proteção contra Sleep; fraco contra fogo."
+        "en": "4 BP.\nIt blocks the bridge to your next destination, so you can't skip it. Wear Sleep protection; weak to fire.",
+        "pt": "4 BP.\nEle bloqueia a ponte para o próximo destino, então não dá para pular. Use proteção contra Sleep; fraco contra fogo."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -303,8 +343,8 @@
       },
       "availableUntil": "fc-ch0-cp-04",
       "hint": {
-        "en": "+4 BP (Mayoral Robbery), one per right answer: 2nd, 2nd, 3rd, 4th.",
-        "pt": "+4 BP (Mayoral Robbery), um por resposta certa: 2ª, 2ª, 3ª, 4ª."
+        "en": "Bonus: +4 BP in Mayoral Robbery, one per correct answer.",
+        "pt": "Bônus: +4 BP em Mayoral Robbery, um por resposta correta."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -312,6 +352,32 @@
       ],
       "trophies": [
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Question 1: choose option 2.",
+            "pt": "Pergunta 1: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 2: choose option 2.",
+            "pt": "Pergunta 2: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 3: choose option 3.",
+            "pt": "Pergunta 3: escolha a 3ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Question 4: choose option 4.",
+            "pt": "Pergunta 4: escolha a 4ª opção."
+          }
+        }
       ]
     },
     {

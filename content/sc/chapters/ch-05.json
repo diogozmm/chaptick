@@ -53,8 +53,8 @@
       },
       "availableUntil": "sc-ch5-cp-01",
       "hint": {
-        "en": "+4 BP. Ask Lao at the counter, Bloom on the 2F of the general store and Rhett in the apartment next to the bar; read the recipe book in Rhett's room. Everything can be bought except 2 Monster Bone (Dirty Rat, Crop Muncher). Rewards the Spiced Stew recipe.",
-        "pt": "+4 BP. Pergunte ao Lao no balcão, à Bloom no 2F do armazém e ao Rhett no apartamento ao lado do bar; leia o livro de receitas no quarto do Rhett. Tudo pode ser comprado, menos 2 Monster Bone (Dirty Rat, Crop Muncher). A recompensa é a receita Spiced Stew."
+        "en": "Reward: +4 BP and the Spiced Stew recipe. Buy the ingredients except the 2 Monster Bones, which come from Dirty Rats or Crop Munchers.",
+        "pt": "Recompensa: +4 BP e a receita Spiced Stew. Compre os ingredientes, exceto os 2 Monster Bones, obtidos de Dirty Rats ou Crop Munchers."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -64,6 +64,32 @@
         "quest-master",
         "a-rank-bracer",
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Ask Lao at the counter.",
+            "pt": "Fale com Lao no balcão."
+          }
+        },
+        {
+          "text": {
+            "en": "Ask Bloom on the second floor of the general store.",
+            "pt": "Fale com Bloom no 2º andar da loja geral."
+          }
+        },
+        {
+          "text": {
+            "en": "Ask Rhett in the apartment next to the bar and read the recipe book in his room.",
+            "pt": "Fale com Rhett no apartamento ao lado do bar e leia o livro de receitas no quarto dele."
+          }
+        },
+        {
+          "text": {
+            "en": "Gather the recipe ingredients, including 2 Monster Bones.",
+            "pt": "Reúna os ingredientes da receita, incluindo 2 Monster Bones."
+          }
+        }
       ]
     },
     {
@@ -78,8 +104,8 @@
       },
       "availableUntil": "sc-ch5-cp-01",
       "hint": {
-        "en": "+4 BP. Hand Anton 5 Monster Shell (Russet Beetle), 5 Monster Seed (Lily Mover, Pine Plant), 5 Monster Powder (Garphase, Killer Hornet) and 1 Pearlglass (fish it on Milch Main Road or Elize Highway). Olivier has to step out of the party for a moment.",
-        "pt": "+4 BP. Entregue ao Anton 5 Monster Shell (Russet Beetle), 5 Monster Seed (Lily Mover, Pine Plant), 5 Monster Powder (Garphase, Killer Hornet) e 1 Pearlglass (pesque na Milch Main Road ou na Elize Highway). O Olivier precisa sair da equipe por um momento."
+        "en": "Reward: +4 BP. Olivier needs to leave the party briefly. Gather these ingredients for Anton.",
+        "pt": "Recompensa: +4 BP. Olivier precisa sair da equipe por um momento. Reúna estes ingredientes para Anton."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -88,6 +114,38 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "5 Monster Shell — Russet Beetle.",
+            "pt": "5 Monster Shell — Russet Beetle."
+          }
+        },
+        {
+          "text": {
+            "en": "5 Monster Seed — Lily Mover or Pine Plant.",
+            "pt": "5 Monster Seed — Lily Mover ou Pine Plant."
+          }
+        },
+        {
+          "text": {
+            "en": "5 Monster Powder — Garphase or Killer Hornet.",
+            "pt": "5 Monster Powder — Garphase ou Killer Hornet."
+          }
+        },
+        {
+          "text": {
+            "en": "1 Pearlglass — fish on Milch Main Road or Elize Highway.",
+            "pt": "1 Pearlglass — pesque em Milch Main Road ou Elize Highway."
+          }
+        },
+        {
+          "text": {
+            "en": "Hand the ingredients to Anton.",
+            "pt": "Entregue os ingredientes a Anton."
+          }
+        }
       ]
     },
     {
@@ -102,8 +160,8 @@
       },
       "availableUntil": "sc-ch5-cp-01",
       "hint": {
-        "en": "+5 BP. Clues: the chair on the chapel balcony upstairs, the crates on the south side of the Mayor's house, the forge behind the arms shop, then the locked door in Rolent Sewers (fight inside; the document is on the table).",
-        "pt": "+5 BP. Pistas: a cadeira na sacada do andar de cima da capela, as caixas no lado sul da casa do prefeito, a forja atrás da loja de armas e, por fim, a porta trancada no Rolent Sewers (luta lá dentro; o documento está na mesa)."
+        "en": "Reward: +5 BP. A fight awaits at the final clue.",
+        "pt": "Recompensa: +5 BP. Há uma luta na última pista."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -112,6 +170,32 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Examine the chair on the chapel balcony upstairs.",
+            "pt": "Examine a cadeira na varanda do andar de cima da capela."
+          }
+        },
+        {
+          "text": {
+            "en": "Examine the crates on the south side of the Mayor’s house.",
+            "pt": "Examine as caixas no lado sul da casa do prefeito."
+          }
+        },
+        {
+          "text": {
+            "en": "Examine the forge behind the arms shop.",
+            "pt": "Examine a forja atrás da loja de armas."
+          }
+        },
+        {
+          "text": {
+            "en": "Enter the locked door in Rolent Sewers, win the fight and take the document from the table.",
+            "pt": "Entre pela porta trancada em Rolent Sewers, vença a luta e pegue o documento na mesa."
+          }
+        }
       ]
     },
     {
@@ -126,8 +210,8 @@
       },
       "availableUntil": "sc-ch5-cp-03",
       "hint": {
-        "en": "+5 BP. Clues: the basket of red flowers outside the 2F door of the orbal factory, the desk with an open book on the guild 3F, the crate on the forklift at the landing port, and the book on the altar upstairs in the chapel (side door).",
-        "pt": "+5 BP. Pistas: a cesta de flores vermelhas do lado de fora da porta do 2F da fábrica orbal, a mesa com um livro aberto no 3F da guilda, a caixa na empilhadeira do porto e o livro no altar do andar de cima da capela (porta lateral)."
+        "en": "Reward: +5 BP. Examine the clues in this order.",
+        "pt": "Recompensa: +5 BP. Examine as pistas nesta ordem."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -136,6 +220,32 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Basket of red flowers outside the 2F door of the orbal factory.",
+            "pt": "Cesta de flores vermelhas do lado de fora da porta do 2º andar da fábrica orbal."
+          }
+        },
+        {
+          "text": {
+            "en": "Desk with an open book on the guild’s third floor.",
+            "pt": "Mesa com um livro aberto no 3º andar da guilda."
+          }
+        },
+        {
+          "text": {
+            "en": "Crate on the forklift at the landing port.",
+            "pt": "Caixa na empilhadeira do porto."
+          }
+        },
+        {
+          "text": {
+            "en": "Book on the altar upstairs in the chapel; enter through the side door.",
+            "pt": "Livro no altar do andar de cima da capela; entre pela porta lateral."
+          }
+        }
       ]
     },
     {
@@ -149,8 +259,8 @@
       },
       "availableUntil": "sc-ch5-cp-02",
       "hint": {
-        "en": "4 +2 BP. Deliver 10 each of Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat and Roe. Orvid, outside the market's south entrance, chips in 7 of each, so you only need 3 more of each; you still get the bonus.",
-        "pt": "4 +2 BP. Entregue 10 de cada: Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat e Roe. O Orvid, do lado de fora da entrada sul do mercado, contribui com 7 de cada, então só faltam 3 de cada; o bônus continua valendo."
+        "en": "BP: 4 +2. Orvid supplies seven of each ingredient; you only need three more of each and still receive the bonus.",
+        "pt": "BP: 4 +2. Orvid fornece sete de cada ingrediente; você só precisa de mais três de cada e ainda recebe o bônus."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -159,6 +269,26 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Orvid outside the market’s south entrance for 7 of each ingredient.",
+            "pt": "Fale com Orvid fora da entrada sul do mercado para receber 7 de cada ingrediente."
+          }
+        },
+        {
+          "text": {
+            "en": "Gather 3 more of each: Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat and Roe.",
+            "pt": "Reúna mais 3 de cada: Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat e Roe."
+          }
+        },
+        {
+          "text": {
+            "en": "Deliver 10 of each of the eight ingredients.",
+            "pt": "Entregue 10 de cada um dos oito ingredientes."
+          }
+        }
       ]
     },
     {
@@ -172,8 +302,8 @@
       },
       "availableUntil": "sc-ch5-cp-02",
       "hint": {
-        "en": "4 +1 BP. Leads to Krone Pass. When talking to the girl there, pick the option that calls her a coward.",
-        "pt": "4 +1 BP. Leva à Krone Pass. Ao falar com a garota lá, escolha a opção que a chama de covarde."
+        "en": "4 +1 BP.\nLeads to Krone Pass. When talking to the girl there, pick the option that calls her a coward.",
+        "pt": "4 +1 BP.\nLeva à Krone Pass. Ao falar com a garota lá, escolha a opção que a chama de covarde."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -196,8 +326,8 @@
       },
       "availableUntil": "sc-ch5-cp-02",
       "hint": {
-        "en": "+2 BP. After the last required monster request, pick the option saying the monsters were agitated.",
-        "pt": "+2 BP. Depois do último pedido obrigatório de monstro, escolha a opção que diz que os monstros estavam agitados."
+        "en": "+2 BP.\nAfter the last required monster request, pick the option saying the monsters were agitated.",
+        "pt": "+2 BP.\nDepois do último pedido obrigatório de monstro, escolha a opção que diz que os monstros estavam agitados."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -220,8 +350,8 @@
       },
       "availableUntil": "sc-ch5-cp-02",
       "hint": {
-        "en": "+3 BP. In the scene after talking to Lugran, choose to make a plan first.",
-        "pt": "+3 BP. Na cena depois de falar com o Lugran, escolha fazer um plano primeiro."
+        "en": "+3 BP.\nIn the scene after talking to Lugran, choose to make a plan first.",
+        "pt": "+3 BP.\nNa cena depois de falar com o Lugran, escolha fazer um plano primeiro."
       },
       "spoilerLevel": 1,
       "sources": [

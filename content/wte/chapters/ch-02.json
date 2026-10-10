@@ -21,12 +21,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Mysteries investigated: (5 required); Mysteries investigated: (8 required). Reward: ...Something, maybe?.",
-        "pt": "Objetivos: Mistérios investigados: (5 necessários); Mistérios investigados: (8 necessários). Recompensa: Talvez... alguma coisa?."
+        "en": "Complete the objectives below.\nReward: ...Something, maybe?.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Talvez... alguma coisa?."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mysteries investigated: (5 required).",
+            "pt": "Mistérios investigados: (5 necessários)."
+          }
+        },
+        {
+          "text": {
+            "en": "Mysteries investigated: (8 required).",
+            "pt": "Mistérios investigados: (8 necessários)."
+          }
+        }
       ]
     },
     {
@@ -42,8 +56,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Cook a Stew of Six Curses. Reward: A new cooking recipe.",
-        "pt": "Objetivos: Cozinhe um Ensopado das Seis Maldições. Recompensa: Uma receita nova."
+        "en": "Cook a Stew of Six Curses.\nReward: A new cooking recipe.",
+        "pt": "Cozinhe um Ensopado das Seis Maldições.\nRecompensa: Uma receita nova."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -63,8 +77,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Catch a Golden Beetle. Reward: Woodworking knowledge of some kind.",
-        "pt": "Objetivos: Capture um Besouro Dourado. Recompensa: Algum conhecimento de marcenaria."
+        "en": "Catch a Golden Beetle.\nReward: Woodworking knowledge of some kind.",
+        "pt": "Capture um Besouro Dourado.\nRecompensa: Algum conhecimento de marcenaria."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -84,8 +98,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Supplies found: (3 required).",
-        "pt": "Objetivos: Suprimentos encontrados: (3 necessários)."
+        "en": "Supplies found: (3 required).",
+        "pt": "Suprimentos encontrados: (3 necessários)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -105,8 +119,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find Jess's Lost Notes.",
-        "pt": "Objetivos: Encontre as anotações perdidas da Jess."
+        "en": "Find Jess's Lost Notes.",
+        "pt": "Encontre as anotações perdidas da Jess."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -126,12 +140,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Mysteries investigated: (3 required); Mysteries investigated: (6 required). Reward: One or two Small Hammers, and a final prize.",
-        "pt": "Objetivos: Mistérios investigados: (3 necessários); Mistérios investigados: (6 necessários). Recompensa: Um ou dois Martelos Pequenos e um último prêmio."
+        "en": "Complete the objectives below.\nReward: One or two Small Hammers, and a final prize.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Um ou dois Martelos Pequenos e um último prêmio."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mysteries investigated: (3 required).",
+            "pt": "Mistérios investigados: (3 necessários)."
+          }
+        },
+        {
+          "text": {
+            "en": "Mysteries investigated: (6 required).",
+            "pt": "Mistérios investigados: (6 necessários)."
+          }
+        }
       ]
     },
     {
@@ -147,8 +175,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring 10 Living Bones to Carlos. Reward: A way to pass through the Hardened Bones.",
-        "pt": "Objetivos: Leve 10 Ossos Vivos ao Carlos. Recompensa: Um jeito de atravessar os Ossos Endurecidos."
+        "en": "Bring 10 Living Bones to Carlos.\nReward: A way to pass through the Hardened Bones.",
+        "pt": "Leve 10 Ossos Vivos ao Carlos.\nRecompensa: Um jeito de atravessar os Ossos Endurecidos."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -168,8 +196,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Farmer Sven 10 Dense Fertilizer (Lv2) and 10 Fancy Fertilizer (Lv2). Reward: Access to a new type of crop.",
-        "pt": "Objetivos: Leve ao Fazendeiro Sven 10 Fertilizantes Densos (Nv2) e 10 Fertilizantes Refinados (Nv2). Recompensa: Acesso a um novo tipo de cultivo."
+        "en": "Bring Farmer Sven 10 Dense Fertilizer (Lv2) and 10 Fancy Fertilizer (Lv2).\nReward: Access to a new type of crop.",
+        "pt": "Leve ao Fazendeiro Sven 10 Fertilizantes Densos (Nv2) e 10 Fertilizantes Refinados (Nv2).\nRecompensa: Acesso a um novo tipo de cultivo."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -189,8 +217,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Craft a Kaal Idol and bring it to Denzel.",
-        "pt": "Objetivos: Crie um Ídolo de Kaal e leve ao Denzel."
+        "en": "Craft a Kaal Idol and bring it to Denzel.",
+        "pt": "Crie um Ídolo de Kaal e leve ao Denzel."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -210,8 +238,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Shrines found: (2 required).",
-        "pt": "Objetivos: Santuários encontrados: (2 necessários)."
+        "en": "Shrines found: (2 required).",
+        "pt": "Santuários encontrados: (2 necessários)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -231,8 +259,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Cook a Forbidden Snack.",
-        "pt": "Objetivos: Cozinhe um Lanche Proibido."
+        "en": "Cook a Forbidden Snack.",
+        "pt": "Cozinhe um Lanche Proibido."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -252,8 +280,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Reach the 2nd floor of the Catacombs Mines. Reward: A Large Hammer.",
-        "pt": "Objetivos: Chegue ao 2º andar das Minas das Catacumbas. Recompensa: Um Martelo Grande."
+        "en": "Reach the 2nd floor of the Catacombs Mines.\nReward: A Large Hammer.",
+        "pt": "Chegue ao 2º andar das Minas das Catacumbas.\nRecompensa: Um Martelo Grande."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -273,8 +301,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Obtain the skull of... something. Reward: The key to the Catacombs Mine gate.",
-        "pt": "Objetivos: Consiga o crânio de... alguma coisa. Recompensa: A chave do portão da Mina das Catacumbas."
+        "en": "Obtain the skull of... something.\nReward: The key to the Catacombs Mine gate.",
+        "pt": "Consiga o crânio de... alguma coisa.\nRecompensa: A chave do portão da Mina das Catacumbas."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -294,12 +322,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Herb a Razorfish; Bring Herb a Gold quality or higher Ancient Pike. Reward: A new cooking recipe.",
-        "pt": "Objetivos: Leve um Peixe-navalha ao Herb; Leve ao Herb um Lúcio Ancestral de qualidade Ouro ou melhor. Recompensa: Uma receita nova."
+        "en": "Complete the objectives below.\nReward: A new cooking recipe.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Uma receita nova."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring Herb a Razorfish.",
+            "pt": "Leve um Peixe-navalha ao Herb."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Herb a Gold quality or higher Ancient Pike.",
+            "pt": "Leve ao Herb um Lúcio Ancestral de qualidade Ouro ou melhor."
+          }
+        }
       ]
     },
     {
@@ -315,8 +357,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Hans a Pale Empress Moth. Reward: Unlock Gloom Hops Seeds.",
-        "pt": "Objetivos: Leve uma Mariposa Imperatriz Pálida ao Hans. Recompensa: Libera a Semente de Lúpulo Sombrio."
+        "en": "Bring Hans a Pale Empress Moth.\nReward: Unlock Gloom Hops Seeds.",
+        "pt": "Leve uma Mariposa Imperatriz Pálida ao Hans.\nRecompensa: Libera a Semente de Lúpulo Sombrio."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -336,12 +378,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Herb a Bonefish; Bring Herb an Ancient Manta.",
-        "pt": "Objetivos: Leve um Peixe-osso ao Herb; Leve uma Manta Ancestral ao Herb."
+        "en": "Complete the objectives below.",
+        "pt": "Conclua os objetivos abaixo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring Herb a Bonefish.",
+            "pt": "Leve um Peixe-osso ao Herb."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Herb an Ancient Manta.",
+            "pt": "Leve uma Manta Ancestral ao Herb."
+          }
+        }
       ]
     },
     {
@@ -357,12 +413,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Isabella for more details; Find a Giant Mushroom. Reward: Access to Isabella's lab.",
-        "pt": "Objetivos: Fale com a Isabella para saber mais; Encontre um Cogumelo Gigante. Recompensa: Acesso ao laboratório da Isabella."
+        "en": "Complete the objectives below.\nReward: Access to Isabella's lab.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Acesso ao laboratório da Isabella."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Isabella for more details.",
+            "pt": "Fale com a Isabella para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Find a Giant Mushroom.",
+            "pt": "Encontre um Cogumelo Gigante."
+          }
+        }
       ]
     },
     {
@@ -378,12 +448,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Juan for more details; Find a jar of Honey and a Golden Mushroom. Reward: An old family recipe.",
-        "pt": "Objetivos: Fale com o Juan para saber mais; Encontre um pote de Mel e um Cogumelo Dourado. Recompensa: Uma receita antiga de família."
+        "en": "Complete the objectives below.\nReward: An old family recipe.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Uma receita antiga de família."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Juan for more details.",
+            "pt": "Fale com o Juan para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Find a jar of Honey and a Golden Mushroom.",
+            "pt": "Encontre um pote de Mel e um Cogumelo Dourado."
+          }
+        }
       ]
     },
     {
@@ -399,12 +483,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Art for more details; Find a Deer Claw. Reward: A special recipe to make use of deer meat.",
-        "pt": "Objetivos: Fale com o Art para saber mais; Encontre uma Garra de Cervo. Recompensa: Uma receita especial para usar carne de cervo."
+        "en": "Complete the objectives below.\nReward: A special recipe to make use of deer meat.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Uma receita especial para usar carne de cervo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Art for more details.",
+            "pt": "Fale com o Art para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Find a Deer Claw.",
+            "pt": "Encontre uma Garra de Cervo."
+          }
+        }
       ]
     },
     {
@@ -420,12 +518,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Terry for more details; Bring a Mayonnaise and Cheese to Terry. Reward: The secret to a balanced breakfast.",
-        "pt": "Objetivos: Fale com o Terry para saber mais; Leve Maionese e Queijo ao Terry. Recompensa: O segredo de um café da manhã equilibrado."
+        "en": "Complete the objectives below.\nReward: The secret to a balanced breakfast.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: O segredo de um café da manhã equilibrado."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Terry for more details.",
+            "pt": "Fale com o Terry para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring a Mayonnaise and Cheese to Terry.",
+            "pt": "Leve Maionese e Queijo ao Terry."
+          }
+        }
       ]
     },
     {
@@ -441,12 +553,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Damian for more details; Bring Damian a Jelly (Bloodberry) and Pickles (Radish). Reward: Some old recipe books.",
-        "pt": "Objetivos: Fale com o Damian para saber mais; Leve ao Damian uma Geleia (Baga-de-sangue) e uma Conserva (Rabanete). Recompensa: Alguns livros de receitas antigos."
+        "en": "Complete the objectives below.\nReward: Some old recipe books.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Alguns livros de receitas antigos."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Damian for more details.",
+            "pt": "Fale com o Damian para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Damian a Jelly (Bloodberry) and Pickles (Radish).",
+            "pt": "Leve ao Damian uma Geleia (Baga-de-sangue) e uma Conserva (Rabanete)."
+          }
+        }
       ]
     },
     {
@@ -462,12 +588,50 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Dan at the local store; Investigate Dan's story at Greystone Estates; Find Sam's Lucky Pendant; Meet Sam in the stairwell to clear the rubble; Offer 10 Spiritwood and 10 Leather at the Greystone altar; Tell Dan about your findings. Reward: Unlock a new seed type.",
-        "pt": "Objetivos: Fale com o Dan na loja local; Investigue a história do Dan no Residencial Greystone; Encontre o pingente da sorte do Sam; Encontre o Sam na escada para tirar os escombros; Ofereça 10 Madeiras Espirituais e 10 Couros no altar do Greystone; Conte ao Dan o que você descobriu. Recompensa: Libera um novo tipo de semente."
+        "en": "Complete the objectives below.\nReward: Unlock a new seed type.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Libera um novo tipo de semente."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Dan at the local store.",
+            "pt": "Fale com o Dan na loja local."
+          }
+        },
+        {
+          "text": {
+            "en": "Investigate Dan's story at Greystone Estates.",
+            "pt": "Investigue a história do Dan no Residencial Greystone."
+          }
+        },
+        {
+          "text": {
+            "en": "Find Sam's Lucky Pendant.",
+            "pt": "Encontre o pingente da sorte do Sam."
+          }
+        },
+        {
+          "text": {
+            "en": "Meet Sam in the stairwell to clear the rubble.",
+            "pt": "Encontre o Sam na escada para tirar os escombros."
+          }
+        },
+        {
+          "text": {
+            "en": "Offer 10 Spiritwood and 10 Leather at the Greystone altar.",
+            "pt": "Ofereça 10 Madeiras Espirituais e 10 Couros no altar do Greystone."
+          }
+        },
+        {
+          "text": {
+            "en": "Tell Dan about your findings.",
+            "pt": "Conte ao Dan o que você descobriu."
+          }
+        }
       ]
     },
     {
@@ -483,12 +647,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Zoe in the Library; Bring Zoe a Bone Honey. Reward: Unlock Strawberry Seeds.",
-        "pt": "Objetivos: Fale com a Zoe na Biblioteca; Leve um Mel de Osso à Zoe. Recompensa: Libera a Semente de Morango."
+        "en": "Complete the objectives below.\nReward: Unlock Strawberry Seeds.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Libera a Semente de Morango."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Zoe in the Library.",
+            "pt": "Fale com a Zoe na Biblioteca."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Zoe a Bone Honey.",
+            "pt": "Leve um Mel de Osso à Zoe."
+          }
+        }
       ]
     },
     {
@@ -504,12 +682,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Daryl in the Pet Shop; Bring Daryl a Filling Platter. Reward: Unlock Cauliflower Seeds.",
-        "pt": "Objetivos: Fale com o Daryl no Pet Shop; Leve uma Travessa Farta ao Daryl. Recompensa: Libera a Semente de Couve-flor."
+        "en": "Complete the objectives below.\nReward: Unlock Cauliflower Seeds.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Libera a Semente de Couve-flor."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Daryl in the Pet Shop.",
+            "pt": "Fale com o Daryl no Pet Shop."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Daryl a Filling Platter.",
+            "pt": "Leve uma Travessa Farta ao Daryl."
+          }
+        }
       ]
     },
     {
@@ -525,12 +717,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Jeannie in Greystone Estates room #10; Bring 25 Ancientwood and a Greater Deep Crystal to Jeannie. Reward: Some of Jeannie's old furniture.",
-        "pt": "Objetivos: Fale com a Jeannie no quarto 10 do Residencial Greystone; Leve 25 Madeiras Ancestrais e um Cristal das Profundezas Maior à Jeannie. Recompensa: Alguns móveis antigos da Jeannie."
+        "en": "Complete the objectives below.\nReward: Some of Jeannie's old furniture.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Alguns móveis antigos da Jeannie."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Jeannie in Greystone Estates room #10.",
+            "pt": "Fale com a Jeannie no quarto 10 do Residencial Greystone."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring 25 Ancientwood and a Greater Deep Crystal to Jeannie.",
+            "pt": "Leve 25 Madeiras Ancestrais e um Cristal das Profundezas Maior à Jeannie."
+          }
+        }
       ]
     },
     {
@@ -546,12 +752,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Earl in Greystone Estates room #2; Bring Earl any type of Duskberry Wine. Reward: Some \"weird stuff\" from the basement.",
-        "pt": "Objetivos: Fale com o Earl no quarto 2 do Residencial Greystone; Leve ao Earl qualquer Vinho de Baga-do-crepúsculo. Recompensa: Umas \"coisas esquisitas\" do porão."
+        "en": "Complete the objectives below.\nReward: Some \"weird stuff\" from the basement.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Umas \"coisas esquisitas\" do porão."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Earl in Greystone Estates room #2.",
+            "pt": "Fale com o Earl no quarto 2 do Residencial Greystone."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Earl any type of Duskberry Wine.",
+            "pt": "Leve ao Earl qualquer Vinho de Baga-do-crepúsculo."
+          }
+        }
       ]
     },
     {
@@ -567,12 +787,32 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Art for more information; Bring Art a set of all 6 basic Elemental Crystals; Bring Art a set of all 6 greater Elemental Crystals.",
-        "pt": "Objetivos: Fale com o Art para saber mais; Leve ao Art um conjunto dos 6 Cristais Elementais básicos; Leve ao Art um conjunto dos 6 Cristais Elementais maiores."
+        "en": "Complete the objectives below.",
+        "pt": "Conclua os objetivos abaixo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Art for more information.",
+            "pt": "Fale com o Art para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Art a set of all 6 basic Elemental Crystals.",
+            "pt": "Leve ao Art um conjunto dos 6 Cristais Elementais básicos."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Art a set of all 6 greater Elemental Crystals.",
+            "pt": "Leve ao Art um conjunto dos 6 Cristais Elementais maiores."
+          }
+        }
       ]
     },
     {
@@ -588,12 +828,50 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Barry at The Local Joggers Club; Find the Mill Key somewhere in The Old Woods; Reclaim the Lost Mirror from the Abandoned Mill; Bring the Lost Mirror to Barry in the Local Joggers Club; Tell Michelle that you've been accepted into The Local Joggers Club; Bring Michelle a single Verdite Ore. Reward: The secrets of the Local Joggers Club.",
-        "pt": "Objetivos: Fale com o Barry no Clube de Corrida Local; Encontre a Chave do Moinho em algum lugar do Bosque Antigo; Recupere o Espelho Perdido no Moinho Abandonado; Leve o Espelho Perdido ao Barry no Clube de Corrida Local; Conte à Michelle que você entrou no Clube de Corrida Local; Leve um Minério de Verdite à Michelle. Recompensa: Os segredos do Clube de Corrida Local."
+        "en": "Complete the objectives below.\nReward: The secrets of the Local Joggers Club.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Os segredos do Clube de Corrida Local."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Barry at The Local Joggers Club.",
+            "pt": "Fale com o Barry no Clube de Corrida Local."
+          }
+        },
+        {
+          "text": {
+            "en": "Find the Mill Key somewhere in The Old Woods.",
+            "pt": "Encontre a Chave do Moinho em algum lugar do Bosque Antigo."
+          }
+        },
+        {
+          "text": {
+            "en": "Reclaim the Lost Mirror from the Abandoned Mill.",
+            "pt": "Recupere o Espelho Perdido no Moinho Abandonado."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring the Lost Mirror to Barry in the Local Joggers Club.",
+            "pt": "Leve o Espelho Perdido ao Barry no Clube de Corrida Local."
+          }
+        },
+        {
+          "text": {
+            "en": "Tell Michelle that you've been accepted into The Local Joggers Club.",
+            "pt": "Conte à Michelle que você entrou no Clube de Corrida Local."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Michelle a single Verdite Ore.",
+            "pt": "Leve um Minério de Verdite à Michelle."
+          }
+        }
       ]
     },
     {
@@ -609,12 +887,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Charlie on the 3rd floor; Place the doll near the pit on the 3rd floor. Reward: Unlocks Coffee Bean Seeds.",
-        "pt": "Objetivos: Fale com o Charlie no 3º andar; Coloque a boneca perto do buraco no 3º andar. Recompensa: Libera a Semente de Grão de Café."
+        "en": "Complete the objectives below.\nReward: Unlocks Coffee Bean Seeds.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Libera a Semente de Grão de Café."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Charlie on the 3rd floor.",
+            "pt": "Fale com o Charlie no 3º andar."
+          }
+        },
+        {
+          "text": {
+            "en": "Place the doll near the pit on the 3rd floor.",
+            "pt": "Coloque a boneca perto do buraco no 3º andar."
+          }
+        }
       ]
     }
   ],

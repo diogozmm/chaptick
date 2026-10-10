@@ -46,8 +46,8 @@
       },
       "availableUntil": "ysx-ch5-cp-01",
       "hint": {
-        "en": "One of only three time-limited character notes. After the fight in Ilmer Village, before talking to the village elder, go back to the ship and talk to Momina and Rafe on the lower deck. Missing it blocks the all-notes trophy.",
-        "pt": "Uma das três únicas notas de personagem com tempo limitado. Depois da luta em Ilmer Village, antes de falar com o ancião da vila, volte ao navio e fale com a Momina e o Rafe no convés inferior. Perder impede o troféu de todas as notas."
+        "en": "One of only three time-limited character notes.\nAfter the fight in Ilmer Village, before talking to the village elder, go back to the ship and talk to Momina and Rafe on the lower deck.\nMissing it blocks the all-notes trophy.",
+        "pt": "Uma das três únicas notas de personagem com tempo limitado.\nDepois da luta em Ilmer Village, antes de falar com o ancião da vila, volte ao navio e fale com a Momina e o Rafe no convés inferior.\nPerder impede o troféu de todas as notas."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -70,8 +70,8 @@
       },
       "availableUntil": "ysx-ch7-cp-03",
       "hint": {
-        "en": "Time-limited character note. Right after arriving on Raufos Island, talk to Hugill standing beside the Hewnstone with a bag. If you miss it, there is one more chance in Chapter 7: talk to him at the Dvergr Coast camp after the Falaise Runestone.",
-        "pt": "Nota de personagem com tempo limitado. Logo ao chegar a Raufos Island, fale com o Hugill, parado ao lado da Hewnstone com uma bolsa. Se perder, há mais uma chance no Capítulo 7: fale com ele no acampamento da Dvergr Coast depois da Runestone de Falaise."
+        "en": "Time-limited character note.\nRight after arriving on Raufos Island, talk to Hugill standing beside the Hewnstone with a bag.\nIf you miss it, there is one more chance in Chapter 7: talk to him at the Dvergr Coast camp after the Falaise Runestone.",
+        "pt": "Nota de personagem com tempo limitado.\nLogo ao chegar a Raufos Island, fale com o Hugill, parado ao lado da Hewnstone com uma bolsa.\nSe perder, há mais uma chance no Capítulo 7: fale com ele no acampamento da Dvergr Coast depois da Runestone de Falaise."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -94,8 +94,8 @@
       },
       "availableUntil": "ysx-ch5-cp-01",
       "hint": {
-        "en": "Long deadline. Sail to every green marker at sea and destroy the explosive barrels, then report to Ivalde. Rewards a Pirate's Necklace, plus an Axe Star+ and a Vitality Elixir.",
-        "pt": "Prazo longo. Navegue até cada marcador verde no mar e destrua os barris explosivos, depois fale com a Ivalde. Dá um Pirate's Necklace, além de um Axe Star+ e um Vitality Elixir."
+        "en": "Long deadline.\nSail to every green marker at sea and destroy the explosive barrels, then report to Ivalde.\nRewards a Pirate's Necklace, plus an Axe Star+ and a Vitality Elixir.",
+        "pt": "Prazo longo.\nNavegue até cada marcador verde no mar e destrua os barris explosivos, depois fale com a Ivalde. Dá um Pirate's Necklace, além de um Axe Star+ e um Vitality Elixir."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -118,8 +118,8 @@
       },
       "availableUntil": "ysx-ch5-cp-01",
       "hint": {
-        "en": "Long deadline. From Gunnar's letter. Pick the first option on his ship and win the duel. Rewards the Brave General's Belt.",
-        "pt": "Prazo longo. Vem da carta do Gunnar. Escolha a primeira opção no navio dele e vença o duelo. Dá o Brave General's Belt."
+        "en": "Long deadline.\nFrom Gunnar's letter. Pick the first option on his ship and win the duel.\nRewards the Brave General's Belt.",
+        "pt": "Prazo longo.\nVem da carta do Gunnar. Escolha a primeira opção no navio dele e vença o duelo. Dá o Brave General's Belt."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -142,8 +142,8 @@
       },
       "availableUntil": "ysx-ch5-cp-01",
       "hint": {
-        "en": "Long deadline. Added automatically. Fast travel to the Cavern Depths and beat the two knight-type Griegrs. Rewards the Martial Formula.",
-        "pt": "Prazo longo. Entra sozinha no diário. Viaje até a Cavern Depths e derrote os dois Griegrs do tipo cavaleiro. Dá a Martial Formula."
+        "en": "Long deadline.\nAdded automatically. Fast travel to the Cavern Depths and beat the two knight-type Griegrs.\nRewards the Martial Formula.",
+        "pt": "Prazo longo.\nEntra sozinha no diário. Viaje até a Cavern Depths e derrote os dois Griegrs do tipo cavaleiro. Dá a Martial Formula."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -167,13 +167,33 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Proud Nordics only. Read Hugill's letter \"EX: Suspicious Ship\", sail to the blue point north of the center of Carnac Waters and clear Blindman's Darkroad. Rewards Abiding Love and an Almighty Star. The guide gives no deadline: do it in this chapter to be safe.",
-        "pt": "Só no Proud Nordics. Leia a carta do Hugill \"EX: Suspicious Ship\", navegue até o ponto azul ao norte do centro de Carnac Waters e termine o Blindman's Darkroad. Dá Abiding Love e um Almighty Star. O guia não informa prazo: faça neste capítulo por segurança."
+        "en": "Proud Nordics only.\nRewards: Abiding Love and an Almighty Star.\nThe guide gives no deadline; complete it in this chapter to be safe.",
+        "pt": "Exclusivo de Proud Nordics.\nRecompensas: Abiding Love e um Almighty Star.\nO guia não informa o prazo; por segurança, conclua neste capítulo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Ys X walkthrough, Chapter 5 - Öland Island (Proud Only)",
         "guide: Neoseeker Ys X walkthrough, Chapter 5 - Buried Treasure"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Read Hugill’s letter “EX: Suspicious Ship”.",
+            "pt": "Leia a carta de Hugill “EX: Suspicious Ship”."
+          }
+        },
+        {
+          "text": {
+            "en": "Sail to the blue point north of the center of Carnac Waters.",
+            "pt": "Navegue até o ponto azul ao norte do centro de Carnac Waters."
+          }
+        },
+        {
+          "text": {
+            "en": "Clear Blindman’s Darkroad.",
+            "pt": "Conclua Blindman’s Darkroad."
+          }
+        }
       ]
     },
     {
@@ -272,8 +292,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "First chance: they all need Mana Sense, learned at the end of Chapter 4. Equip the Eagle Eye Doubloon to see them on the map. On Termina Island, a Silver Pikkard hides in a muddy puddle (visible with Mana Sense).",
-        "pt": "Primeira chance: todos precisam do Mana Sense, aprendido no fim do Capítulo 4. Equipe o Eagle Eye Doubloon para vê-los no mapa. Em Termina Island, um Silver Pikkard se esconde numa poça de lama (visível com o Mana Sense)."
+        "en": "First chance: they all need Mana Sense, learned at the end of Chapter 4.\nEquip the Eagle Eye Doubloon to see them on the map.\nOn Termina Island, a Silver Pikkard hides in a muddy puddle (visible with Mana Sense).",
+        "pt": "Primeira chance: todos precisam do Mana Sense, aprendido no fim do Capítulo 4.\nEquipe o Eagle Eye Doubloon para vê-los no mapa.\nEm Termina Island, um Silver Pikkard se esconde numa poça de lama (visível com o Mana Sense)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -555,8 +575,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Proud Nordics only. You get one Red Crest here: spend it on the coliseum storage room (Luck Elixir) or on the red door in Blindman's Darkroad (Sin Star+); the other one waits for a later visit. Another storeroom has chests that cannot be opened yet. Cutting the glowing flowers gives Sparkling Whitesand.",
-        "pt": "Só no Proud Nordics. Você ganha um Red Crest aqui: gaste no depósito do coliseu (Luck Elixir) ou na porta vermelha do Blindman's Darkroad (Sin Star+); a outra fica para uma visita futura. Outro depósito tem baús que ainda não abrem. Cortar as flores brilhantes dá Sparkling Whitesand."
+        "en": "Proud Nordics only.\nYou get one Red Crest here: spend it on the coliseum storage room (Luck Elixir) or on the red door in Blindman's Darkroad (Sin Star+); the other one waits for a later visit.\nAnother storeroom has chests that cannot be opened yet.\nCutting the glowing flowers gives Sparkling Whitesand.",
+        "pt": "Só no Proud Nordics.\nVocê ganha um Red Crest aqui: gaste no depósito do coliseu (Luck Elixir) ou na porta vermelha do Blindman's Darkroad (Sin Star+); a outra fica para uma visita futura.\nOutro depósito tem baús que ainda não abrem.\nCortar as flores brilhantes dá Sparkling Whitesand."
       },
       "spoilerLevel": 0,
       "sources": [

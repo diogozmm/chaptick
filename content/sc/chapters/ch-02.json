@@ -52,8 +52,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "+5 BP. Starts after talking to Nial and Dorothy downstairs; you stay inside the hotel until it ends. Ask everything until no new topics appear. Final answers: 6th, 2nd, 2nd, 2nd.",
-        "pt": "+5 BP. Começa depois de falar com Nial e Dorothy no andar de baixo; você fica preso no hotel até terminar. Pergunte tudo até não surgirem assuntos novos. Respostas finais: 6ª, 2ª, 2ª, 2ª."
+        "en": "Reward: +5 BP. You cannot leave the hotel until this quest ends.",
+        "pt": "Recompensa: +5 BP. Você não pode sair do hotel até terminar a missão."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -62,6 +62,44 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to Nial and Dorothy downstairs to start.",
+            "pt": "Fale com Nial e Dorothy no andar de baixo para começar."
+          }
+        },
+        {
+          "text": {
+            "en": "Ask about every topic until no new ones appear.",
+            "pt": "Pergunte sobre todos os assuntos até não aparecerem novos tópicos."
+          }
+        },
+        {
+          "text": {
+            "en": "Final question 1: choose option 6.",
+            "pt": "Pergunta final 1: escolha a 6ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Final question 2: choose option 2.",
+            "pt": "Pergunta final 2: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Final question 3: choose option 2.",
+            "pt": "Pergunta final 3: escolha a 2ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "Final question 4: choose option 2.",
+            "pt": "Pergunta final 4: escolha a 2ª opção."
+          }
+        }
       ]
     },
     {
@@ -75,8 +113,8 @@
       },
       "availableUntil": "sc-ch2-cp-01",
       "hint": {
-        "en": "+4 BP. A wrong pick fails it. With Scherazard: Estelle 1st, 1st; Olivier 1st, 2nd; Scherazard 2nd. With Agate: Agate 1st, 1st; Olivier 1st, 2nd; Estelle 2nd.",
-        "pt": "+4 BP. Uma escolha errada faz falhar. Com Scherazard: Estelle 1ª, 1ª; Olivier 1ª, 2ª; Scherazard 2ª. Com Agate: Agate 1ª, 1ª; Olivier 1ª, 2ª; Estelle 2ª."
+        "en": "Reward: +4 BP. A wrong choice fails the quest.\nWith Scherazard:\n• Estelle: 1st, then 1st.\n• Olivier: 1st, then 2nd.\n• Scherazard: 2nd.\nWith Agate:\n• Agate: 1st, then 1st.\n• Olivier: 1st, then 2nd.\n• Estelle: 2nd.",
+        "pt": "Recompensa: +4 BP. Uma escolha errada faz a missão falhar.\nCom Scherazard:\n• Estelle: 1ª, depois 1ª.\n• Olivier: 1ª, depois 2ª.\n• Scherazard: 2ª.\nCom Agate:\n• Agate: 1ª, depois 1ª.\n• Olivier: 1ª, depois 2ª.\n• Estelle: 2ª."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -98,8 +136,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "+4 BP. Ask Kilika about it. Cards: back of the clock tower in the plaza; the terminal in the factory 5F (Central Factory → All Orbal Technology → Bracer Guild Sign); under the three chimneys behind Forgel Bar; then talk to Fey by the conveyor on B1F.",
-        "pt": "+4 BP. Pergunte à Kilika. Cartões: atrás da torre do relógio na praça; o terminal no 5F da fábrica (Central Factory → All Orbal Technology → Bracer Guild Sign); sob as três chaminés atrás do Forgel Bar; depois fale com a Fey na esteira do B1F."
+        "en": "Reward: +4 BP. Follow the clues through Zeiss.",
+        "pt": "Recompensa: +4 BP. Siga as pistas por Zeiss."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -108,6 +146,38 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Ask Kilika about the missing sign.",
+            "pt": "Pergunte a Kilika sobre a placa desaparecida."
+          }
+        },
+        {
+          "text": {
+            "en": "Check the back of the clock tower in the plaza.",
+            "pt": "Examine a parte de trás da torre do relógio na praça."
+          }
+        },
+        {
+          "text": {
+            "en": "Use the factory 5F terminal: Central Factory → All Orbal Technology → Bracer Guild Sign.",
+            "pt": "Use o terminal no 5º andar da fábrica: Central Factory → All Orbal Technology → Bracer Guild Sign."
+          }
+        },
+        {
+          "text": {
+            "en": "Look under the three chimneys behind Forgel Bar.",
+            "pt": "Procure embaixo das três chaminés atrás do Forgel Bar."
+          }
+        },
+        {
+          "text": {
+            "en": "Talk to Fey by the conveyor on B1F.",
+            "pt": "Fale com Fey junto à esteira no B1F."
+          }
+        }
       ]
     },
     {
@@ -122,8 +192,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "3 +2 BP. Karl gives Olivier a gun. Win 15 Command Battles on Tratt Plains Road with it equipped (10 is the minimum) before reporting back.",
-        "pt": "3 +2 BP. O Karl dá uma arma ao Olivier. Vença 15 Command Battles na Tratt Plains Road com ela equipada (o mínimo é 10) antes de voltar."
+        "en": "BP: 3 +2. Ten battles meet the minimum; win fifteen for the bonus.",
+        "pt": "BP: 3 +2. Dez batalhas cumprem o mínimo; vença quinze para receber o bônus."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -133,6 +203,26 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Get the gun from Karl and equip it on Olivier.",
+            "pt": "Pegue a arma com Karl e equipe-a em Olivier."
+          }
+        },
+        {
+          "text": {
+            "en": "Win 15 Command Battles on Tratt Plains Road with that gun equipped.",
+            "pt": "Vença 15 Command Battles em Tratt Plains Road com essa arma equipada."
+          }
+        },
+        {
+          "text": {
+            "en": "Report back after the battles.",
+            "pt": "Volte para entregar a missão após as batalhas."
+          }
+        }
       ]
     },
     {
@@ -147,8 +237,8 @@
       },
       "availableUntil": "sc-ch2-cp-02",
       "hint": {
-        "en": "3 +2 BP. Three rounds with no healing in between; you must win the last one for the bonus.",
-        "pt": "3 +2 BP. Três rodadas sem cura entre elas; é preciso vencer a última para ganhar o bônus."
+        "en": "3 +2 BP.\nThree rounds with no healing in between; you must win the last one for the bonus.",
+        "pt": "3 +2 BP.\nTrês rodadas sem cura entre elas; é preciso vencer a última para ganhar o bônus."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -170,8 +260,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "+3 BP. Whale frogs swallow allies: hit the frog three times to free them.",
-        "pt": "+3 BP. Os sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los."
+        "en": "+3 BP.\nWhale frogs swallow allies: hit the frog three times to free them.",
+        "pt": "+3 BP.\nOs sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -194,8 +284,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "+3 BP. Lots of ailments: debuff immunity makes it manageable. Do not wander into the fort by accident.",
-        "pt": "+3 BP. Muitos efeitos negativos: imunidade a debuffs deixa a luta administrável. Cuidado para não entrar no forte sem querer."
+        "en": "+3 BP.\nLots of ailments: debuff immunity makes it manageable. Do not wander into the fort by accident.",
+        "pt": "+3 BP.\nMuitos efeitos negativos: imunidade a debuffs deixa a luta administrável. Cuidado para não entrar no forte sem querer."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -218,8 +308,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "3 +2 BP. Find all 8 parts: 3 in the 3F Workshop, 4 in the 4F Laboratory and 1 by the cat in the 4F Clinic.",
-        "pt": "3 +2 BP. Encontre as 8 peças: 3 na oficina do 3F, 4 no laboratório do 4F e 1 perto do gato na clínica do 4F."
+        "en": "BP: 3 +2. Find all eight parts for the bonus.",
+        "pt": "BP: 3 +2. Encontre as oito peças para receber o bônus."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -228,6 +318,26 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Find 3 parts in the 3F Workshop.",
+            "pt": "Encontre 3 peças na Workshop do 3º andar."
+          }
+        },
+        {
+          "text": {
+            "en": "Find 4 parts in the 4F Laboratory.",
+            "pt": "Encontre 4 peças no Laboratory do 4º andar."
+          }
+        },
+        {
+          "text": {
+            "en": "Find 1 part by the cat in the 4F Clinic.",
+            "pt": "Encontre 1 peça junto ao gato na Clinic do 4º andar."
+          }
+        }
       ]
     },
     {
@@ -241,8 +351,8 @@
       },
       "availableUntil": "sc-ch2-cp-03",
       "hint": {
-        "en": "+4 BP. Equip Confuse and Sleep protection before talking to Mao.",
-        "pt": "+4 BP. Equipe proteção contra Confuse e Sleep antes de falar com a Mao."
+        "en": "+4 BP.\nEquip Confuse and Sleep protection before talking to Mao.",
+        "pt": "+4 BP.\nEquipe proteção contra Confuse e Sleep antes de falar com a Mao."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -265,8 +375,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "+3 BP. A swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.",
-        "pt": "+3 BP. Um enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem rápido."
+        "en": "+3 BP.\nA swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.",
+        "pt": "+3 BP.\nUm enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem rápido."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -289,8 +399,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "+3 BP. Hits very hard: stack HP and keep buffs up.",
-        "pt": "+3 BP. Bate muito forte: aumente o HP e mantenha os buffs."
+        "en": "+3 BP.\nHits very hard: stack HP and keep buffs up.",
+        "pt": "+3 BP.\nBate muito forte: aumente o HP e mantenha os buffs."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -337,8 +447,8 @@
       },
       "availableUntil": "sc-ch2-cp-03",
       "hint": {
-        "en": "+3 BP. In the scene with Warrant Officer Talbot, pick the 3rd option.",
-        "pt": "+3 BP. Na cena com o Warrant Officer Talbot, escolha a 3ª opção."
+        "en": "+3 BP.\nIn the scene with Warrant Officer Talbot, pick the 3rd option.",
+        "pt": "+3 BP.\nNa cena com o Warrant Officer Talbot, escolha a 3ª opção."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -361,8 +471,8 @@
       },
       "availableUntil": "sc-ch2-cp-03",
       "hint": {
-        "en": "+2 BP. When asked where to go, pick the 3rd option.",
-        "pt": "+2 BP. Quando perguntarem para onde ir, escolha a 3ª opção."
+        "en": "+2 BP.\nWhen asked where to go, pick the 3rd option.",
+        "pt": "+2 BP.\nQuando perguntarem para onde ir, escolha a 3ª opção."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -430,8 +540,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "Magma Wings, Acerbic Tomato Sandwich (Ben also gives one) and Fruit Kingdom at Forgel Bar; Mysterious Paste at Priam's Drink Shop outside the factory.",
-        "pt": "Magma Wings, Acerbic Tomato Sandwich (o Ben também dá um) e Fruit Kingdom no Forgel Bar; Mysterious Paste na Priam's Drink Shop, do lado de fora da fábrica."
+        "en": "Obtain and eat each dish to learn its recipe.",
+        "pt": "Obtenha e coma cada prato para aprender sua receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -439,6 +549,32 @@
       ],
       "trophies": [
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Magma Wings — Forgel Bar.",
+            "pt": "Magma Wings — Forgel Bar."
+          }
+        },
+        {
+          "text": {
+            "en": "Acerbic Tomato Sandwich — Forgel Bar; Ben also gives one.",
+            "pt": "Acerbic Tomato Sandwich — Forgel Bar; Ben também dá um."
+          }
+        },
+        {
+          "text": {
+            "en": "Fruit Kingdom — Forgel Bar.",
+            "pt": "Fruit Kingdom — Forgel Bar."
+          }
+        },
+        {
+          "text": {
+            "en": "Mysterious Paste — Priam’s Drink Shop, outside the factory.",
+            "pt": "Mysterious Paste — Priam’s Drink Shop, fora da fábrica."
+          }
+        }
       ]
     },
     {
@@ -476,8 +612,8 @@
       },
       "availableUntil": "sc-ch3-cp-01",
       "hint": {
-        "en": "Continental Eggs, Passionate Egg Roll and Top-Rated Shake.",
-        "pt": "Continental Eggs, Passionate Egg Roll e Top-Rated Shake."
+        "en": "Obtain and eat each dish to learn its recipe.",
+        "pt": "Obtenha e coma cada prato para aprender sua receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -485,6 +621,26 @@
       ],
       "trophies": [
         "three-star-chef"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Continental Eggs",
+            "pt": "Continental Eggs"
+          }
+        },
+        {
+          "text": {
+            "en": "Passionate Egg Roll",
+            "pt": "Passionate Egg Roll"
+          }
+        },
+        {
+          "text": {
+            "en": "Top-Rated Shake",
+            "pt": "Top-Rated Shake"
+          }
+        }
       ]
     },
     {

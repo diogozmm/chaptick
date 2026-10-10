@@ -69,8 +69,8 @@
       },
       "availableUntil": "fc-ch1-cp-02",
       "hint": {
-        "en": "2 BP. Short deadline. Pick up the letter from Father Divine BEFORE crossing Verte Bridge, then give it to Father Holstein in the Bose chapel.",
-        "pt": "2 BP. Prazo curto. Pegue a carta com o Father Divine ANTES de atravessar a Verte Bridge e entregue ao Father Holstein na capela de Bose."
+        "en": "2 BP.\nShort deadline. Pick up the letter from Father Divine BEFORE crossing Verte Bridge, then give it to Father Holstein in the Bose chapel.",
+        "pt": "2 BP.\nPrazo curto. Pegue a carta com o Father Divine ANTES de atravessar a Verte Bridge e entregue ao Father Holstein na capela de Bose."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -93,8 +93,8 @@
       },
       "availableUntil": "fc-ch1-cp-01",
       "hint": {
-        "en": "2 (+2) BP. Not on the board, new in the remake. At Perzel Farm check every green marker; pick the 1st option at the strawberries and the 2nd at the cow for the bonus. Eat the Sunshine Mille Crepe for its recipe.",
-        "pt": "2 (+2) BP. Não aparece no quadro, nova no remake. Na Perzel Farm, examine todos os marcadores verdes; escolha a 1ª opção nos morangos e a 2ª na vaca para o bônus. Coma o Sunshine Mille Crepe para aprender a receita."
+        "en": "BP: 2 (+2). Hidden quest, new in the remake. Eat Sunshine Mille Crepe for its recipe.",
+        "pt": "BP: 2 (+2). Missão oculta, nova no remake. Coma Sunshine Mille Crepe para aprender a receita."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -103,6 +103,26 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "At Perzel Farm, check every green marker.",
+            "pt": "Em Perzel Farm, examine todos os marcadores verdes."
+          }
+        },
+        {
+          "text": {
+            "en": "At the strawberries, choose the first option.",
+            "pt": "Nos morangos, escolha a 1ª opção."
+          }
+        },
+        {
+          "text": {
+            "en": "At the cow, choose the second option.",
+            "pt": "Na vaca, escolha a 2ª opção."
+          }
+        }
       ]
     },
     {
@@ -117,8 +137,8 @@
       },
       "availableUntil": "fc-ch1-cp-02",
       "hint": {
-        "en": "4 BP. Short deadline. Its Fate Saber can K.O. instantly: bring Deathblow protection (Grail Ring, Crest Charm). It is slow and easy to stun.",
-        "pt": "4 BP. Prazo curto. O Fate Saber dele pode derrubar na hora: leve proteção contra Deathblow (Grail Ring, Crest Charm). Ele é lento e fácil de atordoar."
+        "en": "4 BP.\nShort deadline. Its Fate Saber can K.O. instantly: bring Deathblow protection (Grail Ring, Crest Charm). It is slow and easy to stun.",
+        "pt": "4 BP.\nPrazo curto. O Fate Saber dele pode derrubar na hora: leve proteção contra Deathblow (Grail Ring, Crest Charm). Ele é lento e fácil de atordoar."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -141,8 +161,8 @@
       },
       "availableUntil": "fc-ch1-cp-02",
       "hint": {
-        "en": "3 BP. Bring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway). Rewards the Royal Omelette recipe.",
-        "pt": "3 BP. Leve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway). Dá a receita do Royal Omelette."
+        "en": "3 BP.\nBring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway).\nRewards the Royal Omelette recipe.",
+        "pt": "3 BP.\nLeve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway). Dá a receita do Royal Omelette."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -165,8 +185,8 @@
       },
       "availableUntil": "fc-ch1-cp-03",
       "hint": {
-        "en": "4 BP. Not on the board: it starts when you enter Amberl Tower. Reach 5F, approach the center, then leave the tower.",
-        "pt": "4 BP. Não aparece no quadro: começa quando você entra na Amberl Tower. Suba até o 5F, aproxime-se do centro e depois saia da torre."
+        "en": "4 BP.\nNot on the board: it starts when you enter Amberl Tower. Reach 5F, approach the center, then leave the tower.",
+        "pt": "4 BP.\nNão aparece no quadro: começa quando você entra na Amberl Tower. Suba até o 5F, aproxime-se do centro e depois saia da torre."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -189,8 +209,8 @@
       },
       "availableUntil": "fc-ch1-cp-03",
       "hint": {
-        "en": "4 BP. Appears after Divine Delivery. Bring two Bear Claws from Nebel Valley: near the end of the west path (after its quest monster) and beside the Thelas Balm chest.",
-        "pt": "4 BP. Aparece depois da Divine Delivery. Leve duas Bear Claws de Nebel Valley: perto do fim do caminho oeste (depois do monstro da quest) e ao lado do baú do Thelas Balm."
+        "en": "4 BP.\nAppears after Divine Delivery. Bring two Bear Claws from Nebel Valley: near the end of the west path (after its quest monster) and beside the Thelas Balm chest.",
+        "pt": "4 BP.\nAparece depois da Divine Delivery. Leve duas Bear Claws de Nebel Valley: perto do fim do caminho oeste (depois do monstro da quest) e ao lado do baú do Thelas Balm."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -213,8 +233,8 @@
       },
       "availableUntil": "fc-ch1-cp-03",
       "hint": {
-        "en": "4 (+1) BP. Walk Hart to Krone Trail; if he falls it's game over, so avoid fights. Choose \"A frontal assault!\" (1st option) for the bonus.",
-        "pt": "4 (+1) BP. Leve o Hart até a Krone Trail; se ele cair é game over, então evite lutas. Escolha \"A frontal assault!\" (1ª opção) para o bônus."
+        "en": "4 (+1) BP.\nWalk Hart to Krone Trail; if he falls it's game over, so avoid fights. Choose \"A frontal assault!\" (1st option) for the bonus.",
+        "pt": "4 (+1) BP.\nLeve o Hart até a Krone Trail; se ele cair é game over, então evite lutas. Escolha \"A frontal assault!\" (1ª opção) para o bônus."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -237,8 +257,8 @@
       },
       "availableUntil": "fc-ch1-cp-03",
       "hint": {
-        "en": "4 BP. Poisonous scorpions; the leader calls more.",
-        "pt": "4 BP. Escorpiões venenosos; o líder chama mais."
+        "en": "4 BP.\nPoisonous scorpions; the leader calls more.",
+        "pt": "4 BP.\nEscorpiões venenosos; o líder chama mais."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -261,8 +281,8 @@
       },
       "availableUntil": "fc-ch1-cp-03",
       "hint": {
-        "en": "5 BP. Kill the Boiled Eggers from a distance (they explode) and wear Flame Zippos against Freeze.",
-        "pt": "5 BP. Derrube os Boiled Eggers à distância (eles explodem) e use Flame Zippos contra Freeze."
+        "en": "5 BP.\nKill the Boiled Eggers from a distance (they explode) and wear Flame Zippos against Freeze.",
+        "pt": "5 BP.\nDerrube os Boiled Eggers à distância (eles explodem) e use Flame Zippos contra Freeze."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -285,8 +305,8 @@
       },
       "availableUntil": "fc-ch1-cp-03",
       "hint": {
-        "en": "4 BP. The toughest of this set: spread out, keep Earth Guard up and protect against Mute, Seal and Blind.",
-        "pt": "4 BP. O mais difícil deste grupo: espalhe a equipe, mantenha o Earth Guard e se proteja de Mute, Seal e Blind."
+        "en": "4 BP.\nThe toughest of this set: spread out, keep Earth Guard up and protect against Mute, Seal and Blind.",
+        "pt": "4 BP.\nO mais difícil deste grupo: espalhe a equipe, mantenha o Earth Guard e se proteja de Mute, Seal e Blind."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -309,8 +329,8 @@
       },
       "availableUntil": "fc-ch1-cp-05",
       "hint": {
-        "en": "4 BP. New in the remake. Help Anelace in Nebel Valley; Flame Zippos recommended. Later, Sting at the Bose guild gives Proxy Puppet S ×2.",
-        "pt": "4 BP. Nova no remake. Ajude a Anelace em Nebel Valley; Flame Zippos recomendados. Depois, o Sting na guilda de Bose dá Proxy Puppet S ×2."
+        "en": "4 BP.\nNew in the remake. Help Anelace in Nebel Valley; Flame Zippos recommended. Later, Sting at the Bose guild gives Proxy Puppet S ×2.",
+        "pt": "4 BP.\nNova no remake. Ajude a Anelace em Nebel Valley; Flame Zippos recomendados. Depois, o Sting na guilda de Bose dá Proxy Puppet S ×2."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -333,8 +353,8 @@
       },
       "availableUntil": "fc-ch1-cp-05",
       "hint": {
-        "en": "5 BP. It blocks the way to Valleria Shore, so you can't skip it. The turtles shrug off physical hits: use arts and step out of the red circles.",
-        "pt": "5 BP. Ele bloqueia o caminho para Valleria Shore, então não dá para pular. As tartarugas aguentam golpes físicos: use arts e saia dos círculos vermelhos."
+        "en": "5 BP.\nIt blocks the way to Valleria Shore, so you can't skip it. The turtles shrug off physical hits: use arts and step out of the red circles.",
+        "pt": "5 BP.\nEle bloqueia o caminho para Valleria Shore, então não dá para pular. As tartarugas aguentam golpes físicos: use arts e saia dos círculos vermelhos."
       },
       "spoilerLevel": 0,
       "sources": [

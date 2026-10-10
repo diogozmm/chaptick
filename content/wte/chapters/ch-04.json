@@ -21,8 +21,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Pearls found: (3 required). Reward: A \"special axe\" of some kind.",
-        "pt": "Objetivos: Pérolas encontradas: (3 necessárias). Recompensa: Algum tipo de \"machado especial\"."
+        "en": "Pearls found: (3 required).\nReward: A \"special axe\" of some kind.",
+        "pt": "Pérolas encontradas: (3 necessárias).\nRecompensa: Algum tipo de \"machado especial\"."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -42,8 +42,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Grace a Herbal Salve. Reward: A Golden Hatchet.",
-        "pt": "Objetivos: Leve uma Pomada de Ervas à Grace. Recompensa: Uma Machadinha Dourada."
+        "en": "Bring Grace a Herbal Salve.\nReward: A Golden Hatchet.",
+        "pt": "Leve uma Pomada de Ervas à Grace.\nRecompensa: Uma Machadinha Dourada."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -63,8 +63,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Restock the Storehouse. Reward: A Golden Hatchet.",
-        "pt": "Objetivos: Reabasteça o depósito. Recompensa: Uma Machadinha Dourada."
+        "en": "Restock the Storehouse.\nReward: A Golden Hatchet.",
+        "pt": "Reabasteça o depósito.\nRecompensa: Uma Machadinha Dourada."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -84,8 +84,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Mysteries Investigated: (3 required). Reward: A Golden Hatchet.",
-        "pt": "Objetivos: Mistérios investigados: (3 necessários). Recompensa: Uma Machadinha Dourada."
+        "en": "Mysteries Investigated: (3 required).\nReward: A Golden Hatchet.",
+        "pt": "Mistérios investigados: (3 necessários).\nRecompensa: Uma Machadinha Dourada."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -105,8 +105,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Samson a Soulbargain Potion.",
-        "pt": "Objetivos: Leve uma Poção do Pacto de Alma ao Samson."
+        "en": "Bring Samson a Soulbargain Potion.",
+        "pt": "Leve uma Poção do Pacto de Alma ao Samson."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -126,8 +126,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find Jacob's Lost Journal.",
-        "pt": "Objetivos: Encontre o diário perdido do Jacob."
+        "en": "Find Jacob's Lost Journal.",
+        "pt": "Encontre o diário perdido do Jacob."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -147,8 +147,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find Sarah's Lost Pocket Knife.",
-        "pt": "Objetivos: Encontre o canivete perdido da Sarah."
+        "en": "Find Sarah's Lost Pocket Knife.",
+        "pt": "Encontre o canivete perdido da Sarah."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -168,8 +168,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find 5 Golden Teeth. Reward: A key to one of the gates.",
-        "pt": "Objetivos: Encontre 5 Dentes de Ouro. Recompensa: A chave de um dos portões."
+        "en": "Find 5 Golden Teeth.\nReward: A key to one of the gates.",
+        "pt": "Encontre 5 Dentes de Ouro.\nRecompensa: A chave de um dos portões."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -189,8 +189,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Craft a Necklace of Bone. Reward: A key to one of the gates.",
-        "pt": "Objetivos: Crie um Colar de Osso. Recompensa: A chave de um dos portões."
+        "en": "Craft a Necklace of Bone.\nReward: A key to one of the gates.",
+        "pt": "Crie um Colar de Osso.\nRecompensa: A chave de um dos portões."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -210,8 +210,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find all four Gold Coins of Death. Reward: The Final Key.",
-        "pt": "Objetivos: Encontre as quatro Moedas de Ouro da Morte. Recompensa: A Chave Final."
+        "en": "Find all four Gold Coins of Death.\nReward: The Final Key.",
+        "pt": "Encontre as quatro Moedas de Ouro da Morte.\nRecompensa: A Chave Final."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -231,8 +231,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Lydia a Herbal Stew, Herbal Feast, Herbal Serpent and Herbal Roast. Reward: A key to one of the gates.",
-        "pt": "Objetivos: Leve à Lydia um Ensopado de Ervas, um Banquete de Ervas, uma Serpente com Ervas e um Assado com Ervas. Recompensa: A chave de um dos portões."
+        "en": "Bring Lydia a Herbal Stew, Herbal Feast, Herbal Serpent and Herbal Roast.\nReward: A key to one of the gates.",
+        "pt": "Leve à Lydia um Ensopado de Ervas, um Banquete de Ervas, uma Serpente com Ervas e um Assado com Ervas.\nRecompensa: A chave de um dos portões."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -252,8 +252,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find Dimitri in the tunnels. Reward: A key to one of the gates.",
-        "pt": "Objetivos: Encontre o Dimitri nos túneis. Recompensa: A chave de um dos portões."
+        "en": "Find Dimitri in the tunnels.\nReward: A key to one of the gates.",
+        "pt": "Encontre o Dimitri nos túneis.\nRecompensa: A chave de um dos portões."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -273,8 +273,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Acquire a Palewood Branch. Reward: Grandma's forgiveness.",
-        "pt": "Objetivos: Consiga um Galho de Madeira Pálida. Recompensa: O perdão da Vovó."
+        "en": "Acquire a Palewood Branch.\nReward: Grandma's forgiveness.",
+        "pt": "Consiga um Galho de Madeira Pálida.\nRecompensa: O perdão da Vovó."
       },
       "spoilerLevel": 0,
       "sources": [

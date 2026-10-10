@@ -21,12 +21,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Herb a Ghost Flounder; Bring Herb a Fog Eel.",
-        "pt": "Objetivos: Leve um Linguado Fantasma ao Herb; Leve uma Enguia da Névoa ao Herb."
+        "en": "Complete the objectives below.",
+        "pt": "Conclua os objetivos abaixo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Beginner Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring Herb a Ghost Flounder.",
+            "pt": "Leve um Linguado Fantasma ao Herb."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Herb a Fog Eel.",
+            "pt": "Leve uma Enguia da Névoa ao Herb."
+          }
+        }
       ]
     },
     {
@@ -42,8 +56,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Grow and harvest a single Wheat crop. Reward: The respect of Farmer Hans..?.",
-        "pt": "Objetivos: Plante e colha um pé de Trigo. Recompensa: O respeito do Fazendeiro Hans..?."
+        "en": "Grow and harvest a single Wheat crop.\nReward: The respect of Farmer Hans..?.",
+        "pt": "Plante e colha um pé de Trigo.\nRecompensa: O respeito do Fazendeiro Hans..?."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -63,8 +77,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Molly a Copper Ore. Reward: Access to Molly's workshop.",
-        "pt": "Objetivos: Leve um Minério de Cobre à Molly. Recompensa: Acesso à oficina da Molly."
+        "en": "Bring Molly a Copper Ore.\nReward: Access to Molly's workshop.",
+        "pt": "Leve um Minério de Cobre à Molly.\nRecompensa: Acesso à oficina da Molly."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -84,8 +98,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Bring Dave a Fog Broth. Reward: A Preserving Barrel.",
-        "pt": "Objetivos: Leve um Caldo de Névoa ao Dave. Recompensa: Um Barril de Conserva."
+        "en": "Bring Dave a Fog Broth.\nReward: A Preserving Barrel.",
+        "pt": "Leve um Caldo de Névoa ao Dave.\nRecompensa: Um Barril de Conserva."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -105,8 +119,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find and defeat a Shopper at the mall.",
-        "pt": "Objetivos: Encontre e derrote um Consumidor no shopping."
+        "en": "Find and defeat a Shopper at the mall.",
+        "pt": "Encontre e derrote um Consumidor no shopping."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -126,8 +140,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find Ben. Careful: accepting it fails this task.",
-        "pt": "Objetivos: Encontre o Ben. Atenção: aceitar esta faz falhar a tarefa this task."
+        "en": "Find Ben.\nCareful: accepting it fails this task.",
+        "pt": "Encontre o Ben.\nAtenção: aceitar esta faz falhar esta tarefa."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -147,8 +161,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Parents Slimed. Careful: accepting it fails Babysitting...?.",
-        "pt": "Objetivos: Pais engosmados. Atenção: aceitar esta faz falhar a tarefa Babá...?."
+        "en": "Parents Slimed.\nCareful: accepting it fails Babysitting...?.",
+        "pt": "Pais engosmados.\nAtenção: aceitar esta faz falhar a tarefa Babá...?."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -168,8 +182,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Wife-building progress: (5 required). Reward: \"Dark Magic\" of some kind.",
-        "pt": "Objetivos: Progresso da esposa: (5 necessários). Recompensa: Algum tipo de \"magia sombria\"."
+        "en": "Wife-building progress: (5 required).\nReward: \"Dark Magic\" of some kind.",
+        "pt": "Progresso da esposa: (5 necessários).\nRecompensa: Algum tipo de \"magia sombria\"."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -189,12 +203,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Talk to the Manager; Find the Wand of Parks and Recreation for Manager John.",
-        "pt": "Objetivos: Fale com o gerente; Encontre a Varinha de Parques e Recreação para o gerente John."
+        "en": "Complete the objectives below.",
+        "pt": "Conclua os objetivos abaixo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Talk to the Manager.",
+            "pt": "Fale com o gerente."
+          }
+        },
+        {
+          "text": {
+            "en": "Find the Wand of Parks and Recreation for Manager John.",
+            "pt": "Encontre a Varinha de Parques e Recreação para o gerente John."
+          }
+        }
       ]
     },
     {
@@ -210,12 +238,38 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Mysteries investigated; Mysteries investigated: (3 required); Mysteries investigated: (5 required); Mysteries investigated: (7 required).",
-        "pt": "Objetivos: Mistérios investigados; Mistérios investigados: (3 necessários); Mistérios investigados: (5 necessários); Mistérios investigados: (7 necessários)."
+        "en": "Complete the objectives below.",
+        "pt": "Conclua os objetivos abaixo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mysteries investigated.",
+            "pt": "Mistérios investigados."
+          }
+        },
+        {
+          "text": {
+            "en": "Mysteries investigated: (3 required).",
+            "pt": "Mistérios investigados: (3 necessários)."
+          }
+        },
+        {
+          "text": {
+            "en": "Mysteries investigated: (5 required).",
+            "pt": "Mistérios investigados: (5 necessários)."
+          }
+        },
+        {
+          "text": {
+            "en": "Mysteries investigated: (7 required).",
+            "pt": "Mistérios investigados: (7 necessários)."
+          }
+        }
       ]
     },
     {
@@ -231,12 +285,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Slay Drippers (5 required); Slay Pipe Cleaners: (5 required).",
-        "pt": "Objetivos: Derrote Gotejadores (5 necessários); Derrote Limpa-canos: (5 necessários)."
+        "en": "Complete the objectives below.",
+        "pt": "Conclua os objetivos abaixo."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Slay Drippers (5 required).",
+            "pt": "Derrote Gotejadores (5 necessários)."
+          }
+        },
+        {
+          "text": {
+            "en": "Slay Pipe Cleaners: (5 required).",
+            "pt": "Derrote Limpa-canos: (5 necessários)."
+          }
+        }
       ]
     },
     {
@@ -252,8 +320,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: God Shrines investigated: (2 required). Reward: The secrets of the shrine.",
-        "pt": "Objetivos: Santuários dos deuses investigados: (2 necessários). Recompensa: Os segredos do santuário."
+        "en": "God Shrines investigated: (2 required).\nReward: The secrets of the shrine.",
+        "pt": "Santuários dos deuses investigados: (2 necessários).\nRecompensa: Os segredos do santuário."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -273,12 +341,32 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find a local artist; Bring Ellie a Mana Muffin in exchange for her masterpiece; Bring Ellie's Artwork to Abigail and claim your reward. Reward: Some rare seeds.",
-        "pt": "Objetivos: Encontre um artista local; Leve um Muffin de Mana à Ellie em troca da obra-prima dela; Leve a obra da Ellie à Abigail e pegue sua recompensa. Recompensa: Algumas sementes raras."
+        "en": "Complete the objectives below.\nReward: Some rare seeds.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Algumas sementes raras."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Find a local artist.",
+            "pt": "Encontre um artista local."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Ellie a Mana Muffin in exchange for her masterpiece.",
+            "pt": "Leve um Muffin de Mana à Ellie em troca da obra-prima dela."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Ellie's Artwork to Abigail and claim your reward.",
+            "pt": "Leve a obra da Ellie à Abigail e pegue sua recompensa."
+          }
+        }
       ]
     },
     {
@@ -294,8 +382,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Find Tracy's Laundry.",
-        "pt": "Objetivos: Encontre a roupa da Tracy."
+        "en": "Find Tracy's Laundry.",
+        "pt": "Encontre a roupa da Tracy."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -315,12 +403,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Brittany for more details; Speak to Carla. Reward: Unlocks Bean Seeds.",
-        "pt": "Objetivos: Fale com a Brittany para saber mais; Fale com a Carla. Recompensa: Libera a Semente de Feijão."
+        "en": "Complete the objectives below.\nReward: Unlocks Bean Seeds.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Libera a Semente de Feijão."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Brittany for more details.",
+            "pt": "Fale com a Brittany para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Speak to Carla.",
+            "pt": "Fale com a Carla."
+          }
+        }
       ]
     },
     {
@@ -336,12 +438,26 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Speak to Trisha for more details; Bring Trisha a Gold quality or higher Ghost Flounder. Reward: A Lightning Rod blueprint.",
-        "pt": "Objetivos: Fale com a Trisha para saber mais; Leve à Trisha um Linguado Fantasma de qualidade Ouro ou melhor. Recompensa: Um projeto de Para-raios."
+        "en": "Complete the objectives below.\nReward: A Lightning Rod blueprint.",
+        "pt": "Conclua os objetivos abaixo.\nRecompensa: Um projeto de Para-raios."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Job Board Tasks"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Speak to Trisha for more details.",
+            "pt": "Fale com a Trisha para saber mais."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring Trisha a Gold quality or higher Ghost Flounder.",
+            "pt": "Leve à Trisha um Linguado Fantasma de qualidade Ouro ou melhor."
+          }
+        }
       ]
     },
     {
@@ -357,8 +473,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Craft a Skull Chalice at a workbench. Reward: The ability to grow Pumpkins.",
-        "pt": "Objetivos: Crie um Cálice de Crânio na bancada. Recompensa: Poder plantar Abóboras."
+        "en": "Craft a Skull Chalice at a workbench.\nReward: The ability to grow Pumpkins.",
+        "pt": "Crie um Cálice de Crânio na bancada.\nRecompensa: Poder plantar Abóboras."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -378,8 +494,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Defeat the Denizen of the Deep Fryer in the mall food court. Reward: A new type of seed.",
-        "pt": "Objetivos: Derrote o Morador da Fritadeira na praça de alimentação do shopping. Recompensa: Um novo tipo de semente."
+        "en": "Defeat the Denizen of the Deep Fryer in the mall food court.\nReward: A new type of seed.",
+        "pt": "Derrote o Morador da Fritadeira na praça de alimentação do shopping.\nRecompensa: Um novo tipo de semente."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -399,8 +515,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Sort out this tree branch mess.",
-        "pt": "Objetivos: Dê um jeito nessa bagunça de galhos."
+        "en": "Sort out this tree branch mess.",
+        "pt": "Dê um jeito nessa bagunça de galhos."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -420,8 +536,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Objectives: Sort out this bone mess. Reward: Nothing in particular.",
-        "pt": "Objetivos: Dê um jeito nessa bagunça de ossos. Recompensa: Nada em especial."
+        "en": "Sort out this bone mess.\nReward: Nothing in particular.",
+        "pt": "Dê um jeito nessa bagunça de ossos.\nRecompensa: Nada em especial."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -441,8 +557,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Talk to the cat in the farmhouse. Inside: 1× Cleansing Balm, 2× Bait Pack (Tier 1), 5× Coal, 2× Spoiled Rations.",
-        "pt": "Como conseguir: Converse com o gato na casa da fazenda. Conteúdo: 1× Bálsamo Purificador, 2× Pacote de Iscas (Nível 1), 5× Carvão, 2× Rações Estragadas."
+        "en": "How to get it: Talk to the cat in the farmhouse.\nInside: 1× Cleansing Balm, 2× Bait Pack (Tier 1), 5× Coal, 2× Spoiled Rations.",
+        "pt": "Como conseguir: Converse com o gato na casa da fazenda.\nConteúdo: 1× Bálsamo Purificador, 2× Pacote de Iscas (Nível 1), 5× Carvão, 2× Rações Estragadas."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -462,8 +578,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Talk to Alice. Inside: 1× Recipe: Special Hotdog, 3× Bait Pack (Tier 1), 5× Wood, 3× String, 5× Stone, 1× Iron Bar.",
-        "pt": "Como conseguir: Converse com a Alice. Conteúdo: 1× Receita: Cachorro-quente Especial, 3× Pacote de Iscas (Nível 1), 5× Madeira, 3× Barbante, 5× Pedra, 1× Barra de Ferro."
+        "en": "How to get it: Talk to Alice.\nInside: 1× Recipe: Special Hotdog, 3× Bait Pack (Tier 1), 5× Wood, 3× String, 5× Stone, 1× Iron Bar.",
+        "pt": "Como conseguir: Converse com a Alice.\nConteúdo: 1× Receita: Cachorro-quente Especial, 3× Pacote de Iscas (Nível 1), 5× Madeira, 3× Barbante, 5× Pedra, 1× Barra de Ferro."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -483,8 +599,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Random: the pentagram mystery in the Parks and Recreation office. Inside: 1× Aged Rum, 2× Small Coin Pouch, 1× Medium Coin Pouch, 3× Spoiled Rations, 1× Stealth Musk.",
-        "pt": "Como conseguir: Aleatório: o mistério do pentagrama no escritório de Parques e Recreação. Conteúdo: 1× Rum Envelhecido, 2× Bolsinha de Moedas Pequena, 1× Bolsinha de Moedas Média, 3× Rações Estragadas, 1× Almíscar Furtivo."
+        "en": "How to get it: Random: the pentagram mystery in the Parks and Recreation office.\nInside: 1× Aged Rum, 2× Small Coin Pouch, 1× Medium Coin Pouch, 3× Spoiled Rations, 1× Stealth Musk.",
+        "pt": "Como conseguir: Aleatório: o mistério do pentagrama no escritório de Parques e Recreação.\nConteúdo: 1× Rum Envelhecido, 2× Bolsinha de Moedas Pequena, 1× Bolsinha de Moedas Média, 3× Rações Estragadas, 1× Almíscar Furtivo."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -504,8 +620,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Talk to Celeste. Inside: 1× Large Coin Box, 1× Treasure Casket, 1× Gem Bag, 1× Love Potion.",
-        "pt": "Como conseguir: Converse com a Celeste. Conteúdo: 1× Caixa de Moedas Grande, 1× Baú do Tesouro, 1× Bolsa de Gemas, 1× Poção do Amor."
+        "en": "How to get it: Talk to Celeste.\nInside: 1× Large Coin Box, 1× Treasure Casket, 1× Gem Bag, 1× Love Potion.",
+        "pt": "Como conseguir: Converse com a Celeste.\nConteúdo: 1× Caixa de Moedas Grande, 1× Baú do Tesouro, 1× Bolsa de Gemas, 1× Poção do Amor."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -525,8 +641,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "How to get it: Gossip with Blorph. Inside: 2× Gem Bag, 1× Rare Gem Bag, 1× Clear Gem.",
-        "pt": "Como conseguir: Fofoque com o Blorph. Conteúdo: 2× Bolsa de Gemas, 1× Bolsa de Gemas Rara, 1× Gema Clara."
+        "en": "How to get it: Gossip with Blorph.\nInside: 2× Gem Bag, 1× Rare Gem Bag, 1× Clear Gem.",
+        "pt": "Como conseguir: Fofoque com o Blorph.\nConteúdo: 2× Bolsa de Gemas, 1× Bolsa de Gemas Rara, 1× Gema Clara."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -588,8 +704,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Reach 4 hearts with Josh, Sam or Alice and wait for the \"I need your help\" letter. Bring healing items. Reward: Cube of One +7. Whoever of Josh, Sam and Alice has the most friendship gives the closing talk (ties: Josh, then Sam).",
-        "pt": "Chegue a 4 corações com Josh, Sam ou Alice e espere a carta \"I need your help\". Leve itens de cura. Recompensa: Cubo do Um +7. Quem tiver mais amizade entre Josh, Sam e Alice faz a conversa final (empate: Josh, depois Sam)."
+        "en": "Reach 4 hearts with Josh, Sam or Alice and wait for the \"I need your help\" letter.\nBring healing items.\nReward: Cube of One +7.\nWhoever of Josh, Sam and Alice has the most friendship gives the closing talk (ties: Josh, then Sam).",
+        "pt": "Chegue a 4 corações com Josh, Sam ou Alice e espere a carta \"I need your help\".\nLeve itens de cura.\nRecompensa: Cubo do Um +7.\nQuem tiver mais amizade entre Josh, Sam e Alice faz a conversa final (empate: Josh, depois Sam)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -635,8 +751,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Reach 4 hearts with Edwin, Ellie or Blorph and wait for the \"I need your help\" letter. Bring healing items. Reward: Earring of Duality +5. Whoever of Edwin, Ellie and Blorph has the most friendship gives the closing talk (ties: Edwin, then Ellie).",
-        "pt": "Chegue a 4 corações com Edwin, Ellie ou Blorph e espere a carta \"I need your help\". Leve itens de cura. Recompensa: Brinco da Dualidade +5. Quem tiver mais amizade entre Edwin, Ellie e Blorph faz a conversa final (empate: Edwin, depois Ellie)."
+        "en": "Reach 4 hearts with Edwin, Ellie or Blorph and wait for the \"I need your help\" letter.\nBring healing items.\nReward: Earring of Duality +5.\nWhoever of Edwin, Ellie and Blorph has the most friendship gives the closing talk (ties: Edwin, then Ellie).",
+        "pt": "Chegue a 4 corações com Edwin, Ellie ou Blorph e espere a carta \"I need your help\".\nLeve itens de cura.\nRecompensa: Brinco da Dualidade +5.\nQuem tiver mais amizade entre Edwin, Ellie e Blorph faz a conversa final (empate: Edwin, depois Ellie)."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -682,8 +798,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Reach 4 hearts with Molly, Tanner or Celeste and wait for the \"I need your help\" letter. Bring healing items. Reward: Crystal Skull +10. The closing talk is odd here: a Molly lead gives Molly's, a Tanner lead gives Celeste's, a Celeste lead gives Tanner's.",
-        "pt": "Chegue a 4 corações com Molly, Tanner ou Celeste e espere a carta \"I need your help\". Leve itens de cura. Recompensa: Caveira de Cristal +10. A conversa final é diferente aqui: se a Molly lidera, fala a Molly; se o Tanner lidera, fala a Celeste; se a Celeste lidera, fala o Tanner."
+        "en": "Reach 4 hearts with Molly, Tanner or Celeste and wait for the \"I need your help\" letter.\nBring healing items.\nReward: Crystal Skull +10.\nThe closing talk is odd here: a Molly lead gives Molly's, a Tanner lead gives Celeste's, a Celeste lead gives Tanner's.",
+        "pt": "Chegue a 4 corações com Molly, Tanner ou Celeste e espere a carta \"I need your help\".\nLeve itens de cura.\nRecompensa: Caveira de Cristal +10.\nA conversa final é diferente aqui: se a Molly lidera, fala a Molly; se o Tanner lidera, fala a Celeste; se a Celeste lidera, fala o Tanner."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -723,8 +839,8 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "You can marry Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph, Celeste. It is separate from the school adventures. A refused proposal still uses that day's gift.",
-        "pt": "Dá para casar com Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph ou Celeste. Não depende das aventuras escolares. Um pedido recusado também gasta o presente do dia."
+        "en": "You can marry Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph, Celeste.\nIt is separate from the school adventures.\nA refused proposal still uses that day's gift.",
+        "pt": "Dá para casar com Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph ou Celeste.\nNão depende das aventuras escolares.\nUm pedido recusado também gasta o presente do dia."
       },
       "spoilerLevel": 0,
       "sources": [

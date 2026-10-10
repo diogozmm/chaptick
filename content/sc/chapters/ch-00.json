@@ -62,13 +62,33 @@
       },
       "availableUntil": null,
       "hint": {
-        "en": "Guild balcony, balcony of the southwest house, and the tree by the Mayor's house. If you miss them, they can still be picked up later in the game.",
-        "pt": "Sacada da guilda, sacada da casa a sudoeste e a árvore perto da casa do prefeito. Se perder, dá para pegá-los mais tarde no jogo."
+        "en": "Collect the three field items in Rolent. Missed items can still be picked up later in the game.",
+        "pt": "Recolha os três itens de campo em Rolent. Se perder algum, ainda poderá buscá-lo mais tarde."
       },
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Prologue Part 1",
         "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Check the guild balcony.",
+            "pt": "Examine a varanda da guilda."
+          }
+        },
+        {
+          "text": {
+            "en": "Check the balcony of the southwest house.",
+            "pt": "Examine a varanda da casa a sudoeste."
+          }
+        },
+        {
+          "text": {
+            "en": "Check the tree by the Mayor’s house.",
+            "pt": "Examine a árvore ao lado da casa do prefeito."
+          }
+        }
       ]
     },
     {
@@ -207,8 +227,8 @@
       },
       "availableUntil": "sc-ch0-cp-02",
       "hint": {
-        "en": "Fight every enemy variant: Mini Slug, Sticky Slug, Sticky Slug+, Ripple Frog and Ripple Frog+.",
-        "pt": "Enfrente todas as variantes: Mini Slug, Sticky Slug, Sticky Slug+, Ripple Frog e Ripple Frog+."
+        "en": "Fight every enemy variant:\n• Mini Slug\n• Sticky Slug\n• Sticky Slug+\n• Ripple Frog\n• Ripple Frog+",
+        "pt": "Lute contra cada variante de inimigo:\n• Mini Slug\n• Sticky Slug\n• Sticky Slug+\n• Ripple Frog\n• Ripple Frog+"
       },
       "spoilerLevel": 0,
       "sources": [
@@ -324,8 +344,8 @@
       },
       "availableUntil": "sc-ch0-cp-04",
       "hint": {
-        "en": "Rude Cosmos, Rolling Thorn, Bush Lancer, Bush Lancer+ and Shining Pom. Poms flee fast; the southern passage near the Orbment Station is a good spot.",
-        "pt": "Rude Cosmos, Rolling Thorn, Bush Lancer, Bush Lancer+ e Shining Pom. Os Poms fogem rápido; a passagem ao sul, perto da Orbment Station, é um bom lugar."
+        "en": "Fight every enemy variant:\n• Rude Cosmos\n• Rolling Thorn\n• Bush Lancer\n• Bush Lancer+\n• Shining Pom\nPoms flee fast; the southern passage near the Orbment Station is a good spot.",
+        "pt": "Lute contra cada variante de inimigo:\n• Rude Cosmos\n• Rolling Thorn\n• Bush Lancer\n• Bush Lancer+\n• Shining Pom\nOs Poms fogem rápido; a passagem sul perto da Orbment Station é um bom local."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -447,8 +467,8 @@
       },
       "availableUntil": "sc-ch0-cp-05",
       "hint": {
-        "en": "Mini Egger, Pain Beetle, Crybaby, Crybaby+ and Huge Frog.",
-        "pt": "Mini Egger, Pain Beetle, Crybaby, Crybaby+ e Huge Frog."
+        "en": "Fight every enemy variant:\n• Mini Egger\n• Pain Beetle\n• Crybaby\n• Crybaby+\n• Huge Frog",
+        "pt": "Lute contra cada variante de inimigo:\n• Mini Egger\n• Pain Beetle\n• Crybaby\n• Crybaby+\n• Huge Frog"
       },
       "spoilerLevel": 1,
       "sources": [
@@ -468,8 +488,8 @@
       },
       "availableUntil": "sc-ch0-cp-04",
       "hint": {
-        "en": "+2 BP. When the scene after going to bed offers a choice, pick the 1st option.",
-        "pt": "+2 BP. Quando a cena depois de ir dormir oferecer uma escolha, fique com a 1ª opção."
+        "en": "+2 BP.\nWhen the scene after going to bed offers a choice, pick the 1st option.",
+        "pt": "+2 BP.\nQuando a cena depois de ir dormir oferecer uma escolha, fique com a 1ª opção."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -492,8 +512,8 @@
       },
       "availableUntil": "sc-ch0-cp-04",
       "hint": {
-        "en": "+2 BP. Losing does not end the game, but you lose the bonus. Save before going downstairs and keep your S-Crafts for when the enemy is under half HP.",
-        "pt": "+2 BP. Perder não encerra o jogo, mas você perde o bônus. Salve antes de descer e guarde os S-Crafts para quando o inimigo estiver com menos da metade do HP."
+        "en": "+2 BP.\nLosing does not end the game, but you lose the bonus. Save before going downstairs and keep your S-Crafts for when the enemy is under half HP.",
+        "pt": "+2 BP.\nPerder não encerra o jogo, mas você perde o bônus. Salve antes de descer e guarde os S-Crafts para quando o inimigo estiver com menos da metade do HP."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -516,8 +536,8 @@
       },
       "availableUntil": "sc-ch0-cp-04",
       "hint": {
-        "en": "+2 BP. In the opening scene, pick the 2nd option.",
-        "pt": "+2 BP. Na cena de abertura, fique com a 2ª opção."
+        "en": "+2 BP.\nIn the opening scene, pick the 2nd option.",
+        "pt": "+2 BP.\nNa cena de abertura, fique com a 2ª opção."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -540,8 +560,8 @@
       },
       "availableUntil": "sc-ch0-cp-04",
       "hint": {
-        "en": "+3 BP. Examine all six spots in the lobby; in the scene that follows, pick the 3rd option.",
-        "pt": "+3 BP. Examine os seis pontos do saguão; na cena seguinte, fique com a 3ª opção."
+        "en": "+3 BP.\nExamine all six spots in the lobby; in the scene that follows, pick the 3rd option.",
+        "pt": "+3 BP.\nExamine os seis pontos do saguão; na cena seguinte, fique com a 3ª opção."
       },
       "spoilerLevel": 1,
       "sources": [
@@ -564,8 +584,8 @@
       },
       "availableUntil": "sc-ch0-cp-05",
       "hint": {
-        "en": "+2 BP. In the scene at the final marker, pick the 2nd option.",
-        "pt": "+2 BP. Na cena do último marcador, fique com a 2ª opção."
+        "en": "+2 BP.\nIn the scene at the final marker, pick the 2nd option.",
+        "pt": "+2 BP.\nNa cena do último marcador, fique com a 2ª opção."
       },
       "spoilerLevel": 1,
       "sources": [

@@ -14,39 +14,56 @@ END = c.cp('The last event marker of Chapter 5', 'O último marcador de evento d
 
 # Quests — Rolent, start of the chapter
 c.item('quest', t('Recipe Reminiscence'), t('Rolent — Abend Bar kitchen', 'Rolent — cozinha do Abend Bar'), LEAVE_ROLENT,
-       t('+4 BP. Ask Lao at the counter, Bloom on the 2F of the general store and Rhett in the apartment next to the bar; read the recipe book in Rhett\'s room. Everything can be bought except 2 Monster Bone (Dirty Rat, Crop Muncher). Rewards the Spiced Stew recipe.',
-         '+4 BP. Pergunte ao Lao no balcão, à Bloom no 2F do armazém e ao Rhett no apartamento ao lado do bar; leia o livro de receitas no quarto do Rhett. Tudo pode ser comprado, menos 2 Monster Bone (Dirty Rat, Crop Muncher). A recompensa é a receita Spiced Stew.'),
-       0, [D1])
+       t('Reward: +4 BP and the Spiced Stew recipe. Buy the ingredients except the 2 Monster Bones, which come from Dirty Rats or Crop Munchers.', 'Recompensa: +4 BP e a receita Spiced Stew. Compre os ingredientes, exceto os 2 Monster Bones, obtidos de Dirty Rats ou Crop Munchers.'),
+       0, [D1], steps=[
+           t('Ask Lao at the counter.', 'Fale com Lao no balcão.'),
+           t('Ask Bloom on the second floor of the general store.', 'Fale com Bloom no 2º andar da loja geral.'),
+           t('Ask Rhett in the apartment next to the bar and read the recipe book in his room.', 'Fale com Rhett no apartamento ao lado do bar e leia o livro de receitas no quarto dele.'),
+           t('Gather the recipe ingredients, including 2 Monster Bones.', 'Reúna os ingredientes da receita, incluindo 2 Monster Bones.'),
+       ])
 c.item('quest', t('Dabbling with Diaset'), t('Rolent — top of the clock tower', 'Rolent — topo da torre do relógio'), LEAVE_ROLENT,
-       t('+4 BP. Hand Anton 5 Monster Shell (Russet Beetle), 5 Monster Seed (Lily Mover, Pine Plant), 5 Monster Powder (Garphase, Killer Hornet) and 1 Pearlglass (fish it on Milch Main Road or Elize Highway). Olivier has to step out of the party for a moment.',
-         '+4 BP. Entregue ao Anton 5 Monster Shell (Russet Beetle), 5 Monster Seed (Lily Mover, Pine Plant), 5 Monster Powder (Garphase, Killer Hornet) e 1 Pearlglass (pesque na Milch Main Road ou na Elize Highway). O Olivier precisa sair da equipe por um momento.'),
-       0, [D1])
+       t('Reward: +4 BP. Olivier needs to leave the party briefly. Gather these ingredients for Anton.', 'Recompensa: +4 BP. Olivier precisa sair da equipe por um momento. Reúna estes ingredientes para Anton.'),
+       0, [D1], steps=[
+           t('5 Monster Shell — Russet Beetle.', '5 Monster Shell — Russet Beetle.'),
+           t('5 Monster Seed — Lily Mover or Pine Plant.', '5 Monster Seed — Lily Mover ou Pine Plant.'),
+           t('5 Monster Powder — Garphase or Killer Hornet.', '5 Monster Powder — Garphase ou Killer Hornet.'),
+           t('1 Pearlglass — fish on Milch Main Road or Elize Highway.', '1 Pearlglass — pesque em Milch Main Road ou Elize Highway.'),
+           t('Hand the ingredients to Anton.', 'Entregue os ingredientes a Anton.'),
+       ])
 c.item('quest', t('Commission Caper'), t("Rolent — Mine Chief Garton's residence", 'Rolent — residência do Mine Chief Garton'), LEAVE_ROLENT,
-       t('+5 BP. Clues: the chair on the chapel balcony upstairs, the crates on the south side of the Mayor\'s house, the forge behind the arms shop, then the locked door in Rolent Sewers (fight inside; the document is on the table).',
-         '+5 BP. Pistas: a cadeira na sacada do andar de cima da capela, as caixas no lado sul da casa do prefeito, a forja atrás da loja de armas e, por fim, a porta trancada no Rolent Sewers (luta lá dentro; o documento está na mesa).'),
-       0, [D1])
+       t('Reward: +5 BP. A fight awaits at the final clue.', 'Recompensa: +5 BP. Há uma luta na última pista.'),
+       0, [D1], steps=[
+           t('Examine the chair on the chapel balcony upstairs.', 'Examine a cadeira na varanda do andar de cima da capela.'),
+           t('Examine the crates on the south side of the Mayor’s house.', 'Examine as caixas no lado sul da casa do prefeito.'),
+           t('Examine the forge behind the arms shop.', 'Examine a forja atrás da loja de armas.'),
+           t('Enter the locked door in Rolent Sewers, win the fight and take the document from the table.', 'Entre pela porta trancada em Rolent Sewers, vença a luta e pegue o documento na mesa.'),
+       ])
 # Quests — Bose
 c.item('quest', t("Ambassador's Assignment"), t('Bose — Frieden Hotel, 2F', 'Bose — Frieden Hotel, 2º andar'), WAIT,
-       t('+5 BP. Clues: the basket of red flowers outside the 2F door of the orbal factory, the desk with an open book on the guild 3F, the crate on the forklift at the landing port, and the book on the altar upstairs in the chapel (side door).',
-         '+5 BP. Pistas: a cesta de flores vermelhas do lado de fora da porta do 2F da fábrica orbal, a mesa com um livro aberto no 3F da guilda, a caixa na empilhadeira do porto e o livro no altar do andar de cima da capela (porta lateral).'),
-       0, [D1])
+       t('Reward: +5 BP. Examine the clues in this order.', 'Recompensa: +5 BP. Examine as pistas nesta ordem.'),
+       0, [D1], steps=[
+           t('Basket of red flowers outside the 2F door of the orbal factory.', 'Cesta de flores vermelhas do lado de fora da porta do 2º andar da fábrica orbal.'),
+           t('Desk with an open book on the guild’s third floor.', 'Mesa com um livro aberto no 3º andar da guilda.'),
+           t('Crate on the forklift at the landing port.', 'Caixa na empilhadeira do porto.'),
+           t('Book on the altar upstairs in the chapel; enter through the side door.', 'Livro no altar do andar de cima da capela; entre pela porta lateral.'),
+       ])
 c.item('quest', t('Delicacy Delivery'), t('Bose — Anterose Restaurant'), LUGRAN,
-       t('4 +2 BP. Deliver 10 each of Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat and Roe. Orvid, outside the market\'s south entrance, chips in 7 of each, so you only need 3 more of each; you still get the bonus.',
-         '4 +2 BP. Entregue 10 de cada: Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat e Roe. O Orvid, do lado de fora da entrada sul do mercado, contribui com 7 de cada, então só faltam 3 de cada; o bônus continua valendo.'),
-       0, [D1])
+       t('BP: 4 +2. Orvid supplies seven of each ingredient; you only need three more of each and still receive the bonus.', 'BP: 4 +2. Orvid fornece sete de cada ingrediente; você só precisa de mais três de cada e ainda recebe o bônus.'),
+       0, [D1], steps=[
+           t('Talk to Orvid outside the market’s south entrance for 7 of each ingredient.', 'Fale com Orvid fora da entrada sul do mercado para receber 7 de cada ingrediente.'),
+           t('Gather 3 more of each: Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat and Roe.', 'Reúna mais 3 de cada: Monster Horn, Fang, Shell, Bone, Tail, Eye, Fish Meat e Roe.'),
+           t('Deliver 10 of each of the eight ingredients.', 'Entregue 10 de cada um dos oito ingredientes.'),
+       ])
 c.item('quest', t('Damsel Disappearance'), t('Bose — Anterose Restaurant'), LUGRAN,
-       t('4 +1 BP. Leads to Krone Pass. When talking to the girl there, pick the option that calls her a coward.',
-         '4 +1 BP. Leva à Krone Pass. Ao falar com a garota lá, escolha a opção que a chama de covarde.'),
+       t('4 +1 BP.\nLeads to Krone Pass. When talking to the girl there, pick the option that calls her a coward.', '4 +1 BP.\nLeva à Krone Pass. Ao falar com a garota lá, escolha a opção que a chama de covarde.'),
        0, [D1])
 
 # Missables
 c.item('missable', t('Bonus BP: report after the valley', 'BP bônus: relato depois do vale'), t('Nebel Valley'), LUGRAN,
-       t('+2 BP. After the last required monster request, pick the option saying the monsters were agitated.',
-         '+2 BP. Depois do último pedido obrigatório de monstro, escolha a opção que diz que os monstros estavam agitados.'),
+       t('+2 BP.\nAfter the last required monster request, pick the option saying the monsters were agitated.', '+2 BP.\nDepois do último pedido obrigatório de monstro, escolha a opção que diz que os monstros estavam agitados.'),
        1, [D1])
 c.item('missable', t('Bonus BP: the plan at the guild', 'BP bônus: o plano na guilda'), t('Bose — Bracer Guild', 'Bose — Bracer Guild'), LUGRAN,
-       t('+3 BP. In the scene after talking to Lugran, choose to make a plan first.',
-         '+3 BP. Na cena depois de falar com o Lugran, escolha fazer um plano primeiro.'),
+       t('+3 BP.\nIn the scene after talking to Lugran, choose to make a plan first.', '+3 BP.\nNa cena depois de falar com o Lugran, escolha fazer um plano primeiro.'),
        1, [D1])
 
 # Collectibles

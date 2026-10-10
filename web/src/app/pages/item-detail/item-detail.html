@@ -40,9 +40,20 @@
   }
 
   @if (e.showHint) {
-    <section class="section">
-      <h2>{{ 'item.hint' | transloco }}</h2>
+    <section class="section instructions card">
+      <h2>{{ 'item.instructions' | transloco }}</h2>
       <p class="hint">{{ e.item.hint | localize: l }}</p>
+    </section>
+  }
+
+  @if (e.route && e.showHint) {
+    <section class="section">
+      <h2>
+        {{ 'route.detailTitle' | transloco }}
+        <span class="count">{{ 'route.progress' | transloco: { done: e.route.done, total: e.route.total } }}</span>
+      </h2>
+      <div class="progress" aria-hidden="true"><span [style.width.%]="(e.route.done / e.route.total) * 100"></span></div>
+      <app-route-steps [item]="e.item" [collapsible]="false" />
     </section>
   }
 
@@ -54,17 +65,6 @@
         <p class="trophy-name">{{ trophy.name }}</p>
         <p class="muted small">{{ trophy.description | localize: l }}</p>
       </div>
-    </section>
-  }
-
-  @if (e.route && e.showHint) {
-    <section class="section">
-      <h2>
-        {{ 'route.title' | transloco }}
-        <span class="count">{{ 'route.progress' | transloco: { done: e.route.done, total: e.route.total } }}</span>
-      </h2>
-      <div class="progress" aria-hidden="true"><span [style.width.%]="(e.route.done / e.route.total) * 100"></span></div>
-      <app-route-steps [item]="e.item" [collapsible]="false" />
     </section>
   }
 
