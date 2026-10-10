@@ -39,7 +39,8 @@ c.item('quest', t('Mine Mop Up'), t('Abandoned mine — front gate', 'Mina aband
            t('Talk to the officers at the gate.', 'Fale com os oficiais no portão.'),
            t('Defeat every mystery machine inside until the game confirms they are all defeated.', 'Derrote todas as máquinas misteriosas lá dentro até o jogo confirmar que todas foram vencidas.'),
            t('Collect the chest beyond the east exit; you cannot return afterwards.', 'Recolha o baú depois da saída leste; depois disso, não será possível voltar.'),
-       ])
+       ], guidance={'warnings': [{'en': 'One-time visit: collect the chest beyond the east exit before leaving.',
+                      'pt': 'Visita única: recolha o baú depois da saída leste antes de ir embora.'}]})
 
 # Missables
 c.item('missable', t('Bonus BP: win the fight on the deck', 'BP bônus: vencer a luta no convés'), t('Later in the chapter', 'Mais adiante no capítulo'), END,
@@ -74,11 +75,24 @@ c.item('collectible', t('Fishing rod: Lakelord II', 'Vara de pesca: Lakelord II'
        ])
 c.item('collectible', t('Research facility treasure chests (19)', 'Baús da instalação de pesquisa (19)'), t('Research facility', 'Instalação de pesquisa'), FACILITY,
        t('Several rooms open only with the three card keys you collect along the way, so backtrack once you have all of them (the monster chest needs the last key).\nIncludes Green Cookie (eat it for the recipe) and a second pair of Night-Vision Goggles for the dark room.', 'Várias salas só abrem com os três cartões de acesso que você pega pelo caminho, então volte quando tiver todos (o baú de monstros precisa do último).\nInclui Green Cookie (coma para ganhar a receita) e um segundo par de Night-Vision Goggles para a sala escura.'),
-       1, [D2])
+       1, [D2], guidance={'requirements': [{'en': 'Several rooms open only with the three card keys you collect along the '
+                                'way, so backtrack once you have all of them (the monster chest needs the '
+                                'last key).',
+                          'pt': 'Várias salas só abrem com os três cartões de acesso que você pega pelo '
+                                'caminho, então volte quando tiver todos (o baú de monstros precisa do '
+                                'último).'}],
+        'rewards': [{'en': 'Includes Green Cookie (eat it for the recipe) and a second pair of '
+                           'Night-Vision Goggles for the dark room.',
+                     'pt': 'Inclui Green Cookie (coma para ganhar a receita) e um segundo par de '
+                           'Night-Vision Goggles para a sala escura.'}]})
 c.item('collectible', t('Ship treasure chests (11)', 'Baús da nave (11)'), t('Later in the chapter', 'Mais adiante no capítulo'), END,
        t('Includes Spicy Meatballs (eat it for the recipe) and a monster chest on the stern\'s first level. You cannot come back here.',
          'Inclui Spicy Meatballs (coma para ganhar a receita) e um baú de monstros no primeiro nível da popa. Não dá para voltar aqui.'),
-       2, [D2])
+       2, [D2], guidance={'rewards': [{'en': 'Includes Spicy Meatballs (eat it for the recipe) and a monster chest on the '
+                           "stern's first level.",
+                     'pt': 'Inclui Spicy Meatballs (coma para ganhar a receita) e um baú de monstros no '
+                           'primeiro nível da popa.'}],
+        'warnings': [{'en': 'You cannot come back here.', 'pt': 'Não dá para voltar aqui.'}]})
 
 # ---------------------------------------------------------------- routes (append-only once published)
 c.set_steps('sc-ch6-co-05', [

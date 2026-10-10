@@ -896,7 +896,7 @@ def friendship_items(next_id):
                                 f"Chegue a 4 corações com {group_pt} e espere a carta \"I need your help\". Leve itens de cura. "
                                 f"Recompensa: {reward_pt}. {adv['ending']['pt']}"),
                       'spoilerLevel': 0, 'sources': [f'{NEO}: {adv["name"]["en"]} Guide'], 'steps': [{'text': x} for x in adv['steps']]})
-    items.append({'id': next_id('q', 'quest', 'Marriage'), 'type': 'quest', 'name': t('Marriage', 'Casamento'),
+    items.append({'guidance': {'warnings': [{'en': "A refused proposal still uses that day's gift.",                                 'pt': 'Um pedido recusado também gasta o presente do dia.'}],                   'overview': {'en': 'You can marry Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph, '                                      'Celeste.\n'                                      'It is separate from the school adventures.',                                'pt': 'Dá para casar com Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph ou '                                      'Celeste.\n'                                      'Não depende das aventuras escolares.'}}, 'id': next_id('q', 'quest', 'Marriage'), 'type': 'quest', 'name': t('Marriage', 'Casamento'),
                   'location': t('Any of the nine villagers', 'Qualquer um dos nove moradores'), 'availableUntil': None,
                   'hint': t('You can marry ' + ', '.join(MARRIABLE) + '. It is separate from the school adventures. '
                             'A refused proposal still uses that day\'s gift.',

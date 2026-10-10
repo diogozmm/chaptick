@@ -109,13 +109,22 @@ c.item('collectible', t('West Bose Highway treasure chests (4)', 'Baús da West 
 c.item('collectible', t('Krone Trail treasure chests (5)', 'Baús da Krone Trail (5)'), t('Krone Trail'), END,
        t('Includes a monster chest with scorpions and a Hapilsag. Drop down the ladders for extra field items.',
          'Inclui um baú de monstros com escorpiões e um Hapilsag. Desça pelas escadas para pegar itens de campo extras.'),
-       0, [D1])
+       0, [D1], guidance={'warnings': [{'en': 'Includes a monster chest with scorpions and a Hapilsag.',
+                      'pt': 'Inclui um baú de monstros com escorpiões e um Hapilsag.'}],
+        'optional': [{'en': 'Drop down the ladders for extra field items.',
+                      'pt': 'Desça pelas escadas para pegar itens de campo extras.'}]})
 c.item('collectible', t('New Ansel Path treasure chests (6)', 'Baús da New Ansel Path (6)'), t('New Ansel Path'), END,
        t('The last one sits right outside Amberl Tower.', 'O último fica logo na frente da Amberl Tower.'), 0, [D1])
 c.item('collectible', t('Amberl Tower treasure chests (22)', 'Baús da Amberl Tower (22)'), t('Amberl Tower'), END,
        t('Spread across all five floors; the 3F and 4F outer loops hide several. The 5F monster chest has three Ground Trappers: wind arts, and they explode when defeated.',
          'Espalhados pelos cinco andares; os anéis externos do 3F e do 4F escondem vários. O baú de monstros do 5F tem três Ground Trappers: use arts de vento, e eles explodem quando caem.'),
-       0, [D1])
+       0, [D1], guidance={'warnings': [{'en': 'The 5F monster chest has three Ground Trappers: wind arts, and they explode '
+                            'when defeated.',
+                      'pt': 'O baú de monstros do 5F tem três Ground Trappers: use arts de vento, e eles '
+                            'explodem quando caem.'}],
+        'overview': {'en': 'Spread across all five floors; the 3F and 4F outer loops hide several.',
+                     'pt': 'Espalhados pelos cinco andares; os anéis externos do 3F e do 4F escondem '
+                           'vários.'}})
 c.item('collectible', t('Eisen Road and East Bose Highway treasure chests (5)', 'Baús da Eisen Road e da East Bose Highway (5)'), t('Eisen Road, East Bose Highway'), END,
        t('East Bose Highway has a monster chest with turtles uphill along the south wall, and a breakable wall leading to a water cave.',
          'A East Bose Highway tem um baú de monstros com tartarugas na subida junto à parede sul, e uma parede quebrável que leva a uma caverna com água.'),
@@ -123,7 +132,12 @@ c.item('collectible', t('Eisen Road and East Bose Highway treasure chests (5)', 
 c.item('collectible', t('Nebel Valley treasure chests (3)', 'Baús do Nebel Valley (3)'), t('Nebel Valley'), END,
        t('One is just before the old stronghold entrance. Whemler, in his hut, gives you Dark Stew if you accept his stew on the second talk.',
          'Um fica logo antes da entrada da antiga fortaleza. O Whemler, na cabana dele, dá Dark Stew se você aceitar o ensopado na segunda conversa.'),
-       0, [D1])
+       0, [D1], guidance={'optional': [{'en': 'Whemler, in his hut, gives you Dark Stew if you accept his stew on the '
+                            'second talk.',
+                      'pt': 'O Whemler, na cabana dele, dá Dark Stew se você aceitar o ensopado na '
+                            'segunda conversa.'}],
+        'overview': {'en': 'One is just before the old stronghold entrance.',
+                     'pt': 'Um fica logo antes da entrada da antiga fortaleza.'}})
 c.item('collectible', t('Ravennue Trail treasure chests (9)', 'Baús da Ravennue Trail (9)'), t('Ravennue Trail'), END,
        t('Explore both branches past the village; one holds a weapon for Zin.', 'Explore os dois ramos depois da vila; um guarda uma arma do Zin.'), 0, [D1])
 c.item('collectible', t('Abandoned mine treasure chests (5)', 'Baús da mina abandonada (5)'), t('Mine near Ravennue Village', 'Mina perto de Ravennue Village'), WAIT,

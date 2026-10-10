@@ -106,7 +106,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Two buried treasures open in Chapter 5.",
+            "pt": "Dois tesouros enterrados abrem no Capítulo 5."
+          }
+        ],
+        "overview": {
+          "en": "Use Karja's ice pillar to reach the higher platforms.",
+          "pt": "Use o pilar de gelo da Karja para alcançar as plataformas altas."
+        }
+      }
     },
     {
       "id": "ysx-ch2-co-03",
@@ -150,7 +162,21 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The Blessed Paper Scrap unlocks an accessory slot.",
+            "pt": "O Blessed Paper Scrap libera um espaço de acessório."
+          }
+        ],
+        "requirements": [
+          {
+            "en": "The three locked gray chests in the cave open later with story keys.",
+            "pt": "Os três baús cinza trancados na caverna abrem mais tarde com chaves da história."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": [],

@@ -447,7 +447,31 @@
       ],
       "trophies": [
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+5 BP (Royal Message).",
+            "pt": "+5 BP (Royal Message)."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Detour to the landing port first for Carnelia Vol. 10.",
+            "pt": "Passe antes no porto para pegar o Carnelia Vol. 10."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Save first.",
+            "pt": "Salve antes."
+          }
+        ],
+        "overview": {
+          "en": "Reach the cathedral without being caught once.",
+          "pt": "Chegue à catedral sem ser pego nenhuma vez."
+        }
+      }
     },
     {
       "id": "fc-ch4-mi-04",
@@ -541,7 +565,21 @@
       ],
       "trophies": [
         "ultimate-weapons"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "With all 11 volumes, Baral trades them for Estelle and Joshua's strongest weapons.",
+            "pt": "Com os 11 volumes, o Baral troca pelas armas mais fortes da Estelle e do Joshua."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Missed volumes 8–11 are sold at the Edel Department Store.",
+            "pt": "Os volumes 8 a 11 perdidos são vendidos na Edel Department Store."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch4-co-01",
@@ -884,7 +922,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "Easier if you come before the story escort.",
+            "pt": "Mais fácil se você vier antes da escolta da história."
+          }
+        ],
+        "overview": {
+          "en": "The hidden cave is behind the bushes at the Sapphirl Monument.",
+          "pt": "A caverna escondida fica atrás dos arbustos no Sapphirl Monument."
+        }
+      }
     },
     {
       "id": "fc-ch4-co-11",
@@ -1040,7 +1090,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "One-time visit.",
+            "pt": "Visita única."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "The monster chest holds the Cloak quartz.",
+            "pt": "O baú de monstros tem o quartzo Cloak."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch4-co-14",
@@ -1280,7 +1344,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "You should be at 199 of 212 before the elevator down.",
+            "pt": "Você deve estar com 199 de 212 antes do elevador para baixo."
+          }
+        ],
+        "overview": {
+          "en": "Thor's Hammer on the 2nd Level is reached from here.",
+          "pt": "O Thor's Hammer do 2º nível é alcançado daqui."
+        }
+      }
     },
     {
       "id": "fc-ch4-co-17",
@@ -1384,7 +1460,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Opening the last one gives Treasure Hunter if none were missed.",
+            "pt": "Abrir o último dá o Treasure Hunter se nenhum ficou para trás."
+          }
+        ],
+        "overview": {
+          "en": "Take the left (east) path first, then the west path down.",
+          "pt": "Pegue primeiro o caminho da esquerda (leste), depois o oeste descendo."
+        }
+      }
     }
   ],
   "itemTexts": [],

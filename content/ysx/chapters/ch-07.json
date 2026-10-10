@@ -55,7 +55,19 @@
       ],
       "trophies": [
         "seashell-networker"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The third time-limited character note.",
+            "pt": "A terceira nota de personagem com tempo limitado."
+          }
+        ],
+        "overview": {
+          "en": "While you are stationed on Grimson's ship, go back to the Sandras and talk to Lux twice on the lower deck, before talking to Grenn.",
+          "pt": "Enquanto estiver no navio do Grimson, volte ao Sandras e fale duas vezes com o Lux no convés inferior, antes de falar com o Grenn."
+        }
+      }
     },
     {
       "id": "ysx-ch7-q-01",
@@ -195,7 +207,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Hidden Treasure Chart D is sold at Gregorio's Curio in the Flumen Strait.",
+          "pt": "O Hidden Treasure Chart D é vendido no Gregorio's Curio, em Flumen Strait."
+        },
+        "rewards": [
+          {
+            "en": "Fleeting Hope+.",
+            "pt": "Fleeting Hope+."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch7-q-04",
@@ -219,7 +249,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "From the Norman soldier on the Norgest. A bird-like humanoid Griegr with small flying Watz that keep shooting.",
+          "pt": "Vem do soldado normando no Norgest. Um Griegr humanoide parecido com pássaro, com pequenos Watz voadores que não param de atirar."
+        },
+        "rewards": [
+          {
+            "en": "a Blessed Paper Scrap.",
+            "pt": "um Blessed Paper Scrap."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch7-q-05",
@@ -296,7 +344,25 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Ys X walkthrough, Chapter 7 - Flumen Strait"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Proud Nordics only.",
+            "pt": "Só no Proud Nordics."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "The guide gives no steps or deadline: do it in this chapter to be safe.",
+            "pt": "O guia não dá passos nem prazo: faça neste capítulo por segurança."
+          }
+        ],
+        "overview": {
+          "en": "Added by the Hugill letter \"EX: Smooth Sailing?\" at the start of the chapter.",
+          "pt": "Entra com a carta do Hugill \"EX: Smooth Sailing?\" no começo do capítulo."
+        }
+      }
     },
     {
       "id": "ysx-ch7-co-01",
@@ -457,7 +523,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Breath Water II adds one more potion to your stock.",
+            "pt": "A Breath Water II adiciona mais uma poção ao estoque."
+          }
+        ],
+        "overview": {
+          "en": "North of the Dvergr Coast camp.",
+          "pt": "Ao norte do acampamento da Dvergr Coast."
+        }
+      }
     },
     {
       "id": "ysx-ch7-co-03",
@@ -625,7 +703,15 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "After an event in the second interior you cannot go back to the earlier sections until Chapter 9, when the main entrance also opens.",
+            "pt": "Depois de um evento no segundo interior, não dá para voltar às seções anteriores até o Capítulo 9, quando a entrada principal também abre."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": [],

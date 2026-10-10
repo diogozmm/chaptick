@@ -1245,7 +1245,19 @@
             "pt": "Entregue o anel como presente do dia; o casamento acontece na hora e quem casou se muda à meia-noite"
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "A refused proposal still uses that day's gift.",
+            "pt": "Um pedido recusado também gasta o presente do dia."
+          }
+        ],
+        "overview": {
+          "en": "You can marry Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph, Celeste.\nIt is separate from the school adventures.",
+          "pt": "Dá para casar com Alice, Josh, Sam, Ellie, Edwin, Tanner, Molly, Blorph ou Celeste.\nNão depende das aventuras escolares."
+        }
+      }
     }
   ],
   "itemTexts": [],

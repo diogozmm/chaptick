@@ -77,7 +77,21 @@
       ],
       "trophies": [
         "seashell-networker"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Talk to these six before talking to Karja at the pier, or the all-notes trophy is lost.",
+            "pt": "Fale com estes seis antes de falar com a Karja no píer, ou o troféu de todas as notas se perde."
+          }
+        ],
+        "optional": [
+          {
+            "en": "A bonus Runestone scene waits in the Lighthouse depths, by the west wall.",
+            "pt": "Uma cena bônus de Runestone espera no fundo do farol, junto à parede oeste."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": []

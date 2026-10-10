@@ -193,7 +193,23 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 (+1) BP.",
+            "pt": "3 (+1) BP."
+          },
+          {
+            "en": "Rewards Impede 2.",
+            "pt": "Dá Impede 2."
+          }
+        ],
+        "overview": {
+          "en": "The broken light is in the middle of Milch Main Road.\nFor the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818).",
+          "pt": "A luz quebrada fica no meio da Milch Main Road.\nPara o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818)."
+        }
+      }
     },
     {
       "id": "fc-ch0-q-05",
@@ -412,7 +428,25 @@
       ],
       "trophies": [
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP (Perzel Pest Control).",
+            "pt": "+2 BP (Perzel Pest Control)."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Save first.",
+            "pt": "Salve antes."
+          }
+        ],
+        "overview": {
+          "en": "After the stables and the greenhouse, sneak up behind the monster without entering its line of sight, and examine it.",
+          "pt": "Depois do estábulo e da estufa, chegue por trás do monstro sem entrar no campo de visão dele e examine-o."
+        }
+      }
     },
     {
       "id": "fc-ch0-mi-03",
@@ -494,7 +528,25 @@
       ],
       "trophies": [
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+1 BP (Mayoral Robbery).",
+            "pt": "+1 BP (Mayoral Robbery)."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "The boss right after is much harder than in the original: bring Earth Guard.",
+            "pt": "O chefe logo depois é bem mais difícil que no original: leve Earth Guard."
+          }
+        ],
+        "overview": {
+          "en": "Pick the 2nd option during the event.",
+          "pt": "Escolha a 2ª opção durante o evento."
+        }
+      }
     },
     {
       "id": "fc-ch0-co-01",
@@ -517,7 +569,25 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The Carnelia volumes are traded together for Estelle and Joshua's best weapons late in the game.",
+            "pt": "Os volumes de Carnelia são trocados juntos pelas melhores armas da Estelle e do Joshua no fim do jogo."
+          }
+        ],
+        "optional": [
+          {
+            "en": "A missed volume can later be bought, at a high price.",
+            "pt": "Um volume perdido pode ser comprado depois, por um preço alto."
+          }
+        ],
+        "overview": {
+          "en": "Talk to Rhett.",
+          "pt": "Fale com o Rhett."
+        }
+      }
     },
     {
       "id": "fc-ch0-co-02",
@@ -814,7 +884,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Both monster chests hold Wind Trappers that are very hard before level 8 and explode when defeated.",
+            "pt": "Os dois baús de monstros têm Wind Trappers muito difíceis antes do nível 8, que explodem ao serem derrotados."
+          }
+        ],
+        "optional": [
+          {
+            "en": "You come back here in the story, so they can wait.",
+            "pt": "Você volta aqui na história, então eles podem esperar."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch0-co-08",

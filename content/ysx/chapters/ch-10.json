@@ -159,7 +159,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "overview": {
+          "en": "Added when you land. Defeat every Griegr on the island; the target then appears in the northeast corner.",
+          "pt": "Entra ao desembarcar. Derrote todos os Griegrs da ilha; o alvo então aparece no canto nordeste."
+        },
+        "rewards": [
+          {
+            "en": "Crystal Shards ×25,000.",
+            "pt": "Crystal Shards ×25.000."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-q-04",
@@ -182,7 +200,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "overview": {
+          "en": "Buy Hidden Treasure Chart F from the merchant Gøsta, north of the second Rogue Sea recapture.",
+          "pt": "Compre o Hidden Treasure Chart F do mercador Gøsta, ao norte da segunda retomada do Rogue Sea."
+        },
+        "rewards": [
+          {
+            "en": "50,000 Gold.",
+            "pt": "50.000 Gold."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-q-05",
@@ -312,7 +348,15 @@
       ],
       "trophies": [
         "all-decked-out"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Not lost at the final battle, but ship refits do not carry over to New Game+: buy them all in one playthrough if you want \"All Decked Out\".",
+            "pt": "Não se perdem na batalha final, mas as melhorias do navio não passam para o New Game+: compre todas na mesma jogada se quiser o \"All Decked Out\"."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-co-01",
@@ -398,7 +442,15 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Lost once you go through the doors to the final battle.",
+            "pt": "Perdido quando você passa pelas portas da batalha final."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-co-02",
@@ -448,7 +500,15 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Lost once you go through the doors to the final battle.",
+            "pt": "Perdido quando você passa pelas portas da batalha final."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-co-03",
@@ -498,7 +558,15 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Lost once you go through the doors to the final battle.",
+            "pt": "Perdido quando você passa pelas portas da batalha final."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-co-04",
@@ -560,7 +628,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Lost once you go through the doors to the final battle.",
+            "pt": "Perdidos quando você passa pelas portas da batalha final."
+          }
+        ],
+        "overview": {
+          "en": "Six buried treasures: one near the cottage, two on the east side and three on the west side, which only opens fully once you enter the treasure room.",
+          "pt": "Seis tesouros enterrados: um perto da cabana, dois no lado leste e três no lado oeste, que só abre por completo quando você entra na sala do tesouro."
+        }
+      }
     },
     {
       "id": "ysx-ch10-co-05",
@@ -646,7 +726,15 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Lost once you go through the doors to the final battle.",
+            "pt": "Perdido quando você passa pelas portas da batalha final."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-co-06",
@@ -852,7 +940,15 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Lost once you go through the doors to the final battle.",
+            "pt": "Perdido quando você passa pelas portas da batalha final."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": [],

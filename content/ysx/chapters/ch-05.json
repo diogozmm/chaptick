@@ -55,7 +55,23 @@
       ],
       "trophies": [
         "seashell-networker"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "One of only three time-limited character notes.",
+            "pt": "Uma das três únicas notas de personagem com tempo limitado."
+          },
+          {
+            "en": "Missing it blocks the all-notes trophy.",
+            "pt": "Perder impede o troféu de todas as notas."
+          }
+        ],
+        "overview": {
+          "en": "After the fight in Ilmer Village, before talking to the village elder, go back to the ship and talk to Momina and Rafe on the lower deck.",
+          "pt": "Depois da luta em Ilmer Village, antes de falar com o ancião da vila, volte ao navio e fale com a Momina e o Rafe no convés inferior."
+        }
+      }
     },
     {
       "id": "ysx-ch5-mi-02",
@@ -80,7 +96,25 @@
       ],
       "trophies": [
         "seashell-networker"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Time-limited character note.",
+            "pt": "Nota de personagem com tempo limitado."
+          }
+        ],
+        "optional": [
+          {
+            "en": "If you miss it, there is one more chance in Chapter 7: talk to him at the Dvergr Coast camp after the Falaise Runestone.",
+            "pt": "Se perder, há mais uma chance no Capítulo 7: fale com ele no acampamento da Dvergr Coast depois da Runestone de Falaise."
+          }
+        ],
+        "overview": {
+          "en": "Right after arriving on Raufos Island, talk to Hugill standing beside the Hewnstone with a bag.",
+          "pt": "Logo ao chegar a Raufos Island, fale com o Hugill, parado ao lado da Hewnstone com uma bolsa."
+        }
+      }
     },
     {
       "id": "ysx-ch5-q-01",
@@ -104,7 +138,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Sail to every green marker at sea and destroy the explosive barrels, then report to Ivalde.",
+          "pt": "Navegue até cada marcador verde no mar e destrua os barris explosivos, depois fale com a Ivalde."
+        },
+        "rewards": [
+          {
+            "en": "a Pirate's Necklace, plus an Axe Star+ and a Vitality Elixir.",
+            "pt": "um Pirate's Necklace, além de um Axe Star+ e um Vitality Elixir."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch5-q-02",
@@ -128,7 +180,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "From Gunnar's letter. Pick the first option on his ship and win the duel.",
+          "pt": "Vem da carta do Gunnar. Escolha a primeira opção no navio dele e vença o duelo."
+        },
+        "rewards": [
+          {
+            "en": "the Brave General's Belt.",
+            "pt": "o Brave General's Belt."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch5-q-03",
@@ -152,7 +222,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Added automatically. Fast travel to the Cavern Depths and beat the two knight-type Griegrs.",
+          "pt": "Entra sozinha no diário. Viaje até a Cavern Depths e derrote os dois Griegrs do tipo cavaleiro."
+        },
+        "rewards": [
+          {
+            "en": "the Martial Formula.",
+            "pt": "a Martial Formula."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch5-q-04",
@@ -230,7 +318,25 @@
       ],
       "trophies": [
         "seashell-networker"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Proud Nordics only.",
+            "pt": "Só no Proud Nordics."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Character notes count for the all-notes trophy.",
+            "pt": "As notas de personagem contam para o troféu de todas as notas."
+          }
+        ],
+        "overview": {
+          "en": "After the Darkroad, talk to Astrid at the coliseum; this also opens the coliseum challenges.",
+          "pt": "Depois do Darkroad, fale com a Astrid no coliseu; isso também libera os desafios do coliseu."
+        }
+      }
     },
     {
       "id": "ysx-ch5-co-02",
@@ -289,7 +395,25 @@
             "pt": "Brugand (qualquer série): Fleeting Hope"
           }
         }
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Proud Nordics only.",
+            "pt": "Só no Proud Nordics."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Most rewards are materials, Elding Fragments and Sparkling Whitesand; these are the one-offs.",
+            "pt": "A maioria das recompensas são materiais, Elding Fragments e Sparkling Whitesand; estas são as únicas."
+          }
+        ],
+        "overview": {
+          "en": "Three sets (duo, Adol alone, Karja alone) against Solid Boar, Brugand, Ras-Gublins and Gilveros.",
+          "pt": "Três séries (dupla, só o Adol, só a Karja) contra Solid Boar, Brugand, Ras-Gublins e Gilveros."
+        }
+      }
     },
     {
       "id": "ysx-ch5-co-03",
@@ -424,7 +548,27 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "First chance: they all need Mana Sense, learned at the end of Chapter 4.",
+            "pt": "Primeira chance: todos precisam do Mana Sense, aprendido no fim do Capítulo 4."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Equip the Eagle Eye Doubloon to see them on the map.",
+            "pt": "Equipe o Eagle Eye Doubloon para vê-los no mapa."
+          }
+        ],
+        "optional": [
+          {
+            "en": "On Termina Island, a Silver Pikkard hides in a muddy puddle (visible with Mana Sense).",
+            "pt": "Em Termina Island, um Silver Pikkard se esconde numa poça de lama (visível com o Mana Sense)."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch5-co-04",
@@ -572,7 +716,21 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Reached with the Mana Barrier: southeast blue marker of the Ozmid Expanse.",
+            "pt": "Acessada com a Mana Barrier: marcador azul a sudeste de Ozmid Expanse."
+          }
+        ],
+        "optional": [
+          {
+            "en": "A Speedy Pikkard runs around the island.",
+            "pt": "Um Speedy Pikkard corre pela ilha."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch5-co-06",
@@ -640,7 +798,53 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Proud Nordics only.",
+            "pt": "Só no Proud Nordics."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "You get one Red Crest on this visit. The other door must wait until a later visit. Another storeroom has chests that cannot be opened yet.",
+            "pt": "Você ganha um Red Crest nesta visita. A outra porta fica para uma visita futura. Outro depósito tem baús que ainda não abrem."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Cut the glowing flowers for Sparkling Whitesand.",
+            "pt": "Corte as flores brilhantes para obter Sparkling Whitesand."
+          }
+        ],
+        "alternatives": [
+          {
+            "condition": {
+              "en": "Coliseum storage room",
+              "pt": "Depósito do coliseu"
+            },
+            "instructions": [
+              {
+                "en": "Spend the Red Crest here for a Luck Elixir.",
+                "pt": "Gaste o Red Crest aqui para obter Luck Elixir."
+              }
+            ]
+          },
+          {
+            "condition": {
+              "en": "Red door in Blindman’s Darkroad",
+              "pt": "Porta vermelha do Blindman’s Darkroad"
+            },
+            "instructions": [
+              {
+                "en": "Spend the Red Crest here for Sin Star+.",
+                "pt": "Gaste o Red Crest aqui para obter Sin Star+."
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch5-co-07",
@@ -738,7 +942,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Proud Nordics only.",
+            "pt": "Só no Proud Nordics."
+          }
+        ],
+        "overview": {
+          "en": "Open the tower gate on Öland Island with the Obsidian Key from the coliseum fight.",
+          "pt": "Abra o portão da torre em Öland Island com a Obsidian Key da luta no coliseu."
+        }
+      }
     },
     {
       "id": "ysx-ch5-co-08",
@@ -1034,7 +1250,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "The guides come here at the start of Chapter 6, but the Sonnelia Basin can already be explored late in Chapter 5, once Ilmer Village is freed.",
+            "pt": "Os guias vêm aqui no começo do Capítulo 6, mas a Sonnelia Basin já pode ser explorada no fim do Capítulo 5, depois que Ilmer Village é libertada."
+          }
+        ],
+        "overview": {
+          "en": "Not marked on the map: northwest of Falun Island.",
+          "pt": "Não aparece no mapa: a noroeste de Falun Island."
+        }
+      }
     },
     {
       "id": "ysx-ch5-co-12",
@@ -1116,7 +1344,15 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Grab them before walking to the event marker: it moves the story on and you can only come back next chapter.",
+            "pt": "Pegue antes de ir ao marcador de evento: ele avança a história e você só volta no próximo capítulo."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch5-co-14",

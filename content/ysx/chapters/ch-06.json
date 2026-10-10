@@ -139,7 +139,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Added automatically. Several waves of beasts; dash through their speed attacks or Duo Guard their power attacks for big counters.",
+          "pt": "Entra sozinha no diário. Várias ondas de feras; use o dash contra os ataques rápidos ou a Duo Guard contra os poderosos para grandes contra-ataques."
+        },
+        "rewards": [
+          {
+            "en": "a Gwyllgi Amulet.",
+            "pt": "um Gwyllgi Amulet."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch6-q-04",
@@ -219,7 +237,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Buy Hidden Treasure Chart B from Gregorio's Curio and salvage the glowing spot.",
+          "pt": "Compre o Hidden Treasure Chart B no Gregorio's Curio e resgate o ponto brilhante."
+        },
+        "rewards": [
+          {
+            "en": "the Foreign Gauntlet (gift for Dogi).",
+            "pt": "a Foreign Gauntlet (presente para o Dogi)."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch6-q-06",
@@ -243,7 +279,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Appears when you return to Fuling Island after its event. Accepting turns it to night; several mini-bosses wait at the far end of the cave.",
+          "pt": "Aparece quando você volta a Fuling Island depois do evento dela. Aceitar faz anoitecer; vários mini-chefes esperam no fundo da caverna."
+        },
+        "rewards": [
+          {
+            "en": "a Holy Potion II.",
+            "pt": "uma Holy Potion II."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch6-q-07",
@@ -266,7 +320,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "The mysterious old man asks you to catch his scattered pikkards at the green markers; for the one near the water, mana ride toward it and jump at the right moment.",
+          "pt": "O velho misterioso pede para você pegar os pikkards espalhados nos marcadores verdes; para o que está perto da água, deslize até ele e pule na hora certa."
+        },
+        "rewards": [
+          {
+            "en": "a Pickaback Pikkard (White).",
+            "pt": "um Pickaback Pikkard (White)."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch6-q-08",
@@ -290,7 +362,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Hidden Treasure Chart C comes from the Southern Castle recapture at rank C or better. Avoid the invulnerable Blade Shark.",
+          "pt": "O Hidden Treasure Chart C vem da retomada do Southern Castle com rank C ou melhor. Evite o Blade Shark, que é invulnerável."
+        },
+        "rewards": [
+          {
+            "en": "the Dancer's Shawl.",
+            "pt": "o Dancer's Shawl."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch6-q-09",
@@ -444,7 +534,23 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Needs the Mana Barrier, southeast of Raufos Island.",
+            "pt": "Precisa da Mana Barrier, a sudeste de Raufos Island."
+          },
+          {
+            "en": "The island opens fully after the first event with Nanna.",
+            "pt": "A ilha abre por completo depois do primeiro evento com a Nanna."
+          }
+        ],
+        "overview": {
+          "en": "To clear the boulder near the lake, talk to the two green-marked people first, then call Dogi.",
+          "pt": "Para tirar a rocha perto do lago, fale antes com as duas pessoas marcadas em verde e depois chame o Dogi."
+        }
+      }
     },
     {
       "id": "ysx-ch6-co-02",

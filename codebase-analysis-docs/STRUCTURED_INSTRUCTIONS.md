@@ -57,3 +57,11 @@ Example, alongside the existing `hint` and optional top-level `steps`:
 - `web/e2e/a11y.e2e.ts` checks accessibility in both themes; `npm run e2e:content-update` exercises the real service worker across content deployments.
 
 Future content can adopt guidance incrementally. Short, unambiguous legacy hints do not need artificial categorization.
+
+## Remaining-hint review
+
+The second editorial pass reviewed all 277 items that still used only `hint`. It added guidance to 112: FC 28, SC 31, WTE 1, Ys X 52. The catalog now has 315 structured entries; 165 retain concise directions, simple acquisition conditions, or supplementary navigation notes for existing step lists.
+
+The additions separate one-time-visit warnings, monster-chest preparation, bonus conditions, fallback purchases and rewards. Ys X's Red Crest uses conditional branches rather than additional required steps. WTE's marriage entry separates the warning about consuming the daily gift from its overview.
+
+This pass only added guidance. Existing hints, step arrays, item IDs, deadlines, sources and previously authored guidance were preserved. A read-only regeneration of the affected Python authoring sources was compared against the chapter JSON, including WTE's marriage builder. Both languages remain present; there is no runtime categorization of text.

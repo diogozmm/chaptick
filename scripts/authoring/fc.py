@@ -35,7 +35,7 @@ def qty(name):
     return re.sub(r' x ?(\d)', r' ×\1', name)
 
 
-def chests(c, area, nums, until, hint, sources, title=None, places=None):
+def chests(c, area, nums, until, hint, sources, title=None, places=None, guidance=None):
     """One entry per area; every chest is a route step, in the guide's order. Once published, steps
     may only be appended (progress keys are <itemId>#step-<n>). `places` prefixes a step with the
     map it is on, for groups that span two maps."""
@@ -52,7 +52,7 @@ def chests(c, area, nums, until, hint, sources, title=None, places=None):
         steps.append(t(en, pt))
     n = len(nums)
     name = t(f'{title[0]} ({n})', f'{title[1]} ({n})') if title else t(f'{area[0]} treasure chests ({n})', f'Baús de {area[1]} ({n})')
-    c.item('collectible', name, t(*area), until, t(*hint), 0, sources, steps=steps)
+    c.item('collectible', name, t(*area), until, t(*hint), 0, sources, steps=steps, guidance=guidance)
 
 
 def quest(c, name, where, until, hint, sources, hidden=False, steps=None, guidance=None):
@@ -64,8 +64,8 @@ def bonus(c, name, where, until, hint, sources, steps=None, guidance=None):
     c.item('missable', t(f'Bonus BP: {name[0]}', f'BP bônus: {name[1]}'), t(*where), until, t(*hint), 1, sources, steps=steps, guidance=guidance)
 
 
-def book(c, name, where, until, hint, sources):
-    c.item('collectible', t(name), t(*where), until, t(*hint), 0, sources)
+def book(c, name, where, until, hint, sources, guidance=None):
+    c.item('collectible', t(name), t(*where), until, t(*hint), 0, sources, guidance=guidance)
 
 
 def recipes(c, region, rows, until, hint, sources):
@@ -109,7 +109,14 @@ quest(c, 'Malga Mushroom', ('Rolent Landing Port — Orvid', 'Rolent Landing Por
                      'pt': 'O Firefly Mushroom brilhante fica perto do baú das Silver Earrings, no '
                            'extremo nordeste da Malga Trail; pegá-lo começa uma luta.'}})
 quest(c, 'Streetlight Switch', ("Rolent — Freddy at the Orbment Shop", 'Rolent — Freddy na loja de orbments'), P_REPORTERS,
-      ('3 (+1) BP.\nThe broken light is in the middle of Milch Main Road. For the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818).\nRewards Impede 2.', '3 (+1) BP.\nA luz quebrada fica no meio da Milch Main Road. Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818). Dá Impede 2.'), [D3])
+      ('3 (+1) BP.\nThe broken light is in the middle of Milch Main Road. For the bonus, let Joshua fight and have Estelle enter the code: the 3rd option (544818).\nRewards Impede 2.', '3 (+1) BP.\nA luz quebrada fica no meio da Milch Main Road. Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª opção (544818). Dá Impede 2.'), [D3], guidance={'rewards': [{'en': '3 (+1) BP.', 'pt': '3 (+1) BP.'},
+                    {'en': 'Rewards Impede 2.', 'pt': 'Dá Impede 2.'}],
+        'overview': {'en': 'The broken light is in the middle of Milch Main Road.\n'
+                           'For the bonus, let Joshua fight and have Estelle enter the code: the 3rd '
+                           'option (544818).',
+                     'pt': 'A luz quebrada fica no meio da Milch Main Road.\n'
+                           'Para o bônus, deixe o Joshua lutar e faça a Estelle digitar o código: a 3ª '
+                           'opção (544818).'}})
 quest(c, 'Medicinal Material', ('Rolent Chapel — Father Divine', 'Capela de Rolent — Father Divine'), P_REPORTERS,
       ("3 BP.\nBring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer Hornets in Mistwald). Mistwald only has four Bear Claws: don't cook them all.", '3 BP.\nLeve uma Bear Claw (extremo sudeste de Mistwald) e Monster Powder (Killer Hornets em Mistwald). Mistwald só tem quatro Bear Claws: não cozinhe todas.'), [D2, D3], guidance={'rewards': [{'en': '3 BP.', 'pt': '3 BP.'}],
         'overview': {'en': 'Bring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer '
@@ -144,7 +151,12 @@ bonus(c, ('storming into Esmelas Tower', 'entrar na Esmelas Tower'), ('Esmelas T
        '+1 BP (Child Rescue). A escolha aparece logo ao entrar: escolha a 2ª opção, entrar junto com o Joshua.'), [D1])
 bonus(c, ('sneaking up on the crop thief', 'chegar de surpresa no ladrão de plantações'), ('Perzel Farm', 'Perzel Farm'), P_PERZEL,
       ('+2 BP (Perzel Pest Control). After the stables and the greenhouse, sneak up behind the monster without entering its line of sight, and examine it. Save first.',
-       '+2 BP (Perzel Pest Control). Depois do estábulo e da estufa, chegue por trás do monstro sem entrar no campo de visão dele e examine-o. Salve antes.'), [D2])
+       '+2 BP (Perzel Pest Control). Depois do estábulo e da estufa, chegue por trás do monstro sem entrar no campo de visão dele e examine-o. Salve antes.'), [D2], guidance={'rewards': [{'en': '+2 BP (Perzel Pest Control).', 'pt': '+2 BP (Perzel Pest Control).'}],
+        'preparation': [{'en': 'Save first.', 'pt': 'Salve antes.'}],
+        'overview': {'en': 'After the stables and the greenhouse, sneak up behind the monster without '
+                           'entering its line of sight, and examine it.',
+                     'pt': 'Depois do estábulo e da estufa, chegue por trás do monstro sem entrar no '
+                           'campo de visão dele e examine-o.'}})
 bonus(c, ('the four robbery questions', 'as quatro perguntas do roubo'), ("Rolent — Mayor's Residence", 'Rolent — residência do prefeito'), P_ROBBERY,
       ('Bonus: +4 BP in Mayoral Robbery, one per correct answer.', 'Bônus: +4 BP em Mayoral Robbery, um por resposta correta.'), [D3], steps=[
            t('Question 1: choose option 2.', 'Pergunta 1: escolha a 2ª opção.'),
@@ -155,10 +167,22 @@ bonus(c, ('the four robbery questions', 'as quatro perguntas do roubo'), ("Rolen
                      'pt': 'Bônus: +4 BP em Mayoral Robbery, um por resposta correta.'}]})
 bonus(c, ('the choice in Mistwald', 'a escolha em Mistwald'), ('Mistwald — southeast end', 'Mistwald — extremo sudeste'), P_END,
       ('+1 BP (Mayoral Robbery). Pick the 2nd option during the event. The boss right after is much harder than in the original: bring Earth Guard.',
-       '+1 BP (Mayoral Robbery). Escolha a 2ª opção durante o evento. O chefe logo depois é bem mais difícil que no original: leve Earth Guard.'), [D3])
+       '+1 BP (Mayoral Robbery). Escolha a 2ª opção durante o evento. O chefe logo depois é bem mais difícil que no original: leve Earth Guard.'), [D3], guidance={'rewards': [{'en': '+1 BP (Mayoral Robbery).', 'pt': '+1 BP (Mayoral Robbery).'}],
+        'preparation': [{'en': 'The boss right after is much harder than in the original: bring Earth '
+                               'Guard.',
+                         'pt': 'O chefe logo depois é bem mais difícil que no original: leve Earth '
+                               'Guard.'}],
+        'overview': {'en': 'Pick the 2nd option during the event.',
+                     'pt': 'Escolha a 2ª opção durante o evento.'}})
 book(c, 'Carnelia Vol. 1', ('Rolent — northwest house, upstairs', 'Rolent — casa a noroeste, andar de cima'), VERTE,
      ('Talk to Rhett. The Carnelia volumes are traded together for Estelle and Joshua\'s best weapons late in the game. A missed volume can later be bought, at a high price.',
-      'Fale com o Rhett. Os volumes de Carnelia são trocados juntos pelas melhores armas da Estelle e do Joshua no fim do jogo. Um volume perdido pode ser comprado depois, por um preço alto.'), [D1])
+      'Fale com o Rhett. Os volumes de Carnelia são trocados juntos pelas melhores armas da Estelle e do Joshua no fim do jogo. Um volume perdido pode ser comprado depois, por um preço alto.'), [D1], guidance={'rewards': [{'en': "The Carnelia volumes are traded together for Estelle and Joshua's best "
+                           'weapons late in the game.',
+                     'pt': 'Os volumes de Carnelia são trocados juntos pelas melhores armas da Estelle e '
+                           'do Joshua no fim do jogo.'}],
+        'optional': [{'en': 'A missed volume can later be bought, at a high price.',
+                      'pt': 'Um volume perdido pode ser comprado depois, por um preço alto.'}],
+        'overview': {'en': 'Talk to Rhett.', 'pt': 'Fale com o Rhett.'}})
 book(c, "Luke's Diary", ('Rolent — northwest house, ground floor', 'Rolent — casa a noroeste, térreo'), VERTE,
      ('Read the diary on the table in Luke\'s room.', 'Leia o diário sobre a mesa do quarto do Luke.'), [D1])
 book(c, 'Liberl News Issue 1', ("Rolent — Rinon's General Goods", "Rolent — Rinon's General Goods"), None,
@@ -180,7 +204,12 @@ chests(c, ('Elize Highway', 'Elize Highway'), [1, 15, 16, 17, 18], VERTE,
        ('A hidden cave west of the Droplet of Life is a great early grinding spot.', 'Uma caverna escondida a oeste do Droplet of Life é um ótimo lugar para treinar cedo.'), [D1] + S_ROL)
 chests(c, ('Esmelas Tower', 'Esmelas Tower'), [6, 7, 8, 9, 10, 11, 12, 13, 14], VERTE,
        ('Both monster chests hold Wind Trappers that are very hard before level 8 and explode when defeated. You come back here in the story, so they can wait.',
-        'Os dois baús de monstros têm Wind Trappers muito difíceis antes do nível 8, que explodem ao serem derrotados. Você volta aqui na história, então eles podem esperar.'), S_ROL)
+        'Os dois baús de monstros têm Wind Trappers muito difíceis antes do nível 8, que explodem ao serem derrotados. Você volta aqui na história, então eles podem esperar.'), S_ROL, guidance={'warnings': [{'en': 'Both monster chests hold Wind Trappers that are very hard before level 8 and '
+                            'explode when defeated.',
+                      'pt': 'Os dois baús de monstros têm Wind Trappers muito difíceis antes do nível 8, '
+                            'que explodem ao serem derrotados.'}],
+        'optional': [{'en': 'You come back here in the story, so they can wait.',
+                      'pt': 'Você volta aqui na história, então eles podem esperar.'}]})
 chests(c, ('Mistwald', 'Mistwald'), [19, 20, 21, 22], VERTE,
        ('Black Bangle and Beast Hide Jumpsuit are big early upgrades, with no monster chests.', 'Black Bangle e Beast Hide Jumpsuit são grandes melhorias no começo, sem baús de monstros.'), S_ROL)
 chests(c, ('Malga Trail', 'Malga Trail'), [4, 5, 23, 24, 25, 26], VERTE,
@@ -238,7 +267,12 @@ quest(c, 'Mountain Monster', ('Ravennue Trail', 'Ravennue Trail'), EISEN,
                      'pt': 'O Fate Saber dele pode derrubar na hora: leve proteção contra Deathblow '
                            '(Grail Ring, Crest Charm). Ele é lento e fácil de atordoar.'}})
 quest(c, 'Culinary Collection', ('Bose — Gwen at Restaurant Anterose', 'Bose — Gwen no Restaurant Anterose'), EISEN,
-      ('3 BP.\nBring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway).\nRewards the Royal Omelette recipe.', '3 BP.\nLeve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway). Dá a receita do Royal Omelette.'), [BOSE])
+      ('3 BP.\nBring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway).\nRewards the Royal Omelette recipe.', '3 BP.\nLeve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway). Dá a receita do Royal Omelette.'), [BOSE], guidance={'rewards': [{'en': '3 BP.', 'pt': '3 BP.'},
+                    {'en': 'Rewards the Royal Omelette recipe.', 'pt': 'Dá a receita do Royal Omelette.'}],
+        'overview': {'en': 'Bring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen '
+                           'Road, or the hidden cave on West Bose Highway).',
+                     'pt': 'Leve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road '
+                           'ou a caverna escondida da West Bose Highway).'}})
 quest(c, 'Amber Alarm', ('Amberl Tower', 'Amberl Tower'), RAVENNUE,
       ('4 BP.\nNot on the board: it starts when you enter Amberl Tower. Reach 5F, approach the center, then leave the tower.', '4 BP.\nNão aparece no quadro: começa quando você entra na Amberl Tower. Suba até o 5F, aproxime-se do centro e depois saia da torre.'), [HAKEN], hidden=True, guidance={'rewards': [{'en': '4 BP.', 'pt': '4 BP.'}],
         'overview': {'en': 'Not on the board: it starts when you enter Amberl Tower. Reach 5F, approach '
@@ -301,7 +335,10 @@ book(c, 'Carnelia Vol. 3', ('Haken Gate — Marco in the rest area', 'Haken Gate
      ('Talk to him before entering the main building and examining the far door.', 'Fale com ele antes de entrar no prédio principal e examinar a porta do fundo.'), [HAKEN])
 book(c, 'Carnelia Vol. 4', ('Bose Market — Libro', 'Bose Market — Libro'), VALLERIA,
      ('Talk to him before heading to Valleria Shore. Grocery Minuet sells missed volumes, at a high price.',
-      'Fale com ele antes de ir para Valleria Shore. A Grocery Minuet vende volumes perdidos, por um preço alto.'), [VAL])
+      'Fale com ele antes de ir para Valleria Shore. A Grocery Minuet vende volumes perdidos, por um preço alto.'), [VAL], guidance={'optional': [{'en': 'Grocery Minuet sells missed volumes, at a high price.',
+                      'pt': 'A Grocery Minuet vende volumes perdidos, por um preço alto.'}],
+        'overview': {'en': 'Talk to him before heading to Valleria Shore.',
+                     'pt': 'Fale com ele antes de ir para Valleria Shore.'}})
 book(c, 'Liberl News Issue 3', ('Bose Market — Grocery Minuet', 'Bose Market — Grocery Minuet'), KRONE,
      ('Buy it before leaving the Bose region.', 'Compre antes de sair da região de Bose.'), [VAL])
 book(c, 'Hundred Days War - A True Account', ('Valleria Shore', 'Valleria Shore'), None,
@@ -331,14 +368,23 @@ chests(c, ('East Bose Highway', 'East Bose Highway'), [33, 34, 35], KRONE,
 # Chest 40 belongs to Ravennue Trail (Treasure List); it was first published under West Bose
 # Highway, so it moved as the last Ravennue step to keep every other step's progress key.
 chests(c, ('West Bose Highway', 'West Bose Highway'), [36, 37, 38, 39], KRONE,
-       ('The monster chest holds Katars, an upgrade for Joshua. A hidden cave in the southwest is a farming spot.', 'O baú de monstros tem Katars, uma melhoria para o Joshua. Uma caverna escondida no sudoeste serve para farmar.'), S_BOSE)
+       ('The monster chest holds Katars, an upgrade for Joshua. A hidden cave in the southwest is a farming spot.', 'O baú de monstros tem Katars, uma melhoria para o Joshua. Uma caverna escondida no sudoeste serve para farmar.'), S_BOSE, guidance={'rewards': [{'en': 'The monster chest holds Katars, an upgrade for Joshua.',
+                     'pt': 'O baú de monstros tem Katars, uma melhoria para o Joshua.'}],
+        'optional': [{'en': 'A hidden cave in the southwest is a farming spot.',
+                      'pt': 'Uma caverna escondida no sudoeste serve para farmar.'}]})
 chests(c, ('Ravennue Trail', 'Ravennue Trail'), [41, 42, 43, 44, 45, 46, 47, 40], KRONE,
        ('Four chests before the quest marker on the east side (approaching it starts the boss fight), three after it, plus a Teara Balm.',
         'Quatro baús antes do marcador da quest no lado leste (chegar perto começa a luta), três depois e mais um Teara Balm.'), S_BOSE + [NEO('Treasure List')])
 chests(c, ('Krone Trail (Bose side)', 'Krone Trail (lado de Bose)'), [48, 49, 50], KRONE,
-       ('Includes the Cursed Fried Eyeballs dish. Reach the western checkpoint to unlock fast travel.', 'Inclui o prato Cursed Fried Eyeballs. Chegue ao posto a oeste para liberar a viagem rápida.'), S_BOSE)
+       ('Includes the Cursed Fried Eyeballs dish. Reach the western checkpoint to unlock fast travel.', 'Inclui o prato Cursed Fried Eyeballs. Chegue ao posto a oeste para liberar a viagem rápida.'), S_BOSE, guidance={'rewards': [{'en': 'Includes the Cursed Fried Eyeballs dish.',
+                     'pt': 'Inclui o prato Cursed Fried Eyeballs.'}],
+        'optional': [{'en': 'Reach the western checkpoint to unlock fast travel.',
+                      'pt': 'Chegue ao posto a oeste para liberar a viagem rápida.'}]})
 chests(c, ('Nebel Valley', 'Nebel Valley'), [51, 52, 53], KRONE,
-       ('Many enemies freeze: wear Flame Zippos. Picking up a Bear Claw early skips a fun line in a later quest.', 'Muitos inimigos congelam: use Flame Zippos. Pegar uma Bear Claw cedo pula uma fala divertida de uma quest futura.'), S_BOSE)
+       ('Many enemies freeze: wear Flame Zippos. Picking up a Bear Claw early skips a fun line in a later quest.', 'Muitos inimigos congelam: use Flame Zippos. Pegar uma Bear Claw cedo pula uma fala divertida de uma quest futura.'), S_BOSE, guidance={'preparation': [{'en': 'Many enemies freeze: wear Flame Zippos.',
+                         'pt': 'Muitos inimigos congelam: use Flame Zippos.'}],
+        'warnings': [{'en': 'Picking up a Bear Claw early skips a fun line in a later quest.',
+                      'pt': 'Pegar uma Bear Claw cedo pula uma fala divertida de uma quest futura.'}]})
 chests(c, ('New Ansel Path', 'New Ansel Path'), [54, 55], KRONE,
        ('Evasive enemies: Hit quartz on the field leader helps.', 'Inimigos evasivos: quartzo Hit no líder de campo ajuda.'), S_BOSE)
 chests(c, ('Amberl Tower', 'Amberl Tower'), [56, 57, 58, 59, 60, 61, 62, 63], KRONE,
@@ -346,10 +392,17 @@ chests(c, ('Amberl Tower', 'Amberl Tower'), [56, 57, 58, 59, 60, 61, 62, 63], KR
 chests(c, ('Eisen Road', 'Eisen Road'), [64, 65], KRONE,
        ('Limera reflect arts and call Hresvelgr; both drop the Monster Tenders for Culinary Collection.', 'Limeras refletem arts e chamam Hresvelgr; os dois deixam cair os Monster Tenders da Culinary Collection.'), [HAKEN])
 chests(c, ('Abandoned Mine', 'Abandoned Mine'), [66, 67], MINE,
-       ('One-time visit. Take the right path for both chests before heading toward the story event.', 'Visita única. Pegue o caminho da direita para os dois baús antes de ir ao evento da história.'), [HAKEN])
+       ('One-time visit. Take the right path for both chests before heading toward the story event.', 'Visita única. Pegue o caminho da direita para os dois baús antes de ir ao evento da história.'), [HAKEN], guidance={'warnings': [{'en': 'One-time visit.', 'pt': 'Visita única.'}],
+        'overview': {'en': 'Take the right path for both chests before heading toward the story event.',
+                     'pt': 'Pegue o caminho da direita para os dois baús antes de ir ao evento da '
+                           'história.'}})
 chests(c, ('Sky Pirate Stronghold', 'Sky Pirate Stronghold'), list(range(68, 78)), END1,
        ('One-time dungeon. The last chest holds the Jeweled Ring for the Ring Robbery quest, and the vacuum cleaner on the second floor starts a hidden quest.',
-        'Dungeon de visita única. O último baú tem o Jeweled Ring da quest Ring Robbery, e o aspirador de pó do segundo andar começa uma quest escondida.'), [VAL])
+        'Dungeon de visita única. O último baú tem o Jeweled Ring da quest Ring Robbery, e o aspirador de pó do segundo andar começa uma quest escondida.'), [VAL], guidance={'warnings': [{'en': 'One-time dungeon.', 'pt': 'Dungeon de visita única.'}],
+        'overview': {'en': 'The last chest holds the Jeweled Ring for the Ring Robbery quest, and the '
+                           'vacuum cleaner on the second floor starts a hidden quest.',
+                     'pt': 'O último baú tem o Jeweled Ring da quest Ring Robbery, e o aspirador de pó do '
+                           'segundo andar começa uma quest escondida.'}})
 c.boss(t('Fate Spinner'), t('Ravennue Trail'),
        t('Its Fate Saber can K.O. instantly: wear Deathblow protection or keep revives ready. It is slow, so delay and Overdrive can lock it down.',
          'O Fate Saber pode derrubar na hora: use proteção contra Deathblow ou deixe itens de reviver prontos. Ele é lento, então atraso e Overdrive podem travá-lo.'),
@@ -430,7 +483,10 @@ quest(c, 'Aina Cswy Monster', ('Aina Causeway — outside Sapphirl Tower', 'Aina
                      'pt': 'Os caranguejos refletem golpes físicos até serem atordoados: use arts e '
                            'proteção contra Mute. Deixa cair o Prototype Zero da Prototype Pursuit.'}})
 quest(c, 'Prototype Pursuit', ('Ruan — Karl at Joan Arms & Guards', 'Ruan — Karl na Joan Arms & Guards'), ORPHANAGE,
-      ('3 BP.\nHand over Prototype Zero (from the Aina Cswy Monster).\nRewards Seal Blade.', '3 BP.\nEntregue o Prototype Zero (do Aina Cswy Monster). Dá a Seal Blade.'), [RUAN])
+      ('3 BP.\nHand over Prototype Zero (from the Aina Cswy Monster).\nRewards Seal Blade.', '3 BP.\nEntregue o Prototype Zero (do Aina Cswy Monster). Dá a Seal Blade.'), [RUAN], guidance={'rewards': [{'en': '3 BP.', 'pt': '3 BP.'},
+                    {'en': 'Rewards Seal Blade.', 'pt': 'Dá a Seal Blade.'}],
+        'overview': {'en': 'Hand over Prototype Zero (from the Aina Cswy Monster).',
+                     'pt': 'Entregue o Prototype Zero (do Aina Cswy Monster).'}})
 quest(c, 'Maintenance Mail', ("Ruan — Tobias at Granate's Orbal Factory", "Ruan — Tobias na Granate's Orbal Factory"), ACADEMY,
       ('Reward: 4 BP. Short deadline.\nDeliver the bag to Vogt at the top of Varenne Lighthouse.\nOptional: also bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore’s, Manoria) for a Work Helmet and a Victory Headband.', 'Recompensa: 4 BP. Prazo curto.\nEntregue a bolsa a Vogt no topo de Varenne Lighthouse.\nOpcional: leve também Azelia Rosè (Primo, cassino) e Salty Anchovies (Fiore’s, Manoria) para receber Work Helmet e Victory Headband.'), [ACAD], guidance={'rewards': [{'en': '4 BP.', 'pt': '4 BP.'}],
         'optional': [{'en': 'also bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore’s, '
@@ -483,7 +539,10 @@ quest(c, 'Seaside Way Monster 2', ('Gull Seaside Way', 'Gull Seaside Way'), MANO
                            'Seal e Blind; os Knight Ammonites explodem ao serem derrotados.'}})
 c.item('missable', t('Save Jimmy on Gull Seaside Way', 'Salvar o Jimmy na Gull Seaside Way'), t('Gull Seaside Way — alcove on the beach', 'Gull Seaside Way — reentrância na praia'), REACH_RUAN,
        t('A side event on the way to Ruan (three Sharkagators). Saving him unlocks +2 BP in the Map Mystery quest later.',
-         'Um evento opcional a caminho de Ruan (três Sharkagators). Salvá-lo libera +2 BP na quest Map Mystery depois.'), 0, [MAN])
+         'Um evento opcional a caminho de Ruan (três Sharkagators). Salvá-lo libera +2 BP na quest Map Mystery depois.'), 0, [MAN], guidance={'rewards': [{'en': 'Saving him unlocks +2 BP in the Map Mystery quest later.',
+                     'pt': 'Salvá-lo libera +2 BP na quest Map Mystery depois.'}],
+        'overview': {'en': 'A side event on the way to Ruan (three Sharkagators).',
+                     'pt': 'Um evento opcional a caminho de Ruan (três Sharkagators).'}})
 bonus(c, ('the questions at the orphanage', 'as perguntas no orfanato'), ('Mercia Orphanage; Manoria Village', 'Mercia Orphanage; Manoria Village'), WAREHOUSE,
       ('Bonus: +4 BP in Orphanage Investigation.', 'Bônus: +4 BP em Orphanage Investigation.'), [RUAN], steps=[
            t('Examine every clue, then choose the second option: someone started the fire?', 'Examine todas as pistas e escolha a 2ª opção: alguém começou o incêndio?'),
@@ -507,7 +566,9 @@ book(c, 'Ruan Economic History 2', ('Jenis Royal Academy — faculty lounge, mai
 book(c, 'Ruan Economic History 3', ("Jenis Royal Academy — boys' dorm, 1F southwest room", 'Jenis Royal Academy — dormitório masculino, sala sudoeste do 1F'), EVE,
      ('On the desk.', 'Sobre a escrivaninha.'), [ACAD])
 book(c, 'Carnelia Vol. 5', ('Ruan — Matilda by the hotel bridge', 'Ruan — Matilda junto à ponte do hotel'), KALDIA,
-     ('Available after the festival. If missed, O\'Neil Duty-Free Shop sells it later.', 'Disponível depois do festival. Se perder, a O\'Neil Duty-Free Shop vende depois.'), [ACAD])
+     ('Available after the festival. If missed, O\'Neil Duty-Free Shop sells it later.', 'Disponível depois do festival. Se perder, a O\'Neil Duty-Free Shop vende depois.'), [ACAD], guidance={'requirements': [{'en': 'Available after the festival.', 'pt': 'Disponível depois do festival.'}],
+        'optional': [{'en': "If missed, O'Neil Duty-Free Shop sells it later.",
+                      'pt': "Se perder, a O'Neil Duty-Free Shop vende depois."}]})
 book(c, 'Liberl News Issue 5', ("Ruan — O'Neil Duty-Free Shop", "Ruan — O'Neil Duty-Free Shop"), KALDIA,
      ('Buy it before leaving the Ruan region.', 'Compre antes de sair da região de Ruan.'), [RUAN])
 recipes(c, ('Ruan region', 'região de Ruan'), [
@@ -541,7 +602,11 @@ chests(c, ('Aina Causeway', 'Aina Causeway'), [99, 100, 101], KALDIA,
        ('The hidden cave of the region is to the south, near Air-Letten.', 'A caverna escondida da região fica ao sul, perto de Air-Letten.'), [RUAN])
 chests(c, ('Sapphirl Tower', 'Sapphirl Tower'), list(range(102, 109)), KALDIA,
        ('The north path from 2F has both monster chests (Aqua Trappers, weak to earth); the south path leads to the rest and the roof. Includes Kloe\'s Flamberge.',
-        'O caminho norte a partir do 2F tem os dois baús de monstros (Aqua Trappers, fracos contra terra); o caminho sul leva aos outros e ao terraço. Inclui a Flamberge da Kloe.'), [RUAN])
+        'O caminho norte a partir do 2F tem os dois baús de monstros (Aqua Trappers, fracos contra terra); o caminho sul leva aos outros e ao terraço. Inclui a Flamberge da Kloe.'), [RUAN], guidance={'rewards': [{'en': "Includes Kloe's Flamberge.", 'pt': 'Inclui a Flamberge da Kloe.'}],
+        'overview': {'en': 'The north path from 2F has both monster chests (Aqua Trappers, weak to '
+                           'earth); the south path leads to the rest and the roof.',
+                     'pt': 'O caminho norte a partir do 2F tem os dois baús de monstros (Aqua Trappers, '
+                           'fracos contra terra); o caminho sul leva aos outros e ao terraço.'}})
 c.boss(t('Jabba'), t('Gull Seaside Way'),
        t('Two halves: disable the weaker mobs with Chaos Brand and clear them, then focus the Jabba.',
          'Duas metades: desative os inimigos menores com Chaos Brand e derrube-os, depois foque o Jabba.'), related='fc-ch2-q-02', sources=[MAN])
@@ -618,7 +683,12 @@ quest(c, 'Stopping Smoking', ('Zeiss Central Factory — Dr. Miriam, 4F clinic',
         'overview': {'en': 'Follow the investigation in this order.',
                      'pt': 'Siga a investigação nesta ordem.'}})
 quest(c, 'Fresher Flavors', ('Zeiss — Ben at Forgel Bar', 'Zeiss — Ben no Forgel Bar'), PUMP,
-      ('3 BP.\nPick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben.\nRewards Acerbic Tomato Sandwich.', '3 BP.\nPegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben. Dá o Acerbic Tomato Sandwich.'), [ELMO])
+      ('3 BP.\nPick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben.\nRewards Acerbic Tomato Sandwich.', '3 BP.\nPegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben. Dá o Acerbic Tomato Sandwich.'), [ELMO], guidance={'rewards': [{'en': '3 BP.', 'pt': '3 BP.'},
+                    {'en': 'Rewards Acerbic Tomato Sandwich.', 'pt': 'Dá o Acerbic Tomato Sandwich.'}],
+        'overview': {'en': 'Pick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and '
+                           'show it to Ben.',
+                     'pt': 'Pegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre '
+                           'ao Ben.'}})
 quest(c, 'Tratt Plains Monster', ('Tratt Plains Road', 'Tratt Plains Road'), PUMP,
       ('4 BP.\nTanky against physical hits but weak to arts and most ailments; it shields itself at low HP.', '4 BP.\nAguenta golpes físicos, mas é fraco contra arts e quase todos os efeitos; ele se protege com pouco HP.'), [ELMO], guidance={'rewards': [{'en': '4 BP.', 'pt': '4 BP.'}],
         'overview': {'en': 'Tanky against physical hits but weak to arts and most ailments; it shields '
@@ -683,9 +753,17 @@ bonus(c, ('the answer at the Zeiss guild', 'a resposta na guilda de Zeiss'), ('Z
       ('+3 BP (Vanished Professor). Back at the guild after Leiston Fortress, pick the 3rd option.', '+3 BP (Vanished Professor). De volta à guilda depois da Leiston Fortress, escolha a 3ª opção.'), [LEIS])
 bonus(c, ('sneaking into Leiston Fortress', 'entrar escondido na Leiston Fortress'), ('Leiston Fortress', 'Leiston Fortress'), END3,
       ('+3 BP (Vanished Professor). Get past the alerted guards without being seen (slip by on the left, watching their sight on the minimap). Save first.',
-       '+3 BP (Vanished Professor). Passe pelos guardas em alerta sem ser visto (vá pela esquerda, observando a visão deles no minimapa). Salve antes.'), [LEIS])
+       '+3 BP (Vanished Professor). Passe pelos guardas em alerta sem ser visto (vá pela esquerda, observando a visão deles no minimapa). Salve antes.'), [LEIS], guidance={'rewards': [{'en': '+3 BP (Vanished Professor).', 'pt': '+3 BP (Vanished Professor).'}],
+        'preparation': [{'en': 'Save first.', 'pt': 'Salve antes.'}],
+        'overview': {'en': 'Get past the alerted guards without being seen (slip by on the left, watching '
+                           'their sight on the minimap).',
+                     'pt': 'Passe pelos guardas em alerta sem ser visto (vá pela esquerda, observando a '
+                           'visão deles no minimapa).'}})
 book(c, 'Carnelia Vol. 6', ('Jenis Royal Academy — Violet, clubhouse 2F', 'Jenis Royal Academy — Violet, 2º andar do clube'), KALDIA,
-     ('Before leaving Ruan at the start of the chapter. Bell Station in Zeiss sells it if missed.', 'Antes de sair de Ruan, no começo do capítulo. A Bell Station em Zeiss vende se você perder.'), [ZEISS])
+     ('Before leaving Ruan at the start of the chapter. Bell Station in Zeiss sells it if missed.', 'Antes de sair de Ruan, no começo do capítulo. A Bell Station em Zeiss vende se você perder.'), [ZEISS], guidance={'warnings': [{'en': 'Before leaving Ruan at the start of the chapter.',
+                      'pt': 'Antes de sair de Ruan, no começo do capítulo.'}],
+        'optional': [{'en': 'Bell Station in Zeiss sells it if missed.',
+                      'pt': 'A Bell Station em Zeiss vende se você perder.'}]})
 book(c, 'Liberl News Issue 6', ("Ruan — O'Neil Duty-Free Shop", "Ruan — O'Neil Duty-Free Shop"), KALDIA,
      ('Buy it before leaving Ruan at the start of the chapter.', 'Compre antes de sair de Ruan, no começo do capítulo.'), [ZEISS])
 book(c, "Hertz's Adventure Vol. 1", ('Zeiss Central Factory — 2F library bookshelf', 'Zeiss Central Factory — estante da biblioteca do 2F'), PUMP,
@@ -703,7 +781,9 @@ book(c, "Hertz's Adventure Vol. 2", ('Tratt Plains Road — stone pillars', 'Tra
 book(c, '31 Cypress Trees', ('Sanktheim Gate — top floor', 'Sanktheim Gate — último andar'), PUMP,
      ('Found during Over-Over-Overtime.', 'Encontrado durante a Over-Over-Overtime.'), [ELMO])
 book(c, 'Carnelia Vol. 7', ('Wolf Fort — Bruno', 'Wolf Fort — Bruno'), SANKTHEIM,
-     ('After the factory incident. Bell Station sells it if missed.', 'Depois do incidente na fábrica. A Bell Station vende se você perder.'), [LEIS])
+     ('After the factory incident. Bell Station sells it if missed.', 'Depois do incidente na fábrica. A Bell Station vende se você perder.'), [LEIS], guidance={'requirements': [{'en': 'After the factory incident.', 'pt': 'Depois do incidente na fábrica.'}],
+        'optional': [{'en': 'Bell Station sells it if missed.',
+                      'pt': 'A Bell Station vende se você perder.'}]})
 book(c, 'Liberl News Issue 7', ('Zeiss — Bell Station', 'Zeiss — Bell Station'), SANKTHEIM,
      ('Buy it before leaving the Zeiss region.', 'Compre antes de sair da região de Zeiss.'), [LEIS])
 recipes(c, ('Zeiss region', 'região de Zeiss'), [
@@ -724,11 +804,19 @@ chests(c, ('Kaldia Tunnel', 'Kaldia Tunnel'), list(range(109, 116)), SANKTHEIM,
        ('Combo Attacks and Full Burst are introduced here.', 'Combo Attacks e Full Burst são apresentados aqui.'), [ZEISS])
 chests(c, ('Kaldia Limestone Cave', 'Kaldia Limestone Cave'), list(range(116, 125)), SANKTHEIM,
        ('Optional and stronger than you at first; you return in the story. Pengus fall to Confuse and Deathblow; the two monster chests give Tita\'s G-Impact and the Black Coat.',
-        'Opcional e mais forte que você no começo; você volta na história. Os Pengus caem com Confuse e Deathblow; os dois baús de monstros dão o G-Impact da Tita e o Black Coat.'), [ZEISS])
+        'Opcional e mais forte que você no começo; você volta na história. Os Pengus caem com Confuse e Deathblow; os dois baús de monstros dão o G-Impact da Tita e o Black Coat.'), [ZEISS], guidance={'warnings': [{'en': 'Optional and stronger than you at first; you return in the story.',
+                      'pt': 'Opcional e mais forte que você no começo; você volta na história.'}],
+        'preparation': [{'en': 'Pengus are vulnerable to Confuse and Deathblow.',
+                         'pt': 'Os Pengus são vulneráveis a Confuse e Deathblow.'}],
+        'rewards': [{'en': 'The two monster chests give Tita’s G-Impact and the Black Coat.',
+                     'pt': 'Os dois baús de monstros dão o G-Impact da Tita e o Black Coat.'}]})
 chests(c, ('Tratt Plains Road', 'Tratt Plains Road'), list(range(125, 138)), SANKTHEIM,
        ('Includes Wolf Fort and the hidden cave on the east side; the Shining Pom of the region spawns here.', 'Inclui o Wolf Fort e a caverna escondida no lado leste; o Shining Pom da região aparece aqui.'), [ELMO])
 chests(c, ('Carnelia Tower', 'Carnelia Tower'), list(range(138, 146)), SANKTHEIM,
-       ('On 2F each staircase leads to a chest; only the middle one goes up. The Trappers are weak to water and explode.', 'No 2F cada escada leva a um baú; só a do meio sobe. Os Trappers são fracos contra água e explodem.'), [ELMO])
+       ('On 2F each staircase leads to a chest; only the middle one goes up. The Trappers are weak to water and explode.', 'No 2F cada escada leva a um baú; só a do meio sobe. Os Trappers são fracos contra água e explodem.'), [ELMO], guidance={'warnings': [{'en': 'The Trappers are weak to water and explode.',
+                      'pt': 'Os Trappers são fracos contra água e explodem.'}],
+        'overview': {'en': 'On 2F each staircase leads to a chest; only the middle one goes up.',
+                     'pt': 'No 2F cada escada leva a um baú; só a do meio sobe.'}})
 chests(c, ('Ritter Roadway', 'Ritter Roadway'), list(range(146, 151)), SANKTHEIM,
        ('Three on Ritter Roadway and two at the end of Soldat Army Road; also touch Sanktheim Gate for fast travel.',
         'Três na Ritter Roadway e dois no fim da Soldat Army Road; passe também pelo Sanktheim Gate para a viagem rápida.'),
@@ -816,7 +904,12 @@ bonus(c, ('the name at the Liberl News Service', 'o nome no Liberl News Service'
       ('+2 BP (Royal Message). After reading the profiles, pick the 3rd option.', '+2 BP (Royal Message). Depois de ler os perfis, escolha a 3ª opção.'), [SEW])
 bonus(c, ('reaching the cathedral unseen', 'chegar à catedral sem ser visto'), ('Grancel — at night', 'Grancel — à noite'), CATHEDRAL,
       ('+5 BP (Royal Message). Reach the cathedral without being caught once. Detour to the landing port first for Carnelia Vol. 10. Save first.',
-       '+5 BP (Royal Message). Chegue à catedral sem ser pego nenhuma vez. Passe antes no porto para pegar o Carnelia Vol. 10. Salve antes.'), [SEW])
+       '+5 BP (Royal Message). Chegue à catedral sem ser pego nenhuma vez. Passe antes no porto para pegar o Carnelia Vol. 10. Salve antes.'), [SEW], guidance={'rewards': [{'en': '+5 BP (Royal Message).', 'pt': '+5 BP (Royal Message).'}],
+        'optional': [{'en': 'Detour to the landing port first for Carnelia Vol. 10.',
+                      'pt': 'Passe antes no porto para pegar o Carnelia Vol. 10.'}],
+        'preparation': [{'en': 'Save first.', 'pt': 'Salve antes.'}],
+        'overview': {'en': 'Reach the cathedral without being caught once.',
+                     'pt': 'Chegue à catedral sem ser pego nenhuma vez.'}})
 bonus(c, ('the two answers at the Liberl News Service', 'as duas respostas no Liberl News Service'), ('Grancel — Liberl News Service', 'Grancel — Liberl News Service'), OPERATION,
       ('+4 BP (Hostage Rescue). Upstairs, pick the 2nd option both times.', '+4 BP (Hostage Rescue). No andar de cima, escolha a 2ª opção nas duas vezes.'), [VILLA])
 bonus(c, ('the battles in the Royal Keep', 'as batalhas no Royal Keep'), ('Grancel Castle — Royal Keep', 'Grancel Castle — Royal Keep'), KEEP,
@@ -826,7 +919,12 @@ bonus(c, ('the battles in the Royal Keep', 'as batalhas no Royal Keep'), ('Granc
        ], guidance={'rewards': [{'en': 'Bonus: +5 BP in Save the Queen.', 'pt': 'Bônus: +5 BP em Save the Queen.'}]})
 c.item('missable', t('Trade the Carnelia volumes for the ultimate weapons', 'Trocar os volumes de Carnelia pelas armas definitivas'), t('Grancel — Baral at Baral Coffee House', 'Grancel — Baral no Baral Coffee House'), OPERATION,
        t('With all 11 volumes, Baral trades them for Estelle and Joshua\'s strongest weapons. Missed volumes 8–11 are sold at the Edel Department Store.',
-         'Com os 11 volumes, o Baral troca pelas armas mais fortes da Estelle e do Joshua. Os volumes 8 a 11 perdidos são vendidos na Edel Department Store.'), 0, [VILLA])
+         'Com os 11 volumes, o Baral troca pelas armas mais fortes da Estelle e do Joshua. Os volumes 8 a 11 perdidos são vendidos na Edel Department Store.'), 0, [VILLA], guidance={'requirements': [{'en': "With all 11 volumes, Baral trades them for Estelle and Joshua's "
+                                'strongest weapons.',
+                          'pt': 'Com os 11 volumes, o Baral troca pelas armas mais fortes da Estelle e do '
+                                'Joshua.'}],
+        'optional': [{'en': 'Missed volumes 8–11 are sold at the Edel Department Store.',
+                      'pt': 'Os volumes 8 a 11 perdidos são vendidos na Edel Department Store.'}]})
 book(c, 'Carnelia Vol. 8', ('Air-Letten — Private Otto', 'Air-Letten — Private Otto'), SANKTHEIM,
      ('At the start of the chapter, before leaving Zeiss.', 'No começo do capítulo, antes de sair de Zeiss.'), [GRAN])
 book(c, 'Carnelia Vol. 9', ('Gurune Gate — Private Selbourne, upstairs', 'Gurune Gate — Private Selbourne, andar de cima'), OPERATION,
@@ -854,22 +952,33 @@ recipes(c, ('Grancel', 'Grancel'), [
 chests(c, ('Kirsche Avenue', 'Kirsche Avenue'), [151, 152, 153, 154], OPERATION,
        ('Gurune Gate, to the east, has Carnelia Vol. 9.', 'O Gurune Gate, a leste, tem o Carnelia Vol. 9.'), [GRAN])
 chests(c, ('Erbe Scenic Route', 'Erbe Scenic Route'), [155, 156, 157, 158, 159], OPERATION,
-       ('Easier if you come before the story escort. The hidden cave is behind the bushes at the Sapphirl Monument.', 'Mais fácil se você vier antes da escolta da história. A caverna escondida fica atrás dos arbustos no Sapphirl Monument.'), [GRAN])
+       ('Easier if you come before the story escort. The hidden cave is behind the bushes at the Sapphirl Monument.', 'Mais fácil se você vier antes da escolta da história. A caverna escondida fica atrás dos arbustos no Sapphirl Monument.'), [GRAN], guidance={'preparation': [{'en': 'Easier if you come before the story escort.',
+                         'pt': 'Mais fácil se você vier antes da escolta da história.'}],
+        'overview': {'en': 'The hidden cave is behind the bushes at the Sapphirl Monument.',
+                     'pt': 'A caverna escondida fica atrás dos arbustos no Sapphirl Monument.'}})
 chests(c, ('Grancel Sewers — W. Block', 'Grancel Sewers — W. Block'), [160, 161, 162, 163, 164], OPERATION,
        ('Includes Chewy Spare Ribs, the last standard recipe.', 'Inclui as Chewy Spare Ribs, a última receita padrão.'), [SEW])
 chests(c, ('Grancel Sewers — E. Block', 'Grancel Sewers — E. Block'), [165, 166, 167, 168], OPERATION,
        ('A switch deeper in opens a shortcut to the W. Block.', 'Um interruptor mais ao fundo abre um atalho para o W. Block.'), [SEW])
 chests(c, ('Grancel Sewers — N. Block', 'Grancel Sewers — N. Block'), [169, 170, 171, 172], NOON,
-       ('One-time visit. The monster chest holds the Cloak quartz.', 'Visita única. O baú de monstros tem o quartzo Cloak.'), [VILLA])
+       ('One-time visit. The monster chest holds the Cloak quartz.', 'Visita única. O baú de monstros tem o quartzo Cloak.'), [VILLA], guidance={'warnings': [{'en': 'One-time visit.', 'pt': 'Visita única.'}],
+        'rewards': [{'en': 'The monster chest holds the Cloak quartz.',
+                     'pt': 'O baú de monstros tem o quartzo Cloak.'}]})
 SEALED = ('Many chests are locked behind fights and hold the strongest gear for the rest of the party. Check the minimap legend: the chest icon disappears once a floor is cleared.',
           'Muitos baús ficam atrás de lutas e têm o melhor equipamento para o resto da equipe. Veja a legenda do minimapa: o ícone de baú some quando o andar está limpo.')
 chests(c, ('Sealed Area — 1st Level', 'Sealed Area — 1º nível'), list(range(173, 184)), FINAL_DOOR, SEALED, [FINAL])
 chests(c, ('Sealed Area — 2nd Level', 'Sealed Area — 2º nível'), list(range(184, 193)), FINAL_DOOR,
        ('The Berserker chest is reached from this level by an elevator up to a corner of the 1st Level.', 'O baú do Berserker é alcançado a partir deste nível, por um elevador até um canto do 1º nível.'), [FINAL])
 chests(c, ('Sealed Area — 3rd Level', 'Sealed Area — 3º nível'), list(range(193, 200)), FINAL_DOOR,
-       ("Thor's Hammer on the 2nd Level is reached from here. You should be at 199 of 212 before the elevator down.", 'O Thor\'s Hammer do 2º nível é alcançado daqui. Você deve estar com 199 de 212 antes do elevador para baixo.'), [FINAL])
+       ("Thor's Hammer on the 2nd Level is reached from here. You should be at 199 of 212 before the elevator down.", 'O Thor\'s Hammer do 2º nível é alcançado daqui. Você deve estar com 199 de 212 antes do elevador para baixo.'), [FINAL], guidance={'warnings': [{'en': 'You should be at 199 of 212 before the elevator down.',
+                      'pt': 'Você deve estar com 199 de 212 antes do elevador para baixo.'}],
+        'overview': {'en': "Thor's Hammer on the 2nd Level is reached from here.",
+                     'pt': "O Thor's Hammer do 2º nível é alcançado daqui."}})
 chests(c, ('Sealed Area — 4th Level', 'Sealed Area — 4º nível'), list(range(200, 213)), FINAL_DOOR,
-       ('Take the left (east) path first, then the west path down. Opening the last one gives Treasure Hunter if none were missed.', 'Pegue primeiro o caminho da esquerda (leste), depois o oeste descendo. Abrir o último dá o Treasure Hunter se nenhum ficou para trás.'), [FINAL])
+       ('Take the left (east) path first, then the west path down. Opening the last one gives Treasure Hunter if none were missed.', 'Pegue primeiro o caminho da esquerda (leste), depois o oeste descendo. Abrir o último dá o Treasure Hunter se nenhum ficou para trás.'), [FINAL], guidance={'rewards': [{'en': 'Opening the last one gives Treasure Hunter if none were missed.',
+                     'pt': 'Abrir o último dá o Treasure Hunter se nenhum ficou para trás.'}],
+        'overview': {'en': 'Take the left (east) path first, then the west path down.',
+                     'pt': 'Pegue primeiro o caminho da esquerda (leste), depois o oeste descendo.'}})
 c.boss(t('The Ravens', 'Os Ravens'), t('Grand Arena'),
        t('A pushover by now: burst them down with area arts or S-Crafts right after stunning them.',
          'Fácil a esta altura: derrube com arts em área ou S-Crafts logo depois de atordoá-los.'), sources=[GRAN])

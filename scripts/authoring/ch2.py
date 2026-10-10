@@ -127,7 +127,10 @@ c.item('missable', t("Bonus BP: question in the professor's office", 'BP bônus:
 c.item('collectible', t('Gambler Jack — Vol. 3'), t('Airliner to Zeiss', 'Airliner para Zeiss'), None,
        t('Talk to Olivier a second time after his scene on board. If you miss it, Bell Station in Zeiss sells a copy in Chapter 3.',
          'Fale com o Olivier uma segunda vez depois da cena dele a bordo. Se perder, a Bell Station em Zeiss vende uma cópia no Capítulo 3.'),
-       0, [RUAN, CH3])
+       0, [RUAN, CH3], guidance={'optional': [{'en': 'If you miss it, Bell Station in Zeiss sells a copy in Chapter 3.',
+                      'pt': 'Se perder, a Bell Station em Zeiss vende uma cópia no Capítulo 3.'}],
+        'overview': {'en': 'Talk to Olivier a second time after his scene on board.',
+                     'pt': 'Fale com o Olivier uma segunda vez depois da cena dele a bordo.'}})
 c.item('collectible', t('Liberl News Issue 3'), t('Zeiss — Bell Station'), LEAVE_ZEISS,
        t('Sold at Bell Station.', 'Vendido na Bell Station.'), 0, [ZEISS])
 c.item('collectible', t('Recipes: Zeiss (4)', 'Receitas: Zeiss (4)'), t('Zeiss'), LEAVE_ZEISS,
@@ -153,17 +156,29 @@ c.item('collectible', t('Ritter Roadway treasure chests (3)', 'Baús da Ritter R
 c.item('collectible', t('Soldat Army Road treasure chests (4)', 'Baús da Soldat Army Road (4)'), t('Soldat Army Road'), LEAVE_ZEISS,
        t('Includes a monster chest with grasshoppers. Break the wall midway along the road to open a hidden water cave.',
          'Inclui um baú de monstros com gafanhotos. Quebre a parede no meio da estrada para abrir uma caverna com água escondida.'),
-       0, [ZEISS])
+       0, [ZEISS], guidance={'warnings': [{'en': 'Includes a monster chest with grasshoppers.',
+                      'pt': 'Inclui um baú de monstros com gafanhotos.'}],
+        'optional': [{'en': 'Break the wall midway along the road to open a hidden water cave.',
+                      'pt': 'Quebre a parede no meio da estrada para abrir uma caverna com água '
+                            'escondida.'}]})
 c.item('collectible', t('Kaldia Tunnel treasure chests (6)', 'Baús do Kaldia Tunnel (6)'), t('Kaldia Tunnel'), LEAVE_ZEISS,
        t('Reached from the basement of Zeiss Central Factory.', 'Acesso pelo subsolo da Zeiss Central Factory.'), 0, [ZEISS])
 c.item('collectible', t('Tratt Plains Road treasure chests (13)', 'Baús da Tratt Plains Road (13)'), t('Tratt Plains Road'), LEAVE_ZEISS,
        t('One holds the Pisces Heart fishing rod (east side). Includes a monster chest with sheep and mantises.',
          'Um guarda a vara de pesca Pisces Heart (lado leste). Inclui um baú de monstros com ovelhas e louva-a-deus.'),
-       0, [ZEISS])
+       0, [ZEISS], guidance={'rewards': [{'en': 'One holds the Pisces Heart fishing rod (east side).',
+                     'pt': 'Um guarda a vara de pesca Pisces Heart (lado leste).'}],
+        'warnings': [{'en': 'Includes a monster chest with sheep and mantises.',
+                      'pt': 'Inclui um baú de monstros com ovelhas e louva-a-deus.'}]})
 c.item('collectible', t('Carnelia Tower treasure chests (15)', 'Baús da Carnelia Tower (15)'), t('Carnelia Tower'), LEAVE_ZEISS,
        t('Optional tower northeast of Tratt Plains Road. The top-floor monster chest has five Fire Trappers: water arts, and keep away when they explode.',
          'Torre opcional a nordeste da Tratt Plains Road. O baú de monstros do último andar tem cinco Fire Trappers: use arts de água e se afaste quando explodirem.'),
-       0, [ZEISS])
+       0, [ZEISS], guidance={'warnings': [{'en': 'The top-floor monster chest has five Fire Trappers: water arts, and keep '
+                            'away when they explode.',
+                      'pt': 'O baú de monstros do último andar tem cinco Fire Trappers: use arts de água '
+                            'e se afaste quando explodirem.'}],
+        'overview': {'en': 'Optional tower northeast of Tratt Plains Road.',
+                     'pt': 'Torre opcional a nordeste da Tratt Plains Road.'}})
 c.item('collectible', t('Hot spring cave treasure chests (9)', 'Baús da caverna das fontes termais (9)'), t('Cave north of Elmo Village', 'Caverna ao norte de Elmo Village'), END,
        t('Includes Septium Jelly Beans (eat it for the recipe) and a monster chest. The last two chests are down the side branch near the end, not the path to the healing device.',
          'Inclui Septium Jelly Beans (coma para ganhar a receita) e um baú de monstros. Os dois últimos baús ficam no desvio perto do fim, não no caminho do dispositivo de cura.'),

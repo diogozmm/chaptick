@@ -468,7 +468,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "One-time visit.",
+            "pt": "Visita única."
+          }
+        ],
+        "overview": {
+          "en": "Check the first room on the left on 2F and circle the 3F before going up.",
+          "pt": "Olhe a primeira sala à esquerda no 2F e dê a volta no 3F antes de subir."
+        }
+      }
     },
     {
       "id": "sc-ch4-co-02",
@@ -490,7 +502,19 @@
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 4 - Sky Pirate Stronghold",
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Opening Act"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Fight every enemy type you meet on the way up; you cannot come back.",
+            "pt": "Enfrente todos os tipos de inimigo no caminho para cima; não dá para voltar."
+          },
+          {
+            "en": "Sources disagree on whether these entries count toward the enemy trophy.",
+            "pt": "As fontes divergem sobre essas entradas contarem para o troféu de inimigos."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch4-co-03",
@@ -1100,7 +1124,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP when you reach the end.",
+            "pt": "+3 BP ao chegar ao fim."
+          }
+        ],
+        "overview": {
+          "en": "Follow the high bell sound and the flowers by each correct exit; lowering the music volume helps.",
+          "pt": "Siga o som agudo de sino e as flores junto a cada saída certa; baixar o volume da música ajuda."
+        }
+      }
     },
     {
       "id": "sc-ch4-co-13",

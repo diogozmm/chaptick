@@ -303,7 +303,23 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Monster chest on the 3rd level (Photon Judge E+ survives one lethal hit).",
+            "pt": "Baú de monstros no 3º nível (o Photon Judge E+ sobrevive a um golpe letal)."
+          },
+          {
+            "en": "Some armor is gender-locked.",
+            "pt": "Algumas armaduras são exclusivas por gênero."
+          }
+        ],
+        "overview": {
+          "en": "Two teleporters on the 3rd level each lead to a room with five chests.",
+          "pt": "Dois teletransportes no 3º nível levam cada um a uma sala com cinco baús."
+        }
+      }
     },
     {
       "id": "sc-ch7-co-09",
@@ -503,7 +519,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Blue electricity on the floor causes Mute.",
+            "pt": "A eletricidade azul no chão causa Mute."
+          }
+        ],
+        "overview": {
+          "en": "Look behind the big teleporter walls on the 5th level.\nMonster chest on the west side of the 5th level.",
+          "pt": "Olhe atrás das paredes dos teletransportes grandes no 5º nível.\nBaú de monstros no lado oeste do 5º nível."
+        }
+      }
     },
     {
       "id": "sc-ch7-co-11",

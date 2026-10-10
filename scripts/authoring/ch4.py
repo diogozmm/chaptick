@@ -78,11 +78,18 @@ c.item('missable', t("Bonus BP: Aina's two questions", 'BP bônus: as duas pergu
 c.item('collectible', t('Stronghold treasure chests (13)', 'Baús da fortaleza (13)'), t('First area of the chapter', 'Primeira área do capítulo'), STRONGHOLD,
        t('One-time visit. Check the first room on the left on 2F and circle the 3F before going up.',
          'Visita única. Olhe a primeira sala à esquerda no 2F e dê a volta no 3F antes de subir.'),
-       1, [FORT])
+       1, [FORT], guidance={'warnings': [{'en': 'One-time visit.', 'pt': 'Visita única.'}],
+        'overview': {'en': 'Check the first room on the left on 2F and circle the 3F before going up.',
+                     'pt': 'Olhe a primeira sala à esquerda no 2F e dê a volta no 3F antes de subir.'}})
 c.item('collectible', t('Battle Notes: stronghold (5)', 'Battle Notes: fortaleza (5)'), t('First area of the chapter', 'Primeira área do capítulo'), STRONGHOLD,
        t('Fight every enemy type you meet on the way up; you cannot come back. Sources disagree on whether these entries count toward the enemy trophy.',
          'Enfrente todos os tipos de inimigo no caminho para cima; não dá para voltar. As fontes divergem sobre essas entradas contarem para o troféu de inimigos.'),
-       1, [FORT, GF_OPEN])
+       1, [FORT, GF_OPEN], guidance={'warnings': [{'en': 'Fight every enemy type you meet on the way up; you cannot come back.',
+                      'pt': 'Enfrente todos os tipos de inimigo no caminho para cima; não dá para '
+                            'voltar.'},
+                     {'en': 'Sources disagree on whether these entries count toward the enemy trophy.',
+                      'pt': 'As fontes divergem sobre essas entradas contarem para o troféu de '
+                            'inimigos.'}]})
 c.item('collectible', t('Liberl News Issue 6'), t("Rolent — Rinon's General Goods"), NIGHT_END,
        t('Sold at the general store.', 'Vendido no armazém.'), 0, [ROLENT])
 c.item('collectible', t('Gambler Jack — Vol. 6'), t('Rolent — apartment next to Abend Bar, 2F', 'Rolent — apartamento ao lado do Abend Bar, 2º andar'), NIGHT_END,
@@ -137,7 +144,11 @@ c.item('quest', t('Milch Monster 2'), t('Milch Main Road'), FINALE,
 c.item('missable', t('Bonus BP: the maze in the mist', 'BP bônus: o labirinto na névoa'), t('Mistwald — beyond the red marker', 'Mistwald — além do marcador vermelho'), FINALE,
        t('+3 BP when you reach the end. Follow the high bell sound and the flowers by each correct exit; lowering the music volume helps.',
          '+3 BP ao chegar ao fim. Siga o som agudo de sino e as flores junto a cada saída certa; baixar o volume da música ajuda.'),
-       1, [GF2])
+       1, [GF2], guidance={'rewards': [{'en': '+3 BP when you reach the end.', 'pt': '+3 BP ao chegar ao fim.'}],
+        'overview': {'en': 'Follow the high bell sound and the flowers by each correct exit; lowering the '
+                           'music volume helps.',
+                     'pt': 'Siga o som agudo de sino e as flores junto a cada saída certa; baixar o '
+                           'volume da música ajuda.'}})
 c.item('collectible', t('Chest in the maze (Breeze)', 'Baú no labirinto (Breeze)'), t('Mistwald — beyond the red marker', 'Mistwald — além do marcador vermelho'), FINALE,
        t('Where two exits both have flowers, head toward the chest icon on the minimap.',
          'Onde duas saídas têm flores, vá na direção do ícone de baú no minimapa.'),

@@ -32,7 +32,7 @@ def qty(name):
     return re.sub(r' x ?(\d)', r' ×\1', name)
 
 
-def chests(c, area, rows, hint, sources, until=None, title=None):
+def chests(c, area, rows, hint, sources, until=None, title=None, guidance=None):
     """One checklist entry per area; every chest is a step. rows: (item, where_en, where_pt[, buried])."""
     steps = []
     for row in rows:
@@ -43,7 +43,7 @@ def chests(c, area, rows, hint, sources, until=None, title=None):
         steps.append(t(en + (' (buried)' if buried else ''), pt + (' (enterrado)' if buried else '')))
     n = len(rows)
     name = t(f'{title[0]} ({n})', f'{title[1]} ({n})') if title else t(f'{area[0]} treasure chests ({n})', f'Baús de {area[1]} ({n})')
-    c.item('collectible', name, t(*area), until, t(*hint), 0, sources, steps=steps)
+    c.item('collectible', name, t(*area), until, t(*hint), 0, sources, steps=steps, guidance=guidance)
 
 
 # ======================================================================== Prologue
@@ -91,13 +91,20 @@ chests(c, ('Cavern of Rite', 'Cavern of Rite'), [
     ('Cure Leaf x3', 'Pendulum room, right corner', 'Sala do pêndulo, canto direito'),
     ('Axe Seal', 'Pendulum room, left corner', 'Sala do pêndulo, canto esquerdo'),
 ], ('Use Karja\'s ice pillar to reach the higher platforms. Two buried treasures open in Chapter 5.',
-    'Use o pilar de gelo da Karja para alcançar as plataformas altas. Dois tesouros enterrados abrem no Capítulo 5.'), S2)
+    'Use o pilar de gelo da Karja para alcançar as plataformas altas. Dois tesouros enterrados abrem no Capítulo 5.'), S2, guidance={'requirements': [{'en': 'Two buried treasures open in Chapter 5.',
+                          'pt': 'Dois tesouros enterrados abrem no Capítulo 5.'}],
+        'overview': {'en': "Use Karja's ice pillar to reach the higher platforms.",
+                     'pt': 'Use o pilar de gelo da Karja para alcançar as plataformas altas.'}})
 chests(c, ('Mysterious Island', 'Mysterious Island'), [
     ('Lyre Seal', 'North past the vines: drop to the center of the big open area', 'Ao norte, depois das vinhas: desça ao centro da grande área aberta'),
     ('Red Strong-Arm', 'End of the southeast passage (Mana String on the trees), by the cave', 'Fim da passagem sudeste (Mana String nas árvores), junto à caverna'),
     ('Blessed Paper Scrap', 'Inside the cave (burn the vines)', 'Dentro da caverna (queime as vinhas)'),
 ], ('The Blessed Paper Scrap unlocks an accessory slot. The three locked gray chests in the cave open later with story keys.',
-    'O Blessed Paper Scrap libera um espaço de acessório. Os três baús cinza trancados na caverna abrem mais tarde com chaves da história.'), S2)
+    'O Blessed Paper Scrap libera um espaço de acessório. Os três baús cinza trancados na caverna abrem mais tarde com chaves da história.'), S2, guidance={'rewards': [{'en': 'The Blessed Paper Scrap unlocks an accessory slot.',
+                     'pt': 'O Blessed Paper Scrap libera um espaço de acessório.'}],
+        'requirements': [{'en': 'The three locked gray chests in the cave open later with story keys.',
+                          'pt': 'Os três baús cinza trancados na caverna abrem mais tarde com chaves da '
+                                'história.'}]})
 
 # ======================================================================== Chapter 3
 c = chapter(3, 'Chapter 3', 'Capítulo 3')
@@ -145,7 +152,10 @@ chests(c, ('Termina Island', 'Termina Island'), [
     ('Heartfire Tome', 'Last part: small passage left of the mana stream', 'Última parte: passagem pequena à esquerda do fluxo de mana'),
     ('1000 Gold', 'Last part: below the next ruins', 'Última parte: abaixo das ruínas seguintes'),
 ], ('Celadon Clay counts for the Sandras Spruce-Up quest in Chapter 4. Seven buried treasures here open in Chapter 5.',
-    'A Celadon Clay conta para a quest Sandras Spruce-Up no Capítulo 4. Sete tesouros enterrados aqui abrem no Capítulo 5.'), S3)
+    'A Celadon Clay conta para a quest Sandras Spruce-Up no Capítulo 4. Sete tesouros enterrados aqui abrem no Capítulo 5.'), S3, guidance={'rewards': [{'en': 'Celadon Clay counts for the Sandras Spruce-Up quest in Chapter 4.',
+                     'pt': 'A Celadon Clay conta para a quest Sandras Spruce-Up no Capítulo 4.'}],
+        'requirements': [{'en': 'Seven buried treasures here open in Chapter 5.',
+                          'pt': 'Sete tesouros enterrados aqui abrem no Capítulo 5.'}]})
 chests(c, ('Viewpoint Isle', 'Viewpoint Isle'), [
     ('Luck Elixir', 'Marsh: north side, behind a tree', 'Pântano: lado norte, atrás de uma árvore'),
     ('Sweet Remedy x5', 'South corner, past the ledge to the west side', 'Canto sul, depois da borda para o lado oeste'),
@@ -170,7 +180,13 @@ c.item('quest', t('Sandras Spruce-Up'), t('Sandras — Mirabel on the lower deck
                      'pt': 'Reúna estes materiais para Sandras Spruce-Up.'}})
 c.item('quest', t('Invaluable Memory'), t('Sandras — Momina; ship southeast of the recaptured island', 'Sandras — Momina; navio a sudeste da ilha retomada'), FOG,
        t('Long deadline.\nGo to the green marker southeast of the island you recaptured in the Ozmid Expanse and beat the Griegrs on the missing ship.\nRewards a Plain Box Lunch (XL) and new stock in her store.', 'Prazo longo.\nVá ao marcador verde a sudeste da ilha retomada em Ozmid Expanse e derrote os Griegrs no navio desaparecido. Dá um Plain Box Lunch (XL) e itens novos na loja dela.'),
-       0, [NEO('Chapter 4 - Ozmid Expanse')] + S4)
+       0, [NEO('Chapter 4 - Ozmid Expanse')] + S4, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Go to the green marker southeast of the island you recaptured in the Ozmid '
+                           'Expanse and beat the Griegrs on the missing ship.',
+                     'pt': 'Vá ao marcador verde a sudeste da ilha retomada em Ozmid Expanse e derrote os '
+                           'Griegrs no navio desaparecido.'},
+        'rewards': [{'en': 'a Plain Box Lunch (XL) and new stock in her store.',
+                     'pt': 'um Plain Box Lunch (XL) e itens novos na loja dela.'}]})
 c.item('quest', t('Many Mappy Returns'), t('Sandras — Dogi at the helm; Great Tidal Reef', 'Sandras — Dogi no timão; Great Tidal Reef'), FOG,
        t('Long deadline.\nTravel to Great Tidal Reef in the far south.', 'Prazo longo.\nVá até Great Tidal Reef, no extremo sul.'),
        0, [NEO('Chapter 4 - Ozmid Expanse')] + S4, steps=[
@@ -182,10 +198,22 @@ c.item('quest', t('Many Mappy Returns'), t('Sandras — Dogi at the helm; Great 
                      'pt': 'Vá até Great Tidal Reef, no extremo sul.'}})
 c.item('quest', t('Clicking Together'), t('Sandras — Ashley on the deck', 'Sandras — Ashley no convés'), FOG,
        t('Long deadline.\nWatch the dolphins with the spyglass near the island where Ashley was rescued, then repeat at each new marker.\nRewards a Blessed Paper Scrap.', 'Prazo longo.\nObserve os golfinhos com a luneta perto da ilha onde a Ashley foi resgatada e repita em cada marcador novo. Dá um Blessed Paper Scrap.'),
-       0, [NEO('Chapter 4 - Ozmid Expanse')] + S4)
+       0, [NEO('Chapter 4 - Ozmid Expanse')] + S4, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Watch the dolphins with the spyglass near the island where Ashley was '
+                           'rescued, then repeat at each new marker.',
+                     'pt': 'Observe os golfinhos com a luneta perto da ilha onde a Ashley foi resgatada e '
+                           'repita em cada marcador novo.'},
+        'rewards': [{'en': 'a Blessed Paper Scrap.', 'pt': 'um Blessed Paper Scrap.'}]})
 c.item('quest', t('Treasure Trawl A'), t('Sea chart — orange circle', 'Mapa marítimo — círculo laranja'), FOG,
        t('Long deadline.\nStarts with Hidden Treasure Chart A (a chest on Anchor Island). Hold the button at the glowing spot in the orange circle.\nRewards 3,000 Gold. All six Treasure Trawls lead to a character note later.', 'Prazo longo.\nComeça com o Hidden Treasure Chart A (um baú em Anchor Island). Segure o botão no ponto brilhante do círculo laranja. Dá 3.000 Gold. Os seis Treasure Trawls levam a uma nota de personagem mais tarde.'),
-       0, [NEO('Chapter 4 - Anchor Island')] + S4)
+       0, [NEO('Chapter 4 - Anchor Island')] + S4, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Starts with Hidden Treasure Chart A (a chest on Anchor Island). Hold the '
+                           'button at the glowing spot in the orange circle.',
+                     'pt': 'Começa com o Hidden Treasure Chart A (um baú em Anchor Island). Segure o '
+                           'botão no ponto brilhante do círculo laranja.'},
+        'rewards': [{'en': '3,000 Gold. All six Treasure Trawls lead to a character note later.',
+                     'pt': '3.000 Gold. Os seis Treasure Trawls levam a uma nota de personagem mais '
+                           'tarde.'}]})
 c.boss(t('Gilveros'), t('Dieback Isle (optional challenge)', 'Dieback Isle (desafio opcional)'),
        t('Level 47 challenge: fine to come back later. Its black gas curses you; keep moving around it and punish its snapping lunges. Rewards a Veteran Necklace.',
          'Desafio de nível 47: dá para voltar depois. O gás negro amaldiçoa; continue se movendo ao redor e castigue as investidas de mordida. Dá um Veteran Necklace.'),
@@ -221,24 +249,38 @@ chests(c, ('Inlet Isle', 'Inlet Isle'), [
     ('800 Gold', 'Around the open field', 'Pelo campo aberto'),
     ('Yellow Drop x3', 'Southeast corner', 'Canto sudeste'),
 ], ('The optional event with Lux and Sache sends you back to the ship: return for the southeast chest. Two buried treasures open in Chapter 5.',
-    'O evento opcional com o Lux e a Sache leva você de volta ao navio: volte para pegar o baú do sudeste. Dois tesouros enterrados abrem no Capítulo 5.'), S4C)
+    'O evento opcional com o Lux e a Sache leva você de volta ao navio: volte para pegar o baú do sudeste. Dois tesouros enterrados abrem no Capítulo 5.'), S4C, guidance={'warnings': [{'en': 'The optional event with Lux and Sache sends you back to the ship: return for '
+                            'the southeast chest.',
+                      'pt': 'O evento opcional com o Lux e a Sache leva você de volta ao navio: volte '
+                            'para pegar o baú do sudeste.'}],
+        'requirements': [{'en': 'Two buried treasures open in Chapter 5.',
+                          'pt': 'Dois tesouros enterrados abrem no Capítulo 5.'}]})
 chests(c, ('Dieback Isle', 'Dieback Isle'), [
     ('Supple Leather x5', 'East side', 'Lado leste'),
     ('Blue Drop x3', 'West cliff, across the muddy water', 'Penhasco oeste, depois da água lamacenta'),
     ('Defense Elixir', 'Red chest behind Gilveros (optional level 47 challenge)', 'Baú vermelho atrás do Gilveros (desafio opcional de nível 47)'),
 ], ('Gilveros can wait until you are stronger. Three buried treasures open in Chapter 5.',
-    'O Gilveros pode esperar até você ficar mais forte. Três tesouros enterrados abrem no Capítulo 5.'), S4C)
+    'O Gilveros pode esperar até você ficar mais forte. Três tesouros enterrados abrem no Capítulo 5.'), S4C, guidance={'preparation': [{'en': 'Gilveros can wait until you are stronger.',
+                         'pt': 'O Gilveros pode esperar até você ficar mais forte.'}],
+        'requirements': [{'en': 'Three buried treasures open in Chapter 5.',
+                          'pt': 'Três tesouros enterrados abrem no Capítulo 5.'}]})
 S4O = [NEO('Chapter 4 - Ozmid Expanse')]
 chests(c, ('Great Tidal Reef', 'Great Tidal Reef'), [
     ('Suzhen Charm', 'On the way to the quest marker in the northeast', 'No caminho até o marcador da quest, no nordeste'),
     ('Repair Kit x3', 'On the way to the quest marker in the northeast', 'No caminho até o marcador da quest, no nordeste'),
 ], ('Far south of the Ozmid Expanse (Many Mappy Returns). Two buried treasures open in Chapter 5.',
-    'No extremo sul de Ozmid Expanse (Many Mappy Returns). Dois tesouros enterrados abrem no Capítulo 5.'), S4O)
+    'No extremo sul de Ozmid Expanse (Many Mappy Returns). Dois tesouros enterrados abrem no Capítulo 5.'), S4O, guidance={'requirements': [{'en': 'Two buried treasures open in Chapter 5.',
+                          'pt': 'Dois tesouros enterrados abrem no Capítulo 5.'}],
+        'overview': {'en': 'Far south of the Ozmid Expanse (Many Mappy Returns).',
+                     'pt': 'No extremo sul de Ozmid Expanse (Many Mappy Returns).'}})
 chests(c, ('Breezy Isle', 'Breezy Isle'), [
     ('Shield Star', 'Around the island', 'Pela ilha'),
     ("Dvergr's Hammer", "Near the shut-in's tent (gift for Cruz)", 'Perto da barraca do recluso (presente para o Cruz)'),
 ], ('Westernmost blue marker of the Ozmid Expanse. Two buried treasures open in Chapter 5.',
-    'O marcador azul mais a oeste de Ozmid Expanse. Dois tesouros enterrados abrem no Capítulo 5.'), S4O)
+    'O marcador azul mais a oeste de Ozmid Expanse. Dois tesouros enterrados abrem no Capítulo 5.'), S4O, guidance={'requirements': [{'en': 'Two buried treasures open in Chapter 5.',
+                          'pt': 'Dois tesouros enterrados abrem no Capítulo 5.'}],
+        'overview': {'en': 'Westernmost blue marker of the Ozmid Expanse.',
+                     'pt': 'O marcador azul mais a oeste de Ozmid Expanse.'}})
 chests(c, ('Krangal Island', 'Krangal Island'), [
     ('Extinguisher x3', 'Around the island', 'Pela ilha'),
     ('Sword Star', 'Around the island', 'Pela ilha'),
@@ -250,7 +292,10 @@ chests(c, ('Anchor Island — Village Outskirts', 'Anchor Island — Village Out
     ('Repair Kit x3', 'Drop off the cliff before the Mana String spot, by the barrels', 'Desça do penhasco antes do ponto de Mana String, junto aos barris'),
     ('Hidden Treasure Chart A', 'On the water before the event marker: freeze it with Karja, burn the vines with Adol', 'Sobre a água antes do marcador de evento: congele com a Karja e queime as vinhas com o Adol'),
 ], ('The chart starts Treasure Trawl A. Three buried treasures open in Chapter 5.',
-    'O mapa começa a Treasure Trawl A. Três tesouros enterrados abrem no Capítulo 5.'), [NEO('Chapter 4 - Anchor Island')])
+    'O mapa começa a Treasure Trawl A. Três tesouros enterrados abrem no Capítulo 5.'), [NEO('Chapter 4 - Anchor Island')], guidance={'requirements': [{'en': 'Three buried treasures open in Chapter 5.',
+                          'pt': 'Três tesouros enterrados abrem no Capítulo 5.'}],
+        'overview': {'en': 'The chart starts Treasure Trawl A.',
+                     'pt': 'O mapa começa a Treasure Trawl A.'}})
 chests(c, ('Haze Island', 'Haze Island'), [
     ('Fishing Bait EX x3', 'End of the first path, by a fishing spot', 'Fim do primeiro caminho, junto a um pesqueiro'),
     ('Misericorde', 'Southeast where the path splits', 'Sudeste, onde o caminho se divide'),
@@ -269,7 +314,12 @@ chests(c, ('Haze Island', 'Haze Island'), [
     ('Luncheon Recipe: Chowder', 'Back half: boulder to the southeast', 'Metade de trás: rocha a sudeste'),
     ('Strength Elixir', 'Back half: open area to the north', 'Metade de trás: área aberta ao norte', B),
 ], ('Buried treasures open with Mana Sense, which you learn on Viewpoint Isle partway through the island. One red chest in the back half only opens in Chapter 9.',
-    'Os tesouros enterrados abrem com o Mana Sense, que você aprende em Viewpoint Isle no meio da ilha. Um baú vermelho na metade de trás só abre no Capítulo 9.'), S4H)
+    'Os tesouros enterrados abrem com o Mana Sense, que você aprende em Viewpoint Isle no meio da ilha. Um baú vermelho na metade de trás só abre no Capítulo 9.'), S4H, guidance={'requirements': [{'en': 'Buried treasures open with Mana Sense, which you learn on Viewpoint Isle '
+                                'partway through the island.',
+                          'pt': 'Os tesouros enterrados abrem com o Mana Sense, que você aprende em '
+                                'Viewpoint Isle no meio da ilha.'},
+                         {'en': 'One red chest in the back half only opens in Chapter 9.',
+                          'pt': 'Um baú vermelho na metade de trás só abre no Capítulo 9.'}]})
 chests(c, ('Viewpoint Isle — the cave', 'Viewpoint Isle — a caverna'), [
     ('Crystal Shard x500', 'Under the tree', 'Embaixo da árvore', B),
     ("Tactician's Earrings", 'Southwest, across the invisible platforms', 'Sudoeste, depois das plataformas invisíveis'),
@@ -280,7 +330,12 @@ chests(c, ('Viewpoint Isle — the cave', 'Viewpoint Isle — a caverna'), [
     ('Chalice Star', 'Northeast, a little further', 'Nordeste, um pouco adiante'),
     ('Break Elixir', 'Northernmost point', 'Ponto mais ao norte', B),
 ], ('Equip the Eagle Eye Doubloon (Report Adventures) so buried treasures show on the map while Mana Sense lasts. Use Mana Sense on the eye engravings to reveal the platforms.',
-    'Equipe o Eagle Eye Doubloon (Report Adventures) para os tesouros enterrados aparecerem no mapa enquanto o Mana Sense durar. Use o Mana Sense nos entalhes de olho para revelar as plataformas.'), S4H)
+    'Equipe o Eagle Eye Doubloon (Report Adventures) para os tesouros enterrados aparecerem no mapa enquanto o Mana Sense durar. Use o Mana Sense nos entalhes de olho para revelar as plataformas.'), S4H, guidance={'preparation': [{'en': 'Equip the Eagle Eye Doubloon (Report Adventures) so buried treasures show '
+                               'on the map while Mana Sense lasts.',
+                         'pt': 'Equipe o Eagle Eye Doubloon (Report Adventures) para os tesouros '
+                               'enterrados aparecerem no mapa enquanto o Mana Sense durar.'}],
+        'overview': {'en': 'Use Mana Sense on the eye engravings to reveal the platforms.',
+                     'pt': 'Use o Mana Sense nos entalhes de olho para revelar as plataformas.'}})
 
 # ======================================================================== Chapter 5
 c = chapter(5, 'Chapter 5', 'Capítulo 5')
@@ -292,19 +347,50 @@ S5 = [GF('Chapter 5: Beacon of Reprisal')]
 S5S = [NEO('Chapter 5 - Sandras')]
 c.item('missable', t("Momina's character note #1", 'Nota de personagem da Momina #1'), t('Sandras — lower deck', 'Sandras — convés inferior'), ISAAC,
        t('One of only three time-limited character notes.\nAfter the fight in Ilmer Village, before talking to the village elder, go back to the ship and talk to Momina and Rafe on the lower deck.\nMissing it blocks the all-notes trophy.', 'Uma das três únicas notas de personagem com tempo limitado.\nDepois da luta em Ilmer Village, antes de falar com o ancião da vila, volte ao navio e fale com a Momina e o Rafe no convés inferior.\nPerder impede o troféu de todas as notas.'),
-       0, [NEO('Chapter 5 - Falun Island')])
+       0, [NEO('Chapter 5 - Falun Island')], guidance={'warnings': [{'en': 'One of only three time-limited character notes.',
+                      'pt': 'Uma das três únicas notas de personagem com tempo limitado.'},
+                     {'en': 'Missing it blocks the all-notes trophy.',
+                      'pt': 'Perder impede o troféu de todas as notas.'}],
+        'overview': {'en': 'After the fight in Ilmer Village, before talking to the village elder, go '
+                           'back to the ship and talk to Momina and Rafe on the lower deck.',
+                     'pt': 'Depois da luta em Ilmer Village, antes de falar com o ancião da vila, volte '
+                           'ao navio e fale com a Momina e o Rafe no convés inferior.'}})
 c.item('missable', t("Hugill's character note #1", 'Nota de personagem do Hugill #1'), t('Raufos Island — next to the Hewnstone', 'Raufos Island — ao lado da Hewnstone'), END7,
        t('Time-limited character note.\nRight after arriving on Raufos Island, talk to Hugill standing beside the Hewnstone with a bag.\nIf you miss it, there is one more chance in Chapter 7: talk to him at the Dvergr Coast camp after the Falaise Runestone.', 'Nota de personagem com tempo limitado.\nLogo ao chegar a Raufos Island, fale com o Hugill, parado ao lado da Hewnstone com uma bolsa.\nSe perder, há mais uma chance no Capítulo 7: fale com ele no acampamento da Dvergr Coast depois da Runestone de Falaise.'),
-       0, [NEO('Chapter 5 - Raufos Island'), NEO('Chapter 7 - Falaise Peninsula')])
+       0, [NEO('Chapter 5 - Raufos Island'), NEO('Chapter 7 - Falaise Peninsula')], guidance={'warnings': [{'en': 'Time-limited character note.',
+                      'pt': 'Nota de personagem com tempo limitado.'}],
+        'optional': [{'en': 'If you miss it, there is one more chance in Chapter 7: talk to him at the '
+                            'Dvergr Coast camp after the Falaise Runestone.',
+                      'pt': 'Se perder, há mais uma chance no Capítulo 7: fale com ele no acampamento da '
+                            'Dvergr Coast depois da Runestone de Falaise.'}],
+        'overview': {'en': 'Right after arriving on Raufos Island, talk to Hugill standing beside the '
+                           'Hewnstone with a bag.',
+                     'pt': 'Logo ao chegar a Raufos Island, fale com o Hugill, parado ao lado da '
+                           'Hewnstone com uma bolsa.'}})
 c.item('quest', t('Barrels of Unfun'), t('Anchor Island — Ivalde in Mynorca Village', 'Anchor Island — Ivalde em Mynorca Village'), ISAAC,
        t("Long deadline.\nSail to every green marker at sea and destroy the explosive barrels, then report to Ivalde.\nRewards a Pirate's Necklace, plus an Axe Star+ and a Vitality Elixir.", "Prazo longo.\nNavegue até cada marcador verde no mar e destrua os barris explosivos, depois fale com a Ivalde. Dá um Pirate's Necklace, além de um Axe Star+ e um Vitality Elixir."),
-       0, S5S + S5)
+       0, S5S + S5, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Sail to every green marker at sea and destroy the explosive barrels, then '
+                           'report to Ivalde.',
+                     'pt': 'Navegue até cada marcador verde no mar e destrua os barris explosivos, depois '
+                           'fale com a Ivalde.'},
+        'rewards': [{'en': "a Pirate's Necklace, plus an Axe Star+ and a Vitality Elixir.",
+                     'pt': "um Pirate's Necklace, além de um Axe Star+ e um Vitality Elixir."}]})
 c.item('quest', t('Peerless Practice'), t('The Norgest — northeast of the Ozmid Expanse', 'O Norgest — nordeste de Ozmid Expanse'), ISAAC,
        t("Long deadline.\nFrom Gunnar's letter. Pick the first option on his ship and win the duel.\nRewards the Brave General's Belt.", "Prazo longo.\nVem da carta do Gunnar. Escolha a primeira opção no navio dele e vença o duelo. Dá o Brave General's Belt."),
-       0, S5S + S5)
+       0, S5S + S5, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': "From Gunnar's letter. Pick the first option on his ship and win the duel.",
+                     'pt': 'Vem da carta do Gunnar. Escolha a primeira opção no navio dele e vença o '
+                           'duelo.'},
+        'rewards': [{'en': "the Brave General's Belt.", 'pt': "o Brave General's Belt."}]})
 c.item('quest', t('Cull the Griegr: Lecto'), t('Lecto Island — Cavern Depths', 'Lecto Island — Cavern Depths'), ISAAC,
        t('Long deadline.\nAdded automatically. Fast travel to the Cavern Depths and beat the two knight-type Griegrs.\nRewards the Martial Formula.', 'Prazo longo.\nEntra sozinha no diário. Viaje até a Cavern Depths e derrote os dois Griegrs do tipo cavaleiro. Dá a Martial Formula.'),
-       0, S5S + S5)
+       0, S5S + S5, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Added automatically. Fast travel to the Cavern Depths and beat the two '
+                           'knight-type Griegrs.',
+                     'pt': 'Entra sozinha no diário. Viaje até a Cavern Depths e derrote os dois Griegrs '
+                           'do tipo cavaleiro.'},
+        'rewards': [{'en': 'the Martial Formula.', 'pt': 'a Martial Formula.'}]})
 c.item('quest', t('EX: Öland Island Investigation (Proud)', 'EX: Öland Island Investigation (Proud)'), t('Öland Island — north of the center of Carnac Waters', 'Öland Island — ao norte do centro de Carnac Waters'), None,
        t('Proud Nordics only.\nRewards: Abiding Love and an Almighty Star.\nThe guide gives no deadline; complete it in this chapter to be safe.', 'Exclusivo de Proud Nordics.\nRecompensas: Abiding Love e um Almighty Star.\nO guia não informa o prazo; por segurança, conclua neste capítulo.'),
        0, [NEO('Chapter 5 - Öland Island (Proud Only)'), NEO('Chapter 5 - Buried Treasure')], steps=[
@@ -320,7 +406,13 @@ c.item('quest', t('EX: Öland Island Investigation (Proud)', 'EX: Öland Island 
 c.item('collectible', t("Astrid's character note #1 (Proud)", 'Nota de personagem da Astrid #1 (Proud)'), t('Öland Island — coliseum', 'Öland Island — coliseu'), None,
        t('Proud Nordics only. After the Darkroad, talk to Astrid at the coliseum; this also opens the coliseum challenges. Character notes count for the all-notes trophy.',
          'Só no Proud Nordics. Depois do Darkroad, fale com a Astrid no coliseu; isso também libera os desafios do coliseu. As notas de personagem contam para o troféu de todas as notas.'),
-       0, [NEO('Chapter 5 - Öland Island (Proud Only)')])
+       0, [NEO('Chapter 5 - Öland Island (Proud Only)')], guidance={'requirements': [{'en': 'Proud Nordics only.', 'pt': 'Só no Proud Nordics.'}],
+        'rewards': [{'en': 'Character notes count for the all-notes trophy.',
+                     'pt': 'As notas de personagem contam para o troféu de todas as notas.'}],
+        'overview': {'en': 'After the Darkroad, talk to Astrid at the coliseum; this also opens the '
+                           'coliseum challenges.',
+                     'pt': 'Depois do Darkroad, fale com a Astrid no coliseu; isso também libera os '
+                           'desafios do coliseu.'}})
 c.item('collectible', t('Öland coliseum — unique rewards (Proud)', 'Coliseu de Öland — recompensas únicas (Proud)'), t('Öland Island — coliseum', 'Öland Island — coliseu'), None,
        t('Proud Nordics only. Three sets (duo, Adol alone, Karja alone) against Solid Boar, Brugand, Ras-Gublins and Gilveros. Most rewards are materials, Elding Fragments and Sparkling Whitesand; these are the one-offs.',
          'Só no Proud Nordics. Três séries (dupla, só o Adol, só a Karja) contra Solid Boar, Brugand, Ras-Gublins e Gilveros. A maioria das recompensas são materiais, Elding Fragments e Sparkling Whitesand; estas são as únicas.'),
@@ -330,7 +422,15 @@ c.item('collectible', t('Öland coliseum — unique rewards (Proud)', 'Coliseu d
               t('Adol — Gilveros: Ancient Trove Chart 4', 'Adol — Gilveros: Ancient Trove Chart 4'),
               t('Karja — Solid Boar: Phylleia Noggin', 'Karja — Solid Boar: Phylleia Noggin'),
               t('Karja — Gilveros: Chibi Hugill 2', 'Karja — Gilveros: Chibi Hugill 2'),
-              t('Brugand (any set): Fleeting Hope', 'Brugand (qualquer série): Fleeting Hope')])
+              t('Brugand (any set): Fleeting Hope', 'Brugand (qualquer série): Fleeting Hope')], guidance={'requirements': [{'en': 'Proud Nordics only.', 'pt': 'Só no Proud Nordics.'}],
+        'rewards': [{'en': 'Most rewards are materials, Elding Fragments and Sparkling Whitesand; these '
+                           'are the one-offs.',
+                     'pt': 'A maioria das recompensas são materiais, Elding Fragments e Sparkling '
+                           'Whitesand; estas são as únicas.'}],
+        'overview': {'en': 'Three sets (duo, Adol alone, Karja alone) against Solid Boar, Brugand, '
+                           'Ras-Gublins and Gilveros.',
+                     'pt': 'Três séries (dupla, só o Adol, só a Karja) contra Solid Boar, Brugand, '
+                           'Ras-Gublins e Gilveros.'}})
 c.boss(t('Gunnar'), t('The Norgest — northeast of the Ozmid Expanse', 'O Norgest — nordeste de Ozmid Expanse'),
        t('Wide spear sweeps, a charged thrust and a charged ground slam. After half HP he leaps and dives with his spear: dodge away when he jumps.',
          'Golpes amplos de lança, uma estocada carregada e uma pancada no chão carregada. Depois da metade do HP, ele salta e mergulha com a lança: afaste-se quando ele pular.'),
@@ -386,7 +486,15 @@ chests(c, ('Carnac Waters', 'Carnac Waters'), [
     ('Red Drop x10', 'Dieback Isle', 'Dieback Isle', B),
     ('Fishing Bait x3', 'Dieback Isle', 'Dieback Isle', B),
 ], ('First chance: they all need Mana Sense, learned at the end of Chapter 4.\nEquip the Eagle Eye Doubloon to see them on the map.\nOn Termina Island, a Silver Pikkard hides in a muddy puddle (visible with Mana Sense).', 'Primeira chance: todos precisam do Mana Sense, aprendido no fim do Capítulo 4.\nEquipe o Eagle Eye Doubloon para vê-los no mapa.\nEm Termina Island, um Silver Pikkard se esconde numa poça de lama (visível com o Mana Sense).'),
-    S5B, title=('Buried treasures in Carnac Waters', 'Tesouros enterrados em Carnac Waters'))
+    S5B, title=('Buried treasures in Carnac Waters', 'Tesouros enterrados em Carnac Waters'), guidance={'requirements': [{'en': 'First chance: they all need Mana Sense, learned at the end of Chapter 4.',
+                          'pt': 'Primeira chance: todos precisam do Mana Sense, aprendido no fim do '
+                                'Capítulo 4.'}],
+        'preparation': [{'en': 'Equip the Eagle Eye Doubloon to see them on the map.',
+                         'pt': 'Equipe o Eagle Eye Doubloon para vê-los no mapa.'}],
+        'optional': [{'en': 'On Termina Island, a Silver Pikkard hides in a muddy puddle (visible with '
+                            'Mana Sense).',
+                      'pt': 'Em Termina Island, um Silver Pikkard se esconde numa poça de lama (visível '
+                            'com o Mana Sense).'}]})
 chests(c, ('Ozmid Expanse', 'Ozmid Expanse'), [
     ('Fishing Bait S x3', 'Great Tidal Reef', 'Great Tidal Reef', B),
     ('Chalice Star', 'Great Tidal Reef', 'Great Tidal Reef', B),
@@ -409,7 +517,11 @@ chests(c, ('Hidden Isle', 'Hidden Isle'), [
     ('Repair Kit x3', 'Southeast, by the cliff edge', 'Sudeste, na beira do penhasco', B),
     ('Luck Elixir', 'West, up another ledge', 'Oeste, subindo outra borda', B),
 ], ('Reached with the Mana Barrier: southeast blue marker of the Ozmid Expanse. A Speedy Pikkard runs around the island.',
-    'Acessada com a Mana Barrier: marcador azul a sudeste de Ozmid Expanse. Um Speedy Pikkard corre pela ilha.'), S5S)
+    'Acessada com a Mana Barrier: marcador azul a sudeste de Ozmid Expanse. Um Speedy Pikkard corre pela ilha.'), S5S, guidance={'requirements': [{'en': 'Reached with the Mana Barrier: southeast blue marker of the Ozmid '
+                                'Expanse.',
+                          'pt': 'Acessada com a Mana Barrier: marcador azul a sudeste de Ozmid Expanse.'}],
+        'optional': [{'en': 'A Speedy Pikkard runs around the island.',
+                      'pt': 'Um Speedy Pikkard corre pela ilha.'}]})
 chests(c, ('Öland Island (Proud)', 'Öland Island (Proud)'), [
     ('Basic Beast Parts x35', 'Below the cliff after the first mana stream', 'Embaixo do penhasco depois do primeiro fluxo de mana', B),
     ('Sword Star', 'Left side, a little higher up', 'Lado esquerdo, um pouco mais acima'),
@@ -418,7 +530,20 @@ chests(c, ('Öland Island (Proud)', 'Öland Island (Proud)'), [
     ('Crystal Shard x500', 'Outer edge of the coliseum', 'Borda externa do coliseu'),
     ('Luck Elixir', 'Storage room near the coliseum (spends the Red Crest)', 'Depósito perto do coliseu (gasta o Red Crest)'),
     ('Dominative Star', "Storage house next to the coliseum (Small Steel Key from the Darkroad)", 'Casa de depósito ao lado do coliseu (Small Steel Key do Darkroad)'),
-], ("Proud Nordics only.\nYou get one Red Crest here: spend it on the coliseum storage room (Luck Elixir) or on the red door in Blindman's Darkroad (Sin Star+); the other one waits for a later visit.\nAnother storeroom has chests that cannot be opened yet.\nCutting the glowing flowers gives Sparkling Whitesand.", "Só no Proud Nordics.\nVocê ganha um Red Crest aqui: gaste no depósito do coliseu (Luck Elixir) ou na porta vermelha do Blindman's Darkroad (Sin Star+); a outra fica para uma visita futura.\nOutro depósito tem baús que ainda não abrem.\nCortar as flores brilhantes dá Sparkling Whitesand."), S5P)
+], ("Proud Nordics only.\nYou get one Red Crest here: spend it on the coliseum storage room (Luck Elixir) or on the red door in Blindman's Darkroad (Sin Star+); the other one waits for a later visit.\nAnother storeroom has chests that cannot be opened yet.\nCutting the glowing flowers gives Sparkling Whitesand.", "Só no Proud Nordics.\nVocê ganha um Red Crest aqui: gaste no depósito do coliseu (Luck Elixir) ou na porta vermelha do Blindman's Darkroad (Sin Star+); a outra fica para uma visita futura.\nOutro depósito tem baús que ainda não abrem.\nCortar as flores brilhantes dá Sparkling Whitesand."), S5P, guidance={'requirements': [{'en': 'Proud Nordics only.', 'pt': 'Só no Proud Nordics.'}],
+        'warnings': [{'en': 'You get one Red Crest on this visit. The other door must wait until a later '
+                            'visit. Another storeroom has chests that cannot be opened yet.',
+                      'pt': 'Você ganha um Red Crest nesta visita. A outra porta fica para uma visita '
+                            'futura. Outro depósito tem baús que ainda não abrem.'}],
+        'optional': [{'en': 'Cut the glowing flowers for Sparkling Whitesand.',
+                      'pt': 'Corte as flores brilhantes para obter Sparkling Whitesand.'}],
+        'alternatives': [{'condition': {'en': 'Coliseum storage room', 'pt': 'Depósito do coliseu'},
+                          'instructions': [{'en': 'Spend the Red Crest here for a Luck Elixir.',
+                                            'pt': 'Gaste o Red Crest aqui para obter Luck Elixir.'}]},
+                         {'condition': {'en': 'Red door in Blindman’s Darkroad',
+                                        'pt': 'Porta vermelha do Blindman’s Darkroad'},
+                          'instructions': [{'en': 'Spend the Red Crest here for Sin Star+.',
+                                            'pt': 'Gaste o Red Crest aqui para obter Sin Star+.'}]}]})
 chests(c, ("Blindman's Darkroad (Proud)", "Blindman's Darkroad (Proud)"), [
     ('1500 Gold', 'Second room, by the water near the vines', 'Segunda sala, junto à água perto das vinhas'),
     ('Sin Star+', 'Red-crest door in the next room', 'Porta do brasão vermelho na sala seguinte'),
@@ -433,7 +558,11 @@ chests(c, ("Blindman's Darkroad (Proud)", "Blindman's Darkroad (Proud)"), [
     ('Rainbow Drop x5', 'Corner of the following area', 'Canto da área seguinte', B),
     ('Basic Reagents x40', 'Pitch-black room, around the middle', 'Sala totalmente escura, perto do meio', B),
 ], ('Proud Nordics only. Open the tower gate on Öland Island with the Obsidian Key from the coliseum fight.',
-    'Só no Proud Nordics. Abra o portão da torre em Öland Island com a Obsidian Key da luta no coliseu.'), S5P)
+    'Só no Proud Nordics. Abra o portão da torre em Öland Island com a Obsidian Key da luta no coliseu.'), S5P, guidance={'requirements': [{'en': 'Proud Nordics only.', 'pt': 'Só no Proud Nordics.'}],
+        'overview': {'en': 'Open the tower gate on Öland Island with the Obsidian Key from the coliseum '
+                           'fight.',
+                     'pt': 'Abra o portão da torre em Öland Island com a Obsidian Key da luta no '
+                           'coliseu.'}})
 chests(c, ('Falun Island', 'Falun Island'), [
     ('Sword Star+', 'North end of the shore', 'Extremo norte da margem', B),
     ('Melg Flower x3', 'South, detour east to the cliffs', 'Sul, desvio a leste até os penhascos'),
@@ -478,7 +607,13 @@ chests(c, ('Odd Rock Isle', 'Odd Rock Isle'), [
     ('1850 Gold', 'Southwest corner', 'Canto sudoeste'),
     ('Axe Star+', 'South: beat the challenge enemy Volgadyne R first', 'Sul: derrote antes o inimigo desafio Volgadyne R'),
 ], ('Not marked on the map: northwest of Falun Island. The guides come here at the start of Chapter 6, but the Sonnelia Basin can already be explored late in Chapter 5, once Ilmer Village is freed.',
-    'Não aparece no mapa: a noroeste de Falun Island. Os guias vêm aqui no começo do Capítulo 6, mas a Sonnelia Basin já pode ser explorada no fim do Capítulo 5, depois que Ilmer Village é libertada.'), S5O)
+    'Não aparece no mapa: a noroeste de Falun Island. Os guias vêm aqui no começo do Capítulo 6, mas a Sonnelia Basin já pode ser explorada no fim do Capítulo 5, depois que Ilmer Village é libertada.'), S5O, guidance={'requirements': [{'en': 'The guides come here at the start of Chapter 6, but the Sonnelia Basin '
+                                'can already be explored late in Chapter 5, once Ilmer Village is freed.',
+                          'pt': 'Os guias vêm aqui no começo do Capítulo 6, mas a Sonnelia Basin já pode '
+                                'ser explorada no fim do Capítulo 5, depois que Ilmer Village é '
+                                'libertada.'}],
+        'overview': {'en': 'Not marked on the map: northwest of Falun Island.',
+                     'pt': 'Não aparece no mapa: a noroeste de Falun Island.'}})
 chests(c, ('Outcast Isle', 'Outcast Isle'), [
     ('Fishing Bait x5', 'Right side of the map', 'Lado direito do mapa', B),
     ('Raiju Charm', 'Right side of the map', 'Lado direito do mapa'),
@@ -489,7 +624,10 @@ chests(c, ('Moonview Isle', 'Moonview Isle'), [
     ('Empty Bottle', 'Around the boss arena', 'Ao redor da arena do chefe', B),
     ('Fishing Bait EX x3', 'Around the boss arena', 'Ao redor da arena do chefe', B),
 ], ('Grab them before walking to the event marker: it moves the story on and you can only come back next chapter.',
-    'Pegue antes de ir ao marcador de evento: ele avança a história e você só volta no próximo capítulo.'), [NEO('Chapter 5 - Raufos Island')])
+    'Pegue antes de ir ao marcador de evento: ele avança a história e você só volta no próximo capítulo.'), [NEO('Chapter 5 - Raufos Island')], guidance={'warnings': [{'en': 'Grab them before walking to the event marker: it moves the story on and you '
+                            'can only come back next chapter.',
+                      'pt': 'Pegue antes de ir ao marcador de evento: ele avança a história e você só '
+                            'volta no próximo capítulo.'}]})
 chests(c, ('Raufos Island', 'Raufos Island'), [
     ('Break Elixir', 'On the ledge at the start', 'Na borda do início', B),
     ('Gwyllgi Charm', 'Blue chest behind the Hewnstone', 'Baú azul atrás da Hewnstone'),
@@ -540,7 +678,12 @@ c.item('quest', t('Foraging Ahead'), t('Balta Island — Gunhilda in Balta Villa
                      'pt': 'Reúna as três plantas nestes locais.'}})
 c.item('quest', t('Slay the Beasts: Kalon'), t('Kalon Island — second area, before the drawbridge', 'Kalon Island — segunda área, antes da ponte levadiça'), BAY,
        t('Long deadline.\nAdded automatically. Several waves of beasts; dash through their speed attacks or Duo Guard their power attacks for big counters.\nRewards a Gwyllgi Amulet.', 'Prazo longo.\nEntra sozinha no diário. Várias ondas de feras; use o dash contra os ataques rápidos ou a Duo Guard contra os poderosos para grandes contra-ataques. Dá um Gwyllgi Amulet.'),
-       0, S6S + S6)
+       0, S6S + S6, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Added automatically. Several waves of beasts; dash through their speed '
+                           'attacks or Duo Guard their power attacks for big counters.',
+                     'pt': 'Entra sozinha no diário. Várias ondas de feras; use o dash contra os ataques '
+                           'rápidos ou a Duo Guard contra os poderosos para grandes contra-ataques.'},
+        'rewards': [{'en': 'a Gwyllgi Amulet.', 'pt': 'um Gwyllgi Amulet.'}]})
 c.item('quest', t('Fun in the Sunfish'), t('Sandras — Ashley on the deck', 'Sandras — Ashley no convés'), BAY,
        t('Long deadline.\nFollow the sightings in Sonnelia Basin.', 'Prazo longo.\nSiga os avistamentos em Sonnelia Basin.'),
        0, S6S + S6, steps=[
@@ -552,16 +695,38 @@ c.item('quest', t('Fun in the Sunfish'), t('Sandras — Ashley on the deck', 'Sa
                      'pt': 'Siga os avistamentos em Sonnelia Basin.'}})
 c.item('quest', t('Treasure Trawl B'), t("Sea chart — chart from Gregorio's Curio", "Mapa marítimo — mapa do Gregorio's Curio"), BAY,
        t("Long deadline.\nBuy Hidden Treasure Chart B from Gregorio's Curio and salvage the glowing spot.\nRewards the Foreign Gauntlet (gift for Dogi).", "Prazo longo.\nCompre o Hidden Treasure Chart B no Gregorio's Curio e resgate o ponto brilhante. Dá a Foreign Gauntlet (presente para o Dogi)."),
-       0, S6S + S6)
+       0, S6S + S6, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': "Buy Hidden Treasure Chart B from Gregorio's Curio and salvage the glowing "
+                           'spot.',
+                     'pt': "Compre o Hidden Treasure Chart B no Gregorio's Curio e resgate o ponto "
+                           'brilhante.'},
+        'rewards': [{'en': 'the Foreign Gauntlet (gift for Dogi).',
+                     'pt': 'a Foreign Gauntlet (presente para o Dogi).'}]})
 c.item('quest', t('Going for Gold'), t('Fuling Island — the cave at night', 'Fuling Island — a caverna à noite'), BAY,
        t('Long deadline.\nAppears when you return to Fuling Island after its event. Accepting turns it to night; several mini-bosses wait at the far end of the cave.\nRewards a Holy Potion II.', 'Prazo longo.\nAparece quando você volta a Fuling Island depois do evento dela. Aceitar faz anoitecer; vários mini-chefes esperam no fundo da caverna. Dá uma Holy Potion II.'),
-       0, S6S + S6)
+       0, S6S + S6, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Appears when you return to Fuling Island after its event. Accepting turns it '
+                           'to night; several mini-bosses wait at the far end of the cave.',
+                     'pt': 'Aparece quando você volta a Fuling Island depois do evento dela. Aceitar faz '
+                           'anoitecer; vários mini-chefes esperam no fundo da caverna.'},
+        'rewards': [{'en': 'a Holy Potion II.', 'pt': 'uma Holy Potion II.'}]})
 c.item('quest', t('Pikkard Coral'), t('Sprout Atoll'), END6,
        t('Long deadline.\nThe mysterious old man asks you to catch his scattered pikkards at the green markers; for the one near the water, mana ride toward it and jump at the right moment.\nRewards a Pickaback Pikkard (White).', 'Prazo longo.\nO velho misterioso pede para você pegar os pikkards espalhados nos marcadores verdes; para o que está perto da água, deslize até ele e pule na hora certa. Dá um Pickaback Pikkard (White).'),
-       0, S6B + S6)
+       0, S6B + S6, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'The mysterious old man asks you to catch his scattered pikkards at the green '
+                           'markers; for the one near the water, mana ride toward it and jump at the '
+                           'right moment.',
+                     'pt': 'O velho misterioso pede para você pegar os pikkards espalhados nos marcadores '
+                           'verdes; para o que está perto da água, deslize até ele e pule na hora certa.'},
+        'rewards': [{'en': 'a Pickaback Pikkard (White).', 'pt': 'um Pickaback Pikkard (White).'}]})
 c.item('quest', t('Treasure Trawl C'), t('Sonnelia Basin — south, orange circle', 'Sonnelia Basin — sul, círculo laranja'), END6,
        t("Long deadline.\nHidden Treasure Chart C comes from the Southern Castle recapture at rank C or better. Avoid the invulnerable Blade Shark.\nRewards the Dancer's Shawl.", "Prazo longo.\nO Hidden Treasure Chart C vem da retomada do Southern Castle com rank C ou melhor. Evite o Blade Shark, que é invulnerável. Dá o Dancer's Shawl."),
-       0, S6B + S6)
+       0, S6B + S6, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Hidden Treasure Chart C comes from the Southern Castle recapture at rank C or '
+                           'better. Avoid the invulnerable Blade Shark.',
+                     'pt': 'O Hidden Treasure Chart C vem da retomada do Southern Castle com rank C ou '
+                           'melhor. Evite o Blade Shark, que é invulnerável.'},
+        'rewards': [{'en': "the Dancer's Shawl.", 'pt': "o Dancer's Shawl."}]})
 c.item('quest', t('Turtle-Tale'), t('Sandras — Ashley on the mast', 'Sandras — Ashley no mastro'), END6,
        t('Long deadline.\nComplete the sightings before camping.', 'Prazo longo.\nConclua os avistamentos antes de acampar.'),
        0, S6B + S6, steps=[
@@ -596,7 +761,14 @@ chests(c, ('Fuling Island', 'Fuling Island'), [
     ('Panacea x3', 'Cave: corner before the log bridge', 'Caverna: canto antes da ponte de tronco'),
     ('Super Stimulant x2', 'Cave: end of the log bridge', 'Caverna: fim da ponte de tronco', B),
     ('Silver Cheese x3', 'Outside the southeast exit of the cave', 'Do lado de fora da saída sudeste da caverna'),
-], ('Needs the Mana Barrier, southeast of Raufos Island.\nThe island opens fully after the first event with Nanna.\nTo clear the boulder near the lake, talk to the two green-marked people first, then call Dogi.', 'Precisa da Mana Barrier, a sudeste de Raufos Island.\nA ilha abre por completo depois do primeiro evento com a Nanna.\nPara tirar a rocha perto do lago, fale antes com as duas pessoas marcadas em verde e depois chame o Dogi.'), S6S)
+], ('Needs the Mana Barrier, southeast of Raufos Island.\nThe island opens fully after the first event with Nanna.\nTo clear the boulder near the lake, talk to the two green-marked people first, then call Dogi.', 'Precisa da Mana Barrier, a sudeste de Raufos Island.\nA ilha abre por completo depois do primeiro evento com a Nanna.\nPara tirar a rocha perto do lago, fale antes com as duas pessoas marcadas em verde e depois chame o Dogi.'), S6S, guidance={'requirements': [{'en': 'Needs the Mana Barrier, southeast of Raufos Island.',
+                          'pt': 'Precisa da Mana Barrier, a sudeste de Raufos Island.'},
+                         {'en': 'The island opens fully after the first event with Nanna.',
+                          'pt': 'A ilha abre por completo depois do primeiro evento com a Nanna.'}],
+        'overview': {'en': 'To clear the boulder near the lake, talk to the two green-marked people '
+                           'first, then call Dogi.',
+                     'pt': 'Para tirar a rocha perto do lago, fale antes com as duas pessoas marcadas em '
+                           'verde e depois chame o Dogi.'}})
 chests(c, ('Orlen Islands', 'Orlen Islands'), [
     ('Red Lump x3', 'East Beach: down to the southeast', 'East Beach: descendo a sudeste', B),
     ('Glare Bangle', 'Behind the house past the event marker', 'Atrás da casa depois do marcador de evento'),
@@ -671,7 +843,12 @@ S7P = [NEO('Chapter 7 - Falaise Peninsula')]
 c.item('missable', t("Lux's character note #1", 'Nota de personagem do Lux #1'), t('Sandras — lower deck', 'Sandras — convés inferior'), NORGEST,
        t("The third time-limited character note. While you are stationed on Grimson's ship, go back to the Sandras and talk to Lux twice on the lower deck, before talking to Grenn.",
          'A terceira nota de personagem com tempo limitado. Enquanto estiver no navio do Grimson, volte ao Sandras e fale duas vezes com o Lux no convés inferior, antes de falar com o Grenn.'),
-       0, S7D)
+       0, S7D, guidance={'warnings': [{'en': 'The third time-limited character note.',
+                      'pt': 'A terceira nota de personagem com tempo limitado.'}],
+        'overview': {'en': "While you are stationed on Grimson's ship, go back to the Sandras and talk to "
+                           'Lux twice on the lower deck, before talking to Grenn.',
+                     'pt': 'Enquanto estiver no navio do Grimson, volte ao Sandras e fale duas vezes com '
+                           'o Lux no convés inferior, antes de falar com o Grenn.'}})
 c.item('quest', t('Old Haunts'), t('Anchor Island — Magni on the Mynorca Village shore', 'Anchor Island — Magni na praia de Mynorca Village'), GROTTO,
        t('Medium deadline.\nReward: Shield Cannons.', 'Prazo médio.\nRecompensa: Shield Cannons.'),
        0, S7F + S7, steps=[
@@ -691,10 +868,18 @@ c.item('quest', t('Breakout Performance'), t('Grotto Isle (from a Hugill letter)
                      'pt': '5.000 Gold e o resgate do último morador de Carnac.'}]})
 c.item('quest', t('Treasure Trawl D'), t('Specular Bay — near the Northern Citadel', 'Specular Bay — perto da Northern Citadel'), GROTTO,
        t("Long deadline.\nHidden Treasure Chart D is sold at Gregorio's Curio in the Flumen Strait.\nRewards Fleeting Hope+.", "Prazo longo.\nO Hidden Treasure Chart D é vendido no Gregorio's Curio, em Flumen Strait. Dá Fleeting Hope+."),
-       0, S7F + S7)
+       0, S7F + S7, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': "Hidden Treasure Chart D is sold at Gregorio's Curio in the Flumen Strait.",
+                     'pt': "O Hidden Treasure Chart D é vendido no Gregorio's Curio, em Flumen Strait."},
+        'rewards': [{'en': 'Fleeting Hope+.', 'pt': 'Fleeting Hope+.'}]})
 c.item('quest', t('Cull the Griegr: Orlen'), t('Orlen Islands — West Side, far southwest', 'Orlen Islands — West Side, extremo sudoeste'), NORGEST,
        t('Long deadline.\nFrom the Norman soldier on the Norgest. A bird-like humanoid Griegr with small flying Watz that keep shooting.\nRewards a Blessed Paper Scrap.', 'Prazo longo.\nVem do soldado normando no Norgest. Um Griegr humanoide parecido com pássaro, com pequenos Watz voadores que não param de atirar. Dá um Blessed Paper Scrap.'),
-       0, S7D + S7)
+       0, S7D + S7, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'From the Norman soldier on the Norgest. A bird-like humanoid Griegr with '
+                           'small flying Watz that keep shooting.',
+                     'pt': 'Vem do soldado normando no Norgest. Um Griegr humanoide parecido com pássaro, '
+                           'com pequenos Watz voadores que não param de atirar.'},
+        'rewards': [{'en': 'a Blessed Paper Scrap.', 'pt': 'um Blessed Paper Scrap.'}]})
 c.item('quest', t('Nest of Kin'), t('Sandras — Ashley on the deck', 'Sandras — Ashley no convés'), NORGEST,
        t('Long deadline.\nStart from Gregorio’s Curio.', 'Prazo longo.\nComece em Gregorio’s Curio.'),
        0, S7D + S7, steps=[
@@ -706,7 +891,11 @@ c.item('quest', t('Nest of Kin'), t('Sandras — Ashley on the deck', 'Sandras �
 c.item('quest', t('EX: Smooth Sailing? (Proud)', 'EX: Smooth Sailing? (Proud)'), t('Sandras — Hugill\'s letters', 'Sandras — cartas do Hugill'), None,
        t('Proud Nordics only. Added by the Hugill letter "EX: Smooth Sailing?" at the start of the chapter. The guide gives no steps or deadline: do it in this chapter to be safe.',
          'Só no Proud Nordics. Entra com a carta do Hugill "EX: Smooth Sailing?" no começo do capítulo. O guia não dá passos nem prazo: faça neste capítulo por segurança.'),
-       0, S7F)
+       0, S7F, guidance={'requirements': [{'en': 'Proud Nordics only.', 'pt': 'Só no Proud Nordics.'}],
+        'warnings': [{'en': 'The guide gives no steps or deadline: do it in this chapter to be safe.',
+                      'pt': 'O guia não dá passos nem prazo: faça neste capítulo por segurança.'}],
+        'overview': {'en': 'Added by the Hugill letter "EX: Smooth Sailing?" at the start of the chapter.',
+                     'pt': 'Entra com a carta do Hugill "EX: Smooth Sailing?" no começo do capítulo.'}})
 c.boss(t('Blob Weiser'), t('The ghost ship near Krangal Island', 'O navio fantasma perto de Krangal Island'),
        t('Lure it out from between the stairs for a better camera. Most spins break Duo Guard; it spits Slow globs, poison gas and can curse. When it dies it releases skull enemies.',
          'Atraia-o para fora da escada para a câmera ajudar. A maioria dos giros quebra a Duo Guard; ele cospe bolas que deixam lento, gás venenoso e pode amaldiçoar. Ao morrer, libera inimigos-caveira.'),
@@ -744,7 +933,10 @@ chests(c, ('Falaise Peninsula — Fortress Entrance', 'Falaise Peninsula — For
     ('Fishing Bait M x5', 'Fortress side, near the scouting marker', 'Lado da fortaleza, perto do marcador de reconhecimento', B),
     ('Basic Craft Stock x100', 'Fortress side, same spot', 'Lado da fortaleza, no mesmo ponto'),
 ], ('North of the Dvergr Coast camp. Breath Water II adds one more potion to your stock.',
-    'Ao norte do acampamento da Dvergr Coast. A Breath Water II adiciona mais uma poção ao estoque.'), S7D + S7)
+    'Ao norte do acampamento da Dvergr Coast. A Breath Water II adiciona mais uma poção ao estoque.'), S7D + S7, guidance={'rewards': [{'en': 'Breath Water II adds one more potion to your stock.',
+                     'pt': 'A Breath Water II adiciona mais uma poção ao estoque.'}],
+        'overview': {'en': 'North of the Dvergr Coast camp.',
+                     'pt': 'Ao norte do acampamento da Dvergr Coast.'}})
 chests(c, ('Falaise Peninsula — Side Road', 'Falaise Peninsula — Side Road'), [
     ('Basic Ingredients x100', 'South, behind vines near the small cave', 'Sul, atrás de vinhas perto da caverna pequena'),
     ('Red Lump x6', 'West, by a tree', 'Oeste, junto a uma árvore', B),
@@ -769,7 +961,10 @@ chests(c, ('Grugal Fortress', 'Grugal Fortress'), [
     ('Suzhen Amulet', 'Blue chest past the harpy', 'Baú azul depois da harpia'),
     ('Golden Potato x3', 'Last part: east corner', 'Última parte: canto leste'),
 ], ('After an event in the second interior you cannot go back to the earlier sections until Chapter 9, when the main entrance also opens.',
-    'Depois de um evento no segundo interior, não dá para voltar às seções anteriores até o Capítulo 9, quando a entrada principal também abre.'), S7P + S7)
+    'Depois de um evento no segundo interior, não dá para voltar às seções anteriores até o Capítulo 9, quando a entrada principal também abre.'), S7P + S7, guidance={'warnings': [{'en': 'After an event in the second interior you cannot go back to the earlier '
+                            'sections until Chapter 9, when the main entrance also opens.',
+                      'pt': 'Depois de um evento no segundo interior, não dá para voltar às seções '
+                            'anteriores até o Capítulo 9, quando a entrada principal também abre.'}]})
 
 # ======================================================================== Chapter 8
 c = chapter(8, 'Chapter 8', 'Capítulo 8')
@@ -834,7 +1029,12 @@ S9R = [NEO('Chapter 9 - Raoul Darksea')]
 S9M = [NEO('Chapter 9 - Marine Triangle')]
 c.item('quest', t('No Good Deed…'), t('Krangal Island — the mine', 'Krangal Island — a mina'), VORTEX,
        t('Long deadline.\nFrom the Hugill letter "ST OP ME". Land on the island for an event, then beat the Armed Biter in the mine.\nRewards a Luminous Bangle.', 'Prazo longo.\nVem da carta do Hugill "ST OP ME". Desembarque na ilha para um evento e derrote o Armed Biter na mina. Dá um Luminous Bangle.'),
-       0, S9O + S9)
+       0, S9O + S9, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'From the Hugill letter "ST OP ME". Land on the island for an event, then beat '
+                           'the Armed Biter in the mine.',
+                     'pt': 'Vem da carta do Hugill "ST OP ME". Desembarque na ilha para um evento e '
+                           'derrote o Armed Biter na mina.'},
+        'rewards': [{'en': 'a Luminous Bangle.', 'pt': 'um Luminous Bangle.'}]})
 c.item('quest', t('Riddle Me Timbers'), t('Sandras — Ezer', 'Sandras — Ezer'), VORTEX,
        t('Medium deadline.\nPrepare for a naval battle and a boss fight.', 'Prazo médio.\nPrepare-se para uma batalha naval e uma luta contra chefe.'),
        0, S9O + S9, steps=[
@@ -854,7 +1054,14 @@ c.item('quest', t('Specular Synthesis'), t('Sandras — Dr. Flair on the lower d
         'rewards': [{'en': 'Full-Heal Formula.', 'pt': 'Full-Heal Formula.'}]})
 c.item('quest', t('Slay the Beasts: Haze'), t('Haze Island — back half', 'Haze Island — metade de trás'), VORTEX,
        t('Long deadline.\nFrom Lila. Haze Island is northwest of Serenes Island; fast travel to the back half. The targets are fragile but hit very hard; stay out of the slowing water.\nRewards the Panacea Formula III.', 'Prazo longo.\nVem da Lila. Haze Island fica a noroeste de Serenes Island; viaje até a metade de trás. Os alvos são frágeis, mas batem muito forte; fique fora da água que deixa lento. Dá a Panacea Formula III.'),
-       0, S9O + S9)
+       0, S9O + S9, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'From Lila. Haze Island is northwest of Serenes Island; fast travel to the '
+                           'back half. The targets are fragile but hit very hard; stay out of the slowing '
+                           'water.',
+                     'pt': 'Vem da Lila. Haze Island fica a noroeste de Serenes Island; viaje até a '
+                           'metade de trás. Os alvos são frágeis, mas batem muito forte; fique fora da '
+                           'água que deixa lento.'},
+        'rewards': [{'en': 'the Panacea Formula III.', 'pt': 'a Panacea Formula III.'}]})
 c.item('quest', t('Treasure Trawl E'), t('Raoul Darksea — north, near the entrance', 'Raoul Darksea — norte, perto da entrada'), VORTEX,
        t('Long deadline.\nHidden Treasure Chart E comes from the Eastern Fortress recapture at rank S.\nRewards the Cycloid Crown.\nWith every Treasure Trawl done, Mandy has one more treasure (northwest of Termina Island) that unlocks his character note.', 'Prazo longo.\nO Hidden Treasure Chart E vem da retomada da Eastern Fortress com rank S.\nDá a Cycloid Crown.\nCom todos os Treasure Trawls feitos, o Mandy tem mais um tesouro (a noroeste de Termina Island) que libera a nota de personagem dele.'),
        0, S9R + S9, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
@@ -897,7 +1104,10 @@ chests(c, ('Gigantavis Isle', 'Gigantavis Isle'), [
     ('Fishing Bait L x3', 'Ledges south of the middle part', 'Bordas ao sul da parte do meio', B),
     ('7000 Gold', 'Near the Hewnstone, by the vine-covered sword', 'Perto da Hewnstone, junto à espada coberta de vinhas'),
 ], ('Last blue marker of the Marine Triangle. The Ebon Mindgem on the eastern summit gives Guila\'s character note later.',
-    'O último marcador azul do Marine Triangle. A Ebon Mindgem no topo leste dá a nota de personagem da Guila depois.'), S9M)
+    'O último marcador azul do Marine Triangle. A Ebon Mindgem no topo leste dá a nota de personagem da Guila depois.'), S9M, guidance={'rewards': [{'en': "The Ebon Mindgem on the eastern summit gives Guila's character note later.",
+                     'pt': 'A Ebon Mindgem no topo leste dá a nota de personagem da Guila depois.'}],
+        'overview': {'en': 'Last blue marker of the Marine Triangle.',
+                     'pt': 'O último marcador azul do Marine Triangle.'}})
 chests(c, ('Redsand Isle', 'Redsand Isle'), [
     ('Red Seastone x3', 'East side, behind two monsters', 'Lado leste, atrás de dois monstros', B),
     ('Luncheon Recipe: Sweets', 'Red chest at the south end, after pushing the log', 'Baú vermelho no extremo sul, depois de empurrar o tronco'),
@@ -958,7 +1168,12 @@ chests(c, ('Viewpoint Isle', 'Viewpoint Isle'), [
     ('Vitality Elixir', 'Northeast quadrant', 'Quadrante nordeste'),
     ('Rainbow Lump x3', 'Northeast quadrant', 'Quadrante nordeste', B),
 ], ('The northeast is confusing because the map ignores height: use Mana Sense often. Reaching the old man ends the chapter, but you can come back in Chapter 10.',
-    'O nordeste confunde porque o mapa ignora a altura: use o Mana Sense com frequência. Chegar ao velho encerra o capítulo, mas dá para voltar no Capítulo 10.'), S9R)
+    'O nordeste confunde porque o mapa ignora a altura: use o Mana Sense com frequência. Chegar ao velho encerra o capítulo, mas dá para voltar no Capítulo 10.'), S9R, guidance={'preparation': [{'en': 'The northeast is confusing because the map ignores height: use Mana Sense '
+                               'often.',
+                         'pt': 'O nordeste confunde porque o mapa ignora a altura: use o Mana Sense com '
+                               'frequência.'}],
+        'warnings': [{'en': 'Reaching the old man ends the chapter, but you can come back in Chapter 10.',
+                      'pt': 'Chegar ao velho encerra o capítulo, mas dá para voltar no Capítulo 10.'}]})
 
 # ======================================================================== Chapter 10
 c = chapter(10, 'Chapter 10', 'Capítulo 10')
@@ -990,10 +1205,20 @@ c.item('quest', t('Rushed off Their Fleet'), t('Anchor Island — Village Chiefs
                            'uma terrestre.'}})
 c.item('quest', t('Cull the Griegr: Crescent'), t('Crescent Moons Isle', 'Crescent Moons Isle'), FINAL,
        t('Short deadline.\nAdded when you land. Defeat every Griegr on the island; the target then appears in the northeast corner.\nRewards Crystal Shards ×25,000.', 'Prazo curto.\nEntra ao desembarcar. Derrote todos os Griegrs da ilha; o alvo então aparece no canto nordeste. Dá Crystal Shards ×25.000.'),
-       0, S10R + S10)
+       0, S10R + S10, guidance={'warnings': [{'en': 'Short deadline.', 'pt': 'Prazo curto.'}],
+        'overview': {'en': 'Added when you land. Defeat every Griegr on the island; the target then '
+                           'appears in the northeast corner.',
+                     'pt': 'Entra ao desembarcar. Derrote todos os Griegrs da ilha; o alvo então aparece '
+                           'no canto nordeste.'},
+        'rewards': [{'en': 'Crystal Shards ×25,000.', 'pt': 'Crystal Shards ×25.000.'}]})
 c.item('quest', t('Treasure Trawl F'), t('Rogue Sea — east of Soleli Island', 'Rogue Sea — a leste de Soleli Island'), FINAL,
        t('Short deadline.\nBuy Hidden Treasure Chart F from the merchant Gøsta, north of the second Rogue Sea recapture.\nRewards 50,000 Gold.', 'Prazo curto.\nCompre o Hidden Treasure Chart F do mercador Gøsta, ao norte da segunda retomada do Rogue Sea. Dá 50.000 Gold.'),
-       0, S10R)
+       0, S10R, guidance={'warnings': [{'en': 'Short deadline.', 'pt': 'Prazo curto.'}],
+        'overview': {'en': 'Buy Hidden Treasure Chart F from the merchant Gøsta, north of the second '
+                           'Rogue Sea recapture.',
+                     'pt': 'Compre o Hidden Treasure Chart F do mercador Gøsta, ao norte da segunda '
+                           'retomada do Rogue Sea.'},
+        'rewards': [{'en': '50,000 Gold.', 'pt': '50.000 Gold.'}]})
 c.item('quest', t('Whale of Fortune'), t('Sandras — Ashley at the bow', 'Sandras — Ashley na proa'), FINAL,
        t("Short deadline.\nNeeds all three Rogue Sea islands recaptured, or some markers never appear.\nUse the spyglass at every green marker; the last one appears west of Gøsta's ship.\nRewards a Spirit Necklace.", 'Prazo curto.\nExige as três ilhas do Rogue Sea retomadas, senão alguns marcadores nunca aparecem.\nUse a luneta em cada marcador verde; o último aparece a oeste do navio do Gøsta.\nDá um Spirit Necklace.'),
        0, S10R + S10, guidance={'warnings': [{'en': 'Short deadline.', 'pt': 'Prazo curto.'}],
@@ -1017,7 +1242,10 @@ c.item('quest', t('An Axe to Regrind'), t("Giant's Hand Isle, then Ivalde on Bal
 c.item('missable', t('Ship upgrades for the trophy', 'Melhorias do navio para o troféu'), t('Sandras'), FINAL,
        t('Not lost at the final battle, but ship refits do not carry over to New Game+: buy them all in one playthrough if you want "All Decked Out".',
          'Não se perdem na batalha final, mas as melhorias do navio não passam para o New Game+: compre todas na mesma jogada se quiser o "All Decked Out".'),
-       0, S10 + [NEO('Chapter 10 - Trophy Cleanup')])
+       0, S10 + [NEO('Chapter 10 - Trophy Cleanup')], guidance={'warnings': [{'en': 'Not lost at the final battle, but ship refits do not carry over to New '
+                            'Game+: buy them all in one playthrough if you want "All Decked Out".',
+                      'pt': 'Não se perdem na batalha final, mas as melhorias do navio não passam para o '
+                            'New Game+: compre todas na mesma jogada se quiser o "All Decked Out".'}]})
 c.boss(t('Grimson'), t("Rollo's Ark"),
        t('Duo guard his leaping downward slash. Below half HP a pink aura makes him faster and stronger, but he gains no new moves.',
          'Use a defesa em dupla contra o golpe para baixo com salto. Abaixo da metade do HP, uma aura rosa o deixa mais rápido e forte, mas ele não ganha golpes novos.'),
@@ -1050,19 +1278,22 @@ chests(c, ("Rollo's Ark", "Rollo's Ark"), [
     ('Basic Beast Parts x200', 'Third floor: room past the gate unlocked earlier', 'Terceiro andar: sala depois do portão destrancado antes'),
     ('Lyre Soul+', 'Third floor: southwest corner, via the moving pole', 'Terceiro andar: canto sudoeste, pelo poste móvel'),
     ('Esoteric Bounding Text', 'Third floor: red chest at the event marker', 'Terceiro andar: baú vermelho no marcador de evento'),
-], LAST, [NEO('Chapter 10 - Cicatrix')], until=FINAL)
+], LAST, [NEO('Chapter 10 - Cicatrix')], until=FINAL, guidance={'warnings': [{'en': 'Lost once you go through the doors to the final battle.',
+                      'pt': 'Perdido quando você passa pelas portas da batalha final.'}]})
 chests(c, ('Crescent Moons Isle', 'Crescent Moons Isle'), [
     ('Super Repair Kit x3', 'South, near the lizard mini-boss', 'Sul, perto do mini-chefe lagarto', B),
     ('Punishment Soul+', 'West end of the ledge in the north center', 'Extremo oeste da borda no centro-norte', B),
     ('Supreme Fish Meat x2', 'South of the northwest Runestone', 'Ao sul da Runestone do noroeste'),
     ('Break Elixir', 'Red chest in a hidden drop by the east Mana String spot', 'Baú vermelho numa queda escondida junto ao ponto de Mana String do leste'),
-], LAST, S10R, until=FINAL)
+], LAST, S10R, until=FINAL, guidance={'warnings': [{'en': 'Lost once you go through the doors to the final battle.',
+                      'pt': 'Perdido quando você passa pelas portas da batalha final.'}]})
 chests(c, ("Giant's Hand Isle", "Giant's Hand Isle"), [
     ('Dark Seastone x3', 'Patch of land by the lake fishing spot, to the east', 'Trecho de terra junto ao pesqueiro do lago, a leste', B),
     ('Panacea III x2', 'Far northwest corner', 'Extremo noroeste', B),
     ('Vajra Bone x2', 'Southeast corner', 'Canto sudeste'),
     ('Ancient Defense Formula', 'Red chest in the north center (drop through and ride the stream)', 'Baú vermelho no centro-norte (caia pelo buraco e siga o fluxo)'),
-], LAST, S10R, until=FINAL)
+], LAST, S10R, until=FINAL, guidance={'warnings': [{'en': 'Lost once you go through the doors to the final battle.',
+                      'pt': 'Perdido quando você passa pelas portas da batalha final.'}]})
 chests(c, ('Viewpoint Isle', 'Viewpoint Isle'), [
     ('Axe Seal+', None, None, B),
     ('Crystal Shard x200', None, None, B),
@@ -1072,7 +1303,12 @@ chests(c, ('Viewpoint Isle', 'Viewpoint Isle'), [
     ('Dark Drop', None, None, B),
 ], ('Six buried treasures: one near the cottage, two on the east side and three on the west side, which only opens fully once you enter the treasure room. Lost once you go through the doors to the final battle.',
     'Seis tesouros enterrados: um perto da cabana, dois no lado leste e três no lado oeste, que só abre por completo quando você entra na sala do tesouro. Perdidos quando você passa pelas portas da batalha final.'),
-    S10F, until=FINAL, title=('Viewpoint Isle — last buried treasures', 'Viewpoint Isle — últimos tesouros enterrados'))
+    S10F, until=FINAL, title=('Viewpoint Isle — last buried treasures', 'Viewpoint Isle — últimos tesouros enterrados'), guidance={'warnings': [{'en': 'Lost once you go through the doors to the final battle.',
+                      'pt': 'Perdidos quando você passa pelas portas da batalha final.'}],
+        'overview': {'en': 'Six buried treasures: one near the cottage, two on the east side and three on '
+                           'the west side, which only opens fully once you enter the treasure room.',
+                     'pt': 'Seis tesouros enterrados: um perto da cabana, dois no lado leste e três no '
+                           'lado oeste, que só abre por completo quando você entra na sala do tesouro.'}})
 chests(c, ('Viewpoint Isle — Forbidden Lands', 'Viewpoint Isle — Forbidden Lands'), [
     ('Blue Seastone x5', 'Entrance, on the first visit', 'Entrada, na primeira visita', B),
     ('Yellow Seastone x5', 'Behind the plant mini-boss to the northeast, by a tree', 'Atrás do mini-chefe planta a nordeste, junto a uma árvore', B),
@@ -1084,7 +1320,8 @@ chests(c, ('Viewpoint Isle — Forbidden Lands', 'Viewpoint Isle — Forbidden L
     ('Chalice Soul+', 'Blue chest below, before the two harpies', 'Baú azul embaixo, antes das duas harpias'),
     ('Rainbow Seastone x5', 'By the wall where Karja starts talking', 'Junto à parede onde a Karja começa a falar', B),
     ('Luck Elixir', 'Red chest on the platform below the double mana stream', 'Baú vermelho na plataforma abaixo do fluxo de mana duplo'),
-], LAST, S10F, until=FINAL)
+], LAST, S10F, until=FINAL, guidance={'warnings': [{'en': 'Lost once you go through the doors to the final battle.',
+                      'pt': 'Perdido quando você passa pelas portas da batalha final.'}]})
 chests(c, ('Faarlundheim', 'Faarlundheim'), [
     ('Panacea II x2', 'Part 1: behind the starting gate', 'Parte 1: atrás do portão do início', B),
     ("Hermit's Remedy", 'Part 1: behind the rock wall east of the northwest cluster', 'Parte 1: atrás da parede de rocha a leste do cluster do noroeste'),
@@ -1116,7 +1353,8 @@ chests(c, ('Faarlundheim', 'Faarlundheim'), [
     ('Abiding Love', 'Part 3: southeast wall of the same area', 'Parte 3: parede sudeste da mesma área', B),
     ('Dark Seastone x3', 'Part 3: southwest ledge of the northeast section', 'Parte 3: borda sudoeste da seção nordeste', B),
     ('Limitless Courage+', 'Part 3: red chest at the top center', 'Parte 3: baú vermelho no centro, no alto'),
-], LAST, S10F, until=FINAL)
+], LAST, S10F, until=FINAL, guidance={'warnings': [{'en': 'Lost once you go through the doors to the final battle.',
+                      'pt': 'Perdido quando você passa pelas portas da batalha final.'}]})
 
 # ======================================================================== Epilogue
 c = chapter(11, 'Epilogue', 'Epílogo')
@@ -1130,7 +1368,13 @@ c.item('missable', t('Last character notes in Carnac (6)', 'Últimas notas de pe
               t('Mayor Clement — by the Vigilante Corps Office', 'Prefeito Clement — junto ao escritório do Vigilante Corps'),
               t('Cohen — north of Grenn', 'Cohen — ao norte do Grenn'),
               t('Corinne — outside the Rusveri Inn', 'Corinne — em frente à Rusveri Inn'),
-              t('Momina — southeast side of town', 'Momina — lado sudeste da cidade')])
+              t('Momina — southeast side of town', 'Momina — lado sudeste da cidade')], guidance={'warnings': [{'en': 'Talk to these six before talking to Karja at the pier, or the all-notes '
+                            'trophy is lost.',
+                      'pt': 'Fale com estes seis antes de falar com a Karja no píer, ou o troféu de todas '
+                            'as notas se perde.'}],
+        'optional': [{'en': 'A bonus Runestone scene waits in the Lighthouse depths, by the west wall.',
+                      'pt': 'Uma cena bônus de Runestone espera no fundo do farol, junto à parede '
+                            'oeste.'}]})
 
 for c in CH.values():
     c.write()

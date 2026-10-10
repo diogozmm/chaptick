@@ -35,7 +35,12 @@ c.item('collectible', t('Data crystals: fourth tower (4)', 'Cristais de dados: q
 c.item('collectible', t('Shadow Esmelas Tower treasure chests (~22)', 'Baús da Shadow Esmelas Tower (~22)'), t('Shadow Esmelas Tower'), T1,
        t('Two teleporters on the 3rd level each lead to a room with five chests. Monster chest on the 3rd level (Photon Judge E+ survives one lethal hit). Some armor is gender-locked.',
          'Dois teletransportes no 3º nível levam cada um a uma sala com cinco baús. Baú de monstros no 3º nível (o Photon Judge E+ sobrevive a um golpe letal). Algumas armaduras são exclusivas por gênero.'),
-       0, [G])
+       0, [G], guidance={'warnings': [{'en': 'Monster chest on the 3rd level (Photon Judge E+ survives one lethal hit).',
+                      'pt': 'Baú de monstros no 3º nível (o Photon Judge E+ sobrevive a um golpe letal).'},
+                     {'en': 'Some armor is gender-locked.',
+                      'pt': 'Algumas armaduras são exclusivas por gênero.'}],
+        'overview': {'en': 'Two teleporters on the 3rd level each lead to a room with five chests.',
+                     'pt': 'Dois teletransportes no 3º nível levam cada um a uma sala com cinco baús.'}})
 c.item('collectible', t('Shadow Carnelia Tower treasure chests (~35)', 'Baús da Shadow Carnelia Tower (~35)'), t('Shadow Carnelia Tower'), T2,
        t('Seven right at the start. The monster chest is reached through a teleporter down to the 2nd level. The 5th level is a chain of platforms with chests on every fork.',
          'Sete logo no início. O baú de monstros fica depois de um teletransporte que desce ao 2º nível. O 5º nível é uma sequência de plataformas com baús em cada bifurcação.'),
@@ -43,7 +48,12 @@ c.item('collectible', t('Shadow Carnelia Tower treasure chests (~35)', 'Baús da
 c.item('collectible', t('Shadow Sapphirl Tower treasure chests (~23)', 'Baús da Shadow Sapphirl Tower (~23)'), t('Shadow Sapphirl Tower'), T3,
        t('Look behind the big teleporter walls on the 5th level. Monster chest on the west side of the 5th level. Blue electricity on the floor causes Mute.',
          'Olhe atrás das paredes dos teletransportes grandes no 5º nível. Baú de monstros no lado oeste do 5º nível. A eletricidade azul no chão causa Mute.'),
-       0, [G])
+       0, [G], guidance={'warnings': [{'en': 'Blue electricity on the floor causes Mute.',
+                      'pt': 'A eletricidade azul no chão causa Mute.'}],
+        'overview': {'en': 'Look behind the big teleporter walls on the 5th level.\n'
+                           'Monster chest on the west side of the 5th level.',
+                     'pt': 'Olhe atrás das paredes dos teletransportes grandes no 5º nível.\n'
+                           'Baú de monstros no lado oeste do 5º nível.'}})
 c.item('collectible', t('Shadow Amberl Tower treasure chests (~30)', 'Baús da Shadow Amberl Tower (~30)'), t('Shadow Amberl Tower'), T4,
        t('The floors form one big loop of teleporters; activate the healing device on the 5th level for fast travel. The monster chest is in the grid on the 4th level.',
          'Os andares formam uma grande volta de teletransportes; ative o dispositivo de cura no 5º nível para a viagem rápida. O baú de monstros fica na grade do 4º nível.'),

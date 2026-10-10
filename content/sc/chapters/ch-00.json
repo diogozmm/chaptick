@@ -113,7 +113,19 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The shop is not available again this chapter.",
+            "pt": "A loja não volta a abrir neste capítulo."
+          }
+        ],
+        "overview": {
+          "en": "Buy it from the kitchen counter in the lodge.",
+          "pt": "Compre no balcão da cozinha da hospedaria."
+        }
+      }
     },
     {
       "id": "sc-ch0-co-03",
@@ -212,7 +224,25 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The minimap legend shows a chest icon while any remain.",
+          "pt": "A legenda do minimapa mostra um ícone de baú enquanto houver algum restante."
+        },
+        "rewards": [
+          {
+            "en": "Jam Cookie: eat it to learn the recipe.",
+            "pt": "Jam Cookie: coma para aprender a receita."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "The drained lower area has a monster chest with frogs and a slug.",
+            "pt": "A área inferior drenada tem um baú de monstros com sapos e uma lesma."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch0-co-05",
@@ -329,7 +359,25 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Your armor and shoes are in these chests.",
+            "pt": "Sua armadura e seus sapatos estão nesses baús."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "One is a monster chest at the west end of the first three-way split.",
+            "pt": "Um é baú de monstros, no extremo oeste da primeira bifurcação tripla."
+          }
+        ],
+        "overview": {
+          "en": "The last one is down the southern passage near the Orbment Station.",
+          "pt": "O último fica na passagem ao sul, perto da Orbment Station."
+        }
+      }
     },
     {
       "id": "sc-ch0-co-08",
@@ -374,7 +422,19 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The window to grab it is very short.",
+            "pt": "A janela para pegar é bem curta."
+          }
+        ],
+        "overview": {
+          "en": "After returning to the lodge, check the bedrooms upstairs; it is on a bed.",
+          "pt": "Ao voltar para a hospedaria, olhe os quartos do andar de cima; está em cima de uma cama."
+        }
+      }
     },
     {
       "id": "sc-ch0-co-10",

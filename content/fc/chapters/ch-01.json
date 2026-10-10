@@ -219,7 +219,23 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          },
+          {
+            "en": "Rewards the Royal Omelette recipe.",
+            "pt": "Dá a receita do Royal Omelette."
+          }
+        ],
+        "overview": {
+          "en": "Bring 5 Monster Tenders, dropped by Limera and Hresvelgr (start of Eisen Road, or the hidden cave on West Bose Highway).",
+          "pt": "Leve 5 Monster Tenders, que caem de Limera e Hresvelgr (início da Eisen Road ou a caverna escondida da West Bose Highway)."
+        }
+      }
     },
     {
       "id": "fc-ch1-hq-02",
@@ -644,7 +660,19 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "Grocery Minuet sells missed volumes, at a high price.",
+            "pt": "A Grocery Minuet vende volumes perdidos, por um preço alto."
+          }
+        ],
+        "overview": {
+          "en": "Talk to him before heading to Valleria Shore.",
+          "pt": "Fale com ele antes de ir para Valleria Shore."
+        }
+      }
     },
     {
       "id": "fc-ch1-co-05",
@@ -914,7 +942,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The monster chest holds Katars, an upgrade for Joshua.",
+            "pt": "O baú de monstros tem Katars, uma melhoria para o Joshua."
+          }
+        ],
+        "optional": [
+          {
+            "en": "A hidden cave in the southwest is a farming spot.",
+            "pt": "Uma caverna escondida no sudoeste serve para farmar."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch1-co-10",
@@ -1033,7 +1075,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Includes the Cursed Fried Eyeballs dish.",
+            "pt": "Inclui o prato Cursed Fried Eyeballs."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Reach the western checkpoint to unlock fast travel.",
+            "pt": "Chegue ao posto a oeste para liberar a viagem rápida."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch1-co-12",
@@ -1077,7 +1133,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "Many enemies freeze: wear Flame Zippos.",
+            "pt": "Muitos inimigos congelam: use Flame Zippos."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Picking up a Bear Claw early skips a fun line in a later quest.",
+            "pt": "Pegar uma Bear Claw cedo pula uma fala divertida de uma quest futura."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch1-co-13",
@@ -1265,7 +1335,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "One-time visit.",
+            "pt": "Visita única."
+          }
+        ],
+        "overview": {
+          "en": "Take the right path for both chests before heading toward the story event.",
+          "pt": "Pegue o caminho da direita para os dois baús antes de ir ao evento da história."
+        }
+      }
     },
     {
       "id": "fc-ch1-co-17",
@@ -1351,7 +1433,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "One-time dungeon.",
+            "pt": "Dungeon de visita única."
+          }
+        ],
+        "overview": {
+          "en": "The last chest holds the Jeweled Ring for the Ring Robbery quest, and the vacuum cleaner on the second floor starts a hidden quest.",
+          "pt": "O último baú tem o Jeweled Ring da quest Ring Robbery, e o aspirador de pó do segundo andar começa uma quest escondida."
+        }
+      }
     }
   ],
   "itemTexts": [],

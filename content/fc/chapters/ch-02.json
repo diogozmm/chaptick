@@ -339,7 +339,23 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          },
+          {
+            "en": "Rewards Seal Blade.",
+            "pt": "Dá a Seal Blade."
+          }
+        ],
+        "overview": {
+          "en": "Hand over Prototype Zero (from the Aina Cswy Monster).",
+          "pt": "Entregue o Prototype Zero (do Aina Cswy Monster)."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-06",
@@ -659,7 +675,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker FC walkthrough, Chapter 2 - Manoria Village"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Saving him unlocks +2 BP in the Map Mystery quest later.",
+            "pt": "Salvá-lo libera +2 BP na quest Map Mystery depois."
+          }
+        ],
+        "overview": {
+          "en": "A side event on the way to Ruan (three Sharkagators).",
+          "pt": "Um evento opcional a caminho de Ruan (três Sharkagators)."
+        }
+      }
     },
     {
       "id": "fc-ch2-mi-02",
@@ -876,7 +904,21 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Available after the festival.",
+            "pt": "Disponível depois do festival."
+          }
+        ],
+        "optional": [
+          {
+            "en": "If missed, O'Neil Duty-Free Shop sells it later.",
+            "pt": "Se perder, a O'Neil Duty-Free Shop vende depois."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch2-co-06",
@@ -1375,7 +1417,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Includes Kloe's Flamberge.",
+            "pt": "Inclui a Flamberge da Kloe."
+          }
+        ],
+        "overview": {
+          "en": "The north path from 2F has both monster chests (Aqua Trappers, weak to earth); the south path leads to the rest and the roof.",
+          "pt": "O caminho norte a partir do 2F tem os dois baús de monstros (Aqua Trappers, fracos contra terra); o caminho sul leva aos outros e ao terraço."
+        }
+      }
     }
   ],
   "itemTexts": [],

@@ -109,7 +109,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Go to the green marker southeast of the island you recaptured in the Ozmid Expanse and beat the Griegrs on the missing ship.",
+          "pt": "Vá ao marcador verde a sudeste da ilha retomada em Ozmid Expanse e derrote os Griegrs no navio desaparecido."
+        },
+        "rewards": [
+          {
+            "en": "a Plain Box Lunch (XL) and new stock in her store.",
+            "pt": "um Plain Box Lunch (XL) e itens novos na loja dela."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch4-q-03",
@@ -189,7 +207,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Watch the dolphins with the spyglass near the island where Ashley was rescued, then repeat at each new marker.",
+          "pt": "Observe os golfinhos com a luneta perto da ilha onde a Ashley foi resgatada e repita em cada marcador novo."
+        },
+        "rewards": [
+          {
+            "en": "a Blessed Paper Scrap.",
+            "pt": "um Blessed Paper Scrap."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch4-q-05",
@@ -213,7 +249,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Starts with Hidden Treasure Chart A (a chest on Anchor Island). Hold the button at the glowing spot in the orange circle.",
+          "pt": "Começa com o Hidden Treasure Chart A (um baú em Anchor Island). Segure o botão no ponto brilhante do círculo laranja."
+        },
+        "rewards": [
+          {
+            "en": "3,000 Gold. All six Treasure Trawls lead to a character note later.",
+            "pt": "3.000 Gold. Os seis Treasure Trawls levam a uma nota de personagem mais tarde."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch4-co-01",
@@ -257,7 +311,21 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The optional event with Lux and Sache sends you back to the ship: return for the southeast chest.",
+            "pt": "O evento opcional com o Lux e a Sache leva você de volta ao navio: volte para pegar o baú do sudeste."
+          }
+        ],
+        "requirements": [
+          {
+            "en": "Two buried treasures open in Chapter 5.",
+            "pt": "Dois tesouros enterrados abrem no Capítulo 5."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch4-co-02",
@@ -301,7 +369,21 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "Gilveros can wait until you are stronger.",
+            "pt": "O Gilveros pode esperar até você ficar mais forte."
+          }
+        ],
+        "requirements": [
+          {
+            "en": "Three buried treasures open in Chapter 5.",
+            "pt": "Três tesouros enterrados abrem no Capítulo 5."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch4-co-03",
@@ -339,7 +421,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Two buried treasures open in Chapter 5.",
+            "pt": "Dois tesouros enterrados abrem no Capítulo 5."
+          }
+        ],
+        "overview": {
+          "en": "Far south of the Ozmid Expanse (Many Mappy Returns).",
+          "pt": "No extremo sul de Ozmid Expanse (Many Mappy Returns)."
+        }
+      }
     },
     {
       "id": "ysx-ch4-co-04",
@@ -377,7 +471,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Two buried treasures open in Chapter 5.",
+            "pt": "Dois tesouros enterrados abrem no Capítulo 5."
+          }
+        ],
+        "overview": {
+          "en": "Westernmost blue marker of the Ozmid Expanse.",
+          "pt": "O marcador azul mais a oeste de Ozmid Expanse."
+        }
+      }
     },
     {
       "id": "ysx-ch4-co-05",
@@ -471,7 +577,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Three buried treasures open in Chapter 5.",
+            "pt": "Três tesouros enterrados abrem no Capítulo 5."
+          }
+        ],
+        "overview": {
+          "en": "The chart starts Treasure Trawl A.",
+          "pt": "O mapa começa a Treasure Trawl A."
+        }
+      }
     },
     {
       "id": "ysx-ch4-co-07",
@@ -593,7 +711,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Buried treasures open with Mana Sense, which you learn on Viewpoint Isle partway through the island.",
+            "pt": "Os tesouros enterrados abrem com o Mana Sense, que você aprende em Viewpoint Isle no meio da ilha."
+          },
+          {
+            "en": "One red chest in the back half only opens in Chapter 9.",
+            "pt": "Um baú vermelho na metade de trás só abre no Capítulo 9."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch4-co-08",
@@ -667,7 +797,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "Equip the Eagle Eye Doubloon (Report Adventures) so buried treasures show on the map while Mana Sense lasts.",
+            "pt": "Equipe o Eagle Eye Doubloon (Report Adventures) para os tesouros enterrados aparecerem no mapa enquanto o Mana Sense durar."
+          }
+        ],
+        "overview": {
+          "en": "Use Mana Sense on the eye engravings to reveal the platforms.",
+          "pt": "Use o Mana Sense nos entalhes de olho para revelar as plataformas."
+        }
+      }
     }
   ],
   "itemTexts": [],

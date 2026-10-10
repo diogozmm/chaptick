@@ -321,7 +321,23 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          },
+          {
+            "en": "Rewards Acerbic Tomato Sandwich.",
+            "pt": "Dá o Acerbic Tomato Sandwich."
+          }
+        ],
+        "overview": {
+          "en": "Pick an Acerbic Tomato from the plants in the 4F laboratory greenhouse and show it to Ben.",
+          "pt": "Pegue um Acerbic Tomato das plantas na estufa do laboratório do 4F e mostre ao Ben."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-05",
@@ -799,7 +815,25 @@
       ],
       "trophies": [
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP (Vanished Professor).",
+            "pt": "+3 BP (Vanished Professor)."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Save first.",
+            "pt": "Salve antes."
+          }
+        ],
+        "overview": {
+          "en": "Get past the alerted guards without being seen (slip by on the left, watching their sight on the minimap).",
+          "pt": "Passe pelos guardas em alerta sem ser visto (vá pela esquerda, observando a visão deles no minimapa)."
+        }
+      }
     },
     {
       "id": "fc-ch3-co-01",
@@ -822,7 +856,21 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Before leaving Ruan at the start of the chapter.",
+            "pt": "Antes de sair de Ruan, no começo do capítulo."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Bell Station in Zeiss sells it if missed.",
+            "pt": "A Bell Station em Zeiss vende se você perder."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch3-co-02",
@@ -1029,7 +1077,21 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "After the factory incident.",
+            "pt": "Depois do incidente na fábrica."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Bell Station sells it if missed.",
+            "pt": "A Bell Station vende se você perder."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch3-co-11",
@@ -1300,7 +1362,27 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Optional and stronger than you at first; you return in the story.",
+            "pt": "Opcional e mais forte que você no começo; você volta na história."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Pengus are vulnerable to Confuse and Deathblow.",
+            "pt": "Os Pengus são vulneráveis a Confuse e Deathblow."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "The two monster chests give Tita’s G-Impact and the Black Coat.",
+            "pt": "Os dois baús de monstros dão o G-Impact da Tita e o Black Coat."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch3-co-15",
@@ -1478,7 +1560,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The Trappers are weak to water and explode.",
+            "pt": "Os Trappers são fracos contra água e explodem."
+          }
+        ],
+        "overview": {
+          "en": "On 2F each staircase leads to a chest; only the middle one goes up.",
+          "pt": "No 2F cada escada leva a um baú; só a do meio sobe."
+        }
+      }
     },
     {
       "id": "fc-ch3-co-17",

@@ -115,7 +115,9 @@ c.item('collectible', t('Liberl News Issue 2'), t('Grancel — Landing Port Wait
 c.item('collectible', t('Gambler Jack — Vol. 2'), t('Ruan — Lavantar Bar & Casino, 2F', 'Ruan — Lavantar Bar & Casino, 2º andar'), LEAVE_RUAN,
        t('Exchange 200 medals. You can buy medals with mira if the games are not going well.',
          'Troque por 200 medalhas. Dá para comprar medalhas com mira se os jogos não estiverem ajudando.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'optional': [{'en': 'You can buy medals with mira if the games are not going well.',
+                      'pt': 'Dá para comprar medalhas com mira se os jogos não estiverem ajudando.'}],
+        'overview': {'en': 'Exchange 200 medals.', 'pt': 'Troque por 200 medalhas.'}})
 c.item('collectible', t('Fishing rod: Marine Star', 'Vara de pesca: Marine Star'), t('Ruan — Lavantar Bar & Casino, 2F', 'Ruan — Lavantar Bar & Casino, 2º andar'), LEAVE_RUAN,
        t('Exchange 100 medals.', 'Troque por 100 medalhas.'), 0, [RUAN])
 c.item('collectible', t('Recipes: Ruan (3)', 'Receitas: Ruan (3)'), t('Ruan'), LEAVE_RUAN,
@@ -146,28 +148,50 @@ c.item('collectible', t('Squirrel Medal'), t("Manoria Village — Fiore's Genera
 c.item('collectible', t('Gull Seaside Way treasure chests (11)', 'Baús da Gull Seaside Way (11)'), t('Gull Seaside Way'), LEAVE_RUAN,
        t('Includes a monster chest with crabs, an ammonite and a panda. Red-highlighted rocks and boxes hide extra loot.',
          'Inclui um baú de monstros com caranguejos, uma amonite e um panda. Pedras e caixas destacadas em vermelho escondem itens extras.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'warnings': [{'en': 'Includes a monster chest with crabs, an ammonite and a panda.',
+                      'pt': 'Inclui um baú de monstros com caranguejos, uma amonite e um panda.'}],
+        'optional': [{'en': 'Red-highlighted rocks and boxes hide extra loot.',
+                      'pt': 'Pedras e caixas destacadas em vermelho escondem itens extras.'}]})
 c.item('collectible', t('Manoria Byroad treasure chests (5)', 'Baús da Manoria Byroad (5)'), t('Manoria Byroad'), LEAVE_RUAN,
        t('Both branches of the fork have chests.', 'Os dois lados da bifurcação têm baús.'), 0, [RUAN])
 c.item('collectible', t('Krone Trail treasure chests (3)', 'Baús da Krone Trail (3)'), t('Krone Trail'), LEAVE_RUAN,
        t('Break the boulder near the bushes below the ladders to open a hidden cave. Also touch Krone Pass to unlock fast travel.',
          'Quebre a rocha perto dos arbustos abaixo das escadas para abrir uma caverna escondida. Passe também pela Krone Pass para liberar a viagem rápida.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'optional': [{'en': 'Also touch Krone Pass to unlock fast travel.',
+                      'pt': 'Passe também pela Krone Pass para liberar a viagem rápida.'}],
+        'overview': {'en': 'Break the boulder near the bushes below the ladders to open a hidden cave.',
+                     'pt': 'Quebre a rocha perto dos arbustos abaixo das escadas para abrir uma caverna '
+                           'escondida.'}})
 c.item('collectible', t('Vista Forest Road treasure chests (4)', 'Baús da Vista Forest Road (4)'), t('Vista Forest Road'), LEAVE_RUAN,
        t('One is a hard monster chest (a big Jabba with three instant-KO birds). Consider waiting for a full party.',
          'Um é um baú de monstros difícil (um Jabba grande com três aves de KO instantâneo). Vale esperar a equipe completa.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'warnings': [{'en': 'One is a hard monster chest (a big Jabba with three instant-KO birds).',
+                      'pt': 'Um é um baú de monstros difícil (um Jabba grande com três aves de KO '
+                            'instantâneo).'}],
+        'preparation': [{'en': 'Consider waiting for a full party.',
+                         'pt': 'Vale esperar a equipe completa.'}]})
 c.item('collectible', t('Aina Causeway treasure chests (3)', 'Baús da Aina Causeway (3)'), t('Aina Causeway'), LEAVE_RUAN,
        t('The hidden cave before Air-Letten has sepith veins, not chests.', 'A caverna escondida antes de Air-Letten tem veios de sepith, não baús.'),
        0, [RUAN])
 c.item('collectible', t('Sapphirl Tower treasure chests (10)', 'Baús da Sapphirl Tower (10)'), t('Sapphirl Tower'), LEAVE_RUAN,
        t('Includes Rotund Meatballs (eat it for the recipe) and a brutal monster chest with five Aqua Trappers on 3F: earth arts help. Helm Cancers reflect physical hits; use arts.',
          'Inclui Rotund Meatballs (coma para ganhar a receita) e um baú de monstros brutal com cinco Aqua Trappers no 3F: arts de terra ajudam. Helm Cancers refletem golpes físicos; use arts.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'rewards': [{'en': 'Rotund Meatballs: eat it to learn the recipe.',
+                     'pt': 'Rotund Meatballs: coma para aprender a receita.'}],
+        'warnings': [{'en': 'A brutal monster chest on 3F contains five Aqua Trappers. Helm Cancers '
+                            'reflect physical hits.',
+                      'pt': 'Um baú de monstros muito difícil no 3º andar contém cinco Aqua Trappers. '
+                            'Helm Cancers refletem golpes físicos.'}],
+        'preparation': [{'en': 'Earth arts help against the Aqua Trappers; use arts against Helm Cancers.',
+                         'pt': 'Arts de terra ajudam contra Aqua Trappers; use arts contra Helm '
+                               'Cancers.'}]})
 c.item('collectible', t('Underground ruins treasure chests (19)', 'Baús das ruínas subterrâneas (19)'), t('Jenis Royal Academy — beneath the old schoolhouse', 'Jenis Royal Academy — sob a escola antiga'), END,
        t('Includes a monster chest with three Puppet Flagger+. Collect everything before the last healing station.',
          'Inclui um baú de monstros com três Puppet Flagger+. Pegue tudo antes da última estação de cura.'),
-       1, [MERCIA])
+       1, [MERCIA], guidance={'warnings': [{'en': 'Includes a monster chest with three Puppet Flagger+.',
+                      'pt': 'Inclui um baú de monstros com três Puppet Flagger+.'},
+                     {'en': 'Collect everything before the last healing station.',
+                      'pt': 'Pegue tudo antes da última estação de cura.'}]})
 
 # ---------------------------------------------------------------- routes (append-only once published)
 GF1 = gf('Chapter 1 - A Looming Shadow')

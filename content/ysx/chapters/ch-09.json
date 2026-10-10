@@ -47,7 +47,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "From the Hugill letter \"ST OP ME\". Land on the island for an event, then beat the Armed Biter in the mine.",
+          "pt": "Vem da carta do Hugill \"ST OP ME\". Desembarque na ilha para um evento e derrote o Armed Biter na mina."
+        },
+        "rewards": [
+          {
+            "en": "a Luminous Bangle.",
+            "pt": "um Luminous Bangle."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch9-q-02",
@@ -185,7 +203,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "From Lila. Haze Island is northwest of Serenes Island; fast travel to the back half. The targets are fragile but hit very hard; stay out of the slowing water.",
+          "pt": "Vem da Lila. Haze Island fica a noroeste de Serenes Island; viaje até a metade de trás. Os alvos são frágeis, mas batem muito forte; fique fora da água que deixa lento."
+        },
+        "rewards": [
+          {
+            "en": "the Panacea Formula III.",
+            "pt": "a Panacea Formula III."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch9-q-05",
@@ -333,7 +369,19 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The Ebon Mindgem on the eastern summit gives Guila's character note later.",
+            "pt": "A Ebon Mindgem no topo leste dá a nota de personagem da Guila depois."
+          }
+        ],
+        "overview": {
+          "en": "Last blue marker of the Marine Triangle.",
+          "pt": "O último marcador azul do Marine Triangle."
+        }
+      }
     },
     {
       "id": "ysx-ch9-co-03",
@@ -743,7 +791,21 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "The northeast is confusing because the map ignores height: use Mana Sense often.",
+            "pt": "O nordeste confunde porque o mapa ignora a altura: use o Mana Sense com frequência."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Reaching the old man ends the chapter, but you can come back in Chapter 10.",
+            "pt": "Chegar ao velho encerra o capítulo, mas dá para voltar no Capítulo 10."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": [],

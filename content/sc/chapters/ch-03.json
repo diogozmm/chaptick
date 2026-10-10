@@ -514,7 +514,19 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "If missed, Edel Department Store sells it at the end of the chapter.",
+            "pt": "Se perder, a Edel Department Store vende no fim do capítulo."
+          }
+        ],
+        "overview": {
+          "en": "Talk to Nathan in the library after the meeting upstairs.",
+          "pt": "Fale com o Nathan na biblioteca depois da reunião no andar de cima."
+        }
+      }
     },
     {
       "id": "sc-ch3-co-04",
@@ -537,7 +549,19 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "If missed, Edel Department Store sells it at the end of the chapter.",
+            "pt": "Se perder, a Edel Department Store vende no fim do capítulo."
+          }
+        ],
+        "overview": {
+          "en": "Talk to Connor.",
+          "pt": "Fale com o Connor."
+        }
+      }
     },
     {
       "id": "sc-ch3-co-05",
@@ -797,7 +821,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "Southeast corner monster chest: sheep that reflect; dispel with Anti-Sept All.",
+            "pt": "Baú de monstros no canto sudeste: ovelhas que refletem; remova com Anti-Sept All."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Two out-of-reach chests belong to a later block.",
+            "pt": "Dois baús fora de alcance pertencem a outro bloco, mais tarde."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch3-co-11",
@@ -847,7 +885,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "A breakable wall near the Erbe exit opens a water cave.",
+            "pt": "Uma parede quebrável perto da saída para Erbe abre uma caverna com água."
+          }
+        ],
+        "overview": {
+          "en": "West and east paths.",
+          "pt": "Caminhos oeste e leste."
+        }
+      }
     },
     {
       "id": "sc-ch3-co-12",
@@ -915,7 +965,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "Monster chest near the Earth Monument: burst the bone fish before they rage.",
+            "pt": "Baú de monstros perto do Earth Monument: derrube os peixes-esqueleto antes que entrem em fúria."
+          }
+        ],
+        "optional": [
+          {
+            "en": "A hidden sepith cave sits behind bushes at the Water Monument.",
+            "pt": "Uma caverna de sepith escondida fica atrás de arbustos no Water Monument."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch3-co-13",
@@ -995,7 +1059,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Includes Bone-In Meat (eat it for the recipe).",
+            "pt": "Inclui Bone-In Meat (coma para ganhar a receita)."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "The North Block monster chest (four moles) is the hardest fight of the chapter; it can wait until the end.",
+            "pt": "O baú de monstros do North Block (quatro toupeiras) é a luta mais difícil do capítulo; dá para deixar para o fim."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": [],

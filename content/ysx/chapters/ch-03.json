@@ -220,7 +220,21 @@
       ],
       "trophies": [
         "no-hewnstone-unturned"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Celadon Clay counts for the Sandras Spruce-Up quest in Chapter 4.",
+            "pt": "A Celadon Clay conta para a quest Sandras Spruce-Up no Capítulo 4."
+          }
+        ],
+        "requirements": [
+          {
+            "en": "Seven buried treasures here open in Chapter 5.",
+            "pt": "Sete tesouros enterrados aqui abrem no Capítulo 5."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch3-co-03",

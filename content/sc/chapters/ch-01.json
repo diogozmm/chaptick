@@ -610,7 +610,19 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "You can buy medals with mira if the games are not going well.",
+            "pt": "Dá para comprar medalhas com mira se os jogos não estiverem ajudando."
+          }
+        ],
+        "overview": {
+          "en": "Exchange 200 medals.",
+          "pt": "Troque por 200 medalhas."
+        }
+      }
     },
     {
       "id": "sc-ch1-co-03",
@@ -883,7 +895,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Includes a monster chest with crabs, an ammonite and a panda.",
+            "pt": "Inclui um baú de monstros com caranguejos, uma amonite e um panda."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Red-highlighted rocks and boxes hide extra loot.",
+            "pt": "Pedras e caixas destacadas em vermelho escondem itens extras."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch1-co-10",
@@ -983,7 +1009,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "Also touch Krone Pass to unlock fast travel.",
+            "pt": "Passe também pela Krone Pass para liberar a viagem rápida."
+          }
+        ],
+        "overview": {
+          "en": "Break the boulder near the bushes below the ladders to open a hidden cave.",
+          "pt": "Quebre a rocha perto dos arbustos abaixo das escadas para abrir uma caverna escondida."
+        }
+      }
     },
     {
       "id": "sc-ch1-co-12",
@@ -1033,7 +1071,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "One is a hard monster chest (a big Jabba with three instant-KO birds).",
+            "pt": "Um é um baú de monstros difícil (um Jabba grande com três aves de KO instantâneo)."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Consider waiting for a full party.",
+            "pt": "Vale esperar a equipe completa."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch1-co-13",
@@ -1157,7 +1209,27 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Rotund Meatballs: eat it to learn the recipe.",
+            "pt": "Rotund Meatballs: coma para aprender a receita."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "A brutal monster chest on 3F contains five Aqua Trappers. Helm Cancers reflect physical hits.",
+            "pt": "Um baú de monstros muito difícil no 3º andar contém cinco Aqua Trappers. Helm Cancers refletem golpes físicos."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Earth arts help against the Aqua Trappers; use arts against Helm Cancers.",
+            "pt": "Arts de terra ajudam contra Aqua Trappers; use arts contra Helm Cancers."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch1-co-15",
@@ -1274,7 +1346,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Includes a monster chest with three Puppet Flagger+.",
+            "pt": "Inclui um baú de monstros com três Puppet Flagger+."
+          },
+          {
+            "en": "Collect everything before the last healing station.",
+            "pt": "Pegue tudo antes da última estação de cura."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": [],

@@ -704,7 +704,19 @@
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "If you miss it, Bell Station in Zeiss sells a copy in Chapter 3.",
+            "pt": "Se perder, a Bell Station em Zeiss vende uma cópia no Capítulo 3."
+          }
+        ],
+        "overview": {
+          "en": "Talk to Olivier a second time after his scene on board.",
+          "pt": "Fale com o Olivier uma segunda vez depois da cena dele a bordo."
+        }
+      }
     },
     {
       "id": "sc-ch2-co-02",
@@ -954,7 +966,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Includes a monster chest with grasshoppers.",
+            "pt": "Inclui um baú de monstros com gafanhotos."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Break the wall midway along the road to open a hidden water cave.",
+            "pt": "Quebre a parede no meio da estrada para abrir uma caverna com água escondida."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch2-co-09",
@@ -1102,7 +1128,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "One holds the Pisces Heart fishing rod (east side).",
+            "pt": "Um guarda a vara de pesca Pisces Heart (lado leste)."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Includes a monster chest with sheep and mantises.",
+            "pt": "Inclui um baú de monstros com ovelhas e louva-a-deus."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch2-co-11",
@@ -1170,7 +1210,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The top-floor monster chest has five Fire Trappers: water arts, and keep away when they explode.",
+            "pt": "O baú de monstros do último andar tem cinco Fire Trappers: use arts de água e se afaste quando explodirem."
+          }
+        ],
+        "overview": {
+          "en": "Optional tower northeast of Tratt Plains Road.",
+          "pt": "Torre opcional a nordeste da Tratt Plains Road."
+        }
+      }
     },
     {
       "id": "sc-ch2-co-12",

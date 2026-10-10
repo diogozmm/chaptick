@@ -111,11 +111,16 @@ c.item('collectible', t('Liberl News Issue 5'), t('Grancel — Edel Department S
 c.item('collectible', t('Gambler Jack — Vol. 4'), t('Grancel — embassy library, E. Block', 'Grancel — biblioteca da embaixada, E. Block'), None,
        t('Talk to Nathan in the library after the meeting upstairs. If missed, Edel Department Store sells it at the end of the chapter.',
          'Fale com o Nathan na biblioteca depois da reunião no andar de cima. Se perder, a Edel Department Store vende no fim do capítulo.'),
-       1, [VILLA, GURUNE])
+       1, [VILLA, GURUNE], guidance={'optional': [{'en': 'If missed, Edel Department Store sells it at the end of the chapter.',
+                      'pt': 'Se perder, a Edel Department Store vende no fim do capítulo.'}],
+        'overview': {'en': 'Talk to Nathan in the library after the meeting upstairs.',
+                     'pt': 'Fale com o Nathan na biblioteca depois da reunião no andar de cima.'}})
 c.item('collectible', t('Gambler Jack — Vol. 5'), t('Grancel — Baral Coffee House, W. Block'), None,
        t('Talk to Connor. If missed, Edel Department Store sells it at the end of the chapter.',
          'Fale com o Connor. Se perder, a Edel Department Store vende no fim do capítulo.'),
-       0, [VILLA, GURUNE])
+       0, [VILLA, GURUNE], guidance={'optional': [{'en': 'If missed, Edel Department Store sells it at the end of the chapter.',
+                      'pt': 'Se perder, a Edel Department Store vende no fim do capítulo.'}],
+        'overview': {'en': 'Talk to Connor.', 'pt': 'Fale com o Connor.'}})
 c.item('collectible', t('Fishing rod: Bamboo Fishing Rod', 'Vara de pesca: Bamboo Fishing Rod'), t("Grancel — Helmut's Home, N. Block"), END,
        t('Talk to Noche upstairs.', 'Fale com a Noche no andar de cima.'), 0, [GRANCEL])
 c.item('collectible', t('Recipes: Grancel shops (9)', 'Receitas: lojas de Grancel (9)'), t('Grancel'), END,
@@ -136,19 +141,36 @@ c.item('collectible', t('Kaldia Limestone Cave treasure chests (9)', 'Baús da K
 c.item('collectible', t('Grancel Sewers W. Block treasure chests (6)', 'Baús do Grancel Sewers W. Block (6)'), t('Grancel Sewers — W. Block'), END,
        t('Southeast corner monster chest: sheep that reflect; dispel with Anti-Sept All. Two out-of-reach chests belong to a later block.',
          'Baú de monstros no canto sudeste: ovelhas que refletem; remova com Anti-Sept All. Dois baús fora de alcance pertencem a outro bloco, mais tarde.'),
-       0, [GRANCEL])
+       0, [GRANCEL], guidance={'preparation': [{'en': 'Southeast corner monster chest: sheep that reflect; dispel with Anti-Sept '
+                               'All.',
+                         'pt': 'Baú de monstros no canto sudeste: ovelhas que refletem; remova com '
+                               'Anti-Sept All.'}],
+        'warnings': [{'en': 'Two out-of-reach chests belong to a later block.',
+                      'pt': 'Dois baús fora de alcance pertencem a outro bloco, mais tarde.'}]})
 c.item('collectible', t('Kirsche Avenue treasure chests (4)', 'Baús da Kirsche Avenue (4)'), t('Kirsche Avenue'), END,
        t('West and east paths. A breakable wall near the Erbe exit opens a water cave.',
          'Caminhos oeste e leste. Uma parede quebrável perto da saída para Erbe abre uma caverna com água.'),
-       0, [GRANCEL])
+       0, [GRANCEL], guidance={'optional': [{'en': 'A breakable wall near the Erbe exit opens a water cave.',
+                      'pt': 'Uma parede quebrável perto da saída para Erbe abre uma caverna com água.'}],
+        'overview': {'en': 'West and east paths.', 'pt': 'Caminhos oeste e leste.'}})
 c.item('collectible', t('Erbe Scenic Route treasure chests (6)', 'Baús da Erbe Scenic Route (6)'), t('Erbe Scenic Route'), VILLA_IN,
        t('Monster chest near the Earth Monument: burst the bone fish before they rage. A hidden sepith cave sits behind bushes at the Water Monument.',
          'Baú de monstros perto do Earth Monument: derrube os peixes-esqueleto antes que entrem em fúria. Uma caverna de sepith escondida fica atrás de arbustos no Water Monument.'),
-       0, [GRANCEL])
+       0, [GRANCEL], guidance={'preparation': [{'en': 'Monster chest near the Earth Monument: burst the bone fish before they '
+                               'rage.',
+                         'pt': 'Baú de monstros perto do Earth Monument: derrube os peixes-esqueleto '
+                               'antes que entrem em fúria.'}],
+        'optional': [{'en': 'A hidden sepith cave sits behind bushes at the Water Monument.',
+                      'pt': 'Uma caverna de sepith escondida fica atrás de arbustos no Water Monument.'}]})
 c.item('collectible', t('Grancel Sewers E. & N. Blocks treasure chests (9)', 'Baús do Grancel Sewers E. e N. Blocks (9)'), t('Grancel Sewers — E. and N. Blocks'), END,
        t('Includes Bone-In Meat (eat it for the recipe). The North Block monster chest (four moles) is the hardest fight of the chapter; it can wait until the end.',
          'Inclui Bone-In Meat (coma para ganhar a receita). O baú de monstros do North Block (quatro toupeiras) é a luta mais difícil do capítulo; dá para deixar para o fim.'),
-       1, [VILLA])
+       1, [VILLA], guidance={'rewards': [{'en': 'Includes Bone-In Meat (eat it for the recipe).',
+                     'pt': 'Inclui Bone-In Meat (coma para ganhar a receita).'}],
+        'warnings': [{'en': 'The North Block monster chest (four moles) is the hardest fight of the '
+                            'chapter; it can wait until the end.',
+                      'pt': 'O baú de monstros do North Block (quatro toupeiras) é a luta mais difícil do '
+                            'capítulo; dá para deixar para o fim.'}]})
 
 # ---------------------------------------------------------------- routes (append-only once published)
 c.set_steps('sc-ch3-co-09', [

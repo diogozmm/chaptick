@@ -669,7 +669,21 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Includes a monster chest with scorpions and a Hapilsag.",
+            "pt": "Inclui um baú de monstros com escorpiões e um Hapilsag."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Drop down the ladders for extra field items.",
+            "pt": "Desça pelas escadas para pegar itens de campo extras."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch5-co-08",
@@ -821,7 +835,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The 5F monster chest has three Ground Trappers: wind arts, and they explode when defeated.",
+            "pt": "O baú de monstros do 5F tem três Ground Trappers: use arts de vento, e eles explodem quando caem."
+          }
+        ],
+        "overview": {
+          "en": "Spread across all five floors; the 3F and 4F outer loops hide several.",
+          "pt": "Espalhados pelos cinco andares; os anéis externos do 3F e do 4F escondem vários."
+        }
+      }
     },
     {
       "id": "sc-ch5-co-10",
@@ -919,7 +945,19 @@
       ],
       "trophies": [
         "treasure-hunter"
-      ]
+      ],
+      "guidance": {
+        "optional": [
+          {
+            "en": "Whemler, in his hut, gives you Dark Stew if you accept his stew on the second talk.",
+            "pt": "O Whemler, na cabana dele, dá Dark Stew se você aceitar o ensopado na segunda conversa."
+          }
+        ],
+        "overview": {
+          "en": "One is just before the old stronghold entrance.",
+          "pt": "Um fica logo antes da entrada da antiga fortaleza."
+        }
+      }
     },
     {
       "id": "sc-ch5-co-12",
