@@ -18,10 +18,21 @@ c.item('quest', t('Distant Days'), t('Bose — Kirsche Bar'), BREATHER,
            t('Get the old photo from Corna.', 'Pegue a foto antiga com Corna.'),
            t('Show it to Lila upstairs in the Mayor’s Residence.', 'Mostre a foto a Lila no andar de cima da residência do prefeito.'),
            t('Show it to the Mayor.', 'Mostre a foto ao prefeito.'),
-       ])
+       ], guidance={'rewards': [{'en': '+6 BP.', 'pt': '+6 BP.'}],
+        'overview': {'en': 'Show the old photo in this order.', 'pt': 'Mostre a foto antiga nesta ordem.'}})
 c.item('quest', t("Businesswoman's Bodyguard"), t("Bose — Trino's Home", 'Bose — casa do Trino'), BREATHER,
        t('BP: 4 (+2 bonus). Escort Milano from the west exit to Ravennue Village in under 10 minutes for the bonus.\nTimer: pauses during scenes and Command Battles, but each turn adds 5 seconds.\nForced fight: on Ravennue Trail; the leader is weak to water.', 'BP: 4 (+2 de bônus). Escolte Milano da saída oeste até Ravennue Village em menos de 10 minutos para receber o bônus.\nCronômetro: pausa nas cenas e nas Command Battles, mas cada turno custa 5 segundos.\nLuta obrigatória: em Ravennue Trail; o líder é fraco contra água.'),
-       0, [D1])
+       0, [D1], guidance={'rewards': [{'en': 'BP: 4 (+2 bonus).', 'pt': 'BP: 4 (+2 de bônus).'}],
+        'overview': {'en': 'Escort Milano from the west exit to Ravennue Village in under 10 minutes for '
+                           'the bonus.\n'
+                           'Timer: pauses during scenes and Command Battles, but each turn adds 5 '
+                           'seconds.\n'
+                           'Forced fight: on Ravennue Trail; the leader is weak to water.',
+                     'pt': 'Escolte Milano da saída oeste até Ravennue Village em menos de 10 minutos '
+                           'para receber o bônus.\n'
+                           'Cronômetro: pausa nas cenas e nas Command Battles, mas cada turno custa 5 '
+                           'segundos.\n'
+                           'Luta obrigatória: em Ravennue Trail; o líder é fraco contra água.'}})
 c.item('quest', t('Mine Mop Up'), t('Abandoned mine — front gate', 'Mina abandonada — portão da frente'), BREATHER,
        t('One-time visit: collect the chest beyond the east exit before leaving.', 'Visita única: recolha o baú depois da saída leste antes de ir embora.'),
        0, [D1], steps=[
@@ -33,7 +44,19 @@ c.item('quest', t('Mine Mop Up'), t('Abandoned mine — front gate', 'Mina aband
 # Missables
 c.item('missable', t('Bonus BP: win the fight on the deck', 'BP bônus: vencer a luta no convés'), t('Later in the chapter', 'Mais adiante no capítulo'), END,
        t('Bonus: +5 BP. Save first: losing lets the story continue but costs the bonus.\nPreparation: equip Grail Locket or a Proxy Puppet.\nDuring the fight:\n• Keep Earth Guard active.\n• Use Grand Stream to inflict Blind.\n• When they start reviving each other, finish them with an area art.', 'Bônus: +5 BP. Salve antes: perder permite continuar a história, mas custa o bônus.\nPreparação: equipe Grail Locket ou Proxy Puppet.\nDurante a luta:\n• Mantenha Earth Guard ativo.\n• Use Grand Stream para causar Blind.\n• Quando começarem a reviver uns aos outros, finalize com uma art em área.'),
-       2, [D2])
+       2, [D2], guidance={'rewards': [{'en': 'Bonus: +5 BP.', 'pt': 'Bônus: +5 BP.'}],
+        'overview': {'en': 'Save first: losing lets the story continue but costs the bonus.\n'
+                           'Preparation: equip Grail Locket or a Proxy Puppet.\n'
+                           'During the fight:\n'
+                           '• Keep Earth Guard active.\n'
+                           '• Use Grand Stream to inflict Blind.\n'
+                           '• When they start reviving each other, finish them with an area art.',
+                     'pt': 'Salve antes: perder permite continuar a história, mas custa o bônus.\n'
+                           'Preparação: equipe Grail Locket ou Proxy Puppet.\n'
+                           'Durante a luta:\n'
+                           '• Mantenha Earth Guard ativo.\n'
+                           '• Use Grand Stream para causar Blind.\n'
+                           '• Quando começarem a reviver uns aos outros, finalize com uma art em área.'}})
 
 # Collectibles
 c.item('collectible', t('Liberl News Issue 8'), t('Bose Market — Grocery Minuet'), BREATHER,

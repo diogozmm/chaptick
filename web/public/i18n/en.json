@@ -127,6 +127,14 @@
       "collectible": "Collectible"
     }
   },
+  "guidance": {
+      "requirements": "Requirements",
+      "preparation": "Before you start",
+      "rewards": "Rewards",
+      "warnings": "Important",
+      "optional": "Optional",
+      "alternatives": "Choose the applicable path"
+  },
   "item": {
     "location": "Location",
     "deadline": "Available until",

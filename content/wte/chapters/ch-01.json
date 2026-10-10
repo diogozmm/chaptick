@@ -27,7 +27,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The Mall Administrator gets called.",
+            "pt": "O Administrador do Shopping é chamado."
+          }
+        ],
+        "overview": {
+          "en": "Bring the Office Worker a Stalktopus.",
+          "pt": "Leve um Polvo-de-antenas ao funcionário do escritório."
+        }
+      }
     },
     {
       "id": "wte-ch1-q-02",
@@ -48,7 +60,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Bring Jeremiah a Light Salad.",
+          "pt": "Leve uma Salada Leve ao Jeremiah."
+        }
+      }
     },
     {
       "id": "wte-ch1-q-03",
@@ -83,7 +101,15 @@
             "pt": "Chegue ao 3º andar das Minas do Shopping."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Blueprint: Preserving Barrel.",
+            "pt": "Projeto: Barril de Conserva."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch1-q-04",
@@ -163,7 +189,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Sort out this tentacle mess.",
+          "pt": "Dê um jeito nessa bagunça de tentáculos."
+        }
+      }
     },
     {
       "id": "wte-ch1-co-01",
@@ -184,7 +216,27 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2× Cursed Die",
+            "pt": "2× Dado Amaldiçoado"
+          },
+          {
+            "en": "1× Lucky Die",
+            "pt": "1× Dado da Sorte"
+          },
+          {
+            "en": "1× Crimson Die",
+            "pt": "1× Dado Carmesim"
+          }
+        ],
+        "overview": {
+          "en": "Lend Ellie some money while she shops in the General Store.",
+          "pt": "Empreste dinheiro à Ellie quando ela estiver comprando no Armazém."
+        }
+      }
     },
     {
       "id": "wte-ch1-co-02",
@@ -205,7 +257,43 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "1× Aged Rum",
+            "pt": "1× Rum Envelhecido"
+          },
+          {
+            "en": "1× Small Coin Pouch",
+            "pt": "1× Bolsinha de Moedas Pequena"
+          },
+          {
+            "en": "1× Fickle Potion of Greed",
+            "pt": "1× Poção Volúvel de Ganância"
+          },
+          {
+            "en": "1× Fickle Potion of Panic",
+            "pt": "1× Poção Volúvel de Pânico"
+          },
+          {
+            "en": "1× Fickle Potion of Daring",
+            "pt": "1× Poção Volúvel de Ousadia"
+          },
+          {
+            "en": "5× Gold Ore",
+            "pt": "5× Minério de Ouro"
+          },
+          {
+            "en": "1× Mystery Sandwich",
+            "pt": "1× Sanduíche Misterioso"
+          }
+        ],
+        "overview": {
+          "en": "Random: tier 1 book loot in the Mall Mines.",
+          "pt": "Aleatório: livros (nível 1) achados nas Minas do Shopping."
+        }
+      }
     },
     {
       "id": "wte-ch1-co-03",
@@ -226,7 +314,31 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3× Assorted Gems",
+            "pt": "3× Gemas Variadas"
+          },
+          {
+            "en": "2× Treasure Casket",
+            "pt": "2× Baú do Tesouro"
+          },
+          {
+            "en": "1× Gem Bag",
+            "pt": "1× Bolsa de Gemas"
+          },
+          {
+            "en": "1× Blood Potion",
+            "pt": "1× Poção de Sangue"
+          }
+        ],
+        "overview": {
+          "en": "Talk to Molly in her workshop.",
+          "pt": "Converse com a Molly na oficina dela."
+        }
+      }
     },
     {
       "id": "wte-ch1-co-04",
@@ -247,7 +359,35 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "1× Gem Bag",
+            "pt": "1× Bolsa de Gemas"
+          },
+          {
+            "en": "2× Treasure Casket",
+            "pt": "2× Baú do Tesouro"
+          },
+          {
+            "en": "1× Love Potion",
+            "pt": "1× Poção do Amor"
+          },
+          {
+            "en": "2× Spiced Sausage",
+            "pt": "2× Linguiça Temperada"
+          },
+          {
+            "en": "1× Cured Mana Steak",
+            "pt": "1× Bife Curado de Mana"
+          }
+        ],
+        "overview": {
+          "en": "Talk to Alice while she is at the farmhouse.",
+          "pt": "Converse com a Alice quando ela estiver na casa da fazenda."
+        }
+      }
     },
     {
       "id": "wte-ch1-co-05",
@@ -268,7 +408,23 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2× Rare Gem Bag",
+            "pt": "2× Bolsa de Gemas Rara"
+          },
+          {
+            "en": "2× Cured Mana Steak",
+            "pt": "2× Bife Curado de Mana"
+          }
+        ],
+        "overview": {
+          "en": "Talk to Josh in the Art Gallery.",
+          "pt": "Converse com o Josh na Galeria de Arte."
+        }
+      }
     }
   ],
   "itemTexts": [],

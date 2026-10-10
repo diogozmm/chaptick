@@ -194,7 +194,19 @@
             "pt": "Conclua Blindman’s Darkroad."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Abiding Love and an Almighty Star.",
+            "pt": "Abiding Love e um Almighty Star."
+          }
+        ],
+        "overview": {
+          "en": "Proud Nordics only.\nThe guide gives no deadline; complete it in this chapter to be safe.",
+          "pt": "Exclusivo de Proud Nordics.\nO guia não informa o prazo; por segurança, conclua neste capítulo."
+        }
+      }
     },
     {
       "id": "ysx-ch5-co-01",

@@ -73,7 +73,19 @@
             "pt": "Entregue os materiais e descanse na Captain’s Quarters para ver o evento."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Gather these materials for Sandras Spruce-Up.",
+          "pt": "Reúna estes materiais para Sandras Spruce-Up."
+        }
+      }
     },
     {
       "id": "ysx-ch4-q-02",
@@ -141,7 +153,19 @@
             "pt": "Volte para falar com Dogi."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Travel to Great Tidal Reef in the far south.",
+          "pt": "Vá até Great Tidal Reef, no extremo sul."
+        }
+      }
     },
     {
       "id": "ysx-ch4-q-04",

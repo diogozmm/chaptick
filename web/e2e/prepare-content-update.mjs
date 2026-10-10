@@ -17,6 +17,7 @@ const chapter = JSON.parse(readFileSync(path, 'utf8'));
 const item = chapter.items.find((i) => i.id === 'sc-ch0-co-01');
 item.hint.en = 'Updated instructions from the new deployment.';
 item.steps[0].text.en = 'Updated left shelf instruction';
+item.guidance = { overview: item.hint, rewards: [{ en: 'New structured reward.' }] };
 writeFileSync(path, JSON.stringify(chapter));
 // Intentionally keep game.json's dataVersion unchanged.
 build('after');

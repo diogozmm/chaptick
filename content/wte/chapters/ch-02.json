@@ -41,7 +41,15 @@
             "pt": "Mistérios investigados: (8 necessários)."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "...Something, maybe?.",
+            "pt": "Talvez... alguma coisa?."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-02",
@@ -62,7 +70,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A new cooking recipe.",
+            "pt": "Uma receita nova."
+          }
+        ],
+        "overview": {
+          "en": "Cook a Stew of Six Curses.",
+          "pt": "Cozinhe um Ensopado das Seis Maldições."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-03",
@@ -83,7 +103,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Woodworking knowledge of some kind.",
+            "pt": "Algum conhecimento de marcenaria."
+          }
+        ],
+        "overview": {
+          "en": "Catch a Golden Beetle.",
+          "pt": "Capture um Besouro Dourado."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-04",
@@ -104,7 +136,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Supplies found: (3 required).",
+          "pt": "Suprimentos encontrados: (3 necessários)."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-05",
@@ -125,7 +163,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Find Jess's Lost Notes.",
+          "pt": "Encontre as anotações perdidas da Jess."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-06",
@@ -160,7 +204,15 @@
             "pt": "Mistérios investigados: (6 necessários)."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "One or two Small Hammers, and a final prize.",
+            "pt": "Um ou dois Martelos Pequenos e um último prêmio."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-07",
@@ -181,7 +233,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A way to pass through the Hardened Bones.",
+            "pt": "Um jeito de atravessar os Ossos Endurecidos."
+          }
+        ],
+        "overview": {
+          "en": "Bring 10 Living Bones to Carlos.",
+          "pt": "Leve 10 Ossos Vivos ao Carlos."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-08",
@@ -202,7 +266,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Access to a new type of crop.",
+            "pt": "Acesso a um novo tipo de cultivo."
+          }
+        ],
+        "overview": {
+          "en": "Bring Farmer Sven 10 Dense Fertilizer (Lv2) and 10 Fancy Fertilizer (Lv2).",
+          "pt": "Leve ao Fazendeiro Sven 10 Fertilizantes Densos (Nv2) e 10 Fertilizantes Refinados (Nv2)."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-09",
@@ -223,7 +299,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Craft a Kaal Idol and bring it to Denzel.",
+          "pt": "Crie um Ídolo de Kaal e leve ao Denzel."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-10",
@@ -244,7 +326,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Shrines found: (2 required).",
+          "pt": "Santuários encontrados: (2 necessários)."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-11",
@@ -265,7 +353,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Cook a Forbidden Snack.",
+          "pt": "Cozinhe um Lanche Proibido."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-12",
@@ -286,7 +380,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A Large Hammer.",
+            "pt": "Um Martelo Grande."
+          }
+        ],
+        "overview": {
+          "en": "Reach the 2nd floor of the Catacombs Mines.",
+          "pt": "Chegue ao 2º andar das Minas das Catacumbas."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-13",
@@ -307,7 +413,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The key to the Catacombs Mine gate.",
+            "pt": "A chave do portão da Mina das Catacumbas."
+          }
+        ],
+        "overview": {
+          "en": "Obtain the skull of... something.",
+          "pt": "Consiga o crânio de... alguma coisa."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-14",
@@ -342,7 +460,15 @@
             "pt": "Leve ao Herb um Lúcio Ancestral de qualidade Ouro ou melhor."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A new cooking recipe.",
+            "pt": "Uma receita nova."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-15",
@@ -363,7 +489,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Unlock Gloom Hops Seeds.",
+            "pt": "Libera a Semente de Lúpulo Sombrio."
+          }
+        ],
+        "overview": {
+          "en": "Bring Hans a Pale Empress Moth.",
+          "pt": "Leve uma Mariposa Imperatriz Pálida ao Hans."
+        }
+      }
     },
     {
       "id": "wte-ch2-q-16",
@@ -433,7 +571,15 @@
             "pt": "Encontre um Cogumelo Gigante."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Access to Isabella's lab.",
+            "pt": "Acesso ao laboratório da Isabella."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-18",
@@ -468,7 +614,15 @@
             "pt": "Encontre um pote de Mel e um Cogumelo Dourado."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "An old family recipe.",
+            "pt": "Uma receita antiga de família."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-19",
@@ -503,7 +657,15 @@
             "pt": "Encontre uma Garra de Cervo."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A special recipe to make use of deer meat.",
+            "pt": "Uma receita especial para usar carne de cervo."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-20",
@@ -538,7 +700,15 @@
             "pt": "Leve Maionese e Queijo ao Terry."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The secret to a balanced breakfast.",
+            "pt": "O segredo de um café da manhã equilibrado."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-21",
@@ -573,7 +743,15 @@
             "pt": "Leve ao Damian uma Geleia (Baga-de-sangue) e uma Conserva (Rabanete)."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Some old recipe books.",
+            "pt": "Alguns livros de receitas antigos."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-22",
@@ -632,7 +810,15 @@
             "pt": "Conte ao Dan o que você descobriu."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Unlock a new seed type.",
+            "pt": "Libera um novo tipo de semente."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-23",
@@ -667,7 +853,15 @@
             "pt": "Leve um Mel de Osso à Zoe."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Unlock Strawberry Seeds.",
+            "pt": "Libera a Semente de Morango."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-24",
@@ -702,7 +896,15 @@
             "pt": "Leve uma Travessa Farta ao Daryl."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Unlock Cauliflower Seeds.",
+            "pt": "Libera a Semente de Couve-flor."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-25",
@@ -737,7 +939,15 @@
             "pt": "Leve 25 Madeiras Ancestrais e um Cristal das Profundezas Maior à Jeannie."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Some of Jeannie's old furniture.",
+            "pt": "Alguns móveis antigos da Jeannie."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-26",
@@ -772,7 +982,15 @@
             "pt": "Leve ao Earl qualquer Vinho de Baga-do-crepúsculo."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Some \"weird stuff\" from the basement.",
+            "pt": "Umas \"coisas esquisitas\" do porão."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-27",
@@ -872,7 +1090,15 @@
             "pt": "Leve um Minério de Verdite à Michelle."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The secrets of the Local Joggers Club.",
+            "pt": "Os segredos do Clube de Corrida Local."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch2-q-29",
@@ -907,7 +1133,15 @@
             "pt": "Coloque a boneca perto do buraco no 3º andar."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Unlocks Coffee Bean Seeds.",
+            "pt": "Libera a Semente de Grão de Café."
+          }
+        ]
+      }
     }
   ],
   "itemTexts": [],

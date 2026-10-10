@@ -90,7 +90,19 @@
             "pt": "Reúna os ingredientes da receita, incluindo 2 Monster Bones."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP and the Spiced Stew recipe.",
+            "pt": "+4 BP e a receita Spiced Stew."
+          }
+        ],
+        "overview": {
+          "en": "Buy the ingredients except the 2 Monster Bones, which come from Dirty Rats or Crop Munchers.",
+          "pt": "Compre os ingredientes, exceto os 2 Monster Bones, obtidos de Dirty Rats ou Crop Munchers."
+        }
+      }
     },
     {
       "id": "sc-ch5-q-02",
@@ -146,7 +158,19 @@
             "pt": "Entregue os ingredientes a Anton."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Olivier needs to leave the party briefly. Gather these ingredients for Anton.",
+          "pt": "Olivier precisa sair da equipe por um momento. Reúna estes ingredientes para Anton."
+        }
+      }
     },
     {
       "id": "sc-ch5-q-03",
@@ -196,7 +220,19 @@
             "pt": "Entre pela porta trancada em Rolent Sewers, vença a luta e pegue o documento na mesa."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+5 BP.",
+            "pt": "+5 BP."
+          }
+        ],
+        "overview": {
+          "en": "A fight awaits at the final clue.",
+          "pt": "Há uma luta na última pista."
+        }
+      }
     },
     {
       "id": "sc-ch5-q-04",
@@ -246,7 +282,19 @@
             "pt": "Livro no altar do andar de cima da capela; entre pela porta lateral."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+5 BP.",
+            "pt": "+5 BP."
+          }
+        ],
+        "overview": {
+          "en": "Examine the clues in this order.",
+          "pt": "Examine as pistas nesta ordem."
+        }
+      }
     },
     {
       "id": "sc-ch5-q-05",
@@ -289,7 +337,19 @@
             "pt": "Entregue 10 de cada um dos oito ingredientes."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 4 +2.",
+            "pt": "BP: 4 +2."
+          }
+        ],
+        "overview": {
+          "en": "Orvid supplies seven of each ingredient; you only need three more of each and still receive the bonus.",
+          "pt": "Orvid fornece sete de cada ingrediente; você só precisa de mais três de cada e ainda recebe o bônus."
+        }
+      }
     },
     {
       "id": "sc-ch5-q-06",
@@ -312,7 +372,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 +1 BP.",
+            "pt": "4 +1 BP."
+          }
+        ],
+        "overview": {
+          "en": "Leads to Krone Pass. When talking to the girl there, pick the option that calls her a coward.",
+          "pt": "Leva à Krone Pass. Ao falar com a garota lá, escolha a opção que a chama de covarde."
+        }
+      }
     },
     {
       "id": "sc-ch5-mi-01",
@@ -335,7 +407,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP.",
+            "pt": "+2 BP."
+          }
+        ],
+        "overview": {
+          "en": "After the last required monster request, pick the option saying the monsters were agitated.",
+          "pt": "Depois do último pedido obrigatório de monstro, escolha a opção que diz que os monstros estavam agitados."
+        }
+      }
     },
     {
       "id": "sc-ch5-mi-02",
@@ -359,7 +443,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "In the scene after talking to Lugran, choose to make a plan first.",
+          "pt": "Na cena depois de falar com o Lugran, escolha fazer um plano primeiro."
+        }
+      }
     },
     {
       "id": "sc-ch5-co-01",

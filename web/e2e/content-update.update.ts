@@ -26,6 +26,7 @@ test('a content-only deployment refreshes cached instructions and keeps progress
   // Same app shell and service worker, new content only. No cache clearing or storage reset.
   await page.reload();
   await expect(page.getByText('Updated instructions from the new deployment.', { exact: true })).toBeVisible();
+  await expect(page.getByText('New structured reward.', { exact: true })).toBeVisible();
   const updatedStep = page.getByRole('checkbox', { name: 'Updated left shelf instruction', exact: true });
   await expect(updatedStep).toBeChecked();
   await expect(page.getByRole('checkbox', { name: 'Right shelf', exact: true })).not.toBeChecked();

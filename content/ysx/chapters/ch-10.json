@@ -59,7 +59,21 @@
             "pt": "Examine o objeto brilhante debaixo d’água."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Abiding Love+ and Lila’s character note.",
+            "pt": "Abiding Love+ e a nota de personagem de Lila."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-q-02",
@@ -103,7 +117,25 @@
             "pt": "Derrote a Undying Fleet em Carnac; use a viagem rápida até Seagull Flock."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "a Sverkite.",
+            "pt": "um Sverkite."
+          }
+        ],
+        "overview": {
+          "en": "Upgrade the Sandras first. Each round includes a naval battle and a land battle.",
+          "pt": "Melhore o Sandras antes de começar. Cada rodada inclui uma batalha naval e uma terrestre."
+        }
+      }
     },
     {
       "id": "ysx-ch10-q-03",
@@ -174,7 +206,25 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "a Spirit Necklace.",
+            "pt": "Dá um Spirit Necklace."
+          }
+        ],
+        "overview": {
+          "en": "Needs all three Rogue Sea islands recaptured, or some markers never appear.\nUse the spyglass at every green marker; the last one appears west of Gøsta's ship.",
+          "pt": "Exige as três ilhas do Rogue Sea retomadas, senão alguns marcadores nunca aparecem.\nUse a luneta em cada marcador verde; o último aparece a oeste do navio do Gøsta."
+        }
+      }
     },
     {
       "id": "ysx-ch10-q-06",
@@ -224,7 +274,21 @@
             "pt": "Entregue os materiais a Ivalde."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Karja’s strongest weapon.",
+            "pt": "a arma mais forte de Karja."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch10-mi-01",

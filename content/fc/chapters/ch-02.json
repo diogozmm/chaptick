@@ -103,7 +103,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Needs the Jeweled Ring from the last chest of the Sky Pirate Stronghold; return it to Lana.",
+          "pt": "Precisa do Jeweled Ring do último baú do Sky Pirate Stronghold; devolva à Lana."
+        }
+      }
     },
     {
       "id": "fc-ch2-hq-01",
@@ -127,7 +139,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "Only if you examined the vacuum cleaner in the Sky Pirate Stronghold: bring the notebook to the guards.",
+          "pt": "Só se você examinou o aspirador de pó no Sky Pirate Stronghold: leve o caderno aos guardas."
+        }
+      }
     },
     {
       "id": "fc-ch2-hq-02",
@@ -151,7 +175,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Not on the board: talk to Vogt outside the lighthouse and clear the four Red Shumocks inside.",
+          "pt": "Não aparece no quadro: fale com o Vogt do lado de fora do farol e derrote os quatro Red Shumocks lá dentro."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-02",
@@ -175,7 +211,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "It blocks the road to Ruan, so you can't skip it. Disable the weaker mobs with Chaos Brand first.",
+          "pt": "Ele bloqueia a estrada para Ruan, então não dá para pular. Desative os inimigos menores com Chaos Brand primeiro."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-03",
@@ -219,7 +267,19 @@
             "pt": "Pesque a chave junto à ponte de tábuas a leste do bar."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2 BP.",
+            "pt": "2 BP."
+          }
+        ],
+        "overview": {
+          "en": "The key is in the water by the plank bridge east of Aqua Rossa Bar.",
+          "pt": "A chave está na água junto à ponte de tábuas a leste do Aqua Rossa Bar."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-04",
@@ -243,7 +303,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "The crabs reflect physical hits until stunned: use arts and wear Mute protection. Drops Prototype Zero for Prototype Pursuit.",
+          "pt": "Os caranguejos refletem golpes físicos até serem atordoados: use arts e proteção contra Mute. Deixa cair o Prototype Zero da Prototype Pursuit."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-05",
@@ -291,7 +363,25 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "optional": [
+          {
+            "en": "also bring Azelia Rosè (Primo, casino) and Salty Anchovies (Fiore’s, Manoria) for a Work Helmet and a Victory Headband.",
+            "pt": "leve também Azelia Rosè (Primo, cassino) e Salty Anchovies (Fiore’s, Manoria) para receber Work Helmet e Victory Headband."
+          }
+        ],
+        "overview": {
+          "en": "Short deadline.\nDeliver the bag to Vogt at the top of Varenne Lighthouse.",
+          "pt": "Prazo curto.\nEntregue a bolsa a Vogt no topo de Varenne Lighthouse."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-07",
@@ -316,7 +406,25 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 (+2) BP.",
+            "pt": "3 (+2) BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "overview": {
+          "en": "The treasure is in a barrel on the small beach by Gull Seaside Way's east wall (Skull Dagger + map fragment). The bonus needs Jimmy saved earlier on Gull Seaside Way.",
+          "pt": "O tesouro está num barril na prainha junto à parede leste da Gull Seaside Way (Skull Dagger + fragmento de mapa). O bônus exige ter salvado o Jimmy antes na Gull Seaside Way."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-08",
@@ -340,7 +448,25 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "overview": {
+          "en": "Go to the north end of Krone Trail, win the fight, then escort Orvid back to Manoria.",
+          "pt": "Vá ao extremo norte da Krone Trail, vença a luta e escolte o Orvid de volta a Manoria."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-09",
@@ -396,7 +522,19 @@
             "pt": "Cafeteria, quarta pergunta: escolha a 2ª opção."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 3 (+2).",
+            "pt": "BP: 3 (+2)."
+          }
+        ],
+        "overview": {
+          "en": "Short deadline. Follow these choices for the bonus.",
+          "pt": "Prazo curto. Siga estas escolhas para receber o bônus."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-10",
@@ -452,7 +590,19 @@
             "pt": "Fale com Harg."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "7 BP.",
+            "pt": "7 BP."
+          }
+        ],
+        "overview": {
+          "en": "Short deadline. Follow these clues in order.",
+          "pt": "Prazo curto. Siga estas pistas em ordem."
+        }
+      }
     },
     {
       "id": "fc-ch2-q-11",
@@ -476,7 +626,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "It blocks the way to Manoria, so you can't skip it. Use arts against Seal and Blind; Knight Ammonites explode when defeated.",
+          "pt": "Ele bloqueia o caminho para Manoria, então não dá para pular. Use arts contra Seal e Blind; os Knight Ammonites explodem ao serem derrotados."
+        }
+      }
     },
     {
       "id": "fc-ch2-mi-01",
@@ -535,7 +697,15 @@
             "pt": "Mais tarde, em The White Magnolia, escolha a 3ª opção: os bandidos?!"
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Bonus: +4 BP in Orphanage Investigation.",
+            "pt": "Bônus: +4 BP em Orphanage Investigation."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch2-mi-03",
@@ -579,7 +749,19 @@
             "pt": "Recolha os três U-Materials no prédio antigo da escola e depois conclua a limpeza do local (+3 BP)."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Bonus: +5 BP in A Festival Favor.",
+            "pt": "Bônus: +5 BP em A Festival Favor."
+          }
+        ],
+        "overview": {
+          "en": "Follow the blue markers.",
+          "pt": "Siga os marcadores azuis."
+        }
+      }
     },
     {
       "id": "fc-ch2-co-01",

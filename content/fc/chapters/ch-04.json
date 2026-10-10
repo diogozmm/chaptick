@@ -137,7 +137,19 @@
             "pt": "Devolva a carteira."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "New quest in the remake.",
+          "pt": "Missão nova no remake."
+        }
+      }
     },
     {
       "id": "fc-ch4-q-02",
@@ -187,7 +199,19 @@
             "pt": "Termine na Fisherman’s Guild."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "New quest in the remake.",
+          "pt": "Missão nova no remake."
+        }
+      }
     },
     {
       "id": "fc-ch4-q-03",
@@ -211,7 +235,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "8 BP.",
+            "pt": "8 BP."
+          }
+        ],
+        "overview": {
+          "en": "Use Zin's Taunt to pull the crowd and clear it with wind arts. The same sewers hold Chewy Spare Ribs, the last recipe.",
+          "pt": "Use o Taunt do Zin para atrair o grupo e derrube-o com arts de vento. O mesmo esgoto tem as Chewy Spare Ribs, a última receita."
+        }
+      }
     },
     {
       "id": "fc-ch4-q-04",
@@ -235,7 +271,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "6 BP.",
+            "pt": "6 BP."
+          }
+        ],
+        "overview": {
+          "en": "New in the remake. Clear the monsters marked on his map; the boss then appears near the hidden cave. Use area attacks so it can't keep reviving the Millipede Balls.",
+          "pt": "Nova no remake. Derrote os monstros marcados no mapa dele; o chefe aparece em seguida perto da caverna escondida. Use ataques em área para ele não ficar revivendo as Millipede Balls."
+        }
+      }
     },
     {
       "id": "fc-ch4-q-05",
@@ -259,7 +307,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "8 BP.",
+            "pt": "8 BP."
+          }
+        ],
+        "overview": {
+          "en": "In the first rooms downstairs. Freeze protection makes it easy; its Pearl Mirror reflects one attack.",
+          "pt": "Nas primeiras salas do andar de baixo. Proteção contra Freeze facilita; o Pearl Mirror dele reflete um ataque."
+        }
+      }
     },
     {
       "id": "fc-ch4-q-06",
@@ -303,7 +363,19 @@
             "pt": "Volte ao lounge do castelo e veja os fogos de artifício."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Available after the final battle.",
+          "pt": "Disponível após a batalha final."
+        }
+      }
     },
     {
       "id": "fc-ch4-mi-01",
@@ -437,7 +509,15 @@
             "pt": "Vença a última luta (+3 BP)."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Bonus: +5 BP in Save the Queen.",
+            "pt": "Bônus: +5 BP em Save the Queen."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch4-mi-06",

@@ -42,7 +42,68 @@
       ],
       "trophies": [
         "questmaster"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Talk to the guard."
+        },
+        "requirements": [
+          {
+            "en": "Bring Kloe.",
+            "pt": "Leve Kloe."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Equip Freeze protection.",
+            "pt": "Equipe proteção contra Freeze."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Finish before leaving town.",
+            "pt": "Termine antes de sair da cidade."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "optional": [
+          {
+            "en": "Bring flowers for an extra reward.",
+            "pt": "Leve flores para uma recompensa extra."
+          }
+        ],
+        "alternatives": [
+          {
+            "condition": {
+              "en": "With Agate",
+              "pt": "Com Agate"
+            },
+            "instructions": [
+              {
+                "en": "Choose the first answer.",
+                "pt": "Escolha a primeira resposta."
+              }
+            ]
+          },
+          {
+            "condition": {
+              "en": "With Scherazard",
+              "pt": "Com Scherazard"
+            },
+            "instructions": [
+              {
+                "en": "Choose the second answer.",
+                "pt": "Escolha a segunda resposta."
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch0-hq-01",
@@ -63,7 +124,24 @@
       ],
       "trophies": [
         "questmaster"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Secret hint"
+        },
+        "rewards": [
+          {
+            "en": "Secret reward",
+            "pt": "Recompensa secreta"
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Secret equipment",
+            "pt": "Equipamento secreto"
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch0-mi-01",
@@ -81,7 +159,24 @@
       "spoilerLevel": 2,
       "sources": [
         "e2e"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Safe hint"
+        },
+        "rewards": [
+          {
+            "en": "Secret reward",
+            "pt": "Recompensa secreta"
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Secret equipment",
+            "pt": "Equipamento secreto"
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch0-co-01",

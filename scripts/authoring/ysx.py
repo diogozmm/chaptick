@@ -108,7 +108,9 @@ c.item('quest', t('Cargo A-Go-Go'), t('Sandras — talk to Grenn on the lower de
            t('Behind Balta Island.', 'Atrás de Balta Island.'),
            t('Between Carnac and Balta Island.', 'Entre Carnac e Balta Island.'),
            t('Far southwest of Carnac, near Tyrant Hills: blast the pillars with the cannon first.', 'No extremo sudoeste de Carnac, perto de Tyrant Hills: primeiro destrua os pilares com o canhão.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Collect the three supply boxes at the green markers.',
+                     'pt': 'Recolha as três caixas de suprimentos nos marcadores verdes.'}})
 c.boss(t('Magna Diga'), t('Termina Island'),
        t('Proud Nordics reworked this fight: ride the Mana Board (Mana Ride) to reach it fast, which also keeps you safe from the quicksand ailments. It burrows to reposition. Below half HP it adds body slams and bite combos: guard to build the Revenge Gauge, then unleash Cross Edge.',
          'O Proud Nordics refez esta luta: use a Mana Board (Mana Ride) para chegar rápido, o que também evita os efeitos da areia movediça. Ele se enterra para mudar de lugar. Abaixo da metade do HP, ele adiciona pancadas com o corpo e combos de mordida: defenda para encher o Revenge Gauge e solte o Cross Edge.'),
@@ -163,7 +165,9 @@ c.item('quest', t('Sandras Spruce-Up'), t('Sandras — Mirabel on the lower deck
            t('Celadon Clay ×3.', 'Celadon Clay ×3.'),
            t('Aged Wood ×3.', 'Aged Wood ×3.'),
            t('Hand over the materials, then rest in the Captain’s Quarters for the event.', 'Entregue os materiais e descanse na Captain’s Quarters para ver o evento.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Gather these materials for Sandras Spruce-Up.',
+                     'pt': 'Reúna estes materiais para Sandras Spruce-Up.'}})
 c.item('quest', t('Invaluable Memory'), t('Sandras — Momina; ship southeast of the recaptured island', 'Sandras — Momina; navio a sudeste da ilha retomada'), FOG,
        t('Long deadline.\nGo to the green marker southeast of the island you recaptured in the Ozmid Expanse and beat the Griegrs on the missing ship.\nRewards a Plain Box Lunch (XL) and new stock in her store.', 'Prazo longo.\nVá ao marcador verde a sudeste da ilha retomada em Ozmid Expanse e derrote os Griegrs no navio desaparecido. Dá um Plain Box Lunch (XL) e itens novos na loja dela.'),
        0, [NEO('Chapter 4 - Ozmid Expanse')] + S4)
@@ -173,7 +177,9 @@ c.item('quest', t('Many Mappy Returns'), t('Sandras — Dogi at the helm; Great 
            t('Reach the quest marker in the northeast corner of Great Tidal Reef.', 'Alcance o marcador da missão no canto nordeste de Great Tidal Reef.'),
            t('Defeat the enemies.', 'Derrote os inimigos.'),
            t('Report back to Dogi.', 'Volte para falar com Dogi.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Travel to Great Tidal Reef in the far south.',
+                     'pt': 'Vá até Great Tidal Reef, no extremo sul.'}})
 c.item('quest', t('Clicking Together'), t('Sandras — Ashley on the deck', 'Sandras — Ashley no convés'), FOG,
        t('Long deadline.\nWatch the dolphins with the spyglass near the island where Ashley was rescued, then repeat at each new marker.\nRewards a Blessed Paper Scrap.', 'Prazo longo.\nObserve os golfinhos com a luneta perto da ilha onde a Ashley foi resgatada e repita em cada marcador novo. Dá um Blessed Paper Scrap.'),
        0, [NEO('Chapter 4 - Ozmid Expanse')] + S4)
@@ -305,7 +311,12 @@ c.item('quest', t('EX: Öland Island Investigation (Proud)', 'EX: Öland Island 
            t('Read Hugill’s letter “EX: Suspicious Ship”.', 'Leia a carta de Hugill “EX: Suspicious Ship”.'),
            t('Sail to the blue point north of the center of Carnac Waters.', 'Navegue até o ponto azul ao norte do centro de Carnac Waters.'),
            t('Clear Blindman’s Darkroad.', 'Conclua Blindman’s Darkroad.'),
-       ])
+       ], guidance={'rewards': [{'en': 'Abiding Love and an Almighty Star.',
+                     'pt': 'Abiding Love e um Almighty Star.'}],
+        'overview': {'en': 'Proud Nordics only.\n'
+                           'The guide gives no deadline; complete it in this chapter to be safe.',
+                     'pt': 'Exclusivo de Proud Nordics.\n'
+                           'O guia não informa o prazo; por segurança, conclua neste capítulo.'}})
 c.item('collectible', t("Astrid's character note #1 (Proud)", 'Nota de personagem da Astrid #1 (Proud)'), t('Öland Island — coliseum', 'Öland Island — coliseu'), None,
        t('Proud Nordics only. After the Darkroad, talk to Astrid at the coliseum; this also opens the coliseum challenges. Character notes count for the all-notes trophy.',
          'Só no Proud Nordics. Depois do Darkroad, fale com a Astrid no coliseu; isso também libera os desafios do coliseu. As notas de personagem contam para o troféu de todas as notas.'),
@@ -507,14 +518,26 @@ S6S = [NEO('Chapter 6 - Sonnelia Basin')]
 S6B = [NEO('Chapter 6 - Specular Bay')]
 c.item('quest', t('Fellowship with Flavor'), t('Sandras — Rosalind on the mast', 'Sandras — Rosalind no mastro'), BAY,
        t("SHORT deadline and easy to miss.\nIt appears once Cohen, Father Cuthbert and Milette are rescued (Milette comes from the Southern Fort recapture), so it can show up already late in Chapter 5.\nGet the item from Magni on Balta Island's shore and bring it to Rosalind before the story moves on.", 'Prazo CURTO e fácil de perder.\nAparece quando o Cohen, o Father Cuthbert e a Milette estão resgatados (a Milette vem da retomada do Southern Fort), então pode surgir já no fim do Capítulo 5.\nPegue o item com o Magni na praia de Balta Island e leve à Rosalind antes de a história avançar.'),
-       0, S6S + S6)
+       0, S6S + S6, guidance={'warnings': [{'en': 'SHORT deadline and easy to miss.', 'pt': 'Prazo CURTO e fácil de perder.'}],
+        'overview': {'en': 'It appears once Cohen, Father Cuthbert and Milette are rescued (Milette comes '
+                           'from the Southern Fort recapture), so it can show up already late in Chapter '
+                           '5.\n'
+                           "Get the item from Magni on Balta Island's shore and bring it to Rosalind "
+                           'before the story moves on.',
+                     'pt': 'Aparece quando o Cohen, o Father Cuthbert e a Milette estão resgatados (a '
+                           'Milette vem da retomada do Southern Fort), então pode surgir já no fim do '
+                           'Capítulo 5.\n'
+                           'Pegue o item com o Magni na praia de Balta Island e leve à Rosalind antes de '
+                           'a história avançar.'}})
 c.item('quest', t('Foraging Ahead'), t('Balta Island — Gunhilda in Balta Village', 'Balta Island — Gunhilda em Balta Village'), BAY,
        t('Medium deadline.\nGather the three plants at these locations.', 'Prazo médio.\nReúna as três plantas nestes locais.'),
        0, S6S + S6, steps=[
            t('Fly Agarics — Anchor Island, Village Outskirts, bottom center.', 'Fly Agarics — Anchor Island, Village Outskirts, centro da parte inferior.'),
            t('Henbane Blossoms — Lecto Island beach, northeast corner.', 'Henbane Blossoms — praia de Lecto Island, canto nordeste.'),
            t('Bellflowers — Kalon Island mountain peak, near the start.', 'Bellflowers — pico da montanha de Kalon Island, perto do início.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Medium deadline.', 'pt': 'Prazo médio.'}],
+        'overview': {'en': 'Gather the three plants at these locations.',
+                     'pt': 'Reúna as três plantas nestes locais.'}})
 c.item('quest', t('Slay the Beasts: Kalon'), t('Kalon Island — second area, before the drawbridge', 'Kalon Island — segunda área, antes da ponte levadiça'), BAY,
        t('Long deadline.\nAdded automatically. Several waves of beasts; dash through their speed attacks or Duo Guard their power attacks for big counters.\nRewards a Gwyllgi Amulet.', 'Prazo longo.\nEntra sozinha no diário. Várias ondas de feras; use o dash contra os ataques rápidos ou a Duo Guard contra os poderosos para grandes contra-ataques. Dá um Gwyllgi Amulet.'),
        0, S6S + S6)
@@ -524,7 +547,9 @@ c.item('quest', t('Fun in the Sunfish'), t('Sandras — Ashley on the deck', 'Sa
            t('Use the spyglass at both green markers in Sonnelia Basin.', 'Use a luneta nos dois marcadores verdes em Sonnelia Basin.'),
            t('Talk to Ashley.', 'Fale com Ashley.'),
            t('Visit the northernmost of the three new markers.', 'Visite o mais ao norte dos três novos marcadores.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Follow the sightings in Sonnelia Basin.',
+                     'pt': 'Siga os avistamentos em Sonnelia Basin.'}})
 c.item('quest', t('Treasure Trawl B'), t("Sea chart — chart from Gregorio's Curio", "Mapa marítimo — mapa do Gregorio's Curio"), BAY,
        t("Long deadline.\nBuy Hidden Treasure Chart B from Gregorio's Curio and salvage the glowing spot.\nRewards the Foreign Gauntlet (gift for Dogi).", "Prazo longo.\nCompre o Hidden Treasure Chart B no Gregorio's Curio e resgate o ponto brilhante. Dá a Foreign Gauntlet (presente para o Dogi)."),
        0, S6S + S6)
@@ -543,7 +568,9 @@ c.item('quest', t('Turtle-Tale'), t('Sandras — Ashley on the mast', 'Sandras �
            t('Watch the sea turtles at both green markers in Specular Bay.', 'Observe as tartarugas marinhas nos dois marcadores verdes em Specular Bay.'),
            t('After shopping at Anika’s Goods, use the quest button.', 'Depois de comprar em Anika’s Goods, use o botão da missão.'),
            t('Camp until night at the Orlen Islands’ East Beach.', 'Acampe até a noite na East Beach das Orlen Islands.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Complete the sightings before camping.',
+                     'pt': 'Conclua os avistamentos antes de acampar.'}})
 c.boss(t('Lǫgr'), t('Ruined Capital of Ribe — interior', 'Ruined Capital of Ribe — interior'),
        t('Dash through his homing orbs and the beam barrage (both are speed attacks), then time a Duo Guard on the giant red sword that ends it for a big counter. After his durability breaks he summons clones: kill them fast. At low HP he fires orbs while still attacking.',
          'Use o dash contra os orbes teleguiados e a rajada de feixes (ambos são ataques rápidos) e acerte a Duo Guard na espada vermelha gigante do final para um grande contra-ataque. Quando a resistência quebra, ele invoca clones: derrube rápido. Com pouco HP, ele dispara orbes enquanto ataca.'),
@@ -651,14 +678,17 @@ c.item('quest', t('Old Haunts'), t('Anchor Island — Magni on the Mynorca Villa
            t('Sail to the green marker near Krangal Island.', 'Navegue até o marcador verde perto de Krangal Island.'),
            t('Defeat the ships in the fog.', 'Derrote os navios na névoa.'),
            t('Defeat the jellyfish boss on the ghost ship.', 'Derrote o chefe água-viva no navio fantasma.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Medium deadline.', 'pt': 'Prazo médio.'}],
+        'rewards': [{'en': 'Shield Cannons.', 'pt': 'Shield Cannons.'}]})
 c.item('quest', t('Breakout Performance'), t('Grotto Isle (from a Hugill letter)', 'Grotto Isle (de uma carta do Hugill)'), GROTTO,
        t('Medium deadline.\nRewards: 5,000 Gold and the rescue of the last Carnac townsperson.', 'Prazo médio.\nRecompensas: 5.000 Gold e o resgate do último morador de Carnac.'),
        0, S7F + S7, steps=[
            t('Read Hugill’s letter near the blue marker south of Gregorio’s Curio.', 'Leia a carta de Hugill perto do marcador azul ao sul de Gregorio’s Curio.'),
            t('Talk to Hugill on the mast.', 'Fale com Hugill no mastro.'),
            t('Clear Grotto Isle.', 'Conclua Grotto Isle.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Medium deadline.', 'pt': 'Prazo médio.'}],
+        'rewards': [{'en': '5,000 Gold and the rescue of the last Carnac townsperson.',
+                     'pt': '5.000 Gold e o resgate do último morador de Carnac.'}]})
 c.item('quest', t('Treasure Trawl D'), t('Specular Bay — near the Northern Citadel', 'Specular Bay — perto da Northern Citadel'), GROTTO,
        t("Long deadline.\nHidden Treasure Chart D is sold at Gregorio's Curio in the Flumen Strait.\nRewards Fleeting Hope+.", "Prazo longo.\nO Hidden Treasure Chart D é vendido no Gregorio's Curio, em Flumen Strait. Dá Fleeting Hope+."),
        0, S7F + S7)
@@ -671,7 +701,8 @@ c.item('quest', t('Nest of Kin'), t('Sandras — Ashley on the deck', 'Sandras �
            t('Sail west and spot the nest with the spyglass.', 'Navegue para oeste e aviste o ninho com a luneta.'),
            t('Visit the new marker near the merchant ship.', 'Visite o novo marcador perto do navio mercante.'),
            t('Visit the new marker to the southeast.', 'Visite o novo marcador a sudeste.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'overview': {'en': 'Start from Gregorio’s Curio.', 'pt': 'Comece em Gregorio’s Curio.'}})
 c.item('quest', t('EX: Smooth Sailing? (Proud)', 'EX: Smooth Sailing? (Proud)'), t('Sandras — Hugill\'s letters', 'Sandras — cartas do Hugill'), None,
        t('Proud Nordics only. Added by the Hugill letter "EX: Smooth Sailing?" at the start of the chapter. The guide gives no steps or deadline: do it in this chapter to be safe.',
          'Só no Proud Nordics. Entra com a carta do Hugill "EX: Smooth Sailing?" no começo do capítulo. O guia não dá passos nem prazo: faça neste capítulo por segurança.'),
@@ -810,20 +841,30 @@ c.item('quest', t('Riddle Me Timbers'), t('Sandras — Ezer', 'Sandras — Ezer'
            t('Visit the green marker in the middle of Moonview Isle.', 'Visite o marcador verde no centro de Moonview Isle.'),
            t('Visit the event marker on Fishscale Island and win the naval battle.', 'Visite o marcador de evento em Fishscale Island e vença a batalha naval.'),
            t('Visit the event marker on the Orlen Islands’ West Side and defeat the boss.', 'Visite o marcador de evento no West Side das Orlen Islands e derrote o chefe.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Medium deadline.', 'pt': 'Prazo médio.'}],
+        'overview': {'en': 'Prepare for a naval battle and a boss fight.',
+                     'pt': 'Prepare-se para uma batalha naval e uma luta contra chefe.'}})
 c.item('quest', t('Specular Synthesis'), t('Sandras — Dr. Flair on the lower deck', 'Sandras — Dr. Flair no convés inferior'), VORTEX,
        t('Medium deadline.\nReward: Full-Heal Formula.', 'Prazo médio.\nRecompensa: Full-Heal Formula.'),
        0, S9R + S9, steps=[
            t('Defeat the Griegrs at the green marker at Grugal Fortress — Entrance.', 'Derrote os Griegrs no marcador verde em Grugal Fortress — Entrance.'),
            t('Reach the event marker on Redsand Isle, at the south end of Raoul Darksea.', 'Alcance o marcador de evento em Redsand Isle, na extremidade sul de Raoul Darksea.'),
            t('Report back.', 'Volte para entregar a missão.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Medium deadline.', 'pt': 'Prazo médio.'}],
+        'rewards': [{'en': 'Full-Heal Formula.', 'pt': 'Full-Heal Formula.'}]})
 c.item('quest', t('Slay the Beasts: Haze'), t('Haze Island — back half', 'Haze Island — metade de trás'), VORTEX,
        t('Long deadline.\nFrom Lila. Haze Island is northwest of Serenes Island; fast travel to the back half. The targets are fragile but hit very hard; stay out of the slowing water.\nRewards the Panacea Formula III.', 'Prazo longo.\nVem da Lila. Haze Island fica a noroeste de Serenes Island; viaje até a metade de trás. Os alvos são frágeis, mas batem muito forte; fique fora da água que deixa lento. Dá a Panacea Formula III.'),
        0, S9O + S9)
 c.item('quest', t('Treasure Trawl E'), t('Raoul Darksea — north, near the entrance', 'Raoul Darksea — norte, perto da entrada'), VORTEX,
        t('Long deadline.\nHidden Treasure Chart E comes from the Eastern Fortress recapture at rank S.\nRewards the Cycloid Crown.\nWith every Treasure Trawl done, Mandy has one more treasure (northwest of Termina Island) that unlocks his character note.', 'Prazo longo.\nO Hidden Treasure Chart E vem da retomada da Eastern Fortress com rank S.\nDá a Cycloid Crown.\nCom todos os Treasure Trawls feitos, o Mandy tem mais um tesouro (a noroeste de Termina Island) que libera a nota de personagem dele.'),
-       0, S9R + S9)
+       0, S9R + S9, guidance={'warnings': [{'en': 'Long deadline.', 'pt': 'Prazo longo.'}],
+        'rewards': [{'en': 'the Cycloid Crown.', 'pt': 'Dá a Cycloid Crown.'}],
+        'overview': {'en': 'Hidden Treasure Chart E comes from the Eastern Fortress recapture at rank S.\n'
+                           'With every Treasure Trawl done, Mandy has one more treasure (northwest of '
+                           'Termina Island) that unlocks his character note.',
+                     'pt': 'O Hidden Treasure Chart E vem da retomada da Eastern Fortress com rank S.\n'
+                           'Com todos os Treasure Trawls feitos, o Mandy tem mais um tesouro (a noroeste '
+                           'de Termina Island) que libera a nota de personagem dele.'}})
 c.boss(t('Gigas Wing'), t('Gigantavis Isle (optional challenge)', 'Gigantavis Isle (desafio opcional)'),
        t('Level 85 with no durability meter. Use Mana String to catch up when it runs, and watch for poison and lightning. Rewards the last Blessed Paper Scrap.',
          'Nível 85, sem medidor de resistência. Use o Mana String para alcançá-lo quando fugir, e cuidado com veneno e raios. Dá o último Blessed Paper Scrap.'),
@@ -932,14 +973,21 @@ c.item('quest', t('Return to Ribe'), t('Sandras — Lila in the cabin', 'Sandras
            t('Visit all three event markers in the city of Ribe.', 'Visite os três marcadores de evento na cidade de Ribe.'),
            t('Fast travel to the depths of the capital.', 'Use a viagem rápida até as profundezas da capital.'),
            t('Examine the glowing object underwater.', 'Examine o objeto brilhante debaixo d’água.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Short deadline.', 'pt': 'Prazo curto.'}],
+        'rewards': [{'en': 'Abiding Love+ and Lila’s character note.',
+                     'pt': 'Abiding Love+ e a nota de personagem de Lila.'}]})
 c.item('quest', t('Rushed off Their Fleet'), t('Anchor Island — Village Chiefs Nel and Isaac in Mynorca Village', 'Anchor Island — Village Chiefs Nel e Isaac em Mynorca Village'), FINAL,
        t('Short deadline.\nUpgrade the Sandras first. Each round includes a naval battle and a land battle.\nReward: a Sverkite.', 'Prazo curto.\nMelhore o Sandras antes de começar. Cada rodada inclui uma batalha naval e uma terrestre.\nRecompensa: um Sverkite.'),
        0, S10S + S10, steps=[
            t('Defeat the Undying Fleet near Anchor Island.', 'Derrote a Undying Fleet perto de Anchor Island.'),
            t('Defeat the Undying Fleet near Falun Island.', 'Derrote a Undying Fleet perto de Falun Island.'),
            t('Defeat the Undying Fleet at Carnac; fast travel to the Seagull Flock.', 'Derrote a Undying Fleet em Carnac; use a viagem rápida até Seagull Flock.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Short deadline.', 'pt': 'Prazo curto.'}],
+        'rewards': [{'en': 'a Sverkite.', 'pt': 'um Sverkite.'}],
+        'overview': {'en': 'Upgrade the Sandras first. Each round includes a naval battle and a land '
+                           'battle.',
+                     'pt': 'Melhore o Sandras antes de começar. Cada rodada inclui uma batalha naval e '
+                           'uma terrestre.'}})
 c.item('quest', t('Cull the Griegr: Crescent'), t('Crescent Moons Isle', 'Crescent Moons Isle'), FINAL,
        t('Short deadline.\nAdded when you land. Defeat every Griegr on the island; the target then appears in the northeast corner.\nRewards Crystal Shards ×25,000.', 'Prazo curto.\nEntra ao desembarcar. Derrote todos os Griegrs da ilha; o alvo então aparece no canto nordeste. Dá Crystal Shards ×25.000.'),
        0, S10R + S10)
@@ -948,7 +996,15 @@ c.item('quest', t('Treasure Trawl F'), t('Rogue Sea — east of Soleli Island', 
        0, S10R)
 c.item('quest', t('Whale of Fortune'), t('Sandras — Ashley at the bow', 'Sandras — Ashley na proa'), FINAL,
        t("Short deadline.\nNeeds all three Rogue Sea islands recaptured, or some markers never appear.\nUse the spyglass at every green marker; the last one appears west of Gøsta's ship.\nRewards a Spirit Necklace.", 'Prazo curto.\nExige as três ilhas do Rogue Sea retomadas, senão alguns marcadores nunca aparecem.\nUse a luneta em cada marcador verde; o último aparece a oeste do navio do Gøsta.\nDá um Spirit Necklace.'),
-       0, S10R + S10)
+       0, S10R + S10, guidance={'warnings': [{'en': 'Short deadline.', 'pt': 'Prazo curto.'}],
+        'rewards': [{'en': 'a Spirit Necklace.', 'pt': 'Dá um Spirit Necklace.'}],
+        'overview': {'en': 'Needs all three Rogue Sea islands recaptured, or some markers never appear.\n'
+                           "Use the spyglass at every green marker; the last one appears west of Gøsta's "
+                           'ship.',
+                     'pt': 'Exige as três ilhas do Rogue Sea retomadas, senão alguns marcadores nunca '
+                           'aparecem.\n'
+                           'Use a luneta em cada marcador verde; o último aparece a oeste do navio do '
+                           'Gøsta.'}})
 c.item('quest', t('An Axe to Regrind'), t("Giant's Hand Isle, then Ivalde on Balta Island", "Giant's Hand Isle e depois a Ivalde em Balta Island"), FINAL,
        t('Short deadline.\nReward: Karja’s strongest weapon.', 'Prazo curto.\nRecompensa: a arma mais forte de Karja.'),
        0, S10R + S10, steps=[
@@ -956,7 +1012,8 @@ c.item('quest', t('An Axe to Regrind'), t("Giant's Hand Isle, then Ivalde on Bal
            t('Gather 3 Crystalucent Coral from Gamellion in Seabed Temple.', 'Reúna 3 Crystalucent Coral de Gamellion em Seabed Temple.'),
            t('Gather 3 Vajra Bone from Zylk Biter in Rollo’s Ark.', 'Reúna 3 Vajra Bone de Zylk Biter em Rollo’s Ark.'),
            t('Bring the materials to Ivalde.', 'Entregue os materiais a Ivalde.'),
-       ])
+       ], guidance={'warnings': [{'en': 'Short deadline.', 'pt': 'Prazo curto.'}],
+        'rewards': [{'en': 'Karja’s strongest weapon.', 'pt': 'a arma mais forte de Karja.'}]})
 c.item('missable', t('Ship upgrades for the trophy', 'Melhorias do navio para o troféu'), t('Sandras'), FINAL,
        t('Not lost at the final battle, but ship refits do not carry over to New Game+: buy them all in one playthrough if you want "All Decked Out".',
          'Não se perdem na batalha final, mas as melhorias do navio não passam para o New Game+: compre todas na mesma jogada se quiser o "All Decked Out".'),

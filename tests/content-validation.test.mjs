@@ -124,3 +124,29 @@ test('compendium references only point to the same chapter or an earlier one', (
   expectError(errors, 'craft "demo-cook-tea" refers to "demo-ore" from a later chapter');
   expectError(errors, 'refers to unknown entry "demo-nothing"');
 });
+
+test('accepts structured guidance while legacy items remain valid', () => {
+  assert.deepEqual(validateWith(CH0, (d) => {
+    d.items[0].guidance = {
+      requirements: [{ en: 'Bring Kloe.', pt: 'Leve Kloe.' }],
+      preparation: [{ en: 'Equip Freeze protection.' }],
+      rewards: [{ en: '4 BP.' }],
+      warnings: [{ en: 'Finish before leaving.' }],
+      optional: [{ en: 'Bring flowers.' }],
+      alternatives: [{ condition: { en: 'With Agate' }, instructions: [{ en: 'Choose the first answer.' }] }],
+    };
+  }), []);
+});
+
+for (const [name, guidance] of [
+  ['empty guidance', {}],
+  ['empty reward list', { rewards: [] }],
+  ['unlocalized preparation', { preparation: ['Bring a shield'] }],
+  ['branch without a condition', { alternatives: [{ instructions: [{ en: 'Choose one' }] }] }],
+  ['progress keys inside optional advice', { optional: [{ en: 'Explore', id: 'step-1' }] }],
+  ['unknown guidance field', { requiredSteps: [] }],
+]) {
+  test(`rejects ${name}`, () => {
+    assert.ok(validateWith(CH0, (d) => { d.items[0].guidance = guidance; }).length > 0);
+  });
+}

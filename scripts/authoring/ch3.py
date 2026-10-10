@@ -23,13 +23,28 @@ SEARCH = c.cp('Triggering the event near the landing port during the search in t
 # Quests
 c.item('quest', t('Guest Gone Missing'), t('Zeiss — Zahnrad Hotel'), LEAVE_ZEISS,
        t('+5 BP.\nLeads into Kaldia Limestone Cave, off Kaldia Tunnel. Bring Confuse and Seal protection, and keep the person you escort alive in the final fight.', '+5 BP.\nLeva à Kaldia Limestone Cave, a partir do Kaldia Tunnel. Leve proteção contra Confuse e Seal, e mantenha vivo quem você escolta na luta final.'),
-       0, [ZEISS])
+       0, [ZEISS], guidance={'rewards': [{'en': '+5 BP.', 'pt': '+5 BP.'}],
+        'overview': {'en': 'Leads into Kaldia Limestone Cave, off Kaldia Tunnel. Bring Confuse and Seal '
+                           'protection, and keep the person you escort alive in the final fight.',
+                     'pt': 'Leva à Kaldia Limestone Cave, a partir do Kaldia Tunnel. Leve proteção contra '
+                           'Confuse e Seal, e mantenha vivo quem você escolta na luta final.'}})
 c.item('quest', t('Sewer Monster'), t('Grancel Sewers — W. Block, far end', 'Grancel Sewers — W. Block, no fim'), SEARCH,
        t('+4 BP.\nTrees that cripple stats and heal from damage: shields and debuff immunity; fire arts on the small ones first.\nIts deadline shortens mid-chapter, so finish it before advancing the search in the capital.', '+4 BP.\nÁrvores que derrubam atributos e se curam causando dano: escudos e imunidade a debuffs; arts de fogo nas menores primeiro.\nO prazo encurta no meio do capítulo, então termine antes de avançar a busca na capital.'),
-       0, [GRANCEL, GF2])
+       0, [GRANCEL, GF2], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'Trees that cripple stats and heal from damage: shields and debuff immunity; '
+                           'fire arts on the small ones first.\n'
+                           'Its deadline shortens mid-chapter, so finish it before advancing the search '
+                           'in the capital.',
+                     'pt': 'Árvores que derrubam atributos e se curam causando dano: escudos e imunidade '
+                           'a debuffs; arts de fogo nas menores primeiro.\n'
+                           'O prazo encurta no meio do capítulo, então termine antes de avançar a busca '
+                           'na capital.'}})
 c.item('quest', t('Erbe Scenic Route Monster'), t('Erbe Scenic Route — middle intersection', 'Erbe Scenic Route — cruzamento central'), VILLA_IN,
        t('+4 BP.\nBlocks the way to the villa. Straightforward: buff up and burst when stunned.', '+4 BP.\nBloqueia o caminho para a mansão. Direto ao ponto: faça buffs e ataque forte quando atordoar.'),
-       0, [GRANCEL])
+       0, [GRANCEL], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'Blocks the way to the villa. Straightforward: buff up and burst when stunned.',
+                     'pt': 'Bloqueia o caminho para a mansão. Direto ao ponto: faça buffs e ataque forte '
+                           'quando atordoar.'}})
 c.item('quest', t('Exhibit Enigma'), t('Grancel — History Museum, 2F', 'Grancel — History Museum, 2º andar'), VISITS,
        t('Reward: +4 BP.\nBefore starting: equip protection against Freeze for the fight at the arena.',
          'Recompensa: +4 BP.\nAntes de começar: equipe proteção contra Freeze para a luta na arena.'),
@@ -42,27 +57,51 @@ c.item('quest', t('Exhibit Enigma'), t('Grancel — History Museum, 2F', 'Grance
              'Terceiro cartão: entre na embaixada de Calvard, vá à sala à direita e examine The Doll Knight vol. 15.'),
            t('Finally, enter the Grand Arena through the southern waiting room and complete the fight.',
              'Por fim, entre na Grand Arena pela sala de espera sul e conclua a luta.'),
-       ])
+       ], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'preparation': [{'en': 'equip protection against Freeze for the fight at the arena.',
+                         'pt': 'equipe proteção contra Freeze para a luta na arena.'}]})
 c.item('quest', t('Sewer Monster 2'), t('Grancel Sewers — E. and N. Blocks', 'Grancel Sewers — E. e N. Blocks'), SEARCH,
        t('+4 BP.\nThe North Block entrance is a breakable wall at the end of the East Block. Medium deadline: do it before advancing the search in the capital.', '+4 BP.\nA entrada do North Block é uma parede quebrável no fim do East Block. Prazo médio: faça antes de avançar a busca na capital.'),
-       1, [VILLA, GF2])
+       1, [VILLA, GF2], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'The North Block entrance is a breakable wall at the end of the East Block. '
+                           'Medium deadline: do it before advancing the search in the capital.',
+                     'pt': 'A entrada do North Block é uma parede quebrável no fim do East Block. Prazo '
+                           'médio: faça antes de avançar a busca na capital.'}})
 c.item('quest', t('Piscine Pilferer'), t('Grancel Castle — entrance hall', 'Grancel Castle — saguão de entrada'), END,
        t('+4 BP.\nNeeds Kloe in the party; talk to Hilda. You stay in the sewers until it ends, so prepare first.', '+4 BP.\nPrecisa da Kloe na equipe; fale com a Hilda. Você fica nos esgotos até terminar, então se prepare antes.'),
-       1, [GURUNE])
+       1, [GURUNE], guidance={'overview': {'en': 'Talk to Hilda.', 'pt': 'Fale com Hilda.'},
+        'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'requirements': [{'en': 'Kloe must be in the party.', 'pt': 'Kloe precisa estar na equipe.'}],
+        'preparation': [{'en': 'Prepare before starting; you remain in the sewers until the quest ends.',
+                         'pt': 'Prepare-se antes de começar; você fica nos esgotos até a missão '
+                               'terminar.'}]})
 c.item('quest', t('Kirsche Avenue Monster'), t('Kirsche Avenue'), END,
        t('+4 BP.\nA big bird with Seal and all-stat-down attacks: debuff immunity plus arts reflect is ideal.', '+4 BP.\nUma ave grande com ataques de Seal e redução de todos os atributos: imunidade a debuffs com reflexo de arts é o ideal.'),
-       1, [GURUNE])
+       1, [GURUNE], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'A big bird with Seal and all-stat-down attacks: debuff immunity plus arts '
+                           'reflect is ideal.',
+                     'pt': 'Uma ave grande com ataques de Seal e redução de todos os atributos: imunidade '
+                           'a debuffs com reflexo de arts é o ideal.'}})
 
 # Missables
 c.item('missable', t('Bonus BP: the search at the villa', 'BP bônus: a busca na mansão'), t('Erbe Royal Villa'), VISITS,
        t('+3 BP.\nDo not give up and ask the butler for help. After checking every marker, examine the counter next to him in the Lounge.', '+3 BP.\nNão desista nem peça ajuda ao mordomo. Depois de checar todos os marcadores, examine o balcão ao lado dele no Lounge.'),
-       1, [VILLA])
+       1, [VILLA], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'Do not give up and ask the butler for help. After checking every marker, '
+                           'examine the counter next to him in the Lounge.',
+                     'pt': 'Não desista nem peça ajuda ao mordomo. Depois de checar todos os marcadores, '
+                           'examine o balcão ao lado dele no Lounge.'}})
 c.item('missable', t('Bonus BP: question at the guild', 'BP bônus: pergunta na guilda'), t('Grancel — Bracer Guild'), END,
        t('+2 BP.\nIn the scene at the guild after visiting the Liberl News, pick the 2nd option.', '+2 BP.\nNa cena da guilda depois de visitar o Liberl News, escolha a 2ª opção.'),
-       1, [VILLA])
+       1, [VILLA], guidance={'rewards': [{'en': '+2 BP.', 'pt': '+2 BP.'}],
+        'overview': {'en': 'In the scene at the guild after visiting the Liberl News, pick the 2nd '
+                           'option.',
+                     'pt': 'Na cena da guilda depois de visitar o Liberl News, escolha a 2ª opção.'}})
 c.item('missable', t('Bonus BP: question on the southern wall', 'BP bônus: pergunta na muralha sul'), t('Gurune Gate'), END,
        t('+3 BP.\nAt the end of the southern wall, pick the 2nd option.', '+3 BP.\nNo fim da muralha sul, escolha a 2ª opção.'),
-       1, [GURUNE])
+       1, [GURUNE], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'At the end of the southern wall, pick the 2nd option.',
+                     'pt': 'No fim da muralha sul, escolha a 2ª opção.'}})
 
 # Collectibles
 c.item('collectible', t('Liberl News Issue 4'), t('Grancel — Edel Department Store, E. Block', 'Grancel — Edel Department Store, E. Block'), END,

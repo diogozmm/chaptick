@@ -497,7 +497,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP.",
+            "pt": "+2 BP."
+          }
+        ],
+        "overview": {
+          "en": "When the scene after going to bed offers a choice, pick the 1st option.",
+          "pt": "Quando a cena depois de ir dormir oferecer uma escolha, fique com a 1ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch0-mi-02",
@@ -521,7 +533,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP.",
+            "pt": "+2 BP."
+          }
+        ],
+        "overview": {
+          "en": "Losing does not end the game, but you lose the bonus. Save before going downstairs and keep your S-Crafts for when the enemy is under half HP.",
+          "pt": "Perder não encerra o jogo, mas você perde o bônus. Salve antes de descer e guarde os S-Crafts para quando o inimigo estiver com menos da metade do HP."
+        }
+      }
     },
     {
       "id": "sc-ch0-mi-03",
@@ -545,7 +569,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP.",
+            "pt": "+2 BP."
+          }
+        ],
+        "overview": {
+          "en": "In the opening scene, pick the 2nd option.",
+          "pt": "Na cena de abertura, fique com a 2ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch0-mi-04",
@@ -569,7 +605,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Examine all six spots in the lobby; in the scene that follows, pick the 3rd option.",
+          "pt": "Examine os seis pontos do saguão; na cena seguinte, fique com a 3ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch0-mi-05",
@@ -593,7 +641,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP.",
+            "pt": "+2 BP."
+          }
+        ],
+        "overview": {
+          "en": "In the scene at the final marker, pick the 2nd option.",
+          "pt": "Na cena do último marcador, fique com a 2ª opção."
+        }
+      }
     }
   ],
   "itemTexts": [],

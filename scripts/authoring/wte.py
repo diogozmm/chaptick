@@ -736,21 +736,24 @@ def task_item(task, next_id):
         hint_en, hint_pt = objectives[0]['en'], objectives[0]['pt']
     else:
         hint_en, hint_pt = 'Talk to the task giver to start it.', 'Fale com quem dá a tarefa para começar.'
+    guidance = {} if multiple else {'overview': t(hint_en, hint_pt)}
     if task['reward']:
         reward_en = TASKS.REWARD_EN.get(task['reward'], task['reward']).rstrip('.')
         hint_en += f'\nReward: {reward_en}.'
         hint_pt += f"\nRecompensa: {lines.get(task['reward'], task['reward']).rstrip('.')}."
+        guidance['rewards'] = [t(reward_en + '.', lines.get(task['reward'], task['reward']).rstrip('.') + '.')]
     if task['fails']:
         failed = task['fails'].removesuffix('.')
         hint_en += f'\nCareful: accepting it fails {failed}.'
         failed_pt = 'esta tarefa' if failed == 'this task' else f"a tarefa {TASKS.TASK_NAMES.get(failed, failed)}"
         hint_pt += f'\nAtenção: aceitar esta faz falhar {failed_pt}.'
+        guidance['warnings'] = [t(f'accepting it fails {failed}.', f'aceitar esta faz falhar {failed_pt}.')]
     kind = 'missable' if task['fails'] else 'quest'
     location_pt = f"{PT.place_pt(task['giver'])} — {lines.get(task['location'], task['location'])}"
     return {'id': next_id('mi' if kind == 'missable' else 'q', kind, task['name']), 'type': kind,
             'name': t(task['name'], TASKS.TASK_NAMES.get(task['name'])),
             'location': both(f"{task['giver']} — {task['location']}", location_pt), 'availableUntil': None,
-            'hint': t(hint_en, hint_pt), **({'steps': [{'text': o} for o in objectives]} if multiple else {}), 'spoilerLevel': 0, 'sources': [f"{NEO}: {task['page']}"]}
+            'hint': t(hint_en, hint_pt), **({'guidance': guidance} if guidance else {}), **({'steps': [{'text': o} for o in objectives]} if multiple else {}), 'spoilerLevel': 0, 'sources': [f"{NEO}: {task['page']}"]}
 
 
 def map_item(m, next_id):
@@ -765,7 +768,8 @@ def map_item(m, next_id):
         hint_pt += f'\nConteúdo: {loot_pt}.'
     return {'id': next_id('co', 'collectible', m['name']), 'type': 'collectible', 'name': t(m['name'], f'Mapa do Tesouro {n}'),
             'location': t(*where) if where else t('Marked on the map', 'Indicado no mapa'), 'availableUntil': None,
-            'hint': t(hint_en, hint_pt), 'spoilerLevel': 1, 'sources': [f'{WIKI}: Treasure']}
+            'hint': t(hint_en, hint_pt), 'guidance': {'overview': t(how_en, how_pt),
+                **({'rewards': [t(f'{q}× {name}', f'{q}× {PT.tr(name) or name}') for q, name in loot]} if loot else {})}, 'spoilerLevel': 1, 'sources': [f'{WIKI}: Treasure']}
 
 
 
@@ -878,7 +882,14 @@ def friendship_items(next_id):
     for adv in ADVENTURES:
         group_en, group_pt = ', '.join(adv['group'][:-1]) + ' or ' + adv['group'][-1], ', '.join(adv['group'][:-1]) + ' ou ' + adv['group'][-1]
         reward_pt = PT.tr(adv['reward']) or adv['reward']
-        items.append({'id': next_id('q', 'quest', adv['name']['en']), 'type': 'quest', 'name': adv['name'],
+        guidance = {
+            'requirements': [t(f'Reach 4 hearts with {group_en} and wait for the "I need your help" letter.',
+                               f'Chegue a 4 corações com {group_pt} e espere a carta "I need your help".')],
+            'preparation': [t('Bring healing items.', 'Leve itens de cura.')],
+            'rewards': [t(adv['reward'] + '.', reward_pt + '.')],
+            'overview': adv['ending'],
+        }
+        items.append({'guidance': guidance, 'id': next_id('q', 'quest', adv['name']['en']), 'type': 'quest', 'name': adv['name'],
                       'location': t('Elderfield High lobby', 'Saguão do Colégio Elderfield'), 'availableUntil': None,
                       'hint': t(f"Reach 4 hearts with {group_en} and wait for the \"I need your help\" letter. Bring healing items. "
                                 f"Reward: {adv['reward']}. {adv['ending']['en']}",

@@ -79,7 +79,25 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2 BP.",
+            "pt": "2 BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "overview": {
+          "en": "Pick up the letter from Father Divine BEFORE crossing Verte Bridge, then give it to Father Holstein in the Bose chapel.",
+          "pt": "Pegue a carta com o Father Divine ANTES de atravessar a Verte Bridge e entregue ao Father Holstein na capela de Bose."
+        }
+      }
     },
     {
       "id": "fc-ch1-hq-01",
@@ -123,7 +141,19 @@
             "pt": "Na vaca, escolha a 2ª opção."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 2 (+2).",
+            "pt": "BP: 2 (+2)."
+          }
+        ],
+        "overview": {
+          "en": "Hidden quest, new in the remake. Eat Sunshine Mille Crepe for its recipe.",
+          "pt": "Missão oculta, nova no remake. Coma Sunshine Mille Crepe para aprender a receita."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-02",
@@ -147,7 +177,25 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "overview": {
+          "en": "Its Fate Saber can K.O. instantly: bring Deathblow protection (Grail Ring, Crest Charm). It is slow and easy to stun.",
+          "pt": "O Fate Saber dele pode derrubar na hora: leve proteção contra Deathblow (Grail Ring, Crest Charm). Ele é lento e fácil de atordoar."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-03",
@@ -195,7 +243,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Not on the board: it starts when you enter Amberl Tower. Reach 5F, approach the center, then leave the tower.",
+          "pt": "Não aparece no quadro: começa quando você entra na Amberl Tower. Suba até o 5F, aproxime-se do centro e depois saia da torre."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-04",
@@ -219,7 +279,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Appears after Divine Delivery. Bring two Bear Claws from Nebel Valley: near the end of the west path (after its quest monster) and beside the Thelas Balm chest.",
+          "pt": "Aparece depois da Divine Delivery. Leve duas Bear Claws de Nebel Valley: perto do fim do caminho oeste (depois do monstro da quest) e ao lado do baú do Thelas Balm."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-05",
@@ -243,7 +315,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 (+1) BP.",
+            "pt": "4 (+1) BP."
+          }
+        ],
+        "overview": {
+          "en": "Walk Hart to Krone Trail; if he falls it's game over, so avoid fights. Choose \"A frontal assault!\" (1st option) for the bonus.",
+          "pt": "Leve o Hart até a Krone Trail; se ele cair é game over, então evite lutas. Escolha \"A frontal assault!\" (1ª opção) para o bônus."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-06",
@@ -267,7 +351,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Poisonous scorpions; the leader calls more.",
+          "pt": "Escorpiões venenosos; o líder chama mais."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-07",
@@ -291,7 +387,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "Kill the Boiled Eggers from a distance (they explode) and wear Flame Zippos against Freeze.",
+          "pt": "Derrube os Boiled Eggers à distância (eles explodem) e use Flame Zippos contra Freeze."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-08",
@@ -315,7 +423,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "The toughest of this set: spread out, keep Earth Guard up and protect against Mute, Seal and Blind.",
+          "pt": "O mais difícil deste grupo: espalhe a equipe, mantenha o Earth Guard e se proteja de Mute, Seal e Blind."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-09",
@@ -339,7 +459,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "New in the remake. Help Anelace in Nebel Valley; Flame Zippos recommended. Later, Sting at the Bose guild gives Proxy Puppet S ×2.",
+          "pt": "Nova no remake. Ajude a Anelace em Nebel Valley; Flame Zippos recomendados. Depois, o Sting na guilda de Bose dá Proxy Puppet S ×2."
+        }
+      }
     },
     {
       "id": "fc-ch1-q-10",
@@ -363,7 +495,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "It blocks the way to Valleria Shore, so you can't skip it. The turtles shrug off physical hits: use arts and step out of the red circles.",
+          "pt": "Ele bloqueia o caminho para Valleria Shore, então não dá para pular. As tartarugas aguentam golpes físicos: use arts e saia dos círculos vermelhos."
+        }
+      }
     },
     {
       "id": "fc-ch1-mi-01",

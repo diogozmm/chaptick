@@ -59,7 +59,19 @@
             "pt": "No extremo sudoeste de Carnac, perto de Tyrant Hills: primeiro destrua os pilares com o canhão."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Collect the three supply boxes at the green markers.",
+          "pt": "Recolha as três caixas de suprimentos nos marcadores verdes."
+        }
+      }
     },
     {
       "id": "ysx-ch3-co-01",

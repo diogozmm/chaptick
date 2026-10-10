@@ -70,7 +70,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+5 BP.",
+            "pt": "+5 BP."
+          }
+        ],
+        "overview": {
+          "en": "Leads into Kaldia Limestone Cave, off Kaldia Tunnel. Bring Confuse and Seal protection, and keep the person you escort alive in the final fight.",
+          "pt": "Leva à Kaldia Limestone Cave, a partir do Kaldia Tunnel. Leve proteção contra Confuse e Seal, e mantenha vivo quem você escolta na luta final."
+        }
+      }
     },
     {
       "id": "sc-ch3-q-02",
@@ -95,7 +107,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Trees that cripple stats and heal from damage: shields and debuff immunity; fire arts on the small ones first.\nIts deadline shortens mid-chapter, so finish it before advancing the search in the capital.",
+          "pt": "Árvores que derrubam atributos e se curam causando dano: escudos e imunidade a debuffs; arts de fogo nas menores primeiro.\nO prazo encurta no meio do capítulo, então termine antes de avançar a busca na capital."
+        }
+      }
     },
     {
       "id": "sc-ch3-q-03",
@@ -119,7 +143,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Blocks the way to the villa. Straightforward: buff up and burst when stunned.",
+          "pt": "Bloqueia o caminho para a mansão. Direto ao ponto: faça buffs e ataque forte quando atordoar."
+        }
+      }
     },
     {
       "id": "sc-ch3-q-04",
@@ -169,7 +205,21 @@
             "pt": "Por fim, entre na Grand Arena pela sala de espera sul e conclua a luta."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "equip protection against Freeze for the fight at the arena.",
+            "pt": "equipe proteção contra Freeze para a luta na arena."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch3-q-05",
@@ -194,7 +244,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "The North Block entrance is a breakable wall at the end of the East Block. Medium deadline: do it before advancing the search in the capital.",
+          "pt": "A entrada do North Block é uma parede quebrável no fim do East Block. Prazo médio: faça antes de avançar a busca na capital."
+        }
+      }
     },
     {
       "id": "sc-ch3-q-06",
@@ -218,7 +280,31 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Talk to Hilda.",
+          "pt": "Fale com Hilda."
+        },
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "requirements": [
+          {
+            "en": "Kloe must be in the party.",
+            "pt": "Kloe precisa estar na equipe."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Prepare before starting; you remain in the sewers until the quest ends.",
+            "pt": "Prepare-se antes de começar; você fica nos esgotos até a missão terminar."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch3-q-07",
@@ -241,7 +327,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "A big bird with Seal and all-stat-down attacks: debuff immunity plus arts reflect is ideal.",
+          "pt": "Uma ave grande com ataques de Seal e redução de todos os atributos: imunidade a debuffs com reflexo de arts é o ideal."
+        }
+      }
     },
     {
       "id": "sc-ch3-mi-01",
@@ -264,7 +362,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Do not give up and ask the butler for help. After checking every marker, examine the counter next to him in the Lounge.",
+          "pt": "Não desista nem peça ajuda ao mordomo. Depois de checar todos os marcadores, examine o balcão ao lado dele no Lounge."
+        }
+      }
     },
     {
       "id": "sc-ch3-mi-02",
@@ -287,7 +397,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP.",
+            "pt": "+2 BP."
+          }
+        ],
+        "overview": {
+          "en": "In the scene at the guild after visiting the Liberl News, pick the 2nd option.",
+          "pt": "Na cena da guilda depois de visitar o Liberl News, escolha a 2ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch3-mi-03",
@@ -310,7 +432,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "At the end of the southern wall, pick the 2nd option.",
+          "pt": "No fim da muralha sul, escolha a 2ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch3-co-01",

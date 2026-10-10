@@ -74,7 +74,19 @@
             "pt": "Mostre a foto ao prefeito."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+6 BP.",
+            "pt": "+6 BP."
+          }
+        ],
+        "overview": {
+          "en": "Show the old photo in this order.",
+          "pt": "Mostre a foto antiga nesta ordem."
+        }
+      }
     },
     {
       "id": "sc-ch6-q-02",
@@ -98,7 +110,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 4 (+2 bonus).",
+            "pt": "BP: 4 (+2 de bônus)."
+          }
+        ],
+        "overview": {
+          "en": "Escort Milano from the west exit to Ravennue Village in under 10 minutes for the bonus.\nTimer: pauses during scenes and Command Battles, but each turn adds 5 seconds.\nForced fight: on Ravennue Trail; the leader is weak to water.",
+          "pt": "Escolte Milano da saída oeste até Ravennue Village em menos de 10 minutos para receber o bônus.\nCronômetro: pausa nas cenas e nas Command Battles, mas cada turno custa 5 segundos.\nLuta obrigatória: em Ravennue Trail; o líder é fraco contra água."
+        }
+      }
     },
     {
       "id": "sc-ch6-q-03",
@@ -166,7 +190,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Bonus: +5 BP.",
+            "pt": "Bônus: +5 BP."
+          }
+        ],
+        "overview": {
+          "en": "Save first: losing lets the story continue but costs the bonus.\nPreparation: equip Grail Locket or a Proxy Puppet.\nDuring the fight:\n• Keep Earth Guard active.\n• Use Grand Stream to inflict Blind.\n• When they start reviving each other, finish them with an area art.",
+          "pt": "Salve antes: perder permite continuar a história, mas custa o bônus.\nPreparação: equipe Grail Locket ou Proxy Puppet.\nDurante a luta:\n• Mantenha Earth Guard ativo.\n• Use Grand Stream para causar Blind.\n• Quando começarem a reviver uns aos outros, finalize com uma art em área."
+        }
+      }
     },
     {
       "id": "sc-ch6-co-01",

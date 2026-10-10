@@ -39,7 +39,9 @@
     </dl>
   }
 
-  @if (e.showHint) {
+  @if (e.showHint && e.showName && e.item.guidance) {
+    <app-item-guidance [guidance]="e.item.guidance" position="before" />
+  } @else if (e.showHint) {
     <section class="section instructions card">
       <h2>{{ 'item.instructions' | transloco }}</h2>
       <p class="hint">{{ e.item.hint | localize: l }}</p>
@@ -55,6 +57,10 @@
       <div class="progress" aria-hidden="true"><span [style.width.%]="(e.route.done / e.route.total) * 100"></span></div>
       <app-route-steps [item]="e.item" [collapsible]="false" />
     </section>
+  }
+
+  @if (e.showHint && e.showName && e.item.guidance) {
+    <app-item-guidance [guidance]="e.item.guidance" position="after" />
   }
 
   @for (trophy of view.trophies(e.item); track trophy.id) {

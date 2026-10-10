@@ -107,7 +107,19 @@
             "pt": "Clinic, 4º andar — gaveta."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Recover all three books. This starts the Overtime quest chain.",
+          "pt": "Recupere os três livros. Isso inicia a sequência de missões Overtime."
+        }
+      }
     },
     {
       "id": "fc-ch3-hq-01",
@@ -163,7 +175,19 @@
             "pt": "Derrote a Creepy Sheep rosa no sudoeste de Tratt Plains para obter a lã."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Hidden quest, new in the remake.",
+          "pt": "Missão oculta, nova no remake."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-02",
@@ -187,7 +211,25 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP (+2 bonus).",
+            "pt": "4 BP (+2 de bônus)."
+          }
+        ],
+        "requirements": [
+          {
+            "en": "Equip Strega-α on Estelle.",
+            "pt": "Equipe Strega-α em Estelle."
+          }
+        ],
+        "overview": {
+          "en": "Visit at least FOUR of these five places; fast travel counts.\n• Air-Letten\n• Wolf Fort\n• Sanktheim Gate\n• Leiston Fortress\n• Elmo Village",
+          "pt": "Visite pelo menos QUATRO destes cinco locais; viagem rápida conta.\n• Air-Letten\n• Wolf Fort\n• Sanktheim Gate\n• Leiston Fortress\n• Elmo Village"
+        }
+      }
     },
     {
       "id": "fc-ch3-q-03",
@@ -243,7 +285,19 @@
             "pt": "Use a chave para examinar a mesa de Murdock na sala dos fundos."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Follow the investigation in this order.",
+          "pt": "Siga a investigação nesta ordem."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-04",
@@ -291,7 +345,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Tanky against physical hits but weak to arts and most ailments; it shields itself at low HP.",
+          "pt": "Aguenta golpes físicos, mas é fraco contra arts e quase todos os efeitos; ele se protege com pouco HP."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-06",
@@ -315,7 +381,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Talk to Wong and beat the Armored Rabbits. Unlocks Roadside Repair.",
+          "pt": "Fale com o Wong e derrote os Armored Rabbits. Libera a Roadside Repair."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-07",
@@ -365,7 +443,19 @@
             "pt": "Entregue o Drive Orbment a Wong."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "Unlocked by Cargo Car.",
+          "pt": "Desbloqueada por Cargo Car."
+        }
+      }
     },
     {
       "id": "fc-ch3-hq-02",
@@ -389,7 +479,45 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Hidden quest: deliver the letter to Fey on factory B1F with one gift.",
+          "pt": "Missão oculta: entregue a carta a Fey no B1F da fábrica com um presente."
+        },
+        "rewards": [
+          {
+            "en": "2 BP, plus the bonus for your chosen gift.",
+            "pt": "2 BP, mais o bônus do presente escolhido."
+          }
+        ],
+        "alternatives": [
+          {
+            "condition": {
+              "en": "Full bonus: +4 BP",
+              "pt": "Bônus completo: +4 BP"
+            },
+            "instructions": [
+              {
+                "en": "Bring a Wool Knit Cap from Bell Station.",
+                "pt": "Leve Wool Knit Cap de Bell Station."
+              }
+            ]
+          },
+          {
+            "condition": {
+              "en": "Partial bonus: +2 BP",
+              "pt": "Bônus parcial: +2 BP"
+            },
+            "instructions": [
+              {
+                "en": "Bring Work Gloves or a Seasonal Tart.",
+                "pt": "Leve Work Gloves ou Seasonal Tart."
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch3-q-08",
@@ -413,7 +541,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "5 BP.",
+            "pt": "5 BP."
+          }
+        ],
+        "overview": {
+          "en": "Clear the small snakes with area attacks and bring poison protection.",
+          "pt": "Derrube as cobras pequenas com ataques em área e leve proteção contra veneno."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-09",
@@ -437,7 +577,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          }
+        ],
+        "overview": {
+          "en": "After Looking for Librarian. Take The Erbe Woodpecker back to Constance.",
+          "pt": "Depois da Looking for Librarian. Devolva The Erbe Woodpecker à Constance."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-10",
@@ -461,7 +613,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Examine the central pillar for Hertz's Adventure Vol. 2 and return it.",
+          "pt": "Examine o pilar do centro para pegar Hertz's Adventure Vol. 2 e devolva."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-11",
@@ -485,7 +649,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "The book 31 Cypress Trees is on a barrel (with an Impede 3).",
+          "pt": "O livro 31 Cypress Trees está sobre um barril (com um Impede 3)."
+        }
+      }
     },
     {
       "id": "fc-ch3-q-12",
@@ -509,7 +685,25 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "6 BP.",
+            "pt": "6 BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Short deadline.",
+            "pt": "Prazo curto."
+          }
+        ],
+        "overview": {
+          "en": "Defeating the leader buffs the other wolves and it can revive them: bring Anti-Sept All. You can wait until Agate and Tita rejoin, but it expires once you board the airship for Leiston.",
+          "pt": "Derrotar o líder fortalece os outros lobos, e ele pode revivê-los: leve Anti-Sept All. Dá para esperar o Agate e a Tita voltarem, mas a quest expira quando você embarca no airship para Leiston."
+        }
+      }
     },
     {
       "id": "fc-ch3-mi-01",

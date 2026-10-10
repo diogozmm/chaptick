@@ -76,7 +76,19 @@
             "pt": "Vá ao terraço de Esmelas Tower e procure junto ao pilar quebrado à esquerda."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "The ring is at Esmelas Tower.",
+          "pt": "O anel está em Esmelas Tower."
+        }
+      }
     },
     {
       "id": "sc-ch4-q-02",
@@ -158,7 +170,19 @@
             "pt": "Entregue a missão antes de sair de Rolent."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 3 +2.",
+            "pt": "BP: 3 +2."
+          }
+        ],
+        "overview": {
+          "en": "Only fish caught after accepting the quest count. The seventh spot opens at the start of Chapter 5. Report before leaving Rolent.",
+          "pt": "Só contam peixes pescados após aceitar a missão. O sétimo ponto abre no início do Capítulo 5. Entregue a missão antes de sair de Rolent."
+        }
+      }
     },
     {
       "id": "sc-ch4-q-03",
@@ -182,7 +206,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Petrify, delay and stat-down attacks: equip protection and use arts reflect.",
+          "pt": "Ataques de Petrify, atraso e redução de atributos: equipe proteção e use reflexo de arts."
+        }
+      }
     },
     {
       "id": "sc-ch4-q-04",
@@ -206,7 +242,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "It buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.",
+          "pt": "Ele se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve proteção contra Freeze."
+        }
+      }
     },
     {
       "id": "sc-ch4-q-05",
@@ -268,7 +316,19 @@
             "pt": "Vá ao nível inferior do airliner."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Available only at night. Follow these leads in order.",
+          "pt": "Disponível apenas à noite. Siga estas pistas em ordem."
+        }
+      }
     },
     {
       "id": "sc-ch4-mi-01",
@@ -291,7 +351,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+6 BP.",
+            "pt": "+6 BP."
+          }
+        ],
+        "overview": {
+          "en": "When you report the night investigation, pick the 2nd option, then the 3rd.",
+          "pt": "Ao relatar a investigação da noite, escolha a 2ª opção e depois a 3ª."
+        }
+      }
     },
     {
       "id": "sc-ch4-co-01",
@@ -945,7 +1017,25 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Medium deadline.",
+            "pt": "Prazo médio."
+          }
+        ],
+        "overview": {
+          "en": "Its defense is so high that physical hits do nothing: bring water arts and orbal-gun users, spread the party, and resist Seal, Mute and Blind.",
+          "pt": "A defesa é tão alta que golpes físicos não causam dano: leve arts de água e quem usa arma orbal, espalhe a equipe e resista a Seal, Mute e Blind."
+        }
+      }
     },
     {
       "id": "sc-ch4-q-07",
@@ -968,7 +1058,25 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "Medium deadline.",
+            "pt": "Prazo médio."
+          }
+        ],
+        "overview": {
+          "en": "Like the Mistwald monster chest: bring Confuse and Deathblow protection; its allies absorb water and wind but are weak to earth and fire.",
+          "pt": "Parecido com o baú de monstros de Mistwald: leve proteção contra Confuse e Deathblow; os aliados absorvem água e vento, mas são fracos contra terra e fogo."
+        }
+      }
     },
     {
       "id": "sc-ch4-mi-02",

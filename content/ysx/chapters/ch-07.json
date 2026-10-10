@@ -99,7 +99,21 @@
             "pt": "Derrote o chefe água-viva no navio fantasma."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Medium deadline.",
+            "pt": "Prazo médio."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Shield Cannons.",
+            "pt": "Shield Cannons."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch7-q-02",
@@ -143,7 +157,21 @@
             "pt": "Conclua Grotto Isle."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Medium deadline.",
+            "pt": "Prazo médio."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "5,000 Gold and the rescue of the last Carnac townsperson.",
+            "pt": "5.000 Gold e o resgate do último morador de Carnac."
+          }
+        ]
+      }
     },
     {
       "id": "ysx-ch7-q-03",
@@ -235,7 +263,19 @@
             "pt": "Visite o novo marcador a sudeste."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Start from Gregorio’s Curio.",
+          "pt": "Comece em Gregorio’s Curio."
+        }
+      }
     },
     {
       "id": "ysx-ch7-q-06",

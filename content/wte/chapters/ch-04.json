@@ -27,7 +27,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A \"special axe\" of some kind.",
+            "pt": "Algum tipo de \"machado especial\"."
+          }
+        ],
+        "overview": {
+          "en": "Pearls found: (3 required).",
+          "pt": "Pérolas encontradas: (3 necessárias)."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-02",
@@ -48,7 +60,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A Golden Hatchet.",
+            "pt": "Uma Machadinha Dourada."
+          }
+        ],
+        "overview": {
+          "en": "Bring Grace a Herbal Salve.",
+          "pt": "Leve uma Pomada de Ervas à Grace."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-03",
@@ -69,7 +93,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A Golden Hatchet.",
+            "pt": "Uma Machadinha Dourada."
+          }
+        ],
+        "overview": {
+          "en": "Restock the Storehouse.",
+          "pt": "Reabasteça o depósito."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-04",
@@ -90,7 +126,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A Golden Hatchet.",
+            "pt": "Uma Machadinha Dourada."
+          }
+        ],
+        "overview": {
+          "en": "Mysteries Investigated: (3 required).",
+          "pt": "Mistérios investigados: (3 necessários)."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-05",
@@ -111,7 +159,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Bring Samson a Soulbargain Potion.",
+          "pt": "Leve uma Poção do Pacto de Alma ao Samson."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-06",
@@ -132,7 +186,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Find Jacob's Lost Journal.",
+          "pt": "Encontre o diário perdido do Jacob."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-07",
@@ -153,7 +213,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Find Sarah's Lost Pocket Knife.",
+          "pt": "Encontre o canivete perdido da Sarah."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-08",
@@ -174,7 +240,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A key to one of the gates.",
+            "pt": "A chave de um dos portões."
+          }
+        ],
+        "overview": {
+          "en": "Find 5 Golden Teeth.",
+          "pt": "Encontre 5 Dentes de Ouro."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-09",
@@ -195,7 +273,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A key to one of the gates.",
+            "pt": "A chave de um dos portões."
+          }
+        ],
+        "overview": {
+          "en": "Craft a Necklace of Bone.",
+          "pt": "Crie um Colar de Osso."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-10",
@@ -216,7 +306,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The Final Key.",
+            "pt": "A Chave Final."
+          }
+        ],
+        "overview": {
+          "en": "Find all four Gold Coins of Death.",
+          "pt": "Encontre as quatro Moedas de Ouro da Morte."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-11",
@@ -237,7 +339,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A key to one of the gates.",
+            "pt": "A chave de um dos portões."
+          }
+        ],
+        "overview": {
+          "en": "Bring Lydia a Herbal Stew, Herbal Feast, Herbal Serpent and Herbal Roast.",
+          "pt": "Leve à Lydia um Ensopado de Ervas, um Banquete de Ervas, uma Serpente com Ervas e um Assado com Ervas."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-12",
@@ -258,7 +372,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A key to one of the gates.",
+            "pt": "A chave de um dos portões."
+          }
+        ],
+        "overview": {
+          "en": "Find Dimitri in the tunnels.",
+          "pt": "Encontre o Dimitri nos túneis."
+        }
+      }
     },
     {
       "id": "wte-ch4-q-13",
@@ -279,7 +405,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Grandma's forgiveness.",
+            "pt": "O perdão da Vovó."
+          }
+        ],
+        "overview": {
+          "en": "Acquire a Palewood Branch.",
+          "pt": "Consiga um Galho de Madeira Pálida."
+        }
+      }
     }
   ],
   "itemTexts": [],

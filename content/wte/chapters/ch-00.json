@@ -62,7 +62,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Beginner Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The respect of Farmer Hans..?.",
+            "pt": "O respeito do Fazendeiro Hans..?."
+          }
+        ],
+        "overview": {
+          "en": "Grow and harvest a single Wheat crop.",
+          "pt": "Plante e colha um pé de Trigo."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-03",
@@ -83,7 +95,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Beginner Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Access to Molly's workshop.",
+            "pt": "Acesso à oficina da Molly."
+          }
+        ],
+        "overview": {
+          "en": "Bring Molly a Copper Ore.",
+          "pt": "Leve um Minério de Cobre à Molly."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-04",
@@ -104,7 +128,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Beginner Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A Preserving Barrel.",
+            "pt": "Um Barril de Conserva."
+          }
+        ],
+        "overview": {
+          "en": "Bring Dave a Fog Broth.",
+          "pt": "Leve um Caldo de Névoa ao Dave."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-05",
@@ -125,7 +161,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Find and defeat a Shopper at the mall.",
+          "pt": "Encontre e derrote um Consumidor no shopping."
+        }
+      }
     },
     {
       "id": "wte-ch0-mi-01",
@@ -146,7 +188,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "accepting it fails this task.",
+            "pt": "aceitar esta faz falhar esta tarefa."
+          }
+        ],
+        "overview": {
+          "en": "Find Ben.",
+          "pt": "Encontre o Ben."
+        }
+      }
     },
     {
       "id": "wte-ch0-mi-02",
@@ -167,7 +221,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "accepting it fails Babysitting...?.",
+            "pt": "aceitar esta faz falhar a tarefa Babá...?."
+          }
+        ],
+        "overview": {
+          "en": "Parents Slimed.",
+          "pt": "Pais engosmados."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-06",
@@ -188,7 +254,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "\"Dark Magic\" of some kind.",
+            "pt": "Algum tipo de \"magia sombria\"."
+          }
+        ],
+        "overview": {
+          "en": "Wife-building progress: (5 required).",
+          "pt": "Progresso da esposa: (5 necessários)."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-07",
@@ -326,7 +404,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The secrets of the shrine.",
+            "pt": "Os segredos do santuário."
+          }
+        ],
+        "overview": {
+          "en": "God Shrines investigated: (2 required).",
+          "pt": "Santuários dos deuses investigados: (2 necessários)."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-11",
@@ -367,7 +457,15 @@
             "pt": "Leve a obra da Ellie à Abigail e pegue sua recompensa."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Some rare seeds.",
+            "pt": "Algumas sementes raras."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch0-q-12",
@@ -388,7 +486,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: General Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Find Tracy's Laundry.",
+          "pt": "Encontre a roupa da Tracy."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-13",
@@ -423,7 +527,15 @@
             "pt": "Fale com a Carla."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Unlocks Bean Seeds.",
+            "pt": "Libera a Semente de Feijão."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch0-q-14",
@@ -458,7 +570,15 @@
             "pt": "Leve à Trisha um Linguado Fantasma de qualidade Ouro ou melhor."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A Lightning Rod blueprint.",
+            "pt": "Um projeto de Para-raios."
+          }
+        ]
+      }
     },
     {
       "id": "wte-ch0-q-15",
@@ -479,7 +599,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "The ability to grow Pumpkins.",
+            "pt": "Poder plantar Abóboras."
+          }
+        ],
+        "overview": {
+          "en": "Craft a Skull Chalice at a workbench.",
+          "pt": "Crie um Cálice de Crânio na bancada."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-16",
@@ -500,7 +632,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "A new type of seed.",
+            "pt": "Um novo tipo de semente."
+          }
+        ],
+        "overview": {
+          "en": "Defeat the Denizen of the Deep Fryer in the mall food court.",
+          "pt": "Derrote o Morador da Fritadeira na praça de alimentação do shopping."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-17",
@@ -521,7 +665,13 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Sort out this tree branch mess.",
+          "pt": "Dê um jeito nessa bagunça de galhos."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-18",
@@ -542,7 +692,19 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker Welcome to Elderfield: Long-Term Tasks"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Nothing in particular.",
+            "pt": "Nada em especial."
+          }
+        ],
+        "overview": {
+          "en": "Sort out this bone mess.",
+          "pt": "Dê um jeito nessa bagunça de ossos."
+        }
+      }
     },
     {
       "id": "wte-ch0-co-01",
@@ -563,7 +725,31 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "1× Cleansing Balm",
+            "pt": "1× Bálsamo Purificador"
+          },
+          {
+            "en": "2× Bait Pack (Tier 1)",
+            "pt": "2× Pacote de Iscas (Nível 1)"
+          },
+          {
+            "en": "5× Coal",
+            "pt": "5× Carvão"
+          },
+          {
+            "en": "2× Spoiled Rations",
+            "pt": "2× Rações Estragadas"
+          }
+        ],
+        "overview": {
+          "en": "Talk to the cat in the farmhouse.",
+          "pt": "Converse com o gato na casa da fazenda."
+        }
+      }
     },
     {
       "id": "wte-ch0-co-02",
@@ -584,7 +770,39 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "1× Recipe: Special Hotdog",
+            "pt": "1× Receita: Cachorro-quente Especial"
+          },
+          {
+            "en": "3× Bait Pack (Tier 1)",
+            "pt": "3× Pacote de Iscas (Nível 1)"
+          },
+          {
+            "en": "5× Wood",
+            "pt": "5× Madeira"
+          },
+          {
+            "en": "3× String",
+            "pt": "3× Barbante"
+          },
+          {
+            "en": "5× Stone",
+            "pt": "5× Pedra"
+          },
+          {
+            "en": "1× Iron Bar",
+            "pt": "1× Barra de Ferro"
+          }
+        ],
+        "overview": {
+          "en": "Talk to Alice.",
+          "pt": "Converse com a Alice."
+        }
+      }
     },
     {
       "id": "wte-ch0-co-03",
@@ -605,7 +823,35 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "1× Aged Rum",
+            "pt": "1× Rum Envelhecido"
+          },
+          {
+            "en": "2× Small Coin Pouch",
+            "pt": "2× Bolsinha de Moedas Pequena"
+          },
+          {
+            "en": "1× Medium Coin Pouch",
+            "pt": "1× Bolsinha de Moedas Média"
+          },
+          {
+            "en": "3× Spoiled Rations",
+            "pt": "3× Rações Estragadas"
+          },
+          {
+            "en": "1× Stealth Musk",
+            "pt": "1× Almíscar Furtivo"
+          }
+        ],
+        "overview": {
+          "en": "Random: the pentagram mystery in the Parks and Recreation office.",
+          "pt": "Aleatório: o mistério do pentagrama no escritório de Parques e Recreação."
+        }
+      }
     },
     {
       "id": "wte-ch0-co-04",
@@ -626,7 +872,31 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "1× Large Coin Box",
+            "pt": "1× Caixa de Moedas Grande"
+          },
+          {
+            "en": "1× Treasure Casket",
+            "pt": "1× Baú do Tesouro"
+          },
+          {
+            "en": "1× Gem Bag",
+            "pt": "1× Bolsa de Gemas"
+          },
+          {
+            "en": "1× Love Potion",
+            "pt": "1× Poção do Amor"
+          }
+        ],
+        "overview": {
+          "en": "Talk to Celeste.",
+          "pt": "Converse com a Celeste."
+        }
+      }
     },
     {
       "id": "wte-ch0-co-05",
@@ -647,7 +917,27 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2× Gem Bag",
+            "pt": "2× Bolsa de Gemas"
+          },
+          {
+            "en": "1× Rare Gem Bag",
+            "pt": "1× Bolsa de Gemas Rara"
+          },
+          {
+            "en": "1× Clear Gem",
+            "pt": "1× Gema Clara"
+          }
+        ],
+        "overview": {
+          "en": "Gossip with Blorph.",
+          "pt": "Fofoque com o Blorph."
+        }
+      }
     },
     {
       "id": "wte-ch0-co-06",
@@ -668,7 +958,13 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Fishing treasure.",
+          "pt": "Tesouro de pesca."
+        }
+      }
     },
     {
       "id": "wte-ch0-co-07",
@@ -689,7 +985,13 @@
       "spoilerLevel": 1,
       "sources": [
         "wiki: Welcome to Elderfield Wiki (wiki.gg, CC BY-SA 4.0): Treasure"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Fishing treasure.",
+          "pt": "Tesouro de pesca."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-19",
@@ -736,7 +1038,31 @@
             "pt": "Olhe atrás da cortina na Sala 104 e derrote a Sra. Mal-humorada"
           }
         }
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Reach 4 hearts with Josh, Sam or Alice and wait for the \"I need your help\" letter.",
+            "pt": "Chegue a 4 corações com Josh, Sam ou Alice e espere a carta \"I need your help\"."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Bring healing items.",
+            "pt": "Leve itens de cura."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Cube of One +7.",
+            "pt": "Cubo do Um +7."
+          }
+        ],
+        "overview": {
+          "en": "Whoever of Josh, Sam and Alice has the most friendship gives the closing talk (ties: Josh, then Sam).",
+          "pt": "Quem tiver mais amizade entre Josh, Sam e Alice faz a conversa final (empate: Josh, depois Sam)."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-20",
@@ -783,7 +1109,31 @@
             "pt": "Num espelho do banheiro, responda \"Ugly\" três vezes e derrote a Irmã Faminta"
           }
         }
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Reach 4 hearts with Edwin, Ellie or Blorph and wait for the \"I need your help\" letter.",
+            "pt": "Chegue a 4 corações com Edwin, Ellie ou Blorph e espere a carta \"I need your help\"."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Bring healing items.",
+            "pt": "Leve itens de cura."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Earring of Duality +5.",
+            "pt": "Brinco da Dualidade +5."
+          }
+        ],
+        "overview": {
+          "en": "Whoever of Edwin, Ellie and Blorph has the most friendship gives the closing talk (ties: Edwin, then Ellie).",
+          "pt": "Quem tiver mais amizade entre Edwin, Ellie e Blorph faz a conversa final (empate: Edwin, depois Ellie)."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-21",
@@ -824,7 +1174,31 @@
             "pt": "Escada da esquerda para o porão: siga as passagens e derrote o Melhor Amigo no fim"
           }
         }
-      ]
+      ],
+      "guidance": {
+        "requirements": [
+          {
+            "en": "Reach 4 hearts with Molly, Tanner or Celeste and wait for the \"I need your help\" letter.",
+            "pt": "Chegue a 4 corações com Molly, Tanner ou Celeste e espere a carta \"I need your help\"."
+          }
+        ],
+        "preparation": [
+          {
+            "en": "Bring healing items.",
+            "pt": "Leve itens de cura."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "Crystal Skull +10.",
+            "pt": "Caveira de Cristal +10."
+          }
+        ],
+        "overview": {
+          "en": "The closing talk is odd here: a Molly lead gives Molly's, a Tanner lead gives Celeste's, a Celeste lead gives Tanner's.",
+          "pt": "A conversa final é diferente aqui: se a Molly lidera, fala a Molly; se o Tanner lidera, fala a Celeste; se a Celeste lidera, fala o Tanner."
+        }
+      }
     },
     {
       "id": "wte-ch0-q-22",

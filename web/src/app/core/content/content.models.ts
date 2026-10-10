@@ -99,6 +99,17 @@ export interface RouteStep {
   text: Localized;
 }
 
+/** Detail-only information. Optional actions and branches never contribute to completion. */
+export interface ItemGuidance {
+  overview?: Localized;
+  requirements?: Localized[];
+  preparation?: Localized[];
+  rewards?: Localized[];
+  warnings?: Localized[];
+  optional?: Localized[];
+  alternatives?: { condition: Localized; instructions: Localized[] }[];
+}
+
 export interface Item {
   id: string;
   type: ItemType;
@@ -106,6 +117,7 @@ export interface Item {
   location: Localized;
   availableUntil: string | null;
   hint: Localized;
+  guidance?: ItemGuidance;
   spoilerLevel: SpoilerLevel;
   sources: string[];
   /** Ids of the game's trophies this item counts toward. */

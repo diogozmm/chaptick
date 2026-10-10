@@ -291,6 +291,9 @@
             "type": "string",
             "pattern": "^[a-z0-9-]+$"
           }
+        },
+        "guidance": {
+          "$ref": "#/$defs/guidance"
         }
       },
       "additionalProperties": false
@@ -1083,6 +1086,76 @@
           ]
         }
       ]
+    },
+    "guidance": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "description": "Structured detail guidance. Never changes progress; only top-level steps count. Hidden until the item is revealed. hint remains the safe checklist/legacy summary.",
+      "properties": {
+        "overview": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "requirements": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        },
+        "preparation": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        },
+        "rewards": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        },
+        "warnings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        },
+        "optional": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        },
+        "alternatives": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "condition",
+              "instructions"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "condition": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "instructions": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localized"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

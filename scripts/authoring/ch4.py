@@ -23,7 +23,8 @@ c.item('quest', t('Betrothal Band Bandit'), t('Rolent Chapel'), NIGHT,
        0, [ROLENT], steps=[
            t('Talk to Armand and Ellie.', 'Fale com Armand e Ellie.'),
            t('Go to the rooftop of Esmelas Tower and look by the broken pillar on the left.', 'Vá ao terraço de Esmelas Tower e procure junto ao pilar quebrado à esquerda.'),
-       ])
+       ], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'The ring is at Esmelas Tower.', 'pt': 'O anel está em Esmelas Tower.'}})
 c.item('quest', t('Fishing Spot Scout'), t('Gurune Gate — talk to Pecheur', 'Gurune Gate — fale com o Pecheur'), 'sc-ch5-cp-01',
        t('BP: 3 +2. Only fish caught after accepting the quest count. The seventh spot opens at the start of Chapter 5. Report before leaving Rolent.', 'BP: 3 +2. Só contam peixes pescados após aceitar a missão. O sétimo ponto abre no início do Capítulo 5. Entregue a missão antes de sair de Rolent.'),
        0, [ROLENT, GF1, GF_CH5], steps=[
@@ -36,13 +37,23 @@ c.item('quest', t('Fishing Spot Scout'), t('Gurune Gate — talk to Pecheur', 'G
            t('Catch any fish at Verte Bridge.', 'Pesque qualquer peixe em Verte Bridge.'),
            t('Catch any fish at the seventh spot when it opens at the start of Chapter 5.', 'Pesque qualquer peixe no sétimo ponto quando ele abrir no início do Capítulo 5.'),
            t('Report back before leaving Rolent.', 'Entregue a missão antes de sair de Rolent.'),
-       ])
+       ], guidance={'rewards': [{'en': 'BP: 3 +2.', 'pt': 'BP: 3 +2.'}],
+        'overview': {'en': 'Only fish caught after accepting the quest count. The seventh spot opens at '
+                           'the start of Chapter 5. Report before leaving Rolent.',
+                     'pt': 'Só contam peixes pescados após aceitar a missão. O sétimo ponto abre no '
+                           'início do Capítulo 5. Entregue a missão antes de sair de Rolent.'}})
 c.item('quest', t('Elize Hwy Monster'), t('Elize Highway — near Gurune Gate', 'Elize Highway — perto do Gurune Gate'), NIGHT,
        t('+4 BP.\nPetrify, delay and stat-down attacks: equip protection and use arts reflect.', '+4 BP.\nAtaques de Petrify, atraso e redução de atributos: equipe proteção e use reflexo de arts.'),
-       0, [ROLENT])
+       0, [ROLENT], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'Petrify, delay and stat-down attacks: equip protection and use arts reflect.',
+                     'pt': 'Ataques de Petrify, atraso e redução de atributos: equipe proteção e use '
+                           'reflexo de arts.'}})
 c.item('quest', t('Milch Monster'), t('Milch Main Road — west end', 'Milch Main Road — extremo oeste'), NIGHT,
        t('+4 BP.\nIt buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.', '+4 BP.\nEle se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve proteção contra Freeze.'),
-       0, [ROLENT])
+       0, [ROLENT], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'It buffs itself constantly: dispel at 2–3 stacks and bring Freeze protection.',
+                     'pt': 'Ele se fortalece o tempo todo: remova os buffs com 2 ou 3 acúmulos e leve '
+                           'proteção contra Freeze.'}})
 c.item('quest', t('Find That Feline'), t('Rolent — Hotel Rolent, 1F', 'Rolent — Hotel Rolent, 1º andar'), NIGHT_END,
        t('Reward: +4 BP. Available only at night. Follow these leads in order.', 'Recompensa: +4 BP. Disponível apenas à noite. Siga estas pistas em ordem.'),
        1, [ROLENT], steps=[
@@ -52,12 +63,16 @@ c.item('quest', t('Find That Feline'), t('Rolent — Hotel Rolent, 1F', 'Rolent 
            t('Talk to Zosimov by the tree at the port entrance.', 'Fale com Zosimov junto à árvore na entrada do porto.'),
            t('Talk to Fabree on the deck.', 'Fale com Fabree no convés.'),
            t('Go to the bottom level of the airliner.', 'Vá ao nível inferior do airliner.'),
-       ])
+       ], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'Available only at night. Follow these leads in order.',
+                     'pt': 'Disponível apenas à noite. Siga estas pistas em ordem.'}})
 
 # Missables
 c.item('missable', t("Bonus BP: Aina's two questions", 'BP bônus: as duas perguntas da Aina'), t('Rolent — Bracer Guild'), NIGHT_END,
        t('+6 BP.\nWhen you report the night investigation, pick the 2nd option, then the 3rd.', '+6 BP.\nAo relatar a investigação da noite, escolha a 2ª opção e depois a 3ª.'),
-       1, [ROLENT])
+       1, [ROLENT], guidance={'rewards': [{'en': '+6 BP.', 'pt': '+6 BP.'}],
+        'overview': {'en': 'When you report the night investigation, pick the 2nd option, then the 3rd.',
+                     'pt': 'Ao relatar a investigação da noite, escolha a 2ª opção e depois a 3ª.'}})
 
 # Collectibles
 c.item('collectible', t('Stronghold treasure chests (13)', 'Baús da fortaleza (13)'), t('First area of the chapter', 'Primeira área do capítulo'), STRONGHOLD,
@@ -104,10 +119,21 @@ c.item('collectible', t('Esmelas Tower treasure chests (11)', 'Baús da Esmelas 
 # ---------------------------------------------------------------- Day 2 (from GameFAQs; the Neoseeker guide stopped before it)
 c.item('quest', t('Esmelas Tower Monster'), t('Outside Esmelas Tower', 'Do lado de fora da Esmelas Tower'), FINALE,
        t('+4 BP.\nMedium deadline.\nIts defense is so high that physical hits do nothing: bring water arts and orbal-gun users, spread the party, and resist Seal, Mute and Blind.', '+4 BP.\nPrazo médio.\nA defesa é tão alta que golpes físicos não causam dano: leve arts de água e quem usa arma orbal, espalhe a equipe e resista a Seal, Mute e Blind.'),
-       0, [GF2])
+       0, [GF2], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'warnings': [{'en': 'Medium deadline.', 'pt': 'Prazo médio.'}],
+        'overview': {'en': 'Its defense is so high that physical hits do nothing: bring water arts and '
+                           'orbal-gun users, spread the party, and resist Seal, Mute and Blind.',
+                     'pt': 'A defesa é tão alta que golpes físicos não causam dano: leve arts de água e '
+                           'quem usa arma orbal, espalhe a equipe e resista a Seal, Mute e Blind.'}})
 c.item('quest', t('Milch Monster 2'), t('Milch Main Road'), FINALE,
        t('+4 BP.\nMedium deadline.\nLike the Mistwald monster chest: bring Confuse and Deathblow protection; its allies absorb water and wind but are weak to earth and fire.', '+4 BP.\nPrazo médio.\nParecido com o baú de monstros de Mistwald: leve proteção contra Confuse e Deathblow; os aliados absorvem água e vento, mas são fracos contra terra e fogo.'),
-       0, [GF2])
+       0, [GF2], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'warnings': [{'en': 'Medium deadline.', 'pt': 'Prazo médio.'}],
+        'overview': {'en': 'Like the Mistwald monster chest: bring Confuse and Deathblow protection; its '
+                           'allies absorb water and wind but are weak to earth and fire.',
+                     'pt': 'Parecido com o baú de monstros de Mistwald: leve proteção contra Confuse e '
+                           'Deathblow; os aliados absorvem água e vento, mas são fracos contra terra e '
+                           'fogo.'}})
 c.item('missable', t('Bonus BP: the maze in the mist', 'BP bônus: o labirinto na névoa'), t('Mistwald — beyond the red marker', 'Mistwald — além do marcador vermelho'), FINALE,
        t('+3 BP when you reach the end. Follow the high bell sound and the flowers by each correct exit; lowering the music volume helps.',
          '+3 BP ao chegar ao fim. Siga o som agudo de sino e as flores junto a cada saída certa; baixar o volume da música ajuda.'),

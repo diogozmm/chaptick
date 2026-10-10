@@ -18,7 +18,11 @@ END = c.cp('The last event marker of Chapter 1', 'O último marcador de evento d
 # Quests
 c.item('quest', t('Seaside Way Monster'), t('Gull Seaside Way — north beach'), LEAVE_RUAN,
        t('+3 BP.\nThe monster waits at the entrance of the north beach, by the wall. Easier once a third party member joins; fire arts work well.', '+3 BP.\nO monstro fica na entrada da praia norte, junto ao muro. Fica mais fácil com um terceiro membro na equipe; arts de fogo funcionam bem.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'The monster waits at the entrance of the north beach, by the wall. Easier '
+                           'once a third party member joins; fire arts work well.',
+                     'pt': 'O monstro fica na entrada da praia norte, junto ao muro. Fica mais fácil com '
+                           'um terceiro membro na equipe; arts de fogo funcionam bem.'}})
 c.item('quest', t('Ingredient Inquiry'), t('Manoria Village — The White Magnolia, upstairs', 'Manoria Village — The White Magnolia, andar de cima'), LEAVE_RUAN,
        t('BP: 2 +2. Bring all six missing ingredients for the bonus.', 'BP: 2 +2. Entregue os seis ingredientes que faltam para receber o bônus.'),
        0, [RUAN, CH2_RUAN], steps=[
@@ -29,16 +33,24 @@ c.item('quest', t('Ingredient Inquiry'), t('Manoria Village — The White Magnol
            t('Monster Horn — Flying Shrimp.', 'Monster Horn — Flying Shrimp.'),
            t('Monster Roe — Mars Gel or Sharkagator.', 'Monster Roe — Mars Gel ou Sharkagator.'),
            t('Deliver all six ingredients.', 'Entregue os seis ingredientes.'),
-       ])
+       ], guidance={'rewards': [{'en': 'BP: 2 +2.', 'pt': 'BP: 2 +2.'}],
+        'overview': {'en': 'Bring all six missing ingredients for the bonus.',
+                     'pt': 'Entregue os seis ingredientes que faltam para receber o bônus.'}})
 c.item('quest', t('Vista Forest Rd Monster'), t('Vista Forest Road — east end', 'Vista Forest Road — extremo leste'), LEAVE_RUAN,
        t('+3 BP.\nNasty status effects: bring Confuse protection and take out the two smaller foes first.', '+3 BP.\nMuitos efeitos negativos: leve proteção contra Confuse e derrube os dois inimigos menores primeiro.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'Nasty status effects: bring Confuse protection and take out the two smaller '
+                           'foes first.',
+                     'pt': 'Muitos efeitos negativos: leve proteção contra Confuse e derrube os dois '
+                           'inimigos menores primeiro.'}})
 c.item('quest', t('Sapphirl Snapshot'), t('Sapphirl Tower — rooftop', 'Sapphirl Tower — terraço'), ACADEMY,
        t('BP: 2 +2. Use the perfect photo spot for the bonus.', 'BP: 2 +2. Use o ponto ideal para a foto e receba o bônus.'),
        0, [RUAN], steps=[
            t('Accept the task from Santos at Hotel Blanche.', 'Aceite a tarefa com Santos no Hotel Blanche.'),
            t('On the rooftop, move a little forward and try the camera until Estelle says the spot might be perfect; take the photo there.', 'No terraço, avance um pouco e teste a câmera até Estelle dizer que o ponto parece perfeito; tire a foto ali.'),
-       ])
+       ], guidance={'rewards': [{'en': 'BP: 2 +2.', 'pt': 'BP: 2 +2.'}],
+        'overview': {'en': 'Use the perfect photo spot for the bonus.',
+                     'pt': 'Use o ponto ideal para a foto e receba o bônus.'}})
 c.item('quest', t('Sunday Scholar'), t('Ruan Chapel'), ACADEMY,
        t('BP: 3 +2. Answer every question correctly for the bonus. Follow this order.', 'BP: 3 +2. Acerte todas as perguntas para receber o bônus. Siga esta ordem.'),
        0, [MERCIA], steps=[
@@ -52,16 +64,26 @@ c.item('quest', t('Sunday Scholar'), t('Ruan Chapel'), ACADEMY,
            t('Question 8: choose option 2.', 'Pergunta 8: escolha a 2ª opção.'),
            t('Question 9: choose option 2.', 'Pergunta 9: escolha a 2ª opção.'),
            t('Question 10: choose option 3.', 'Pergunta 10: escolha a 3ª opção.'),
-       ])
+       ], guidance={'rewards': [{'en': 'BP: 3 +2.', 'pt': 'BP: 3 +2.'}],
+        'overview': {'en': 'Answer every question correctly for the bonus. Follow this order.',
+                     'pt': 'Acerte todas as perguntas para receber o bônus. Siga esta ordem.'}})
 c.item('quest', t('Drawbridge Defect'), t('Ruan — Aqua Rossa Bar, 2F', 'Ruan — Aqua Rossa Bar, 2º andar'), ACADEMY,
        t('2 +1 BP.\nAfter talking to every tourist by the drawbridge, pick the 2nd option in the scene that follows. Ends with a tough fight.', '2 +1 BP.\nDepois de falar com todos os turistas perto da ponte levadiça, escolha a 2ª opção na cena seguinte. Termina com uma luta difícil.'),
-       0, [MERCIA])
+       0, [MERCIA], guidance={'rewards': [{'en': '2 +1 BP.', 'pt': '2 +1 BP.'}],
+        'overview': {'en': 'After talking to every tourist by the drawbridge, pick the 2nd option in the '
+                           'scene that follows. Ends with a tough fight.',
+                     'pt': 'Depois de falar com todos os turistas perto da ponte levadiça, escolha a 2ª '
+                           'opção na cena seguinte. Termina com uma luta difícil.'}})
 c.item('quest', t('Krone Pass Monster'), t('Krone Trail area', 'Região da Krone Trail'), LEAVE_RUAN,
        t('+3 BP.\nPoison-heavy fight: shields and speed buffs keep it simple.', '+3 BP.\nLuta cheia de veneno: escudos e buffs de velocidade simplificam.'),
-       0, [MERCIA])
+       0, [MERCIA], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'Poison-heavy fight: shields and speed buffs keep it simple.',
+                     'pt': 'Luta cheia de veneno: escudos e buffs de velocidade simplificam.'}})
 c.item('quest', t('Aina Cswy Monster'), t('Aina Causeway'), LEAVE_RUAN,
        t('+3 BP.\nThree wolves that power up when one falls: try to finish them together.', '+3 BP.\nTrês lobos que ficam mais fortes quando um cai: tente derrotá-los juntos.'),
-       0, [MERCIA])
+       0, [MERCIA], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'Three wolves that power up when one falls: try to finish them together.',
+                     'pt': 'Três lobos que ficam mais fortes quando um cai: tente derrotá-los juntos.'}})
 c.item('hidden_quest', t('Lighthouse Learning'), t('Varenne Lighthouse — top floor', 'Varenne Lighthouse — último andar'), LEAVE_RUAN,
        t('BP: 2 +1. Hidden quest: it is not on the board. Follow the machine settings in order.', 'BP: 2 +1. Missão oculta: não aparece no quadro. Ajuste a máquina nesta ordem.'),
        0, [RUAN], steps=[
@@ -74,12 +96,16 @@ c.item('hidden_quest', t('Lighthouse Learning'), t('Varenne Lighthouse — top f
            t('Set the stabilizer to HIGH.', 'Coloque o estabilizador em HIGH.'),
            t('Use the machine on the far left.', 'Use a máquina na extremidade esquerda.'),
            t('Before finishing, choose the second option for the bonus.', 'Antes de terminar, escolha a 2ª opção para receber o bônus.'),
-       ])
+       ], guidance={'rewards': [{'en': 'BP: 2 +1.', 'pt': 'BP: 2 +1.'}],
+        'overview': {'en': 'Hidden quest: it is not on the board. Follow the machine settings in order.',
+                     'pt': 'Missão oculta: não aparece no quadro. Ajuste a máquina nesta ordem.'}})
 
 # Missables
 c.item('missable', t('Bonus BP: question at the bridge', 'BP bônus: pergunta na ponte'), t('Ruan — Langland Bridge'), ACADEMY,
        t('+3 BP.\nWhen asked during the scene at the bridge, pick the 2nd option.', '+3 BP.\nQuando perguntarem durante a cena na ponte, escolha a 2ª opção.'),
-       1, [MERCIA])
+       1, [MERCIA], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'When asked during the scene at the bridge, pick the 2nd option.',
+                     'pt': 'Quando perguntarem durante a cena na ponte, escolha a 2ª opção.'}})
 
 # Collectibles
 c.item('collectible', t('Liberl News Issue 2'), t('Grancel — Landing Port Waiting Room', 'Grancel — sala de espera do porto'), BOARD,

@@ -85,7 +85,19 @@
             "pt": "Entre nos esgotos atrás da capela e encontre a pedra brilhante."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2 BP.",
+            "pt": "2 BP."
+          }
+        ],
+        "overview": {
+          "en": "Eat the Drill Meatballs you receive to learn the recipe.",
+          "pt": "Coma os Drill Meatballs recebidos para aprender a receita."
+        }
+      }
     },
     {
       "id": "fc-ch0-q-02",
@@ -109,7 +121,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Weak to fire. It explodes when it dies, so keep the party out of range for the last hit.",
+          "pt": "Fraco contra fogo. Ele explode ao morrer, então deixe a equipe fora do alcance no golpe final."
+        }
+      }
     },
     {
       "id": "fc-ch0-q-03",
@@ -133,7 +157,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          }
+        ],
+        "overview": {
+          "en": "The glowing Firefly Mushroom is near the Silver Earrings chest at the northeast end of Malga Trail; picking it starts a fight.",
+          "pt": "O Firefly Mushroom brilhante fica perto do baú das Silver Earrings, no extremo nordeste da Malga Trail; pegá-lo começa uma luta."
+        }
+      }
     },
     {
       "id": "fc-ch0-q-04",
@@ -182,7 +218,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 BP.",
+            "pt": "3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Bring a Bear Claw (southeast end of Mistwald) and Monster Powder (Killer Hornets in Mistwald). Mistwald only has four Bear Claws: don't cook them all.",
+          "pt": "Leve uma Bear Claw (extremo sudeste de Mistwald) e Monster Powder (Killer Hornets em Mistwald). Mistwald só tem quatro Bear Claws: não cozinhe todas."
+        }
+      }
     },
     {
       "id": "fc-ch0-q-06",
@@ -206,7 +254,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2 (+2) BP.",
+            "pt": "2 (+2) BP."
+          }
+        ],
+        "overview": {
+          "en": "Win the training fight against two soldiers for the bonus; save first. Their attacks lower Defense: Estelle's Morale helps.",
+          "pt": "Vença a luta de treino contra dois soldados para o bônus; salve antes. Os ataques deles reduzem a defesa: o Morale da Estelle ajuda."
+        }
+      }
     },
     {
       "id": "fc-ch0-q-07",
@@ -256,7 +316,19 @@
             "pt": "No andar de cima da capela."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2 BP.",
+            "pt": "2 BP."
+          }
+        ],
+        "overview": {
+          "en": "Short deadline: do this immediately. The cat is not marked on the map; check these locations in order.",
+          "pt": "Prazo curto: faça imediatamente. O gato não aparece marcado no mapa; procure nestes locais em ordem."
+        }
+      }
     },
     {
       "id": "fc-ch0-q-08",
@@ -280,7 +352,19 @@
       "trophies": [
         "quest-master",
         "promising-newcomer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "4 BP.",
+            "pt": "4 BP."
+          }
+        ],
+        "overview": {
+          "en": "It blocks the bridge to your next destination, so you can't skip it. Wear Sleep protection; weak to fire.",
+          "pt": "Ele bloqueia a ponte para o próximo destino, então não dá para pular. Use proteção contra Sleep; fraco contra fogo."
+        }
+      }
     },
     {
       "id": "fc-ch0-mi-01",
@@ -378,7 +462,15 @@
             "pt": "Pergunta 4: escolha a 4ª opção."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "Bonus: +4 BP in Mayoral Robbery, one per correct answer.",
+            "pt": "Bônus: +4 BP em Mayoral Robbery, um por resposta correta."
+          }
+        ]
+      }
     },
     {
       "id": "fc-ch0-mi-04",

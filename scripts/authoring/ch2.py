@@ -26,10 +26,25 @@ c.item('quest', t('Election Office Outrage'), t('Ruan — Hotel Blanche'), LEAVE
            t('Final question 2: choose option 2.', 'Pergunta final 2: escolha a 2ª opção.'),
            t('Final question 3: choose option 2.', 'Pergunta final 3: escolha a 2ª opção.'),
            t('Final question 4: choose option 2.', 'Pergunta final 4: escolha a 2ª opção.'),
-       ])
+       ], guidance={'rewards': [{'en': '+5 BP.', 'pt': '+5 BP.'}],
+        'overview': {'en': 'You cannot leave the hotel until this quest ends.',
+                     'pt': 'Você não pode sair do hotel até terminar a missão.'}})
 c.item('quest', t('Winners Wanted'), t('Ruan — Lavantar Bar & Casino'), LEAVE_RUAN,
        t('Reward: +4 BP. A wrong choice fails the quest.\nWith Scherazard:\n• Estelle: 1st, then 1st.\n• Olivier: 1st, then 2nd.\n• Scherazard: 2nd.\nWith Agate:\n• Agate: 1st, then 1st.\n• Olivier: 1st, then 2nd.\n• Estelle: 2nd.', 'Recompensa: +4 BP. Uma escolha errada faz a missão falhar.\nCom Scherazard:\n• Estelle: 1ª, depois 1ª.\n• Olivier: 1ª, depois 2ª.\n• Scherazard: 2ª.\nCom Agate:\n• Agate: 1ª, depois 1ª.\n• Olivier: 1ª, depois 2ª.\n• Estelle: 2ª.'),
-       0, [RUAN])
+       0, [RUAN], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'warnings': [{'en': 'A wrong choice fails the quest.',
+                      'pt': 'Uma escolha errada faz a missão falhar.'}],
+        'alternatives': [{'condition': {'en': 'With Scherazard', 'pt': 'Com Scherazard'},
+                          'instructions': [{'en': 'Estelle: 1st, then 1st.',
+                                            'pt': 'Estelle: 1ª, depois 1ª.'},
+                                           {'en': 'Olivier: 1st, then 2nd.',
+                                            'pt': 'Olivier: 1ª, depois 2ª.'},
+                                           {'en': 'Scherazard: 2nd.', 'pt': 'Scherazard: 2ª.'}]},
+                         {'condition': {'en': 'With Agate', 'pt': 'Com Agate'},
+                          'instructions': [{'en': 'Agate: 1st, then 1st.', 'pt': 'Agate: 1ª, depois 1ª.'},
+                                           {'en': 'Olivier: 1st, then 2nd.',
+                                            'pt': 'Olivier: 1ª, depois 2ª.'},
+                                           {'en': 'Estelle: 2nd.', 'pt': 'Estelle: 2ª.'}]}]})
 c.item('quest', t('Stolen Sign'), t('Zeiss'), LEAVE_ZEISS,
        t('Reward: +4 BP. Follow the clues through Zeiss.', 'Recompensa: +4 BP. Siga as pistas por Zeiss.'),
        0, [ZEISS], steps=[
@@ -38,49 +53,75 @@ c.item('quest', t('Stolen Sign'), t('Zeiss'), LEAVE_ZEISS,
            t('Use the factory 5F terminal: Central Factory → All Orbal Technology → Bracer Guild Sign.', 'Use o terminal no 5º andar da fábrica: Central Factory → All Orbal Technology → Bracer Guild Sign.'),
            t('Look under the three chimneys behind Forgel Bar.', 'Procure embaixo das três chaminés atrás do Forgel Bar.'),
            t('Talk to Fey by the conveyor on B1F.', 'Fale com Fey junto à esteira no B1F.'),
-       ])
+       ], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'Follow the clues through Zeiss.', 'pt': 'Siga as pistas por Zeiss.'}})
 c.item('quest', t('Firearm Field Test'), t('Zeiss Central Factory — 3F', 'Zeiss Central Factory — 3º andar'), LEAVE_ZEISS,
        t('BP: 3 +2. Ten battles meet the minimum; win fifteen for the bonus.', 'BP: 3 +2. Dez batalhas cumprem o mínimo; vença quinze para receber o bônus.'),
        0, [ZEISS, CH3], steps=[
            t('Get the gun from Karl and equip it on Olivier.', 'Pegue a arma com Karl e equipe-a em Olivier.'),
            t('Win 15 Command Battles on Tratt Plains Road with that gun equipped.', 'Vença 15 Command Battles em Tratt Plains Road com essa arma equipada.'),
            t('Report back after the battles.', 'Volte para entregar a missão após as batalhas.'),
-       ])
+       ], guidance={'rewards': [{'en': 'BP: 3 +2.', 'pt': 'BP: 3 +2.'}],
+        'overview': {'en': 'Ten battles meet the minimum; win fifteen for the bonus.',
+                     'pt': 'Dez batalhas cumprem o mínimo; vença quinze para receber o bônus.'}})
 c.item('quest', t('Drill Duty'), t('Leiston Fortress — end of Soldat Army Road', 'Leiston Fortress — fim da Soldat Army Road'), FORT,
        t('3 +2 BP.\nThree rounds with no healing in between; you must win the last one for the bonus.', '3 +2 BP.\nTrês rodadas sem cura entre elas; é preciso vencer a última para ganhar o bônus.'),
-       0, [ZEISS])
+       0, [ZEISS], guidance={'rewards': [{'en': '3 +2 BP.', 'pt': '3 +2 BP.'}],
+        'overview': {'en': 'Three rounds with no healing in between; you must win the last one for the '
+                           'bonus.',
+                     'pt': 'Três rodadas sem cura entre elas; é preciso vencer a última para ganhar o '
+                           'bônus.'}})
 c.item('quest', t('Kaldia Tunnel Monster'), t('Kaldia Tunnel'), LEAVE_ZEISS,
        t('+3 BP.\nWhale frogs swallow allies: hit the frog three times to free them.', '+3 BP.\nOs sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los.'),
-       0, [ZEISS])
+       0, [ZEISS], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'Whale frogs swallow allies: hit the frog three times to free them.',
+                     'pt': 'Os sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los.'}})
 c.item('quest', t('Tratt Plains Monster'), t('Tratt Plains Road — east, before the fort path', 'Tratt Plains Road — leste, antes do caminho do forte'), LEAVE_ZEISS,
        t('+3 BP.\nLots of ailments: debuff immunity makes it manageable. Do not wander into the fort by accident.', '+3 BP.\nMuitos efeitos negativos: imunidade a debuffs deixa a luta administrável. Cuidado para não entrar no forte sem querer.'),
-       0, [ZEISS])
+       0, [ZEISS], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'Lots of ailments: debuff immunity makes it manageable. Do not wander into the '
+                           'fort by accident.',
+                     'pt': 'Muitos efeitos negativos: imunidade a debuffs deixa a luta administrável. '
+                           'Cuidado para não entrar no forte sem querer.'}})
 c.item('quest', t('Probe for Parts'), t('Zeiss Central Factory — ground floor', 'Zeiss Central Factory — térreo'), LEAVE_ZEISS,
        t('BP: 3 +2. Find all eight parts for the bonus.', 'BP: 3 +2. Encontre as oito peças para receber o bônus.'),
        1, [WOLF], steps=[
            t('Find 3 parts in the 3F Workshop.', 'Encontre 3 peças na Workshop do 3º andar.'),
            t('Find 4 parts in the 4F Laboratory.', 'Encontre 4 peças no Laboratory do 4º andar.'),
            t('Find 1 part by the cat in the 4F Clinic.', 'Encontre 1 peça junto ao gato na Clinic do 4º andar.'),
-       ])
+       ], guidance={'rewards': [{'en': 'BP: 3 +2.', 'pt': 'BP: 3 +2.'}],
+        'overview': {'en': 'Find all eight parts for the bonus.',
+                     'pt': 'Encontre as oito peças para receber o bônus.'}})
 c.item('quest', t('Vanquish the Voyeurs'), t('Elmo Village — Maple Leaf Inn'), CAVE,
        t('+4 BP.\nEquip Confuse and Sleep protection before talking to Mao.', '+4 BP.\nEquipe proteção contra Confuse e Sleep antes de falar com a Mao.'),
-       1, [WOLF])
+       1, [WOLF], guidance={'rewards': [{'en': '+4 BP.', 'pt': '+4 BP.'}],
+        'overview': {'en': 'Equip Confuse and Sleep protection before talking to Mao.',
+                     'pt': 'Equipe proteção contra Confuse e Sleep antes de falar com a Mao.'}})
 c.item('quest', t('Tratt Plains Monster 2'), t('Tratt Plains Road — southwest cliff fishing spot', 'Tratt Plains Road — pesqueiro no penhasco a sudoeste'), LEAVE_ZEISS,
        t('+3 BP.\nA swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.', '+3 BP.\nUm enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem rápido.'),
-       1, [WOLF])
+       1, [WOLF], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'A swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.',
+                     'pt': 'Um enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem '
+                           'rápido.'}})
 c.item('quest', t('Army Road Monster'), t('Soldat Army Road — near Leiston Fortress', 'Soldat Army Road — perto da Leiston Fortress'), LEAVE_ZEISS,
        t('+3 BP.\nHits very hard: stack HP and keep buffs up.', '+3 BP.\nBate muito forte: aumente o HP e mantenha os buffs.'),
-       1, [WOLF])
+       1, [WOLF], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'Hits very hard: stack HP and keep buffs up.',
+                     'pt': 'Bate muito forte: aumente o HP e mantenha os buffs.'}})
 
 # Missables
 c.item('missable', t('Bonus BP: talk to Rudi in Kaldia Tunnel', 'BP bônus: falar com o Rudi no Kaldia Tunnel'), t('Kaldia Tunnel — near the factory exit', 'Kaldia Tunnel — perto da saída da fábrica'), FORT,
        t('+3 BP just for talking to him.', '+3 BP só por conversar com ele.'), 0, [ZEISS])
 c.item('missable', t('Bonus BP: question in the storeroom', 'BP bônus: pergunta no depósito'), t('Sanktheim Gate'), CAVE,
        t('+3 BP.\nIn the scene with Warrant Officer Talbot, pick the 3rd option.', '+3 BP.\nNa cena com o Warrant Officer Talbot, escolha a 3ª opção.'),
-       1, [WOLF])
+       1, [WOLF], guidance={'rewards': [{'en': '+3 BP.', 'pt': '+3 BP.'}],
+        'overview': {'en': 'In the scene with Warrant Officer Talbot, pick the 3rd option.',
+                     'pt': 'Na cena com o Warrant Officer Talbot, escolha a 3ª opção.'}})
 c.item('missable', t("Bonus BP: question in the professor's office", 'BP bônus: pergunta na sala do professor'), t('Zeiss Central Factory — 5F', 'Zeiss Central Factory — 5º andar'), CAVE,
        t('+2 BP.\nWhen asked where to go, pick the 3rd option.', '+2 BP.\nQuando perguntarem para onde ir, escolha a 3ª opção.'),
-       1, [WOLF])
+       1, [WOLF], guidance={'rewards': [{'en': '+2 BP.', 'pt': '+2 BP.'}],
+        'overview': {'en': 'When asked where to go, pick the 3rd option.',
+                     'pt': 'Quando perguntarem para onde ir, escolha a 3ª opção.'}})
 
 # Collectibles
 c.item('collectible', t('Gambler Jack — Vol. 3'), t('Airliner to Zeiss', 'Airliner para Zeiss'), None,

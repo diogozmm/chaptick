@@ -54,7 +54,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "The monster waits at the entrance of the north beach, by the wall. Easier once a third party member joins; fire arts work well.",
+          "pt": "O monstro fica na entrada da praia norte, junto ao muro. Fica mais fácil com um terceiro membro na equipe; arts de fogo funcionam bem."
+        }
+      }
     },
     {
       "id": "sc-ch1-q-02",
@@ -123,7 +135,19 @@
             "pt": "Entregue os seis ingredientes."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 2 +2.",
+            "pt": "BP: 2 +2."
+          }
+        ],
+        "overview": {
+          "en": "Bring all six missing ingredients for the bonus.",
+          "pt": "Entregue os seis ingredientes que faltam para receber o bônus."
+        }
+      }
     },
     {
       "id": "sc-ch1-q-03",
@@ -147,7 +171,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Nasty status effects: bring Confuse protection and take out the two smaller foes first.",
+          "pt": "Muitos efeitos negativos: leve proteção contra Confuse e derrube os dois inimigos menores primeiro."
+        }
+      }
     },
     {
       "id": "sc-ch1-q-04",
@@ -185,7 +221,19 @@
             "pt": "No terraço, avance um pouco e teste a câmera até Estelle dizer que o ponto parece perfeito; tire a foto ali."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 2 +2.",
+            "pt": "BP: 2 +2."
+          }
+        ],
+        "overview": {
+          "en": "Use the perfect photo spot for the bonus.",
+          "pt": "Use o ponto ideal para a foto e receba o bônus."
+        }
+      }
     },
     {
       "id": "sc-ch1-q-05",
@@ -270,7 +318,19 @@
             "pt": "Pergunta 10: escolha a 3ª opção."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 3 +2.",
+            "pt": "BP: 3 +2."
+          }
+        ],
+        "overview": {
+          "en": "Answer every question correctly for the bonus. Follow this order.",
+          "pt": "Acerte todas as perguntas para receber o bônus. Siga esta ordem."
+        }
+      }
     },
     {
       "id": "sc-ch1-q-06",
@@ -294,7 +354,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "2 +1 BP.",
+            "pt": "2 +1 BP."
+          }
+        ],
+        "overview": {
+          "en": "After talking to every tourist by the drawbridge, pick the 2nd option in the scene that follows. Ends with a tough fight.",
+          "pt": "Depois de falar com todos os turistas perto da ponte levadiça, escolha a 2ª opção na cena seguinte. Termina com uma luta difícil."
+        }
+      }
     },
     {
       "id": "sc-ch1-q-07",
@@ -318,7 +390,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Poison-heavy fight: shields and speed buffs keep it simple.",
+          "pt": "Luta cheia de veneno: escudos e buffs de velocidade simplificam."
+        }
+      }
     },
     {
       "id": "sc-ch1-q-08",
@@ -341,7 +425,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Three wolves that power up when one falls: try to finish them together.",
+          "pt": "Três lobos que ficam mais fortes quando um cai: tente derrotá-los juntos."
+        }
+      }
     },
     {
       "id": "sc-ch1-hq-01",
@@ -421,7 +517,19 @@
             "pt": "Antes de terminar, escolha a 2ª opção para receber o bônus."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 2 +1.",
+            "pt": "BP: 2 +1."
+          }
+        ],
+        "overview": {
+          "en": "Hidden quest: it is not on the board. Follow the machine settings in order.",
+          "pt": "Missão oculta: não aparece no quadro. Ajuste a máquina nesta ordem."
+        }
+      }
     },
     {
       "id": "sc-ch1-mi-01",
@@ -444,7 +552,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "When asked during the scene at the bridge, pick the 2nd option.",
+          "pt": "Quando perguntarem durante a cena na ponte, escolha a 2ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch1-co-01",

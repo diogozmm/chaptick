@@ -100,7 +100,19 @@
             "pt": "Pergunta final 4: escolha a 2ª opção."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+5 BP.",
+            "pt": "+5 BP."
+          }
+        ],
+        "overview": {
+          "en": "You cannot leave the hotel until this quest ends.",
+          "pt": "Você não pode sair do hotel até terminar a missão."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-02",
@@ -123,7 +135,63 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "warnings": [
+          {
+            "en": "A wrong choice fails the quest.",
+            "pt": "Uma escolha errada faz a missão falhar."
+          }
+        ],
+        "alternatives": [
+          {
+            "condition": {
+              "en": "With Scherazard",
+              "pt": "Com Scherazard"
+            },
+            "instructions": [
+              {
+                "en": "Estelle: 1st, then 1st.",
+                "pt": "Estelle: 1ª, depois 1ª."
+              },
+              {
+                "en": "Olivier: 1st, then 2nd.",
+                "pt": "Olivier: 1ª, depois 2ª."
+              },
+              {
+                "en": "Scherazard: 2nd.",
+                "pt": "Scherazard: 2ª."
+              }
+            ]
+          },
+          {
+            "condition": {
+              "en": "With Agate",
+              "pt": "Com Agate"
+            },
+            "instructions": [
+              {
+                "en": "Agate: 1st, then 1st.",
+                "pt": "Agate: 1ª, depois 1ª."
+              },
+              {
+                "en": "Olivier: 1st, then 2nd.",
+                "pt": "Olivier: 1ª, depois 2ª."
+              },
+              {
+                "en": "Estelle: 2nd.",
+                "pt": "Estelle: 2ª."
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch2-q-03",
@@ -178,7 +246,19 @@
             "pt": "Fale com Fey junto à esteira no B1F."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Follow the clues through Zeiss.",
+          "pt": "Siga as pistas por Zeiss."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-04",
@@ -223,7 +303,19 @@
             "pt": "Volte para entregar a missão após as batalhas."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 3 +2.",
+            "pt": "BP: 3 +2."
+          }
+        ],
+        "overview": {
+          "en": "Ten battles meet the minimum; win fifteen for the bonus.",
+          "pt": "Dez batalhas cumprem o mínimo; vença quinze para receber o bônus."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-05",
@@ -247,7 +339,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "3 +2 BP.",
+            "pt": "3 +2 BP."
+          }
+        ],
+        "overview": {
+          "en": "Three rounds with no healing in between; you must win the last one for the bonus.",
+          "pt": "Três rodadas sem cura entre elas; é preciso vencer a última para ganhar o bônus."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-06",
@@ -270,7 +374,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Whale frogs swallow allies: hit the frog three times to free them.",
+          "pt": "Os sapos-baleia engolem aliados: acerte o sapo três vezes para libertá-los."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-07",
@@ -294,7 +410,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Lots of ailments: debuff immunity makes it manageable. Do not wander into the fort by accident.",
+          "pt": "Muitos efeitos negativos: imunidade a debuffs deixa a luta administrável. Cuidado para não entrar no forte sem querer."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-08",
@@ -338,7 +466,19 @@
             "pt": "Encontre 1 peça junto ao gato na Clinic do 4º andar."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "BP: 3 +2.",
+            "pt": "BP: 3 +2."
+          }
+        ],
+        "overview": {
+          "en": "Find all eight parts for the bonus.",
+          "pt": "Encontre as oito peças para receber o bônus."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-09",
@@ -361,7 +501,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+4 BP.",
+            "pt": "+4 BP."
+          }
+        ],
+        "overview": {
+          "en": "Equip Confuse and Sleep protection before talking to Mao.",
+          "pt": "Equipe proteção contra Confuse e Sleep antes de falar com a Mao."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-10",
@@ -385,7 +537,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "A swarm that drains EP and blinds: wind arts and big S-Crafts clear it fast.",
+          "pt": "Um enxame que drena EP e cega: arts de vento e S-Crafts fortes resolvem rápido."
+        }
+      }
     },
     {
       "id": "sc-ch2-q-11",
@@ -409,7 +573,19 @@
       "trophies": [
         "quest-master",
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "Hits very hard: stack HP and keep buffs up.",
+          "pt": "Bate muito forte: aumente o HP e mantenha os buffs."
+        }
+      }
     },
     {
       "id": "sc-ch2-mi-01",
@@ -456,7 +632,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+3 BP.",
+            "pt": "+3 BP."
+          }
+        ],
+        "overview": {
+          "en": "In the scene with Warrant Officer Talbot, pick the 3rd option.",
+          "pt": "Na cena com o Warrant Officer Talbot, escolha a 3ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch2-mi-03",
@@ -480,7 +668,19 @@
       ],
       "trophies": [
         "a-rank-bracer"
-      ]
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+2 BP.",
+            "pt": "+2 BP."
+          }
+        ],
+        "overview": {
+          "en": "When asked where to go, pick the 3rd option.",
+          "pt": "Quando perguntarem para onde ir, escolha a 3ª opção."
+        }
+      }
     },
     {
       "id": "sc-ch2-co-01",

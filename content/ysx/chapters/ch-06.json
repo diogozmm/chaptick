@@ -47,7 +47,19 @@
       ],
       "trophies": [
         "go-to-guy-and-gal"
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "SHORT deadline and easy to miss.",
+            "pt": "Prazo CURTO e fácil de perder."
+          }
+        ],
+        "overview": {
+          "en": "It appears once Cohen, Father Cuthbert and Milette are rescued (Milette comes from the Southern Fort recapture), so it can show up already late in Chapter 5.\nGet the item from Magni on Balta Island's shore and bring it to Rosalind before the story moves on.",
+          "pt": "Aparece quando o Cohen, o Father Cuthbert e a Milette estão resgatados (a Milette vem da retomada do Southern Fort), então pode surgir já no fim do Capítulo 5.\nPegue o item com o Magni na praia de Balta Island e leve à Rosalind antes de a história avançar."
+        }
+      }
     },
     {
       "id": "ysx-ch6-q-02",
@@ -91,7 +103,19 @@
             "pt": "Bellflowers — pico da montanha de Kalon Island, perto do início."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Medium deadline.",
+            "pt": "Prazo médio."
+          }
+        ],
+        "overview": {
+          "en": "Gather the three plants at these locations.",
+          "pt": "Reúna as três plantas nestes locais."
+        }
+      }
     },
     {
       "id": "ysx-ch6-q-03",
@@ -159,7 +183,19 @@
             "pt": "Visite o mais ao norte dos três novos marcadores."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Follow the sightings in Sonnelia Basin.",
+          "pt": "Siga os avistamentos em Sonnelia Basin."
+        }
+      }
     },
     {
       "id": "ysx-ch6-q-05",
@@ -298,7 +334,19 @@
             "pt": "Acampe até a noite na East Beach das Orlen Islands."
           }
         }
-      ]
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "Long deadline.",
+            "pt": "Prazo longo."
+          }
+        ],
+        "overview": {
+          "en": "Complete the sightings before camping.",
+          "pt": "Conclua os avistamentos antes de acampar."
+        }
+      }
     },
     {
       "id": "ysx-ch6-co-01",

@@ -73,7 +73,7 @@ class Chapter:
         self.data['checkpoints'].append({'id': cid, 'order': order or n, 'neutralDescription': t(en, pt)})
         return cid
 
-    def item(self, type_, name, location, until, hint, level=0, sources=(), steps=None, trophies=None):
+    def item(self, type_, name, location, until, hint, level=0, sources=(), steps=None, trophies=None, guidance=None):
         code = {'quest': 'q', 'hidden_quest': 'hq', 'missable': 'mi', 'collectible': 'co'}[type_]
         iid = self._next(code)
         item = {'id': iid, 'type': type_, 'name': name, 'location': location, 'availableUntil': until,
@@ -82,6 +82,8 @@ class Chapter:
             item['steps'] = [{'text': s} for s in steps]
         if trophies:
             item['trophies'] = list(trophies)
+        if guidance:
+            item['guidance'] = guidance
         self.data['items'].append(item)
         return iid
 

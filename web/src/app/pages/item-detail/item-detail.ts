@@ -19,6 +19,7 @@ import { TYPE_ICON } from '../../ui/item-type';
 import { itemChange, routeProgress } from '../../core/route/route';
 import { RouteSteps } from '../../ui/route-steps/route-steps';
 import { SpoilerNotice } from '../../ui/spoiler-notice/spoiler-notice';
+import { ItemGuidance } from '../../ui/item-guidance/item-guidance';
 
 const STATUS_ICON: Record<ReturnType<typeof itemStatus>, IconName> = {
   done: 'circle-check',
@@ -30,7 +31,7 @@ const STATUS_ICON: Record<ReturnType<typeof itemStatus>, IconName> = {
 
 @Component({
   selector: 'app-item-detail',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, RouteSteps, SpoilerNotice, DetailBar, ReportLink],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, RouteSteps, SpoilerNotice, DetailBar, ReportLink, ItemGuidance],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './item-detail.html',
   styleUrl: './item-detail.scss',
