@@ -52,7 +52,7 @@
       }
     },
     "dataVersion": {
-      "description": "Bump on every published correction; it busts the offline cache.",
+      "description": "Source revision seed. The build derives the published cache version from all game content; manual bumps are optional.",
       "type": "integer",
       "minimum": 1
     },

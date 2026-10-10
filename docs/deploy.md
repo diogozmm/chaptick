@@ -50,9 +50,20 @@ progress. Players can also move progress between devices any time with "Share a 
 
 ## Publishing a content correction
 
-1. Edit `content/`, bump `dataVersion` in `content/sc/game.json`.
-2. Merge the PR. The new `dataVersion` changes the chapter URLs (`?v=`), so installed apps fetch the
-   corrected chapter instead of the cached one, and the service worker shows "A new version is ready".
+1. Edit `content/` and its authoring source when applicable. No manual version bump is needed.
+2. Run `npm run content:build`. The build calculates each game's published `dataVersion` from its
+   metadata and all chapters. Identical content gives the same version; a correction changes it.
+   The published number is an opaque fingerprint, not a sequential release number. The source
+   `game.json` version remains an optional seed and is not rewritten by the build.
+3. Merge the PR. On the next online reload, the fresh manifest changes chapter URLs (`?v=`), so the
+   service worker fetches corrected chapters instead of their cached copies. Progress stays in
+   IndexedDB, keyed by the same item and step IDs. An already open page keeps its loaded content
+   until reloaded; a device that remains offline keeps its cached version until it reconnects.
+
+`npm run test:content` checks deterministic builds and automatic invalidation. In `web/`, run
+`npm run e2e:content-update` to test two content deployments with the real service worker: old
+content offline, online refresh without clearing caches, saved step progress, and new content offline.
+The isolated test server runs on port 4311; the normal E2E suite stays on port 4310.
 
 ## Optional settings (`web/src/app/site.config.ts`)
 

@@ -7,6 +7,7 @@ import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { loadContent, loadFranchises, validateContent } from './content-validation.mjs';
+import { contentVersion } from './content-version.mjs';
 
 const { values } = parseArgs({
   options: { root: { type: 'string', default: 'content' }, out: { type: 'string', default: 'web/public/content' } },
@@ -58,7 +59,7 @@ for (const { game, chapters } of games) {
 
   const sorted = chapters.map((c) => c.data).sort((a, b) => a.order - b.order);
   const manifest = {
-    game,
+    game: { ...game, dataVersion: contentVersion(game, sorted) },
     features: featuresOf(chapters),
     // Totals only (no names), so screens can hide a collection a game doesn't have.
     collections: {
@@ -89,5 +90,5 @@ for (const { game, chapters } of games) {
   };
   writeFileSync(join(outDir, 'manifest.json'), JSON.stringify(manifest));
   for (const chapter of sorted) writeFileSync(join(outDir, `ch-${chapter.order}.json`), JSON.stringify(chapter));
-  console.log(`✓ ${game.id}: ${sorted.length} chapter(s), data v${game.dataVersion}`);
+  console.log(`✓ ${game.id}: ${sorted.length} chapter(s), content revision ${manifest.game.dataVersion}`);
 }

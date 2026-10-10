@@ -7,13 +7,16 @@ import { extname, join, normalize } from 'node:path';
 const APP = new URL('../dist/web/browser/', import.meta.url).pathname;
 const CONTENT = new URL('./.content/', import.meta.url).pathname;
 const PORT = Number(process.env.PORT ?? 4310);
+const updateTest = process.env.CONTENT_UPDATE_TEST === '1';
+let deployment = 'before';
 const TYPES = {
   '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json',
   '.webmanifest': 'application/manifest+json', '.svg': 'image/svg+xml', '.png': 'image/png',
 };
 
 async function resolve(pathname) {
-  const [root, rel] = pathname.startsWith('/content/') ? [CONTENT, pathname.slice('/content/'.length)] : [APP, pathname];
+  const contentRoot = updateTest ? join(CONTENT, 'update', deployment) + '/' : CONTENT;
+  const [root, rel] = pathname.startsWith('/content/') ? [contentRoot, pathname.slice('/content/'.length)] : [APP, pathname];
   const file = normalize(join(root, rel));
   if (!file.startsWith(root)) return null;
   try {
@@ -23,6 +26,11 @@ async function resolve(pathname) {
 }
 
 createServer(async (req, res) => {
+  // Only the isolated update-test server exposes deployment switching; never shipped to the app.
+  if (updateTest && req.method === 'POST' && req.url === '/__test/deploy-after') {
+    deployment = 'after';
+    return res.writeHead(204).end();
+  }
   const file = await resolve(decodeURIComponent(new URL(req.url, 'http://x').pathname));
   if (!file) return res.writeHead(404).end();
   res.writeHead(200, { 'content-type': TYPES[extname(file)] ?? 'application/octet-stream', 'cache-control': 'no-cache' });

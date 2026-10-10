@@ -46,6 +46,8 @@ jobs:
       # Runs against a production build with fixture content (see web/playwright.config.ts).
       - run: npx playwright test
         working-directory: web
+      - run: npm run e2e:content-update
+        working-directory: web
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

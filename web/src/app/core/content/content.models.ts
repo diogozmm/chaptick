@@ -33,6 +33,7 @@ export interface Game {
   order?: number;
   name: Localized;
   platforms: string[];
+  /** Opaque content fingerprint generated at build time, not a sequential release number. */
   dataVersion: number;
   progressTerm?: ProgressTerm;
   /** Game patch the content was checked against. */
