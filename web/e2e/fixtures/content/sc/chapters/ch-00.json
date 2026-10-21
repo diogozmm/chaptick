@@ -256,6 +256,55 @@
       "where": {
         "en": "Town pier"
       }
+    },
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Quiet cove 1"
+      }
+    },
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Quiet cove 2"
+      }
+    },
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Quiet cove 3"
+      }
+    },
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Quiet cove 4"
+      }
+    },
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Quiet cove 5"
+      }
+    },
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Quiet cove 6"
+      }
+    },
+    {
+      "fishId": "sc-ch0-fi-01",
+      "rank": "B",
+      "where": {
+        "en": "Town pier"
+      }
     }
   ],
   "recipes": [

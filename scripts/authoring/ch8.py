@@ -348,47 +348,55 @@ GIGANGORA = c.fish('Gigangora', sources=[RUAN])
 MARLIN = c.fish('Blue Marlin', sources=[RUAN])
 DYNATRAD = c.fish('Dynatrad', sources=[BOSE])
 SPOTS = [
-    ('West Bose Hwy — River', ['Trout']),
-    ('Valleria Shore', ['Rockeater', 'Garvelze']),
-    ('Erbe Scenic Route — Romal Pond', ['Crab', 'Carp', 'Eel']),
-    ("Grancel Port — Ship's Stern", ['Salmon', 'Snakehead']),
-    ('Grancel — North Block', ['Trout']),
-    ('Grancel Sewers — W. Block (Entrance)', ['Kasagin']),
-    ('Grancel Sewers — E. Block (Entrance)', ['Kasagin', 'Yamany']),
-    ('Grancel Sewers — E. Block (Near N. Block)', ['Yamany', 'Tiger Rockfish']),
-    ('Verte Bridge', ['Yamany', 'Tiger Rockfish', 'Rockeater']),
-    ('Milch Main Road — Northeastern Pond', ['Liberl Carp']),
-    ('Rolent Sewers', ['Crab', 'Kasagin', 'Liberl Carp', 'Granakor']),
-    ('Bright Family House — Pond', ['Kasagin', 'Rockeater']),
-    ('Elize Highway — River', ['Snakehead']),
-    ('Mistwald — Giant Tree', ['Yamany', 'Tiger Rockfish', 'Liberl Carp', 'Rainbow Trout', 'Pearlglass']),
-    ('Manoria Byroad', ['Kasago']),
-    ('Manoria Village', ['Gold Angelfish']),
-    ('Gull Seaside Way — North Beach', ['Sea Bass', 'Claudine', 'Blue Marlin']),
-    ('Gull Seaside Way — South End of Beach', ['Great Blackfish']),
-    ('Ruan — North Block', ['Kasago', 'Claudine']),
-    ('Ruan — South Block', ['Gold Angelfish']),
-    ('Air-Letten — Side of Entrance', ['Crab', 'Sea Bass']),
-    ('Sapphirl Tower — 5F', ['Gold Angelfish', 'Octopus', 'Granakor']),
-    ('Kaldia Tunnel — Bridge at Midpoint', ['Yamany']),
-    ('Kaldia Limestone Cave — Entrance', ['Valleria Bass']),
-    ('Kaldia Limestone Cave — Depths', ['Carp']),
-    ('Tratt Plains Rd — Pond near Elmo Village', ['Kasagin']),
-    ('Tratt Plains Rd — Southwest Corner by the Cliff', ['Gold Angelfish', 'Claudine', 'Mahi-Mahi']),
-    ('Tratt Plains Rd — Northeast Pond (Towards Carnelia Tower)', ['Crab', 'Carp']),
-    ('Tratt Plains Rd — East Pond (Towards Wolf Fort)', ['Crab']),
-    ('Leiston Fortress — Outside', ['Kasagin']),
+    ('West Bose Highway — River', None, ['Valleria Bass', 'Carp', 'Trout', 'Snakehead', 'Pearlglass']),
+    ('Ravennue Village', None, ['Kasagin', 'Rainbow Trout', 'Carp', 'Eel']),
+    ('East Bose Highway — Water Cave', None, ['Kasagin', 'Liberl Carp', 'Valleria Bass', 'Rainbow Trout', 'Carp', 'Trout', 'Salmon', 'Garvelze']),
+    ('Valleria Shore', None, ['Valleria Bass', 'Rainbow Trout', 'Rockeater', 'Trout', 'Salmon', 'Snakehead', 'Garvelze']),
+    ('Kirsche Avenue — Water Cave', None, ['Yamany', 'Liberl Carp', 'Valleria Bass', 'Rainbow Trout', 'Trout', 'Salmon', 'Eel', 'Snakehead']),
+    ('Erbe Scenic Route — Romal Pond', None, ['Crab', 'Kasagin', 'Liberl Carp', 'Rainbow Trout', 'Carp', 'Rockeater', 'Eel', 'Garvelze']),
+    ('Erbe Royal Villa', None, ['Liberl Carp', 'Pearlglass']),
+    ("Grancel Port — Ship's Stern", None, ['Crab', 'Valleria Bass', 'Rainbow Trout', 'Salmon', 'Snakehead']),
+    ('Grancel — North Block', None, ['Crab', 'Kasagin', 'Liberl Carp', 'Valleria Bass', 'Rainbow Trout', 'Trout', 'Salmon', 'Eel']),
+    ('Grancel Sewers — W. Block (Entrance)', None, ['Crab', 'Kasagin', 'Yamany', 'Liberl Carp', 'Rockeater', 'Eel', 'Granakor']),
+    ('Grancel Sewers — E. Block (Entrance)', None, ['Crab', 'Kasagin', 'Yamany', 'Liberl Carp', 'Rockeater', 'Eel', 'Granakor']),
+    ('Grancel Sewers — E. Block, near the N. Block', 'Grancel Sewers — E. Block, perto do N. Block', ['Yamany', 'Tiger Rockfish', 'Liberl Carp', 'Carp', 'Eel', 'Granakor']),
+    ('Verte Bridge', None, ['Yamany', 'Tiger Rockfish', 'Liberl Carp', 'Rainbow Trout', 'Carp', 'Rockeater', 'Trout']),
+    ('Milch Main Road — Northeastern Pond', None, ['Liberl Carp', 'Carp', 'Snakehead', 'Pearlglass']),
+    ('Rolent Sewers', None, ['Crab', 'Kasagin', 'Liberl Carp', 'Carp', 'Garvelze', 'Granakor']),
+    ('Bright Family House — Pond', None, ['Kasagin', 'Liberl Carp', 'Carp', 'Rockeater']),
+    ('Elize Highway — River', None, ['Liberl Carp', 'Valleria Bass', 'Carp', 'Trout', 'Snakehead', 'Pearlglass']),
+    ('Mistwald — Giant Tree', None, ['Yamany', 'Tiger Rockfish', 'Liberl Carp', 'Rainbow Trout', 'Carp', 'Rockeater', 'Pearlglass']),
+    ('Malga Trail — Water Cave', None, ['Crab', 'Kasagin', 'Yamany', 'Tiger Rockfish', 'Valleria Bass', 'Rainbow Trout', 'Carp', 'Trout']),
+    ('Krone Trail — Water Cave', None, ['Crab', 'Gold Angelfish', 'Kasago', 'Great Blackfish', 'Sea Bass', 'Claudine', 'Eel', 'Octopus']),
+    ('Manoria Byroad', None, ['Kasago', 'Great Blackfish', 'Sea Bass', 'Claudine', 'Octopus', 'Mahi-Mahi', 'Gigangora']),
+    ('Manoria Village', None, ['Gold Angelfish', 'Claudine', 'Octopus', 'Mahi-Mahi', 'Gigangora']),
+    ('Gull Seaside Way — north beach', 'Gull Seaside Way — praia norte', ['Gold Angelfish', 'Great Blackfish', 'Sea Bass', 'Claudine', 'Octopus', 'Mahi-Mahi', 'Blue Marlin']),
+    ('Gull Seaside Way — south end of the beach', 'Gull Seaside Way — extremo sul da praia', ['Gold Angelfish', 'Great Blackfish', 'Sea Bass', 'Claudine', 'Mahi-Mahi', 'Gigangora', 'Blue Marlin']),
+    ('Ruan — North Block', None, ['Gold Angelfish', 'Kasago', 'Great Blackfish', 'Sea Bass', 'Trout', 'Salmon', 'Claudine']),
+    ('Ruan — South Block', None, ['Gold Angelfish', 'Kasago', 'Great Blackfish', 'Sea Bass', 'Trout', 'Salmon', 'Claudine']),
+    ('Air-Letten — side of the entrance', 'Air-Letten — lateral da entrada', ['Crab', 'Gold Angelfish', 'Sea Bass', 'Trout', 'Salmon', 'Eel']),
+    ('Sapphirl Tower — 5F', None, ['Crab', 'Gold Angelfish', 'Octopus', 'Granakor']),
+    ('Kaldia Tunnel — bridge at the midpoint', 'Kaldia Tunnel — ponte no meio do caminho', ['Kasagin', 'Yamany', 'Tiger Rockfish', 'Rainbow Trout', 'Carp', 'Rockeater', 'Granakor']),
+    ('Kaldia Limestone Cave — entrance', 'Kaldia Limestone Cave — entrada', ['Valleria Bass', 'Rainbow Trout', 'Carp', 'Rockeater', 'Snakehead', 'Granakor']),
+    ('Kaldia Limestone Cave — Depths', None, ['Valleria Bass', 'Rainbow Trout', 'Carp', 'Rockeater', 'Snakehead', 'Garvelze', 'Granakor']),
+    ('Tratt Plains Road — Pond near Elmo Village', None, ['Crab', 'Kasagin', 'Liberl Carp', 'Carp']),
+    ('Tratt Plains Road — southwest corner by the cliff', 'Tratt Plains Road — canto sudoeste, junto ao penhasco', ['Gold Angelfish', 'Kasago', 'Great Blackfish', 'Sea Bass', 'Salmon', 'Claudine', 'Octopus', 'Mahi-Mahi']),
+    ('Tratt Plains Road — Northeast Pond (Towards Carnelia Tower)', None, ['Crab', 'Kasagin', 'Liberl Carp', 'Valleria Bass', 'Carp', 'Snakehead']),
+    ('Tratt Plains Road — East Pond (Towards Wolf Fort)', None, ['Crab', 'Kasagin', 'Liberl Carp', 'Valleria Bass', 'Carp', 'Snakehead']),
+    ('Leiston Fortress — outside', 'Leiston Fortress — lado de fora', ['Crab', 'Kasagin', 'Yamany', 'Rockeater', 'Trout', 'Salmon']),
+    ('Soldat Army Road water cave', 'Caverna com água da Soldat Army Road', ['Kasagin', 'Yamany', 'Tiger Rockfish', 'Liberl Carp', 'Valleria Bass', 'Rainbow Trout', 'Trout', 'Salmon']),
 ]
 
 # Every rank A spot of this chapter (Liberl's spots now give the larger fish), old and new fish alike.
+# A place keeps the name earlier chapters gave it, so the fishing book can merge the two.
 ids = {}
 for i in range(8):
     for fish in json.loads((ROOT / 'sc' / 'chapters' / f'ch-{i:02d}.json').read_text()).get('fish', []):
         ids[fish['name']['en']] = fish['id']
 ids.update({'Granakor': GRANAKOR, 'Gigangora': GIGANGORA, 'Blue Marlin': MARLIN})
-for where, names in SPOTS:
+for where, where_pt, names in SPOTS:
     for name in names:
-        c.spot(ids[name], 'A', t(where))
+        c.spot(ids[name], 'A', t(where, where_pt))
 c.spot(DYNATRAD, 'A', t('Valleria Shore — use the Metal Trident Rod or Lakelord II. Rewards a Zeram Powder and the Master Fisher Card.',
                         'Valleria Shore — use a Metal Trident Rod ou a Lakelord II. Dá um Zeram Powder e o Master Fisher Card.'), 'Salmon')
 

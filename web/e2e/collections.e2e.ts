@@ -78,3 +78,16 @@ test('a game without fishing only shows its recipes', async ({ page }) => {
   await expect(page.getByRole('tab', { name: /Fish/ })).toHaveCount(0);
   await expect(page.getByText('Second Stew')).toBeVisible();
 });
+
+test('a long list of places is folded, and a place named twice shows once', async ({ page }) => {
+  await page.goto('/sc/collections');
+  const fish = page.locator('li.row').filter({ hasText: 'Silver Fish' });
+  // Seven places, one of them also listed at a lower rank: the first six show, the rest is one tap away.
+  await expect(fish.locator('.spots li')).toHaveCount(6);
+  await expect(fish.getByText('Town pier')).toHaveCount(1);
+  await expect(fish.getByText('Quiet cove 6')).toHaveCount(0);
+  await fish.getByRole('button', { name: 'Show 1 more place(s)' }).click();
+  await expect(fish.locator('.spots li')).toHaveCount(7);
+  await expect(fish.getByText('Quiet cove 6')).toBeVisible();
+  await expect(fish.getByRole('button', { name: /more place/ })).toHaveCount(0);
+});

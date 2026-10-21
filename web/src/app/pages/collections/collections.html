@@ -84,7 +84,7 @@
                   }
                 </span>
                 <ul class="spots">
-                  @for (spot of entry.spots; track $index) {
+                  @for (spot of shownSpots(entry); track $index) {
                     <li>
                       <app-icon name="map-pin" />
                       <span class="where">
@@ -103,6 +103,11 @@
                     </li>
                   }
                 </ul>
+                @if (entry.spots.length > shownSpots(entry).length) {
+                  <button type="button" class="link small more-spots" (click)="unfold(entry)">
+                    {{ 'collections.morePlaces' | transloco: { count: entry.spots.length - foldAfter } }}
+                  </button>
+                }
                 @if (entry.bestRank === 'A') {
                   <label class="rank-a">
                     <input type="checkbox" class="checkbox" [checked]="done.has(rankAKey(entry.fish.id))" (change)="toggleRankA(entry)" />

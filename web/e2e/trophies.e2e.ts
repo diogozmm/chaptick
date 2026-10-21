@@ -52,7 +52,8 @@ test('a trophy lists what is missing, behind the same masks, and ticking it ther
   await expect(quests).not.toContainText('Secret Name');
   await expect(quests.getByRole('button', { name: /Hidden quest #1/ })).toBeVisible();
 
-  await row(quests, 'Safe Quest').getByRole('checkbox').check();
+  // The ticked item leaves this list by design, so click and assert the count instead of check().
+  await row(quests, 'Safe Quest').getByRole('checkbox').click();
   await expect(quests).toContainText('1/2');
   await expect(quests.getByText('What is missing (1)')).toBeVisible();
   await expect(row(quests, 'Safe Quest')).toHaveCount(0);

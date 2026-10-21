@@ -41,6 +41,21 @@ describe('collections', () => {
     expect(crab.chapter.id).toBe('t-ch1');
   });
 
+  it('lists a place once, with the best rank it ever had', () => {
+    const later = chapter(3, {
+      fishSpots: [
+        { fishId: 't-ch1-fi-01', rank: 'A', where: { en: 'Harbor' }, bait: 'Worm' },
+        { fishId: 't-ch1-fi-01', rank: 'C', where: { en: 'Pond' } },
+      ],
+    });
+    const [crab] = fishBook([ch1, ch2, later]);
+    expect(crab.spots.map((x) => [x.where.en, x.rank, x.bait])).toEqual([
+      ['Harbor', 'A', 'Worm'],
+      ['Pond', 'A', undefined],
+    ]);
+    expect(crab.bestRank).toBe('A');
+  });
+
   it('counts catches and Rank A only for fish that can reach A', () => {
     const book = fishBook([ch1, ch2]);
     const done = new Set(['t-ch1-fi-01', rankAKey('t-ch1-fi-01'), 't-ch2-fi-01']);

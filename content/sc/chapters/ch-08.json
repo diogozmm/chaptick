@@ -1875,14 +1875,161 @@
   ],
   "fishSpots": [
     {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "West Bose Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "West Bose Highway — River"
+      }
+    },
+    {
       "fishId": "sc-ch1-fi-06",
       "rank": "A",
       "where": {
-        "en": "West Bose Hwy — River"
+        "en": "West Bose Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "West Bose Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch3-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "West Bose Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Ravennue Village"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Ravennue Village"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Ravennue Village"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Ravennue Village"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch4-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "East Bose Highway — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore"
       }
     },
     {
       "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Valleria Shore"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
       "rank": "A",
       "where": {
         "en": "Valleria Shore"
@@ -1896,7 +2043,84 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "Kirsche Avenue — Water Cave"
+      }
+    },
+    {
       "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
       "rank": "A",
       "where": {
         "en": "Erbe Scenic Route — Romal Pond"
@@ -1910,10 +2134,59 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
       "fishId": "sc-ch1-fi-08",
       "rank": "A",
       "where": {
         "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch4-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Scenic Route — Romal Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Royal Villa"
+      }
+    },
+    {
+      "fishId": "sc-ch3-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Erbe Royal Villa"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Port — Ship's Stern"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Port — Ship's Stern"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Port — Ship's Stern"
       }
     },
     {
@@ -1931,10 +2204,66 @@
       }
     },
     {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
       "fishId": "sc-ch1-fi-06",
       "rank": "A",
       "where": {
         "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Grancel — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — W. Block (Entrance)"
       }
     },
     {
@@ -1945,6 +2274,48 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — W. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — W. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — W. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — W. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — W. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block (Entrance)"
+      }
+    },
+    {
       "fishId": "sc-ch2-fi-01",
       "rank": "A",
       "where": {
@@ -1959,17 +2330,79 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block (Entrance)"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block (Entrance)"
+      }
+    },
+    {
       "fishId": "sc-ch2-fi-02",
       "rank": "A",
       "where": {
-        "en": "Grancel Sewers — E. Block (Near N. Block)"
+        "en": "Grancel Sewers — E. Block, near the N. Block",
+        "pt": "Grancel Sewers — E. Block, perto do N. Block"
       }
     },
     {
       "fishId": "sc-ch2-fi-03",
       "rank": "A",
       "where": {
-        "en": "Grancel Sewers — E. Block (Near N. Block)"
+        "en": "Grancel Sewers — E. Block, near the N. Block",
+        "pt": "Grancel Sewers — E. Block, perto do N. Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block, near the N. Block",
+        "pt": "Grancel Sewers — E. Block, perto do N. Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block, near the N. Block",
+        "pt": "Grancel Sewers — E. Block, perto do N. Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block, near the N. Block",
+        "pt": "Grancel Sewers — E. Block, perto do N. Block"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Grancel Sewers — E. Block, near the N. Block",
+        "pt": "Grancel Sewers — E. Block, perto do N. Block"
       }
     },
     {
@@ -1981,6 +2414,27 @@
     },
     {
       "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Verte Bridge"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
       "rank": "A",
       "where": {
         "en": "Verte Bridge"
@@ -1994,7 +2448,35 @@
       }
     },
     {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Verte Bridge"
+      }
+    },
+    {
       "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Milch Main Road — Northeastern Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Milch Main Road — Northeastern Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "Milch Main Road — Northeastern Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch3-fi-01",
       "rank": "A",
       "where": {
         "en": "Milch Main Road — Northeastern Pond"
@@ -2022,6 +2504,20 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Rolent Sewers"
+      }
+    },
+    {
+      "fishId": "sc-ch4-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Rolent Sewers"
+      }
+    },
+    {
       "fishId": "sc-ch8-fi-01",
       "rank": "A",
       "where": {
@@ -2036,6 +2532,20 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Bright Family House — Pond"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Bright Family House — Pond"
+      }
+    },
+    {
       "fishId": "sc-ch2-fi-08",
       "rank": "A",
       "where": {
@@ -2043,7 +2553,42 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Elize Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Elize Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Elize Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Elize Highway — River"
+      }
+    },
+    {
       "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "Elize Highway — River"
+      }
+    },
+    {
+      "fishId": "sc-ch3-fi-01",
       "rank": "A",
       "where": {
         "en": "Elize Highway — River"
@@ -2078,6 +2623,20 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Mistwald — Giant Tree"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Mistwald — Giant Tree"
+      }
+    },
+    {
       "fishId": "sc-ch3-fi-01",
       "rank": "A",
       "where": {
@@ -2085,7 +2644,161 @@
       }
     },
     {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Malga Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
       "fishId": "sc-ch1-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Krone Trail — Water Cave"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Byroad"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Byroad"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Byroad"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Byroad"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Byroad"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-11",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Byroad"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-02",
       "rank": "A",
       "where": {
         "en": "Manoria Byroad"
@@ -2099,35 +2812,182 @@
       }
     },
     {
-      "fishId": "sc-ch1-fi-05",
-      "rank": "A",
-      "where": {
-        "en": "Gull Seaside Way — North Beach"
-      }
-    },
-    {
       "fishId": "sc-ch1-fi-07",
       "rank": "A",
       "where": {
-        "en": "Gull Seaside Way — North Beach"
+        "en": "Manoria Village"
       }
     },
     {
-      "fishId": "sc-ch8-fi-03",
+      "fishId": "sc-ch1-fi-09",
       "rank": "A",
       "where": {
-        "en": "Gull Seaside Way — North Beach"
+        "en": "Manoria Village"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-11",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Village"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Manoria Village"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
       }
     },
     {
       "fishId": "sc-ch1-fi-04",
       "rank": "A",
       "where": {
-        "en": "Gull Seaside Way — South End of Beach"
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-11",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — north beach",
+        "pt": "Gull Seaside Way — praia norte"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-11",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Gull Seaside Way — south end of the beach",
+        "pt": "Gull Seaside Way — extremo sul da praia"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — North Block"
       }
     },
     {
       "fishId": "sc-ch1-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — North Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
       "rank": "A",
       "where": {
         "en": "Ruan — North Block"
@@ -2148,17 +3008,100 @@
       }
     },
     {
-      "fishId": "sc-ch1-fi-01",
+      "fishId": "sc-ch1-fi-03",
       "rank": "A",
       "where": {
-        "en": "Air-Letten — Side of Entrance"
+        "en": "Ruan — South Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — South Block"
       }
     },
     {
       "fishId": "sc-ch1-fi-05",
       "rank": "A",
       "where": {
-        "en": "Air-Letten — Side of Entrance"
+        "en": "Ruan — South Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — South Block"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — South Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Ruan — South Block"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Air-Letten — side of the entrance",
+        "pt": "Air-Letten — lateral da entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Sapphirl Tower — 5F"
       }
     },
     {
@@ -2183,17 +3126,121 @@
       }
     },
     {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
+      }
+    },
+    {
       "fishId": "sc-ch2-fi-02",
       "rank": "A",
       "where": {
-        "en": "Kaldia Tunnel — Bridge at Midpoint"
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Tunnel — bridge at the midpoint",
+        "pt": "Kaldia Tunnel — ponte no meio do caminho"
       }
     },
     {
       "fishId": "sc-ch2-fi-05",
       "rank": "A",
       "where": {
-        "en": "Kaldia Limestone Cave — Entrance"
+        "en": "Kaldia Limestone Cave — entrance",
+        "pt": "Kaldia Limestone Cave — entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Limestone Cave — entrance",
+        "pt": "Kaldia Limestone Cave — entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Limestone Cave — entrance",
+        "pt": "Kaldia Limestone Cave — entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Limestone Cave — entrance",
+        "pt": "Kaldia Limestone Cave — entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Limestone Cave — entrance",
+        "pt": "Kaldia Limestone Cave — entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Limestone Cave — entrance",
+        "pt": "Kaldia Limestone Cave — entrada"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Limestone Cave — Depths"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Kaldia Limestone Cave — Depths"
       }
     },
     {
@@ -2204,59 +3251,319 @@
       }
     },
     {
-      "fishId": "sc-ch2-fi-01",
+      "fishId": "sc-ch2-fi-08",
       "rank": "A",
       "where": {
-        "en": "Tratt Plains Rd — Pond near Elmo Village"
+        "en": "Kaldia Limestone Cave — Depths"
       }
     },
     {
-      "fishId": "sc-ch1-fi-02",
+      "fishId": "sc-ch2-fi-10",
       "rank": "A",
       "where": {
-        "en": "Tratt Plains Rd — Southwest Corner by the Cliff"
+        "en": "Kaldia Limestone Cave — Depths"
       }
     },
     {
-      "fishId": "sc-ch1-fi-07",
+      "fishId": "sc-ch4-fi-01",
       "rank": "A",
       "where": {
-        "en": "Tratt Plains Rd — Southwest Corner by the Cliff"
+        "en": "Kaldia Limestone Cave — Depths"
       }
     },
     {
-      "fishId": "sc-ch2-fi-11",
+      "fishId": "sc-ch8-fi-01",
       "rank": "A",
       "where": {
-        "en": "Tratt Plains Rd — Southwest Corner by the Cliff"
+        "en": "Kaldia Limestone Cave — Depths"
       }
     },
     {
       "fishId": "sc-ch1-fi-01",
       "rank": "A",
       "where": {
-        "en": "Tratt Plains Rd — Northeast Pond (Towards Carnelia Tower)"
+        "en": "Tratt Plains Road — Pond near Elmo Village"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — Pond near Elmo Village"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — Pond near Elmo Village"
       }
     },
     {
       "fishId": "sc-ch2-fi-07",
       "rank": "A",
       "where": {
-        "en": "Tratt Plains Rd — Northeast Pond (Towards Carnelia Tower)"
+        "en": "Tratt Plains Road — Pond near Elmo Village"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-11",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — southwest corner by the cliff",
+        "pt": "Tratt Plains Road — canto sudoeste, junto ao penhasco"
       }
     },
     {
       "fishId": "sc-ch1-fi-01",
       "rank": "A",
       "where": {
-        "en": "Tratt Plains Rd — East Pond (Towards Wolf Fort)"
+        "en": "Tratt Plains Road — Northeast Pond (Towards Carnelia Tower)"
       }
     },
     {
       "fishId": "sc-ch2-fi-01",
       "rank": "A",
       "where": {
-        "en": "Leiston Fortress — Outside"
+        "en": "Tratt Plains Road — Northeast Pond (Towards Carnelia Tower)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — Northeast Pond (Towards Carnelia Tower)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — Northeast Pond (Towards Carnelia Tower)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — Northeast Pond (Towards Carnelia Tower)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — Northeast Pond (Towards Carnelia Tower)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — East Pond (Towards Wolf Fort)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — East Pond (Towards Wolf Fort)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — East Pond (Towards Wolf Fort)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — East Pond (Towards Wolf Fort)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — East Pond (Towards Wolf Fort)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "Tratt Plains Road — East Pond (Towards Wolf Fort)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Leiston Fortress — outside",
+        "pt": "Leiston Fortress — lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Soldat Army Road water cave",
+        "pt": "Caverna com água da Soldat Army Road"
       }
     },
     {

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, linkedSignal, resource } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, linkedSignal, resource, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -76,6 +76,16 @@ export class Collections {
   protected sharedRank(entry: FishEntry): string | null {
     const [first, ...rest] = entry.spots;
     return first?.rank && rest.every((spot) => spot.rank === first.rank) ? first.rank : null;
+  }
+
+  /** Long lists of places are folded after a few, since one is enough to catch the fish. */
+  private readonly unfolded = signal<ReadonlySet<string>>(new Set());
+  protected readonly foldAfter = 6;
+  protected shownSpots(entry: FishEntry): FishEntry['spots'] {
+    return this.unfolded().has(entry.fish.id) ? entry.spots : entry.spots.slice(0, this.foldAfter);
+  }
+  protected unfold(entry: FishEntry): void {
+    this.unfolded.update((set) => new Set(set).add(entry.fish.id));
   }
 
   protected toggleHideDone(): void {

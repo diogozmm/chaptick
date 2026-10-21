@@ -31,6 +31,18 @@ export function fishBook(chapters: readonly Chapter[]): FishEntry[] {
     }
   }
   for (const entry of entries.values()) {
+    // The same place can come up in several chapters as the rods get better: list it once, with
+    // the best rank it ever had (and its bait, if any chapter named one).
+    const places = new Map<string, FishEntry['spots'][number]>();
+    for (const spot of entry.spots) {
+      const known = places.get(spot.where.en);
+      if (!known) places.set(spot.where.en, { ...spot });
+      else {
+        if (rankOrder(spot.rank) < rankOrder(known.rank)) known.rank = spot.rank;
+        known.bait ??= spot.bait;
+      }
+    }
+    entry.spots = [...places.values()];
     // Ranked spots first, best rank first; unranked spots keep their chapter order.
     entry.spots.sort((a, b) => rankOrder(a.rank) - rankOrder(b.rank));
     entry.bestRank = entry.spots[0]?.rank ?? null;
