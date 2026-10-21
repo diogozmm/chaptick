@@ -26,8 +26,13 @@ export class ProgressStore {
   private readonly analytics = inject(AnalyticsService);
   private readonly state = signal<SavedProgress | null>(null);
   private saving: Promise<void> = Promise.resolve();
+  private pending = 0;
+  /** Changes whose write failed; the next write applies them again so nothing the player did is lost. */
+  private unsaved: ((current: SavedProgress) => Partial<SavedProgress>)[] = [];
   private readonly failed = signal(false);
   private persistenceAsked = false;
+  /** Tells other tabs of the app that a game's record changed, so they show it too. */
+  private readonly channel = typeof BroadcastChannel === 'undefined' ? undefined : new BroadcastChannel('chaptick-progress');
 
   readonly progress = this.state.asReadonly();
   /** The latest write to this device failed. Progress is still in memory, so the player can back it up. */
@@ -40,6 +45,15 @@ export class ProgressStore {
     const p = this.state();
     return !!p && needsChapterPick(p);
   });
+
+  constructor() {
+    if (this.channel) {
+      this.channel.onmessage = ({ data }) => {
+        const gameId = this.state()?.gameId;
+        if (gameId && data?.gameId === gameId) void this.enqueue(() => this.repository.get(gameId), false);
+      };
+    }
+  }
 
   /**
    * Switches to a game's saved progress, or starts it at `firstChapterId` on a first visit. A
@@ -124,10 +138,25 @@ export class ProgressStore {
   private update(change: (current: SavedProgress) => Partial<SavedProgress>): Promise<void> {
     const current = this.state();
     if (!current) throw new Error('ProgressStore used before load()');
-    const next = { ...current, ...change(current), updatedAt: new Date().toISOString() };
-    this.state.set(next);
+    this.state.set({ ...current, ...change(current), updatedAt: new Date().toISOString() });
     this.askToKeepStorage();
-    return this.persist(next);
+    // The change is applied again to the record that is really stored: another tab may have saved
+    // since this one loaded, and starting from its copy in memory would erase that.
+    return this.enqueue(async () => {
+      const earlier = this.unsaved;
+      try {
+        const saved = await this.repository.update(current.gameId, (stored) => {
+          let base = stored ?? current;
+          for (const missed of earlier) base = { ...base, ...missed(base) };
+          return { ...base, ...change(base), updatedAt: new Date().toISOString() };
+        });
+        this.unsaved = [];
+        return saved;
+      } catch (error) {
+        this.unsaved = [...earlier, change];
+        throw error;
+      }
+    });
   }
 
   /**
@@ -151,17 +180,36 @@ export class ProgressStore {
     return this.saving;
   }
 
+  private persist(progress: SavedProgress): Promise<void> {
+    return this.enqueue(async () => {
+      await this.repository.put(progress);
+      return progress;
+    });
+  }
+
   // Writes are chained so a slow write can never land after a newer one. A failed write must not
   // break the chain (every later save would be skipped): it is reported through `saveFailed`
   // instead, and the next successful write saves the whole record again, so nothing is lost.
-  private persist(progress: SavedProgress): Promise<void> {
-    this.saving = this.saving
-      .then(() => this.repository.put(progress))
-      .then(
-        () => this.failed.set(false),
-        () => this.failed.set(true),
-      );
+  private enqueue(write: () => Promise<SavedProgress | undefined>, notify = true): Promise<void> {
+    this.pending++;
+    this.saving = this.saving.then(write).then(
+      (saved) => {
+        this.pending--;
+        this.failed.set(false);
+        if (saved) this.adopt(saved, notify);
+      },
+      () => {
+        this.pending--;
+        this.failed.set(true);
+      },
+    );
     return this.saving;
+  }
+
+  /** Shows what is really stored, which may include another tab's changes, unless more edits are queued here. */
+  private adopt(saved: SavedProgress, notify: boolean): void {
+    if (this.pending === 0 && this.state()?.gameId === saved.gameId) this.state.set(saved);
+    if (notify) this.channel?.postMessage({ gameId: saved.gameId });
   }
 
   private fresh(gameId: string, firstChapterId: string): SavedProgress {

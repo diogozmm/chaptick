@@ -30,4 +30,17 @@ export class ProgressRepository {
   async put(progress: SavedProgress): Promise<void> {
     await (await this.open()).put('progress', progress);
   }
+
+  /**
+   * Reads, changes and writes one game's record in a single transaction. Two tabs of the app can
+   * be open on the same record, and each only knows what it loaded: changing the stored record
+   * (not a copy from memory) keeps one tab from overwriting the other's changes.
+   */
+  async update(gameId: string, change: (stored: SavedProgress | undefined) => SavedProgress): Promise<SavedProgress> {
+    const tx = (await this.open()).transaction('progress', 'readwrite');
+    const next = change(await tx.store.get(gameId));
+    await tx.store.put(next);
+    await tx.done;
+    return next;
+  }
 }

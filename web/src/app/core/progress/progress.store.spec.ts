@@ -148,8 +148,8 @@ describe('ProgressStore', () => {
   });
 
   it('keeps saving after a write fails, and reports it until a write works again', async () => {
-    const put = vi.spyOn(TestBed.inject(ProgressRepository), 'put');
-    put.mockRejectedValueOnce(new Error('quota exceeded'));
+    const update = vi.spyOn(TestBed.inject(ProgressRepository), 'update');
+    update.mockRejectedValueOnce(new Error('quota exceeded'));
 
     await store.toggle('sc-ch0-co-01');
     expect(store.saveFailed()).toBe(true);
@@ -160,9 +160,9 @@ describe('ProgressStore', () => {
     expect(store.saveFailed()).toBe(false);
     const reloaded = TestBed.runInInjectionContext(() => new ProgressStore());
     await reloaded.load('sc', 'sc-ch0');
-    // The second write saves the whole record, so the failed tick is not lost either.
+    // The next write applies the change that failed again, so it is not lost either.
     expect([...reloaded.done()].sort()).toEqual(['sc-ch0-co-01', 'sc-ch0-co-02']);
-    put.mockRestore();
+    update.mockRestore();
   });
 
   it('lets pending writes land before reporting settled', async () => {
@@ -171,5 +171,40 @@ describe('ProgressStore', () => {
     const reloaded = TestBed.runInInjectionContext(() => new ProgressStore());
     await reloaded.load('sc', 'sc-ch0');
     expect(reloaded.done().has('sc-ch0-co-01')).toBe(true);
+  });
+
+  describe('with a second tab open on the same game', () => {
+    let other: ProgressStore;
+
+    beforeEach(async () => {
+      other = TestBed.runInInjectionContext(() => new ProgressStore());
+      await other.load('sc', 'sc-ch0');
+    });
+
+    it('keeps what each tab changed instead of letting the last one win', async () => {
+      await store.toggle('sc-ch0-co-01');
+      // This tab loaded before the first tick, so its own copy does not have it.
+      await other.toggle('sc-ch0-co-02');
+      await other.setPreferences({ hideDone: true });
+
+      const reloaded = TestBed.runInInjectionContext(() => new ProgressStore());
+      await reloaded.load('sc', 'sc-ch0');
+      expect([...reloaded.done()].sort()).toEqual(['sc-ch0-co-01', 'sc-ch0-co-02']);
+      expect(reloaded.preferences().hideDone).toBe(true);
+    });
+
+    it('shows a change made in another tab', async () => {
+      await store.toggle('sc-ch0-co-01');
+      await vi.waitFor(() => expect(other.done().has('sc-ch0-co-01')).toBe(true));
+    });
+
+    it('does not undo a tick made here while a change from the other tab arrives', async () => {
+      const writes = [store.toggle('sc-ch0-co-01'), other.toggle('sc-ch0-co-02'), store.toggle('sc-ch0-co-03')];
+      await Promise.all(writes);
+      await vi.waitFor(() => {
+        expect([...store.done()].sort()).toEqual(['sc-ch0-co-01', 'sc-ch0-co-02', 'sc-ch0-co-03']);
+        expect([...other.done()].sort()).toEqual(['sc-ch0-co-01', 'sc-ch0-co-02', 'sc-ch0-co-03']);
+      });
+    });
   });
 });
