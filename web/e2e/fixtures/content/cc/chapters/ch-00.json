@@ -54,6 +54,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "cc-ch0-hq-01",
+      "type": "hidden_quest",
+      "name": {
+        "en": "Cy's Secret Errand"
+      },
+      "location": {
+        "en": "Attic"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Talk to Cy twice."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "fixture"
+      ]
     }
   ],
   "itemTexts": [],
@@ -326,6 +344,33 @@
           ]
         }
       ]
+    },
+    {
+      "id": "cc-cr-hollow-warden",
+      "name": {
+        "en": "Hollow Warden"
+      },
+      "where": [
+        {
+          "en": "Sealed Vault"
+        }
+      ],
+      "spoilerLevel": 2,
+      "notes": {
+        "en": "Weak to Dark Attacks"
+      },
+      "rewards": [
+        {
+          "how": "victory",
+          "items": [
+            {
+              "name": {
+                "en": "Warden Key"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "villagers": [
@@ -370,6 +415,15 @@
       },
       "gifts": {},
       "commonOnly": true
+    },
+    {
+      "id": "cc-vl-cy",
+      "name": {
+        "en": "Cy"
+      },
+      "gifts": {},
+      "commonOnly": true,
+      "adventure": "cc-ch0-hq-01"
     }
   ],
   "commonGifts": {

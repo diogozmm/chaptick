@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { trackContent } from './helpers';
+import { pickChapter, trackContent } from './helpers';
 
 test('search finds route steps and keeps masked text out', async ({ page }) => {
   const fetched = trackContent(page);
@@ -27,4 +27,12 @@ test('search finds route steps and keeps masked text out', async ({ page }) => {
   await expect(page).toHaveURL('/sc/items/sc-ch0-mi-01');
   await page.goBack();
   await expect(box).toHaveValue('safe hint');
+});
+
+test('the home search keeps a masked item name out of related results', async ({ page }) => {
+  await pickChapter(page, 'sc', 'Prologue');
+  await page.goto('/?q=safe%20hint');
+  const sc = page.getByRole('group', { name: 'E2E Game' });
+  await expect(sc.getByRole('link', { name: /Missable #1/ })).toBeVisible();
+  await expect(page.locator('main')).not.toContainText('Very Secret');
 });

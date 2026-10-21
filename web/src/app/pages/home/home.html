@@ -105,7 +105,7 @@
             <li>
               <a class="hit" [routerLink]="['/', r.gameId, 'items', h.item.id]">
                 <span class="hit-body">
-                  <span class="hit-name">{{ h.item.name | localize: l }}</span>
+                  <span class="hit-name">{{ view.showLocation(h.item) ? (h.item.name | localize: l) : view.placeholder(h.chapter, h.item) }}</span>
                   <span class="muted small">{{ 'type.label.' + h.item.type | transloco }} · {{ h.chapter.neutralLabel | localize: l }}</span>
                 </span>
                 <app-icon name="chevron-right" />

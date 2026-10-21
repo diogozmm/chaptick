@@ -8,7 +8,7 @@ test('the library marks and filters games by what they offer', async ({ page }) 
   const card = library.getByRole('link', { name: /Field Game/ });
   await expect(card).toContainText('Checklist');
   await expect(card).toContainText('Compendium');
-  await expect(card).toContainText('2 areas · 3 tasks');
+  await expect(card).toContainText('2 areas · 4 tasks');
 
   await library.getByRole('navigation', { name: 'Filter by series' }).getByRole('link', { name: 'Compendium' }).click();
   await expect(page).toHaveURL(/\/games\?t=compendium$/);
@@ -201,4 +201,29 @@ test('friendship: hearts milestones, and a villager links to their school advent
   await ada.getByRole('link', { name: "Ada's Adventure" }).click();
   await expect(page.getByRole('heading', { level: 1, name: "Ada's Adventure" })).toBeVisible();
   await expect(page.getByText('Beat the ghost')).toBeVisible();
+});
+
+test('a masked creature keeps its details behind the reveal', async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/creatures/cc-cr-hollow-warden');
+  const main = page.locator('main');
+  await expect(main).not.toContainText('Hollow Warden');
+  await expect(main).not.toContainText('Weak to Dark Attacks');
+  await expect(main).not.toContainText('Sealed Vault');
+  await expect(main).not.toContainText('Warden Key');
+  await expect(page.getByRole('button', { name: /Edit|Correct|Rename/ })).toHaveCount(0);
+
+  await page.getByRole('button', { name: /Tap to reveal/i }).click();
+  await page.getByRole('button', { name: 'Show' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Hollow Warden' })).toBeVisible();
+  await expect(main).toContainText('Weak to Dark Attacks');
+  await expect(main).toContainText('Warden Key');
+});
+
+test("a villager's masked adventure shows a placeholder until revealed", async ({ page }) => {
+  await pickChapter(page, 'cc', 'Area 1');
+  await page.goto('/cc/compendium?tab=villagers');
+  const cy = page.getByRole('region', { name: 'Cy' });
+  await expect(cy).not.toContainText("Cy's Secret Errand");
+  await expect(cy.getByRole('link', { name: /Hidden quest #1/ })).toBeVisible();
 });

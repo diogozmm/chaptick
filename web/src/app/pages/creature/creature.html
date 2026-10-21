@@ -12,10 +12,13 @@
         <p class="en">{{ 'compendium.inEnglish' | transloco: { name: en } }}</p>
       }
     </app-spoiler-reveal>
-    <app-name-fix [entryId]="f.creature.id" [name]="f.creature.name" />
+    @if (!hidden()) {
+      <app-name-fix [entryId]="f.creature.id" [name]="f.creature.name" />
+    }
     <p class="muted small">{{ 'compendium.from' | transloco: { chapter: f.chapter.neutralLabel | localize: l } }}</p>
   </header>
 
+  @if (!hidden()) {
   @if (f.creature.notes; as notes) {
     <p class="card notes"><app-icon name="swords" /> <span><strong>{{ 'compendium.weakPoint' | transloco }}</strong> {{ notes | localize: l }}</span></p>
   }
@@ -145,6 +148,7 @@
       <p class="muted small">{{ 'compendium.lootHint' | transloco }}</p>
     }
   </section>
+  }
 } @else if (ready()) {
   <div class="card notfound">
     <p>{{ 'compendium.notFound' | transloco }}</p>

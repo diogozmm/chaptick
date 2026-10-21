@@ -12,6 +12,7 @@ import { ProgressImportError, ProgressStore, needsChapterPick, parseExport } fro
 import { TransferService } from '../../core/progress/transfer.service';
 import { GlobalSearch } from '../../core/search/global-search';
 import { normalize } from '../../core/search/search';
+import { ItemView } from '../../core/spoiler/item-view';
 import { chapterProgress, nextCheckpointAlert } from '../../core/spoiler/spoiler';
 import { GameCard } from '../../ui/game-card/game-card';
 import { GameCover } from '../../ui/game-cover/game-cover';
@@ -43,6 +44,7 @@ export class Home {
   protected readonly content = inject(ContentService);
   protected readonly lang = inject(LangService);
   protected readonly saved = inject(SavedGames);
+  protected readonly view = inject(ItemView);
   private readonly progress = inject(ProgressStore);
   private readonly transfer = inject(TransferService);
   private readonly router = inject(Router);

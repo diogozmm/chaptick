@@ -10,6 +10,8 @@ import { OriginalPipe } from '../../core/i18n/original.pipe';
 import { GameNamePipe } from '../../core/i18n/game-name.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { NameFix } from '../../ui/name-fix/name-fix';
+import { RevealService } from '../../core/spoiler/reveal.service';
+import { isMasked } from '../../core/spoiler/spoiler';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { Icon } from '../../ui/icon/icon';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
@@ -33,6 +35,8 @@ export class CreatureDetail {
   private readonly progress = inject(ProgressStore);
   protected readonly names = computed(() => this.progress.preferences().names);
 
+  private readonly reveals = inject(RevealService);
+
   readonly creatureId = input.required<string>();
 
   private readonly chapters = resource({
@@ -45,6 +49,11 @@ export class CreatureDetail {
     const creatures = this.index().creatures;
     const at = creatures.findIndex((c) => c.creature.id === this.creatureId());
     return at < 0 ? null : { ...creatures[at], n: at + 1 };
+  });
+  /** Body, notes and the name editor can give the name away, so they follow the heading's mask. */
+  protected readonly hidden = computed(() => {
+    const c = this.found()?.creature;
+    return !!c && isMasked(c.spoilerLevel) && !this.reveals.isRevealed(c.id);
   });
   protected readonly steals = computed(() => (this.found()?.creature.rewards ?? []).filter((r) => r.how === 'steal'));
   protected readonly events = computed(() => (this.found()?.creature.rewards ?? []).filter((r) => r.how === 'event'));

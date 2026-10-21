@@ -13,6 +13,7 @@ import { OriginalPipe } from '../../core/i18n/original.pipe';
 import { GameNamePipe } from '../../core/i18n/game-name.pipe';
 import { ProgressStore } from '../../core/progress/progress.store';
 import { normalize } from '../../core/search/search';
+import { ItemView } from '../../core/spoiler/item-view';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { Icon } from '../../ui/icon/icon';
 import { SpoilerReveal } from '../../ui/spoiler-reveal/spoiler-reveal';
@@ -38,6 +39,7 @@ const MAX_LIST = 80;
 export class Compendium {
   private readonly access = inject(ChapterAccess);
   private readonly router = inject(Router);
+  private readonly itemView = inject(ItemView);
   private readonly transloco = inject(TranslocoService);
   protected readonly game = inject(ActiveGame);
   protected readonly progress = inject(ProgressStore);
@@ -56,8 +58,13 @@ export class Compendium {
   protected readonly villagers = computed(() => this.index().villagers);
   protected readonly commonGifts = computed(() => this.index().commonGifts);
   protected readonly friendship = computed(() => this.index().friendship);
+  /** The adventure's name, or its masked placeholder until the player reveals it. */
   protected adventureName(itemId: string): Localized | null {
-    return this.index().items.get(itemId)?.name ?? null;
+    const item = this.index().items.get(itemId);
+    if (!item) return null;
+    if (this.itemView.showLocation(item)) return item.name;
+    const chapter = this.chapters.hasValue() ? this.chapters.value().find((c) => c.items.some((i) => i.id === itemId)) : undefined;
+    return chapter ? { en: this.itemView.placeholder(chapter, item) } : null;
   }
   protected readonly reactions = ['likes', 'neutral', 'hates'] as const;
   protected readonly categories = ENTRY_CATEGORIES;
