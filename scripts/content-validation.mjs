@@ -196,6 +196,34 @@ function crossChapterErrors(chapters) {
   return { errors, ids: [...seen.keys()] };
 }
 
+/**
+ * Route steps are saved by position (`<itemId>#step-<n>`), so a published item may only grow at the
+ * end: removing a step or moving one would silently change which step a player had ticked.
+ * Rewording a step in place is fine. `baseSteps` maps an item id to the English text of its
+ * published steps, in order.
+ */
+function stepErrors(chapters, baseSteps) {
+  const errors = [];
+  if (!baseSteps) return errors;
+  for (const { file, data } of chapters) {
+    for (const item of data.items) {
+      const published = baseSteps.get(item.id);
+      if (!published) continue;
+      const now = (item.steps ?? []).map((step) => step.text.en);
+      if (now.length < published.length) {
+        errors.push(`${file}: "${item.id}" has ${now.length} route step(s) but ${published.length} are published; steps cannot be removed`);
+      }
+      published.forEach((text, i) => {
+        const moved = now.indexOf(text);
+        if (now[i] !== text && moved !== -1) {
+          errors.push(`${file}: "${item.id}" step ${i + 1} ("${text}") is now step ${moved + 1}; saved progress follows step positions, so only add steps at the end`);
+        }
+      });
+    }
+  }
+  return errors;
+}
+
 function registryErrors(ids, registry, baseRegistry) {
   const errors = [];
   const registered = new Set(registry);
@@ -211,7 +239,7 @@ function registryErrors(ids, registry, baseRegistry) {
 }
 
 /** Returns a list of human-readable errors; empty means the content is publishable. */
-export function validateContent(root, { baseRegistry } = {}) {
+export function validateContent(root, { baseRegistry, baseSteps } = {}) {
   const validators = createValidators();
   const errors = [];
   const allIds = [];
@@ -238,7 +266,7 @@ export function validateContent(root, { baseRegistry } = {}) {
     errors.push(...trophyErrors(game, valid, dir));
 
     const cross = crossChapterErrors(valid);
-    errors.push(...cross.errors, ...backReferenceErrors(valid), ...compendiumErrors(valid));
+    errors.push(...cross.errors, ...backReferenceErrors(valid), ...compendiumErrors(valid), ...stepErrors(valid, baseSteps));
     allIds.push(game.id, ...cross.ids);
   }
 

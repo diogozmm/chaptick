@@ -18,6 +18,8 @@ Descriptions may contain spoilers, but open with a line saying which chapter the
    people's saved progress points at them.
 3. Id format: `<game>-ch<order>-<type>-<nn>`, with type `q` (quest), `hq` (hidden quest), `mi` (missable), `co` (collectible),
    and `cp` for checkpoints. Example: `sc-ch3-hq-02`.
+   Route `steps` are saved by position too: on a published item, only add new steps at the end and never
+   remove or move one (rewording a step in place is fine). `npm run content:validate` checks this against `origin/main`.
 4. Fill `sources` with where the fact came from (`wiki: <page>`, `guide: <name>`, `verified in game`).
 5. Run `npm run content:validate` before opening the PR.
 

@@ -177,3 +177,21 @@ test('rejects a compendium id removed from the registry', () => {
   expectError(errors, '"wte-craft-dough" was removed');
 });
 
+const baseSteps = new Map([['demo-ch0-q-01', ['Find the key', 'Open the door', 'Beat the ghost']]]);
+const withSteps = (steps) => (d) => void (d.items[0].steps = steps.map((en) => ({ text: { en } })));
+
+test('allows route steps to be reworded in place or added at the end', () => {
+  const same = validateWith(CH0, withSteps(['Find the key', 'Open the door', 'Beat the ghost']), { baseSteps });
+  assert.deepEqual(same, []);
+  assert.deepEqual(validateWith(CH0, withSteps(['Find the old key', 'Open the door', 'Beat the ghost', 'Leave']), { baseSteps }), []);
+});
+
+test('rejects a published route step that was removed', () => {
+  expectError(validateWith(CH0, withSteps(['Find the key', 'Open the door']), { baseSteps }), 'steps cannot be removed');
+});
+
+test('rejects published route steps that were reordered or had one inserted before them', () => {
+  expectError(validateWith(CH0, withSteps(['Open the door', 'Find the key', 'Beat the ghost']), { baseSteps }), 'step 1 ("Find the key") is now step 2');
+  expectError(validateWith(CH0, withSteps(['Find the key', 'Look around', 'Open the door', 'Beat the ghost']), { baseSteps }), 'step 2 ("Open the door") is now step 3');
+});
+
