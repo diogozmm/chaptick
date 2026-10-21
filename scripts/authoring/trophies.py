@@ -23,7 +23,7 @@ def _sc(item):
         tags.append('book-master')
     if 'treasure chests' in en:
         tags.append('treasure-hunter')
-    if en.startswith('Recipe'):
+    if en.startswith(('Recipe', 'Customized dishes')):
         tags.append('three-star-chef')
     return tags
 

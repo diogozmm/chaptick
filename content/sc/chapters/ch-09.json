@@ -1,0 +1,1845 @@
+{
+  "id": "sc-ch9",
+  "gameId": "sc",
+  "order": 9,
+  "neutralLabel": {
+    "en": "Final Chapter",
+    "pt": "Capítulo Final"
+  },
+  "checkpoints": [
+    {
+      "id": "sc-ch9-cp-01",
+      "order": 1,
+      "neutralDescription": {
+        "en": "Unlocking the last prison barrier aboard the Glorious (you cannot go back inside)",
+        "pt": "Destravar a última barreira da prisão a bordo do Glorious (não dá mais para voltar lá dentro)"
+      }
+    },
+    {
+      "id": "sc-ch9-cp-02",
+      "order": 2,
+      "neutralDescription": {
+        "en": "Stepping into the last elevator at the top of the Axis Pillar (the final point of no return)",
+        "pt": "Entrar no último elevador no topo do Axis Pillar (o último ponto sem volta)"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "sc-ch9-co-01",
+      "type": "collectible",
+      "name": {
+        "en": "Liberl News Issue 11"
+      },
+      "location": {
+        "en": "Arseille — cafeteria",
+        "pt": "Arseille — cafeteria"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Sold at the cafeteria counter. It is the last book you need for the Book Master trophy, so buy it before going up the pillar.",
+        "pt": "Vendido no balcão da cafeteria. É o último livro para o troféu Book Master, então compre antes de subir o pilar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1"
+      ],
+      "trophies": [
+        "book-master"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-02",
+      "type": "collectible",
+      "name": {
+        "en": "Recipes: the last three (3)",
+        "pt": "Receitas: as três últimas (3)"
+      },
+      "location": {
+        "en": "Arseille, Cradle and Factoria",
+        "pt": "Arseille, Cradle e Factoria"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "The final standard recipes, one per district. With them you reach 70 of 70.",
+        "pt": "As últimas receitas padrão, uma por distrito. Com elas você chega a 70 de 70."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bitter Omelet — buy at the Arseille cafeteria.",
+            "pt": "Bitter Omelet — compre na cafeteria da Arseille."
+          }
+        },
+        {
+          "text": {
+            "en": "Resurrection Jelly — Residential District, terminal in Residence 1: \"Check new recipes\".",
+            "pt": "Resurrection Jelly — Residential District, terminal na Residence 1: \"Check new recipes\"."
+          }
+        },
+        {
+          "text": {
+            "en": "Ancient Steak — treasure chest in the Industrial District, near the Glorious (chest #469).",
+            "pt": "Ancient Steak — baú no Industrial District, perto do Glorious (baú #469)."
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-03",
+      "type": "collectible",
+      "name": {
+        "en": "Customized dishes: Final Chapter (4)",
+        "pt": "Pratos customizados: Final Chapter (4)"
+      },
+      "location": {
+        "en": "Arseille — kitchen",
+        "pt": "Arseille — cozinha"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Have the right cook make each new recipe once. Finishing the whole notebook earns Three-Star Chef and Peculiar Chef.",
+        "pt": "Peça ao cozinheiro certo para fazer cada receita nova uma vez. Completar todo o caderno rende Three-Star Chef e Peculiar Chef."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Flamboyant Candy Lei — Olivier cooks Aurora Beans.",
+            "pt": "Flamboyant Candy Lei — Olivier cozinha Aurora Beans."
+          }
+        },
+        {
+          "text": {
+            "en": "Mom's Omelet & Chicken Rice — Estelle cooks Bitter Omelet.",
+            "pt": "Mom's Omelet & Chicken Rice — Estelle cozinha Bitter Omelet."
+          }
+        },
+        {
+          "text": {
+            "en": "Compote Jelly — Joshua cooks Resurrection Jelly.",
+            "pt": "Compote Jelly — Joshua cozinha Resurrection Jelly."
+          }
+        },
+        {
+          "text": {
+            "en": "Bustling Meatloaf — Kloe cooks Ancient Steak.",
+            "pt": "Bustling Meatloaf — Kloe cozinha Ancient Steak."
+          }
+        }
+      ],
+      "trophies": [
+        "three-star-chef"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-04",
+      "type": "collectible",
+      "name": {
+        "en": "Zemurian Ore weapons (3)",
+        "pt": "Armas de Zemurian Ore (3)"
+      },
+      "location": {
+        "en": "Arseille — Factory, B2F",
+        "pt": "Arseille — Factory, B2F"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Get the Data Crystal Z from the terminal in the Tavern, bring it to Professor Russell, then forge your three ores into the weapons you want. This earns the Ultimate Artificer trophy.",
+        "pt": "Pegue o Data Crystal Z no terminal da Tavern, leve-o ao professor Russell e forje seus três minérios nas armas que quiser. Isso rende o troféu Ultimate Artificer."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Residential District, Tavern terminal: Data Crystal Z.",
+            "pt": "Residential District, terminal da Tavern: Data Crystal Z."
+          }
+        },
+        {
+          "text": {
+            "en": "Residence 1 terminal, \"Verify Crystals\": Zemurian Ore.",
+            "pt": "Terminal da Residence 1, \"Verify Crystals\": Zemurian Ore."
+          }
+        },
+        {
+          "text": {
+            "en": "Give the Data Crystal Z to Professor Russell in the Factory (B2F).",
+            "pt": "Entregue o Data Crystal Z ao professor Russell na Factory (B2F)."
+          }
+        },
+        {
+          "text": {
+            "en": "Forge three weapons from Zemurian Ore.",
+            "pt": "Forje três armas com Zemurian Ore."
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "A first playthrough gives exactly three ores.",
+          "pt": "Um primeiro jogo dá exatamente três minérios."
+        },
+        "warnings": [
+          {
+            "en": "Josette, Julia and Mueller join later, so you may want to save ore for their weapons.",
+            "pt": "Josette, Julia e Mueller entram depois, então talvez valha guardar minério para as armas deles."
+          }
+        ],
+        "optional": [
+          {
+            "en": "On New Game+ Professor Russell trades extra ore for 10 U-Material+ each.",
+            "pt": "No New Game+ o professor Russell troca minério extra por 10 U-Material+ cada."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sc-ch9-co-05",
+      "type": "collectible",
+      "name": {
+        "en": "Gem quartz: all 14 (and True Gems)",
+        "pt": "Quartzos Gem: todos os 14 (e True Gems)"
+      },
+      "location": {
+        "en": "Online Shop terminal at each Halo Rail station",
+        "pt": "Terminal Online Shop em cada estação do Halo Rail"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Connect each station with Emergency Mode, then synthesize its Gems at the Online Shop. Three Gems plus U-Material+ make the True version.",
+        "pt": "Conecte cada estação com Emergency Mode e sintetize as Gems dela no Online Shop. Três Gems mais U-Material+ fazem a versão True."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "West Calmare Station (Park District): Amberl, Sapphirl, Carnelia and Esmelas Gems.",
+            "pt": "West Calmare Station (Park District): Amberl, Sapphirl, Carnelia e Esmelas Gems."
+          }
+        },
+        {
+          "text": {
+            "en": "Cradle Station No. 35: Nohval, Goldia and Argem Gems.",
+            "pt": "Cradle Station No. 35: Nohval, Goldia e Argem Gems."
+          }
+        },
+        {
+          "text": {
+            "en": "Factoria Station No. 7: Rakan, Benten, Mars and Leigong Gems.",
+            "pt": "Factoria Station No. 7: Rakan, Benten, Mars e Leigong Gems."
+          }
+        },
+        {
+          "text": {
+            "en": "Axis Pillar Station: Hades, Deus and Odin Gems.",
+            "pt": "Axis Pillar Station: Hades, Deus e Odin Gems."
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Each Gem takes 2,500 to 3,000 of one sepith type. One True Gem of each kind costs roughly 25,000 of each sepith, so start farming early.",
+          "pt": "Cada Gem custa de 2.500 a 3.000 de um tipo de sepith. Uma True Gem de cada tipo custa cerca de 25.000 de cada sepith, então comece o farm cedo."
+        }
+      }
+    },
+    {
+      "id": "sc-ch9-co-06",
+      "type": "collectible",
+      "name": {
+        "en": "Park District tunnel treasure chests (9)",
+        "pt": "Baús do túnel do Park District (9)"
+      },
+      "location": {
+        "en": "Liber Ark Underground Tunnel 1",
+        "pt": "Liber Ark Underground Tunnel 1"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Chests #436 to #444. The tunnel ends in a mandatory fight against Phenomenon+ and its helpers. Monster chests: Brave Staff (Phenomenon+ x3).",
+        "pt": "Baús #436 a #444. O túnel termina numa luta obrigatória contra Phenomenon+ e seus ajudantes. Baús de monstros: Brave Staff (Phenomenon+ x3)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "#436 — Argem Gem"
+          }
+        },
+        {
+          "text": {
+            "en": "#437 — Nohval Gem"
+          }
+        },
+        {
+          "text": {
+            "en": "#438 — Brave Staff (monster chest: fight Phenomenon+ x3)",
+            "pt": "#438 — Brave Staff (baú de monstros: luta contra Phenomenon+ x3)"
+          }
+        },
+        {
+          "text": {
+            "en": "#439 — Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "#440 — Elixir of Defense"
+          }
+        },
+        {
+          "text": {
+            "en": "#441 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#442 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#443 — Dominion"
+          }
+        },
+        {
+          "text": {
+            "en": "#444 — Elixir of Strength"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The tunnel ends in a mandatory fight against Phenomenon+ and its helpers.",
+          "pt": "O túnel termina numa luta obrigatória contra Phenomenon+ e seus ajudantes."
+        }
+      },
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Residential District treasure chests (13)",
+        "pt": "Baús do Residential District (13)"
+      },
+      "location": {
+        "en": "Residential District (Cradle)",
+        "pt": "Residential District (Cradle)"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Chests #445 to #457. Enter the buildings for more chests. Be at 457 before moving on.",
+        "pt": "Baús #445 a #457. Entre nos prédios para achar mais baús. Esteja em 457 antes de seguir adiante."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "#445 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#446 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#447 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#448 — Seal II"
+          }
+        },
+        {
+          "text": {
+            "en": "#449 — All Sepith x300 (Residence 1)",
+            "pt": "#449 — All Sepith x300 (Residence 1)"
+          }
+        },
+        {
+          "text": {
+            "en": "#450 — Elixir of Life (Residence 1)",
+            "pt": "#450 — Elixir of Life (Residence 1)"
+          }
+        },
+        {
+          "text": {
+            "en": "#451 — Briareus (Residence 2)",
+            "pt": "#451 — Briareus (Residence 2)"
+          }
+        },
+        {
+          "text": {
+            "en": "#452 — Goldia Gem (City Hall)",
+            "pt": "#452 — Goldia Gem (City Hall)"
+          }
+        },
+        {
+          "text": {
+            "en": "#453 — Athelas Balm EX (City Hall)",
+            "pt": "#453 — Athelas Balm EX (City Hall)"
+          }
+        },
+        {
+          "text": {
+            "en": "#454 — Elixir of Spirit (Tavern)",
+            "pt": "#454 — Elixir of Spirit (Tavern)"
+          }
+        },
+        {
+          "text": {
+            "en": "#455 — Zeram Powder (Tavern)",
+            "pt": "#455 — Zeram Powder (Tavern)"
+          }
+        },
+        {
+          "text": {
+            "en": "#456 — U-Material+ x2 (Tavern)",
+            "pt": "#456 — U-Material+ x2 (Tavern)"
+          }
+        },
+        {
+          "text": {
+            "en": "#457 — Elixir of Magic (Residence 4)",
+            "pt": "#457 — Elixir of Magic (Residence 4)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Enter the buildings for more chests. Be at 457 before moving on.",
+          "pt": "Entre nos prédios para achar mais baús. Esteja em 457 antes de seguir adiante."
+        }
+      },
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Industrial tunnel and Factoria treasure chests (13)",
+        "pt": "Baús do túnel industrial e de Factoria (13)"
+      },
+      "location": {
+        "en": "Liber Ark Underground Tunnel 2 and Industrial District",
+        "pt": "Liber Ark Underground Tunnel 2 e Industrial District"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Chests #458 to #470. Near the end of the tunnel is a mandatory fight against Ebony Scale+ and Brute Angler. The last two chests are by the Glorious, one with a recipe. Monster chests: Aura Fencer (Ebony Scale+, Ebony Scale x2).",
+        "pt": "Baús #458 a #470. Perto do fim do túnel há uma luta obrigatória contra Ebony Scale+ e Brute Angler. Os dois últimos baús ficam perto do Glorious, um deles com uma receita. Baús de monstros: Aura Fencer (Ebony Scale+, Ebony Scale x2)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "#458 — Aura Fencer (monster chest: fight Ebony Scale+, Ebony Scale x2)",
+            "pt": "#458 — Aura Fencer (baú de monstros: luta contra Ebony Scale+, Ebony Scale x2)"
+          }
+        },
+        {
+          "text": {
+            "en": "#459 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#460 — Hermes Wings"
+          }
+        },
+        {
+          "text": {
+            "en": "#461 — Zeram Capsule"
+          }
+        },
+        {
+          "text": {
+            "en": "#462 — Elixir of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "#463 — Leigong Gem"
+          }
+        },
+        {
+          "text": {
+            "en": "#464 — Persedia"
+          }
+        },
+        {
+          "text": {
+            "en": "#465 — Beastking Blade"
+          }
+        },
+        {
+          "text": {
+            "en": "#466 — Ω Craft"
+          }
+        },
+        {
+          "text": {
+            "en": "#467 — Mars Gem"
+          }
+        },
+        {
+          "text": {
+            "en": "#468 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#469 — Ancient Steak"
+          }
+        },
+        {
+          "text": {
+            "en": "#470 — Elixir of Strength"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Near the end of the tunnel is a mandatory fight against Ebony Scale+ and Brute Angler. The last two chests are by the Glorious, one with a recipe.",
+          "pt": "Perto do fim do túnel há uma luta obrigatória contra Ebony Scale+ e Brute Angler. Os dois últimos baús ficam perto do Glorious, um deles com uma receita."
+        }
+      },
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-09",
+      "type": "collectible",
+      "name": {
+        "en": "Glorious treasure chests (36)",
+        "pt": "Baús do Glorious (36)"
+      },
+      "location": {
+        "en": "The Glorious — Stern and Bow",
+        "pt": "The Glorious — Stern e Bow"
+      },
+      "availableUntil": "sc-ch9-cp-01",
+      "hint": {
+        "en": "Chests #471 to #506. This is the last visit to the ship. Stern 1st level, Stern 2nd level (two rooms of six, one with a monster chest), Bow 1st level (side room of three plus six upstairs), the prison and the Security Card chest. Monster chests: Grail Locket (Leor Gun-EZ+ x2).",
+        "pt": "Baús #471 a #506. Esta é a última visita ao navio. Stern 1º nível, Stern 2º nível (duas salas de seis, uma com baú de monstros), Bow 1º nível (sala lateral com três mais seis no andar de cima), a prisão e o baú do Security Card. Baús de monstros: Grail Locket (Leor Gun-EZ+ x2)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "#471 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#472 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#473 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#474 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#475 — S-Tablet x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#476 — Dark Messiah"
+          }
+        },
+        {
+          "text": {
+            "en": "#477 — Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "#478 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#479 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#480 — Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "#481 — Aurelia Dress"
+          }
+        },
+        {
+          "text": {
+            "en": "#482 — Curia Balm x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#483 — Jagd Girders"
+          }
+        },
+        {
+          "text": {
+            "en": "#484 — Rievelder"
+          }
+        },
+        {
+          "text": {
+            "en": "#485 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#486 — Grail Locket (monster chest: fight Leor Gun-EZ+ x2)",
+            "pt": "#486 — Grail Locket (baú de monstros: luta contra Leor Gun-EZ+ x2)"
+          }
+        },
+        {
+          "text": {
+            "en": "#487 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#488 — Curia Balm x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#489 — Seven-Star Sword"
+          }
+        },
+        {
+          "text": {
+            "en": "#490 — Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "#491 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#492 — Poison II"
+          }
+        },
+        {
+          "text": {
+            "en": "#493 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#494 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#495 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#496 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#497 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#498 — Jagdpanther"
+          }
+        },
+        {
+          "text": {
+            "en": "#499 — Curia Balm x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#500 — Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "#501 — Burn II"
+          }
+        },
+        {
+          "text": {
+            "en": "#502 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#503 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#504 — Rosencrantz"
+          }
+        },
+        {
+          "text": {
+            "en": "#505 — S-Tablet x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#506 — Security Card"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "This is the last visit to the ship. Stern 1st level, Stern 2nd level (two rooms of six, one with a monster chest), Bow 1st level (side room of three plus six upstairs), the prison and the Security Card chest.",
+          "pt": "Esta é a última visita ao navio. Stern 1º nível, Stern 2º nível (duas salas de seis, uma com baú de monstros), Bow 1º nível (sala lateral com três mais seis no andar de cima), a prisão e o baú do Security Card."
+        },
+        "warnings": [
+          {
+            "en": "Open No. 2 and No. 4 in the prison first for the last two chests; unlocking No. 1 closes the ship for good.",
+            "pt": "Abra primeiro as barreiras No. 2 e No. 4 na prisão para pegar os dois últimos baús; destravar a No. 1 fecha o navio para sempre."
+          },
+          {
+            "en": "You should be at 506 chests and 369 of 410 battle entries before unlocking No. 1.",
+            "pt": "Você deve estar com 506 baús e 369 de 410 entradas de batalha antes de destravar a No. 1."
+          }
+        ]
+      },
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Underground tunnel treasure chests (16)",
+        "pt": "Baús do túnel subterrâneo (16)"
+      },
+      "location": {
+        "en": "Liber Ark Underground Tunnel 3",
+        "pt": "Liber Ark Underground Tunnel 3"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Chests #507 to #522. Reached through Factoria Station No. 7 after entering the password at the terminal. Expect a mandatory fight against eight Cyrus Grey+ near the end. Monster chests: Prometheus (Cyrus Grey+ x4).",
+        "pt": "Baús #507 a #522. Alcançado pela Factoria Station No. 7 depois de digitar a senha no terminal. Espere uma luta obrigatória contra oito Cyrus Grey+ perto do fim. Baús de monstros: Prometheus (Cyrus Grey+ x4)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "#507 — Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "#508 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#509 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#510 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#511 — U-Material+ x2"
+          }
+        },
+        {
+          "text": {
+            "en": "#512 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#513 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#514 — Rakan Gem"
+          }
+        },
+        {
+          "text": {
+            "en": "#515 — Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "#516 — Benten Gem"
+          }
+        },
+        {
+          "text": {
+            "en": "#517 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#518 — Elixir of Spirit"
+          }
+        },
+        {
+          "text": {
+            "en": "#519 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#520 — Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "#521 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#522 — Prometheus (monster chest: fight Cyrus Grey+ x4)",
+            "pt": "#522 — Prometheus (baú de monstros: luta contra Cyrus Grey+ x4)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Reached through Factoria Station No. 7 after entering the password at the terminal. Expect a mandatory fight against eight Cyrus Grey+ near the end.",
+          "pt": "Alcançado pela Factoria Station No. 7 depois de digitar a senha no terminal. Espere uma luta obrigatória contra oito Cyrus Grey+ perto do fim."
+        }
+      },
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Axis Pillar treasure chests, floors 1 to 3 (19)",
+        "pt": "Baús do Axis Pillar, andares 1 a 3 (19)"
+      },
+      "location": {
+        "en": "Axis Pillar — 1F to 3F",
+        "pt": "Axis Pillar — 1º ao 3º andar"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Chests #523 to #541. 1F has seven chests with a monster chest at the fork on the right. 2F has eight in the wide room after the first boss. 3F has four before the second boss. Monster chests: Gaia Suit (Master Trapper, Dark Zone x2); Parthenon Gear (Master Trapper x2, D-G Diver).",
+        "pt": "Baús #523 a #541. O 1º andar tem sete baús, com um baú de monstros na bifurcação da direita. O 2º tem oito na sala larga depois do primeiro boss. O 3º tem quatro antes do segundo boss. Baús de monstros: Gaia Suit (Master Trapper, Dark Zone x2); Parthenon Gear (Master Trapper x2, D-G Diver)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "#523 — Elixir of Defense"
+          }
+        },
+        {
+          "text": {
+            "en": "#524 — S-Tablet x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#525 — Zeram Capsule"
+          }
+        },
+        {
+          "text": {
+            "en": "#526 — Blind II"
+          }
+        },
+        {
+          "text": {
+            "en": "#527 — U-Material+ x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#528 — Curia Balm x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#529 — Gaia Suit (monster chest: fight Master Trapper, Dark Zone x2)",
+            "pt": "#529 — Gaia Suit (baú de monstros: luta contra Master Trapper, Dark Zone x2)"
+          }
+        },
+        {
+          "text": {
+            "en": "#530 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#531 — Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "#532 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#533 — U-Material+ x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#534 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#535 — Parthenon Gear (monster chest: fight Master Trapper x2, D-G Diver)",
+            "pt": "#535 — Parthenon Gear (baú de monstros: luta contra Master Trapper x2, D-G Diver)"
+          }
+        },
+        {
+          "text": {
+            "en": "#536 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#537 — Elixir of Strength"
+          }
+        },
+        {
+          "text": {
+            "en": "#538 — Zeram Powder"
+          }
+        },
+        {
+          "text": {
+            "en": "#539 — Mute II"
+          }
+        },
+        {
+          "text": {
+            "en": "#540 — U-Material+ x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#541 — Curia Balm x3"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "1F has seven chests with a monster chest at the fork on the right. 2F has eight in the wide room after the first boss. 3F has four before the second boss.",
+          "pt": "O 1º andar tem sete baús, com um baú de monstros na bifurcação da direita. O 2º tem oito na sala larga depois do primeiro boss. O 3º tem quatro antes do segundo boss."
+        }
+      },
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Axis Pillar treasure chests, floors 4 to 6 (25)",
+        "pt": "Baús do Axis Pillar, andares 4 a 6 (25)"
+      },
+      "location": {
+        "en": "Axis Pillar — 4F to 6F",
+        "pt": "Axis Pillar — 4º ao 6º andar"
+      },
+      "availableUntil": "sc-ch9-cp-02",
+      "hint": {
+        "en": "Chests #542 to #566. 4F has fourteen chests, including monster chests and a six-chest room. 5F has four before the boss. 6F has seven, with a monster chest, and the last one holds Athelas Balm EX ×4. Monster chests: Spiegels (Master Trapper, Arti-Pearl x2); Barbarossa Plating (Master Trapper x2, Arti-Pearl, Fortune Coin, Knuckle Spider x2); Sieglinde Plating (Master Trapper x4).",
+        "pt": "Baús #542 a #566. O 4º andar tem catorze baús, incluindo baús de monstros e uma sala com seis. O 5º tem quatro antes do boss. O 6º tem sete, com um baú de monstros, e o último guarda Athelas Balm EX ×4. Baús de monstros: Spiegels (Master Trapper, Arti-Pearl x2); Barbarossa Plating (Master Trapper x2, Arti-Pearl, Fortune Coin, Knuckle Spider x2); Sieglinde Plating (Master Trapper x4)."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "#542 — Spiegels (monster chest: fight Master Trapper, Arti-Pearl x2)",
+            "pt": "#542 — Spiegels (baú de monstros: luta contra Master Trapper, Arti-Pearl x2)"
+          }
+        },
+        {
+          "text": {
+            "en": "#543 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#544 — Elixir of Magic"
+          }
+        },
+        {
+          "text": {
+            "en": "#545 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#546 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#547 — Elixir of Defense"
+          }
+        },
+        {
+          "text": {
+            "en": "#548 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#549 — Jormungandr"
+          }
+        },
+        {
+          "text": {
+            "en": "#550 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#551 — U-Material+ x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#552 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#553 — Zeram Capsule"
+          }
+        },
+        {
+          "text": {
+            "en": "#554 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#555 — Barbarossa Plating (monster chest: fight Master Trapper x2, Arti-Pearl, Fortune Coin, Knuckle Spider x2)",
+            "pt": "#555 — Barbarossa Plating (baú de monstros: luta contra Master Trapper x2, Arti-Pearl, Fortune Coin, Knuckle Spider x2)"
+          }
+        },
+        {
+          "text": {
+            "en": "#556 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#557 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#558 — Athelas Balm EX"
+          }
+        },
+        {
+          "text": {
+            "en": "#559 — Elixir of Life"
+          }
+        },
+        {
+          "text": {
+            "en": "#560 — Tear All Balm"
+          }
+        },
+        {
+          "text": {
+            "en": "#561 — All Sepith x300"
+          }
+        },
+        {
+          "text": {
+            "en": "#562 — Elixir of Spirit"
+          }
+        },
+        {
+          "text": {
+            "en": "#563 — U-Material+ x3"
+          }
+        },
+        {
+          "text": {
+            "en": "#564 — Sieglinde Plating (monster chest: fight Master Trapper x4)",
+            "pt": "#564 — Sieglinde Plating (baú de monstros: luta contra Master Trapper x4)"
+          }
+        },
+        {
+          "text": {
+            "en": "#565 — EP Charge IV"
+          }
+        },
+        {
+          "text": {
+            "en": "#566 — Athelas Balm EX x4"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "4F has fourteen chests, including monster chests and a six-chest room. 5F has four before the boss. 6F has seven, with a monster chest, and the last one holds Athelas Balm EX ×4.",
+          "pt": "O 4º andar tem catorze baús, incluindo baús de monstros e uma sala com seis. O 5º tem quatro antes do boss. O 6º tem sete, com um baú de monstros, e o último guarda Athelas Balm EX ×4."
+        },
+        "warnings": [
+          {
+            "en": "The 566th chest earns the Treasure Hunter trophy. Make a backup save before the final elevator.",
+            "pt": "O 566º baú rende o troféu Treasure Hunter. Faça um backup do save antes do elevador final."
+          }
+        ]
+      },
+      "trophies": [
+        "treasure-hunter"
+      ]
+    },
+    {
+      "id": "sc-ch9-mi-01",
+      "type": "missable",
+      "name": {
+        "en": "Battle entries before leaving the Glorious",
+        "pt": "Entradas de batalha antes de deixar o Glorious"
+      },
+      "location": {
+        "en": "The Glorious",
+        "pt": "The Glorious"
+      },
+      "availableUntil": "sc-ch9-cp-01",
+      "hint": {
+        "en": "The ship's enemies are new Combat Handbook entries this time. Defeat them before unlocking barrier No. 1; you should have 369 of 410.",
+        "pt": "Os inimigos do navio são entradas novas do Combat Handbook desta vez. Derrote-os antes de destravar a barreira No. 1; você deve ter 369 de 410."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ],
+      "guidance": {
+        "warnings": [
+          {
+            "en": "The ship closes for good once you unlock barrier No. 1.",
+            "pt": "O navio fecha para sempre quando você destrava a barreira No. 1."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sc-ch9-mi-02",
+      "type": "missable",
+      "name": {
+        "en": "Battle entry: Dawn Trapper",
+        "pt": "Entrada de batalha: Dawn Trapper"
+      },
+      "location": {
+        "en": "Liber Ark — Core Sector",
+        "pt": "Liber Ark — Core Sector"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Scan the Dawn Trapper in the Core Sector. If you miss it, the tunnels near the very end give a second and final chance. Without it you cannot finish the Combat Handbook (410 entries).",
+        "pt": "Faça o scan do Dawn Trapper no Core Sector. Se perder, os túneis perto do fim dão uma segunda e última chance. Sem ele você não completa o Combat Handbook (410 entradas)."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ]
+    },
+    {
+      "id": "sc-ch9-mi-03",
+      "type": "missable",
+      "name": {
+        "en": "Optional fight: the toughest boss",
+        "pt": "Luta opcional: o boss mais difícil"
+      },
+      "location": {
+        "en": "Top of the Axis Pillar",
+        "pt": "Topo do Axis Pillar"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The hardest fight in the game, and the only thing it gives is a trophy. You may retry after a Game Over, or choose \"Proceed as is\" to move on. Save before taking the final elevator.",
+        "pt": "A luta mais difícil do jogo, e a única coisa que ela dá é um troféu. Você pode tentar de novo depois de um Game Over ou escolher \"Proceed as is\" para seguir em frente. Salve antes de pegar o elevador final."
+      },
+      "spoilerLevel": 1,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ],
+      "guidance": {
+        "preparation": [
+          {
+            "en": "At least one source each of Earth Wall, Gaia Shield, Sylpharion and Zodiac.",
+            "pt": "Pelo menos uma fonte de cada: Earth Wall, Gaia Shield, Sylpharion e Zodiac."
+          },
+          {
+            "en": "Several sources of Clock Up EX, and True Gems on everyone (True Nohval Gem above all).",
+            "pt": "Várias fontes de Clock Up EX e True Gems em todos (a True Nohval Gem acima de tudo)."
+          },
+          {
+            "en": "Set Joshua's default S-Break to True Black Fang in the Camp Menu (Status, then his Black Fang craft).",
+            "pt": "Defina o S-Break padrão do Joshua como True Black Fang no Camp Menu (Status, depois o craft Black Fang dele)."
+          }
+        ],
+        "optional": [
+          {
+            "en": "On a lower difficulty the fight is easier; on Nightmare you can lose and continue.",
+            "pt": "Em dificuldades menores a luta é mais fácil; no Nightmare você pode perder e continuar."
+          }
+        ],
+        "overview": {
+          "en": "Expect several attempts; that is normal.",
+          "pt": "Espere várias tentativas; isso é normal."
+        }
+      }
+    }
+  ],
+  "itemTexts": [],
+  "bosses": [
+    {
+      "id": "sc-ch9-bs-01",
+      "name": {
+        "en": "Leor Gun-EZ and Vogel 235"
+      },
+      "location": {
+        "en": "Residential District — east side",
+        "pt": "Residential District — lado leste"
+      },
+      "strategy": {
+        "en": "Josette joins as an NPC and holds her own. The boss survives one lethal hit with Quick Repair and uses Laser Net, Micro Missile and Electric Anchor ailments, so keep a finishing S-Break.",
+        "pt": "A Josette entra como NPC e se vira sozinha. O boss sobrevive a um golpe letal com Quick Repair e usa efeitos como Laser Net, Micro Missile e Electric Anchor, então guarde um S-Break para finalizar."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-02",
+      "name": {
+        "en": "Pale Apaches and Spindolls"
+      },
+      "location": {
+        "en": "The Glorious — deck",
+        "pt": "The Glorious — convés"
+      },
+      "strategy": {
+        "en": "Each destroyed Apache leaves a Spindoll behind. They are still weak to Stat Down and Delay, so cripple them and move on.",
+        "pt": "Cada Apache destruído deixa um Spindoll. Continuam fracos a Stat Down e Delay, então enfraqueça-os e siga."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-03",
+      "name": {
+        "en": "Bone Legger+ waves and Armored Compe"
+      },
+      "location": {
+        "en": "Arseille — Julia and Mueller's party",
+        "pt": "Arseille — equipe da Julia e do Mueller"
+      },
+      "strategy": {
+        "en": "A good fight to learn Julia and Mueller. Use Attack Orders and wide attacks on the Bone Leggers (Seal/Mute, AT Delay), then Debuff Immunity against Armored Compe's Petrify and Deathblow.",
+        "pt": "Uma boa luta para aprender a jogar com Julia e Mueller. Use Attack Orders e ataques em área nos Bone Leggers (Seal/Mute, AT Delay) e depois Debuff Immunity contra o Petrify e o Deathblow do Armored Compe."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-04",
+      "name": {
+        "en": "Gilbert and Riot Arms"
+      },
+      "location": {
+        "en": "The Glorious — Bow, 1st level",
+        "pt": "The Glorious — Bow, 1º nível"
+      },
+      "strategy": {
+        "en": "The machine is the real threat: it is vulnerable to Delay and Stat Down (Orbal Down is great) and survives one lethal blow with Quick Repair. Gilbert rages at half HP and also endures one hit.",
+        "pt": "A máquina é a verdadeira ameaça: é vulnerável a Delay e Stat Down (Orbal Down é ótimo) e sobrevive a um golpe letal com Quick Repair. Gilbert entra em fúria na metade do HP e também resiste a um golpe."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-05",
+      "name": {
+        "en": "Nox Bringer"
+      },
+      "location": {
+        "en": "Liber Ark Underground Tunnel 3",
+        "pt": "Liber Ark Underground Tunnel 3"
+      },
+      "strategy": {
+        "en": "Same pattern as the Chapter 1 finale: Mirror Flaggers reflect your attacks and heal the others when they die. Use that fight's plan or nuke it all; it can revive once with Indomitable Will.",
+        "pt": "Mesmo padrão do final do Capítulo 1: os Mirror Flaggers refletem seus ataques e curam os outros ao morrer. Use o plano daquela luta ou elimine tudo de uma vez; ele pode reviver uma vez com Indomitable Will."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-06",
+      "name": {
+        "en": "Riot Claw and Solid Seekers"
+      },
+      "location": {
+        "en": "Outside the Axis Pillar",
+        "pt": "Fora do Axis Pillar"
+      },
+      "strategy": {
+        "en": "The claw hits hard and the Seekers have high DEF. Delay and Orbal Down work well, and the Seekers can be Confused.",
+        "pt": "A garra bate forte e os Seekers têm DEF alta. Delay e Orbal Down funcionam bem, e os Seekers podem ser confundidos."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-07",
+      "name": {
+        "en": "Bleublanc (rematch)",
+        "pt": "Bleublanc (revanche)"
+      },
+      "location": {
+        "en": "Axis Pillar — 2F",
+        "pt": "Axis Pillar — 2º andar"
+      },
+      "strategy": {
+        "en": "Like the first fight, but he hits much harder, so block with Perfect Guard or reflect. Below 60% HP he boosts out of turn and follows with Death Magic (likely lethal): buff first and dispel afterwards. Auto Thelas heals him and triggers the boost at a lethal blow.",
+        "pt": "Como na primeira luta, mas ele bate bem mais forte, então bloqueie com Perfect Guard ou reflexo. Abaixo de 60% do HP ele reforça fora do turno e segue com Death Magic (provavelmente letal): reforce os buffs antes e dissipe depois. O Auto Thelas o cura e ativa o reforço num golpe letal."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-08",
+      "name": {
+        "en": "Walter (rematch)",
+        "pt": "Walter (revanche)"
+      },
+      "location": {
+        "en": "Axis Pillar — 3F",
+        "pt": "Axis Pillar — 3º andar"
+      },
+      "strategy": {
+        "en": "Zin must be in the party. Same boost and auto-revive tricks as Bleublanc, with an Ultimate Blow after the boost. Earth Wall, Gaia Shield or Kevin's Grail Sphere are key; Zin can bait with Taunt.",
+        "pt": "O Zin precisa estar na equipe. Mesmos truques de reforço e autorrevivência do Bleublanc, com um Ultimate Blow depois do reforço. Earth Wall, Gaia Shield ou o Grail Sphere do Kevin são essenciais; o Zin pode atrair golpes com Taunt."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-09",
+      "name": {
+        "en": "Luciola (rematch)",
+        "pt": "Luciola (revanche)"
+      },
+      "location": {
+        "en": "Axis Pillar — 4F",
+        "pt": "Axis Pillar — 4º andar"
+      },
+      "strategy": {
+        "en": "Scherazard must be in the party. Her Shadow Replication leaves a copy that hits as hard as she does. Sylpharion's Arts Reflect blocks the Firestorm S-Craft she uses after boosting. She has no auto-revive.",
+        "pt": "A Scherazard precisa estar na equipe. O Shadow Replication deixa uma cópia que bate tão forte quanto ela. O Arts Reflect do Sylpharion bloqueia o S-Craft Firestorm que ela usa depois de reforçar. Ela não tem autorrevivência."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-10",
+      "name": {
+        "en": "Renne and Pater-Mater"
+      },
+      "location": {
+        "en": "Axis Pillar — 5F",
+        "pt": "Axis Pillar — 5º andar"
+      },
+      "strategy": {
+        "en": "Bring Deathblow protection and Debuff Immunity; Kevin helps. Renne rages at once and S-Breaks, then boosts again under 60% (Sylpharion can reflect it). Pater-Mater's Double Buster Cannon needs Immunity plus Invulnerability or Arts Reflect, and it can revive a fallen Renne.",
+        "pt": "Leve proteção contra Deathblow e Debuff Immunity; o Kevin ajuda. Renne entra em fúria de cara e usa S-Break, depois reforça de novo abaixo de 60% (o Sylpharion pode refletir). O Double Buster Cannon do Pater-Mater exige Immunity mais Invulnerability ou Arts Reflect, e ele pode reviver a Renne caída."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-11",
+      "name": {
+        "en": "The Bladelord",
+        "pt": "O Bladelord"
+      },
+      "location": {
+        "en": "Top of the Axis Pillar (optional)",
+        "pt": "Topo do Axis Pillar (opcional)"
+      },
+      "strategy": {
+        "en": "Three phases: before 60% HP, after the boost and Dead Emperor Sword, and after the revive with Demon Flames. Keep several layers of Immunity, Earth Wall and Arts Reflect, dispel his buffs after each S-Break, and kill the Riot Sabers early. Anti-Sept Zero drains all EP and only Earth Wall or Grail Sphere stops it.",
+        "pt": "Três fases: antes de 60% do HP, depois do reforço e do Dead Emperor Sword, e depois da revivência com Demon Flames. Mantenha várias camadas de Immunity, Earth Wall e Arts Reflect, dissipe os buffs dele depois de cada S-Break e mate os Riot Sabers cedo. O Anti-Sept Zero drena todo o EP e só o Earth Wall ou o Grail Sphere o impede."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-12",
+      "name": {
+        "en": "Reverie Dragion"
+      },
+      "location": {
+        "en": "Top of the Axis Pillar",
+        "pt": "Topo do Axis Pillar"
+      },
+      "strategy": {
+        "en": "Much easier than the optional fight, even with a missing party member. Use your normal buffs and dispel its stat boost when it enters Carnage Boost below half HP.",
+        "pt": "Bem mais fácil que a luta opcional, mesmo com um membro a menos. Use seus buffs normais e dissipe o aumento de atributos quando ele entrar em Carnage Boost abaixo da metade do HP."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-13",
+      "name": {
+        "en": "Weissmann"
+      },
+      "location": {
+        "en": "Top of the Axis Pillar",
+        "pt": "Topo do Axis Pillar"
+      },
+      "strategy": {
+        "en": "Debuff Immunity is essential and Sylpharion helps. He is slow, so set up first and clear the four Combat Shells. Dimensional Exile removes someone for six turns. Below 60% HP, and again when he auto-revives, he boosts and uses Chaos Dimension, which can one-shot on Nightmare: have Perfect Guard and Arts Reflect up.",
+        "pt": "Debuff Immunity é essencial e o Sylpharion ajuda. Ele é lento, então prepare-se primeiro e elimine os quatro Combat Shells. O Dimensional Exile tira alguém da luta por seis turnos. Abaixo de 60% do HP, e de novo quando ele autorrevive, ele reforça e usa Chaos Dimension, que pode matar de um golpe no Nightmare: mantenha Perfect Guard e Arts Reflect."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-14",
+      "name": {
+        "en": "Angel Weissmann (first phase)",
+        "pt": "Angel Weissmann (primeira fase)"
+      },
+      "location": {
+        "en": "Top of the Axis Pillar",
+        "pt": "Topo do Axis Pillar"
+      },
+      "strategy": {
+        "en": "He cannot be hurt at first; wait for the scene. Then kill the Greed Loopers first, and prepare Arts Reflect or Perfect Guard for the Angel Boost S-Break. He has no auto-revive.",
+        "pt": "No começo ele é invulnerável; espere a cena. Depois elimine primeiro os Greed Loopers e prepare Arts Reflect ou Perfect Guard para o S-Break do Angel Boost. Ele não tem autorrevivência."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ]
+    },
+    {
+      "id": "sc-ch9-bs-15",
+      "name": {
+        "en": "Angel Weissmann (final phase)",
+        "pt": "Angel Weissmann (fase final)"
+      },
+      "location": {
+        "en": "Top of the Axis Pillar",
+        "pt": "Topo do Axis Pillar"
+      },
+      "strategy": {
+        "en": "Kill the four Alpha Omegas first. His left core gives him Arts Reflect and the right core Physical Reflect, so destroy them to open him up. Step away from glowing tiles before Ruined World Naoba, watch his element changes (Time, Space and Mirage hurt when he absorbs the four elements) and block the S-Break after Reborn Angel Boost.",
+        "pt": "Mate primeiro os quatro Alpha Omegas. O núcleo esquerdo dá a ele Arts Reflect e o direito Physical Reflect, então destrua-os para abri-lo. Saia dos hexágonos brilhantes antes do Ruined World Naoba, observe as trocas de elemento (Time, Space e Mirage machucam quando ele absorve os quatro elementos) e bloqueie o S-Break depois do Reborn Angel Boost."
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ]
+    }
+  ],
+  "fishSpots": [
+    {
+      "fishId": "sc-ch1-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Park District (Calmare)",
+        "pt": "Park District (Calmare)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Park District (Calmare)",
+        "pt": "Park District (Calmare)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Park District (Calmare)",
+        "pt": "Park District (Calmare)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Park District (Calmare)",
+        "pt": "Park District (Calmare)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Park District (Calmare)",
+        "pt": "Park District (Calmare)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-10",
+      "rank": "A",
+      "where": {
+        "en": "Park District (Calmare)",
+        "pt": "Park District (Calmare)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Residential District (Cradle)",
+        "pt": "Residential District (Cradle)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Residential District (Cradle)",
+        "pt": "Residential District (Cradle)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Residential District (Cradle)",
+        "pt": "Residential District (Cradle)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Residential District (Cradle)",
+        "pt": "Residential District (Cradle)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-06",
+      "rank": "A",
+      "where": {
+        "en": "Residential District (Cradle)",
+        "pt": "Residential District (Cradle)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-11",
+      "rank": "A",
+      "where": {
+        "en": "Residential District (Cradle)",
+        "pt": "Residential District (Cradle)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Industrial District (Factoria)",
+        "pt": "Industrial District (Factoria)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-05",
+      "rank": "A",
+      "where": {
+        "en": "Industrial District (Factoria)",
+        "pt": "Industrial District (Factoria)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Industrial District (Factoria)",
+        "pt": "Industrial District (Factoria)"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Industrial District (Factoria)",
+        "pt": "Industrial District (Factoria)"
+      }
+    },
+    {
+      "fishId": "sc-ch3-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Industrial District (Factoria)",
+        "pt": "Industrial District (Factoria)"
+      }
+    },
+    {
+      "fishId": "sc-ch4-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Industrial District (Factoria)",
+        "pt": "Industrial District (Factoria)"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-04",
+      "rank": "A",
+      "where": {
+        "en": "Axis Pillar — outside",
+        "pt": "Axis Pillar — do lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch2-fi-07",
+      "rank": "A",
+      "where": {
+        "en": "Axis Pillar — outside",
+        "pt": "Axis Pillar — do lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-08",
+      "rank": "A",
+      "where": {
+        "en": "Axis Pillar — outside",
+        "pt": "Axis Pillar — do lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch1-fi-09",
+      "rank": "A",
+      "where": {
+        "en": "Axis Pillar — outside",
+        "pt": "Axis Pillar — do lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-01",
+      "rank": "A",
+      "where": {
+        "en": "Axis Pillar — outside",
+        "pt": "Axis Pillar — do lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-02",
+      "rank": "A",
+      "where": {
+        "en": "Axis Pillar — outside",
+        "pt": "Axis Pillar — do lado de fora"
+      }
+    },
+    {
+      "fishId": "sc-ch8-fi-03",
+      "rank": "A",
+      "where": {
+        "en": "Axis Pillar — outside",
+        "pt": "Axis Pillar — do lado de fora"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "sc-ch9-re-01",
+      "kind": "standard",
+      "name": {
+        "en": "Bitter Omelet"
+      },
+      "source": {
+        "en": "Arseille cafeteria",
+        "pt": "Cafeteria da Arseille"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch9-re-02",
+      "kind": "standard",
+      "name": {
+        "en": "Resurrection Jelly"
+      },
+      "source": {
+        "en": "Terminal in Residence 1, Residential District",
+        "pt": "Terminal na Residence 1, Residential District"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1"
+      ]
+    },
+    {
+      "id": "sc-ch9-re-03",
+      "kind": "standard",
+      "name": {
+        "en": "Ancient Steak"
+      },
+      "source": {
+        "en": "Treasure chest in the Industrial District",
+        "pt": "Baú no Industrial District"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch9-re-04",
+      "kind": "customized",
+      "name": {
+        "en": "Flamboyant Candy Lei"
+      },
+      "source": {
+        "en": "Have Olivier cook Aurora Beans",
+        "pt": "O Olivier cozinha Aurora Beans"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch9-re-05",
+      "kind": "customized",
+      "name": {
+        "en": "Mom's Omelet & Chicken Rice"
+      },
+      "source": {
+        "en": "Have Estelle cook Bitter Omelet",
+        "pt": "A Estelle cozinha Bitter Omelet"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch9-re-06",
+      "kind": "customized",
+      "name": {
+        "en": "Compote Jelly"
+      },
+      "source": {
+        "en": "Have Joshua cook Resurrection Jelly",
+        "pt": "O Joshua cozinha Resurrection Jelly"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ]
+    },
+    {
+      "id": "sc-ch9-re-07",
+      "kind": "customized",
+      "name": {
+        "en": "Bustling Meatloaf"
+      },
+      "source": {
+        "en": "Have Kloe cook Ancient Steak",
+        "pt": "A Kloe cozinha Ancient Steak"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2"
+      ]
+    }
+  ]
+}
