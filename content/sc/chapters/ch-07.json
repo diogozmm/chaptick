@@ -120,16 +120,35 @@
       },
       "availableUntil": "sc-ch7-cp-04",
       "hint": {
-        "en": "Talk to Antoine after the second tower.",
-        "pt": "Fale com o Antoine depois da segunda torre."
+        "en": "Kloe must be in the party. Talk to Antoine after the second tower. If you miss it, Dalmore Company in Grancel in Chapter 8 sells it for 20,000 mira.",
+        "pt": "A Kloe precisa estar na equipe. Fale com o Antoine depois da segunda torre. Se perder, a Dalmore Company, em Grancel, no Capítulo 8 vende por 20.000 mira."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers",
+        "guide: Neoseeker SC walkthrough, Book List"
       ],
       "trophies": [
         "book-master"
-      ]
+      ],
+      "guidance": {
+        "overview": {
+          "en": "Talk to Antoine after the second tower.",
+          "pt": "Fale com o Antoine depois da segunda torre."
+        },
+        "requirements": [
+          {
+            "en": "Kloe must be in the party.",
+            "pt": "A Kloe precisa estar na equipe."
+          }
+        ],
+        "optional": [
+          {
+            "en": "If you miss it, Dalmore Company in Grancel in Chapter 8 sells it for 20,000 mira.",
+            "pt": "Se perder, a Dalmore Company, em Grancel, no Capítulo 8 vende por 20.000 mira."
+          }
+        ]
+      }
     },
     {
       "id": "sc-ch7-co-04",

@@ -550,12 +550,13 @@
       },
       "availableUntil": "sc-ch4-cp-03",
       "hint": {
-        "en": "Talk to Serra.",
-        "pt": "Fale com a Serra."
+        "en": "Talk to Serra. If you miss it, Rinon's General Goods in Chapter 5 sells it for 6,000 mira.",
+        "pt": "Fale com a Serra. Se perder, a Rinon's General Goods no Capítulo 5 vende por 6.000 mira."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent"
+        "guide: Neoseeker SC walkthrough, Chapter 4 - Rolent",
+        "guide: Neoseeker SC walkthrough, Book List"
       ],
       "trophies": [
         "book-master"

@@ -413,12 +413,13 @@
       },
       "availableUntil": "sc-ch0-cp-04",
       "hint": {
-        "en": "After returning to the lodge, check the bedrooms upstairs; it is on a bed. The window to grab it is very short.",
-        "pt": "Ao voltar para a hospedaria, olhe os quartos do andar de cima; está em cima de uma cama. A janela para pegar é bem curta."
+        "en": "After returning to the lodge, check the bedrooms upstairs; it is on a bed. The window to grab it is very short. If you miss it, O'Neil Duty-Free Shop in Chapter 1 sells it for 1,000 mira.",
+        "pt": "Ao voltar para a hospedaria, olhe os quartos do andar de cima; está em cima de uma cama. A janela para pegar é bem curta. Se perder, a O'Neil Duty-Free Shop no Capítulo 1 vende por 1.000 mira."
       },
       "spoilerLevel": 1,
       "sources": [
-        "guide: Neoseeker SC walkthrough, Prologue Part 2"
+        "guide: Neoseeker SC walkthrough, Prologue Part 2",
+        "guide: Neoseeker SC walkthrough, Book List"
       ],
       "trophies": [
         "book-master"
@@ -433,7 +434,13 @@
         "overview": {
           "en": "After returning to the lodge, check the bedrooms upstairs; it is on a bed.",
           "pt": "Ao voltar para a hospedaria, olhe os quartos do andar de cima; está em cima de uma cama."
-        }
+        },
+        "optional": [
+          {
+            "en": "If you miss it, O'Neil Duty-Free Shop in Chapter 1 sells it for 1,000 mira.",
+            "pt": "Se perder, a O'Neil Duty-Free Shop no Capítulo 1 vende por 1.000 mira."
+          }
+        ]
       }
     },
     {

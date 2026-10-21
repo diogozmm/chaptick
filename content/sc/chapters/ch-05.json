@@ -492,12 +492,13 @@
       },
       "availableUntil": "sc-ch5-cp-02",
       "hint": {
-        "en": "Talk to Private Mikey.",
-        "pt": "Fale com o Private Mikey."
+        "en": "Talk to Private Mikey. If you miss it, Grocery Minuet in Chapter 6 sells it for 7,000 mira.",
+        "pt": "Fale com o Private Mikey. Se perder, a Grocery Minuet no Capítulo 6 vende por 7.000 mira."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1",
+        "guide: Neoseeker SC walkthrough, Book List"
       ],
       "trophies": [
         "book-master"
