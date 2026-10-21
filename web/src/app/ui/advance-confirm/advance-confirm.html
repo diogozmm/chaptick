@@ -1,5 +1,8 @@
 <div class="confirm">
   <p>{{ game.k('where.confirmAdvance') | transloco: { chapter: target().neutralLabel | localize: lang.lang() } }}</p>
+  @if (checkFailed()) {
+    <p class="muted small" role="status"><app-icon name="triangle-alert" /> {{ 'where.checkFailed' | transloco }}</p>
+  }
   @if (leftBehind().length > 0) {
     <details class="left-behind">
       <summary><app-icon name="hourglass" /> {{ 'where.leftBehind' | transloco: { count: leftBehind().length } }}</summary>
@@ -12,7 +15,7 @@
     </details>
   }
   <div class="actions">
-    <button type="button" class="button primary" (click)="confirm()">{{ 'where.confirmYes' | transloco }}</button>
+    <button type="button" class="button primary" [disabled]="!checked() && !checkFailed()" [attr.aria-busy]="!checked() && !checkFailed()" (click)="confirm()">{{ 'where.confirmYes' | transloco }}</button>
     <button type="button" class="button" (click)="cancelled.emit()">{{ 'common.cancel' | transloco }}</button>
   </div>
 </div>

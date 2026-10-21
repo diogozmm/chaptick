@@ -60,3 +60,19 @@ test('a checklist moves on to the next chapter without going through "Where am I
   await page.getByRole('navigation', { name: 'Next chapter' }).getByRole('link', { name: /Chapter 1/ }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Chapter 1' })).toBeVisible();
 });
+
+test('jumping over a chapter also counts what that chapter leaves behind', async ({ page }) => {
+  const fetched = trackContent(page);
+  await pickChapter(page, 'sc', 'Prologue');
+  await page.goto('/sc/chapters');
+  await page.getByRole('listitem').filter({ hasText: 'Chapter 2 — locked' }).getByRole('button', { name: "I'm here" }).click();
+
+  // The three Prologue items plus the one from Chapter 1 whose deadline passes on the way.
+  const warning = page.locator('details').filter({ hasText: 'You will leave 4 item(s) behind' });
+  await expect(warning).toBeVisible();
+  await warning.locator('summary').click();
+  await expect(warning.getByText('FUTURE QUEST 1')).toBeVisible();
+  // The chapter being jumped to, and anything after it, is not read before confirming.
+  expect(fetched.some((url) => url.endsWith('ch-2.json'))).toBe(false);
+  await expect(page.locator('main')).not.toContainText('FUTURE QUEST 2');
+});

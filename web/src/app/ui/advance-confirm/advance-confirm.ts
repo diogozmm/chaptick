@@ -35,10 +35,15 @@ export class AdvanceConfirm {
   readonly target = input.required<ChapterSummary>();
   readonly cancelled = output<void>();
 
+  // A jump over several chapters also has to look at the ones it skips: their deadlines end too.
+  // The target itself and anything after it stay unloaded, so nothing ahead is fetched or shown.
   private readonly chapters = resource({
-    params: () => this.access.currentOrder(),
-    loader: () => this.access.loadUnlocked(),
+    params: () => ({ from: this.access.currentOrder(), to: this.target().order }),
+    loader: ({ params }) => this.access.loadThrough(Math.max(params.from, params.to - 1)),
   });
+  /** Confirming waits for the check, unless it could not be made (e.g. offline). */
+  protected readonly checked = computed(() => this.chapters.hasValue());
+  protected readonly checkFailed = computed(() => this.chapters.status() === 'error');
 
   /** Recomputed as the player ticks items off right here, before confirming. */
   protected readonly leftBehind = computed(() => {

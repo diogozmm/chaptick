@@ -71,6 +71,7 @@
     "imHere": "Estou aqui",
     "locked": "{{chapter}} — bloqueado",
     "confirmAdvance": "Ir para {{chapter}}? Os itens dele vão aparecer.",
+    "checkFailed": "Não foi possível verificar o que você deixaria para trás. Você ainda pode continuar.",
     "confirmYes": "Sim, estou aqui",
     "leftBehind": "Você vai deixar {{count}} item(ns) para trás",
     "leftBehindHint": "O prazo deles acaba antes desse capítulo. Marque os que você já fez.",

@@ -27,6 +27,14 @@ export class ChapterAccess {
     return Promise.all(this.unlocked().map((summary) => this.loadChapter(summary)));
   }
 
+  /**
+   * Every chapter up to `order`, current or not. Only for a move forward the player is about to
+   * confirm: the chapters they skip over decide what they would leave behind.
+   */
+  loadThrough(order: number): Promise<Chapter[]> {
+    return Promise.all(this.chapters().filter((c) => c.order <= order).map((summary) => this.loadChapter(summary)));
+  }
+
   loadChapter(summary: ChapterSummary): Promise<Chapter> {
     return this.content.loadChapter(this.active.id() ?? '', summary);
   }

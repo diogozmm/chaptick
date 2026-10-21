@@ -71,6 +71,7 @@
     "imHere": "I'm here",
     "locked": "{{chapter}} — locked",
     "confirmAdvance": "Move to {{chapter}}? Its items will be shown.",
+    "checkFailed": "Could not check what you would leave behind. You can still continue.",
     "confirmYes": "Yes, I'm here",
     "leftBehind": "You will leave {{count}} item(s) behind",
     "leftBehindHint": "Their deadline ends before that chapter. Tick off any you already did.",
