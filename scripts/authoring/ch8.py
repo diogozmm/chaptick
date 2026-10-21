@@ -1,7 +1,9 @@
 # Chapter 8 — rewritten in our own words from the Neoseeker walkthrough (facts only).
 # All of Liberl is open: quests are grouped by region and share one point of no return.
 # Once published, never reorder or remove items: ids are derived from order.
-from lib import Chapter, src, t
+import json
+
+from lib import ROOT, Chapter, src, t
 
 INTRO = src('Chapter 8 - Introduction')
 BOSE = src('Chapter 8 - Bose')
@@ -327,11 +329,48 @@ GRANAKOR = c.fish('Granakor', sources=[ROLENT])
 GIGANGORA = c.fish('Gigangora', sources=[RUAN])
 MARLIN = c.fish('Blue Marlin', sources=[RUAN])
 DYNATRAD = c.fish('Dynatrad', sources=[BOSE])
-c.spot(GRANAKOR, 'A', t('Rolent Sewers; Sapphirl Tower — 5F; Kaldia Tunnel bridge; Kaldia Limestone Cave; Grancel Sewers',
-                        'Rolent Sewers; Sapphirl Tower — 5º andar; ponte do Kaldia Tunnel; Kaldia Limestone Cave; Grancel Sewers'))
-c.spot(GIGANGORA, 'A', t('Manoria Byroad; Manoria Village; Gull Seaside Way — south end of the beach',
-                         'Manoria Byroad; Manoria Village; Gull Seaside Way — ponta sul da praia'))
-c.spot(MARLIN, 'A', t('Gull Seaside Way — north beach and south end', 'Gull Seaside Way — praia norte e ponta sul'))
+SPOTS = [
+    ('West Bose Hwy — River', ['Trout']),
+    ('Valleria Shore', ['Rockeater', 'Garvelze']),
+    ('Erbe Scenic Route — Romal Pond', ['Crab', 'Carp', 'Eel']),
+    ("Grancel Port — Ship's Stern", ['Salmon', 'Snakehead']),
+    ('Grancel — North Block', ['Trout']),
+    ('Grancel Sewers — W. Block (Entrance)', ['Kasagin']),
+    ('Grancel Sewers — E. Block (Entrance)', ['Kasagin', 'Yamany']),
+    ('Grancel Sewers — E. Block (Near N. Block)', ['Yamany', 'Tiger Rockfish']),
+    ('Verte Bridge', ['Yamany', 'Tiger Rockfish', 'Rockeater']),
+    ('Milch Main Road — Northeastern Pond', ['Liberl Carp']),
+    ('Rolent Sewers', ['Crab', 'Kasagin', 'Liberl Carp', 'Granakor']),
+    ('Bright Family House — Pond', ['Kasagin', 'Rockeater']),
+    ('Elize Highway — River', ['Snakehead']),
+    ('Mistwald — Giant Tree', ['Yamany', 'Tiger Rockfish', 'Liberl Carp', 'Rainbow Trout', 'Pearlglass']),
+    ('Manoria Byroad', ['Kasago']),
+    ('Manoria Village', ['Gold Angelfish']),
+    ('Gull Seaside Way — North Beach', ['Sea Bass', 'Claudine', 'Blue Marlin']),
+    ('Gull Seaside Way — South End of Beach', ['Great Blackfish']),
+    ('Ruan — North Block', ['Kasago', 'Claudine']),
+    ('Ruan — South Block', ['Gold Angelfish']),
+    ('Air-Letten — Side of Entrance', ['Crab', 'Sea Bass']),
+    ('Sapphirl Tower — 5F', ['Gold Angelfish', 'Octopus', 'Granakor']),
+    ('Kaldia Tunnel — Bridge at Midpoint', ['Yamany']),
+    ('Kaldia Limestone Cave — Entrance', ['Valleria Bass']),
+    ('Kaldia Limestone Cave — Depths', ['Carp']),
+    ('Tratt Plains Rd — Pond near Elmo Village', ['Kasagin']),
+    ('Tratt Plains Rd — Southwest Corner by the Cliff', ['Gold Angelfish', 'Claudine', 'Mahi-Mahi']),
+    ('Tratt Plains Rd — Northeast Pond (Towards Carnelia Tower)', ['Crab', 'Carp']),
+    ('Tratt Plains Rd — East Pond (Towards Wolf Fort)', ['Crab']),
+    ('Leiston Fortress — Outside', ['Kasagin']),
+]
+
+# Every rank A spot of this chapter (Liberl's spots now give the larger fish), old and new fish alike.
+ids = {}
+for i in range(8):
+    for fish in json.loads((ROOT / 'sc' / 'chapters' / f'ch-{i:02d}.json').read_text()).get('fish', []):
+        ids[fish['name']['en']] = fish['id']
+ids.update({'Granakor': GRANAKOR, 'Gigangora': GIGANGORA, 'Blue Marlin': MARLIN})
+for where, names in SPOTS:
+    for name in names:
+        c.spot(ids[name], 'A', t(where))
 c.spot(DYNATRAD, 'A', t('Valleria Shore — use the Metal Trident Rod or Lakelord II. Rewards a Zeram Powder and the Master Fisher Card.',
                         'Valleria Shore — use a Metal Trident Rod ou a Lakelord II. Dá um Zeram Powder e o Master Fisher Card.'), 'Salmon')
 
