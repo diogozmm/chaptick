@@ -312,19 +312,19 @@ c.item('collectible', t("Estelle's Support Ability: level 9", 'Support Ability d
 add_handbook(c)
 
 # ------------------------------------------------------------------ Bosses
-c.boss(t('Leor Gun-EZ and Vogel 235'), t('Residential District — east side', 'Residential District — lado leste'),
+c.boss(t('Leor Gun-EZ and Vogel 235', 'Leor Gun-EZ e Vogel 235'), t('Residential District — east side', 'Residential District — lado leste'),
        t('Josette joins as an NPC and holds her own. The boss survives one lethal hit with Quick Repair and uses Laser Net, Micro Missile and Electric Anchor ailments, so keep a finishing S-Break.',
          'A Josette entra como NPC e se vira sozinha. O boss sobrevive a um golpe letal com Quick Repair e usa efeitos como Laser Net, Micro Missile e Electric Anchor, então guarde um S-Break para finalizar.'),
        sources=[PART1])
-c.boss(t('Pale Apaches and Spindolls'), t('The Glorious — deck', 'The Glorious — convés'),
+c.boss(t('Pale Apaches and Spindolls', 'Pale Apaches e Spindolls'), t('The Glorious — deck', 'The Glorious — convés'),
        t('Each destroyed Apache leaves a Spindoll behind. They are still weak to Stat Down and Delay, so cripple them and move on.',
          'Cada Apache destruído deixa um Spindoll. Continuam fracos a Stat Down e Delay, então enfraqueça-os e siga.'),
        sources=[PART3])
-c.boss(t('Bone Legger+ waves and Armored Compe'), t('Arseille — Julia and Mueller\'s party', 'Arseille — equipe da Julia e do Mueller'),
+c.boss(t('Bone Legger+ waves and Armored Compe', 'Ondas de Bone Legger+ e Armored Compe'), t('Arseille — Julia and Mueller\'s party', 'Arseille — equipe da Julia e do Mueller'),
        t('A good fight to learn Julia and Mueller. Use Attack Orders and wide attacks on the Bone Leggers (Seal/Mute, AT Delay), then Debuff Immunity against Armored Compe\'s Petrify and Deathblow.',
          'Uma boa luta para aprender a jogar com Julia e Mueller. Use Attack Orders e ataques em área nos Bone Leggers (Seal/Mute, AT Delay) e depois Debuff Immunity contra o Petrify e o Deathblow do Armored Compe.'),
        sources=[PART3])
-c.boss(t('Gilbert and Riot Arms'), t('The Glorious — Bow, 1st level', 'The Glorious — Bow, 1º nível'),
+c.boss(t('Gilbert and Riot Arms', 'Gilbert e Riot Arms'), t('The Glorious — Bow, 1st level', 'The Glorious — Bow, 1º nível'),
        t('The machine is the real threat: it is vulnerable to Delay and Stat Down (Orbal Down is great) and survives one lethal blow with Quick Repair. Gilbert rages at half HP and also endures one hit.',
          'A máquina é a verdadeira ameaça: é vulnerável a Delay e Stat Down (Orbal Down é ótimo) e sobrevive a um golpe letal com Quick Repair. Gilbert entra em fúria na metade do HP e também resiste a um golpe.'),
        sources=[PART3])
@@ -332,7 +332,7 @@ c.boss(t('Nox Bringer'), t('Liber Ark Underground Tunnel 3', 'Liber Ark Undergro
        t('Same pattern as the Chapter 1 finale: Mirror Flaggers reflect your attacks and heal the others when they die. Use that fight\'s plan or nuke it all; it can revive once with Indomitable Will.',
          'Mesmo padrão do final do Capítulo 1: os Mirror Flaggers refletem seus ataques e curam os outros ao morrer. Use o plano daquela luta ou elimine tudo de uma vez; ele pode reviver uma vez com Indomitable Will.'),
        sources=[PART3])
-c.boss(t('Riot Claw and Solid Seekers'), t('Outside the Axis Pillar', 'Fora do Axis Pillar'),
+c.boss(t('Riot Claw and Solid Seekers', 'Riot Claw e Solid Seekers'), t('Outside the Axis Pillar', 'Fora do Axis Pillar'),
        t('The claw hits hard and the Seekers have high DEF. Delay and Orbal Down work well, and the Seekers can be Confused.',
          'A garra bate forte e os Seekers têm DEF alta. Delay e Orbal Down funcionam bem, e os Seekers podem ser confundidos.'),
        sources=[PART3])
@@ -348,7 +348,7 @@ c.boss(t('Luciola (rematch)', 'Luciola (revanche)'), t('Axis Pillar — 4F', 'Ax
        t('Scherazard must be in the party. Her Shadow Replication leaves a copy that hits as hard as she does. Sylpharion\'s Arts Reflect blocks the Firestorm S-Craft she uses after boosting. She has no auto-revive.',
          'A Scherazard precisa estar na equipe. O Shadow Replication deixa uma cópia que bate tão forte quanto ela. O Arts Reflect do Sylpharion bloqueia o S-Craft Firestorm que ela usa depois de reforçar. Ela não tem autorrevivência.'),
        sources=[DUNGEON])
-c.boss(t('Renne and Pater-Mater'), t('Axis Pillar — 5F', 'Axis Pillar — 5º andar'),
+c.boss(t('Renne and Pater-Mater', 'Renne e Pater-Mater'), t('Axis Pillar — 5F', 'Axis Pillar — 5º andar'),
        t('Bring Deathblow protection and Debuff Immunity; Kevin helps. Renne rages at once and S-Breaks, then boosts again under 60% (Sylpharion can reflect it). Pater-Mater\'s Double Buster Cannon needs Immunity plus Invulnerability or Arts Reflect, and it can revive a fallen Renne.',
          'Leve proteção contra Deathblow e Debuff Immunity; o Kevin ajuda. Renne entra em fúria de cara e usa S-Break, depois reforça de novo abaixo de 60% (o Sylpharion pode refletir). O Double Buster Cannon do Pater-Mater exige Immunity mais Invulnerability ou Arts Reflect, e ele pode reviver a Renne caída.'),
        sources=[DUNGEON])

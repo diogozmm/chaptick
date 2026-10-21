@@ -81,8 +81,8 @@ MILCH = quest(
 ELIZE = quest(
     t('Elize Hwy Monster'), t('Elize Highway — Mistwald entrance', 'Elize Highway — entrada de Mistwald'), PNR,
     ('+5 BP. Guaranteed drop: Petrify II.', '+5 BP. Drop garantido: Petrify II.'),
-    ('Two Vanguards with five Vogel 911 EX. Burst the Vogels down with S-Breaks. Vanguards explode when destroyed, so keep your distance.',
-     'Dois Vanguards com cinco Vogel 911 EX. Derrube os Vogels rápido com S-Breaks. Os Vanguards explodem ao serem destruídos, então mantenha distância.'),
+    ('Three Vanguards with five Vogel 911 EX. Burst the Vogels down with S-Breaks. Vanguards explode when destroyed, so keep your distance.',
+     'Três Vanguards com cinco Vogel 911 EX. Derrube os Vogels rápido com S-Breaks. Os Vanguards explodem ao serem destruídos, então mantenha distância.'),
     srcs=[ROLENT])
 MINERS = quest(
     t("Miners' Mayday"), t('Rolent — Malga Mine', 'Rolent — Malga Mine'), PNR,
@@ -184,8 +184,8 @@ ERBE = quest(
 SEWER = quest(
     t('Sewer Monster'), t('Grancel Sewers — West Block', 'Grancel Sewers — West Block'), PNR,
     ('+5 BP. Guaranteed drop: Elixir of Spirit.', '+5 BP. Drop garantido: Elixir of Spirit.'),
-    ('Three Evil Streams with low HP and many ailments. Attack first: fast kills avoid their drain moves and the party-capturing Dark Vacuum.',
-     'Três Evil Streams com pouco HP e muitos efeitos. Ataque primeiro: matá-los rápido evita os golpes de drenagem e o Dark Vacuum, que captura membros da equipe.'),
+    ('Four Evil Streams with low HP and many ailments. Attack first: fast kills avoid their drain moves and the party-capturing Dark Vacuum.',
+     'Quatro Evil Streams com pouco HP e muitos efeitos. Ataque primeiro: matá-los rápido evita os golpes de drenagem e o Dark Vacuum, que captura membros da equipe.'),
     srcs=[GRANCEL])
 
 # ------------------------------------------------------------------ Missables
@@ -210,7 +210,7 @@ CHECKLIST = c.item('missable', t('Final check before contacting the castle', 'Co
                        t('Cook every new recipe (80 of 87 dishes, 67 of 70 peculiar dishes). Flamboyant Candy Lei is not possible yet.', 'Cozinhe todas as receitas novas (80 de 87 pratos, 67 de 70 pratos peculiares). Flamboyant Candy Lei ainda não é possível.'),
                        t('Buy monster ingredients from Orvid (about 30 of each) for the Final Chapter recipes.', 'Compre ingredientes de monstros com Orvid (cerca de 30 de cada) para as receitas do Final Chapter.'),
                        t('Check the Combat Handbook: only the last Extra entry should be empty (Shining Poms, Dimension Bugs, Weatherseeds, Baby Cancer, Steel Cougar).', 'Confira o Combat Handbook: só a última entrada de Extra deve estar vazia (Shining Poms, Dimension Bugs, Weatherseeds, Baby Cancer, Steel Cougar).'),
-                       t('Farm sepith, mira and U-Material+ for Gem quartz and True Gems; caves and water caves are good spots.', 'Faça farm de sepith, mira e U-Material+ para os quartzos Gem e True Gems; cavernas e cavernas com água são bons lugares.'),
+                       t('Farm sepith, mira and U-Material+ for Gem quartz and True Gems; any cave or water cave works well.', 'Faça farm de sepith, mira e U-Material+ para os quartzos Gem e True Gems; qualquer caverna ou caverna com água serve bem para isso.'),
                    ], guidance={
                        'preparation': L(('Optional but helpful on Nightmare: four Kitty Jackets (O\'Neil\'s Duty-Free Shop, Ruan) upgraded with Crescent Charms, and four Kitty Boots (Bell Station, Zeiss) upgraded with T-Anklets.',
                                          'Opcional, mas útil no Nightmare: quatro Kitty Jackets (O\'Neil\'s Duty-Free Shop, Ruan) melhorados com Crescent Charms e quatro Kitty Boots (Bell Station, Zeiss) melhorados com T-Anklets.')),
@@ -293,7 +293,7 @@ c.boss(t('Devil Spears'), t('Milch Main Road', 'Milch Main Road'),
        t('Poison on nearly everything, plus Deathblow, All Cancel and a Venom Ring zone. Debuff Immunity first; keep an S-Break for their revive.',
          'Veneno em quase tudo, além de Deathblow, All Cancel e uma zona de Venom Ring. Debuff Immunity primeiro; guarde um S-Break para a revivência.'),
        related=MILCH, sources=[ROLENT])
-c.boss(t('Vanguards and Vogel 911 EX'), t('Elize Highway — Mistwald entrance', 'Elize Highway — entrada de Mistwald'),
+c.boss(t('Vanguards and Vogel 911 EX', 'Vanguards e Vogel 911 EX'), t('Elize Highway — Mistwald entrance', 'Elize Highway — entrada de Mistwald'),
        t('The Vogels inflict Poison, Petrify, Burn, Seal and Blind and rage after losing a quarter of their HP. Kill them first with S-Breaks; the Vanguards explode when destroyed.',
          'Os Vogels causam Poison, Petrify, Burn, Seal e Blind e entram em fúria ao perder um quarto do HP. Elimine-os primeiro com S-Breaks; os Vanguards explodem ao serem destruídos.'),
        related=ELIZE, sources=[ROLENT])
@@ -325,11 +325,11 @@ c.boss(t('Abyss Worms (eight)', 'Abyss Worms (oito)'), t('Tratt Plains Road — 
        t('Unlike the Chapter 2 fight, go all out: Joshua\'s Phantom Raid with Burst on repeat, then Agate\'s Final Break II (not Dragon Dive) when out of CP, and Joshua again at 100 CP.',
          'Ao contrário da luta do Capítulo 2, vá com tudo: Phantom Raid do Joshua com Burst em repetição, depois o Final Break II do Agate (não o Dragon Dive) quando faltar CP, e o Joshua de novo com 100 CP.'),
        related=TRATT, sources=[ZEISS])
-c.boss(t('Blade Cougar+ and Blade Cougars'), t('Ritter Roadway', 'Ritter Roadway'),
+c.boss(t('Blade Cougar+ and Blade Cougars', 'Blade Cougar+ e Blade Cougars'), t('Ritter Roadway', 'Ritter Roadway'),
        t('Blade attacks cause Seal, Deathblow and AT Delay, and they rage at 75% and 25% HP. Spam S-Breaks with Burst as in the worm fight; the stronger cougar may be left, so protect yourself then.',
          'Os golpes de lâmina causam Seal, Deathblow e AT Delay, e eles entram em fúria com 75% e 25% do HP. Use S-Breaks com Burst como na luta das minhocas; o cougar mais forte pode sobrar, então se proteja nessa hora.'),
        related=RITTER, sources=[ZEISS])
-c.boss(t('Big Cactus and Lark Cacti'), t('Erbe Scenic Route', 'Erbe Scenic Route'),
+c.boss(t('Big Cactus and Lark Cacti', 'Big Cactus e Lark Cacti'), t('Erbe Scenic Route', 'Erbe Scenic Route'),
        t('S-Break the Lark Cacti, then guard against Pollen Explosion (Poison, Blind, Confuse) and Massive Needlecane (AT Delay, All Cancel, MOV Down). Burst cures ailments if you are hit first.',
          'Use S-Breaks nos Lark Cacti e depois proteja-se de Pollen Explosion (Poison, Blind, Confuse) e Massive Needlecane (AT Delay, All Cancel, MOV Down). O Burst cura efeitos se você for atingido primeiro.'),
        related=ERBE, sources=[GRANCEL])
@@ -337,7 +337,7 @@ c.boss(t('Evil Streams'), t('Grancel Sewers — West Block', 'Grancel Sewers —
        t('Poison, Blind, Confuse, HP/EP/CP drain and summoned spiders. Their HP is low, so offense beats defense here.',
          'Poison, Blind, Confuse, drenagem de HP/EP/CP e aranhas invocadas. O HP é baixo, então ataque funciona melhor que defesa.'),
        related=SEWER, sources=[GRANCEL])
-c.boss(t('Pale Apaches and Vogel 235'), t('Grancel — South Block gate', 'Grancel — portão do South Block'),
+c.boss(t('Pale Apaches and Vogel 235', 'Pale Apaches e Vogel 235'), t('Grancel — South Block gate', 'Grancel — portão do South Block'),
        t('Narrow arena and only one arts caster. S-Craft the Vogels at the start; the Apaches are fragile and weak to AT Delay and Stat Down.',
          'Arena estreita e só um conjurador de arts. Use S-Crafts nos Vogels no começo; os Apaches são frágeis e fracos a AT Delay e Stat Down.'),
        sources=[FINAL])

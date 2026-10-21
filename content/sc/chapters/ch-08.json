@@ -220,8 +220,8 @@
       },
       "availableUntil": "sc-ch8-cp-01",
       "hint": {
-        "en": "Reward: +5 BP. Guaranteed drop: Petrify II. Two Vanguards with five Vogel 911 EX. Burst the Vogels down with S-Breaks. Vanguards explode when destroyed, so keep your distance.",
-        "pt": "Recompensa: +5 BP. Drop garantido: Petrify II. Dois Vanguards com cinco Vogel 911 EX. Derrube os Vogels rápido com S-Breaks. Os Vanguards explodem ao serem destruídos, então mantenha distância."
+        "en": "Reward: +5 BP. Guaranteed drop: Petrify II. Three Vanguards with five Vogel 911 EX. Burst the Vogels down with S-Breaks. Vanguards explode when destroyed, so keep your distance.",
+        "pt": "Recompensa: +5 BP. Drop garantido: Petrify II. Três Vanguards com cinco Vogel 911 EX. Derrube os Vogels rápido com S-Breaks. Os Vanguards explodem ao serem destruídos, então mantenha distância."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -235,8 +235,8 @@
           }
         ],
         "overview": {
-          "en": "Two Vanguards with five Vogel 911 EX. Burst the Vogels down with S-Breaks. Vanguards explode when destroyed, so keep your distance.",
-          "pt": "Dois Vanguards com cinco Vogel 911 EX. Derrube os Vogels rápido com S-Breaks. Os Vanguards explodem ao serem destruídos, então mantenha distância."
+          "en": "Three Vanguards with five Vogel 911 EX. Burst the Vogels down with S-Breaks. Vanguards explode when destroyed, so keep your distance.",
+          "pt": "Três Vanguards com cinco Vogel 911 EX. Derrube os Vogels rápido com S-Breaks. Os Vanguards explodem ao serem destruídos, então mantenha distância."
         }
       },
       "trophies": [
@@ -760,8 +760,8 @@
       },
       "availableUntil": "sc-ch8-cp-01",
       "hint": {
-        "en": "Reward: +5 BP. Guaranteed drop: Elixir of Spirit. Three Evil Streams with low HP and many ailments. Attack first: fast kills avoid their drain moves and the party-capturing Dark Vacuum.",
-        "pt": "Recompensa: +5 BP. Drop garantido: Elixir of Spirit. Três Evil Streams com pouco HP e muitos efeitos. Ataque primeiro: matá-los rápido evita os golpes de drenagem e o Dark Vacuum, que captura membros da equipe."
+        "en": "Reward: +5 BP. Guaranteed drop: Elixir of Spirit. Four Evil Streams with low HP and many ailments. Attack first: fast kills avoid their drain moves and the party-capturing Dark Vacuum.",
+        "pt": "Recompensa: +5 BP. Drop garantido: Elixir of Spirit. Quatro Evil Streams com pouco HP e muitos efeitos. Ataque primeiro: matá-los rápido evita os golpes de drenagem e o Dark Vacuum, que captura membros da equipe."
       },
       "spoilerLevel": 0,
       "sources": [
@@ -775,8 +775,8 @@
           }
         ],
         "overview": {
-          "en": "Three Evil Streams with low HP and many ailments. Attack first: fast kills avoid their drain moves and the party-capturing Dark Vacuum.",
-          "pt": "Três Evil Streams com pouco HP e muitos efeitos. Ataque primeiro: matá-los rápido evita os golpes de drenagem e o Dark Vacuum, que captura membros da equipe."
+          "en": "Four Evil Streams with low HP and many ailments. Attack first: fast kills avoid their drain moves and the party-capturing Dark Vacuum.",
+          "pt": "Quatro Evil Streams com pouco HP e muitos efeitos. Ataque primeiro: matá-los rápido evita os golpes de drenagem e o Dark Vacuum, que captura membros da equipe."
         }
       },
       "trophies": [
@@ -899,8 +899,8 @@
         },
         {
           "text": {
-            "en": "Farm sepith, mira and U-Material+ for Gem quartz and True Gems; caves and water caves are good spots.",
-            "pt": "Faça farm de sepith, mira e U-Material+ para os quartzos Gem e True Gems; cavernas e cavernas com água são bons lugares."
+            "en": "Farm sepith, mira and U-Material+ for Gem quartz and True Gems; any cave or water cave works well.",
+            "pt": "Faça farm de sepith, mira e U-Material+ para os quartzos Gem e True Gems; qualquer caverna ou caverna com água serve bem para isso."
           }
         }
       ],
@@ -1617,7 +1617,8 @@
     {
       "id": "sc-ch8-bs-04",
       "name": {
-        "en": "Vanguards and Vogel 911 EX"
+        "en": "Vanguards and Vogel 911 EX",
+        "pt": "Vanguards e Vogel 911 EX"
       },
       "location": {
         "en": "Elize Highway — Mistwald entrance",
@@ -1762,7 +1763,8 @@
     {
       "id": "sc-ch8-bs-12",
       "name": {
-        "en": "Blade Cougar+ and Blade Cougars"
+        "en": "Blade Cougar+ and Blade Cougars",
+        "pt": "Blade Cougar+ e Blade Cougars"
       },
       "location": {
         "en": "Ritter Roadway",
@@ -1780,7 +1782,8 @@
     {
       "id": "sc-ch8-bs-13",
       "name": {
-        "en": "Big Cactus and Lark Cacti"
+        "en": "Big Cactus and Lark Cacti",
+        "pt": "Big Cactus e Lark Cacti"
       },
       "location": {
         "en": "Erbe Scenic Route",
@@ -1816,7 +1819,8 @@
     {
       "id": "sc-ch8-bs-15",
       "name": {
-        "en": "Pale Apaches and Vogel 235"
+        "en": "Pale Apaches and Vogel 235",
+        "pt": "Pale Apaches e Vogel 235"
       },
       "location": {
         "en": "Grancel — South Block gate",
