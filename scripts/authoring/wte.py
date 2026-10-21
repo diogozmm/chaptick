@@ -10,7 +10,9 @@
 #
 # Checklist items (tasks, treasure maps) are append-only like every other game: ids follow the
 # order below, so new tasks may only be added at the end of their area's list. Compendium ids
-# (entries, crafts, creatures) are slugs of the official name: they hold no progress.
+# (entries, crafts, creatures, villagers, events) are slugs of the official name. They are saved
+# with a player's progress too (personal names, crafts made), so they are registered like every
+# other id: renaming an entry in the source would orphan what players saved under the old id.
 #
 # Usage: python3 scripts/authoring/wte.py [folder with the saved pages]
 import glob
@@ -1283,7 +1285,8 @@ def build():
 
     registry_path = ROOT / 'id-registry.json'
     registry = json.loads(registry_path.read_text())
-    ids = [G] + [i['id'] for ch in chapters for i in [{'id': ch['id']}, *ch['items']]]
+    kinds = ('items', 'entries', 'crafts', 'creatures', 'villagers', 'events')
+    ids = [G] + [e['id'] for ch in chapters for e in [{'id': ch['id']}, *(e for k in kinds for e in ch.get(k, []))]]
     added = [i for i in ids if i not in registry]
     registry_path.write_text(json.dumps(registry + added, indent=2) + '\n')
 

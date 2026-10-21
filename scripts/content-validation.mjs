@@ -70,6 +70,14 @@ function chapterErrors(chapter, file, gameId) {
 const entityIds = (chapter) =>
   [chapter.items, chapter.bosses, chapter.fish, chapter.recipes].flatMap((list) => (list ?? []).map((e) => e.id));
 
+/**
+ * Compendium ids are named after what they are, not after their chapter, so they carry no chapter
+ * prefix. They are still saved with a player's progress (personal names, crafts made), so they are
+ * registered and unique like every other id.
+ */
+const compendiumIds = (chapter) =>
+  [chapter.entries, chapter.crafts, chapter.creatures, chapter.villagers, chapter.events].flatMap((list) => (list ?? []).map((e) => e.id));
+
 /** References that may point to the same chapter or an earlier one, never a later one. */
 /** Trophy ids are unique per game, and items only point to trophies their game declares. */
 function trophyErrors(game, chapters, dir) {
@@ -170,7 +178,7 @@ function crossChapterErrors(chapters) {
   for (const { file, data } of chapters) {
     if (orders.has(data.order)) errors.push(`${file}: order ${data.order} already used by ${orders.get(data.order)}`);
     orders.set(data.order, file);
-    for (const id of [data.id, ...data.checkpoints.map((c) => c.id), ...entityIds(data)]) {
+    for (const id of [data.id, ...data.checkpoints.map((c) => c.id), ...entityIds(data), ...compendiumIds(data)]) {
       if (seen.has(id)) errors.push(`${file}: duplicate id "${id}" (also in ${seen.get(id)})`);
       seen.set(id, file);
     }

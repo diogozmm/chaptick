@@ -150,3 +150,30 @@ for (const [name, guidance] of [
     assert.ok(validateWith(CH0, (d) => { d.items[0].guidance = guidance; }).length > 0);
   });
 }
+
+const ENTRY = { id: 'demo-pot', name: { en: 'Pot' }, category: 'tools', sources: [{ kind: 'other', where: { en: 'Shop' } }] };
+
+test('rejects unregistered compendium ids', () => {
+  const root = mkdtempSync(join(tmpdir(), 'content-'));
+  cpSync(FIXTURE, root, { recursive: true });
+  const path = join(root, CH0);
+  const data = JSON.parse(readFileSync(path, 'utf8'));
+  writeFileSync(path, JSON.stringify({ ...data, entries: [ENTRY] }));
+  expectError(validateContent(root), '"demo-pot" is used in content but not registered');
+});
+
+test('rejects a compendium id used twice, even in different chapters', () => {
+  const root = mkdtempSync(join(tmpdir(), 'content-'));
+  cpSync(FIXTURE, root, { recursive: true });
+  for (const file of [CH0, 'demo/chapters/ch-01.json']) {
+    const path = join(root, file);
+    writeFileSync(path, JSON.stringify({ ...JSON.parse(readFileSync(path, 'utf8')), entries: [ENTRY] }));
+  }
+  expectError(validateContent(root), 'duplicate id "demo-pot"');
+});
+
+test('rejects a compendium id removed from the registry', () => {
+  const errors = validateWith(null, null, { baseRegistry: ['demo', 'wte-craft-dough'] });
+  expectError(errors, '"wte-craft-dough" was removed');
+});
+
