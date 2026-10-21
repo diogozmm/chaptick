@@ -656,6 +656,38 @@
       "trophies": [
         "battle-master"
       ]
+    },
+    {
+      "id": "sc-ch6-co-08",
+      "type": "collectible",
+      "name": {
+        "en": "Abandoned mine treasure chests (1)",
+        "pt": "Baú da mina abandonada (1)"
+      },
+      "location": {
+        "en": "Abandoned mine — beyond the east exit",
+        "pt": "Mina abandonada — depois da saída leste"
+      },
+      "availableUntil": "sc-ch6-cp-01",
+      "hint": {
+        "en": "One chest that only opens during \"Mine Mop Up\". The mine is not visited again afterwards.",
+        "pt": "Um baú que só abre durante \"Mine Mop Up\". A mina não é visitada de novo depois."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Treasure List"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Beyond the east exit — EP Charge III",
+            "pt": "Depois da saída leste — EP Charge III"
+          }
+        }
+      ],
+      "trophies": [
+        "treasure-hunter"
+      ]
     }
   ],
   "itemTexts": [],

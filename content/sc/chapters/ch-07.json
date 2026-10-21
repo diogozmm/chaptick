@@ -218,8 +218,8 @@
       "id": "sc-ch7-co-08",
       "type": "collectible",
       "name": {
-        "en": "Shadow Esmelas Tower treasure chests (~22)",
-        "pt": "Baús da Shadow Esmelas Tower (~22)"
+        "en": "Shadow Esmelas Tower treasure chests (22)",
+        "pt": "Baús da Shadow Esmelas Tower (22)"
       },
       "location": {
         "en": "Shadow Esmelas Tower"
@@ -231,7 +231,8 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers",
+        "guide: Neoseeker SC walkthrough, Treasure List"
       ],
       "steps": [
         {
@@ -260,14 +261,14 @@
         },
         {
           "text": {
-            "en": "3rd level, left fork: teleporter up to a room with 5 chests",
-            "pt": "3º nível, bifurcação esquerda: teletransporte até uma sala com 5 baús"
+            "en": "3rd level, left fork: teleporter up to a room with 5 chests — EP Charge III, U-Material+, Regina Girders, All Sepith ×300, Tearal Balm",
+            "pt": "3º nível, bifurcação esquerda: teletransporte até uma sala com 5 baús — EP Charge III, U-Material+, Regina Girders, All Sepith ×300, Tearal Balm"
           }
         },
         {
           "text": {
-            "en": "3rd level, right fork then north: teleporter to another room with 5 chests",
-            "pt": "3º nível, bifurcação direita e depois norte: teletransporte até outra sala com 5 baús"
+            "en": "3rd level, right fork then north: teleporter to another room with 5 chests — EP Charge IV, Blue Falcon, All Sepith ×300, Athelas Balm ×2, Tear All Balm",
+            "pt": "3º nível, bifurcação direita e depois norte: teletransporte até outra sala com 5 baús — EP Charge IV, Blue Falcon, All Sepith ×300, Athelas Balm ×2, Tear All Balm"
           }
         },
         {
@@ -325,8 +326,8 @@
       "id": "sc-ch7-co-09",
       "type": "collectible",
       "name": {
-        "en": "Shadow Carnelia Tower treasure chests (~35)",
-        "pt": "Baús da Shadow Carnelia Tower (~35)"
+        "en": "Shadow Carnelia Tower treasure chests (35)",
+        "pt": "Baús da Shadow Carnelia Tower (35)"
       },
       "location": {
         "en": "Shadow Carnelia Tower"
@@ -338,13 +339,14 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers",
+        "guide: Neoseeker SC walkthrough, Treasure List"
       ],
       "steps": [
         {
           "text": {
-            "en": "1st level, seven chests right ahead",
-            "pt": "1º nível, sete baús logo à frente"
+            "en": "1st level, seven chests right ahead — Zeram Powder, EP Charge III ×2, All Sepith ×300, U-Material+ ×2, Tearal Balm, Athelas Balm ×2",
+            "pt": "1º nível, sete baús logo à frente — Zeram Powder, EP Charge III ×2, All Sepith ×300, U-Material+ ×2, Tearal Balm, Athelas Balm ×2"
           }
         },
         {
@@ -446,8 +448,8 @@
       "id": "sc-ch7-co-10",
       "type": "collectible",
       "name": {
-        "en": "Shadow Sapphirl Tower treasure chests (~23)",
-        "pt": "Baús da Shadow Sapphirl Tower (~23)"
+        "en": "Shadow Sapphirl Tower treasure chests (23)",
+        "pt": "Baús da Shadow Sapphirl Tower (23)"
       },
       "location": {
         "en": "Shadow Sapphirl Tower"
@@ -459,7 +461,8 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers",
+        "guide: Neoseeker SC walkthrough, Treasure List"
       ],
       "steps": [
         {
@@ -537,8 +540,8 @@
       "id": "sc-ch7-co-11",
       "type": "collectible",
       "name": {
-        "en": "Shadow Amberl Tower treasure chests (~30)",
-        "pt": "Baús da Shadow Amberl Tower (~30)"
+        "en": "Shadow Amberl Tower treasure chests (30)",
+        "pt": "Baús da Shadow Amberl Tower (30)"
       },
       "location": {
         "en": "Shadow Amberl Tower"
@@ -550,7 +553,8 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers",
+        "guide: Neoseeker SC walkthrough, Treasure List"
       ],
       "steps": [
         {

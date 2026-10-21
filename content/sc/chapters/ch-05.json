@@ -750,8 +750,8 @@
       "id": "sc-ch5-co-09",
       "type": "collectible",
       "name": {
-        "en": "Amberl Tower treasure chests (22)",
-        "pt": "Baús da Amberl Tower (22)"
+        "en": "Amberl Tower treasure chests (23)",
+        "pt": "Baús da Amberl Tower (23)"
       },
       "location": {
         "en": "Amberl Tower"
@@ -763,7 +763,8 @@
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1",
+        "guide: Neoseeker SC walkthrough, Treasure List"
       ],
       "steps": [
         {
@@ -830,6 +831,12 @@
           "text": {
             "en": "5F, southwest — monster chest: Ingenuity (wind arts; they explode)",
             "pt": "5F, sudoeste — baú de monstros: Ingenuity (arts de vento; eles explodem)"
+          }
+        },
+        {
+          "text": {
+            "en": "The third chest in the guide's order, right after Buster Gear — Star Rabbits (shoes)",
+            "pt": "O terceiro baú na ordem do guia, logo depois do Buster Gear — Star Rabbits (sapatos)"
           }
         }
       ],
