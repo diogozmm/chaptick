@@ -272,6 +272,15 @@
     "countsToward": "Counts toward the trophy",
     "filter": "Trophies"
   },
+  "trophies": {
+    "eyebrow": "Trophies",
+    "title": "Trophy progress",
+    "short": "How far each trophy is, so far",
+    "intro": "Counts only the chapters you have reached, so a trophy can still grow as you move on.",
+    "lost": "{{count}} item(s) already missed. This trophy may need a new playthrough.",
+    "none": "No trophy has items in the chapters you have reached yet.",
+    "collections": "Fish and recipe trophies"
+  },
   "backup": {
     "short": "Backup",
     "eyebrow": "Backup and transfer",

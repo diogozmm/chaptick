@@ -272,6 +272,15 @@
     "countsToward": "Conta para o troféu",
     "filter": "Troféus"
   },
+  "trophies": {
+    "eyebrow": "Troféus",
+    "title": "Progresso dos troféus",
+    "short": "Quanto falta para cada troféu, até agora",
+    "intro": "Conta só os capítulos que você já alcançou, então um troféu ainda pode crescer conforme você avança.",
+    "lost": "{{count}} item(ns) já perdido(s). Este troféu pode exigir uma nova jogatina.",
+    "none": "Nenhum troféu tem itens nos capítulos que você já alcançou.",
+    "collections": "Troféus de peixes e receitas"
+  },
   "backup": {
     "short": "Backup",
     "eyebrow": "Backup e transferência",

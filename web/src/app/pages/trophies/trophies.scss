@@ -1,0 +1,20 @@
+:host { display: grid; gap: 1.25rem; }
+.back { font-size: 0.9rem; justify-self: start; margin: -0.5rem 0 -0.75rem -0.1rem; text-decoration: none; }
+.hero { display: grid; gap: 0.5rem; border-top: 3px solid var(--type-collectible, var(--accent)); }
+.hero p { margin: 0; }
+
+.list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.trophy { display: grid; gap: 0.5rem; }
+.trophy p { margin: 0; }
+.head { display: flex; align-items: center; gap: 0.6rem; }
+.head app-icon { flex: none; width: 1.15rem; height: 1.15rem; color: var(--accent); }
+.head h2 { font-size: 1.05rem; margin: 0; }
+.count { margin-left: auto; font: 500 0.875rem/1.6 var(--font-body); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.lost { display: flex; align-items: flex-start; gap: 0.4rem; color: var(--warn-text); }
+.lost app-icon { flex: none; width: 1rem; height: 1rem; margin-top: 0.1rem; }
+
+.progress { height: 0.5rem; border-radius: 999px; background: var(--surface-2, var(--accent-soft)); overflow: hidden; }
+.progress span { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+
+.collections-link { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: inherit; }
+.collections-link > span { display: grid; flex: 1; gap: 0.15rem; }

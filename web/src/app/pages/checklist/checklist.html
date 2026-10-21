@@ -19,6 +19,17 @@
     <p class="muted small">{{ 'checklist.progress' | transloco: { done: s.done, total: s.total } }}</p>
   </header>
 
+  @if (hasTrophies()) {
+    <a class="card compendium-link" [routerLink]="game.link('trophies')">
+      <app-icon name="trophy" />
+      <span>
+        <strong>{{ 'trophies.title' | transloco }}</strong>
+        <span class="muted small">{{ 'trophies.short' | transloco }}</span>
+      </span>
+      <app-icon name="chevron-right" />
+    </a>
+  }
+
   @if (game.hasCompendium()) {
     <a class="card compendium-link" [routerLink]="game.link('compendium')">
       <app-icon name="book-open" />

@@ -1,0 +1,47 @@
+@let l = lang.lang();
+@let here = current();
+@if (here) {
+  <a [routerLink]="game.link('chapters', here.id)" class="link back"><app-icon name="chevron-left" /> {{ here.neutralLabel | localize: l }}</a>
+}
+
+<header class="hero card rise">
+  <p class="eyebrow">{{ 'trophies.eyebrow' | transloco }}</p>
+  <h1>{{ 'trophies.title' | transloco }}</h1>
+  <p class="muted">{{ 'trophies.intro' | transloco }}</p>
+</header>
+
+@if (ready()) {
+  <ul class="list">
+    @for (r of rows(); track r.trophy.id) {
+      <li class="card trophy">
+        <div class="head">
+          <app-icon name="trophy" />
+          <h2>{{ r.trophy.name }}</h2>
+          <span class="count">{{ r.done }}/{{ r.total }}</span>
+        </div>
+        <p class="muted small">{{ r.trophy.description | localize: l }}</p>
+        <div class="progress" role="progressbar" [attr.aria-valuenow]="r.done" aria-valuemin="0" [attr.aria-valuemax]="r.total"
+          [attr.aria-label]="r.trophy.name + ': ' + r.done + '/' + r.total">
+          <span [style.width.%]="percent(r.done, r.total)"></span>
+        </div>
+        @if (r.lost > 0) {
+          <p class="lost small"><app-icon name="triangle-alert" /> {{ 'trophies.lost' | transloco: { count: r.lost } }}</p>
+        }
+      </li>
+    } @empty {
+      <li class="muted">{{ 'trophies.none' | transloco }}</li>
+    }
+  </ul>
+  @if (collections().length > 0) {
+    <a class="card collections-link" [routerLink]="game.link('collections')">
+      <app-icon name="book-open" />
+      <span>
+        <strong>{{ 'trophies.collections' | transloco }}</strong>
+        <span class="muted small">{{ collectionNames() }}</span>
+      </span>
+      <app-icon name="chevron-right" />
+    </a>
+  }
+} @else {
+  <p class="muted" aria-busy="true">{{ 'common.loading' | transloco }}</p>
+}
