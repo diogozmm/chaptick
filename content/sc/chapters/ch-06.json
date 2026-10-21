@@ -136,12 +136,13 @@
       },
       "availableUntil": "sc-ch6-cp-01",
       "hint": {
-        "en": "One-time visit: collect the chest beyond the east exit before leaving.",
-        "pt": "Visita única: recolha o baú depois da saída leste antes de ir embora."
+        "en": "Reward: +6 BP. One-time visit: collect the chest beyond the east exit before leaving.",
+        "pt": "Recompensa: +6 BP. Visita única: recolha o baú depois da saída leste antes de ir embora."
       },
       "spoilerLevel": 0,
       "sources": [
-        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1"
+        "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 1",
+        "guide: Neoseeker SC walkthrough, Bracer Quests"
       ],
       "trophies": [
         "quest-master",
@@ -172,6 +173,12 @@
           {
             "en": "One-time visit: collect the chest beyond the east exit before leaving.",
             "pt": "Visita única: recolha o baú depois da saída leste antes de ir embora."
+          }
+        ],
+        "rewards": [
+          {
+            "en": "+6 BP.",
+            "pt": "+6 BP."
           }
         ]
       }

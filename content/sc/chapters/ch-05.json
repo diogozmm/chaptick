@@ -1414,6 +1414,48 @@
       "trophies": [
         "battle-master"
       ]
+    },
+    {
+      "id": "sc-ch5-q-07",
+      "type": "quest",
+      "name": {
+        "en": "Ravennue Trail Monster"
+      },
+      "location": {
+        "en": "Bose region — Ravennue Trail",
+        "pt": "Região de Bose — Ravennue Trail"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Reward: +5 BP. A monster request listed for this chapter in the Bracer Notebook. No route is confirmed yet, so check the notebook in the game.",
+        "pt": "Recompensa: +5 BP. Um pedido de monstro listado neste capítulo no Bracer Notebook. Ainda não há rota confirmada, então confira o caderno no jogo."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Bracer Quests"
+      ],
+      "guidance": {
+        "rewards": [
+          {
+            "en": "+5 BP.",
+            "pt": "+5 BP."
+          }
+        ],
+        "overview": {
+          "en": "A monster request listed for this chapter in the Bracer Notebook. No route is confirmed yet, so check the notebook in the game.",
+          "pt": "Um pedido de monstro listado neste capítulo no Bracer Notebook. Ainda não há rota confirmada, então confira o caderno no jogo."
+        },
+        "warnings": [
+          {
+            "en": "Rank A needs 450 of the 452 BP in the game, so skipping a 5 BP request puts the A-Rank Bracer trophy at risk.",
+            "pt": "O Rank A exige 450 dos 452 BP do jogo, então pular um pedido de 5 BP coloca o troféu A-Rank Bracer em risco."
+          }
+        ]
+      },
+      "trophies": [
+        "quest-master",
+        "a-rank-bracer"
+      ]
     }
   ],
   "itemTexts": [],
