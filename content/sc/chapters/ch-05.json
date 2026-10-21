@@ -1794,6 +1794,34 @@
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 5 - Day 1"
       ]
+    },
+    {
+      "id": "sc-ch5-re-13",
+      "kind": "customized",
+      "name": {
+        "en": "Exotic Fizz"
+      },
+      "source": {
+        "en": "Have Scherazard cook Mighty Juice",
+        "pt": "A Scherazard cozinha Mighty Juice"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "sc-ch5-re-14",
+      "kind": "customized",
+      "name": {
+        "en": "Tiger Dragon Stir-Fry"
+      },
+      "source": {
+        "en": "Have Zin cook Three-Egg Rice Porridge",
+        "pt": "O Zin cozinha Three-Egg Rice Porridge"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Recipe List"
+      ]
     }
   ]
 }

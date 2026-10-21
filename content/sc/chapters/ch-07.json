@@ -1044,6 +1044,34 @@
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 7 - Tetracyclic Towers"
       ]
+    },
+    {
+      "id": "sc-ch7-re-04",
+      "kind": "customized",
+      "name": {
+        "en": "Homemade Seafood Risotto"
+      },
+      "source": {
+        "en": "Have Estelle cook Platinum Risotto",
+        "pt": "A Estelle cozinha Platinum Risotto"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "sc-ch7-re-05",
+      "kind": "customized",
+      "name": {
+        "en": "Plump Salisbury Steak"
+      },
+      "source": {
+        "en": "Have Joshua cook Victor's Steak",
+        "pt": "O Joshua cozinha Victor's Steak"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Recipe List"
+      ]
     }
   ]
 }

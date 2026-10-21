@@ -818,6 +818,34 @@
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 6 - Day 2"
       ]
+    },
+    {
+      "id": "sc-ch6-re-03",
+      "kind": "customized",
+      "name": {
+        "en": "Draconic Meatballs"
+      },
+      "source": {
+        "en": "Have Agate cook Spicy Meatballs",
+        "pt": "O Agate cozinha Spicy Meatballs"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Recipe List"
+      ]
+    },
+    {
+      "id": "sc-ch6-re-04",
+      "kind": "customized",
+      "name": {
+        "en": "Pom Pom Cookie"
+      },
+      "source": {
+        "en": "Have Tita cook Green Cookie",
+        "pt": "A Tita cozinha Green Cookie"
+      },
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Recipe List"
+      ]
     }
   ]
 }
