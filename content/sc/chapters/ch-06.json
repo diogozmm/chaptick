@@ -554,6 +554,108 @@
           }
         ]
       }
+    },
+    {
+      "id": "sc-ch6-co-07",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Chapter 6 (14)",
+        "pt": "Combat Handbook: Capítulo 6 (14)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 14 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 14 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Vogel 570 (Lv. 70)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 235 (Lv. 70)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel Zero (Lv. 70)"
+          }
+        },
+        {
+          "text": {
+            "en": "Grant (Lv. 71)"
+          }
+        },
+        {
+          "text": {
+            "en": "Carna (Lv. 71)"
+          }
+        },
+        {
+          "text": {
+            "en": "Anelace (Lv. 71)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doppelrunner (Lv. 71)"
+          }
+        },
+        {
+          "text": {
+            "en": "Port Seeker (Lv. 71)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vanguard (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vanguard+ (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Enhanced Jaeger (Gun) (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Enhanced Jaeger (Sword) (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gilbert (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pale Apache (Lv. 72)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

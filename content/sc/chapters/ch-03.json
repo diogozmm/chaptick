@@ -1074,6 +1074,263 @@
           }
         ]
       }
+    },
+    {
+      "id": "sc-ch3-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Grancel (45)",
+        "pt": "Combat Handbook: Grancel (45)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 45 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 45 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Swamp Chupacabra (Lv. 46)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hill Bee (Lv. 46)"
+          }
+        },
+        {
+          "text": {
+            "en": "Primera (Lv. 46)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hell Mars (Lv. 47)"
+          }
+        },
+        {
+          "text": {
+            "en": "War Bat (Lv. 47)"
+          }
+        },
+        {
+          "text": {
+            "en": "Flame Plant (Lv. 47)"
+          }
+        },
+        {
+          "text": {
+            "en": "Scissorhands (Lv. 48)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bone Fish (Lv. 48)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dangle Bone (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom (Lv. 48)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom+ (Lv. 48)"
+          }
+        },
+        {
+          "text": {
+            "en": "Chronocider (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rhinoking (Lv. 50)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cryon Flake (Lv. 48)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cryon Bit (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Master Cryon (Lv. 50)"
+          }
+        },
+        {
+          "text": {
+            "en": "Great Moth (Lv. 48)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mad Snail (Lv. 48)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dark Creepy Sheep (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Silver Creepy Sheep (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mad Tree (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Giant Tree (Lv. 50)"
+          }
+        },
+        {
+          "text": {
+            "en": "Boiled Egger-O (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Crocoshark (Lv. 49)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dinedile (Lv. 50)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gandor (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Zvryu Dryu (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Ops Claw (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Ops Claw (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Ops Gun (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Port Seeker (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Attack Doven (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Ops Claw (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Ops Claw (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Special Ops Gun (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Armored Special Ops (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Kanone (Lv. 52)"
+          }
+        },
+        {
+          "text": {
+            "en": "Photon Laws (Lv. 51)"
+          }
+        },
+        {
+          "text": {
+            "en": "Orgueille (Lv. 52)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hurricane Velg (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Whale Frog ♀ (Lv. 52)"
+          }
+        },
+        {
+          "text": {
+            "en": "Little Pengus (Lv. 52)"
+          }
+        },
+        {
+          "text": {
+            "en": "Yellow Pengu (Lv. 52)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pink Pengu (Lv. 52)"
+          }
+        },
+        {
+          "text": {
+            "en": "King Pengu (Lv. 53)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

@@ -3,6 +3,7 @@
 # Once published, never reorder or remove items: ids are derived from order.
 import json
 
+from handbook import add as add_handbook
 from lib import ROOT, Chapter, src, t
 
 PART1 = src('Final Chapter - Part 1')
@@ -282,6 +283,33 @@ c.item('missable', t('Optional fight: the toughest boss', 'Luta opcional: o boss
                            t('Set Joshua\'s default S-Break to True Black Fang in the Camp Menu (Status, then his Black Fang craft).', 'Defina o S-Break padrão do Joshua como True Black Fang no Camp Menu (Status, depois o craft Black Fang dele).')],
            'optional': [t('On a lower difficulty the fight is easier; on Nightmare you can lose and continue.', 'Em dificuldades menores a luta é mais fácil; no Nightmare você pode perder e continuar.')],
            'overview': t('Expect several attempts; that is normal.', 'Espere várias tentativas; isso é normal.')})
+
+# Added after the first release: new items go last so published ids stay the same.
+c.item('collectible', t('Handbook count check by area (6)', 'Conferência da contagem do handbook por área (6)'), t('Combat Handbook, in the camp menu', 'Combat Handbook, no menu de acampamento'), None,
+       t('Compare the number of enemies recorded at each stage. The Dawn Trapper, the last entry, is a separate item above.',
+         'Compare o número de inimigos registrados em cada etapa. A última entrada, o Dawn Trapper, é um item separado acima.'),
+       0, [PART1, PART2, PART3, DUNGEON, BOSS], steps=[
+           t('After the Cradle and Residential District: 352 of 410.', 'Depois do Cradle e do Residential District: 352 de 410.'),
+           t('After the Industrial District: 356 of 410.', 'Depois do Industrial District: 356 de 410.'),
+           t('Before unlocking barrier No. 1 on the Glorious: 369 of 410.', 'Antes de destravar a barreira No. 1 no Glorious: 369 de 410.'),
+           t('Before the Axis Pillar: 376 of 410.', 'Antes do Axis Pillar: 376 de 410.'),
+           t('Before the last elevator: 399 of 410.', 'Antes do último elevador: 399 de 410.'),
+           t('After the final fights: 410 of 410.', 'Depois das lutas finais: 410 de 410.'),
+       ])
+c.item('collectible', t('Orbment upgrades: all 12 members', 'Orbment upgrades: os 12 membros'), t('Arseille — orbal factory', 'Arseille — fábrica orbal'), None,
+       t('Raise every character\'s orbment slots to the maximum. Josette, Julia and Mueller join late, so this cannot be finished earlier.',
+         'Leve os slots de orbment de cada personagem ao máximo. Josette, Julia e Mueller entram tarde, então não dá para terminar antes.'),
+       0, [PART1, PART3], steps=[t(n) for n in ['Estelle', 'Joshua', 'Scherazard', 'Olivier', 'Kloe', 'Agate', 'Tita', 'Zin', 'Kevin', 'Josette', 'Julia', 'Mueller']])
+c.item('collectible', t('Arts: unlock every art', 'Arts: desbloquear todas as arts'), t('Orbment line of any character', 'Linha de orbment de qualquer personagem'), None,
+       t('The easiest way is to equip quartz on Olivier until he reaches 9 in each of the seven elements of his orbment line.',
+         'O jeito mais fácil é equipar quartzos no Olivier até ele chegar a 9 em cada um dos sete elementos da linha de orbment dele.'),
+       0, [PART3], steps=[t(n) for n in ['Earth', 'Water', 'Fire', 'Wind', 'Time', 'Space', 'Mirage']])
+c.item('collectible', t("Estelle's Support Ability: level 9", 'Support Ability da Estelle: nível 9'), t('Estelle\'s status screen', 'Tela de status da Estelle'), None,
+       t('Estelle\'s Support Ability should be at level 9 around the time you reach the Axis Pillar.',
+         'A Support Ability da Estelle deve estar no nível 9 por volta da chegada ao Axis Pillar.'),
+       0, [PART3])
+
+add_handbook(c)
 
 # ------------------------------------------------------------------ Bosses
 c.boss(t('Leor Gun-EZ and Vogel 235'), t('Residential District — east side', 'Residential District — lado leste'),

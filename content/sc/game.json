@@ -62,6 +62,63 @@
         "pt": "Pesque todos os tipos de peixe."
       },
       "collection": "fish"
+    },
+    {
+      "id": "ultimate-artificer",
+      "name": "Ultimate Artificer",
+      "description": {
+        "en": "Forge three weapons from Zemurian Ore. Ore comes from the Gambler Jack set and the data crystals.",
+        "pt": "Forje três armas com Zemurian Ore. O minério vem da coleção de Gambler Jack e dos cristais de dados."
+      }
+    },
+    {
+      "id": "quartz-collector",
+      "name": "Quartz Collector",
+      "description": {
+        "en": "Collect every kind of quartz. The app tracks the Gem quartz you synthesize or find late in the game.",
+        "pt": "Colete todos os tipos de quartzo. O app acompanha os quartzos Gem que você sintetiza ou encontra no fim do jogo."
+      }
+    },
+    {
+      "id": "orbment-master",
+      "name": "Orbment Master",
+      "description": {
+        "en": "Raise the orbment slots of all 12 party members to the maximum, including the three who join late.",
+        "pt": "Leve os slots de orbment dos 12 membros da equipe ao máximo, inclusive os três que entram tarde."
+      }
+    },
+    {
+      "id": "master-of-arts",
+      "name": "Master of Arts",
+      "description": {
+        "en": "Unlock every art. Olivier's orbment line is the easiest way to get there.",
+        "pt": "Desbloqueie todas as arts. A linha de orbment do Olivier é o jeito mais fácil de chegar lá."
+      }
+    },
+    {
+      "id": "support-expert",
+      "name": "Support Expert",
+      "description": {
+        "en": "Raise Estelle's Support Ability to level 9.",
+        "pt": "Leve a Support Ability da Estelle ao nível 9."
+      }
+    },
+    {
+      "id": "battle-master",
+      "name": "Battle Master",
+      "description": {
+        "en": "Record all 410 enemies in the Combat Handbook. The app tracks the count checkpoints and the entries that are easy to miss in the last chapters.",
+        "pt": "Registre os 410 inimigos no Combat Handbook. O app acompanha os pontos de conferência da contagem e as entradas fáceis de perder nos últimos capítulos."
+      },
+      "countBy": "steps"
+    },
+    {
+      "id": "silver-will-golden-wings",
+      "name": "Silver Will, Golden Wings",
+      "description": {
+        "en": "Defeat the optional last boss, the hardest fight in the game.",
+        "pt": "Derrote o último boss opcional, a luta mais difícil do jogo."
+      }
     }
   ]
 }

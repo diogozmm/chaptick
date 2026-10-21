@@ -3,6 +3,7 @@
 # Once published, never reorder or remove items: ids are derived from order.
 import json
 
+from handbook import add as add_handbook
 from lib import ROOT, Chapter, src, t
 
 INTRO = src('Chapter 8 - Introduction')
@@ -261,6 +262,23 @@ c.item('collectible', t('Divine Cloth Z', 'Divine Cloth Z'), t('Rooftops of the 
        ])
 c.item('collectible', t('Hades Gem', 'Hades Gem'), t('Wolf Fort', 'Wolf Fort'), PNR,
        t('Talk to Gundolf after defeating the Abyss Worms nearby.', 'Fale com Gundolf depois de derrotar as Abyss Worms nas proximidades.'), 0, [ZEISS])
+
+# Added after the first release: new items go last so published ids stay the same.
+c.item('collectible', t('Handbook count check by region (6)', 'Conferência da contagem do handbook por região (6)'), t('Combat Handbook, in the camp menu', 'Combat Handbook, no menu de acampamento'), PNR,
+       t('Compare the number of enemies recorded after each region. If you are below it, look for the entries you skipped before moving on.',
+         'Compare o número de inimigos registrados depois de cada região. Se estiver abaixo, procure as entradas que pulou antes de seguir.'),
+       0, [BOSE, ROLENT, RUAN, ZEISS, GRANCEL, INTRO], steps=[
+           t('After Bose and its roads: 309 of 410.', 'Depois de Bose e suas estradas: 309 de 410.'),
+           t('After Rolent: 317 of 410.', 'Depois de Rolent: 317 de 410.'),
+           t('After Ruan: 332 of 410.', 'Depois de Ruan: 332 de 410.'),
+           t('After Zeiss: 337 of 410.', 'Depois de Zeiss: 337 de 410.'),
+           t('After Grancel: 341 of 410.', 'Depois de Grancel: 341 de 410.'),
+           t('End of the chapter: 342 of 410.', 'Fim do capítulo: 342 de 410.'),
+       ], guidance={
+           'overview': t('The Dimension Bug+ and Weatherseed on the four tower rooftops, Shining Poms, Baby Cancer and Steel Cougar are the entries most often missed.',
+                         'O Dimension Bug+ e o Weatherseed nos terraços das quatro torres, os Shining Poms, o Baby Cancer e o Steel Cougar são as entradas mais esquecidas.')})
+
+add_handbook(c)
 
 # ------------------------------------------------------------------ Bosses
 c.boss(t('Red Fangs'), t('West Bose Highway — Krone Trail', 'West Bose Highway — Krone Trail'),

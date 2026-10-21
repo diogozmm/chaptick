@@ -25,6 +25,20 @@ def _sc(item):
         tags.append('treasure-hunter')
     if en.startswith(('Recipe', 'Customized dishes')):
         tags.append('three-star-chef')
+    if en.startswith('Zemurian Ore'):
+        tags.append('ultimate-artificer')
+    if en.startswith(('Gem quartz', 'Hades Gem')):
+        tags.append('quartz-collector')
+    if en.startswith('Orbment upgrades'):
+        tags.append('orbment-master')
+    if en.startswith('Arts:'):
+        tags.append('master-of-arts')
+    if en.startswith("Estelle's Support"):
+        tags.append('support-expert')
+    if en.startswith('Combat Handbook'):
+        tags.append('battle-master')
+    if en.startswith('Optional fight'):
+        tags.append('silver-will-golden-wings')
     return tags
 
 

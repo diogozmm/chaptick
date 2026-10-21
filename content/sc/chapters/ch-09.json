@@ -207,7 +207,10 @@
             "pt": "No New Game+ o professor Russell troca minério extra por 10 U-Material+ cada."
           }
         ]
-      }
+      },
+      "trophies": [
+        "ultimate-artificer"
+      ]
     },
     {
       "id": "sc-ch9-co-05",
@@ -262,7 +265,10 @@
           "en": "Each Gem takes 2,500 to 3,000 of one sepith type. One True Gem of each kind costs roughly 25,000 of each sepith, so start farming early.",
           "pt": "Cada Gem custa de 2.500 a 3.000 de um tipo de sepith. Uma True Gem de cada tipo custa cerca de 25.000 de cada sepith, então comece o farm cedo."
         }
-      }
+      },
+      "trophies": [
+        "quartz-collector"
+      ]
     },
     {
       "id": "sc-ch9-co-06",
@@ -1272,6 +1278,616 @@
         "overview": {
           "en": "Expect several attempts; that is normal.",
           "pt": "Espere várias tentativas; isso é normal."
+        }
+      },
+      "trophies": [
+        "silver-will-golden-wings"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Handbook count check by area (6)",
+        "pt": "Conferência da contagem do handbook por área (6)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Compare the number of enemies recorded at each stage. The Dawn Trapper, the last entry, is a separate item above.",
+        "pt": "Compare o número de inimigos registrados em cada etapa. A última entrada, o Dawn Trapper, é um item separado acima."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 2",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Dungeon",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Final Boss"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "After the Cradle and Residential District: 352 of 410.",
+            "pt": "Depois do Cradle e do Residential District: 352 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "After the Industrial District: 356 of 410.",
+            "pt": "Depois do Industrial District: 356 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "Before unlocking barrier No. 1 on the Glorious: 369 of 410.",
+            "pt": "Antes de destravar a barreira No. 1 no Glorious: 369 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "Before the Axis Pillar: 376 of 410.",
+            "pt": "Antes do Axis Pillar: 376 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "Before the last elevator: 399 of 410.",
+            "pt": "Antes do último elevador: 399 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "After the final fights: 410 of 410.",
+            "pt": "Depois das lutas finais: 410 de 410."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sc-ch9-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Orbment upgrades: all 12 members",
+        "pt": "Orbment upgrades: os 12 membros"
+      },
+      "location": {
+        "en": "Arseille — orbal factory",
+        "pt": "Arseille — fábrica orbal"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Raise every character's orbment slots to the maximum. Josette, Julia and Mueller join late, so this cannot be finished earlier.",
+        "pt": "Leve os slots de orbment de cada personagem ao máximo. Josette, Julia e Mueller entram tarde, então não dá para terminar antes."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 1",
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Estelle"
+          }
+        },
+        {
+          "text": {
+            "en": "Joshua"
+          }
+        },
+        {
+          "text": {
+            "en": "Scherazard"
+          }
+        },
+        {
+          "text": {
+            "en": "Olivier"
+          }
+        },
+        {
+          "text": {
+            "en": "Kloe"
+          }
+        },
+        {
+          "text": {
+            "en": "Agate"
+          }
+        },
+        {
+          "text": {
+            "en": "Tita"
+          }
+        },
+        {
+          "text": {
+            "en": "Zin"
+          }
+        },
+        {
+          "text": {
+            "en": "Kevin"
+          }
+        },
+        {
+          "text": {
+            "en": "Josette"
+          }
+        },
+        {
+          "text": {
+            "en": "Julia"
+          }
+        },
+        {
+          "text": {
+            "en": "Mueller"
+          }
+        }
+      ],
+      "trophies": [
+        "orbment-master"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-15",
+      "type": "collectible",
+      "name": {
+        "en": "Arts: unlock every art",
+        "pt": "Arts: desbloquear todas as arts"
+      },
+      "location": {
+        "en": "Orbment line of any character",
+        "pt": "Linha de orbment de qualquer personagem"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "The easiest way is to equip quartz on Olivier until he reaches 9 in each of the seven elements of his orbment line.",
+        "pt": "O jeito mais fácil é equipar quartzos no Olivier até ele chegar a 9 em cada um dos sete elementos da linha de orbment dele."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Earth"
+          }
+        },
+        {
+          "text": {
+            "en": "Water"
+          }
+        },
+        {
+          "text": {
+            "en": "Fire"
+          }
+        },
+        {
+          "text": {
+            "en": "Wind"
+          }
+        },
+        {
+          "text": {
+            "en": "Time"
+          }
+        },
+        {
+          "text": {
+            "en": "Space"
+          }
+        },
+        {
+          "text": {
+            "en": "Mirage"
+          }
+        }
+      ],
+      "trophies": [
+        "master-of-arts"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-16",
+      "type": "collectible",
+      "name": {
+        "en": "Estelle's Support Ability: level 9",
+        "pt": "Support Ability da Estelle: nível 9"
+      },
+      "location": {
+        "en": "Estelle's status screen",
+        "pt": "Tela de status da Estelle"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Estelle's Support Ability should be at level 9 around the time you reach the Axis Pillar.",
+        "pt": "A Support Ability da Estelle deve estar no nível 9 por volta da chegada ao Axis Pillar."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Final Chapter - Part 3"
+      ],
+      "trophies": [
+        "support-expert"
+      ]
+    },
+    {
+      "id": "sc-ch9-co-17",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Liber Ark (68)",
+        "pt": "Combat Handbook: Liber Ark (68)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 68 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 68 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Weatherseed (Lv. 85)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dark Lamp (Lv. 85)"
+          }
+        },
+        {
+          "text": {
+            "en": "Phenomenon (Lv. 86)"
+          }
+        },
+        {
+          "text": {
+            "en": "Phenomenon+ (Lv. 87)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fuzzcreeper Friends (Lv. 86)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fuzzcreeper (Lv. 86)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bearmarith (Lv. 87)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bone Legger (Lv. 87)"
+          }
+        },
+        {
+          "text": {
+            "en": "Brute Angler (Lv. 88)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ebony Scale (Lv. 90)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ebony Scale+ (Lv. 91)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom (Lv. 89)"
+          }
+        },
+        {
+          "text": {
+            "en": "Enhanced Jaeger (Sword) (Lv. 91)"
+          }
+        },
+        {
+          "text": {
+            "en": "Enhanced Jaeger (Gun) (Lv. 91)"
+          }
+        },
+        {
+          "text": {
+            "en": "Steel Cougar (Lv. 91)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 570 (Lv. 91)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 235 (Lv. 86)"
+          }
+        },
+        {
+          "text": {
+            "en": "Port Seeker (Lv. 92)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vanguard (Lv. 92)"
+          }
+        },
+        {
+          "text": {
+            "en": "Leor Gun-EZ (Lv. 87)"
+          }
+        },
+        {
+          "text": {
+            "en": "Leor Gun-EZ+ (Lv. 93)"
+          }
+        },
+        {
+          "text": {
+            "en": "Spindoll (Lv. 92)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pale Apache (Lv. 92)"
+          }
+        },
+        {
+          "text": {
+            "en": "Riot Arms (Lv. 93)"
+          }
+        },
+        {
+          "text": {
+            "en": "New Gilbert (Lv. 93)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bone Legger+ (Lv. 92)"
+          }
+        },
+        {
+          "text": {
+            "en": "Armored Compe (Lv. 92)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mirror Flagger α (Lv. 93)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mirror Flagger β (Lv. 93)"
+          }
+        },
+        {
+          "text": {
+            "en": "Nox Bringer (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cyrus Grey (Lv. 93)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cyrus Grey+ (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Solid Seeker (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Riot Claw (Lv. 95)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pom the First (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Knuckle Spider (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fortune Coin (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Estrian Quatre (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dimension Bug (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Photon Judge Ω (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dark Zone (Lv. 94)"
+          }
+        },
+        {
+          "text": {
+            "en": "Arti-Pearl (Lv. 95)"
+          }
+        },
+        {
+          "text": {
+            "en": "D-G Diver (Lv. 95)"
+          }
+        },
+        {
+          "text": {
+            "en": "Master Trapper (Lv. 95)"
+          }
+        },
+        {
+          "text": {
+            "en": "S-Pom the Origin (Lv. 97)"
+          }
+        },
+        {
+          "text": {
+            "en": "Balancing Clown (Lv. 96)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bleublanc (Lv. 97)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bleublanc (Lv. 97)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shadow Cougar (Lv. 96)"
+          }
+        },
+        {
+          "text": {
+            "en": "Walter (Lv. 97)"
+          }
+        },
+        {
+          "text": {
+            "en": "Alraune (Lv. 96)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jubokko (Lv. 97)"
+          }
+        },
+        {
+          "text": {
+            "en": "Zaqqum (Lv. 97)"
+          }
+        },
+        {
+          "text": {
+            "en": "Luciola (Lv. 98)"
+          }
+        },
+        {
+          "text": {
+            "en": "Luciola (Lv. 98)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pater-Mater (Lv. 98)"
+          }
+        },
+        {
+          "text": {
+            "en": "Renne (Lv. 98)"
+          }
+        },
+        {
+          "text": {
+            "en": "Riot Saber (Lv. 98)"
+          }
+        },
+        {
+          "text": {
+            "en": "Loewe (Lv. 99)"
+          }
+        },
+        {
+          "text": {
+            "en": "Loewe (Lv. 98)"
+          }
+        },
+        {
+          "text": {
+            "en": "Reverie Dragion (Lv. 99)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dawn Trapper (Lv. 97)"
+          }
+        },
+        {
+          "text": {
+            "en": "Combat Shell (Lv. 98)"
+          }
+        },
+        {
+          "text": {
+            "en": "Weissmann (Lv. 99)"
+          }
+        },
+        {
+          "text": {
+            "en": "Greed Looper (Lv. 99)"
+          }
+        },
+        {
+          "text": {
+            "en": "Angel Weissmann (Lv. 100)"
+          }
+        },
+        {
+          "text": {
+            "en": "Alpha Omega (Lv. 99)"
+          }
+        },
+        {
+          "text": {
+            "en": "Angel Weissmann (Lv. 100)"
+          }
+        }
+      ],
+      "trophies": [
+        "battle-master"
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
         }
       }
     }

@@ -1059,6 +1059,9 @@
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 8 - Grancel",
         "guide: Neoseeker SC walkthrough, Chapter 8 - Final Part"
+      ],
+      "trophies": [
+        "ultimate-artificer"
       ]
     },
     {
@@ -1237,7 +1240,322 @@
       "spoilerLevel": 0,
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 8 - Zeiss"
+      ],
+      "trophies": [
+        "quartz-collector"
       ]
+    },
+    {
+      "id": "sc-ch8-co-10",
+      "type": "collectible",
+      "name": {
+        "en": "Handbook count check by region (6)",
+        "pt": "Conferência da contagem do handbook por região (6)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": "sc-ch8-cp-01",
+      "hint": {
+        "en": "Compare the number of enemies recorded after each region. If you are below it, look for the entries you skipped before moving on.",
+        "pt": "Compare o número de inimigos registrados depois de cada região. Se estiver abaixo, procure as entradas que pulou antes de seguir."
+      },
+      "spoilerLevel": 0,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Chapter 8 - Bose",
+        "guide: Neoseeker SC walkthrough, Chapter 8 - Rolent",
+        "guide: Neoseeker SC walkthrough, Chapter 8 - Ruan",
+        "guide: Neoseeker SC walkthrough, Chapter 8 - Zeiss",
+        "guide: Neoseeker SC walkthrough, Chapter 8 - Grancel",
+        "guide: Neoseeker SC walkthrough, Chapter 8 - Introduction"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "After Bose and its roads: 309 of 410.",
+            "pt": "Depois de Bose e suas estradas: 309 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "After Rolent: 317 of 410.",
+            "pt": "Depois de Rolent: 317 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "After Ruan: 332 of 410.",
+            "pt": "Depois de Ruan: 332 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "After Zeiss: 337 of 410.",
+            "pt": "Depois de Zeiss: 337 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "After Grancel: 341 of 410.",
+            "pt": "Depois de Grancel: 341 de 410."
+          }
+        },
+        {
+          "text": {
+            "en": "End of the chapter: 342 of 410.",
+            "pt": "Fim do capítulo: 342 de 410."
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The Dimension Bug+ and Weatherseed on the four tower rooftops, Shining Poms, Baby Cancer and Steel Cougar are the entries most often missed.",
+          "pt": "O Dimension Bug+ e o Weatherseed nos terraços das quatro torres, os Shining Poms, o Baby Cancer e o Steel Cougar são as entradas mais esquecidas."
+        }
+      }
+    },
+    {
+      "id": "sc-ch8-co-11",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: all of Liberl (42)",
+        "pt": "Combat Handbook: todo Liberl (42)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 42 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 42 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Balancing Clown (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Balancing Clown (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rising Panda (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ebony Scale (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ebony Scale (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blade Cougar+ (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blade Cougar (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Abyss Worm (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Abyss Worm (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Divine Pengu (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Evil Stream (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Evil Stream (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lark Cactus (Lv. 83)"
+          }
+        },
+        {
+          "text": {
+            "en": "Big Cactus (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 911 EX (Lv. 83)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vanguard (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vanguard (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Devil Spear (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Devil Spear (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Baby Cancer (Lv. 82)"
+          }
+        },
+        {
+          "text": {
+            "en": "Killer Cancer (Lv. 82)"
+          }
+        },
+        {
+          "text": {
+            "en": "Armored Hydra (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red Fang (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red Fang (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Broken Piece (Lv. 83)"
+          }
+        },
+        {
+          "text": {
+            "en": "Guard Minion (Lv. 83)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type S (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type S (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dimension Bug+ (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dimension Bug+ (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dimension Bug+ (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dimension Bug+ (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dimension Bug (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Weatherseed (Lv. 83)"
+          }
+        },
+        {
+          "text": {
+            "en": "Steel Cougar (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 570 (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 235 (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Light Vanguard (Lv. 84)"
+          }
+        },
+        {
+          "text": {
+            "en": "Enhanced Jaeger (Sword) (Lv. 85)"
+          }
+        },
+        {
+          "text": {
+            "en": "Enhanced Jaeger (Gun) (Lv. 85)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gilbert (Lv. 85)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pale Apache (Lv. 85)"
+          }
+        }
+      ],
+      "trophies": [
+        "battle-master"
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      }
     }
   ],
   "itemTexts": [],

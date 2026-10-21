@@ -653,6 +653,258 @@
       "trophies": [
         "treasure-hunter"
       ]
+    },
+    {
+      "id": "sc-ch7-co-12",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Chapter 7 (44)",
+        "pt": "Combat Handbook: Capítulo 7 (44)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 44 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 44 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Broken Piece E (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Guard Minion E (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ancient Cosmos (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "S-Pom the Origin (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type S-E (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type M-E (Lv. 72)"
+          }
+        },
+        {
+          "text": {
+            "en": "Photon Judge E (Lv. 73)"
+          }
+        },
+        {
+          "text": {
+            "en": "Photon Judge E+ (Lv. 73)"
+          }
+        },
+        {
+          "text": {
+            "en": "Balancing Clown (Lv. 73)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bleublanc (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bleublanc (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Broken Piece C (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Guard Minion C (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Origin Muumuu (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type S-C (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type M-C (Lv. 74)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gandor C (Lv. 75)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gandor C+ (Lv. 75)"
+          }
+        },
+        {
+          "text": {
+            "en": "Steel Cougar (Lv. 75)"
+          }
+        },
+        {
+          "text": {
+            "en": "Walter (Lv. 76)"
+          }
+        },
+        {
+          "text": {
+            "en": "Broken Piece S (Lv. 76)"
+          }
+        },
+        {
+          "text": {
+            "en": "Guard Minion S (Lv. 76)"
+          }
+        },
+        {
+          "text": {
+            "en": "Spirathorn (Lv. 76)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type D-S (Lv. 76)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type M-S (Lv. 76)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gandor S (Lv. 77)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gandor S+ (Lv. 77)"
+          }
+        },
+        {
+          "text": {
+            "en": "Alraune (Lv. 77)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jubokko (Lv. 77)"
+          }
+        },
+        {
+          "text": {
+            "en": "Zaqqum (Lv. 77)"
+          }
+        },
+        {
+          "text": {
+            "en": "Luciola (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Luciola (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Broken Piece A (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Guard Minion A (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Micro Egger (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type S-A (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type D-A (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Doom Type M-A (Lv. 78)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gandor A (Lv. 79)"
+          }
+        },
+        {
+          "text": {
+            "en": "Photon Judge A (Lv. 79)"
+          }
+        },
+        {
+          "text": {
+            "en": "Photon Judge A+ (Lv. 79)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 911 EX (Lv. 79)"
+          }
+        },
+        {
+          "text": {
+            "en": "Renne (Lv. 80)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pater-Mater (Lv. 80)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

@@ -1359,6 +1359,248 @@
           }
         ]
       }
+    },
+    {
+      "id": "sc-ch1-co-16",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Ruan (42)",
+        "pt": "Combat Handbook: Ruan (42)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 42 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 42 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Deen (Lv. 30)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rais (Lv. 30)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rocco (Lv. 30)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mint Pom (Lv. 31)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pinchy Bubbler (Lv. 31)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mars Gel (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Tatuunon (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Introllmuumuu (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Knight Ammonite (Lv. 33)"
+          }
+        },
+        {
+          "text": {
+            "en": "Killer Shumock (Lv. 31)"
+          }
+        },
+        {
+          "text": {
+            "en": "Stove Plant (Lv. 31)"
+          }
+        },
+        {
+          "text": {
+            "en": "Sharkagator (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jabba (Lv. 33)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jabba King (Lv. 34)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jabbabba King (Lv. 36)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom+ (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cobalt Saber (Lv. 35)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ducker Moths (Lv. 31)"
+          }
+        },
+        {
+          "text": {
+            "en": "Moth Flyer (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mini Gourd Boars (Lv. 31)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gourd Boar (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Sasa Panda (Lv. 33)"
+          }
+        },
+        {
+          "text": {
+            "en": "Queen Viper (Lv. 35)"
+          }
+        },
+        {
+          "text": {
+            "en": "Corn Mover (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Roadrun (Lv. 33)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ash Saber (Lv. 36)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mini Egger-R (Lv. 33)"
+          }
+        },
+        {
+          "text": {
+            "en": "Boiled Egger-R (Lv. 34)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hapilsag (Lv. 36)"
+          }
+        },
+        {
+          "text": {
+            "en": "Flying Shrimp (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red Shumock (Lv. 32)"
+          }
+        },
+        {
+          "text": {
+            "en": "Helm Cancer (Lv. 33)"
+          }
+        },
+        {
+          "text": {
+            "en": "Aqua Trapper (Lv. 35)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mouki (Lv. 36)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mini Spider (Lv. 35)"
+          }
+        },
+        {
+          "text": {
+            "en": "Wrap Spider (Lv. 35)"
+          }
+        },
+        {
+          "text": {
+            "en": "Duster Geist (Lv. 36)"
+          }
+        },
+        {
+          "text": {
+            "en": "Puppet Flagger (Lv. 36)"
+          }
+        },
+        {
+          "text": {
+            "en": "Puppet Flagger+ (Lv. 37)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ball Bat (Lv. 37)"
+          }
+        },
+        {
+          "text": {
+            "en": "Storm Bringer (Lv. 38)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

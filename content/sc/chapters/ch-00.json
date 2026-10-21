@@ -714,6 +714,133 @@
           "pt": "Na cena do último marcador, fique com a 2ª opção."
         }
       }
+    },
+    {
+      "id": "sc-ch0-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Le Locle (19)",
+        "pt": "Combat Handbook: Le Locle (19)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 19 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 19 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mini Slug (Lv. 25)"
+          }
+        },
+        {
+          "text": {
+            "en": "Sticky Slug (Lv. 25)"
+          }
+        },
+        {
+          "text": {
+            "en": "Sticky Slug+ (Lv. 26)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ripple Frog (Lv. 25)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ripple Frog+ (Lv. 26)"
+          }
+        },
+        {
+          "text": {
+            "en": "Kurt (Lv. 27)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jaeger (Lv. 27)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rude Cosmos (Lv. 26)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rolling Thorn (Lv. 26)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bush Lancer (Lv. 27)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bush Lancer+ (Lv. 28)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom (Lv. 27)"
+          }
+        },
+        {
+          "text": {
+            "en": "Female Jaeger (Lv. 28)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mini Egger (Lv. 28)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pain Beetle (Lv. 28)"
+          }
+        },
+        {
+          "text": {
+            "en": "Crybaby (Lv. 28)"
+          }
+        },
+        {
+          "text": {
+            "en": "Crybaby+ (Lv. 29)"
+          }
+        },
+        {
+          "text": {
+            "en": "Huge Frog (Lv. 29)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jaeger (Lv. 30)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

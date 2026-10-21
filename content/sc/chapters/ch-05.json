@@ -1149,6 +1149,263 @@
       "trophies": [
         "treasure-hunter"
       ]
+    },
+    {
+      "id": "sc-ch5-co-15",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Bose (45)",
+        "pt": "Combat Handbook: Bose (45)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 45 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 45 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Violet Pom (Lv. 61)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mushnake (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mad Roper (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "Green Tea Beetle (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rock Pecker (Lv. 61)"
+          }
+        },
+        {
+          "text": {
+            "en": "Halo Mole (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "Amber Turtle (Lv. 64)"
+          }
+        },
+        {
+          "text": {
+            "en": "Boiled Egger-G (Lv. 61)"
+          }
+        },
+        {
+          "text": {
+            "en": "Parasite Prima (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Limera (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hresvelgr (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ice Pecker (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "White Tea Beetle (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Snow Mantis (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "Giant Foot (Lv. 64)"
+          }
+        },
+        {
+          "text": {
+            "en": "Diamond Turtle (Lv. 65)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ghost Epitaph (Lv. 65)"
+          }
+        },
+        {
+          "text": {
+            "en": "Chupacabra (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Millipede (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Millipede Ball (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fate Spinner (Lv. 64)"
+          }
+        },
+        {
+          "text": {
+            "en": "Murder Crab (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "Boiled Egger-R (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Queen Scorpion (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "King Scorpion (Lv. 64)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hapilsag (Lv. 64)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blade Fang (Lv. 65)"
+          }
+        },
+        {
+          "text": {
+            "en": "Duster Geist (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "Wisdom (Lv. 64)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ground Trapper (Lv. 63)"
+          }
+        },
+        {
+          "text": {
+            "en": "Octobone (Lv. 65)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom+ (Lv. 62)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gold Spinner (Lv. 67)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cryon Flake (Lv. 66)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cryon Bit (Lv. 67)"
+          }
+        },
+        {
+          "text": {
+            "en": "Master Cryon (Lv. 68)"
+          }
+        },
+        {
+          "text": {
+            "en": "Master Cryon+ (Lv. 68)"
+          }
+        },
+        {
+          "text": {
+            "en": "Octobone (Lv. 67)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ghost Epitaph (Lv. 67)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blade Fang (Lv. 68)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ragnard (Lv. 69)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hide Spinner (Lv. 69)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 560 (Lv. 69)"
+          }
+        },
+        {
+          "text": {
+            "en": "Vogel 225 (Lv. 69)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

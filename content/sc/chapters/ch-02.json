@@ -1298,6 +1298,293 @@
       "trophies": [
         "treasure-hunter"
       ]
+    },
+    {
+      "id": "sc-ch2-co-13",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Zeiss (51)",
+        "pt": "Combat Handbook: Zeiss (51)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 51 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 51 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pumpkin Pom (Lv. 38)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bane Cobra (Lv. 38)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mercury Viper (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Grass Hopper (Lv. 38)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hopper Chief (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Hopper Kaiser (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Urchin Jellyfish (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Armored Rabbit (Lv. 38)"
+          }
+        },
+        {
+          "text": {
+            "en": "Creepy Sheep (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pink Creepy Sheep (Lv. 40)"
+          }
+        },
+        {
+          "text": {
+            "en": "Sky Creepy Sheep (Lv. 41)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mantrap (Lv. 41)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom+ (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Damp Crawler (Lv. 38)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jet Tortoise (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Cave Ray (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Bubble Eel (Lv. 40)"
+          }
+        },
+        {
+          "text": {
+            "en": "Faerie Epitaph (Lv. 40)"
+          }
+        },
+        {
+          "text": {
+            "en": "Flying Tadpole (Lv. 38)"
+          }
+        },
+        {
+          "text": {
+            "en": "Whale Frog ♂ (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Whale Frog ♀ (Lv. 40)"
+          }
+        },
+        {
+          "text": {
+            "en": "Neptune Frog (Lv. 41)"
+          }
+        },
+        {
+          "text": {
+            "en": "War Mantis (Lv. 40)"
+          }
+        },
+        {
+          "text": {
+            "en": "Flame Velg (Lv. 41)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fire Trapper (Lv. 41)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Army Soldier (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Army Soldier (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Army Soldier (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Army Officer (Gun) (Lv. 39)"
+          }
+        },
+        {
+          "text": {
+            "en": "Warrant Officer Belc (Lv. 40)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lt. Colonel Cid (Lv. 41)"
+          }
+        },
+        {
+          "text": {
+            "en": "Ya-Kah (Lv. 44)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mustang Saber (Lv. 43)"
+          }
+        },
+        {
+          "text": {
+            "en": "Creepy Sheep B (Lv. 43)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dark Creepy Sheep I (Lv. 43)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pink Creepy Sheep G (Lv. 43)"
+          }
+        },
+        {
+          "text": {
+            "en": "Big Creepy Sheep (Lv. 44)"
+          }
+        },
+        {
+          "text": {
+            "en": "Parasite Prima (Lv. 43)"
+          }
+        },
+        {
+          "text": {
+            "en": "Little Cactus (Lv. 43)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lark Cactus (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "Faerie Epitaph+ (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "Abyss Worm (Lv. 46)"
+          }
+        },
+        {
+          "text": {
+            "en": "Little Pengus (Lv. 44)"
+          }
+        },
+        {
+          "text": {
+            "en": "Red Pengu (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "Blue Pengu (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "Yellow Pengu (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pink Pengu (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "Green Pengu (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "White Pengu (Lv. 45)"
+          }
+        },
+        {
+          "text": {
+            "en": "Divine Pengu (Lv. 46)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

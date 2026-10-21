@@ -85,6 +85,10 @@
               "fish",
               "recipes"
             ]
+          },
+          "countBy": {
+            "description": "Count the route steps of its items instead of the items, when each step is one thing to collect (e.g. every enemy of the Combat Handbook).",
+            "const": "steps"
           }
         }
       }

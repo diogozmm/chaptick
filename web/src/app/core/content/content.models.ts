@@ -19,6 +19,8 @@ export interface Trophy {
   description: Localized;
   /** Tied to a whole collection screen instead of checklist items. */
   collection?: 'fish' | 'recipes';
+  /** Count the route steps of its items instead of the items themselves. */
+  countBy?: 'steps';
 }
 
 /** What a game is split into for spoiler locking: story chapters, or areas opened in order. */

@@ -30,4 +30,17 @@ describe('trophy progress', () => {
     const result = trophyProgress([trophy('quests'), trophy('fish', 'fish'), trophy('other')], [ch1], new Set(), 1);
     expect(result.map((p) => [p.trophy.id, p.total])).toEqual([['quests', 2]]);
   });
+
+  it('counts route steps instead of items for trophies that ask for it', () => {
+    const entries = { ...item('t-ch1-co-01', ['notes']), steps: [{ text: { en: 'a' } }, { text: { en: 'b' } }, { text: { en: 'c' } }] };
+    const plain = item('t-ch1-co-02', ['notes']);
+    const chapters = [chapter(1, [entries, plain])];
+    const counted = { ...trophy('notes'), countBy: 'steps' as const };
+    const done = new Set(['t-ch1-co-01#step-1', 't-ch1-co-01#step-2']);
+    const [p] = trophyProgress([counted], chapters, done, 1);
+    expect([p.done, p.total]).toEqual([2, 4]);
+    // Finishing the whole item counts every step, and without the option it is one item again.
+    expect(trophyProgress([counted], chapters, new Set(['t-ch1-co-01']), 1)[0].done).toBe(3);
+    expect(trophyProgress([trophy('notes')], chapters, done, 1)[0].total).toBe(2);
+  });
 });

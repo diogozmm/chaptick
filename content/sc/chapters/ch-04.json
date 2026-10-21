@@ -1158,6 +1158,238 @@
       "sources": [
         "guide: GameFAQs SC walkthrough by shockinblue, Chapter 4 - Day 2"
       ]
+    },
+    {
+      "id": "sc-ch4-co-14",
+      "type": "collectible",
+      "name": {
+        "en": "Combat Handbook: Rolent (40)",
+        "pt": "Combat Handbook: Rolent (40)"
+      },
+      "location": {
+        "en": "Combat Handbook, in the camp menu",
+        "pt": "Combat Handbook, no menu de acampamento"
+      },
+      "availableUntil": null,
+      "hint": {
+        "en": "Record all 40 enemies of this chapter in the Combat Handbook, then tick them here.",
+        "pt": "Registre os 40 inimigos deste capítulo no Combat Handbook e marque-os aqui."
+      },
+      "spoilerLevel": 2,
+      "sources": [
+        "guide: Neoseeker SC walkthrough, Battle Notes"
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pom (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Flying Feline (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Russet Beetle (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Lily Mover (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mantrap (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Big the Yeti (Lv. 56)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mars Sparrow (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Rhinocider (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Emeronecider (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Master Wisdom (Lv. 56)"
+          }
+        },
+        {
+          "text": {
+            "en": "Petit Rat (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Dirty Rat (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Garphase (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Coral Shell (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Crop Muncher (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Great Crop Muncher (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Shining Pom+ (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Fly Skipper (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Pine Plant (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Small Pine (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Wind Trapper (Lv. 56)"
+          }
+        },
+        {
+          "text": {
+            "en": "Guilder Quake (Lv. 59)"
+          }
+        },
+        {
+          "text": {
+            "en": "Killer Hornet (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Forest Mist (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Picorn (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Picorn+ (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Death Specular (Lv. 55)"
+          }
+        },
+        {
+          "text": {
+            "en": "Death Specular+ (Lv. 59)"
+          }
+        },
+        {
+          "text": {
+            "en": "Alraune (Lv. 56)"
+          }
+        },
+        {
+          "text": {
+            "en": "Jubokko (Lv. 60)"
+          }
+        },
+        {
+          "text": {
+            "en": "Zaqqum (Lv. 60)"
+          }
+        },
+        {
+          "text": {
+            "en": "Mouki (Lv. 61)"
+          }
+        },
+        {
+          "text": {
+            "en": "Gold Rat (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Elder Owl (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Army Soldier (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Army Soldier (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Royal Army Soldier (Lv. 53)"
+          }
+        },
+        {
+          "text": {
+            "en": "Guard Captain (Lv. 54)"
+          }
+        },
+        {
+          "text": {
+            "en": "Major Vander (Lv. 55)"
+          }
+        }
+      ],
+      "guidance": {
+        "overview": {
+          "en": "The list names every enemy of the chapter, some of which give the story away, so it stays hidden until you open it. Fill the handbook before moving on: some enemies cannot be met again. Do not forget the Shining Poms and their Shining Pom+ versions.",
+          "pt": "A lista traz todos os inimigos do capítulo, alguns dos quais entregam a história, por isso ela fica escondida até você abri-la. Preencha o handbook antes de seguir adiante: alguns inimigos não voltam a aparecer. Não esqueça dos Shining Poms e das versões Shining Pom+."
+        }
+      },
+      "trophies": [
+        "battle-master"
+      ]
     }
   ],
   "itemTexts": [],

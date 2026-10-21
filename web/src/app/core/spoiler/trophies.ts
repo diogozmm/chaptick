@@ -1,4 +1,5 @@
 import { Chapter, Trophy } from '../content/content.models';
+import { routeProgress } from '../route/route';
 import { expiredItems } from './spoiler';
 
 export interface TrophyProgress {
@@ -26,11 +27,14 @@ export function trophyProgress(
     .filter((t) => !t.collection)
     .map((trophy) => {
       const counted = items.filter((i) => i.trophies?.includes(trophy.id));
+      // Items made of steps that are each one thing to collect count step by step.
+      const unit = (i: Chapter['items'][number]) =>
+        trophy.countBy === 'steps' && i.steps?.length ? routeProgress(i, done) : { done: done.has(i.id) ? 1 : 0, total: 1 };
       return {
         trophy,
-        total: counted.length,
-        done: counted.filter((i) => done.has(i.id)).length,
-        lost: counted.filter((i) => lost.has(i.id)).length,
+        total: counted.reduce((n, i) => n + unit(i).total, 0),
+        done: counted.reduce((n, i) => n + unit(i).done, 0),
+        lost: counted.filter((i) => lost.has(i.id)).reduce((n, i) => n + unit(i).total - unit(i).done, 0),
       };
     })
     .filter((p) => p.total > 0);
