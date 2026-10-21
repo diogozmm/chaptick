@@ -146,4 +146,30 @@ describe('ProgressStore', () => {
       vi.unstubAllGlobals();
     }
   });
+
+  it('keeps saving after a write fails, and reports it until a write works again', async () => {
+    const put = vi.spyOn(TestBed.inject(ProgressRepository), 'put');
+    put.mockRejectedValueOnce(new Error('quota exceeded'));
+
+    await store.toggle('sc-ch0-co-01');
+    expect(store.saveFailed()).toBe(true);
+    // The tick is still there for the player to back up.
+    expect(store.done().has('sc-ch0-co-01')).toBe(true);
+
+    await store.toggle('sc-ch0-co-02');
+    expect(store.saveFailed()).toBe(false);
+    const reloaded = TestBed.runInInjectionContext(() => new ProgressStore());
+    await reloaded.load('sc', 'sc-ch0');
+    // The second write saves the whole record, so the failed tick is not lost either.
+    expect([...reloaded.done()].sort()).toEqual(['sc-ch0-co-01', 'sc-ch0-co-02']);
+    put.mockRestore();
+  });
+
+  it('lets pending writes land before reporting settled', async () => {
+    void store.toggle('sc-ch0-co-01');
+    await store.settled();
+    const reloaded = TestBed.runInInjectionContext(() => new ProgressStore());
+    await reloaded.load('sc', 'sc-ch0');
+    expect(reloaded.done().has('sc-ch0-co-01')).toBe(true);
+  });
 });

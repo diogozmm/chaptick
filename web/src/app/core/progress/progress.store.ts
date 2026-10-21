@@ -26,9 +26,12 @@ export class ProgressStore {
   private readonly analytics = inject(AnalyticsService);
   private readonly state = signal<SavedProgress | null>(null);
   private saving: Promise<void> = Promise.resolve();
+  private readonly failed = signal(false);
   private persistenceAsked = false;
 
   readonly progress = this.state.asReadonly();
+  /** The latest write to this device failed. Progress is still in memory, so the player can back it up. */
+  readonly saveFailed = this.failed.asReadonly();
   readonly currentChapter = computed(() => this.state()?.currentChapter ?? '');
   readonly done = computed(() => new Set(this.state()?.doneItems ?? []));
   readonly preferences = computed(() => this.state()?.preferences ?? DEFAULT_PREFERENCES);
@@ -143,9 +146,21 @@ export class ProgressStore {
       .catch(() => undefined);
   }
 
-  // Writes are chained so a slow write can never land after a newer one.
+  /** Resolves once every write started so far has finished, whether it worked or not. */
+  settled(): Promise<void> {
+    return this.saving;
+  }
+
+  // Writes are chained so a slow write can never land after a newer one. A failed write must not
+  // break the chain (every later save would be skipped): it is reported through `saveFailed`
+  // instead, and the next successful write saves the whole record again, so nothing is lost.
   private persist(progress: SavedProgress): Promise<void> {
-    this.saving = this.saving.then(() => this.repository.put(progress));
+    this.saving = this.saving
+      .then(() => this.repository.put(progress))
+      .then(
+        () => this.failed.set(false),
+        () => this.failed.set(true),
+      );
     return this.saving;
   }
 

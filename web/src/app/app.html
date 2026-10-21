@@ -37,6 +37,14 @@
   </div>
 }
 
+@if (progress.saveFailed()) {
+  <div class="update" role="alert">
+    <app-icon name="triangle-alert" />
+    <span>{{ 'app.saveFailed' | transloco }}</span>
+    <a routerLink="/backup" class="link">{{ 'backup.short' | transloco }}</a>
+  </div>
+}
+
 @if (movedHost) {
   <div class="update" role="status">
     <span>{{ 'app.moved' | transloco: { host: movedHost } }}</span>

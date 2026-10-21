@@ -3,6 +3,8 @@ import { NavigationStart, Router } from '@angular/router';
 import { SwUpdate } from '@angular/service-worker';
 import { filter } from 'rxjs';
 
+import { ProgressStore } from '../progress/progress.store';
+
 /** How often a visible app looks for a new version. Only ngsw.json is fetched. */
 const CHECK_EVERY_MS = 30 * 60 * 1000;
 
@@ -12,13 +14,14 @@ const CHECK_EVERY_MS = 30 * 60 * 1000;
  * the app comes back to the foreground and every half hour.
  *
  * A ready update is applied at the next in-app navigation, as a normal page load of the screen the
- * player asked for: nothing is swapped mid-screen, and progress is already saved on every tap.
+ * player asked for: nothing is swapped mid-screen, and the page load waits for pending saves.
  * The banner still offers to reload right away.
  */
 @Injectable({ providedIn: 'root' })
 export class AppUpdateService {
   private readonly updates = inject(SwUpdate);
   private readonly router = inject(Router);
+  private readonly progress = inject(ProgressStore);
   private readonly ready = signal(false);
 
   readonly updateReady = this.ready.asReadonly();
@@ -29,7 +32,7 @@ export class AppUpdateService {
       if (event.type === 'VERSION_READY') this.ready.set(true);
     });
     // A broken cache can only be fixed by fetching everything again.
-    this.updates.unrecoverable.subscribe(() => location.reload());
+    this.updates.unrecoverable.subscribe(() => this.reload());
 
     this.router.events.pipe(filter((e) => e instanceof NavigationStart)).subscribe((event) => {
       // Back/forward already moved the history: replace, so the next "back" still works.
@@ -48,12 +51,22 @@ export class AppUpdateService {
   }
 
   reload(): void {
-    location.reload();
+    this.afterSaves(() => this.navigate(null, false));
   }
 
   /** A full page load of `url`, which picks up the new version. */
   protected load(url: string, replace: boolean): void {
-    if (replace) location.replace(url);
+    this.afterSaves(() => this.navigate(url, replace));
+  }
+
+  /** A page load drops writes still in flight, so let them land first. */
+  private afterSaves(action: () => void): void {
+    void this.progress.settled().then(action);
+  }
+
+  protected navigate(url: string | null, replace: boolean): void {
+    if (url === null) location.reload();
+    else if (replace) location.replace(url);
     else location.assign(url);
   }
 }

@@ -3,6 +3,7 @@ import { NavigationStart, Router } from '@angular/router';
 import { SwUpdate, VersionEvent } from '@angular/service-worker';
 import { Subject } from 'rxjs';
 
+import { ProgressStore } from '../progress/progress.store';
 import { AppUpdateService } from './app-update.service';
 
 describe('AppUpdateService', () => {
@@ -11,13 +12,16 @@ describe('AppUpdateService', () => {
   const checkForUpdate = vi.fn().mockResolvedValue(false);
   let service: AppUpdateService;
   let load: ReturnType<typeof vi.fn>;
+  let saves: Promise<void>;
 
   beforeEach(() => {
     checkForUpdate.mockClear();
+    saves = Promise.resolve();
     TestBed.configureTestingModule({
       providers: [
         { provide: SwUpdate, useValue: { isEnabled: true, versionUpdates, unrecoverable: new Subject(), checkForUpdate } },
         { provide: Router, useValue: { events: routerEvents } },
+        { provide: ProgressStore, useValue: { settled: () => saves } },
       ],
     });
     service = TestBed.inject(AppUpdateService);
@@ -47,5 +51,23 @@ describe('AppUpdateService', () => {
   it('looks for a new version when the app comes back to the foreground', () => {
     document.dispatchEvent(new Event('visibilitychange'));
     expect(checkForUpdate).toHaveBeenCalledTimes(1);
+  });
+
+  it('waits for pending saves before loading the new version', async () => {
+    let finishSaving!: () => void;
+    saves = new Promise<void>((resolve) => (finishSaving = resolve));
+    const navigate = vi.fn();
+    const fresh = TestBed.inject(AppUpdateService) as unknown as { load: (url: string, replace: boolean) => void; navigate: typeof navigate };
+    delete (fresh as { load?: unknown }).load; // use the real method, not the spy installed above
+    fresh.navigate = navigate;
+
+    fresh.load('/sc/chapters', false);
+    await Promise.resolve();
+    expect(navigate).not.toHaveBeenCalled();
+
+    finishSaving();
+    await saves;
+    await Promise.resolve();
+    expect(navigate).toHaveBeenCalledWith('/sc/chapters', false);
   });
 });

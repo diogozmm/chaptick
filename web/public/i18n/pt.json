@@ -2,6 +2,7 @@
   "app": {
     "switchLanguage": "Switch to English",
     "disclaimer": "Projeto de fã, não oficial e sem vínculo com os desenvolvedores ou editoras destes jogos. Todas as marcas pertencem aos seus donos.",
+    "saveFailed": "Seu progresso não pôde ser salvo neste aparelho. Faça um backup para não perdê-lo.",
     "updateReady": "Uma nova versão está pronta.",
     "reload": "Recarregar",
     "footerNav": "Site",

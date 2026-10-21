@@ -2,6 +2,7 @@
   "app": {
     "switchLanguage": "Mudar para português",
     "disclaimer": "Unofficial fan project, not affiliated with the developers or publishers of these games. All trademarks belong to their owners.",
+    "saveFailed": "Your progress could not be saved on this device. Back it up so you do not lose it.",
     "updateReady": "A new version is ready.",
     "reload": "Reload",
     "footerNav": "Site",
