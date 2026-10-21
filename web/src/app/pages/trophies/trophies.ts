@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, resource } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, resource, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -9,11 +9,12 @@ import { ProgressStore } from '../../core/progress/progress.store';
 import { ChapterAccess } from '../../core/spoiler/chapter-access';
 import { trophyProgress } from '../../core/spoiler/trophies';
 import { Icon } from '../../ui/icon/icon';
+import { ItemRow } from '../../ui/item-row/item-row';
 
 /** How far each trophy is, counting only the chapters the player has reached. */
 @Component({
   selector: 'app-trophies',
-  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon],
+  imports: [RouterLink, TranslocoPipe, LocalizePipe, Icon, ItemRow],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './trophies.html',
   styleUrl: './trophies.scss',
@@ -43,6 +44,20 @@ export class Trophies {
   protected readonly collections = computed(() => (this.game.manifest()?.game.trophies ?? []).filter((t) => t.collection));
 
   protected readonly collectionNames = computed(() => this.collections().map((t) => t.name).join(' · '));
+
+  /** The lists are long, so a trophy's items are only drawn once it is opened. */
+  private readonly opened = signal<ReadonlySet<string>>(new Set());
+  protected isOpen(id: string): boolean {
+    return this.opened().has(id);
+  }
+  protected setOpen(id: string, open: boolean): void {
+    this.opened.update((set) => {
+      const next = new Set(set);
+      if (open) next.add(id);
+      else next.delete(id);
+      return next;
+    });
+  }
 
   protected percent(done: number, total: number): number {
     return total === 0 ? 0 : Math.round((done / total) * 100);

@@ -41,3 +41,19 @@ test('the trophies page counts what is done in the chapters reached', async ({ p
   await page.getByRole('link', { name: 'Trophy progress' }).click();
   await expect(quests).toContainText('1/2');
 });
+
+test('a trophy lists what is missing, behind the same masks, and ticking it there updates the count', async ({ page }) => {
+  await page.goto('/sc/trophies');
+  const quests = page.locator('li.trophy').filter({ hasText: 'Questmaster' });
+  await expect(quests).toContainText('0/2');
+  await quests.getByText('What is missing (2)').click();
+  await expect(row(quests, 'Safe Quest')).toBeVisible();
+  // The hidden quest stays behind its mask here too.
+  await expect(quests).not.toContainText('Secret Name');
+  await expect(quests.getByRole('button', { name: /Hidden quest #1/ })).toBeVisible();
+
+  await row(quests, 'Safe Quest').getByRole('checkbox').check();
+  await expect(quests).toContainText('1/2');
+  await expect(quests.getByText('What is missing (1)')).toBeVisible();
+  await expect(row(quests, 'Safe Quest')).toHaveCount(0);
+});

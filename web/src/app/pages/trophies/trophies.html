@@ -27,6 +27,25 @@
         @if (r.lost > 0) {
           <p class="lost small"><app-icon name="triangle-alert" /> {{ 'trophies.lost' | transloco: { count: r.lost } }}</p>
         }
+        @if (r.pending.length > 0) {
+          <details class="missing" [open]="isOpen(r.trophy.id)" (toggle)="setOpen(r.trophy.id, $any($event.target).open)">
+            <summary>{{ 'trophies.missing' | transloco: { count: r.pending.length } }}</summary>
+            @if (isOpen(r.trophy.id)) {
+              <ul class="items">
+                @for (entry of r.pending; track entry.item.id) {
+                  <li>
+                    @if (entry.chapter.id !== here?.id) {
+                      <p class="from">{{ 'deadlines.from' | transloco: { chapter: entry.chapter.neutralLabel | localize: l } }}</p>
+                    }
+                    <app-item-row [chapter]="entry.chapter" [item]="entry.item" />
+                  </li>
+                }
+              </ul>
+            }
+          </details>
+        } @else {
+          <p class="muted small"><app-icon name="circle-check" /> {{ 'trophies.complete' | transloco }}</p>
+        }
       </li>
     } @empty {
       <li class="muted">{{ 'trophies.none' | transloco }}</li>

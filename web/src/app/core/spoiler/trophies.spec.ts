@@ -43,4 +43,14 @@ describe('trophy progress', () => {
     expect(trophyProgress([counted], chapters, new Set(['t-ch1-co-01']), 1)[0].done).toBe(3);
     expect(trophyProgress([trophy('notes')], chapters, done, 1)[0].total).toBe(2);
   });
+
+  it('lists the items still to do, those already missed first', () => {
+    const [quests] = trophyProgress([trophy('quests')], [ch1, ch2], new Set(['t-ch1-q-02']), 2);
+    expect(quests.pending.map((p) => p.item.id)).toEqual(['t-ch1-q-01', 't-ch2-q-01']);
+    const later = chapter(2, [item('t-ch2-q-01', ['quests']), item('t-ch2-q-02', ['quests'], 't-ch1-cp-01')]);
+    const result = trophyProgress([trophy('quests')], [ch1, later], new Set(), 2)[0];
+    // Done items are not listed and the missed ones (deadline in chapter 1) come before the rest.
+    expect(result.pending.map((p) => p.item.id)).toEqual(['t-ch1-q-01', 't-ch2-q-02', 't-ch1-q-02', 't-ch2-q-01']);
+    expect(result.pending[0].chapter.id).toBe('t-ch1');
+  });
 });

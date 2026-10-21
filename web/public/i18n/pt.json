@@ -281,6 +281,8 @@
     "intro": "Conta só os capítulos que você já alcançou, então um troféu ainda pode crescer conforme você avança.",
     "lost": "{{count}} item(ns) já perdido(s). Este troféu pode exigir uma nova jogatina.",
     "none": "Nenhum troféu tem itens nos capítulos que você já alcançou.",
+    "missing": "O que falta ({{count}})",
+    "complete": "Tudo o que você alcançou para este troféu está feito.",
     "collections": "Troféus de peixes e receitas"
   },
   "backup": {

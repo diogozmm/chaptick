@@ -281,6 +281,8 @@
     "intro": "Counts only the chapters you have reached, so a trophy can still grow as you move on.",
     "lost": "{{count}} item(s) already missed. This trophy may need a new playthrough.",
     "none": "No trophy has items in the chapters you have reached yet.",
+    "missing": "What is missing ({{count}})",
+    "complete": "Everything you have reached for this trophy is done.",
     "collections": "Fish and recipe trophies"
   },
   "backup": {
