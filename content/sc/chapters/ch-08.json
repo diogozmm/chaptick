@@ -1843,6 +1843,9 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 8 - Rolent"
+      ],
+      "fishBaits": [
+        "Crab"
       ]
     },
     {
@@ -1852,6 +1855,11 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 8 - Ruan"
+      ],
+      "fishBaits": [
+        "Kasago",
+        "Sea Bass",
+        "Salmon"
       ]
     },
     {
@@ -1861,6 +1869,10 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 8 - Ruan"
+      ],
+      "fishBaits": [
+        "Sea Bass",
+        "Salmon"
       ]
     },
     {
@@ -1870,6 +1882,10 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 8 - Bose"
+      ],
+      "fishBaits": [
+        "Trout",
+        "Salmon"
       ]
     }
   ],

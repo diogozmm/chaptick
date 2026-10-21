@@ -226,6 +226,7 @@
     "fishProgress": "{{done}} of {{total}} fish caught",
     "recipeProgress": "{{done}} of {{total}} recipes learned",
     "fishHint": "Tick a fish once it is in your fishing log. Fish from later chapters appear as you advance.",
+    "bait": "Bait:",
     "morePlaces": "Show {{count}} more place(s)",
     "rankHint": "Rank A catches: {{done}} of {{total}}.",
     "recipesHint": "Tick a dish once it is in your recipe book. Dishes from later chapters appear as you advance.",

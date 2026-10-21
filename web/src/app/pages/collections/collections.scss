@@ -67,3 +67,7 @@
 .trophy-note strong { color: var(--text); }
 
 .more-spots { justify-self: start; padding: 0.25rem 0; }
+
+.baits { display: flex; gap: 0.4rem; align-items: flex-start; margin: 0; font-size: 0.8125rem; color: var(--text-muted); }
+.baits app-icon { flex: none; width: 0.9rem; height: 0.9rem; margin-top: 0.15rem; }
+.baits strong { font-weight: 600; color: var(--text); }

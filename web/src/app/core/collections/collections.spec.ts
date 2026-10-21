@@ -56,6 +56,17 @@ describe('collections', () => {
     expect(crab.bestRank).toBe('A');
   });
 
+  it('names a fish as bait only once that fish is unlocked', () => {
+    const early = chapter(1, {
+      fish: [{ id: 't-ch1-fi-01', name: { en: 'Crab' }, sources: ['t'], baits: ['Worm'], fishBaits: ['Eel', 'Trout'] }],
+    });
+    const later = chapter(2, { fish: [{ id: 't-ch2-fi-01', name: { en: 'Eel' }, sources: ['t'] }] });
+    const [crab] = fishBook([early]);
+    expect([crab.baits, crab.fishBaits]).toEqual([['Worm'], []]);
+    // Eel is in the book now; Trout never is, so it is still not named.
+    expect(fishBook([early, later])[0].fishBaits).toEqual(['Eel']);
+  });
+
   it('counts catches and Rank A only for fish that can reach A', () => {
     const book = fishBook([ch1, ch2]);
     const done = new Set(['t-ch1-fi-01', rankAKey('t-ch1-fi-01'), 't-ch2-fi-01']);

@@ -91,3 +91,11 @@ test('a long list of places is folded, and a place named twice shows once', asyn
   await expect(fish.getByText('Quiet cove 6')).toBeVisible();
   await expect(fish.getByRole('button', { name: /more place/ })).toHaveCount(0);
 });
+
+test('a fish lists the bait that catches it, but never a fish that is still locked', async ({ page }) => {
+  await page.goto('/sc/collections');
+  const fish = page.locator('li.row').filter({ hasText: 'Silver Fish' });
+  await expect(fish.locator('.baits')).toContainText('Bait: Worm');
+  // The fixture also names a fish of a later chapter as bait: it stays out until that chapter is reached.
+  await expect(page.locator('body')).not.toContainText('FUTURE');
+});

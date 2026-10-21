@@ -1756,6 +1756,11 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Earthworm",
+        "Marine Worm",
+        "Shrimp"
       ]
     },
     {
@@ -1765,6 +1770,10 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Marine Worm",
+        "Shrimp"
       ]
     },
     {
@@ -1774,6 +1783,10 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Marine Worm",
+        "Shrimp"
       ]
     },
     {
@@ -1783,6 +1796,13 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Marine Worm",
+        "Shrimp"
+      ],
+      "fishBaits": [
+        "Kasagin"
       ]
     },
     {
@@ -1792,6 +1812,13 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Shrimp"
+      ],
+      "fishBaits": [
+        "Kasagin",
+        "Kasago"
       ]
     },
     {
@@ -1801,6 +1828,12 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Earthworm",
+        "Salmon Roe",
+        "Red Fly",
+        "Shrimp"
       ]
     },
     {
@@ -1810,6 +1843,14 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Marine Worm"
+      ],
+      "fishBaits": [
+        "Crab",
+        "Kasagin",
+        "Kasago"
       ]
     },
     {
@@ -1819,6 +1860,9 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Earthworm"
       ]
     },
     {
@@ -1828,6 +1872,13 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 2 - Ruan"
+      ],
+      "baits": [
+        "Shrimp"
+      ],
+      "fishBaits": [
+        "Crab",
+        "Kasago"
       ]
     }
   ],

@@ -17,13 +17,16 @@ export interface FishEntry {
   /** Null for games without catch ranks. */
   bestRank: FishRank | null;
   spots: { rank?: FishRank; where: Chapter['neutralLabel']; bait?: string }[];
+  /** Baits that catch it, plus the unlocked species that work as bait (a locked one is never named). */
+  baits: string[];
+  fishBaits: string[];
 }
 
 export function fishBook(chapters: readonly Chapter[]): FishEntry[] {
   const sorted = [...chapters].sort((a, b) => a.order - b.order);
   const entries = new Map<string, FishEntry>();
   for (const chapter of sorted) {
-    for (const fish of chapter.fish ?? []) entries.set(fish.id, { fish, chapter, bestRank: null, spots: [] });
+    for (const fish of chapter.fish ?? []) entries.set(fish.id, { fish, chapter, bestRank: null, spots: [], baits: fish.baits ?? [], fishBaits: [] });
   }
   for (const chapter of sorted) {
     for (const spot of chapter.fishSpots ?? []) {
@@ -47,6 +50,8 @@ export function fishBook(chapters: readonly Chapter[]): FishEntry[] {
     entry.spots.sort((a, b) => rankOrder(a.rank) - rankOrder(b.rank));
     entry.bestRank = entry.spots[0]?.rank ?? null;
   }
+  const known = new Set([...entries.values()].map((e) => e.fish.name.en));
+  for (const entry of entries.values()) entry.fishBaits = (entry.fish.fishBaits ?? []).filter((name) => known.has(name));
   return [...entries.values()];
 }
 

@@ -78,6 +78,11 @@ export class Collections {
     return first?.rank && rest.every((spot) => spot.rank === first.rank) ? first.rank : null;
   }
 
+  /** "Earthworm, Marine Worm, or a Kasagin": basic baits first, then the fish that work as bait. */
+  protected baitLine(entry: FishEntry): string {
+    return [...entry.baits, ...entry.fishBaits].join(', ');
+  }
+
   /** Long lists of places are folded after a few, since one is enough to catch the fish. */
   private readonly unfolded = signal<ReadonlySet<string>>(new Set());
   protected readonly foldAfter = 6;

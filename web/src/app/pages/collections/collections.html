@@ -103,6 +103,15 @@
                     </li>
                   }
                 </ul>
+                @if (entry.baits.length > 0 || entry.fishBaits.length > 0) {
+                  <p class="baits">
+                    <app-icon name="sparkles" />
+                    <span>
+                      <strong>{{ 'collections.bait' | transloco }}</strong>
+                      {{ baitLine(entry) }}
+                    </span>
+                  </p>
+                }
                 @if (entry.spots.length > shownSpots(entry).length) {
                   <button type="button" class="link small more-spots" (click)="unfold(entry)">
                     {{ 'collections.morePlaces' | transloco: { count: entry.spots.length - foldAfter } }}

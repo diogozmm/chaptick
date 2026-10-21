@@ -388,6 +388,18 @@
             "minLength": 1
           },
           "minItems": 1
+        },
+        "baits": {
+          "description": "Baits that catch it, for games where the bait decides the catch (official item names).",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "fishBaits": {
+          "description": "Other species that work as bait for it. Shown only once those species are unlocked.",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
         }
       },
       "additionalProperties": false

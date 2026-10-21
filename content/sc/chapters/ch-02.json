@@ -1721,6 +1721,11 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Larva",
+        "Salmon Roe",
+        "Red Fly"
       ]
     },
     {
@@ -1730,6 +1735,11 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Larva",
+        "Salmon Roe",
+        "Red Fly"
       ]
     },
     {
@@ -1739,6 +1749,12 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Earthworm",
+        "Larva",
+        "Salmon Roe",
+        "Red Fly"
       ]
     },
     {
@@ -1748,6 +1764,11 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Larva",
+        "Red Fly",
+        "Dumpling"
       ]
     },
     {
@@ -1757,6 +1778,13 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Frog"
+      ],
+      "fishBaits": [
+        "Kasagin",
+        "Yamany"
       ]
     },
     {
@@ -1766,6 +1794,11 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Earthworm",
+        "Larva",
+        "Salmon Roe"
       ]
     },
     {
@@ -1775,6 +1808,14 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Earthworm",
+        "Dumpling",
+        "Pond Snail"
+      ],
+      "fishBaits": [
+        "Crab"
       ]
     },
     {
@@ -1784,6 +1825,18 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Earthworm",
+        "Larva",
+        "Salmon Roe",
+        "Pond Snail",
+        "Frog"
+      ],
+      "fishBaits": [
+        "Crab",
+        "Kasagin",
+        "Yamany"
       ]
     },
     {
@@ -1793,6 +1846,13 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Larva",
+        "Salmon Roe"
+      ],
+      "fishBaits": [
+        "Kasagin"
       ]
     },
     {
@@ -1802,6 +1862,17 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "baits": [
+        "Frog"
+      ],
+      "fishBaits": [
+        "Kasagin",
+        "Yamany",
+        "Carp",
+        "Trout",
+        "Salmon",
+        "Eel"
       ]
     },
     {
@@ -1811,6 +1882,11 @@
       },
       "sources": [
         "guide: Neoseeker SC walkthrough, Chapter 3 - Zeiss"
+      ],
+      "fishBaits": [
+        "Kasagin",
+        "Sea Bass",
+        "Salmon"
       ]
     }
   ],

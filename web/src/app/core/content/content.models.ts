@@ -152,6 +152,10 @@ export interface Fish {
   id: string;
   name: Localized;
   sources: string[];
+  /** Baits that catch it, for games where the bait decides the catch. */
+  baits?: string[];
+  /** Other species that work as bait for it. Shown only once those species are unlocked. */
+  fishBaits?: string[];
 }
 
 /** A good spot in the chapter's region; may refer to a fish from an earlier chapter. */

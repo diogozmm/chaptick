@@ -246,6 +246,12 @@
       },
       "sources": [
         "e2e"
+      ],
+      "baits": [
+        "Worm"
+      ],
+      "fishBaits": [
+        "FUTURE FISH"
       ]
     }
   ],

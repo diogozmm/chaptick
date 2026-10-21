@@ -226,6 +226,7 @@
     "fishProgress": "{{done}} de {{total}} peixes pescados",
     "recipeProgress": "{{done}} de {{total}} receitas aprendidas",
     "fishHint": "Marque o peixe quando ele estiver no seu registro de pesca. Peixes de capítulos futuros aparecem conforme você avança.",
+    "bait": "Isca:",
     "morePlaces": "Mostrar mais {{count}} lugar(es)",
     "rankHint": "Pescas no Rank A: {{done}} de {{total}}.",
     "recipesHint": "Marque o prato quando ele estiver no seu livro de receitas. Pratos de capítulos futuros aparecem conforme você avança.",
