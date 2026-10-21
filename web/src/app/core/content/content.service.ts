@@ -21,7 +21,11 @@ export class ContentService {
   private readonly loadedSignal = signal<ReadonlyMap<string, Chapter>>(new Map());
 
   readonly catalog = this.catalogSignal.asReadonly();
-  /** Chapters already fetched, by chapter id. Only unlocked chapters are ever fetched, so everything here is safe to show. */
+  /**
+   * Chapters already fetched this session, by chapter id. They are fetched only when the player may
+   * see them, but never dropped: after moving back, or cancelling a jump, this can hold chapters
+   * beyond the player's position. Check `ChapterAccess` before showing anything from here.
+   */
   readonly loaded = this.loadedSignal.asReadonly();
 
   async loadCatalog(): Promise<Catalog> {

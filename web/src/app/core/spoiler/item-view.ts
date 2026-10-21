@@ -4,8 +4,9 @@ import { TranslocoService } from '@jsverse/transloco';
 import { Chapter, Item, Localized, Trophy } from '../content/content.models';
 import { ContentService } from '../content/content.service';
 import { ActiveGame } from '../game/active-game';
+import { ChapterAccess } from './chapter-access';
 import { RevealService } from './reveal.service';
-import { chapterOrderOf, isMasked, maskOrdinal } from './spoiler';
+import { chapterOrderOf, isMasked, isUnlocked, maskOrdinal } from './spoiler';
 
 export type Deadline =
   | { kind: 'checkpoint'; description: Localized }
@@ -20,6 +21,7 @@ export class ItemView {
   private readonly reveals = inject(RevealService);
   private readonly content = inject(ContentService);
   private readonly active = inject(ActiveGame);
+  private readonly access = inject(ChapterAccess);
 
   /** "Hidden quest #2": what a masked item is called until revealed. */
   placeholder(chapter: Chapter, item: Item): string {
@@ -49,7 +51,10 @@ export class ItemView {
   deadline(chapter: Chapter, item: Item): Deadline {
     const id = item.availableUntil;
     if (!id) return { kind: 'none' };
-    const owner = chapter.checkpoints.some((c) => c.id === id) ? chapter : this.content.loaded().get(id.replace(/-cp-\d+$/, ''));
+    // Fetched chapters are never forgotten, so one past the player's position may still be cached
+    // (after moving back, or after cancelling a jump): its checkpoints are not theirs to read yet.
+    const loaded = this.content.loaded().get(id.replace(/-cp-\d+$/, ''));
+    const owner = chapter.checkpoints.some((c) => c.id === id) ? chapter : loaded && isUnlocked(loaded, this.access.currentOrder()) ? loaded : undefined;
     const checkpoint = owner?.checkpoints.find((c) => c.id === id);
     if (checkpoint) return { kind: 'checkpoint', description: checkpoint.neutralDescription };
     const order = chapterOrderOf(id);
