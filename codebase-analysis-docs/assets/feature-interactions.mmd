@@ -1,0 +1,19 @@
+flowchart TD
+  Library[Home and library] --> Position[Chapter or area selection]
+  Position --> Reached[Reached content]
+  Reached --> Checklist[Checklist and item details]
+  Reached --> Search[Search]
+  Reached --> Collections[Fish and recipe collections]
+  Reached --> Index[Compendium index]
+  Checklist --> Deadlines[Deadline and advance warnings]
+  Checklist --> Bosses[Boss strategies]
+  Index --> Entries[Entries and creature rewards]
+  Entries --> Planner[Crafting shopping list]
+  Index --> Seasons[Seasons and calendar]
+  Index --> Gifts[Villagers and gifts]
+  Gifts --> Checklist
+  Checklist --> Progress[(Saved progress)]
+  Collections --> Progress
+  Index --> Progress
+  Progress --> Library
+  Progress --> Backup[Backup and transfer]

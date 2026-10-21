@@ -1,0 +1,14 @@
+flowchart LR
+  JSON[Authored content and schemas] --> Validate[Node validation]
+  Validate --> Build[Static JSON generation]
+  Build --> Assets[Cloudflare static assets]
+  Angular[Angular production build] --> Assets
+  Player[Player] --> Pages[Router and pages]
+  Pages --> Access[ActiveGame and ChapterAccess]
+  Access --> Content[ContentService]
+  Content --> SW[Service worker or HTTP]
+  SW --> Assets
+  Pages --> Domain[Pure domain functions]
+  Pages --> Store[ProgressStore]
+  Store --> DB[(IndexedDB)]
+  Pages --> Reveal[Session reveal state]

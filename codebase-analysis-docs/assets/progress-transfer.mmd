@@ -1,0 +1,14 @@
+sequenceDiagram
+  participant A as Source browser
+  participant B as Receiving browser
+  participant H as Home / Backup
+  participant D as IndexedDB
+  A->>A: Export saved games as JSON
+  A->>A: Gzip and base64url token
+  A-->>B: User shares URL fragment
+  B->>B: Capture token and clear fragment
+  B->>H: Decode and preview import
+  H->>H: User confirms replacement
+  H->>H: Parse all records before writing
+  H->>D: Sequential puts per imported game
+  Note over H,D: Existing games absent from import remain

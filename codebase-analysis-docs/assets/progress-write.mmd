@@ -1,0 +1,13 @@
+sequenceDiagram
+  participant P as Player
+  participant U as UI / route helpers
+  participant S as ProgressStore
+  participant D as ProgressRepository / IndexedDB
+  P->>U: Tick objective or step
+  U->>S: setDone(ids, done)
+  S->>S: Update signal and timestamp
+  S-->>U: Reactive view changes
+  S->>S: Chain write after previous write
+  S->>D: put(full game record)
+  D-->>S: Resolve or reject
+  Note over S,D: Rejection has no queue reset or state rollback

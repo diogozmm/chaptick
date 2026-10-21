@@ -1,0 +1,18 @@
+sequenceDiagram
+  participant P as Player
+  participant R as Router / gameGuard
+  participant A as ActiveGame
+  participant C as ContentService
+  participant D as IndexedDB
+  participant V as Page / ChapterAccess
+  P->>R: Open game-scoped route
+  R->>A: activate(gameId)
+  A->>C: loadManifest(gameId)
+  C-->>A: Memory or static JSON response
+  A->>D: ProgressStore.load via repository
+  D-->>A: Saved or newly created record
+  A-->>R: Active game ready
+  R->>V: Guard and instantiate page
+  V->>C: Load permitted chapter summaries
+  C-->>V: Cached or fetched chapter JSON
+  V-->>P: Derived and masked view
